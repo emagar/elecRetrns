@@ -580,6 +580,9 @@ c4[sel7,] <- tmp.c4
 w4[sel7] <- tmp.w4
 ci[sel7,] <- tmp.ci
 
+max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
+table(max.tmp) # coal w most members has 7
+
 # prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
 sel <- which(ci$ncoal>=1)
