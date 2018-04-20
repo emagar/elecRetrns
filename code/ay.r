@@ -64,6 +64,15 @@ for (i in 1:ncol(l)){
 }
 rm(l,v)
 
+# drop upper case from labels
+sel.l <- grep("^l[0-9]{2}", colnames(dat))
+l <- dat[,sel.l] # subset labels columns
+for (i in 1:ncol(l)){
+    l[,i] <- tolower(l[,i])
+    }
+dat[,sel.l] <- l # return to data
+rm(l)
+
 # remove useless labels
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
@@ -265,7 +274,16 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^alianza-", replacement = "alianza1-", l[,i])
     }
 #
-#table(l[,2])
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^es$", replacement = "pes", l[,i])
+    l[,i] <- gsub(pattern = "-es-", replacement = "-pes-", l[,i])
+    l[,i] <- gsub(pattern = "-es$", replacement = "-pes", l[,i])
+    l[,i] <- gsub(pattern = "^es-", replacement = "pes-", l[,i])
+    }
+#
+#
+sel.r <- which(dat$yr>2006)
+#table(l[sel.r,18]) # easier to verify one column at a time
 dat[,sel.l] <- l # return to data
 rm(l)
 
