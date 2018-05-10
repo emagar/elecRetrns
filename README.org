@@ -26,6 +26,8 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - ~code/ayClean.r~ = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - ~data/dfdf1979-on.csv~
   + *Citation for this dataset*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
+- ~data/dfdfcandidates2015-on.csv~ = names of all federal deputy candidates in districts and party lists since 2015. 
+- ~data/seedcandidates2018.csv~ = names of all senatorial candidates in states and party lists in 2018. 
 - ~data/goed1961-on.csv~ = updated to 2010
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - ~data/prdf2006-on.csv~

@@ -1,16 +1,16 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgdd3d545)
-2.  [Files in the repository and how to cite them](#org206417e)
-3.  [Codebook](#orgb823f46)
-4.  [Sources](#org779907a)
-5.  [Acknowledgements](#org2b3f26b)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#org265ea5d)
+2.  [Files in the repository and how to cite them](#org6b07ab7)
+3.  [Codebook](#org1117cf2)
+4.  [Sources](#org88ab428)
+5.  [Acknowledgements](#org841468e)
 
 Last revision: 2018-03-08
 
 
-<a id="orgdd3d545"></a>
+<a id="org265ea5d"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -22,7 +22,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* this repository contains LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning the repository.
 
 
-<a id="org206417e"></a>
+<a id="org6b07ab7"></a>
 
 # Files in the repository and how to cite them
 
@@ -37,6 +37,8 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   `code/ayClean.r` = script used to clean *ayuntamiento* returns, should be unnecessary unless new data are added because output has been saved into csv file.
 -   `data/dfdf1979-on.csv`
     -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
+-   `data/dfdfcandidates2015-on.csv` = names of all federal deputy candidates in districts and party lists since 2015.
+-   `data/seedcandidates2018.csv` = names of all senatorial candidates in states and party lists in 2018.
 -   `data/goed1961-on.csv` = updated to 2010
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 -   `data/prdf2006-on.csv`
@@ -44,7 +46,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="orgb823f46"></a>
+<a id="org1117cf2"></a>
 
 # Codebook
 
@@ -80,7 +82,7 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 
 
-<a id="org779907a"></a>
+<a id="org88ab428"></a>
 
 # Sources
 
@@ -95,7 +97,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org2b3f26b"></a>
+<a id="org841468e"></a>
 
 # Acknowledgements
 
