@@ -3599,304 +3599,604 @@ ord,edon,disn,yr,mo,dy,edo,cab,circ,pancoal,pricoal,prdcoal,v01,l01,v02,l02,v03,
 3598,32,2,2012,jul,1,zac,Jerez,2,no,pri-pvem,prd-pt-mc,39309,pan,57770,pri,20384,prd,12111,pri-pvem,6443,pvem,3298,pt,1125,mc,2669,prd-pt-mc,1461,prd-pt,194,prd.mc,98,pt-mc,5930,panal,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,150792,40,5587,156419,,,datos_computos_res_diputados_total_actas
 3599,32,3,2012,jul,1,zac,Zacatecas,2,no,pri-pvem,prd-pt-mc,29181,pan,62307,pri,19986,prd,15294,pri-pvem,7599,pvem,6887,pt,2102,mc,3692,prd-pt-mc,1859,prd-pt,252,prd.mc,121,pt-mc,7400,panal,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,156680,159,6249,163088,,,datos_computos_res_diputados_total_actas
 3600,32,4,2012,jul,1,zac,Guadalupe,2,no,pri-pvem,prd-pt-mc,27277,pan,67092,pri,21979,prd,17662,pri-pvem,8742,pvem,6589,pt,1490,mc,4147,prd-pt-mc,2196,prd-pt,224,prd.mc,172,pt-mc,7968,panal,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,165538,178,6981,172697,,,datos_computos_res_diputados_total_actas
-3301,1,1,2015,jun,7,ags,Jesús María,2,no,no,no,31756,pan,32183,pri,5489,prd,7091,pvem,3252,pt,905,mc,12827,panal,3265,morena,2441,ph,2285,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,123,5541,107158,277868,anulada,ine casilla
-3302,1,2,2015,jun,7,ags,Aguascalientes,2,no,no,no,33410,pan,32887,pri,5050,prd,8681,pvem,2598,pt,3056,mc,6355,panal,7449,morena,3270,ph,4651,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,307,8557,116271,340905,,ine casilla
-3303,1,3,2015,jun,7,ags,Aguascalientes,2,no,no,no,35567,pan,27314,pri,2134,prd,6069,pvem,1475,pt,1923,mc,4125,panal,6270,morena,2659,ph,3400,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,298,7955,99189,248581,,ine casilla
-3304,2,1,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,29664,pan,17015,pri,2728,prd,3005,pvem,1289,pt,5839,mc,5293,panal,8149,morena,2836,ph,5006,ps,931,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,94,5771,87620,279071,,ine casilla
-3305,2,2,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,28038,pan,11821,pri,2881,prd,3147,pvem,835,pt,8209,mc,4687,panal,8503,morena,4047,ph,8066,ps,850,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,167,6078,87329,237921,,ine casilla
-3306,2,3,2015,jun,7,bc,Ensenada,1,no,pri-pvem,no,22279,pan,18200,pri,5977,prd,2886,pvem,10093,pt,3087,mc,3949,panal,13373,morena,2637,ph,4302,ps,681,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,210,6236,93910,276800,,ine casilla
-3307,2,4,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,28128,pan,14126,pri,3541,prd,3515,pvem,4795,pt,5228,mc,7094,panal,15129,morena,2707,ph,4895,ps,882,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,6719,96944,336429,,ine casilla
-3308,2,5,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,26017,pan,14185,pri,3042,prd,2800,pvem,2033,pt,3782,mc,3244,panal,12995,morena,2644,ph,4913,ps,756,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,687,6966,84064,268149,,ine casilla
-3309,2,6,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,27785,pan,15168,pri,2835,prd,5599,pvem,1743,pt,4153,mc,4682,panal,14444,morena,2880,ph,6888,ps,1458,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,330,7848,95813,304581,,ine casilla
-3310,2,7,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,24991,pan,18876,pri,3479,prd,3622,pvem,3808,pt,19455,mc,3974,panal,10171,morena,2278,ph,7196,ps,1170,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,191,6512,105723,359848,,ine casilla
-3311,2,8,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,36480,pan,23543,pri,5015,prd,4806,pvem,2634,pt,4260,mc,5042,panal,16508,morena,3037,ph,6085,ps,1407,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,359,7843,117019,415080,,ine casilla
-3312,3,1,2015,jun,7,bcs,Mulegé,1,no,pri-pvem,prd-pt,50008,pan,33333,pri,4040,prd,1986,pvem,1779,pt,1008,mc,3939,panal,6635,morena,4075,ph,3648,ps,1255,pri-pvem,158,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,136,4709,116709,203034,,ine casilla
-3313,3,2,2015,jun,7,bcs,La Paz,1,no,pri-pvem,prd-pt,49860,pan,23999,pri,9942,prd,3233,pvem,10013,pt,1217,mc,2211,panal,8744,morena,4121,ph,5741,ps,1267,pri-pvem,1786,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,242,5824,128200,262338,,ine casilla
-3314,4,1,2015,jun,7,cam,Campeche,3,no,pri-pvem,no,50597,pan,63241,pri,7194,prd,4490,pvem,2388,pt,2348,mc,13995,panal,30715,morena,2626,ph,6047,ps,4403,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,87,6741,194872,299680,,ine casilla
-3315,4,2,2015,jun,7,cam,Carmen,3,no,pri-pvem,no,71047,pan,55995,pri,6054,prd,3151,pvem,1673,pt,2334,mc,3561,panal,17284,morena,1537,ph,1875,ps,4490,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,5684,174748,303930,,ine casilla
-3316,5,1,2015,jun,7,coa,Piedras Negras,2,no,pri-pvem,no,24183,pan,50776,pri,2594,prd,4580,pvem,1693,pt,1498,mc,7945,panal,4727,morena,1224,ph,3870,ps,884,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,3260,107296,282149,,ine casilla
-3317,5,2,2015,jun,7,coa,San Pedro,2,no,pri-pvem,no,21187,pan,67080,pri,6734,prd,4534,pvem,2048,pt,3099,mc,9148,panal,7848,morena,2579,ph,2344,ps,628,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,4244,131513,288092,,ine casilla
-3318,5,3,2015,jun,7,coa,Monclova,2,no,pri-pvem,no,33455,pan,71061,pri,3599,prd,2879,pvem,1506,pt,1251,mc,7821,panal,4784,morena,1774,ph,5100,ps,974,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,3990,138271,313880,,ine casilla
-3319,5,4,2015,jun,7,coa,Saltillo,2,no,pri-pvem,no,24938,pan,63052,pri,2334,prd,4828,pvem,1835,pt,1828,mc,8207,panal,5792,morena,3894,ph,4568,ps,978,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,84,4832,127170,284002,,ine casilla
-3320,5,5,2015,jun,7,coa,Torreón,2,no,pri-pvem,no,26603,pan,64870,pri,2924,prd,9204,pvem,1672,pt,2984,mc,7271,panal,8090,morena,1995,ph,2718,ps,1044,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,4623,134067,279483,,ine casilla
-3321,5,6,2015,jun,7,coa,Torreón,2,no,pri-pvem,no,53727,pan,47798,pri,2478,prd,9012,pvem,1331,pt,5506,mc,5915,panal,9203,morena,2509,ph,3049,ps,1433,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,4596,146643,306961,,ine casilla
-3322,5,7,2015,jun,7,coa,Saltillo,2,no,pri-pvem,no,31048,pan,47686,pri,2541,prd,3779,pvem,1504,pt,1662,mc,6403,panal,5203,morena,2939,ph,3449,ps,697,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,165,4323,111399,237469,,ine casilla
-3323,6,1,2015,jun,7,col,Colima,1,no,pri-pvem,no,46257,pan,44174,pri,47218,prd,4007,pvem,3676,pt,6670,mc,3172,panal,2412,morena,1584,ph,1159,ps,890,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,4778,166041,265425,,ine casilla
-3324,6,2,2015,jun,7,col,Manzanillo,1,no,pri-pvem,no,54902,pan,43433,pri,3441,prd,7136,pvem,3419,pt,5752,mc,2001,panal,3697,morena,2403,ph,2574,ps,1259,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,3914,133975,233106,,ine casilla
-3325,7,1,2015,jun,7,cps,Palenque,3,no,pri-pvem,no,2543,pan,26191,pri,7284,prd,77574,pvem,5597,pt,1645,mc,2294,panal,14398,morena,961,ph,905,ps,2097,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,27,11290,152806,302373,,ine casilla
-3326,7,2,2015,jun,7,cps,Bochil,3,no,pri-pvem,no,2360,pan,54708,pri,12638,prd,55614,pvem,6593,pt,915,mc,1924,panal,2073,morena,383,ph,236,ps,1242,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,4946,143644,240712,,ine casilla
-3327,7,3,2015,jun,7,cps,Ocosingo,3,no,pri-pvem,no,3724,pan,21553,pri,11443,prd,74123,pvem,1591,pt,2410,mc,3340,panal,3801,morena,766,ph,584,ps,1869,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,26,8023,133253,278366,,ine casilla
-3328,7,4,2015,jun,7,cps,Ocozocoautla de Espinosa,3,no,pri-pvem,no,3490,pan,37464,pri,3498,prd,64251,pvem,2482,pt,5370,mc,3340,panal,4847,morena,1088,ph,1692,ps,1982,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5018,134566,263339,,ine casilla
-3329,7,5,2015,jun,7,cps,San Cristóbal de las Casas,3,no,pri-pvem,no,3431,pan,42618,pri,6740,prd,54299,pvem,1860,pt,2116,mc,2703,panal,5854,morena,1611,ph,1645,ps,1948,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,10375,135292,273671,,ine casilla
-3330,7,6,2015,jun,7,cps,Tuxtla Gutiérrez,3,no,pri-pvem,no,4467,pan,30526,pri,3535,prd,49476,pvem,1942,pt,2365,mc,2416,panal,15509,morena,1382,ph,2417,ps,2457,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,181,7157,123830,305129,,ine casilla
-3331,7,7,2015,jun,7,cps,Tonalá,3,no,pri-pvem,no,6141,pan,16835,pri,2051,prd,47349,pvem,5769,pt,2028,mc,2138,panal,5278,morena,1152,ph,537,ps,1693,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,3540,94526,230315,,ine casilla
-3332,7,8,2015,jun,7,cps,Comitán de Domínguez,3,no,pri-pvem,no,1647,pan,31010,pri,6365,prd,82457,pvem,4812,pt,1261,mc,3043,panal,4598,morena,1251,ph,1022,ps,2154,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,7015,146680,283418,,ine casilla
-3333,7,9,2015,jun,7,cps,Tuxtla Gutiérrez,3,no,pri-pvem,no,8227,pan,12239,pri,4152,prd,25017,pvem,2853,pt,2126,mc,2655,panal,12729,morena,2369,ph,5998,ps,2349,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,402,11715,92831,306598,,ine casilla
-3334,7,10,2015,jun,7,cps,Villaflores,3,no,pri-pvem,no,4683,pan,24985,pri,5625,prd,61932,pvem,2620,pt,2065,mc,2941,panal,7596,morena,1119,ph,4412,ps,1946,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,5932,125896,260260,,ine casilla
-3335,7,11,2015,jun,7,cps,Huixtla,3,no,pri-pvem,no,4197,pan,28387,pri,15437,prd,52927,pvem,3209,pt,1498,mc,2214,panal,6088,morena,3034,ph,860,ps,1660,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,5729,125277,272013,,ine casilla
-3336,7,12,2015,jun,7,cps,Tapachula,3,no,pri-pvem,no,15840,pan,21970,pri,4137,prd,32579,pvem,2678,pt,3450,mc,2393,panal,10784,morena,2646,ph,1680,ps,4065,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,6588,108873,265045,,ine casilla
-3337,8,1,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,14063,pan,30114,pri,4094,prd,8405,pvem,1965,pt,3640,mc,7824,panal,9184,morena,2893,ph,4894,ps,1072,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,102,5920,94170,406242,,ine casilla
-3338,8,2,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,6971,pan,19047,pri,3269,prd,2978,pvem,948,pt,1188,mc,3662,panal,4138,morena,1058,ph,2176,ps,666,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,68,4075,50244,185048,,ine casilla
-3339,8,3,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,22603,pan,16158,pri,1612,prd,5369,pvem,1345,pt,3040,mc,5348,panal,7757,morena,2158,ph,3390,ps,1225,pri-pvem,0,0,1749,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,212,4963,76929,242964,,ine casilla
-3340,8,4,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,9684,pan,17202,pri,1614,prd,3672,pvem,2607,pt,3442,mc,4769,panal,4695,morena,1713,ph,2233,ps,703,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,72,4039,56445,201625,,ine casilla
-3341,8,5,2015,jun,7,cua,Delicias,2,no,pri-pvem,no,38922,pan,53117,pri,3986,prd,2464,pvem,2764,pt,1672,mc,9986,panal,5839,morena,1100,ph,2105,ps,1432,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,5033,128512,317817,,ine casilla
-3342,8,6,2015,jun,7,cua,Chihuahua,2,no,pri-pvem,no,45657,pan,31709,pri,1847,prd,4348,pvem,2496,pt,6539,mc,7067,panal,7434,morena,3032,ph,4420,ps,810,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,311,7768,123438,286311,,ine casilla
-3343,8,7,2015,jun,7,cua,Cuauhtémoc,2,no,pri-pvem,no,23643,pan,39747,pri,4614,prd,4787,pvem,2521,pt,1113,mc,5917,panal,4315,morena,920,ph,2881,ps,1952,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,230,5149,97789,305919,,ine casilla
-3344,8,8,2015,jun,7,cua,Chihuahua,2,no,pri-pvem,no,27080,pan,31132,pri,2787,prd,6670,pvem,3209,pt,5399,mc,9101,panal,7761,morena,3093,ph,4641,ps,849,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,258,7254,109234,344255,,ine casilla
-3345,8,9,2015,jun,7,cua,Hidalgo del Parral,2,no,pri-pvem,no,21447,pan,52066,pri,1893,prd,2378,pvem,1402,pt,1234,mc,9614,panal,2278,morena,795,ph,1173,ps,1463,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,5874,101674,277550,,ine casilla
-3346,9,1,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,5900,pan,7269,pri,23753,prd,4559,pvem,1480,pt,5698,mc,2914,panal,25075,morena,2461,ph,5202,ps,247,pri-pvem,254,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,142,5123,90077,234073,,ine casilla
-3347,9,2,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,24216,pan,13171,pri,16001,prd,4962,pvem,1692,pt,3611,mc,3669,panal,26146,morena,4050,ph,8042,ps,302,pri-pvem,190,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,401,8531,114984,255862,,ine casilla
-3348,9,3,2015,jun,7,df,Azcapotzalco,4,no,pri-pvem,prd-pt,17945,pan,14106,pri,20426,prd,5335,pvem,1982,pt,3005,mc,4369,panal,29009,morena,4302,ph,7855,ps,437,pri-pvem,354,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,320,8208,117653,270193,,ine casilla
-3349,9,4,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,9745,pan,9165,pri,26967,prd,5460,pvem,2290,pt,3758,mc,2833,panal,31043,morena,3649,ph,8809,ps,0,0,248,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,286,8252,112505,254933,,ine casilla
-3350,9,5,2015,jun,7,df,Tlalpan,4,no,pri-pvem,prd-pt,27211,pan,12579,pri,11237,prd,4105,pvem,1818,pt,3309,mc,2338,panal,28229,morena,3544,ph,6533,ps,332,pri-pvem,341,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,425,9830,111831,239030,,ine casilla
-3351,9,6,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,8706,pan,11431,pri,19916,prd,6048,pvem,1694,pt,3760,mc,4832,panal,30319,morena,3513,ph,7683,ps,414,pri-pvem,135,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,265,7200,105916,259955,,ine casilla
-3352,9,7,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,11994,pan,16402,pri,20568,prd,5710,pvem,1967,pt,6262,mc,3942,panal,30143,morena,4081,ph,8816,ps,709,pri-pvem,450,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,346,8498,119888,270041,,ine casilla
-3353,9,8,2015,jun,7,df,Cuauhtémoc,4,no,pri-pvem,prd-pt,17547,pan,19453,pri,19053,prd,5488,pvem,1839,pt,3114,mc,3125,panal,34433,morena,4517,ph,8794,ps,445,pri-pvem,179,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,393,9566,127946,282267,,ine casilla
-3354,9,9,2015,jun,7,df,Venustiano Carranza,4,no,pri-pvem,prd-pt,10369,pan,12198,pri,30892,prd,6055,pvem,1635,pt,9315,mc,2725,panal,21028,morena,3256,ph,7077,ps,292,pri-pvem,204,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,310,7389,112745,261049,,ine casilla
-3355,9,10,2015,jun,7,df,Miguel Hidalgo,4,no,pri-pvem,prd-pt,38371,pan,15264,pri,29178,prd,5772,pvem,1682,pt,3800,mc,3287,panal,21808,morena,3929,ph,8234,ps,450,pri-pvem,309,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,518,10632,143234,312293,,ine casilla
-3356,9,11,2015,jun,7,df,Venustiano Carranza,4,no,no,prd-pt,9879,pan,11561,pri,25058,prd,4379,pvem,2122,pt,8145,mc,2964,panal,22951,morena,3270,ph,6875,ps,0,0,152,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,309,7545,105210,243267,,ine casilla
-3357,9,12,2015,jun,7,df,Cuauhtémoc,4,no,pri-pvem,prd-pt,15793,pan,19702,pri,20785,prd,4406,pvem,1756,pt,3517,mc,3068,panal,29825,morena,4670,ph,7151,ps,433,pri-pvem,227,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,487,9722,121542,280944,,ine casilla
-3358,9,13,2015,jun,7,df,Iztacalco,4,no,pri-pvem,prd-pt,11404,pan,11967,pri,22778,prd,4877,pvem,2089,pt,5753,mc,3420,panal,23616,morena,3627,ph,7451,ps,468,pri-pvem,145,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,450,7573,105618,239088,,ine casilla
-3359,9,14,2015,jun,7,df,Tlalpan,4,no,no,prd-pt,10305,pan,9527,pri,31472,prd,6702,pvem,1934,pt,2523,mc,2182,panal,32757,morena,3318,ph,5407,ps,0,0,564,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,206,8947,115844,277662,,ine casilla
-3360,9,15,2015,jun,7,df,Benito Juárez,4,no,no,prd-pt,56625,pan,17975,pri,8886,prd,6227,pvem,2056,pt,7522,mc,3380,panal,31787,morena,5202,ph,9275,ps,0,0,93,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,751,15790,165569,349222,,ine casilla
-3361,9,16,2015,jun,7,df,Alvaro Obregón,4,no,no,prd-pt,14086,pan,13690,pri,27435,prd,11469,pvem,1958,pt,3288,mc,4190,panal,27161,morena,4146,ph,7169,ps,0,0,341,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,232,9719,124884,291726,,ine casilla
-3362,9,17,2015,jun,7,df,Alvaro Obregón,4,no,pri-pvem,prd-pt,30395,pan,24397,pri,25368,prd,10136,pvem,2267,pt,4022,mc,3782,panal,25030,morena,4813,ph,7749,ps,2755,pri-pvem,665,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,289,9862,151530,333880,,ine casilla
-3363,9,18,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,6687,pan,11847,pri,34457,prd,5188,pvem,2053,pt,2912,mc,2963,panal,28579,morena,3149,ph,7386,ps,0,0,335,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,7369,113152,250233,,ine casilla
-3364,9,19,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,5200,pan,7999,pri,33825,prd,5356,pvem,2290,pt,3663,mc,2913,panal,32771,morena,2963,ph,7506,ps,0,0,307,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,219,7295,112307,257580,,ine casilla
-3365,9,20,2015,jun,7,df,Iztapalapa,4,no,pri-pvem,prd-pt,14413,pan,13201,pri,26951,prd,6320,pvem,2658,pt,3525,mc,3173,panal,33436,morena,4285,ph,9371,ps,403,pri-pvem,302,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,353,9332,127723,270922,,ine casilla
-3366,9,21,2015,jun,7,df,Xochimilco,4,no,pri-pvem,prd-pt,7127,pan,21948,pri,15770,prd,7792,pvem,2765,pt,14026,mc,3481,panal,26687,morena,3253,ph,7005,ps,1395,pri-pvem,208,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,293,7952,119702,276631,,ine casilla
-3367,9,22,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,3701,pan,7296,pri,37491,prd,5528,pvem,2750,pt,6539,mc,2877,panal,35472,morena,2554,ph,5177,ps,0,0,376,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,154,7282,117197,269769,,ine casilla
-3368,9,23,2015,jun,7,df,Coyoacán,4,no,no,prd-pt,16169,pan,12533,pri,36639,prd,4569,pvem,2517,pt,5731,mc,3260,panal,29483,morena,4300,ph,6833,ps,0,0,539,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,456,11147,134176,290096,,ine casilla
-3369,9,24,2015,jun,7,df,Coyoacán,4,no,no,prd-pt,29543,pan,14741,pri,19146,prd,4250,pvem,1719,pt,4758,mc,2643,panal,24866,morena,3012,ph,6538,ps,0,0,199,prd-pt,6471,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,583,10890,129359,263658,,ine casilla
-3370,9,25,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,9029,pan,10238,pri,22110,prd,6492,pvem,2794,pt,6861,mc,2976,panal,32947,morena,3518,ph,6994,ps,0,0,232,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,330,8196,112717,272642,,ine casilla
-3371,9,26,2015,jun,7,df,La Magdalena Contreras,4,no,pri-pvem,prd-pt,28805,pan,24139,pri,21585,prd,5765,pvem,2143,pt,5315,mc,3041,panal,27643,morena,4126,ph,6448,ps,723,pri-pvem,469,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,421,10894,141517,295373,,ine casilla
-3372,9,27,2015,jun,7,df,Tláhuac,4,no,pri-pvem,prd-pt,6315,pan,11883,pri,15552,prd,6291,pvem,1595,pt,9865,mc,4304,panal,29417,morena,2913,ph,6135,ps,666,pri-pvem,226,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,171,6521,101854,263144,,ine casilla
-3373,10,1,2015,jun,7,dgo,Durango,2,no,pri-pvem,no,16809,pan,58114,pri,4089,prd,4251,pvem,7872,pt,4000,mc,3898,panal,5370,morena,1620,ph,1712,ps,1553,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,66,4622,113976,277504,,ine casilla
-3374,10,2,2015,jun,7,dgo,Gómez Palacio,2,no,pri-pvem,prd-pt,20905,pan,62711,pri,6639,prd,6493,pvem,1653,pt,2928,mc,4889,panal,8605,morena,2670,ph,3539,ps,1871,pri-pvem,101,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,5192,128341,337297,,ine casilla
-3375,10,3,2015,jun,7,dgo,Guadalupe Victoria,2,no,pri-pvem,no,22455,pan,62132,pri,8197,prd,4693,pvem,6250,pt,3651,mc,4600,panal,5772,morena,1950,ph,1170,ps,1387,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,48,4160,126465,272515,,ine casilla
-3376,10,4,2015,jun,7,dgo,Durango,2,no,pri-pvem,prd-pt,26767,pan,40370,pri,2697,prd,4393,pvem,14162,pt,18132,mc,5335,panal,6338,morena,2923,ph,3983,ps,971,pri-pvem,220,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,7015,133491,312925,,ine casilla
-3377,11,1,2015,jun,7,gua,San Luis de la Paz,1,no,pri-pvem,no,46978,pan,31175,pri,6009,prd,15751,pvem,3194,pt,1003,mc,4018,panal,2083,morena,1755,ph,1101,ps,598,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,4791,118518,232202,,ine casilla
-3378,11,2,2015,jun,7,gua,Allende,1,no,pri-pvem,no,49508,pan,28085,pri,7632,prd,14303,pvem,1629,pt,4618,mc,6108,panal,3129,morena,6310,ph,3453,ps,859,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,151,6068,131853,255994,,ine casilla
-3379,11,3,2015,jun,7,gua,León,1,no,pri-pvem,no,73578,pan,29715,pri,2441,prd,10418,pvem,1658,pt,3583,mc,5145,panal,4440,morena,3798,ph,6644,ps,1480,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,174,6750,149824,357820,,ine casilla
-3380,11,4,2015,jun,7,gua,Guanajuato,1,no,pri-pvem,no,47806,pan,41511,pri,9266,prd,9529,pvem,3034,pt,1842,mc,5139,panal,4887,morena,2738,ph,2363,ps,1180,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,175,6026,135496,318822,,ine casilla
-3381,11,5,2015,jun,7,gua,León,1,no,pri-pvem,no,79109,pan,24152,pri,1922,prd,11264,pvem,1204,pt,4491,mc,4341,panal,4335,morena,3211,ph,5803,ps,1350,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,256,7010,148448,338166,,ine casilla
-3382,11,6,2015,jun,7,gua,León,1,no,pri-pvem,no,70148,pan,28041,pri,1854,prd,10089,pvem,1147,pt,3058,mc,4488,panal,4062,morena,2995,ph,6343,ps,1526,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,5886,139782,332462,,ine casilla
-3383,11,7,2015,jun,7,gua,San Francisco del Rincón,1,no,pri-pvem,no,53059,pan,34693,pri,7978,prd,18556,pvem,1213,pt,890,mc,6659,panal,4708,morena,1327,ph,2228,ps,454,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,95,4109,135969,301369,,ine casilla
-3384,11,8,2015,jun,7,gua,Salamanca,1,no,pri-pvem,no,54329,pan,21419,pri,14629,prd,21669,pvem,1389,pt,3826,mc,9946,panal,6830,morena,5436,ph,3402,ps,303,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,142,4798,148118,311926,,ine casilla
-3385,11,9,2015,jun,7,gua,Irapuato,1,no,pri-pvem,no,45658,pan,41418,pri,2101,prd,6138,pvem,972,pt,2058,mc,4024,panal,4599,morena,1610,ph,3052,ps,1314,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,234,5169,118347,299185,,ine casilla
-3386,11,10,2015,jun,7,gua,Uriangato,1,no,pri-pvem,no,42550,pan,38744,pri,8427,prd,23399,pvem,1360,pt,3409,mc,5007,panal,4141,morena,6440,ph,1453,ps,628,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,76,4598,140232,269582,,ine casilla
-3387,11,11,2015,jun,7,gua,Pénjamo,1,no,pri-pvem,no,60343,pan,25021,pri,14638,prd,10761,pvem,2048,pt,1752,mc,3779,panal,2219,morena,2043,ph,2231,ps,681,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,4472,130023,252890,,ine casilla
-3388,11,12,2015,jun,7,gua,Celaya,1,no,pri-pvem,no,45984,pan,23889,pri,7706,prd,8692,pvem,2824,pt,8865,mc,5664,panal,7995,morena,3920,ph,5128,ps,987,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,181,5592,127427,292047,,ine casilla
-3389,11,13,2015,jun,7,gua,Valle de Santiago,1,no,pri-pvem,no,42297,pan,27485,pri,15273,prd,11472,pvem,2115,pt,2553,mc,7938,panal,5428,morena,6234,ph,2388,ps,410,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,104,4534,128231,266865,,ine casilla
-3390,11,14,2015,jun,7,gua,Acámbaro,1,no,pri-pvem,no,41235,pan,25507,pri,17140,prd,15105,pvem,1763,pt,10576,mc,4378,panal,3429,morena,718,ph,1409,ps,502,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,4902,126729,264295,,ine casilla
-3391,12,1,2015,jun,7,gue,Pungarabato,5,no,pri-pvem,prd-pt,4913,pan,61344,pri,56074,prd,2039,pvem,1633,pt,6614,mc,3216,panal,5690,morena,409,ph,345,ps,722,pri-pvem,865,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,3970,147849,232137,,ine casilla
-3392,12,2,2015,jun,7,gue,Iguala de la Independencia,5,no,pri-pvem,prd-pt,14295,pan,48312,pri,34050,prd,6739,pvem,5354,pt,13239,mc,5346,panal,5867,morena,2067,ph,4410,ps,1301,pri-pvem,634,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,7961,149620,274147,,ine casilla
-3393,12,3,2015,jun,7,gue,José Azueta,5,no,pri-pvem,prd-pt,2573,pan,48675,pri,53158,prd,6177,pvem,1821,pt,6952,mc,3845,panal,6915,morena,2064,ph,1835,ps,798,pri-pvem,977,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,5618,141426,255933,,ine casilla
-3394,12,4,2015,jun,7,gue,Acapulco de Juárez,5,no,pri-pvem,prd-pt,10477,pan,39665,pri,39484,prd,5774,pvem,3509,pt,11126,mc,2868,panal,6384,morena,1952,ph,2899,ps,1487,pri-pvem,1526,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,152,8551,135854,288818,,ine casilla
-3395,12,5,2015,jun,7,gue,Tlapa de Comonfort,5,no,pri-pvem,prd-pt,13361,pan,48158,pri,39349,prd,2929,pvem,20900,pt,20022,mc,3454,panal,5242,morena,2209,ph,1769,ps,569,pri-pvem,1153,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,9895,169025,266173,,ine casilla
-3396,12,6,2015,jun,7,gue,Chilapa de Alvarez,5,no,pri-pvem,prd-pt,11009,pan,59412,pri,41911,prd,4517,pvem,12489,pt,15847,mc,5263,panal,5873,morena,3744,ph,1388,ps,1354,pri-pvem,1012,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,9418,173268,274201,,ine casilla
-3397,12,7,2015,jun,7,gue,Chilpancingo de los Bravo,5,no,pri-pvem,prd-pt,2178,pan,50408,pri,39498,prd,11983,pvem,2865,pt,9343,mc,2306,panal,6097,morena,2397,ph,2277,ps,1646,pri-pvem,1180,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,8626,140845,283257,,ine casilla
-3398,12,8,2015,jun,7,gue,Ayutla de los Libres,5,no,pri-pvem,prd-pt,9719,pan,30357,pri,48788,prd,26124,pvem,4812,pt,11654,mc,4355,panal,4972,morena,8092,ph,732,ps,1978,pri-pvem,961,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,10750,163344,239412,,ine casilla
-3399,12,9,2015,jun,7,gue,Acapulco de Juárez,5,no,pri-pvem,prd-pt,8258,pan,50032,pri,27452,prd,7457,pvem,5201,pt,9918,mc,2320,panal,5509,morena,1390,ph,2902,ps,2209,pri-pvem,1689,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,8545,132917,287303,,ine casilla
-3400,13,1,2015,jun,7,hgo,Huejutla de Reyes,4,no,pri-pvem,no,18949,pan,53111,pri,17192,prd,2320,pvem,2218,pt,1387,mc,10885,panal,5631,morena,2722,ph,38678,ps,600,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,6875,160597,251425,,ine casilla
-3401,13,2,2015,jun,7,hgo,Ixmiquilpan,4,no,pri-pvem,no,19841,pan,45222,pri,18427,prd,5765,pvem,2090,pt,1060,mc,11974,panal,7931,morena,1535,ph,3369,ps,626,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,49,5631,123520,267099,,ine casilla
-3402,13,3,2015,jun,7,hgo,Actopan,4,no,pri-pvem,no,8692,pan,47598,pri,14025,prd,5541,pvem,4484,pt,1517,mc,15693,panal,9570,morena,2132,ph,11368,ps,735,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,6090,127519,284539,,ine casilla
-3403,13,4,2015,jun,7,hgo,Tulancingo de Bravo,4,no,pri-pvem,no,12292,pan,33659,pri,11774,prd,7796,pvem,1811,pt,1739,mc,10439,panal,6317,morena,1988,ph,8198,ps,958,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,5062,102113,244773,,ine casilla
-3404,13,5,2015,jun,7,hgo,Tula de Allende,4,no,pri-pvem,no,23566,pan,40286,pri,10152,prd,9693,pvem,1989,pt,2434,mc,8306,panal,13316,morena,2202,ph,5306,ps,784,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,5433,123566,295693,,ine casilla
-3405,13,6,2015,jun,7,hgo,Pachuca de Soto,4,no,pri-pvem,no,16951,pan,37668,pri,4863,prd,5770,pvem,2867,pt,2486,mc,10137,panal,9561,morena,2966,ph,7928,ps,904,pri-pvem,0,0,23862,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,208,7131,133302,307377,,ine casilla
-3406,13,7,2015,jun,7,hgo,Tepeapulco,4,no,pri-pvem,no,11243,pan,42383,pri,9503,prd,7003,pvem,2850,pt,3245,mc,16035,panal,11299,morena,3395,ph,8813,ps,800,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,6397,123136,318528,,ine casilla
-3407,14,1,2015,jun,7,jal,Tequila,1,no,pri-pvem,no,47360,pan,50755,pri,10679,prd,5504,pvem,7371,pt,31620,mc,5459,panal,4640,morena,1279,ph,1900,ps,1030,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,4242,171876,260780,,ine casilla
-3408,14,2,2015,jun,7,jal,Lagos de Moreno,1,no,pri-pvem,no,50870,pan,43694,pri,3453,prd,9682,pvem,822,pt,25395,mc,4850,panal,3008,morena,1497,ph,1567,ps,2481,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,4807,152181,268578,,ine casilla
-3409,14,3,2015,jun,7,jal,Tepatitlán de Morelos,1,no,pri-pvem,no,55014,pan,45785,pri,2986,prd,6616,pvem,939,pt,23051,mc,3836,panal,1610,morena,4854,ph,5112,ps,1122,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,5694,156674,280325,,ine casilla
-3410,14,4,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,17710,pan,41711,pri,2098,prd,4396,pvem,2556,pt,46219,mc,4343,panal,4343,morena,3362,ph,4931,ps,921,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,4521,137201,296965,,ine casilla
-3411,14,5,2015,jun,7,jal,Puerto Vallarta,1,no,pri-pvem,no,32530,pan,46887,pri,7349,prd,4420,pvem,4017,pt,57042,mc,2759,panal,3941,morena,3007,ph,1727,ps,1778,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,Erika Espinosa Álvarez,,,,,90,4242,169789,308837,,ine casilla
-3412,14,6,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,34664,pan,38604,pri,2002,prd,5286,pvem,2103,pt,55795,mc,4009,panal,4851,morena,3847,ph,6936,ps,1143,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,287,5803,165330,344729,,ine casilla
-3413,14,7,2015,jun,7,jal,Tonalá,1,no,pri-pvem,no,17826,pan,38944,pri,2829,prd,5309,pvem,4146,pt,31543,mc,4733,panal,3889,morena,3324,ph,4662,ps,707,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,3831,121818,302027,,ine casilla
-3414,14,8,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,24920,pan,32265,pri,1991,prd,3689,pvem,2063,pt,54480,mc,3923,panal,4401,morena,2729,ph,4755,ps,1067,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,4910,141363,242020,,ine casilla
-3415,14,9,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,14497,pan,34762,pri,2123,prd,4032,pvem,2749,pt,51517,mc,5236,panal,3935,morena,3091,ph,3643,ps,823,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,116,4005,130529,244505,,ine casilla
-3416,14,10,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,28596,pan,25825,pri,1995,prd,5274,pvem,1829,pt,50057,mc,3660,panal,5127,morena,3593,ph,6816,ps,1269,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,281,6172,140494,292739,,ine casilla
-3417,14,11,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,12396,pan,35332,pri,2108,prd,3580,pvem,2790,pt,53153,mc,4874,panal,3769,morena,2439,ph,3011,ps,854,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,64,3563,127933,247222,,ine casilla
-3418,14,12,2015,jun,7,jal,Tlajomulco de Zúñiga,1,no,pri-pvem,no,24907,pan,51869,pri,18126,prd,7430,pvem,5389,pt,88398,mc,4908,panal,7015,morena,3639,ph,7877,ps,1749,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,6833,228260,501359,,ine casilla
-3419,14,13,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,18134,pan,34646,pri,2000,prd,4618,pvem,2538,pt,55377,mc,4617,panal,4131,morena,2834,ph,4075,ps,1104,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,110,4259,138443,248951,,ine casilla
-3420,14,14,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,19533,pan,26063,pri,2118,prd,5881,pvem,2440,pt,56507,mc,3301,panal,3661,morena,2052,ph,4554,ps,1802,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,117,4136,132165,246013,,ine casilla
-3421,14,15,2015,jun,7,jal,La Barca,1,no,pri-pvem,no,40236,pan,54507,pri,5810,prd,6443,pvem,1977,pt,17573,mc,5646,panal,3682,morena,2882,ph,7810,ps,661,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,4309,151599,275082,,ine casilla
-3422,14,16,2015,jun,7,jal,Tlaquepaque,1,no,pri-pvem,no,17466,pan,37152,pri,2274,prd,4992,pvem,2564,pt,46900,mc,3952,panal,4329,morena,3029,ph,4497,ps,1978,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,4063,133276,300472,,ine casilla
-3423,14,17,2015,jun,7,jal,Jocotepec,1,no,pri-pvem,no,33769,pan,54172,pri,6981,prd,9721,pvem,3377,pt,48860,mc,4644,panal,6914,morena,1392,ph,2202,ps,1757,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,4840,178684,294599,,ine casilla
-3424,14,18,2015,jun,7,jal,Autlán de Navarro,1,no,pri-pvem,no,37996,pan,57504,pri,10571,prd,3938,pvem,2472,pt,32362,mc,6766,panal,4820,morena,4629,ph,1961,ps,925,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,4700,168674,283805,,ine casilla
-3425,14,19,2015,jun,7,jal,Zapotlán El Grande,1,no,pri-pvem,no,34663,pan,48765,pri,18437,prd,4852,pvem,3565,pt,29197,mc,8185,panal,7031,morena,4234,ph,3184,ps,1267,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,5138,168587,273670,,ine casilla
-3426,15,1,2015,jun,7,mex,Jilotepec,5,no,pri-pvem,no,35233,pan,69341,pri,7656,prd,5102,pvem,7346,pt,5722,mc,16712,panal,6792,morena,1790,ph,2774,ps,1283,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,6078,165887,253247,,ine casilla
-3427,15,2,2015,jun,7,mex,Teoloyucán,5,no,pri-pvem,no,37522,pan,47699,pri,14392,prd,3735,pvem,4294,pt,22073,mc,4707,panal,11264,morena,4742,ph,6340,ps,1582,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,5366,163847,297786,,ine casilla
-3428,15,3,2015,jun,7,mex,Atlacomulco,5,no,pri-pvem,no,30679,pan,58341,pri,13966,prd,2705,pvem,7532,pt,3283,mc,6565,panal,6173,morena,1965,ph,3060,ps,1915,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,89,5843,142116,242858,,ine casilla
-3429,15,4,2015,jun,7,mex,Nicolás Romero,5,no,pri-pvem,no,41799,pan,51116,pri,7939,prd,4976,pvem,2594,pt,6897,mc,7740,panal,18555,morena,5099,ph,7578,ps,1385,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,201,6215,162094,345366,,ine casilla
-3430,15,5,2015,jun,7,mex,Teotihuacán,5,no,pri-pvem,no,30179,pan,73470,pri,22239,prd,4564,pvem,14483,pt,7719,mc,4863,panal,23400,morena,4761,ph,8077,ps,1237,pri-pvem,0,0,0,0,0,0,,Cristina Sánchez Coronel,,Cristina Sánchez Coronel,,,,,,,Cristina Sánchez Coronel,,,,,Erika Espinosa Álvarez,,Erika Espinosa Álvarez,,,,,,,,,,,,138,6467,201597,327498,,ine casilla
-3431,15,6,2015,jun,7,mex,Coacalco de Berriozábal,5,no,pri-pvem,no,22046,pan,41456,pri,32429,prd,5490,pvem,2690,pt,5716,mc,4929,panal,18330,morena,4135,ph,10115,ps,1356,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,258,6640,155590,319401,,ine casilla
-3432,15,7,2015,jun,7,mex,Cuautitlán Izcalli,5,no,pri-pvem,no,40430,pan,36717,pri,7094,prd,5135,pvem,5198,pt,6223,mc,6616,panal,20585,morena,6011,ph,11698,ps,981,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,280,7901,154869,301033,,ine casilla
-3433,15,8,2015,jun,7,mex,Tultitlán,5,no,pri-pvem,no,11119,pan,25768,pri,16908,prd,3815,pvem,4262,pt,6132,mc,3724,panal,12744,morena,3562,ph,6570,ps,1143,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,157,5295,101199,229889,,ine casilla
-3434,15,9,2015,jun,7,mex,Ixtlahuaca,5,no,pri-pvem,no,22234,pan,71286,pri,5850,prd,6295,pvem,4960,pt,18851,mc,6536,panal,8712,morena,3404,ph,5620,ps,1205,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,7408,162451,293827,,ine casilla
-3435,15,10,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,9849,pan,41512,pri,23585,prd,5754,pvem,3995,pt,4054,mc,5352,panal,16705,morena,4438,ph,8933,ps,992,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,200,7036,132405,327201,,ine casilla
-3436,15,11,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,11521,pan,31016,pri,17284,prd,4142,pvem,3150,pt,3816,mc,5353,panal,16291,morena,4077,ph,7245,ps,926,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,228,6493,111542,248436,,ine casilla
-3437,15,12,2015,jun,7,mex,Ixtapaluca,5,no,pri-pvem,no,9421,pan,72116,pri,43068,prd,4615,pvem,1840,pt,5927,mc,3588,panal,11970,morena,3135,ph,6930,ps,2179,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,162,6462,171413,370410,,ine casilla
-3438,15,13,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,8033,pan,30861,pri,11710,prd,4653,pvem,2281,pt,2573,mc,4145,panal,16016,morena,2929,ph,6200,ps,1013,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,127,5339,95880,228032,,ine casilla
-3439,15,14,2015,jun,7,mex,Atizapán de Zaragoza,5,no,pri-pvem,no,40230,pan,31138,pri,5608,prd,4397,pvem,1797,pt,3409,mc,4493,panal,13218,morena,3145,ph,7742,ps,952,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,196,6256,122581,282181,,ine casilla
-3440,15,15,2015,jun,7,mex,Tlalnepantla de Baz,5,no,pri-pvem,no,43514,pan,25770,pri,5859,prd,4728,pvem,1617,pt,4033,mc,3945,panal,13115,morena,3818,ph,7635,ps,1140,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,320,8093,123587,260618,,ine casilla
-3441,15,16,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,13504,pan,35171,pri,18172,prd,5156,pvem,4108,pt,2843,mc,4511,panal,15503,morena,3941,ph,6158,ps,1141,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,127,6181,116516,301772,,ine casilla
-3442,15,17,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,7804,pan,31846,pri,15752,prd,4476,pvem,2435,pt,2798,mc,4879,panal,14920,morena,3373,ph,7485,ps,849,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,198,6046,102861,243834,,ine casilla
-3443,15,18,2015,jun,7,mex,Huixquilucan,5,no,pri-pvem,no,56245,pan,65155,pri,12366,prd,4771,pvem,3271,pt,5766,mc,4248,panal,11534,morena,3720,ph,5822,ps,1523,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,184,7104,181709,315967,,ine casilla
-3444,15,19,2015,jun,7,mex,Tlalnepantla de Baz,5,no,pri-pvem,no,25876,pan,29784,pri,10881,prd,3683,pvem,1781,pt,3416,mc,4010,panal,13310,morena,3861,ph,7338,ps,991,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,239,6585,111755,237483,,ine casilla
-3445,15,20,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,5704,pan,20888,pri,38131,prd,2675,pvem,1313,pt,2061,mc,2574,panal,12626,morena,2191,ph,4682,ps,268,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,183,5123,98419,206037,,ine casilla
-3446,15,21,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,39936,pan,26509,pri,5035,prd,3665,pvem,1614,pt,4560,mc,3082,panal,11286,morena,2963,ph,5286,ps,1107,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,211,5807,111061,243365,,ine casilla
-3447,15,22,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,33726,pan,23206,pri,4153,prd,3435,pvem,1290,pt,2738,mc,3053,panal,10820,morena,3019,ph,5295,ps,789,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,184,5288,96996,202057,,ine casilla
-3448,15,23,2015,jun,7,mex,Valle de Bravo,5,no,pri-pvem,no,31716,pan,78822,pri,25684,prd,5016,pvem,11802,pt,5278,mc,7547,panal,5388,morena,4506,ph,2938,ps,1171,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,6256,186169,282311,,ine casilla
-3449,15,24,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,20740,pan,25253,pri,6049,prd,3657,pvem,1499,pt,2886,mc,3059,panal,12598,morena,2601,ph,4551,ps,1113,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,114,4434,88554,213961,,ine casilla
-3450,15,25,2015,jun,7,mex,Chimalhuacán,5,no,pri-pvem,no,4598,pan,35389,pri,14239,prd,3937,pvem,2254,pt,1695,mc,3305,panal,15384,morena,2735,ph,4930,ps,969,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,111,4030,93576,283654,,ine casilla
-3451,15,26,2015,jun,7,mex,Toluca,5,no,pri-pvem,no,33680,pan,53176,pri,8595,prd,5041,pvem,6230,pt,7247,mc,7346,panal,10847,morena,4887,ph,8647,ps,1043,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,200,7182,154121,306502,,ine casilla
-3452,15,27,2015,jun,7,mex,Metepec,5,no,pri-pvem,no,36075,pan,61718,pri,6101,prd,4256,pvem,17775,pt,6494,mc,5853,panal,12060,morena,7259,ph,7075,ps,964,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,252,7070,172952,293137,,ine casilla
-3453,15,28,2015,jun,7,mex,Zumpango,5,no,pri-pvem,no,35600,pan,87779,pri,18106,prd,7041,pvem,5283,pt,6924,mc,9160,panal,23376,morena,6369,ph,13084,ps,1992,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,265,9392,224371,431494,,ine casilla
-3454,15,29,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,4188,pan,25881,pri,45419,prd,2675,pvem,1250,pt,1607,mc,2179,panal,9357,morena,2074,ph,3562,ps,1048,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,4468,103837,209405,,ine casilla
-3455,15,30,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,3724,pan,22219,pri,48944,prd,2904,pvem,1493,pt,1717,mc,2203,panal,9862,morena,2240,ph,3853,ps,454,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,4441,104183,216692,,ine casilla
-3456,15,31,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,2720,pan,20052,pri,51238,prd,3117,pvem,1118,pt,1905,mc,2272,panal,8115,morena,2324,ph,3663,ps,549,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,178,4259,101510,214236,,ine casilla
-3457,15,32,2015,jun,7,mex,Valle de Chalco Solidaridad,5,no,pri-pvem,no,3806,pan,25880,pri,26164,prd,2977,pvem,1285,pt,16280,mc,2601,panal,25764,morena,2718,ph,5016,ps,581,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,76,5434,118582,247881,,ine casilla
-3458,15,33,2015,jun,7,mex,Chalco,5,no,pri-pvem,no,16453,pan,58935,pri,24468,prd,4972,pvem,5016,pt,24312,mc,4410,panal,15690,morena,3891,ph,15118,ps,1202,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,113,7318,181898,332038,,ine casilla
-3459,15,34,2015,jun,7,mex,Toluca,5,no,pri-pvem,no,36088,pan,47819,pri,9748,prd,4738,pvem,6575,pt,5094,mc,5843,panal,11067,morena,5317,ph,7795,ps,1076,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,216,7099,148475,282276,,ine casilla
-3460,15,35,2015,jun,7,mex,Tenancingo,5,no,pri-pvem,no,27551,pan,49895,pri,22214,prd,3051,pvem,6821,pt,7081,mc,5861,panal,13477,morena,5441,ph,6205,ps,667,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,108,6614,154986,260667,,ine casilla
-3461,15,36,2015,jun,7,mex,Tejupilco,5,no,pri-pvem,no,35340,pan,69040,pri,44952,prd,1541,pvem,4327,pt,2861,mc,2591,panal,5084,morena,837,ph,744,ps,975,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,5011,173344,238802,,ine casilla
-3462,15,37,2015,jun,7,mex,Cuautitlán,5,no,pri-pvem,no,22216,pan,35307,pri,19164,prd,3963,pvem,4495,pt,11305,mc,4074,panal,13857,morena,4723,ph,9120,ps,876,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,172,5734,135006,272319,,ine casilla
-3463,15,38,2015,jun,7,mex,Texcoco,5,no,pri-pvem,no,4791,pan,43431,pri,13687,prd,3718,pvem,1941,pt,3084,mc,3471,panal,58228,morena,3893,ph,5234,ps,1125,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,5247,147970,304664,,ine casilla
-3464,15,39,2015,jun,7,mex,La Paz,5,no,pri-pvem,no,5625,pan,48060,pri,28501,prd,4105,pvem,3293,pt,3179,mc,3849,panal,18972,morena,4843,ph,10701,ps,957,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,152,6187,138424,296638,,ine casilla
-3465,15,40,2015,jun,7,mex,Zinacantepec,5,no,pri-pvem,no,26207,pan,54583,pri,21083,prd,3201,pvem,12636,pt,6948,mc,6577,panal,6213,morena,5449,ph,4755,ps,987,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,6331,155069,259240,,ine casilla
-3466,16,1,2015,jun,7,mic,Lázaro Cárdenas,5,no,pri-pvem,prd-pt,11008,pan,47176,pri,43318,prd,4768,pvem,1867,pt,2631,mc,2173,panal,6777,morena,1766,ph,1664,ps,492,pri-pvem,467,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5450,129601,248856,,ine casilla
-3467,16,2,2015,jun,7,mic,Puruándiro,5,no,pri-pvem,prd-pt,23175,pan,46329,pri,48812,prd,5717,pvem,16640,pt,4671,mc,4478,panal,5672,morena,2024,ph,2429,ps,631,pri-pvem,823,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,7330,168794,300081,,ine casilla
-3468,16,3,2015,jun,7,mic,Zitácuaro,5,no,pri-pvem,prd-pt,17840,pan,49785,pri,43977,prd,7899,pvem,5747,pt,5865,mc,2925,panal,5205,morena,1423,ph,1435,ps,1689,pri-pvem,1564,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,6195,151588,238679,,ine casilla
-3469,16,4,2015,jun,7,mic,Jiquilpan,5,no,pri-pvem,prd-pt,36490,pan,45447,pri,31403,prd,11823,pvem,4320,pt,8299,mc,2611,panal,3684,morena,1045,ph,2736,ps,443,pri-pvem,319,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5580,154244,265650,,ine casilla
-3470,16,5,2015,jun,7,mic,Zamora,5,no,pri-pvem,prd-pt,34573,pan,36238,pri,19362,prd,6982,pvem,6483,pt,3980,mc,3385,panal,10822,morena,2068,ph,2767,ps,839,pri-pvem,362,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,141,5604,133606,279974,,ine casilla
-3471,16,6,2015,jun,7,mic,Hidalgo,5,no,pri-pvem,prd-pt,27919,pan,37353,pri,40632,prd,5851,pvem,7887,pt,11072,mc,5160,panal,5165,morena,1563,ph,2018,ps,796,pri-pvem,631,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,7118,153212,268188,,ine casilla
-3472,16,7,2015,jun,7,mic,Zacapu,5,no,pri-pvem,prd-pt,26681,pan,41367,pri,42333,prd,7205,pvem,6279,pt,8984,mc,3646,panal,7999,morena,2380,ph,4595,ps,514,pri-pvem,805,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52,8258,161098,265306,,ine casilla
-3473,16,8,2015,jun,7,mic,Morelia,5,no,pri-pvem,prd-pt,26302,pan,35759,pri,21334,prd,8499,pvem,3815,pt,4773,mc,3198,panal,9033,morena,3885,ph,5261,ps,991,pri-pvem,634,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,269,10410,134163,292391,,ine casilla
-3474,16,9,2015,jun,7,mic,Uruapan,5,no,pri-pvem,prd-pt,26110,pan,34780,pri,40092,prd,6694,pvem,2158,pt,2917,mc,5030,panal,7160,morena,4355,ph,1656,ps,493,pri-pvem,758,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,6677,139025,279402,,ine casilla
-3475,16,10,2015,jun,7,mic,Morelia,5,no,pri-pvem,prd-pt,39201,pan,33811,pri,17516,prd,8500,pvem,4000,pt,4949,mc,2407,panal,9414,morena,4099,ph,4445,ps,1174,pri-pvem,522,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,294,10838,141170,266319,,ine casilla
-3476,16,11,2015,jun,7,mic,Pátzcuaro,5,no,pri-pvem,prd-pt,17883,pan,50287,pri,57748,prd,7191,pvem,5497,pt,3240,mc,3082,panal,6340,morena,1486,ph,1376,ps,1221,pri-pvem,1142,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71,8850,165414,273328,,ine casilla
-3477,16,12,2015,jun,7,mic,Apatzingán,5,no,pri-pvem,prd-pt,22821,pan,30966,pri,34290,prd,9697,pvem,5045,pt,12389,mc,2625,panal,7665,morena,1765,ph,2703,ps,717,pri-pvem,854,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34,5627,137198,245304,,ine casilla
-3478,17,1,2015,jun,7,mor,Cuernavaca,4,no,no,prd-pt,30825,pan,22569,pri,16444,prd,11239,pvem,3119,pt,9207,mc,6371,panal,19128,morena,7473,ph,9723,ps,0,0,206,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,439,12924,149667,295341,,ine casilla
-3479,17,2,2015,jun,7,mor,Jiutepec,4,no,no,prd-pt,14144,pan,20156,pri,25735,prd,20658,pvem,2609,pt,8848,mc,5523,panal,15552,morena,19557,ph,7395,ps,0,0,236,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,9150,149748,300727,,ine casilla
-3480,17,3,2015,jun,7,mor,Cuautla,4,no,no,prd-pt,13024,pan,30642,pri,28636,prd,7673,pvem,10893,pt,12046,mc,15164,panal,12965,morena,6907,ph,8556,ps,0,0,576,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,9741,156954,276056,,ine casilla
-3481,17,4,2015,jun,7,mor,Jojutla,4,no,no,prd-pt,7227,pan,47361,pri,19104,prd,7505,pvem,13759,pt,17746,mc,6323,panal,9682,morena,5651,ph,5262,ps,0,0,319,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,8061,148070,244653,,ine casilla
-3482,17,5,2015,jun,7,mor,Yautepec,4,no,no,prd-pt,12070,pan,22119,pri,20770,prd,13110,pvem,3987,pt,7201,mc,25474,panal,11439,morena,18767,ph,6916,ps,0,0,183,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,369,9399,151804,251859,,ine casilla
-3483,18,1,2015,jun,7,nay,Santiago Ixcuintla,1,no,no,prd-pt,7341,pan,45253,pri,22776,prd,2973,pvem,2903,pt,5774,mc,2194,panal,3957,morena,577,ph,737,ps,0,0,1010,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,3719,99227,220113,,ine casilla
-3484,18,2,2015,jun,7,nay,Tepic,1,no,no,prd-pt,21743,pan,35994,pri,25871,prd,4536,pvem,3687,pt,1219,mc,3566,panal,5281,morena,1661,ph,2300,ps,0,0,1047,prd-pt,9008,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,5098,121103,283064,,ine casilla
-3485,18,3,2015,jun,7,nay,Compostela,1,no,no,prd-pt,32338,pan,47613,pri,3839,prd,4921,pvem,2521,pt,3538,mc,3168,panal,5574,morena,1200,ph,1757,ps,0,0,214,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,5019,111742,290366,,ine casilla
-3486,19,1,2015,jun,7,nl,Santa Catarina,2,no,pri-pvem,prd-pt,76809,pan,29283,pri,2246,prd,7363,pvem,2468,pt,29553,mc,7262,panal,3978,morena,7887,ph,3159,ps,356,pri-pvem,44,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,147,4765,175320,295241,,ine casilla
-3487,19,2,2015,jun,7,nl,Apodaca,2,no,pri-pvem,prd-pt,56876,pan,61893,pri,3583,prd,11750,pvem,4130,pt,27897,mc,7965,panal,5545,morena,5551,ph,5391,ps,366,pri-pvem,10,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,4038,195115,360935,,ine casilla
-3488,19,3,2015,jun,7,nl,General Escobedo,2,no,pri-pvem,prd-pt,60320,pan,55846,pri,3590,prd,9804,pvem,5142,pt,30448,mc,6739,panal,5797,morena,6376,ph,6539,ps,494,pri-pvem,23,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,137,4928,196183,355132,,ine casilla
-3489,19,4,2015,jun,7,nl,San Nicolás de los Garza,2,no,pri-pvem,prd-pt,79603,pan,24001,pri,1856,prd,7035,pvem,2626,pt,20060,mc,5182,panal,4290,morena,3914,ph,5218,ps,294,pri-pvem,8,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,3502,157667,259074,,ine casilla
-3490,19,5,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,25062,pan,46911,pri,1838,prd,5749,pvem,14174,pt,10735,mc,4009,panal,2801,morena,3397,ph,8657,ps,677,pri-pvem,36,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,4327,128463,243039,,ine casilla
-3491,19,6,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,53761,pan,31044,pri,2253,prd,5704,pvem,5902,pt,28356,mc,5337,panal,4437,morena,5024,ph,5839,ps,368,pri-pvem,81,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,83,4375,152564,231085,,ine casilla
-3492,19,7,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,38612,pan,36353,pri,2127,prd,5285,pvem,4409,pt,16982,mc,3836,panal,3828,morena,3621,ph,4642,ps,419,pri-pvem,40,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,3696,123908,203839,,ine casilla
-3493,19,8,2015,jun,7,nl,Guadalupe,2,no,pri-pvem,prd-pt,51653,pan,43749,pri,1981,prd,7313,pvem,2017,pt,15526,mc,4720,panal,3736,morena,2540,ph,3519,ps,620,pri-pvem,15,prd-pt,15421,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,3559,156447,255695,,ine casilla
-3494,19,9,2015,jun,7,nl,Linares,2,no,pri-pvem,prd-pt,60357,pan,76405,pri,1343,prd,4207,pvem,6231,pt,5794,mc,15889,panal,2098,morena,3586,ph,3805,ps,629,pri-pvem,18,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,66,7405,187833,288905,,ine casilla
-3495,19,10,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,52462,pan,27913,pri,2108,prd,6134,pvem,3700,pt,24798,mc,4873,panal,5478,morena,4176,ph,4190,ps,451,pri-pvem,16,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,91,4001,140391,226757,,ine casilla
-3496,19,11,2015,jun,7,nl,Guadalupe,2,no,pri-pvem,prd-pt,55331,pan,41517,pri,2243,prd,6436,pvem,2503,pt,19416,mc,6380,panal,4690,morena,4203,ph,5140,ps,549,pri-pvem,20,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,4007,152510,268191,,ine casilla
-3497,19,12,2015,jun,7,nl,Cadereyta Jiménez,2,no,pri-pvem,prd-pt,87458,pan,102392,pri,15764,prd,25532,pvem,6416,pt,20261,mc,15393,panal,6443,morena,9254,ph,26479,ps,1775,pri-pvem,305,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,280,8978,326730,573302,,ine casilla
-3498,20,1,2015,jun,7,oax,San Juan Bautista Tuxtepec,3,no,no,prd-pt,11601,pan,40575,pri,24088,prd,3982,pvem,2545,pt,3724,mc,1826,panal,17113,morena,1008,ph,949,ps,0,0,938,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,3885,112271,232591,,ine casilla
-3499,20,2,2015,jun,7,oax,Teotitlán de Flores Magón,3,no,no,prd-pt,6353,pan,23265,pri,9549,prd,1667,pvem,1227,pt,1207,mc,12722,panal,12405,morena,487,ph,337,ps,0,0,128,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,2806,72160,187018,,ine casilla
-3500,20,3,2015,jun,7,oax,Heroica Ciudad de Huajuapan de León,3,no,no,prd-pt,6517,pan,25350,pri,18097,prd,4431,pvem,1891,pt,1545,mc,2284,panal,10731,morena,1338,ph,2169,ps,0,0,714,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,5733,80855,266777,,ine casilla
-3501,20,4,2015,jun,7,oax,Tlacolula de Matamoros,3,no,no,prd-pt,14781,pan,26570,pri,6621,prd,4960,pvem,3854,pt,1307,mc,3136,panal,18723,morena,1299,ph,3526,ps,0,0,260,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,6649,91744,244703,,ine casilla
-3502,20,5,2015,jun,7,oax,Santo Domingo Tehuantepec,3,no,no,prd-pt,3552,pan,23492,pri,24851,prd,1500,pvem,1658,pt,2579,mc,1082,panal,7979,morena,1015,ph,21468,ps,0,0,668,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,59,4248,94151,240762,,ine casilla
-3503,20,6,2015,jun,7,oax,Heroica Ciudad de Tlaxiaco,3,no,no,prd-pt,2724,pan,27048,pri,38020,prd,2298,pvem,2333,pt,940,mc,1441,panal,18088,morena,617,ph,627,ps,0,0,941,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,5355,100468,245030,,ine casilla
-3504,20,7,2015,jun,7,oax,Juchitán de Zaragoza,3,no,no,prd-pt,2740,pan,21756,pri,14804,prd,2937,pvem,1494,pt,391,mc,1474,panal,7409,morena,597,ph,3634,ps,0,0,280,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,2975,60511,238336,,ine casilla
-3505,20,8,2015,jun,7,oax,Oaxaca de Juárez,3,no,no,prd-pt,11562,pan,23599,pri,19969,prd,8423,pvem,3060,pt,1707,mc,4463,panal,13177,morena,2451,ph,5608,ps,0,0,740,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,8361,103347,286362,,ine casilla
-3506,20,9,2015,jun,7,oax,Santa Lucía del Camino,3,no,no,prd-pt,18319,pan,18891,pri,22173,prd,6947,pvem,2545,pt,1317,mc,2864,panal,17352,morena,1797,ph,2857,ps,0,0,537,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,7953,103642,262210,,ine casilla
-3507,20,10,2015,jun,7,oax,Miahuatlán de Porfirio Díaz,3,no,no,prd-pt,19558,pan,33996,pri,9344,prd,2884,pvem,1733,pt,12795,mc,1866,panal,7526,morena,865,ph,643,ps,0,0,208,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,5162,96613,232308,,ine casilla
-3508,20,11,2015,jun,7,oax,Santiago Pinotepa Nacional,3,no,no,prd-pt,2879,pan,31900,pri,18984,prd,1975,pvem,1360,pt,915,mc,1753,panal,7465,morena,917,ph,379,ps,0,0,345,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,3569,72455,281650,,ine casilla
-3509,21,1,2015,jun,7,pue,Huauchinango,4,no,pri-pvem,no,53914,pan,53452,pri,4204,prd,2812,pvem,2542,pt,1812,mc,4478,panal,7345,morena,1114,ph,1521,ps,3586,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,7622,144479,258750,,ine casilla
-3510,21,2,2015,jun,7,pue,Zacatlán,4,no,pri-pvem,no,43578,pan,60350,pri,4020,prd,3173,pvem,2213,pt,1046,mc,3272,panal,5851,morena,1315,ph,1501,ps,3635,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,6191,136202,247532,,ine casilla
-3511,21,3,2015,jun,7,pue,Teziutlán,4,no,pri-pvem,no,50739,pan,36879,pri,3951,prd,3380,pvem,2673,pt,2275,mc,3229,panal,6029,morena,1204,ph,1555,ps,2293,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,5557,119826,242593,,ine casilla
-3512,21,4,2015,jun,7,pue,Zacapoaxtla,4,no,pri-pvem,no,44801,pan,37125,pri,4624,prd,2755,pvem,3945,pt,2366,mc,3444,panal,9615,morena,1117,ph,1020,ps,2520,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,6229,119596,247211,,ine casilla
-3513,21,5,2015,jun,7,pue,San Martín Texmelucan,4,no,pri-pvem,no,25844,pan,16863,pri,2509,prd,4379,pvem,4542,pt,9981,mc,2769,panal,8075,morena,3368,ph,2367,ps,1867,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,137,4483,87184,260068,,ine casilla
-3514,21,6,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,25487,pan,21743,pri,2575,prd,5382,pvem,1901,pt,3155,mc,3584,panal,15638,morena,2888,ph,5033,ps,2109,pri-pvem,0,0,5208,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,226,7379,102308,301572,,ine casilla
-3515,21,7,2015,jun,7,pue,Tepeaca,4,no,pri-pvem,no,32932,pan,47532,pri,1722,prd,2982,pvem,1463,pt,1278,mc,2711,panal,7811,morena,1073,ph,2051,ps,3397,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,4289,109285,254009,,ine casilla
-3516,21,8,2015,jun,7,pue,Chalchicomula de Sesma,4,no,pri-pvem,no,31410,pan,21140,pri,11633,prd,3316,pvem,1955,pt,1472,mc,3065,panal,8367,morena,1783,ph,1084,ps,1310,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,4368,90946,222950,,ine casilla
-3517,21,9,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,25551,pan,14166,pri,3503,prd,6354,pvem,2358,pt,3430,mc,5988,panal,16841,morena,3087,ph,6000,ps,1247,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,248,7617,96390,287062,,ine casilla
-3518,21,10,2015,jun,7,pue,San Pedro Cholula,4,no,pri-pvem,no,28428,pan,14558,pri,4801,prd,3920,pvem,2738,pt,11465,mc,4349,panal,13462,morena,3328,ph,5810,ps,1179,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,232,7410,101680,318443,,ine casilla
-3519,21,11,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,27393,pan,20240,pri,2563,prd,5112,pvem,3055,pt,5122,mc,4836,panal,17416,morena,4094,ph,6877,ps,2385,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,358,9544,108995,308553,,ine casilla
-3520,21,12,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,27096,pan,23857,pri,3147,prd,4765,pvem,2301,pt,4536,mc,4323,panal,19478,morena,4114,ph,7226,ps,2470,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,405,9440,113158,297053,,ine casilla
-3521,21,13,2015,jun,7,pue,Atlixco,4,no,pri-pvem,no,19711,pan,29888,pri,3682,prd,5570,pvem,1765,pt,1065,mc,5117,panal,8447,morena,1134,ph,1837,ps,5573,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,4524,88540,231143,,ine casilla
-3522,21,14,2015,jun,7,pue,Izúcar de Matamoros,4,no,pri-pvem,no,3285,pan,45952,pri,20049,prd,2298,pvem,9355,pt,1893,mc,2980,panal,4897,morena,1015,ph,809,ps,3355,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,3525,99446,226674,,ine casilla
-3523,21,15,2015,jun,7,pue,Tehuacán,4,no,pri-pvem,no,41806,pan,16434,pri,6740,prd,4365,pvem,2689,pt,1042,mc,5135,panal,6599,morena,1746,ph,1562,ps,1704,pri-pvem,0,0,13990,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,123,5029,108964,260691,,ine casilla
-3524,21,16,2015,jun,7,pue,Ajalpan,4,no,pri-pvem,no,13123,pan,44373,pri,5242,prd,1863,pvem,1633,pt,514,mc,36233,panal,3882,morena,410,ph,561,ps,2266,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,4248,114367,208027,,ine casilla
-3525,22,1,2015,jun,7,que,Cadereyta de Montes,2,no,pri-pvem,no,75502,pan,70818,pri,9328,prd,15296,pvem,1566,pt,5535,mc,4682,panal,7426,morena,3106,ph,3531,ps,1134,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,87,10087,208098,309734,,ine casilla
-3526,22,2,2015,jun,7,que,San Juan del Río,2,no,pri-pvem,no,79580,pan,63565,pri,5395,prd,10440,pvem,2192,pt,2877,mc,6662,panal,9352,morena,8591,ph,6179,ps,2203,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,233,10781,208050,364380,,ine casilla
-3527,22,3,2015,jun,7,que,Querétaro,2,no,pri-pvem,no,78150,pan,48753,pri,5168,prd,7090,pvem,1996,pt,4644,mc,4638,panal,13790,morena,4797,ph,6218,ps,1376,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,256,9461,186337,363253,,ine casilla
-3528,22,4,2015,jun,7,que,Querétaro,2,no,pri-pvem,no,86390,pan,60154,pri,6214,prd,8266,pvem,2267,pt,4103,mc,5239,panal,14140,morena,5345,ph,6033,ps,1400,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,301,10855,210707,376420,,ine casilla
-3529,23,1,2015,jun,7,qui,Solidaridad,3,no,pri-pvem,no,17254,pan,67746,pri,10402,prd,19725,pvem,4723,pt,8253,mc,6560,panal,26574,morena,5327,ph,7495,ps,5635,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,238,10236,190168,546544,,ine casilla
-3530,23,2,2015,jun,7,qui,Othón P. Blanco,3,no,pri-pvem,no,13961,pan,44636,pri,14878,prd,3196,pvem,6859,pt,2068,mc,7025,panal,18185,morena,2137,ph,3531,ps,2030,pri-pvem,0,0,10969,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,98,6480,136053,254577,,ine casilla
-3531,23,3,2015,jun,7,qui,Benito Juárez,3,no,pri-pvem,no,10182,pan,14224,pri,6812,prd,16411,pvem,2020,pt,10949,mc,2586,panal,10375,morena,3077,ph,2927,ps,3082,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,205,5610,88460,237651,,ine casilla
-3532,24,1,2015,jun,7,san,Matehuala,2,no,pri-pvem,prd-pt,36056,pan,48568,pri,8457,prd,10275,pvem,8510,pt,9211,mc,6991,panal,5768,morena,1296,ph,3313,ps,2345,pri-pvem,718,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,103,11285,152896,251120,,ine casilla
-3533,24,2,2015,jun,7,san,Soledad de Graciano Sánchez,2,no,pri-pvem,prd-pt,22946,pan,35069,pri,47715,prd,8635,pvem,6109,pt,4862,mc,4969,panal,5163,morena,2064,ph,2608,ps,1426,pri-pvem,972,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,377,8993,151908,280220,,ine casilla
-3534,24,3,2015,jun,7,san,Rioverde,2,no,pri-pvem,prd-pt,51380,pan,49769,pri,4597,prd,11937,pvem,5803,pt,3590,mc,4016,panal,3574,morena,1237,ph,1598,ps,1505,pri-pvem,367,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,9142,148601,243033,,ine casilla
-3535,24,4,2015,jun,7,san,Ciudad Valles,2,no,pri-pvem,prd-pt,42766,pan,46398,pri,6993,prd,5480,pvem,3809,pt,4616,mc,5903,panal,4346,morena,3506,ph,2634,ps,2035,pri-pvem,159,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,96,8364,137105,238565,,ine casilla
-3536,24,5,2015,jun,7,san,San Luis Potosí,2,no,pri-pvem,prd-pt,45161,pan,23477,pri,30872,prd,8595,pvem,2649,pt,5045,mc,5044,panal,8558,morena,3023,ph,4939,ps,940,pri-pvem,1112,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1462,9453,150330,288476,,ine casilla
-3537,24,6,2015,jun,7,san,San Luis Potosí,2,no,pri-pvem,prd-pt,35254,pan,14434,pri,42739,prd,12447,pvem,3247,pt,3947,mc,4866,panal,7054,morena,3364,ph,4539,ps,781,pri-pvem,1214,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,970,8358,143214,295840,,ine casilla
-3538,24,7,2015,jun,7,san,Tamazunchale,2,no,pri-pvem,prd-pt,54102,pan,52099,pri,17138,prd,9966,pvem,2912,pt,6759,mc,11748,panal,8967,morena,1808,ph,1318,ps,1860,pri-pvem,657,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,14019,183389,262378,,ine casilla
-3539,25,1,2015,jun,7,sin,El Fuerte,1,no,pri-pvem,no,17484,pan,43444,pri,6420,prd,2662,pvem,847,pt,818,mc,2589,panal,1510,morena,526,ph,492,ps,840,pri-pvem,0,0,19753,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,3284,100723,210880,,ine casilla
-3540,25,2,2015,jun,7,sin,Ahome,1,no,pri-pvem,no,30793,pan,47791,pri,3734,prd,3974,pvem,1430,pt,2933,mc,4028,panal,7518,morena,2925,ph,1918,ps,1142,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,161,5781,114128,297845,,ine casilla
-3541,25,3,2015,jun,7,sin,Salvador Alvarado,1,no,pri-pvem,no,17011,pan,43419,pri,5013,prd,3875,pvem,869,pt,1659,mc,3527,panal,4828,morena,1588,ph,2163,ps,1247,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,239,4323,89761,251369,,ine casilla
-3542,25,4,2015,jun,7,sin,Guasave,1,no,pri-pvem,no,45136,pan,41039,pri,4458,prd,879,pvem,560,pt,322,mc,1610,panal,3403,morena,1975,ph,1047,ps,767,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,2848,104081,199650,,ine casilla
-3543,25,5,2015,jun,7,sin,Culiacán,1,no,pri-pvem,no,8080,pan,27635,pri,2366,prd,3228,pvem,1233,pt,1300,mc,3390,panal,4619,morena,1041,ph,1404,ps,652,pri-pvem,0,0,43730,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,231,4791,103700,300150,,ine casilla
-3544,25,6,2015,jun,7,sin,Mazatlán,1,no,pri-pvem,no,14289,pan,33863,pri,4465,prd,3175,pvem,1815,pt,1545,mc,8815,panal,3082,morena,929,ph,647,ps,1208,pri-pvem,0,0,15297,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,212,4565,93907,232892,,ine casilla
-3545,25,7,2015,jun,7,sin,Culiacán,1,no,pri-pvem,no,9845,pan,25736,pri,3967,prd,4226,pvem,5728,pt,1801,mc,2807,panal,4919,morena,1391,ph,1380,ps,586,pri-pvem,0,0,13629,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,764,4662,81441,272803,,ine casilla
-3546,25,8,2015,jun,7,sin,Mazatlán,1,no,pri-pvem,no,20996,pan,15614,pri,1074,prd,7231,pvem,12031,pt,1568,mc,2422,panal,3918,morena,2036,ph,1134,ps,2305,pri-pvem,0,0,8909,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,130,5567,84935,242731,,ine casilla
-3547,26,1,2015,jun,7,son,San Luis Río Colorado,1,no,pri-pvem,no,57152,pan,47007,pri,4124,prd,3273,pvem,1560,pt,3099,mc,2881,panal,7277,morena,955,ph,3422,ps,825,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,3822,135477,283553,,ine casilla
-3548,26,2,2015,jun,7,son,Nogales,1,no,pri-pvem,no,62089,pan,48916,pri,3481,prd,3069,pvem,2972,pt,9759,mc,5653,panal,4187,morena,747,ph,1805,ps,989,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,5611,149325,311584,,ine casilla
-3549,26,3,2015,jun,7,son,Hermosillo,1,no,pri-pvem,no,58866,pan,50666,pri,3229,prd,3657,pvem,1671,pt,4842,mc,4094,panal,6675,morena,1762,ph,2941,ps,1984,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,108,5485,145980,289652,,ine casilla
-3550,26,4,2015,jun,7,son,Guaymas,1,no,pri-pvem,no,56504,pan,58559,pri,8993,prd,5504,pvem,3187,pt,3204,mc,7310,panal,5486,morena,711,ph,1835,ps,1236,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,5581,158143,261414,,ine casilla
-3551,26,5,2015,jun,7,son,Hermosillo,1,no,pri-pvem,no,52178,pan,53186,pri,2751,prd,2825,pvem,1677,pt,3604,mc,2927,panal,4863,morena,1375,ph,2355,ps,1783,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,4837,134435,263019,,ine casilla
-3552,26,6,2015,jun,7,son,Cajeme,1,no,pri-pvem,no,37321,pan,67194,pri,2758,prd,2750,pvem,1306,pt,11647,mc,5834,panal,6268,morena,1797,ph,2248,ps,1594,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,4239,145033,304116,,ine casilla
-3553,26,7,2015,jun,7,son,Navojoa,1,no,pri-pvem,no,59730,pan,66322,pri,8458,prd,1910,pvem,1145,pt,1341,mc,4541,panal,3248,morena,378,ph,919,ps,1696,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,28,4475,154191,254272,,ine casilla
-3554,27,1,2015,jun,7,tab,Macuspana,3,no,no,prd-pt,7452,pan,36772,pri,37248,prd,24382,pvem,2423,pt,9066,mc,3906,panal,16999,morena,1231,ph,1307,ps,0,0,205,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,83,5354,146428,235925,,ine casilla
-3555,27,2,2015,jun,7,tab,Cárdenas,3,no,no,prd-pt,2156,pan,48861,pri,59197,prd,11709,pvem,10453,pt,2427,mc,2085,panal,6190,morena,949,ph,1343,ps,0,0,636,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,4255,150297,247230,,ine casilla
-3556,27,3,2015,jun,7,tab,Comalcalco,3,no,no,prd-pt,2361,pan,38549,pri,60810,prd,7943,pvem,4107,pt,2296,mc,8492,panal,37860,morena,1052,ph,941,ps,0,0,328,prd-pt,2321,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,5187,172347,273638,,ine casilla
-3557,27,4,2015,jun,7,tab,Centro,3,no,no,prd-pt,3728,pan,29784,pri,22923,prd,18796,pvem,2055,pt,3948,mc,2700,panal,23190,morena,1583,ph,5566,ps,0,0,311,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,5969,120684,266869,,ine casilla
-3558,27,5,2015,jun,7,tab,Paraíso,3,no,no,prd-pt,22959,pan,42726,pri,40398,prd,28968,pvem,5761,pt,4652,mc,2525,panal,14869,morena,1245,ph,2147,ps,0,0,281,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,7035,173627,276132,,ine casilla
-3559,27,6,2015,jun,7,tab,Centro,3,no,no,prd-pt,3739,pan,45937,pri,34085,prd,32087,pvem,2980,pt,4043,mc,2674,panal,19731,morena,1478,ph,2876,ps,0,0,609,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,6728,157066,313755,,ine casilla
-3560,28,1,2015,jun,7,tam,Nuevo Laredo,2,no,no,no,53683,pan,56473,pri,2107,prd,3867,pvem,664,pt,1094,mc,2221,panal,2352,morena,941,ph,2372,ps,0,0,0,0,3110,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,156,4762,133802,330113,,ine casilla
-3561,28,2,2015,jun,7,tam,Reynosa,2,no,no,no,33639,pan,46104,pri,2916,prd,8308,pvem,1622,pt,4648,mc,5627,panal,6931,morena,2179,ph,4035,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,201,6232,122442,315559,,ine casilla
-3562,28,3,2015,jun,7,tam,Río Bravo,2,no,no,no,39194,pan,89311,pri,4930,prd,6890,pvem,2254,pt,2994,mc,7836,panal,7267,morena,2018,ph,9537,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,194,7483,179908,438661,,ine casilla
-3563,28,4,2015,jun,7,tam,Matamoros,2,no,no,no,40561,pan,53452,pri,1262,prd,6447,pvem,759,pt,1400,mc,3113,panal,3657,morena,960,ph,3657,ps,0,0,0,0,8136,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,160,4766,128330,298082,,ine casilla
-3564,28,5,2015,jun,7,tam,Victoria,2,no,no,no,14445,pan,65995,pri,1662,prd,2877,pvem,1946,pt,49991,mc,7032,panal,2621,morena,1117,ph,2772,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,5057,155584,287163,,ine casilla
-3565,28,6,2015,jun,7,tam,El Mante,2,no,no,no,31909,pan,73830,pri,3199,prd,5934,pvem,1921,pt,1476,mc,9185,panal,2857,morena,1774,ph,5189,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,3658,140983,252177,,ine casilla
-3566,28,7,2015,jun,7,tam,Ciudad Madero,2,no,no,no,24904,pan,57053,pri,7770,prd,9537,pvem,2210,pt,9433,mc,7056,panal,7389,morena,2204,ph,5528,ps,0,0,0,0,4983,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,162,6022,144251,318025,,ine casilla
-3567,28,8,2015,jun,7,tam,Tampico,2,no,no,no,35261,pan,42766,pri,5812,prd,7418,pvem,1496,pt,6565,mc,4013,panal,7114,morena,1670,ph,3751,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,144,5173,121183,257932,,ine casilla
-3568,29,1,2015,jun,7,tla,Apizaco,4,no,no,no,17719,pan,40042,pri,4519,prd,5002,pvem,4246,pt,1509,mc,3035,panal,21683,morena,1580,ph,3634,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,6887,109906,291342,,ine casilla
-3569,29,2,2015,jun,7,tla,Tlaxcala,4,no,no,no,21211,pan,25984,pri,12938,prd,5827,pvem,20243,pt,1711,mc,3971,panal,12269,morena,1868,ph,3943,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,6448,116493,289894,,ine casilla
-3570,29,3,2015,jun,7,tla,Zacatelco,4,no,no,no,12152,pan,28912,pri,13737,prd,3538,pvem,8060,pt,7661,mc,16535,panal,10131,morena,1058,ph,1263,ps,0,0,0,0,2488,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,73,5179,110787,274918,,ine casilla
-3571,30,1,2015,jun,7,ver,Pánuco,3,no,pri-pvem,no,27328,pan,35300,pri,4066,prd,17866,pvem,706,pt,1862,mc,2270,panal,4908,morena,780,ph,982,ps,1215,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,32,3452,100767,215169,,ine casilla
-3572,30,2,2015,jun,7,ver,Tantoyuca,3,no,pri-pvem,no,38906,pan,40780,pri,46993,prd,7587,pvem,2862,pt,2189,mc,3185,panal,5334,morena,812,ph,746,ps,1045,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,5643,156104,250131,,ine casilla
-3573,30,3,2015,jun,7,ver,Tuxpan,3,no,pri-pvem,no,35289,pan,39692,pri,5149,prd,6176,pvem,1819,pt,2299,mc,2918,panal,9929,morena,1574,ph,2394,ps,2228,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,261,4859,114587,242900,,ine casilla
-3574,30,4,2015,jun,7,ver,Veracruz,3,no,pri-pvem,no,57009,pan,19457,pri,5240,prd,8092,pvem,5332,pt,2661,mc,2087,panal,12550,morena,2510,ph,2783,ps,3667,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,317,6496,128201,274058,,ine casilla
-3575,30,5,2015,jun,7,ver,Poza Rica de Hidalgo,3,no,pri-pvem,no,11031,pan,28391,pri,35498,prd,3913,pvem,3300,pt,2135,mc,5096,panal,11394,morena,3722,ph,1675,ps,1103,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,687,5886,113831,259436,,ine casilla
-3576,30,6,2015,jun,7,ver,Papantla,3,no,pri-pvem,no,7472,pan,32029,pri,29507,prd,5128,pvem,1875,pt,22076,mc,3053,panal,6565,morena,1221,ph,772,ps,990,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,222,3873,114783,228427,,ine casilla
-3577,30,7,2015,jun,7,ver,Martínez de la Torre,3,no,pri-pvem,no,28405,pan,31683,pri,21127,prd,14052,pvem,2190,pt,3434,mc,2507,panal,12992,morena,1333,ph,2192,ps,2533,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,812,4830,128090,254961,,ine casilla
-3578,30,8,2015,jun,7,ver,Xalapa,3,no,pri-pvem,prd-pt,21573,pan,34486,pri,19221,prd,9027,pvem,5383,pt,7069,mc,3572,panal,18619,morena,2738,ph,3371,ps,1601,pri-pvem,958,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,921,7096,135635,302372,,ine casilla
-3579,30,9,2015,jun,7,ver,Coatepec,3,no,pri-pvem,no,22565,pan,29836,pri,9659,prd,6697,pvem,3430,pt,5356,mc,3693,panal,19264,morena,2856,ph,5059,ps,1892,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,296,7736,118339,274400,,ine casilla
-3580,30,10,2015,jun,7,ver,Xalapa,3,no,pri-pvem,prd-pt,22035,pan,13715,pri,8338,prd,2900,pvem,4113,pt,5975,mc,4188,panal,31368,morena,3671,ph,4816,ps,1106,pri-pvem,283,prd-pt,9048,indep1,2449,indep2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1089,9305,124399,282864,,ine casilla
-3581,30,11,2015,jun,7,ver,Coatzacoalcos,3,no,pri-pvem,no,11806,pan,23734,pri,5000,prd,3182,pvem,1615,pt,2799,mc,5760,panal,43063,morena,1591,ph,7008,ps,1197,pri-pvem,0,0,3629,indep1,1340,indep2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,384,6616,118724,295469,,ine casilla
-3582,30,12,2015,jun,7,ver,Veracruz,3,no,pri-pvem,no,36574,pan,25524,pri,5897,prd,4903,pvem,3139,pt,5322,mc,2740,panal,15263,morena,2682,ph,3451,ps,3019,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,244,6983,115741,282603,,ine casilla
-3583,30,13,2015,jun,7,ver,Huatusco,3,no,pri-pvem,no,39449,pan,37120,pri,7661,prd,7876,pvem,1657,pt,13303,mc,1896,panal,9373,morena,1874,ph,2011,ps,3313,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,842,5713,132088,271094,,ine casilla
-3584,30,14,2015,jun,7,ver,Minatitlán,3,no,pri-pvem,no,9572,pan,30816,pri,6095,prd,3434,pvem,20805,pt,1282,mc,1275,panal,16335,morena,1112,ph,2141,ps,1239,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,56,5219,99381,248943,,ine casilla
-3585,30,15,2015,jun,7,ver,Orizaba,3,no,pri-pvem,no,35530,pan,36438,pri,9696,prd,6443,pvem,2174,pt,2289,mc,2432,panal,17127,morena,2559,ph,4161,ps,1836,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,490,7989,129164,286057,,ine casilla
-3586,30,16,2015,jun,7,ver,Córdoba,3,no,pri-pvem,no,36568,pan,36533,pri,6580,prd,7005,pvem,2518,pt,4696,mc,3018,panal,18508,morena,6710,ph,3944,ps,1792,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,588,8254,136714,283412,,ine casilla
-3587,30,17,2015,jun,7,ver,Cosamaloapan,3,no,pri-pvem,no,36533,pan,43219,pri,4874,prd,16637,pvem,2120,pt,1694,mc,2404,panal,13498,morena,1674,ph,1957,ps,2753,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,140,6647,134150,310754,,ine casilla
-3588,30,18,2015,jun,7,ver,Zongolica,3,no,pri-pvem,no,31540,pan,33243,pri,22480,prd,6685,pvem,3942,pt,9877,mc,1876,panal,10165,morena,1395,ph,2176,ps,1603,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,7937,133089,254865,,ine casilla
-3589,30,19,2015,jun,7,ver,San Andrés Tuxtla,3,no,pri-pvem,no,15851,pan,41484,pri,12068,prd,17927,pvem,2288,pt,1008,mc,2716,panal,13534,morena,2476,ph,4172,ps,2103,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,497,4912,121036,256058,,ine casilla
-3590,30,20,2015,jun,7,ver,Acayucan,3,no,pri-pvem,no,9806,pan,57074,pri,3830,prd,14450,pvem,3717,pt,2037,mc,1573,panal,11728,morena,1331,ph,1426,ps,2363,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,4860,114258,244057,,ine casilla
-3591,30,21,2015,jun,7,ver,Cosoleacaque,3,no,pri-pvem,no,15970,pan,35855,pri,11339,prd,6405,pvem,2415,pt,1415,mc,1356,panal,15520,morena,1130,ph,1776,ps,2250,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,5096,100613,264699,,ine casilla
-3592,31,1,2015,jun,7,yuc,Valladolid,3,no,pri-pvem,no,70693,pan,97699,pri,13163,prd,1546,pvem,693,pt,1634,mc,2561,panal,10066,morena,315,ph,410,ps,1011,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,17,3124,202932,251937,,ine casilla
-3593,31,2,2015,jun,7,yuc,Progreso,3,no,pri-pvem,no,68191,pan,91660,pri,9561,prd,6169,pvem,1063,pt,1911,mc,15762,panal,5927,morena,1128,ph,805,ps,613,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,4756,207600,281245,,ine casilla
-3594,31,3,2015,jun,7,yuc,Mérida,3,no,pri-pvem,no,75914,pan,85919,pri,2760,prd,5118,pvem,1202,pt,6791,mc,2903,panal,9126,morena,1697,ph,2948,ps,2870,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,188,6525,203961,341507,,ine casilla
-3595,31,4,2015,jun,7,yuc,Mérida,3,no,pri-pvem,no,76434,pan,71007,pri,2091,prd,4211,pvem,956,pt,5533,mc,2365,panal,6814,morena,1379,ph,2008,ps,2429,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,5779,181135,286024,,ine casilla
-3596,31,5,2015,jun,7,yuc,Ticul,3,no,pri-pvem,no,71941,pan,101181,pri,20953,prd,10847,pvem,1767,pt,809,mc,3061,panal,4333,morena,639,ph,788,ps,651,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,5308,222309,275895,,ine casilla
-3597,32,1,2015,jun,7,zac,Fresnillo,2,no,pri-pvem,prd-pt,8466,pan,38491,pri,13066,prd,5995,pvem,29043,pt,1277,mc,3406,panal,4710,morena,2396,ph,4668,ps,1327,pri-pvem,2580,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,79,4907,120411,272780,,ine casilla
-3598,32,2,2015,jun,7,zac,Jerez,2,no,pri-pvem,prd-pt,36097,pan,45441,pri,17469,prd,9048,pvem,3479,pt,826,mc,2758,panal,3323,morena,1416,ph,1718,ps,1109,pri-pvem,498,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,72,4949,128203,267184,,ine casilla
-3599,32,3,2015,jun,7,zac,Zacatecas,2,no,pri-pvem,no,9681,pan,38448,pri,20460,prd,10499,pvem,12266,pt,2947,mc,3513,panal,8156,morena,3121,ph,2934,ps,1063,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,168,6167,119423,267915,,ine casilla
-3600,32,4,2015,jun,7,zac,Guadalupe,2,no,pri-pvem,no,6468,pan,43187,pri,16480,prd,10773,pvem,18389,pt,2010,mc,3607,panal,20462,morena,2476,ph,2640,ps,1106,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,139,6534,134271,295836,,ine casilla
+3601,1,1,2015,jun,7,ags,Jesús María,2,no,no,no,31756,pan,32183,pri,5489,prd,7091,pvem,3252,pt,905,mc,12827,panal,3265,morena,2441,ph,2285,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,123,5541,107158,277868,anulada,ine casilla
+3602,1,2,2015,jun,7,ags,Aguascalientes,2,no,no,no,33410,pan,32887,pri,5050,prd,8681,pvem,2598,pt,3056,mc,6355,panal,7449,morena,3270,ph,4651,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,307,8557,116271,340905,,ine casilla
+3603,1,3,2015,jun,7,ags,Aguascalientes,2,no,no,no,35567,pan,27314,pri,2134,prd,6069,pvem,1475,pt,1923,mc,4125,panal,6270,morena,2659,ph,3400,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,298,7955,99189,248581,,ine casilla
+3604,2,1,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,29664,pan,17015,pri,2728,prd,3005,pvem,1289,pt,5839,mc,5293,panal,8149,morena,2836,ph,5006,ps,931,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,94,5771,87620,279071,,ine casilla
+3605,2,2,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,28038,pan,11821,pri,2881,prd,3147,pvem,835,pt,8209,mc,4687,panal,8503,morena,4047,ph,8066,ps,850,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,167,6078,87329,237921,,ine casilla
+3606,2,3,2015,jun,7,bc,Ensenada,1,no,pri-pvem,no,22279,pan,18200,pri,5977,prd,2886,pvem,10093,pt,3087,mc,3949,panal,13373,morena,2637,ph,4302,ps,681,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,210,6236,93910,276800,,ine casilla
+3607,2,4,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,28128,pan,14126,pri,3541,prd,3515,pvem,4795,pt,5228,mc,7094,panal,15129,morena,2707,ph,4895,ps,882,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,6719,96944,336429,,ine casilla
+3608,2,5,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,26017,pan,14185,pri,3042,prd,2800,pvem,2033,pt,3782,mc,3244,panal,12995,morena,2644,ph,4913,ps,756,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,687,6966,84064,268149,,ine casilla
+3609,2,6,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,27785,pan,15168,pri,2835,prd,5599,pvem,1743,pt,4153,mc,4682,panal,14444,morena,2880,ph,6888,ps,1458,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,330,7848,95813,304581,,ine casilla
+3610,2,7,2015,jun,7,bc,Mexicali,1,no,pri-pvem,no,24991,pan,18876,pri,3479,prd,3622,pvem,3808,pt,19455,mc,3974,panal,10171,morena,2278,ph,7196,ps,1170,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,191,6512,105723,359848,,ine casilla
+3611,2,8,2015,jun,7,bc,Tijuana,1,no,pri-pvem,no,36480,pan,23543,pri,5015,prd,4806,pvem,2634,pt,4260,mc,5042,panal,16508,morena,3037,ph,6085,ps,1407,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,359,7843,117019,415080,,ine casilla
+3612,3,1,2015,jun,7,bcs,Mulegé,1,no,pri-pvem,prd-pt,50008,pan,33333,pri,4040,prd,1986,pvem,1779,pt,1008,mc,3939,panal,6635,morena,4075,ph,3648,ps,1255,pri-pvem,158,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,136,4709,116709,203034,,ine casilla
+3613,3,2,2015,jun,7,bcs,La Paz,1,no,pri-pvem,prd-pt,49860,pan,23999,pri,9942,prd,3233,pvem,10013,pt,1217,mc,2211,panal,8744,morena,4121,ph,5741,ps,1267,pri-pvem,1786,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,242,5824,128200,262338,,ine casilla
+3614,4,1,2015,jun,7,cam,Campeche,3,no,pri-pvem,no,50597,pan,63241,pri,7194,prd,4490,pvem,2388,pt,2348,mc,13995,panal,30715,morena,2626,ph,6047,ps,4403,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,87,6741,194872,299680,,ine casilla
+3615,4,2,2015,jun,7,cam,Carmen,3,no,pri-pvem,no,71047,pan,55995,pri,6054,prd,3151,pvem,1673,pt,2334,mc,3561,panal,17284,morena,1537,ph,1875,ps,4490,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,5684,174748,303930,,ine casilla
+3616,5,1,2015,jun,7,coa,Piedras Negras,2,no,pri-pvem,no,24183,pan,50776,pri,2594,prd,4580,pvem,1693,pt,1498,mc,7945,panal,4727,morena,1224,ph,3870,ps,884,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,3260,107296,282149,,ine casilla
+3617,5,2,2015,jun,7,coa,San Pedro,2,no,pri-pvem,no,21187,pan,67080,pri,6734,prd,4534,pvem,2048,pt,3099,mc,9148,panal,7848,morena,2579,ph,2344,ps,628,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,4244,131513,288092,,ine casilla
+3618,5,3,2015,jun,7,coa,Monclova,2,no,pri-pvem,no,33455,pan,71061,pri,3599,prd,2879,pvem,1506,pt,1251,mc,7821,panal,4784,morena,1774,ph,5100,ps,974,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,3990,138271,313880,,ine casilla
+3619,5,4,2015,jun,7,coa,Saltillo,2,no,pri-pvem,no,24938,pan,63052,pri,2334,prd,4828,pvem,1835,pt,1828,mc,8207,panal,5792,morena,3894,ph,4568,ps,978,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,84,4832,127170,284002,,ine casilla
+3620,5,5,2015,jun,7,coa,Torreón,2,no,pri-pvem,no,26603,pan,64870,pri,2924,prd,9204,pvem,1672,pt,2984,mc,7271,panal,8090,morena,1995,ph,2718,ps,1044,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,4623,134067,279483,,ine casilla
+3621,5,6,2015,jun,7,coa,Torreón,2,no,pri-pvem,no,53727,pan,47798,pri,2478,prd,9012,pvem,1331,pt,5506,mc,5915,panal,9203,morena,2509,ph,3049,ps,1433,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,4596,146643,306961,,ine casilla
+3622,5,7,2015,jun,7,coa,Saltillo,2,no,pri-pvem,no,31048,pan,47686,pri,2541,prd,3779,pvem,1504,pt,1662,mc,6403,panal,5203,morena,2939,ph,3449,ps,697,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,165,4323,111399,237469,,ine casilla
+3623,6,1,2015,jun,7,col,Colima,1,no,pri-pvem,no,46257,pan,44174,pri,47218,prd,4007,pvem,3676,pt,6670,mc,3172,panal,2412,morena,1584,ph,1159,ps,890,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,4778,166041,265425,,ine casilla
+3624,6,2,2015,jun,7,col,Manzanillo,1,no,pri-pvem,no,54902,pan,43433,pri,3441,prd,7136,pvem,3419,pt,5752,mc,2001,panal,3697,morena,2403,ph,2574,ps,1259,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,3914,133975,233106,,ine casilla
+3625,7,1,2015,jun,7,cps,Palenque,3,no,pri-pvem,no,2543,pan,26191,pri,7284,prd,77574,pvem,5597,pt,1645,mc,2294,panal,14398,morena,961,ph,905,ps,2097,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,27,11290,152806,302373,,ine casilla
+3626,7,2,2015,jun,7,cps,Bochil,3,no,pri-pvem,no,2360,pan,54708,pri,12638,prd,55614,pvem,6593,pt,915,mc,1924,panal,2073,morena,383,ph,236,ps,1242,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,4946,143644,240712,,ine casilla
+3627,7,3,2015,jun,7,cps,Ocosingo,3,no,pri-pvem,no,3724,pan,21553,pri,11443,prd,74123,pvem,1591,pt,2410,mc,3340,panal,3801,morena,766,ph,584,ps,1869,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,26,8023,133253,278366,,ine casilla
+3628,7,4,2015,jun,7,cps,Ocozocoautla de Espinosa,3,no,pri-pvem,no,3490,pan,37464,pri,3498,prd,64251,pvem,2482,pt,5370,mc,3340,panal,4847,morena,1088,ph,1692,ps,1982,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5018,134566,263339,,ine casilla
+3629,7,5,2015,jun,7,cps,San Cristóbal de las Casas,3,no,pri-pvem,no,3431,pan,42618,pri,6740,prd,54299,pvem,1860,pt,2116,mc,2703,panal,5854,morena,1611,ph,1645,ps,1948,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,10375,135292,273671,,ine casilla
+3630,7,6,2015,jun,7,cps,Tuxtla Gutiérrez,3,no,pri-pvem,no,4467,pan,30526,pri,3535,prd,49476,pvem,1942,pt,2365,mc,2416,panal,15509,morena,1382,ph,2417,ps,2457,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,181,7157,123830,305129,,ine casilla
+3631,7,7,2015,jun,7,cps,Tonalá,3,no,pri-pvem,no,6141,pan,16835,pri,2051,prd,47349,pvem,5769,pt,2028,mc,2138,panal,5278,morena,1152,ph,537,ps,1693,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,3540,94526,230315,,ine casilla
+3632,7,8,2015,jun,7,cps,Comitán de Domínguez,3,no,pri-pvem,no,1647,pan,31010,pri,6365,prd,82457,pvem,4812,pt,1261,mc,3043,panal,4598,morena,1251,ph,1022,ps,2154,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,7015,146680,283418,,ine casilla
+3633,7,9,2015,jun,7,cps,Tuxtla Gutiérrez,3,no,pri-pvem,no,8227,pan,12239,pri,4152,prd,25017,pvem,2853,pt,2126,mc,2655,panal,12729,morena,2369,ph,5998,ps,2349,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,402,11715,92831,306598,,ine casilla
+3634,7,10,2015,jun,7,cps,Villaflores,3,no,pri-pvem,no,4683,pan,24985,pri,5625,prd,61932,pvem,2620,pt,2065,mc,2941,panal,7596,morena,1119,ph,4412,ps,1946,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,5932,125896,260260,,ine casilla
+3635,7,11,2015,jun,7,cps,Huixtla,3,no,pri-pvem,no,4197,pan,28387,pri,15437,prd,52927,pvem,3209,pt,1498,mc,2214,panal,6088,morena,3034,ph,860,ps,1660,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,5729,125277,272013,,ine casilla
+3636,7,12,2015,jun,7,cps,Tapachula,3,no,pri-pvem,no,15840,pan,21970,pri,4137,prd,32579,pvem,2678,pt,3450,mc,2393,panal,10784,morena,2646,ph,1680,ps,4065,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,6588,108873,265045,,ine casilla
+3637,8,1,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,14063,pan,30114,pri,4094,prd,8405,pvem,1965,pt,3640,mc,7824,panal,9184,morena,2893,ph,4894,ps,1072,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,102,5920,94170,406242,,ine casilla
+3638,8,2,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,6971,pan,19047,pri,3269,prd,2978,pvem,948,pt,1188,mc,3662,panal,4138,morena,1058,ph,2176,ps,666,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,68,4075,50244,185048,,ine casilla
+3639,8,3,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,22603,pan,16158,pri,1612,prd,5369,pvem,1345,pt,3040,mc,5348,panal,7757,morena,2158,ph,3390,ps,1225,pri-pvem,0,0,1749,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,212,4963,76929,242964,,ine casilla
+3640,8,4,2015,jun,7,cua,Juárez,2,no,pri-pvem,no,9684,pan,17202,pri,1614,prd,3672,pvem,2607,pt,3442,mc,4769,panal,4695,morena,1713,ph,2233,ps,703,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,72,4039,56445,201625,,ine casilla
+3641,8,5,2015,jun,7,cua,Delicias,2,no,pri-pvem,no,38922,pan,53117,pri,3986,prd,2464,pvem,2764,pt,1672,mc,9986,panal,5839,morena,1100,ph,2105,ps,1432,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,5033,128512,317817,,ine casilla
+3642,8,6,2015,jun,7,cua,Chihuahua,2,no,pri-pvem,no,45657,pan,31709,pri,1847,prd,4348,pvem,2496,pt,6539,mc,7067,panal,7434,morena,3032,ph,4420,ps,810,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,311,7768,123438,286311,,ine casilla
+3643,8,7,2015,jun,7,cua,Cuauhtémoc,2,no,pri-pvem,no,23643,pan,39747,pri,4614,prd,4787,pvem,2521,pt,1113,mc,5917,panal,4315,morena,920,ph,2881,ps,1952,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,230,5149,97789,305919,,ine casilla
+3644,8,8,2015,jun,7,cua,Chihuahua,2,no,pri-pvem,no,27080,pan,31132,pri,2787,prd,6670,pvem,3209,pt,5399,mc,9101,panal,7761,morena,3093,ph,4641,ps,849,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,258,7254,109234,344255,,ine casilla
+3645,8,9,2015,jun,7,cua,Hidalgo del Parral,2,no,pri-pvem,no,21447,pan,52066,pri,1893,prd,2378,pvem,1402,pt,1234,mc,9614,panal,2278,morena,795,ph,1173,ps,1463,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,5874,101674,277550,,ine casilla
+3646,9,1,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,5900,pan,7269,pri,23753,prd,4559,pvem,1480,pt,5698,mc,2914,panal,25075,morena,2461,ph,5202,ps,247,pri-pvem,254,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,142,5123,90077,234073,,ine casilla
+3647,9,2,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,24216,pan,13171,pri,16001,prd,4962,pvem,1692,pt,3611,mc,3669,panal,26146,morena,4050,ph,8042,ps,302,pri-pvem,190,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,401,8531,114984,255862,,ine casilla
+3648,9,3,2015,jun,7,df,Azcapotzalco,4,no,pri-pvem,prd-pt,17945,pan,14106,pri,20426,prd,5335,pvem,1982,pt,3005,mc,4369,panal,29009,morena,4302,ph,7855,ps,437,pri-pvem,354,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,320,8208,117653,270193,,ine casilla
+3649,9,4,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,9745,pan,9165,pri,26967,prd,5460,pvem,2290,pt,3758,mc,2833,panal,31043,morena,3649,ph,8809,ps,0,0,248,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,286,8252,112505,254933,,ine casilla
+3650,9,5,2015,jun,7,df,Tlalpan,4,no,pri-pvem,prd-pt,27211,pan,12579,pri,11237,prd,4105,pvem,1818,pt,3309,mc,2338,panal,28229,morena,3544,ph,6533,ps,332,pri-pvem,341,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,425,9830,111831,239030,,ine casilla
+3651,9,6,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,8706,pan,11431,pri,19916,prd,6048,pvem,1694,pt,3760,mc,4832,panal,30319,morena,3513,ph,7683,ps,414,pri-pvem,135,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,265,7200,105916,259955,,ine casilla
+3652,9,7,2015,jun,7,df,Gustavo A. Madero,4,no,pri-pvem,prd-pt,11994,pan,16402,pri,20568,prd,5710,pvem,1967,pt,6262,mc,3942,panal,30143,morena,4081,ph,8816,ps,709,pri-pvem,450,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,346,8498,119888,270041,,ine casilla
+3653,9,8,2015,jun,7,df,Cuauhtémoc,4,no,pri-pvem,prd-pt,17547,pan,19453,pri,19053,prd,5488,pvem,1839,pt,3114,mc,3125,panal,34433,morena,4517,ph,8794,ps,445,pri-pvem,179,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,393,9566,127946,282267,,ine casilla
+3654,9,9,2015,jun,7,df,Venustiano Carranza,4,no,pri-pvem,prd-pt,10369,pan,12198,pri,30892,prd,6055,pvem,1635,pt,9315,mc,2725,panal,21028,morena,3256,ph,7077,ps,292,pri-pvem,204,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,310,7389,112745,261049,,ine casilla
+3655,9,10,2015,jun,7,df,Miguel Hidalgo,4,no,pri-pvem,prd-pt,38371,pan,15264,pri,29178,prd,5772,pvem,1682,pt,3800,mc,3287,panal,21808,morena,3929,ph,8234,ps,450,pri-pvem,309,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,518,10632,143234,312293,,ine casilla
+3656,9,11,2015,jun,7,df,Venustiano Carranza,4,no,no,prd-pt,9879,pan,11561,pri,25058,prd,4379,pvem,2122,pt,8145,mc,2964,panal,22951,morena,3270,ph,6875,ps,0,0,152,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,309,7545,105210,243267,,ine casilla
+3657,9,12,2015,jun,7,df,Cuauhtémoc,4,no,pri-pvem,prd-pt,15793,pan,19702,pri,20785,prd,4406,pvem,1756,pt,3517,mc,3068,panal,29825,morena,4670,ph,7151,ps,433,pri-pvem,227,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,487,9722,121542,280944,,ine casilla
+3658,9,13,2015,jun,7,df,Iztacalco,4,no,pri-pvem,prd-pt,11404,pan,11967,pri,22778,prd,4877,pvem,2089,pt,5753,mc,3420,panal,23616,morena,3627,ph,7451,ps,468,pri-pvem,145,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,450,7573,105618,239088,,ine casilla
+3659,9,14,2015,jun,7,df,Tlalpan,4,no,no,prd-pt,10305,pan,9527,pri,31472,prd,6702,pvem,1934,pt,2523,mc,2182,panal,32757,morena,3318,ph,5407,ps,0,0,564,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,206,8947,115844,277662,,ine casilla
+3660,9,15,2015,jun,7,df,Benito Juárez,4,no,no,prd-pt,56625,pan,17975,pri,8886,prd,6227,pvem,2056,pt,7522,mc,3380,panal,31787,morena,5202,ph,9275,ps,0,0,93,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,751,15790,165569,349222,,ine casilla
+3661,9,16,2015,jun,7,df,Alvaro Obregón,4,no,no,prd-pt,14086,pan,13690,pri,27435,prd,11469,pvem,1958,pt,3288,mc,4190,panal,27161,morena,4146,ph,7169,ps,0,0,341,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,232,9719,124884,291726,,ine casilla
+3662,9,17,2015,jun,7,df,Alvaro Obregón,4,no,pri-pvem,prd-pt,30395,pan,24397,pri,25368,prd,10136,pvem,2267,pt,4022,mc,3782,panal,25030,morena,4813,ph,7749,ps,2755,pri-pvem,665,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,289,9862,151530,333880,,ine casilla
+3663,9,18,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,6687,pan,11847,pri,34457,prd,5188,pvem,2053,pt,2912,mc,2963,panal,28579,morena,3149,ph,7386,ps,0,0,335,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,7369,113152,250233,,ine casilla
+3664,9,19,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,5200,pan,7999,pri,33825,prd,5356,pvem,2290,pt,3663,mc,2913,panal,32771,morena,2963,ph,7506,ps,0,0,307,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,219,7295,112307,257580,,ine casilla
+3665,9,20,2015,jun,7,df,Iztapalapa,4,no,pri-pvem,prd-pt,14413,pan,13201,pri,26951,prd,6320,pvem,2658,pt,3525,mc,3173,panal,33436,morena,4285,ph,9371,ps,403,pri-pvem,302,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,353,9332,127723,270922,,ine casilla
+3666,9,21,2015,jun,7,df,Xochimilco,4,no,pri-pvem,prd-pt,7127,pan,21948,pri,15770,prd,7792,pvem,2765,pt,14026,mc,3481,panal,26687,morena,3253,ph,7005,ps,1395,pri-pvem,208,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,293,7952,119702,276631,,ine casilla
+3667,9,22,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,3701,pan,7296,pri,37491,prd,5528,pvem,2750,pt,6539,mc,2877,panal,35472,morena,2554,ph,5177,ps,0,0,376,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,154,7282,117197,269769,,ine casilla
+3668,9,23,2015,jun,7,df,Coyoacán,4,no,no,prd-pt,16169,pan,12533,pri,36639,prd,4569,pvem,2517,pt,5731,mc,3260,panal,29483,morena,4300,ph,6833,ps,0,0,539,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,456,11147,134176,290096,,ine casilla
+3669,9,24,2015,jun,7,df,Coyoacán,4,no,no,prd-pt,29543,pan,14741,pri,19146,prd,4250,pvem,1719,pt,4758,mc,2643,panal,24866,morena,3012,ph,6538,ps,0,0,199,prd-pt,6471,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,583,10890,129359,263658,,ine casilla
+3670,9,25,2015,jun,7,df,Iztapalapa,4,no,no,prd-pt,9029,pan,10238,pri,22110,prd,6492,pvem,2794,pt,6861,mc,2976,panal,32947,morena,3518,ph,6994,ps,0,0,232,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,330,8196,112717,272642,,ine casilla
+3671,9,26,2015,jun,7,df,La Magdalena Contreras,4,no,pri-pvem,prd-pt,28805,pan,24139,pri,21585,prd,5765,pvem,2143,pt,5315,mc,3041,panal,27643,morena,4126,ph,6448,ps,723,pri-pvem,469,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,421,10894,141517,295373,,ine casilla
+3672,9,27,2015,jun,7,df,Tláhuac,4,no,pri-pvem,prd-pt,6315,pan,11883,pri,15552,prd,6291,pvem,1595,pt,9865,mc,4304,panal,29417,morena,2913,ph,6135,ps,666,pri-pvem,226,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,171,6521,101854,263144,,ine casilla
+3673,10,1,2015,jun,7,dgo,Durango,2,no,pri-pvem,no,16809,pan,58114,pri,4089,prd,4251,pvem,7872,pt,4000,mc,3898,panal,5370,morena,1620,ph,1712,ps,1553,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,66,4622,113976,277504,,ine casilla
+3674,10,2,2015,jun,7,dgo,Gómez Palacio,2,no,pri-pvem,prd-pt,20905,pan,62711,pri,6639,prd,6493,pvem,1653,pt,2928,mc,4889,panal,8605,morena,2670,ph,3539,ps,1871,pri-pvem,101,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,5192,128341,337297,,ine casilla
+3675,10,3,2015,jun,7,dgo,Guadalupe Victoria,2,no,pri-pvem,no,22455,pan,62132,pri,8197,prd,4693,pvem,6250,pt,3651,mc,4600,panal,5772,morena,1950,ph,1170,ps,1387,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,48,4160,126465,272515,,ine casilla
+3676,10,4,2015,jun,7,dgo,Durango,2,no,pri-pvem,prd-pt,26767,pan,40370,pri,2697,prd,4393,pvem,14162,pt,18132,mc,5335,panal,6338,morena,2923,ph,3983,ps,971,pri-pvem,220,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,7015,133491,312925,,ine casilla
+3677,11,1,2015,jun,7,gua,San Luis de la Paz,1,no,pri-pvem,no,46978,pan,31175,pri,6009,prd,15751,pvem,3194,pt,1003,mc,4018,panal,2083,morena,1755,ph,1101,ps,598,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,4791,118518,232202,,ine casilla
+3678,11,2,2015,jun,7,gua,Allende,1,no,pri-pvem,no,49508,pan,28085,pri,7632,prd,14303,pvem,1629,pt,4618,mc,6108,panal,3129,morena,6310,ph,3453,ps,859,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,151,6068,131853,255994,,ine casilla
+3679,11,3,2015,jun,7,gua,León,1,no,pri-pvem,no,73578,pan,29715,pri,2441,prd,10418,pvem,1658,pt,3583,mc,5145,panal,4440,morena,3798,ph,6644,ps,1480,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,174,6750,149824,357820,,ine casilla
+3680,11,4,2015,jun,7,gua,Guanajuato,1,no,pri-pvem,no,47806,pan,41511,pri,9266,prd,9529,pvem,3034,pt,1842,mc,5139,panal,4887,morena,2738,ph,2363,ps,1180,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,175,6026,135496,318822,,ine casilla
+3681,11,5,2015,jun,7,gua,León,1,no,pri-pvem,no,79109,pan,24152,pri,1922,prd,11264,pvem,1204,pt,4491,mc,4341,panal,4335,morena,3211,ph,5803,ps,1350,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,256,7010,148448,338166,,ine casilla
+3682,11,6,2015,jun,7,gua,León,1,no,pri-pvem,no,70148,pan,28041,pri,1854,prd,10089,pvem,1147,pt,3058,mc,4488,panal,4062,morena,2995,ph,6343,ps,1526,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,5886,139782,332462,,ine casilla
+3683,11,7,2015,jun,7,gua,San Francisco del Rincón,1,no,pri-pvem,no,53059,pan,34693,pri,7978,prd,18556,pvem,1213,pt,890,mc,6659,panal,4708,morena,1327,ph,2228,ps,454,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,95,4109,135969,301369,,ine casilla
+3684,11,8,2015,jun,7,gua,Salamanca,1,no,pri-pvem,no,54329,pan,21419,pri,14629,prd,21669,pvem,1389,pt,3826,mc,9946,panal,6830,morena,5436,ph,3402,ps,303,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,142,4798,148118,311926,,ine casilla
+3685,11,9,2015,jun,7,gua,Irapuato,1,no,pri-pvem,no,45658,pan,41418,pri,2101,prd,6138,pvem,972,pt,2058,mc,4024,panal,4599,morena,1610,ph,3052,ps,1314,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,234,5169,118347,299185,,ine casilla
+3686,11,10,2015,jun,7,gua,Uriangato,1,no,pri-pvem,no,42550,pan,38744,pri,8427,prd,23399,pvem,1360,pt,3409,mc,5007,panal,4141,morena,6440,ph,1453,ps,628,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,76,4598,140232,269582,,ine casilla
+3687,11,11,2015,jun,7,gua,Pénjamo,1,no,pri-pvem,no,60343,pan,25021,pri,14638,prd,10761,pvem,2048,pt,1752,mc,3779,panal,2219,morena,2043,ph,2231,ps,681,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,4472,130023,252890,,ine casilla
+3688,11,12,2015,jun,7,gua,Celaya,1,no,pri-pvem,no,45984,pan,23889,pri,7706,prd,8692,pvem,2824,pt,8865,mc,5664,panal,7995,morena,3920,ph,5128,ps,987,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,181,5592,127427,292047,,ine casilla
+3689,11,13,2015,jun,7,gua,Valle de Santiago,1,no,pri-pvem,no,42297,pan,27485,pri,15273,prd,11472,pvem,2115,pt,2553,mc,7938,panal,5428,morena,6234,ph,2388,ps,410,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,104,4534,128231,266865,,ine casilla
+3690,11,14,2015,jun,7,gua,Acámbaro,1,no,pri-pvem,no,41235,pan,25507,pri,17140,prd,15105,pvem,1763,pt,10576,mc,4378,panal,3429,morena,718,ph,1409,ps,502,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,4902,126729,264295,,ine casilla
+3691,12,1,2015,jun,7,gue,Pungarabato,5,no,pri-pvem,prd-pt,4913,pan,61344,pri,56074,prd,2039,pvem,1633,pt,6614,mc,3216,panal,5690,morena,409,ph,345,ps,722,pri-pvem,865,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,3970,147849,232137,,ine casilla
+3692,12,2,2015,jun,7,gue,Iguala de la Independencia,5,no,pri-pvem,prd-pt,14295,pan,48312,pri,34050,prd,6739,pvem,5354,pt,13239,mc,5346,panal,5867,morena,2067,ph,4410,ps,1301,pri-pvem,634,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,7961,149620,274147,,ine casilla
+3693,12,3,2015,jun,7,gue,José Azueta,5,no,pri-pvem,prd-pt,2573,pan,48675,pri,53158,prd,6177,pvem,1821,pt,6952,mc,3845,panal,6915,morena,2064,ph,1835,ps,798,pri-pvem,977,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,5618,141426,255933,,ine casilla
+3694,12,4,2015,jun,7,gue,Acapulco de Juárez,5,no,pri-pvem,prd-pt,10477,pan,39665,pri,39484,prd,5774,pvem,3509,pt,11126,mc,2868,panal,6384,morena,1952,ph,2899,ps,1487,pri-pvem,1526,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,152,8551,135854,288818,,ine casilla
+3695,12,5,2015,jun,7,gue,Tlapa de Comonfort,5,no,pri-pvem,prd-pt,13361,pan,48158,pri,39349,prd,2929,pvem,20900,pt,20022,mc,3454,panal,5242,morena,2209,ph,1769,ps,569,pri-pvem,1153,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,9895,169025,266173,,ine casilla
+3696,12,6,2015,jun,7,gue,Chilapa de Alvarez,5,no,pri-pvem,prd-pt,11009,pan,59412,pri,41911,prd,4517,pvem,12489,pt,15847,mc,5263,panal,5873,morena,3744,ph,1388,ps,1354,pri-pvem,1012,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,9418,173268,274201,,ine casilla
+3697,12,7,2015,jun,7,gue,Chilpancingo de los Bravo,5,no,pri-pvem,prd-pt,2178,pan,50408,pri,39498,prd,11983,pvem,2865,pt,9343,mc,2306,panal,6097,morena,2397,ph,2277,ps,1646,pri-pvem,1180,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,8626,140845,283257,,ine casilla
+3698,12,8,2015,jun,7,gue,Ayutla de los Libres,5,no,pri-pvem,prd-pt,9719,pan,30357,pri,48788,prd,26124,pvem,4812,pt,11654,mc,4355,panal,4972,morena,8092,ph,732,ps,1978,pri-pvem,961,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,10750,163344,239412,,ine casilla
+3699,12,9,2015,jun,7,gue,Acapulco de Juárez,5,no,pri-pvem,prd-pt,8258,pan,50032,pri,27452,prd,7457,pvem,5201,pt,9918,mc,2320,panal,5509,morena,1390,ph,2902,ps,2209,pri-pvem,1689,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,8545,132917,287303,,ine casilla
+3700,13,1,2015,jun,7,hgo,Huejutla de Reyes,4,no,pri-pvem,no,18949,pan,53111,pri,17192,prd,2320,pvem,2218,pt,1387,mc,10885,panal,5631,morena,2722,ph,38678,ps,600,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,6875,160597,251425,,ine casilla
+3701,13,2,2015,jun,7,hgo,Ixmiquilpan,4,no,pri-pvem,no,19841,pan,45222,pri,18427,prd,5765,pvem,2090,pt,1060,mc,11974,panal,7931,morena,1535,ph,3369,ps,626,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,49,5631,123520,267099,,ine casilla
+3702,13,3,2015,jun,7,hgo,Actopan,4,no,pri-pvem,no,8692,pan,47598,pri,14025,prd,5541,pvem,4484,pt,1517,mc,15693,panal,9570,morena,2132,ph,11368,ps,735,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,6090,127519,284539,,ine casilla
+3703,13,4,2015,jun,7,hgo,Tulancingo de Bravo,4,no,pri-pvem,no,12292,pan,33659,pri,11774,prd,7796,pvem,1811,pt,1739,mc,10439,panal,6317,morena,1988,ph,8198,ps,958,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,5062,102113,244773,,ine casilla
+3704,13,5,2015,jun,7,hgo,Tula de Allende,4,no,pri-pvem,no,23566,pan,40286,pri,10152,prd,9693,pvem,1989,pt,2434,mc,8306,panal,13316,morena,2202,ph,5306,ps,784,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,5433,123566,295693,,ine casilla
+3705,13,6,2015,jun,7,hgo,Pachuca de Soto,4,no,pri-pvem,no,16951,pan,37668,pri,4863,prd,5770,pvem,2867,pt,2486,mc,10137,panal,9561,morena,2966,ph,7928,ps,904,pri-pvem,0,0,23862,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,208,7131,133302,307377,,ine casilla
+3706,13,7,2015,jun,7,hgo,Tepeapulco,4,no,pri-pvem,no,11243,pan,42383,pri,9503,prd,7003,pvem,2850,pt,3245,mc,16035,panal,11299,morena,3395,ph,8813,ps,800,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,6397,123136,318528,,ine casilla
+3707,14,1,2015,jun,7,jal,Tequila,1,no,pri-pvem,no,47360,pan,50755,pri,10679,prd,5504,pvem,7371,pt,31620,mc,5459,panal,4640,morena,1279,ph,1900,ps,1030,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,4242,171876,260780,,ine casilla
+3708,14,2,2015,jun,7,jal,Lagos de Moreno,1,no,pri-pvem,no,50870,pan,43694,pri,3453,prd,9682,pvem,822,pt,25395,mc,4850,panal,3008,morena,1497,ph,1567,ps,2481,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,4807,152181,268578,,ine casilla
+3709,14,3,2015,jun,7,jal,Tepatitlán de Morelos,1,no,pri-pvem,no,55014,pan,45785,pri,2986,prd,6616,pvem,939,pt,23051,mc,3836,panal,1610,morena,4854,ph,5112,ps,1122,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,5694,156674,280325,,ine casilla
+3710,14,4,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,17710,pan,41711,pri,2098,prd,4396,pvem,2556,pt,46219,mc,4343,panal,4343,morena,3362,ph,4931,ps,921,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,4521,137201,296965,,ine casilla
+3711,14,5,2015,jun,7,jal,Puerto Vallarta,1,no,pri-pvem,no,32530,pan,46887,pri,7349,prd,4420,pvem,4017,pt,57042,mc,2759,panal,3941,morena,3007,ph,1727,ps,1778,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,Erika Espinosa Álvarez,,,,,90,4242,169789,308837,,ine casilla
+3712,14,6,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,34664,pan,38604,pri,2002,prd,5286,pvem,2103,pt,55795,mc,4009,panal,4851,morena,3847,ph,6936,ps,1143,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,287,5803,165330,344729,,ine casilla
+3713,14,7,2015,jun,7,jal,Tonalá,1,no,pri-pvem,no,17826,pan,38944,pri,2829,prd,5309,pvem,4146,pt,31543,mc,4733,panal,3889,morena,3324,ph,4662,ps,707,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,3831,121818,302027,,ine casilla
+3714,14,8,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,24920,pan,32265,pri,1991,prd,3689,pvem,2063,pt,54480,mc,3923,panal,4401,morena,2729,ph,4755,ps,1067,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,4910,141363,242020,,ine casilla
+3715,14,9,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,14497,pan,34762,pri,2123,prd,4032,pvem,2749,pt,51517,mc,5236,panal,3935,morena,3091,ph,3643,ps,823,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,116,4005,130529,244505,,ine casilla
+3716,14,10,2015,jun,7,jal,Zapopan,1,no,pri-pvem,no,28596,pan,25825,pri,1995,prd,5274,pvem,1829,pt,50057,mc,3660,panal,5127,morena,3593,ph,6816,ps,1269,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,281,6172,140494,292739,,ine casilla
+3717,14,11,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,12396,pan,35332,pri,2108,prd,3580,pvem,2790,pt,53153,mc,4874,panal,3769,morena,2439,ph,3011,ps,854,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,64,3563,127933,247222,,ine casilla
+3718,14,12,2015,jun,7,jal,Tlajomulco de Zúñiga,1,no,pri-pvem,no,24907,pan,51869,pri,18126,prd,7430,pvem,5389,pt,88398,mc,4908,panal,7015,morena,3639,ph,7877,ps,1749,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,6833,228260,501359,,ine casilla
+3719,14,13,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,18134,pan,34646,pri,2000,prd,4618,pvem,2538,pt,55377,mc,4617,panal,4131,morena,2834,ph,4075,ps,1104,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,110,4259,138443,248951,,ine casilla
+3720,14,14,2015,jun,7,jal,Guadalajara,1,no,pri-pvem,no,19533,pan,26063,pri,2118,prd,5881,pvem,2440,pt,56507,mc,3301,panal,3661,morena,2052,ph,4554,ps,1802,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,117,4136,132165,246013,,ine casilla
+3721,14,15,2015,jun,7,jal,La Barca,1,no,pri-pvem,no,40236,pan,54507,pri,5810,prd,6443,pvem,1977,pt,17573,mc,5646,panal,3682,morena,2882,ph,7810,ps,661,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,4309,151599,275082,,ine casilla
+3722,14,16,2015,jun,7,jal,Tlaquepaque,1,no,pri-pvem,no,17466,pan,37152,pri,2274,prd,4992,pvem,2564,pt,46900,mc,3952,panal,4329,morena,3029,ph,4497,ps,1978,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,4063,133276,300472,,ine casilla
+3723,14,17,2015,jun,7,jal,Jocotepec,1,no,pri-pvem,no,33769,pan,54172,pri,6981,prd,9721,pvem,3377,pt,48860,mc,4644,panal,6914,morena,1392,ph,2202,ps,1757,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,4840,178684,294599,,ine casilla
+3724,14,18,2015,jun,7,jal,Autlán de Navarro,1,no,pri-pvem,no,37996,pan,57504,pri,10571,prd,3938,pvem,2472,pt,32362,mc,6766,panal,4820,morena,4629,ph,1961,ps,925,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,4700,168674,283805,,ine casilla
+3725,14,19,2015,jun,7,jal,Zapotlán El Grande,1,no,pri-pvem,no,34663,pan,48765,pri,18437,prd,4852,pvem,3565,pt,29197,mc,8185,panal,7031,morena,4234,ph,3184,ps,1267,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,5138,168587,273670,,ine casilla
+3726,15,1,2015,jun,7,mex,Jilotepec,5,no,pri-pvem,no,35233,pan,69341,pri,7656,prd,5102,pvem,7346,pt,5722,mc,16712,panal,6792,morena,1790,ph,2774,ps,1283,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,6078,165887,253247,,ine casilla
+3727,15,2,2015,jun,7,mex,Teoloyucán,5,no,pri-pvem,no,37522,pan,47699,pri,14392,prd,3735,pvem,4294,pt,22073,mc,4707,panal,11264,morena,4742,ph,6340,ps,1582,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,5366,163847,297786,,ine casilla
+3728,15,3,2015,jun,7,mex,Atlacomulco,5,no,pri-pvem,no,30679,pan,58341,pri,13966,prd,2705,pvem,7532,pt,3283,mc,6565,panal,6173,morena,1965,ph,3060,ps,1915,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,89,5843,142116,242858,,ine casilla
+3729,15,4,2015,jun,7,mex,Nicolás Romero,5,no,pri-pvem,no,41799,pan,51116,pri,7939,prd,4976,pvem,2594,pt,6897,mc,7740,panal,18555,morena,5099,ph,7578,ps,1385,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,201,6215,162094,345366,,ine casilla
+3730,15,5,2015,jun,7,mex,Teotihuacán,5,no,pri-pvem,no,30179,pan,73470,pri,22239,prd,4564,pvem,14483,pt,7719,mc,4863,panal,23400,morena,4761,ph,8077,ps,1237,pri-pvem,0,0,0,0,0,0,,Cristina Sánchez Coronel,,Cristina Sánchez Coronel,,,,,,,Cristina Sánchez Coronel,,,,,Erika Espinosa Álvarez,,Erika Espinosa Álvarez,,,,,,,,,,,,138,6467,201597,327498,,ine casilla
+3731,15,6,2015,jun,7,mex,Coacalco de Berriozábal,5,no,pri-pvem,no,22046,pan,41456,pri,32429,prd,5490,pvem,2690,pt,5716,mc,4929,panal,18330,morena,4135,ph,10115,ps,1356,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,258,6640,155590,319401,,ine casilla
+3732,15,7,2015,jun,7,mex,Cuautitlán Izcalli,5,no,pri-pvem,no,40430,pan,36717,pri,7094,prd,5135,pvem,5198,pt,6223,mc,6616,panal,20585,morena,6011,ph,11698,ps,981,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,280,7901,154869,301033,,ine casilla
+3733,15,8,2015,jun,7,mex,Tultitlán,5,no,pri-pvem,no,11119,pan,25768,pri,16908,prd,3815,pvem,4262,pt,6132,mc,3724,panal,12744,morena,3562,ph,6570,ps,1143,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,157,5295,101199,229889,,ine casilla
+3734,15,9,2015,jun,7,mex,Ixtlahuaca,5,no,pri-pvem,no,22234,pan,71286,pri,5850,prd,6295,pvem,4960,pt,18851,mc,6536,panal,8712,morena,3404,ph,5620,ps,1205,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,7408,162451,293827,,ine casilla
+3735,15,10,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,9849,pan,41512,pri,23585,prd,5754,pvem,3995,pt,4054,mc,5352,panal,16705,morena,4438,ph,8933,ps,992,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,200,7036,132405,327201,,ine casilla
+3736,15,11,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,11521,pan,31016,pri,17284,prd,4142,pvem,3150,pt,3816,mc,5353,panal,16291,morena,4077,ph,7245,ps,926,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,228,6493,111542,248436,,ine casilla
+3737,15,12,2015,jun,7,mex,Ixtapaluca,5,no,pri-pvem,no,9421,pan,72116,pri,43068,prd,4615,pvem,1840,pt,5927,mc,3588,panal,11970,morena,3135,ph,6930,ps,2179,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,162,6462,171413,370410,,ine casilla
+3738,15,13,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,8033,pan,30861,pri,11710,prd,4653,pvem,2281,pt,2573,mc,4145,panal,16016,morena,2929,ph,6200,ps,1013,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,127,5339,95880,228032,,ine casilla
+3739,15,14,2015,jun,7,mex,Atizapán de Zaragoza,5,no,pri-pvem,no,40230,pan,31138,pri,5608,prd,4397,pvem,1797,pt,3409,mc,4493,panal,13218,morena,3145,ph,7742,ps,952,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,196,6256,122581,282181,,ine casilla
+3740,15,15,2015,jun,7,mex,Tlalnepantla de Baz,5,no,pri-pvem,no,43514,pan,25770,pri,5859,prd,4728,pvem,1617,pt,4033,mc,3945,panal,13115,morena,3818,ph,7635,ps,1140,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,320,8093,123587,260618,,ine casilla
+3741,15,16,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,13504,pan,35171,pri,18172,prd,5156,pvem,4108,pt,2843,mc,4511,panal,15503,morena,3941,ph,6158,ps,1141,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,127,6181,116516,301772,,ine casilla
+3742,15,17,2015,jun,7,mex,Ecatepec de Morelos,5,no,pri-pvem,no,7804,pan,31846,pri,15752,prd,4476,pvem,2435,pt,2798,mc,4879,panal,14920,morena,3373,ph,7485,ps,849,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,198,6046,102861,243834,,ine casilla
+3743,15,18,2015,jun,7,mex,Huixquilucan,5,no,pri-pvem,no,56245,pan,65155,pri,12366,prd,4771,pvem,3271,pt,5766,mc,4248,panal,11534,morena,3720,ph,5822,ps,1523,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,184,7104,181709,315967,,ine casilla
+3744,15,19,2015,jun,7,mex,Tlalnepantla de Baz,5,no,pri-pvem,no,25876,pan,29784,pri,10881,prd,3683,pvem,1781,pt,3416,mc,4010,panal,13310,morena,3861,ph,7338,ps,991,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,239,6585,111755,237483,,ine casilla
+3745,15,20,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,5704,pan,20888,pri,38131,prd,2675,pvem,1313,pt,2061,mc,2574,panal,12626,morena,2191,ph,4682,ps,268,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,183,5123,98419,206037,,ine casilla
+3746,15,21,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,39936,pan,26509,pri,5035,prd,3665,pvem,1614,pt,4560,mc,3082,panal,11286,morena,2963,ph,5286,ps,1107,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,211,5807,111061,243365,,ine casilla
+3747,15,22,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,33726,pan,23206,pri,4153,prd,3435,pvem,1290,pt,2738,mc,3053,panal,10820,morena,3019,ph,5295,ps,789,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,184,5288,96996,202057,,ine casilla
+3748,15,23,2015,jun,7,mex,Valle de Bravo,5,no,pri-pvem,no,31716,pan,78822,pri,25684,prd,5016,pvem,11802,pt,5278,mc,7547,panal,5388,morena,4506,ph,2938,ps,1171,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,6256,186169,282311,,ine casilla
+3749,15,24,2015,jun,7,mex,Naucalpan de Juárez,5,no,pri-pvem,no,20740,pan,25253,pri,6049,prd,3657,pvem,1499,pt,2886,mc,3059,panal,12598,morena,2601,ph,4551,ps,1113,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,114,4434,88554,213961,,ine casilla
+3750,15,25,2015,jun,7,mex,Chimalhuacán,5,no,pri-pvem,no,4598,pan,35389,pri,14239,prd,3937,pvem,2254,pt,1695,mc,3305,panal,15384,morena,2735,ph,4930,ps,969,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,111,4030,93576,283654,,ine casilla
+3751,15,26,2015,jun,7,mex,Toluca,5,no,pri-pvem,no,33680,pan,53176,pri,8595,prd,5041,pvem,6230,pt,7247,mc,7346,panal,10847,morena,4887,ph,8647,ps,1043,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,200,7182,154121,306502,,ine casilla
+3752,15,27,2015,jun,7,mex,Metepec,5,no,pri-pvem,no,36075,pan,61718,pri,6101,prd,4256,pvem,17775,pt,6494,mc,5853,panal,12060,morena,7259,ph,7075,ps,964,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,252,7070,172952,293137,,ine casilla
+3753,15,28,2015,jun,7,mex,Zumpango,5,no,pri-pvem,no,35600,pan,87779,pri,18106,prd,7041,pvem,5283,pt,6924,mc,9160,panal,23376,morena,6369,ph,13084,ps,1992,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,265,9392,224371,431494,,ine casilla
+3754,15,29,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,4188,pan,25881,pri,45419,prd,2675,pvem,1250,pt,1607,mc,2179,panal,9357,morena,2074,ph,3562,ps,1048,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,4468,103837,209405,,ine casilla
+3755,15,30,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,3724,pan,22219,pri,48944,prd,2904,pvem,1493,pt,1717,mc,2203,panal,9862,morena,2240,ph,3853,ps,454,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,4441,104183,216692,,ine casilla
+3756,15,31,2015,jun,7,mex,Nezahualcóyotl,5,no,pri-pvem,no,2720,pan,20052,pri,51238,prd,3117,pvem,1118,pt,1905,mc,2272,panal,8115,morena,2324,ph,3663,ps,549,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,178,4259,101510,214236,,ine casilla
+3757,15,32,2015,jun,7,mex,Valle de Chalco Solidaridad,5,no,pri-pvem,no,3806,pan,25880,pri,26164,prd,2977,pvem,1285,pt,16280,mc,2601,panal,25764,morena,2718,ph,5016,ps,581,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,76,5434,118582,247881,,ine casilla
+3758,15,33,2015,jun,7,mex,Chalco,5,no,pri-pvem,no,16453,pan,58935,pri,24468,prd,4972,pvem,5016,pt,24312,mc,4410,panal,15690,morena,3891,ph,15118,ps,1202,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,113,7318,181898,332038,,ine casilla
+3759,15,34,2015,jun,7,mex,Toluca,5,no,pri-pvem,no,36088,pan,47819,pri,9748,prd,4738,pvem,6575,pt,5094,mc,5843,panal,11067,morena,5317,ph,7795,ps,1076,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,216,7099,148475,282276,,ine casilla
+3760,15,35,2015,jun,7,mex,Tenancingo,5,no,pri-pvem,no,27551,pan,49895,pri,22214,prd,3051,pvem,6821,pt,7081,mc,5861,panal,13477,morena,5441,ph,6205,ps,667,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,108,6614,154986,260667,,ine casilla
+3761,15,36,2015,jun,7,mex,Tejupilco,5,no,pri-pvem,no,35340,pan,69040,pri,44952,prd,1541,pvem,4327,pt,2861,mc,2591,panal,5084,morena,837,ph,744,ps,975,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,5011,173344,238802,,ine casilla
+3762,15,37,2015,jun,7,mex,Cuautitlán,5,no,pri-pvem,no,22216,pan,35307,pri,19164,prd,3963,pvem,4495,pt,11305,mc,4074,panal,13857,morena,4723,ph,9120,ps,876,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,172,5734,135006,272319,,ine casilla
+3763,15,38,2015,jun,7,mex,Texcoco,5,no,pri-pvem,no,4791,pan,43431,pri,13687,prd,3718,pvem,1941,pt,3084,mc,3471,panal,58228,morena,3893,ph,5234,ps,1125,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,5247,147970,304664,,ine casilla
+3764,15,39,2015,jun,7,mex,La Paz,5,no,pri-pvem,no,5625,pan,48060,pri,28501,prd,4105,pvem,3293,pt,3179,mc,3849,panal,18972,morena,4843,ph,10701,ps,957,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,152,6187,138424,296638,,ine casilla
+3765,15,40,2015,jun,7,mex,Zinacantepec,5,no,pri-pvem,no,26207,pan,54583,pri,21083,prd,3201,pvem,12636,pt,6948,mc,6577,panal,6213,morena,5449,ph,4755,ps,987,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,6331,155069,259240,,ine casilla
+3766,16,1,2015,jun,7,mic,Lázaro Cárdenas,5,no,pri-pvem,prd-pt,11008,pan,47176,pri,43318,prd,4768,pvem,1867,pt,2631,mc,2173,panal,6777,morena,1766,ph,1664,ps,492,pri-pvem,467,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5450,129601,248856,,ine casilla
+3767,16,2,2015,jun,7,mic,Puruándiro,5,no,pri-pvem,prd-pt,23175,pan,46329,pri,48812,prd,5717,pvem,16640,pt,4671,mc,4478,panal,5672,morena,2024,ph,2429,ps,631,pri-pvem,823,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,7330,168794,300081,,ine casilla
+3768,16,3,2015,jun,7,mic,Zitácuaro,5,no,pri-pvem,prd-pt,17840,pan,49785,pri,43977,prd,7899,pvem,5747,pt,5865,mc,2925,panal,5205,morena,1423,ph,1435,ps,1689,pri-pvem,1564,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,6195,151588,238679,,ine casilla
+3769,16,4,2015,jun,7,mic,Jiquilpan,5,no,pri-pvem,prd-pt,36490,pan,45447,pri,31403,prd,11823,pvem,4320,pt,8299,mc,2611,panal,3684,morena,1045,ph,2736,ps,443,pri-pvem,319,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,5580,154244,265650,,ine casilla
+3770,16,5,2015,jun,7,mic,Zamora,5,no,pri-pvem,prd-pt,34573,pan,36238,pri,19362,prd,6982,pvem,6483,pt,3980,mc,3385,panal,10822,morena,2068,ph,2767,ps,839,pri-pvem,362,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,141,5604,133606,279974,,ine casilla
+3771,16,6,2015,jun,7,mic,Hidalgo,5,no,pri-pvem,prd-pt,27919,pan,37353,pri,40632,prd,5851,pvem,7887,pt,11072,mc,5160,panal,5165,morena,1563,ph,2018,ps,796,pri-pvem,631,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,7118,153212,268188,,ine casilla
+3772,16,7,2015,jun,7,mic,Zacapu,5,no,pri-pvem,prd-pt,26681,pan,41367,pri,42333,prd,7205,pvem,6279,pt,8984,mc,3646,panal,7999,morena,2380,ph,4595,ps,514,pri-pvem,805,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52,8258,161098,265306,,ine casilla
+3773,16,8,2015,jun,7,mic,Morelia,5,no,pri-pvem,prd-pt,26302,pan,35759,pri,21334,prd,8499,pvem,3815,pt,4773,mc,3198,panal,9033,morena,3885,ph,5261,ps,991,pri-pvem,634,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,269,10410,134163,292391,,ine casilla
+3774,16,9,2015,jun,7,mic,Uruapan,5,no,pri-pvem,prd-pt,26110,pan,34780,pri,40092,prd,6694,pvem,2158,pt,2917,mc,5030,panal,7160,morena,4355,ph,1656,ps,493,pri-pvem,758,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,145,6677,139025,279402,,ine casilla
+3775,16,10,2015,jun,7,mic,Morelia,5,no,pri-pvem,prd-pt,39201,pan,33811,pri,17516,prd,8500,pvem,4000,pt,4949,mc,2407,panal,9414,morena,4099,ph,4445,ps,1174,pri-pvem,522,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,294,10838,141170,266319,,ine casilla
+3776,16,11,2015,jun,7,mic,Pátzcuaro,5,no,pri-pvem,prd-pt,17883,pan,50287,pri,57748,prd,7191,pvem,5497,pt,3240,mc,3082,panal,6340,morena,1486,ph,1376,ps,1221,pri-pvem,1142,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71,8850,165414,273328,,ine casilla
+3777,16,12,2015,jun,7,mic,Apatzingán,5,no,pri-pvem,prd-pt,22821,pan,30966,pri,34290,prd,9697,pvem,5045,pt,12389,mc,2625,panal,7665,morena,1765,ph,2703,ps,717,pri-pvem,854,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34,5627,137198,245304,,ine casilla
+3778,17,1,2015,jun,7,mor,Cuernavaca,4,no,no,prd-pt,30825,pan,22569,pri,16444,prd,11239,pvem,3119,pt,9207,mc,6371,panal,19128,morena,7473,ph,9723,ps,0,0,206,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,439,12924,149667,295341,,ine casilla
+3779,17,2,2015,jun,7,mor,Jiutepec,4,no,no,prd-pt,14144,pan,20156,pri,25735,prd,20658,pvem,2609,pt,8848,mc,5523,panal,15552,morena,19557,ph,7395,ps,0,0,236,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,185,9150,149748,300727,,ine casilla
+3780,17,3,2015,jun,7,mor,Cuautla,4,no,no,prd-pt,13024,pan,30642,pri,28636,prd,7673,pvem,10893,pt,12046,mc,15164,panal,12965,morena,6907,ph,8556,ps,0,0,576,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,9741,156954,276056,,ine casilla
+3781,17,4,2015,jun,7,mor,Jojutla,4,no,no,prd-pt,7227,pan,47361,pri,19104,prd,7505,pvem,13759,pt,17746,mc,6323,panal,9682,morena,5651,ph,5262,ps,0,0,319,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,8061,148070,244653,,ine casilla
+3782,17,5,2015,jun,7,mor,Yautepec,4,no,no,prd-pt,12070,pan,22119,pri,20770,prd,13110,pvem,3987,pt,7201,mc,25474,panal,11439,morena,18767,ph,6916,ps,0,0,183,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,369,9399,151804,251859,,ine casilla
+3783,18,1,2015,jun,7,nay,Santiago Ixcuintla,1,no,no,prd-pt,7341,pan,45253,pri,22776,prd,2973,pvem,2903,pt,5774,mc,2194,panal,3957,morena,577,ph,737,ps,0,0,1010,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,3719,99227,220113,,ine casilla
+3784,18,2,2015,jun,7,nay,Tepic,1,no,no,prd-pt,21743,pan,35994,pri,25871,prd,4536,pvem,3687,pt,1219,mc,3566,panal,5281,morena,1661,ph,2300,ps,0,0,1047,prd-pt,9008,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,92,5098,121103,283064,,ine casilla
+3785,18,3,2015,jun,7,nay,Compostela,1,no,no,prd-pt,32338,pan,47613,pri,3839,prd,4921,pvem,2521,pt,3538,mc,3168,panal,5574,morena,1200,ph,1757,ps,0,0,214,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,5019,111742,290366,,ine casilla
+3786,19,1,2015,jun,7,nl,Santa Catarina,2,no,pri-pvem,prd-pt,76809,pan,29283,pri,2246,prd,7363,pvem,2468,pt,29553,mc,7262,panal,3978,morena,7887,ph,3159,ps,356,pri-pvem,44,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,147,4765,175320,295241,,ine casilla
+3787,19,2,2015,jun,7,nl,Apodaca,2,no,pri-pvem,prd-pt,56876,pan,61893,pri,3583,prd,11750,pvem,4130,pt,27897,mc,7965,panal,5545,morena,5551,ph,5391,ps,366,pri-pvem,10,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,120,4038,195115,360935,,ine casilla
+3788,19,3,2015,jun,7,nl,General Escobedo,2,no,pri-pvem,prd-pt,60320,pan,55846,pri,3590,prd,9804,pvem,5142,pt,30448,mc,6739,panal,5797,morena,6376,ph,6539,ps,494,pri-pvem,23,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,137,4928,196183,355132,,ine casilla
+3789,19,4,2015,jun,7,nl,San Nicolás de los Garza,2,no,pri-pvem,prd-pt,79603,pan,24001,pri,1856,prd,7035,pvem,2626,pt,20060,mc,5182,panal,4290,morena,3914,ph,5218,ps,294,pri-pvem,8,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,3502,157667,259074,,ine casilla
+3790,19,5,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,25062,pan,46911,pri,1838,prd,5749,pvem,14174,pt,10735,mc,4009,panal,2801,morena,3397,ph,8657,ps,677,pri-pvem,36,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,4327,128463,243039,,ine casilla
+3791,19,6,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,53761,pan,31044,pri,2253,prd,5704,pvem,5902,pt,28356,mc,5337,panal,4437,morena,5024,ph,5839,ps,368,pri-pvem,81,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,83,4375,152564,231085,,ine casilla
+3792,19,7,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,38612,pan,36353,pri,2127,prd,5285,pvem,4409,pt,16982,mc,3836,panal,3828,morena,3621,ph,4642,ps,419,pri-pvem,40,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,3696,123908,203839,,ine casilla
+3793,19,8,2015,jun,7,nl,Guadalupe,2,no,pri-pvem,prd-pt,51653,pan,43749,pri,1981,prd,7313,pvem,2017,pt,15526,mc,4720,panal,3736,morena,2540,ph,3519,ps,620,pri-pvem,15,prd-pt,15421,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,3559,156447,255695,,ine casilla
+3794,19,9,2015,jun,7,nl,Linares,2,no,pri-pvem,prd-pt,60357,pan,76405,pri,1343,prd,4207,pvem,6231,pt,5794,mc,15889,panal,2098,morena,3586,ph,3805,ps,629,pri-pvem,18,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,66,7405,187833,288905,,ine casilla
+3795,19,10,2015,jun,7,nl,Monterrey,2,no,pri-pvem,prd-pt,52462,pan,27913,pri,2108,prd,6134,pvem,3700,pt,24798,mc,4873,panal,5478,morena,4176,ph,4190,ps,451,pri-pvem,16,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,91,4001,140391,226757,,ine casilla
+3796,19,11,2015,jun,7,nl,Guadalupe,2,no,pri-pvem,prd-pt,55331,pan,41517,pri,2243,prd,6436,pvem,2503,pt,19416,mc,6380,panal,4690,morena,4203,ph,5140,ps,549,pri-pvem,20,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,4007,152510,268191,,ine casilla
+3797,19,12,2015,jun,7,nl,Cadereyta Jiménez,2,no,pri-pvem,prd-pt,87458,pan,102392,pri,15764,prd,25532,pvem,6416,pt,20261,mc,15393,panal,6443,morena,9254,ph,26479,ps,1775,pri-pvem,305,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,280,8978,326730,573302,,ine casilla
+3798,20,1,2015,jun,7,oax,San Juan Bautista Tuxtepec,3,no,no,prd-pt,11601,pan,40575,pri,24088,prd,3982,pvem,2545,pt,3724,mc,1826,panal,17113,morena,1008,ph,949,ps,0,0,938,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,3885,112271,232591,,ine casilla
+3799,20,2,2015,jun,7,oax,Teotitlán de Flores Magón,3,no,no,prd-pt,6353,pan,23265,pri,9549,prd,1667,pvem,1227,pt,1207,mc,12722,panal,12405,morena,487,ph,337,ps,0,0,128,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,2806,72160,187018,,ine casilla
+3800,20,3,2015,jun,7,oax,Heroica Ciudad de Huajuapan de León,3,no,no,prd-pt,6517,pan,25350,pri,18097,prd,4431,pvem,1891,pt,1545,mc,2284,panal,10731,morena,1338,ph,2169,ps,0,0,714,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,5733,80855,266777,,ine casilla
+3801,20,4,2015,jun,7,oax,Tlacolula de Matamoros,3,no,no,prd-pt,14781,pan,26570,pri,6621,prd,4960,pvem,3854,pt,1307,mc,3136,panal,18723,morena,1299,ph,3526,ps,0,0,260,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,6649,91744,244703,,ine casilla
+3802,20,5,2015,jun,7,oax,Santo Domingo Tehuantepec,3,no,no,prd-pt,3552,pan,23492,pri,24851,prd,1500,pvem,1658,pt,2579,mc,1082,panal,7979,morena,1015,ph,21468,ps,0,0,668,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,59,4248,94151,240762,,ine casilla
+3803,20,6,2015,jun,7,oax,Heroica Ciudad de Tlaxiaco,3,no,no,prd-pt,2724,pan,27048,pri,38020,prd,2298,pvem,2333,pt,940,mc,1441,panal,18088,morena,617,ph,627,ps,0,0,941,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,5355,100468,245030,,ine casilla
+3804,20,7,2015,jun,7,oax,Juchitán de Zaragoza,3,no,no,prd-pt,2740,pan,21756,pri,14804,prd,2937,pvem,1494,pt,391,mc,1474,panal,7409,morena,597,ph,3634,ps,0,0,280,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,2975,60511,238336,,ine casilla
+3805,20,8,2015,jun,7,oax,Oaxaca de Juárez,3,no,no,prd-pt,11562,pan,23599,pri,19969,prd,8423,pvem,3060,pt,1707,mc,4463,panal,13177,morena,2451,ph,5608,ps,0,0,740,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,8361,103347,286362,,ine casilla
+3806,20,9,2015,jun,7,oax,Santa Lucía del Camino,3,no,no,prd-pt,18319,pan,18891,pri,22173,prd,6947,pvem,2545,pt,1317,mc,2864,panal,17352,morena,1797,ph,2857,ps,0,0,537,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,7953,103642,262210,,ine casilla
+3807,20,10,2015,jun,7,oax,Miahuatlán de Porfirio Díaz,3,no,no,prd-pt,19558,pan,33996,pri,9344,prd,2884,pvem,1733,pt,12795,mc,1866,panal,7526,morena,865,ph,643,ps,0,0,208,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,5162,96613,232308,,ine casilla
+3808,20,11,2015,jun,7,oax,Santiago Pinotepa Nacional,3,no,no,prd-pt,2879,pan,31900,pri,18984,prd,1975,pvem,1360,pt,915,mc,1753,panal,7465,morena,917,ph,379,ps,0,0,345,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,3569,72455,281650,,ine casilla
+3809,21,1,2015,jun,7,pue,Huauchinango,4,no,pri-pvem,no,53914,pan,53452,pri,4204,prd,2812,pvem,2542,pt,1812,mc,4478,panal,7345,morena,1114,ph,1521,ps,3586,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,7622,144479,258750,,ine casilla
+3810,21,2,2015,jun,7,pue,Zacatlán,4,no,pri-pvem,no,43578,pan,60350,pri,4020,prd,3173,pvem,2213,pt,1046,mc,3272,panal,5851,morena,1315,ph,1501,ps,3635,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,6191,136202,247532,,ine casilla
+3811,21,3,2015,jun,7,pue,Teziutlán,4,no,pri-pvem,no,50739,pan,36879,pri,3951,prd,3380,pvem,2673,pt,2275,mc,3229,panal,6029,morena,1204,ph,1555,ps,2293,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,5557,119826,242593,,ine casilla
+3812,21,4,2015,jun,7,pue,Zacapoaxtla,4,no,pri-pvem,no,44801,pan,37125,pri,4624,prd,2755,pvem,3945,pt,2366,mc,3444,panal,9615,morena,1117,ph,1020,ps,2520,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,6229,119596,247211,,ine casilla
+3813,21,5,2015,jun,7,pue,San Martín Texmelucan,4,no,pri-pvem,no,25844,pan,16863,pri,2509,prd,4379,pvem,4542,pt,9981,mc,2769,panal,8075,morena,3368,ph,2367,ps,1867,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,137,4483,87184,260068,,ine casilla
+3814,21,6,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,25487,pan,21743,pri,2575,prd,5382,pvem,1901,pt,3155,mc,3584,panal,15638,morena,2888,ph,5033,ps,2109,pri-pvem,0,0,5208,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,226,7379,102308,301572,,ine casilla
+3815,21,7,2015,jun,7,pue,Tepeaca,4,no,pri-pvem,no,32932,pan,47532,pri,1722,prd,2982,pvem,1463,pt,1278,mc,2711,panal,7811,morena,1073,ph,2051,ps,3397,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,4289,109285,254009,,ine casilla
+3816,21,8,2015,jun,7,pue,Chalchicomula de Sesma,4,no,pri-pvem,no,31410,pan,21140,pri,11633,prd,3316,pvem,1955,pt,1472,mc,3065,panal,8367,morena,1783,ph,1084,ps,1310,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,4368,90946,222950,,ine casilla
+3817,21,9,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,25551,pan,14166,pri,3503,prd,6354,pvem,2358,pt,3430,mc,5988,panal,16841,morena,3087,ph,6000,ps,1247,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,248,7617,96390,287062,,ine casilla
+3818,21,10,2015,jun,7,pue,San Pedro Cholula,4,no,pri-pvem,no,28428,pan,14558,pri,4801,prd,3920,pvem,2738,pt,11465,mc,4349,panal,13462,morena,3328,ph,5810,ps,1179,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,232,7410,101680,318443,,ine casilla
+3819,21,11,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,27393,pan,20240,pri,2563,prd,5112,pvem,3055,pt,5122,mc,4836,panal,17416,morena,4094,ph,6877,ps,2385,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,358,9544,108995,308553,,ine casilla
+3820,21,12,2015,jun,7,pue,Puebla,4,no,pri-pvem,no,27096,pan,23857,pri,3147,prd,4765,pvem,2301,pt,4536,mc,4323,panal,19478,morena,4114,ph,7226,ps,2470,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,405,9440,113158,297053,,ine casilla
+3821,21,13,2015,jun,7,pue,Atlixco,4,no,pri-pvem,no,19711,pan,29888,pri,3682,prd,5570,pvem,1765,pt,1065,mc,5117,panal,8447,morena,1134,ph,1837,ps,5573,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,227,4524,88540,231143,,ine casilla
+3822,21,14,2015,jun,7,pue,Izúcar de Matamoros,4,no,pri-pvem,no,3285,pan,45952,pri,20049,prd,2298,pvem,9355,pt,1893,mc,2980,panal,4897,morena,1015,ph,809,ps,3355,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,3525,99446,226674,,ine casilla
+3823,21,15,2015,jun,7,pue,Tehuacán,4,no,pri-pvem,no,41806,pan,16434,pri,6740,prd,4365,pvem,2689,pt,1042,mc,5135,panal,6599,morena,1746,ph,1562,ps,1704,pri-pvem,0,0,13990,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,123,5029,108964,260691,,ine casilla
+3824,21,16,2015,jun,7,pue,Ajalpan,4,no,pri-pvem,no,13123,pan,44373,pri,5242,prd,1863,pvem,1633,pt,514,mc,36233,panal,3882,morena,410,ph,561,ps,2266,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,4248,114367,208027,,ine casilla
+3825,22,1,2015,jun,7,que,Cadereyta de Montes,2,no,pri-pvem,no,75502,pan,70818,pri,9328,prd,15296,pvem,1566,pt,5535,mc,4682,panal,7426,morena,3106,ph,3531,ps,1134,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,87,10087,208098,309734,,ine casilla
+3826,22,2,2015,jun,7,que,San Juan del Río,2,no,pri-pvem,no,79580,pan,63565,pri,5395,prd,10440,pvem,2192,pt,2877,mc,6662,panal,9352,morena,8591,ph,6179,ps,2203,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,233,10781,208050,364380,,ine casilla
+3827,22,3,2015,jun,7,que,Querétaro,2,no,pri-pvem,no,78150,pan,48753,pri,5168,prd,7090,pvem,1996,pt,4644,mc,4638,panal,13790,morena,4797,ph,6218,ps,1376,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,256,9461,186337,363253,,ine casilla
+3828,22,4,2015,jun,7,que,Querétaro,2,no,pri-pvem,no,86390,pan,60154,pri,6214,prd,8266,pvem,2267,pt,4103,mc,5239,panal,14140,morena,5345,ph,6033,ps,1400,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,301,10855,210707,376420,,ine casilla
+3829,23,1,2015,jun,7,qui,Solidaridad,3,no,pri-pvem,no,17254,pan,67746,pri,10402,prd,19725,pvem,4723,pt,8253,mc,6560,panal,26574,morena,5327,ph,7495,ps,5635,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,238,10236,190168,546544,,ine casilla
+3830,23,2,2015,jun,7,qui,Othón P. Blanco,3,no,pri-pvem,no,13961,pan,44636,pri,14878,prd,3196,pvem,6859,pt,2068,mc,7025,panal,18185,morena,2137,ph,3531,ps,2030,pri-pvem,0,0,10969,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,98,6480,136053,254577,,ine casilla
+3831,23,3,2015,jun,7,qui,Benito Juárez,3,no,pri-pvem,no,10182,pan,14224,pri,6812,prd,16411,pvem,2020,pt,10949,mc,2586,panal,10375,morena,3077,ph,2927,ps,3082,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,205,5610,88460,237651,,ine casilla
+3832,24,1,2015,jun,7,san,Matehuala,2,no,pri-pvem,prd-pt,36056,pan,48568,pri,8457,prd,10275,pvem,8510,pt,9211,mc,6991,panal,5768,morena,1296,ph,3313,ps,2345,pri-pvem,718,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,103,11285,152896,251120,,ine casilla
+3833,24,2,2015,jun,7,san,Soledad de Graciano Sánchez,2,no,pri-pvem,prd-pt,22946,pan,35069,pri,47715,prd,8635,pvem,6109,pt,4862,mc,4969,panal,5163,morena,2064,ph,2608,ps,1426,pri-pvem,972,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,377,8993,151908,280220,,ine casilla
+3834,24,3,2015,jun,7,san,Rioverde,2,no,pri-pvem,prd-pt,51380,pan,49769,pri,4597,prd,11937,pvem,5803,pt,3590,mc,4016,panal,3574,morena,1237,ph,1598,ps,1505,pri-pvem,367,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,9142,148601,243033,,ine casilla
+3835,24,4,2015,jun,7,san,Ciudad Valles,2,no,pri-pvem,prd-pt,42766,pan,46398,pri,6993,prd,5480,pvem,3809,pt,4616,mc,5903,panal,4346,morena,3506,ph,2634,ps,2035,pri-pvem,159,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,96,8364,137105,238565,,ine casilla
+3836,24,5,2015,jun,7,san,San Luis Potosí,2,no,pri-pvem,prd-pt,45161,pan,23477,pri,30872,prd,8595,pvem,2649,pt,5045,mc,5044,panal,8558,morena,3023,ph,4939,ps,940,pri-pvem,1112,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1462,9453,150330,288476,,ine casilla
+3837,24,6,2015,jun,7,san,San Luis Potosí,2,no,pri-pvem,prd-pt,35254,pan,14434,pri,42739,prd,12447,pvem,3247,pt,3947,mc,4866,panal,7054,morena,3364,ph,4539,ps,781,pri-pvem,1214,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,970,8358,143214,295840,,ine casilla
+3838,24,7,2015,jun,7,san,Tamazunchale,2,no,pri-pvem,prd-pt,54102,pan,52099,pri,17138,prd,9966,pvem,2912,pt,6759,mc,11748,panal,8967,morena,1808,ph,1318,ps,1860,pri-pvem,657,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,14019,183389,262378,,ine casilla
+3839,25,1,2015,jun,7,sin,El Fuerte,1,no,pri-pvem,no,17484,pan,43444,pri,6420,prd,2662,pvem,847,pt,818,mc,2589,panal,1510,morena,526,ph,492,ps,840,pri-pvem,0,0,19753,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,3284,100723,210880,,ine casilla
+3840,25,2,2015,jun,7,sin,Ahome,1,no,pri-pvem,no,30793,pan,47791,pri,3734,prd,3974,pvem,1430,pt,2933,mc,4028,panal,7518,morena,2925,ph,1918,ps,1142,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,161,5781,114128,297845,,ine casilla
+3841,25,3,2015,jun,7,sin,Salvador Alvarado,1,no,pri-pvem,no,17011,pan,43419,pri,5013,prd,3875,pvem,869,pt,1659,mc,3527,panal,4828,morena,1588,ph,2163,ps,1247,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,239,4323,89761,251369,,ine casilla
+3842,25,4,2015,jun,7,sin,Guasave,1,no,pri-pvem,no,45136,pan,41039,pri,4458,prd,879,pvem,560,pt,322,mc,1610,panal,3403,morena,1975,ph,1047,ps,767,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,2848,104081,199650,,ine casilla
+3843,25,5,2015,jun,7,sin,Culiacán,1,no,pri-pvem,no,8080,pan,27635,pri,2366,prd,3228,pvem,1233,pt,1300,mc,3390,panal,4619,morena,1041,ph,1404,ps,652,pri-pvem,0,0,43730,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,231,4791,103700,300150,,ine casilla
+3844,25,6,2015,jun,7,sin,Mazatlán,1,no,pri-pvem,no,14289,pan,33863,pri,4465,prd,3175,pvem,1815,pt,1545,mc,8815,panal,3082,morena,929,ph,647,ps,1208,pri-pvem,0,0,15297,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,212,4565,93907,232892,,ine casilla
+3845,25,7,2015,jun,7,sin,Culiacán,1,no,pri-pvem,no,9845,pan,25736,pri,3967,prd,4226,pvem,5728,pt,1801,mc,2807,panal,4919,morena,1391,ph,1380,ps,586,pri-pvem,0,0,13629,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,764,4662,81441,272803,,ine casilla
+3846,25,8,2015,jun,7,sin,Mazatlán,1,no,pri-pvem,no,20996,pan,15614,pri,1074,prd,7231,pvem,12031,pt,1568,mc,2422,panal,3918,morena,2036,ph,1134,ps,2305,pri-pvem,0,0,8909,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,130,5567,84935,242731,,ine casilla
+3847,26,1,2015,jun,7,son,San Luis Río Colorado,1,no,pri-pvem,no,57152,pan,47007,pri,4124,prd,3273,pvem,1560,pt,3099,mc,2881,panal,7277,morena,955,ph,3422,ps,825,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,3822,135477,283553,,ine casilla
+3848,26,2,2015,jun,7,son,Nogales,1,no,pri-pvem,no,62089,pan,48916,pri,3481,prd,3069,pvem,2972,pt,9759,mc,5653,panal,4187,morena,747,ph,1805,ps,989,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,5611,149325,311584,,ine casilla
+3849,26,3,2015,jun,7,son,Hermosillo,1,no,pri-pvem,no,58866,pan,50666,pri,3229,prd,3657,pvem,1671,pt,4842,mc,4094,panal,6675,morena,1762,ph,2941,ps,1984,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,108,5485,145980,289652,,ine casilla
+3850,26,4,2015,jun,7,son,Guaymas,1,no,pri-pvem,no,56504,pan,58559,pri,8993,prd,5504,pvem,3187,pt,3204,mc,7310,panal,5486,morena,711,ph,1835,ps,1236,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,5581,158143,261414,,ine casilla
+3851,26,5,2015,jun,7,son,Hermosillo,1,no,pri-pvem,no,52178,pan,53186,pri,2751,prd,2825,pvem,1677,pt,3604,mc,2927,panal,4863,morena,1375,ph,2355,ps,1783,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,4837,134435,263019,,ine casilla
+3852,26,6,2015,jun,7,son,Cajeme,1,no,pri-pvem,no,37321,pan,67194,pri,2758,prd,2750,pvem,1306,pt,11647,mc,5834,panal,6268,morena,1797,ph,2248,ps,1594,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,4239,145033,304116,,ine casilla
+3853,26,7,2015,jun,7,son,Navojoa,1,no,pri-pvem,no,59730,pan,66322,pri,8458,prd,1910,pvem,1145,pt,1341,mc,4541,panal,3248,morena,378,ph,919,ps,1696,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,28,4475,154191,254272,,ine casilla
+3854,27,1,2015,jun,7,tab,Macuspana,3,no,no,prd-pt,7452,pan,36772,pri,37248,prd,24382,pvem,2423,pt,9066,mc,3906,panal,16999,morena,1231,ph,1307,ps,0,0,205,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,83,5354,146428,235925,,ine casilla
+3855,27,2,2015,jun,7,tab,Cárdenas,3,no,no,prd-pt,2156,pan,48861,pri,59197,prd,11709,pvem,10453,pt,2427,mc,2085,panal,6190,morena,949,ph,1343,ps,0,0,636,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,4255,150297,247230,,ine casilla
+3856,27,3,2015,jun,7,tab,Comalcalco,3,no,no,prd-pt,2361,pan,38549,pri,60810,prd,7943,pvem,4107,pt,2296,mc,8492,panal,37860,morena,1052,ph,941,ps,0,0,328,prd-pt,2321,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,5187,172347,273638,,ine casilla
+3857,27,4,2015,jun,7,tab,Centro,3,no,no,prd-pt,3728,pan,29784,pri,22923,prd,18796,pvem,2055,pt,3948,mc,2700,panal,23190,morena,1583,ph,5566,ps,0,0,311,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,131,5969,120684,266869,,ine casilla
+3858,27,5,2015,jun,7,tab,Paraíso,3,no,no,prd-pt,22959,pan,42726,pri,40398,prd,28968,pvem,5761,pt,4652,mc,2525,panal,14869,morena,1245,ph,2147,ps,0,0,281,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,7035,173627,276132,,ine casilla
+3859,27,6,2015,jun,7,tab,Centro,3,no,no,prd-pt,3739,pan,45937,pri,34085,prd,32087,pvem,2980,pt,4043,mc,2674,panal,19731,morena,1478,ph,2876,ps,0,0,609,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,99,6728,157066,313755,,ine casilla
+3860,28,1,2015,jun,7,tam,Nuevo Laredo,2,no,no,no,53683,pan,56473,pri,2107,prd,3867,pvem,664,pt,1094,mc,2221,panal,2352,morena,941,ph,2372,ps,0,0,0,0,3110,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,156,4762,133802,330113,,ine casilla
+3861,28,2,2015,jun,7,tam,Reynosa,2,no,no,no,33639,pan,46104,pri,2916,prd,8308,pvem,1622,pt,4648,mc,5627,panal,6931,morena,2179,ph,4035,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,201,6232,122442,315559,,ine casilla
+3862,28,3,2015,jun,7,tam,Río Bravo,2,no,no,no,39194,pan,89311,pri,4930,prd,6890,pvem,2254,pt,2994,mc,7836,panal,7267,morena,2018,ph,9537,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,194,7483,179908,438661,,ine casilla
+3863,28,4,2015,jun,7,tam,Matamoros,2,no,no,no,40561,pan,53452,pri,1262,prd,6447,pvem,759,pt,1400,mc,3113,panal,3657,morena,960,ph,3657,ps,0,0,0,0,8136,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,160,4766,128330,298082,,ine casilla
+3864,28,5,2015,jun,7,tam,Victoria,2,no,no,no,14445,pan,65995,pri,1662,prd,2877,pvem,1946,pt,49991,mc,7032,panal,2621,morena,1117,ph,2772,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,5057,155584,287163,,ine casilla
+3865,28,6,2015,jun,7,tam,El Mante,2,no,no,no,31909,pan,73830,pri,3199,prd,5934,pvem,1921,pt,1476,mc,9185,panal,2857,morena,1774,ph,5189,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,3658,140983,252177,,ine casilla
+3866,28,7,2015,jun,7,tam,Ciudad Madero,2,no,no,no,24904,pan,57053,pri,7770,prd,9537,pvem,2210,pt,9433,mc,7056,panal,7389,morena,2204,ph,5528,ps,0,0,0,0,4983,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,162,6022,144251,318025,,ine casilla
+3867,28,8,2015,jun,7,tam,Tampico,2,no,no,no,35261,pan,42766,pri,5812,prd,7418,pvem,1496,pt,6565,mc,4013,panal,7114,morena,1670,ph,3751,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,144,5173,121183,257932,,ine casilla
+3868,29,1,2015,jun,7,tla,Apizaco,4,no,no,no,17719,pan,40042,pri,4519,prd,5002,pvem,4246,pt,1509,mc,3035,panal,21683,morena,1580,ph,3634,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,6887,109906,291342,,ine casilla
+3869,29,2,2015,jun,7,tla,Tlaxcala,4,no,no,no,21211,pan,25984,pri,12938,prd,5827,pvem,20243,pt,1711,mc,3971,panal,12269,morena,1868,ph,3943,ps,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,6448,116493,289894,,ine casilla
+3870,29,3,2015,jun,7,tla,Zacatelco,4,no,no,no,12152,pan,28912,pri,13737,prd,3538,pvem,8060,pt,7661,mc,16535,panal,10131,morena,1058,ph,1263,ps,0,0,0,0,2488,indep,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,73,5179,110787,274918,,ine casilla
+3871,30,1,2015,jun,7,ver,Pánuco,3,no,pri-pvem,no,27328,pan,35300,pri,4066,prd,17866,pvem,706,pt,1862,mc,2270,panal,4908,morena,780,ph,982,ps,1215,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,32,3452,100767,215169,,ine casilla
+3872,30,2,2015,jun,7,ver,Tantoyuca,3,no,pri-pvem,no,38906,pan,40780,pri,46993,prd,7587,pvem,2862,pt,2189,mc,3185,panal,5334,morena,812,ph,746,ps,1045,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,5643,156104,250131,,ine casilla
+3873,30,3,2015,jun,7,ver,Tuxpan,3,no,pri-pvem,no,35289,pan,39692,pri,5149,prd,6176,pvem,1819,pt,2299,mc,2918,panal,9929,morena,1574,ph,2394,ps,2228,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,261,4859,114587,242900,,ine casilla
+3874,30,4,2015,jun,7,ver,Veracruz,3,no,pri-pvem,no,57009,pan,19457,pri,5240,prd,8092,pvem,5332,pt,2661,mc,2087,panal,12550,morena,2510,ph,2783,ps,3667,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,317,6496,128201,274058,,ine casilla
+3875,30,5,2015,jun,7,ver,Poza Rica de Hidalgo,3,no,pri-pvem,no,11031,pan,28391,pri,35498,prd,3913,pvem,3300,pt,2135,mc,5096,panal,11394,morena,3722,ph,1675,ps,1103,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,687,5886,113831,259436,,ine casilla
+3876,30,6,2015,jun,7,ver,Papantla,3,no,pri-pvem,no,7472,pan,32029,pri,29507,prd,5128,pvem,1875,pt,22076,mc,3053,panal,6565,morena,1221,ph,772,ps,990,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,222,3873,114783,228427,,ine casilla
+3877,30,7,2015,jun,7,ver,Martínez de la Torre,3,no,pri-pvem,no,28405,pan,31683,pri,21127,prd,14052,pvem,2190,pt,3434,mc,2507,panal,12992,morena,1333,ph,2192,ps,2533,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,812,4830,128090,254961,,ine casilla
+3878,30,8,2015,jun,7,ver,Xalapa,3,no,pri-pvem,prd-pt,21573,pan,34486,pri,19221,prd,9027,pvem,5383,pt,7069,mc,3572,panal,18619,morena,2738,ph,3371,ps,1601,pri-pvem,958,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,921,7096,135635,302372,,ine casilla
+3879,30,9,2015,jun,7,ver,Coatepec,3,no,pri-pvem,no,22565,pan,29836,pri,9659,prd,6697,pvem,3430,pt,5356,mc,3693,panal,19264,morena,2856,ph,5059,ps,1892,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,296,7736,118339,274400,,ine casilla
+3880,30,10,2015,jun,7,ver,Xalapa,3,no,pri-pvem,prd-pt,22035,pan,13715,pri,8338,prd,2900,pvem,4113,pt,5975,mc,4188,panal,31368,morena,3671,ph,4816,ps,1106,pri-pvem,283,prd-pt,9048,indep1,2449,indep2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1089,9305,124399,282864,,ine casilla
+3881,30,11,2015,jun,7,ver,Coatzacoalcos,3,no,pri-pvem,no,11806,pan,23734,pri,5000,prd,3182,pvem,1615,pt,2799,mc,5760,panal,43063,morena,1591,ph,7008,ps,1197,pri-pvem,0,0,3629,indep1,1340,indep2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,384,6616,118724,295469,,ine casilla
+3882,30,12,2015,jun,7,ver,Veracruz,3,no,pri-pvem,no,36574,pan,25524,pri,5897,prd,4903,pvem,3139,pt,5322,mc,2740,panal,15263,morena,2682,ph,3451,ps,3019,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,244,6983,115741,282603,,ine casilla
+3883,30,13,2015,jun,7,ver,Huatusco,3,no,pri-pvem,no,39449,pan,37120,pri,7661,prd,7876,pvem,1657,pt,13303,mc,1896,panal,9373,morena,1874,ph,2011,ps,3313,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,842,5713,132088,271094,,ine casilla
+3884,30,14,2015,jun,7,ver,Minatitlán,3,no,pri-pvem,no,9572,pan,30816,pri,6095,prd,3434,pvem,20805,pt,1282,mc,1275,panal,16335,morena,1112,ph,2141,ps,1239,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,56,5219,99381,248943,,ine casilla
+3885,30,15,2015,jun,7,ver,Orizaba,3,no,pri-pvem,no,35530,pan,36438,pri,9696,prd,6443,pvem,2174,pt,2289,mc,2432,panal,17127,morena,2559,ph,4161,ps,1836,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,490,7989,129164,286057,,ine casilla
+3886,30,16,2015,jun,7,ver,Córdoba,3,no,pri-pvem,no,36568,pan,36533,pri,6580,prd,7005,pvem,2518,pt,4696,mc,3018,panal,18508,morena,6710,ph,3944,ps,1792,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,588,8254,136714,283412,,ine casilla
+3887,30,17,2015,jun,7,ver,Cosamaloapan,3,no,pri-pvem,no,36533,pan,43219,pri,4874,prd,16637,pvem,2120,pt,1694,mc,2404,panal,13498,morena,1674,ph,1957,ps,2753,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,140,6647,134150,310754,,ine casilla
+3888,30,18,2015,jun,7,ver,Zongolica,3,no,pri-pvem,no,31540,pan,33243,pri,22480,prd,6685,pvem,3942,pt,9877,mc,1876,panal,10165,morena,1395,ph,2176,ps,1603,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,170,7937,133089,254865,,ine casilla
+3889,30,19,2015,jun,7,ver,San Andrés Tuxtla,3,no,pri-pvem,no,15851,pan,41484,pri,12068,prd,17927,pvem,2288,pt,1008,mc,2716,panal,13534,morena,2476,ph,4172,ps,2103,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,497,4912,121036,256058,,ine casilla
+3890,30,20,2015,jun,7,ver,Acayucan,3,no,pri-pvem,no,9806,pan,57074,pri,3830,prd,14450,pvem,3717,pt,2037,mc,1573,panal,11728,morena,1331,ph,1426,ps,2363,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,4860,114258,244057,,ine casilla
+3891,30,21,2015,jun,7,ver,Cosoleacaque,3,no,pri-pvem,no,15970,pan,35855,pri,11339,prd,6405,pvem,2415,pt,1415,mc,1356,panal,15520,morena,1130,ph,1776,ps,2250,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,86,5096,100613,264699,,ine casilla
+3892,31,1,2015,jun,7,yuc,Valladolid,3,no,pri-pvem,no,70693,pan,97699,pri,13163,prd,1546,pvem,693,pt,1634,mc,2561,panal,10066,morena,315,ph,410,ps,1011,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,17,3124,202932,251937,,ine casilla
+3893,31,2,2015,jun,7,yuc,Progreso,3,no,pri-pvem,no,68191,pan,91660,pri,9561,prd,6169,pvem,1063,pt,1911,mc,15762,panal,5927,morena,1128,ph,805,ps,613,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,4756,207600,281245,,ine casilla
+3894,31,3,2015,jun,7,yuc,Mérida,3,no,pri-pvem,no,75914,pan,85919,pri,2760,prd,5118,pvem,1202,pt,6791,mc,2903,panal,9126,morena,1697,ph,2948,ps,2870,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,188,6525,203961,341507,,ine casilla
+3895,31,4,2015,jun,7,yuc,Mérida,3,no,pri-pvem,no,76434,pan,71007,pri,2091,prd,4211,pvem,956,pt,5533,mc,2365,panal,6814,morena,1379,ph,2008,ps,2429,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,129,5779,181135,286024,,ine casilla
+3896,31,5,2015,jun,7,yuc,Ticul,3,no,pri-pvem,no,71941,pan,101181,pri,20953,prd,10847,pvem,1767,pt,809,mc,3061,panal,4333,morena,639,ph,788,ps,651,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,5308,222309,275895,,ine casilla
+3897,32,1,2015,jun,7,zac,Fresnillo,2,no,pri-pvem,prd-pt,8466,pan,38491,pri,13066,prd,5995,pvem,29043,pt,1277,mc,3406,panal,4710,morena,2396,ph,4668,ps,1327,pri-pvem,2580,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,79,4907,120411,272780,,ine casilla
+3898,32,2,2015,jun,7,zac,Jerez,2,no,pri-pvem,prd-pt,36097,pan,45441,pri,17469,prd,9048,pvem,3479,pt,826,mc,2758,panal,3323,morena,1416,ph,1718,ps,1109,pri-pvem,498,prd-pt,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,72,4949,128203,267184,,ine casilla
+3899,32,3,2015,jun,7,zac,Zacatecas,2,no,pri-pvem,no,9681,pan,38448,pri,20460,prd,10499,pvem,12266,pt,2947,mc,3513,panal,8156,morena,3121,ph,2934,ps,1063,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,168,6167,119423,267915,,ine casilla
+3900,32,4,2015,jun,7,zac,Guadalupe,2,no,pri-pvem,no,6468,pan,43187,pri,16480,prd,10773,pvem,18389,pt,2010,mc,3607,panal,20462,morena,2476,ph,2640,ps,1106,pri-pvem,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,139,6534,134271,295836,,ine casilla
 3901,1,1,2015,dic,6,ags,Jesús María,2,pan-panal,pri-pvem,no,33805,pan,33810,pri,2787,pvem,13180,pt,11202,panal,1384,morena,756,ph,907,pes,1177,pan-panal,1120,pri-pvem,0,0,0,0,0,0,0,0,SALAS DÍAZ GERARDO FEDERICO,ZAMARRIPA DELGADO GREGORIO,ZAMARRIPA DELGADO GREGORIO,DE LOERA HERNÁNDEZ MIGUEL ÁNGEL,SALAS DÍAZ GERARDO FEDERICO,GUTIÉRREZ CASTORENA DANIEL,SUÁREZ MARTÍNEZ FRANCISCA LIZBETH,RODRÍGUEZ MUÑOZ FÁTIMA GWENDOLINE,SALAS DÍAZ GERARDO FEDERICO,ZAMARRIPA DELGADO GREGORIO,0,0,0,0,VALDEZ GÓMEZ JOSÉ DE JESUS,ROBLES SANDOVAL MARTE EDUARDO,ROBLES SANDOVAL MARTE EDUARDO,RANGEL DE LIRA J. JESÚS,VALDEZ GÓMEZ JOSÉ DE JESUS,GUTIÉRREZ MARTÍNEZ CUAHUTÉMOC,IBARRA ÁLVAREZ MARTHA ALICIA,HERNÁNDEZ MUÑOZ LOURDES YOLANDA ,VALDEZ GÓMEZ JOSÉ DE JESUS,ROBLES SANDOVAL MARTE EDUARDO,0,0,0,0,100128,70,3486,103684,0,extraordinaria,Prep 99.1%
+3902,1,1,2018,jul,1,ags,JESUS MARIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3903,1,2,2018,jul,1,ags,AGUASCALIENTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3904,1,3,2018,jul,1,ags,AGUASCALIENTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3905,2,1,2018,jul,1,bc,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3906,2,2,2018,jul,1,bc,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3907,2,3,2018,jul,1,bc,ENSENADA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3908,2,4,2018,jul,1,bc,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3909,2,5,2018,jul,1,bc,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3910,2,6,2018,jul,1,bc,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3911,2,7,2018,jul,1,bc,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3912,2,8,2018,jul,1,bc,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3913,3,1,2018,jul,1,bcs,LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3914,3,2,2018,jul,1,bcs,LOS CABOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3915,4,1,2018,jul,1,cam,CAMPECHE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3916,4,2,2018,jul,1,cam,CARMEN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3917,5,1,2018,jul,1,coa,PIEDRAS NEGRAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3918,5,2,2018,jul,1,coa,SAN PEDRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3919,5,3,2018,jul,1,coa,MONCLOVA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3920,5,4,2018,jul,1,coa,SALTILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3921,5,5,2018,jul,1,coa,TORREON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3922,5,6,2018,jul,1,coa,TORREON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3923,5,7,2018,jul,1,coa,SALTILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3924,6,1,2018,jul,1,col,COLIMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3925,6,2,2018,jul,1,col,MANZANILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3926,7,1,2018,jul,1,cps,PALENQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3927,7,2,2018,jul,1,cps,BOCHIL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3928,7,3,2018,jul,1,cps,OCOSINGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3929,7,4,2018,jul,1,cps,PICHUCALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3930,7,5,2018,jul,1,cps,SAN CRISTOBAL DE LAS CASAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3931,7,6,2018,jul,1,cps,TUXTLA GUTIERREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3932,7,7,2018,jul,1,cps,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3933,7,8,2018,jul,1,cps,COMITAN DE DOMINGUEZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3934,7,9,2018,jul,1,cps,TUXTLA GUTIERREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3935,7,10,2018,jul,1,cps,VILLAFLORES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3936,7,11,2018,jul,1,cps,LAS MARGARITAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3937,7,12,2018,jul,1,cps,TAPACHULA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3938,7,13,2018,jul,1,cps,HUEHUETAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3939,8,1,2018,jul,1,cua,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3940,8,2,2018,jul,1,cua,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3941,8,3,2018,jul,1,cua,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3942,8,4,2018,jul,1,cua,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3943,8,5,2018,jul,1,cua,DELICIAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3944,8,6,2018,jul,1,cua,CHIHUAHUA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3945,8,7,2018,jul,1,cua,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3946,8,8,2018,jul,1,cua,CHIHUAHUA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3947,8,9,2018,jul,1,cua,HIDALGO DEL PARRAL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3948,9,1,2018,jul,1,df,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3949,9,2,2018,jul,1,df,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3950,9,3,2018,jul,1,df,AZCAPOTZALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3951,9,4,2018,jul,1,df,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3952,9,5,2018,jul,1,df,TLALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3953,9,6,2018,jul,1,df,LA MAGDALENA CONTRERAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3954,9,7,2018,jul,1,df,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3955,9,8,2018,jul,1,df,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3956,9,9,2018,jul,1,df,TLAHUAC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3957,9,10,2018,jul,1,df,MIGUEL HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3958,9,11,2018,jul,1,df,VENUSTIANO CARRANZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3959,9,12,2018,jul,1,df,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3960,9,13,2018,jul,1,df,IZTACALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3961,9,14,2018,jul,1,df,TLALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3962,9,15,2018,jul,1,df,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3963,9,16,2018,jul,1,df,ALVARO OBREGON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3964,9,17,2018,jul,1,df,CUAJIMALPA DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3965,9,18,2018,jul,1,df,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3966,9,19,2018,jul,1,df,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3967,9,20,2018,jul,1,df,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3968,9,21,2018,jul,1,df,XOCHIMILCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3969,9,22,2018,jul,1,df,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3970,9,23,2018,jul,1,df,COYOACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3971,9,24,2018,jul,1,df,COYOACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3972,10,1,2018,jul,1,dgo,DURANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3973,10,2,2018,jul,1,dgo,GOMEZ PALACIO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3974,10,3,2018,jul,1,dgo,GUADALUPE VICTORIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3975,10,4,2018,jul,1,dgo,DURANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3976,11,1,2018,jul,1,gua,SAN LUIS DE LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3977,11,2,2018,jul,1,gua,SAN MIGUEL DE ALLENDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3978,11,3,2018,jul,1,gua,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3979,11,4,2018,jul,1,gua,GUANAJUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3980,11,5,2018,jul,1,gua,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3981,11,6,2018,jul,1,gua,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3982,11,7,2018,jul,1,gua,SAN FRANCISCO DEL RINCON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3983,11,8,2018,jul,1,gua,SALAMANCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3984,11,9,2018,jul,1,gua,IRAPUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3985,11,10,2018,jul,1,gua,URIANGATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3986,11,11,2018,jul,1,gua,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3987,11,12,2018,jul,1,gua,CELAYA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3988,11,13,2018,jul,1,gua,VALLE DE SANTIAGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3989,11,14,2018,jul,1,gua,ACAMBARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3990,11,15,2018,jul,1,gua,IRAPUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3991,12,1,2018,jul,1,gue,PUNGARABATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3992,12,2,2018,jul,1,gue,IGUALA DE LA INDEPENDENCIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3993,12,3,2018,jul,1,gue,ZIHUATANEJO DE AZUETA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3994,12,4,2018,jul,1,gue,ACAPULCO DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3995,12,5,2018,jul,1,gue,TLAPA DE COMONFORT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3996,12,6,2018,jul,1,gue,CHILAPA DE ALVAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3997,12,7,2018,jul,1,gue,CHILPANCINGO DE LOS BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3998,12,8,2018,jul,1,gue,AYUTLA DE LOS LIBRES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+3999,12,9,2018,jul,1,gue,ACAPULCO DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4000,13,1,2018,jul,1,hgo,HUEJUTLA DE REYES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4001,13,2,2018,jul,1,hgo,IXMIQUILPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4002,13,3,2018,jul,1,hgo,ACTOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4003,13,4,2018,jul,1,hgo,TULANCINGO DE BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4004,13,5,2018,jul,1,hgo,TULA DE ALLENDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4005,13,6,2018,jul,1,hgo,PACHUCA DE SOTO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4006,13,7,2018,jul,1,hgo,TEPEAPULCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4007,14,1,2018,jul,1,jal,TEQUILA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4008,14,2,2018,jul,1,jal,LAGOS DE MORENO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4009,14,3,2018,jul,1,jal,TEPATITLAN DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4010,14,4,2018,jul,1,jal,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4011,14,5,2018,jul,1,jal,PUERTO VALLARTA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4012,14,6,2018,jul,1,jal,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4013,14,7,2018,jul,1,jal,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4014,14,8,2018,jul,1,jal,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4015,14,9,2018,jul,1,jal,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4016,14,10,2018,jul,1,jal,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4017,14,11,2018,jul,1,jal,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4018,14,12,2018,jul,1,jal,TLAJOMULCO DE ZUÑIGA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4019,14,13,2018,jul,1,jal,SAN PEDRO TLAQUEPAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4020,14,14,2018,jul,1,jal,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4021,14,15,2018,jul,1,jal,LA BARCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4022,14,16,2018,jul,1,jal,SAN PEDRO TLAQUEPAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4023,14,17,2018,jul,1,jal,JOCOTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4024,14,18,2018,jul,1,jal,AUTLAN DE NAVARRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4025,14,19,2018,jul,1,jal,ZAPOTLAN EL GRANDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4026,14,20,2018,jul,1,jal,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4027,15,1,2018,jul,1,mex,JILOTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4028,15,2,2018,jul,1,mex,TULTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4029,15,3,2018,jul,1,mex,ATLACOMULCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4030,15,4,2018,jul,1,mex,NICOLAS ROMERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4031,15,5,2018,jul,1,mex,TEOTIHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4032,15,6,2018,jul,1,mex,COACALCO DE BERRIOZABAL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4033,15,7,2018,jul,1,mex,CUAUTITLAN IZCALLI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4034,15,8,2018,jul,1,mex,TULTITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4035,15,9,2018,jul,1,mex,SAN FELIPE DEL PROGRESO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4036,15,10,2018,jul,1,mex,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4037,15,11,2018,jul,1,mex,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4038,15,12,2018,jul,1,mex,IXTAPALUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4039,15,13,2018,jul,1,mex,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4040,15,14,2018,jul,1,mex,ATIZAPAN DE ZARAGOZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4041,15,15,2018,jul,1,mex,ATIZAPAN DE ZARAGOZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4042,15,16,2018,jul,1,mex,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4043,15,17,2018,jul,1,mex,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4044,15,18,2018,jul,1,mex,HUIXQUILUCAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4045,15,19,2018,jul,1,mex,TLALNEPANTLA DE BAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4046,15,20,2018,jul,1,mex,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4047,15,21,2018,jul,1,mex,AMECAMECA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4048,15,22,2018,jul,1,mex,NAUCALPAN DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4049,15,23,2018,jul,1,mex,LERMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4050,15,24,2018,jul,1,mex,NAUCALPAN DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4051,15,25,2018,jul,1,mex,CHIMALHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4052,15,26,2018,jul,1,mex,TOLUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4053,15,27,2018,jul,1,mex,METEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4054,15,28,2018,jul,1,mex,ZUMPANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4055,15,29,2018,jul,1,mex,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4056,15,30,2018,jul,1,mex,CHIMALHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4057,15,31,2018,jul,1,mex,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4058,15,32,2018,jul,1,mex,VALLE DE CHALCO SOLIDARIDAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4059,15,33,2018,jul,1,mex,CHALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4060,15,34,2018,jul,1,mex,TOLUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4061,15,35,2018,jul,1,mex,TENANCINGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4062,15,36,2018,jul,1,mex,TEJUPILCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4063,15,37,2018,jul,1,mex,CUAUTITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4064,15,38,2018,jul,1,mex,TEXCOCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4065,15,39,2018,jul,1,mex,LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4066,15,40,2018,jul,1,mex,ZINACANTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4067,15,41,2018,jul,1,mex,TECAMAC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4068,16,1,2018,jul,1,mic,LAZARO CARDENAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4069,16,2,2018,jul,1,mic,PURUANDIRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4070,16,3,2018,jul,1,mic,ZITACUARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4071,16,4,2018,jul,1,mic,JIQUILPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4072,16,5,2018,jul,1,mic,ZAMORA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4073,16,6,2018,jul,1,mic,HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4074,16,7,2018,jul,1,mic,ZACAPU,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4075,16,8,2018,jul,1,mic,MORELIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4076,16,9,2018,jul,1,mic,URUAPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4077,16,10,2018,jul,1,mic,MORELIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4078,16,11,2018,jul,1,mic,PATZCUARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4079,16,12,2018,jul,1,mic,APATZINGAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4080,17,1,2018,jul,1,mor,CUERNAVACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4081,17,2,2018,jul,1,mor,JIUTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4082,17,3,2018,jul,1,mor,CUAUTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4083,17,4,2018,jul,1,mor,JOJUTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4084,17,5,2018,jul,1,mor,YAUTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4085,18,1,2018,jul,1,nay,SANTIAGO IXCUINTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4086,18,2,2018,jul,1,nay,TEPIC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4087,18,3,2018,jul,1,nay,COMPOSTELA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4088,19,1,2018,jul,1,nl,SANTA CATARINA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4089,19,2,2018,jul,1,nl,APODACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4090,19,3,2018,jul,1,nl,GRAL. ESCOBEDO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4091,19,4,2018,jul,1,nl,SAN NICOLAS DE LOS GARZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4092,19,5,2018,jul,1,nl,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4093,19,6,2018,jul,1,nl,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4094,19,7,2018,jul,1,nl,GARCIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4095,19,8,2018,jul,1,nl,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4096,19,9,2018,jul,1,nl,LINARES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4097,19,10,2018,jul,1,nl,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4098,19,11,2018,jul,1,nl,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4099,19,12,2018,jul,1,nl,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4100,20,1,2018,jul,1,oax,SAN JUAN BAUTISTA TUXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4101,20,2,2018,jul,1,oax,TEOTITLAN DE FLORES MAGON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4102,20,3,2018,jul,1,oax,HEROICA CIUDAD DE HUAJUAPAN DE LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4103,20,4,2018,jul,1,oax,TLACOLULA DE MATAMOROS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4104,20,5,2018,jul,1,oax,SALINA CRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4105,20,6,2018,jul,1,oax,HEROICA CIUDAD DE TLAXIACO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4106,20,7,2018,jul,1,oax,CIUDAD IXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4107,20,8,2018,jul,1,oax,OAXACA DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4108,20,9,2018,jul,1,oax,SAN PEDRO MIXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4109,20,10,2018,jul,1,oax,MIAHUATLAN DE PORFIRIO DIAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4110,21,1,2018,jul,1,pue,HUAUCHINANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4111,21,2,2018,jul,1,pue,ZACATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4112,21,3,2018,jul,1,pue,TEZIUTLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4113,21,4,2018,jul,1,pue,AJALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4114,21,5,2018,jul,1,pue,SAN MARTIN TEXMELUCAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4115,21,6,2018,jul,1,pue,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4116,21,7,2018,jul,1,pue,TEPEACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4117,21,8,2018,jul,1,pue,CHALCHICOMULA DE SESMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4118,21,9,2018,jul,1,pue,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4119,21,10,2018,jul,1,pue,SAN PEDRO CHOLULA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4120,21,11,2018,jul,1,pue,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4121,21,12,2018,jul,1,pue,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4122,21,13,2018,jul,1,pue,ATLIXCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4123,21,14,2018,jul,1,pue,ACATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4124,21,15,2018,jul,1,pue,TEHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4125,22,1,2018,jul,1,que,CADEREYTA DE MONTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4126,22,2,2018,jul,1,que,SAN JUAN DEL RIO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4127,22,3,2018,jul,1,que,QUERETARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4128,22,4,2018,jul,1,que,QUERETARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4129,22,5,2018,jul,1,que,CORREGIDORA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4130,23,1,2018,jul,1,qui,SOLIDARIDAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4131,23,2,2018,jul,1,qui,OTHON P. BLANCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4132,23,3,2018,jul,1,qui,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4133,23,4,2018,jul,1,qui,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4134,24,1,2018,jul,1,san,MATEHUALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4135,24,2,2018,jul,1,san,SOLEDAD DE GRACIANO SANCHEZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4136,24,3,2018,jul,1,san,RIOVERDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4137,24,4,2018,jul,1,san,CIUDAD VALLES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4138,24,5,2018,jul,1,san,SAN LUIS POTOSI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4139,24,6,2018,jul,1,san,SAN LUIS POTOSI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4140,24,7,2018,jul,1,san,TAMAZUNCHALE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4141,25,1,2018,jul,1,sin,MAZATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4142,25,2,2018,jul,1,sin,AHOME,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4143,25,3,2018,jul,1,sin,SALVADOR ALVARADO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4144,25,4,2018,jul,1,sin,GUASAVE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4145,25,5,2018,jul,1,sin,CULIACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4146,25,6,2018,jul,1,sin,MAZATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4147,25,7,2018,jul,1,sin,CULIACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4148,26,1,2018,jul,1,son,SAN LUIS RIO COLORADO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4149,26,2,2018,jul,1,son,NOGALES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4150,26,3,2018,jul,1,son,HERMOSILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4151,26,4,2018,jul,1,son,GUAYMAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4152,26,5,2018,jul,1,son,HERMOSILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4153,26,6,2018,jul,1,son,CAJEME,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4154,26,7,2018,jul,1,son,NAVOJOA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4155,27,1,2018,jul,1,tab,MACUSPANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4156,27,2,2018,jul,1,tab,CARDENAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4157,27,3,2018,jul,1,tab,COMALCALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4158,27,4,2018,jul,1,tab,CENTRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4159,27,5,2018,jul,1,tab,PARAISO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4160,27,6,2018,jul,1,tab,CENTRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4161,28,1,2018,jul,1,tam,NUEVO LAREDO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4162,28,2,2018,jul,1,tam,REYNOSA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4163,28,3,2018,jul,1,tam,RIO BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4164,28,4,2018,jul,1,tam,MATAMOROS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4165,28,5,2018,jul,1,tam,VICTORIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4166,28,6,2018,jul,1,tam,EL MANTE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4167,28,7,2018,jul,1,tam,CIUDAD MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4168,28,8,2018,jul,1,tam,TAMPICO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4169,28,9,2018,jul,1,tam,REYNOSA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4170,29,1,2018,jul,1,tla,APIZACO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4171,29,2,2018,jul,1,tla,TLAXCALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4172,29,3,2018,jul,1,tla,ZACATELCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4173,30,1,2018,jul,1,ver,PANUCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4174,30,2,2018,jul,1,ver,TANTOYUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4175,30,3,2018,jul,1,ver,TUXPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4176,30,4,2018,jul,1,ver,VERACRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4177,30,5,2018,jul,1,ver,POZA RICA DE HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4178,30,6,2018,jul,1,ver,PAPANTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4179,30,7,2018,jul,1,ver,MARTINEZ DE LA TORRE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4180,30,8,2018,jul,1,ver,XALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4181,30,9,2018,jul,1,ver,COATEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4182,30,10,2018,jul,1,ver,XALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4183,30,11,2018,jul,1,ver,COATZACOALCOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4184,30,12,2018,jul,1,ver,VERACRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4185,30,13,2018,jul,1,ver,HUATUSCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4186,30,14,2018,jul,1,ver,MINATITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4187,30,15,2018,jul,1,ver,ORIZABA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4188,30,16,2018,jul,1,ver,CORDOBA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4189,30,17,2018,jul,1,ver,COSAMALOAPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4190,30,18,2018,jul,1,ver,ZONGOLICA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4191,30,19,2018,jul,1,ver,SAN ANDRES TUXTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4192,30,20,2018,jul,1,ver,COSOLEACAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4193,31,1,2018,jul,1,yuc,VALLADOLID,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4194,31,2,2018,jul,1,yuc,PROGRESO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4195,31,3,2018,jul,1,yuc,MERIDA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4196,31,4,2018,jul,1,yuc,MERIDA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4197,31,5,2018,jul,1,yuc,TICUL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4198,32,1,2018,jul,1,zac,FRESNILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4199,32,2,2018,jul,1,zac,JEREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4200,32,3,2018,jul,1,zac,ZACATECAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4201,32,4,2018,jul,1,zac,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,321 +1,385 @@
 ord,edon,yr,mo,dy,elec,edo,coalpan,coalpri,coalprd,v1,l1,v2,l2,v3,l3,v4,l4,v5,l5,oth,efec,nr,nul,tot,lisnom,fuente,%pan,%pri,%prd
-1,1,1964,jul,5,senado,Aguascalientes,no,no,no,6334,pan,66016,pri,0,,.,.,.,.,64,72414,0,0,72414,100551,cd banamex,1,1,1
-2,2,1964,jul,5,senado,Baja California,no,no,no,39039,pan,117802,pri,0,,.,.,.,.,0,156841,0,0,156841,257984,cd banamex,1,1,1
-3,3,1964,jul,5,senado,Baja California Sur,no,no,no,.,,.,,.,,.,.,.,.,.,.,.,.,.,35025,cd banamex,1,1,1
-4,4,1964,jul,5,senado,Campeche,no,no,no,1851,pan,57079,pri,0,,.,.,.,.,0,58930,0,0,58930,69833,cd banamex,1,1,1
-5,5,1964,jul,5,senado,Coahuila,no,no,no,16367,pan,235603,pri,0,,.,.,.,.,94,252064,288,0,252352,340419,cd banamex,1,1,1
-6,6,1964,jul,5,senado,Colima,no,no,no,4738,pan,33490,pri,0,,.,.,.,.,0,38228,1,0,38229,68902,cd banamex,1,1,1
-7,7,1964,jul,5,senado,Chiapas,no,no,no,3352,pan,325873,pri,0,,.,.,.,.,4,329229,0,0,329229,433770,cd banamex,1,1,1
-8,8,1964,jul,5,senado,Chihuahua,no,no,no,54897,pan,187237,pri,0,,.,.,.,.,0,242134,0,0,242134,498502,cd banamex,1,1,1
-9,9,1964,jul,5,senado,Distrito Federal,no,no,no,370485,pan,865057,pri,0,,.,.,.,.,29699,1265241,673,0,1265914,2080465,cd banamex,1,1,1
-10,10,1964,jul,5,senado,Durango,no,no,no,22148,pan,197762,pri,0,,.,.,.,.,151,220061,0,222,220283,312512,cd banamex,1,1,1
-11,11,1964,jul,5,senado,Guanajuato,no,no,no,83368,pan,315772,pri,0,,.,.,.,.,4551,403691,9115,0,412806,627364,cd banamex,1,1,1
-12,12,1964,jul,5,senado,Guerrero,no,no,no,12191,pan,381727,pri,0,,.,.,.,.,2436,396354,111,0,396465,519622,cd banamex,1,1,1
-13,13,1964,jul,5,senado,Hidalgo,no,no,no,5309,pan,336736,pri,0,,.,.,.,.,121,342166,26,0,342192,399751,cd banamex,1,1,1
-14,14,1964,jul,5,senado,Jalisco,no,no,no,76773,pan,489531,pri,0,,.,.,.,.,2612,568916,925,0,569841,992016,cd banamex,1,1,1
-15,15,1964,jul,5,senado,México,no,no,no,35804,pan,447913,pri,0,,.,.,.,.,467,484184,1454,0,485638,704174,cd banamex,1,1,1
-16,16,1964,jul,5,senado,Michoacán,no,no,no,52479,pan,318103,pri,0,,.,.,.,.,119,370701,3082,0,373783,671327,cd banamex,1,1,1
-17,17,1964,jul,5,senado,Morelos,no,no,no,6236,pan,103003,pri,0,,.,.,.,.,286,109525,143,0,109668,184322,cd banamex,1,1,1
-18,18,1964,jul,5,senado,Nayarit,no,no,no,5360,pan,62005,pri,0,,.,.,.,.,3546,70911,30,0,70941,157342,cd banamex,1,1,1
-19,19,1964,jul,5,senado,Nuevo León,no,no,no,42331,pan,209224,pri,0,,.,.,.,.,0,251555,0,0,251555,452648,cd banamex,1,1,1
-20,20,1964,jul,5,senado,Oaxaca,no,no,no,15696,pan,426510,pri,0,,.,.,.,.,389,442595,389,0,442984,576228,cd banamex,1,1,1
-21,21,1964,jul,5,senado,Puebla,no,no,no,32274,pan,514063,pri,0,,.,.,.,.,5083,551420,762,0,543195,762202,cd banamex,1,1,1
-22,22,1964,jul,5,senado,Querétaro,no,no,no,11427,pan,92309,pri,0,,.,.,.,.,535,104271,0,0,104271,142834,cd banamex,1,1,1
-23,23,1964,jul,5,senado,Quintana Roo,no,no,no,.,,.,,.,,.,.,.,.,.,.,.,.,.,17829,cd banamex,1,1,1
-24,24,1964,jul,5,senado,San Luis Potosí,no,no,no,24789,pan,253741,pri,0,,.,.,.,.,1676,280206,300,0,280506,406639,cd banamex,1,1,1
-25,25,1964,jul,5,senado,Sinaloa,no,no,no,3605,pan,199245,pri,0,,.,.,.,.,213,203063,114,0,203177,297960,cd banamex,1,1,1
-26,26,1964,jul,5,senado,Sonora,no,no,no,2327,pan,116305,pri,0,,.,.,.,.,11938,130570,4,0,130574,273594,cd banamex,1,1,1
-27,27,1964,jul,5,senado,Tabasco,no,no,no,0,0,145662,pri,0,,.,.,.,.,2211,147873,24,0,147897,175442,cd banamex,1,1,1
-28,28,1964,jul,5,senado,Tamaulipas,no,no,no,0,0,283301,pri,0,,.,.,.,.,2899,286200,3572,0,289772,414023,cd banamex,1,1,1
-29,29,1964,jul,5,senado,Tlaxcala,no,no,no,1417,pan,88332,pri,0,,.,.,.,.,4034,93783,0,0,93783,127126,cd banamex,1,1,1
-30,30,1964,jul,5,senado,Veracruz,no,no,no,19893,pan,651259,pri,0,,.,.,.,.,1006,672158,932,0,672730,988387,cd banamex,1,1,1
-31,31,1964,jul,5,senado,Yucatán,no,no,no,27158,pan,173816,pri,0,,.,.,.,.,0,200974,0,0,200974,259261,cd banamex,1,1,1
-32,32,1964,jul,5,senado,Zacatecas,no,no,no,23397,pan,150476,pri,0,,.,.,.,.,161,174034,0,0,174034,241539,cd banamex,1,1,1
-33,1,1970,jul,5,senado,Aguascalientes,no,no,no,10842,pan,82114,pri,0,,.,.,.,.,0,92956,305,495,93756,152001,cd banamex,1,1,1
-34,2,1970,jul,5,senado,Baja California,no,no,no,73070,pan,176073,pri,0,,.,.,.,.,4405,253548,162,24902,278612,458164,cd banamex,1,1,1
-35,3,1970,jul,5,senado,Baja California Sur,no,no,no,.,,.,,.,,.,.,.,.,.,.,.,.,.,55676,cd banamex,1,1,1
-36,4,1970,jul,5,senado,Campeche,no,no,no,0,0,89395,pri,0,,.,.,.,.,0,89395,0,60,89455,108020,cd banamex,1,1,1
-37,5,1970,jul,5,senado,Coahuila,no,no,no,24486,pan,305885,pri,0,,.,.,.,.,1148,331519,78,1559,333156,584319,cd banamex,1,1,1
-38,6,1970,jul,5,senado,Colima,no,no,no,4369,pan,46863,pri,0,,.,.,.,.,152,51384,59,548,51991,115027,cd banamex,1,1,1
-39,7,1970,jul,5,senado,Chiapas,no,no,no,4237,pan,440558,pri,0,,.,.,.,.,1731,446526,49,7,446582,666507,cd banamex,1,1,1
-40,8,1970,jul,5,senado,Chihuahua,no,no,no,82705,pan,328759,pri,0,,.,.,.,.,4504,415968,296,0,416264,771895,cd banamex,1,1,1
-41,9,1970,jul,5,senado,Distrito Federal,no,no,no,706903,pan,1352878,pri,0,,.,.,.,.,56204,2115985,10814,269215,2396014,3635728,cd banamex,1,1,1
-42,10,1970,jul,5,senado,Durango,no,no,no,27579,pan,181411,pri,0,,.,.,.,.,3083,212073,18,17,212108,423676,cd banamex,1,1,1
-43,11,1970,jul,5,senado,Guanajuato,no,no,no,108535,pan,433513,pri,0,,.,.,.,.,4599,546647,2219,19684,568550,925364,cd banamex,1,1,1
-44,12,1970,jul,5,senado,Guerrero,no,no,no,18496,pan,431610,pri,0,,.,.,.,.,2537,452643,415,0,453058,698563,cd banamex,1,1,1
-45,13,1970,jul,5,senado,Hidalgo,no,no,no,11470,pan,421199,pri,0,,.,.,.,.,0,432669,469,2221,435359,549586,cd banamex,1,1,1
-46,14,1970,jul,5,senado,Jalisco,no,no,no,160345,pan,752429,pri,0,,.,.,.,.,10060,922834,2364,49941,975139,1529320,cd banamex,1,1,1
-47,15,1970,jul,5,senado,México,no,no,no,134667,pan,711825,pri,0,,.,.,.,.,10333,856825,2192,118444,977461,1393428,cd banamex,1,1,1
-48,16,1970,jul,5,senado,Michoacán,no,no,no,81601,pan,526433,pri,0,,.,.,.,.,0,608034,467,44506,653007,1052835,cd banamex,1,1,1
-49,17,1970,jul,5,senado,Morelos,no,no,no,0,0,156416,pri,0,,.,.,.,.,0,156416,8992,11148,176556,265408,cd banamex,1,1,1
-50,18,1970,jul,5,senado,Nayarit,no,no,no,3919,pan,122432,pri,0,,.,.,.,.,5273,131624,0,28104,159728,236132,cd banamex,1,1,1
-51,19,1970,jul,5,senado,Nuevo León,no,no,no,70913,pan,345377,pri,0,,.,.,.,.,4005,420295,94,12445,432834,772446,cd banamex,1,1,1
-52,20,1970,jul,5,senado,Oaxaca,no,no,no,23100,pan,645376,pri,0,,.,.,.,.,8066,676542,83,29344,705969,893478,cd banamex,1,1,1
-53,21,1970,jul,5,senado,Puebla,no,no,no,94684,pan,541591,pri,0,,.,.,.,.,5729,642004,1154,8375,651533,1040977,cd banamex,1,1,1
-54,22,1970,jul,5,senado,Querétaro,no,no,no,12362,pan,131173,pri,0,,.,.,.,.,0,143535,3,2235,145773,219479,cd banamex,1,1,1
-55,23,1970,jul,5,senado,Quintana Roo,no,no,no,.,,.,,.,,.,.,.,.,.,.,.,.,.,34928,cd banamex,1,1,1
-56,24,1970,jul,5,senado,San Luis Potosí,no,no,no,33538,pan,312798,pri,0,,.,.,.,.,0,346336,285,5514,352135,566233,cd banamex,1,1,1
-57,25,1970,jul,5,senado,Sinaloa,no,no,no,15843,pan,259035,pri,0,,.,.,.,.,4692,279570,253,2251,282074,529427,cd banamex,1,1,1
-58,26,1970,jul,5,senado,Sonora,no,no,no,14607,pan,203675,pri,0,,.,.,.,.,1594,219876,43,0,219919,484880,cd banamex,1,1,1
-59,27,1970,jul,5,senado,Tabasco,no,no,no,0,0,228373,pri,0,,.,.,.,.,2211,230584,0,0,230584,294828,cd banamex,1,1,1
-60,28,1970,jul,5,senado,Tamaulipas,no,no,no,30717,pan,361025,pri,0,,.,.,.,.,1311,393053,382,1595,395030,673981,cd banamex,1,1,1
-61,29,1970,jul,5,senado,Tlaxcala,no,no,no,6039,pan,114435,pri,0,,.,.,.,.,332,120806,231,22,121059,178219,cd banamex,1,1,1
-62,30,1970,jul,5,senado,Veracruz,no,no,no,74826,pan,1004282,pri,0,,.,.,.,.,12906,1092014,1930,33392,1127336,1595297,cd banamex,1,1,1
-63,31,1970,jul,5,senado,Yucatán,no,no,no,34906,pan,197425,pri,0,,.,.,.,.,1368,233699,0,0,233699,338222,cd banamex,1,1,1
-64,32,1970,jul,5,senado,Zacatecas,no,no,no,24397,pan,245922,pri,0,,.,.,.,.,766,271085,59,1834,272978,421069,cd banamex,1,1,1
-65,1,1976,jul,.,senado,Aguascalientes,no,no,no,10455,pan,88988,pri,0,,.,.,.,.,2392,101835,54,4002,105891,198930,mau - cd Banamex,1,1,1
-66,2,1976,jul,.,senado,Baja California,no,no,no,48991,pan,224618,pri,0,,.,.,.,.,3811,277420,185,47068,324673,525295,mau - cd Banamex,1,1,1
-67,3,1976,jul,.,senado,Baja California Sur,no,no,no,0,0,42814,pri,0,,.,.,.,.,2144,44958,23,2455,47436,72858,mau - cd Banamex,1,1,1
-68,4,1976,jul,.,senado,Campeche,no,no,no,0,0,135881,pri,0,,.,.,.,.,0,135881,26,180,136087,144891,mau - cd Banamex,1,1,1
-69,5,1976,jul,.,senado,Coahuila,no,no,no,0,0,385660,pri,0,,.,.,.,.,7588,393248,217,2499,395964,672945,mau - cd Banamex,1,1,1
-70,6,1976,jul,.,senado,Colima,no,no,no,2103,pan,58026,pri,0,,.,.,.,.,0,60129,51,893,61073,147814,mau - cd Banamex,1,1,1
-71,7,1976,jul,.,senado,Chiapas,no,no,no,0,0,465432,pri,0,,.,.,.,.,5469,470901,928,1369,473198,716223,mau - cd Banamex,1,1,1
-72,8,1976,jul,.,senado,Chihuahua,no,no,no,0,0,354079,pri,0,,.,.,.,.,30425,384504,537,54770,439811,928704,mau - cd Banamex,1,1,1
-73,9,1976,jul,.,senado,Distrito Federal,no,no,no,568538,pan,1599015,pri,0,,.,.,.,.,203608,2371161,15518,482001,2868680,4519658,mau - cd Banamex,1,1,1
-74,10,1976,jul,.,senado,Durango,no,no,no,0,0,232936,pri,0,,.,.,.,.,5515,238451,916,562,239929,525885,mau - cd Banamex,1,1,1
-75,11,1976,jul,.,senado,Guanajuato,no,no,no,0,0,601090,pri,0,,.,.,.,.,0,601090,974,10558,612622,1079893,mau - cd Banamex,1,1,1
-76,12,1976,jul,.,senado,Guerrero,no,no,no,0,0,668390,pri,0,,.,.,.,.,5384,673774,675,2946,677395,955373,mau - cd Banamex,1,1,1
-77,13,1976,jul,.,senado,Hidalgo,no,no,no,0,0,441944,pri,0,,.,.,.,.,15383,457327,1,23773,481101,659154,mau - cd Banamex,1,1,1
-78,14,1976,jul,.,senado,Jalisco,no,no,no,133781,pan,789308,pri,0,,.,.,.,.,42525,965614,1466,51601,1018681,1471794,mau - cd Banamex,1,1,1
-79,15,1976,jul,.,senado,México,no,no,no,193419,pan,1075308,pri,0,,.,.,.,.,75513,1344240,4070,91182,1439492,1986365,mau - cd Banamex,1,1,1
-80,16,1976,jul,.,senado,Michoacán,no,no,no,26861,pan,675760,pri,0,,.,.,.,.,8460,711081,3100,15236,729417,1158788,mau - cd Banamex,1,1,1
-81,17,1976,jul,.,senado,Morelos,no,no,no,23254,pan,144102,pri,0,,.,.,.,.,5107,172463,792,15296,188551,352414,mau - cd Banamex,1,1,1
-82,18,1976,jul,.,senado,Nayarit,no,no,no,0,0,182918,pri,0,,.,.,.,.,0,182918,0,11230,194148,324737,mau - cd Banamex,1,1,1
-83,19,1976,jul,.,senado,Nuevo León,no,no,no,61142,pan,289465,pri,0,,.,.,.,.,3216,353823,771,10678,365272,714755,mau - cd Banamex,1,1,1
-84,20,1976,jul,.,senado,Oaxaca,no,no,no,0,0,551607,pri,0,,.,.,.,.,176904,728511,302,2919,731732,1060668,mau - cd Banamex,1,1,1
-85,21,1976,jul,.,senado,Puebla,no,no,no,99754,pan,617644,pri,0,,.,.,.,.,31104,748502,564,31327,780393,1265197,mau - cd Banamex,1,1,1
-86,22,1976,jul,.,senado,Querétaro,no,no,no,9991,pan,183270,pri,0,,.,.,.,.,2948,196209,174,5136,201519,279110,mau - cd Banamex,1,1,1
-87,23,1976,jul,.,senado,Quintana Roo,no,no,no,1678,pan,45996,pri,0,,.,.,.,.,187,47861,2,1384,49247,56473,mau - cd Banamex,1,1,1
-88,24,1976,jul,.,senado,San Luis Potosí,no,no,no,0,0,366926,pri,0,,.,.,.,.,6514,373440,549,13244,387233,677688,mau - cd Banamex,1,1,1
-89,25,1976,jul,.,senado,Sinaloa,no,no,no,9864,pan,270272,pri,0,,.,.,.,.,6798,286934,422,3685,291041,650897,mau - cd Banamex,1,1,1
-90,26,1976,jul,.,senado,Sonora,no,no,no,8137,pan,327875,pri,0,,.,.,.,.,8412,344424,775,2214,347413,672221,mau - cd Banamex,1,1,1
-91,27,1976,jul,.,senado,Tabasco,no,no,no,0,0,252919,pri,0,,.,.,.,.,13109,266028,339,1098,267465,340313,mau - cd Banamex,1,1,1
-92,28,1976,jul,.,senado,Tamaulipas,no,no,no,0,0,411447,pri,0,,.,.,.,.,21341,432788,1233,21190,455211,883745,mau - cd Banamex,1,1,1
-93,29,1976,jul,.,senado,Tlaxcala,no,no,no,3112,pan,190920,pri,0,,.,.,.,.,5881,199913,5,414,200332,234372,mau - cd Banamex,1,1,1
-94,30,1976,jul,.,senado,Veracruz,no,no,no,44326,pan,1133642,pri,0,,.,.,.,.,50587,1228555,4430,23634,1256619,1741527,mau - cd Banamex,1,1,1
-95,31,1976,jul,.,senado,Yucatán,no,no,no,0,0,312082,pri,0,,.,.,.,.,10013,322095,51,29750,351896,411829,mau - cd Banamex,1,1,1
-96,32,1976,jul,.,senado,Zacatecas,no,no,no,0,0,286491,pri,0,,.,.,.,.,4495,290986,502,2733,294221,482703,mau - cd Banamex,1,1,1
-97,1,1982,jul,.,senado,Aguascalientes,no,no,no,30755,pan,129901,pri,2118,prd,.,.,.,.,10896,173993,7,18874,192874,260868,mau - cd Banamex,1,1,1
-98,2,1982,jul,.,senado,Baja California,no,no,no,152744,pan,242274,pri,17752,prd,.,.,.,.,35844,456293,10,61271,517574,685922,mau - cd Banamex,1,1,1
-99,3,1982,jul,.,senado,Baja California Sur,no,no,no,11362,pan,62825,pri,2241,prd,.,.,.,.,1736,80652,10,9375,90037,116364,mau - cd Banamex,1,1,1
-100,4,1982,jul,.,senado,Campeche,no,no,no,7224,pan,95737,pri,724,prd,.,.,.,.,1546,105231,284,9730,115245,168338,mau - cd Banamex,1,1,1
-101,5,1982,jul,.,senado,Coahuila,no,no,no,89305,pan,209651,pri,965,prd,.,.,.,.,10521,311500,396,11460,323356,681635,mau - cd Banamex,1,1,1
-102,6,1982,jul,.,senado,Colima,no,no,no,4191,pan,64207,pri,864,prd,.,.,.,.,2674,72281,9,2250,74540,170791,mau - cd Banamex,1,1,1
-103,7,1982,jul,.,senado,Chiapas,no,no,no,21054,pan,569552,pri,7629,prd,.,.,.,.,21041,622887,22,23784,646693,923098,mau - cd Banamex,1,1,1
-104,8,1982,jul,.,senado,Chihuahua,no,no,no,158910,pan,337483,pri,14241,prd,.,.,.,.,19566,530200,262,45718,576180,963853,mau - cd Banamex,1,1,1
-105,9,1982,jul,.,senado,Distrito Federal,no,no,no,894350,pan,1663851,pri,326327,prd,.,.,.,.,312472,3331247,1453,460568,3793268,4779964,mau - cd Banamex,1,1,1
-106,10,1982,jul,.,senado,Durango,no,no,no,62470,pan,270401,pri,7637,prd,.,.,.,.,9535,351232,9,12942,364183,603027,mau - cd Banamex,1,1,1
-107,11,1982,jul,.,senado,Guanajuato,no,no,no,182679,pan,558688,pri,10993,prd,.,.,.,.,80163,832523,50,37370,869943,1398807,mau - cd Banamex,1,1,1
-108,12,1982,jul,.,senado,Guerrero,no,no,no,21939,pan,408345,pri,0,,.,.,.,.,3866,434150,0,11522,445672,984325,mau - cd Banamex,1,1,1
-109,13,1982,jul,.,senado,Hidalgo,no,no,no,50651,pan,465877,pri,9467,prd,.,.,.,.,21649,547644,93,11436,559173,748930,mau - cd Banamex,1,1,1
-110,14,1982,jul,.,senado,Jalisco,no,no,no,353123,pan,762633,pri,103363,prd,.,.,.,.,79481,1298600,0,106241,1404841,2031506,mau - cd Banamex,1,1,1
-111,15,1982,jul,.,senado,México,no,no,no,612609,pan,1417367,pri,147084,prd,.,.,.,.,179385,2409961,0,587080,2997041,3102137,mau - cd Banamex,1,1,1
-112,16,1982,jul,.,senado,Michoacán,no,no,no,86484,pan,577323,pri,16796,prd,.,.,.,.,52093,734741,17,37420,772178,1359175,mau - cd Banamex,1,1,1
-113,17,1982,jul,.,senado,Morelos,no,no,no,29325,pan,231710,pri,8681,prd,.,.,.,.,17906,296885,52,18466,315403,392556,mau - cd Banamex,1,1,1
-114,18,1982,jul,.,senado,Nayarit,no,no,no,4965,pan,148255,pri,22324,prd,.,.,.,.,7425,182969,18,17044,200031,332502,mau - cd Banamex,1,1,1
-115,19,1982,jul,.,senado,Nuevo León,no,no,no,218724,pan,608366,pri,5529,prd,.,.,.,.,16449,849068,0,24213,873281,1155687,mau - cd Banamex,1,1,1
-116,20,1982,jul,.,senado,Oaxaca,no,no,no,48196,pan,543515,pri,21956,prd,.,.,.,.,39468,653135,72,10467,663674,1131450,mau - cd Banamex,1,1,1
-117,21,1982,jul,.,senado,Puebla,no,no,no,139076,pan,917147,pri,28834,prd,.,.,.,.,44382,1132527,43,59849,1192419,1591940,mau - cd Banamex,1,1,1
-118,22,1982,jul,.,senado,Querétaro,no,no,no,33284,pan,193681,pri,3225,prd,.,.,.,.,8015,238205,4,14120,252329,347054,mau - cd Banamex,1,1,1
-119,23,1982,jul,.,senado,Quintana Roo,no,no,no,2856,pan,86143,pri,950,prd,.,.,.,.,2819,92768,5,923,93696,108075,mau - cd Banamex,1,1,1
-120,24,1982,jul,.,senado,San Luis Potosí,no,no,no,46978,pan,352978,pri,4315,prd,.,.,.,.,26783,431572,14,0,431586,728011,mau - cd Banamex,1,1,1
-121,25,1982,jul,.,senado,Sinaloa,no,no,no,59549,pan,450660,pri,31326,prd,.,.,.,.,20560,565196,96,22591,587883,864566,mau - cd Banamex,1,1,1
-122,26,1982,jul,.,senado,Sonora,no,no,no,121824,pan,246869,pri,6693,prd,.,.,.,.,6002,383308,162,26615,410085,727765,mau - cd Banamex,1,1,1
-123,27,1982,jul,.,senado,Tabasco,no,no,no,11210,pan,299649,pri,1741,prd,.,.,.,.,4450,317050,11,6756,323817,446581,mau - cd Banamex,1,1,1
-124,28,1982,jul,.,senado,Tamaulipas,no,no,no,36404,pan,432681,pri,7667,prd,.,.,.,.,71524,548276,26,46897,595199,887181,mau - cd Banamex,1,1,1
-125,29,1982,jul,.,senado,Tlaxcala,no,no,no,20061,pan,134954,pri,3774,prd,.,.,.,.,13013,171802,22,5862,177686,260973,mau - cd Banamex,1,1,1
-126,30,1982,jul,.,senado,Veracruz,no,no,no,71223,pan,1569368,pri,41375,prd,.,.,.,.,154959,1836925,8346,63264,1908535,2517944,mau - cd Banamex,1,1,1
-127,31,1982,jul,.,senado,Yucatán,no,no,no,56148,pan,253893,pri,3179,prd,.,.,.,.,2841,316061,6,6341,322408,511279,mau - cd Banamex,1,1,1
-128,32,1982,jul,.,senado,Zacatecas,no,no,no,38425,pan,278130,pri,6621,prd,.,.,.,.,6608,329784,0,9874,339658,544252,mau - cd Banamex,1,1,1
-129,1,1988,jul,6,senado,Aguascalientes,no,no,no,46554,pan,85947,pri,4502,prd,.,.,.,.,27378,164381,0,0,164381,.,mau - cd Banamex,1,1,1
-130,2,1988,jul,6,senado,Baja California,no,no,no,110455,pan,166751,pri,15171,prd,.,.,.,.,118771,411148,0,0,411148,817466,mau - cd Banamex,1,1,1
-131,3,1988,jul,6,senado,Baja California Sur,no,no,no,15238,pan,48287,pri,1645,prd,.,.,.,.,17765,82935,0,0,82935,150348,mau - cd Banamex,1,1,1
-132,4,1988,jul,6,senado,Campeche,no,no,no,13499,pan,81965,pri,1289,prd,.,.,.,.,15506,112259,0,0,112259,229954,mau - cd Banamex,1,1,1
-133,5,1988,jul,6,senado,Coahuila,no,no,no,52159,pan,182481,pri,6369,prd,.,.,.,.,88557,329566,0,0,329566,.,mau - cd Banamex,1,1,1
-134,6,1988,jul,6,senado,Colima,no,no,no,13413,pan,47575,pri,1939,prd,.,.,.,.,30127,93054,0,0,93054,218028,mau - cd Banamex,1,1,1
-135,7,1988,jul,6,senado,Chiapas,no,no,no,22924,pan,553892,pri,10497,prd,.,.,.,.,28203,615516,0,0,615516,1189034,mau - cd Banamex,1,1,1
-136,8,1988,jul,6,senado,Chihuahua,no,no,no,200749,pan,282803,pri,4553,prd,.,.,.,.,23630,511735,0,0,511735,1295067,mau - cd Banamex,1,1,1
-137,9,1988,jul,6,senado,Distrito Federal,no,no,no,682309,pan,753478,pri,231722,prd,.,.,.,.,1153443,2820952,0,0,2820952,.,mau - cd Banamex,1,1,1
-138,10,1988,jul,6,senado,Durango,no,no,no,60588,pan,199315,pri,16346,prd,.,.,.,.,44642,320891,0,0,320891,682290,mau - cd Banamex,1,1,1
-139,11,1988,jul,6,senado,Guanajuato,no,no,no,201346,pan,276404,pri,8973,prd,.,.,.,.,154924,641647,0,0,641647,.,mau - cd Banamex,1,1,1
-140,12,1988,jul,6,senado,Guerrero,no,no,no,11431,pan,311646,pri,17241,prd,.,.,.,.,165064,505382,0,0,505382,1200804,mau - cd Banamex,1,1,1
-141,13,1988,jul,6,senado,Hidalgo,no,no,no,21651,pan,252881,pri,15685,prd,.,.,.,.,71214,361431,0,0,361431,812252,mau - cd Banamex,1,1,1
-142,14,1988,jul,6,senado,Jalisco,no,no,no,386773,pan,507102,pri,32355,prd,.,.,.,.,262947,1189177,0,0,1189177,2514777,mau - cd Banamex,1,1,1
-143,15,1988,jul,6,senado,México,no,no,no,396273,pan,733039,pri,196125,prd,.,.,.,.,953049,2278486,0,0,2278486,4190232,mau - cd Banamex,1,1,1
-144,16,1988,jul,6,senado,Michoacán,no,no,no,68018,pan,141790,pri,12143,prd,.,.,.,.,368384,590335,0,0,590335,1549843,mau - cd Banamex,1,1,1
-145,17,1988,jul,6,senado,Morelos,no,no,no,22165,pan,95699,pri,11950,prd,.,.,.,.,120811,250625,0,0,250625,583597,mau - cd Banamex,1,1,1
-146,18,1988,jul,6,senado,Nayarit,no,no,no,22929,pan,120065,pri,13412,prd,.,.,.,.,54214,210620,0,0,210620,405300,mau - cd Banamex,1,1,1
-147,19,1988,jul,6,senado,Nuevo León,no,no,no,153871,pan,509865,pri,4067,prd,.,.,.,.,19006,686809,0,0,686809,1625718,mau - cd Banamex,1,1,1
-148,20,1988,jul,6,senado,Oaxaca,no,no,no,30546,pan,398175,pri,21211,prd,.,.,.,.,159815,609747,0,0,609747,1364539,mau - cd Banamex,1,1,1
-149,21,1988,jul,6,senado,Puebla,no,no,no,116733,pan,511377,pri,31322,prd,.,.,.,.,171919,831351,0,0,831351,1693380,mau - cd Banamex,1,1,1
-150,22,1988,jul,6,senado,Querétaro,no,no,no,44312,pan,153643,pri,3580,prd,.,.,.,.,27553,229088,0,0,229088,409408,mau - cd Banamex,1,1,1
-151,23,1988,jul,6,senado,Quintana Roo,no,no,no,7511,pan,63156,pri,1389,prd,.,.,.,.,18116,90172,0,0,90172,188191,mau - cd Banamex,1,1,1
-152,24,1988,jul,6,senado,San Luis Potosí,no,no,no,74407,pan,264629,pri,2772,prd,.,.,.,.,28242,370050,0,0,370050,868279,mau - cd Banamex,1,1,1
-153,25,1988,jul,6,senado,Sinaloa,no,no,no,142673,pan,319358,pri,9574,prd,.,.,.,.,47353,518958,0,0,518958,1113969,mau - cd Banamex,1,1,1
-154,26,1988,jul,6,senado,Sonora,no,no,no,85998,pan,283071,pri,5892,prd,.,.,.,.,22813,397774,0,0,397774,899250,mau - cd Banamex,1,1,1
-155,27,1988,jul,6,senado,Tabasco,no,no,no,13806,pan,202644,pri,5321,prd,.,.,.,.,40600,262371,0,0,262371,634687,mau - cd Banamex,1,1,1
-156,28,1988,jul,6,senado,Tamaulipas,no,no,no,44788,pan,290791,pri,10966,prd,.,.,.,.,115572,462117,0,0,462117,1120265,mau - cd Banamex,1,1,1
-157,29,1988,jul,6,senado,Tlaxcala,no,no,no,10594,pan,114028,pri,6006,prd,.,.,.,.,51058,181686,0,0,181686,331907,mau - cd Banamex,1,1,1
-158,30,1988,jul,6,senado,Veracruz,no,no,no,107436,pan,884626,pri,37293,prd,.,.,.,.,422081,1451436,0,0,1451436,3045721,mau - cd Banamex,1,1,1
-159,31,1988,jul,6,senado,Yucatán,no,no,no,88473,pan,206938,pri,1106,prd,.,.,.,.,2940,299457,0,0,299457,602041,mau - cd Banamex,1,1,1
-160,32,1988,jul,6,senado,Zacatecas,no,no,no,31160,pan,193554,pri,16039,prd,.,.,.,.,46744,287497,0,0,287497,602780,mau - cd Banamex,1,1,1
-161,1,1991,ago,18,senado,Aguascalientes,no,no,no,42926,pan,137111,pri,5744,prd,.,.,.,.,21995,207776,160,8686,216622,.,mau - cd Banamex,1,1,1
-162,2,1991,ago,18,senado,Baja California,no,no,no,268563,pan,259586,pri,15330,prd,.,.,.,.,35915,579394,172,28928,608494,.,mau - cd Banamex,1,1,1
-163,3,1991,ago,18,senado,Baja California Sur,no,no,no,23262,pan,61295,pri,1484,prd,.,.,.,.,6318,92359,92359,3450,95849,.,mau - cd Banamex,1,1,1
-164,4,1991,ago,18,senado,Campeche,no,no,no,5134,pan,117361,pri,5934,prd,.,.,.,.,18853,147282,81,8643,156006,.,mau - cd Banamex,1,1,1
-165,5,1991,ago,18,senado,Coahuila,no,no,no,96087,pan,302715,pri,34467,prd,.,.,.,.,40836,474105,126,22323,496554,.,mau - cd Banamex,1,1,1
-166,6,1991,ago,18,senado,Colima,no,no,no,18870,pan,82367,pri,12662,prd,.,.,.,.,12592,126491,57,4805,131353,.,mau - cd Banamex,1,1,1
-167,7,1991,ago,18,senado,Chiapas,no,no,prd-pps,42914,pan,634955,pri,43948,prd-pps,.,.,.,.,123242,845059,608,47597,893264,.,mau - cd Banamex,1,1,
-168,8,1991,ago,18,senado,Chihuahua,no,no,no,232969,pan,417477,pri,14007,prd,.,.,.,.,50722,715175,218,30385,745778,.,mau - cd Banamex,1,1,1
-169,9,1991,ago,18,senado,Distrito Federal,no,no,prd-pps,630954,pan,1499473,pri,421878,prd-pps,.,.,.,.,730868,3283173,2242,157165,3442580,.,mau - cd Banamex,1,1,
-170,10,1991,ago,18,senado,Durango,no,no,no,53568,pan,203968,pri,17740,prd,.,.,.,.,52309,327585,83,10861,338529,.,mau - cd Banamex,1,1,1
-171,11,1991,ago,18,senado,Guanajuato,no,no,prd-pps,400152,pan,638096,pri,73261,prd-pps,.,.,.,.,84904,1196413,580,66043,1263036,.,mau - cd Banamex,1,1,
-172,12,1991,ago,18,senado,Guerrero,no,no,no,13603,pan,315217,pri,121505,prd,.,.,.,.,46104,496429,319,32840,529588,.,mau - cd Banamex,1,1,1
-173,13,1991,ago,18,senado,Hidalgo,no,no,no,34746,pan,347274,pri,41256,prd,.,.,.,.,53303,476579,495,25392,502466,.,mau - cd Banamex,1,1,1
-174,14,1991,ago,18,senado,Jalisco,no,no,no,373369,pan,957382,pri,42225,prd,.,.,.,.,161280,1534256,1055,70571,1605882,.,mau - cd Banamex,1,1,1
-175,15,1991,ago,18,senado,México,no,no,prd-pps,514526,pan,1616774,pri,343258,prd-pps,.,.,.,.,550630,3025188,2637,170199,3198024,.,mau - cd Banamex,1,1,
-176,16,1991,ago,18,senado,Michoacán,no,no,no,81823,pan,513333,pri,297962,prd,.,.,.,.,59444,952562,203,41571,994336,.,mau - cd Banamex,1,1,1
-177,17,1991,ago,18,senado,Morelos,no,no,prd-pps,23406,pan,199064,pri,31342,prd-pps,.,.,.,.,43849,297661,285,14452,312398,.,mau - cd Banamex,1,1,
-178,18,1991,ago,18,senado,Nayarit,no,no,no,7613,pan,136198,pri,23246,prd,.,.,.,.,25116,192173,74,9464,201711,.,mau - cd Banamex,1,1,1
-179,19,1991,ago,18,senado,Nuevo León,no,no,no,148928,pan,405556,pri,7138,prd,.,.,.,.,24761,586383,403,34069,620855,.,mau - cd Banamex,1,1,1
-180,20,1991,ago,18,senado,Oaxaca,no,no,no,34786,pan,469690,pri,61886,prd,.,.,.,.,70512,636874,558,31819,669251,.,mau - cd Banamex,1,1,1
-181,21,1991,ago,18,senado,Puebla,no,no,prd-pps,172444,pan,810203,pri,57004,prd-pps,.,.,.,.,114293,1153944,526,52610,1207080,.,mau - cd Banamex,1,1,
-182,22,1991,ago,18,senado,Querétaro,no,no,no,66858,pan,212933,pri,7389,prd,.,.,.,.,19245,306425,125,11661,318211,.,mau - cd Banamex,1,1,1
-183,23,1991,ago,18,senado,Quintana Roo,no,no,no,12425,pan,87428,pri,6085,prd,.,.,.,.,7091,113029,70,5683,118782,.,mau - cd Banamex,1,1,1
-184,24,1991,ago,18,senado,San Luis Potosí,no,no,no,160758,pan,329877,pri,7953,prd,.,.,.,.,21372,519960,278,23250,543488,.,mau - cd Banamex,1,1,1
-185,25,1991,ago,18,senado,Sinaloa,no,no,no,150732,pan,415558,pri,31807,prd,.,.,.,.,25442,623539,241,22575,646355,.,mau - cd Banamex,1,1,1
-186,26,1991,ago,18,senado,Sonora,no,no,no,125438,pan,329225,pri,18695,prd,.,.,.,.,16325,489683,141,17058,506882,.,mau - cd Banamex,1,1,1
-187,27,1991,ago,18,senado,Tabasco,no,no,no,8763,pan,249859,pri,63456,prd,.,.,.,.,19738,341816,747,23477,366040,.,mau - cd Banamex,1,1,1
-188,28,1991,ago,18,senado,Tamaulipas,no,no,prd-pps,83859,pan,432097,pri,18037,prd-pps,.,.,.,.,108856,642849,301,23762,666912,.,mau - cd Banamex,1,1,
-189,29,1991,ago,18,senado,Tlaxcala,no,no,no,18383,pan,160234,pri,13941,prd,.,.,.,.,23313,215871,168,6646,222685,.,mau - cd Banamex,1,1,1
-190,30,1991,ago,18,senado,Veracruz,no,no,prd-pps,85760,pan,1406306,pri,120722,prd-pps,.,.,.,.,199870,1812658,986,99457,1913101,.,mau - cd Banamex,1,1,
-191,31,1991,ago,18,senado,Yucatán,no,no,no,132960,pan,228151,pri,805,prd,.,.,.,.,6976,368892,71,19569,388532,.,mau - cd Banamex,1,1,1
-192,32,1991,ago,18,senado,Zacatecas,no,no,no,33708,pan,279684,pri,25398,prd,.,.,.,.,29729,368519,234,13249,382002,.,mau - cd Banamex,1,1,1
-193,1,1994,ago,21,senado,Aguascalientes,no,no,no,115593,pan,157698,pri,34108,prd,.,.,.,.,22875,330274,111,7932,338317,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-194,2,1994,ago,21,senado,Baja California,no,no,no,295092,pan,391621,pri,67521,prd,.,.,.,.,37035,791269,1850,19364,812483,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-195,3,1994,ago,21,senado,Baja California Sur,no,no,no,45417,pan,82354,pri,7497,prd,.,.,.,.,5914,141182,47,2861,144090,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-196,4,1994,ago,21,senado,Campeche,no,no,no,32031,pan,124930,pri,50276,prd,.,.,.,.,13097,220334,395,7268,227997,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-197,5,1994,ago,21,senado,Coahuila,no,no,no,214407,pan,362584,pri,83475,prd,.,.,.,.,66971,727437,980,16563,744980,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-198,6,1994,ago,21,senado,Colima,no,no,no,50816,pan,105099,pri,26825,prd,.,.,.,.,12714,195454,65,5573,201092,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-199,7,1994,ago,21,senado,Chiapas,no,no,no,122120,pan,497798,pri,343508,prd,.,.,.,.,60428,1023854,3442,64753,1092049,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-200,8,1994,ago,21,senado,Chihuahua,no,no,no,326908,pan,641920,pri,58951,prd,.,.,.,.,56690,1084469,344,30978,1115791,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-201,9,1994,ago,21,senado,Distrito Federal,no,no,no,1147872,pan,1851506,pri,893295,prd,.,.,.,.,414050,4306723,7073,104449,4418245,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-202,10,1994,ago,21,senado,Durango,no,no,no,120414,pan,245436,pri,44815,prd,.,.,.,.,96158,506823,472,14490,521785,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-203,11,1994,ago,21,senado,Guanajuato,no,no,no,517972,pan,940243,pri,143109,prd,.,.,.,.,97518,1698842,1244,61318,1761404,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-204,12,1994,ago,21,senado,Guerrero,no,no,no,68872,pan,386185,pri,266615,prd,.,.,.,.,46240,767912,287,28039,796238,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-205,13,1994,ago,21,senado,Hidalgo,no,no,no,128392,pan,451329,pri,110086,prd,.,.,.,.,43927,733734,1195,31072,766001,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-206,14,1994,ago,21,senado,Jalisco,no,no,no,976450,pan,1051371,pri,164036,prd,.,.,.,.,129080,2320937,2311,62464,2385712,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-207,15,1994,ago,21,senado,México,no,no,no,1197645,pan,2064544,pri,838625,prd,.,.,.,.,391154,4491968,4570,124274,4620812,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-208,16,1994,ago,21,senado,Michoacán,no,no,no,199274,pan,605501,pri,487784,prd,.,.,.,.,57057,1349616,1780,38258,1389654,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-209,17,1994,ago,21,senado,Morelos,no,no,no,109526,pan,280288,pri,104895,prd,.,.,.,.,55109,549818,894,15148,565860,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-210,18,1994,ago,21,senado,Nayarit,no,no,no,46460,pan,183794,pri,47527,prd,.,.,.,.,30066,307847,894,10260,319001,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-211,19,1994,ago,21,senado,Nuevo León,no,no,no,592425,pan,718834,pri,31145,prd,.,.,.,.,122285,1464689,3227,33125,1501041,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-212,20,1994,ago,21,senado,Oaxaca,no,no,no,123606,pan,510350,pri,268224,prd,.,.,.,.,62743,964923,928,48373,1014224,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-213,21,1994,ago,21,senado,Puebla,no,no,no,409283,pan,797718,pri,211959,prd,.,.,.,.,98367,1517327,1183,68172,1586682,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-214,22,1994,ago,21,senado,Querétaro,no,no,no,135244,pan,296898,pri,23760,prd,.,.,.,.,19295,475197,376,15705,491278,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-215,23,1994,ago,21,senado,Quintana Roo,no,no,no,56278,pan,114531,pri,25419,prd,.,.,.,.,9739,205967,101,5845,211913,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-216,24,1994,ago,21,senado,San Luis Potosí,no,no,no,184239,pan,447514,pri,71206,prd,.,.,.,.,35831,738790,1222,28038,768050,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-217,25,1994,ago,21,senado,Sinaloa,no,no,no,283912,pan,483230,pri,115316,prd,.,.,.,.,27357,909815,1051,20709,931575,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-218,26,1994,ago,21,senado,Sonora,no,no,no,279182,pan,410357,pri,106576,prd,.,.,.,.,44964,841079,506,18725,860310,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-219,27,1994,ago,21,senado,Tabasco,no,no,no,36340,pan,361685,pri,204137,prd,.,.,.,.,15446,617608,1016,23759,642383,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-220,28,1994,ago,21,senado,Tamaulipas,no,no,no,203836,pan,489858,pri,203495,prd,.,.,.,.,93002,990191,780,31245,1022216,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-221,29,1994,ago,21,senado,Tlaxcala,no,no,no,77812,pan,184068,pri,49645,prd,.,.,.,.,29299,340824,156,11031,352011,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-222,30,1994,ago,21,senado,Veracruz,no,no,no,396564,pan,1384657,pri,614352,prd,.,.,.,.,181430,2577003,3436,102273,2682712,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-223,31,1994,ago,21,senado,Yucatán,no,no,no,202045,pan,265913,pri,13618,prd,.,.,.,.,10360,491936,156,12085,504177,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-224,32,1994,ago,21,senado,Zacatecas,no,no,no,109011,pan,305722,pri,48149,prd,.,.,.,.,35658,498540,159,14049,512748,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-225,1,1997,jul,6,senado,Aguascalientes,no,no,no,106417,pan,118819,pri,38598,prd,.,.,.,.,25256,289090,103,7719,296912,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-226,2,1997,jul,6,senado,Baja California,no,no,no,265402,pan,216170,pri,84096,prd,.,.,.,.,46101,611769,684,20918,633371,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-227,3,1997,jul,6,senado,Baja California Sur,no,no,no,24010,pan,56141,pri,15387,prd,.,.,.,.,20548,116086,12,2583,118681,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-228,4,1997,jul,6,senado,Campeche,no,no,no,18629,pan,104848,pri,82738,prd,.,.,.,.,18870,225085,57,8165,233307,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-229,5,1997,jul,6,senado,Coahuila,no,no,no,169166,pan,260101,pri,81509,prd,.,.,.,.,39540,550316,88,9910,560314,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-230,6,1997,jul,6,senado,Colima,no,no,no,73957,pan,71028,pri,40631,prd,.,.,.,.,8545,194161,32,5530,199723,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-231,7,1997,jul,6,senado,Chiapas,no,no,no,83477,pan,316304,pri,188316,prd,.,.,.,.,38758,626855,1676,36560,665091,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-232,8,1997,jul,6,senado,Chihuahua,no,no,no,370624,pan,369813,pri,93924,prd,.,.,.,.,58644,893005,149,26685,919839,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-233,9,1997,jul,6,senado,Distrito Federal,no,no,no,700408,pan,900326,pri,1763765,prd,.,.,.,.,510038,3874537,1178,88633,3964348,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-234,10,1997,jul,6,senado,Durango,no,no,no,101020,pan,152506,pri,42323,prd,.,.,.,.,101857,397706,161,9510,407377,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-235,11,1997,jul,6,senado,Guanajuato,no,no,no,684100,pan,514739,pri,203613,prd,.,.,.,.,153958,1556410,1000,53667,1611077,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-236,12,1997,jul,6,senado,Guerrero,no,no,no,41073,pan,315243,pri,291234,prd,.,.,.,.,39353,686903,521,19142,706566,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-237,13,1997,jul,6,senado,Hidalgo,no,no,no,102579,pan,310703,pri,170527,prd,.,.,.,.,45251,629060,640,23057,652757,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-238,14,1997,jul,6,senado,Jalisco,no,no,no,942445,pan,743985,pri,245629,prd,.,.,.,.,167084,2099143,973,57293,2157409,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-239,15,1997,jul,6,senado,México,no,no,no,772121,pan,1336705,pri,1328722,prd,.,.,.,.,419951,3857499,2010,106870,3966379,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-240,16,1997,jul,6,senado,Michoacán,no,no,no,200831,pan,387991,pri,440638,prd,.,.,.,.,66538,1095998,851,30640,1127489,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-241,17,1997,jul,6,senado,Morelos,no,no,no,77258,pan,151591,pri,176823,prd,.,.,.,.,36398,442070,90,11039,453199,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-242,18,1997,jul,6,senado,Nayarit,no,no,no,65396,pan,138496,pri,57231,prd,.,.,.,.,13654,274777,33,6396,281206,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-243,19,1997,jul,6,senado,Nuevo León,no,no,no,668025,pan,531071,pri,38406,prd,.,.,.,.,111760,1349262,349,31775,1381386,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-244,20,1997,jul,6,senado,Oaxaca,no,no,no,104478,pan,403515,pri,252777,prd,.,.,.,.,51817,812587,1212,38479,852278,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-245,21,1997,jul,6,senado,Puebla,no,no,no,324557,pan,606910,pri,231273,prd,.,.,.,.,94747,1257487,384,50815,1308686,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-246,22,1997,jul,6,senado,Querétaro,no,no,no,209527,pan,167117,pri,42869,prd,.,.,.,.,38851,458364,488,15183,474035,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-247,23,1997,jul,6,senado,Quintana Roo,no,no,no,41098,pan,78893,pri,41082,prd,.,.,.,.,10703,171776,29,5143,176948,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-248,24,1997,jul,6,senado,San Luis Potosí,no,no,no,272383,pan,296467,pri,77248,prd,.,.,.,.,50104,696202,783,30400,727385,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-249,25,1997,jul,6,senado,Sinaloa,no,no,no,237232,pan,325506,pri,178636,prd,.,.,.,.,36633,778007,283,16091,794381,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-250,26,1997,jul,6,senado,Sonora,no,no,no,240847,pan,270914,pri,196019,prd,.,.,.,.,27190,734970,323,17773,753066,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-251,27,1997,jul,6,senado,Tabasco,no,no,no,26653,pan,280227,pri,223262,prd,.,.,.,.,16476,546618,125,17123,563866,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-252,28,1997,jul,6,senado,Tamaulipas,no,no,no,160166,pan,387453,pri,219810,prd,.,.,.,.,50660,818089,186,22702,840977,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-253,29,1997,jul,6,senado,Tlaxcala,no,no,no,46409,pan,107463,pri,57556,prd,.,.,.,.,31186,242614,102,8027,250743,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-254,30,1997,jul,6,senado,Veracruz,no,no,no,449426,pan,896941,pri,567775,prd,.,.,.,.,162451,2076593,1090,68925,2146608,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-255,31,1997,jul,6,senado,Yucatán,no,no,no,191669,pan,253193,pri,37897,prd,.,.,.,.,16188,498947,62,13642,512651,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-256,32,1997,jul,6,senado,Zacatecas,no,no,no,109583,pan,207988,pri,59581,prd,.,.,.,.,41431,418583,92,10931,429606,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
-257,1,2000,jul,2,senado,Aguascalientes,pan-pvem,no,prd-pt-conv-pas-psn,182568,pan-pvem,139450,pri,26430,prd-pt-conv-pas-psn,.,.,.,.,15840,364288,89,6435,370812,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8953494378,1,0.8829759445
-258,2,2000,jul,2,senado,Baja California,pan-pvem,no,prd-pt-conv-pas-psn,416145,pan-pvem,317079,pri,75572,prd-pt-conv-pas-psn,.,.,.,.,24026,832822,228,15839,848889,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9156121958,1,0.8846793734
-259,3,2000,jul,2,senado,Baja California Sur,pan-pvem,no,prd-pt-conv-pas-psn,44652,pan-pvem,50557,pri,62293,prd-pt-conv-pas-psn,.,.,.,.,3578,161080,24,3264,164368,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8989119277,1,0.4343987449
-260,4,2000,jul,2,senado,Campeche,pan-pvem,no,prd-pt-conv-pas-psn,71711,pan-pvem,115368,pri,33112,prd-pt-conv-pas-psn,.,.,.,.,25435,245626,534,10227,256387,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9026784761,1,0.8506502303
-261,5,2000,jul,2,senado,Coahuila,pan-pvem,no,prd-pt-conv-pas-psn,367190,pan-pvem,335267,pri,76958,prd-pt-conv-pas-psn,.,.,.,.,14570,793985,1415,13632,809032,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9400803077,1,0.8724101192
-262,6,2000,jul,2,senado,Colima,pan-pvem,no,prd-pt-conv-pas-psn,82884,pan-pvem,82793,pri,33078,prd-pt-conv-pas-psn,.,.,.,.,12255,211010,45,4603,215658,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9706237738,1,0.961542311
-263,7,2000,jul,2,senado,Chiapas,pan-pvem,no,prd-pt-conv-pas-psn,257003,pan-pvem,472728,pri,283627,prd-pt-conv-pas-psn,.,.,.,.,16796,1030154,1139,48193,1079486,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9126278246,1,0.8997795891
-264,8,2000,jul,2,senado,Chihuahua,pan-pvem,no,prd-pt-conv-pas-psn,540681,pan-pvem,453945,pri,77658,prd-pt-conv-pas-psn,.,.,.,.,24754,1097038,291,23792,1121121,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.936075589,1,0.8131031161
-265,9,2000,jul,2,senado,Distrito Federal,pan-pvem,no,prd-pt-conv-pas-psn,1619410,pan-pvem,1004085,pri,1298970,prd-pt-conv-pas-psn,.,.,.,.,380535,4303000,2557,81976,4387533,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.6768063573,1,0.9651759478
-266,10,2000,jul,2,senado,Durango,pan-pvem,no,prd-pt-conv-pas-psn,190838,pan-pvem,237379,pri,52061,prd-pt-conv-pas-psn,.,.,.,.,9085,489363,808,9181,499352,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9356765849,1,0.3125311045
-267,11,2000,jul,2,senado,Guanajuato,pan-pvem,no,prd-pt-conv-pas-psn,1057235,pan-pvem,536074,pri,140222,prd-pt-conv-pas-psn,.,.,.,.,53916,1787447,1515,53368,1842330,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9221910382,1,0.8722344221
-268,12,2000,jul,2,senado,Guerrero,pan-pvem,no,prd-pt-conv-pas-psn,131558,pan-pvem,413282,pri,349363,prd-pt-conv-pas-psn,.,.,.,.,15010,909213,1192,22331,932736,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7877467055,1,0.9626960905
-269,13,2000,jul,2,senado,Hidalgo,pan-pvem,no,prd-pt-conv-pas-psn,244880,pan-pvem,360562,pri,150214,prd-pt-conv-pas-psn,.,.,.,.,33804,789460,958,22600,813018,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8599663263,1,0.9081447011
-270,14,2000,jul,2,senado,Jalisco,pan-pvem,no,prd-pt-conv-pas-psn,1291993,pan-pvem,916389,pri,184276,prd-pt-conv-pas-psn,.,.,.,.,162197,2554855,2178,50729,2607762,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9136240991,1,0.9029985807
-271,15,2000,jul,2,senado,México,pan-pvem,no,prd-pt-conv-pas-psn,2023450,pan-pvem,1695942,pri,1019265,prd-pt-conv-pas-psn,.,.,.,.,255553,4994210,3970,94519,5092699,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7511880236,1,0.9576805036
-272,16,2000,jul,2,senado,Michoacán,pan-pvem,no,prd-pt-conv-pas-psn,362414,pan-pvem,444552,pri,575457,prd-pt-conv-pas-psn,.,.,.,.,36752,1419175,1448,32154,1452777,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.881821426,1,0.9686208689
-273,17,2000,jul,2,senado,Morelos,pan-pvem,no,prd-pt-conv-pas-psn,262090,pan-pvem,195473,pri,139684,prd-pt-conv-pas-psn,.,.,.,.,21791,619038,96,14279,633413,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7982116688,1,0.9545720192
-274,18,2000,jul,2,senado,Nayarit,pan-pvem,no,prd-pt-conv-pas-psn,97939,pan-pvem,170735,pri,68316,prd-pt-conv-pas-psn,.,.,.,.,7278,344268,667,8386,353321,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9396570659,1,0.9082256751
-275,19,2000,jul,2,senado,Nuevo León,pan-pvem,no,prd-pt-conv-pas-psn,698215,pan-pvem,591701,pri,137663,prd-pt-conv-pas-psn,.,.,.,.,61143,1488722,1437,29336,1519495,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9784377567,1,0.3380352947
-276,20,2000,jul,2,senado,Oaxaca,pan-pvem,no,prd-pt-conv-pas-psn,276421,pan-pvem,487775,pri,279029,prd-pt-conv-pas-psn,.,.,.,.,33002,1076227,2138,42246,1120611,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8621457575,1,0.9457438237
-277,21,2000,jul,2,senado,Puebla,pan-pvem,no,prd-pt-conv-pas-psn,691494,pan-pvem,703154,pri,216310,prd-pt-conv-pas-psn,.,.,.,.,51256,1662214,727,46766,1709707,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8724884728,1,0.9125052377
-278,22,2000,jul,2,senado,Querétaro,pan-pvem,no,prd-pt-conv-pas-psn,271756,pan-pvem,195498,pri,41325,prd-pt-conv-pas-psn,.,.,.,.,31905,540484,401,14059,554944,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9459633367,1,0.8115488254
-279,23,2000,jul,2,senado,Quintana Roo,pan-pvem,no,prd-pt-conv-pas-psn,92333,pan-pvem,98146,pri,74196,prd-pt-conv-pas-psn,.,.,.,.,5127,269802,102,5835,275739,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8998723036,1,0.9107807546
-280,24,2000,jul,2,senado,San Luis Potosí,pan-pvem,no,prd-pt-conv-pas-psn,357443,pan-pvem,340323,pri,74143,prd-pt-conv-pas-psn,.,.,.,.,25431,797340,525,27562,825427,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.954641517,1,0.7488792372
-281,25,2000,jul,2,senado,Sinaloa,pan-pvem,no,prd-pt-conv-pas-psn,254556,pan-pvem,561858,pri,109099,prd-pt-conv-pas-psn,.,.,.,.,17345,942858,972,17634,961464,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9499397306,1,0.9366234981
-282,26,2000,jul,2,senado,Sonora,pan-pvem,no,prd-pt-conv-pas-psn,383508,pan-pvem,339165,pri,125942,prd-pt-conv-pas-psn,.,.,.,.,11300,859915,479,14039,874433,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9740313504,1,0.9343534892
-283,27,2000,jul,2,senado,Tabasco,pan-pvem,no,prd-pt-conv-pas-psn,123992,pan-pvem,277773,pri,248288,prd-pt-conv-pas-psn,.,.,.,.,11550,661603,344,16278,678225,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8169572108,1,0.9716936166
-284,28,2000,jul,2,senado,Tamaulipas,pan-pvem,no,prd-pt-conv-pas-psn,442137,pan-pvem,461981,pri,124707,prd-pt-conv-pas-psn,.,.,.,.,20930,1049755,298,22005,1072058,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9329049874,1,0.8695130727
-285,29,2000,jul,2,senado,Tlaxcala,pan-pvem,no,prd-pt-conv-pas-psn,84975,pan-pvem,127057,pri,109735,prd-pt-conv-pas-psn,.,.,.,.,12436,334203,53,8042,342298,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8222584166,1,0.8132436191
-286,30,2000,jul,2,senado,Veracruz,pan-pvem,no,prd-pt-conv-pas-psn,841253,pan-pvem,1027161,pri,665271,prd-pt-conv-pas-psn,.,.,.,.,50589,2584274,1070,64968,2650312,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9078620271,1,0.899879846
-287,31,2000,jul,2,senado,Yucatán,pan-pvem,no,prd-pt-conv-pas-psn,318704,pan-pvem,322635,pri,25528,prd-pt-conv-pas-psn,.,.,.,.,7083,673950,940,14149,689039,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9593112962,1,0.8914534783
-288,32,2000,jul,2,senado,Zacatecas,pan-pvem,no,prd-pt-conv-pas-psn,116645,pan-pvem,218116,pri,146582,prd-pt-conv-pas-psn,.,.,.,.,10548,491891,539,12844,505274,.,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9336251417,1,0.6850703763
-289,1,2006,jul,2,senado,Aguascalientes,no,pri-pvem,prd-pt-conve,177541,pan,125953,pri-pvem,64017,prd-pt-conve,21252,panal,10450,pasd,0,399213,1628,8353,409194,.,ife,.,.,.
-290,2,2006,jul,2,senado,Baja California,no,pri-pvem,prd-pt-conve,430405,pan,228255,pri-pvem,170624,prd-pt-conve,60029,panal,23460,pasd,0,912773,3008,18803,934584,.,ife,.,.,.
-291,3,2006,jul,2,senado,Baja California Sur,no,pri-pvem,prd-pt-conve,51553,pan,37246,pri-pvem,73812,prd-pt-conve,6584,panal,3192,pasd,0,172387,412,3241,176040,.,ife,.,.,.
-292,4,2006,jul,2,senado,Campeche,no,pri-pvem,prd-pt-conve,99013,pan,111391,pri-pvem,64468,prd-pt-conve,19703,panal,2880,pasd,0,297455,419,10868,308742,.,ife,.,.,.
-293,5,2006,jul,2,senado,Coahuila,no,pri-pvem,prd-pt-conve,400513,pan,294379,pri-pvem,165429,prd-pt-conve,32153,panal,11925,pasd,0,904399,2545,16737,923681,.,ife,.,.,.
-294,6,2006,jul,2,senado,Colima,no,pri-pvem,prd-pt-conve,105868,pan,96629,pri-pvem,36860,prd-pt-conve,6068,panal,1934,pasd,0,247359,232,5087,252678,.,ife,.,.,.
-295,7,2006,jul,2,senado,Chiapas,no,pri-pvem,prd-pt-conve,199823,pan,491673,pri-pvem,469474,prd-pt-conve,28945,panal,11287,pasd,0,1201202,3407,54663,1259272,.,ife,.,.,.
-296,8,2006,jul,2,senado,Chihuahua,no,pri-pvem,prd-pt-conve,456648,pan,436701,pri-pvem,152853,prd-pt-conve,60117,panal,17319,pasd,0,1123638,2411,28257,1154306,.,ife,.,.,.
-297,9,2006,jul,2,senado,Distrito Federal,no,pri-pvem,prd-pt-conve,1226543,pan,566862,pri-pvem,2493288,prd-pt-conve,256201,panal,169459,pasd,0,4712353,9309,83265,4804927,.,ife,.,.,.
-298,10,2006,jul,2,senado,Durango,no,pri-pvem,prd-pt-conve,226923,pan,178541,pri-pvem,126097,prd-pt-conve,16785,panal,5334,pasd,0,553680,1743,11856,567279,.,ife,.,.,.
-299,11,2006,jul,2,senado,Guanajuato,no,pri-pvem,prd-pt-conve,1104120,pan,424165,pri-pvem,249935,prd-pt-conve,66551,panal,36518,pasd,0,1881289,7382,55103,1943774,.,ife,.,.,.
-300,12,2006,jul,2,senado,Guerrero,no,pri-pvem,prd-pt-conve,113113,pan,352726,pri-pvem,440248,prd-pt-conve,29987,panal,11349,pasd,0,947423,2544,28530,978497,.,ife,.,.,.
-301,13,2006,jul,2,senado,Hidalgo,no,pri-pvem,prd-pt-conve,223222,pan,300400,pri-pvem,308445,prd-pt-conve,53878,panal,18405,pasd,0,904350,3049,28318,935717,.,ife,.,.,.
-302,14,2006,jul,2,senado,Jalisco,no,pri-pvem,prd-pt-conve,1424144,pan,870446,pri-pvem,337214,prd-pt-conve,131784,panal,53578,pasd,0,2817166,5822,63155,2886143,.,ife,.,.,.
-303,15,2006,jul,2,senado,México,no,pri-pvem,prd-pt-conve,1650545,pan,1214086,pri-pvem,2148799,prd-pt-conve,344570,panal,175525,pasd,0,5533525,23651,113852,5671028,.,ife,.,.,.
-304,16,2006,jul,2,senado,Michoacán,no,pri-pvem,prd-pt-conve,433403,pan,394209,pri-pvem,554853,prd-pt-conve,35819,panal,22079,pasd,0,1440363,5513,36522,1482398,.,ife,.,.,.
-305,17,2006,jul,2,senado,Morelos,no,pri-pvem,prd-pt-conve,216526,pan,195536,pri-pvem,211938,prd-pt-conve,37752,panal,16959,pasd,0,678711,2183,18345,699239,.,ife,.,.,.
-306,18,2006,jul,2,senado,Nayarit,no,pri-pvem,prd-pt-conve,59892,pan,141070,pri-pvem,136800,prd-pt-conve,8613,panal,5261,pasd,0,351636,708,8138,360482,.,ife,.,.,.
-307,19,2006,jul,2,senado,Nuevo León,no,pri-pvem,prd-pt-conve,761322,pan,713354,pri-pvem,140047,prd-pt-conve,76841,panal,21269,pasd,0,1712833,2033,39479,1754345,.,ife,.,.,.
-308,20,2006,jul,2,senado,Oaxaca,no,pri-pvem,prd-pt-conve,208694,pan,441333,pri-pvem,601382,prd-pt-conve,18691,panal,15815,pasd,0,1285915,3892,46391,1336198,.,ife,.,.,.
-309,21,2006,jul,2,senado,Puebla,no,pri-pvem,prd-pt-conve,711485,pan,617769,pri-pvem,480723,prd-pt-conve,58212,panal,36695,pasd,0,1904884,7575,59712,1972171,.,ife,.,.,.
-310,22,2006,jul,2,senado,Querétaro,no,pri-pvem,prd-pt-conve,315128,pan,163069,pri-pvem,114945,prd-pt-conve,25402,panal,10815,pasd,0,629359,2142,17930,649431,.,ife,.,.,.
-311,23,2006,jul,2,senado,Quintana Roo,no,pri-pvem,prd-pt-conve,91115,pan,143389,pri-pvem,114097,prd-pt-conve,15425,panal,5806,pasd,0,369832,895,7793,378520,.,ife,.,.,.
-312,24,2006,jul,2,senado,San Luis Potosí,no,pri-pvem,prd-pt-conve,450986,pan,236913,pri-pvem,163368,prd-pt-conve,30592,panal,14231,pasd,0,896090,2324,46426,944840,.,ife,.,.,.
-313,25,2006,jul,2,senado,Sinaloa,no,pri-pvem,prd-pt-conve,359154,pan,435085,pri-pvem,133719,prd-pt-conve,16492,panal,5135,pasd,0,949585,1459,20156,971200,.,ife,.,.,.
-314,26,2006,jul,2,senado,Sonora,no,pri-pvem,prd-pt-conve,411000,pan,320711,pri-pvem,154029,prd-pt-conve,14182,panal,8149,pasd,0,908071,1144,18340,927555,.,ife,.,.,.
-315,27,2006,jul,2,senado,Tabasco,no,pri-pvem,prd-pt-conve,35383,pan,362648,pri-pvem,467903,prd-pt-conve,14828,panal,6324,pasd,0,887086,1067,17440,905593,.,ife,.,.,.
-316,28,2006,jul,2,senado,Tamaulipas,no,pri-pvem,prd-pt-conve,433025,pan,398475,pri-pvem,277040,prd-pt-conve,58720,panal,14496,pasd,0,1181756,4451,26558,1212765,.,ife,.,.,.
-317,29,2006,jul,2,senado,Tlaxcala,no,pri-pvem,prd-pt-conve,137821,pan,69417,pri-pvem,160197,prd-pt-conve,17959,panal,8054,pasd,0,393448,1409,12295,407152,.,ife,.,.,.
-318,30,2006,jul,2,senado,Veracruz,no,pri-pvem,prd-pt-conve,885080,pan,835031,pri-pvem,1010401,prd-pt-conve,70164,panal,26585,pasd,0,2827261,8592,78723,2914576,.,ife,.,.,.
-319,31,2006,jul,2,senado,Yucatán,no,pri-pvem,prd-pt-conve,351127,pan,300075,pri-pvem,89003,prd-pt-conve,17010,panal,8010,pasd,0,765225,2225,17658,785108,.,ife,.,.,.
-320,32,2006,jul,2,senado,Zacatecas,no,pri-pvem,prd-pt-conve,145754,pan,132190,pri-pvem,186737,prd-pt-conve,26625,panal,9499,pasd,0,500805,3792,15551,520148,.,ife,.,.,.
+1,1,1964,jul,5,senado,Aguascalientes,no,no,no,6334,pan,66016,pri,0,,0,0,0,0,64,72414,0,0,72414,100551,cd banamex,1,1,1
+2,2,1964,jul,5,senado,Baja California,no,no,no,39039,pan,117802,pri,0,,0,0,0,0,0,156841,0,0,156841,257984,cd banamex,1,1,1
+3,3,1964,jul,5,senado,Baja California Sur,no,no,no,0,,0,,0,,0,0,0,0,0,0,0,0,0,35025,cd banamex,1,1,1
+4,4,1964,jul,5,senado,Campeche,no,no,no,1851,pan,57079,pri,0,,0,0,0,0,0,58930,0,0,58930,69833,cd banamex,1,1,1
+5,5,1964,jul,5,senado,Coahuila,no,no,no,16367,pan,235603,pri,0,,0,0,0,0,94,252064,288,0,252352,340419,cd banamex,1,1,1
+6,6,1964,jul,5,senado,Colima,no,no,no,4738,pan,33490,pri,0,,0,0,0,0,0,38228,1,0,38229,68902,cd banamex,1,1,1
+7,7,1964,jul,5,senado,Chiapas,no,no,no,3352,pan,325873,pri,0,,0,0,0,0,4,329229,0,0,329229,433770,cd banamex,1,1,1
+8,8,1964,jul,5,senado,Chihuahua,no,no,no,54897,pan,187237,pri,0,,0,0,0,0,0,242134,0,0,242134,498502,cd banamex,1,1,1
+9,9,1964,jul,5,senado,Distrito Federal,no,no,no,370485,pan,865057,pri,0,,0,0,0,0,29699,1265241,673,0,1265914,2080465,cd banamex,1,1,1
+10,10,1964,jul,5,senado,Durango,no,no,no,22148,pan,197762,pri,0,,0,0,0,0,151,220061,0,222,220283,312512,cd banamex,1,1,1
+11,11,1964,jul,5,senado,Guanajuato,no,no,no,83368,pan,315772,pri,0,,0,0,0,0,4551,403691,9115,0,412806,627364,cd banamex,1,1,1
+12,12,1964,jul,5,senado,Guerrero,no,no,no,12191,pan,381727,pri,0,,0,0,0,0,2436,396354,111,0,396465,519622,cd banamex,1,1,1
+13,13,1964,jul,5,senado,Hidalgo,no,no,no,5309,pan,336736,pri,0,,0,0,0,0,121,342166,26,0,342192,399751,cd banamex,1,1,1
+14,14,1964,jul,5,senado,Jalisco,no,no,no,76773,pan,489531,pri,0,,0,0,0,0,2612,568916,925,0,569841,992016,cd banamex,1,1,1
+15,15,1964,jul,5,senado,México,no,no,no,35804,pan,447913,pri,0,,0,0,0,0,467,484184,1454,0,485638,704174,cd banamex,1,1,1
+16,16,1964,jul,5,senado,Michoacán,no,no,no,52479,pan,318103,pri,0,,0,0,0,0,119,370701,3082,0,373783,671327,cd banamex,1,1,1
+17,17,1964,jul,5,senado,Morelos,no,no,no,6236,pan,103003,pri,0,,0,0,0,0,286,109525,143,0,109668,184322,cd banamex,1,1,1
+18,18,1964,jul,5,senado,Nayarit,no,no,no,5360,pan,62005,pri,0,,0,0,0,0,3546,70911,30,0,70941,157342,cd banamex,1,1,1
+19,19,1964,jul,5,senado,Nuevo León,no,no,no,42331,pan,209224,pri,0,,0,0,0,0,0,251555,0,0,251555,452648,cd banamex,1,1,1
+20,20,1964,jul,5,senado,Oaxaca,no,no,no,15696,pan,426510,pri,0,,0,0,0,0,389,442595,389,0,442984,576228,cd banamex,1,1,1
+21,21,1964,jul,5,senado,Puebla,no,no,no,32274,pan,514063,pri,0,,0,0,0,0,5083,551420,762,0,543195,762202,cd banamex,1,1,1
+22,22,1964,jul,5,senado,Querétaro,no,no,no,11427,pan,92309,pri,0,,0,0,0,0,535,104271,0,0,104271,142834,cd banamex,1,1,1
+23,23,1964,jul,5,senado,Quintana Roo,no,no,no,0,,0,,0,,0,0,0,0,0,0,0,0,0,17829,cd banamex,1,1,1
+24,24,1964,jul,5,senado,San Luis Potosí,no,no,no,24789,pan,253741,pri,0,,0,0,0,0,1676,280206,300,0,280506,406639,cd banamex,1,1,1
+25,25,1964,jul,5,senado,Sinaloa,no,no,no,3605,pan,199245,pri,0,,0,0,0,0,213,203063,114,0,203177,297960,cd banamex,1,1,1
+26,26,1964,jul,5,senado,Sonora,no,no,no,2327,pan,116305,pri,0,,0,0,0,0,11938,130570,4,0,130574,273594,cd banamex,1,1,1
+27,27,1964,jul,5,senado,Tabasco,no,no,no,0,0,145662,pri,0,,0,0,0,0,2211,147873,24,0,147897,175442,cd banamex,1,1,1
+28,28,1964,jul,5,senado,Tamaulipas,no,no,no,0,0,283301,pri,0,,0,0,0,0,2899,286200,3572,0,289772,414023,cd banamex,1,1,1
+29,29,1964,jul,5,senado,Tlaxcala,no,no,no,1417,pan,88332,pri,0,,0,0,0,0,4034,93783,0,0,93783,127126,cd banamex,1,1,1
+30,30,1964,jul,5,senado,Veracruz,no,no,no,19893,pan,651259,pri,0,,0,0,0,0,1006,672158,932,0,672730,988387,cd banamex,1,1,1
+31,31,1964,jul,5,senado,Yucatán,no,no,no,27158,pan,173816,pri,0,,0,0,0,0,0,200974,0,0,200974,259261,cd banamex,1,1,1
+32,32,1964,jul,5,senado,Zacatecas,no,no,no,23397,pan,150476,pri,0,,0,0,0,0,161,174034,0,0,174034,241539,cd banamex,1,1,1
+33,1,1970,jul,5,senado,Aguascalientes,no,no,no,10842,pan,82114,pri,0,,0,0,0,0,0,92956,305,495,93756,152001,cd banamex,1,1,1
+34,2,1970,jul,5,senado,Baja California,no,no,no,73070,pan,176073,pri,0,,0,0,0,0,4405,253548,162,24902,278612,458164,cd banamex,1,1,1
+35,3,1970,jul,5,senado,Baja California Sur,no,no,no,0,,0,,0,,0,0,0,0,0,0,0,0,0,55676,cd banamex,1,1,1
+36,4,1970,jul,5,senado,Campeche,no,no,no,0,0,89395,pri,0,,0,0,0,0,0,89395,0,60,89455,108020,cd banamex,1,1,1
+37,5,1970,jul,5,senado,Coahuila,no,no,no,24486,pan,305885,pri,0,,0,0,0,0,1148,331519,78,1559,333156,584319,cd banamex,1,1,1
+38,6,1970,jul,5,senado,Colima,no,no,no,4369,pan,46863,pri,0,,0,0,0,0,152,51384,59,548,51991,115027,cd banamex,1,1,1
+39,7,1970,jul,5,senado,Chiapas,no,no,no,4237,pan,440558,pri,0,,0,0,0,0,1731,446526,49,7,446582,666507,cd banamex,1,1,1
+40,8,1970,jul,5,senado,Chihuahua,no,no,no,82705,pan,328759,pri,0,,0,0,0,0,4504,415968,296,0,416264,771895,cd banamex,1,1,1
+41,9,1970,jul,5,senado,Distrito Federal,no,no,no,706903,pan,1352878,pri,0,,0,0,0,0,56204,2115985,10814,269215,2396014,3635728,cd banamex,1,1,1
+42,10,1970,jul,5,senado,Durango,no,no,no,27579,pan,181411,pri,0,,0,0,0,0,3083,212073,18,17,212108,423676,cd banamex,1,1,1
+43,11,1970,jul,5,senado,Guanajuato,no,no,no,108535,pan,433513,pri,0,,0,0,0,0,4599,546647,2219,19684,568550,925364,cd banamex,1,1,1
+44,12,1970,jul,5,senado,Guerrero,no,no,no,18496,pan,431610,pri,0,,0,0,0,0,2537,452643,415,0,453058,698563,cd banamex,1,1,1
+45,13,1970,jul,5,senado,Hidalgo,no,no,no,11470,pan,421199,pri,0,,0,0,0,0,0,432669,469,2221,435359,549586,cd banamex,1,1,1
+46,14,1970,jul,5,senado,Jalisco,no,no,no,160345,pan,752429,pri,0,,0,0,0,0,10060,922834,2364,49941,975139,1529320,cd banamex,1,1,1
+47,15,1970,jul,5,senado,México,no,no,no,134667,pan,711825,pri,0,,0,0,0,0,10333,856825,2192,118444,977461,1393428,cd banamex,1,1,1
+48,16,1970,jul,5,senado,Michoacán,no,no,no,81601,pan,526433,pri,0,,0,0,0,0,0,608034,467,44506,653007,1052835,cd banamex,1,1,1
+49,17,1970,jul,5,senado,Morelos,no,no,no,0,0,156416,pri,0,,0,0,0,0,0,156416,8992,11148,176556,265408,cd banamex,1,1,1
+50,18,1970,jul,5,senado,Nayarit,no,no,no,3919,pan,122432,pri,0,,0,0,0,0,5273,131624,0,28104,159728,236132,cd banamex,1,1,1
+51,19,1970,jul,5,senado,Nuevo León,no,no,no,70913,pan,345377,pri,0,,0,0,0,0,4005,420295,94,12445,432834,772446,cd banamex,1,1,1
+52,20,1970,jul,5,senado,Oaxaca,no,no,no,23100,pan,645376,pri,0,,0,0,0,0,8066,676542,83,29344,705969,893478,cd banamex,1,1,1
+53,21,1970,jul,5,senado,Puebla,no,no,no,94684,pan,541591,pri,0,,0,0,0,0,5729,642004,1154,8375,651533,1040977,cd banamex,1,1,1
+54,22,1970,jul,5,senado,Querétaro,no,no,no,12362,pan,131173,pri,0,,0,0,0,0,0,143535,3,2235,145773,219479,cd banamex,1,1,1
+55,23,1970,jul,5,senado,Quintana Roo,no,no,no,0,,0,,0,,0,0,0,0,0,0,0,0,0,34928,cd banamex,1,1,1
+56,24,1970,jul,5,senado,San Luis Potosí,no,no,no,33538,pan,312798,pri,0,,0,0,0,0,0,346336,285,5514,352135,566233,cd banamex,1,1,1
+57,25,1970,jul,5,senado,Sinaloa,no,no,no,15843,pan,259035,pri,0,,0,0,0,0,4692,279570,253,2251,282074,529427,cd banamex,1,1,1
+58,26,1970,jul,5,senado,Sonora,no,no,no,14607,pan,203675,pri,0,,0,0,0,0,1594,219876,43,0,219919,484880,cd banamex,1,1,1
+59,27,1970,jul,5,senado,Tabasco,no,no,no,0,0,228373,pri,0,,0,0,0,0,2211,230584,0,0,230584,294828,cd banamex,1,1,1
+60,28,1970,jul,5,senado,Tamaulipas,no,no,no,30717,pan,361025,pri,0,,0,0,0,0,1311,393053,382,1595,395030,673981,cd banamex,1,1,1
+61,29,1970,jul,5,senado,Tlaxcala,no,no,no,6039,pan,114435,pri,0,,0,0,0,0,332,120806,231,22,121059,178219,cd banamex,1,1,1
+62,30,1970,jul,5,senado,Veracruz,no,no,no,74826,pan,1004282,pri,0,,0,0,0,0,12906,1092014,1930,33392,1127336,1595297,cd banamex,1,1,1
+63,31,1970,jul,5,senado,Yucatán,no,no,no,34906,pan,197425,pri,0,,0,0,0,0,1368,233699,0,0,233699,338222,cd banamex,1,1,1
+64,32,1970,jul,5,senado,Zacatecas,no,no,no,24397,pan,245922,pri,0,,0,0,0,0,766,271085,59,1834,272978,421069,cd banamex,1,1,1
+65,1,1976,jul,0,senado,Aguascalientes,no,no,no,10455,pan,88988,pri,0,,0,0,0,0,2392,101835,54,4002,105891,198930,mau - cd Banamex,1,1,1
+66,2,1976,jul,0,senado,Baja California,no,no,no,48991,pan,224618,pri,0,,0,0,0,0,3811,277420,185,47068,324673,525295,mau - cd Banamex,1,1,1
+67,3,1976,jul,0,senado,Baja California Sur,no,no,no,0,0,42814,pri,0,,0,0,0,0,2144,44958,23,2455,47436,72858,mau - cd Banamex,1,1,1
+68,4,1976,jul,0,senado,Campeche,no,no,no,0,0,135881,pri,0,,0,0,0,0,0,135881,26,180,136087,144891,mau - cd Banamex,1,1,1
+69,5,1976,jul,0,senado,Coahuila,no,no,no,0,0,385660,pri,0,,0,0,0,0,7588,393248,217,2499,395964,672945,mau - cd Banamex,1,1,1
+70,6,1976,jul,0,senado,Colima,no,no,no,2103,pan,58026,pri,0,,0,0,0,0,0,60129,51,893,61073,147814,mau - cd Banamex,1,1,1
+71,7,1976,jul,0,senado,Chiapas,no,no,no,0,0,465432,pri,0,,0,0,0,0,5469,470901,928,1369,473198,716223,mau - cd Banamex,1,1,1
+72,8,1976,jul,0,senado,Chihuahua,no,no,no,0,0,354079,pri,0,,0,0,0,0,30425,384504,537,54770,439811,928704,mau - cd Banamex,1,1,1
+73,9,1976,jul,0,senado,Distrito Federal,no,no,no,568538,pan,1599015,pri,0,,0,0,0,0,203608,2371161,15518,482001,2868680,4519658,mau - cd Banamex,1,1,1
+74,10,1976,jul,0,senado,Durango,no,no,no,0,0,232936,pri,0,,0,0,0,0,5515,238451,916,562,239929,525885,mau - cd Banamex,1,1,1
+75,11,1976,jul,0,senado,Guanajuato,no,no,no,0,0,601090,pri,0,,0,0,0,0,0,601090,974,10558,612622,1079893,mau - cd Banamex,1,1,1
+76,12,1976,jul,0,senado,Guerrero,no,no,no,0,0,668390,pri,0,,0,0,0,0,5384,673774,675,2946,677395,955373,mau - cd Banamex,1,1,1
+77,13,1976,jul,0,senado,Hidalgo,no,no,no,0,0,441944,pri,0,,0,0,0,0,15383,457327,1,23773,481101,659154,mau - cd Banamex,1,1,1
+78,14,1976,jul,0,senado,Jalisco,no,no,no,133781,pan,789308,pri,0,,0,0,0,0,42525,965614,1466,51601,1018681,1471794,mau - cd Banamex,1,1,1
+79,15,1976,jul,0,senado,México,no,no,no,193419,pan,1075308,pri,0,,0,0,0,0,75513,1344240,4070,91182,1439492,1986365,mau - cd Banamex,1,1,1
+80,16,1976,jul,0,senado,Michoacán,no,no,no,26861,pan,675760,pri,0,,0,0,0,0,8460,711081,3100,15236,729417,1158788,mau - cd Banamex,1,1,1
+81,17,1976,jul,0,senado,Morelos,no,no,no,23254,pan,144102,pri,0,,0,0,0,0,5107,172463,792,15296,188551,352414,mau - cd Banamex,1,1,1
+82,18,1976,jul,0,senado,Nayarit,no,no,no,0,0,182918,pri,0,,0,0,0,0,0,182918,0,11230,194148,324737,mau - cd Banamex,1,1,1
+83,19,1976,jul,0,senado,Nuevo León,no,no,no,61142,pan,289465,pri,0,,0,0,0,0,3216,353823,771,10678,365272,714755,mau - cd Banamex,1,1,1
+84,20,1976,jul,0,senado,Oaxaca,no,no,no,0,0,551607,pri,0,,0,0,0,0,176904,728511,302,2919,731732,1060668,mau - cd Banamex,1,1,1
+85,21,1976,jul,0,senado,Puebla,no,no,no,99754,pan,617644,pri,0,,0,0,0,0,31104,748502,564,31327,780393,1265197,mau - cd Banamex,1,1,1
+86,22,1976,jul,0,senado,Querétaro,no,no,no,9991,pan,183270,pri,0,,0,0,0,0,2948,196209,174,5136,201519,279110,mau - cd Banamex,1,1,1
+87,23,1976,jul,0,senado,Quintana Roo,no,no,no,1678,pan,45996,pri,0,,0,0,0,0,187,47861,2,1384,49247,56473,mau - cd Banamex,1,1,1
+88,24,1976,jul,0,senado,San Luis Potosí,no,no,no,0,0,366926,pri,0,,0,0,0,0,6514,373440,549,13244,387233,677688,mau - cd Banamex,1,1,1
+89,25,1976,jul,0,senado,Sinaloa,no,no,no,9864,pan,270272,pri,0,,0,0,0,0,6798,286934,422,3685,291041,650897,mau - cd Banamex,1,1,1
+90,26,1976,jul,0,senado,Sonora,no,no,no,8137,pan,327875,pri,0,,0,0,0,0,8412,344424,775,2214,347413,672221,mau - cd Banamex,1,1,1
+91,27,1976,jul,0,senado,Tabasco,no,no,no,0,0,252919,pri,0,,0,0,0,0,13109,266028,339,1098,267465,340313,mau - cd Banamex,1,1,1
+92,28,1976,jul,0,senado,Tamaulipas,no,no,no,0,0,411447,pri,0,,0,0,0,0,21341,432788,1233,21190,455211,883745,mau - cd Banamex,1,1,1
+93,29,1976,jul,0,senado,Tlaxcala,no,no,no,3112,pan,190920,pri,0,,0,0,0,0,5881,199913,5,414,200332,234372,mau - cd Banamex,1,1,1
+94,30,1976,jul,0,senado,Veracruz,no,no,no,44326,pan,1133642,pri,0,,0,0,0,0,50587,1228555,4430,23634,1256619,1741527,mau - cd Banamex,1,1,1
+95,31,1976,jul,0,senado,Yucatán,no,no,no,0,0,312082,pri,0,,0,0,0,0,10013,322095,51,29750,351896,411829,mau - cd Banamex,1,1,1
+96,32,1976,jul,0,senado,Zacatecas,no,no,no,0,0,286491,pri,0,,0,0,0,0,4495,290986,502,2733,294221,482703,mau - cd Banamex,1,1,1
+97,1,1982,jul,0,senado,Aguascalientes,no,no,no,30755,pan,129901,pri,2118,prd,0,0,0,0,10896,173993,7,18874,192874,260868,mau - cd Banamex,1,1,1
+98,2,1982,jul,0,senado,Baja California,no,no,no,152744,pan,242274,pri,17752,prd,0,0,0,0,35844,456293,10,61271,517574,685922,mau - cd Banamex,1,1,1
+99,3,1982,jul,0,senado,Baja California Sur,no,no,no,11362,pan,62825,pri,2241,prd,0,0,0,0,1736,80652,10,9375,90037,116364,mau - cd Banamex,1,1,1
+100,4,1982,jul,0,senado,Campeche,no,no,no,7224,pan,95737,pri,724,prd,0,0,0,0,1546,105231,284,9730,115245,168338,mau - cd Banamex,1,1,1
+101,5,1982,jul,0,senado,Coahuila,no,no,no,89305,pan,209651,pri,965,prd,0,0,0,0,10521,311500,396,11460,323356,681635,mau - cd Banamex,1,1,1
+102,6,1982,jul,0,senado,Colima,no,no,no,4191,pan,64207,pri,864,prd,0,0,0,0,2674,72281,9,2250,74540,170791,mau - cd Banamex,1,1,1
+103,7,1982,jul,0,senado,Chiapas,no,no,no,21054,pan,569552,pri,7629,prd,0,0,0,0,21041,622887,22,23784,646693,923098,mau - cd Banamex,1,1,1
+104,8,1982,jul,0,senado,Chihuahua,no,no,no,158910,pan,337483,pri,14241,prd,0,0,0,0,19566,530200,262,45718,576180,963853,mau - cd Banamex,1,1,1
+105,9,1982,jul,0,senado,Distrito Federal,no,no,no,894350,pan,1663851,pri,326327,prd,0,0,0,0,312472,3331247,1453,460568,3793268,4779964,mau - cd Banamex,1,1,1
+106,10,1982,jul,0,senado,Durango,no,no,no,62470,pan,270401,pri,7637,prd,0,0,0,0,9535,351232,9,12942,364183,603027,mau - cd Banamex,1,1,1
+107,11,1982,jul,0,senado,Guanajuato,no,no,no,182679,pan,558688,pri,10993,prd,0,0,0,0,80163,832523,50,37370,869943,1398807,mau - cd Banamex,1,1,1
+108,12,1982,jul,0,senado,Guerrero,no,no,no,21939,pan,408345,pri,0,,0,0,0,0,3866,434150,0,11522,445672,984325,mau - cd Banamex,1,1,1
+109,13,1982,jul,0,senado,Hidalgo,no,no,no,50651,pan,465877,pri,9467,prd,0,0,0,0,21649,547644,93,11436,559173,748930,mau - cd Banamex,1,1,1
+110,14,1982,jul,0,senado,Jalisco,no,no,no,353123,pan,762633,pri,103363,prd,0,0,0,0,79481,1298600,0,106241,1404841,2031506,mau - cd Banamex,1,1,1
+111,15,1982,jul,0,senado,México,no,no,no,612609,pan,1417367,pri,147084,prd,0,0,0,0,179385,2409961,0,587080,2997041,3102137,mau - cd Banamex,1,1,1
+112,16,1982,jul,0,senado,Michoacán,no,no,no,86484,pan,577323,pri,16796,prd,0,0,0,0,52093,734741,17,37420,772178,1359175,mau - cd Banamex,1,1,1
+113,17,1982,jul,0,senado,Morelos,no,no,no,29325,pan,231710,pri,8681,prd,0,0,0,0,17906,296885,52,18466,315403,392556,mau - cd Banamex,1,1,1
+114,18,1982,jul,0,senado,Nayarit,no,no,no,4965,pan,148255,pri,22324,prd,0,0,0,0,7425,182969,18,17044,200031,332502,mau - cd Banamex,1,1,1
+115,19,1982,jul,0,senado,Nuevo León,no,no,no,218724,pan,608366,pri,5529,prd,0,0,0,0,16449,849068,0,24213,873281,1155687,mau - cd Banamex,1,1,1
+116,20,1982,jul,0,senado,Oaxaca,no,no,no,48196,pan,543515,pri,21956,prd,0,0,0,0,39468,653135,72,10467,663674,1131450,mau - cd Banamex,1,1,1
+117,21,1982,jul,0,senado,Puebla,no,no,no,139076,pan,917147,pri,28834,prd,0,0,0,0,44382,1132527,43,59849,1192419,1591940,mau - cd Banamex,1,1,1
+118,22,1982,jul,0,senado,Querétaro,no,no,no,33284,pan,193681,pri,3225,prd,0,0,0,0,8015,238205,4,14120,252329,347054,mau - cd Banamex,1,1,1
+119,23,1982,jul,0,senado,Quintana Roo,no,no,no,2856,pan,86143,pri,950,prd,0,0,0,0,2819,92768,5,923,93696,108075,mau - cd Banamex,1,1,1
+120,24,1982,jul,0,senado,San Luis Potosí,no,no,no,46978,pan,352978,pri,4315,prd,0,0,0,0,26783,431572,14,0,431586,728011,mau - cd Banamex,1,1,1
+121,25,1982,jul,0,senado,Sinaloa,no,no,no,59549,pan,450660,pri,31326,prd,0,0,0,0,20560,565196,96,22591,587883,864566,mau - cd Banamex,1,1,1
+122,26,1982,jul,0,senado,Sonora,no,no,no,121824,pan,246869,pri,6693,prd,0,0,0,0,6002,383308,162,26615,410085,727765,mau - cd Banamex,1,1,1
+123,27,1982,jul,0,senado,Tabasco,no,no,no,11210,pan,299649,pri,1741,prd,0,0,0,0,4450,317050,11,6756,323817,446581,mau - cd Banamex,1,1,1
+124,28,1982,jul,0,senado,Tamaulipas,no,no,no,36404,pan,432681,pri,7667,prd,0,0,0,0,71524,548276,26,46897,595199,887181,mau - cd Banamex,1,1,1
+125,29,1982,jul,0,senado,Tlaxcala,no,no,no,20061,pan,134954,pri,3774,prd,0,0,0,0,13013,171802,22,5862,177686,260973,mau - cd Banamex,1,1,1
+126,30,1982,jul,0,senado,Veracruz,no,no,no,71223,pan,1569368,pri,41375,prd,0,0,0,0,154959,1836925,8346,63264,1908535,2517944,mau - cd Banamex,1,1,1
+127,31,1982,jul,0,senado,Yucatán,no,no,no,56148,pan,253893,pri,3179,prd,0,0,0,0,2841,316061,6,6341,322408,511279,mau - cd Banamex,1,1,1
+128,32,1982,jul,0,senado,Zacatecas,no,no,no,38425,pan,278130,pri,6621,prd,0,0,0,0,6608,329784,0,9874,339658,544252,mau - cd Banamex,1,1,1
+129,1,1988,jul,6,senado,Aguascalientes,no,no,no,46554,pan,85947,pri,4502,prd,0,0,0,0,27378,164381,0,0,164381,0,mau - cd Banamex,1,1,1
+130,2,1988,jul,6,senado,Baja California,no,no,no,110455,pan,166751,pri,15171,prd,0,0,0,0,118771,411148,0,0,411148,817466,mau - cd Banamex,1,1,1
+131,3,1988,jul,6,senado,Baja California Sur,no,no,no,15238,pan,48287,pri,1645,prd,0,0,0,0,17765,82935,0,0,82935,150348,mau - cd Banamex,1,1,1
+132,4,1988,jul,6,senado,Campeche,no,no,no,13499,pan,81965,pri,1289,prd,0,0,0,0,15506,112259,0,0,112259,229954,mau - cd Banamex,1,1,1
+133,5,1988,jul,6,senado,Coahuila,no,no,no,52159,pan,182481,pri,6369,prd,0,0,0,0,88557,329566,0,0,329566,0,mau - cd Banamex,1,1,1
+134,6,1988,jul,6,senado,Colima,no,no,no,13413,pan,47575,pri,1939,prd,0,0,0,0,30127,93054,0,0,93054,218028,mau - cd Banamex,1,1,1
+135,7,1988,jul,6,senado,Chiapas,no,no,no,22924,pan,553892,pri,10497,prd,0,0,0,0,28203,615516,0,0,615516,1189034,mau - cd Banamex,1,1,1
+136,8,1988,jul,6,senado,Chihuahua,no,no,no,200749,pan,282803,pri,4553,prd,0,0,0,0,23630,511735,0,0,511735,1295067,mau - cd Banamex,1,1,1
+137,9,1988,jul,6,senado,Distrito Federal,no,no,no,682309,pan,753478,pri,231722,prd,0,0,0,0,1153443,2820952,0,0,2820952,0,mau - cd Banamex,1,1,1
+138,10,1988,jul,6,senado,Durango,no,no,no,60588,pan,199315,pri,16346,prd,0,0,0,0,44642,320891,0,0,320891,682290,mau - cd Banamex,1,1,1
+139,11,1988,jul,6,senado,Guanajuato,no,no,no,201346,pan,276404,pri,8973,prd,0,0,0,0,154924,641647,0,0,641647,0,mau - cd Banamex,1,1,1
+140,12,1988,jul,6,senado,Guerrero,no,no,no,11431,pan,311646,pri,17241,prd,0,0,0,0,165064,505382,0,0,505382,1200804,mau - cd Banamex,1,1,1
+141,13,1988,jul,6,senado,Hidalgo,no,no,no,21651,pan,252881,pri,15685,prd,0,0,0,0,71214,361431,0,0,361431,812252,mau - cd Banamex,1,1,1
+142,14,1988,jul,6,senado,Jalisco,no,no,no,386773,pan,507102,pri,32355,prd,0,0,0,0,262947,1189177,0,0,1189177,2514777,mau - cd Banamex,1,1,1
+143,15,1988,jul,6,senado,México,no,no,no,396273,pan,733039,pri,196125,prd,0,0,0,0,953049,2278486,0,0,2278486,4190232,mau - cd Banamex,1,1,1
+144,16,1988,jul,6,senado,Michoacán,no,no,no,68018,pan,141790,pri,12143,prd,0,0,0,0,368384,590335,0,0,590335,1549843,mau - cd Banamex,1,1,1
+145,17,1988,jul,6,senado,Morelos,no,no,no,22165,pan,95699,pri,11950,prd,0,0,0,0,120811,250625,0,0,250625,583597,mau - cd Banamex,1,1,1
+146,18,1988,jul,6,senado,Nayarit,no,no,no,22929,pan,120065,pri,13412,prd,0,0,0,0,54214,210620,0,0,210620,405300,mau - cd Banamex,1,1,1
+147,19,1988,jul,6,senado,Nuevo León,no,no,no,153871,pan,509865,pri,4067,prd,0,0,0,0,19006,686809,0,0,686809,1625718,mau - cd Banamex,1,1,1
+148,20,1988,jul,6,senado,Oaxaca,no,no,no,30546,pan,398175,pri,21211,prd,0,0,0,0,159815,609747,0,0,609747,1364539,mau - cd Banamex,1,1,1
+149,21,1988,jul,6,senado,Puebla,no,no,no,116733,pan,511377,pri,31322,prd,0,0,0,0,171919,831351,0,0,831351,1693380,mau - cd Banamex,1,1,1
+150,22,1988,jul,6,senado,Querétaro,no,no,no,44312,pan,153643,pri,3580,prd,0,0,0,0,27553,229088,0,0,229088,409408,mau - cd Banamex,1,1,1
+151,23,1988,jul,6,senado,Quintana Roo,no,no,no,7511,pan,63156,pri,1389,prd,0,0,0,0,18116,90172,0,0,90172,188191,mau - cd Banamex,1,1,1
+152,24,1988,jul,6,senado,San Luis Potosí,no,no,no,74407,pan,264629,pri,2772,prd,0,0,0,0,28242,370050,0,0,370050,868279,mau - cd Banamex,1,1,1
+153,25,1988,jul,6,senado,Sinaloa,no,no,no,142673,pan,319358,pri,9574,prd,0,0,0,0,47353,518958,0,0,518958,1113969,mau - cd Banamex,1,1,1
+154,26,1988,jul,6,senado,Sonora,no,no,no,85998,pan,283071,pri,5892,prd,0,0,0,0,22813,397774,0,0,397774,899250,mau - cd Banamex,1,1,1
+155,27,1988,jul,6,senado,Tabasco,no,no,no,13806,pan,202644,pri,5321,prd,0,0,0,0,40600,262371,0,0,262371,634687,mau - cd Banamex,1,1,1
+156,28,1988,jul,6,senado,Tamaulipas,no,no,no,44788,pan,290791,pri,10966,prd,0,0,0,0,115572,462117,0,0,462117,1120265,mau - cd Banamex,1,1,1
+157,29,1988,jul,6,senado,Tlaxcala,no,no,no,10594,pan,114028,pri,6006,prd,0,0,0,0,51058,181686,0,0,181686,331907,mau - cd Banamex,1,1,1
+158,30,1988,jul,6,senado,Veracruz,no,no,no,107436,pan,884626,pri,37293,prd,0,0,0,0,422081,1451436,0,0,1451436,3045721,mau - cd Banamex,1,1,1
+159,31,1988,jul,6,senado,Yucatán,no,no,no,88473,pan,206938,pri,1106,prd,0,0,0,0,2940,299457,0,0,299457,602041,mau - cd Banamex,1,1,1
+160,32,1988,jul,6,senado,Zacatecas,no,no,no,31160,pan,193554,pri,16039,prd,0,0,0,0,46744,287497,0,0,287497,602780,mau - cd Banamex,1,1,1
+161,1,1991,ago,18,senado,Aguascalientes,no,no,no,42926,pan,137111,pri,5744,prd,0,0,0,0,21995,207776,160,8686,216622,0,mau - cd Banamex,1,1,1
+162,2,1991,ago,18,senado,Baja California,no,no,no,268563,pan,259586,pri,15330,prd,0,0,0,0,35915,579394,172,28928,608494,0,mau - cd Banamex,1,1,1
+163,3,1991,ago,18,senado,Baja California Sur,no,no,no,23262,pan,61295,pri,1484,prd,0,0,0,0,6318,92359,92359,3450,95849,0,mau - cd Banamex,1,1,1
+164,4,1991,ago,18,senado,Campeche,no,no,no,5134,pan,117361,pri,5934,prd,0,0,0,0,18853,147282,81,8643,156006,0,mau - cd Banamex,1,1,1
+165,5,1991,ago,18,senado,Coahuila,no,no,no,96087,pan,302715,pri,34467,prd,0,0,0,0,40836,474105,126,22323,496554,0,mau - cd Banamex,1,1,1
+166,6,1991,ago,18,senado,Colima,no,no,no,18870,pan,82367,pri,12662,prd,0,0,0,0,12592,126491,57,4805,131353,0,mau - cd Banamex,1,1,1
+167,7,1991,ago,18,senado,Chiapas,no,no,prd-pps,42914,pan,634955,pri,43948,prd-pps,0,0,0,0,123242,845059,608,47597,893264,0,mau - cd Banamex,1,1,
+168,8,1991,ago,18,senado,Chihuahua,no,no,no,232969,pan,417477,pri,14007,prd,0,0,0,0,50722,715175,218,30385,745778,0,mau - cd Banamex,1,1,1
+169,9,1991,ago,18,senado,Distrito Federal,no,no,prd-pps,630954,pan,1499473,pri,421878,prd-pps,0,0,0,0,730868,3283173,2242,157165,3442580,0,mau - cd Banamex,1,1,
+170,10,1991,ago,18,senado,Durango,no,no,no,53568,pan,203968,pri,17740,prd,0,0,0,0,52309,327585,83,10861,338529,0,mau - cd Banamex,1,1,1
+171,11,1991,ago,18,senado,Guanajuato,no,no,prd-pps,400152,pan,638096,pri,73261,prd-pps,0,0,0,0,84904,1196413,580,66043,1263036,0,mau - cd Banamex,1,1,
+172,12,1991,ago,18,senado,Guerrero,no,no,no,13603,pan,315217,pri,121505,prd,0,0,0,0,46104,496429,319,32840,529588,0,mau - cd Banamex,1,1,1
+173,13,1991,ago,18,senado,Hidalgo,no,no,no,34746,pan,347274,pri,41256,prd,0,0,0,0,53303,476579,495,25392,502466,0,mau - cd Banamex,1,1,1
+174,14,1991,ago,18,senado,Jalisco,no,no,no,373369,pan,957382,pri,42225,prd,0,0,0,0,161280,1534256,1055,70571,1605882,0,mau - cd Banamex,1,1,1
+175,15,1991,ago,18,senado,México,no,no,prd-pps,514526,pan,1616774,pri,343258,prd-pps,0,0,0,0,550630,3025188,2637,170199,3198024,0,mau - cd Banamex,1,1,
+176,16,1991,ago,18,senado,Michoacán,no,no,no,81823,pan,513333,pri,297962,prd,0,0,0,0,59444,952562,203,41571,994336,0,mau - cd Banamex,1,1,1
+177,17,1991,ago,18,senado,Morelos,no,no,prd-pps,23406,pan,199064,pri,31342,prd-pps,0,0,0,0,43849,297661,285,14452,312398,0,mau - cd Banamex,1,1,
+178,18,1991,ago,18,senado,Nayarit,no,no,no,7613,pan,136198,pri,23246,prd,0,0,0,0,25116,192173,74,9464,201711,0,mau - cd Banamex,1,1,1
+179,19,1991,ago,18,senado,Nuevo León,no,no,no,148928,pan,405556,pri,7138,prd,0,0,0,0,24761,586383,403,34069,620855,0,mau - cd Banamex,1,1,1
+180,20,1991,ago,18,senado,Oaxaca,no,no,no,34786,pan,469690,pri,61886,prd,0,0,0,0,70512,636874,558,31819,669251,0,mau - cd Banamex,1,1,1
+181,21,1991,ago,18,senado,Puebla,no,no,prd-pps,172444,pan,810203,pri,57004,prd-pps,0,0,0,0,114293,1153944,526,52610,1207080,0,mau - cd Banamex,1,1,
+182,22,1991,ago,18,senado,Querétaro,no,no,no,66858,pan,212933,pri,7389,prd,0,0,0,0,19245,306425,125,11661,318211,0,mau - cd Banamex,1,1,1
+183,23,1991,ago,18,senado,Quintana Roo,no,no,no,12425,pan,87428,pri,6085,prd,0,0,0,0,7091,113029,70,5683,118782,0,mau - cd Banamex,1,1,1
+184,24,1991,ago,18,senado,San Luis Potosí,no,no,no,160758,pan,329877,pri,7953,prd,0,0,0,0,21372,519960,278,23250,543488,0,mau - cd Banamex,1,1,1
+185,25,1991,ago,18,senado,Sinaloa,no,no,no,150732,pan,415558,pri,31807,prd,0,0,0,0,25442,623539,241,22575,646355,0,mau - cd Banamex,1,1,1
+186,26,1991,ago,18,senado,Sonora,no,no,no,125438,pan,329225,pri,18695,prd,0,0,0,0,16325,489683,141,17058,506882,0,mau - cd Banamex,1,1,1
+187,27,1991,ago,18,senado,Tabasco,no,no,no,8763,pan,249859,pri,63456,prd,0,0,0,0,19738,341816,747,23477,366040,0,mau - cd Banamex,1,1,1
+188,28,1991,ago,18,senado,Tamaulipas,no,no,prd-pps,83859,pan,432097,pri,18037,prd-pps,0,0,0,0,108856,642849,301,23762,666912,0,mau - cd Banamex,1,1,
+189,29,1991,ago,18,senado,Tlaxcala,no,no,no,18383,pan,160234,pri,13941,prd,0,0,0,0,23313,215871,168,6646,222685,0,mau - cd Banamex,1,1,1
+190,30,1991,ago,18,senado,Veracruz,no,no,prd-pps,85760,pan,1406306,pri,120722,prd-pps,0,0,0,0,199870,1812658,986,99457,1913101,0,mau - cd Banamex,1,1,
+191,31,1991,ago,18,senado,Yucatán,no,no,no,132960,pan,228151,pri,805,prd,0,0,0,0,6976,368892,71,19569,388532,0,mau - cd Banamex,1,1,1
+192,32,1991,ago,18,senado,Zacatecas,no,no,no,33708,pan,279684,pri,25398,prd,0,0,0,0,29729,368519,234,13249,382002,0,mau - cd Banamex,1,1,1
+193,1,1994,ago,21,senado,Aguascalientes,no,no,no,115593,pan,157698,pri,34108,prd,0,0,0,0,22875,330274,111,7932,338317,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+194,2,1994,ago,21,senado,Baja California,no,no,no,295092,pan,391621,pri,67521,prd,0,0,0,0,37035,791269,1850,19364,812483,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+195,3,1994,ago,21,senado,Baja California Sur,no,no,no,45417,pan,82354,pri,7497,prd,0,0,0,0,5914,141182,47,2861,144090,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+196,4,1994,ago,21,senado,Campeche,no,no,no,32031,pan,124930,pri,50276,prd,0,0,0,0,13097,220334,395,7268,227997,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+197,5,1994,ago,21,senado,Coahuila,no,no,no,214407,pan,362584,pri,83475,prd,0,0,0,0,66971,727437,980,16563,744980,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+198,6,1994,ago,21,senado,Colima,no,no,no,50816,pan,105099,pri,26825,prd,0,0,0,0,12714,195454,65,5573,201092,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+199,7,1994,ago,21,senado,Chiapas,no,no,no,122120,pan,497798,pri,343508,prd,0,0,0,0,60428,1023854,3442,64753,1092049,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+200,8,1994,ago,21,senado,Chihuahua,no,no,no,326908,pan,641920,pri,58951,prd,0,0,0,0,56690,1084469,344,30978,1115791,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+201,9,1994,ago,21,senado,Distrito Federal,no,no,no,1147872,pan,1851506,pri,893295,prd,0,0,0,0,414050,4306723,7073,104449,4418245,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+202,10,1994,ago,21,senado,Durango,no,no,no,120414,pan,245436,pri,44815,prd,0,0,0,0,96158,506823,472,14490,521785,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+203,11,1994,ago,21,senado,Guanajuato,no,no,no,517972,pan,940243,pri,143109,prd,0,0,0,0,97518,1698842,1244,61318,1761404,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+204,12,1994,ago,21,senado,Guerrero,no,no,no,68872,pan,386185,pri,266615,prd,0,0,0,0,46240,767912,287,28039,796238,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+205,13,1994,ago,21,senado,Hidalgo,no,no,no,128392,pan,451329,pri,110086,prd,0,0,0,0,43927,733734,1195,31072,766001,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+206,14,1994,ago,21,senado,Jalisco,no,no,no,976450,pan,1051371,pri,164036,prd,0,0,0,0,129080,2320937,2311,62464,2385712,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+207,15,1994,ago,21,senado,México,no,no,no,1197645,pan,2064544,pri,838625,prd,0,0,0,0,391154,4491968,4570,124274,4620812,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+208,16,1994,ago,21,senado,Michoacán,no,no,no,199274,pan,605501,pri,487784,prd,0,0,0,0,57057,1349616,1780,38258,1389654,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+209,17,1994,ago,21,senado,Morelos,no,no,no,109526,pan,280288,pri,104895,prd,0,0,0,0,55109,549818,894,15148,565860,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+210,18,1994,ago,21,senado,Nayarit,no,no,no,46460,pan,183794,pri,47527,prd,0,0,0,0,30066,307847,894,10260,319001,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+211,19,1994,ago,21,senado,Nuevo León,no,no,no,592425,pan,718834,pri,31145,prd,0,0,0,0,122285,1464689,3227,33125,1501041,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+212,20,1994,ago,21,senado,Oaxaca,no,no,no,123606,pan,510350,pri,268224,prd,0,0,0,0,62743,964923,928,48373,1014224,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+213,21,1994,ago,21,senado,Puebla,no,no,no,409283,pan,797718,pri,211959,prd,0,0,0,0,98367,1517327,1183,68172,1586682,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+214,22,1994,ago,21,senado,Querétaro,no,no,no,135244,pan,296898,pri,23760,prd,0,0,0,0,19295,475197,376,15705,491278,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+215,23,1994,ago,21,senado,Quintana Roo,no,no,no,56278,pan,114531,pri,25419,prd,0,0,0,0,9739,205967,101,5845,211913,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+216,24,1994,ago,21,senado,San Luis Potosí,no,no,no,184239,pan,447514,pri,71206,prd,0,0,0,0,35831,738790,1222,28038,768050,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+217,25,1994,ago,21,senado,Sinaloa,no,no,no,283912,pan,483230,pri,115316,prd,0,0,0,0,27357,909815,1051,20709,931575,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+218,26,1994,ago,21,senado,Sonora,no,no,no,279182,pan,410357,pri,106576,prd,0,0,0,0,44964,841079,506,18725,860310,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+219,27,1994,ago,21,senado,Tabasco,no,no,no,36340,pan,361685,pri,204137,prd,0,0,0,0,15446,617608,1016,23759,642383,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+220,28,1994,ago,21,senado,Tamaulipas,no,no,no,203836,pan,489858,pri,203495,prd,0,0,0,0,93002,990191,780,31245,1022216,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+221,29,1994,ago,21,senado,Tlaxcala,no,no,no,77812,pan,184068,pri,49645,prd,0,0,0,0,29299,340824,156,11031,352011,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+222,30,1994,ago,21,senado,Veracruz,no,no,no,396564,pan,1384657,pri,614352,prd,0,0,0,0,181430,2577003,3436,102273,2682712,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+223,31,1994,ago,21,senado,Yucatán,no,no,no,202045,pan,265913,pri,13618,prd,0,0,0,0,10360,491936,156,12085,504177,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+224,32,1994,ago,21,senado,Zacatecas,no,no,no,109011,pan,305722,pri,48149,prd,0,0,0,0,35658,498540,159,14049,512748,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+225,1,1997,jul,6,senado,Aguascalientes,no,no,no,106417,pan,118819,pri,38598,prd,0,0,0,0,25256,289090,103,7719,296912,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+226,2,1997,jul,6,senado,Baja California,no,no,no,265402,pan,216170,pri,84096,prd,0,0,0,0,46101,611769,684,20918,633371,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+227,3,1997,jul,6,senado,Baja California Sur,no,no,no,24010,pan,56141,pri,15387,prd,0,0,0,0,20548,116086,12,2583,118681,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+228,4,1997,jul,6,senado,Campeche,no,no,no,18629,pan,104848,pri,82738,prd,0,0,0,0,18870,225085,57,8165,233307,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+229,5,1997,jul,6,senado,Coahuila,no,no,no,169166,pan,260101,pri,81509,prd,0,0,0,0,39540,550316,88,9910,560314,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+230,6,1997,jul,6,senado,Colima,no,no,no,73957,pan,71028,pri,40631,prd,0,0,0,0,8545,194161,32,5530,199723,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+231,7,1997,jul,6,senado,Chiapas,no,no,no,83477,pan,316304,pri,188316,prd,0,0,0,0,38758,626855,1676,36560,665091,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+232,8,1997,jul,6,senado,Chihuahua,no,no,no,370624,pan,369813,pri,93924,prd,0,0,0,0,58644,893005,149,26685,919839,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+233,9,1997,jul,6,senado,Distrito Federal,no,no,no,700408,pan,900326,pri,1763765,prd,0,0,0,0,510038,3874537,1178,88633,3964348,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+234,10,1997,jul,6,senado,Durango,no,no,no,101020,pan,152506,pri,42323,prd,0,0,0,0,101857,397706,161,9510,407377,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+235,11,1997,jul,6,senado,Guanajuato,no,no,no,684100,pan,514739,pri,203613,prd,0,0,0,0,153958,1556410,1000,53667,1611077,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+236,12,1997,jul,6,senado,Guerrero,no,no,no,41073,pan,315243,pri,291234,prd,0,0,0,0,39353,686903,521,19142,706566,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+237,13,1997,jul,6,senado,Hidalgo,no,no,no,102579,pan,310703,pri,170527,prd,0,0,0,0,45251,629060,640,23057,652757,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+238,14,1997,jul,6,senado,Jalisco,no,no,no,942445,pan,743985,pri,245629,prd,0,0,0,0,167084,2099143,973,57293,2157409,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+239,15,1997,jul,6,senado,México,no,no,no,772121,pan,1336705,pri,1328722,prd,0,0,0,0,419951,3857499,2010,106870,3966379,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+240,16,1997,jul,6,senado,Michoacán,no,no,no,200831,pan,387991,pri,440638,prd,0,0,0,0,66538,1095998,851,30640,1127489,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+241,17,1997,jul,6,senado,Morelos,no,no,no,77258,pan,151591,pri,176823,prd,0,0,0,0,36398,442070,90,11039,453199,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+242,18,1997,jul,6,senado,Nayarit,no,no,no,65396,pan,138496,pri,57231,prd,0,0,0,0,13654,274777,33,6396,281206,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+243,19,1997,jul,6,senado,Nuevo León,no,no,no,668025,pan,531071,pri,38406,prd,0,0,0,0,111760,1349262,349,31775,1381386,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+244,20,1997,jul,6,senado,Oaxaca,no,no,no,104478,pan,403515,pri,252777,prd,0,0,0,0,51817,812587,1212,38479,852278,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+245,21,1997,jul,6,senado,Puebla,no,no,no,324557,pan,606910,pri,231273,prd,0,0,0,0,94747,1257487,384,50815,1308686,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+246,22,1997,jul,6,senado,Querétaro,no,no,no,209527,pan,167117,pri,42869,prd,0,0,0,0,38851,458364,488,15183,474035,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+247,23,1997,jul,6,senado,Quintana Roo,no,no,no,41098,pan,78893,pri,41082,prd,0,0,0,0,10703,171776,29,5143,176948,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+248,24,1997,jul,6,senado,San Luis Potosí,no,no,no,272383,pan,296467,pri,77248,prd,0,0,0,0,50104,696202,783,30400,727385,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+249,25,1997,jul,6,senado,Sinaloa,no,no,no,237232,pan,325506,pri,178636,prd,0,0,0,0,36633,778007,283,16091,794381,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+250,26,1997,jul,6,senado,Sonora,no,no,no,240847,pan,270914,pri,196019,prd,0,0,0,0,27190,734970,323,17773,753066,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+251,27,1997,jul,6,senado,Tabasco,no,no,no,26653,pan,280227,pri,223262,prd,0,0,0,0,16476,546618,125,17123,563866,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+252,28,1997,jul,6,senado,Tamaulipas,no,no,no,160166,pan,387453,pri,219810,prd,0,0,0,0,50660,818089,186,22702,840977,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+253,29,1997,jul,6,senado,Tlaxcala,no,no,no,46409,pan,107463,pri,57556,prd,0,0,0,0,31186,242614,102,8027,250743,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+254,30,1997,jul,6,senado,Veracruz,no,no,no,449426,pan,896941,pri,567775,prd,0,0,0,0,162451,2076593,1090,68925,2146608,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+255,31,1997,jul,6,senado,Yucatán,no,no,no,191669,pan,253193,pri,37897,prd,0,0,0,0,16188,498947,62,13642,512651,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+256,32,1997,jul,6,senado,Zacatecas,no,no,no,109583,pan,207988,pri,59581,prd,0,0,0,0,41431,418583,92,10931,429606,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,1,1,1
+257,1,2000,jul,2,senado,Aguascalientes,pan-pvem,no,prd-pt-conv-pas-psn,182568,pan-pvem,139450,pri,26430,prd-pt-conv-pas-psn,0,0,0,0,15840,364288,89,6435,370812,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8953494378,1,0.8829759445
+258,2,2000,jul,2,senado,Baja California,pan-pvem,no,prd-pt-conv-pas-psn,416145,pan-pvem,317079,pri,75572,prd-pt-conv-pas-psn,0,0,0,0,24026,832822,228,15839,848889,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9156121958,1,0.8846793734
+259,3,2000,jul,2,senado,Baja California Sur,pan-pvem,no,prd-pt-conv-pas-psn,44652,pan-pvem,50557,pri,62293,prd-pt-conv-pas-psn,0,0,0,0,3578,161080,24,3264,164368,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8989119277,1,0.4343987449
+260,4,2000,jul,2,senado,Campeche,pan-pvem,no,prd-pt-conv-pas-psn,71711,pan-pvem,115368,pri,33112,prd-pt-conv-pas-psn,0,0,0,0,25435,245626,534,10227,256387,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9026784761,1,0.8506502303
+261,5,2000,jul,2,senado,Coahuila,pan-pvem,no,prd-pt-conv-pas-psn,367190,pan-pvem,335267,pri,76958,prd-pt-conv-pas-psn,0,0,0,0,14570,793985,1415,13632,809032,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9400803077,1,0.8724101192
+262,6,2000,jul,2,senado,Colima,pan-pvem,no,prd-pt-conv-pas-psn,82884,pan-pvem,82793,pri,33078,prd-pt-conv-pas-psn,0,0,0,0,12255,211010,45,4603,215658,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9706237738,1,0.961542311
+263,7,2000,jul,2,senado,Chiapas,pan-pvem,no,prd-pt-conv-pas-psn,257003,pan-pvem,472728,pri,283627,prd-pt-conv-pas-psn,0,0,0,0,16796,1030154,1139,48193,1079486,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9126278246,1,0.8997795891
+264,8,2000,jul,2,senado,Chihuahua,pan-pvem,no,prd-pt-conv-pas-psn,540681,pan-pvem,453945,pri,77658,prd-pt-conv-pas-psn,0,0,0,0,24754,1097038,291,23792,1121121,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.936075589,1,0.8131031161
+265,9,2000,jul,2,senado,Distrito Federal,pan-pvem,no,prd-pt-conv-pas-psn,1619410,pan-pvem,1004085,pri,1298970,prd-pt-conv-pas-psn,0,0,0,0,380535,4303000,2557,81976,4387533,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.6768063573,1,0.9651759478
+266,10,2000,jul,2,senado,Durango,pan-pvem,no,prd-pt-conv-pas-psn,190838,pan-pvem,237379,pri,52061,prd-pt-conv-pas-psn,0,0,0,0,9085,489363,808,9181,499352,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9356765849,1,0.3125311045
+267,11,2000,jul,2,senado,Guanajuato,pan-pvem,no,prd-pt-conv-pas-psn,1057235,pan-pvem,536074,pri,140222,prd-pt-conv-pas-psn,0,0,0,0,53916,1787447,1515,53368,1842330,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9221910382,1,0.8722344221
+268,12,2000,jul,2,senado,Guerrero,pan-pvem,no,prd-pt-conv-pas-psn,131558,pan-pvem,413282,pri,349363,prd-pt-conv-pas-psn,0,0,0,0,15010,909213,1192,22331,932736,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7877467055,1,0.9626960905
+269,13,2000,jul,2,senado,Hidalgo,pan-pvem,no,prd-pt-conv-pas-psn,244880,pan-pvem,360562,pri,150214,prd-pt-conv-pas-psn,0,0,0,0,33804,789460,958,22600,813018,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8599663263,1,0.9081447011
+270,14,2000,jul,2,senado,Jalisco,pan-pvem,no,prd-pt-conv-pas-psn,1291993,pan-pvem,916389,pri,184276,prd-pt-conv-pas-psn,0,0,0,0,162197,2554855,2178,50729,2607762,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9136240991,1,0.9029985807
+271,15,2000,jul,2,senado,México,pan-pvem,no,prd-pt-conv-pas-psn,2023450,pan-pvem,1695942,pri,1019265,prd-pt-conv-pas-psn,0,0,0,0,255553,4994210,3970,94519,5092699,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7511880236,1,0.9576805036
+272,16,2000,jul,2,senado,Michoacán,pan-pvem,no,prd-pt-conv-pas-psn,362414,pan-pvem,444552,pri,575457,prd-pt-conv-pas-psn,0,0,0,0,36752,1419175,1448,32154,1452777,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.881821426,1,0.9686208689
+273,17,2000,jul,2,senado,Morelos,pan-pvem,no,prd-pt-conv-pas-psn,262090,pan-pvem,195473,pri,139684,prd-pt-conv-pas-psn,0,0,0,0,21791,619038,96,14279,633413,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.7982116688,1,0.9545720192
+274,18,2000,jul,2,senado,Nayarit,pan-pvem,no,prd-pt-conv-pas-psn,97939,pan-pvem,170735,pri,68316,prd-pt-conv-pas-psn,0,0,0,0,7278,344268,667,8386,353321,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9396570659,1,0.9082256751
+275,19,2000,jul,2,senado,Nuevo León,pan-pvem,no,prd-pt-conv-pas-psn,698215,pan-pvem,591701,pri,137663,prd-pt-conv-pas-psn,0,0,0,0,61143,1488722,1437,29336,1519495,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9784377567,1,0.3380352947
+276,20,2000,jul,2,senado,Oaxaca,pan-pvem,no,prd-pt-conv-pas-psn,276421,pan-pvem,487775,pri,279029,prd-pt-conv-pas-psn,0,0,0,0,33002,1076227,2138,42246,1120611,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8621457575,1,0.9457438237
+277,21,2000,jul,2,senado,Puebla,pan-pvem,no,prd-pt-conv-pas-psn,691494,pan-pvem,703154,pri,216310,prd-pt-conv-pas-psn,0,0,0,0,51256,1662214,727,46766,1709707,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8724884728,1,0.9125052377
+278,22,2000,jul,2,senado,Querétaro,pan-pvem,no,prd-pt-conv-pas-psn,271756,pan-pvem,195498,pri,41325,prd-pt-conv-pas-psn,0,0,0,0,31905,540484,401,14059,554944,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9459633367,1,0.8115488254
+279,23,2000,jul,2,senado,Quintana Roo,pan-pvem,no,prd-pt-conv-pas-psn,92333,pan-pvem,98146,pri,74196,prd-pt-conv-pas-psn,0,0,0,0,5127,269802,102,5835,275739,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8998723036,1,0.9107807546
+280,24,2000,jul,2,senado,San Luis Potosí,pan-pvem,no,prd-pt-conv-pas-psn,357443,pan-pvem,340323,pri,74143,prd-pt-conv-pas-psn,0,0,0,0,25431,797340,525,27562,825427,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.954641517,1,0.7488792372
+281,25,2000,jul,2,senado,Sinaloa,pan-pvem,no,prd-pt-conv-pas-psn,254556,pan-pvem,561858,pri,109099,prd-pt-conv-pas-psn,0,0,0,0,17345,942858,972,17634,961464,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9499397306,1,0.9366234981
+282,26,2000,jul,2,senado,Sonora,pan-pvem,no,prd-pt-conv-pas-psn,383508,pan-pvem,339165,pri,125942,prd-pt-conv-pas-psn,0,0,0,0,11300,859915,479,14039,874433,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9740313504,1,0.9343534892
+283,27,2000,jul,2,senado,Tabasco,pan-pvem,no,prd-pt-conv-pas-psn,123992,pan-pvem,277773,pri,248288,prd-pt-conv-pas-psn,0,0,0,0,11550,661603,344,16278,678225,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8169572108,1,0.9716936166
+284,28,2000,jul,2,senado,Tamaulipas,pan-pvem,no,prd-pt-conv-pas-psn,442137,pan-pvem,461981,pri,124707,prd-pt-conv-pas-psn,0,0,0,0,20930,1049755,298,22005,1072058,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9329049874,1,0.8695130727
+285,29,2000,jul,2,senado,Tlaxcala,pan-pvem,no,prd-pt-conv-pas-psn,84975,pan-pvem,127057,pri,109735,prd-pt-conv-pas-psn,0,0,0,0,12436,334203,53,8042,342298,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.8222584166,1,0.8132436191
+286,30,2000,jul,2,senado,Veracruz,pan-pvem,no,prd-pt-conv-pas-psn,841253,pan-pvem,1027161,pri,665271,prd-pt-conv-pas-psn,0,0,0,0,50589,2584274,1070,64968,2650312,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9078620271,1,0.899879846
+287,31,2000,jul,2,senado,Yucatán,pan-pvem,no,prd-pt-conv-pas-psn,318704,pan-pvem,322635,pri,25528,prd-pt-conv-pas-psn,0,0,0,0,7083,673950,940,14149,689039,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9593112962,1,0.8914534783
+288,32,2000,jul,2,senado,Zacatecas,pan-pvem,no,prd-pt-conv-pas-psn,116645,pan-pvem,218116,pri,146582,prd-pt-conv-pas-psn,0,0,0,0,10548,491891,539,12844,505274,0,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,0.9336251417,1,0.6850703763
+289,1,2006,jul,2,senado,Aguascalientes,no,pri-pvem,prd-pt-conve,177541,pan,125953,pri-pvem,64017,prd-pt-conve,21252,panal,10450,pasd,0,399213,1628,8353,409194,0,ife,0,0,0
+290,2,2006,jul,2,senado,Baja California,no,pri-pvem,prd-pt-conve,430405,pan,228255,pri-pvem,170624,prd-pt-conve,60029,panal,23460,pasd,0,912773,3008,18803,934584,0,ife,0,0,0
+291,3,2006,jul,2,senado,Baja California Sur,no,pri-pvem,prd-pt-conve,51553,pan,37246,pri-pvem,73812,prd-pt-conve,6584,panal,3192,pasd,0,172387,412,3241,176040,0,ife,0,0,0
+292,4,2006,jul,2,senado,Campeche,no,pri-pvem,prd-pt-conve,99013,pan,111391,pri-pvem,64468,prd-pt-conve,19703,panal,2880,pasd,0,297455,419,10868,308742,0,ife,0,0,0
+293,5,2006,jul,2,senado,Coahuila,no,pri-pvem,prd-pt-conve,400513,pan,294379,pri-pvem,165429,prd-pt-conve,32153,panal,11925,pasd,0,904399,2545,16737,923681,0,ife,0,0,0
+294,6,2006,jul,2,senado,Colima,no,pri-pvem,prd-pt-conve,105868,pan,96629,pri-pvem,36860,prd-pt-conve,6068,panal,1934,pasd,0,247359,232,5087,252678,0,ife,0,0,0
+295,7,2006,jul,2,senado,Chiapas,no,pri-pvem,prd-pt-conve,199823,pan,491673,pri-pvem,469474,prd-pt-conve,28945,panal,11287,pasd,0,1201202,3407,54663,1259272,0,ife,0,0,0
+296,8,2006,jul,2,senado,Chihuahua,no,pri-pvem,prd-pt-conve,456648,pan,436701,pri-pvem,152853,prd-pt-conve,60117,panal,17319,pasd,0,1123638,2411,28257,1154306,0,ife,0,0,0
+297,9,2006,jul,2,senado,Distrito Federal,no,pri-pvem,prd-pt-conve,1226543,pan,566862,pri-pvem,2493288,prd-pt-conve,256201,panal,169459,pasd,0,4712353,9309,83265,4804927,0,ife,0,0,0
+298,10,2006,jul,2,senado,Durango,no,pri-pvem,prd-pt-conve,226923,pan,178541,pri-pvem,126097,prd-pt-conve,16785,panal,5334,pasd,0,553680,1743,11856,567279,0,ife,0,0,0
+299,11,2006,jul,2,senado,Guanajuato,no,pri-pvem,prd-pt-conve,1104120,pan,424165,pri-pvem,249935,prd-pt-conve,66551,panal,36518,pasd,0,1881289,7382,55103,1943774,0,ife,0,0,0
+300,12,2006,jul,2,senado,Guerrero,no,pri-pvem,prd-pt-conve,113113,pan,352726,pri-pvem,440248,prd-pt-conve,29987,panal,11349,pasd,0,947423,2544,28530,978497,0,ife,0,0,0
+301,13,2006,jul,2,senado,Hidalgo,no,pri-pvem,prd-pt-conve,223222,pan,300400,pri-pvem,308445,prd-pt-conve,53878,panal,18405,pasd,0,904350,3049,28318,935717,0,ife,0,0,0
+302,14,2006,jul,2,senado,Jalisco,no,pri-pvem,prd-pt-conve,1424144,pan,870446,pri-pvem,337214,prd-pt-conve,131784,panal,53578,pasd,0,2817166,5822,63155,2886143,0,ife,0,0,0
+303,15,2006,jul,2,senado,México,no,pri-pvem,prd-pt-conve,1650545,pan,1214086,pri-pvem,2148799,prd-pt-conve,344570,panal,175525,pasd,0,5533525,23651,113852,5671028,0,ife,0,0,0
+304,16,2006,jul,2,senado,Michoacán,no,pri-pvem,prd-pt-conve,433403,pan,394209,pri-pvem,554853,prd-pt-conve,35819,panal,22079,pasd,0,1440363,5513,36522,1482398,0,ife,0,0,0
+305,17,2006,jul,2,senado,Morelos,no,pri-pvem,prd-pt-conve,216526,pan,195536,pri-pvem,211938,prd-pt-conve,37752,panal,16959,pasd,0,678711,2183,18345,699239,0,ife,0,0,0
+306,18,2006,jul,2,senado,Nayarit,no,pri-pvem,prd-pt-conve,59892,pan,141070,pri-pvem,136800,prd-pt-conve,8613,panal,5261,pasd,0,351636,708,8138,360482,0,ife,0,0,0
+307,19,2006,jul,2,senado,Nuevo León,no,pri-pvem,prd-pt-conve,761322,pan,713354,pri-pvem,140047,prd-pt-conve,76841,panal,21269,pasd,0,1712833,2033,39479,1754345,0,ife,0,0,0
+308,20,2006,jul,2,senado,Oaxaca,no,pri-pvem,prd-pt-conve,208694,pan,441333,pri-pvem,601382,prd-pt-conve,18691,panal,15815,pasd,0,1285915,3892,46391,1336198,0,ife,0,0,0
+309,21,2006,jul,2,senado,Puebla,no,pri-pvem,prd-pt-conve,711485,pan,617769,pri-pvem,480723,prd-pt-conve,58212,panal,36695,pasd,0,1904884,7575,59712,1972171,0,ife,0,0,0
+310,22,2006,jul,2,senado,Querétaro,no,pri-pvem,prd-pt-conve,315128,pan,163069,pri-pvem,114945,prd-pt-conve,25402,panal,10815,pasd,0,629359,2142,17930,649431,0,ife,0,0,0
+311,23,2006,jul,2,senado,Quintana Roo,no,pri-pvem,prd-pt-conve,91115,pan,143389,pri-pvem,114097,prd-pt-conve,15425,panal,5806,pasd,0,369832,895,7793,378520,0,ife,0,0,0
+312,24,2006,jul,2,senado,San Luis Potosí,no,pri-pvem,prd-pt-conve,450986,pan,236913,pri-pvem,163368,prd-pt-conve,30592,panal,14231,pasd,0,896090,2324,46426,944840,0,ife,0,0,0
+313,25,2006,jul,2,senado,Sinaloa,no,pri-pvem,prd-pt-conve,359154,pan,435085,pri-pvem,133719,prd-pt-conve,16492,panal,5135,pasd,0,949585,1459,20156,971200,0,ife,0,0,0
+314,26,2006,jul,2,senado,Sonora,no,pri-pvem,prd-pt-conve,411000,pan,320711,pri-pvem,154029,prd-pt-conve,14182,panal,8149,pasd,0,908071,1144,18340,927555,0,ife,0,0,0
+315,27,2006,jul,2,senado,Tabasco,no,pri-pvem,prd-pt-conve,35383,pan,362648,pri-pvem,467903,prd-pt-conve,14828,panal,6324,pasd,0,887086,1067,17440,905593,0,ife,0,0,0
+316,28,2006,jul,2,senado,Tamaulipas,no,pri-pvem,prd-pt-conve,433025,pan,398475,pri-pvem,277040,prd-pt-conve,58720,panal,14496,pasd,0,1181756,4451,26558,1212765,0,ife,0,0,0
+317,29,2006,jul,2,senado,Tlaxcala,no,pri-pvem,prd-pt-conve,137821,pan,69417,pri-pvem,160197,prd-pt-conve,17959,panal,8054,pasd,0,393448,1409,12295,407152,0,ife,0,0,0
+318,30,2006,jul,2,senado,Veracruz,no,pri-pvem,prd-pt-conve,885080,pan,835031,pri-pvem,1010401,prd-pt-conve,70164,panal,26585,pasd,0,2827261,8592,78723,2914576,0,ife,0,0,0
+319,31,2006,jul,2,senado,Yucatán,no,pri-pvem,prd-pt-conve,351127,pan,300075,pri-pvem,89003,prd-pt-conve,17010,panal,8010,pasd,0,765225,2225,17658,785108,0,ife,0,0,0
+320,32,2006,jul,2,senado,Zacatecas,no,pri-pvem,prd-pt-conve,145754,pan,132190,pri-pvem,186737,prd-pt-conve,26625,panal,9499,pasd,0,500805,3792,15551,520148,0,ife,0,0,0
+321,1,2012,jul,1,senado,Aguascalientes,,,,,,,,,,,,,,,,,,,,,,,
+322,2,2012,jul,1,senado,Baja California,,,,,,,,,,,,,,,,,,,,,,,
+323,3,2012,jul,1,senado,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,
+324,4,2012,jul,1,senado,Campeche,,,,,,,,,,,,,,,,,,,,,,,
+325,5,2012,jul,1,senado,Coahuila,,,,,,,,,,,,,,,,,,,,,,,
+326,6,2012,jul,1,senado,Colima,,,,,,,,,,,,,,,,,,,,,,,
+327,7,2012,jul,1,senado,Chiapas,,,,,,,,,,,,,,,,,,,,,,,
+328,8,2012,jul,1,senado,Chihuahua,,,,,,,,,,,,,,,,,,,,,,,
+329,9,2012,jul,1,senado,Distrito Federal,,,,,,,,,,,,,,,,,,,,,,,
+330,10,2012,jul,1,senado,Durango,,,,,,,,,,,,,,,,,,,,,,,
+331,11,2012,jul,1,senado,Guanajuato,,,,,,,,,,,,,,,,,,,,,,,
+332,12,2012,jul,1,senado,Guerrero,,,,,,,,,,,,,,,,,,,,,,,
+333,13,2012,jul,1,senado,Hidalgo,,,,,,,,,,,,,,,,,,,,,,,
+334,14,2012,jul,1,senado,Jalisco,,,,,,,,,,,,,,,,,,,,,,,
+335,15,2012,jul,1,senado,México,,,,,,,,,,,,,,,,,,,,,,,
+336,16,2012,jul,1,senado,Michoacán,,,,,,,,,,,,,,,,,,,,,,,
+337,17,2012,jul,1,senado,Morelos,,,,,,,,,,,,,,,,,,,,,,,
+338,18,2012,jul,1,senado,Nayarit,,,,,,,,,,,,,,,,,,,,,,,
+339,19,2012,jul,1,senado,Nuevo León,,,,,,,,,,,,,,,,,,,,,,,
+340,20,2012,jul,1,senado,Oaxaca,,,,,,,,,,,,,,,,,,,,,,,
+341,21,2012,jul,1,senado,Puebla,,,,,,,,,,,,,,,,,,,,,,,
+342,22,2012,jul,1,senado,Querétaro,,,,,,,,,,,,,,,,,,,,,,,
+343,23,2012,jul,1,senado,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,
+344,24,2012,jul,1,senado,San Luis Potosí,,,,,,,,,,,,,,,,,,,,,,,
+345,25,2012,jul,1,senado,Sinaloa,,,,,,,,,,,,,,,,,,,,,,,
+346,26,2012,jul,1,senado,Sonora,,,,,,,,,,,,,,,,,,,,,,,
+347,27,2012,jul,1,senado,Tabasco,,,,,,,,,,,,,,,,,,,,,,,
+348,28,2012,jul,1,senado,Tamaulipas,,,,,,,,,,,,,,,,,,,,,,,
+349,29,2012,jul,1,senado,Tlaxcala,,,,,,,,,,,,,,,,,,,,,,,
+350,30,2012,jul,1,senado,Veracruz,,,,,,,,,,,,,,,,,,,,,,,
+351,31,2012,jul,1,senado,Yucatán,,,,,,,,,,,,,,,,,,,,,,,
+352,32,2012,jul,1,senado,Zacatecas,,,,,,,,,,,,,,,,,,,,,,,
+353,1,2018,jul,1,senado,Aguascalientes,,,,,,,,,,,,,,,,,,,,,,,
+354,2,2018,jul,1,senado,Baja California,,,,,,,,,,,,,,,,,,,,,,,
+355,3,2018,jul,1,senado,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,
+356,4,2018,jul,1,senado,Campeche,,,,,,,,,,,,,,,,,,,,,,,
+357,5,2018,jul,1,senado,Coahuila,,,,,,,,,,,,,,,,,,,,,,,
+358,6,2018,jul,1,senado,Colima,,,,,,,,,,,,,,,,,,,,,,,
+359,7,2018,jul,1,senado,Chiapas,,,,,,,,,,,,,,,,,,,,,,,
+360,8,2018,jul,1,senado,Chihuahua,,,,,,,,,,,,,,,,,,,,,,,
+361,9,2018,jul,1,senado,Distrito Federal,,,,,,,,,,,,,,,,,,,,,,,
+362,10,2018,jul,1,senado,Durango,,,,,,,,,,,,,,,,,,,,,,,
+363,11,2018,jul,1,senado,Guanajuato,,,,,,,,,,,,,,,,,,,,,,,
+364,12,2018,jul,1,senado,Guerrero,,,,,,,,,,,,,,,,,,,,,,,
+365,13,2018,jul,1,senado,Hidalgo,,,,,,,,,,,,,,,,,,,,,,,
+366,14,2018,jul,1,senado,Jalisco,,,,,,,,,,,,,,,,,,,,,,,
+367,15,2018,jul,1,senado,México,,,,,,,,,,,,,,,,,,,,,,,
+368,16,2018,jul,1,senado,Michoacán,,,,,,,,,,,,,,,,,,,,,,,
+369,17,2018,jul,1,senado,Morelos,,,,,,,,,,,,,,,,,,,,,,,
+370,18,2018,jul,1,senado,Nayarit,,,,,,,,,,,,,,,,,,,,,,,
+371,19,2018,jul,1,senado,Nuevo León,,,,,,,,,,,,,,,,,,,,,,,
+372,20,2018,jul,1,senado,Oaxaca,,,,,,,,,,,,,,,,,,,,,,,
+373,21,2018,jul,1,senado,Puebla,,,,,,,,,,,,,,,,,,,,,,,
+374,22,2018,jul,1,senado,Querétaro,,,,,,,,,,,,,,,,,,,,,,,
+375,23,2018,jul,1,senado,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,
+376,24,2018,jul,1,senado,San Luis Potosí,,,,,,,,,,,,,,,,,,,,,,,
+377,25,2018,jul,1,senado,Sinaloa,,,,,,,,,,,,,,,,,,,,,,,
+378,26,2018,jul,1,senado,Sonora,,,,,,,,,,,,,,,,,,,,,,,
+379,27,2018,jul,1,senado,Tabasco,,,,,,,,,,,,,,,,,,,,,,,
+380,28,2018,jul,1,senado,Tamaulipas,,,,,,,,,,,,,,,,,,,,,,,
+381,29,2018,jul,1,senado,Tlaxcala,,,,,,,,,,,,,,,,,,,,,,,
+382,30,2018,jul,1,senado,Veracruz,,,,,,,,,,,,,,,,,,,,,,,
+383,31,2018,jul,1,senado,Yucatán,,,,,,,,,,,,,,,,,,,,,,,
+384,32,2018,jul,1,senado,Zacatecas,,,,,,,,,,,,,,,,,,,,,,,
