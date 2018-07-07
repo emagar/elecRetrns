@@ -809,8 +809,8 @@ axis(1); axis(2)
 
 # amlo v pri
 library(graphics)
-#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlus.png", width = 20, height = 20, units = "cm", res = 196)
-#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlus.pdf", width = 10, height = 7)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
 for (i in 1:32){
