@@ -810,9 +810,10 @@ axis(1); axis(2)
 # amlo v pri
 library(graphics)
 #png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.png", width = 20, height = 20, units = "cm", res = 196)
-#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
+pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 for (i in 1:32){
     plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
 }
@@ -821,15 +822,16 @@ plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 # add arrows
 # start-end of arrows
 #cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 for (i in 1:32){
     # start-end of arrows
     #i <- 1 # debug
-    cx <- 300000*mu.map[[i]]$camlopos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]-cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
            col = brown, lwd = (.1+cx/600000))
-    cx <- 400000*mu.map[[i]]$cpripos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$cpripos; cy <- cx/3
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
@@ -844,7 +846,7 @@ text(xl+310000,yl-150000, pos = 2, labels = "Meade creció", cex = .75)
 text(xl+180000, yl+280000, labels = "Cambio desde", font = 2)
 text(xl+180000, yl+180000, labels = "2012 en municipios", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
-#dev.off()
+dev.off()
 
 
 # amlo v pan
@@ -853,6 +855,7 @@ library(graphics)
 #pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 for (i in 1:32){
     plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
 }
@@ -861,15 +864,16 @@ plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 # add arrows
 # start-end of arrows
 #cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 for (i in 1:32){
     # start-end of arrows
     #i <- 1 # debug
-    cx <- 300000*mu.map[[i]]$camlopos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]-cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
            col = brown, lwd = (.1+cx/600000))
-    cx <- 400000*mu.map[[i]]$cpanpos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$cpanpos; cy <- cx/3
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
@@ -886,4 +890,126 @@ text(xl+180000, yl+180000, labels = "2012 en municipios", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
+
+
+
+##################
+##################
+# SECCIONES MAPS #
+##################
+##################
+
+# 1st dif
+pr.se$camlo <- pr.se$amlo18 - pr.se$amlo12
+pr.se$cpri  <- pr.se$jam - pr.se$pena
+pr.se$cpan  <- pr.se$rac - pr.se$jvm 
+pr.se$dcamlopos <- as.numeric(pr.se$camlo>0)
+pr.se$dcpripos <- as.numeric(pr.se$cpri>0)
+pr.se$dcpanpos <- as.numeric(pr.se$cpan>0)
+pr.se$camlopos <- pr.se$camlo * pr.se$dcamlopos
+pr.se$cpripos <- pr.se$cpri * pr.se$dcpripos
+pr.se$cpanpos <- pr.se$cpan * pr.se$dcpanpos
+pr.se$camloneg <- pr.se$camlo * (1-pr.se$dcamlopos)
+pr.se$cprineg <- pr.se$cpri * (1-pr.se$dcpripos)
+pr.se$cpanneg <- pr.se$cpan * (1-pr.se$dcpanpos)
+
+summary(pr.se$camlo)
+summary(pr.se$cpri)
+summary(pr.se$cpan)
+table(pr.se$dcamlopos)
+table(pr.se$dcpripos)
+table(pr.se$dcpanpos)
+summary(pr.se$camlopos[pr.se$camlopos>0])
+summary(pr.se$cpripos[pr.se$cpripos>0])
+summary(pr.se$cpanpos[pr.se$cpanpos>0])
+summary(pr.se$camloneg[pr.se$camloneg<0])
+summary(pr.se$cprineg[pr.se$cprineg<0])
+summary(pr.se$cpanneg[pr.se$cpanneg<0])
+
+
+edon <- 1
+edo <- edos[edon]
+
+#################
+# secciones map #
+#################
+ruta <- file.path(mapdir, edo) # archivo con mapas ine
+se.map <- readOGR(dsn = ruta, layer = 'SECCION')
+summary(se.map)
+# projects to a different datum with long and lat
+se.map <- spTransform(se.map, osm()) # project to osm native Mercator
+# add pr data
+tmp.data <- se.map@data
+tmp.data$orden <- 1:nrow(tmp.data)
+tmp.data$edon <- tmp.data$entidad; tmp.data$munn <- tmp.data$municipio
+tmp.pr <- pr.se[pr.se$edon==edon,]
+tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "seccion", all.x = TRUE, all.y = FALSE)
+tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
+se.map@data <- tmp.data
+rm(tmp.data, tmp.pr)
+
+###################
+# municipios maps #
+###################
+tmp <- file.path(mapdir, edo) # archivo con mapas ine
+tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
+# projects to a different datum with long and lat
+tmp <- spTransform(tmp, osm())
+mu.map <- tmp
+
+#################
+# state borders #
+#################
+tmp <- file.path(mapdir, edo) # archivo con mapas ine
+tmp <- readOGR(dsn = tmp, layer = 'ENTIDAD')
+# projects to a different datum with long and lat
+tmp <- spTransform(tmp, osm())
+ed.map <- tmp
+
+
+# trial
+#plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
+plot(mu.map, lwd = .5, border = "gray")
+axis(1); axis(2)
+
+# amlo v pan
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+#plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
+plot(se.map, lwd = .25, border = "lightgray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+plot(mu.map, lwd = .5,          border = "gray", add = TRUE)
+plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+plot(ed.map, lwd = .5, lty = 3, border = "gray", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 8
+for (i in 1:nrow(se.map@data)){
+    # start-end of arrows
+    #i <- 1 # debug
+    cx <- xlength*se.map$camlopos; cy <- cx/3
+    arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
+           coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]+cy,
+           length = .025, angle = 10,
+           col = brown, lwd = (.1+cx/xlength))
+    cx <- xlength*se.map$cpanpos; cy <- cx/3
+    arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
+           coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]+cy,
+           length = .025, angle = 10,
+           col = colpan, lwd = (.1+cx/xlength))
+}
+# legend
+#xl <-  -11440000; yl <- 2555000
+xl <-  tmp.ranges[2]-(tmp.ranges[2]-tmp.ranges[1])*.1; yl <- tmp.ranges[4]-(tmp.ranges[4]-tmp.ranges[3])*.1
+arrows(xl,yl,xl-xlength*.6,yl+xlength*.6/3,length = .025, angle = 10, col = brown, lwd = 2)
+text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
+arrows(xl+310000,yl-150000,xl+310000+150000,yl-150000+50000,length = .025, angle = 10, col = colpan, lwd = .75)
+text(xl+310000,yl-150000, pos = 2, labels = "Anaya creció", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio desde", font = 2)
+text(xl+180000, yl+180000, labels = "2012 en secciones", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
 
