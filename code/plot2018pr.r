@@ -926,8 +926,9 @@ summary(pr.se$camloneg[pr.se$camloneg<0])
 summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
-edon <- 31
+edon <- 32
 edo <- edos[edon]
+estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
 
 #################
 # secciones map #
@@ -965,10 +966,9 @@ tmp <- readOGR(dsn = tmp, layer = 'ENTIDAD')
 tmp <- spTransform(tmp, osm())
 ed.map <- tmp
 
-
 # trial
 #plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
-plot(mu.map, lwd = .5, border = "gray")
+plot(mu.map, lwd = .5, border = "gray", main = estado)
 axis(1); axis(2)
 
 ###################################
@@ -977,9 +977,9 @@ axis(1); axis(2)
 library(graphics)
 #png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
 #pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri-", edo, ".pdf", sep = ""), width = 10, height = 7)
-par(mar = c(0,0,0,0))
+par(mar = c(0,0,2,0))
 #plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
-plot(se.map, lwd = .25, border = "lightgray")
+plot(se.map, lwd = .25, border = "lightgray", main = estado)
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 plot(mu.map, lwd = .5,          border = "gray", add = TRUE)
 plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
@@ -1031,9 +1031,9 @@ dev.off()
 library(graphics)
 #png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
 #pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan-", edo, ".pdf", sep = ""), width = 10, height = 7)
-par(mar = c(0,0,0,0))
+par(mar = c(0,0,2,0))
 #plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
-plot(se.map, lwd = .25, border = "lightgray")
+plot(se.map, lwd = .25, border = "lightgray", main = estado)
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 plot(mu.map, lwd = .5,          border = "gray", add = TRUE)
 plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
