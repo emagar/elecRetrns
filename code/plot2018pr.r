@@ -1170,7 +1170,7 @@ text(xl, yl, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com
 ######################################
 library(graphics)
 #png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytNegPrd-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
-#pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytNegPrd-", edo, ".pdf", sep = ""), width = 10, height = 7)
+pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytNegPrd-", edo, ".pdf", sep = ""), width = 10, height = 7)
 par(mar = c(0,0,2,0))
 #plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
 plot(se.map, lwd = .25, border = "lightgray", main = estado)
@@ -1189,22 +1189,26 @@ arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
        coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]-cy,
        length = .025, angle = 10,
        col = colprd, lwd = (.1+cx/(xlength*.4)))
+## cx <- xlength*se.map$camlopos; cy <- cx/3
+## arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
+##        coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]+cy,
+##        length = .025, angle = 10,
+##        col = brown, lwd = (.1+cx/(xlength*.4)))
 cx <- xlength*se.map$cpanpos; cy <- cx/3
 arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
        coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]+cy,
        length = .025, angle = 10,
        col = colpan, lwd = (.1+cx/(xlength*.4)))
 # legend
-xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.2
-yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.15
-arrows(xl,yl,xl-xlength*.5,yl+xlength*.5/3,length = .025, angle = 10, col = colprd, lwd = 2)
-text(xl, yl, pos = 4, labels = "el PRD en 2015", cex = .75)
-#
 xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.07
 yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.18
 arrows(xl,yl,xl+xlength*.5,yl+xlength*.5/3,length = .025, angle = 10, col = colpan, lwd = 2)
-#arrows(xl+310000,yl-150000,xl+310000+150000,yl-150000+50000,length = .025, angle = 10, col = colpan, lwd = .75)
-text(xl,yl, pos = 2, labels = "Anaya superó a JVM", cex = .75)
+text(xl,yl, pos = 2, labels = "Anaya creció", cex = .75)
+#
+xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.2
+yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.15
+arrows(xl,yl,xl-xlength*.5,yl-xlength*.5/3,length = .025, angle = 10, col = colprd, lwd = 2)
+text(xl, yl, pos = 4, labels = "voto PRD en 2015", cex = .75)
 #
 ## xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.135
 ## yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.07
@@ -1215,6 +1219,6 @@ text(xl, yl, labels = "Cambio en secciones", font = 2)
 xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.9
 yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.95
 text(xl, yl, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
-#dev.off()
+dev.off()
 
 
