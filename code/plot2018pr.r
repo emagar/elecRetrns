@@ -1013,7 +1013,7 @@ summary(pr.se$camloneg[pr.se$camloneg<0])
 summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
-edon <- 9
+edon <- 11
 edo <- edos[edon]
 estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
 
@@ -1220,5 +1220,8 @@ xl <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.9
 yl <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.95
 text(xl, yl, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
 dev.off()
+
+# Export to javascript
+
 
 
