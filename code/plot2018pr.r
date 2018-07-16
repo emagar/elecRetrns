@@ -345,6 +345,24 @@ summary(pr.mu$camloneg)
 summary(pr.mu$cprineg)
 summary(pr.mu$cpanneg)
 
+# winner 2012
+tmp <- pr.mu[,c("pena","jvm","amlo12")] # ignores quadri's possible wins
+tmp <- apply(tmp, 1, max)
+pr.mu$dpenawon <- as.numeric(pr.mu$pena==tmp)
+pr.mu$djvmwon <- as.numeric(pr.mu$jvm==tmp)
+pr.mu$damlowon <- as.numeric(pr.mu$amlo12==tmp)
+table(pr.mu$dpenawon)
+table(pr.mu$djvmwon)
+table(pr.mu$damlowon)
+
+summary(pr.mu$cpri)
+summary(pr.mu$cpri[pr.mu$dpenawon==1])
+summary(pr.mu$cpan)
+summary(pr.mu$cpan[pr.mu$djvmwon==1])
+summary(pr.mu$camlo)
+summary(pr.mu$camlo[pr.mu$damlowon==1])
+x
+
 ###############
 # Import maps #
 ###############
@@ -359,11 +377,6 @@ summary(pr.mu$cpanneg)
 library(rJava)
 library(OpenStreetMap)
 library(rgdal)
-
-# choose state number
-edon <- 9
-edos <- c("ags","bc","bcs","cam","coa","col","cps","cua","df","dgo","gua","gue","hgo","jal","mex","mic","mor","nay","nl","oax","pue","que","qui","san","sin","son","tab","tam","tla","ver","yuc","zac")
-edo <- edos[edon]
 
 # working directory and data/map directories
 mapdir <- "~/Dropbox/data/elecs/MXelsCalendGovt/redistrict/ife.ine/mapasComparados/fed/shp/disfed2018"                                    # main map directory (shapefile repo)
@@ -905,7 +918,7 @@ tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 for (i in 1:32){
     plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
 }
-plot(nat.map, lwd = .5,          border = "gray", add = TRUE)
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
 plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 # add arrows
 # start-end of arrows
@@ -946,7 +959,7 @@ tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
 for (i in 1:32){
     plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
 }
-plot(nat.map, lwd = .5,          border = "gray", add = TRUE)
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
 plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 # add arrows
 # start-end of arrows
@@ -977,6 +990,91 @@ text(xl+180000, yl+180000, labels = "Cambio en municipios", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
+# meade donde peña ganó
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/meade-pena-won.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/meade-pena-won.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+for (i in 1:32){
+    plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
+}
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
+plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 7
+for (i in 1:32){
+    # start-end of arrows
+    #i <- 19 # debug
+    cy <- xlength*mu.map[[i]]$cprineg; cx <- cy*0
+    cy[mu.map[[i]]$dpenawon==0] <- NA; cx[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = "red", lwd = (.1+cx/5000))
+    cy <- xlength*mu.map[[i]]$cpripos; cx <- cy*0
+    cy[mu.map[[i]]$dpenawon==0] <- NA; cx[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = "black", lwd = (.1+cx/5000))
+}
+# legend
+xl <-  -10400000; yl <- 3000000
+arrows(xl,yl,xl,yl+75000,length = .025, angle = 10, col = "black", lwd = .75)
+text(xl, yl, pos = 4, labels = "Meade creció", cex = .75)
+arrows(xl+310000,yl-150000,xl+310000,yl-150000-75000,length = .025, angle = 10, col = "red", lwd = .75)
+text(xl+310000,yl-150000, pos = 2, labels = "Meade cayó", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
+text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
+
+# anaya donde chepina ganó
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/anaya-jvm-won.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/anaya-jvm-won.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+for (i in 1:32){
+    plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
+}
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
+plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 7
+for (i in 1:32){
+    # start-end of arrows
+    #i <- 19 # debug
+    cy <- xlength*mu.map[[i]]$cpanneg; cx <- cy*0
+    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = "red", lwd = (.1+cx/5000))
+    cy <- xlength*mu.map[[i]]$cpanpos; cx <- cy*0
+    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = "black", lwd = (.1+cx/5000))
+}
+# legend
+xl <-  -10400000; yl <- 3000000
+arrows(xl,yl,xl,yl+75000,length = .025, angle = 10, col = "black", lwd = .75)
+text(xl, yl, pos = 4, labels = "Anaya creció", cex = .75)
+arrows(xl+310000,yl-150000,xl+310000,yl-150000-75000,length = .025, angle = 10, col = "red", lwd = .75)
+text(xl+310000,yl-150000, pos = 2, labels = "Anaya cayó", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
+text(xl+180000, yl+180000, labels = "que Josefina ganó", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (ericmagar.com)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
 
 
 
@@ -1013,7 +1111,9 @@ summary(pr.se$camloneg[pr.se$camloneg<0])
 summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
-edon <- 11
+# choose state number
+edon <- 9
+edos <- c("ags","bc","bcs","cam","coa","col","cps","cua","df","dgo","gua","gue","hgo","jal","mex","mic","mor","nay","nl","oax","pue","que","qui","san","sin","son","tab","tam","tla","ver","yuc","zac")
 edo <- edos[edon]
 estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
 
