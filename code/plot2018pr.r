@@ -1118,7 +1118,7 @@ summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
 # choose state number
-edon <- 21
+edon <- 27
 edos <- c("ags","bc","bcs","cam","coa","col","cps","cua","df","dgo","gua","gue","hgo","jal","mex","mic","mor","nay","nl","oax","pue","que","qui","san","sin","son","tab","tam","tla","ver","yuc","zac")
 edo <- edos[edon]
 estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
@@ -1167,13 +1167,13 @@ axis(1); axis(2)
 # legend parameters
 ## xl <- .135 # general legend location as share of xrange
 ## yl <- .07  # general legend location as share of yrange
-xl <- .75
+xl <- .25
 yl <- .2
 #    
 ## xn <- .9  # note location as share of xrange
 ## yn <- .95 # note location as share of xrange
-xn <- .25 
-yn <- .975
+xn <- .5 
+yn <- .95
 
 ###################################
 # amlo v pri secciones por estado #
