@@ -417,12 +417,29 @@ summary(nat.map)
 # projects to a different datum with long and lat
 nat.map <- spTransform(nat.map, osm()) # project to osm native Mercator
 
+tmp.map <- readOGR(dsn = "/home/eric/Desktop/data/mapas/cartografia28feb2013rojano/cua", layer = 'DISTRITO')
+summary(tmp.map@data)
+
+
+# import 2000 p5li to plug into mu.map one by one
+#  plug ife mun nums
+tmp.p5 <- "/home/eric/Desktop/data/elecs/MXelsCalendGovt/elecReturns/ancillary/ife_to_inegi.csv"
+tmp.p5 <- read.csv(file = tmp.p5, stringsAsFactors = FALSE)
+tmp.p5$munn <- tmp.p5$ife - round(tmp.p5$ife/1000, 0)*1000
+tmp.p5$inegi <- tmp.p5$ife <- tmp.p5$ord <- tmp.p5$edo <- NULL
+#
+tmp <- "/home/eric/Desktop/data/elecs/MXelsCalendGovt/censos/p5li/p5li00.csv"
+tmp <- read.csv(file = tmp, stringsAsFactors = FALSE)
+tmp$p5li <- round(tmp$p5li00 / tmp$p5, 4)
+tmp <- tmp[,c("edon","munn","p5li")]
+tmp.p5 <- merge(x = tmp.p5, y = tmp)
 
 ###################
 # municipios maps #
 ###################
 ruta <- file.path(mapdir, edo) # archivo con mapas ine
 mu.map <- list()
+i <- 1
 #
 tmp <- file.path(mapdir, "ags") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
@@ -432,473 +449,663 @@ tmp <- spTransform(tmp, osm())
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==1,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$ags <- tmp
+i <- i+1
 #
 tmp <- file.path(mapdir, "bc") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==2,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$bc <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "bcs") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==3,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$bcs <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "cam") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==4,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$cam <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "coa") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==5,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$coa <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "col") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==6,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$col <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "cps") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==7,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$cps <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "cua") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==8,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$cua <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "df") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==9,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$df <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "dgo") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==10,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$dgo <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "gua") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==11,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$gua <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "gue") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==12,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$gue <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "hgo") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==13,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$hgo <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "jal") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==14,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$jal <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "mex") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==15,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$mex <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "mic") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==16,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$mic <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "mor") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==17,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$mor <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "nay") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==18,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$nay <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "nl") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==19,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$nl <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "oax") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==20,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$oax <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "pue") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==21,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$pue <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "que") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==22,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$que <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "qui") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==23,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$qui <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "san") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==24,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$san <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "sin") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==25,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$sin <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "son") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==26,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$son <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "tab") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==27,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$tab <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "tam") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==28,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$tam <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "tla") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==29,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$tla <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "ver") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==30,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$ver <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "yuc") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==31,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
 mu.map$yuc <- tmp
+i <- i + 1
 #
 tmp <- file.path(mapdir, "zac") # archivo con mapas ine
 tmp <- readOGR(dsn = tmp, layer = 'MUNICIPIO')
 # projects to a different datum with long and lat
 tmp <- spTransform(tmp, osm())
 # add pr data
+# add pr data
 tmp.data <- tmp@data
 tmp.data$orden <- 1:nrow(tmp.data)
 tmp.data$munn <- tmp.data$municipio; tmp.data$mun <- tmp.data$nombre
-tmp.pr <- pr.mu[pr.mu$edon==32,]
+tmp.pr <- pr.mu[pr.mu$edon==i,]
 tmp.data <- merge(x = tmp.data, y = tmp.pr, by = "munn", all.x = TRUE, all.y = FALSE)
+#
+tmp.li <- tmp.p5[tmp.p5$edon==i, c("munn","p5li")]
+tmp.data <- merge(x = tmp.data, y = tmp.li, by = "munn", all.x = TRUE, all.y = FALSE)
+#
 tmp.data <- tmp.data[order(tmp.data$orden),]; tmp.data$orden <- NULL
 tmp@data <- tmp.data
 rm(tmp.data, tmp.pr)
@@ -914,10 +1121,12 @@ colprd <- "gold"
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
 axis(1); axis(2)
 
+
+
 # amlo v pri
 library(graphics)
-#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan.png", width = 20, height = 20, units = "cm", res = 196)
-#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan.pdf", width = 10, height = 7)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
@@ -957,8 +1166,8 @@ text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@
 
 # anaya v neg prd 2015
 library(graphics)
-#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.png", width = 20, height = 20, units = "cm", res = 196)
-#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri.pdf", width = 10, height = 7)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
@@ -1011,7 +1220,7 @@ plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 # add arrows
 # start-end of arrows
 #cx <- 150000; cy <- cx/3
-xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 7
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 for (i in 1:32){
     # start-end of arrows
     #i <- 19 # debug
@@ -1039,6 +1248,50 @@ text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
+# amlo v pri meade donde peña ganó
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusMeadeNegPenaWon.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusMeadeNegPenaWon.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+for (i in 1:32){
+    plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
+}
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
+plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
+for (i in 1:32){
+    # start-end of arrows
+    #i <- 1 # debug
+    cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
+    cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]-cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = brown, lwd = (.1+cx/600000))
+    cx <- -xlength*mu.map[[i]]$cprineg; cy <- cx/3
+    cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]-cy,
+           length = .025, angle = 10,
+           col = colpri, lwd = (.1+cx/600000))
+}
+# legend
+xl <-  -10400000; yl <- 3000000
+arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
+text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
+arrows(xl+380000,yl-150000,xl+380000+150000,yl-150000-50000,length = .025, angle = 10, col = colpri, lwd = .75)
+text(xl+380000,yl-150000, pos = 2, labels = "Meade decreció", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
+text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
+
+
 # anaya donde chepina ganó
 library(graphics)
 #png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/anaya-jvm-won.png", width = 20, height = 20, units = "cm", res = 196)
@@ -1059,13 +1312,13 @@ for (i in 1:32){
     # start-end of arrows
     #i <- 19 # debug
     cy <- xlength*mu.map[[i]]$cpanneg; cx <- cy*0
-    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where Peña won
+    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where JVM won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
            col = "red", lwd = (.1+cx/5000))
     cy <- xlength*mu.map[[i]]$cpanpos; cx <- cy*0
-    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where Peña won
+    cy[mu.map[[i]]$djvmwon==0] <- NA; cx[mu.map[[i]]$djvmwon==0] <- NA # keep only where JVM won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
@@ -1081,6 +1334,119 @@ text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
 text(xl+180000, yl+180000, labels = "que Josefina ganó", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
+
+# meade v amlo in indigenous municipios only
+sel <- list()
+for (i in 1:32){
+    tmp <- which(mu.map[[i]]$p5li > .40)
+    sel[[i]] <- tmp
+}
+#
+mu.map2 <- mu.map # duplicate
+for (i in 1:32){
+    if (length(sel[[i]])==0) next
+    mu.map2[[i]] <- mu.map[[i]][sel[[i]],] # subset municipios indigenas
+}
+#
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPriIndig.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPriIndig.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+for (i in 1:32){
+    plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
+    if (length(sel[[i]])==0) next
+    plot(mu.map2[[i]], lwd = .25, border = "lightgray", col = "gray", add = TRUE)
+}
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
+plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
+for (i in 1:32){
+    if (length(sel[[i]])==0) next
+    # start-end of arrows
+    #i <- 1 # debug
+    cx <- xlength*mu.map2[[i]]$camlopos; cy <- cx/3
+    arrows(coordinates(mu.map2[[i]])[,1],    coordinates(mu.map2[[i]])[,2],
+           coordinates(mu.map2[[i]])[,1]-cx, coordinates(mu.map2[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = brown, lwd = (.1+cx/600000))
+    cx <- xlength*mu.map2[[i]]$cpripos; cy <- cx/3
+    arrows(coordinates(mu.map2[[i]])[,1],    coordinates(mu.map2[[i]])[,2],
+           coordinates(mu.map2[[i]])[,1]+cx, coordinates(mu.map2[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = colpri, lwd = (.1+cx/600000))
+}
+# legend
+xl <-  -10400000; yl <- 3000000
+arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
+text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
+arrows(xl+310000,yl-150000,xl+310000+150000,yl-150000+50000,length = .025, angle = 10, col = colpri, lwd = .75)
+text(xl+310000,yl-150000, pos = 2, labels = "Meade creció", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio desde", font = 2)
+text(xl+180000, yl+180000, labels = "2012 en municipios", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
+
+# anaya v amlo in indigenous municipios only
+sel <- list()
+for (i in 1:32){
+    tmp <- which(mu.map[[i]]$p5li > .40)
+    sel[[i]] <- tmp
+}
+#
+mu.map2 <- mu.map # duplicate
+for (i in 1:32){
+    if (length(sel[[i]])==0) next
+    mu.map2[[i]] <- mu.map[[i]][sel[[i]],] # subset municipios indigenas
+}
+#
+library(graphics)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPanIndig.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPanIndig.pdf", width = 10, height = 7)
+par(mar = c(0,0,0,0))
+plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
+tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
+for (i in 1:32){
+    plot(mu.map[[i]], lwd = .25, border = "lightgray", add = TRUE)
+    if (length(sel[[i]])==0) next
+    plot(mu.map2[[i]], lwd = .25, border = "lightgray", col = "gray", add = TRUE)
+}
+plot(nat.map, lwd = .5,          border = "darkgray", add = TRUE)
+plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+# add arrows
+# start-end of arrows
+#cx <- 150000; cy <- cx/3
+xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
+for (i in 1:32){
+    if (length(sel[[i]])==0) next
+    # start-end of arrows
+    #i <- 1 # debug
+    cx <- xlength*mu.map2[[i]]$camlopos; cy <- cx/3
+    arrows(coordinates(mu.map2[[i]])[,1],    coordinates(mu.map2[[i]])[,2],
+           coordinates(mu.map2[[i]])[,1]-cx, coordinates(mu.map2[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = brown, lwd = (.1+cx/600000))
+    cx <- xlength*mu.map2[[i]]$cpanpos; cy <- cx/3
+    arrows(coordinates(mu.map2[[i]])[,1],    coordinates(mu.map2[[i]])[,2],
+           coordinates(mu.map2[[i]])[,1]+cx, coordinates(mu.map2[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = colpan, lwd = (.1+cx/600000))
+}
+# legend
+xl <-  -10400000; yl <- 3000000
+arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
+text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
+arrows(xl+310000,yl-150000,xl+310000+150000,yl-150000+50000,length = .025, angle = 10, col = colpan, lwd = .75)
+text(xl+310000,yl-150000, pos = 2, labels = "Anaya creció", cex = .75)
+text(xl+180000, yl+280000, labels = "Cambio desde", font = 2)
+text(xl+180000, yl+180000, labels = "2012 en municipios", font = 2)
+text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
+#dev.off()
+
 
 
 
@@ -1118,7 +1484,7 @@ summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
 # choose state number
-edon <- 27
+edon <- 31
 edos <- c("ags","bc","bcs","cam","coa","col","cps","cua","df","dgo","gua","gue","hgo","jal","mex","mic","mor","nay","nl","oax","pue","que","qui","san","sin","son","tab","tam","tla","ver","yuc","zac")
 edo <- edos[edon]
 estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
@@ -1168,7 +1534,7 @@ axis(1); axis(2)
 ## xl <- .135 # general legend location as share of xrange
 ## yl <- .07  # general legend location as share of yrange
 xl <- .25
-yl <- .2
+yl <- .75
 #    
 ## xn <- .9  # note location as share of xrange
 ## yn <- .95 # note location as share of xrange
