@@ -362,6 +362,7 @@ summary(pr.mu$cpan[pr.mu$djvmwon==1])
 summary(pr.mu$camlo)
 summary(pr.mu$camlo[pr.mu$damlowon==1])
 
+tmp <- table(pr.mu$dpenawon==1); tmp; tmp/sum(tmp)
 table(pr.mu$dpenawon==1)
 table(pr.mu$dcpripos[pr.mu$dpenawon==1])
 table(pr.mu$djvmwon)
@@ -1248,10 +1249,10 @@ text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
-# amlo v pri meade donde peña ganó
+# amlo v meade-neg v anaya donde peña ganó
 library(graphics)
-#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusMeadeNegPenaWon.png", width = 20, height = 20, units = "cm", res = 196)
-#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusMeadeNegPenaWon.pdf", width = 10, height = 7)
+#png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.png", width = 20, height = 20, units = "cm", res = 196)
+#pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
 plot(shave(nat.map, p = .95), lwd = .5, border = "gray")
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
@@ -1279,13 +1280,21 @@ for (i in 1:32){
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]-cy,
            length = .025, angle = 10,
            col = colpri, lwd = (.1+cx/600000))
+    cx <- xlength*mu.map[[i]]$cpanpos; cy <- cx/3
+    cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
+    arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
+           coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
+           length = .025, angle = 10,
+           col = colpan, lwd = (.1+cx/600000))
 }
 # legend
 xl <-  -10400000; yl <- 3000000
 arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
 text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
-arrows(xl+380000,yl-150000,xl+380000+150000,yl-150000-50000,length = .025, angle = 10, col = colpri, lwd = .75)
-text(xl+380000,yl-150000, pos = 2, labels = "Meade decreció", cex = .75)
+arrows(xl+380000,yl-150000,xl+380000+150000,yl-150000+50000,length = .025, angle = 10, col = colpan, lwd = .75)
+text(xl+380000,yl-150000, pos = 2, labels = "Anaya creció", cex = .75)
+arrows(xl+380000,yl-300000,xl+380000+150000,yl-300000-50000,length = .025, angle = 10, col = colpri, lwd = .75)
+text(xl+380000,yl-300000, pos = 2, labels = "Meade decreció", cex = .75)
 text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
 text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
