@@ -362,9 +362,13 @@ summary(pr.mu$cpan[pr.mu$djvmwon==1])
 summary(pr.mu$camlo)
 summary(pr.mu$camlo[pr.mu$damlowon==1])
 
+table(pr.mu$jam[pr.mu$dpenawon==1]>pr.mu$amlo18[pr.mu$dpenawon==1] &
+      pr.mu$jam[pr.mu$dpenawon==1]>pr.mu$rac[pr.mu$dpenawon==1])
+
 tmp <- table(pr.mu$dpenawon==1); tmp; tmp/sum(tmp)
 table(pr.mu$dpenawon==1)
 table(pr.mu$dcpripos[pr.mu$dpenawon==1])
+table(pr.mu$dcamlopos[pr.mu$dpenawon==1])
 table(pr.mu$djvmwon)
 table(pr.mu$dcpanpos[pr.mu$djvmwon==1])
 
@@ -1266,20 +1270,21 @@ plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 #cx <- 150000; cy <- cx/3
 xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 for (i in 1:32){
+    points(coordinates(mu.map[[i]]), cex = .01, pch = 20, col = "darkgray") 
     # start-end of arrows
-    #i <- 1 # debug
+    #i <- 15 # debug
     cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
     cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]-cx, coordinates(mu.map[[i]])[,2]+cy,
            length = .025, angle = 10,
            col = brown, lwd = (.1+cx/600000))
-    cx <- -xlength*mu.map[[i]]$cprineg; cy <- cx/3
+    cx <- -xlength*mu.map[[i]]$cprineg; cy <- cx; cx <- cx*0
     cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]-cy,
            length = .025, angle = 10,
-           col = colpri, lwd = (.1+cx/600000))
+           col = "red", lwd = (.1+cy/600000))
     cx <- xlength*mu.map[[i]]$cpanpos; cy <- cx/3
     cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
@@ -1288,15 +1293,19 @@ for (i in 1:32){
            col = colpan, lwd = (.1+cx/600000))
 }
 # legend
-xl <-  -10400000; yl <- 3000000
+xl <-  -10200000; yl <- 3200000
+points(xl, yl, cex = .5, col = "darkgray", pch = 20) 
+#       
 arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
-text(xl, yl, pos = 4, labels = "AMLO creció", cex = .75)
-arrows(xl+380000,yl-150000,xl+380000+150000,yl-150000+50000,length = .025, angle = 10, col = colpan, lwd = .75)
-text(xl+380000,yl-150000, pos = 2, labels = "Anaya creció", cex = .75)
-arrows(xl+380000,yl-300000,xl+380000+150000,yl-300000-50000,length = .025, angle = 10, col = colpri, lwd = .75)
-text(xl+380000,yl-300000, pos = 2, labels = "Meade decreció", cex = .75)
-text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
-text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
+arrows(xl,yl,xl+150000,yl+50000,length = .025, angle = 10, col = colpan, lwd = .75)
+arrows(xl,yl,xl,yl-150000,length = .025, angle = 10, col = "red", lwd = .75)
+#
+text(xl-150000,yl+50000, pos = 2, labels = "AMLO creció", cex = .75)
+text(xl+150000,yl+50000, pos = 4, labels = "Anaya creció", cex = .75)
+text(xl,yl-150000, pos = 1, labels = "Meade decreció", cex = .75)
+#
+text(xl, yl+380000, labels = "Cambio en municipios", font = 2)
+text(xl, yl+280000, labels = "que Peña ganó", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
