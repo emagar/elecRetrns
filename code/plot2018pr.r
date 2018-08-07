@@ -1305,7 +1305,7 @@ text(xl+150000,yl+50000, pos = 4, labels = "Anaya creció", cex = .75)
 text(xl,yl-150000, pos = 1, labels = "Meade decreció", cex = .75)
 #
 text(xl, yl+380000, labels = "Cambio en municipios", font = 2)
-text(xl, yl+280000, labels = "que Peña ganó", font = 2)
+text(xl, yl+280000, labels = "que ganó Peña", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
