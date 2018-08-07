@@ -1249,7 +1249,7 @@ text(xl, yl, pos = 4, labels = "Meade creció", cex = .75)
 arrows(xl+310000,yl-150000,xl+310000,yl-150000-75000,length = .025, angle = 10, col = "red", lwd = .75)
 text(xl+310000,yl-150000, pos = 2, labels = "Meade cayó", cex = .75)
 text(xl+180000, yl+280000, labels = "Cambio en municipios", font = 2)
-text(xl+180000, yl+180000, labels = "que Peña ganó", font = 2)
+text(xl+180000, yl+180000, labels = "que ganó Peña", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
@@ -1270,7 +1270,7 @@ plot(nat.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 #cx <- 150000; cy <- cx/3
 xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 for (i in 1:32){
-    points(coordinates(mu.map[[i]]), cex = .01, pch = 20, col = "darkgray") 
+    points(coordinates(mu.map[[i]]), cex = .05, col = "darkgray", pch = 20) 
     # start-end of arrows
     #i <- 15 # debug
     cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
