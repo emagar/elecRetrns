@@ -1,16 +1,16 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#org265ea5d)
-2.  [Files in the repository and how to cite them](#org6b07ab7)
-3.  [Codebook](#org1117cf2)
-4.  [Sources](#org88ab428)
-5.  [Acknowledgements](#org841468e)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgfb663a6)
+2.  [Files in the repository and how to cite them](#org845ca5d)
+3.  [Codebook](#org1ea53ef)
+4.  [Sources](#orgc2488b5)
+5.  [Acknowledgements](#org9e6918a)
 
 Last revision: 2018-03-08
 
 
-<a id="org265ea5d"></a>
+<a id="orgfb663a6"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -19,10 +19,10 @@ Last revision: 2018-03-08
 
 The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
 
-*Important note:* this repository contains LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning the repository.
+*Important note:* older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning previous commits of the repository.
 
 
-<a id="org6b07ab7"></a>
+<a id="org845ca5d"></a>
 
 # Files in the repository and how to cite them
 
@@ -46,7 +46,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="org1117cf2"></a>
+<a id="org1ea53ef"></a>
 
 # Codebook
 
@@ -82,7 +82,7 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 
 
-<a id="org88ab428"></a>
+<a id="orgc2488b5"></a>
 
 # Sources
 
@@ -97,7 +97,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org841468e"></a>
+<a id="org9e6918a"></a>
 
 # Acknowledgements
 
