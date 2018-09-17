@@ -24,9 +24,15 @@ for (i in 1:ncol(v)){
 dat[,sel] <- v # return votes without missing to data
 v$efec <- round(rowSums(v), 0)
 dat$efec <- v$efec
+tmp <- dat$nr # remove NAs
+tmp[is.na(tmp)] <- 0
+dat$nr <- tmp
+tmp <- as.numeric(dat$nulos)  # make numeric & remove NAs
+tmp[is.na(tmp)] <- 0
+dat$nulos <- tmp
 v$tot <- dat$efec + dat$nr + dat$nulos
 dat$tot <- v$tot
-rm(v)
+rm(v, tmp)
 
 # verify that coalition member separator is always a - 
 sel <- grep("^l[0-9]{2}", colnames(dat))
@@ -181,6 +187,13 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "-panal-", replacement = "-pna-", l[,i])
     l[,i] <- gsub(pattern = "-panal$", replacement = "-pna", l[,i])
     l[,i] <- gsub(pattern = "^panal-", replacement = "pna-", l[,i])
+    }
+#
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^na$", replacement = "pna", l[,i])
+    l[,i] <- gsub(pattern = "-na-", replacement = "-pna-", l[,i])
+    l[,i] <- gsub(pattern = "-na$", replacement = "-pna", l[,i])
+    l[,i] <- gsub(pattern = "^na-", replacement = "pna-", l[,i])
     }
 #
 for (i in 1:ncol(l)){
