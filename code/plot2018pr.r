@@ -261,8 +261,40 @@ pr$pan <- pr$prd <- pr$mc <- pr$pan.prd.mc <- pr$pan.prd <- pr$pan.mc <- pr$prd.
 pr$efec <- pr$TOTAL_VOTOS_CALCULADOS - pr$nr - pr$nul
 # clean
 pr$TOTAL_VOTOS_CALCULADOS <- pr$nr <- pr$nul <- NULL
-pr$indep1 <- pr$indep2 <- pr$lisnom <- NULL
-pr$cab <- NULL
+pr$indep1 <- pr$indep2 <- NULL
+#pr$lisnom <- NULL
+#pr$cab <- NULL
+
+# consolida distritos
+sel <- which(pr$seccion==0)
+tmp <- pr[-sel,]
+tmp$pan.prd.mc <- tmp$pan.prd.mc + tmp$pan.prd + tmp$pan.mc + tmp$prd.mc
+tmp$pan.prd + <- tmp$pan.mc + <- tmp$prd.mc <- NULL
+tmp$pri.pvem.panal <- tmp$pri.pvem.panal + tmp$pri.pvem + tmp$pri.panal + tmp$pvem.panal
+tmp$pri.pvem <- tmp$pri.panal <- tmp$pvem.panal <- NULL
+tmp$morena.pt.pes <- tmp$morena.pt.pes + tmp$morena.pt + tmp$morena.pes + tmp$pt.pes
+tmp$morena.pt <- tmp$morena.pes <- tmp$pt.pes <- NULL
+#
+tmp$pan <- ave(tmp$pan, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pri <- ave(tmp$pri, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$prd <- ave(tmp$prd, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pvem <- ave(tmp$pvem, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pt <- ave(tmp$pt, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$mc <- ave(tmp$mc, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$panal <- ave(tmp$panal, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$morena <- ave(tmp$morena, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pes <- ave(tmp$pes, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pan.prd.mc <- ave(tmp$pan.prd.mc, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$pri.pvem.panal <- ave(tmp$pri.pvem.panal, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$morena.pt.pes <- ave(tmp$morena.pt.pes, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$efec <- ave(tmp$efec, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$lisnom <- ave(tmp$lisnom, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+#
+tmp <- tmp[duplicated(tmp$edon*100+tmp$disn)==FALSE,]
+tmp$seccion <- tmp$casn <- tmp$CASILLA <- NULL
+#
+write.csv(tmp, file = "eum2018all/eum2018prdf.csv", row.names = FALSE)
+prdf <- tmp
 
 # consolida secciones
 pr$amlo <- ave(pr$amlo, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
