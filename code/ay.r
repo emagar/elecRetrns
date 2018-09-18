@@ -692,8 +692,8 @@ dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp)
 
-table(dat$v14) # check that only has zeroes
-dat$v14 <- dat$l14 <- dat$v15 <- dat$l15 <- dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
+table(dat$v15) # check that only has zeroes
+dat$v15 <- dat$l15 <- dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
