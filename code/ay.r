@@ -670,8 +670,11 @@ sortBy <- function(target, By){
 # sort coalition-aggregated data
 tail(cv)
 tail(cl)
+###########################################
 cv.sorted <- sortBy(target = cv, By = cv) # slow!
+###########################################
 cl.sorted <- sortBy(target = cl, By = cv) # slow!
+###########################################
 cv.sorted <- as.data.frame(cv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 cl.sorted <- as.data.frame(cl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 colnames(cv.sorted) <- colnames(v); colnames(cl.sorted) <- colnames(l)

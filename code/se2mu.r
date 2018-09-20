@@ -1,7 +1,7 @@
 setwd("/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/")
 
-file <- "col2018ayca.csv"
-d <- read.csv(file = file, stringsAsFactors = FALSE)
+file <- "sin2018ayca.csv"
+d <- read.csv(file = file, stringsAsFactors = FALSE, fileEncoding="utf-8")
 
 
 colnames(d)
@@ -9,7 +9,7 @@ str(d)
 d[1,]
 
 # make numeric
-sel <- c(11,14:34)
+sel <- c(10:47)
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -41,7 +41,7 @@ colnames(d)
 
 
 
-file2 <- "col2018aymu.csv"
+file2 <- "sin2018aymu.csv"
 write.csv(d, file = file2, row.names = FALSE)
 
 
