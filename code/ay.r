@@ -42,7 +42,7 @@ for (i in 1:ncol(l)){
     tmp <- l[,i] # duplicate column for manipulation
     #table(gsub(pattern = "([0-9a-zA-Záéíóúñ])", replacement = "", tmp)) # keep only non-letter-number characters
     tmp <- gsub(pattern = "[ ]", replacement = "", tmp)
-    tmp <- gsub(pattern = "[.]", replacement = "-", tmp)
+    tmp <- gsub(pattern = "[.,]", replacement = "-", tmp)
     #sel1 <- grep("[ ]", tmp)
     #tmp[sel1]
     l[,i] <- tmp # return to data
@@ -99,6 +99,12 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^c$|^cd$|^cdppn$|^pc$|^conver(gencia)?$", replacement = "conve", l[,i])
     l[,i] <- gsub(pattern = "-c-|-cd-|-cdppn-|-pc-|-conver(gencia)?-", replacement = "-conve-", l[,i])
     l[,i] <- gsub(pattern = "-c$|-cd$|-cdppn$|-pc$|-conver(gencia)?$", replacement = "-conve", l[,i])
+    }
+#
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^mrn$", replacement = "morena", l[,i])
+    l[,i] <- gsub(pattern = "-mrn-", replacement = "-morena-", l[,i])
+    l[,i] <- gsub(pattern = "-mrn$", replacement = "-morena", l[,i])
     }
 #
 for (i in 1:ncol(l)){
@@ -763,6 +769,29 @@ compare this to pancoal etc columns
 
 
 
+###########################
+# ESTO ANALIZA INCUMBENTS #
+###########################
+
+dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
+setwd(dd)
+
+# read raw data file
+inc <- read.csv(file = "aymu1985-present.incumbents.csv", stringsAsFactors = FALSE)
+dim(inc)
+colnames(inc)
+
+sel <- which(inc$edon==24)
+tmp <- inc[sel,]
+
+table(tmp$reelec.post)
+
+
+i <- 0
+
+i <- i+1
+sel <- which(tmp$munn==i)
+tmp[sel, c("yr","incumbent","dreran.post","dreelec.post")]
 
 
 
