@@ -1,6 +1,6 @@
 setwd("/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/")
 
-file <- "san2018ayca.csv"
+file <- "zac2018ayca.csv"
 d <- read.csv(file = file, stringsAsFactors = FALSE, fileEncoding="utf-8")
 
 colnames(d)
@@ -9,7 +9,7 @@ d[1,]
 
 # make numeric
 sel <- grep("v[.]*|nr|nul", colnames(d))
-sel <- c(10:47)
+sel <- c(8:38)
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -24,7 +24,7 @@ colnames(d)
 
 # consolidate mun votes
 for (i in sel){
-    d[,i] <- ave(d[,i], as.factor(d$munn), FUN=sum, na.rm=TRUE)
+    d[,i] <- ave(d[,i], as.factor(d$mun), FUN=sum, na.rm=TRUE)
 }
 
 head(d)
@@ -38,12 +38,14 @@ d <- d[,sel]
 
 d$seccion <- NULL
 d$casilla <- NULL
+d$tipo <- NULL
+d$ext <- NULL
 
 colnames(d)
 
 
 
-file2 <- "san2018aymu.csv"
+file2 <- "zac2018aymu.csv"
 write.csv(d, file = file2, row.names = FALSE)
 
 
