@@ -9,7 +9,7 @@ d[1,]
 
 # make numeric
 sel <- grep("v[.]*|nr|nul", colnames(d))
-sel <- c(8:38)
+sel <- c(14:39)
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -33,8 +33,10 @@ head(d)
 d <- d[duplicated(d$mun)==FALSE,]
 
 colnames(d)
-sel <- c(2,11,14:34)
+sel <- c(1:3,14:39)
 d <- d[,sel]
+
+data.frame(d$mun)
 
 d$seccion <- NULL
 d$casilla <- NULL
