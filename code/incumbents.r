@@ -7,10 +7,12 @@ inc <- read.csv(file = "aymu1985-present.incumbents.csv", stringsAsFactors = FAL
 head(inc)
 
 
-inc$prev.race <- NA
+inc$race.prior <- NA
 
+# drop observations
+sel <- grep("drop-obs", inc$race.after, ignore.case = TRUE)
 
-# lag next.race
+# lag race.after to generate race.prior
 inc <- inc[order(inc$emm),] # sort munn-chrono
 for (e in 1:32){
     #e <- 8 #debug
@@ -23,29 +25,34 @@ for (e in 1:32){
         inc.m <- inc.e[sel.m,]
         M <- nrow(inc.m)
         if (M==1) next
-        tmp <- inc.m$next.race
+        tmp <- inc.m$race.after
         tmp <- c(NA, tmp[-M])
-        inc.m$prev.race <- tmp
+        inc.m$race.prior <- tmp
         inc.e[sel.m,] <- inc.m
     }
     inc[sel.e,] <- inc.e
 }
 
-table(inc$prev.race)
-sel <- grep("out", inc$prev.race, ignore.case = TRUE) 
-inc$prev.race[sel] <- "Frosh-open seat"
-sel <- which(inc$prev.race=="Higher-office")
-inc$prev.race[sel] <- "Frosh-open seat"
-sel <- which(inc$prev.race=="Term-limited")
-inc$prev.race[sel] <- "Frosh-open seat"
-sel <- which(inc$prev.race=="Beaten")
-inc$prev.race[sel] <- "Frosh-beat incumbent"
+table(inc$race.prior)
+sel <- grep("out", inc$race.prior, ignore.case = TRUE) 
+inc$race.prior[sel] <- "Frosh-open-seat"
+sel <- grep("higher-office", inc$race.prior, ignore.case = TRUE) 
+inc$race.prior[sel] <- "Frosh-open-seat"
+sel <- which(inc$race.prior=="Term-limited")
+inc$race.prior[sel] <- "Frosh-open-seat"
+sel <- which(inc$race.prior=="Renom-killed")
+inc$race.prior[sel] <- "Frosh-open-seat"
+sel <- which(inc$race.prior=="Beaten")
+inc$race.prior[sel] <- "Frosh-who-ousted"
 
-sel <- which(inc$prev.race=="" & inc$incumbent!="") #cases still unknown
+
+
+sel <- which(inc$race.prior=="" & inc$incumbent!="") #cases still unknown
 #inc$incumbent[sel]
-inc$prev.race[sel] <- "Frosh-unknown"
+inc$race.prior[sel] <- "Frosh-unknown"
 
-table(inc$prev.race[inc$yr==2018])
+table(inc$edon[inc$yr==2018], inc$race.prior[inc$yr==2018])
+table(inc$race.prior[inc$yr==2018])
 
 head(inc)
 
