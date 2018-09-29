@@ -11,6 +11,7 @@ inc$race.prior <- NA
 
 # drop observations
 sel <- grep("drop-obs", inc$race.after, ignore.case = TRUE)
+inc <- inc[-sel,]
 
 # lag race.after to generate race.prior
 inc <- inc[order(inc$emm),] # sort munn-chrono
@@ -44,8 +45,6 @@ sel <- which(inc$race.prior=="Renom-killed")
 inc$race.prior[sel] <- "Frosh-open-seat"
 sel <- which(inc$race.prior=="Beaten")
 inc$race.prior[sel] <- "Frosh-who-ousted"
-
-
 
 sel <- which(inc$race.prior=="" & inc$incumbent!="") #cases still unknown
 #inc$incumbent[sel]
