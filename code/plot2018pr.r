@@ -268,30 +268,15 @@ pr$indep1 <- pr$indep2 <- NULL
 # consolida distritos
 sel <- which(pr$seccion==0)
 tmp <- pr[-sel,]
-tmp$pan.prd.mc <- tmp$pan.prd.mc + tmp$pan.prd + tmp$pan.mc + tmp$prd.mc
-tmp$pan.prd + <- tmp$pan.mc + <- tmp$prd.mc <- NULL
-tmp$pri.pvem.panal <- tmp$pri.pvem.panal + tmp$pri.pvem + tmp$pri.panal + tmp$pvem.panal
-tmp$pri.pvem <- tmp$pri.panal <- tmp$pvem.panal <- NULL
-tmp$morena.pt.pes <- tmp$morena.pt.pes + tmp$morena.pt + tmp$morena.pes + tmp$pt.pes
-tmp$morena.pt <- tmp$morena.pes <- tmp$pt.pes <- NULL
-#
-tmp$pan <- ave(tmp$pan, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pri <- ave(tmp$pri, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$prd <- ave(tmp$prd, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pvem <- ave(tmp$pvem, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pt <- ave(tmp$pt, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$mc <- ave(tmp$mc, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$panal <- ave(tmp$panal, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$morena <- ave(tmp$morena, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pes <- ave(tmp$pes, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pan.prd.mc <- ave(tmp$pan.prd.mc, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$pri.pvem.panal <- ave(tmp$pri.pvem.panal, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-tmp$morena.pt.pes <- ave(tmp$morena.pt.pes, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$amlo <- ave(tmp$amlo, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$jam <- ave(tmp$jam, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$rac <- ave(tmp$rac, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$efec <- ave(tmp$efec, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$lisnom <- ave(tmp$lisnom, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 #
 tmp <- tmp[duplicated(tmp$edon*100+tmp$disn)==FALSE,]
 tmp$seccion <- tmp$casn <- tmp$CASILLA <- NULL
+head(tmp)
 #
 write.csv(tmp, file = "eum2018all/eum2018prdf.csv", row.names = FALSE)
 prdf <- tmp
@@ -1534,7 +1519,7 @@ summary(pr.se$cprineg[pr.se$cprineg<0])
 summary(pr.se$cpanneg[pr.se$cpanneg<0])
 
 # choose state number
-edon <- 31
+edon <- 2
 edos <- c("ags","bc","bcs","cam","coa","col","cps","cua","df","dgo","gua","gue","hgo","jal","mex","mic","mor","nay","nl","oax","pue","que","qui","san","sin","son","tab","tam","tla","ver","yuc","zac")
 edo <- edos[edon]
 estado <- c("Aguascalientes","Baja California","Baja California Sur","Campeche","Coahuila","Colima","Chiapas","Chihuahua","Ciudad de México","Durango","Guanajuato","Guerrero","Hidalgo","Jalisco","México","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlacala","Veracruz","Yucatán","Zacatecas")[edon]
@@ -1575,34 +1560,34 @@ tmp <- readOGR(dsn = tmp, layer = 'ENTIDAD')
 tmp <- spTransform(tmp, osm())
 ed.map <- tmp
 
-# trial
-#plot(shave(mu.map, p = .95), lwd = .5, border = "gray")
-plot(mu.map, lwd = .5, border = "gray", main = estado)
-axis(1); axis(2)
+## # trial
+## #plot(shave(se.map, p = .95), lwd = .5, border = "gray")
+## plot(se.map, lwd = .5, border = "gray", main = estado)
+## axis(1); axis(2)
 
 # legend parameters
 ## xl <- .135 # general legend location as share of xrange
 ## yl <- .07  # general legend location as share of yrange
-xl <- .25
+xl <- .7
 yl <- .75
 #    
 ## xn <- .9  # note location as share of xrange
 ## yn <- .95 # note location as share of xrange
-xn <- .5 
+xn <- .75 
 yn <- .95
 
-###################################
-# amlo v pri secciones por estado #
-###################################
+##################################################################
+# amlo v meade-neg v anaya donde peña ganó, secciones por estado #
+##################################################################
 library(graphics)
-#png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
-#pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPri-", edo, ".pdf", sep = ""), width = 10, height = 7)
-par(mar = c(0,0,2,0))
+#png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
+pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon-", edo, ".pdf", sep = ""), width = 10, height = 10)
+par(mar = c(0,0,1,0))
 #plot(shave(se.map, p = .16), lwd = .5, border = "lightgray", main = estado)
-plot(se.map, lwd = .25, border = "lightgray", main = estado)
+plot(se.map, lwd = .5, border = "lightgray", main = estado)
 tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
-plot(mu.map, lwd = .5,          border = "darkgray", add = TRUE)
-plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
+plot(mu.map, lwd = .75,          border = "darkgray", add = TRUE)
+plot(mu.map, lwd = .75, lty = 3, border = "white", add = TRUE)
 #plot(ed.map, lwd = .5, lty = 3, border = "gray", add = TRUE)
 # add arrows
 # start-end of arrows
@@ -1610,145 +1595,48 @@ plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
 xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
 #
 # start-end of arrows
-cx <- xlength*se.map$camlopos; cy <- cx/3
+cx <- xlength*se.map$camlopos; cy <- cx*3/5
+cx[se.map$dpenawon==0] <- NA; cy[se.map$dpenawon==0] <- NA # keep only where Peña won
 arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
        coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]+cy,
        length = .025, angle = 10,
        col = brown, lwd = (.1+cx/(xlength*.4)))
-cx <- xlength*se.map$cpripos; cy <- cx/3
+cx <- -xlength*se.map$cprineg; cy <- cx; cx <- cx*0
+cx[se.map$dpenawon==0] <- NA; cy[se.map$dpenawon==0] <- NA # keep only where Peña won
+arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
+       coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]-cy,
+       length = .025, angle = 10,
+       col = "red", lwd = (.1+cx/(xlength*.4)))
+cx <- xlength*se.map$cpanpos; cy <- cx*3/5
+cx[se.map$dpenawon==0] <- NA; cy[se.map$dpenawon==0] <- NA # keep only where Peña won
 arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
        coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]+cy,
        length = .025, angle = 10,
-       col = colpri, lwd = (.1+cx/(xlength*.4)))
+       col = colpan, lwd = (.1+cx/(xlength*.4)))
 # legend
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl+.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.08)
-arrows(xll,yll,xll-xlength*.5,yll+xlength*.5/3,length = .025, angle = 10, col = brown, lwd = 2)
-text(xll, yll, pos = 4, labels = "AMLO creció", cex = .75)
+shift.x <- .02; shift.y <- .08 # change to move legend's position
+xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl+shift.x)
+yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+shift.y)
+arrows(xll, yll, xll-xlength*.5, yll+xlength*3/10, length = .025, angle = 10, col = brown,  lwd = 2)
+arrows(xll, yll, xll+xlength*.5, yll+xlength*3/10, length = .025, angle = 10, col = colpan, lwd = 2)
+arrows(xll, yll, xll,            yll-xlength*.5,   length = .025, angle = 10, col = "red",  lwd = 2)
+text(xll-xlength*.5, yll+xlength*3/10, pos = 2, labels = "AMLO creció",    cex = .75)
+text(xll+xlength*.5, yll+xlength*3/10, pos = 4, labels = "Anaya creció",   cex = .75)
+text(xll,            yll-xlength*.5,   pos = 1, labels = "Meade decreció", cex = .75)
 #
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl-.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.11)
-arrows(xll,yll,xll+xlength*.5,yll+xlength*.5/3,length = .025, angle = 10, col = colpri, lwd = 2)
-text(xll,yll, pos = 2, labels = "Meade creció", cex = .75)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  xl
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) *  yl
-text(xll, yll, labels = "Cambio desde", font = 2)
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  xl
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.03)
-text(xll, yll, labels = "2012 en secciones", font = 2)
+xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  (xl+shift.x)
+yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) *  (yl-shift.y+.03)
+text(xll, yll, labels = "Cambio 2012-16 en sec-", font = 2)
+yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl-shift.y+.06)
+text(xll, yll, labels = "ciones que Peña ganó", font = 2)
 #
 ## xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*.9
 ## yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*.95
 xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*xn
 yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*yn
 text(xll, yll, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", cex = .65)
-#dev.off()
+dev.off()
 
-###################################
-# amlo v pan secciones por estado #
-###################################
-library(graphics)
-#png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
-#pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytPlusPan-", edo, ".pdf", sep = ""), width = 10, height = 7)
-par(mar = c(0,0,2,0))
-#plot(shave(se.map, p = .16), lwd = .5, border = "lightgray", main = estado)
-plot(se.map, lwd = .25, border = "lightgray", main = estado)
-tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
-plot(mu.map, lwd = .5,          border = "darkgray", add = TRUE)
-plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
-#plot(ed.map, lwd = .5, lty = 3, border = "gray", add = TRUE)
-# add arrows
-# start-end of arrows
-#cx <- 150000; cy <- cx/3
-xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
-#
-# start-end of arrows
-cx <- xlength*se.map$camlopos; cy <- cx/3
-arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
-       coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]+cy,
-       length = .025, angle = 10,
-       col = brown, lwd = (.1+cx/(xlength*.4)))
-cx <- xlength*se.map$cpanpos; cy <- cx/3
-arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
-       coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]+cy,
-       length = .025, angle = 10,
-       col = colpan, lwd = (.1+cx/(xlength*.4)))
-# legend
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl+.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.08)
-arrows(xll,yll,xll-xlength*.5,yll+xlength*.5/3,length = .025, angle = 10, col = brown, lwd = 2)
-text(xll, yll, pos = 4, labels = "AMLO creció", cex = .75)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl-.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.11)
-arrows(xll,yll,xll+xlength*.5,yll+xlength*.5/3,length = .025, angle = 10, col = colpan, lwd = 2)
-text(xll,yll, pos = 2, labels = "Anaya creció", cex = .75)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  xl
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) *  yl
-text(xll, yll, labels = "Cambio desde", font = 2)
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  xl
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.03)
-text(xll, yll, labels = "2012 en secciones", font = 2)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*xn
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*yn
-text(xll, yll, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", cex = .65)
-#dev.off()
-
-
-######################################
-# pan v neg prd secciones por estado #
-######################################
-library(graphics)
-#png(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytNegPrd-", edo, ".png", sep = ""), width = 20, height = 20, units = "cm", res = 196)
-#pdf(paste("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytNegPrd-", edo, ".pdf", sep = ""), width = 10, height = 7)
-par(mar = c(0,0,2,0))
-#plot(shave(se.map, p = .16), lwd = .5, border = "lightgray", main = estado)
-plot(se.map, lwd = .25, border = "lightgray", main = estado)
-tmp.ranges <- par("usr") # keep calculated xy ranges to compute arrow length
-plot(mu.map, lwd = .5,          border = "darkgray", add = TRUE)
-plot(mu.map, lwd = .5, lty = 3, border = "white", add = TRUE)
-#plot(ed.map, lwd = .5, lty = 3, border = "gray", add = TRUE)
-# add arrows
-# start-end of arrows
-#cx <- 150000; cy <- cx/3
-xlength <- (tmp.ranges[2] - tmp.ranges[1]) / 10
-#
-# start-end of arrows
-cx <- xlength*se.map$prd15; cy <- cx/3
-arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
-       coordinates(se.map)[,1]-cx, coordinates(se.map)[,2]-cy,
-       length = 0, angle = 10,
-       col = colprd, lwd = (.1+cx/(xlength*.4)))
-cx <- xlength*se.map$cpanpos; cy <- cx/3
-arrows(coordinates(se.map)[,1],    coordinates(se.map)[,2],
-       coordinates(se.map)[,1]+cx, coordinates(se.map)[,2]+cy,
-       length = .025, angle = 10,
-       col = colpan, lwd = (.1+cx/(xlength*.4)))
-# legend
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl-.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.08)
-arrows(xll,yll,xll+xlength*.5,yll+xlength*.5/3,length = .025, angle = 10, col = colpan, lwd = 2)
-text(xll, yll, pos = 2, labels = "Anaya creció", cex = .75)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) * (xl+.065)
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.11)
-arrows(xll,yll,xll-xlength*.5,yll-xlength*.5/3,length = 0, angle = 10, col = colprd, lwd = 2)
-text(xll,yll, pos = 4, labels = "PRD en 2015", cex = .75)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1]) *  xl
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3]) * (yl+.03)
-text(xll, yll, labels = "Cambio en secciones", font = 2)
-#
-xll <- tmp.ranges[2] - (tmp.ranges[2] - tmp.ranges[1])*xn
-yll <- tmp.ranges[4] - (tmp.ranges[4] - tmp.ranges[3])*yn
-text(xll, yll, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", cex = .65)
-#dev.off()
-
-
-# Export to javascript
 
 
 
