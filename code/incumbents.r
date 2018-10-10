@@ -51,7 +51,8 @@ sel <- which(inc$race.prior=="" & inc$incumbent!="") #cases still unknown
 inc$race.prior[sel] <- "Frosh-unknown"
 
 table(inc$edon[inc$yr==2018], inc$race.prior[inc$yr==2018])
-table(inc$race.prior[inc$yr==2018])
+      table(inc$race.prior[inc$yr==2018])
+round(table(inc$race.prior[inc$yr==2018]) / sum(as.numeric(inc$yr==2018)),2)
 
 head(inc)
 

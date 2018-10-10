@@ -1,15 +1,15 @@
 setwd("/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/")
 
-file <- "cam2018ayca.csv"
+file <- "son2018aycasilla.csv"
 d <- read.csv(file = file, stringsAsFactors = FALSE, fileEncoding="utf-8")
 
-colnames(d)
-str(d)
 d[1,]
+str(d)
+colnames(d)
 
 # make numeric
 sel <- grep("v[.]*|nr|nul", colnames(d))
-sel <- c(4:24)
+sel <- c(8:51)
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -24,13 +24,13 @@ colnames(d)
 
 # consolidate mun votes
 for (i in sel){
-    d[,i] <- ave(d[,i], as.factor(d$Municipio), FUN=sum, na.rm=TRUE)
+    d[,i] <- ave(d[,i], as.factor(d$IDMUNICIPIO), FUN=sum, na.rm=TRUE)
 }
 
 head(d)
 
 # drop redundant obs
-d <- d[duplicated(d$Municipio)==FALSE,]
+d <- d[duplicated(d$IDMUNICIPIO)==FALSE,]
 
 colnames(d)
 sel <- c(5:6,17:76)
@@ -47,7 +47,7 @@ colnames(d)
 
 
 
-file2 <- "cam2018aymu.csv"
+file2 <- "son2018aymu.csv"
 write.csv(d, file = file2, row.names = FALSE)
 
 
