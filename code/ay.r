@@ -729,6 +729,7 @@ tmp2 <- grep("ncand", colnames(dat))
 dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
 
+
 ## #################################
 ## #### DROPS USOS Y COSTUMBRES ####
 ## #################################
