@@ -195,6 +195,7 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^panal-", replacement = "pna-", l[,i])
     }
 #
+# avoid "na" in csv, recognized as missing...
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^na$", replacement = "pna", l[,i])
     l[,i] <- gsub(pattern = "-na-", replacement = "-pna-", l[,i])
@@ -728,6 +729,8 @@ tmp1 <- grep("dcoal", colnames(dat))
 tmp2 <- grep("ncand", colnames(dat))
 dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
+
+dat[grep("tla-16", dat$emm),c("mun","win")]
 
 
 ## #################################
