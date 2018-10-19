@@ -730,8 +730,6 @@ tmp2 <- grep("ncand", colnames(dat))
 dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
 
-dat[grep("tla-16", dat$emm),c("mun","win")]
-
 
 ## #################################
 ## #### DROPS USOS Y COSTUMBRES ####

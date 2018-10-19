@@ -100,7 +100,7 @@ inc$race.prior[sel] <- "Yet-to-know"
 
 # subset
 sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
-sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21 & inc$edon!=7 & inc$edon!=16 & inc$edon!=25)
+sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21 & inc$edon!=7 & inc$edon!=16)
 inc.sub <- inc[sel,]
 
 table(inc.sub$edon, inc.sub$race.prior)
@@ -108,9 +108,9 @@ table(inc.sub$edon, inc.sub$race.prior)
 round(table(inc.sub$race.prior) / length(sel),2)
 
 table(inc.sub$win2, inc.sub$race.prior)
-table(inc.sub$pty.prior2, inc.sub$race.prior)
-
-
+tab <- table(inc.sub$pty.prior2, inc.sub$race.prior)
+rowSums(tab)
+round(table(inc.sub$pty.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
 
                      party reelected
 incumbent on ballot  yes          no
