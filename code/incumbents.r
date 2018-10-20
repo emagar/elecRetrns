@@ -79,6 +79,7 @@ inc$pty.prior2[sel] <- "pt"
 sel <- which(inc$yr==2018)
 table(inc$pty.prior2[sel])
 
+
 table(inc$race.prior)
 sel <- which(inc$race.prior=="Reelected")
 inc$race.prior[sel] <- "Incumb-stayed"
@@ -88,8 +89,9 @@ sel <- grep("p-won", inc$race.prior, ignore.case = TRUE)
 inc$race.prior[sel] <- "Open-same-pty"
 sel <- grep("p-lost", inc$race.prior, ignore.case = TRUE) 
 inc$race.prior[sel] <- "Open-dif-pty"
-sel <- grep("pending", inc$race.prior, ignore.case = TRUE) 
+sel <- grep("pending|out-p-[?]", inc$race.prior, ignore.case = TRUE) 
 inc$race.prior[sel] <- "pending"
+table(inc$race.prior)
 
 
 sel <- which(inc$race.prior=="" & inc$incumbent!="") #cases still unknown
@@ -98,9 +100,30 @@ inc$race.prior[sel] <- "Frosh-unknown"
 sel <- which(inc$race.prior=="") #cases still unknown
 inc$race.prior[sel] <- "Yet-to-know"
 
-# subset
+# subset: cases allowing reelection in 2018
 sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
-sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21 & inc$edon!=7 & inc$edon!=16)
+sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21 & inc$edon!=16) # mic missing
+inc.sub <- inc[sel,]
+
+sel <- which(inc.sub$race.prior=="pending")
+sel
+inc.sub <- inc.sub[-sel,] # drop cases with pending election
+
+table(inc.sub$edon, inc.sub$race.prior)
+      table(inc.sub$race.prior)
+nrow(inc.sub)
+round(table(inc.sub$race.prior) / nrow(inc.sub),2)
+
+table(inc.sub$win2, inc.sub$race.prior)
+tab <- table(inc.sub$pty.prior2, inc.sub$race.prior)
+rowSums(tab)
+round(table(inc.sub$pty.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
+round(colSums(tab) / sum(rowSums(tab)), 2)
+
+
+# subset: cases NOT allowing reelection in 2018
+sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
+sel <- which(inc$yr==2018 & (inc$edon==9 | inc$edon==21))
 inc.sub <- inc[sel,]
 
 table(inc.sub$edon, inc.sub$race.prior)
@@ -112,16 +135,8 @@ tab <- table(inc.sub$pty.prior2, inc.sub$race.prior)
 rowSums(tab)
 round(table(inc.sub$pty.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
 
-                     party reelected
-incumbent on ballot  yes          no
-yes
-no
+sel <- which(inc$yr==2018 & inc$edon!=16)
+inc.sub <- inc[sel,]
 
-out-pwon  = open-seat-same-pty
-out-plost = open-seat-dif-party
-reelected = incumbent-reelected
-beaten    = incumbent-ousted
-
-head(inc)
 
 
