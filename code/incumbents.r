@@ -102,7 +102,6 @@ inc$race.prior[sel] <- "Yet-to-know"
 
 # subset: cases allowing reelection in 2018
 sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
-sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21 & inc$edon!=16) # mic missing
 inc.sub <- inc[sel,]
 
 sel <- which(inc.sub$race.prior=="pending")
@@ -117,8 +116,9 @@ round(table(inc.sub$race.prior) / nrow(inc.sub),2)
 table(inc.sub$win2, inc.sub$race.prior)
 tab <- table(inc.sub$pty.prior2, inc.sub$race.prior)
 rowSums(tab)
-round(table(inc.sub$pty.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
-round(colSums(tab) / sum(rowSums(tab)), 2)
+sum(rowSums(tab))
+round(table(inc.sub$pty.prior2, inc.sub$race.prior) *100 / rowSums(tab), 1)
+round(colSums(tab) *100 / sum(rowSums(tab)), 1)
 
 
 # subset: cases NOT allowing reelection in 2018
