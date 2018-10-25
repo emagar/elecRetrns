@@ -69,7 +69,7 @@ Most variables are included in every file, some appear in selected files only.
 - /fake/ = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 - /win/ = winner's party or coalition.
 - /incumbent/ = winning candidate's name. 
-- /race.after/ = incumbent's status in the subsequent race. See [[status-rules][this]] for categories and coding rules. 
+- /race.after/ = incumbent's status in the subsequent race. See [[status-rules][this]] for categories and coding rules (y [[status-rules-esp][esto]] para la versión en español de las reglas). 
 
 * Coding rules for the incumbent's status
 #+NAME: status-rules
