@@ -1,16 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgfb663a6)
-2.  [Files in the repository and how to cite them](#org845ca5d)
-3.  [Codebook](#org1ea53ef)
-4.  [Sources](#orgc2488b5)
-5.  [Acknowledgements](#org9e6918a)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgfd9da77)
+2.  [Files in the repository and how to cite them](#org098467e)
+3.  [Codebook](#org3f34040)
+4.  [Coding rules for the incumbent's status](#org098556a)
+5.  [Reglas para codificar el estatus del ocupante](#orga8bcf7b)
+6.  [Sources](#org7f2d91e)
+7.  [Acknowledgements](#org1acd650)
 
 Last revision: 2018-03-08
 
 
-<a id="orgfb663a6"></a>
+<a id="orgfd9da77"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -22,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning previous commits of the repository.
 
 
-<a id="org845ca5d"></a>
+<a id="org098467e"></a>
 
 # Files in the repository and how to cite them
 
@@ -32,6 +34,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 
 -   `data/aymu1977-present.csv` = updated to 2013, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 -   `data/aymu1985-present.coalAgg.csv` = pre-processed version of the above (starting in 1985) so that coalition votes appear properly aggregated.
+-   `data/aymu1985-present.incumbents.csv` = names of municipal election winning candidates since 1997 (work in progress).
 -   `data/ayde2008-presentNayRegid.csv` = Nayarit's municipal demarcaciones vote returns since 2008.
 -   `code/ay.r` = script to manipulate *ayuntamiento* returns.
 -   `code/ayClean.r` = script used to clean *ayuntamiento* returns, should be unnecessary unless new data are added because output has been saved into csv file.
@@ -46,14 +49,14 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="org1ea53ef"></a>
+<a id="org3f34040"></a>
 
 # Codebook
 
 Most variables are included in every file, some appear in selected files only.  
 
 -   *edon* = state number 1:32.
--   *edo* = state abbreviation (may differ form the 'official' abbreviations so that sorting them alphabetically preserves the order set by *edon*).
+-   *edo* = state abbreviation (may differ from the 'official' abbreviations so that sorting them alphabetically preserves the order set by *edon*).
 -   *disn* = district number.
 -   *emm* = municipal indentifying code (*edo*-electionCycle./munn/).
 -   *mun* = municipality.
@@ -80,9 +83,53 @@ Most variables are included in every file, some appear in selected files only.
 -   *sepan*, *sepri*, *seprd* = votes won by major parties in previous/concurrent senatorial election.
 -   *seefec* = effective votes in previous/concurrent senatorial election.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
+-   *win* = winner's party or coalition.
+-   *incumbent* = winning candidate's name.
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orge3b2fab) for categories and coding rules.
 
 
-<a id="orgc2488b5"></a>
+<a id="org098556a"></a>
+
+# Coding rules for the incumbent's status
+
+()
+In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
+
+1.  'Beaten' if the incumbent re-ran and lost;
+2.  'Reelected' if the incumbent re-ran and won;
+3.  'Renom-killed' if the incumbent re-ran and was killed in the campaign;
+4.  'Hi-office' if the incumbent ran for higher office;
+5.  'Out' if the incumbent withdrew or was not renominated;
+6.  'Term-limited' if the incumbent was ineligible for reelection due to a term limit;
+7.  A year indicates that it is too early to know the incumbent's status (and the year of the next race).
+
+In categories other than the first two above, a suffix may be present. 
+
+-   Suffix '-p-lost' indicates that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition).
+-   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
+
+
+<a id="orga8bcf7b"></a>
+
+# Reglas para codificar el estatus del ocupante
+
+En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
+
+1.  'Beaten' si el ocupante volvió a contender y perdió;
+2.  'Reelected' si el ocupante volvió a contender y ganó;
+3.  'Renom-killed' si el ocupante volvió a contender y fue asesinado en la campaña;
+4.  'Hi-office' si el ocupante contendió por otro cargo de elección (p.ej. gobernador o senador);
+5.  'Out' si el ocupante se retiró o no fue repostulado por el partido;
+6.  'Term-limited' si el ocupante estaba constitucionalmente impedido para aspirar a reelegirse;
+7.  Un año indica que aún es temprano para conocer el estatus (y el año de la próxima elección).
+
+En las categorías 3 en adelante, un sufijo puede estar presente. 
+
+-   El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora).
+-   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
+
+
+<a id="org7f2d91e"></a>
 
 # Sources
 
@@ -97,7 +144,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org9e6918a"></a>
+<a id="org1acd650"></a>
 
 # Acknowledgements
 
