@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgfd9da77)
-2.  [Files in the repository and how to cite them](#org098467e)
-3.  [Codebook](#org3f34040)
-4.  [Coding rules for the incumbent's status](#org098556a)
-5.  [Reglas para codificar el estatus del ocupante](#orga8bcf7b)
-6.  [Sources](#org7f2d91e)
-7.  [Acknowledgements](#org1acd650)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgab264e3)
+2.  [Files in the repository and how to cite them](#orge8d8365)
+3.  [Codebook](#orgf6f81b9)
+4.  [Coding rules for the incumbent's status](#orge3aeea2)
+5.  [Reglas para codificar el estatus del ocupante](#org1629ba5)
+6.  [Sources](#org2db7c14)
+7.  [Acknowledgements](#org44d7308)
 
 Last revision: 2018-03-08
 
 
-<a id="orgfd9da77"></a>
+<a id="orgab264e3"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning previous commits of the repository.
 
 
-<a id="org098467e"></a>
+<a id="orge8d8365"></a>
 
 # Files in the repository and how to cite them
 
@@ -49,7 +49,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="org3f34040"></a>
+<a id="orgf6f81b9"></a>
 
 # Codebook
 
@@ -85,14 +85,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orge3b2fab) for categories and coding rules.
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orgc5ab6e2) for categories and coding rules.
 
 
-<a id="org098556a"></a>
+<a id="orge3aeea2"></a>
 
 # Coding rules for the incumbent's status
 
-()
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
 1.  'Beaten' if the incumbent re-ran and lost;
@@ -109,7 +108,7 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="orga8bcf7b"></a>
+<a id="org1629ba5"></a>
 
 # Reglas para codificar el estatus del ocupante
 
@@ -129,7 +128,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org7f2d91e"></a>
+<a id="org2db7c14"></a>
 
 # Sources
 
@@ -144,7 +143,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org1acd650"></a>
+<a id="org44d7308"></a>
 
 # Acknowledgements
 

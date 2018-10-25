@@ -73,7 +73,6 @@ Most variables are included in every file, some appear in selected files only.
 
 * Coding rules for the incumbent's status
 #+NAME: status-rules
-()
 In file ~data/aymu1985-present.incumbents.csv~, variable /race.after/ equals one of the following categories: 
 1. 'Beaten' if the incumbent re-ran and lost; 
 2. 'Reelected' if the incumbent re-ran and won; 
