@@ -7245,8 +7245,8 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 7245,nl-13.039,19,39,2006,jul,2,Monterrey,pan,ADALBERTO ARTURO MADERO QUIROGA,Term-limited,,
 7246,nl-14.039,19,39,2009,jul,5,Monterrey,pan,FERNANDO LARRAZABAL BRETON,Term-limited,,
 7247,nl-15.039,19,39,2012,jul,1,Monterrey,pan,MARGARITA ALICIA ARELLANES CERVANTES,Term-limited,,Benancio Aguirre Martinez
-7248,nl-16.039,19,39,2015,jun,7,Monterrey,pri-pvem-pna-pd1,ADRIAN EMILIO DE LA GARZA SANTOS,Reelected,TEPJF podría restituir triunfo PAN,
-7249,nl-17.039,19,39,2018,jul,1,Monterrey,pri,ADRIAN EMILIO DE LA GARZA SANTOS,Term-limited,,
+7248,nl-16.039,19,39,2015,jun,7,Monterrey,pri-pvem-pna-pd1,ADRIAN EMILIO DE LA GARZA SANTOS,Renom-pending,tepjf anuló 30oct18,
+7249,nl-17.039,19,39,2018,jul,1,Monterrey,0,,Term-limited,,
 7250,nl-10.040,19,40,1997,ago,18,Parás,pri,,Term-limited,,
 7251,nl-11.040,19,40,2000,jul,2,Parás,pri,,Term-limited,,
 7252,nl-12.040,19,40,2003,jul,6,Parás,pri-pvem-plm-fc1,,Term-limited,,
@@ -7333,7 +7333,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 7333,nl-13.050,19,50,2006,jul,2,Vallecillo,pri-pvem,,Term-limited,,
 7334,nl-14.050,19,50,2009,jul,5,Vallecillo,pri-pvem-pd1-cc1,,Term-limited,,
 7335,nl-15.050,19,50,2012,jul,1,Vallecillo,pt1,ARNULFO DE LEON VILLAREAL,Term-limited,,Irineo Rodriguez Cortez
-7336,nl-16.050,19,50,2015,jun,7,Vallecillo,prd-pt1,ADOLFO CHAPA RAMON,Beaten,decía Alfonso Chapa Ramón,
+7336,nl-16.050,19,50,2015,jun,7,Vallecillo,prd-pt1,ADOLFO CHAPA RAMON,Beaten,decía indep,
 7337,nl-17.050,19,50,2018,jul,1,Vallecillo,pt1-morena-pes,MARIA LINA MARGARITA MARTINEZ SERNA,2021,,
 7338,nl-10.051,19,51,1997,ago,18,Villaldama,pri,,Term-limited,,
 7339,nl-11.051,19,51,2000,jul,2,Villaldama,pri,,Term-limited,,
@@ -7729,7 +7729,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 7729,oax-14.136,20,136,2010,jul,4,San Felipe Usila,pri-pvem,,Term-limited,,
 7730,oax-15.136,20,136,2013,jul,7,San Felipe Usila,pri-pvem,,Term-limited,,
 7731,oax-16.136,20,136,2016,jun,5,San Felipe Usila,pri-pvem,RUTILIO LORENZO FELIPE,Beaten,,Epifanio de Dios de Jesus
-7732,oax-17.136,20,136,2018,jul,1,San Felipe Usila,pup,FILEMON BERNARDO HERNANDEZ,2021,DECIA INDEP JUAN DE DIOS,
+7732,oax-17.136,20,136,2018,jul,1,San Felipe Usila,pup,FILEMON BERNARDO HERNANDEZ,2021,,
 7733,oax-10.141,20,141,1998,oct,4,San Francisco del Mar,pri,,Term-limited,,
 7734,oax-11.141,20,141,2001,oct,7,San Francisco del Mar,prd,,Term-limited,,
 7735,oax-12.141,20,141,2004,oct,3,San Francisco del Mar,prd,,Term-limited,,
@@ -7985,7 +7985,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 7985,oax-14.295,20,295,2010,jul,4,San Pablo Huixtepec,pri-pvem,,Term-limited,,
 7986,oax-15.295,20,295,2013,jul,7,San Pablo Huixtepec,pan-prd-pt1,,Term-limited,,
 7987,oax-16.295,20,295,2016,jun,5,San Pablo Huixtepec,pri,ALEJANDRO JUSTINO CRUZ DIAZ,Out-p-won,,Gerardo Baltazar Diaz Castellanos
-7988,oax-17.295,20,295,2018,jul,1,San Pablo Huixtepec,pri-pvem-pna,GERARDO ARANGO ROMERO,2021,DECIA JUNTOS HAREMOS HISTORIA,
+7988,oax-17.295,20,295,2018,jul,1,San Pablo Huixtepec,pri-pvem-pna,GERARDO ARANGO ROMERO,2021,,
 7989,oax-10.298,20,298,1998,oct,4,San Pablo Villa de Mitla,pri,,Term-limited,,
 7990,oax-11.298,20,298,2001,oct,7,San Pablo Villa de Mitla,pan,,Term-limited,,
 7991,oax-12.298,20,298,2004,oct,3,San Pablo Villa de Mitla,pvem,,Term-limited,,
@@ -8161,7 +8161,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 8161,oax-14.387,20,387,2010,jul,4,Santa Gertrudis,pri-pvem,,Term-limited,,
 8162,oax-15.387,20,387,2013,jul,7,Santa Gertrudis,pri-pvem,,Term-limited,,
 8163,oax-16.387,20,387,2016,jun,5,Santa Gertrudis,pan-prd,RODIMIRO CASTELLANOS IBAÑEZ,Out-p-lost,,Angelico Maldonado Gijon
-8164,oax-17.387,20,387,2018,jul,1,Santa Gertrudis,pri-pvem-na,OFELIA MIREYA MENDEZ PEREZ,2021,DECIA INDEP RAYMUNDO,
+8164,oax-17.387,20,387,2018,jul,1,Santa Gertrudis,pri-pvem-na,OFELIA MIREYA MENDEZ PEREZ,2021,,
 8165,oax-10.390,20,390,1998,oct,4,Santa Lucía del Camino,pri,,Term-limited,,
 8166,oax-11.390,20,390,2001,oct,7,Santa Lucía del Camino,pri,,Term-limited,,
 8167,oax-12.390,20,390,2004,oct,3,Santa Lucía del Camino,pri,,Term-limited,,
@@ -8265,7 +8265,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 8265,oax-14.436,20,436,2010,jul,4,Santa María Texcatitlán,pan-prd-pt1-conve,,Term-limited,,
 8266,oax-15.436,20,436,2013,jul,7,Santa María Texcatitlán,pan-prd-pt1,,Term-limited,,
 8267,oax-16.436,20,436,2016,jun,5,Santa María Texcatitlán,pan-prd,MAAI HERNANDEZ JIMENEZ,Out-p-lost,,Adelina Gaytan Jimenez
-8268,oax-17.436,20,436,2018,jul,1,Santa María Texcatitlán,pri-pvem-pna,LOURDES HERNANDEZ MENCHACA,2021,DECIA PRI,
+8268,oax-17.436,20,436,2018,jul,1,Santa María Texcatitlán,pri-pvem-pna,LOURDES HERNANDEZ MENCHACA,2021,,
 8269,oax-10.439,20,439,1998,oct,4,Santa María Tonameca,pri,,Term-limited,,
 8270,oax-11.439,20,439,2001,oct,7,Santa María Tonameca,pri,,Term-limited,,
 8271,oax-12.439,20,439,2004,oct,3,Santa María Tonameca,pan,,Term-limited,,
@@ -8722,7 +8722,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 8722,pue-13.023,21,23,2007,nov,11,Atzitzintla,pri-pvem,,Term-limited,,
 8723,pue-14.023,21,23,2010,jul,4,Atzitzintla,pan-prd-conve-pna,,Term-limited,,
 8724,pue-15.023,21,23,2013,jul,7,Atzitzintla,pan-prd-pna,JOSE ISAIAS VELAZQUEZ REYES,Term-limited-p-lost,,Higinio Cuevas De Los Santos
-8725,pue-16.023,21,23,2018,jul,1,Atzitzintla,mc-pcpp,JOSE JOAQUIN LOPEZ CASTILLO,2021,DECIA MC,
+8725,pue-16.023,21,23,2018,jul,1,Atzitzintla,mc-pcpp,JOSE JOAQUIN LOPEZ CASTILLO,2021,,
 8726,pue-10.024,21,24,1998,nov,8,Axutla,pri,,Term-limited,,
 8727,pue-11.024,21,24,2001,nov,11,Axutla,pri,,Term-limited,,
 8728,pue-12.024,21,24,2004,nov,14,Axutla,pan,,Term-limited,,
@@ -8834,7 +8834,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 8834,pue-13.039,21,39,2007,nov,11,Cuautempan,pan,,Term-limited,,
 8835,pue-14.039,21,39,2010,jul,4,Cuautempan,pan-prd-conve-pna,,Term-limited,,
 8836,pue-15.039,21,39,2013,jul,7,Cuautempan,pri-pvem,FLOR DE CORAL RODRIGUEZ CARCAMO,Term-limited-p-lost,,Enedina Pineda Bonilla
-8837,pue-16.039,21,39,2018,jul,1,Cuautempan,mc-psi,GERARDO CORTES BETANCOURT,2021,DECIA MC,
+8837,pue-16.039,21,39,2018,jul,1,Cuautempan,mc-psi,GERARDO CORTES BETANCOURT,2021,,
 8838,pue-10.040,21,40,1998,nov,8,Cuautinchán,pri,,Term-limited,,
 8839,pue-11.040,21,40,2001,nov,11,Cuautinchán,pt1,,Term-limited,,
 8840,pue-12.040,21,40,2004,nov,14,Cuautinchán,pri,,Term-limited,,
@@ -8960,14 +8960,14 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 8960,pue-13.057,21,57,2007,nov,11,Honey,pan,,Term-limited,,
 8961,pue-14.057,21,57,2010,jul,4,Honey,pan-prd-conve-pna,,Term-limited,,
 8962,pue-15.057,21,57,2013,jul,7,Honey,pri-pvem,CIRLO LOPEZ SANTOS,Term-limited-p-won,,Neftali Templos Villegas
-8963,pue-16.057,21,57,2018,jul,1,Honey,pri,ANGEL LOPEZ CABRERA,2021,DECÍA pan-pcpp,
+8963,pue-16.057,21,57,2018,jul,1,Honey,pri,ANGEL LOPEZ CABRERA,2021,,
 8964,pue-10.058,21,58,1998,nov,8,Chilchotla,pri,,Term-limited,,
 8965,pue-11.058,21,58,2001,nov,11,Chilchotla,pan,,Term-limited,,
 8966,pue-12.058,21,58,2004,nov,14,Chilchotla,pri,,Term-limited,,
 8967,pue-13.058,21,58,2007,nov,11,Chilchotla,pan,,Term-limited,,
 8968,pue-14.058,21,58,2010,jul,4,Chilchotla,pri-pvem,,Term-limited,,
 8969,pue-15.058,21,58,2013,jul,7,Chilchotla,pt1,VALENTIN MEDEL HERNANDEZ,Term-limited-p-lost,,Vicente Isaias Medel Hernandez
-8970,pue-16.058,21,58,2018,jul,1,Chilchotla,pri,ROSALINA MEDEL TENTLE,2021,,
+8970,pue-16.058,21,58,2018,jul,1,Chilchotla,pan-pcpp,VALERIANO FILOMENO HERNANDEZ ORTIZ,2021,,
 8971,pue-10.059,21,59,1998,nov,8,Chinantla,pri,,Term-limited,,
 8972,pue-11.059,21,59,2001,nov,11,Chinantla,pan,,Term-limited,,
 8973,pue-12.059,21,59,2004,nov,14,Chinantla,pan,,Term-limited,,
@@ -9471,7 +9471,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 9471,pue-13.130,21,130,2007,nov,11,San Juan Atenco,pan,,Term-limited,,
 9472,pue-14.130,21,130,2010,jul,4,San Juan Atenco,pt1,,Term-limited,,
 9473,pue-15.130,21,130,2013,jul,7,San Juan Atenco,pri-pvem,FRANCISCO ALEJANDRO MENDOZA,Term-limited-p-lost,,Ricardo Sixto Gordian Flores
-9474,pue-16.130,21,130,2018,jul,1,San Juan Atenco,mc-pcpp,FRANCISCO ALEJANDRO MEDINA,2021,DECIA MC,
+9474,pue-16.130,21,130,2018,jul,1,San Juan Atenco,mc-pcpp,FRANCISCO ALEJANDRO MEDINA,2021,,
 9475,pue-10.131,21,131,1998,nov,8,San Juan Atzompa,pri,,Term-limited,,
 9476,pue-11.131,21,131,2001,nov,11,San Juan Atzompa,pri,,Term-limited,,
 9477,pue-12.131,21,131,2004,nov,14,San Juan Atzompa,pri,,Term-limited,,
@@ -9492,7 +9492,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 9492,pue-13.133,21,133,2007,nov,11,San Martín Totoltepec,pri-pvem,,Term-limited,,
 9493,pue-14.133,21,133,2010,jul,4,San Martín Totoltepec,pan-prd-conve-pna,,Term-limited,,
 9494,pue-15.133,21,133,2013,jul,7,San Martín Totoltepec,pan-prd-pna,DOMINGO CHINO GUTIERREZ,Term-limited-p-lost,,Viliulfo Eustoquio Cortes Garcia
-9495,pue-16.133,21,133,2018,jul,1,San Martín Totoltepec,pt1-morena-pes,ISIDRO RAMIREZ VALIENTE,2021,DECIA MORENA,
+9495,pue-16.133,21,133,2018,jul,1,San Martín Totoltepec,pt1-morena-pes,ISIDRO RAMIREZ VALIENTE,2021,,
 9496,pue-10.134,21,134,1998,nov,8,San Matías Tlalancaleca,pan,,Term-limited,,
 9497,pue-11.134,21,134,2001,nov,11,San Matías Tlalancaleca,pan,,Term-limited,,
 9498,pue-12.134,21,134,2004,nov,14,San Matías Tlalancaleca,pan,,Term-limited,,
@@ -9940,7 +9940,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 9940,pue-13.197,21,197,2007,nov,11,Xicotepec,pan,,Term-limited,,
 9941,pue-14.197,21,197,2010,jul,4,Xicotepec,pri-pvem,,Term-limited,,
 9942,pue-15.197,21,197,2013,jul,7,Xicotepec,pan-prd-pna,JUAN CARLOS VALDERRABANO VAZQUEZ,Term-limited-p-won,,Virgilio Othon Lechuga Hernandez
-9943,pue-16.197,21,197,2018,jul,1,Xicotepec,pri-pna,LAURA GUADALUPE VARGAS VARGAS,2021,NUESTRA ALUMNA?,
+9943,pue-16.197,21,197,2018,jul,1,Xicotepec,pri-pna,LAURA GUADALUPE VARGAS VARGAS,2021,NUESTRA ALUMNA!,
 9944,pue-10.198,21,198,1998,nov,8,Xicotlán,pri,,Term-limited,,
 9945,pue-11.198,21,198,2001,nov,11,Xicotlán,pri,,Term-limited,,
 9946,pue-12.198,21,198,2004,nov,14,Xicotlán,pri,,Term-limited,,
@@ -11376,7 +11376,7 @@ ord,emm,edon,munn,yr,mo,dy,mun,win,incumbent,race.after,nota,suplente
 11376,son-13.053,26,53,2006,jul,2,San Felipe de Jesús,pan,,Term-limited,,
 11377,son-14.053,26,53,2009,jul,5,San Felipe de Jesús,pan,,Term-limited,,
 11378,son-15.053,26,53,2012,jul,1,San Felipe de Jesús,pan-pna,JOSE ELEAZAR DE LA TORRE CURIEL,Term-limited,,
-11379,son-16.053,26,53,2015,jun,7,San Felipe de Jesús,pri-pvem-pna,ENRIQUE QUINTANA RUIZ,Out-p-lost,decía pan,
+11379,son-16.053,26,53,2015,jun,7,San Felipe de Jesús,pri-pvem-pna,ENRIQUE QUINTANA RUIZ,Out-p-lost,,
 11380,son-17.053,26,53,2018,jul,1,San Felipe de Jesús,pan-prd,DELFINA LILLIAN OCHOA,2021,,
 11381,son-10.054,26,54,1997,jul,6,San Javier,pri,,Term-limited,,
 11382,son-11.054,26,54,2000,jul,2,San Javier,pri,,Term-limited,,

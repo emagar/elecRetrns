@@ -114,9 +114,9 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^mc$", replacement = "pmc", l[,i])
-    l[,i] <- gsub(pattern = "-mc-", replacement = "-pmc-", l[,i])
-    l[,i] <- gsub(pattern = "-mc$", replacement = "-pmc", l[,i])
+    l[,i] <- gsub(pattern = "^pmc$", replacement = "mc", l[,i])
+    l[,i] <- gsub(pattern = "-pmc-", replacement = "-mc-", l[,i])
+    l[,i] <- gsub(pattern = "-pmc$", replacement = "-mc", l[,i])
     }
 #
 for (i in 1:ncol(l)){
