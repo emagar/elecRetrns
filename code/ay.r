@@ -709,8 +709,8 @@ dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp)
 
-table(dat$v15) # check that only has zeroes
-dat$v15 <- dat$l15 <- dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
+table(dat$v16) # check that only has zeroes
+dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
@@ -726,7 +726,7 @@ v <- dat[,sel.v] # subset vote columns
 dat$ncand <- apply(v, 1, function(x) length(x[x>0]))
 # check that coal aggregation produces same efec as before
 check <- rowSums(v) - dat$efec
-table(check==0)
+table(check==0) # all must be true
 ## sel <- which(check!=0)
 ## dat[sel[2],]
 ## dat.orig[sel[2],]
