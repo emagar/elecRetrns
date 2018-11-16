@@ -758,10 +758,10 @@ colnames(dat)
 ################################
 ### export a coalAgg version ###
 ################################
-sel <- dat$yr>=1985
+sel <- dat$yr>=1997
 dat <- dat[sel,] # drop early years
 dat$ord <- 1:nrow(dat)
-write.csv(dat, file = "aymu1985-present.coalAgg.csv", row.names = FALSE)
+write.csv(dat, file = "aymu1997-present.coalAgg.csv", row.names = FALSE)
 
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
