@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#org2dda084)
-2.  [Files in the repository and how to cite them](#org69a6c26)
-3.  [Codebook](#org1e22aa9)
-4.  [Coding procedure for the incumbent's status](#org7762c3c)
-5.  [Procedimiento para codificar el estatus del ocupante](#org171684a)
-6.  [Sources](#orgf03e145)
-7.  [Acknowledgements](#orge2856f5)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#org6678ade)
+2.  [Files in the repository and how to cite them](#org84f40ce)
+3.  [Codebook](#org9ab7656)
+4.  [Coding procedure for the incumbent's status](#org79a7595)
+5.  [Procedimiento para codificar el estatus del ocupante](#org5c19450)
+6.  [Sources](#orgbfd6072)
+7.  [Acknowledgements](#org4683a4d)
 
 Last revision: 2018-03-08
 
 
-<a id="org2dda084"></a>
+<a id="org6678ade"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning previous commits of the repository.
 
 
-<a id="org69a6c26"></a>
+<a id="org84f40ce"></a>
 
 # Files in the repository and how to cite them
 
@@ -42,7 +42,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
     -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
 -   `data/dfdf1979-on.coalAgg.csv` = pre-processed version of the above so that coalition votes appear properly aggregated.
     -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
--   `data/dfdfcandidates2015-on.csv` = names of all federal deputy candidates in districts and party lists since 2015.
+-   `data/dfdf2012-onCandidates.csv` = names of all federal deputy candidates in districts and party lists since 2012.
 -   `data/seedcandidates2018.csv` = names of all senatorial candidates in states and party lists in 2018.
 -   `data/goed1961-on.csv` = updated to 2010
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
@@ -51,7 +51,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="org1e22aa9"></a>
+<a id="org9ab7656"></a>
 
 # Codebook
 
@@ -87,12 +87,12 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orgf234308) for categories and coding procedure ([aquí](#org84dd165) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org5906b70) for categories and coding procedure ([aquí](#orgcb13373) la versión en español del procedimiento codificador).
 
 
-<a id="org7762c3c"></a>
+<a id="org79a7595"></a>
 
-# Coding procedure for the incumbent's status<a id="orgf234308"></a>
+# Coding procedure for the incumbent's status<a id="org5906b70"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
@@ -110,9 +110,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org171684a"></a>
+<a id="org5c19450"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org84dd165"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="orgcb13373"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 
@@ -130,7 +130,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="orgf03e145"></a>
+<a id="orgbfd6072"></a>
 
 # Sources
 
@@ -145,7 +145,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="orge2856f5"></a>
+<a id="org4683a4d"></a>
 
 # Acknowledgements
 
