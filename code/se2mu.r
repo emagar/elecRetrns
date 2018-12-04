@@ -1,6 +1,6 @@
 setwd("/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/")
 
-file <- "cps2018ayca.csv"
+file <- "tab2018ayca.csv"
 d <- read.csv(file = file, stringsAsFactors = FALSE, fileEncoding="utf-8")
 
 d[1,]
@@ -9,7 +9,7 @@ colnames(d)
 
 # make numeric
 sel <- grep("v[.]*|nr|nul", colnames(d))
-sel <- c(16,22:95)
+sel <- c(17:33,36)
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -33,7 +33,7 @@ head(d)
 d <- d[duplicated(d$ID_MUNICIPIO)==FALSE,]
 
 colnames(d)
-sel <- c(5:6,17:76)
+sel <- c(5:6,17:33,36)
 d <- d[,sel]
 
 data.frame(d$mun)
@@ -44,10 +44,10 @@ d$tipo <- NULL
 d$ext <- NULL
 
 colnames(d)
+head(d)
 
 
-
-file2 <- "cps2018aymu.csv"
+file2 <- "tab2018aymu.csv"
 write.csv(d, file = file2, row.names = FALSE)
 
 
