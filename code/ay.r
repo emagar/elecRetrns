@@ -302,10 +302,17 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pmac$", replacement = "pmch", l[,i])
-    l[,i] <- gsub(pattern = "-pmac-", replacement = "-pmch-", l[,i])
-    l[,i] <- gsub(pattern = "-pmac$", replacement = "-pmch", l[,i])
-    l[,i] <- gsub(pattern = "^pmac-", replacement = "pmch-", l[,i])
+    l[,i] <- gsub(pattern = "^pmac$|^moveracps$", replacement = "pmch", l[,i])
+    l[,i] <- gsub(pattern = "-pmac-|-moveracps-", replacement = "-pmch-", l[,i])
+    l[,i] <- gsub(pattern = "-pmac$|-moveracps$", replacement = "-pmch", l[,i])
+    l[,i] <- gsub(pattern = "^pmac-|^moveracps-", replacement = "pmch-", l[,i])
+    }
+#
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^pcu$", replacement = "pchu", l[,i])
+    l[,i] <- gsub(pattern = "-pcu-", replacement = "-pchu-", l[,i])
+    l[,i] <- gsub(pattern = "-pcu$", replacement = "-pchu", l[,i])
+    l[,i] <- gsub(pattern = "^pcu-", replacement = "pchu-", l[,i])
     }
 #
 #

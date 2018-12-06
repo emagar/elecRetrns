@@ -3,7 +3,15 @@ wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(wd)
 
 # alcaldes
-inc <- read.csv(file = "aymu1985-present.incumbents.csv", stringsAsFactors = FALSE)
+inc <- read.csv(file = "aymu1997-present.incumbents.csv", stringsAsFactors = FALSE)
+colnames(inc)
+
+## # merge a new coalAgg into incumbents
+## cagg <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
+## colnames(cagg)
+## cagg <- cagg[, c("emm","win")]
+## inc <- merge(x = inc, y = cagg, by = "emm", all = TRUE)
+## write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify
 
 # change pt mc panal labels
 sel <- grep("pt1", inc$win, ignore.case = TRUE)
