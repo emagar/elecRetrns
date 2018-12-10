@@ -6,20 +6,20 @@ setwd(wd)
 inc <- read.csv(file = "aymu1997-present.incumbents.csv", stringsAsFactors = FALSE)
 colnames(inc)
 
-# merge a new coalAgg into incumbents
-cagg <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
-colnames(cagg)
-cagg <- cagg[, c("emm","win")]
-inc <- merge(x = inc, y = cagg, by = "emm", all = TRUE)
-sel <- grep("pt1", inc$win.y, ignore.case = TRUE)  # change labels
-inc$win.y[sel] <- gsub("pt1", "pt", inc$win.y[sel])# change labels
-sel <- grep("pmc$|pmc-", inc$win.y, ignore.case = TRUE) # change labels
-inc$win.y[sel] <- gsub("pmc", "mc", inc$win.y[sel])                             # change labels
-sel <- grep("panal", inc$win.y, ignore.case = TRUE)# change labels
-inc$win.y[sel] <- gsub("panal", "pna", inc$win.y[sel])                           # change labels
-sel <- grep("[a-z]+[-][0-9]{2}[ab].*", inc$emm) # find anuladas/ballotage
-inc <- inc[-sel,] # drop them
-write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify what tmp.csv looks like
+## # merge a new coalAgg into incumbents
+## cagg <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
+## colnames(cagg)
+## cagg <- cagg[, c("emm","win")]
+## inc <- merge(x = inc, y = cagg, by = "emm", all = TRUE)
+## sel <- grep("pt1", inc$win.y, ignore.case = TRUE)  # change labels
+## inc$win.y[sel] <- gsub("pt1", "pt", inc$win.y[sel])# change labels
+## sel <- grep("pmc$|pmc-", inc$win.y, ignore.case = TRUE) # change labels
+## inc$win.y[sel] <- gsub("pmc", "mc", inc$win.y[sel])                             # change labels
+## sel <- grep("panal", inc$win.y, ignore.case = TRUE)# change labels
+## inc$win.y[sel] <- gsub("panal", "pna", inc$win.y[sel])                           # change labels
+## sel <- grep("[a-z]+[-][0-9]{2}[ab].*", inc$emm) # find anuladas/ballotage
+## inc <- inc[-sel,] # drop them
+## write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify what tmp.csv looks like
 
 
 inc$race.prior <- NA
@@ -415,7 +415,6 @@ rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.sub, sel.e, sel.m, sel.7, 
 ## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
 
 sel <- which(inc$win=="" & inc$win.prior=="" & inc$yr>=2000)
-
 
 table(inc$dptyReelected[sel], useNA = "always") # check classification
 
