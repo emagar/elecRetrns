@@ -6,20 +6,21 @@ setwd(wd)
 inc <- read.csv(file = "aymu1997-present.incumbents.csv", stringsAsFactors = FALSE)
 colnames(inc)
 
-## # merge a new coalAgg into incumbents
-## cagg <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
-## colnames(cagg)
-## cagg <- cagg[, c("emm","win")]
-## inc <- merge(x = inc, y = cagg, by = "emm", all = TRUE)
-## write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify
+# merge a new coalAgg into incumbents
+cagg <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
+colnames(cagg)
+cagg <- cagg[, c("emm","win")]
+inc <- merge(x = inc, y = cagg, by = "emm", all = TRUE)
+sel <- grep("pt1", inc$win.y, ignore.case = TRUE)  # change labels
+inc$win.y[sel] <- gsub("pt1", "pt", inc$win.y[sel])# change labels
+sel <- grep("pmc$|pmc-", inc$win.y, ignore.case = TRUE) # change labels
+inc$win.y[sel] <- gsub("pmc", "mc", inc$win.y[sel])                             # change labels
+sel <- grep("panal", inc$win.y, ignore.case = TRUE)# change labels
+inc$win.y[sel] <- gsub("panal", "pna", inc$win.y[sel])                           # change labels
+sel <- grep("[a-z]+[-][0-9]{2}[ab].*", inc$emm) # find anuladas/ballotage
+inc <- inc[-sel,] # drop them
+write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify what tmp.csv looks like
 
-# change pt mc panal labels
-sel <- grep("pt1", inc$win, ignore.case = TRUE)
-inc$win[sel] <- "pt"
-sel <- grep("pmc", inc$win, ignore.case = TRUE)
-inc$win[sel] <- "mc"
-sel <- grep("panal", inc$win, ignore.case = TRUE)
-inc$win[sel] <- "pna"
 
 inc$race.prior <- NA
 inc$win.prior <- NA
