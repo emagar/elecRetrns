@@ -117,8 +117,8 @@ table(inc$race.prior)
 sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
 inc.sub <- inc[sel,]
 
-sel <- which(inc.sub$race.prior=="pending")
-sel
+sel <- which(inc.sub$race.prior=="pending"|inc.sub$race.prior=="")
+inc.sub$emm[sel]
 inc.sub <- inc.sub[-sel,] # drop cases with pending election
 
 table(inc.sub$edon, inc.sub$race.prior)
