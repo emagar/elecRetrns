@@ -63,7 +63,7 @@ sel <- grep("pan-", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "pan"
 sel <- grep("pri-", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "pri"
-sel <- grep("prd-", inc$win2, ignore.case = TRUE)
+sel <- grep("prd-|-prd", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "prd"
 sel <- grep("morena-|-morena", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "morena"
@@ -71,7 +71,9 @@ sel <- grep("pvem-|-pvem", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "pvem"
 sel <- grep("mc-|-mc", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "mc"
-sel <- grep("mas|paz|pcp|phm|pmr|ppg|psd1|psi|pudc|pup|via_|pchu|pmch|pver|prs|prv|ps1|poc|pjs|pd1|pec|pasd|pac1|npp|pcu|pcdt|pmac|pcm2|pdm|pps|ppt|ph|pmp|fc1|pcd1|psn", inc$win2, ignore.case = TRUE)
+sel <- grep("-pes", inc$win2, ignore.case = TRUE)
+inc$win2[sel] <- "pes"
+sel <- grep("mas|paz|pcp|phm|pmr|ppg|psd1|psi|pudc|pup|via_|pchu|pmch|pver|prs|prv|ps1|poc|pjs|pd1|pec|pasd|pac1|npp|pcu|pcdt|pmac|pcm2|pdm|pps|ppt|ph|pmp|fc1|pcd1|psn|ave", inc$win2, ignore.case = TRUE)
 inc$win2[sel] <- "loc/oth"
 #
 inc$win.prior2 <- inc$win.prior
@@ -277,11 +279,17 @@ table(inc$race.prior[inc$win!="" & inc$win.prior!=""]) # check classification
 rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.tl, sel.e, sel.m, sel.7, duplic.win, duplic.win.prior)
 #
 ## table(inc$manipule[inc$win!="" & inc$win.prior!=""]) # debug
-table(inc.sub$win)                                   # debug
+
+table(inc$yr)                                   # debug
+table(inc.sub$win2)                                   # debug
+table(inc$win2, inc$race.prior)                                   # debug
+
+
+inc.sub
+
 ## data.frame(inc.sub$win.prior[sel], inc.sub$win[sel]) # debug
 ## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
-
-
+#
 
 
 #############################################
