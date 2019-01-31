@@ -1270,8 +1270,11 @@ text(xl+180000, yl+180000, labels = "que ganó Peña", font = 2)
 text(-13000000, 1550000, labels = "Preparado por Eric Magar con datos del INE (@emagar)", col = "lightgray", pos = 4, cex = .65)
 #dev.off()
 
-# amlo v meade-neg v anaya donde peña ganó
+##########################################################
+# amlo v meade-neg v anaya donde peña ganó <--- 1er sake #
+##########################################################
 library(graphics)
+#svg("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.svg", width = 10, height = 7)
 #png("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.png", width = 20, height = 20, units = "cm", res = 196)
 #pdf("/home/eric/Desktop/MXelsCalendGovt/elecReturns/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.pdf", width = 10, height = 7)
 par(mar = c(0,0,0,0))
@@ -1290,7 +1293,7 @@ for (i in 1:32){
     points(coordinates(mu.map[[i]]), cex = .05, col = "darkgray", pch = 20) 
     # start-end of arrows
     #i <- 15 # debug
-    cx <- xlength*mu.map[[i]]$camlopos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$camlopos; cy <- cx*.87
     cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]-cx, coordinates(mu.map[[i]])[,2]+cy,
@@ -1302,7 +1305,7 @@ for (i in 1:32){
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]-cy,
            length = .025, angle = 10,
            col = "red", lwd = (.1+cy/600000))
-    cx <- xlength*mu.map[[i]]$cpanpos; cy <- cx/3
+    cx <- xlength*mu.map[[i]]$cpanpos; cy <- cx*.87
     cx[mu.map[[i]]$dpenawon==0] <- NA; cy[mu.map[[i]]$dpenawon==0] <- NA # keep only where Peña won
     arrows(coordinates(mu.map[[i]])[,1],    coordinates(mu.map[[i]])[,2],
            coordinates(mu.map[[i]])[,1]+cx, coordinates(mu.map[[i]])[,2]+cy,
@@ -1313,12 +1316,12 @@ for (i in 1:32){
 xl <-  -10200000; yl <- 3200000
 points(xl, yl, cex = .5, col = "darkgray", pch = 20) 
 #       
-arrows(xl,yl,xl-150000,yl+50000,length = .025, angle = 10, col = brown, lwd = .75)
-arrows(xl,yl,xl+150000,yl+50000,length = .025, angle = 10, col = colpan, lwd = .75)
+arrows(xl,yl,xl-150000,yl+85000,length = .025, angle = 10, col = brown, lwd = .75)
+arrows(xl,yl,xl+150000,yl+85000,length = .025, angle = 10, col = colpan, lwd = .75)
 arrows(xl,yl,xl,yl-150000,length = .025, angle = 10, col = "red", lwd = .75)
 #
-text(xl-150000,yl+50000, pos = 2, labels = "AMLO creció", cex = .75)
-text(xl+150000,yl+50000, pos = 4, labels = "Anaya creció", cex = .75)
+text(xl-150000,yl+85000, pos = 2, labels = "AMLO creció", cex = .75)
+text(xl+150000,yl+85000, pos = 4, labels = "Anaya creció", cex = .75)
 text(xl,yl-150000, pos = 1, labels = "Meade decreció", cex = .75)
 #
 text(xl, yl+380000, labels = "Cambio en municipios", font = 2)
