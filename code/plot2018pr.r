@@ -1,7 +1,7 @@
 rm(list=ls())
 
-wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/resultCasillas"
-
+#wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/resultCasillas"
+wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/casillas"
 setwd(wd)
 
 # secc-munn
@@ -9,61 +9,90 @@ sm <- read.csv(file = "../../../redistrict/ife.ine/equivSecc/tablaEquivalenciasS
 sm <- sm[,c("edon","seccion","munn")]
 
 ########
+# 2006 #
+########
+pr <- read.csv(file = "pre2006.csv", sep = ",", stringsAsFactors = FALSE)
+pr[1,]
+# adds voto efectivo
+sel <- which(colnames(pr) %in% c("pan","pri.pvem", "prd.pt.c","panal","asdc"))
+tmp <- pr[,sel]
+pr$efec <- rowSums(tmp)
+pr$fch <- pr$pan
+pr$rmp <- pr$pri.pvem
+pr$amlo <- pr$prd.pt.c
+pr$pna <- pr$panal
+pr <- pr[, c("edon", "disn","seccion","casilla","munn","fch","rmp", "amlo","pna","asdc","efec","lisnom")]
+# drop casillas especiales votos extranjero
+sel <- which(pr$seccion==0)
+pr <- pr[-sel,]
+# cambia NAs por ceros
+pr[is.na(pr)==TRUE] <- 0
+# drop unreported casillas
+sel <- which(pr$efec==0)
+pr[sel,]
+pr <- pr[-sel,]
+
+# consolida secciones
+pr$fch <- ave(pr$fch, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$amlo <- ave(pr$amlo, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$rmp <- ave(pr$rmp, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$pna <- ave(pr$pna, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$asdc <- ave(pr$asdc, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
+
+# version secciones
+pr.se <- pr
+# shares
+pr.se$fch  <- pr.se$fch/pr.se$efec
+pr.se$rmp <- pr.se$rmp/pr.se$efec
+pr.se$amlo06 <- pr.se$amlo/pr.se$efec
+pr.se$pna  <- pr.se$pna/pr.se$efec
+pr.se$asdc  <- pr.se$asdc/pr.se$efec
+pr.se$amlo <- NULL
+pr.se$casilla <- NULL
+
+# consolida municipios
+pr$fch <- ave(pr$fch, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$rmp <- ave(pr$rmp, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$pna <- ave(pr$pna, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$asdc <- ave(pr$asdc, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
+pr$seccion <- NULL
+pr$disn <- pr$casilla <- NULL
+# export munic aggregates
+write.csv(pr, file = "../municipios/pre2006.csv", row.names = FALSE)
+
+# shares
+pr$fch  <- pr$fch/pr$efec
+pr$rmp <- pr$rmp/pr$efec
+pr$amlo06 <- pr$amlo/pr$efec
+pr$pna <- pr$pna/pr$efec
+pr$asdc <- pr$asdc/pr$efec
+pr$amlo <- NULL
+pr <- pr[,c("edon","munn","fch","rmp","amlo06","pna","asdc","efec","lisnom")]
+
+# version municipios
+pr.mu <- pr
+rm(pr)
+
+########
 # 2012 #
 ########
-pr <- read.csv(file = "eum2012all/datos_computos_casillas_presidente.csv", sep = "|", stringsAsFactors = FALSE)
-
-pr <- pr[, c("ID_ESTADO", "D_DISTRITO","SECCION","ID_CASILLA", "TIPO_CASILLA","EXT_CONTIGUA", "NUMERO_VOTOS_VALIDOS","PAN","PRI","PRD", "PVEM","PT","MC", "PANAL","PRI_PVEM","PRD_PT_MC", "PRD_PT","PRD_MC","PT_MC", "ID_MUNICIPIO","LISTA_NOMINAL")]
-
-sel <- which(colnames(pr)=="ID_ESTADO")
-colnames(pr)[sel] <- "edon"
-sel <- which(colnames(pr)=="D_DISTRITO")
-colnames(pr)[sel] <- "disn"
-sel <- which(colnames(pr)=="SECCION")
-colnames(pr)[sel] <- "seccion"
-sel <- which(colnames(pr)=="ID_CASILLA")
-colnames(pr)[sel] <- "casn"
-sel <- which(colnames(pr)=="TIPO_CASILLA")
-colnames(pr)[sel] <- "cast"
-sel <- which(colnames(pr)=="EXT_CONTIGUA")
-colnames(pr)[sel] <- "casc"
-sel <- which(colnames(pr)=="ID_MUNICIPIO")
-colnames(pr)[sel] <- "munn"
-sel <- which(colnames(pr)=="LISTA_NOMINAL")
-colnames(pr)[sel] <- "lisnom"
-sel <- which(colnames(pr)=="NUMERO_VOTOS_VALIDOS")
-colnames(pr)[sel] <- "efec"
-sel <- which(colnames(pr)=="PAN")
-colnames(pr)[sel] <- "pan"
-sel <- which(colnames(pr)=="PRI")
-colnames(pr)[sel] <- "pri"
-sel <- which(colnames(pr)=="PRD")
-colnames(pr)[sel] <- "prd"
-sel <- which(colnames(pr)=="PVEM")
-colnames(pr)[sel] <- "pvem"
-sel <- which(colnames(pr)=="PT")
-colnames(pr)[sel] <- "pt"
-sel <- which(colnames(pr)=="MC")
-colnames(pr)[sel] <- "mc"
-sel <- which(colnames(pr)=="PANAL")
-colnames(pr)[sel] <- "panal"
-sel <- which(colnames(pr)=="PRI_PVEM")
+#pr <- read.csv(file = "eum2012all/datos_computos_casillas_presidente.csv", sep = "|", stringsAsFactors = FALSE)
+pr <- read.csv(file = "pre2012.csv", sep = ",", stringsAsFactors = FALSE)
+sel <- which(colnames(pr)=="pripvem")
 colnames(pr)[sel] <- "pri.pvem"
-sel <- which(colnames(pr)=="PRD_PT_MC")
+sel <- which(colnames(pr)=="prdptmc")
 colnames(pr)[sel] <- "prd.pt.mc"
-sel <- which(colnames(pr)=="PRD_PT")
+sel <- which(colnames(pr)=="prdpt")
 colnames(pr)[sel] <- "prd.pt"
-sel <- which(colnames(pr)=="PRD_MC")
+sel <- which(colnames(pr)=="prdmc")
 colnames(pr)[sel] <- "prd.mc"
-sel <- which(colnames(pr)=="PT_MC")
+sel <- which(colnames(pr)=="ptmc")
 colnames(pr)[sel] <- "pt.mc"
-
-# consolida num casilla
-pr$tmp <- pr$casn
-sel <- which(pr$cast=="C")
-pr$casn[sel] <- paste(pr$tmp[sel], pr$cast[sel], pr$casc[sel], sep = "")
-pr$casn[-sel] <- paste(pr$tmp[-sel], pr$cast[-sel], sep = "")
-pr$cast <- pr$casc <- pr$tmp <- NULL
 
 # consolida voto amlo
 pr$amlo <- pr$prd + pr$pt + pr$mc + pr$prd.pt.mc + pr$prd.pt + pr$prd.mc + pr$pt.mc 
@@ -77,14 +106,19 @@ pr$pan <- NULL
 # efec
 pr$efec <- pr$panal + pr$amlo + pr$pena + pr$jvm
 # clean
-pr$casn <- pr$panal <- pr$lisnom <- pr$disn <- pr$munn <- NULL
+pr$TPEJF <- pr$OBSERVACIONES <- pr$nr <- pr$nul <- pr$tot <- NULL
+# sort cols
+pr <- pr[,c("edon","edo","disn","mun","seccion","casilla","pena","jvm","amlo","panal","efec","lisnom")]
 
 # consolida secciones
-pr$amlo <- ave(pr$amlo, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$pena <- ave(pr$pena, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$jvm <- ave(pr$jvm, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$amlo <- ave(pr$amlo, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$panal <- ave(pr$panal, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
+pr$casilla <- NULL
 
 # merge munn
 pr <- merge(x=sm, y=pr, by=c("edon","seccion"), all.x = FALSE, all.y = TRUE)
@@ -101,12 +135,16 @@ pr.se$jvm  <- pr.se$jvm/pr.se$efec
 pr.se$amlo <- NULL
 
 # consolida municipios
-pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$pena <- ave(pr$pena, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$jvm <- ave(pr$jvm, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$panal <- ave(pr$panal, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
-pr$seccion <- NULL
+pr$seccion <- pr$disn <- NULL
+# export munic aggregates
+write.csv(pr, file = "../municipios/pre2012.csv", row.names = FALSE)
 
 # shares
 pr$amlo12 <- pr$amlo/pr$efec
@@ -121,10 +159,55 @@ rm(pr)
 ####################################
 # 2015 prd (Anaya's neg. baseline) #
 ####################################
-df <- read.csv(file = "eum2015all/DiputadosMR2015.csv", sep = ",", stringsAsFactors = FALSE)
+# estos no incluyen extraordinaria disn=1 de ags para consolidar/exportar municipios
+df <- read.csv(file = "dip2015.csv", sep = ",", stringsAsFactors = FALSE)
+df$casilla <- paste(df$ID_CASILLA, df$TIPO_CASILLA, sep = "") # reportan disn=1 ags que fue anulado
+df <- df[, c("edon", "disn","seccion","casilla","pan","pri","prd", "pvem","pt","mc", "panal","morena","ph","pes","pri_pvem","prd_pt","indep1","indep2","lisnom")]
+sel <- which(colnames(df)=="pri_pvem")
+colnames(df)[sel] <- "pri.pvem"
+sel <- which(colnames(df)=="prd_pt")
+colnames(df)[sel] <- "prd.pt"
+# quita NAs
+df[1,]
+df[,15] <- as.numeric(df[,15])
+df[,16] <- as.numeric(df[,16])
+df[,17] <- as.numeric(df[,17])
+df[,18] <- as.numeric(df[,18])
+df[is.na(df)] <- 0
+# efec
+df$efec <- df$pan + df$pri + df$prd + df$pvem + df$pt + df$mc + df$panal + df$morena + df$ph + df$pes + df$pri.pvem + df$prd.pt + df$indep1 + df$indep2
+# merge munn
+df <- merge(x=sm, y=df, by=c("edon","seccion"), all.x = FALSE, all.y = TRUE)
+sel <- which(pr$seccion==0)
+pr <- pr[-sel,] # drop votos extranjero
+rm(sel)
 
+# consolida municipios
+df$seccion <- df$casilla <- df$disn <- NULL
+df$pan <- ave(df$pan, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$pri <- ave(df$pri, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$prd <- ave(df$prd, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$pvem <- ave(df$pvem, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$pt <- ave(df$pt, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$mc <- ave(df$mc, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$panal <- ave(df$panal, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$morena <- ave(df$morena, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$ph <- ave(df$ph, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$pes <- ave(df$pes, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$pri.pvem <- ave(df$pri.pvem, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$prd.pt <- ave(df$prd.pt, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$indep1 <- ave(df$indep1, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$indep2 <- ave(df$indep2, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$efec <- ave(df$efec, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df <- df[duplicated(df$edon*1000+df$munn)==FALSE, ]
+df$casn <- df$TOTAL_VOTOS <- NULL
+df[1,]
+# export munic aggregates
+write.csv(df, file = "../municipios/dip2015.csv", row.names = FALSE)
+
+# estos sí incluyen la extraordinaria de ags disn=1
+df <- read.csv(file = "../../datosBrutos/resultCasillas/eum2015all/DiputadosMR2015.csv", sep = ",", stringsAsFactors = FALSE) # ya tiene la extraordinaria 2015
 df <- df[, c("ID_ESTADO", "ID_DISTRITO","ID_MUNICIPIO","SECCION","CASILLA","TOTAL_VOTOS","PAN","PRI","PRD", "PVEM","PT","MC", "NVA_ALIANZA","MORENA","PH","ES","PAN_NVA_ALIANZA","PRI_PVEM","PRD_PT","CAND_IND1","CAND_IND2","LISTA_NOMINAL")]
-
 sel <- which(colnames(df)=="ID_ESTADO")
 colnames(df)[sel] <- "edon"
 sel <- which(colnames(df)=="ID_DISTRITO")
@@ -167,10 +250,8 @@ sel <- which(colnames(df)=="CAND_IND1")
 colnames(df)[sel] <- "indep1"
 sel <- which(colnames(df)=="CAND_IND2")
 colnames(df)[sel] <- "indep2"
-
 # quita NAs
 df[is.na(df)] <- 0
-
 # efec
 df$efec <- df$pan + df$pri + df$prd + df$pvem + df$pt + df$mc + df$panal + df$morena + df$ph + df$pes + df$pan.panal + df$pri.pvem + df$prd.pt + df$indep1 + df$indep2
 
@@ -181,6 +262,7 @@ df <- df[,c("edon","munn","seccion","prd15","efec")]
 # consolida secciones
 df$efec <- ave(df$efec, as.factor(df$edon*10000+df$seccion), FUN=sum, na.rm=TRUE)
 df$prd15 <- ave(df$prd15, as.factor(df$edon*10000+df$seccion), FUN=sum, na.rm=TRUE)
+df$morena <- ave(df$morena, as.factor(df$edon*10000+df$seccion), FUN=sum, na.rm=TRUE)
 df <- df[duplicated(df$edon*10000+df$seccion)==FALSE, ]
 
 # merge secciones to pr
@@ -208,13 +290,10 @@ rm(df)
 ########
 # 2018 #
 ########
-pr <- read.csv(file = "eum2018all/eum2018prca.csv", stringsAsFactors = FALSE)
-
+#pr <- read.csv(file = "eum2018all/eum2018prca.csv", stringsAsFactors = FALSE)
+pr <- read.csv(file = "pre2018.csv", sep = ",", stringsAsFactors = FALSE)
 # hace numéricos los votos
-pr$edon <- as.numeric(pr$edon)
-pr$disn <- as.numeric(pr$disn)
 pr$seccion <- as.numeric(pr$seccion)
-pr$TOTAL_VOTOS_CALCULADOS <- as.numeric(pr$TOTAL_VOTOS_CALCULADOS)
 pr$pan <- as.numeric(pr$pan)
 pr$pri <- as.numeric(pr$pri)
 pr$prd <- as.numeric(pr$prd)
@@ -225,66 +304,53 @@ pr$panal <- as.numeric(pr$panal)
 pr$morena <- as.numeric(pr$morena)
 pr$pes <- as.numeric(pr$pes)
 pr$pan.prd.mc <- as.numeric(pr$pan.prd.mc)
-pr$pan.prd <- as.numeric(pr$pan.prd)
-pr$pan.mc <- as.numeric(pr$pan.mc)
-pr$prd.mc <- as.numeric(pr$prd.mc)
 pr$pri.pvem.panal <- as.numeric(pr$pri.pvem.panal)
-pr$pri.pvem <- as.numeric(pr$pri.pvem)
-pr$pri.panal <- as.numeric(pr$pri.panal)
-pr$pvem.panal <- as.numeric(pr$pvem.panal)
 pr$morena.pt.pes <- as.numeric(pr$morena.pt.pes)
-pr$morena.pt <- as.numeric(pr$morena.pt)
-pr$pt.pes <- as.numeric(pr$pt.pes)
-pr$morena.pes <- as.numeric(pr$morena.pes)
-pr$indep1 <- as.numeric(pr$indep1)
-pr$indep2 <- as.numeric(pr$indep2)
+pr$bronco <- as.numeric(pr$bronco)
+pr$zavala <- as.numeric(pr$zavala)
 pr$nr <- as.numeric(pr$nr)
 pr$nul <- as.numeric(pr$nul)
 pr$lisnom <- as.numeric(pr$lisnom)
-             
 # cambia NAs por ceros
-tmp <- pr[, c("edon", "disn", "seccion", "TOTAL_VOTOS_CALCULADOS", "pan", "pri", "prd", "pvem", "pt", "mc", "panal", "morena", "pes", "pan.prd.mc", "pan.prd", "pan.mc", "prd.mc", "pri.pvem.panal", "pri.pvem", "pri.panal", "pvem.panal", "morena.pt.pes", "morena.pt", "pt.pes", "morena.pes", "indep1", "indep2", "nr", "nul", "lisnom")]
+tmp <- pr[, c("edon", "disn", "seccion", "pan", "pri", "prd", "pvem", "pt", "mc", "panal", "morena", "pes", "pan.prd.mc", "pri.pvem.panal", "morena.pt.pes", "bronco", "zavala", "nr", "nul", "lisnom")]
 tmp[is.na(tmp)==TRUE] <- 0
-pr[, c("edon", "disn", "seccion", "TOTAL_VOTOS_CALCULADOS", "pan", "pri", "prd", "pvem", "pt", "mc", "panal", "morena", "pes", "pan.prd.mc", "pan.prd", "pan.mc", "prd.mc", "pri.pvem.panal", "pri.pvem", "pri.panal", "pvem.panal", "morena.pt.pes", "morena.pt", "pt.pes", "morena.pes", "indep1", "indep2", "nr", "nul", "lisnom")] <- tmp
-
+pr[, c("edon", "disn", "seccion", "pan", "pri", "prd", "pvem", "pt", "mc", "panal", "morena", "pes", "pan.prd.mc", "pri.pvem.panal", "morena.pt.pes", "bronco", "zavala", "nr", "nul", "lisnom")] <- tmp
 # consolida amlo
-pr$amlo <- pr$morena + pr$pt + pr$pes + pr$morena.pt.pes + pr$morena.pt + pr$morena.pes + pr$pt.pes
+pr$amlo <- pr$morena + pr$pt + pr$pes + pr$morena.pt.pes
 pr$morena <- pr$pt <- pr$pes <- pr$morena.pt.pes <- pr$morena.pt <- pr$morena.pes <- pr$pt.pes <- NULL
 # consolida meade
-pr$jam <- pr$pri + pr$pvem + pr$panal + pr$pri.pvem.panal + pr$pri.pvem + pr$pri.panal + pr$pvem.panal
+pr$jam <- pr$pri + pr$pvem + pr$panal + pr$pri.pvem.panal
 pr$pri <- pr$pvem <- pr$panal <- pr$pri.pvem.panal <- pr$pri.pvem <- pr$pri.panal <- pr$pvem.panal <- NULL
 # consolida anaya
-pr$rac <- pr$pan + pr$prd + pr$mc + pr$pan.prd.mc + pr$pan.prd + pr$pan.mc + pr$prd.mc
+pr$rac <- pr$pan + pr$prd + pr$mc + pr$pan.prd.mc
 pr$pan <- pr$prd <- pr$mc <- pr$pan.prd.mc <- pr$pan.prd <- pr$pan.mc <- pr$prd.mc <- NULL
-
 # voto efec
-pr$efec <- pr$TOTAL_VOTOS_CALCULADOS - pr$nr - pr$nul
+pr$efec <- pr$rac + pr$jam + pr$amlo + pr$bronco
 # clean
-pr$TOTAL_VOTOS_CALCULADOS <- pr$nr <- pr$nul <- NULL
-pr$indep1 <- pr$indep2 <- NULL
-#pr$lisnom <- NULL
-#pr$cab <- NULL
+sel <- which(pr$seccion==0)
+pr <- pr[-sel,]
+pr$zavala <- pr$nr <- pr$nul <- NULL
 
 # consolida distritos
-sel <- which(pr$seccion==0)
-tmp <- pr[-sel,]
+tmp <- pr
 tmp$amlo <- ave(tmp$amlo, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$jam <- ave(tmp$jam, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$rac <- ave(tmp$rac, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
+tmp$bronco <- ave(tmp$bronco, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$efec <- ave(tmp$efec, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
 tmp$lisnom <- ave(tmp$lisnom, as.factor(tmp$edon*100+tmp$disn), FUN=sum, na.rm=TRUE)
-#
 tmp <- tmp[duplicated(tmp$edon*100+tmp$disn)==FALSE,]
-tmp$seccion <- tmp$casn <- tmp$CASILLA <- NULL
-head(tmp)
+tmp$seccion <- tmp$casilla <- NULL
+tmp <- tmp[,c("edon","disn","cab","rac","jam","amlo","bronco","efec","lisnom")]
 #
-write.csv(tmp, file = "eum2018all/eum2018prdf.csv", row.names = FALSE)
+write.csv(tmp, file = "../../datosBrutos/resultCasillas/eum2018all/eum2018prdf.csv", row.names = FALSE)
 prdf <- tmp
 
 # consolida secciones
 pr$amlo <- ave(pr$amlo, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$jam <- ave(pr$jam, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$rac <- ave(pr$rac, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$bronco <- ave(pr$bronco, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
 
@@ -314,11 +380,12 @@ pr <- pr.duplicata
 pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$jam <- ave(pr$jam, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$rac <- ave(pr$rac, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$bronco <- ave(pr$bronco, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
-pr$seccion <- NULL
 # clean
-pr$disn <- pr$casn <- pr$CASILLA <- NULL
+pr$seccion <- pr$disn <- pr$cab <- pr$casilla <- NULL
+pr <- pr[,c("edon","munn","rac","jam","amlo","bronco","efec","lisnom")]
 
 # shares
 pr$amlo18 <- pr$amlo/pr$efec
