@@ -386,6 +386,8 @@ pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 # clean
 pr$seccion <- pr$disn <- pr$cab <- pr$casilla <- NULL
 pr <- pr[,c("edon","munn","rac","jam","amlo","bronco","efec","lisnom")]
+# export munic aggregates
+write.csv(pr, file = "../municipios/pre2018.csv", row.names = FALSE)
 
 # shares
 pr$amlo18 <- pr$amlo/pr$efec
