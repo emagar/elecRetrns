@@ -39,6 +39,7 @@ pr$rmp <- ave(pr$rmp, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$pna <- ave(pr$pna, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$asdc <- ave(pr$asdc, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
 
 # version secciones
@@ -59,6 +60,8 @@ pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$pna <- ave(pr$pna, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$asdc <- ave(pr$asdc, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+head(pr)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 pr$seccion <- NULL
 pr$disn <- pr$casilla <- NULL
