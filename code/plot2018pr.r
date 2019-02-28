@@ -61,7 +61,6 @@ pr$pna <- ave(pr$pna, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$asdc <- ave(pr$asdc, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
-head(pr)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 pr$seccion <- NULL
 pr$disn <- pr$casilla <- NULL
@@ -121,6 +120,7 @@ pr$panal <- ave(pr$panal, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TR
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
+head(pr)
 pr$casilla <- NULL
 
 # merge munn
@@ -146,6 +146,7 @@ pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 pr$seccion <- pr$disn <- NULL
+pr$munn <- pr$edon*1000 + pr$munn # homogeneiza munn
 # export munic aggregates
 write.csv(pr, file = "../municipios/pre2012.csv", row.names = FALSE)
 
@@ -181,8 +182,8 @@ df[is.na(df)] <- 0
 df$efec <- df$pan + df$pri + df$prd + df$pvem + df$pt + df$mc + df$panal + df$morena + df$ph + df$pes + df$pri.pvem + df$prd.pt + df$indep1 + df$indep2
 # merge munn
 df <- merge(x=sm, y=df, by=c("edon","seccion"), all.x = FALSE, all.y = TRUE)
-sel <- which(pr$seccion==0)
-pr <- pr[-sel,] # drop votos extranjero
+sel <- which(df$seccion==0)
+#df <- df[-sel,] # drop votos extranjero
 rm(sel)
 
 # consolida municipios
@@ -202,6 +203,7 @@ df$prd.pt <- ave(df$prd.pt, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE
 df$indep1 <- ave(df$indep1, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
 df$indep2 <- ave(df$indep2, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
 df$efec <- ave(df$efec, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
+df$lisnom <- ave(df$lisnom, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
 df <- df[duplicated(df$edon*1000+df$munn)==FALSE, ]
 df$casn <- df$TOTAL_VOTOS <- NULL
 df[1,]
@@ -260,6 +262,7 @@ df$efec <- df$pan + df$pri + df$prd + df$pvem + df$pt + df$mc + df$panal + df$mo
 
 # sólo prd (voto conjunto se lo atribuyo completo)
 df$prd15 <- df$prd + df$prd.pt
+df[1,]
 df <- df[,c("edon","munn","seccion","prd15","efec")]
 
 # consolida secciones
@@ -355,6 +358,7 @@ pr$jam <- ave(pr$jam, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$rac <- ave(pr$rac, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$bronco <- ave(pr$bronco, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
 
 # merge munn
@@ -385,6 +389,7 @@ pr$jam <- ave(pr$jam, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$rac <- ave(pr$rac, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$bronco <- ave(pr$bronco, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
+pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 # clean
 pr$seccion <- pr$disn <- pr$cab <- pr$casilla <- NULL
