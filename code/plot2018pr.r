@@ -59,9 +59,10 @@ pr$rmp <- ave(pr$rmp, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$amlo <- ave(pr$amlo, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$pna <- ave(pr$pna, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$asdc <- ave(pr$asdc, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
-pr$efec <- ave(pr$efec, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
 pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*1000+pr$munn), FUN=sum, na.rm=TRUE)
-pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
+pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE,]
+# recompute efec
+pr$efec <- pr$fch + pr$rmp + pr$amlo + pr$pna + pr$asdc
 pr$seccion <- NULL
 pr$disn <- pr$casilla <- NULL
 # export munic aggregates
@@ -120,7 +121,6 @@ pr$panal <- ave(pr$panal, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TR
 pr$efec <- ave(pr$efec, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr$lisnom <- ave(pr$lisnom, as.factor(pr$edon*10000+pr$seccion), FUN=sum, na.rm=TRUE)
 pr <- pr[duplicated(pr$edon*10000+pr$seccion)==FALSE, ]
-head(pr)
 pr$casilla <- NULL
 
 # merge munn
@@ -206,7 +206,7 @@ df$efec <- ave(df$efec, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
 df$lisnom <- ave(df$lisnom, as.factor(df$edon*1000+df$munn), FUN=sum, na.rm=TRUE)
 df <- df[duplicated(df$edon*1000+df$munn)==FALSE, ]
 df$casn <- df$TOTAL_VOTOS <- NULL
-df[1,]
+df$munn <- df$edon*1000 + df$munn # homogeneiza munn
 # export munic aggregates
 write.csv(df, file = "../municipios/dip2015.csv", row.names = FALSE)
 
@@ -394,6 +394,7 @@ pr <- pr[duplicated(pr$edon*1000+pr$munn)==FALSE, ]
 # clean
 pr$seccion <- pr$disn <- pr$cab <- pr$casilla <- NULL
 pr <- pr[,c("edon","munn","rac","jam","amlo","bronco","efec","lisnom")]
+pr$munn <- pr$edon*1000 + pr$munn # homogeneiza munn
 # export munic aggregates
 write.csv(pr, file = "../municipios/pre2018.csv", row.names = FALSE)
 
