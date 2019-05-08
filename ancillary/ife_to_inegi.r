@@ -1084,9 +1084,10 @@ ife.to.inegi(c(1010,NA))
 # nums below 1001 return same num
 ife.to.inegi(1:11)
 
-# tmp
-d <- read.csv("tmp.csv")
-d$inegi <- ife.to.inegi(d$ife)
-d$mun <- ife.to.mun(d$ife)
+# apply here
+pth <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/aymu1997-present.incumbents.csv"
+d <- read.csv(pth, stringsAsFactors = FALSE)
 head(d)
-getwd()
+d$ife <- inegi.to.ife(d$inegi)
+d$mun <- ife.to.mun(d$ife)
+write.csv(d, file = pth, row.names = FALSE)

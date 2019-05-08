@@ -770,6 +770,9 @@ dat <- dat[sel,] # drop early years
 dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "aymu1997-present.coalAgg.csv", row.names = FALSE)
 
+dat <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
+dat[1,]
+
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
