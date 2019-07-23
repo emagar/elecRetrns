@@ -1,3 +1,8 @@
+next: 8-jul-2019
+- bring all data manipulations from incumbent-reelection.r to this script
+- invoke this script from incumbent-reelection.r
+
+
 rm(list = ls())
 wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(wd)
@@ -162,7 +167,7 @@ inc$win.prior <- gsub("conve", "mc", inc$win.prior)
 #
 inc$manipule <- inc$race.prior # manipulate a copy
 # 
-sel.tl <- which(inc$manipule=="Term-limited" & inc$win!="" & inc$win.prior!="")
+sel.tl <- which(inc$manipule=="Term-limited" & inc$win!="" & <- inc$win.prior!="")
 inc.sub <- inc[sel.tl,] # subset
 # n coalition members
 num <- gsub(pattern = "[^-]*", replacement = "", inc.sub$win, perl = TRUE) # keep hyphens only
