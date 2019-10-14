@@ -884,11 +884,11 @@ cps-14.006,2010,Amatenango de la Frontera,882,7006,7,6,7006,jul,4,pan-prd-conve-
 cps-15.006,2012,Amatenango de la Frontera,883,7006,7,6,7006,jul,1,pvem,EDDIE MAGNOL JIMENEZ FERNANDEZ,Term-limited-p-lost,,,0,0,0,
 cps-16.006,2015,Amatenango de la Frontera,884,7006,7,6,7006,jul,19,pri,EDWIN MARTINEZ MARTINEZ,Out-p-won,,,0,0,0,
 cps-17.006,2018,Amatenango de la Frontera,885,7006,7,6,7006,jul,1,pri,SAMUEL GOMEZ CARBAJAL,2021,no decia partido,,1,1,cps-14.006,
-cps-07.007,1988,Amatenango del Valle,886,7007,7,7,7007,oct,4,pri,SANTOS GOMEZ PEREZ,Term-limited-p-won,,inafed,0,0,cps-07.081,check
-cps-08.007,1991,Amatenango del Valle,887,7007,7,7,7007,oct,4,pri,PABLO GOMEZ PEREZ,Term-limited-p-lost,,inafed,0,0,cps-08.081,check
-cps-09.007,1995,Amatenango del Valle,888,7007,7,7,7007,oct,4,prd,FELICIANO BAUTISTA LOPEZ,Term-limited-p-lost,,inafed,0,0,cps-09.081,check
-cps-10.007,1998,Amatenango del Valle,889,7007,7,7,7007,oct,4,pri,JACINTO LOPEZ BAUTISTA,Term-limited-p-won,,,0,0,cps-10.081,check
-cps-11.007,2001,Amatenango del Valle,890,7007,7,7,7007,oct,7,pri,JUAN GOMEZ DIAZ,Term-limited-p-won,,,0,0,cps-11.081,check
+cps-07.007,1988,Amatenango del Valle,886,7007,7,7,7007,oct,4,pri,SANTOS GOMEZ PEREZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.081,check
+cps-08.007,1991,Amatenango del Valle,887,7007,7,7,7007,oct,4,pri,PABLO GOMEZ PEREZ,Term-limited-p-lost,ojo: dejar cps para el final,inafed,0,0,cps-08.081,check
+cps-09.007,1995,Amatenango del Valle,888,7007,7,7,7007,oct,4,prd,FELICIANO BAUTISTA LOPEZ,Term-limited-p-lost,ojo: dejar cps para el final,inafed,0,0,cps-09.081,check
+cps-10.007,1998,Amatenango del Valle,889,7007,7,7,7007,oct,4,pri,JACINTO LOPEZ BAUTISTA,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-10.081,check
+cps-11.007,2001,Amatenango del Valle,890,7007,7,7,7007,oct,7,pri,JUAN GOMEZ DIAZ,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-11.081,check
 cps-12.007,2004,Amatenango del Valle,891,7007,7,7,7007,oct,3,pri,JOSE DIAZ ZEPEDA,Term-limited-p-won,,,0,0,0,
 cps-13.007,2007,Amatenango del Valle,892,7007,7,7,7007,oct,7,pri,VICTOR ALVAREZ GOMEZ,Term-limited-p-won,,,0,0,0,
 cps-14.007,2010,Amatenango del Valle,893,7007,7,7,7007,jul,4,pri,JOSE LOPEZ PEREZ,Term-limited-p-lost,,,0,0,0,
@@ -956,7 +956,7 @@ cps-09.013,1995,Bochil,954,7013,7,13,7013,oct,4,pri,APOLINAR DIAZ DIAZ,Term-limi
 cps-10.013,1998,Bochil,955,7013,7,13,7013,oct,4,pri,JOSE DOLORES FLORES MALDONADO,Term-limited-p-lost,,,0,0,0,
 cps-11.013,2001,Bochil,956,7013,7,13,7013,oct,7,pvem,BELISARIO ZENTENO VELAZQUEZ,Term-limited-p-lost,,,0,0,0,
 cps-12.013,2004,Bochil,957,7013,7,13,7013,oct,3,prd-pt1,DANIEL MORALES ALVAREZ,Term-limited-p-lost,,,0,0,0,
-cps-13.013,2007,Bochil,958,7013,7,13,7013,oct,7,pri-pvem,ALEJANDRO FREGOSO ZENTENO,Term-limited-p-won,,,0,0,cps-13.015,check
+cps-13.013,2007,Bochil,958,7013,7,13,7013,oct,7,pri-pvem,ALEJANDRO FREGOSO ZENTENO,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-13.015,check
 cps-14.013,2010,Bochil,959,7013,7,13,7013,jul,4,pri,MILTON FERNANDO HERNANDEZ PEREZ,Term-limited-p-lost,,,0,0,0,
 cps-15.013,2012,Bochil,960,7013,7,13,7013,jul,1,pvem,MIGUEL SANCHEZ DIAZ,Term-limited-p-lost,,,0,0,0,
 cps-16.013,2015,Bochil,961,7013,7,13,7013,jul,19,pri,SERGIO ANTONIO ZENTENO ALBORES,Out-p-lost,,,0,0,0,
@@ -978,7 +978,7 @@ cps-09.015,1995,Cacahoatán,976,7015,7,15,7015,oct,4,prd,OSVALDO ARREOLA BARRERA
 cps-10.015,1998,Cacahoatán,977,7015,7,15,7015,oct,4,pri,ROMEO BERNABE OCHOA ACOSTA,Term-limited-p-won,,,0,0,0,
 cps-11.015,2001,Cacahoatán,978,7015,7,15,7015,oct,7,pri,ROSENDO SANCHEZ CASTAÑEDA,Term-limited-p-won,,,0,0,0,
 cps-12.015,2004,Cacahoatán,979,7015,7,15,7015,oct,3,pri,CARLOS ENRIQUE ALVAREZ MORALES,Term-limited-p-won,,,0,0,cps-16.015,
-cps-13.015,2007,Cacahoatán,980,7015,7,15,7015,oct,7,pri,ALEJANDRO FREGOSO ZENTENO,Term-limited-p-lost,,,0,0,cps-13.013,check
+cps-13.015,2007,Cacahoatán,980,7015,7,15,7015,oct,7,pri,ALEJANDRO FREGOSO ZENTENO,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-13.013,check
 cps-14.015,2010,Cacahoatán,981,7015,7,15,7015,jul,4,pan-prd-conve-pna,JESUS ARNULFO CASTILLO MILLA,Term-limited-p-lost,,,0,0,0,
 cps-15.015,2012,Cacahoatán,982,7015,7,15,7015,jul,1,pri,URIEL ISAI PEREZ MERIDA,Term-limited-p-lost,,,0,0,0,
 cps-16.015,2015,Cacahoatán,983,7015,7,15,7015,jul,19,pvem-pna,CARLOS ENRIQUE ALVAREZ MORALES,Beaten,,,1,1,cps-12.015,
@@ -1084,11 +1084,11 @@ cps-14.025,2010,Chapultenango,1082,7025,7,25,7025,jul,4,pan-prd-conve-pna,JOSE C
 cps-15.025,2012,Chapultenango,1083,7025,7,25,7025,jul,1,pri,ARIEL FERNANDEZ LOPEZ,Term-limited-p-lost,,,0,0,0,
 cps-16.025,2015,Chapultenango,1084,7025,7,25,7025,jul,19,pt1,BALDOMERO ALVAREZ RAMIREZ,Out-p-lost,,,0,0,0,
 cps-17.025,2018,Chapultenango,1085,7025,7,25,7025,jul,1,pmch,HEYDI NEYDI DOMINGUEZ PEREZ,2021,,,0,0,0,
-cps-07.026,1988,Chenalhó,1086,7026,7,26,7026,oct,4,pri,AGUSTIN GOMEZ GOMEZ,Term-limited-p-won,,inafed,0,0,cps-07.056,check
-cps-08.026,1991,Chenalhó,1087,7026,7,26,7026,oct,4,pri,ANTONIO PEREZ VAZQUEZ,Term-limited-p-lost,,inafed,0,0,cps-08.056,check
-cps-09.026,1995,Chenalhó,1088,7026,7,26,7026,oct,4,prd,MANUEL ARIAS PEREZ,Term-limited-p-lost,,inafed,0,0,cps-09.056,check
-cps-10.026,1998,Chenalhó,1089,7026,7,26,7026,oct,4,pri,ANTONIO PEREZ ARIAS,Term-limited-p-won,,,0,0,cps-10.056,check
-cps-11.026,2001,Chenalhó,1090,7026,7,26,7026,oct,7,pri,ARMANDO VAZQUEZ GOMEZ,Term-limited-p-won,,,0,0,cps-11.056,check
+cps-07.026,1988,Chenalhó,1086,7026,7,26,7026,oct,4,pri,AGUSTIN GOMEZ GOMEZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.056,check
+cps-08.026,1991,Chenalhó,1087,7026,7,26,7026,oct,4,pri,ANTONIO PEREZ VAZQUEZ,Term-limited-p-lost,ojo: dejar cps para el final,inafed,0,0,cps-08.056,check
+cps-09.026,1995,Chenalhó,1088,7026,7,26,7026,oct,4,prd,MANUEL ARIAS PEREZ,Term-limited-p-lost,ojo: dejar cps para el final,inafed,0,0,cps-09.056,check
+cps-10.026,1998,Chenalhó,1089,7026,7,26,7026,oct,4,pri,ANTONIO PEREZ ARIAS,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-10.056,check
+cps-11.026,2001,Chenalhó,1090,7026,7,26,7026,oct,7,pri,ARMANDO VAZQUEZ GOMEZ,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-11.056,check
 cps-12.026,2004,Chenalhó,1091,7026,7,26,7026,oct,3,pri,VICTORIO JIMENEZ SANTIZ,Term-limited-p-won,,,0,0,0,
 cps-13.026,2007,Chenalhó,1092,7026,7,26,7026,oct,7,pri,ENRIQUE RUIZ RUIZ,Term-limited-p-won,,,0,0,0,
 cps-14.026,2010,Chenalhó,1093,7026,7,26,7026,jul,4,pri,MARTIN CRUZ AGUILAR,Term-limited-p-won,,,0,0,0,
@@ -1131,7 +1131,7 @@ cps-17.029,2018,Chicoasén,1129,7029,7,29,7029,nov,25,morena,ANA ISABEL HERRERA 
 cps-07.030,1988,Chicomuselo,1130,7030,7,30,7030,oct,4,pri,NOE VIRGILIO BRIONES BRIONES,Term-limited-p-won,,inafed,0,0,0,
 cps-08.030,1991,Chicomuselo,1131,7030,7,30,7030,oct,4,pri,HUMBERTO FLORES CASTELLANOS,Term-limited-p-won,,inafed,0,0,0,
 cps-09.030,1995,Chicomuselo,1132,7030,7,30,7030,oct,4,pri,JOSE ANTONIO ROSALES GARCIA,Term-limited-p-won,,inafed,0,0,0,
-cps-10.030,1998,Chicomuselo,1133,7030,7,30,7030,oct,4,pri,JOSE LUIS MORALES MEZA,Term-limited-p-won,,,1,1,cps-09.017,check
+cps-10.030,1998,Chicomuselo,1133,7030,7,30,7030,oct,4,pri,JOSE LUIS MORALES MEZA,Term-limited-p-won,ojo: dejar cps para el final,,1,1,cps-09.017,check
 cps-11.030,2001,Chicomuselo,1134,7030,7,30,7030,oct,7,pri,RAFAEL HERNANDEZ MORALES,Term-limited-p-won,,,0,0,0,
 cps-12.030,2004,Chicomuselo,1135,7030,7,30,7030,oct,3,pri,ROMEO MORALES MEZA,Term-limited-p-lost,,,0,0,0,
 cps-13.030,2007,Chicomuselo,1136,7030,7,30,7030,oct,7,prd-pt1,JULIO CESAR VELAZQUEZ CALDERON,Term-limited-p-won,,,0,0,0,
@@ -1266,7 +1266,7 @@ cps-15.042,2012,Ixhuatán,1264,7042,7,42,7042,jul,1,prd-pt1-conve,PABLO FAVIAN L
 cps-16.042,2015,Ixhuatán,1265,7042,7,42,7042,jul,19,prd,DORA MARIA DIAZ RUIZ,Beaten,,,0,0,0,
 cps-17.042,2018,Ixhuatán,1266,7042,7,42,7042,jul,1,pt1-morena-pes,HORACIO DOMINGUEZ CASTELLANOS,2021,,,1,1,cps-12.042,
 cps-07.043,1988,Ixtacomitán,1267,7043,7,43,7043,oct,4,pri,MANUEL ANGEL HERNANDEZ RECINOS,Term-limited-p-won,,inafed,0,0,0,
-cps-08.043,1991,Ixtacomitán,1268,7043,7,43,7043,oct,4,pri,MANUEL ANGEL DIAZ GONZALEZ,Term-limited-p-won,,inafed,0,0,cps-13.047,check
+cps-08.043,1991,Ixtacomitán,1268,7043,7,43,7043,oct,4,pri,MANUEL ANGEL DIAZ GONZALEZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-13.047,check
 cps-09.043,1995,Ixtacomitán,1269,7043,7,43,7043,oct,4,pri,AGUSTIN REYES CASTELLANOS,Term-limited-p-lost,,inafed,0,0,0,
 cps-10.043,1998,Ixtacomitán,1270,7043,7,43,7043,oct,4,pan,JESUS DEL CARMEN REYES ZUÑIGA,Term-limited-p-lost,,,0,0,0,
 cps-11.043,2001,Ixtacomitán,1271,7043,7,43,7043,oct,7,pri,ROLDAN ALVAREZ CRUZ,Term-limited-p-lost,,,0,0,cps-14.043,
@@ -1347,7 +1347,7 @@ cps-11.050,2001,Libertad--La,1345,7050,7,50,7050,oct,7,pan,ARMANDO LANDERO LANDE
 cps-12.050,2004,Libertad--La,1346,7050,7,50,7050,oct,3,pan,ISIDRO SANCHEZ DAMAS,Term-limited-p-lost,,,0,0,0,
 cps-13.050,2007,Libertad--La,1347,7050,7,50,7050,oct,7,pri,JOE LUIS LIZCANO LOPEZ,Term-limited-p-won,,,0,0,0,
 cps-14.050,2010,Libertad--La,1348,7050,7,50,7050,jul,4,pri,PEDRO POTENCCIANO LIZCANO,Term-limited-p-lost,,,0,0,0,
-cps-15.050,2012,Libertad--La,1349,7050,7,50,7050,jul,1,pan,JOSE ALFREDO LOPEZ HERNANDEZ,Term-limited-p-lost,,,1,1,cps-08.042,check
+cps-15.050,2012,Libertad--La,1349,7050,7,50,7050,jul,1,pan,JOSE ALFREDO LOPEZ HERNANDEZ,Term-limited-p-lost,ojo: dejar cps para el final,,1,1,cps-08.042,check
 cps-16.050,2015,Libertad--La,1350,7050,7,50,7050,jul,19,pchu,GAMALIEL LOPEZ ARCOS,Out-p-lost,,,0,0,0,
 cps-17.050,2018,Libertad--La,1351,7050,7,50,7050,jul,1,pmch,SONIA DEL CARMEN LOPEZ MARIN,2021,,,0,0,0,
 cps-10.051,1998,Mapastepec,1352,7051,7,51,7051,oct,4,prd,0,Term-limited-p-lost,,,0,0,0,
@@ -1399,11 +1399,11 @@ cps-14.055,2010,Metapa,1397,7055,7,55,7055,jul,4,pan-prd-conve-pna,MANUEL RUIZ F
 cps-15.055,2012,Metapa,1398,7055,7,55,7055,jul,1,pri,EVERARDO ESCOBAR VAZQUEZ,Term-limited-p-lost,,,0,0,0,
 cps-16.055,2015,Metapa,1399,7055,7,55,7055,jul,19,pvem-pna,MARIA SONIA TAPIA PINEDA,Out-p-won,,,0,0,0,
 cps-17.055,2018,Metapa,1400,7055,7,55,7055,jul,1,pna,AREMI BALBOA VICTORIO,2021,,,0,0,0,
-cps-07.056,1988,Mitontic,1401,7056,7,56,7056,oct,4,pri,AGUSTIN GOMEZ GOMEZ,Term-limited-p-won,,inafed,0,0,cps-07.026,check
-cps-08.056,1991,Mitontic,1402,7056,7,56,7056,oct,4,pri,ANTONIO PEREZ VAZQUEZ,Term-limited-p-won,,inafed,0,0,cps-08.026,check
-cps-09.056,1995,Mitontic,1403,7056,7,56,7056,oct,4,pri,MANUEL ARIAS PEREZ,Term-limited-p-won,,inafed,0,0,cps-09.026,check
-cps-10.056,1998,Mitontic,1404,7056,7,56,7056,oct,4,pri,ANTONIO PEREZ ARIAS,Term-limited-p-won,,,0,0,cps-10.026,check
-cps-11.056,2001,Mitontic,1405,7056,7,56,7056,oct,7,pri,ARMANDO VAZQUEZ GOMEZ,Term-limited-p-won,,,0,0,cps-11.026,check
+cps-07.056,1988,Mitontic,1401,7056,7,56,7056,oct,4,pri,AGUSTIN GOMEZ GOMEZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.026,check
+cps-08.056,1991,Mitontic,1402,7056,7,56,7056,oct,4,pri,ANTONIO PEREZ VAZQUEZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-08.026,check
+cps-09.056,1995,Mitontic,1403,7056,7,56,7056,oct,4,pri,MANUEL ARIAS PEREZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-09.026,check
+cps-10.056,1998,Mitontic,1404,7056,7,56,7056,oct,4,pri,ANTONIO PEREZ ARIAS,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-10.026,check
+cps-11.056,2001,Mitontic,1405,7056,7,56,7056,oct,7,pri,ARMANDO VAZQUEZ GOMEZ,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-11.026,check
 cps-12.056,2004,Mitontic,1406,7056,7,56,7056,oct,3,pri,MARIANO ORDOÑEZ RODRIGUEZ,Term-limited-p-won,,,0,0,0,
 cps-13.056,2007,Mitontic,1407,7056,7,56,7056,oct,7,pri,FRANCISCO MENDEZ MENDES,Term-limited-p-won,,,0,0,0,
 cps-14.056,2010,Mitontic,1408,7056,7,56,7056,jul,4,pri,FELICIANO MENDEZ ORTIZ,Term-limited-p-won,,,0,0,0,
@@ -1515,7 +1515,7 @@ cps-09.066,1995,Pantelhó,1513,7066,7,66,7066,oct,4,prd,ADAN SANCHEZ SANCHEZ,Ter
 cps-10.066,1998,Pantelhó,1514,7066,7,66,7066,oct,4,pri,SEBASTIAN DIAZ SANTIZ,Term-limited-p-won,,,0,0,0,
 cps-11.066,2001,Pantelhó,1515,7066,7,66,7066,oct,7,pri,ALBERTO CRUZ GUTIERREZ,Term-limited-p-lost,,,0,0,0,
 cps-12.066,2004,Pantelhó,1516,7066,7,66,7066,oct,3,prd-pt1,ARMANDO JUAREZ CRUZ,Term-limited-p-won,,,0,0,0,
-cps-13.066,2007,Pantelhó,1517,7066,7,66,7066,oct,7,prd,HUMBERTO GONZALEZ LOPEZ,Term-limited-p-won,,,1,1,cps-11.088,check
+cps-13.066,2007,Pantelhó,1517,7066,7,66,7066,oct,7,prd,HUMBERTO GONZALEZ LOPEZ,Term-limited-p-won,ojo: dejar cps para el final,,1,1,cps-11.088,check
 cps-14.066,2010,Pantelhó,1518,7066,7,66,7066,jul,4,pan-prd-conve-pna,NICOLAS GOMEZ HERNANDEZ,Term-limited-p-won,,,0,0,0,
 cps-15.066,2012,Pantelhó,1519,7066,7,66,7066,jul,1,prd-pt1-conve,MIGUEL ENTZIN CRUZ,Term-limited-p-won,,,0,0,0,
 cps-16.066,2015,Pantelhó,1520,7066,7,66,7066,jul,19,prd,MACARIO CRUZ GUTIERREZ,Out-p-won,,,0,0,0,
@@ -1563,10 +1563,10 @@ cps-14.070,2010,Porvenir--El,1561,7070,7,70,7070,jul,4,pt1,NEYMAN TOMAS ROBLERO 
 cps-15.070,2012,Porvenir--El,1562,7070,7,70,7070,jul,1,prd-pt1-conve,FIDEL GONZALEZ DIAZ,Term-limited-p-lost,,,0,0,0,
 cps-16.070,2015,Porvenir--El,1563,7070,7,70,7070,jul,19,pchu,JOSUE MAXIMILIANO GONZALEZ PEREZ,Reelected,,,0,0,cps-17.070,
 cps-17.070,2018,Porvenir--El,1564,7070,7,70,7070,nov,25,pchu,JOSUE MAXIMILIANO GONZALEZ PEREZ,2021,Extra quito triundo pt-morena-pes MARILENA RAMIREZ SARGENTO,,1,1,cps-16.070,
-cps-07.071,1988,Villa Comaltitlán,1565,7071,7,71,7107,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,,inafed,0,0,cps-07.102 cps-07.103,check
-cps-08.071,1991,Villa Comaltitlán,1566,7071,7,71,7107,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,,inafed,0,0,cps-08.102 cps-08.103,check
-cps-09.071,1995,Villa Comaltitlán,1567,7071,7,71,7107,oct,4,pri,RAUL F. LOPEZ GUZMAN,Term-limited-p-lost,,inafed,0,0,cps-09.102 cps-09.103,check
-cps-10.071,1998,Villa Comaltitlán,1568,7071,7,71,7107,oct,4,prd,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,,,0,0,cps-10.102 cps-10.103,check
+cps-07.071,1988,Villa Comaltitlán,1565,7071,7,71,7107,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.102 cps-07.103,check
+cps-08.071,1991,Villa Comaltitlán,1566,7071,7,71,7107,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-08.102 cps-08.103,check
+cps-09.071,1995,Villa Comaltitlán,1567,7071,7,71,7107,oct,4,pri,RAUL F. LOPEZ GUZMAN,Term-limited-p-lost,ojo: dejar cps para el final,inafed,0,0,cps-09.102 cps-09.103,check
+cps-10.071,1998,Villa Comaltitlán,1568,7071,7,71,7107,oct,4,prd,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-10.102 cps-10.103,check
 cps-11.071,2001,Villa Comaltitlán,1569,7071,7,71,7107,oct,7,pri,ROBERTO LOPEZ VAZQUEZ,Term-limited-p-lost,,,0,0,0,
 cps-12.071,2004,Villa Comaltitlán,1570,7071,7,71,7107,oct,3,pvem,RUBEN PEREZ GOMEZ,Term-limited-p-lost,,,0,0,0,
 cps-13.071,2007,Villa Comaltitlán,1571,7071,7,71,7107,oct,7,pri,JOSE PASCUAL COELLO CASTILLO,Term-limited-p-lost,,,0,0,0,
@@ -1589,7 +1589,7 @@ cps-07.073,1988,Rayón,1587,7073,7,73,7072,oct,4,pri,ANTONIO HERNANDEZ ZENTENO,T
 cps-08.073,1991,Rayón,1588,7073,7,73,7072,oct,4,pri,JOSE E MAZARIEGOS ZENTENO,Term-limited-p-won,,inafed,0,0,0,
 cps-09.073,1995,Rayón,1589,7073,7,73,7072,oct,4,pri,VICTOR MANUEL FLORES GOMEZ,Term-limited-p-lost,,inafed,0,0,0,
 cps-10.073,1998,Rayón,1590,7073,7,73,7072,oct,4,pan,EDUARDO CAMACHO SUAREZ,Term-limited-p-lost,,,0,0,0,
-cps-11.073,2001,Rayón,1591,7073,7,73,7072,oct,7,pri,JUAN BERSAIN DIAZ PEREZ,Term-limited-p-lost,,,0,0,cps-15.022,check
+cps-11.073,2001,Rayón,1591,7073,7,73,7072,oct,7,pri,JUAN BERSAIN DIAZ PEREZ,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-15.022,check
 cps-12.073,2004,Rayón,1592,7073,7,73,7072,oct,3,prd,HORELIO AGUILAR AGUILAR,Term-limited-p-lost,,,0,0,0,
 cps-13.073,2007,Rayón,1593,7073,7,73,7072,oct,7,pan,JAIME ANTONIO MAZARIEGOS ZENTENO,Term-limited-p-lost,,,0,0,0,
 cps-14.073,2010,Rayón,1594,7073,7,73,7072,jul,4,pvem,NICACIO CAMACHO SUAREZ,Term-limited-p-lost,,,0,0,0,
@@ -1667,11 +1667,11 @@ cps-14.080,2010,Siltepec,1665,7080,7,80,7081,jul,4,pri,BELLANER PEREZ ANZUETO,Te
 cps-15.080,2012,Siltepec,1666,7080,7,80,7081,jul,1,pri,JOSE TRINIDAD RAMIREZ MUÑOZ,Term-limited-p-lost,,,1,1,cps-10.080,
 cps-16.080,2015,Siltepec,1667,7080,7,80,7081,jul,19,pchu,LEYVER AUSEL ROBLERO ANGEL,Out-p-lost,,,0,0,0,
 cps-17.080,2018,Siltepec,1668,7080,7,80,7081,jul,1,pri,PEDRO DAMIAN GONZALEZ ARRIAGA,2021,,,0,0,0,
-cps-07.081,1988,Simojovel,1669,7081,7,81,7082,oct,4,pri,SANTOS GOMEZ PEREZ,Term-limited-p-won,,inafed,0,0,cps-07.007,check
-cps-08.081,1991,Simojovel,1670,7081,7,81,7082,oct,4,pri,PABLO GOMEZ PEREZ,Term-limited-p-won,,inafed,0,0,cps-08.007,check
-cps-09.081,1995,Simojovel,1671,7081,7,81,7082,oct,4,pri,FELICIANO BAUTISTA LOPEZ,Term-limited-p-won,,inafed,0,0,cps-09.007,check
-cps-10.081,1998,Simojovel,1672,7081,7,81,7082,oct,4,pri,JACINTO LOPEZ BAUTISTA,Term-limited-p-won,,,0,0,cps-10.007,check
-cps-11.081,2001,Simojovel,1673,7081,7,81,7082,oct,7,pri,JUAN GOMEZ DIAZ,Term-limited-p-won,,,0,0,cps-11.007,check
+cps-07.081,1988,Simojovel,1669,7081,7,81,7082,oct,4,pri,SANTOS GOMEZ PEREZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.007,check
+cps-08.081,1991,Simojovel,1670,7081,7,81,7082,oct,4,pri,PABLO GOMEZ PEREZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-08.007,check
+cps-09.081,1995,Simojovel,1671,7081,7,81,7082,oct,4,pri,FELICIANO BAUTISTA LOPEZ,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-09.007,check
+cps-10.081,1998,Simojovel,1672,7081,7,81,7082,oct,4,pri,JACINTO LOPEZ BAUTISTA,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-10.007,check
+cps-11.081,2001,Simojovel,1673,7081,7,81,7082,oct,7,pri,JUAN GOMEZ DIAZ,Term-limited-p-won,ojo: dejar cps para el final,,0,0,cps-11.007,check
 cps-12.081,2004,Simojovel,1674,7081,7,81,7082,oct,3,pri,RAMIRO GOMEZ DOMINGUEZ,Term-limited-p-lost,,,0,0,0,
 cps-13.081,2007,Simojovel,1675,7081,7,81,7082,oct,7,pt1-conve,JOSE AMIR PEREZ CONDE,Term-limited-p-lost,,,0,0,0,
 cps-14.081,2010,Simojovel,1676,7081,7,81,7082,jul,4,pri,JUAN GOMEZ DOMINGUEZ,Term-limited-p-won,,,0,0,0,
@@ -1748,7 +1748,7 @@ cps-07.088,1988,Sunuapa,1746,7088,7,88,7089,oct,4,pri,NELSON CASTELLANOS ALVAREZ
 cps-08.088,1991,Sunuapa,1747,7088,7,88,7089,oct,4,pri,ROSELINO CASTELLANOS SANCHEZ,Term-limited-p-won,,inafed,0,0,0,
 cps-09.088,1995,Sunuapa,1748,7088,7,88,7089,oct,4,pri,FAUSTINO GARDUZA SANCHEZ,Term-limited-p-won,,inafed,0,0,0,
 cps-10.088,1998,Sunuapa,1749,7088,7,88,7089,oct,4,pri,MIGUEL HERNANDEZ CASTELLANOS,Term-limited-p-won,,,0,0,0,
-cps-11.088,2001,Sunuapa,1750,7088,7,88,7089,oct,7,pri,HUMBERTO GONZALEZ LOPEZ,Term-limited-p-lost,,,0,0,cps-13.066,check
+cps-11.088,2001,Sunuapa,1750,7088,7,88,7089,oct,7,pri,HUMBERTO GONZALEZ LOPEZ,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-13.066,check
 cps-12.088,2004,Sunuapa,1751,7088,7,88,7089,oct,3,pt1,MARTHA CASTELLANOS PEREZ,Term-limited-p-lost,,,0,0,0,
 cps-13.088,2007,Sunuapa,1752,7088,7,88,7089,oct,7,pri-pvem,LORENZO LUJANO HERNANDEZ,Term-limited-p-lost,,,0,0,0,
 cps-14.088,2010,Sunuapa,1753,7088,7,88,7089,jul,4,pan-prd-conve-pna,JAVIER GONZALEZ HERNANDEZ,Term-limited-p-lost,,,0,0,0,
@@ -1875,10 +1875,10 @@ cps-14.101,2010,Tuxtla Gutiérrez,1873,7101,7,101,7102,jul,4,pan-prd-conve-pna,S
 cps-15.101,2012,Tuxtla Gutiérrez,1874,7101,7,101,7102,jul,1,prd-pt1-conve,SAMUEL TOLEDO CORDOVA TOLEDO,Term-limited-p-lost,,,0,0,0,
 cps-16.101,2015,Tuxtla Gutiérrez,1875,7101,7,101,7102,jul,19,pri-pvem-pna-pchu,LUIS FERNANDO CASTELLANOS CAL Y MAYOR,Out-p-lost,,,0,0,0,
 cps-17.101,2018,Tuxtla Gutiérrez,1876,7101,7,101,7102,jul,1,pt1-morena-pes,CARLOS ORSOE MORALES VAZQUEZ,2021,,,0,0,0,
-cps-07.102,1988,Tuxtla Chico,1877,7102,7,102,7101,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,,inafed,0,0,cps-07.071 cps-07.103,check
-cps-08.102,1991,Tuxtla Chico,1878,7102,7,102,7101,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,,inafed,0,0,cps-08.071 cps-08.103,check
-cps-09.102,1995,Tuxtla Chico,1879,7102,7,102,7101,oct,4,pri,RAUL F LOPEZ GUZMAN,Term-limited-p-won,,inafed,0,0,cps-09.071 cps-09.103,check
-cps-10.102,1998,Tuxtla Chico,1880,7102,7,102,7101,oct,4,pri,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,,,0,0,cps-10.071 cps-10.103,check
+cps-07.102,1988,Tuxtla Chico,1877,7102,7,102,7101,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.071 cps-07.103,check
+cps-08.102,1991,Tuxtla Chico,1878,7102,7,102,7101,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-08.071 cps-08.103,check
+cps-09.102,1995,Tuxtla Chico,1879,7102,7,102,7101,oct,4,pri,RAUL F LOPEZ GUZMAN,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-09.071 cps-09.103,check
+cps-10.102,1998,Tuxtla Chico,1880,7102,7,102,7101,oct,4,pri,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-10.071 cps-10.103,check
 cps-11.102,2001,Tuxtla Chico,1881,7102,7,102,7101,oct,7,pasd,ARNULFO HERNANDEZ VENTURA,Term-limited-p-lost,,,0,0,0,
 cps-12.102,2004,Tuxtla Chico,1882,7102,7,102,7101,oct,3,pan,EDI MORALES CASTELLANOS,Term-limited-p-lost,,,0,0,0,
 cps-13.102,2007,Tuxtla Chico,1883,7102,7,102,7101,oct,7,pri,OSVALDO GARCIA SOLIS,Term-limited-p-lost,,,0,0,0,
@@ -1886,10 +1886,10 @@ cps-14.102,2010,Tuxtla Chico,1884,7102,7,102,7101,jul,4,pan-prd-conve-pna,JOSE A
 cps-15.102,2012,Tuxtla Chico,1885,7102,7,102,7101,jul,1,pan,MARIO HUMBERTO SOLIS HERNANDEZ,Term-limited-p-lost,,,0,0,0,
 cps-16.102,2015,Tuxtla Chico,1886,7102,7,102,7101,jul,19,pvem-pna,JUAN CARLOS ORELLANA GARCIA,Out-p-lost,,,0,0,0,
 cps-17.102,2018,Tuxtla Chico,1887,7102,7,102,7101,jul,1,pt1-morena-pes,DEYSI LIZBETH GONZALEZ AGUILAR,2021,,,0,0,0,
-cps-07.103,1988,Tuzantán,1888,7103,7,103,7103,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,,inafed,0,0,cps-07.071 cps-07.102,check
-cps-08.103,1991,Tuzantán,1889,7103,7,103,7103,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,,inafed,0,0,cps-08.071 cps-08.102,check
-cps-09.103,1995,Tuzantán,1890,7103,7,103,7103,oct,4,pri,RAUL F LOPEZ GUZMAN,Term-limited-p-won,,inafed,0,0,cps-09.071 cps-09.102,check
-cps-10.103,1998,Tuzantán,1891,7103,7,103,7103,oct,4,pri,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,,,0,0,cps-10.071 cps-10.102,check
+cps-07.103,1988,Tuzantán,1888,7103,7,103,7103,oct,4,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-07.071 cps-07.102,check
+cps-08.103,1991,Tuzantán,1889,7103,7,103,7103,oct,4,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-08.071 cps-08.102,check
+cps-09.103,1995,Tuzantán,1890,7103,7,103,7103,oct,4,pri,RAUL F LOPEZ GUZMAN,Term-limited-p-won,ojo: dejar cps para el final,inafed,0,0,cps-09.071 cps-09.102,check
+cps-10.103,1998,Tuzantán,1891,7103,7,103,7103,oct,4,pri,PEDRO LOPEZ BAUTISTA,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-10.071 cps-10.102,check
 cps-11.103,2001,Tuzantán,1892,7103,7,103,7103,oct,7,prd,HERNAN ALVAREZ BORRALLES,Term-limited-p-lost,,,0,0,0,
 cps-12.103,2004,Tuzantán,1893,7103,7,103,7103,oct,3,pan,DIDIER ROJAS GONZALEZ,Term-limited-p-won,,,0,0,0,
 cps-13.103,2007,Tuzantán,1894,7103,7,103,7103,oct,7,pan,CARLOS VILLANUEVA ESPINOSA,Term-limited-p-won,,,0,0,0,
@@ -2001,14 +2001,14 @@ cps-16.113,2015,Aldama,1999,7113,7,113,7112,jul,19,pri,DOMINGA PEREZ LOPEZ,Out-p
 cps-17.113,2018,Aldama,2000,7113,7,113,7112,jul,1,pri,VERONICA RUIZ PEREZ,2021,,,0,0,0,
 cps-11.114,2001,Benemérito de las Américas,2001,7114,7,114,7113,oct,7,pri,0,Term-limited-p-lost,,,0,0,0,
 cps-12.114,2004,Benemérito de las Américas,2002,7114,7,114,7113,oct,3,pt1,JORGE BOUCHOT GARCIA,Term-limited-p-lost,,,0,0,0,
-cps-13.114,2007,Benemérito de las Américas,2003,7114,7,114,7113,oct,7,prd,ANICETO CONTRERAS VAZQUEZ,Term-limited-p-lost,,,0,0,cps-13.115,check
+cps-13.114,2007,Benemérito de las Américas,2003,7114,7,114,7113,oct,7,prd,ANICETO CONTRERAS VAZQUEZ,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-13.115,check
 cps-14.114,2010,Benemérito de las Américas,2004,7114,7,114,7113,jul,4,pri,FRANCISCO CABRERA RONQUILLO,Term-limited-p-lost,,,0,0,0,
 cps-15.114,2012,Benemérito de las Américas,2005,7114,7,114,7113,jul,1,pvem,GABRIEL GOMEZ JAIMES,Term-limited-p-lost,,,0,0,0,
 cps-16.114,2015,Benemérito de las Américas,2006,7114,7,114,7113,jul,19,pchu,ENEYDA JARAMILLO GOMEZ,Beaten,,,0,0,0,
 cps-17.114,2018,Benemérito de las Américas,2007,7114,7,114,7113,jul,1,pna,JUAN GOMEZ MORALES,2021,,,0,0,0,
 cps-11.115,2001,Maravilla Tenejapa,2008,7115,7,115,7114,oct,7,pri,GENARO VAZQUEZ SILBA,Term-limited-p-won,,,0,0,0,
 cps-12.115,2004,Maravilla Tenejapa,2009,7115,7,115,7114,oct,3,pri,PEDRO SANTIZ GOMEZ,Term-limited-p-lost,,,0,0,0,
-cps-13.115,2007,Maravilla Tenejapa,2010,7115,7,115,7114,oct,7,prd-pt1-conve,ANICETO CONTRERAS VAZQUEZ,Term-limited-p-lost,,,0,0,cps-13.114,check
+cps-13.115,2007,Maravilla Tenejapa,2010,7115,7,115,7114,oct,7,prd-pt1-conve,ANICETO CONTRERAS VAZQUEZ,Term-limited-p-lost,ojo: dejar cps para el final,,0,0,cps-13.114,check
 cps-14.115,2010,Maravilla Tenejapa,2011,7115,7,115,7114,jul,4,pri,ELIAS GOMEZ HERNANDEZ,Term-limited-p-won,,,0,0,0,
 cps-15.115,2012,Maravilla Tenejapa,2012,7115,7,115,7114,jul,1,pri,ANTONIO SANTIZ GOMEZ,Term-limited-p-lost,,,0,0,0,
 cps-16.115,2015,Maravilla Tenejapa,2013,7115,7,115,7114,jul,19,prd,ANTONIO HERNANDEZ LOPEZ,Out-p-lost,,,0,0,0,
