@@ -19853,28 +19853,28 @@ yuc-14.075,2010,Teabo,19851,31075,31,75,31075,may,16,pan,FREDY ARIEL PERAZA CAAM
 yuc-15.075,2012,Teabo,19852,31075,31,75,31075,jul,1,pri-pvem,ROBERTO ALEJANDRO LOPEZ MAY,Term-limited-p-won,,,0,0,0,
 yuc-16.075,2015,Teabo,19853,31075,31,75,31075,jun,7,pri,DANIEL FABIAN PUC NAAL,Out-p-won,,,0,0,0,
 yuc-17.075,2018,Teabo,19854,31075,31,75,31075,jul,1,pri,FABIOLA LOEZA NOVELO,2021,,,0,0,0,
-yuc-07.076,1990,Tecoh,19855,31076,31,76,31076,may,24,pri,ROGER ACHACH CIMA,Term-limited-p-won,,inafed,0,0,yuc-07.077,check
-yuc-08.076,1993,Tecoh,19856,31076,31,76,31076,may,24,pri,AUSENCIO CANUL CHAN,Term-limited-p-won,,inafed,0,0,yuc-08.077,check
-yuc-09.076,1995,Tecoh,19857,31076,31,76,31076,may,24,pri,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-won,,inafed,0,0,yuc-11.076 yuc-15.076 yuc-09.077,check
-yuc-10.076,1998,Tecoh,19858,31076,31,76,31076,may,24,pri,VICTOR MANUEL MAY MAAS,Term-limited-p-won,,,0,0,yuc-10.077,check
-yuc-11.076,2001,Tecoh,19859,31076,31,76,31076,may,27,pri,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-lost,,,1,1,yuc-09.076 yuc-15.076 yuc-09.077,check
-yuc-12.076,2004,Tecoh,19860,31076,31,76,31076,may,23,pan,FERNANDO AHMED ACHACH CASTRO,Term-limited-p-lost,,,0,0,0,
-yuc-13.076,2007,Tecoh,19861,31076,31,76,31076,may,20,pri,VICTOR ARMANDO PACHECO MAY,Term-limited-p-won,,,0,0,0,
-yuc-14.076,2010,Tecoh,19862,31076,31,76,31076,may,16,pri,JOEL ISAAC ACHACH DIAZ,Term-limited-p-won,,,0,0,yuc-16.076,
-yuc-15.076,2012,Tecoh,19863,31076,31,76,31076,jul,1,pri-pvem,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-won,,,1,1,yuc-09.076 yuc-11.076 yuc-09.077,check
-yuc-16.076,2015,Tecoh,19864,31076,31,76,31076,jun,7,pri,JOEL ISAAC ACHACH DIAZ,Out-p-lost,,,1,1,yuc-14.076,
-yuc-17.076,2018,Tecoh,19865,31076,31,76,31076,jul,1,pan-mc,FELIPE AUDOMARO MAY ITZA,2021,,,0,0,0,
-yuc-07.077,1990,Tekal,19866,31077,31,77,31077,may,24,pri,ROGER ACHACH CIMA,Term-limited-p-won,,inafed,0,0,yuc-07.076,check
-yuc-08.077,1993,Tekal,19867,31077,31,77,31077,may,24,pri,AUSENCIO CANUL CHAN,Term-limited-p-won,,inafed,0,0,yuc-08.076,check
-yuc-09.077,1995,Tekal,19868,31077,31,77,31077,may,24,pri,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-lost,,inafed,0,0,yuc-09.076 yuc-11.076 yuc-15.076,check
-yuc-10.077,1998,Tekal,19869,31077,31,77,31077,may,24,pan,VICTOR MANUEL MAY MAAS,Term-limited-p-won,,,0,0,yuc-10.076,check
-yuc-11.077,2001,Tekal,19870,31077,31,77,31077,may,27,pan-prd,FAUSTO ARMANDO CRIOLLO VAZQUEZ,Term-limited-p-won,,,0,0,0,
-yuc-12.077,2004,Tekal,19871,31077,31,77,31077,may,23,pan,JOSE ANTONIO ARAGON UICAB,Term-limited-p-lost,,,0,0,yuc-15.077 yuc-17.077,
-yuc-13.077,2007,Tekal,19872,31077,31,77,31077,may,20,pri,CARLOS ROBERTO BORGES MAY,Term-limited-p-lost,,,0,0,0,
-yuc-14.077,2010,Tekal,19873,31077,31,77,31077,may,16,pan,JOSE EFRAIN KAUIL NOH,Term-limited-p-won,,,0,0,0,
-yuc-15.077,2012,Tekal,19874,31077,31,77,31077,jul,1,pan,JOSE ANTONIO ARAGON UICAB,Term-limited-p-won,,,1,1,yuc-12.077 yuc-17.077,
-yuc-16.077,2015,Tekal,19875,31077,31,77,31077,jun,7,pan,FRANCISCO VERDE ARAGON,Out-p-won,,,0,0,0,
-yuc-17.077,2018,Tekal,19876,31077,31,77,31077,jul,1,pan-mc,JOSE ANTONIO ARAGON UICAB,2021,,,1,1,yuc-12.077 yuc-15.077,
+yuc-07.076,1990,Tecóh,19855,31076,31,76,31076,may,24,pri,ROGER ACHACH CIMA,Term-limited-p-won,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",,0,0,yuc-07.077,ok
+yuc-08.076,1993,Tecóh,19856,31076,31,76,31076,may,24,pri,AUSENCIO CANUL CHAN,Term-limited-p-won,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",,0,0,yuc-08.077,ok
+yuc-09.076,1995,Tecóh,19857,31076,31,76,31076,may,24,pri,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-won,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",,0,0,yuc-11.076 yuc-15.076 yuc-09.077,ok
+yuc-10.076,1998,Tecóh,19858,31076,31,76,31076,may,24,pri,VICTOR MANUEL MAY MAAS,Term-limited-p-won,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",,0,0,yuc-10.077,ok
+yuc-11.076,2001,Tecóh,19859,31076,31,76,31076,may,27,pri,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-lost,,,1,1,yuc-09.076 yuc-15.076 yuc-09.077,ok
+yuc-12.076,2004,Tecóh,19860,31076,31,76,31076,may,23,pan,FERNANDO AHMED ACHACH CASTRO,Term-limited-p-lost,,,0,0,0,
+yuc-13.076,2007,Tecóh,19861,31076,31,76,31076,may,20,pri,VICTOR ARMANDO PACHECO MAY,Term-limited-p-won,,,0,0,0,
+yuc-14.076,2010,Tecóh,19862,31076,31,76,31076,may,16,pri,JOEL ISAAC ACHACH DIAZ,Term-limited-p-won,,,0,0,yuc-16.076,
+yuc-15.076,2012,Tecóh,19863,31076,31,76,31076,jul,1,pri-pvem,RAUL FELIPE QUINTAL CARVAJAL,Term-limited-p-won,,,1,1,yuc-09.076 yuc-11.076 yuc-09.077,ok
+yuc-16.076,2015,Tecóh,19864,31076,31,76,31076,jun,7,pri,JOEL ISAAC ACHACH DIAZ,Out-p-lost,,,1,1,yuc-14.076,
+yuc-17.076,2018,Tecóh,19865,31076,31,76,31076,jul,1,pan-mc,FELIPE AUDOMARO MAY ITZA,2021,,,0,0,0,
+yuc-07.077,1990,Tekal de Venegas,19866,31077,31,77,31077,may,24,pri,,Term-limited-p-won,,,0,0,,ok
+yuc-08.077,1993,Tekal de Venegas,19867,31077,31,77,31077,may,24,pri,,Term-limited-p-won,,,0,0,,ok
+yuc-09.077,1995,Tekal de Venegas,19868,31077,31,77,31077,may,24,pri,,Term-limited-p-lost,,,0,0,,ok
+yuc-10.077,1998,Tekal de Venegas,19869,31077,31,77,31077,may,24,pan,JOSE ANTONIO ARAGON UICAB,Term-limited-p-won,,https://www.yucatan.com.mx/yucatan/sera-alcalde-cuarta-ocasion,0,0,yuc-11.077 yuc-15.077 yuc-17.077,ok
+yuc-11.077,2001,Tekal de Venegas,19870,31077,31,77,31077,may,27,pan-prd,FAUSTO ARMANDO CRIOLLO VAZQUEZ,Term-limited-p-won,,,0,0,0,
+yuc-12.077,2004,Tekal de Venegas,19871,31077,31,77,31077,may,23,pan,JOSE ANTONIO ARAGON UICAB,Term-limited-p-lost,,,1,1,yuc-09.077 yuc-15.077 yuc-17.077,
+yuc-13.077,2007,Tekal de Venegas,19872,31077,31,77,31077,may,20,pri,CARLOS ROBERTO BORGES MAY,Term-limited-p-lost,,,0,0,0,
+yuc-14.077,2010,Tekal de Venegas,19873,31077,31,77,31077,may,16,pan,JOSE EFRAIN KAUIL NOH,Term-limited-p-won,,,0,0,0,
+yuc-15.077,2012,Tekal de Venegas,19874,31077,31,77,31077,jul,1,pan,JOSE ANTONIO ARAGON UICAB,Term-limited-p-won,,,1,1,yuc-09.077 yuc-12.077 yuc-17.077,
+yuc-16.077,2015,Tekal de Venegas,19875,31077,31,77,31077,jun,7,pan,FRANCISCO VERDE ARAGON,Out-p-won,,,0,0,0,
+yuc-17.077,2018,Tekal de Venegas,19876,31077,31,77,31077,jul,1,pan-mc,JOSE ANTONIO ARAGON UICAB,2021,,,1,1,yuc-09.077 yuc-12.077 yuc-15.077,
 yuc-07.078,1990,Tekantó,19877,31078,31,78,31078,may,24,pri,JOSE MANUEL R. PECH CRUZ,Term-limited-p-won,,inafed,0,0,0,
 yuc-08.078,1993,Tekantó,19878,31078,31,78,31078,may,24,pri,FEDERICO CARRILLO CANDILA,Term-limited-p-won,,inafed,0,0,0,
 yuc-09.078,1995,Tekantó,19879,31078,31,78,31078,may,24,pri,JULIO HUMBERTO CARRILLO BUENFIL,Term-limited-p-lost,,inafed,0,0,0,
