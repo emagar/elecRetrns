@@ -8,8 +8,8 @@ ags-12.001,2004,Aguascalientes,6,1001,1,1,1001,ago,1,pan,MARTIN OROZCO SANDOVAL,
 ags-13.001,2007,Aguascalientes,7,1001,1,1,1001,ago,5,pri,FRANCISCO GABRIEL ARELLANO ESPINOSA,Term-limited-p-won,,,0,0,0,
 ags-14.001,2010,Aguascalientes,8,1001,1,1,1001,jul,4,pri-pvem-pna,LORENA MARTINEZ RODRIGUEZ,Term-limited-p-lost,,,0,0,0,
 ags-15.001,2013,Aguascalientes,9,1001,1,1,1001,jul,7,pan,JUAN ANTONIO MARTIN DEL CAMPO,Term-limited-p-won,,,0,0,0,
-ags-16.001,2016,Aguascalientes,10,1001,1,1,1001,jun,5,pan,MARIA TERESA JIMENEZ ESQUIVEL,Reelected,,,0,0,ags-17.001,
-ags-17.001,2019,Aguascalientes,11,1001,1,1,1001,jun,2,pan,MARIA TERESA JIMENEZ ESQUIVEL,Term-limited-pending,,,1,1,ags-16.001,
+ags-16.001,2016,Aguascalientes,10,1001,1,1,1001,jun,5,pan,MARIA TERESA JIMENEZ ESQUIVEL,Reelected,,,0,0,ags-17.001,check
+ags-17.001,2019,Aguascalientes,11,1001,1,1,1001,jun,2,pan,MARIA TERESA JIMENEZ ESQUIVEL,Term-limited-pending,,,1,1,ags-16.001,check
 ags-08.002,1992,Asientos,12,1002,1,2,1002,ago,2,pri,REYES CARLIN RANGEL,Term-limited-p-won,,inafed,0,0,0,
 ags-09.002,1995,Asientos,13,1002,1,2,1002,ago,2,pri,JESUS MARIA VILLALOBOS LECHUGA,Term-limited-p-lost,,inafed,0,0,0,
 ags-10.002,1998,Asientos,14,1002,1,2,1002,ago,2,pan,DANIEL BRIANO HERNANDEZ,Term-limited-p-lost,,,0,0,0,
@@ -28,15 +28,15 @@ ags-12.003,2004,Calvillo,26,1003,1,3,1003,ago,1,pan,HUMBERTO GALLEGOS ESCOBAR,Te
 ags-13.003,2007,Calvillo,27,1003,1,3,1003,ago,5,pan-pna,JESUS SOTO LOPEZ,Term-limited-p-won,,wikipedia,0,0,0,
 ags-14.003,2010,Calvillo,28,1003,1,3,1003,jul,4,pri-pvem-pna,JORGE ALBERTO MARTINEZ VILLALOBOS,Term-limited-p-lost,,,0,0,0,
 ags-15.003,2013,Calvillo,29,1003,1,3,1003,jul,7,pan,FRANCISCO JAVIER LUEVANO NUÑEZ,Term-limited-p-won,,,0,0,0,
-ags-16.003,2016,Calvillo,30,1003,1,3,1003,jun,5,pan,ADAN VALDIVIA LOPEZ,Reelected,,,0,0,ags-17.003,
-ags-17.003,2019,Calvillo,31,1003,1,3,1003,jun,2,pan,ADAN VALDIVIA LOPEZ,Term-limited-pending,,,1,1,ags-16.003,
+ags-16.003,2016,Calvillo,30,1003,1,3,1003,jun,5,pan,ADAN VALDIVIA LOPEZ,Reelected,,,0,0,ags-17.003,check
+ags-17.003,2019,Calvillo,31,1003,1,3,1003,jun,2,pan,ADAN VALDIVIA LOPEZ,Term-limited-pending,,,1,1,ags-16.003,check
 ags-08.004,1992,Cosío,32,1004,1,4,1004,ago,2,pri,CARLOS ESTRADA VALDEZ,Term-limited-p-lost,,inafed,0,0,0,
 ags-09.004,1995,Cosío,33,1004,1,4,1004,ago,2,pan,MAGDALENO CERVANTES MARTINEZ,Term-limited-p-lost,,inafed,0,0,0,
-ags-10.004,1998,Cosío,34,1004,1,4,1004,ago,2,pri,PABLO CORTES DE LA CRUZ,Term-limited-p-won,,,0,0,ags-14.004,
+ags-10.004,1998,Cosío,34,1004,1,4,1004,ago,2,pri,PABLO CORTES DE LA CRUZ,Term-limited-p-won,,,0,0,ags-14.004,check
 ags-11.004,2001,Cosío,35,1004,1,4,1004,ago,5,pri,ARNULFO CERVANTES ADAME,Term-limited-p-lost,,,0,0,0,
 ags-12.004,2004,Cosío,36,1004,1,4,1004,ago,1,pan,LAMBERTO ADAME OCON,Term-limited-p-lost,,,0,0,0,
 ags-13.004,2007,Cosío,37,1004,1,4,1004,ago,5,pri,ANDRES DE SANTIAGO DE LUNA,Term-limited-p-won,,,0,0,0,
-ags-14.004,2010,Cosío,38,1004,1,4,1004,jul,4,pri-pvem-pna,PABLO CORTES DE LA CRUZ,Term-limited-p-won,,,1,1,ags-10.004,
+ags-14.004,2010,Cosío,38,1004,1,4,1004,jul,4,pri-pvem-pna,PABLO CORTES DE LA CRUZ,Term-limited-p-won,,,1,1,ags-10.004,check
 ags-15.004,2013,Cosío,39,1004,1,4,1004,jul,7,pri,GUSTAVO PADILLA ADAME,Term-limited-p-lost,,,0,0,0,
 ags-16.004,2016,Cosío,40,1004,1,4,1004,jun,5,indep,JUAN MANUEL VILLALPANDO ADAME,Beaten,,,0,0,0,
 ags-17.004,2019,Cosío,41,1004,1,4,1004,jun,2,pvem,EUSEBIO ENRIQUE DELGADO ESPARZA,2022,,,0,0,0,
@@ -47,9 +47,9 @@ ags-11.005,2001,Jesús María,45,1005,1,5,1005,ago,5,pri,GILBERTO RODRIGUEZ DOMI
 ags-12.005,2004,Jesús María,46,1005,1,5,1005,ago,1,pan,LUIS FERNANDO FLORES MARTINEZ,Term-limited-p-lost,,,0,0,0,
 ags-13.005,2007,Jesús María,47,1005,1,5,1005,ago,5,pri,GREGORIO ZAMARRIPA DELGADO,Term-limited-p-won,,,0,0,0,
 ags-14.005,2010,Jesús María,48,1005,1,5,1005,jul,4,pri-pvem-pna,MARTIN GERARDO CHAVEZ DE BOSQUE,Term-limited-p-lost,,,0,0,0,
-ags-15.005,2013,Jesús María,49,1005,1,5,1005,jul,7,pan,JOSE ANTONIO ARAMBULA LOPEZ,Term-limited-p-won,,,0,0,ags-17.005,
+ags-15.005,2013,Jesús María,49,1005,1,5,1005,jul,7,pan,JOSE ANTONIO ARAMBULA LOPEZ,Term-limited-p-won,,,0,0,ags-17.005,check
 ags-16.005,2016,Jesús María,50,1005,1,5,1005,jun,5,pan,NOEL MATA ATILANO,Out-p-won,,,0,0,0,
-ags-17.005,2019,Jesús María,51,1005,1,5,1005,jun,2,pan,JOSE ANTONIO ARAMBULA LOPEZ,2022,,,1,1,ags-15.005,
+ags-17.005,2019,Jesús María,51,1005,1,5,1005,jun,2,pan,JOSE ANTONIO ARAMBULA LOPEZ,2022,,,1,1,ags-15.005,check
 ags-08.006,1992,Pabellón,52,1006,1,6,1006,ago,2,pri,JOSE MEDINA ESPARZA,Term-limited-p-won,,inafed,0,0,0,
 ags-09.006,1995,Pabellón,53,1006,1,6,1006,ago,2,pri,FAUSTINO QUEZADA CHAVEZ,Term-limited-p-won,,inafed,0,0,0,
 ags-10.006,1998,Pabellón,54,1006,1,6,1006,ago,2,pri,ARTURO ROBLES AGUILAR,Term-limited-p-won,,,0,0,0,
@@ -58,8 +58,8 @@ ags-12.006,2004,Pabellón,56,1006,1,6,1006,ago,1,pan,EDUARDO CONSTANTINO TORRES 
 ags-13.006,2007,Pabellón,57,1006,1,6,1006,ago,5,pan-pna,ARTURO FERNANDEZ ESTRADA,Term-limited-p-won,,,0,0,0,
 ags-14.006,2010,Pabellón,58,1006,1,6,1006,jul,4,pri-pvem-pna,HECTOR RAUL GARCIA LUNA,Term-limited-p-won,,,0,0,0,
 ags-15.006,2013,Pabellón,59,1006,1,6,1006,jul,7,pna,SERGIO MORENO SERNA,Term-limited-p-lost,,,0,0,0,
-ags-16.006,2016,Pabellón,60,1006,1,6,1006,jun,5,prd,CUAUHTEMOC ESCOBEDO TEJADA,Reelected,,,0,0,ags-17.006,
-ags-17.006,2019,Pabellón,61,1006,1,6,1006,jun,2,prd,CUAUHTEMOC ESCOBEDO TEJADA,Term-limited-pending,,,1,1,ags-16.006,
+ags-16.006,2016,Pabellón,60,1006,1,6,1006,jun,5,prd,CUAUHTEMOC ESCOBEDO TEJADA,Reelected,,,0,0,ags-17.006,check
+ags-17.006,2019,Pabellón,61,1006,1,6,1006,jun,2,prd,CUAUHTEMOC ESCOBEDO TEJADA,Term-limited-pending,,,1,1,ags-16.006,check
 ags-08.007,1992,Rincón de Romos,62,1007,1,7,1007,ago,2,pri,FRANCISCO JAVIER DIAZ HERNANDEZ,Term-limited-p-lost,,inafed,0,0,0,
 ags-09.007,1995,Rincón de Romos,63,1007,1,7,1007,ago,2,pan,JAVIER SANCHEZ TORRES,Term-limited-p-lost,,inafed,0,0,0,
 ags-10.007,1998,Rincón de Romos,64,1007,1,7,1007,ago,2,pri,JUAN JOSE PALACIOS AGUILAR,Term-limited-p-lost,,,0,0,0,
@@ -78,8 +78,8 @@ ags-12.008,2004,San José de Gracia,76,1008,1,8,1008,ago,1,pan,PEDRO ARMENDARIZ 
 ags-13.008,2007,San José de Gracia,77,1008,1,8,1008,ago,5,pan-pna,ARMANDO RODRIGUEZ DOMINGUEZ,Term-limited-p-won,,,0,0,0,
 ags-14.008,2010,San José de Gracia,78,1008,1,8,1008,jul,4,pri-pvem-pna,JUAN ANTONIO HERNANDEZ VALDIVIA,Term-limited-p-won,,,0,0,0,
 ags-15.008,2013,San José de Gracia,79,1008,1,8,1008,jul,7,pna,ANTONIO ALBERTO MARTINEZ RODRIGUEZ,Term-limited-p-lost,,,0,0,0,
-ags-16.008,2016,San José de Gracia,80,1008,1,8,1008,jun,5,pan,MARIA CRISTINA LOPEZ GONZALEZ,Reelected,,,0,0,ags-17.008,
-ags-17.008,2019,San José de Gracia,81,1008,1,8,1008,jun,2,pan,MARIA CRISTINA LOPEZ GONZALEZ,Term-limited-pending,,,1,1,ags-16.008,
+ags-16.008,2016,San José de Gracia,80,1008,1,8,1008,jun,5,pan,MARIA CRISTINA LOPEZ GONZALEZ,Reelected,,,0,0,ags-17.008,check
+ags-17.008,2019,San José de Gracia,81,1008,1,8,1008,jun,2,pan,MARIA CRISTINA LOPEZ GONZALEZ,Term-limited-pending,,,1,1,ags-16.008,check
 ags-08.009,1992,Tepezalá,82,1009,1,9,1009,ago,2,pri,HECTOR RAMIREZ PASILLAS,Term-limited-p-won,,inafed,0,0,0,
 ags-09.009,1995,Tepezalá,83,1009,1,9,1009,ago,2,pri,RAUL RUIZ DONDIEGO,Term-limited-p-lost,,inafed,0,0,0,
 ags-10.009,1998,Tepezalá,84,1009,1,9,1009,ago,2,pan,JOSE DE JESUS DELGADO DURON,Term-limited-p-lost,,,0,0,0,
@@ -88,8 +88,8 @@ ags-12.009,2004,Tepezalá,86,1009,1,9,1009,ago,1,pan,JORGE CRUZ PERALTA,Term-lim
 ags-13.009,2007,Tepezalá,87,1009,1,9,1009,ago,5,pan-pna,CANDIDO LOZA LOZA,Term-limited-p-won,,,0,0,0,
 ags-14.009,2010,Tepezalá,88,1009,1,9,1009,jul,4,pri-pvem-pna,JESUS SANTILLAN MEDINA,Term-limited-p-won,,,0,0,0,
 ags-15.009,2013,Tepezalá,89,1009,1,9,1009,jul,7,pri,PABLO MACIAS FLORES,Term-limited-p-lost,,,0,0,0,
-ags-16.009,2016,Tepezalá,90,1009,1,9,1009,jun,5,pvem,OMAR ISRAEL CAMARILLO,Reelected,,,0,0,ags-17.009,
-ags-17.009,2019,Tepezalá,91,1009,1,9,1009,jun,2,pvem,OMAR ISRAEL CAMARILLO,Term-limited-pending,,,1,1,ags-16.009,
+ags-16.009,2016,Tepezalá,90,1009,1,9,1009,jun,5,pvem,OMAR ISRAEL CAMARILLO,Reelected,,,0,0,ags-17.009,check
+ags-17.009,2019,Tepezalá,91,1009,1,9,1009,jun,2,pvem,OMAR ISRAEL CAMARILLO,Term-limited-pending,,,1,1,ags-16.009,check
 ags-08.010,1992,Llano--El,92,1010,1,10,1011,ago,2,pri,JESUS GUERRERO ESCOBEDO,Term-limited-p-won,,inafed,0,0,0,
 ags-09.010,1995,Llano--El,93,1010,1,10,1011,ago,2,pri,JUAN MANUEL RAMOS MIRELES,Term-limited-p-won,,inafed,0,0,0,
 ags-10.010,1998,Llano--El,94,1010,1,10,1011,ago,2,pri,JOSE MANUEL MARTINEZ RODRIGUEZ,Term-limited-p-won,,,0,0,0,
@@ -97,9 +97,9 @@ ags-11.010,2001,Llano--El,95,1010,1,10,1011,ago,5,pri,FRANCISCO SILVA MURILLO,Te
 ags-12.010,2004,Llano--El,96,1010,1,10,1011,ago,1,pan,JOSE DE JESUS RODRIGUEZ ONTIVEROS,Term-limited-p-lost,,,0,0,0,
 ags-13.010,2007,Llano--El,97,1010,1,10,1011,ago,5,pri,SALVADOR MARTIN DEL CAMPO,Term-limited-p-won,,,0,0,0,
 ags-14.010,2010,Llano--El,98,1010,1,10,1011,jul,4,pri-pvem-pna,JOSE LUIS MARTINEZ RODRIGUEZ,Term-limited-p-lost,,,0,0,0,
-ags-15.010,2013,Llano--El,99,1010,1,10,1011,jul,7,pt1,CEZAR PEDROZA ORTEGA,Term-limited-p-won,,,0,0,ags-17.010,
+ags-15.010,2013,Llano--El,99,1010,1,10,1011,jul,7,pt1,CEZAR PEDROZA ORTEGA,Term-limited-p-won,,,0,0,ags-17.010,check
 ags-16.010,2016,Llano--El,100,1010,1,10,1011,jun,5,pri-pt1-pna,RAMIRO SALAS PIZAÑA,Beaten,reran under pna and lost,,0,0,0,
-ags-17.010,2019,Llano--El,101,1010,1,10,1011,jun,2,pt1,CEZAR PEDROZA ORTEGA,2022,,,1,1,ags-15.010,
+ags-17.010,2019,Llano--El,101,1010,1,10,1011,jun,2,pt1,CEZAR PEDROZA ORTEGA,2022,,,1,1,ags-15.010,check
 ags-08.011,1992,San Francisco de los Romo,102,1011,1,11,1010,ago,2,pri,FRANCISCO JAVIER MARTINEZ HERNANDEZ,Term-limited-p-won,,inafed,0,0,0,
 ags-09.011,1995,San Francisco de los Romo,103,1011,1,11,1010,ago,2,pri,JUAN ANTONIO REYES CASTAÑEDA,Term-limited-p-lost,,inafed,0,0,0,
 ags-10.011,1998,San Francisco de los Romo,104,1011,1,11,1010,ago,2,pan,ELIAS SANDOVAL RAMIREZ,Term-limited-p-lost,,,0,0,0,
@@ -127,11 +127,11 @@ bc-07.002,1989,Mexicali,125,2002,2,2,2002,jun,28,pri,MILTON CASTELLANOS GOUT,Ter
 bc-08.002,1992,Mexicali,126,2002,2,2,2002,jun,28,pri,FRANCISCO JOSE PEREZ TEJADA,Term-limited-p-lost,,inafed,0,0,0,
 bc-09.002,1995,Mexicali,127,2002,2,2,2002,jun,28,pan,EUGENIO ELORDUY WALTHER,Term-limited-p-won,,inafed,0,0,0,
 bc-10.002,1998,Mexicali,128,2002,2,2,2002,jun,28,pan,VICTOR HERMOSILLO CELADA,Term-limited-p-won,,,0,0,0,
-bc-11.002,2001,Mexicali,129,2002,2,2,2002,jul,8,pan-pvem,JAIME RAFAEL DIAZ OCHOA,Term-limited-p-won,,,0,0,bc-15.002,
+bc-11.002,2001,Mexicali,129,2002,2,2,2002,jul,8,pan-pvem,JAIME RAFAEL DIAZ OCHOA,Term-limited-p-won,,,0,0,bc-15.002,check
 bc-12.002,2004,Mexicali,130,2002,2,2,2002,ago,1,pri-pvem-pt1-pebc,SAMUEL ENRIQUE RAMOS FLORES,Term-limited-p-lost,,,0,0,0,
 bc-13.002,2007,Mexicali,131,2002,2,2,2002,ago,5,pan-pna-pes,RODOLFO VALDEZ GUTIERREZ,Term-limited-p-lost,,,0,0,0,
 bc-14.002,2010,Mexicali,132,2002,2,2,2002,jul,4,pri-pvem,FRANCISCO JOSE PEREZ TEJEDA PADILLA,Term-limited-p-lost,,,0,0,0,
-bc-15.002,2013,Mexicali,133,2002,2,2,2002,jul,7,pan-prd-pna-pebc,JAIME RAFAEL DIAZ OCHOA,Term-limited-p-won,,,1,1,bc-11.002,
+bc-15.002,2013,Mexicali,133,2002,2,2,2002,jul,7,pan-prd-pna-pebc,JAIME RAFAEL DIAZ OCHOA,Term-limited-p-won,,,1,1,bc-11.002,check
 bc-16.002,2016,Mexicali,134,2002,2,2,2002,jun,5,pan,GUSTAVO SANCHEZ VASQUEZ,Beaten,,,0,0,0,
 bc-17.002,2019,Mexicali,135,2002,2,2,2002,jun,2,morena-pt1-pvem-trans,MARINA (DEL PILAR) AVILA OLMEDA,2022,,,0,0,0,
 bc-06.003,1986,Tecate,136,2003,2,3,2003,jun,28,pri,JESUS MENDEZ ZAYAS,Term-limited-p-won,,inafed,0,0,0,
@@ -158,12 +158,12 @@ bc-14.004,2010,Tijuana,156,2004,2,4,2004,jul,4,pri-pvem,CARLOS WALTERIO BUSTAMAN
 bc-15.004,2013,Tijuana,157,2004,2,4,2004,jul,7,pri-pvem-pt1-pes,JORGE ENRIQUE ASTIAZARAN ORCI,Term-limited-p-lost,,,0,0,0,
 bc-16.004,2016,Tijuana,158,2004,2,4,2004,jun,5,pan,JUAN MANUEL GASTELUM BUENROSTRO,Beaten,,,0,0,0,
 bc-17.004,2019,Tijuana,159,2004,2,4,2004,jun,2,morena-pt1-pvem-trans,LUIS ARTURO GONZALEZ CRUZ,2022,,,0,0,0,
-bc-10.005,1998,Playas de Rosarito,160,2005,2,5,2005,jun,28,pan,SILVANO ABARCA MACKLIS,Term-limited-p-won,,,0,0,bc-15.005,
+bc-10.005,1998,Playas de Rosarito,160,2005,2,5,2005,jun,28,pan,SILVANO ABARCA MACKLIS,Term-limited-p-won,,,0,0,bc-15.005,check
 bc-11.005,2001,Playas de Rosarito,161,2005,2,5,2005,jul,8,pan-pvem,LUIS ENRIQUE DIAZ FELIX,Term-limited-p-won,,,0,0,0,
 bc-12.005,2004,Playas de Rosarito,162,2005,2,5,2005,ago,1,pan,JOSE ANTONIO MACIAS GARAY,Term-limited-p-lost,,,0,0,0,
 bc-13.005,2007,Playas de Rosarito,163,2005,2,5,2005,ago,5,pri-pvem-pebc,HUGO EDUARDO TORRES CHABERT,Term-limited-p-won,,,0,0,0,
 bc-14.005,2010,Playas de Rosarito,164,2005,2,5,2005,jul,4,pri-pvem,JAVIER ROBLES AGUIRRE,Term-limited-p-lost,,,0,0,0,
-bc-15.005,2013,Playas de Rosarito,165,2005,2,5,2005,jul,7,pan-prd-pna-pebc,SILVANO ABARCA MACKLIS,Term-limited-p-won,,,1,1,bc-10.005,
+bc-15.005,2013,Playas de Rosarito,165,2005,2,5,2005,jul,7,pan-prd-pna-pebc,SILVANO ABARCA MACKLIS,Term-limited-p-won,,,1,1,bc-10.005,check
 bc-16.005,2016,Playas de Rosarito,166,2005,2,5,2005,jun,5,pan,MIRNA CECILIA RINCON VARGAS,Beaten,,,0,0,0,
 bc-17.005,2019,Playas de Rosarito,167,2005,2,5,2005,jun,2,morena-pt1-pvem-trans,HILDA ARACELY BROWN FIGUEREDO,2022,,,0,0,0,
 bcs-07.001,1990,Comondú,168,3001,3,1,3001,feb,7,pri,RICARDO COVARRUBIAS VILLASEÑOR,Term-limited-p-lost,,inafed,0,0,0,
@@ -213,8 +213,8 @@ bcs-11.009,2002,Loreto,211,3009,3,9,3005,feb,3,pan,HOMERO DAVID CASTRO,Term-limi
 bcs-12.009,2005,Loreto,212,3009,3,9,3005,feb,6,pan,RODOLFO DAVIS OSUNA,Term-limited-p-lost,,,0,0,0,
 bcs-13.009,2008,Loreto,213,3009,3,9,3005,feb,3,prd-pt1-conve,YUAN YEE CUNNINGHAM,Term-limited-p-lost,,,0,0,0,
 bcs-14.009,2011,Loreto,214,3009,3,9,3005,feb,6,pri-pvem,JORGE ALBERTO AVILES PEREZ,Term-limited-p-lost,,,0,0,0,
-bcs-15.009,2015,Loreto,215,3009,3,9,3005,jun,7,pan-prs,ARELY ARCE PERALTA,Reelected,,,0,0,bcs-16.009,
-bcs-16.009,2018,Loreto,216,3009,3,9,3005,jul,1,pan-prs-prd-ph_bcs,ARELY ARCE PERALTA,Term-limited-pending,,,1,1,bcs-15.009,
+bcs-15.009,2015,Loreto,215,3009,3,9,3005,jun,7,pan-prs,ARELY ARCE PERALTA,Reelected,,,0,0,bcs-16.009,check
+bcs-16.009,2018,Loreto,216,3009,3,9,3005,jul,1,pan-prs-prd-ph_bcs,ARELY ARCE PERALTA,Term-limited-pending,,,1,1,bcs-15.009,check
 cam-07.001,1988,Calkiní,217,4001,4,1,4002,jul,6,pri,ANDY ARMIN URIBE CUEVAS,Term-limited-p-won,,inafed,0,0,0,
 cam-08.001,1991,Calkiní,218,4001,4,1,4002,jul,6,pri,ABELARDO MAYOR CUEVAS,Term-limited-p-won,,inafed,0,0,0,
 cam-09.001,1994,Calkiní,219,4001,4,1,4002,jul,6,pri,MIGUEL H RODRIGUEZ SUAREZ,Term-limited-p-won,,inafed,0,0,0,
@@ -2946,7 +2946,7 @@ dgo-12.005,2004,Durango,2944,10005,10,5,10005,jul,4,pri,JORGE HERRERA DELGADO,Te
 dgo-13.005,2007,Durango,2945,10005,10,5,10005,jul,1,pri-pd1-pna,JORGE HERNANDEZ CALDERA,Term-limited-p-won,,,0,0,0,
 dgo-14.005,2010,Durango,2946,10005,10,5,10005,jul,4,pri-pvem-pna-pd1,ADAN SORIA RAMIREZ,Term-limited-p-won,,,0,0,0,
 dgo-15.005,2013,Durango,2947,10005,10,5,10005,jul,7,pri-pvem-pna-pd1,VILLEGAS VILLAREAL ESTEBAN ALEJANDRO,Term-limited-p-lost,,,0,0,0,
-dgo-16.005,2016,Durango,2948,10005,10,5,10005,jun,5,pan-prd,JOSE RAMON ENRIQUEZ HERRERA,Out-p-won,destituido x congreso 11dic2018 tras fallo tepjf promo imagen rec pub; renom x mc 2019 lost,,0,0,0,
+dgo-16.005,2016,Durango,2948,10005,10,5,10005,jun,5,pan-prd,JOSE RAMON ENRIQUEZ HERRERA,Out-p-won,destituido x congreso 11dic2018 tras fallo tepjf promo imagen rec pub, renom x mc 2019 lost,,0,0,0
 dgo-17.005,2019,Durango,2949,10005,10,5,10005,jun,2,pan,JORGE ALEJANDRO SALUM DEL PALACIO,2022,,,0,0,0,
 dgo-07.006,1989,General Simón Bolívar,2950,10006,10,6,10006,jul,5,pri,EFREN AVILA GARCIA,Term-limited-p-won,,inafed,0,0,0,
 dgo-08.006,1992,General Simón Bolívar,2951,10006,10,6,10006,jul,5,pri,J. SANTANA MEDINA ESQUIVEL,Term-limited-p-won,,inafed,0,0,0,
@@ -14198,9 +14198,9 @@ qui-15.007,2013,Lázaro Cárdenas,14196,23007,23,7,23006,jul,7,pri-pvem-pna,LUCI
 qui-16.007,2016,Lázaro Cárdenas,14197,23007,23,7,23006,jun,5,pri-pvem-pna,EMILIO JIMENEZ ANCONA,Out-p-lost,,,0,0,0,
 qui-17.007,2018,Lázaro Cárdenas,14198,23007,23,7,23006,jul,1,pt1,JOSUE NIVARDO MENA VILLANUEVA,2021,,,0,0,0,
 qui-09.008,1996,Solidaridad,14199,23008,23,8,23008,feb,21,pri,RAFAEL ERNESTO MEDINA RIVERO,Term-limited-p-won,,inafed,0,0,0,
-qui-10.008,1999,Solidaridad,14200,23008,23,8,23008,feb,21,pri,MIGUEL RAMON MARTIN AZUETA	,Term-limited-p-won,,,0,0,0,
-qui-11.008,2002,Solidaridad,14201,23008,23,8,23008,feb,17,pri,JOSE GABRIEL C. MENDICUTI LORIA	,Term-limited-p-won,,,0,0,0,
-qui-12.008,2005,Solidaridad,14202,23008,23,8,23008,feb,6,pri-pvem,CARLOS MANUEL JOAQUIN GONZALEZ	,Term-limited-p-won,,,0,0,0,
+qui-10.008,1999,Solidaridad,14200,23008,23,8,23008,feb,21,pri,MIGUEL RAMON MARTIN AZUETA,,Term-limited-p-won,,,0,0,0
+qui-11.008,2002,Solidaridad,14201,23008,23,8,23008,feb,17,pri,JOSE GABRIEL C. MENDICUTI LORIA,,Term-limited-p-won,,,0,0,0
+qui-12.008,2005,Solidaridad,14202,23008,23,8,23008,feb,6,pri-pvem,CARLOS MANUEL JOAQUIN GONZALEZ,,Term-limited-p-won,,,0,0,0
 qui-13.008,2008,Solidaridad,14203,23008,23,8,23008,feb,3,pri,EDUARDO ROMAN ALCOCER,Term-limited-p-won,,,0,0,0,
 qui-14.008,2010,Solidaridad,14204,23008,23,8,23008,jul,4,pri-pvem-pna,FILIBERTO MARTINEZ MENDEZ,Term-limited-p-won,,,0,0,0,
 qui-15.008,2013,Solidaridad,14205,23008,23,8,23008,jul,7,pri,JOSE MAURICIO GONGORA ESCALANTE,Term-limited-p-lost,,,0,0,0,
