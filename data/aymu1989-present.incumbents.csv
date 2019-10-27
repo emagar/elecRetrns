@@ -2940,7 +2940,7 @@ dgo-17.004,2019,Cuencamé,2938,10004,10,4,10004,jun,2,pri,MARIA DE LOURDES MARTI
 dgo-07.005,1989,Durango,2939,10005,10,5,10005,jul,5,pri,JORGE CLEMENTE MOJICA VARGAS,Term-limited-p-lost,,inafed,0,0,0,
 dgo-08.005,1992,Durango,2940,10005,10,5,10005,jul,5,pt1,ALEJANDRO GONZALEZ YAÑEZ,Term-limited-p-won,,inafed,0,0,0,
 dgo-09.005,1995,Durango,2941,10005,10,5,10005,jul,5,pt1,MARCOS CRUZ MARTINEZ,Term-limited-p-lost,,inafed,0,0,0,
-dgo-10.005,1998,Durango,2942,10005,10,5,10005,jul,5,pri,ISMAEL ALFREDO HERNANDEZ DERAS,Term-limited-p-won,,,0,0,dgo-15.014,check
+dgo-10.005,1998,Durango,2942,10005,10,5,10005,jul,5,pri,ISMAEL ALFREDO HERNANDEZ DERAS,Term-limited-p-won,,,0,0,dgo-15.014,ok
 dgo-11.005,2001,Durango,2943,10005,10,5,10005,jul,1,pri,JOSE ROSAS AISPURO TORRES,Term-limited-p-won,,,0,0,0,
 dgo-12.005,2004,Durango,2944,10005,10,5,10005,jul,4,pri,JORGE HERRERA DELGADO,Term-limited-p-won,,,0,0,0,
 dgo-13.005,2007,Durango,2945,10005,10,5,10005,jul,1,pri-pd1-pna,JORGE HERNANDEZ CALDERA,Term-limited-p-won,,,0,0,0,
@@ -3044,7 +3044,7 @@ dgo-11.014,2001,Mezquital,3042,10014,10,14,10014,jul,1,pri,JULIAN GARCIA SALAS,T
 dgo-12.014,2004,Mezquital,3043,10014,10,14,10014,jul,4,pri,SANTIAGO SOTO LUGO,Term-limited-p-won,,,0,0,0,
 dgo-13.014,2007,Mezquital,3044,10014,10,14,10014,jul,1,pri-pna,MANUEL ESTRADA ESCALANTE,Term-limited-p-won,,,0,0,0,
 dgo-14.014,2010,Mezquital,3045,10014,10,14,10014,jul,4,pri-pvem-pna-pd1,FAUSTINO REYES FLORES,Term-limited-p-won,,,0,0,0,
-dgo-15.014,2013,Mezquital,3046,10014,10,14,10014,jul,7,pri-pvem-pna-pd1,HERNANDEZ DERAS ISMAEL,Term-limited-p-won,,,1,1,0,
+dgo-15.014,2013,Mezquital,3046,10014,10,14,10014,jul,7,pri-pvem-pna-pd1,HERNANDEZ DERAS ISMAEL,Term-limited-p-won,,,1,1,0,ok
 dgo-16.014,2016,Mezquital,3047,10014,10,14,10014,jun,5,pri-pvem-pd1-pna,RAMIRO MENDOZA SOLIS,Out-p-won,,,0,0,0,
 dgo-17.014,2019,Mezquital,3048,10014,10,14,10014,jun,2,pri,JOSE OSVALDO SANTILLAN GOMEZ,2022,,,0,0,0,
 dgo-07.015,1989,Nazas,3049,10015,10,15,10015,jul,5,pri,JOSE RAMON JIMENEZ DEL RIO,Term-limited-p-won,,inafed,0,0,0,
@@ -3070,7 +3070,7 @@ dgo-15.016,2013,Nombre de Dios,3068,10016,10,16,10016,jul,7,pri-pvem-pna-pd1,ROL
 dgo-16.016,2016,Nombre de Dios,3069,10016,10,16,10016,jun,5,pt1,JUAN FERNANDO SOLIS RIOS,Out-p-lost,,,0,0,0,
 dgo-17.016,2019,Nombre de Dios,3070,10016,10,16,10016,jun,2,pan-prd,DANIEL SIFUENTES SALAS,2022,,,0,0,0,
 dgo-07.017,1989,Ocampo,3071,10017,10,17,10018,jul,5,pri,MANUEL IBARRA MIRANO,Term-limited-p-lost,,inafed,0,0,0,
-dgo-08.017,1992,Ocampo,3072,10017,10,17,10018,jul,5,pan,OSCAR GARCIA BARRON,Term-limited-p-won,,inafed,0,0,dgo-11.025,check
+dgo-08.017,1992,Ocampo,3072,10017,10,17,10018,jul,5,pan,OSCAR GARCIA BARRON,Term-limited-p-won,,inafed,0,0,dgo-11.025,ok
 dgo-09.017,1995,Ocampo,3073,10017,10,17,10018,jul,5,pan,DANIEL O MENDOZA MUÑOZ,Term-limited-p-lost,,inafed,0,0,0,
 dgo-10.017,1998,Ocampo,3074,10017,10,17,10018,jul,5,pri,PEDRO TOQUERO GUTIERREZ,Term-limited-p-won,,,0,0,0,
 dgo-11.017,2001,Ocampo,3075,10017,10,17,10018,jul,1,pri,MANUEL GOMEZ ARMANDARIZ,Term-limited-p-won,,,0,0,0,
@@ -3160,7 +3160,7 @@ dgo-07.025,1989,San Bernardo,3158,10025,10,25,10026,jul,5,pri,RUBEN TALAMANTES T
 dgo-08.025,1992,San Bernardo,3159,10025,10,25,10026,jul,5,pri,ROMAN HERRERA HERRERA,Term-limited-p-won,,inafed,0,0,0,
 dgo-09.025,1995,San Bernardo,3160,10025,10,25,10026,jul,5,pri,TEODULO HERRERA FIGUEROA,Term-limited-p-won,,inafed,0,0,0,
 dgo-10.025,1998,San Bernardo,3161,10025,10,25,10026,jul,5,pri,DIONISIO ARELLANES BOLIVAR,Term-limited-p-won,,,0,0,0,
-dgo-11.025,2001,San Bernardo,3162,10025,10,25,10026,jul,1,pri,OSCAR GARCIA BARRON,Term-limited-p-won,,,1,1,dgo-08.017,check
+dgo-11.025,2001,San Bernardo,3162,10025,10,25,10026,jul,1,pri,OSCAR GARCIA BARRON,Term-limited-p-won,,,1,1,dgo-08.017,ok
 dgo-12.025,2004,San Bernardo,3163,10025,10,25,10026,jul,4,pri,MANUEL UGARTE RAMIREZ,Term-limited-p-lost,,,0,0,0,
 dgo-13.025,2007,San Bernardo,3164,10025,10,25,10026,jul,1,prd,JOSE CARMEN TORRES ROMERO,Term-limited-p-won,,,0,0,0,
 dgo-14.025,2010,San Bernardo,3165,10025,10,25,10026,jul,4,pan-prd-conve,JAIME LOZOYA AVILA,Term-limited-p-lost,,,0,0,0,
@@ -4070,7 +4070,7 @@ gue-09.026,1996,Cuetzala,4068,12026,12,26,12026,feb,21,pri,ERNESTO CLAVIJO MARTI
 gue-10.026,1999,Cuetzala,4069,12026,12,26,12026,feb,21,pri,MARIO RIOS COLIMA,Term-limited-p-lost,,,0,0,0,
 gue-11.026,2002,Cuetzala,4070,12026,12,26,12026,feb,20,prd,MIGUEL VILLANUEVA GONZALEZ,Term-limited-p-lost,,,0,0,0,
 gue-12.026,2005,Cuetzala,4071,12026,12,26,12026,feb,21,pri,ERNESTO CLAVIJO MAXINES,Term-limited-p-lost,,,0,0,0,
-gue-13.026,2008,Cuetzala,4072,12026,12,26,12026,oct,5,prd,J SANTOS GONZAGA MIRANDA,Term-limited-p-won,,,0,0,gue-13.027,check
+gue-13.026,2008,Cuetzala,4072,12026,12,26,12026,oct,5,prd,J SANTOS GONZAGA MIRANDA,Term-limited-p-won,,,0,0,gue-13.027,ok
 gue-14.026,2012,Cuetzala,4073,12026,12,26,12026,jul,1,prd,FELICIANO ALVAREZ MECINO,Term-limited-p-lost,,,0,0,0,
 gue-15.026,2015,Cuetzala,4074,12026,12,26,12026,jun,7,pri,RAMIRO GUTIERREZ BAIZA,Out-p-lost,,,0,0,0,
 gue-16.026,2018,Cuetzala,4075,12026,12,26,12026,jul,1,pt1-morena-pes,ELIZABETH MENDOZA DAMACIO,2021,,,0,0,0,
@@ -4079,7 +4079,7 @@ gue-09.027,1996,Cutzamala,4077,12027,12,27,12027,feb,21,prd,ESTEBAN JULIAN MIREL
 gue-10.027,1999,Cutzamala,4078,12027,12,27,12027,feb,21,pri,JUSTINIANO ARMENDARIS YAÑEZ,Term-limited-p-won,,,0,0,0,
 gue-11.027,2002,Cutzamala,4079,12027,12,27,12027,feb,20,pri,ISIDRO DUARTE CABRERA,Term-limited-p-won,,,0,0,gue-14.027,
 gue-12.027,2005,Cutzamala,4080,12027,12,27,12027,feb,21,pri,JOSE LUIS FERNANDEZ MORALES,Term-limited-p-won,,,0,0,0,
-gue-13.027,2008,Cutzamala,4081,12027,12,27,12027,oct,5,pri,J SANTOS GONZAGA MIRANDA,Term-limited-p-lost,,,0,0,gue-13.026,check
+gue-13.027,2008,Cutzamala,4081,12027,12,27,12027,oct,5,pri,FRANCISCO ESTRADA CAMPOS,Term-limited-p-lost,,,0,0,gue-13.026,ok
 gue-14.027,2012,Cutzamala,4082,12027,12,27,12027,jul,1,prd,ISIDRO DUARTE CABRERA,Term-limited-p-won,,,1,1,gue-11.027,
 gue-15.027,2015,Cutzamala,4083,12027,12,27,12027,jun,7,prd,ROSA JAIMES LOPEZ,Out-p-lost,renunciaron candidatos por amenazas,,0,0,0,
 gue-16.027,2018,Cutzamala,4084,12027,12,27,12027,jul,1,pri,TIMOTEO ARCE SOLIS,2021,,,0,0,0,
