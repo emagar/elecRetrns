@@ -19193,11 +19193,11 @@ yuc-14.015,2010,Cuzamá,19191,31015,31,15,31015,may,16,pri,WILIAM ALBERTO PECH S
 yuc-15.015,2012,Cuzamá,19192,31015,31,15,31015,jul,1,pri-pvem,WILBERT ORLANDO SOBERANIS VILLANUEVA,Term-limited-p-won,,,0,0,0,
 yuc-16.015,2015,Cuzamá,19193,31015,31,15,31015,jun,7,pri,JOSE CARLOS AKE KU,Out-p-won,,,0,0,0,
 yuc-17.015,2018,Cuzamá,19194,31015,31,15,31015,jul,1,pri-pvem,MARIA ANTONIA ZAPATA MAAS,2021,,,0,0,0,
-yuc-07.016,1990,Chacsinkín,19195,31016,31,16,31016,may,24,pri,ANATOLIO MUKUL MAY,Term-limited-p-won,,inafed,0,0,yuc-09.016 yuc-11.016 yuc-09.049,check
+yuc-07.016,1990,Chacsinkín,19195,31016,31,16,31016,may,24,pri,ANATOLIO MUKUL MAY,Term-limited-p-won,,inafed,0,0,yuc-09.016 yuc-11.016 yuc-09.049,ok
 yuc-08.016,1993,Chacsinkín,19196,31016,31,16,31016,may,24,pri,ALVARO MATOS YAB,Term-limited-p-won,,inafed,0,0,0,
-yuc-09.016,1995,Chacsinkín,19197,31016,31,16,31016,may,24,pri,ANATOLIO MUKUL MAY,Term-limited-p-won,,inafed,1,1,yuc-07.016 yuc-11.016 yuc-09.049,check
+yuc-09.016,1995,Chacsinkín,19197,31016,31,16,31016,may,24,pri,ANATOLIO MUKUL MAY,Term-limited-p-won,,inafed,1,1,yuc-07.016 yuc-11.016 yuc-09.049,ok
 yuc-10.016,1998,Chacsinkín,19198,31016,31,16,31016,may,24,pri,FILIBERTO MUKUL CHABLE,Term-limited-p-won,,,0,0,0,
-yuc-11.016,2001,Chacsinkín,19199,31016,31,16,31016,may,27,pri,ANATOLIO MUKUL MAY,Term-limited-p-lost,,,1,1,yuc-07.016 yuc-09.016 yuc-09.049,check
+yuc-11.016,2001,Chacsinkín,19199,31016,31,16,31016,may,27,pri,ANATOLIO MUKUL MAY,Term-limited-p-lost,,,1,1,yuc-07.016 yuc-09.016 yuc-09.049,ok
 yuc-12.016,2004,Chacsinkín,19200,31016,31,16,31016,may,23,pan,HERBERTO LOPEZ POOT,Term-limited-p-lost,,,0,0,0,
 yuc-13.016,2007,Chacsinkín,19201,31016,31,16,31016,may,20,pri,ROGER HUMBERTO SANCHEZ ANGELO,Term-limited-p-won,,,0,0,0,
 yuc-14.016,2010,Chacsinkín,19202,31016,31,16,31016,may,16,pri,HUMBERTO CHABLE MATUS,Term-limited-p-won,,,0,0,0,
@@ -19558,7 +19558,7 @@ yuc-16.048,2015,Maxcanú,19556,31048,31,48,31048,jun,7,pvem,MARLENE CATZIN CHIN,
 yuc-17.048,2018,Maxcanú,19557,31048,31,48,31048,jul,1,pri,MARLENE CATZIN CHIN,Term-limited-pending,,,1,1,yuc-16.048,
 yuc-07.049,1990,Mayapán,19558,31049,31,49,31049,may,24,pri,WILBERTH ARMIN CHAN FERNANDEZ,Term-limited-p-won,,inafed,0,0,0,
 yuc-08.049,1993,Mayapán,19559,31049,31,49,31049,may,24,pri,FREDDY OSCAR CHAN KANTUN,Term-limited-p-lost,,inafed,0,0,0,
-yuc-09.049,1995,Mayapán,19560,31049,31,49,31049,may,24,pan,ANATOLIO MUKUL MAY,Term-limited-p-won,,inafed,1,1,yuc-07.016 yuc-09.016 yuc-11.016,check
+yuc-09.049,1995,Mayapán,19560,31049,31,49,31049,may,24,pan,,Term-limited-p-won,,,0,0,,ok
 yuc-10.049,1998,Mayapán,19561,31049,31,49,31049,may,24,pan,DIEGO KANTUN KANTUN,Term-limited-p-won,,,0,0,0,
 yuc-11.049,2001,Mayapán,19562,31049,31,49,31049,may,27,pan-prd,MARCOS POOL MAY,Term-limited-p-won,,,0,0,0,
 yuc-12.049,2004,Mayapán,19563,31049,31,49,31049,may,23,pan,ENRIQUE VENTURA EUAN CAAMAL,Term-limited-p-lost,,,0,0,0,
@@ -19721,10 +19721,10 @@ yuc-14.063,2010,Samahil,19719,31063,31,63,31063,may,16,pri,FELIPE NERI GARCIA BO
 yuc-15.063,2012,Samahil,19720,31063,31,63,31063,jul,1,pri,SAMUEL MAYEN POOT,Term-limited-p-won,,,1,1,yuc-12.063,
 yuc-16.063,2015,Samahil,19721,31063,31,63,31063,jun,7,pri,ISAIAS SALOMON GARCIA AGUAYO,Out-p-lost,,,0,0,0,
 yuc-17.063,2018,Samahil,19722,31063,31,63,31063,jul,1,prd,RIGOBERTO JAVIER TUN SALAS,2021,,,1,1,yuc-13.063,
-yuc-07.064,1990,Sanahcat,19723,31064,31,64,31064,may,24,pri,RENE HIPOLITO DIAZ MARRUFO,Term-limited-p-won,,inafed,0,0,yuc-07.065,check
-yuc-08.064,1993,Sanahcat,19724,31064,31,64,31064,may,24,pri,ALVARO JESUS DIAZ LOPEZ,Term-limited-p-won,,inafed,0,0,yuc-08.065,check
-yuc-09.064,1995,Sanahcat,19725,31064,31,64,31064,may,24,pri,MANUEL DE ATOCHA LOPEZ ROSADO,Term-limited-p-won,,inafed,0,0,yuc-09.065,check
-yuc-10.064,1998,Sanahcat,19726,31064,31,64,31064,may,24,pri,JOSE ADONAI MENA ROSADO,Term-limited-p-won,,,0,0,yuc-10.065,check
+yuc-07.064,1990,Sanahcat,19723,31064,31,64,31064,may,24,pri,,Term-limited-p-won,,inafed,0,0,yuc-07.065,ok
+yuc-08.064,1993,Sanahcat,19724,31064,31,64,31064,may,24,pri,,Term-limited-p-won,,inafed,0,0,yuc-08.065,ok
+yuc-09.064,1995,Sanahcat,19725,31064,31,64,31064,may,24,pri,,Term-limited-p-won,,inafed,0,0,yuc-09.065,ok
+yuc-10.064,1998,Sanahcat,19726,31064,31,64,31064,may,24,pri,,Term-limited-p-won,,,0,0,yuc-10.065,ok
 yuc-11.064,2001,Sanahcat,19727,31064,31,64,31064,may,27,pri,BENI RENAN COUOH CAAMAL,Term-limited-p-won,,,0,0,0,
 yuc-12.064,2004,Sanahcat,19728,31064,31,64,31064,may,23,pri,GAUDENCIO MOO EK,Term-limited-p-won,,,0,0,0,
 yuc-13.064,2007,Sanahcat,19729,31064,31,64,31064,may,20,pri,EMILIO CHAN PECH,Term-limited-p-won,,,0,0,0,
@@ -19732,10 +19732,10 @@ yuc-14.064,2010,Sanahcat,19730,31064,31,64,31064,may,16,pri,VICTOR D DZUL MOD,Te
 yuc-15.064,2012,Sanahcat,19731,31064,31,64,31064,jul,1,pri,VICTOR GABRIEL EK MOO,Term-limited-p-won,,,0,0,0,
 yuc-16.064,2015,Sanahcat,19732,31064,31,64,31064,jun,7,pri,JOSE JAVIER MOO EK,Out-p-won,,,0,0,0,
 yuc-17.064,2018,Sanahcat,19733,31064,31,64,31064,jul,1,pri-pvem-pna,LANDI GABRIELA GAMBOA MOO,2021,,,0,0,0,
-yuc-07.065,1990,San Felipe,19734,31065,31,65,31065,may,24,pri,RENE HIPOLITO DIAZ MARRUFO,Term-limited-p-won,,inafed,0,0,yuc-07.064,check
-yuc-08.065,1993,San Felipe,19735,31065,31,65,31065,may,24,pri,ALVARO JESUS DIAZ LOPEZ,Term-limited-p-won,,inafed,0,0,yuc-08.064,check
-yuc-09.065,1995,San Felipe,19736,31065,31,65,31065,may,24,pri,MANUEL DE ATOCHA LOPEZ ROSADO,Term-limited-p-won,,inafed,0,0,yuc-09.064,check
-yuc-10.065,1998,San Felipe,19737,31065,31,65,31065,may,24,pri,JOSE ADONAI MENA ROSADO,Term-limited-p-lost,,,0,0,yuc-10.064,check
+yuc-07.065,1990,San Felipe,19734,31065,31,65,31065,may,24,pri,RENE HIPOLITO DIAZ MARRUFO,Term-limited-p-won,,inafed,0,0,yuc-07.064,ok
+yuc-08.065,1993,San Felipe,19735,31065,31,65,31065,may,24,pri,ALVARO JESUS DIAZ LOPEZ,Term-limited-p-won,,inafed,0,0,yuc-08.064,ok
+yuc-09.065,1995,San Felipe,19736,31065,31,65,31065,may,24,pri,MANUEL DE ATOCHA LOPEZ ROSADO,Term-limited-p-won,,inafed,0,0,yuc-09.064,ok
+yuc-10.065,1998,San Felipe,19737,31065,31,65,31065,may,24,pri,JOSE ADONAI MENA ROSADO,Term-limited-p-lost,,http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S0188-45572012000200005,0,0,yuc-10.064,ok
 yuc-11.065,2001,San Felipe,19738,31065,31,65,31065,may,27,pan-prd,JOAQUIN JESUS,Term-limited-p-won,,,0,0,0,
 yuc-12.065,2004,San Felipe,19739,31065,31,65,31065,may,23,pan,RAUL EROSA DIAZ,Term-limited-p-won,,,0,0,0,
 yuc-13.065,2007,San Felipe,19740,31065,31,65,31065,may,20,pan,JOSE ARMANDO ESCAMILLA BOJORQUEZ,Term-limited-p-won,,,0,0,0,
