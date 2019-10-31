@@ -2946,7 +2946,7 @@ dgo-12.005,2004,Durango,2944,10005,10,5,10005,jul,4,pri,JORGE HERRERA DELGADO,Te
 dgo-13.005,2007,Durango,2945,10005,10,5,10005,jul,1,pri-pd1-pna,JORGE HERNANDEZ CALDERA,Term-limited-p-won,,,0,0,0,
 dgo-14.005,2010,Durango,2946,10005,10,5,10005,jul,4,pri-pvem-pna-pd1,ADAN SORIA RAMIREZ,Term-limited-p-won,,,0,0,0,
 dgo-15.005,2013,Durango,2947,10005,10,5,10005,jul,7,pri-pvem-pna-pd1,VILLEGAS VILLAREAL ESTEBAN ALEJANDRO,Term-limited-p-lost,,,0,0,0,
-dgo-16.005,2016,Durango,2948,10005,10,5,10005,jun,5,pan-prd,JOSE RAMON ENRIQUEZ HERRERA,Out-p-won,destituido x congreso 11dic2018 tras fallo tepjf promo imagen rec pub, renom x mc 2019 lost,,0,0,0
+dgo-16.005,2016,Durango,2948,10005,10,5,10005,jun,5,pan-prd,JOSE RAMON ENRIQUEZ HERRERA,Out-p-won,destituido x cong 11dic2018 tras fallo tepjf promo imagen rec pub--renom x mc 2019 lost,,,0,0,ok
 dgo-17.005,2019,Durango,2949,10005,10,5,10005,jun,2,pan,JORGE ALEJANDRO SALUM DEL PALACIO,2022,,,0,0,0,
 dgo-07.006,1989,General Simón Bolívar,2950,10006,10,6,10006,jul,5,pri,EFREN AVILA GARCIA,Term-limited-p-won,,inafed,0,0,0,
 dgo-08.006,1992,General Simón Bolívar,2951,10006,10,6,10006,jul,5,pri,J. SANTANA MEDINA ESQUIVEL,Term-limited-p-won,,inafed,0,0,0,
@@ -19086,24 +19086,24 @@ yuc-14.005,2010,Bokobá,19084,31005,31,5,31005,may,16,pri,GERARDO G. SOSA SOSA,T
 yuc-15.005,2012,Bokobá,19085,31005,31,5,31005,jul,1,pri-pvem,JOSE AMILCAR CEBALLOS KANTUN,Term-limited-p-won,,,0,0,0,
 yuc-16.005,2015,Bokobá,19086,31005,31,5,31005,jun,7,pri,LIZBETH NOEMI SOSA MARRUFO,Out-p-won,,,0,0,0,
 yuc-17.005,2018,Bokobá,19087,31005,31,5,31005,jul,1,pri-pna,RUBY ALEJANDRINA SOSA PEREZ,2021,,,0,0,0,
-yuc-07.006,1990,Buctzotz,19088,31006,31,6,31006,may,24,pri,FELIPE RIVERO LIZAMA,Term-limited-p-won,,inafed,0,0,yuc-07.007,check
-yuc-08.006,1993,Buctzotz,19089,31006,31,6,31006,may,24,pri,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-won,,inafed,0,0,yuc-10.006 yuc-08.007 yuc-10.007,check
-yuc-09.006,1995,Buctzotz,19090,31006,31,6,31006,may,24,pri,SANTIAGO FELIPE LIZAMA ARGAEZ,Term-limited-p-won,,inafed,0,0,yuc-09.007,check
-yuc-10.006,1998,Buctzotz,19091,31006,31,6,31006,may,24,pri,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-won,,,1,1,yuc-08.006 yuc-08.007 yuc-10.007,check
-yuc-11.006,2001,Buctzotz,19092,31006,31,6,31006,may,27,pri,MARGARITA SANCHEZ MEDRANO,Term-limited-p-lost,,,0,0,yuc-14.006 yuc-17.006 yuc-11.007,check
-yuc-12.006,2004,Buctzotz,19093,31006,31,6,31006,may,23,pan,MANUEL JESUS ARGAEZ CEPEDA,Term-limited-p-won,,,0,0,yuc-15.006 yuc-12.007,check
-yuc-13.006,2007,Buctzotz,19094,31006,31,6,31006,may,20,pan,JOSE FRANCISCO RIVERO LIZAMA,Term-limited-p-lost,,,0,0,yuc-13.007,check
-yuc-14.006,2010,Buctzotz,19095,31006,31,6,31006,may,16,pri,MARGARITA SANCHEZ MEDRANO,Term-limited-p-lost,,,1,1,yuc-11.006 yuc-17.006 yuc-11.007,check
-yuc-15.006,2012,Buctzotz,19096,31006,31,6,31006,jul,1,pan,MANUEL JESUS ARGAEZ CEPEDA,Term-limited-p-won,,,1,1,yuc-12.006 yuc-12.007,check
+yuc-07.006,1990,Buctzotz,19088,31006,31,6,31006,may,24,pri,FELIPE RIVERO LIZAMA,Term-limited-p-won,,inafed,0,0,yuc-07.007,ok
+yuc-08.006,1993,Buctzotz,19089,31006,31,6,31006,may,24,pri,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-won,,inafed,0,0,yuc-10.006 yuc-08.007 yuc-10.007,ok
+yuc-09.006,1995,Buctzotz,19090,31006,31,6,31006,may,24,pri,SANTIAGO FELIPE LIZAMA ARGAEZ,Term-limited-p-won,,inafed,0,0,yuc-09.007,ok
+yuc-10.006,1998,Buctzotz,19091,31006,31,6,31006,may,24,pri,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-won,,inafed,1,1,yuc-08.006 yuc-08.007 yuc-10.007,ok
+yuc-11.006,2001,Buctzotz,19092,31006,31,6,31006,may,27,pri,MARGARITA SANCHEZ MEDRANO,Term-limited-p-lost,,inafed,0,0,yuc-14.006 yuc-17.006 yuc-11.007,ok
+yuc-12.006,2004,Buctzotz,19093,31006,31,6,31006,may,23,pan,MANUEL JESUS ARGAEZ CEPEDA,Term-limited-p-won,,inafed,0,0,yuc-15.006 yuc-12.007,ok
+yuc-13.006,2007,Buctzotz,19094,31006,31,6,31006,may,20,pan,JOSE FRANCISCO RIVERO LIZAMA,Term-limited-p-lost,,inafed,0,0,yuc-13.007,ok
+yuc-14.006,2010,Buctzotz,19095,31006,31,6,31006,may,16,pri,MARGARITA SANCHEZ MEDRANO,Term-limited-p-lost,,inafed,1,1,yuc-11.006 yuc-17.006 yuc-11.007,ok
+yuc-15.006,2012,Buctzotz,19096,31006,31,6,31006,jul,1,pan,MANUEL JESUS ARGAEZ CEPEDA,Term-limited-p-won,,,1,1,yuc-12.006 yuc-12.007,ok
 yuc-16.006,2015,Buctzotz,19097,31006,31,6,31006,jun,7,pan,JOSE REYES SANTOS AGUILAR,Out-p-lost,,,0,0,0,
-yuc-17.006,2018,Buctzotz,19098,31006,31,6,31006,jul,1,pri-pvem-pna,MARGARITA SANCHEZ MEDRANO,2021,,,1,1,yuc-11.006 yuc-14.006 yuc-11.007,check
-yuc-07.007,1990,Cacalchén,19099,31007,31,7,31007,may,24,conve,FELIPE RIVERO LIZAMA,Term-limited-p-lost,,inafed,0,0,yuc-07.006,check
-yuc-08.007,1993,Cacalchén,19100,31007,31,7,31007,may,24,pri,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-lost,,inafed,0,0,yuc-08.006 yuc-10.006 yuc-10.007,check
-yuc-09.007,1995,Cacalchén,19101,31007,31,7,31007,may,24,pfcrn,SANTIAGO FELIPE LIZAMA ARGAEZ,Term-limited-p-lost,,inafed,0,0,yuc-09.006,check
-yuc-10.007,1998,Cacalchén,19102,31007,31,7,31007,may,24,prd,LUIS ALBERTO CEPEDA CRUZ,Term-limited-p-lost,,,1,1,yuc-08.006 yuc-10.006 yuc-08.007,check
-yuc-11.007,2001,Cacalchén,19103,31007,31,7,31007,may,27,pvem,MARGARITA SANCHEZ MEDRANO,Term-limited-p-lost,,,0,0,yuc-11.006 yuc-14.006 yuc-17.006,check
-yuc-12.007,2004,Cacalchén,19104,31007,31,7,31007,may,23,pri,MANUEL JESUS ARGAEZ CEPEDA,Term-limited-p-lost,,,0,0,yuc-12.006 yuc-15.006,check
-yuc-13.007,2007,Cacalchén,19105,31007,31,7,31007,may,20,pan,JOSE FRANCISCO RIVERO LIZAMA,Term-limited-p-lost,,,0,0,yuc-13.006,check
+yuc-17.006,2018,Buctzotz,19098,31006,31,6,31006,jul,1,pri-pvem-pna,MARGARITA SANCHEZ MEDRANO,2021,,,1,1,yuc-11.006 yuc-14.006 yuc-11.007,ok
+yuc-07.007,1990,Cacalchén,19099,31007,31,7,31007,may,24,conve,TEOFILO CETZ COHUO,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-08.007,1993,Cacalchén,19100,31007,31,7,31007,may,24,pri,LUIS KIM MONTALVO,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-09.007,1995,Cacalchén,19101,31007,31,7,31007,may,24,pfcrn,PEDRO ARMANDO PEREZ SOSA,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-10.007,1998,Cacalchén,19102,31007,31,7,31007,may,24,prd,BLANCA ELIZABETH VAZQUEZ LOPEZ,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-11.007,2001,Cacalchén,19103,31007,31,7,31007,may,27,pvem,GENNY CONCEPCION VAZQUEZ ESPADAS,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-12.007,2004,Cacalchén,19104,31007,31,7,31007,may,23,pri,MARISA GUADALUPE BARRERA SOSA,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
+yuc-13.007,2007,Cacalchén,19105,31007,31,7,31007,may,20,pan,REYES LUCIANO CHE BOTE,Term-limited-p-lost,,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,ok
 yuc-14.007,2010,Cacalchén,19106,31007,31,7,31007,may,16,conve,FAUSTO EB LOPEZ,Term-limited-p-lost,,,0,0,0,
 yuc-15.007,2012,Cacalchén,19107,31007,31,7,31007,jul,1,pri,EITER GEOFREY VAZQUEZ SOSA,Term-limited-p-won,,,0,0,0,
 yuc-16.007,2015,Cacalchén,19108,31007,31,7,31007,jun,7,pri,PASTOR AGUSTIN CANUL ZARATE,Out-p-won,,,0,0,0,
