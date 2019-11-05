@@ -4609,7 +4609,7 @@ hgo-12.005,2005,Ajacuba,4607,13005,13,5,13005,nov,13,prd,ABEL GUERRERO GARCIA,Te
 hgo-13.005,2008,Ajacuba,4608,13005,13,5,13005,nov,9,pri-pna,DANIEL CERON ROMERO,Term-limited-p-lost,,,0,0,0,
 hgo-14.005,2011,Ajacuba,4609,13005,13,5,13005,jul,3,pt1,MARIO PACHECO CERON,Term-limited-p-lost,,,0,0,0,
 hgo-15.005,2016,Ajacuba,4610,13005,13,5,13005,jun,5,pvem,SALVADOR PEREZ GOMEZ,Term-limited-pending,,,1,1,hgo-08.005,
-hgo-07.006,1990,Alfajayucan,4611,13006,13,6,13006,nov,14,pri,FRANCISCO RAMIREZ L.,Term-limited-p-won,,inafed,0,0,hgo-08.074,check
+hgo-07.006,1990,Alfajayucan,4611,13006,13,6,13006,nov,14,pri,FRANCISCO RAMIREZ L.,Term-limited-p-won,,inafed,0,0,hgo-08.074,ok
 hgo-08.006,1993,Alfajayucan,4612,13006,13,6,13006,nov,14,pri,DANIEL GUERRERO Z.,Term-limited-p-won,,inafed,0,0,0,
 hgo-09.006,1996,Alfajayucan,4613,13006,13,6,13006,nov,14,pri,ELOY MACOTELA JIMENEZ,Term-limited-p-won,,inafed,0,0,0,
 hgo-10.006,1999,Alfajayucan,4614,13006,13,6,13006,nov,14,pri,FLORENTINO ESTRELLA B.,Term-limited-p-lost,,,0,0,0,
@@ -4818,7 +4818,7 @@ hgo-14.028,2011,Huejutla,4816,13028,13,28,13028,jul,3,conve,JOSE ALFREDO SAN ROM
 hgo-15.028,2016,Huejutla,4817,13028,13,28,13028,jun,5,pes,RAUL VADILLO RAMIREZ,Term-limited-pending,,,0,0,0,
 hgo-07.029,1990,Huichapan,4818,13029,13,29,13029,nov,14,pri,JOSE GARCIA CRAVIOTO,Term-limited-p-won,,inafed,0,0,0,
 hgo-08.029,1993,Huichapan,4819,13029,13,29,13029,nov,14,pri,ALEJANDRO RIVERA CELA,Term-limited-p-won,,inafed,0,0,0,
-hgo-09.029,1996,Huichapan,4820,13029,13,29,13029,nov,14,pri,JOSE A LUGO GIL,Term-limited-p-won,,inafed,0,0,hgo-09.018,check
+hgo-09.029,1996,Huichapan,4820,13029,13,29,13029,nov,14,pri,JOSE A LUGO GIL,Term-limited-p-won,,inafed,0,0,hgo-09.018,ok
 hgo-10.029,1999,Huichapan,4821,13029,13,29,13029,nov,14,pri,JESUS PACHECO ROJAS,Term-limited-p-lost,,,0,0,0,
 hgo-11.029,2002,Huichapan,4822,13029,13,29,13029,nov,10,pan,RODOLFO A MORENO GONZALEZ,Term-limited-p-lost,,,0,0,0,
 hgo-12.029,2005,Huichapan,4823,13029,13,29,13029,nov,13,pri,JUAN FRANCISCO MENDOZA GUERRERO,Term-limited-p-won,,,0,0,0,
@@ -5164,7 +5164,7 @@ hgo-15.067,2016,Tezontepec,5162,13067,13,67,13066,jun,5,mc,PEDRO FORRAS PEREZ,Te
 hgo-07.068,1990,Tianguistengo,5163,13068,13,68,13067,nov,14,pri,EDGAR CARPIO ALARCON,Term-limited-p-won,,inafed,0,0,0,
 hgo-08.068,1993,Tianguistengo,5164,13068,13,68,13067,nov,14,pri,CONRADO CARPIO Z.,Term-limited-p-won,,inafed,0,0,0,
 hgo-09.068,1996,Tianguistengo,5165,13068,13,68,13067,nov,14,pri,JESUS CERVANTES R.,Term-limited-p-won,,inafed,0,0,0,
-hgo-10.068,1999,Tianguistengo,5166,13068,13,68,13067,nov,14,pri,MIGUEL T. RODRIGUEZ E.,Term-limited-p-won,,,0,0,hgo-10.013,check
+hgo-10.068,1999,Tianguistengo,5166,13068,13,68,13067,nov,14,pri,MIGUEL T. RODRIGUEZ E.,Term-limited-p-won,,,0,0,hgo-10.013,ok
 hgo-11.068,2002,Tianguistengo,5167,13068,13,68,13067,nov,10,pri,LUCIO ESCUDERO PANDO,Term-limited-p-won,,,0,0,0,
 hgo-12.068,2005,Tianguistengo,5168,13068,13,68,13067,nov,13,pri,MOISES CARPIO ALARCON,Term-limited-p-won,,,0,0,0,
 hgo-13.068,2008,Tianguistengo,5169,13068,13,68,13067,nov,9,pri,CARLO MARIO RUIZ CERECEDO,Term-limited-p-lost,,,0,0,0,
@@ -5318,8 +5318,8 @@ jal-10.001,1997,Acatic,5316,14001,14,1,14001,nov,9,pan,JOSE GUADALUPE RAMIREZ CA
 jal-11.001,2000,Acatic,5317,14001,14,1,14001,nov,12,pri,EZEQUIEL GONZALEZ JIMENEZ,Term-limited-p-won,,,0,0,0,
 jal-12.001,2003,Acatic,5318,14001,14,1,14001,jul,6,pri,ROBERTO DE LA TORRE ANAYA,Term-limited-p-lost,,,0,0,0,
 jal-13.001,2006,Acatic,5319,14001,14,1,14001,jul,2,pan,MARTIN HERNANDEZ GUERRERO,Term-limited-p-won,,,0,0,0,
-jal-14.001,2009,Acatic,5320,14001,14,1,14001,jul,5,pan,HECTOR MANUEL CAMACHO HERNANDEZ,Term-limited-p-lost,,,1,1,jal-09.013,check
-jal-15.001,2012,Acatic,5321,14001,14,1,14001,jul,1,pri-pvem,ARTURO HERNANDEZ CARBAJAL,Term-limited-p-lost,,,1,1,jal-08.048,check
+jal-14.001,2009,Acatic,5320,14001,14,1,14001,jul,5,pan,HECTOR MANUEL CAMACHO HERNANDEZ,Term-limited-p-lost,,,1,1,jal-09.013,ok
+jal-15.001,2012,Acatic,5321,14001,14,1,14001,jul,1,pri-pvem,ARTURO HERNANDEZ CARBAJAL,Term-limited-p-lost,,,1,1,jal-08.048,ok
 jal-16.001,2015,Acatic,5322,14001,14,1,14001,jun,7,pan,ANTONIO CRUZ DE LA TORRE RUVALCABA,Out-p-won,,,0,0,0,
 jal-17.001,2018,Acatic,5323,14001,14,1,14001,jul,1,pan-prd-mc,MARCO TULIO MOYA DIAZ,2021,,,0,0,0,
 jal-07.002,1988,Acatlán,5324,14002,14,2,14002,nov,9,pri,RITO MORENO HERNANDEZ,Term-limited-p-won,,inafed,0,0,0,
@@ -5445,7 +5445,7 @@ jal-16.012,2015,Atenguillo,5443,14012,14,12,14012,jun,7,mc,ROSALIO VILLASEÑOR A
 jal-17.012,2018,Atenguillo,5444,14012,14,12,14012,jul,1,pan-prd-mc,MAYRA ISELA GUITRON CONTRERAS,2021,,,0,0,0,
 jal-07.013,1988,Atotonilco el Alto,5445,14013,14,13,14013,nov,9,pri,FRANCISCO JAVIER GONZALEZ GARCIA,Term-limited-p-won,,inafed,0,0,0,
 jal-08.013,1992,Atotonilco el Alto,5446,14013,14,13,14013,nov,9,pri,CARLOS PADILLA VILLARRUEL,Term-limited-p-won,,inafed,0,0,jal-10.013 jal-12.013,
-jal-09.013,1995,Atotonilco el Alto,5447,14013,14,13,14013,nov,9,pri,HECTOR MANUEL CAMACHO HERNANDEZ,Term-limited-p-won,,inafed,0,0,jal-14.001,check
+jal-09.013,1995,Atotonilco el Alto,5447,14013,14,13,14013,nov,9,pri,HECTOR MANUEL CAMACHO HERNANDEZ,Term-limited-p-won,,inafed,0,0,jal-14.001,ok
 jal-10.013,1997,Atotonilco el Alto,5448,14013,14,13,14013,nov,9,pri,CARLOS PADILLA VILLARRUEL,Term-limited-p-lost,,,1,1,jal-08.013 jal-12.013,
 jal-11.013,2000,Atotonilco el Alto,5449,14013,14,13,14013,nov,12,pan,GUSTAVO RIOS AGUINAGA,Term-limited-p-lost,,,0,0,0,
 jal-12.013,2003,Atotonilco el Alto,5450,14013,14,13,14013,jul,6,pri,CARLOS PADILLA VILLARRUEL,Term-limited-p-lost,,,1,1,jal-08.013 jal-10.013,
@@ -5491,7 +5491,7 @@ jal-07.017,1988,Ayutla,5489,14017,14,17,14017,nov,9,pri,MANUEL AGUILAR G[UÜ]ITR
 jal-08.017,1992,Ayutla,5490,14017,14,17,14017,nov,9,pri,AGUSTIN FLORES BAUTISTA,Term-limited-p-won,,inafed,0,0,0,
 jal-09.017,1995,Ayutla,5491,14017,14,17,14017,nov,9,pri,MANUEL ESTRADA RAMIREZ,Term-limited-p-won,,inafed,0,0,0,
 jal-10.017,1997,Ayutla,5492,14017,14,17,14017,nov,9,pri,IGNACIO BAÑUELOS VALERA,Term-limited-p-lost,,,0,0,0,
-jal-11.017,2000,Ayutla,5493,14017,14,17,14017,nov,12,pan,RAMON DEMETRIO GUERRERO MARTINEZ,Term-limited-p-lost,,,0,0,jal-15.067,check
+jal-11.017,2000,Ayutla,5493,14017,14,17,14017,nov,12,pan,RAMON DEMETRIO GUERRERO MARTINEZ,Term-limited-p-lost,,,0,0,jal-15.067,ok
 jal-12.017,2003,Ayutla,5494,14017,14,17,14017,jul,6,pri,VENANCIO OROZCO RIOS,Term-limited-p-lost,,,0,0,0,
 jal-13.017,2006,Ayutla,5495,14017,14,17,14017,jul,2,pan,MANUEL GOMEZ TORRES,Term-limited-p-won,,,0,0,jal-15.017,
 jal-14.017,2009,Ayutla,5496,14017,14,17,14017,jul,5,pan,LUCIANO ARCE GOMEZ,Term-limited-p-won,,,0,0,0,
@@ -5543,7 +5543,7 @@ jal-15.021,2012,Casimiro Castillo,5541,14021,14,21,14021,jul,1,pri-pvem,SALVADOR
 jal-16.021,2015,Casimiro Castillo,5542,14021,14,21,14021,jun,7,pri,NICOLAS ENRIQUE CORONA,Out-p-lost,,,0,0,0,
 jal-17.021,2018,Casimiro Castillo,5543,14021,14,21,14021,jul,1,mc,ALFREDO SEVILLA CUEVAS,2021,,,0,0,0,
 jal-07.022,1988,Cihuatlán,5544,14022,14,22,14022,nov,9,pri,VICENTE BARRIENTOS DIAZ,Term-limited-p-won,,inafed,0,0,0,
-jal-08.022,1992,Cihuatlán,5545,14022,14,22,14022,nov,9,pri,ARTURO SALAS HERNANDEZ,Term-limited-p-won,,inafed,0,0,jal-08.048,check
+jal-08.022,1992,Cihuatlán,5545,14022,14,22,14022,nov,9,pri,ARTURO SALAS HERNANDEZ,Term-limited-p-won,,inafed,0,0,jal-08.048,ok
 jal-09.022,1995,Cihuatlán,5546,14022,14,22,14022,nov,9,pri,JOSE ANTONIO MORAN ARAIZA,Term-limited-p-won,,inafed,0,0,0,
 jal-10.022,1997,Cihuatlán,5547,14022,14,22,14022,nov,9,pri,ARMANDO ZUÑIGA CARDENAS,Term-limited-p-won,,,0,0,0,
 jal-11.022,2000,Cihuatlán,5548,14022,14,22,14022,nov,12,pri,JESUS ENRIQUE MORRETT MENDOZA,Term-limited-p-lost,,,0,0,0,
@@ -5738,8 +5738,8 @@ jal-12.039,2003,Guadalajara,5736,14039,14,39,14041,jul,6,pan,EMILIO GONZALEZ MAR
 jal-13.039,2006,Guadalajara,5737,14039,14,39,14041,jul,2,pan,ALFONSO PETERSEN FARAH,Term-limited-p-lost,,,0,0,0,
 jal-14.039,2009,Guadalajara,5738,14039,14,39,14041,jul,5,pri-pna,(JORGE) ARISTOTELES SANDOVAL DIAZ,Term-limited-p-won,,,0,0,0,
 jal-15.039,2012,Guadalajara,5739,14039,14,39,14041,jul,1,pri-pvem,RAMIRO HERNANDEZ GARCIA,Term-limited-p-lost,,,0,0,0,
-jal-16.039,2015,Guadalajara,5740,14039,14,39,14041,jun,7,mc,ENRIQUE ALFARO RAMIREZ,Out-p-won,sought higher office,,1,1,jal-14.097,check
-jal-17.039,2018,Guadalajara,5741,14039,14,39,14041,jul,1,mc,ISMAEL DEL TORO CASTRO,2021,,,1,1,jal-15.097,check
+jal-16.039,2015,Guadalajara,5740,14039,14,39,14041,jun,7,mc,ENRIQUE ALFARO RAMIREZ,Out-p-won,sought higher office,,1,1,jal-14.097,ok
+jal-17.039,2018,Guadalajara,5741,14039,14,39,14041,jul,1,mc,ISMAEL DEL TORO CASTRO,2021,,,1,1,jal-15.097,ok
 jal-07.040,1988,Hostotipaquillo,5742,14040,14,40,14042,nov,9,pri,CIRIACO MEJIA MORA,Term-limited-p-won,,inafed,0,0,0,
 jal-08.040,1992,Hostotipaquillo,5743,14040,14,40,14042,nov,9,pri,JOSE DE JESUS CALDERA RUBIO,Term-limited-p-won,,inafed,0,0,0,
 jal-09.040,1995,Hostotipaquillo,5744,14040,14,40,14042,nov,9,pri,ABRAHAM RODRIGUEZ GOMEZ,Term-limited-p-won,,inafed,0,0,0,
@@ -6042,7 +6042,7 @@ jal-11.067,2000,Puerto Vallarta,6040,14067,14,67,14069,nov,12,pan,PEDRO RUIZ HIG
 jal-12.067,2003,Puerto Vallarta,6041,14067,14,67,14069,jul,6,pri,GUSTAVO GONZALEZ VILLASEÑOR,Term-limited-p-won,,,0,0,0,
 jal-13.067,2006,Puerto Vallarta,6042,14067,14,67,14069,jul,2,pri,FRANCISCO JAVIER VRAVO SALAZAR,Term-limited-p-won,,,0,0,0,
 jal-14.067,2009,Puerto Vallarta,6043,14067,14,67,14069,jul,5,pri-pna,SALVADOR GONZALEZ RESENDIZ,Term-limited-p-lost,,,0,0,0,
-jal-15.067,2012,Puerto Vallarta,6044,14067,14,67,14069,jul,1,pt1-mc,RAMON DEMETRIO GUERRERO MARTINEZ,Term-limited-p-won,,,1,1,jal-11.017,check
+jal-15.067,2012,Puerto Vallarta,6044,14067,14,67,14069,jul,1,pt1-mc,RAMON DEMETRIO GUERRERO MARTINEZ,Term-limited-p-won,,,1,1,jal-11.017,ok
 jal-16.067,2015,Puerto Vallarta,6045,14067,14,67,14069,jun,7,mc,ARTURO DAVALOS PEÑA,Reelected,,,0,0,jal-17.067,
 jal-17.067,2018,Puerto Vallarta,6046,14067,14,67,14069,jul,1,mc,ARTURO DAVALOS PEÑA,Term-limited-pending,,,1,1,jal-16.067,
 jal-07.068,1988,Villa Purificación,6047,14068,14,68,14070,nov,9,pri,RAMON N PELAYO PELAYO,Term-limited-p-lost,,inafed,0,0,0,
@@ -6371,8 +6371,8 @@ jal-10.097,1997,Tlajomulco,6369,14097,14,97,14098,nov,9,pri,ERNESTO DIAZ MARQUEZ
 jal-11.097,2000,Tlajomulco,6370,14097,14,97,14098,nov,12,pri,GUILLERMO SANCHEZ MAGAÑA,Term-limited-p-lost,,,0,0,0,
 jal-12.097,2003,Tlajomulco,6371,14097,14,97,14098,jul,6,pan,ANDRES ZERMEÑO BARBA,Term-limited-p-won,,,0,0,0,
 jal-13.097,2006,Tlajomulco,6372,14097,14,97,14098,jul,2,pan,JOSE ANTONIO TATENGO UREÑA,Term-limited-p-lost,,,0,0,0,
-jal-14.097,2009,Tlajomulco,6373,14097,14,97,14098,jul,5,prd-pt1,ENRIQUE ALFARO RAMIREZ,Term-limited-p-won,,,0,0,jal-16.039,check
-jal-15.097,2012,Tlajomulco,6374,14097,14,97,14098,jul,1,pt1-mc,ISMAEL DEL TORO CASTRO,Term-limited-p-won,,,0,0,jal-17.039,check
+jal-14.097,2009,Tlajomulco,6373,14097,14,97,14098,jul,5,prd-pt1,ENRIQUE ALFARO RAMIREZ,Term-limited-p-won,,,0,0,jal-16.039,ok
+jal-15.097,2012,Tlajomulco,6374,14097,14,97,14098,jul,1,pt1-mc,ISMAEL DEL TORO CASTRO,Term-limited-p-won,,,0,0,jal-17.039,ok
 jal-16.097,2015,Tlajomulco,6375,14097,14,97,14098,jun,7,mc,ALBERTO URIBE CAMACHO,Out-p-won,desistió feb2018 coordina campaña Alfaro,,0,0,0,
 jal-17.097,2018,Tlajomulco,6376,14097,14,97,14098,jul,1,mc,SALVADOR ZAMORA ZAMORA,2021,,,0,0,0,
 jal-07.098,1988,Tlaquepaque,6377,14098,14,98,14099,nov,9,pri,ALFREDO BARBA HERNANDEZ,Term-limited-p-won,,inafed,0,0,0,
@@ -6467,7 +6467,7 @@ jal-07.106,1988,Tuxcacuesco,6465,14106,14,106,14107,nov,9,pri,ENRIQUE CAMBEROS P
 jal-08.106,1992,Tuxcacuesco,6466,14106,14,106,14107,nov,9,pri,JOSE ILDEFONSO CORONA PELAYO,Term-limited-p-won,,inafed,0,0,0,
 jal-09.106,1995,Tuxcacuesco,6467,14106,14,106,14107,nov,9,pri,ANTONIO VARGAS FLORES,Term-limited-p-won,,inafed,0,0,0,
 jal-10.106,1997,Tuxcacuesco,6468,14106,14,106,14107,nov,9,pri,SAMUEL NUÑEZ CORONA,Term-limited-p-won,,,0,0,0,
-jal-11.106,2000,Tuxcacuesco,6469,14106,14,106,14107,nov,12,pri,ENRIQUE GUERRERO SANTA ANA,Term-limited-p-lost,,,0,0,jal-13.037 jal-15.037,check
+jal-11.106,2000,Tuxcacuesco,6469,14106,14,106,14107,nov,12,pri,ENRIQUE GUERRERO SANTA ANA,Term-limited-p-lost,,,0,0,jal-13.037 jal-15.037,ok
 jal-12.106,2003,Tuxcacuesco,6470,14106,14,106,14107,jul,6,prd,JAIME ALMARAZ GARIBAY,Term-limited-p-lost,,,0,0,0,
 jal-13.106,2006,Tuxcacuesco,6471,14106,14,106,14107,jul,2,pan,RAMON REINAGA ARAIZA,Term-limited-p-lost,,,0,0,0,
 jal-14.106,2009,Tuxcacuesco,6472,14106,14,106,14107,jul,5,pri-pna,SERGIO RENE ARAIZA GUTIERREZ,Term-limited-p-won,,,0,0,0,
@@ -6578,7 +6578,7 @@ jal-08.116,1992,Villa Hidalgo,6576,14116,14,116,14116,nov,9,pri,JOSE DEL REFUGIO
 jal-09.116,1995,Villa Hidalgo,6577,14116,14,116,14116,nov,9,pri,VICTOR MANUEL CRUZ ESPARZA,Term-limited-p-won,,inafed,0,0,0,
 jal-10.116,1997,Villa Hidalgo,6578,14116,14,116,14116,nov,9,pri,ARMANDO GONZALEZ MATA,Term-limited-p-lost,,,0,0,0,
 jal-11.116,2000,Villa Hidalgo,6579,14116,14,116,14116,nov,12,pan,GERONIMO HERNANDEZ FIGUEROA,Term-limited-p-won,,,0,0,0,
-jal-12.116,2003,Villa Hidalgo,6580,14116,14,116,14116,jul,6,pan,SAMUEL CARVAJAL JAUREGUI,Term-limited-p-won,,,1,1,jal-11.117,check
+jal-12.116,2003,Villa Hidalgo,6580,14116,14,116,14116,jul,6,pan,PABLO RODRIGUEZ AVELAR,Term-limited-p-won,,,1,1,jal-11.117,ok
 jal-13.116,2006,Villa Hidalgo,6581,14116,14,116,14116,jul,2,pan,DESIDERIO TINAJERO ROBLES,Term-limited-p-lost,,,0,0,0,
 jal-14.116,2009,Villa Hidalgo,6582,14116,14,116,14116,jul,5,pri-pna,JOSE SOTO GONZALEZ,Term-limited-p-won,,,0,0,0,
 jal-15.116,2012,Villa Hidalgo,6583,14116,14,116,14116,jul,1,pna,PABLO RODRIGUEZ AVELAR,Term-limited-p-lost,,,0,0,0,
@@ -6588,7 +6588,7 @@ jal-07.117,1988,Cañadas de Obregón,6586,14117,14,117,14117,nov,9,0,JOSE SANTOS
 jal-08.117,1992,Cañadas de Obregón,6587,14117,14,117,14117,nov,9,pri,MA MARTINA MARQUEZ LOZA,Term-limited-p-won,,inafed,0,0,0,
 jal-09.117,1995,Cañadas de Obregón,6588,14117,14,117,14117,nov,9,pri,JOSE SANTOS GONZALEZ VALDIVIA,Term-limited-p-won,,inafed,1,1,jal-07.117,
 jal-10.117,1997,Cañadas de Obregón,6589,14117,14,117,14117,nov,9,pri,ROSALIO ALVAREZ IBARRA,Term-limited-p-won,,,0,0,0,
-jal-11.117,2000,Cañadas de Obregón,6590,14117,14,117,14117,nov,12,pri,SAMUEL CARVAJAL JAUREGUI,Term-limited-p-lost,,,0,0,jal-12.116,check
+jal-11.117,2000,Cañadas de Obregón,6590,14117,14,117,14117,nov,12,pri,SAMUEL CARBAJAL JAUREGUI,Term-limited-p-lost,,,0,0,jal-12.116,ok
 jal-12.117,2003,Cañadas de Obregón,6591,14117,14,117,14117,jul,6,pan,ROSENDO MARTINEZ PADILLA,Term-limited-p-won,,,0,0,0,
 jal-13.117,2006,Cañadas de Obregón,6592,14117,14,117,14117,jul,2,pan,JOSE DE JESUS SAENZ MUÑOZ,Term-limited-p-lost,,,0,0,0,
 jal-14.117,2009,Cañadas de Obregón,6593,14117,14,117,14117,jul,5,pri-pna,CARLOS GONZALEZ PADILLA,Term-limited-p-won,,,0,0,0,
