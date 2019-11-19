@@ -8005,7 +8005,7 @@ mic-11.011,2001,Briseñas,8003,16011,16,11,16011,nov,11,prd-pt1-pvem-conve-pasd-
 mic-12.011,2004,Briseñas,8004,16011,16,11,16011,nov,14,prd,ALFREDO VELASCO GUZMAN,Term-limited-p-won,,,0,0,0,
 mic-13.011,2007,Briseñas,8005,16011,16,11,16011,nov,11,prd-pt1-conve,ALFREDO VAZQUEZ AGUILAR,Term-limited-p-lost,,,0,0,0,
 mic-14.011,2011,Briseñas,8006,16011,16,11,16011,nov,13,pri-pvem,RICARDO BRISEÑO OLIVEROS,Term-limited-p-lost,,,0,0,0,
-mic-15.011,2015,Briseñas,8007,16011,16,11,16011,jun,7,pt1,JUAN GARCIA NAVARRO,Out-p-lost,,,1,1,mic-07.080,check
+mic-15.011,2015,Briseñas,8007,16011,16,11,16011,jun,7,pt1,JUAN GARCIA NAVARRO,Out-p-lost,,,1,1,mic-07.080,ok
 mic-16.011,2018,Briseñas,8008,16011,16,11,16011,jul,1,pna,JAIME ADALBERTO RAMIREZ BRAVO,2021,,,0,0,0,
 mic-07.012,1989,Buenavista,8009,16012,16,12,16012,nov,8,prd,URBANO RAMIREZ TORRES,Term-limited-p-won,,inafed,0,0,0,
 mic-08.012,1992,Buenavista,8010,16012,16,12,16012,nov,8,prd,ARTURO ZUÑIGA MORENO,Term-limited-p-lost,,inafed,0,0,0,
@@ -8145,7 +8145,7 @@ mic-10.027,1998,Chucándiro,8143,16027,16,27,16027,nov,8,pri,AGUSTIN GARCIA AMBR
 mic-11.027,2001,Chucándiro,8144,16027,16,27,16027,nov,11,prd-pt1-pvem-conve-pasd-psn,BALDOMERO HURTADO CALDERON,Term-limited-p-won,,,0,0,0,
 mic-12.027,2004,Chucándiro,8145,16027,16,27,16027,nov,14,pri-pvem,SAUL TORRES CHAVEZ,Term-limited-p-lost,,,0,0,0,
 mic-13.027,2007,Chucándiro,8146,16027,16,27,16027,nov,11,prd-pt1-conve,GUADALUPE LOPEZ GONZALEZ,Term-limited-p-lost,,,0,0,0,
-mic-14.027,2011,Chucándiro,8147,16027,16,27,16027,nov,13,pri-pvem,J. GUADALUPE GARCIA ARROYO,Term-limited-p-lost,,,0,1,mic-07.080,check
+mic-14.027,2011,Chucándiro,8147,16027,16,27,16027,nov,13,pri-pvem,J. GUADALUPE GARCIA ARROYO,Term-limited-p-lost,,,0,1,mic-07.080,ok
 mic-15.027,2015,Chucándiro,8148,16027,16,27,16027,jun,7,prd-pt1-pna,SALVADOR VALLEJO VILLALOBOS,Beaten,,,0,0,0,
 mic-16.027,2018,Chucándiro,8149,16027,16,27,16027,jul,1,pri,SOYLA GUILLEN GUZMAN,2021,,,0,0,0,
 mic-07.028,1989,Churintzio,8150,16028,16,28,16028,nov,8,prd,SALVADOR BELMONTE CALDERON,Term-limited-p-won,,inafed,0,0,0,
@@ -8243,7 +8243,7 @@ mic-13.037,2007,Huaniqueo,8241,16037,16,37,16037,nov,11,prd-pt1-conve,ENRIQUE RO
 mic-14.037,2011,Huaniqueo,8242,16037,16,37,16037,nov,13,pan-pna,MARIA EUGENIA ROSAS GONZALEZ,Term-limited-p-won,,,0,0,0,
 mic-15.037,2015,Huaniqueo,8243,16037,16,37,16037,jun,7,prd-pt1-pna,HERIBERTO AMBRIZ TOVAR,Out-p-won,,,0,0,0,
 mic-16.037,2018,Huaniqueo,8244,16037,16,37,16037,jul,1,prd-pvem,MA. TRINIDAD VAZQUEZ HERRERA,2021,,,0,0,0,
-mic-07.038,1989,Huetamo,8245,16038,16,38,16038,nov,8,pri,MIGUEL GARCIA JIMENEZ,Term-limited-p-won,,inafed,0,0,mic-09.041,check
+mic-07.038,1989,Huetamo,8245,16038,16,38,16038,nov,8,pri,MIGUEL GARCIA JIMENEZ,Term-limited-p-won,,inafed,0,0,mic-09.041,ok
 mic-08.038,1992,Huetamo,8246,16038,16,38,16038,nov,8,pri,ARTURO ACOSTA MORA,Term-limited-p-won,,inafed,0,0,mic-10.038,
 mic-09.038,1995,Huetamo,8247,16038,16,38,16038,nov,8,pri,SANTIAGO MACEDO BENITEZ,Term-limited-p-won,,inafed,0,0,0,
 mic-10.038,1998,Huetamo,8248,16038,16,38,16038,nov,8,pri,ARTURO ACOSTA MORA,Term-limited-p-won,,,1,1,mic-08.038,
@@ -8252,7 +8252,7 @@ mic-12.038,2004,Huetamo,8250,16038,16,38,16038,nov,14,prd,ANTONIO GARCIA CONEJO,
 mic-13.038,2007,Huetamo,8251,16038,16,38,16038,nov,11,pri,ROBERTO GARCIA SIERRA,Term-limited-p-won,,,0,0,0,
 mic-14.038,2011,Huetamo,8252,16038,16,38,16038,nov,13,pri-pvem,DALIA SANTANA PINEDA,Term-limited-p-lost,,,0,0,0,
 mic-15.038,2015,Huetamo,8253,16038,16,38,16038,jun,7,prd,ELIAS IBARRA TORRES,Out-p-won,,,0,0,0,
-mic-16.038,2018,Huetamo,8254,16038,16,38,16038,jul,1,pan-prd-mc,JUAN LUIS GARCIA CONEJO,2021,,,1,1,mic-07.080,check
+mic-16.038,2018,Huetamo,8254,16038,16,38,16038,jul,1,pan-prd-mc,JUAN LUIS GARCIA CONEJO,2021,,,1,1,mic-07.080,ok
 mic-07.039,1989,Huiramba,8255,16039,16,39,16039,nov,8,prd,ADRIAN CHAVEZ SOLORZANO,Term-limited-p-won,,inafed,0,0,0,
 mic-08.039,1992,Huiramba,8256,16039,16,39,16039,nov,8,prd,BERNARDO GUTIERREZ,Term-limited-p-won,,inafed,0,0,0,
 mic-09.039,1995,Huiramba,8257,16039,16,39,16039,nov,8,prd,DANIEL RANGEL PIÑON,Term-limited-p-lost,,inafed,0,0,0,
@@ -8310,7 +8310,7 @@ mic-10.044,1998,Jiménez,8308,16044,16,44,16044,nov,8,prd,ANTONIO CALVILLO VILLA
 mic-11.044,2001,Jiménez,8309,16044,16,44,16044,nov,11,prd-pt1-pvem-conve-pasd-psn,0,Term-limited-p-won,,,0,0,0,
 mic-12.044,2004,Jiménez,8310,16044,16,44,16044,nov,14,pri-pvem,JORGE LEON PALOMARES,Term-limited-p-lost,,,0,0,0,
 mic-13.044,2007,Jiménez,8311,16044,16,44,16044,nov,11,prd-pt1-conve,JOSE LUIS HERNANDEZ RIVERA,Term-limited-p-won,,,0,0,0,
-mic-14.044,2011,Jiménez,8312,16044,16,44,16044,nov,13,prd-pt1,LUIS FELIPE LEON BALBANERA,Term-limited-p-won,,,0,0,mic-16.107,check
+mic-14.044,2011,Jiménez,8312,16044,16,44,16044,nov,13,prd-pt1,LUIS FELIPE LEON BALVANERA,Term-limited-p-won,,,0,0,mic-16.107,ok
 mic-15.044,2015,Jiménez,8313,16044,16,44,16044,jun,7,prd,ARTURO LEON BALVANERA,Reelected,,,0,0,mic-16.044,
 mic-16.044,2018,Jiménez,8314,16044,16,44,16044,jul,1,prd-pvem,ARTURO LEON BALVANERA,Term-limited-pending,,,1,1,mic-15.044,
 mic-07.045,1989,Jiquilpan,8315,16045,16,45,16045,nov,8,prd,ALBERTO NOVOA GUDIÑO,Term-limited-p-lost,,inafed,0,0,0,
@@ -8360,7 +8360,7 @@ mic-10.049,1998,Madero,8358,16049,16,49,16051,nov,8,prd,LIVORIO PEREZ VARGAS,Ter
 mic-11.049,2001,Madero,8359,16049,16,49,16051,nov,11,prd-pt1-pvem-conve-pasd-psn,OTILIO SANCHEZ SANCHEZ,Term-limited-p-won,,,0,0,0,
 mic-12.049,2004,Madero,8360,16049,16,49,16051,nov,14,prd,ALBERTO VILLASEÑOR ROSALES,Term-limited-p-lost,,,0,0,0,
 mic-13.049,2007,Madero,8361,16049,16,49,16051,nov,11,pri,MARCELO IBARRA VILLA,Term-limited-p-won,,,0,0,0,
-mic-14.049,2011,Madero,8362,16049,16,49,16051,nov,13,pri-pvem,J. JESUS ROSALES GARCIA,Term-limited-p-lost,,,0,1,mic-07.080,check
+mic-14.049,2011,Madero,8362,16049,16,49,16051,nov,13,pri-pvem,J. JESUS ROSALES GARCIA,Term-limited-p-lost,,,0,1,mic-07.080,ok
 mic-15.049,2015,Madero,8363,16049,16,49,16051,jun,7,prd-pt1,JORGE ARMANDO ORTEGA AVILA,Beaten,,,0,0,0,
 mic-16.049,2018,Madero,8364,16049,16,49,16051,jul,1,pna,RODRIGO VILLA PEREZ,2021,,,0,0,0,
 mic-07.050,1989,Maravatío,8365,16050,16,50,16052,nov,8,prd,CRESENCIANO HERNANDEZ,Term-limited-p-lost,,inafed,0,0,0,
@@ -8505,7 +8505,7 @@ mic-15.063,2015,Panindícuaro,8503,16063,16,63,16064,jun,7,prd-pt1-pna-pes,FERNA
 mic-16.063,2018,Panindícuaro,8504,16063,16,63,16064,jul,1,pt1-morena,HECTOR JOHNNY AYALA MIRANDA,2021,,,0,0,0,
 mic-07.064,1989,Parácuaro,8505,16064,16,64,16065,nov,8,prd,LUIS BARAJAS AREVALO,Term-limited-p-lost,,inafed,0,0,0,
 mic-08.064,1992,Parácuaro,8506,16064,16,64,16065,nov,8,pri,RAMON ALVAREZ SOTO,Term-limited-p-lost,,inafed,0,0,0,
-mic-09.064,1995,Parácuaro,8507,16064,16,64,16065,nov,8,prd,J. TRINIDAD TAFOLLA GARCIA,Term-limited-p-won,,inafed,0,1,mic-07.080,check
+mic-09.064,1995,Parácuaro,8507,16064,16,64,16065,nov,8,prd,J. TRINIDAD TAFOLLA GARCIA,Term-limited-p-won,,inafed,0,1,mic-07.080,ok
 mic-10.064,1998,Parácuaro,8508,16064,16,64,16065,nov,8,prd,DANIEL TAFOYA GARCIA,Term-limited-p-won,,,0,0,0,
 mic-11.064,2001,Parácuaro,8509,16064,16,64,16065,nov,11,prd-pt1-pvem-conve-pasd-psn,MIGUEL ANGEL PANTOJA GUZMAN,Term-limited-p-won,,,0,0,0,
 mic-12.064,2004,Parácuaro,8510,16064,16,64,16065,nov,14,prd,GUSTAVO GARCIA CUEVAS,Term-limited-p-won,,,0,0,0,
@@ -8680,7 +8680,7 @@ mic-12.082,2004,Tacámbaro,8678,16082,16,82,16083,nov,14,pri-pvem,VALENTIN RODRI
 mic-13.082,2007,Tacámbaro,8679,16082,16,82,16083,nov,11,pri,SALVADOR BASTIDA GARCIA,Term-limited-p-lost,,,0,0,0,
 mic-14.082,2011,Tacámbaro,8680,16082,16,82,16083,nov,13,pan-pna,NOE OCTAVIO ABURTO INCLAN,Term-limited-p-lost,,,0,0,0,
 mic-15.082,2015,Tacámbaro,8681,16082,16,82,16083,jun,7,pri-pvem,MAURICIO ACOSTA ALMANZA,Out-p-lost,,,0,0,0,
-mic-16.082,2018,Tacámbaro,8682,16082,16,82,16083,jul,1,pan-prd-mc,SALVADOR BARRERA MEDRANO,2021,,,1,1,mic-11.097 mic-14.097,check
+mic-16.082,2018,Tacámbaro,8682,16082,16,82,16083,jul,1,pan-prd-mc,SALVADOR BARRERA MEDRANO,2021,,,1,1,mic-11.097 mic-14.097,ok
 mic-10.083,1998,Tancítaro,8683,16083,16,83,16084,nov,8,pri,JAVIER MEDINA VILLANUEVA,Term-limited-p-won,,,0,0,0,
 mic-11.083,2001,Tancítaro,8684,16083,16,83,16084,nov,11,pri,ARTURO OLIVERA GUTIERREZ,Term-limited-p-lost,,,0,0,0,
 mic-12.083,2004,Tancítaro,8685,16083,16,83,16084,nov,14,pan,RUMUALDO BUCIO CORTEZ,Term-limited-p-lost,,,0,0,0,
@@ -8845,7 +8845,7 @@ mic-14.099,2011,Tuzantla,8843,16099,16,99,16100,nov,13,pri-pvem,JULIAN RODRIGUEZ
 mic-15.099,2015,Tuzantla,8844,16099,16,99,16100,jun,7,prd-pt1-pna,OCTAVIO OCAMPO CORDOVA,Out-p-won,,,0,0,0,
 mic-16.099,2018,Tuzantla,8845,16099,16,99,16100,jul,1,pan-prd-mc,JAZMIN DANAE ARROYO MARTINEZ,2021,,,0,0,0,
 mic-07.100,1989,Tzintzuntzan,8846,16100,16,100,16101,nov,8,pri,JESUS HUIPE ZALDIVAR,Term-limited-p-won,,inafed,0,0,0,
-mic-08.100,1992,Tzintzuntzan,8847,16100,16,100,16101,nov,8,pri,J. HERCULANO GARCIA NAMBO,Term-limited-p-lost,,inafed,0,1,mic-07.080,check
+mic-08.100,1992,Tzintzuntzan,8847,16100,16,100,16101,nov,8,pri,J. HERCULANO GARCIA NAMBO,Term-limited-p-lost,,inafed,0,1,mic-07.080,ok
 mic-09.100,1995,Tzintzuntzan,8848,16100,16,100,16101,nov,8,prd,ELESBAN APARICIO CUIRIZ,Term-limited-p-won,,inafed,0,0,mic-15.100,
 mic-10.100,1998,Tzintzuntzan,8849,16100,16,100,16101,nov,8,prd,ELIGIO CORNELIO APARICIO,Term-limited-p-won,,,0,0,0,
 mic-11.100,2001,Tzintzuntzan,8850,16100,16,100,16101,nov,11,prd-pt1-pvem-conve-pasd-psn,RICARDO ESTRADA HUIPE,Term-limited-p-lost,,,0,0,0,
@@ -8895,7 +8895,7 @@ mic-14.104,2011,Villamar,8893,16104,16,104,16105,nov,13,pri-pvem,FRYLAN ZAMORANO
 mic-15.104,2015,Villamar,8894,16104,16,104,16105,jun,7,pri-pvem,JOEL LOPEZ PADILLA,Out-p-lost,,,0,0,0,
 mic-16.104,2018,Villamar,8895,16104,16,104,16105,jul,1,pan-prd-mc,ALFONSO BAUTISTA LUA,2021,,,0,0,0,
 mic-07.105,1989,Vista Hermosa,8896,16105,16,105,16106,nov,8,prd,ADRIAN SORIA LARA,Term-limited-p-lost,,inafed,0,0,0,
-mic-08.105,1992,Vista Hermosa,8897,16105,16,105,16106,nov,8,pri,J. JESUS GARCIA PEREZ,Term-limited-p-lost,,inafed,0,1,mic-07.080,check
+mic-08.105,1992,Vista Hermosa,8897,16105,16,105,16106,nov,8,pri,J. JESUS GARCIA PEREZ,Term-limited-p-lost,,inafed,0,1,mic-07.080,ok
 mic-09.105,1995,Vista Hermosa,8898,16105,16,105,16106,nov,8,prd,ALFREDO DEL TORO ROMAN,Term-limited-p-won,,inafed,0,0,0,
 mic-10.105,1998,Vista Hermosa,8899,16105,16,105,16106,nov,8,prd,HECTOR GUILLERMO CERVANTES GIL,Term-limited-p-lost,,,0,0,0,
 mic-11.105,2001,Vista Hermosa,8900,16105,16,105,16106,nov,11,pri,JUAN CARLOS BECERRA BELTRAN,Term-limited-p-lost,,,0,0,0,
@@ -8923,7 +8923,7 @@ mic-12.107,2004,Zacapu,8921,16107,16,107,16108,nov,14,pan,JAVIER GARCIA CERVANTE
 mic-13.107,2007,Zacapu,8922,16107,16,107,16108,nov,11,prd-pt1-conve,ANTONIO ASCENCIO RODRIGEZ,Term-limited-p-lost,,,0,0,0,
 mic-14.107,2011,Zacapu,8923,16107,16,107,16108,nov,13,pan-pna,ALEJANDRO TEJEDA LOPEZ,Term-limited-p-lost,,,0,0,0,
 mic-15.107,2015,Zacapu,8924,16107,16,107,16108,jun,7,mc,GERARDO TORRES OCHOA,Beaten,,,0,0,0,
-mic-16.107,2018,Zacapu,8925,16107,16,107,16108,jul,1,prd-pvem,LUIS FELIPE LEON BALBANERA,2021,,,1,1,mic-14.044,check
+mic-16.107,2018,Zacapu,8925,16107,16,107,16108,jul,1,prd-pvem,LUIS FELIPE LEON BALBANERA,2021,,,1,1,mic-14.044,ok
 mic-07.108,1989,Zamora,8926,16108,16,108,16109,nov,8,pan,IGNACIO PEÑA GARCIA,Term-limited-p-lost,,inafed,0,0,0,
 mic-08.108,1992,Zamora,8927,16108,16,108,16109,nov,8,pri,GUILERMO ALEJANDRO GOMEZ VEGA,Term-limited-p-lost,,inafed,0,0,0,
 mic-09.108,1995,Zamora,8928,16108,16,108,16109,nov,8,pan,JULIO CASTELLANOS RAMIREZ,Term-limited-p-won,,inafed,0,0,0,
@@ -9054,7 +9054,7 @@ mor-11.007,2000,Cuernavaca,9052,17007,17,7,17007,jul,2,pan,JOSE RAUL HERNANDEZ A
 mor-12.007,2003,Cuernavaca,9053,17007,17,7,17007,jul,6,pan,ADRIAN RIVERA PEREZ,Term-limited-p-won,,,0,0,0,
 mor-13.007,2006,Cuernavaca,9054,17007,17,7,17007,jul,2,pan,JESUS GILES SANCHEZ,Term-limited-p-lost,,,0,0,0,
 mor-14.007,2009,Cuernavaca,9055,17007,17,7,17007,jul,5,pri,MANUEL MARTINEZ GARRIGOS,Term-limited-p-lost,,,0,0,0,
-mor-15.007,2012,Cuernavaca,9056,17007,17,7,17007,jul,1,prd-pt1-mc,JORGE MORALES BARUD,Term-limited-p-lost,,,1,1,mor-08.017,check
+mor-15.007,2012,Cuernavaca,9056,17007,17,7,17007,jul,1,prd-pt1-mc,JORGE MORALES BARUD,Term-limited-p-lost,,,1,1,mor-08.017,ok
 mor-16.007,2015,Cuernavaca,9057,17007,17,7,17007,jun,7,psd1,CUAUHTEMOC BLANCO BRAVO,Out-p-lost,sought higher office,,0,0,0,
 mor-17.007,2018,Cuernavaca,9058,17007,17,7,17007,jul,1,pt1-morena-pes,JOSE LUIS GOMEZ BORBOLLA,2021,,,0,0,0,
 mor-07.008,1988,Emiliano Zapata,9059,17008,17,8,17008,mar,16,pri,LAURO MUÑOZ ESQUIVEL,Term-limited-p-won,,inafed,0,0,0,
@@ -9155,7 +9155,7 @@ mor-15.016,2012,Ocuituco,9153,17016,17,16,17016,jul,1,pvem,JUAN CARLOS FLORES ES
 mor-16.016,2015,Ocuituco,9154,17016,17,16,17016,jun,7,pri,VICTOR HUGO BOBADILLA GUTIERREZ,Out-p-lost,,,0,0,0,
 mor-17.016,2018,Ocuituco,9155,17016,17,16,17016,jul,1,pvem,JUAN JESUS ANZURES GARCIA,2021,,,0,0,0,
 mor-07.017,1988,Puente de Ixtla,9156,17017,17,17,17017,mar,16,pri,IGNACIO PICHARDO CALDERON,Term-limited-p-won,,inafed,0,0,0,
-mor-08.017,1991,Puente de Ixtla,9157,17017,17,17,17017,mar,16,pri,JORGE MORALES BARUD,Term-limited-p-won,,inafed,0,0,mor-15.007,check
+mor-08.017,1991,Puente de Ixtla,9157,17017,17,17,17017,mar,16,pri,JORGE MORALES BARUD,Term-limited-p-won,,inafed,0,0,mor-15.007,ok
 mor-09.017,1994,Puente de Ixtla,9158,17017,17,17,17017,mar,16,pri,LAURO OCAMPO AMANTE,Term-limited-p-won,,inafed,0,0,0,
 mor-10.017,1997,Puente de Ixtla,9159,17017,17,17,17017,mar,16,pri,JUAN CARLOS MORALES R.,Term-limited-p-won,,,0,0,0,
 mor-11.017,2000,Puente de Ixtla,9160,17017,17,17,17017,jul,2,pri,JULIO ESPIN NAVARRETE,Term-limited-p-lost,,,0,0,mor-15.017,
