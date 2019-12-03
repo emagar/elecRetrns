@@ -15176,7 +15176,7 @@ son-17.013,2018,Banámichi,15173,26013,26,13,26011,jul,1,pri-pvem-pna,ALEJANDRO 
 son-08.014,1991,Baviácora,15174,26014,26,14,26012,jul,6,pri,JOSE FRANCISCO SIQUEIROS ENCINAS,Term-limited-p-won,,,,inafed,0,0,son-08.013 son-11.013 son-11.014,check,
 son-09.014,1994,Baviácora,15175,26014,26,14,26012,jul,6,pri,ADALBERTO MALDONADO SALAZAR,Term-limited-p-lost,,,,inafed,0,0,son-09.013,check,
 son-10.014,1997,Baviácora,15176,26014,26,14,26012,jul,6,pan,RAMON ENRIQUE CERON BRISEÑO,Term-limited-p-won,,,,,0,0,0,,
-son-11.014,2000,Baviácora,15177,26014,26,14,26012,jul,2,pan,JOSE FRANCISCO SIQUEIROS ENCINAS,Term-limited-p-lost,,,,,1,1,son-08.013 son-11.013 son-08.014,check,
+son-11.014,2000,Baviácora,15177,26014,26,14,26012,jul,2,pan,JOSE FRANCISCO SIQUEIROS ENCINAS,Term-limited-p-lost,,,,,1,1,son-08.013 son-11.013 son-08.014,check,x
 son-12.014,2003,Baviácora,15178,26014,26,14,26012,jul,6,pri,JESUS MANUEL ROBLES GARCIA,Term-limited-p-lost,,,,,0,0,0,,
 son-13.014,2006,Baviácora,15179,26014,26,14,26012,jul,2,pan,JOSE ALFREDO GUATRIN CONTRERAS,Term-limited-p-won,,,,,0,0,0,,
 son-14.014,2009,Baviácora,15180,26014,26,14,26012,jul,5,pan,FRANCISCO ALEJO ROMERO LAREZ,Term-limited-p-lost,,,,,0,0,0,,
@@ -15211,7 +15211,7 @@ son-12.017,2003,Caborca,15208,26017,26,17,26046,jul,6,pan,HECTOR CAÑEZ RIOS,Ter
 son-13.017,2006,Caborca,15209,26017,26,17,26046,jul,2,pan,HERNAN MENDEZ OROS,Term-limited-p-won,,,,,0,0,0,,
 son-14.017,2009,Caborca,15210,26017,26,17,26046,jul,5,pan,DARIO MURILLO BOLAÑOS,Term-limited-p-won,,,,,0,0,0,,
 son-15.017,2012,Caborca,15211,26017,26,17,26046,jul,1,pan-pna,FRANCISCO ALFONSO JIMENEZ RODRIGUEZ,Term-limited-p-lost,,,,,0,0,0,,
-son-16.017,2015,Caborca,15212,26017,26,17,26046,jun,7,pri,KARINA GARCIA GUTIERREZ,Out-p-lost,,,,,1,1,son-13.065,check,
+son-16.017,2015,Caborca,15212,26017,26,17,26046,jun,7,pri,KARINA GARCIA GUTIERREZ,Out-p-lost,,,fue alcaldesa Tubutama 2006,,1,1,0,ok,
 son-17.017,2018,Caborca,15213,26017,26,17,26046,jul,1,pt1-morena-pes,LIBRADO MACIAS GONZALEZ,2021,,,,,0,0,0,,
 son-08.018,1991,Cajeme,15214,26018,26,18,26059,jul,6,pri,SERGIO GASTELUM DE LA VEGA,Term-limited-p-won,,,,inafed,0,0,0,,
 son-09.018,1994,Cajeme,15215,26018,26,18,26059,jul,6,pri,RAUL AYALA CANDELAS,Term-limited-p-lost,,,,inafed,0,0,0,,
@@ -15686,7 +15686,7 @@ son-09.065,1994,Tubutama,15683,26065,26,65,26043,jul,6,pri,JUAN PEDRO GASTELUM O
 son-10.065,1997,Tubutama,15684,26065,26,65,26043,jul,6,pri,JUAN ARNOLDO BUSTAMANTE ORTIZ,Term-limited-p-won,,,,,0,0,0,,
 son-11.065,2000,Tubutama,15685,26065,26,65,26043,jul,2,pri,JUAN MANUEL JIMENEZ BADILLA,Term-limited-p-won,,,,,0,0,0,,
 son-12.065,2003,Tubutama,15686,26065,26,65,26043,jul,6,pri,MARTIN CELAYA REINA,Term-limited-p-won,,,,,0,0,0,,
-son-13.065,2006,Tubutama,15687,26065,26,65,26043,jul,2,pri-pna,KARINA GARCIA GUTIERREZ,Term-limited-p-lost,,,,,0,0,son-16.017,check,x
+son-13.065,2006,Tubutama,15687,26065,26,65,26043,jul,2,pri-pna,KARINA GARCIA GUTIERREZ,Term-limited-p-lost,,,,,0,0,0,ok,
 son-14.065,2009,Tubutama,15688,26065,26,65,26043,jul,5,pan,SANTOS CASTAÑEDA BARCELO,Term-limited-p-won,,,,,0,0,0,,
 son-15.065,2012,Tubutama,15689,26065,26,65,26043,jul,1,pan-pna,JESUS RIVERA CELAYA,Term-limited-p-lost,,,,,0,0,0,,
 son-16.065,2015,Tubutama,15690,26065,26,65,26043,jun,7,pri,ELMER MONTOYA GAXIOLA,Out-p-won,,,,,0,0,0,,
