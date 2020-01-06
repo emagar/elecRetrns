@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2018-03-08
+Last revision: 2019-11-20
 
 # Export to md: M-x org-md-export-to-markdown
 

@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgf2f588d)
-2.  [Files in the repository and how to cite them](#org8126e0e)
-3.  [Codebook](#org57c790f)
-4.  [Coding procedure for the incumbent's status](#org7f6c9e2)
-5.  [Procedimiento para codificar el estatus del ocupante](#org678f085)
-6.  [Sources](#org4929118)
-7.  [Acknowledgements](#org55538ca)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgf3d78f3)
+2.  [Files in the repository and how to cite them](#org9fbd0fb)
+3.  [Codebook](#orgb87641a)
+4.  [Coding procedure for the incumbent's status](#orgd45303d)
+5.  [Procedimiento para codificar el estatus del ocupante](#org30523b1)
+6.  [Sources](#org4b2e8d9)
+7.  [Acknowledgements](#orgecc5417)
 
-Last revision: 2018-03-08
+Last revision: 2019-11-20
 
 
-<a id="orgf2f588d"></a>
+<a id="orgf3d78f3"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before cloning previous commits of the repository.
 
 
-<a id="org8126e0e"></a>
+<a id="org9fbd0fb"></a>
 
 # Files in the repository and how to cite them
 
@@ -51,7 +51,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="org57c790f"></a>
+<a id="orgb87641a"></a>
 
 # Codebook
 
@@ -87,12 +87,12 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org7482930) for categories and coding procedure ([aquí](#org6efb291) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org01dc429) for categories and coding procedure ([aquí](#orgdf6d4a5) la versión en español del procedimiento codificador).
 
 
-<a id="org7f6c9e2"></a>
+<a id="orgd45303d"></a>
 
-# Coding procedure for the incumbent's status<a id="org7482930"></a>
+# Coding procedure for the incumbent's status<a id="org01dc429"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
@@ -110,9 +110,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org678f085"></a>
+<a id="org30523b1"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org6efb291"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="orgdf6d4a5"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 
@@ -130,7 +130,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org4929118"></a>
+<a id="org4b2e8d9"></a>
 
 # Sources
 
@@ -145,7 +145,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org55538ca"></a>
+<a id="orgecc5417"></a>
 
 # Acknowledgements
 
