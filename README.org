@@ -11,7 +11,7 @@ Last revision: 2019-11-20
 
 The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
 
-/Important note:/ older incarnations of this this repository contain LFS (Large File System) parts. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before cloning previous commits of the repository.
+/Important note:/ older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 
 * Files in the repository and how to cite them
 
