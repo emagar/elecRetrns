@@ -765,12 +765,12 @@ colnames(dat)
 ################################
 ### export a coalAgg version ###
 ################################
-sel <- dat$yr>=1997
+sel <- dat$yr>=1989
 dat <- dat[sel,] # drop early years
 dat$ord <- 1:nrow(dat)
-write.csv(dat, file = "aymu1997-present.coalAgg.csv", row.names = FALSE)
+write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
 
-dat <- read.csv(file = "aymu1997-present.coalAgg.csv", stringsAsFactors = FALSE)
+dat <- read.csv(file = "aymu1989-present.coalAgg.csv", stringsAsFactors = FALSE)
 dat[1,]
 
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
