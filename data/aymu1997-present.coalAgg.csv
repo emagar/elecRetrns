@@ -1969,7 +1969,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1968,2016,Allende,cua-16.003,8,3,8003,8003,ok,5,jun,4,1,pri-pvem-pna,2432,pri-pvem-pna,2289,pan,102,prd,101,pes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4924,2,91,5017,7280,iee,
 1969,2016,Aquiles Serdán,cua-16.004,8,4,8004,8004,ok,5,jun,6,1,pvem,3023,pvem,2039,pri-pna,660,pan,206,mc,82,prd,74,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6084,0,195,6279,10327,iee,
 1970,2016,Ascensión,cua-16.005,8,5,8005,8005,ok,5,jun,5,1,pri-pvem-pt1-pna,4167,pri-pvem-pt1-pna,3276,pan,405,mc,68,prd,57,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7973,1,210,8184,17014,iee,
-1971,2016,Bachíniva,cua-16.006,8,6,8006,8006,ok,5,jun,3,1,pan,1640,pri-pvem-pt1-pna,1639,pan,107,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3385,1,103,3489,5582,iee,recuento para pri-coal
+1971,2016,Bachíniva,cua-16.006,8,6,8006,8006,ok,5,jun,3,1,pan,1640,pan,1639,pri-pvem-pt1-pna,107,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3385,1,103,3489,5582,iee,recuento para pri-coal
 1972,2016,Balleza,cua-16.007,8,7,8007,8007,ok,5,jun,4,1,pri-pvem-pt1-pna,4655,pri-pvem-pt1-pna,3282,pan,22,pes,14,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7973,3,389,8365,12851,iee,
 1973,2016,Batopilas,cua-16.008,8,8,8008,8008,ok,5,jun,3,1,pri-pna,2643,pri-pna,737,pan,35,mc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3415,7,559,3981,8459,iee,
 1974,2016,Bocoyna,cua-16.009,8,9,8009,8009,ok,5,jun,6,1,mc,3697,mc,3209,pri-pvem-pna,2962,pan,1758,pes,107,prd,104,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11837,4,748,12589,20561,iee,
@@ -10220,7 +10220,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 10220,2018,Tetela de Ocampo,pue-16.172,21,172,21172,21171,ok,1,jul,7,1,pri,5991,pri,5671,pan-prd-pcpp,1208,mc,1000,pt1-morena-pes,95,pna,34,psi,32,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14031,3,856,14890,NA,iee,
 10221,2018,Teteles de Avila Castillo,pue-16.173,21,173,21173,21172,ok,1,jul,7,1,pan-prd-pcpp,1359,pan-prd-pcpp,773,pt1-morena-pes,436,pri,265,pvem,175,mc,157,psi,93,pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3258,1,140,3399,NA,iee,
 10222,2018,Teziutlán,pue-16.174,21,174,21174,21173,ok,1,jul,7,1,pcpp,17084,pcpp,12553,pan-prd-mc-psi,7111,pt1-morena-pes,6462,pri,2748,indep1,1210,pna,770,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47938,52,1586,49576,NA,iee,
-10223,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+10223,2018,Tianguismanalco,pue-16.175,NA,NA,NA,NA,extra,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,iee,"Anulada por iee, no record of extra"
 10224,2018,Tilapa,pue-16.176,21,176,21176,21175,ok,1,jul,6,1,pri,1743,pri,1628,pan-mc-psi,848,pt1-morena-pes,118,prd,98,pna,43,pcpp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4478,1,243,4722,NA,iee,
 10225,2018,Tlacotepec de Benito Juárez,pue-16.177,21,177,21177,21176,ok,1,jul,8,1,pt1-morena-pes,5863,pt1-morena-pes,4896,pan-prd,4446,psi,3015,pri,2871,pcpp,1487,pna,117,mc,82,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22777,3,2201,24981,NA,iee,
 10226,2018,Tlacuilotepec,pue-16.178,21,178,21178,21178,ok,1,jul,5,1,pri,4307,pri,2256,prd-mc,1007,pan-pcpp,915,pt1-morena-pes,26,psi,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8511,1,475,8987,NA,iee,
