@@ -1124,6 +1124,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1123,1998,Teopisca,cps-10.094,7,94,7094,7095,ok,4,oct,4,0,pri,2772,pri,1291,fc1,629,prd,511,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5203,4,601,5808,10848,Mau-Banamex,
 1124,1998,Tila,cps-10.096,7,96,7096,7096,ok,4,oct,4,0,pri,5551,pri,3595,prd,354,pt1,153,fc1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9653,22,884,10559,25328,Mau-Banamex,
 1125,1998,Tonalá,cps-10.097,7,97,7097,7097,extra,6,dic,7,0,pri,17030,pri,11652,prd,4768,pan,1362,pdch,902,pt1,880,fc1,96,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36690,35,1386,38111,43813,iee,
+1126,1998,Tonalá,cps-10a.097,7,97,7097,7097,ok,4,oct,6,0,pri,7480,pri,5626,prd,4544,pan,526,pt1,279,pdch,50,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18505,15,586,19106,43813,Mau-Banamex,
 1127,1998,Totolapa,cps-10.098,7,98,7098,7098,ok,4,oct,2,0,prd,1165,prd,1057,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2222,0,72,2294,2592,Mau-Banamex,
 1128,1998,Trinitaria--La,cps-10.099,7,99,7099,7099,ok,4,oct,4,0,pri,5129,pri,1925,prd,1153,pdch,880,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9087,25,548,9660,28099,Mau-Banamex,
 1129,1998,Tumbalá,cps-10.100,7,100,7100,7100,ok,4,oct,4,0,pri,3403,pri,1386,pt1,1275,prd,40,fc1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6104,0,589,6693,12112,Mau-Banamex,
@@ -1139,7 +1140,6 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1139,1998,San Lucas,cps-10.110,7,110,7110,7080,ok,4,oct,5,0,pri,842,pri,508,pt1,280,prd,77,pan,56,pdch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1763,0,76,1839,2565,Mau-Banamex,
 1140,1998,Zinacantán,cps-10.111,7,111,7111,7111,ok,4,oct,4,0,pri,3673,pri,1262,prd,651,pan,77,pdch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5663,14,502,6179,12137,Mau-Banamex,
 1141,1998,San Juan Cancuc,cps-10.112,7,112,7112,7079,ok,4,oct,3,0,pri,2541,pri,2132,prd,62,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4735,1,406,5142,9717,Mau-Banamex,
-1126,1998,Tonalá,cps-10a.097,7,97,7097,7097,ok,4,oct,6,0,pri,7480,pri,5626,prd,4544,pan,526,pt1,279,pdch,50,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18505,15,586,19106,43813,Mau-Banamex,
 1142,2001,Acacoyagua,cps-11.001,7,1,7001,7001,ok,7,oct,5,0,pri,2428,pri,1931,prd,286,pan,82,pasd,74,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4801,0,139,4940,NA,Banamex,
 1143,2001,Acala,cps-11.002,7,2,7002,7002,ok,7,oct,4,1,prd-pt1,3469,prd-pt1,3287,pri,1666,pan,1469,pasd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9891,0,241,10132,NA,Banamex,
 1144,2001,Acapetahua,cps-11.003,7,3,7003,7003,ok,7,oct,5,0,pvem,2917,pvem,2037,pri,1639,prd,609,pan,340,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7542,0,181,7723,NA,Banamex,
@@ -1251,13 +1251,13 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1250,2001,San Lucas,cps-11.110,7,110,7110,7080,ok,7,oct,4,0,prd,753,prd,709,pan,707,pri,45,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2214,0,53,2267,NA,Banamex,
 1251,2001,Zinacantán,cps-11.111,7,111,7111,7111,ok,7,oct,5,0,prd,5196,prd,4483,pri,682,pan,115,pt1,20,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10496,5,552,11053,NA,Banamex,
 1252,2001,San Juan Cancuc,cps-11.112,7,112,7112,7079,ok,7,oct,3,0,pri,3737,pri,2623,prd,514,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6874,0,232,7106,NA,Banamex,
-1253,2001,Aldama,cps-11.113,7,113,7113,0,new,7,oct,2,0,pri,1152,pri,88,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1240,0,109,1349,NA,Banamex,
-1254,2001,Benemérito de las Américas,cps-11.114,7,114,7114,0,new,7,oct,4,0,pri,1522,pri,849,prd,821,pan,90,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3282,0,139,3421,NA,Banamex,
-1255,2001,Maravilla Tenejapa,cps-11.115,7,115,7115,0,new,7,oct,4,0,pri,721,pri,545,prd,480,pan,257,pasd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2003,0,144,2147,NA,Banamex,
-1256,2001,Marqués de Comillas,cps-11.116,7,116,7116,0,new,7,oct,3,0,prd,966,prd,718,pri,592,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2276,2,186,2464,NA,Banamex,
-1257,2001,Montecristo de Guerrero,cps-11.117,7,117,7117,0,new,7,oct,5,0,pan,732,pan,722,pri,535,pac1,50,prd,15,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2054,0,63,2117,NA,Banamex,
-1258,2001,San Andrés Duraznal,cps-11.118,7,118,7118,0,new,7,oct,4,0,pt1,715,pt1,665,pri,156,prd,40,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1576,0,88,1664,NA,Banamex,
-1259,2001,Santiago el Pinar,cps-11.119,7,119,7119,0,new,7,oct,3,0,pri,543,pri,315,prd,12,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,870,0,62,932,NA,Banamex,
+1253,2001,Aldama,cps-11.113,7,113,7113,7112,new,7,oct,2,0,pri,1152,pri,88,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1240,0,109,1349,NA,Banamex,
+1254,2001,Benemérito de las Américas,cps-11.114,7,114,7114,7113,new,7,oct,4,0,pri,1522,pri,849,prd,821,pan,90,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3282,0,139,3421,NA,Banamex,
+1255,2001,Maravilla Tenejapa,cps-11.115,7,115,7115,7114,new,7,oct,4,0,pri,721,pri,545,prd,480,pan,257,pasd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2003,0,144,2147,NA,Banamex,
+1256,2001,Marqués de Comillas,cps-11.116,7,116,7116,7115,new,7,oct,3,0,prd,966,prd,718,pri,592,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2276,2,186,2464,NA,Banamex,
+1257,2001,Montecristo de Guerrero,cps-11.117,7,117,7117,7116,new,7,oct,5,0,pan,732,pan,722,pri,535,pac1,50,prd,15,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2054,0,63,2117,NA,Banamex,
+1258,2001,San Andrés Duraznal,cps-11.118,7,118,7118,7117,new,7,oct,4,0,pt1,715,pt1,665,pri,156,prd,40,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1576,0,88,1664,NA,Banamex,
+1259,2001,Santiago el Pinar,cps-11.119,7,119,7119,7118,new,7,oct,3,0,pri,543,pri,315,prd,12,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,870,0,62,932,NA,Banamex,
 1260,2004,Acacoyagua,cps-12.001,7,1,7001,7001,ok,3,oct,3,1,pri-pvem,2094,pri-pvem,1875,pan,1278,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5247,1,105,5353,NA,voz y voto odette,
 1261,2004,Acala,cps-12.002,7,2,7002,7002,ok,3,oct,4,0,pan,5239,pan,2832,pri,1622,prd,1181,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10874,0,247,11121,NA,voz y voto odette,
 1262,2004,Acapetahua,cps-12.003,7,3,7003,7003,ok,3,oct,5,0,pvem,3409,pvem,2740,pri,1612,pt1,1038,prd,828,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9627,0,279,9906,NA,voz y voto odette,
@@ -1369,13 +1369,13 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1368,2004,San Lucas,cps-12.110,7,110,7110,7080,ok,3,oct,4,0,pan,980,pan,906,pri,350,prd,166,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2402,0,59,2461,NA,voz y voto odette,
 1369,2004,Zinacantán,cps-12.111,7,111,7111,7111,ok,3,oct,2,1,pan-prd,6678,pan-prd,5662,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12340,1,499,12840,NA,voz y voto odette,
 1370,2004,San Juan Cancuc,cps-12.112,7,112,7112,7079,ok,3,oct,3,0,pri,5158,pri,2924,prd,406,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8488,0,287,8775,NA,voz y voto odette,
-1371,2004,Aldama,cps-12.113,7,113,7113,0,ok,3,oct,2,0,pri,1044,pri,98,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1142,0,106,1248,NA,voz y voto odette,
-1372,2004,Benemérito de las Américas,cps-12.114,7,114,7114,0,ok,3,oct,6,0,pt1,1518,pt1,1374,pri,711,pan,459,prd,6,conve,1,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4069,0,160,4229,NA,voz y voto odette,
-1373,2004,Maravilla Tenejapa,cps-12.115,7,115,7115,0,ok,3,oct,4,0,pri,1100,pri,878,conve,693,prd,151,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2822,0,138,2960,NA,voz y voto odette,
-1374,2004,Marqués de Comillas,cps-12.116,7,116,7116,0,ok,3,oct,3,1,pri-pvem,1409,pri-pvem,872,pan,840,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3121,1,86,3208,NA,voz y voto odette,
-1375,2004,Montecristo de Guerrero,cps-12.117,7,117,7117,0,ok,3,oct,3,0,pri,1195,pri,1106,pan,50,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2351,0,58,2409,NA,voz y voto odette,
-1376,2004,San Andrés Duraznal,cps-12.118,7,118,7118,0,ok,3,oct,5,0,pt1,587,pt1,462,pri,409,pan,255,prd,4,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1717,0,54,1771,NA,voz y voto odette,
-1377,2004,Santiago el Pinar,cps-12.119,7,119,7119,0,ok,3,oct,5,1,pri,380,pri,353,pan-pt1,232,prd,3,pvem,1,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,969,0,46,1015,NA,voz y voto odette,
+1371,2004,Aldama,cps-12.113,7,113,7113,7112,ok,3,oct,2,0,pri,1044,pri,98,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1142,0,106,1248,NA,voz y voto odette,
+1372,2004,Benemérito de las Américas,cps-12.114,7,114,7114,7113,ok,3,oct,6,0,pt1,1518,pt1,1374,pri,711,pan,459,prd,6,conve,1,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4069,0,160,4229,NA,voz y voto odette,
+1373,2004,Maravilla Tenejapa,cps-12.115,7,115,7115,7114,ok,3,oct,4,0,pri,1100,pri,878,conve,693,prd,151,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2822,0,138,2960,NA,voz y voto odette,
+1374,2004,Marqués de Comillas,cps-12.116,7,116,7116,7115,ok,3,oct,3,1,pri-pvem,1409,pri-pvem,872,pan,840,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3121,1,86,3208,NA,voz y voto odette,
+1375,2004,Montecristo de Guerrero,cps-12.117,7,117,7117,7116,ok,3,oct,3,0,pri,1195,pri,1106,pan,50,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2351,0,58,2409,NA,voz y voto odette,
+1376,2004,San Andrés Duraznal,cps-12.118,7,118,7118,7117,ok,3,oct,5,0,pt1,587,pt1,462,pri,409,pan,255,prd,4,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1717,0,54,1771,NA,voz y voto odette,
+1377,2004,Santiago el Pinar,cps-12.119,7,119,7119,7118,ok,3,oct,5,1,pri,380,pri,353,pan-pt1,232,prd,3,pvem,1,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,969,0,46,1015,NA,voz y voto odette,
 1378,2007,Acacoyagua,cps-13.001,7,1,7001,7001,ok,7,oct,5,0,pan,1977,pan,1589,pri,1112,prd,1015,pvem,280,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5973,2,120,6095,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
 1379,2007,Acala,cps-13.002,7,2,7002,7002,ok,7,oct,7,0,pri,3409,pri,3009,pan,2282,prd,2194,conve,292,fueciu,289,pt1,18,pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11493,1,398,11892,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
 1380,2007,Acapetahua,cps-13.003,7,3,7003,7003,ok,7,oct,5,1,pvem,3225,pvem,2515,prd,2289,pri,1327,pan,889,pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10245,2,412,10659,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
@@ -1487,13 +1487,13 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1486,2007,San Lucas,cps-13.110,7,110,7110,7080,ok,7,oct,5,1,pri-pvem,1214,pri-pvem,635,prd,545,conve,241,pan,90,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2725,0,68,2793,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
 1487,2007,Zinacantán,cps-13.111,7,111,7111,7111,ok,7,oct,4,1,prd-pt1-conve,7934,prd-pt1-conve,5886,pri,473,pan,74,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14367,52,516,14935,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
 1488,2007,San Juan Cancuc,cps-13.112,7,112,7112,7079,ok,7,oct,3,0,prd,4830,prd,4671,pri,1112,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10613,25,369,11007,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1489,2007,Aldama,cps-13.113,7,113,7113,0,ok,7,oct,3,0,pri,1140,pri,203,prd,64,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1407,13,95,1515,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1490,2007,Benemérito de las Américas,cps-13.114,7,114,7114,0,ok,7,oct,5,1,prd,1774,prd,1154,pt1-conve,959,pri,812,pvem,681,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5380,9,163,5552,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1491,2007,Maravilla Tenejapa,cps-13.115,7,115,7115,0,ok,7,oct,4,1,prd-pt1-conve,1540,prd-pt1-conve,1372,pri,420,pvem,174,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3506,7,95,3608,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1492,2007,Marqués de Comillas,cps-13.116,7,116,7116,0,ok,7,oct,3,1,pri-pvem,1249,pri-pvem,1224,pan,892,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3365,5,144,3514,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1493,2007,Montecristo de Guerrero,cps-13.117,7,117,7117,0,ok,7,oct,4,1,pri,1344,pri,1238,pan,163,prd-conve,36,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2781,4,40,2825,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1494,2007,San Andrés Duraznal,cps-13.118,7,118,7118,0,ok,7,oct,5,1,pan,635,pan,576,pri,518,pt1,66,prd-conve,4,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1799,1,90,1890,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
-1495,2007,Santiago el Pinar,cps-13.119,7,119,7119,0,ok,7,oct,2,1,prd-pt1-conve,687,prd-pt1-conve,619,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1306,0,24,1330,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1489,2007,Aldama,cps-13.113,7,113,7113,7112,ok,7,oct,3,0,pri,1140,pri,203,prd,64,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1407,13,95,1515,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1490,2007,Benemérito de las Américas,cps-13.114,7,114,7114,7113,ok,7,oct,5,1,prd,1774,prd,1154,pt1-conve,959,pri,812,pvem,681,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5380,9,163,5552,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1491,2007,Maravilla Tenejapa,cps-13.115,7,115,7115,7114,ok,7,oct,4,1,prd-pt1-conve,1540,prd-pt1-conve,1372,pri,420,pvem,174,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3506,7,95,3608,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1492,2007,Marqués de Comillas,cps-13.116,7,116,7116,7115,ok,7,oct,3,1,pri-pvem,1249,pri-pvem,1224,pan,892,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3365,5,144,3514,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1493,2007,Montecristo de Guerrero,cps-13.117,7,117,7117,7116,ok,7,oct,4,1,pri,1344,pri,1238,pan,163,prd-conve,36,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2781,4,40,2825,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1494,2007,San Andrés Duraznal,cps-13.118,7,118,7118,7117,ok,7,oct,5,1,pan,635,pan,576,pri,518,pt1,66,prd-conve,4,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1799,1,90,1890,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
+1495,2007,Santiago el Pinar,cps-13.119,7,119,7119,7118,ok,7,oct,2,1,prd-pt1-conve,687,prd-pt1-conve,619,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1306,0,24,1330,NA,Garfias obtuvo copia del acta original del IEE por peticion directa,
 1496,2010,Acacoyagua,cps-14.001,7,1,7001,7001,ok,4,jul,5,1,pri,3051,pri,1644,pan-prd-conve-pna,712,pt1,422,psd1,376,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6205,3,179,6387,10301,Sonnleitner2012,
 1497,2010,Acala,cps-14.002,7,2,7002,7002,ok,4,jul,5,1,pvem,4538,pvem,3842,pan-prd-conve-pna,2975,pt1,1200,pri,51,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12606,9,459,13074,19492,Sonnleitner2012,
 1498,2010,Acapetahua,cps-14.003,7,3,7003,7003,ok,4,jul,5,1,pt1,4300,pt1,2644,pvem,1679,psd1,1168,pri,1007,pan-prd-conve-pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10798,6,305,11109,17751,Sonnleitner2012,
@@ -1605,13 +1605,13 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1604,2010,San Lucas,cps-14.110,7,110,7110,7080,ok,4,jul,4,1,pan-prd-conve-pna,1700,pan-prd-conve-pna,1139,pri,126,pvem,26,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2991,0,102,3093,3884,Sonnleitner2012,
 1605,2010,Zinacantán,cps-14.111,7,111,7111,7111,ok,4,jul,4,1,pri,7965,pri,7890,pan-prd-conve-pna,254,pvem,9,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16118,21,596,16735,20488,Sonnleitner2012,
 1606,2010,San Juan Cancuc,cps-14.112,7,112,7112,7079,ok,4,jul,4,1,pri,6626,pri,4764,pan-prd-conve-pna,623,pt1,27,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12040,9,749,12798,16714,Sonnleitner2012,
-1607,2010,Aldama,cps-14.113,7,113,7113,0,ok,4,jul,3,1,pri,1029,pri,321,pan-prd-conve-pna,42,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1392,1,115,1508,2632,Sonnleitner2012,
-1608,2010,Benemérito de las Américas,cps-14.114,7,114,7114,0,ok,4,jul,5,1,pri,2861,pri,2096,pvem,1599,pan-prd-conve-pna,195,pt1,29,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6780,11,269,7060,11485,Sonnleitner2012,
-1609,2010,Maravilla Tenejapa,cps-14.115,7,115,7115,0,ok,4,jul,5,1,pri,1313,pri,995,pan-prd-conve-pna,324,pvem,16,pt1,6,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2654,0,97,2751,4333,Sonnleitner2012,
-1610,2010,Marqués de Comillas,cps-14.116,7,116,7116,0,ok,4,jul,5,1,pvem,985,pvem,966,pan-prd-conve-pna,816,pri,201,pt1,8,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2976,7,105,3088,4615,Sonnleitner2012,
-1611,2010,Montecristo de Guerrero,cps-14.117,7,117,7117,0,ok,4,jul,3,1,pvem,1143,pvem,1122,pan-prd-conve-pna,549,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2814,2,70,2886,3646,Sonnleitner2012,
-1612,2010,San Andrés Duraznal,cps-14.118,7,118,7118,0,ok,4,jul,4,1,pri,748,pri,557,pt1,439,pan-prd-conve-pna,43,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1787,0,46,1833,2030,Sonnleitner2012,
-1613,2010,Santiago el Pinar,cps-14.119,7,119,7119,0,ok,4,jul,3,1,pan-prd-conve-pna,827,pan-prd-conve-pna,679,pri,11,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1517,0,40,1557,1781,Sonnleitner2012,
+1607,2010,Aldama,cps-14.113,7,113,7113,7112,ok,4,jul,3,1,pri,1029,pri,321,pan-prd-conve-pna,42,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1392,1,115,1508,2632,Sonnleitner2012,
+1608,2010,Benemérito de las Américas,cps-14.114,7,114,7114,7113,ok,4,jul,5,1,pri,2861,pri,2096,pvem,1599,pan-prd-conve-pna,195,pt1,29,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6780,11,269,7060,11485,Sonnleitner2012,
+1609,2010,Maravilla Tenejapa,cps-14.115,7,115,7115,7114,ok,4,jul,5,1,pri,1313,pri,995,pan-prd-conve-pna,324,pvem,16,pt1,6,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2654,0,97,2751,4333,Sonnleitner2012,
+1610,2010,Marqués de Comillas,cps-14.116,7,116,7116,7115,ok,4,jul,5,1,pvem,985,pvem,966,pan-prd-conve-pna,816,pri,201,pt1,8,psd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2976,7,105,3088,4615,Sonnleitner2012,
+1611,2010,Montecristo de Guerrero,cps-14.117,7,117,7117,7116,ok,4,jul,3,1,pvem,1143,pvem,1122,pan-prd-conve-pna,549,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2814,2,70,2886,3646,Sonnleitner2012,
+1612,2010,San Andrés Duraznal,cps-14.118,7,118,7118,7117,ok,4,jul,4,1,pri,748,pri,557,pt1,439,pan-prd-conve-pna,43,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1787,0,46,1833,2030,Sonnleitner2012,
+1613,2010,Santiago el Pinar,cps-14.119,7,119,7119,7118,ok,4,jul,3,1,pan-prd-conve-pna,827,pan-prd-conve-pna,679,pri,11,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1517,0,40,1557,1781,Sonnleitner2012,
 1614,2012,Acacoyagua,cps-15.001,7,1,7001,7001,ok,1,jul,6,1,pri,2647,pri,2355,pvem,1345,pan,398,prd-pt1-conve,126,pna,53,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6924,4,305,7233,NA,iepc,
 1615,2012,Acala,cps-15.002,7,2,7002,7002,ok,1,jul,6,1,pvem,2688,pvem,2621,pan,2486,pri,1166,prd-pt1-conve,136,pna,126,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9223,3,360,9586,NA,iepc,
 1616,2012,Acapetahua,cps-15.003,7,3,7003,7003,ok,1,jul,6,1,pvem,4360,pvem,3919,pan,2770,pna,867,pri,221,prd-pt1-conve,112,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12249,9,803,13061,NA,iepc,
@@ -1723,17 +1723,17 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1722,2012,San Lucas,cps-15.110,7,110,7110,7080,ok,1,jul,6,1,pri,1024,pri,908,prd-pt1-conve,839,pan,328,pvem,99,pna,3,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3201,0,121,3322,NA,iepc,
 1723,2012,Zinacantán,cps-15.111,7,111,7111,7111,ok,1,jul,6,1,pri,10770,pri,7677,prd-pt1-conve,271,pvem,264,pan,54,pna,16,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19052,20,613,19685,NA,iepc,
 1724,2012,San Juan Cancuc,cps-15.112,7,112,7112,7079,ok,1,jul,6,1,pri,6809,pri,3037,prd-pt1-conve,1658,pan,1257,pvem,203,pna,102,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13066,18,595,13679,NA,iepc,
-1725,2012,Aldama,cps-15.113,7,113,7113,0,ok,1,jul,5,1,pri,1416,pri,109,pan,92,prd-pt1-conve,90,pvem,4,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1711,12,144,1867,NA,iepc,
-1726,2012,Benemérito de las Américas,cps-15.114,7,114,7114,0,ok,1,jul,6,1,pvem,2889,pvem,1197,prd-pt1-conve,1052,pri,1049,pna,708,pan,17,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6912,0,437,7349,NA,iepc,
-1727,2012,Maravilla Tenejapa,cps-15.115,7,115,7115,0,ok,1,jul,5,1,pri,1915,pri,1528,pna,1037,pvem,451,prd-pt1-conve,11,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4942,0,160,5102,NA,iepc,
-1728,2012,Marqués de Comillas,cps-15.116,7,116,7116,0,ok,1,jul,4,1,pvem,1391,pvem,1356,pan,991,pri,848,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4586,6,231,4823,NA,iepc,
-1729,2012,Montecristo de Guerrero,cps-15.117,7,117,7117,0,ok,1,jul,6,1,pvem,1675,pvem,1478,pan,352,pri,169,prd-pt1-conve,23,pna,13,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3710,0,118,3828,NA,iepc,
-1730,2012,San Andrés Duraznal,cps-15.118,7,118,7118,0,ok,1,jul,5,1,pvem,620,pvem,401,prd-pt1-conve,366,pri,325,pan,1,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1713,24,21,1758,NA,iepc,
-1731,2012,Santiago el Pinar,cps-15.119,7,119,7119,0,ok,1,jul,4,1,pvem,915,pvem,672,pri,3,prd-pt1-conve,1,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1591,0,25,1616,NA,iepc,
-1732,2012,Belisario Domínguez,cps-15.120,7,120,0,0,new,1,jul,5,1,pri,131,pri,108,pvem,83,pan,10,poc,3,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,335,0,52,387,NA,iepc,
-1733,2012,Emiliano Zapata,cps-15.121,7,121,0,0,new,1,jul,6,1,pan,1190,pan,1170,pvem,1034,pna,705,pri,502,poc,394,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4995,2,251,5248,NA,iepc,
-1734,2012,Mezcalapa,cps-15.122,7,122,0,0,new,1,jul,6,1,pvem,2388,pvem,1846,pna,1691,pri,1513,prd-pt1-conve,660,poc,585,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8683,2,621,9306,NA,iepc,
-1735,2012,Parral--El,cps-15.123,7,123,0,0,new,1,jul,6,1,pvem,2187,pvem,1514,pri,1372,prd-pt1-conve,793,pna,584,pan,40,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6490,2,364,6856,NA,iepc,
+1725,2012,Aldama,cps-15.113,7,113,7113,7112,ok,1,jul,5,1,pri,1416,pri,109,pan,92,prd-pt1-conve,90,pvem,4,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1711,12,144,1867,NA,iepc,
+1726,2012,Benemérito de las Américas,cps-15.114,7,114,7114,7113,ok,1,jul,6,1,pvem,2889,pvem,1197,prd-pt1-conve,1052,pri,1049,pna,708,pan,17,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6912,0,437,7349,NA,iepc,
+1727,2012,Maravilla Tenejapa,cps-15.115,7,115,7115,7114,ok,1,jul,5,1,pri,1915,pri,1528,pna,1037,pvem,451,prd-pt1-conve,11,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4942,0,160,5102,NA,iepc,
+1728,2012,Marqués de Comillas,cps-15.116,7,116,7116,7115,ok,1,jul,4,1,pvem,1391,pvem,1356,pan,991,pri,848,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4586,6,231,4823,NA,iepc,
+1729,2012,Montecristo de Guerrero,cps-15.117,7,117,7117,7116,ok,1,jul,6,1,pvem,1675,pvem,1478,pan,352,pri,169,prd-pt1-conve,23,pna,13,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3710,0,118,3828,NA,iepc,
+1730,2012,San Andrés Duraznal,cps-15.118,7,118,7118,7117,ok,1,jul,5,1,pvem,620,pvem,401,prd-pt1-conve,366,pri,325,pan,1,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1713,24,21,1758,NA,iepc,
+1731,2012,Santiago el Pinar,cps-15.119,7,119,7119,7118,ok,1,jul,4,1,pvem,915,pvem,672,pri,3,prd-pt1-conve,1,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1591,0,25,1616,NA,iepc,
+1732,2012,Belisario Domínguez,cps-15.120,7,120,0,7119,new,1,jul,5,1,pri,131,pri,108,pvem,83,pan,10,poc,3,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,335,0,52,387,NA,iepc,
+1733,2012,Emiliano Zapata,cps-15.121,7,121,0,7120,new,1,jul,6,1,pan,1190,pan,1170,pvem,1034,pna,705,pri,502,poc,394,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4995,2,251,5248,NA,iepc,
+1734,2012,Mezcalapa,cps-15.122,7,122,0,7121,new,1,jul,6,1,pvem,2388,pvem,1846,pna,1691,pri,1513,prd-pt1-conve,660,poc,585,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8683,2,621,9306,NA,iepc,
+1735,2012,Parral--El,cps-15.123,7,123,0,7122,new,1,jul,6,1,pvem,2187,pvem,1514,pri,1372,prd-pt1-conve,793,pna,584,pan,40,poc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6490,2,364,6856,NA,iepc,
 1736,2015,Acacoyagua,cps-16.001,7,1,7001,7001,ok,19,jul,8,1,pmch,1967,pmch,1789,pan,1250,pvem-pna,1212,pri,1075,pchu,419,morena,57,prd,11,pes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7780,4,196,7980,11270,iee,
 1737,2015,Acala,cps-16.002,7,2,7002,7002,ok,19,jul,10,0,pmch,3435,pmch,2892,pchu,2502,pvem,605,mc,340,pna,88,pri,66,morena,38,prd,29,pt1,22,ph,0,0,0,0,0,0,0,0,0,0,10017,0,204,10221,13940,iee,
 1738,2015,Acapetahua,cps-16.003,7,3,7003,7003,ok,19,jul,10,0,pchu,5962,pchu,4472,pvem,972,pan,805,pri,439,pt1,246,pna,161,pmch,144,morena,48,prd,6,pes,0,0,0,0,0,0,0,0,0,0,13255,0,323,13578,19466,iee,
@@ -1791,6 +1791,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1790,2015,Metapa,cps-16.055,7,55,7055,7055,ok,19,jul,7,1,pvem-pna,1552,pvem-pna,950,pchu,433,pri,116,pmch,113,prd,74,morena,28,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3266,0,61,3327,4378,iee,
 1791,2015,Mitontic,cps-16.056,7,56,7056,7056,ok,19,jul,5,1,pri,1544,pri,1210,pvem-pna,1144,pchu,38,pmch,11,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3947,5,309,4261,5921,iee,
 1792,2015,Motozintla,cps-16.057,7,57,7057,7057,ok,19,jul,11,1,pchu,9643,pchu,8373,pvem-pna,3613,pri,2510,pt1,1266,morena,695,mc,352,prd,272,ph,128,pmch,93,pes,67,pan,0,0,0,0,0,0,0,0,27012,2,1154,28168,45056,iee,
+1793,2015,Nicolás Ruiz,cps-16a.058,7,58,7058,7058,anulada,19,jul,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2657,iee,anulada TEPJF y gobEdo nombro consejo munic Filadelfo Juarez Lopez pvem como presidente
 1794,2015,Ocosingo,cps-16.059,7,59,7059,7059,ok,19,jul,11,0,pvem,24047,pvem,10785,mc,10061,pri,5466,pan,3686,morena,3340,pmch,1340,pna,725,prd,550,ph,519,pt1,288,pchu,0,0,0,0,0,0,0,0,60807,198,3679,64684,120502,iee,
 1795,2015,Ocotepec,cps-16.060,7,60,7060,7060,ok,19,jul,7,1,pri,3072,pri,2321,pvem-pna,534,pmch,8,prd,6,morena,4,pan,4,pchu,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5949,1,36,5986,6952,iee,
 1796,2015,Ocozocoautla de Espinosa,cps-16.061,7,61,7061,7061,ok,19,jul,12,0,mc,8842,mc,7217,pchu,6012,pvem,4111,prd,3377,pri,2768,pan,2128,pna,1493,pmch,1141,morena,371,ph,265,pt1,108,pes,0,0,0,0,0,0,37833,9,1043,38885,57022,iee,
@@ -1844,18 +1845,17 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 1844,2015,San Lucas,cps-16.110,7,110,7110,7080,ok,19,jul,8,0,pvem,1603,pvem,1252,pri,476,pmch,329,prd,6,pna,3,pan,2,pchu,1,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3672,0,32,3704,4545,iee,
 1845,2015,Zinacantán,cps-16.111,7,111,7111,7111,ok,19,jul,8,0,pri,14571,pri,7710,pvem,119,pmch,81,pna,54,prd,36,pchu,24,morena,9,pes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22604,0,340,22944,24509,iee,
 1846,2015,San Juan Cancuc,cps-16.112,7,112,7112,7079,ok,19,jul,6,1,pri,8896,pri,5997,pvem-pna,305,pmch,228,pchu,176,prd,88,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15690,0,480,16170,18749,iee,
-1847,2015,Aldama,cps-16.113,7,113,7113,0,ok,19,jul,6,1,pri,1525,pri,871,pvem-pna,37,pmch,14,morena,7,pchu,5,pes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2459,1,95,2555,3128,iee,
-1848,2015,Benemérito de las Américas,cps-16.114,7,114,7114,0,ok,19,jul,7,1,pchu,2851,pchu,1722,pvem-pna,1638,pri,887,pmch,353,pt1,214,morena,152,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7817,0,179,7996,11911,iee,
-1849,2015,Maravilla Tenejapa,cps-16.115,7,115,7115,0,ok,19,jul,7,1,prd,2011,prd,1908,pvem-pna,1523,pmch,74,pri,13,pchu,4,mc,2,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5535,0,120,5655,7695,iee,
-1850,2015,Marqués de Comillas,cps-16.116,7,116,7116,0,ok,19,jul,5,1,pvem-pna,2581,pvem-pna,2326,pan,440,pmch,26,pchu,6,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5379,0,86,5465,6888,iee,
-1851,2015,Montecristo de Guerrero,cps-16.117,7,117,7117,0,ok,19,jul,8,0,pchu,1329,pchu,1168,pvem,835,pmch,273,pna,215,pri,150,morena,108,prd,62,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4140,0,93,4233,4914,iee,
-1852,2015,San Andrés Duraznal,cps-16.118,7,118,7118,0,ok,19,jul,5,1,pvem-pna,689,pvem-pna,606,pmch,381,pchu,333,pri,2,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2011,1,55,2067,2939,iee,
-1853,2015,Santiago el Pinar,cps-16.119,7,119,7119,0,ok,19,jul,3,1,pvem-pna,1010,pvem-pna,706,pchu,5,pmch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,0,7,1728,1955,iee,
-1854,2015,Belisario Domínguez,cps-16.120,7,120,0,0,new,19,jul,1,1,pvem-pna,1,pvem-pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,514,iee,
-1855,2015,Emiliano Zapata,cps-16.121,7,121,0,0,new,19,jul,9,0,pmch,1882,pmch,1844,pvem,891,pri,476,pchu,276,pan,172,pna,30,morena,11,mc,7,prd,0,0,0,0,0,0,0,0,0,0,0,0,5589,10,96,5695,7509,iee,
-1856,2015,Mezcalapa,cps-16.122,7,122,0,0,new,19,jul,8,1,pvem-pna,4001,pvem-pna,3463,pri,1020,pchu,959,prd,211,morena,153,pmch,136,pan,93,mc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10036,2,310,10348,14218,iee,
-1857,2015,Parral--El,cps-16.123,7,123,0,0,new,19,jul,10,0,pt1,1911,pt1,1627,pvem,1229,pchu,1132,pri,1081,pmch,329,pna,102,mc,43,morena,34,prd,26,pan,0,0,0,0,0,0,0,0,0,0,7514,0,122,7636,10186,iee,
-1793,2015,Nicolás Ruiz,cps-16a.058,7,58,7058,7058,anulada,19,jul,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2657,iee,anulada TEPJF y gobEdo nombro consejo munic Filadelfo Juarez Lopez pvem como presidente
+1847,2015,Aldama,cps-16.113,7,113,7113,7112,ok,19,jul,6,1,pri,1525,pri,871,pvem-pna,37,pmch,14,morena,7,pchu,5,pes,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2459,1,95,2555,3128,iee,
+1848,2015,Benemérito de las Américas,cps-16.114,7,114,7114,7113,ok,19,jul,7,1,pchu,2851,pchu,1722,pvem-pna,1638,pri,887,pmch,353,pt1,214,morena,152,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7817,0,179,7996,11911,iee,
+1849,2015,Maravilla Tenejapa,cps-16.115,7,115,7115,7114,ok,19,jul,7,1,prd,2011,prd,1908,pvem-pna,1523,pmch,74,pri,13,pchu,4,mc,2,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5535,0,120,5655,7695,iee,
+1850,2015,Marqués de Comillas,cps-16.116,7,116,7116,7115,ok,19,jul,5,1,pvem-pna,2581,pvem-pna,2326,pan,440,pmch,26,pchu,6,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5379,0,86,5465,6888,iee,
+1851,2015,Montecristo de Guerrero,cps-16.117,7,117,7117,7116,ok,19,jul,8,0,pchu,1329,pchu,1168,pvem,835,pmch,273,pna,215,pri,150,morena,108,prd,62,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4140,0,93,4233,4914,iee,
+1852,2015,San Andrés Duraznal,cps-16.118,7,118,7118,7117,ok,19,jul,5,1,pvem-pna,689,pvem-pna,606,pmch,381,pchu,333,pri,2,morena,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2011,1,55,2067,2939,iee,
+1853,2015,Santiago el Pinar,cps-16.119,7,119,7119,7118,ok,19,jul,3,1,pvem-pna,1010,pvem-pna,706,pchu,5,pmch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,0,7,1728,1955,iee,
+1854,2015,Belisario Domínguez,cps-16.120,7,120,0,7119,new,19,jul,1,1,pvem-pna,1,pvem-pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,514,iee,
+1855,2015,Emiliano Zapata,cps-16.121,7,121,0,7120,new,19,jul,9,0,pmch,1882,pmch,1844,pvem,891,pri,476,pchu,276,pan,172,pna,30,morena,11,mc,7,prd,0,0,0,0,0,0,0,0,0,0,0,0,5589,10,96,5695,7509,iee,
+1856,2015,Mezcalapa,cps-16.122,7,122,0,7121,new,19,jul,8,1,pvem-pna,4001,pvem-pna,3463,pri,1020,pchu,959,prd,211,morena,153,pmch,136,pan,93,mc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10036,2,310,10348,14218,iee,
+1857,2015,Parral--El,cps-16.123,7,123,0,7122,new,19,jul,10,0,pt1,1911,pt1,1627,pvem,1229,pchu,1132,pri,1081,pmch,329,pna,102,mc,43,morena,34,prd,26,pan,0,0,0,0,0,0,0,0,0,0,7514,0,122,7636,10186,iee,
 1858,2015,Tapilula,cps-16a.091,7,91,7091,7092,anulada,19,jul,11,0,pvem,1800,pvem,1800,pmch,887,mc,784,pchu,208,pri,88,pt1,59,pan,52,pes,49,prd,33,pna,11,morena,0,0,0,0,0,0,0,0,5771,1,183,5955,7742,iee,anulada por empate dice prensa
 1859,2018,Acacoyagua,cps-17.001,7,1,7001,7001,ok,1,jul,7,1,pchu,1668,pchu,1665,pvem,1380,pt1-morena-pes,1108,pan-prd-mc,713,pna,442,pri,415,pmch,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7391,0,330,7721,11832,iee,
 1860,2018,Acala,cps-17.002,7,2,7002,7002,ok,1,jul,8,1,pchu,3885,pchu,1426,pmch,1330,pvem,1274,indep1,1011,pri,848,pt1-morena-pes,399,pan-prd-mc,60,pna,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10233,20,500,10753,14426,iee,
@@ -15113,161 +15113,161 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 15112,1994,San Vicente Tancuayalab,san-09a.034,24,34,24034,24031,anulada,4,dic,3,0,pan,2470,pan,2470,pri,14,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4954,0,0,4954,6384,iee,iee reporta empate
 15113,1997,Ahualulco,san-10.001,24,1,24001,24001,ok,6,jul,4,0,pan,2800,pan,2287,pri,49,pdm,29,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5165,0,0,5165,NA,Mau-Banamex,
 15114,1997,Alaquines,san-10.002,24,2,24002,24002,ok,17,ago,2,0,pri,1711,pri,1372,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3083,0,0,3083,NA,Mau-Banamex,segunda ronda
+15115,1997,Alaquines,san-10b.002,24,2,24002,24002,ok,6,jul,3,0,pri,1501,pri,1161,prd,434,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3096,0,0,3096,NA,Mau-Banamex,led to runoff
 15116,1997,Aquismón,san-10.003,24,3,24003,24003,ok,6,jul,3,0,pri,5321,pri,3975,pan,631,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9927,0,0,9927,NA,Mau-Banamex,
 15117,1997,Armadillo de los Infante,san-10.004,24,4,24004,24004,ok,6,jul,2,0,pri,1040,pri,783,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1823,0,0,1823,NA,Mau-Banamex,
 15118,1997,Cárdenas,san-10.005,24,5,24005,24005,ok,17,ago,2,0,prd,2796,prd,2565,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5361,0,0,5361,NA,Mau-Banamex,segunda ronda
+15119,1997,Cárdenas,san-10b.005,24,5,24005,24005,ok,6,jul,4,0,prd,2216,prd,2206,pri,1754,pan,640,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6816,0,0,6816,NA,Mau-Banamex,led to runoff
 15120,1997,Catorce,san-10.006,24,6,24006,24006,ok,17,ago,2,0,pri,1837,pri,1519,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3356,0,0,3356,NA,Mau-Banamex,segunda ronda
+15121,1997,Catorce,san-10b.006,24,6,24006,24006,ok,6,jul,5,0,pri,1546,pri,919,pt1,753,pan,379,prd,51,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3648,0,0,3648,NA,Mau-Banamex,led to runoff
 15122,1997,Cedral,san-10.007,24,7,24007,24007,ok,17,ago,2,0,pdm,3018,pdm,2968,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5986,0,0,5986,NA,Mau-Banamex,segunda ronda
+15123,1997,Cedral,san-10b.007,24,7,24007,24007,ok,6,jul,4,0,pdm,2623,pdm,2609,pri,138,prd,14,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5384,0,0,5384,NA,Mau-Banamex,led to runoff
 15124,1997,Cerritos,san-10.008,24,8,24008,24008,ok,6,jul,4,0,pan,4254,pan,3365,pri,388,prd,98,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8105,0,0,8105,NA,Mau-Banamex,
 15125,1997,Cerro de San Pedro,san-10.009,24,9,24009,24009,ok,6,jul,3,0,pri,566,pri,291,pan,260,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1117,0,0,1117,NA,Mau-Banamex,
 15126,1997,Ciudad del Maíz,san-10.010,24,10,24010,24010,ok,17,ago,2,0,pan,5535,pan,4581,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10116,0,0,10116,NA,Mau-Banamex,segunda ronda
+15127,1997,Ciudad del Maíz,san-10b.010,24,10,24010,24010,ok,6,jul,4,0,pan,4847,pan,4313,pri,1024,prd,69,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10253,0,0,10253,NA,Mau-Banamex,led to runoff
 15128,1997,Ciudad Fernández,san-10.011,24,11,24011,24011,ok,6,jul,5,0,pan,5984,pan,5211,pri,436,prd,20,pps,11,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11662,0,0,11662,NA,Mau-Banamex,
 15129,1997,Tancanhuitz de Santos,san-10.012,24,12,24012,24012,ok,6,jul,3,0,pri,3452,pri,2196,pan,552,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6200,0,0,6200,NA,Mau-Banamex,
 15130,1997,Ciudad Valles,san-10.013,24,13,24013,24013,ok,17,ago,2,0,pt1,18657,pt1,16882,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35539,0,0,35539,NA,Mau-Banamex,segunda ronda
+15131,1997,Ciudad Valles,san-10b.013,24,13,24013,24013,ok,6,jul,7,0,pri,17573,pri,15483,pt1,10941,pan,2361,prd,319,pdm,116,conve,59,pps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46852,0,0,46852,NA,Mau-Banamex,led to runoff
 15132,1997,Coxcatlán,san-10.014,24,14,24014,24014,ok,6,jul,3,0,pri,2619,pri,1401,pan,464,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4484,0,0,4484,NA,Mau-Banamex,
 15133,1997,Charcas,san-10.015,24,15,24015,24015,ok,17,ago,2,0,pri,3470,pri,3132,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6602,0,0,6602,NA,Mau-Banamex,segunda ronda
+15134,1997,Charcas,san-10b.015,24,15,24015,24015,ok,6,jul,4,0,pri,3437,pri,2646,pan,909,prd,89,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7081,0,0,7081,NA,Mau-Banamex,led to runoff
 15135,1997,Ebano,san-10.016,24,16,24016,24016,ok,6,jul,4,0,prd,6599,prd,4220,pri,2219,pps,313,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13351,0,0,13351,NA,Mau-Banamex,
 15136,1997,Guadalcázar,san-10.017,24,17,24017,24017,ok,6,jul,5,0,pri,4400,pri,3476,pan,233,prd,233,npp,29,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8371,0,0,8371,NA,Mau-Banamex,
 15137,1997,Huehuetlán,san-10.018,24,18,24018,24018,ok,6,jul,5,0,pri,2468,pri,1447,pan,430,prd,4,conve,1,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4350,0,0,4350,NA,Mau-Banamex,
 15138,1997,Lagunillas,san-10.019,24,19,24019,24019,ok,6,jul,3,0,pri,1287,pri,774,prd,350,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2411,0,0,2411,NA,Mau-Banamex,
 15139,1997,Matehuala,san-10.020,24,20,24020,24020,ok,17,ago,2,0,pri,8666,pri,8410,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17076,0,0,17076,NA,Mau-Banamex,segunda ronda
+15140,1997,Matehuala,san-10b.020,24,20,24020,24020,ok,6,jul,5,0,pan,9346,pan,9025,pri,6126,prd,335,pt1,190,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25022,0,0,25022,NA,Mau-Banamex,led to runoff
 15141,1997,Mexquitic de Carmona,san-10.021,24,21,24021,24021,ok,6,jul,5,0,pri,5992,pri,3672,pan,688,prd,688,npp,32,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11072,0,0,11072,NA,Mau-Banamex,
 15142,1997,Moctezuma,san-10.022,24,22,24022,24022,ok,6,jul,4,0,pri,3027,pri,2531,pan,80,prd,17,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5655,0,0,5655,NA,Mau-Banamex,
 15143,1997,Rayón,san-10.023,24,23,24023,24023,ok,17,ago,2,0,pan,2322,pan,2042,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4364,0,0,4364,NA,Mau-Banamex,segunda ronda
+15144,1997,Rayón,san-10b.023,24,23,24023,24023,ok,6,jul,4,0,pri,1872,pri,1762,pan,1404,pvem,82,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5120,0,0,5120,NA,Mau-Banamex,led to runoff
 15145,1997,Rioverde,san-10.024,24,24,24024,24024,ok,17,ago,2,0,pan,12358,pan,10897,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,23255,0,0,23255,NA,Mau-Banamex,segunda ronda
+15146,1997,Rioverde,san-10b.024,24,24,24024,24024,ok,6,jul,5,0,pan,12525,pan,12062,pri,1292,prd,183,pdm,66,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26128,0,0,26128,NA,Mau-Banamex,led to runoff
 15147,1997,Salinas,san-10.025,24,25,24025,24025,ok,6,jul,3,0,pan,4170,pan,3326,pri,137,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7633,0,0,7633,NA,Mau-Banamex,
 15148,1997,San Antonio,san-10.026,24,26,24026,24026,ok,6,jul,3,0,pan,1453,pan,1156,pri,152,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2761,0,0,2761,NA,Mau-Banamex,
 15149,1997,San Ciro de Acosta,san-10.027,24,27,24027,24027,ok,6,jul,3,0,pri,2151,pri,1986,pan,88,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4225,0,0,4225,NA,Mau-Banamex,
 15150,1997,San Luis Potosí,san-10.028,24,28,24028,24028,ok,6,jul,7,0,pan,108570,pan,82203,pri,6748,npp,6746,prd,4794,pvem,1093,pdm,525,pps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,210679,0,0,210679,NA,Mau-Banamex,
 15151,1997,San Martín Chalchicuautla,san-10.029,24,29,24029,24029,ok,17,ago,2,0,pri,2856,pri,2559,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5415,0,0,5415,NA,Mau-Banamex,segunda ronda
+15152,1997,San Martín Chalchicuautla,san-10b.029,24,29,24029,24029,ok,6,jul,7,0,pri,1883,pri,1497,pan,1472,pt1,779,pdm,511,prd,487,npp,26,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6655,0,0,6655,NA,Mau-Banamex,led to runoff
 15153,1997,San Nicolás Tolentino,san-10.030,24,30,24030,24030,ok,17,ago,2,0,pri,1449,pri,1242,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2691,0,0,2691,NA,Mau-Banamex,segunda ronda
+15154,1997,San Nicolás Tolentino,san-10b.030,24,30,24030,24030,ok,6,jul,3,0,pri,1205,pri,1159,pan,52,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2416,0,0,2416,NA,Mau-Banamex,led to runoff
 15155,1997,Santa Catarina,san-10.031,24,31,24031,24032,ok,6,jul,3,0,pri,1576,pri,1037,prd,36,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2649,0,0,2649,NA,Mau-Banamex,
 15156,1997,Santa María del Río,san-10.032,24,32,24032,24033,ok,6,jul,4,0,pan,5821,pan,4330,pri,262,prd,191,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10604,0,0,10604,NA,Mau-Banamex,
 15157,1997,Santo Domingo,san-10.033,24,33,24033,24034,ok,17,ago,2,0,pt1,2900,pt1,2359,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5259,0,0,5259,NA,Mau-Banamex,segunda ronda
+15158,1997,Santo Domingo,san-10b.033,24,33,24033,24034,ok,6,jul,3,0,pt1,2134,pt1,1724,pri,1501,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5359,0,0,5359,NA,Mau-Banamex,led to runoff
 15159,1997,San Vicente Tancuayalab,san-10.034,24,34,24034,24031,ok,6,jul,4,0,pri,2356,pri,1567,pan,600,prd,370,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4893,0,0,4893,NA,Mau-Banamex,
 15160,1997,Soledad de Graciano Sánchez,san-10.035,24,35,24035,24035,ok,6,jul,8,0,pan,24177,pan,16911,pri,3459,prd,1091,pvem,803,npp,660,pt1,256,pdm,221,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,47578,0,0,47578,NA,Mau-Banamex,
 15161,1997,Tamasopo,san-10.036,24,36,24036,24036,ok,17,ago,2,0,prd,5071,prd,4142,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9213,0,0,9213,NA,Mau-Banamex,segunda ronda
+15162,1997,Tamasopo,san-10b.036,24,36,24036,24036,ok,6,jul,3,0,prd,4316,prd,4170,pri,372,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8858,0,0,8858,NA,Mau-Banamex,led to runoff
 15163,1997,Tamazunchale,san-10.037,24,37,24037,24037,ok,6,jul,4,0,pri,11597,pri,5757,pan,3938,npp,134,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21426,0,0,21426,NA,Mau-Banamex,
 15164,1997,Tampacán,san-10.038,24,38,24038,24038,ok,6,jul,3,0,pri,2561,pri,2403,npp,104,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5068,0,0,5068,NA,Mau-Banamex,
 15165,1997,Tampamolón Corona,san-10.039,24,39,24039,24039,ok,17,ago,2,0,pri,2017,pri,1807,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3824,0,0,3824,NA,Mau-Banamex,segunda ronda
+15166,1997,Tampamolón Corona,san-10b.039,24,39,24039,24039,ok,6,jul,6,0,pri,1863,pri,1365,prd,426,pt1,367,pan,115,pvem,3,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4139,0,0,4139,NA,Mau-Banamex,led to runoff
 15167,1997,Tamuín,san-10.040,24,40,24040,24040,ok,17,ago,2,0,pri,5525,pri,3911,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9436,0,0,9436,NA,Mau-Banamex,segunda ronda
+15168,1997,Tamuín,san-10b.040,24,40,24040,24040,ok,6,jul,4,0,pri,4957,pri,3654,pan,2511,prd,84,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11206,0,0,11206,NA,Mau-Banamex,led to runoff
 15169,1997,Tanlajás,san-10.041,24,41,24041,24041,ok,6,jul,3,0,prd,2886,prd,2774,pri,106,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5766,0,0,5766,NA,Mau-Banamex,
 15170,1997,Tanquián de Escobedo,san-10.042,24,42,24042,24042,ok,17,ago,2,0,pri,2603,pri,2186,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4789,0,0,4789,NA,Mau-Banamex,segunda ronda
+15171,1997,Tanquián de Escobedo,san-10b.042,24,42,24042,24042,ok,6,jul,3,0,pri,2345,pri,1783,pt1,907,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5035,0,0,5035,NA,Mau-Banamex,led to runoff
 15172,1997,Tierra Nueva,san-10.043,24,43,24043,24043,ok,6,jul,4,0,pan,1741,pan,1194,pri,114,pt1,48,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3097,0,0,3097,NA,Mau-Banamex,
 15173,1997,Vanegas,san-10.044,24,44,24044,24044,ok,6,jul,2,0,pri,1429,pri,835,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2264,0,0,2264,NA,Mau-Banamex,
 15174,1997,Venado,san-10.045,24,45,24045,24045,ok,17,ago,2,0,pri,2816,pri,2640,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5456,0,0,5456,NA,Mau-Banamex,segunda ronda
+15175,1997,Venado,san-10b.045,24,45,24045,24045,ok,6,jul,3,0,pri,2592,pri,2107,pan,684,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5383,0,0,5383,NA,Mau-Banamex,led to runoff
 15176,1997,Villa de Arriaga,san-10.046,24,46,24046,24047,ok,6,jul,3,0,pri,2606,pri,1352,pan,323,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4281,0,0,4281,NA,Mau-Banamex,
 15177,1997,Villa de Guadalupe,san-10.047,24,47,24047,24048,ok,17,ago,2,0,pan,1951,pan,1588,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3539,0,0,3539,NA,Mau-Banamex,segunda ronda
+15178,1997,Villa de Guadalupe,san-10b.047,24,47,24047,24048,ok,6,jul,3,0,pan,1470,pan,1469,pri,612,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3551,0,0,3551,NA,Mau-Banamex,led to runoff
 15179,1997,Villa de la Paz,san-10.048,24,48,24048,24049,ok,6,jul,4,0,pan,1134,pan,658,pri,272,pt1,169,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2233,0,0,2233,NA,Mau-Banamex,
 15180,1997,Villa de Ramos,san-10.049,24,49,24049,24050,ok,17,ago,2,0,pt1,5538,pt1,3427,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8965,0,0,8965,NA,Mau-Banamex,segunda ronda
+15181,1997,Villa de Ramos,san-10b.049,24,49,24049,24050,ok,6,jul,4,0,pri,3390,pri,3002,pt1,872,pan,782,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8046,0,0,8046,NA,Mau-Banamex,led to runoff
 15182,1997,Villa de Reyes,san-10.050,24,50,24050,24051,ok,6,jul,3,0,pri,6705,pri,3778,pan,63,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10546,0,0,10546,NA,Mau-Banamex,
 15183,1997,Villa Hidalgo,san-10.051,24,51,24051,24052,ok,6,jul,2,0,pri,3035,pri,2935,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5970,0,0,5970,NA,Mau-Banamex,
 15184,1997,Villa Juárez,san-10.052,24,52,24052,24053,ok,6,jul,5,0,pri,2185,pri,1463,pan,189,npp,188,prd,18,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4043,0,0,4043,NA,Mau-Banamex,
 15185,1997,Axtla de Terrazas,san-10.053,24,53,24053,24054,ok,17,ago,2,0,pri,3737,pri,3395,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7132,0,0,7132,NA,Mau-Banamex,segunda ronda
+15186,1997,Axtla de Terrazas,san-10b.053,24,53,24053,24054,ok,6,jul,5,0,pri,3964,pri,2395,prd,2204,pan,60,pt1,12,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8635,0,0,8635,NA,Mau-Banamex,led to runoff
 15187,1997,Xilitla,san-10.054,24,54,24054,24055,ok,6,jul,4,0,pri,6966,pri,2612,pan,2156,prd,147,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11881,0,0,11881,NA,Mau-Banamex,
 15188,1997,Zaragoza,san-10.055,24,55,24055,24056,ok,17,ago,2,0,pri,2403,pri,2366,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4769,0,0,4769,NA,Mau-Banamex,segunda ronda
+15189,1997,Zaragoza,san-10b.055,24,55,24055,24056,ok,6,jul,4,0,pan,2287,pan,2278,pri,1278,prd,32,pps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5875,0,0,5875,NA,Mau-Banamex,led to runoff
 15190,1997,Villa de Arista,san-10.056,24,56,24056,24046,ok,17,ago,2,0,pan,2571,pan,2391,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4962,0,0,4962,NA,Mau-Banamex,segunda ronda
+15191,1997,Villa de Arista,san-10b.056,24,56,24056,24046,ok,6,jul,3,0,pan,2373,pan,2175,pri,301,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4849,0,0,4849,NA,Mau-Banamex,led to runoff
 15192,1997,Matlapa,san-10.057,24,57,24057,24058,new,6,jul,4,0,pri,4279,pri,1860,prd,850,npp,526,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7515,0,0,7515,NA,Mau-Banamex,
 15193,1997,Naranjo--El,san-10.058,24,58,24058,24057,new,6,jul,3,0,pri,3773,pri,1530,prd,1205,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6508,0,0,6508,NA,Mau-Banamex,
-15115,1997,Alaquines,san-10b.002,24,2,24002,24002,ok,6,jul,3,0,pri,1501,pri,1161,prd,434,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3096,0,0,3096,NA,Mau-Banamex,led to runoff
-15119,1997,Cárdenas,san-10b.005,24,5,24005,24005,ok,6,jul,4,0,prd,2216,prd,2206,pri,1754,pan,640,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6816,0,0,6816,NA,Mau-Banamex,led to runoff
-15121,1997,Catorce,san-10b.006,24,6,24006,24006,ok,6,jul,5,0,pri,1546,pri,919,pt1,753,pan,379,prd,51,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3648,0,0,3648,NA,Mau-Banamex,led to runoff
-15123,1997,Cedral,san-10b.007,24,7,24007,24007,ok,6,jul,4,0,pdm,2623,pdm,2609,pri,138,prd,14,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5384,0,0,5384,NA,Mau-Banamex,led to runoff
-15127,1997,Ciudad del Maíz,san-10b.010,24,10,24010,24010,ok,6,jul,4,0,pan,4847,pan,4313,pri,1024,prd,69,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10253,0,0,10253,NA,Mau-Banamex,led to runoff
-15131,1997,Ciudad Valles,san-10b.013,24,13,24013,24013,ok,6,jul,7,0,pri,17573,pri,15483,pt1,10941,pan,2361,prd,319,pdm,116,conve,59,pps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46852,0,0,46852,NA,Mau-Banamex,led to runoff
-15134,1997,Charcas,san-10b.015,24,15,24015,24015,ok,6,jul,4,0,pri,3437,pri,2646,pan,909,prd,89,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7081,0,0,7081,NA,Mau-Banamex,led to runoff
-15140,1997,Matehuala,san-10b.020,24,20,24020,24020,ok,6,jul,5,0,pan,9346,pan,9025,pri,6126,prd,335,pt1,190,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25022,0,0,25022,NA,Mau-Banamex,led to runoff
-15144,1997,Rayón,san-10b.023,24,23,24023,24023,ok,6,jul,4,0,pri,1872,pri,1762,pan,1404,pvem,82,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5120,0,0,5120,NA,Mau-Banamex,led to runoff
-15146,1997,Rioverde,san-10b.024,24,24,24024,24024,ok,6,jul,5,0,pan,12525,pan,12062,pri,1292,prd,183,pdm,66,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26128,0,0,26128,NA,Mau-Banamex,led to runoff
-15152,1997,San Martín Chalchicuautla,san-10b.029,24,29,24029,24029,ok,6,jul,7,0,pri,1883,pri,1497,pan,1472,pt1,779,pdm,511,prd,487,npp,26,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6655,0,0,6655,NA,Mau-Banamex,led to runoff
-15154,1997,San Nicolás Tolentino,san-10b.030,24,30,24030,24030,ok,6,jul,3,0,pri,1205,pri,1159,pan,52,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2416,0,0,2416,NA,Mau-Banamex,led to runoff
-15158,1997,Santo Domingo,san-10b.033,24,33,24033,24034,ok,6,jul,3,0,pt1,2134,pt1,1724,pri,1501,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5359,0,0,5359,NA,Mau-Banamex,led to runoff
-15162,1997,Tamasopo,san-10b.036,24,36,24036,24036,ok,6,jul,3,0,prd,4316,prd,4170,pri,372,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8858,0,0,8858,NA,Mau-Banamex,led to runoff
-15166,1997,Tampamolón Corona,san-10b.039,24,39,24039,24039,ok,6,jul,6,0,pri,1863,pri,1365,prd,426,pt1,367,pan,115,pvem,3,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4139,0,0,4139,NA,Mau-Banamex,led to runoff
-15168,1997,Tamuín,san-10b.040,24,40,24040,24040,ok,6,jul,4,0,pri,4957,pri,3654,pan,2511,prd,84,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11206,0,0,11206,NA,Mau-Banamex,led to runoff
-15171,1997,Tanquián de Escobedo,san-10b.042,24,42,24042,24042,ok,6,jul,3,0,pri,2345,pri,1783,pt1,907,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5035,0,0,5035,NA,Mau-Banamex,led to runoff
-15175,1997,Venado,san-10b.045,24,45,24045,24045,ok,6,jul,3,0,pri,2592,pri,2107,pan,684,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5383,0,0,5383,NA,Mau-Banamex,led to runoff
-15178,1997,Villa de Guadalupe,san-10b.047,24,47,24047,24048,ok,6,jul,3,0,pan,1470,pan,1469,pri,612,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3551,0,0,3551,NA,Mau-Banamex,led to runoff
-15181,1997,Villa de Ramos,san-10b.049,24,49,24049,24050,ok,6,jul,4,0,pri,3390,pri,3002,pt1,872,pan,782,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8046,0,0,8046,NA,Mau-Banamex,led to runoff
-15186,1997,Axtla de Terrazas,san-10b.053,24,53,24053,24054,ok,6,jul,5,0,pri,3964,pri,2395,prd,2204,pan,60,pt1,12,pdm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8635,0,0,8635,NA,Mau-Banamex,led to runoff
-15189,1997,Zaragoza,san-10b.055,24,55,24055,24056,ok,6,jul,4,0,pan,2287,pan,2278,pri,1278,prd,32,pps,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5875,0,0,5875,NA,Mau-Banamex,led to runoff
-15191,1997,Villa de Arista,san-10b.056,24,56,24056,24046,ok,6,jul,3,0,pan,2373,pan,2175,pri,301,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4849,0,0,4849,NA,Mau-Banamex,led to runoff
 15194,2000,Ahualulco,san-11.001,24,1,24001,24001,ok,2,jul,3,1,pan,2902,pan,2353,pri,68,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5323,189,1,5513,9729,iee,
 15195,2000,Alaquines,san-11.002,24,2,24002,24002,ok,2,jul,3,0,pri,1727,pri,1246,prd,339,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3312,55,0,3367,5093,iee,
 15196,2000,Aquismón,san-11.003,24,3,24003,24003,ok,13,ago,2,0,pan,6890,pan,4949,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11839,0,0,11839,NA,iee,segunda ronda
+15197,2000,Aquismón,san-11b.003,24,3,24003,24003,ok,2,jul,4,0,pri,5434,pri,5395,pan,551,prd,385,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11765,642,25,12432,19663,iee,led to runoff
 15198,2000,Armadillo de los Infante,san-11.004,24,4,24004,24004,ok,2,jul,4,0,pri,1035,pri,772,pan,133,prd,29,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1969,47,1,2017,3137,iee,
 15199,2000,Cárdenas,san-11.005,24,5,24005,24005,ok,2,jul,3,1,pri,3567,pri,2009,prd-pt1-conve-pasd-psn,1575,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7151,136,0,7287,11739,iee,
 15200,2000,Catorce,san-11.006,24,6,24006,24006,ok,2,jul,5,0,pri,1968,pri,1262,pt1,382,pan,104,prd,69,parm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3785,137,0,3922,5869,iee,
 15201,2000,Cedral,san-11.007,24,7,24007,24007,ok,2,jul,4,0,pri,3964,pri,1582,pasd,281,pan,175,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6002,272,1,6275,9585,iee,
 15202,2000,Cerritos,san-11.008,24,8,24008,24008,ok,2,jul,4,1,pan,4799,pan,3671,pri,145,prd-pt1-conve-pasd-psn,20,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8635,90,1,8726,13470,iee,
 15203,2000,Cerro de San Pedro,san-11.009,24,9,24009,24009,ok,13,ago,2,0,prd,675,prd,580,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1255,0,0,1255,NA,iee,segunda ronda
+15204,2000,Cerro de San Pedro,san-11b.009,24,9,24009,24009,ok,2,jul,6,0,prd,490,prd,430,pri,318,pan,65,pcp,23,npp,15,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1341,41,0,1382,1761,iee,led to runoff
 15205,2000,Ciudad del Maíz,san-11.010,24,10,24010,24010,ok,2,jul,3,0,pri,5754,pri,3498,pan,1752,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11004,225,7,11236,18151,iee,
 15206,2000,Ciudad Fernández,san-11.011,24,11,24011,24011,ok,2,jul,4,0,pan,5903,pan,4978,pri,1912,pvem,88,parm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12881,259,2,13142,22019,iee,
 15207,2000,Tancanhuitz de Santos,san-11.012,24,12,24012,24012,ok,2,jul,3,1,pri,3096,pri,2579,pan,708,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6383,240,1,6624,10610,iee,
 15208,2000,Ciudad Valles,san-11.013,24,13,24013,24013,ok,13,ago,2,0,pri,22283,pri,16087,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38370,0,0,38370,NA,iee,segunda ronda
+15209,2000,Ciudad Valles,san-11b.013,24,13,24013,24013,ok,2,jul,6,0,pri,22237,pri,18722,pan,9748,pasd,1854,pcp,1531,pt1,1208,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55300,1065,91,56456,90844,iee,led to runoff
 15210,2000,Coxcatlán,san-11.014,24,14,24014,24014,ok,2,jul,3,1,pri,3340,pri,2631,pan,151,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6122,199,0,6321,9390,iee,
 15211,2000,Charcas,san-11.015,24,15,24015,24015,ok,2,jul,4,0,pri,3793,pri,2581,pan,1017,pt1,490,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7881,334,9,8224,13070,iee,
 15212,2000,Ebano,san-11.016,24,16,24016,24016,ok,13,ago,2,0,pan,5850,pan,5621,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11471,115,0,11586,NA,iee,segunda ronda
+15213,2000,Ebano,san-11b.016,24,16,24016,24016,ok,2,jul,7,0,pri,5449,pri,4702,pan,2702,prd,906,pt1,316,pcp,80,pds1,51,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14206,502,2,14710,24188,iee,led to runoff
 15214,2000,Guadalcázar,san-11.017,24,17,24017,24017,ok,2,jul,3,1,pri,5745,pri,2740,pan,329,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8814,337,0,9151,15043,iee,
 15215,2000,Huehuetlán,san-11.018,24,18,24018,24018,ok,2,jul,4,0,pri,2534,pri,1149,pan,403,prd,222,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4308,329,5,4642,7496,iee,
 15216,2000,Lagunillas,san-11.019,24,19,24019,24019,ok,2,jul,3,1,pri,1306,pri,962,prd-pt1-conve-pasd-psn,133,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2401,50,10,2461,4238,iee,
 15217,2000,Matehuala,san-11.020,24,20,24020,24020,ok,13,ago,2,0,pan,12110,pan,7194,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19304,0,0,19304,NA,iee,segunda ronda
+15218,2000,Matehuala,san-11b.020,24,20,24020,24020,ok,2,jul,3,1,pan,11361,pan,11140,pri,4853,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27354,614,9,27977,48007,iee,led to runoff
 15219,2000,Mexquitic de Carmona,san-11.021,24,21,24021,24021,ok,2,jul,4,1,pri,6603,pri,4102,pvem,1705,pan,680,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13090,544,0,13634,24672,iee,
 15220,2000,Moctezuma,san-11.022,24,22,24022,24022,ok,2,jul,2,0,pri,3539,pri,2290,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5829,218,22,6069,10625,iee,
 15221,2000,Rayón,san-11.023,24,23,24023,24023,ok,13,ago,2,0,pri,2719,pri,2288,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5007,0,0,5007,NA,iee,segunda ronda
+15222,2000,Rayón,san-11b.023,24,23,24023,24023,ok,2,jul,5,0,pri,2309,pri,1564,pan,942,pvem,940,prd,47,psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5802,237,2,6041,9977,iee,led to runoff
 15223,2000,Rioverde,san-11.024,24,24,24024,24024,ok,13,ago,2,0,pan,15353,pan,11595,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26948,0,0,26948,NA,iee,segunda ronda
+15224,2000,Rioverde,san-11b.024,24,24,24024,24024,ok,2,jul,5,1,pan,13960,pan,13542,pri,823,prd-pt1-conve-pasd-psn,663,pcp,260,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29248,708,35,29991,53687,iee,led to runoff
 15225,2000,Salinas,san-11.025,24,25,24025,24025,ok,2,jul,3,1,pri,4407,pri,3752,pan,270,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8429,244,0,8673,14395,iee,
 15226,2000,San Antonio,san-11.026,24,26,24026,24026,ok,13,ago,2,0,pan,1709,pan,1606,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3315,0,0,3315,NA,iee,segunda ronda
+15227,2000,San Antonio,san-11b.026,24,26,24026,24026,ok,2,jul,4,1,pan,1444,pan,1280,pri,542,prd-pt1-conve-pasd-psn,84,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3350,111,8,3469,4456,iee,led to runoff
 15228,2000,San Ciro de Acosta,san-11.027,24,27,24027,24027,ok,2,jul,2,0,pan,2268,pan,2164,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4432,55,0,4487,6973,iee,
 15229,2000,San Luis Potosí,san-11.028,24,28,24028,24028,ok,13,ago,2,0,pan,68482,pan,53135,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,121617,0,0,121617,NA,iee,segunda ronda
+15230,2000,San Luis Potosí,san-11b.028,24,28,24028,24028,ok,2,jul,7,1,pan,106027,pan,90921,pri,34341,afcp,8145,prd-pt1-conve-pasd-psn,4205,npp,2906,pds1,1975,pcd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,248520,3909,92,252521,402992,iee,led to runoff
 15231,2000,San Martín Chalchicuautla,san-11.029,24,29,24029,24029,ok,2,jul,2,0,pri,4437,pri,3491,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7928,417,25,8370,12135,iee,
 15232,2000,San Nicolás Tolentino,san-11.030,24,30,24030,24030,ok,2,jul,3,0,pri,1249,pri,859,pan,613,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2721,93,1,2815,4523,iee,
 15233,2000,Santa Catarina,san-11.031,24,31,24031,24032,ok,2,jul,3,0,pri,1970,pri,676,prd,164,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2810,97,5,2912,5431,iee,
 15234,2000,Santa María del Río,san-11.032,24,32,24032,24033,ok,13,ago,2,0,pan,5568,pan,3588,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9156,0,0,9156,NA,iee,segunda ronda
+15235,2000,Santa María del Río,san-11b.032,24,32,24032,24033,ok,2,jul,4,0,pan,5121,pan,3273,pri,1564,prd,1452,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11410,645,7,12062,20996,iee,led to runoff
 15236,2000,Santo Domingo,san-11.033,24,33,24033,24034,ok,13,ago,2,0,pan,2865,pan,2128,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4993,0,0,4993,NA,iee,segunda ronda
+15237,2000,Santo Domingo,san-11b.033,24,33,24033,24034,ok,2,jul,4,0,pri,1966,pri,1224,pan,1092,prd,742,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5024,167,86,5277,8307,iee,led to runoff
 15238,2000,San Vicente Tancuayalab,san-11.034,24,34,24034,24031,ok,2,jul,3,1,pan,2908,pan,2724,pri,57,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5689,132,1,5822,7856,iee,
 15239,2000,Soledad de Graciano Sánchez,san-11.035,24,35,24035,24035,ok,2,jul,9,1,pan,26457,pan,19545,pri,3897,pcp,2939,prd-pt1-conve-pasd-psn,1784,pcd1,740,npp,525,pds1,464,pvem,284,parm,0,0,0,0,0,0,0,0,0,0,0,0,56635,1000,10,57645,94664,iee,
 15240,2000,Tamasopo,san-11.036,24,36,24036,24036,ok,13,ago,2,1,prd-pt1-conve-pasd-psn,4722,prd-pt1-conve-pasd-psn,4219,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8941,0,0,8941,NA,iee,segunda ronda
+15241,2000,Tamasopo,san-11b.036,24,36,24036,24036,ok,2,jul,4,1,pri,3732,pri,3093,prd-pt1-conve-pasd-psn,2627,pan,743,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10195,386,6,10587,15835,iee,led to runoff
 15242,2000,Tamazunchale,san-11.037,24,37,24037,24037,ok,2,jul,3,0,pri,15559,pri,4913,npp,4509,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24981,1404,119,26504,45622,iee,
 15243,2000,Tampacán,san-11.038,24,38,24038,24038,ok,2,jul,2,0,npp,3045,npp,2885,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5930,195,7,6132,8424,iee,
 15244,2000,Tampamolón Corona,san-11.039,24,39,24039,24039,ok,2,jul,4,0,prd,2398,prd,1902,pri,450,pcp,197,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4947,233,0,5180,7128,iee,
 15245,2000,Tamuín,san-11.040,24,40,24040,24040,ok,2,jul,4,1,pri,7353,pri,3314,pan,1199,prd-pt1-conve-pasd-psn,196,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12062,302,0,12364,20040,iee,
 15246,2000,Tanlajás,san-11.041,24,41,24041,24041,ok,13,ago,2,1,prd-pt1-conve-pasd-psn,2943,prd-pt1-conve-pasd-psn,2630,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5573,0,0,5573,NA,iee,segunda ronda
+15247,2000,Tanlajás,san-11b.041,24,41,24041,24041,ok,2,jul,3,1,pri,2535,pri,2363,prd-pt1-conve-pasd-psn,962,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5860,175,0,6035,8624,iee,led to runoff
 15248,2000,Tanquián de Escobedo,san-11.042,24,42,24042,24042,ok,2,jul,3,1,pri,2779,pri,2502,pan,127,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5408,141,6,5555,8040,iee,
 15249,2000,Tierra Nueva,san-11.043,24,43,24043,24043,ok,13,ago,2,0,pri,1704,pri,1696,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3400,0,0,3400,NA,iee,segunda ronda
+15250,2000,Tierra Nueva,san-11b.043,24,43,24043,24043,ok,2,jul,3,1,pri,1645,pri,1465,pan,275,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3385,110,1,3496,5637,iee,led to runoff
 15251,2000,Vanegas,san-11.044,24,44,24044,24044,ok,2,jul,3,1,pri,1553,pri,424,pan,264,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2241,98,11,2350,4496,iee,
 15252,2000,Venado,san-11.045,24,45,24045,24045,ok,13,ago,2,0,pan,2533,pan,2386,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4919,0,0,4919,NA,iee,segunda ronda
+15253,2000,Venado,san-11b.045,24,45,24045,24045,ok,2,jul,4,0,pri,2424,pri,1743,pan,772,pt1,461,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5400,196,0,5596,8652,iee,led to runoff
 15254,2000,Villa de Arriaga,san-11.046,24,46,24046,24047,ok,13,ago,2,0,pan,2183,pan,2140,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4323,0,0,4323,NA,iee,segunda ronda
+15255,2000,Villa de Arriaga,san-11b.046,24,46,24046,24047,ok,2,jul,3,1,pri,2121,pri,1757,pan,873,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4751,118,2,4871,7600,iee,led to runoff
 15256,2000,Villa de Guadalupe,san-11.047,24,47,24047,24048,ok,2,jul,3,1,pri,1824,pri,1128,pan,790,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3742,164,0,3906,6514,iee,
 15257,2000,Villa de la Paz,san-11.048,24,48,24048,24049,ok,2,jul,3,0,pan,1272,pan,831,pri,78,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2181,29,0,2210,3294,iee,
 15258,2000,Villa de Ramos,san-11.049,24,49,24049,24050,ok,13,ago,2,0,pt1,6051,pt1,4959,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11010,0,0,11010,NA,iee,segunda ronda
+15259,2000,Villa de Ramos,san-11b.049,24,49,24049,24050,ok,2,jul,5,0,pt1,4903,pt1,4432,pri,578,pan,488,prd,317,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10718,505,18,11241,19051,iee,led to runoff
 15260,2000,Villa de Reyes,san-11.050,24,50,24050,24051,ok,2,jul,3,0,pri,7661,pri,4983,pan,356,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13000,391,10,13401,21331,iee,
 15261,2000,Villa Hidalgo,san-11.051,24,51,24051,24052,ok,2,jul,4,1,pri,3231,pri,2862,pan,63,pcp,59,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6215,156,0,6371,9475,iee,
 15262,2000,Villa Juárez,san-11.052,24,52,24052,24053,ok,2,jul,3,1,pri,2013,pri,1656,pan,315,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3984,115,2,4101,7319,iee,
 15263,2000,Axtla de Terrazas,san-11.053,24,53,24053,24054,ok,2,jul,6,0,pri,4703,pri,3489,prd,1285,pan,338,npp,155,pt1,22,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9992,399,11,10402,16771,iee,
 15264,2000,Xilitla,san-11.054,24,54,24054,24055,ok,2,jul,5,0,pri,8439,pri,3559,pan,1578,prd,165,pt1,43,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13784,549,22,14355,24348,iee,
 15265,2000,Zaragoza,san-11.055,24,55,24055,24056,ok,13,ago,2,0,pan,3284,pan,3059,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6343,0,0,6343,NA,iee,segunda ronda
+15266,2000,Zaragoza,san-11b.055,24,55,24055,24056,ok,2,jul,4,1,pri,3267,pri,3102,pan,373,prd-pt1-conve-pasd-psn,192,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6934,218,5,7157,10894,iee,led to runoff
 15267,2000,Villa de Arista,san-11.056,24,56,24056,24046,ok,2,jul,3,1,pri,2876,pri,2118,pan,190,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5184,119,0,5303,7671,iee,
 15268,2000,Matlapa,san-11.057,24,57,24057,24058,ok,2,jul,4,1,pri,4516,pri,2953,pan,741,prd-pt1-conve-pasd-psn,334,npp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8544,249,6,8799,13406,iee,
 15269,2000,Naranjo--El,san-11.058,24,58,24058,24057,ok,2,jul,3,1,pri,3883,pri,2278,pan,601,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6762,140,3,6905,10859,iee,
-15197,2000,Aquismón,san-11b.003,24,3,24003,24003,ok,2,jul,4,0,pri,5434,pri,5395,pan,551,prd,385,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11765,642,25,12432,19663,iee,led to runoff
-15204,2000,Cerro de San Pedro,san-11b.009,24,9,24009,24009,ok,2,jul,6,0,prd,490,prd,430,pri,318,pan,65,pcp,23,npp,15,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1341,41,0,1382,1761,iee,led to runoff
-15209,2000,Ciudad Valles,san-11b.013,24,13,24013,24013,ok,2,jul,6,0,pri,22237,pri,18722,pan,9748,pasd,1854,pcp,1531,pt1,1208,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55300,1065,91,56456,90844,iee,led to runoff
-15213,2000,Ebano,san-11b.016,24,16,24016,24016,ok,2,jul,7,0,pri,5449,pri,4702,pan,2702,prd,906,pt1,316,pcp,80,pds1,51,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14206,502,2,14710,24188,iee,led to runoff
-15218,2000,Matehuala,san-11b.020,24,20,24020,24020,ok,2,jul,3,1,pan,11361,pan,11140,pri,4853,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27354,614,9,27977,48007,iee,led to runoff
-15222,2000,Rayón,san-11b.023,24,23,24023,24023,ok,2,jul,5,0,pri,2309,pri,1564,pan,942,pvem,940,prd,47,psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5802,237,2,6041,9977,iee,led to runoff
-15224,2000,Rioverde,san-11b.024,24,24,24024,24024,ok,2,jul,5,1,pan,13960,pan,13542,pri,823,prd-pt1-conve-pasd-psn,663,pcp,260,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,29248,708,35,29991,53687,iee,led to runoff
-15227,2000,San Antonio,san-11b.026,24,26,24026,24026,ok,2,jul,4,1,pan,1444,pan,1280,pri,542,prd-pt1-conve-pasd-psn,84,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3350,111,8,3469,4456,iee,led to runoff
-15230,2000,San Luis Potosí,san-11b.028,24,28,24028,24028,ok,2,jul,7,1,pan,106027,pan,90921,pri,34341,afcp,8145,prd-pt1-conve-pasd-psn,4205,npp,2906,pds1,1975,pcd1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,248520,3909,92,252521,402992,iee,led to runoff
-15235,2000,Santa María del Río,san-11b.032,24,32,24032,24033,ok,2,jul,4,0,pan,5121,pan,3273,pri,1564,prd,1452,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11410,645,7,12062,20996,iee,led to runoff
-15237,2000,Santo Domingo,san-11b.033,24,33,24033,24034,ok,2,jul,4,0,pri,1966,pri,1224,pan,1092,prd,742,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5024,167,86,5277,8307,iee,led to runoff
-15241,2000,Tamasopo,san-11b.036,24,36,24036,24036,ok,2,jul,4,1,pri,3732,pri,3093,prd-pt1-conve-pasd-psn,2627,pan,743,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10195,386,6,10587,15835,iee,led to runoff
-15247,2000,Tanlajás,san-11b.041,24,41,24041,24041,ok,2,jul,3,1,pri,2535,pri,2363,prd-pt1-conve-pasd-psn,962,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5860,175,0,6035,8624,iee,led to runoff
-15250,2000,Tierra Nueva,san-11b.043,24,43,24043,24043,ok,2,jul,3,1,pri,1645,pri,1465,pan,275,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3385,110,1,3496,5637,iee,led to runoff
-15253,2000,Venado,san-11b.045,24,45,24045,24045,ok,2,jul,4,0,pri,2424,pri,1743,pan,772,pt1,461,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5400,196,0,5596,8652,iee,led to runoff
-15255,2000,Villa de Arriaga,san-11b.046,24,46,24046,24047,ok,2,jul,3,1,pri,2121,pri,1757,pan,873,prd-pt1-conve-pasd-psn,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4751,118,2,4871,7600,iee,led to runoff
-15259,2000,Villa de Ramos,san-11b.049,24,49,24049,24050,ok,2,jul,5,0,pt1,4903,pt1,4432,pri,578,pan,488,prd,317,pds1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10718,505,18,11241,19051,iee,led to runoff
-15266,2000,Zaragoza,san-11b.055,24,55,24055,24056,ok,2,jul,4,1,pri,3267,pri,3102,pan,373,prd-pt1-conve-pasd-psn,192,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6934,218,5,7157,10894,iee,led to runoff
 15270,2003,Ahualulco,san-12.001,24,1,24001,24001,ok,13,oct,2,0,pan,3009,pan,2258,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5267,5,83,5355,10438,IEE,
 15271,2003,Alaquines,san-12.002,24,2,24002,24002,ok,13,oct,4,0,pri,1414,pri,1236,pcp,279,prd,245,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3174,1,51,3226,5361,IEE,
 15272,2003,Aquismón,san-12.003,24,3,24003,24003,ok,13,oct,3,0,pan,6260,pan,4731,pri,1399,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12390,20,462,12872,20683,IEE,
@@ -15281,6 +15281,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 15280,2003,Ciudad Fernández,san-12.011,24,11,24011,24011,ok,13,oct,3,0,pan,6184,pan,5730,pri,169,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12083,1,116,12200,24698,IEE,
 15281,2003,Tancanhuitz de Santos,san-12.012,24,12,24012,24012,ok,13,oct,4,1,pri-pvem,3248,pri-pvem,2032,pan,1229,pt1,690,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7199,0,168,7367,11310,IEE,
 15282,2003,Ciudad Valles,san-12.013,24,13,24013,24013,ok,14,dic,2,1,pri-pvem-pt1-pasd,30393,pri-pvem-pt1-pasd,21017,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,51410,0,408,51818,NA,iee,segunda ronda
+15283,2003,Ciudad Valles,san-12b.013,24,13,24013,24013,ok,13,oct,6,1,pri-pt1-pvem-pasd,24124,pri-pt1-pvem-pasd,21801,pan,1403,prd,924,conve,339,psn,186,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48777,23,701,49501,99027,IEE,led to runoff
 15284,2003,Coxcatlán,san-12.014,24,14,24014,24014,ok,13,oct,3,1,pan,3593,pan,2835,pri-pvem,53,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6481,11,194,6686,9787,IEE,
 15285,2003,Charcas,san-12.015,24,15,24015,24015,ok,13,oct,4,1,pt1-conve-pcp,2721,pt1-conve-pcp,1896,pan,1646,pri,185,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6448,2,120,6570,13559,IEE,
 15286,2003,Ebano,san-12.016,24,16,24016,24016,ok,13,oct,6,0,pri,5691,pri,4633,pan,3201,prd,888,pt1,193,conve,47,pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14653,1,247,14901,25442,IEE,
@@ -15289,9 +15290,11 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 15289,2003,Lagunillas,san-12.019,24,19,24019,24019,ok,13,oct,3,0,pri,1206,pri,845,pan,221,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2272,1,28,2301,4506,IEE,
 15290,2003,Matehuala,san-12.020,24,20,24020,24020,ok,13,oct,3,1,pri-pvem,13200,pri-pvem,7483,pan,1136,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21819,3,347,22169,54337,IEE,
 15291,2003,Mexquitic de Carmona,san-12.021,24,21,24021,24021,ok,14,dic,2,0,pan,7644,pan,6452,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14096,0,150,14246,NA,iee,segunda ronda
+15292,2003,Mexquitic de Carmona,san-12b.021,24,21,24021,24021,ok,13,oct,5,1,pri,4993,pri,4822,pan,1569,pvem,992,conve-pcp,166,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12542,3,199,12744,27168,IEE,led to runoff
 15293,2003,Moctezuma,san-12.022,24,22,24022,24022,ok,13,oct,3,1,prd,2743,prd,2393,pan,1278,pri-pvem,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6414,5,86,6505,11253,IEE,
 15294,2003,Rayón,san-12.023,24,23,24023,24023,ok,13,oct,3,0,pri,2979,pri,2461,pan,533,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5973,3,74,6050,10742,IEE,
 15295,2003,Rioverde,san-12.024,24,24,24024,24024,ok,14,dic,2,1,pri-pvem,13639,pri-pvem,10586,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24225,0,278,24503,NA,iee,segunda ronda
+15296,2003,Rioverde,san-12b.024,24,24,24024,24024,ok,13,oct,4,1,pri-pvem,10203,pri-pvem,9163,pan,6321,prd-pt1-conve,397,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26084,6,514,26604,59792,IEE,led to runoff
 15297,2003,Salinas,san-12.025,24,25,24025,24025,ok,13,oct,3,1,pri-pcp,4792,pri-pcp,4166,pan,152,prd-pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9110,5,118,9233,15559,IEE,
 15298,2003,San Antonio,san-12.026,24,26,24026,24026,ok,13,oct,3,1,pan,1638,pan,1616,pri-pvem,309,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3563,4,52,3619,4827,IEE,
 15299,2003,San Ciro de Acosta,san-12.027,24,27,24027,24027,ok,13,oct,3,0,pan,2030,pan,1998,pri,110,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4138,3,38,4179,7452,IEE,
@@ -15303,6 +15306,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 15305,2003,Santo Domingo,san-12.033,24,33,24033,24034,ok,13,oct,5,0,pt1,1563,pt1,1418,pan,1340,pri,665,prd,433,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5419,0,59,5478,8699,IEE,
 15306,2003,San Vicente Tancuayalab,san-12.034,24,34,24034,24031,ok,13,oct,3,1,pri,3148,pri,2476,pan,359,prd-pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5983,2,77,6062,8376,IEE,
 15307,2003,Soledad de Graciano Sánchez,san-12.035,24,35,24035,24035,ok,14,dic,2,1,prd,13167,prd,12295,pri-pvem-pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25462,0,358,25820,NA,iee,segunda ronda
+15308,2003,Soledad de Graciano Sánchez,san-12b.035,24,35,24035,24035,ok,13,oct,5,1,pri-pvem-pcp,9861,pri-pvem-pcp,9038,prd,7921,pan,1821,pt1,1816,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30457,7,797,31261,110256,IEE,led to runoff
 15309,2003,Tamasopo,san-12.036,24,36,24036,24036,ok,13,oct,6,0,pri,3546,pri,3146,pan,2317,prd,842,pt1,692,conve,110,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10653,0,200,10853,16986,IEE,
 15310,2003,Tamazunchale,san-12.037,24,37,24037,24037,ok,13,oct,3,1,pri,10769,pri,6575,prd-pt1,4530,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21874,16,747,22637,50494,IEE,
 15311,2003,Tampacán,san-12.038,24,38,24038,24038,ok,13,oct,4,1,pan,2432,pan,1391,pri-pt1,1383,conve,1240,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6446,7,104,6557,8940,IEE,
@@ -15322,15 +15326,11 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,win,v01,l01,v02,l02,
 15325,2003,Villa Juárez,san-12.052,24,52,24052,24053,ok,13,oct,2,0,pan,2202,pan,1879,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4081,2,52,4135,7841,IEE,
 15326,2003,Axtla de Terrazas,san-12.053,24,53,24053,24054,ok,13,oct,4,0,pri,4298,pri,2956,pan,2369,prd,1489,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11112,5,243,11360,17848,IEE,
 15327,2003,Xilitla,san-12.054,24,54,24054,24055,ok,14,dic,2,0,pan,7712,pan,7185,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14897,0,311,15208,NA,iee,segunda ronda
+15328,2003,Xilitla,san-12b.054,24,54,24054,24055,ok,13,oct,5,1,pri,5388,pri,5345,pan,1021,conve-pcp,585,prd,171,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12510,4,427,12941,25729,IEE,led to runoff
 15329,2003,Zaragoza,san-12.055,24,55,24055,24056,ok,13,oct,3,0,pri,3827,pri,2087,pan,969,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6883,0,96,6979,12066,IEE,
 15330,2003,Villa de Arista,san-12.056,24,56,24056,24046,ok,13,oct,3,1,pri-pvem,2725,pri-pvem,2124,pan,199,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5048,1,68,5117,8442,IEE,
 15331,2003,Matlapa,san-12.057,24,57,24057,24058,ok,13,oct,6,1,pri,3577,pri,2681,pt1-conve,2258,pan,989,pvem,176,prd,49,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9730,1,253,9984,14897,IEE,
 15332,2003,Naranjo--El,san-12.058,24,58,24058,24057,ok,13,oct,3,0,pan,3644,pan,3309,pri,59,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7012,2,42,7056,11543,IEE,
-15283,2003,Ciudad Valles,san-12b.013,24,13,24013,24013,ok,13,oct,6,1,pri-pt1-pvem-pasd,24124,pri-pt1-pvem-pasd,21801,pan,1403,prd,924,conve,339,psn,186,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48777,23,701,49501,99027,IEE,led to runoff
-15292,2003,Mexquitic de Carmona,san-12b.021,24,21,24021,24021,ok,13,oct,5,1,pri,4993,pri,4822,pan,1569,pvem,992,conve-pcp,166,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12542,3,199,12744,27168,IEE,led to runoff
-15296,2003,Rioverde,san-12b.024,24,24,24024,24024,ok,13,oct,4,1,pri-pvem,10203,pri-pvem,9163,pan,6321,prd-pt1-conve,397,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26084,6,514,26604,59792,IEE,led to runoff
-15308,2003,Soledad de Graciano Sánchez,san-12b.035,24,35,24035,24035,ok,13,oct,5,1,pri-pvem-pcp,9861,pri-pvem-pcp,9038,prd,7921,pan,1821,pt1,1816,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30457,7,797,31261,110256,IEE,led to runoff
-15328,2003,Xilitla,san-12b.054,24,54,24054,24055,ok,13,oct,5,1,pri,5388,pri,5345,pan,1021,conve-pcp,585,prd,171,pt1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12510,4,427,12941,25729,IEE,led to runoff
 15333,2006,Ahualulco,san-13.001,24,1,24001,24001,ok,2,jul,4,1,pan,2269,pan,1995,pri-pasd,1399,pcp,716,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6379,0,276,6655,11410,http://www.cee-slp.org.mx/,
 15334,2006,Alaquines,san-13.002,24,2,24002,24002,ok,2,jul,3,1,pan-pna-pcp,1691,pan-pna-pcp,1480,pri,190,prd-pt1-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3361,2,107,3470,5686,http://www.cee-slp.org.mx/,
 15335,2006,Aquismón,san-13.003,24,3,24003,24003,ok,2,jul,4,1,pan,8256,pan,5492,pri-pasd,1197,prd-pt1-conve,52,pcp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14997,93,883,15973,23881,http://www.cee-slp.org.mx/,
