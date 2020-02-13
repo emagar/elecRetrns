@@ -1,11 +1,10 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2019-11-20
+Last revision: 2020-02-13
 
 # Export to md: M-x org-md-export-to-markdown
 
 * Description of /Recent Mexican Election Vote Returns/ repository
-
 - Author: Eric Magar
 - Email: emagar at itam dot mx
 
@@ -14,7 +13,6 @@ The repository contains voting data for recent Mexican elections for certain off
 /Important note:/ older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 
 * Files in the repository and how to cite them
-
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted next to the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/.
@@ -38,7 +36,6 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - +~datosBrutos/~ = large directory containing primary sources+ (dropped from repo due to large size... [[mailto:emagar@itam.mx][mail me]] if you need this).
 
 * Codebook
-
 Most variables are included in every file, some appear in selected files only.  
 
 - /edon/ = state number 1:32.
@@ -62,7 +59,8 @@ Most variables are included in every file, some appear in selected files only.
 - /nota/ = notes.
 - /fuente/ = source.
 - /ncand/ = number of candidates running.
-- /dcoal/ = dummy equal 1 if at least one major party candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
+- /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
+- /ncoal/ = number of candidates who ran on multi-party pre-electoral coalitions. 
 - /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions ('no' indidates no coalition).
 - /imputacion/, /distpan/, /distpri/, /distprd/ = when some parties coelesced in such way that only their pooled vote was reported, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
 - /seyr/, /semo/ = year of the previous/concurrent senatorial election.
@@ -100,7 +98,6 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 - El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 * Sources
-
 Work in progress...
 
 - /Fuente/ = iee indicates data obtined from the primary source, the state's election board's web site. 
@@ -112,5 +109,4 @@ Work in progress...
 - /Fuente/ = voz y voto
 
 * Acknowledgements
-
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data. 

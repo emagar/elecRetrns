@@ -174,12 +174,12 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "-ps$", replacement = "-ps1", l[,i])
     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pt$", replacement = "pt1", l[,i])
-    l[,i] <- gsub(pattern = "-pt-", replacement = "-pt1-", l[,i])
-    l[,i] <- gsub(pattern = "-pt$", replacement = "-pt1", l[,i])
-    l[,i] <- gsub(pattern = "^pt-", replacement = "pt1-", l[,i])
-    }
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pt$", replacement = "pt1", l[,i])
+##     l[,i] <- gsub(pattern = "-pt-", replacement = "-pt1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pt$", replacement = "-pt1", l[,i])
+##     l[,i] <- gsub(pattern = "^pt-", replacement = "pt1-", l[,i])
+##     }
 #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pac$", replacement = "pac1", l[,i])
@@ -280,12 +280,12 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^parme.-", replacement = "parm-", l[,i])
     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^indep$", replacement = "indep1", l[,i])
-    l[,i] <- gsub(pattern = "-indep-", replacement = "-indep1-", l[,i])
-    l[,i] <- gsub(pattern = "-indep$", replacement = "-indep1", l[,i])
-    l[,i] <- gsub(pattern = "^indep-", replacement = "indep1-", l[,i])
-    }
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^indep$", replacement = "indep1", l[,i])
+##     l[,i] <- gsub(pattern = "-indep-", replacement = "-indep1-", l[,i])
+##     l[,i] <- gsub(pattern = "-indep$", replacement = "-indep1", l[,i])
+##     l[,i] <- gsub(pattern = "^indep-", replacement = "indep1-", l[,i])
+##     }
 #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^alianza$", replacement = "alianza1", l[,i])
@@ -633,7 +633,10 @@ w4[sel7] <- tmp.w4
 ci[sel7,] <- tmp.ci
 
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
-table(max.tmp) # coal w most members has 7
+table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
+
+# plug ncoal into data
+dat$ncoal  <- ci$ncoal
 
 # prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
@@ -710,16 +713,17 @@ dat.orig <- dat # original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
 dat[,sel.v] <- cv.sorted # return manipulated votes to data
 head(dat)
-# move dcoal column before v01
+# move dcoal and ncoal columns before v01
 tmp <- dat # duplicate if I mess up
 tmp1 <- grep("v01", colnames(dat))
 tmp2 <- grep("dcoal", colnames(dat))
-dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
+tmp3 <- grep("ncoal", colnames(dat))
+dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
 colnames(dat)
-rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp)
+rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-table(dat$v16) # check that only has zeroes
-dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
+table(dat$v15) # check that only has zeroes
+dat$v15 <- dat$l15 <- dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
