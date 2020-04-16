@@ -198,11 +198,11 @@ ord,inegi,ife,edon,edo,mun
 197,7118,7117,7,cps,San Andrés Duraznal
 198,7119,7118,7,cps,Santiago el Pinar
 199,0,7119,7,cps,Belisario Domínguez
-200,0,7120,7,cps,Emiliano Zapata
-201,0,7121,7,cps,Mezcalapa
-202,0,7122,7,cps,Parral--El
-203,0,7123,7,cps,Capitán Luis A. Vidal
-204,0,7124,7,cps,Rincón Chamula
+200,7123,7120,7,cps,Emiliano Zapata
+201,7124,7121,7,cps,Mezcalapa
+202,7122,7122,7,cps,Parral--El
+203,7120,7123,7,cps,Capitán Luis A. Vidal
+204,7121,7124,7,cps,Rincón Chamula
 205,8001,8001,8,cua,Ahumada
 206,8002,8002,8,cua,Aldama
 207,8003,8003,8,cua,Allende
@@ -1819,6 +1819,7 @@ ord,inegi,ife,edon,edo,mun
 1818,23008,23008,23,qui,Solidaridad
 1819,23009,23009,23,qui,Tulum
 1820,23010,23010,23,qui,Bacalar
+1820.1,23011,23011,23,qui,Puerto Morelos
 1821,24001,24001,24,san,Ahualulco
 1822,24002,24002,24,san,Alaquines
 1823,24003,24003,24,san,Aquismón
