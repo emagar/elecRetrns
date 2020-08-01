@@ -2,13 +2,12 @@ next: 8-jul-2019
 - bring all data manipulations from incumbent-reelection.r to this script
 - invoke this script from incumbent-reelection.r
 
-
 rm(list = ls())
 wd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(wd)
 
 # alcaldes
-inc <- read.csv(file = "aymu1997-present.incumbents.csv", stringsAsFactors = FALSE)
+inc <- read.csv(file = "aymu1989-present.incumbents.csv", stringsAsFactors = FALSE)
 colnames(inc)
 
 ## # merge a new coalAgg into incumbents
@@ -26,7 +25,7 @@ colnames(inc)
 ## inc <- inc[-sel,] # drop them
 ## write.csv(inc, file = "tmp.csv", row.names = FALSE) # verify what tmp.csv looks like
 
-
+# open slots for lagged variables
 inc$race.prior <- NA
 inc$win.prior <- NA
 
@@ -57,6 +56,8 @@ for (e in 1:32){
     }
     inc[sel.e,] <- inc.e
 }
+
+31jul2020: NEED TO DEAL WITH WIN.PRIOR IN NEW MUNICS... look at win in parent municipio and use it 
 
 # simplify parties
 inc$win2 <- inc$win
@@ -102,11 +103,13 @@ sel <- grep("pt1", inc$win.prior2, ignore.case = TRUE)
 inc$win.prior2[sel] <- "pt"
 #
 sel <- which(inc$yr==2018)
-table(inc$win.prior2[sel])
+table(inc$win.prior2[sel], useNA = "always")
 
-table(inc$race.prior)
+31jul2020: NEED TO DEAL WITH RACE.PRIOR IN NEW MUNICS... code as new category "new mun"
+
+table(inc$race.prior, useNA = "always")
 sel <- which(inc$race.prior=="Reelected")
-inc$race.prior[sel] <- "Incumb-stayed"
+inc$race.prior[sel] <- "Incumb-remained"
 sel <- which(inc$race.prior=="Beaten")
 inc$race.prior[sel] <- "Incumb-ousted"
 sel <- grep("p-won", inc$race.prior, ignore.case = TRUE) 
@@ -117,23 +120,25 @@ sel <- grep("pending|out-p-[?]", inc$race.prior, ignore.case = TRUE)
 inc$race.prior[sel] <- "pending"
 table(inc$race.prior)
 
+
 #############################################
 # subset: cases allowing reelection in 2018 #
 # esto lo reporté en el blog de Nexos       #
 #############################################
 sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
 inc.sub <- inc[sel,]
+dim(inc.sub)
 
 sel <- which(inc.sub$race.prior=="pending"|inc.sub$race.prior=="")
 inc.sub$emm[sel]
-inc.sub <- inc.sub[-sel,] # drop cases with pending election
+if (length(sel)>0) inc.sub <- inc.sub[-sel,] # drop cases with pending election
 
-table(inc.sub$edon, inc.sub$race.prior)
-      table(inc.sub$race.prior)
+table(inc.sub$edon, inc.sub$race.prior) # by state
+table(              inc.sub$race.prior)
 nrow(inc.sub)
 round(table(inc.sub$race.prior) / nrow(inc.sub),2)
 
-table(inc.sub$win2, inc.sub$race.prior)
+table(inc.sub$win2, inc.sub$race.prior) # by incumbent party
 tab <- table(inc.sub$win.prior2, inc.sub$race.prior)
 rowSums(tab)
 sum(rowSums(tab))
@@ -142,15 +147,15 @@ round(colSums(tab) *100 / sum(rowSums(tab)), 1)
 
 
 # subset: cases NOT allowing reelection in 2018
-sel <- which(inc$yr==2018 & inc$edon!=9 & inc$edon!=21)
 sel <- which(inc$yr==2018 & (inc$edon==9 | inc$edon==21))
 inc.sub <- inc[sel,]
 
-table(inc.sub$edon, inc.sub$race.prior)
-      table(inc.sub$race.prior)
-round(table(inc.sub$race.prior) / length(sel),2)
+table(inc.sub$edon, inc.sub$race.prior) # by state
+table(              inc.sub$race.prior)
+nrow(inc.sub)
+round(table(inc.sub$race.prior) / nrow(inc.sub),2)
 
-table(inc.sub$win2, inc.sub$race.prior)
+table(inc.sub$win2, inc.sub$race.prior) # by incumbent party
 tab <- table(inc.sub$win.prior2, inc.sub$race.prior)
 rowSums(tab)
 round(table(inc.sub$win.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
@@ -158,278 +163,272 @@ round(table(inc.sub$win.prior2, inc.sub$race.prior) *100 / rowSums(tab), 0)
 sel <- which(inc$yr==2018 & inc$edon!=16)
 inc.sub <- inc[sel,]
 
-###############################################################
-# classify term-limited cases according to party returned/not #
-###############################################################
-duplic.win <- inc$win; duplic.win.prior <- inc$win.prior # duplicate
-inc$win <- gsub("conve", "mc", inc$win)
-inc$win.prior <- gsub("conve", "mc", inc$win.prior)
-#
-inc$manipule <- inc$race.prior # manipulate a copy
-# 
-sel.tl <- which(inc$manipule=="Term-limited" & inc$win!="" & <- inc$win.prior!="")
-inc.sub <- inc[sel.tl,] # subset
-# n coalition members
-num <- gsub(pattern = "[^-]*", replacement = "", inc.sub$win, perl = TRUE) # keep hyphens only
-num <- sapply(num, function(x) nchar(x)+1); names(num) <- NULL#n hyphens
-sel <- which(num==7) # subset coals with seven members
-for (i in sel){
-    tmp7 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\7", inc.sub$win[i])
-    tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp7, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==6) # subset coals with six members
-for (i in sel){
-    tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==5) # subset coals with five members
-for (i in sel){
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==4) # subset coals with four members
-for (i in sel){
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==3) # subset coals with three members
-for (i in sel){
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==2) # subset coals with two members
-for (i in sel){
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-sel <- which(num==1) # subset coals with single member
-for (i in sel){
-    tmp1 <- gsub("^([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$manipule[i] <- "Term-limited-p-won"
-    } else {
-        inc.sub$manipule[i] <- "Term-limited-p-lost"
-    }
-}
-inc[sel.tl,] <- inc.sub # return to data
-inc$race.prior <- inc$manipule # return to data 
-inc$win <- duplic.win; inc$win.prior <- duplic.win.prior  # return unmanipulated winners
-table(inc$race.prior[inc$win!="" & inc$win.prior!=""]) # check classification
-rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.tl, sel.e, sel.m, sel.7, duplic.win, duplic.win.prior)
-#
-## table(inc$manipule[inc$win!="" & inc$win.prior!=""]) # debug
-
-table(inc$yr)                                   # debug
-table(inc.sub$win2)                                   # debug
-table(inc$win2, inc$race.prior)                                   # debug
-
-
-inc.sub
-
-## data.frame(inc.sub$win.prior[sel], inc.sub$win[sel]) # debug
-## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
-#
+## 1ago2020: THIS APPEARS DEPRECATED, CLASSIF IS DONE IN RACE.AFTER
+## ###############################################################
+## # classify term-limited cases according to party returned/not #
+## ###############################################################
+## duplic.win <- inc$win; duplic.win.prior <- inc$win.prior # duplicate
+## inc$win <- gsub("conve", "mc", inc$win)
+## inc$win.prior <- gsub("conve", "mc", inc$win.prior)
+## #
+## inc$manipule <- inc$race.prior # manipulate a copy
+## table(inc$manipule)
+## # 
+## sel.tl <- which(inc$manipule=="Term-limited" & inc$win!="" & inc$win.prior!="")
+## inc.sub <- inc[sel.tl,] # subset
+## # n coalition members
+## num <- gsub(pattern = "[^-]*", replacement = "", inc.sub$win, perl = TRUE) # keep hyphens only
+## num <- sapply(num, function(x) nchar(x)+1); names(num) <- NULL #n hyphens
+## sel <- which(num==7) # subset coals with seven members
+## for (i in sel){
+##     tmp7 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\7", inc.sub$win[i])
+##     tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp7, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==6) # subset coals with six members
+## for (i in sel){
+##     tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==5) # subset coals with five members
+## for (i in sel){
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==4) # subset coals with four members
+## for (i in sel){
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==3) # subset coals with three members
+## for (i in sel){
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==2) # subset coals with two members
+## for (i in sel){
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## sel <- which(num==1) # subset coals with single member
+## for (i in sel){
+##     tmp1 <- gsub("^([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$manipule[i] <- "Term-limited-p-won"
+##     } else {
+##         inc.sub$manipule[i] <- "Term-limited-p-lost"
+##     }
+## }
+## inc[sel.tl,] <- inc.sub # return to data
+## inc$race.prior <- inc$manipule # return to data 
+## inc$win <- duplic.win; inc$win.prior <- duplic.win.prior  # return unmanipulated winners
+## table(inc$race.prior[inc$win!="" & inc$win.prior!=""]) # check classification
+## rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.tl, sel.e, sel.m, sel.7, duplic.win, duplic.win.prior)
+## #
+## ## table(inc$manipule[inc$win!="" & inc$win.prior!=""]) # debug
+## table(inc$yr)                                   # debug
+## table(inc.sub$win2)                                   # debug
+## table(inc$win2, inc$race.prior)                                   # debug
+## inc.sub
+## ## data.frame(inc.sub$win.prior[sel], inc.sub$win[sel]) # debug
+## ## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
 
 
-#############################################
-# classify create dummy for reelected party #
-#############################################
-inc$dptyReelected <- NA
-#
-duplic.win <- inc$win; duplic.win.prior <- inc$win.prior # duplicate
-inc$win <- gsub("conve", "mc", inc$win)
-inc$win.prior <- gsub("conve", "mc", inc$win.prior)
-#
-sel.sub <- which(inc$win!="" & inc$win.prior!="" & is.na(inc$win)==FALSE & is.na(inc$win.prior)==FALSE)
-inc.sub <- inc[sel.sub,] # subset
-# n coalition members
-num <- gsub(pattern = "[^-]*", replacement = "", inc.sub$win, perl = TRUE) # keep hyphens only
-num <- sapply(num, function(x) nchar(x)+1); names(num) <- NULL#n hyphens
-table(num)
-sel <- which(num==7) # subset coals with seven members
-for (i in sel){
-    tmp7 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\7", inc.sub$win[i])
-    tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp7, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==6) # subset coals with six members
-for (i in sel){
-    tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==5) # subset coals with five members
-for (i in sel){
-    tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==4) # subset coals with four members
-for (i in sel){
-    tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==3) # subset coals with three members
-for (i in sel){
-    tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==2) # subset coals with two members
-for (i in sel){
-    tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
-    tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
-         length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-sel <- which(num==1) # subset coals with single member
-for (i in sel){
-    tmp1 <- gsub("^([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
-    if ( length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
-        inc.sub$dptyReelected[i] <- 1
-    } else {
-        inc.sub$dptyReelected[i] <- 0
-    }
-}
-inc[sel.sub,] <- inc.sub # return to data
-inc$win <- duplic.win; inc$win.prior <- duplic.win.prior  # return unmanipulated winners
-table(inc$dptyReelected[inc$win!="" & inc$win.prior!="" & is.na(inc$win)==FALSE & is.na(inc$win.prior)==FALSE], useNA = "always") # check classification
-rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.sub, sel.e, sel.m, sel.7, duplic.win, duplic.win.prior)
-#
-## table(inc$manipule[inc$win!="" & inc$win.prior!=""]) # debug
-## table(inc.sub$win)                                   # debug
-## data.frame(inc.sub$win.prior[sel], inc.sub$win[sel]) # debug
-## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
+## 1ago2020: ALSO DEPRECATED, INFO IS IN RACE.AFTER
+## #############################################
+## # classify create dummy for reelected party #
+## #############################################
+## inc$dptyReelected <- NA
+## #
+## duplic.win <- inc$win; duplic.win.prior <- inc$win.prior # duplicate
+## inc$win <- gsub("conve", "mc", inc$win)
+## inc$win.prior <- gsub("conve", "mc", inc$win.prior)
+## #
+## # CASES WITH NO MISSING INFO
+## sel.sub <- which(inc$win!="" & inc$win.prior!="" & is.na(inc$win)==FALSE & is.na(inc$win.prior)==FALSE)
+## inc.sub <- inc[sel.sub,] # subset
+## # n coalition members
+## num <- gsub(pattern = "[^-]*", replacement = "", inc.sub$win, perl = TRUE) # keep hyphens only
+## num <- sapply(num, function(x) nchar(x)+1); names(num) <- NULL #n hyphens
+## table(num)
+## sel <- which(num==7) # subset coals with seven members
+## for (i in sel){
+##     tmp7 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\7", inc.sub$win[i])
+##     tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp7, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==6) # subset coals with six members
+## for (i in sel){
+##     tmp6 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\6", inc.sub$win[i])
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp6, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==5) # subset coals with five members
+## for (i in sel){
+##     tmp5 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\5", inc.sub$win[i])
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp5, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==4) # subset coals with four members
+## for (i in sel){
+##     tmp4 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\4", inc.sub$win[i])
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp4, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==3) # subset coals with three members
+## for (i in sel){
+##     tmp3 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\3", inc.sub$win[i])
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp3, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==2) # subset coals with two members
+## for (i in sel){
+##     tmp2 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\2", inc.sub$win[i])
+##     tmp1 <- gsub("^([a-z0-9]+)-([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp2, inc.sub$win.prior[i]))>0 |
+##          length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## sel <- which(num==1) # subset coals with single member
+## for (i in sel){
+##     tmp1 <- gsub("^([a-z0-9]+)$", replacement = "\\1", inc.sub$win[i])
+##     if ( length(grep(pattern = tmp1, inc.sub$win.prior[i]))>0) {
+##         inc.sub$dptyReelected[i] <- 1
+##     } else {
+##         inc.sub$dptyReelected[i] <- 0
+##     }
+## }
+## inc[sel.sub,] <- inc.sub # return to data
+## inc$win <- duplic.win; inc$win.prior <- duplic.win.prior  # return unmanipulated winners
+## table(inc$dptyReelected[inc$win!="" & inc$win.prior!="" & is.na(inc$win)==FALSE & is.na(inc$win.prior)==FALSE], useNA = "always") # check classification
+## rm(tmp, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, sel.sub, sel.e, sel.m, sel.7, duplic.win, duplic.win.prior)
+## #
+## ## table(inc$manipule[inc$win!="" & inc$win.prior!=""]) # debug
+## ## table(inc.sub$win)                                   # debug
+## ## data.frame(inc.sub$win.prior[sel], inc.sub$win[sel]) # debug
+## ## data.frame(inc.sub$win.prior[sel1], inc.sub$win[sel1]) # debug
 
-sel <- which(inc$win=="" & inc$win.prior=="" & inc$yr>=2000)
 
-table(inc$dptyReelected[sel], useNA = "always") # check classification
-
-inc[sel[2],]
-data.frame(inc$win.prior[sel[1]], inc$win[sel[1]])
