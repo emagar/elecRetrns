@@ -1,3 +1,14 @@
+# specific files and folders
+0drop/
+POBTOT/
+code/stata/
+colindanciasMun/
+datosBrutos/
+datospibe/
+lit/
+oldVers/
+tmp*.*
+
 # History files
 .Rhistory
 .Rapp.history
