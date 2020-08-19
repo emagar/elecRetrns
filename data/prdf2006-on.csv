@@ -599,303 +599,303 @@ ord,yr,mo,dy,elec,edon,disn,cab,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,
 598,2012,7,1,pres,32,2,Jerez,40071,pan,60875,pri,20535,prd,3628,pvem,3030,pt,1121,mc,4605,panal,14580,pri-pvem,3984,prd-pt-mc,1534,prd-pt,262,prd-mc,127,pt-mc,0,asdc,154401,4328,49,158729,0,ife datos_computos_res_presidente_total_actas
 599,2012,7,1,pres,32,3,Zacatecas,27842,pan,63978,pri,25109,prd,3727,pvem,6368,pt,1799,mc,5515,panal,18246,pri-pvem,6417,prd-pt-mc,2172,prd-pt,403,prd-mc,204,pt-mc,0,asdc,161835,4157,55,165992,0,ife datos_computos_res_presidente_total_actas
 600,2012,7,1,pres,32,4,Guadalupe,28043,pan,66800,pri,26903,prd,4481,pvem,6526,pt,1600,mc,5788,panal,20141,pri-pvem,7157,prd-pt-mc,2589,prd-pt,351,prd-mc,226,pt-mc,0,asdc,170652,4458,47,175110,0,ife datos_computos_res_presidente_total_actas
-601,2018,7,1,pres,1,1,JESUS MARIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-602,2018,7,1,pres,1,2,AGUASCALIENTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-603,2018,7,1,pres,1,3,AGUASCALIENTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-604,2018,7,1,pres,2,1,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-605,2018,7,1,pres,2,2,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-606,2018,7,1,pres,2,3,ENSENADA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-607,2018,7,1,pres,2,4,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-608,2018,7,1,pres,2,5,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-609,2018,7,1,pres,2,6,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-610,2018,7,1,pres,2,7,MEXICALI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-611,2018,7,1,pres,2,8,TIJUANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-612,2018,7,1,pres,3,1,LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-613,2018,7,1,pres,3,2,LOS CABOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-614,2018,7,1,pres,4,1,CAMPECHE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-615,2018,7,1,pres,4,2,CARMEN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-616,2018,7,1,pres,5,1,PIEDRAS NEGRAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-617,2018,7,1,pres,5,2,SAN PEDRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-618,2018,7,1,pres,5,3,MONCLOVA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-619,2018,7,1,pres,5,4,SALTILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-620,2018,7,1,pres,5,5,TORREON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-621,2018,7,1,pres,5,6,TORREON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-622,2018,7,1,pres,5,7,SALTILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-623,2018,7,1,pres,6,1,COLIMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-624,2018,7,1,pres,6,2,MANZANILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-625,2018,7,1,pres,7,1,PALENQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-626,2018,7,1,pres,7,2,BOCHIL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-627,2018,7,1,pres,7,3,OCOSINGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-628,2018,7,1,pres,7,4,PICHUCALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-629,2018,7,1,pres,7,5,SAN CRISTOBAL DE LAS CASAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-630,2018,7,1,pres,7,6,TUXTLA GUTIERREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-631,2018,7,1,pres,7,7,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-632,2018,7,1,pres,7,8,COMITAN DE DOMINGUEZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-633,2018,7,1,pres,7,9,TUXTLA GUTIERREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-634,2018,7,1,pres,7,10,VILLAFLORES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-635,2018,7,1,pres,7,11,LAS MARGARITAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-636,2018,7,1,pres,7,12,TAPACHULA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-637,2018,7,1,pres,7,13,HUEHUETAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-638,2018,7,1,pres,8,1,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-639,2018,7,1,pres,8,2,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-640,2018,7,1,pres,8,3,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-641,2018,7,1,pres,8,4,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-642,2018,7,1,pres,8,5,DELICIAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-643,2018,7,1,pres,8,6,CHIHUAHUA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-644,2018,7,1,pres,8,7,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-645,2018,7,1,pres,8,8,CHIHUAHUA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-646,2018,7,1,pres,8,9,HIDALGO DEL PARRAL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-647,2018,7,1,pres,9,1,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-648,2018,7,1,pres,9,2,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-649,2018,7,1,pres,9,3,AZCAPOTZALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-650,2018,7,1,pres,9,4,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-651,2018,7,1,pres,9,5,TLALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-652,2018,7,1,pres,9,6,LA MAGDALENA CONTRERAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-653,2018,7,1,pres,9,7,GUSTAVO A. MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-654,2018,7,1,pres,9,8,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-655,2018,7,1,pres,9,9,TLAHUAC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-656,2018,7,1,pres,9,10,MIGUEL HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-657,2018,7,1,pres,9,11,VENUSTIANO CARRANZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-658,2018,7,1,pres,9,12,CUAUHTEMOC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-659,2018,7,1,pres,9,13,IZTACALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-660,2018,7,1,pres,9,14,TLALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-661,2018,7,1,pres,9,15,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-662,2018,7,1,pres,9,16,ALVARO OBREGON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-663,2018,7,1,pres,9,17,CUAJIMALPA DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-664,2018,7,1,pres,9,18,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-665,2018,7,1,pres,9,19,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-666,2018,7,1,pres,9,20,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-667,2018,7,1,pres,9,21,XOCHIMILCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-668,2018,7,1,pres,9,22,IZTAPALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-669,2018,7,1,pres,9,23,COYOACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-670,2018,7,1,pres,9,24,COYOACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-671,2018,7,1,pres,10,1,DURANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-672,2018,7,1,pres,10,2,GOMEZ PALACIO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-673,2018,7,1,pres,10,3,GUADALUPE VICTORIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-674,2018,7,1,pres,10,4,DURANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-675,2018,7,1,pres,11,1,SAN LUIS DE LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-676,2018,7,1,pres,11,2,SAN MIGUEL DE ALLENDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-677,2018,7,1,pres,11,3,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-678,2018,7,1,pres,11,4,GUANAJUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-679,2018,7,1,pres,11,5,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-680,2018,7,1,pres,11,6,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-681,2018,7,1,pres,11,7,SAN FRANCISCO DEL RINCON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-682,2018,7,1,pres,11,8,SALAMANCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-683,2018,7,1,pres,11,9,IRAPUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-684,2018,7,1,pres,11,10,URIANGATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-685,2018,7,1,pres,11,11,LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-686,2018,7,1,pres,11,12,CELAYA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-687,2018,7,1,pres,11,13,VALLE DE SANTIAGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-688,2018,7,1,pres,11,14,ACAMBARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-689,2018,7,1,pres,11,15,IRAPUATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-690,2018,7,1,pres,12,1,PUNGARABATO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-691,2018,7,1,pres,12,2,IGUALA DE LA INDEPENDENCIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-692,2018,7,1,pres,12,3,ZIHUATANEJO DE AZUETA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-693,2018,7,1,pres,12,4,ACAPULCO DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-694,2018,7,1,pres,12,5,TLAPA DE COMONFORT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-695,2018,7,1,pres,12,6,CHILAPA DE ALVAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-696,2018,7,1,pres,12,7,CHILPANCINGO DE LOS BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-697,2018,7,1,pres,12,8,AYUTLA DE LOS LIBRES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-698,2018,7,1,pres,12,9,ACAPULCO DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-699,2018,7,1,pres,13,1,HUEJUTLA DE REYES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-700,2018,7,1,pres,13,2,IXMIQUILPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-701,2018,7,1,pres,13,3,ACTOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-702,2018,7,1,pres,13,4,TULANCINGO DE BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-703,2018,7,1,pres,13,5,TULA DE ALLENDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-704,2018,7,1,pres,13,6,PACHUCA DE SOTO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-705,2018,7,1,pres,13,7,TEPEAPULCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-706,2018,7,1,pres,14,1,TEQUILA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-707,2018,7,1,pres,14,2,LAGOS DE MORENO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-708,2018,7,1,pres,14,3,TEPATITLAN DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-709,2018,7,1,pres,14,4,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-710,2018,7,1,pres,14,5,PUERTO VALLARTA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-711,2018,7,1,pres,14,6,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-712,2018,7,1,pres,14,7,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-713,2018,7,1,pres,14,8,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-714,2018,7,1,pres,14,9,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-715,2018,7,1,pres,14,10,ZAPOPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-716,2018,7,1,pres,14,11,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-717,2018,7,1,pres,14,12,TLAJOMULCO DE ZUÑIGA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-718,2018,7,1,pres,14,13,SAN PEDRO TLAQUEPAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-719,2018,7,1,pres,14,14,GUADALAJARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-720,2018,7,1,pres,14,15,LA BARCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-721,2018,7,1,pres,14,16,SAN PEDRO TLAQUEPAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-722,2018,7,1,pres,14,17,JOCOTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-723,2018,7,1,pres,14,18,AUTLAN DE NAVARRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-724,2018,7,1,pres,14,19,ZAPOTLAN EL GRANDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-725,2018,7,1,pres,14,20,TONALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-726,2018,7,1,pres,15,1,JILOTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-727,2018,7,1,pres,15,2,TULTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-728,2018,7,1,pres,15,3,ATLACOMULCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-729,2018,7,1,pres,15,4,NICOLAS ROMERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-730,2018,7,1,pres,15,5,TEOTIHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-731,2018,7,1,pres,15,6,COACALCO DE BERRIOZABAL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-732,2018,7,1,pres,15,7,CUAUTITLAN IZCALLI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-733,2018,7,1,pres,15,8,TULTITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-734,2018,7,1,pres,15,9,SAN FELIPE DEL PROGRESO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-735,2018,7,1,pres,15,10,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-736,2018,7,1,pres,15,11,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-737,2018,7,1,pres,15,12,IXTAPALUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-738,2018,7,1,pres,15,13,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-739,2018,7,1,pres,15,14,ATIZAPAN DE ZARAGOZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-740,2018,7,1,pres,15,15,ATIZAPAN DE ZARAGOZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-741,2018,7,1,pres,15,16,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-742,2018,7,1,pres,15,17,ECATEPEC DE MORELOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-743,2018,7,1,pres,15,18,HUIXQUILUCAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-744,2018,7,1,pres,15,19,TLALNEPANTLA DE BAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-745,2018,7,1,pres,15,20,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-746,2018,7,1,pres,15,21,AMECAMECA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-747,2018,7,1,pres,15,22,NAUCALPAN DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-748,2018,7,1,pres,15,23,LERMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-749,2018,7,1,pres,15,24,NAUCALPAN DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-750,2018,7,1,pres,15,25,CHIMALHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-751,2018,7,1,pres,15,26,TOLUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-752,2018,7,1,pres,15,27,METEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-753,2018,7,1,pres,15,28,ZUMPANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-754,2018,7,1,pres,15,29,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-755,2018,7,1,pres,15,30,CHIMALHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-756,2018,7,1,pres,15,31,NEZAHUALCOYOTL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-757,2018,7,1,pres,15,32,VALLE DE CHALCO SOLIDARIDAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-758,2018,7,1,pres,15,33,CHALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-759,2018,7,1,pres,15,34,TOLUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-760,2018,7,1,pres,15,35,TENANCINGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-761,2018,7,1,pres,15,36,TEJUPILCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-762,2018,7,1,pres,15,37,CUAUTITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-763,2018,7,1,pres,15,38,TEXCOCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-764,2018,7,1,pres,15,39,LA PAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-765,2018,7,1,pres,15,40,ZINACANTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-766,2018,7,1,pres,15,41,TECAMAC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-767,2018,7,1,pres,16,1,LAZARO CARDENAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-768,2018,7,1,pres,16,2,PURUANDIRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-769,2018,7,1,pres,16,3,ZITACUARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-770,2018,7,1,pres,16,4,JIQUILPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-771,2018,7,1,pres,16,5,ZAMORA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-772,2018,7,1,pres,16,6,HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-773,2018,7,1,pres,16,7,ZACAPU,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-774,2018,7,1,pres,16,8,MORELIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-775,2018,7,1,pres,16,9,URUAPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-776,2018,7,1,pres,16,10,MORELIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-777,2018,7,1,pres,16,11,PATZCUARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-778,2018,7,1,pres,16,12,APATZINGAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-779,2018,7,1,pres,17,1,CUERNAVACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-780,2018,7,1,pres,17,2,JIUTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-781,2018,7,1,pres,17,3,CUAUTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-782,2018,7,1,pres,17,4,JOJUTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-783,2018,7,1,pres,17,5,YAUTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-784,2018,7,1,pres,18,1,SANTIAGO IXCUINTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-785,2018,7,1,pres,18,2,TEPIC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-786,2018,7,1,pres,18,3,COMPOSTELA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-787,2018,7,1,pres,19,1,SANTA CATARINA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-788,2018,7,1,pres,19,2,APODACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-789,2018,7,1,pres,19,3,GRAL. ESCOBEDO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-790,2018,7,1,pres,19,4,SAN NICOLAS DE LOS GARZA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-791,2018,7,1,pres,19,5,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-792,2018,7,1,pres,19,6,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-793,2018,7,1,pres,19,7,GARCIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-794,2018,7,1,pres,19,8,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-795,2018,7,1,pres,19,9,LINARES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-796,2018,7,1,pres,19,10,MONTERREY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-797,2018,7,1,pres,19,11,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-798,2018,7,1,pres,19,12,JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-799,2018,7,1,pres,20,1,SAN JUAN BAUTISTA TUXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-800,2018,7,1,pres,20,2,TEOTITLAN DE FLORES MAGON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-801,2018,7,1,pres,20,3,HEROICA CIUDAD DE HUAJUAPAN DE LEON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-802,2018,7,1,pres,20,4,TLACOLULA DE MATAMOROS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-803,2018,7,1,pres,20,5,SALINA CRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-804,2018,7,1,pres,20,6,HEROICA CIUDAD DE TLAXIACO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-805,2018,7,1,pres,20,7,CIUDAD IXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-806,2018,7,1,pres,20,8,OAXACA DE JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-807,2018,7,1,pres,20,9,SAN PEDRO MIXTEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-808,2018,7,1,pres,20,10,MIAHUATLAN DE PORFIRIO DIAZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-809,2018,7,1,pres,21,1,HUAUCHINANGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-810,2018,7,1,pres,21,2,ZACATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-811,2018,7,1,pres,21,3,TEZIUTLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-812,2018,7,1,pres,21,4,AJALPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-813,2018,7,1,pres,21,5,SAN MARTIN TEXMELUCAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-814,2018,7,1,pres,21,6,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-815,2018,7,1,pres,21,7,TEPEACA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-816,2018,7,1,pres,21,8,CHALCHICOMULA DE SESMA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-817,2018,7,1,pres,21,9,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-818,2018,7,1,pres,21,10,SAN PEDRO CHOLULA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-819,2018,7,1,pres,21,11,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-820,2018,7,1,pres,21,12,PUEBLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-821,2018,7,1,pres,21,13,ATLIXCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-822,2018,7,1,pres,21,14,ACATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-823,2018,7,1,pres,21,15,TEHUACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-824,2018,7,1,pres,22,1,CADEREYTA DE MONTES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-825,2018,7,1,pres,22,2,SAN JUAN DEL RIO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-826,2018,7,1,pres,22,3,QUERETARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-827,2018,7,1,pres,22,4,QUERETARO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-828,2018,7,1,pres,22,5,CORREGIDORA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-829,2018,7,1,pres,23,1,SOLIDARIDAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-830,2018,7,1,pres,23,2,OTHON P. BLANCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-831,2018,7,1,pres,23,3,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-832,2018,7,1,pres,23,4,BENITO JUAREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-833,2018,7,1,pres,24,1,MATEHUALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-834,2018,7,1,pres,24,2,SOLEDAD DE GRACIANO SANCHEZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-835,2018,7,1,pres,24,3,RIOVERDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-836,2018,7,1,pres,24,4,CIUDAD VALLES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-837,2018,7,1,pres,24,5,SAN LUIS POTOSI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-838,2018,7,1,pres,24,6,SAN LUIS POTOSI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-839,2018,7,1,pres,24,7,TAMAZUNCHALE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-840,2018,7,1,pres,25,1,MAZATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-841,2018,7,1,pres,25,2,AHOME,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-842,2018,7,1,pres,25,3,SALVADOR ALVARADO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-843,2018,7,1,pres,25,4,GUASAVE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-844,2018,7,1,pres,25,5,CULIACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-845,2018,7,1,pres,25,6,MAZATLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-846,2018,7,1,pres,25,7,CULIACAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-847,2018,7,1,pres,26,1,SAN LUIS RIO COLORADO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-848,2018,7,1,pres,26,2,NOGALES,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-849,2018,7,1,pres,26,3,HERMOSILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-850,2018,7,1,pres,26,4,GUAYMAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-851,2018,7,1,pres,26,5,HERMOSILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-852,2018,7,1,pres,26,6,CAJEME,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-853,2018,7,1,pres,26,7,NAVOJOA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-854,2018,7,1,pres,27,1,MACUSPANA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-855,2018,7,1,pres,27,2,CARDENAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-856,2018,7,1,pres,27,3,COMALCALCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-857,2018,7,1,pres,27,4,CENTRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-858,2018,7,1,pres,27,5,PARAISO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-859,2018,7,1,pres,27,6,CENTRO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-860,2018,7,1,pres,28,1,NUEVO LAREDO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-861,2018,7,1,pres,28,2,REYNOSA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-862,2018,7,1,pres,28,3,RIO BRAVO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-863,2018,7,1,pres,28,4,MATAMOROS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-864,2018,7,1,pres,28,5,VICTORIA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-865,2018,7,1,pres,28,6,EL MANTE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-866,2018,7,1,pres,28,7,CIUDAD MADERO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-867,2018,7,1,pres,28,8,TAMPICO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-868,2018,7,1,pres,28,9,REYNOSA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-869,2018,7,1,pres,29,1,APIZACO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-870,2018,7,1,pres,29,2,TLAXCALA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-871,2018,7,1,pres,29,3,ZACATELCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-872,2018,7,1,pres,30,1,PANUCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-873,2018,7,1,pres,30,2,TANTOYUCA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-874,2018,7,1,pres,30,3,TUXPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-875,2018,7,1,pres,30,4,VERACRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-876,2018,7,1,pres,30,5,POZA RICA DE HIDALGO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-877,2018,7,1,pres,30,6,PAPANTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-878,2018,7,1,pres,30,7,MARTINEZ DE LA TORRE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-879,2018,7,1,pres,30,8,XALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-880,2018,7,1,pres,30,9,COATEPEC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-881,2018,7,1,pres,30,10,XALAPA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-882,2018,7,1,pres,30,11,COATZACOALCOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-883,2018,7,1,pres,30,12,VERACRUZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-884,2018,7,1,pres,30,13,HUATUSCO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-885,2018,7,1,pres,30,14,MINATITLAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-886,2018,7,1,pres,30,15,ORIZABA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-887,2018,7,1,pres,30,16,CORDOBA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-888,2018,7,1,pres,30,17,COSAMALOAPAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-889,2018,7,1,pres,30,18,ZONGOLICA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-890,2018,7,1,pres,30,19,SAN ANDRES TUXTLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-891,2018,7,1,pres,30,20,COSOLEACAQUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-892,2018,7,1,pres,31,1,VALLADOLID,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-893,2018,7,1,pres,31,2,PROGRESO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-894,2018,7,1,pres,31,3,MERIDA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-895,2018,7,1,pres,31,4,MERIDA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-896,2018,7,1,pres,31,5,TICUL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-897,2018,7,1,pres,32,1,FRESNILLO,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-898,2018,7,1,pres,32,2,JEREZ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-899,2018,7,1,pres,32,3,ZACATECAS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-900,2018,7,1,pres,32,4,GUADALUPE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+601,2018,7,1,pres,1,1,JESUS MARIA,47710,pan,30783,pri,3939,prd,3027,pvem,8890,pt,1520,mc,3085,panal,56027,morena,3150,pes,1573,pan-prd-mc,742,pri-pvem-panal,3363,pt-morena-pes,,,173303,,,,306488,ine
+602,2018,7,1,pres,1,2,AGUASCALIENTES,40125,pan,26857,pri,1993,prd,1466,pvem,7406,pt,1428,mc,1628,panal,62643,morena,3540,pes,1241,pan-prd-mc,790,pri-pvem-panal,4104,pt-morena-pes,,,167850,,,,304756,ine
+603,2018,7,1,pres,1,3,AGUASCALIENTES,74267,pan,31143,pri,1502,prd,1722,pvem,7259,pt,1455,mc,1432,panal,58887,morena,2986,pes,1952,pan-prd-mc,919,pri-pvem-panal,3810,pt-morena-pes,,,204025,,,,332204,ine
+604,2018,7,1,pres,2,1,MEXICALI,34027,pan,11708,pri,1630,prd,1385,pvem,7559,pt,1593,mc,953,panal,89679,morena,3722,pes,1438,pan-prd-mc,736,pri-pvem-panal,6835,pt-morena-pes,,,172673,,,,334181,ine
+605,2018,7,1,pres,2,2,MEXICALI,38591,pan,16391,pri,1409,prd,1126,pvem,6878,pt,1631,mc,831,panal,83526,morena,3352,pes,1963,pan-prd-mc,1128,pri-pvem-panal,6805,pt-morena-pes,,,177839,,,,336298,ine
+606,2018,7,1,pres,2,3,ENSENADA,28926,pan,13959,pri,2406,prd,1155,pvem,12134,pt,1297,mc,923,panal,92633,morena,3215,pes,1488,pan-prd-mc,843,pri-pvem-panal,7958,pt-morena-pes,,,180001,,,,330058,ine
+607,2018,7,1,pres,2,4,TIJUANA,17935,pan,8001,pri,1417,prd,818,pvem,9996,pt,1218,mc,872,panal,114645,morena,3191,pes,877,pan-prd-mc,447,pri-pvem-panal,7253,pt-morena-pes,,,175646,,,,344424,ine
+608,2018,7,1,pres,2,5,TIJUANA,39321,pan,13613,pri,1339,prd,1008,pvem,8281,pt,1369,mc,760,panal,96944,morena,2989,pes,1686,pan-prd-mc,803,pri-pvem-panal,6620,pt-morena-pes,,,187025,,,,355396,ine
+609,2018,7,1,pres,2,6,TIJUANA,31623,pan,14326,pri,1411,prd,1163,pvem,7949,pt,1378,mc,776,panal,92759,morena,3497,pes,1420,pan-prd-mc,894,pri-pvem-panal,6719,pt-morena-pes,,,174968,,,,338791,ine
+610,2018,7,1,pres,2,7,MEXICALI,26229,pan,13284,pri,1905,prd,1216,pvem,8810,pt,1656,mc,1150,panal,87586,morena,3862,pes,1305,pan-prd-mc,711,pri-pvem-panal,6572,pt-morena-pes,,,164497,,,,344373,ine
+611,2018,7,1,pres,2,8,TIJUANA,22045,pan,10928,pri,1562,prd,999,pvem,8720,pt,1845,mc,665,panal,106374,morena,3530,pes,1158,pan-prd-mc,573,pri-pvem-panal,7400,pt-morena-pes,,,174843,,,,348046,ine
+612,2018,7,1,pres,3,1,LA PAZ,29931,pan,15505,pri,698,prd,1306,pvem,8183,pt,893,mc,2022,panal,87605,morena,4208,pes,1241,pan-prd-mc,840,pri-pvem-panal,7098,pt-morena-pes,,,170154,,,,277795,ine
+613,2018,7,1,pres,3,2,SAN JOSE DEL CABO,21850,pan,6120,pri,710,prd,1490,pvem,15913,pt,560,mc,456,panal,63408,morena,1966,pes,873,pan-prd-mc,455,pri-pvem-panal,5365,pt-morena-pes,,,125711,,,,238351,ine
+614,2018,7,1,pres,4,1,SAN FRANCISCO DE CAMPECHE,24327,pan,49124,pri,2354,prd,1803,pvem,17630,pt,1831,mc,2206,panal,107397,morena,6660,pes,1385,pan-prd-mc,4181,pri-pvem-panal,6947,pt-morena-pes,,,232325,,,,321907,ine
+615,2018,7,1,pres,4,2,CIUDAD DEL CARMEN,19387,pan,33165,pri,2590,prd,1146,pvem,12321,pt,1498,mc,1354,panal,113375,morena,3039,pes,1015,pan-prd-mc,3591,pri-pvem-panal,7730,pt-morena-pes,,,205132,,,,320149,ine
+616,2018,7,1,pres,5,1,PIEDRAS NEGRAS,36910,pan,39954,pri,2328,prd,1319,pvem,11179,pt,2548,mc,890,panal,69088,morena,3250,pes,1235,pan-prd-mc,1021,pri-pvem-panal,3320,pt-morena-pes,,,182337,,,,316626,ine
+617,2018,7,1,pres,5,2,SAN PEDRO,31500,pan,50412,pri,1708,prd,1706,pvem,9838,pt,2898,mc,1189,panal,74329,morena,3577,pes,1006,pan-prd-mc,1126,pri-pvem-panal,3600,pt-morena-pes,,,189313,,,,299448,ine
+618,2018,7,1,pres,5,3,MONCLOVA,39645,pan,42325,pri,2557,prd,897,pvem,10944,pt,1581,mc,1184,panal,78506,morena,2561,pes,951,pan-prd-mc,851,pri-pvem-panal,2824,pt-morena-pes,,,195939,,,,313766,ine
+619,2018,7,1,pres,5,4,SALTILLO,49483,pan,50779,pri,989,prd,1351,pvem,7908,pt,965,mc,1267,panal,60524,morena,2360,pes,1293,pan-prd-mc,1739,pri-pvem-panal,3533,pt-morena-pes,,,197212,,,,316909,ine
+620,2018,7,1,pres,5,5,TORREON,54741,pan,46733,pri,821,prd,1135,pvem,6659,pt,681,mc,1091,panal,75364,morena,2520,pes,1340,pan-prd-mc,1682,pri-pvem-panal,3661,pt-morena-pes,,,206984,,,,302651,ine
+621,2018,7,1,pres,5,6,TORREON,31159,pan,46989,pri,1003,prd,1395,pvem,6055,pt,765,mc,1224,panal,80686,morena,2912,pes,696,pan-prd-mc,1100,pri-pvem-panal,3337,pt-morena-pes,,,184957,,,,290378,ine
+622,2018,7,1,pres,5,7,SALTILLO,34945,pan,53248,pri,1389,prd,2533,pvem,9117,pt,1080,mc,1298,panal,64336,morena,2864,pes,859,pan-prd-mc,1773,pri-pvem-panal,3762,pt-morena-pes,,,188896,,,,314320,ine
+623,2018,7,1,pres,6,1,COLIMA,30013,pan,29439,pri,1088,prd,984,pvem,10845,pt,2890,mc,1839,panal,81171,morena,3127,pes,1482,pan-prd-mc,1640,pri-pvem-panal,5306,pt-morena-pes,,,179576,,,,277346,ine
+624,2018,7,1,pres,6,2,MANZANILLO,16871,pan,19577,pri,1465,prd,5488,pvem,9638,pt,1673,mc,1011,panal,77765,morena,2710,pes,853,pan-prd-mc,1996,pri-pvem-panal,6312,pt-morena-pes,,,151692,,,,253374,ine
+625,2018,7,1,pres,7,1,PALENQUE,5451,pan,13462,pri,2045,prd,26021,pvem,12951,pt,3770,mc,3409,panal,83506,morena,5215,pes,377,pan-prd-mc,1196,pri-pvem-panal,5536,pt-morena-pes,,,166329,,,,247047,ine
+626,2018,7,1,pres,7,2,BOCHIL,7276,pan,35056,pri,7884,prd,27325,pvem,13129,pt,3221,mc,2807,panal,62605,morena,4109,pes,287,pan-prd-mc,605,pri-pvem-panal,2567,pt-morena-pes,,,168208,,,,246405,ine
+627,2018,7,1,pres,7,3,OCOSINGO,3732,pan,15416,pri,1377,prd,32268,pvem,9076,pt,3817,mc,6605,panal,65737,morena,2863,pes,302,pan-prd-mc,893,pri-pvem-panal,3941,pt-morena-pes,,,147660,,,,235285,ine
+628,2018,7,1,pres,7,4,PICHUCALCO,9754,pan,19239,pri,2271,prd,16778,pvem,12804,pt,3132,mc,2694,panal,97221,morena,5948,pes,556,pan-prd-mc,1124,pri-pvem-panal,5587,pt-morena-pes,,,179787,,,,258864,ine
+629,2018,7,1,pres,7,5,SAN CRISTOBAL DE LAS CASAS,7351,pan,37445,pri,3858,prd,12244,pvem,10948,pt,2413,mc,1513,panal,97439,morena,4372,pes,609,pan-prd-mc,785,pri-pvem-panal,6895,pt-morena-pes,,,189548,,,,276588,ine
+630,2018,7,1,pres,7,6,TUXTLA GUTIERREZ,8785,pan,13324,pri,5553,prd,10462,pvem,13174,pt,4978,mc,1436,panal,117736,morena,6449,pes,698,pan-prd-mc,856,pri-pvem-panal,8752,pt-morena-pes,,,196455,,,,308774,ine
+631,2018,7,1,pres,7,7,TONALA,9254,pan,15709,pri,1732,prd,12354,pvem,13652,pt,2082,mc,3032,panal,99412,morena,6591,pes,526,pan-prd-mc,987,pri-pvem-panal,6537,pt-morena-pes,,,174900,,,,277171,ine
+632,2018,7,1,pres,7,8,COMITAN DE DOMINGUEZ,7088,pan,25084,pri,2823,prd,22866,pvem,16104,pt,2536,mc,4257,panal,92132,morena,5879,pes,501,pan-prd-mc,1248,pri-pvem-panal,7796,pt-morena-pes,,,192356,,,,301902,ine
+633,2018,7,1,pres,7,9,TUXTLA GUTIERREZ,11855,pan,10356,pri,682,prd,2204,pvem,9192,pt,848,mc,1522,panal,130426,morena,5104,pes,864,pan-prd-mc,1160,pri-pvem-panal,11409,pt-morena-pes,,,191608,,,,313545,ine
+634,2018,7,1,pres,7,10,VILLAFLORES,6295,pan,19193,pri,1712,prd,23016,pvem,14151,pt,2812,mc,3356,panal,91615,morena,6130,pes,450,pan-prd-mc,1432,pri-pvem-panal,6319,pt-morena-pes,,,179325,,,,279402,ine
+635,2018,7,1,pres,7,11,LAS MARGARITAS,3434,pan,20136,pri,18627,prd,36612,pvem,11217,pt,1948,mc,1652,panal,44940,morena,3615,pes,466,pan-prd-mc,877,pri-pvem-panal,3454,pt-morena-pes,,,148255,,,,230721,ine
+636,2018,7,1,pres,7,12,TAPACHULA,12171,pan,17029,pri,1225,prd,7375,pvem,9459,pt,1459,mc,1190,panal,114416,morena,5413,pes,735,pan-prd-mc,1161,pri-pvem-panal,8485,pt-morena-pes,,,185031,,,,293222,ine
+637,2018,7,1,pres,7,13,HUEHUETAN,7782,pan,25512,pri,5301,prd,14205,pvem,21370,pt,2706,mc,5194,panal,71672,morena,4876,pes,641,pan-prd-mc,1158,pri-pvem-panal,5068,pt-morena-pes,,,167716,,,,272255,ine
+638,2018,7,1,pres,8,1,JUAREZ,18772,pan,12775,pri,1255,prd,1730,pvem,8431,pt,1574,mc,1054,panal,70927,morena,4490,pes,698,pan-prd-mc,439,pri-pvem-panal,5030,pt-morena-pes,,,142248,,,,294799,ine
+639,2018,7,1,pres,8,2,JUAREZ,21224,pan,16804,pri,3594,prd,2835,pvem,9586,pt,2819,mc,1221,panal,56128,morena,3854,pes,1207,pan-prd-mc,721,pri-pvem-panal,5083,pt-morena-pes,,,137245,,,,286909,ine
+640,2018,7,1,pres,8,3,JUAREZ,18018,pan,17896,pri,1262,prd,2016,pvem,8157,pt,1979,mc,1639,panal,50255,morena,4199,pes,736,pan-prd-mc,556,pri-pvem-panal,4437,pt-morena-pes,,,121006,,,,288764,ine
+641,2018,7,1,pres,8,4,JUAREZ,47825,pan,20727,pri,1027,prd,1911,pvem,8212,pt,1660,mc,1240,panal,63401,morena,3549,pes,1590,pan-prd-mc,776,pri-pvem-panal,4661,pt-morena-pes,,,175740,,,,331502,ine
+642,2018,7,1,pres,8,5,DELICIAS,48362,pan,27392,pri,2426,prd,1269,pvem,11901,pt,1225,mc,4338,panal,58500,morena,3727,pes,1410,pan-prd-mc,730,pri-pvem-panal,4221,pt-morena-pes,,,180083,,,,322473,ine
+643,2018,7,1,pres,8,6,CHIHUAHUA,91921,pan,22781,pri,823,prd,1280,pvem,6236,pt,1337,mc,1064,panal,54003,morena,2898,pes,2864,pan-prd-mc,835,pri-pvem-panal,3835,pt-morena-pes,,,212540,,,,347451,ine
+644,2018,7,1,pres,8,7,CUAUHTEMOC,34382,pan,24764,pri,1880,prd,1616,pvem,8172,pt,4021,mc,1486,panal,55884,morena,3711,pes,1524,pan-prd-mc,665,pri-pvem-panal,4538,pt-morena-pes,,,149049,,,,289173,ine
+645,2018,7,1,pres,8,8,CHIHUAHUA,59458,pan,19996,pri,1087,prd,1374,pvem,8158,pt,1246,mc,1259,panal,53286,morena,3113,pes,2174,pan-prd-mc,816,pri-pvem-panal,4667,pt-morena-pes,,,178288,,,,331730,ine
+646,2018,7,1,pres,8,9,HIDALGO DEL PARRAL,38281,pan,39113,pri,2260,prd,2696,pvem,6392,pt,1721,mc,1484,panal,33615,morena,2566,pes,1321,pan-prd-mc,1274,pri-pvem-panal,2272,pt-morena-pes,,,145185,,,,250459,ine
+647,2018,7,1,pres,9,1,GUSTAVO A. MADERO,22010,pan,16826,pri,12360,prd,1404,pvem,7846,pt,1103,mc,806,panal,115410,morena,4057,pes,2595,pan-prd-mc,1064,pri-pvem-panal,12265,pt-morena-pes,,,206300,,,,310869,ine
+648,2018,7,1,pres,9,2,GUSTAVO A. MADERO,48229,pan,29458,pri,11677,prd,1500,pvem,7501,pt,1450,mc,1190,panal,121598,morena,4067,pes,3526,pan-prd-mc,1662,pri-pvem-panal,10542,pt-morena-pes,,,254865,,,,367043,ine
+649,2018,7,1,pres,9,3,AZCAPOTZALCO,51400,pan,28760,pri,6826,prd,1742,pvem,8985,pt,1690,mc,1136,panal,133496,morena,4090,pes,3983,pan-prd-mc,1697,pri-pvem-panal,11638,pt-morena-pes,,,268823,,,,378726,ine
+650,2018,7,1,pres,9,4,IZTAPALAPA,21289,pan,14238,pri,13146,prd,994,pvem,9228,pt,1368,mc,729,panal,103833,morena,3490,pes,2431,pan-prd-mc,1026,pri-pvem-panal,10112,pt-morena-pes,,,189587,,,,280449,ine
+651,2018,7,1,pres,9,5,TLALPAN,38421,pan,21353,pri,4119,prd,1593,pvem,6348,pt,1209,mc,770,panal,88970,morena,2708,pes,2650,pan-prd-mc,1403,pri-pvem-panal,8558,pt-morena-pes,,,186137,,,,269909,ine
+652,2018,7,1,pres,9,6,LA MAGDALENA CONTRERAS,47624,pan,29037,pri,5593,prd,1422,pvem,7297,pt,2184,mc,919,panal,102443,morena,3008,pes,2985,pan-prd-mc,1540,pri-pvem-panal,9177,pt-morena-pes,,,220610,,,,315711,ine
+653,2018,7,1,pres,9,7,GUSTAVO A. MADERO,32260,pan,27286,pri,15904,prd,1575,pvem,8137,pt,1616,mc,1005,panal,135968,morena,4276,pes,3675,pan-prd-mc,1621,pri-pvem-panal,11935,pt-morena-pes,,,256869,,,,367201,ine
+654,2018,7,1,pres,9,8,CUAUHTEMOC,25870,pan,24223,pri,8089,prd,1212,pvem,5923,pt,1246,mc,1063,panal,90571,morena,3122,pes,2451,pan-prd-mc,1486,pri-pvem-panal,8969,pt-morena-pes,,,183370,,,,278649,ine
+655,2018,7,1,pres,9,9,TLAHUAC,19543,pan,16766,pri,5284,prd,1959,pvem,8328,pt,1328,mc,936,panal,111779,morena,3264,pes,2138,pan-prd-mc,1095,pri-pvem-panal,10307,pt-morena-pes,,,192444,,,,294302,ine
+656,2018,7,1,pres,9,10,MIGUEL HIDALGO,68247,pan,28467,pri,3010,prd,1248,pvem,6123,pt,1697,mc,1033,panal,88369,morena,2503,pes,3167,pan-prd-mc,1582,pri-pvem-panal,7469,pt-morena-pes,,,222444,,,,319499,ine
+657,2018,7,1,pres,9,11,VENUSTIANO CARRANZA,33030,pan,24251,pri,15755,prd,1133,pvem,7257,pt,1231,mc,936,panal,103247,morena,3085,pes,3336,pan-prd-mc,1329,pri-pvem-panal,8768,pt-morena-pes,,,213664,,,,306332,ine
+658,2018,7,1,pres,9,12,CUAUHTEMOC,41675,pan,26713,pri,2898,prd,1157,pvem,5358,pt,1216,mc,848,panal,93821,morena,2540,pes,2568,pan-prd-mc,1610,pri-pvem-panal,7967,pt-morena-pes,,,197523,,,,298033,ine
+659,2018,7,1,pres,9,13,IZTACALCO,37996,pan,24601,pri,17199,prd,1433,pvem,7712,pt,1600,mc,943,panal,129316,morena,3519,pes,3924,pan-prd-mc,1445,pri-pvem-panal,10684,pt-morena-pes,,,251454,,,,357004,ine
+660,2018,7,1,pres,9,14,TLALPAN,31699,pan,19003,pri,4095,prd,1270,pvem,6640,pt,1248,mc,815,panal,100494,morena,2739,pes,2232,pan-prd-mc,1087,pri-pvem-panal,8742,pt-morena-pes,,,187365,,,,269751,ine
+661,2018,7,1,pres,9,15,BENITO JUAREZ,97143,pan,39150,pri,2173,prd,1469,pvem,4923,pt,1471,mc,1262,panal,96960,morena,2288,pes,4055,pan-prd-mc,1904,pri-pvem-panal,6170,pt-morena-pes,,,268695,,,,367723,ine
+662,2018,7,1,pres,9,16,ALVARO OBREGON,40364,pan,23115,pri,13511,prd,1274,pvem,7848,pt,1428,mc,863,panal,110258,morena,3578,pes,3708,pan-prd-mc,1337,pri-pvem-panal,10182,pt-morena-pes,,,227131,,,,326967,ine
+663,2018,7,1,pres,9,17,CUAJIMALPA DE MORELOS,53045,pan,27952,pri,8854,prd,1138,pvem,8096,pt,1490,mc,816,panal,96852,morena,3657,pes,3130,pan-prd-mc,1331,pri-pvem-panal,9026,pt-morena-pes,,,223651,,,,320805,ine
+664,2018,7,1,pres,9,18,IZTAPALAPA,35925,pan,22115,pri,15239,prd,1332,pvem,9146,pt,1710,mc,930,panal,112974,morena,3695,pes,3126,pan-prd-mc,1214,pri-pvem-panal,10172,pt-morena-pes,,,227913,,,,321491,ine
+665,2018,7,1,pres,9,19,IZTAPALAPA,24086,pan,18463,pri,14923,prd,1215,pvem,9763,pt,1547,mc,811,panal,111370,morena,3571,pes,2811,pan-prd-mc,1053,pri-pvem-panal,11045,pt-morena-pes,,,209478,,,,299307,ine
+666,2018,7,1,pres,9,20,IZTAPALAPA,19276,pan,17074,pri,17333,prd,1053,pvem,8898,pt,1490,mc,766,panal,102632,morena,3605,pes,2422,pan-prd-mc,893,pri-pvem-panal,10121,pt-morena-pes,,,193459,,,,286303,ine
+667,2018,7,1,pres,9,21,XOCHIMILCO,18801,pan,18516,pri,4065,prd,1348,pvem,10013,pt,3206,mc,765,panal,114550,morena,4058,pes,2276,pan-prd-mc,1126,pri-pvem-panal,13548,pt-morena-pes,,,202103,,,,314624,ine
+668,2018,7,1,pres,9,22,IZTAPALAPA,13587,pan,11064,pri,20295,prd,1004,pvem,9746,pt,1887,mc,731,panal,101618,morena,3372,pes,2325,pan-prd-mc,746,pri-pvem-panal,11241,pt-morena-pes,,,183893,,,,282855,ine
+669,2018,7,1,pres,9,23,COYOACAN,47165,pan,26149,pri,18138,prd,1281,pvem,8561,pt,1351,mc,1024,panal,126595,morena,3252,pes,3691,pan-prd-mc,1387,pri-pvem-panal,9611,pt-morena-pes,,,257476,,,,358453,ine
+670,2018,7,1,pres,9,24,COYOACAN,52868,pan,29296,pri,11124,prd,1424,pvem,7659,pt,1366,mc,1101,panal,107568,morena,3653,pes,3995,pan-prd-mc,1621,pri-pvem-panal,9015,pt-morena-pes,,,241258,,,,336250,ine
+671,2018,7,1,pres,10,1,VICTORIA DE DURANGO,39755,pan,35520,pri,1230,prd,4384,pvem,16619,pt,1889,mc,1092,panal,46971,morena,3420,pes,1647,pan-prd-mc,968,pri-pvem-panal,4916,pt-morena-pes,,,168593,,,,315480,ine
+672,2018,7,1,pres,10,2,GOMEZ PALACIO,36679,pan,29322,pri,1376,prd,1117,pvem,10336,pt,1784,mc,1167,panal,79583,morena,4198,pes,1403,pan-prd-mc,877,pri-pvem-panal,5705,pt-morena-pes,,,183127,,,,322807,ine
+673,2018,7,1,pres,10,3,GUADALUPE VICTORIA,38800,pan,34361,pri,3604,prd,2576,pvem,14583,pt,1485,mc,1181,panal,58805,morena,4579,pes,1838,pan-prd-mc,1128,pri-pvem-panal,5161,pt-morena-pes,,,175505,,,,311975,ine
+674,2018,7,1,pres,10,4,VICTORIA DE DURANGO,49432,pan,24341,pri,1078,prd,1152,pvem,19766,pt,3023,mc,1133,panal,55643,morena,2823,pes,2489,pan-prd-mc,868,pri-pvem-panal,6354,pt-morena-pes,,,187503,,,,329417,ine
+675,2018,7,1,pres,11,1,SAN LUIS DE LA PAZ,43525,pan,23944,pri,2891,prd,5172,pvem,6006,pt,3144,mc,1616,panal,33495,morena,2134,pes,1282,pan-prd-mc,772,pri-pvem-panal,2220,pt-morena-pes,,,139519,,,,263698,ine
+676,2018,7,1,pres,11,2,SAN MIGUEL DE ALLENDE,49916,pan,14271,pri,1672,prd,4459,pvem,5240,pt,2779,mc,2059,panal,42726,morena,2219,pes,1416,pan-prd-mc,575,pri-pvem-panal,2609,pt-morena-pes,,,145195,,,,299491,ine
+677,2018,7,1,pres,11,3,LEON,91411,pan,15223,pri,900,prd,2770,pvem,3566,pt,1231,mc,1202,panal,26634,morena,1094,pes,2373,pan-prd-mc,746,pri-pvem-panal,1776,pt-morena-pes,,,162818,,,,281185,ine
+678,2018,7,1,pres,11,4,GUANAJUATO,41879,pan,21650,pri,2405,prd,6694,pvem,5208,pt,3197,mc,3132,panal,29437,morena,1416,pes,1176,pan-prd-mc,845,pri-pvem-panal,1964,pt-morena-pes,,,131181,,,,263508,ine
+679,2018,7,1,pres,11,5,LEON,76360,pan,16623,pri,928,prd,3082,pvem,4011,pt,1264,mc,802,panal,26747,morena,1216,pes,2287,pan-prd-mc,933,pri-pvem-panal,2034,pt-morena-pes,,,150295,,,,286821,ine
+680,2018,7,1,pres,11,6,LEON,73555,pan,17089,pri,1085,prd,2637,pvem,3838,pt,1102,mc,788,panal,27432,morena,1204,pes,2179,pan-prd-mc,879,pri-pvem-panal,2087,pt-morena-pes,,,146810,,,,280288,ine
+681,2018,7,1,pres,11,7,SAN FRANCISCO DEL RINCON,58571,pan,27978,pri,1524,prd,4759,pvem,4963,pt,1257,mc,955,panal,30538,morena,1433,pes,1409,pan-prd-mc,758,pri-pvem-panal,2022,pt-morena-pes,,,148775,,,,300057,ine
+682,2018,7,1,pres,11,8,SALAMANCA,49437,pan,14453,pri,6096,prd,3084,pvem,7965,pt,1467,mc,4102,panal,59894,morena,2572,pes,1569,pan-prd-mc,550,pri-pvem-panal,3700,pt-morena-pes,,,174992,,,,318874,ine
+683,2018,7,1,pres,11,9,IRAPUATO,49727,pan,18908,pri,1231,prd,2653,pvem,4687,pt,1036,mc,952,panal,34363,morena,1510,pes,1388,pan-prd-mc,679,pri-pvem-panal,2549,pt-morena-pes,,,132517,,,,280355,ine
+684,2018,7,1,pres,11,10,URIANGATO,52445,pan,22275,pri,9085,prd,5600,pvem,8490,pt,1483,mc,1394,panal,45457,morena,2324,pes,1579,pan-prd-mc,500,pri-pvem-panal,3010,pt-morena-pes,,,171065,,,,321373,ine
+685,2018,7,1,pres,11,11,LEON,67312,pan,16449,pri,914,prd,2785,pvem,3844,pt,1131,mc,763,panal,26177,morena,1332,pes,2207,pan-prd-mc,849,pri-pvem-panal,2043,pt-morena-pes,,,138495,,,,266144,ine
+686,2018,7,1,pres,11,12,CELAYA,59560,pan,15086,pri,1186,prd,2161,pvem,5736,pt,1518,mc,1052,panal,47450,morena,1841,pes,1872,pan-prd-mc,690,pri-pvem-panal,3198,pt-morena-pes,,,165208,,,,317526,ine
+687,2018,7,1,pres,11,13,VALLE DE SANTIAGO,44579,pan,25795,pri,5642,prd,4041,pvem,7712,pt,2571,mc,3015,panal,44844,morena,2321,pes,1236,pan-prd-mc,547,pri-pvem-panal,2886,pt-morena-pes,,,158585,,,,306715,ine
+688,2018,7,1,pres,11,14,ACAMBARO,40897,pan,20737,pri,4537,prd,7107,pvem,5661,pt,5005,mc,1443,panal,44421,morena,2011,pes,1500,pan-prd-mc,649,pri-pvem-panal,2702,pt-morena-pes,,,149915,,,,304179,ine
+689,2018,7,1,pres,11,15,IRAPUATO,44182,pan,17555,pri,1135,prd,1476,pvem,5348,pt,1142,mc,1020,panal,37854,morena,2018,pes,1519,pan-prd-mc,700,pri-pvem-panal,2887,pt-morena-pes,,,133796,,,,269317,ine
+690,2018,7,1,pres,12,1,CD. ALTAMIRANO,4815,pan,26860,pri,14101,prd,1063,pvem,9850,pt,5102,mc,1204,panal,87257,morena,2335,pes,704,pan-prd-mc,828,pri-pvem-panal,3931,pt-morena-pes,,,159709,,,,262304,ine
+691,2018,7,1,pres,12,2,IGUALA,18622,pan,27075,pri,5779,prd,4544,pvem,14321,pt,2906,mc,2613,panal,85351,morena,4153,pes,1254,pan-prd-mc,1627,pri-pvem-panal,5748,pt-morena-pes,,,179898,,,,290940,ine
+692,2018,7,1,pres,12,3,ZIHUATANEJO,5836,pan,26038,pri,11708,prd,5933,pvem,8580,pt,3097,mc,1347,panal,113693,morena,5574,pes,877,pan-prd-mc,1568,pri-pvem-panal,5937,pt-morena-pes,,,192899,,,,315688,ine
+693,2018,7,1,pres,12,4,ACAPULCO,9454,pan,20512,pri,4089,prd,1015,pvem,9281,pt,1993,mc,624,panal,110796,morena,5026,pes,1107,pan-prd-mc,1811,pri-pvem-panal,8489,pt-morena-pes,,,178978,,,,301653,ine
+694,2018,7,1,pres,12,5,TLAPA,4115,pan,27779,pri,9663,prd,4835,pvem,30474,pt,5552,mc,1312,panal,77559,morena,2808,pes,452,pan-prd-mc,813,pri-pvem-panal,3401,pt-morena-pes,,,170098,,,,261512,ine
+695,2018,7,1,pres,12,6,CHILAPA,11642,pan,29455,pri,32859,prd,4029,pvem,12711,pt,5938,mc,2355,panal,61566,morena,3343,pes,1131,pan-prd-mc,1019,pri-pvem-panal,3526,pt-morena-pes,,,170813,,,,271322,ine
+696,2018,7,1,pres,12,7,CHILPANCINGO,5635,pan,25338,pri,5598,prd,1433,pvem,13753,pt,1464,mc,1692,panal,94717,morena,2639,pes,897,pan-prd-mc,1491,pri-pvem-panal,6625,pt-morena-pes,,,164572,,,,268406,ine
+697,2018,7,1,pres,12,8,AYUTLA DE LOS LIBRES,6743,pan,15322,pri,12817,prd,12989,pvem,14194,pt,2737,mc,1297,panal,88100,morena,3783,pes,782,pan-prd-mc,1787,pri-pvem-panal,4555,pt-morena-pes,,,166116,,,,253789,ine
+698,2018,7,1,pres,12,9,ACAPULCO,8421,pan,22950,pri,6443,prd,1931,pvem,8674,pt,2315,mc,963,panal,87600,morena,6183,pes,927,pan-prd-mc,2246,pri-pvem-panal,7732,pt-morena-pes,,,159216,,,,281298,ine
+699,2018,7,1,pres,13,1,HUEJUTLA DE REYES,13704,pan,38931,pri,6211,prd,1085,pvem,7359,pt,1911,mc,5732,panal,86609,morena,14564,pes,851,pan-prd-mc,1377,pri-pvem-panal,5223,pt-morena-pes,,,185623,,,,277579,ine
+700,2018,7,1,pres,13,2,IXMIQUILPAN,17517,pan,28896,pri,6663,prd,1471,pvem,14148,pt,1394,mc,3150,panal,99409,morena,2339,pes,1198,pan-prd-mc,1143,pri-pvem-panal,5106,pt-morena-pes,,,188308,,,,296184,ine
+701,2018,7,1,pres,13,3,ACTOPAN,14962,pan,31539,pri,4322,prd,1896,pvem,9132,pt,1540,mc,3169,panal,105723,morena,3935,pes,1022,pan-prd-mc,1251,pri-pvem-panal,6186,pt-morena-pes,,,192351,,,,299353,ine
+702,2018,7,1,pres,13,4,TULANCINGO DE BRAVO,16619,pan,27036,pri,3989,prd,1350,pvem,5941,pt,1778,mc,2779,panal,92621,morena,2877,pes,1032,pan-prd-mc,1061,pri-pvem-panal,4410,pt-morena-pes,,,170365,,,,294332,ine
+703,2018,7,1,pres,13,5,TULA DE ALLENDE,24325,pan,27331,pri,2614,prd,3415,pvem,7288,pt,1470,mc,1991,panal,113874,morena,3477,pes,1215,pan-prd-mc,1363,pri-pvem-panal,7228,pt-morena-pes,,,205752,,,,318381,ine
+704,2018,7,1,pres,13,6,PACHUCA DE SOTO,31746,pan,33800,pri,1960,prd,1040,pvem,6667,pt,1368,mc,1807,panal,116519,morena,3415,pes,1848,pan-prd-mc,1881,pri-pvem-panal,7774,pt-morena-pes,,,223800,,,,346629,ine
+705,2018,7,1,pres,13,7,TEPEAPULCO,22565,pan,27109,pri,1509,prd,1014,pvem,6051,pt,1255,mc,3483,panal,101802,morena,3084,pes,1232,pan-prd-mc,1390,pri-pvem-panal,6221,pt-morena-pes,,,188168,,,,286023,ine
+706,2018,7,1,pres,14,1,TEQUILA,31885,pan,26661,pri,1934,prd,2456,pvem,12771,pt,19049,mc,2366,panal,54050,morena,2973,pes,1588,pan-prd-mc,444,pri-pvem-panal,2910,pt-morena-pes,,,168156,,,,269226,ine
+707,2018,7,1,pres,14,2,LAGOS DE MORENO,51176,pan,20477,pri,1580,prd,3769,pvem,4407,pt,16756,mc,1778,panal,31247,morena,1710,pes,2921,pan-prd-mc,532,pri-pvem-panal,1716,pt-morena-pes,,,151228,,,,258838,ine
+708,2018,7,1,pres,14,3,TEPATITLAN DE MORELOS,70018,pan,23026,pri,1411,prd,4455,pvem,4902,pt,17232,mc,2781,panal,29158,morena,2437,pes,2608,pan-prd-mc,517,pri-pvem-panal,1622,pt-morena-pes,,,180204,,,,328995,ine
+709,2018,7,1,pres,14,4,ZAPOPAN,39209,pan,20907,pri,1123,prd,1613,pvem,6872,pt,10080,mc,1233,panal,56094,morena,2634,pes,2048,pan-prd-mc,782,pri-pvem-panal,3780,pt-morena-pes,,,159185,,,,288644,ine
+710,2018,7,1,pres,14,5,PUERTO VALLARTA,17538,pan,15781,pri,1459,prd,1911,pvem,8121,pt,16818,mc,779,panal,75048,morena,2689,pes,1371,pan-prd-mc,410,pri-pvem-panal,3593,pt-morena-pes,,,152678,,,,282715,ine
+711,2018,7,1,pres,14,6,ZAPOPAN,51583,pan,18958,pri,1034,prd,1485,pvem,6618,pt,11483,mc,975,panal,57842,morena,2787,pes,2570,pan-prd-mc,849,pri-pvem-panal,4055,pt-morena-pes,,,174979,,,,317604,ine
+712,2018,7,1,pres,14,7,TONALA,21988,pan,16885,pri,738,prd,1553,pvem,7357,pt,11493,mc,1304,panal,51659,morena,2583,pes,1440,pan-prd-mc,605,pri-pvem-panal,3920,pt-morena-pes,,,133545,,,,253691,ine
+713,2018,7,1,pres,14,8,GUADALAJARA,75318,pan,25053,pri,1015,prd,1342,pvem,6910,pt,11483,mc,1236,panal,65858,morena,2912,pes,3416,pan-prd-mc,890,pri-pvem-panal,4095,pt-morena-pes,,,214541,,,,326903,ine
+714,2018,7,1,pres,14,9,GUADALAJARA,32502,pan,20953,pri,1092,prd,1770,pvem,8291,pt,12032,mc,1229,panal,67718,morena,3513,pes,2137,pan-prd-mc,813,pri-pvem-panal,4656,pt-morena-pes,,,171021,,,,304686,ine
+715,2018,7,1,pres,14,10,ZAPOPAN,78571,pan,16414,pri,937,prd,1107,pvem,4959,pt,9466,mc,1063,panal,45928,morena,2457,pes,3472,pan-prd-mc,695,pri-pvem-panal,3505,pt-morena-pes,,,179986,,,,294222,ine
+716,2018,7,1,pres,14,11,GUADALAJARA,38860,pan,23784,pri,1046,prd,1606,pvem,8454,pt,12489,mc,1174,panal,70801,morena,3521,pes,2514,pan-prd-mc,889,pri-pvem-panal,5211,pt-morena-pes,,,186705,,,,312174,ine
+717,2018,7,1,pres,14,12,SANTA CRUZ DE LAS FLORES,34186,pan,11247,pri,1298,prd,1494,pvem,7297,pt,24101,mc,982,panal,68148,morena,3675,pes,2735,pan-prd-mc,539,pri-pvem-panal,5163,pt-morena-pes,,,173656,,,,331697,ine
+718,2018,7,1,pres,14,13,TLAQUEPAQUE,51108,pan,18031,pri,1036,prd,1366,pvem,6187,pt,10563,mc,813,panal,53749,morena,2917,pes,2819,pan-prd-mc,729,pri-pvem-panal,4034,pt-morena-pes,,,165765,,,,284222,ine
+719,2018,7,1,pres,14,14,GUADALAJARA,48625,pan,20261,pri,1305,prd,1664,pvem,8138,pt,14070,mc,1277,panal,71036,morena,3583,pes,3097,pan-prd-mc,917,pri-pvem-panal,5223,pt-morena-pes,,,194878,,,,315005,ine
+720,2018,7,1,pres,14,15,LA BARCA,30463,pan,20981,pri,2631,prd,6582,pvem,8774,pt,15022,mc,4051,panal,58289,morena,8208,pes,1996,pan-prd-mc,465,pri-pvem-panal,3702,pt-morena-pes,,,173329,,,,311602,ine
+721,2018,7,1,pres,14,16,TLAQUEPAQUE,30468,pan,21790,pri,984,prd,1604,pvem,7564,pt,10261,mc,1045,panal,60665,morena,3472,pes,1925,pan-prd-mc,760,pri-pvem-panal,5028,pt-morena-pes,,,158744,,,,297100,ine
+722,2018,7,1,pres,14,17,JOCOTEPEC,26557,pan,23513,pri,1415,prd,5670,pvem,8126,pt,16916,mc,1902,panal,55757,morena,3239,pes,1620,pan-prd-mc,416,pri-pvem-panal,2422,pt-morena-pes,,,156669,,,,260155,ine
+723,2018,7,1,pres,14,18,AUTLAN DE NAVARRO,26701,pan,27094,pri,4202,prd,2585,pvem,9338,pt,19187,mc,1668,panal,65175,morena,3555,pes,2072,pan-prd-mc,494,pri-pvem-panal,3048,pt-morena-pes,,,172175,,,,285551,ine
+724,2018,7,1,pres,14,19,CIUDAD GUZMAN,23967,pan,23182,pri,4382,prd,5340,pvem,10854,pt,17746,mc,2187,panal,73465,morena,4562,pes,1823,pan-prd-mc,490,pri-pvem-panal,3280,pt-morena-pes,,,182311,,,,297454,ine
+725,2018,7,1,pres,14,20,TONALA,23625,pan,18023,pri,1096,prd,2745,pvem,6998,pt,18539,mc,1043,panal,51146,morena,2852,pes,1778,pan-prd-mc,479,pri-pvem-panal,3508,pt-morena-pes,,,142158,,,,276475,ine
+726,2018,7,1,pres,15,1,JILOTEPEC DE ANDRES MOLINA ENRIQUEZ,37449,pan,46258,pri,4032,prd,8804,pvem,8081,pt,4406,mc,6006,panal,81860,morena,4874,pes,1799,pan-prd-mc,1441,pri-pvem-panal,4457,pt-morena-pes,,,217510,,,,300993,ine
+727,2018,7,1,pres,15,2,SANTA MARIA TULTEPEC,21630,pan,23640,pri,6500,prd,1198,pvem,6545,pt,1462,mc,1481,panal,94883,morena,3543,pes,1736,pan-prd-mc,1000,pri-pvem-panal,6594,pt-morena-pes,,,180513,,,,274287,ine
+728,2018,7,1,pres,15,3,ATLACOMULCO DE FABELA,27808,pan,45532,pri,2621,prd,3073,pvem,15197,pt,2742,mc,2254,panal,86577,morena,3805,pes,2000,pan-prd-mc,1746,pri-pvem-panal,7354,pt-morena-pes,,,211299,,,,306320,ine
+729,2018,7,1,pres,15,4,NICOLAS ROMERO,29739,pan,29668,pri,3083,prd,1865,pvem,7778,pt,1305,mc,1410,panal,90638,morena,3031,pes,1794,pan-prd-mc,1262,pri-pvem-panal,7488,pt-morena-pes,,,188260,,,,292336,ine
+730,2018,7,1,pres,15,5,TEOTIHUACAN DE ARISTA,24500,pan,36040,pri,3434,prd,2102,pvem,9803,pt,1205,mc,1600,panal,93640,morena,3191,pes,1322,pan-prd-mc,917,pri-pvem-panal,5825,pt-morena-pes,,,192684,,,,272235,ine
+731,2018,7,1,pres,15,6,COACALCO DE BERRIOZABAL,29275,pan,25033,pri,3775,prd,1379,pvem,6031,pt,1099,mc,987,panal,98447,morena,3108,pes,1911,pan-prd-mc,1099,pri-pvem-panal,7027,pt-morena-pes,,,190466,,,,284874,ine
+732,2018,7,1,pres,15,7,CUAUTITLAN IZCALLI,45140,pan,26410,pri,1660,prd,1732,pvem,6180,pt,1433,mc,1353,panal,102284,morena,2940,pes,2075,pan-prd-mc,1221,pri-pvem-panal,6712,pt-morena-pes,,,212472,,,,301207,ine
+733,2018,7,1,pres,15,8,TULTITLAN DE MARIANO ESCOBEDO,21501,pan,21661,pri,3777,prd,1159,pvem,5548,pt,1361,mc,1974,panal,84067,morena,2569,pes,1453,pan-prd-mc,1096,pri-pvem-panal,5920,pt-morena-pes,,,160978,,,,247313,ine
+734,2018,7,1,pres,15,9,SAN FELIPE DEL PROGRESO,25712,pan,59043,pri,11453,prd,3842,pvem,7280,pt,1678,mc,4567,panal,57512,morena,2752,pes,1535,pan-prd-mc,2157,pri-pvem-panal,3532,pt-morena-pes,,,184754,,,,275992,ine
+735,2018,7,1,pres,15,10,ECATEPEC DE MORELOS,20043,pan,25055,pri,3625,prd,1326,pvem,5420,pt,1073,mc,1076,panal,85583,morena,2839,pes,1471,pan-prd-mc,1308,pri-pvem-panal,7051,pt-morena-pes,,,164696,,,,261716,ine
+736,2018,7,1,pres,15,11,ECATEPEC DE MORELOS,21071,pan,27553,pri,5367,prd,2383,pvem,5921,pt,1057,mc,1237,panal,91853,morena,2812,pes,1536,pan-prd-mc,1359,pri-pvem-panal,7124,pt-morena-pes,,,178675,,,,279818,ine
+737,2018,7,1,pres,15,12,IXTAPALUCA,15105,pan,32336,pri,3100,prd,949,pvem,6624,pt,1049,mc,1041,panal,86310,morena,2791,pes,989,pan-prd-mc,1378,pri-pvem-panal,6763,pt-morena-pes,,,166449,,,,259083,ine
+738,2018,7,1,pres,15,13,ECATEPEC DE MORELOS,22207,pan,28107,pri,3271,prd,1374,pvem,5629,pt,1093,mc,1690,panal,90462,morena,2879,pes,1465,pan-prd-mc,1524,pri-pvem-panal,6966,pt-morena-pes,,,176385,,,,267296,ine
+739,2018,7,1,pres,15,14,CIUDAD ADOLFO LOPEZ MATEOS,53481,pan,27185,pri,2133,prd,2051,pvem,5265,pt,1243,mc,1156,panal,88289,morena,2561,pes,2342,pan-prd-mc,1372,pri-pvem-panal,6363,pt-morena-pes,,,204048,,,,299633,ine
+740,2018,7,1,pres,15,15,CIUDAD ADOLFO LOPEZ MATEOS,51609,pan,24552,pri,2089,prd,3732,pvem,5793,pt,1143,mc,1000,panal,83836,morena,2643,pes,2194,pan-prd-mc,1387,pri-pvem-panal,6358,pt-morena-pes,,,196036,,,,298643,ine
+741,2018,7,1,pres,15,16,ECATEPEC DE MORELOS,20395,pan,29226,pri,3787,prd,1308,pvem,6732,pt,1163,mc,1650,panal,91174,morena,2904,pes,1484,pan-prd-mc,1615,pri-pvem-panal,8243,pt-morena-pes,,,177968,,,,287922,ine
+742,2018,7,1,pres,15,17,ECATEPEC DE MORELOS,18205,pan,27223,pri,3168,prd,1340,pvem,5282,pt,1018,mc,1185,panal,86486,morena,2688,pes,1305,pan-prd-mc,1160,pri-pvem-panal,7217,pt-morena-pes,,,164834,,,,252315,ine
+743,2018,7,1,pres,15,18,HUIXQUILUCAN DE DEGOLLADO,60646,pan,35394,pri,3616,prd,2482,pvem,8577,pt,2195,mc,1954,panal,78706,morena,3363,pes,2751,pan-prd-mc,1321,pri-pvem-panal,5844,pt-morena-pes,,,215567,,,,302044,ine
+744,2018,7,1,pres,15,19,TLALNEPANTLA DE BAZ,45343,pan,35657,pri,2418,prd,1399,pvem,6178,pt,1291,mc,1171,panal,97011,morena,2883,pes,2180,pan-prd-mc,1726,pri-pvem-panal,7259,pt-morena-pes,,,216070,,,,316670,ine
+745,2018,7,1,pres,15,20,CD. NEZAHUALCOYOTL,22795,pan,25103,pri,10339,prd,1258,pvem,5606,pt,1018,mc,1060,panal,96256,morena,2854,pes,2063,pan-prd-mc,1107,pri-pvem-panal,6874,pt-morena-pes,,,185086,,,,278996,ine
+746,2018,7,1,pres,15,21,AMECAMECA DE JUAREZ,16195,pan,29072,pri,3756,prd,2944,pvem,7077,pt,2506,mc,1751,panal,90887,morena,4090,pes,918,pan-prd-mc,817,pri-pvem-panal,5407,pt-morena-pes,,,173480,,,,255898,ine
+747,2018,7,1,pres,15,22,NAUCALPAN DE JUAREZ,75371,pan,34967,pri,2346,prd,1559,pvem,5967,pt,1323,mc,1183,panal,85843,morena,2937,pes,2787,pan-prd-mc,1749,pri-pvem-panal,6513,pt-morena-pes,,,232496,,,,349805,ine
+748,2018,7,1,pres,15,23,LERMA DE VILLADA,28002,pan,35506,pri,4722,prd,5115,pvem,9117,pt,1623,mc,1802,panal,98538,morena,3668,pes,1459,pan-prd-mc,996,pri-pvem-panal,5969,pt-morena-pes,,,207622,,,,291886,ine
+749,2018,7,1,pres,15,24,NAUCALPAN DE JUAREZ,40853,pan,30818,pri,2823,prd,1604,pvem,7094,pt,1171,mc,1149,panal,92250,morena,3202,pes,2052,pan-prd-mc,1665,pri-pvem-panal,7835,pt-morena-pes,,,203194,,,,336672,ine
+750,2018,7,1,pres,15,25,CHIMALHUACAN,11959,pan,34108,pri,3692,prd,893,pvem,5304,pt,987,mc,995,panal,75167,morena,2489,pes,1049,pan-prd-mc,1375,pri-pvem-panal,6639,pt-morena-pes,,,150481,,,,251806,ine
+751,2018,7,1,pres,15,26,TOLUCA DE LERDO,42794,pan,40016,pri,3734,prd,1782,pvem,8715,pt,1570,mc,1258,panal,88779,morena,3598,pes,2332,pan-prd-mc,1974,pri-pvem-panal,7124,pt-morena-pes,,,217185,,,,310407,ine
+752,2018,7,1,pres,15,27,METEPEC,53074,pan,41140,pri,1917,prd,2512,pvem,10790,pt,1593,mc,1941,panal,92461,morena,2651,pes,1884,pan-prd-mc,1197,pri-pvem-panal,5594,pt-morena-pes,,,229844,,,,315076,ine
+753,2018,7,1,pres,15,28,ZUMPANGO DE OCAMPO,26319,pan,28467,pri,2963,prd,2150,pvem,7737,pt,2174,mc,4260,panal,95871,morena,3553,pes,1594,pan-prd-mc,1122,pri-pvem-panal,6301,pt-morena-pes,,,193558,,,,314021,ine
+754,2018,7,1,pres,15,29,CD. NEZAHUALCOYOTL,19244,pan,26731,pri,13368,prd,1343,pvem,6508,pt,1058,mc,1227,panal,101309,morena,2960,pes,1921,pan-prd-mc,1129,pri-pvem-panal,6884,pt-morena-pes,,,192666,,,,296172,ine
+755,2018,7,1,pres,15,30,CHIMALHUACAN,12923,pan,35517,pri,3502,prd,1081,pvem,5134,pt,904,mc,1091,panal,76724,morena,2998,pes,935,pan-prd-mc,1353,pri-pvem-panal,6334,pt-morena-pes,,,155587,,,,263181,ine
+756,2018,7,1,pres,15,31,CD. NEZAHUALCOYOTL,16388,pan,25677,pri,14984,prd,1332,pvem,6439,pt,1024,mc,1141,panal,95680,morena,2964,pes,2021,pan-prd-mc,952,pri-pvem-panal,6975,pt-morena-pes,,,183783,,,,290097,ine
+757,2018,7,1,pres,15,32,VALLE DE CHALCO SOLIDARIDAD,12129,pan,16672,pri,13329,prd,2202,pvem,5697,pt,1363,mc,767,panal,91499,morena,2850,pes,1616,pan-prd-mc,886,pri-pvem-panal,6940,pt-morena-pes,,,162494,,,,262331,ine
+758,2018,7,1,pres,15,33,CHALCO DE DIAZ COVARRUBIAS,15216,pan,22768,pri,4516,prd,996,pvem,5700,pt,3366,mc,1049,panal,86986,morena,4651,pes,1363,pan-prd-mc,971,pri-pvem-panal,7239,pt-morena-pes,,,162703,,,,260453,ine
+759,2018,7,1,pres,15,34,TOLUCA DE LERDO,51217,pan,39978,pri,3159,prd,1839,pvem,7699,pt,1486,mc,1133,panal,96571,morena,3440,pes,2318,pan-prd-mc,1746,pri-pvem-panal,6212,pt-morena-pes,,,232334,,,,327921,ine
+760,2018,7,1,pres,15,35,TENANCINGO DE DEGOLLADO,28044,pan,33403,pri,7526,prd,4100,pvem,16234,pt,1888,mc,2217,panal,79623,morena,3013,pes,1546,pan-prd-mc,701,pri-pvem-panal,4972,pt-morena-pes,,,191957,,,,284511,ine
+761,2018,7,1,pres,15,36,TEJUPILCO DE HIDALGO,22522,pan,54253,pri,21734,prd,3438,pvem,9566,pt,1683,mc,2860,panal,84269,morena,2665,pes,1428,pan-prd-mc,1032,pri-pvem-panal,3553,pt-morena-pes,,,212959,,,,296442,ine
+762,2018,7,1,pres,15,37,CUAUTITLAN,27318,pan,26752,pri,2167,prd,1841,pvem,6705,pt,3448,mc,1373,panal,100945,morena,3147,pes,1577,pan-prd-mc,923,pri-pvem-panal,6332,pt-morena-pes,,,193834,,,,287130,ine
+763,2018,7,1,pres,15,38,TEXCOCO DE MORA,18767,pan,28517,pri,2590,prd,4531,pvem,5913,pt,1388,mc,1699,panal,103452,morena,2684,pes,1158,pan-prd-mc,1520,pri-pvem-panal,6293,pt-morena-pes,,,188671,,,,287754,ine
+764,2018,7,1,pres,15,39,LOS REYES ACAQUILPAN,12516,pan,33396,pri,4724,prd,1811,pvem,6433,pt,1009,mc,796,panal,82071,morena,3013,pes,1072,pan-prd-mc,1315,pri-pvem-panal,7178,pt-morena-pes,,,162170,,,,260012,ine
+765,2018,7,1,pres,15,40,SAN MIGUEL ZINACANTEPEC,35273,pan,38318,pri,3692,prd,3524,pvem,12661,pt,3025,mc,1882,panal,82334,morena,3389,pes,2005,pan-prd-mc,1530,pri-pvem-panal,6721,pt-morena-pes,,,204452,,,,308188,ine
+766,2018,7,1,pres,15,41,OJO DE AGUA,26404,pan,46496,pri,2096,prd,1137,pvem,6948,pt,951,mc,1568,panal,106760,morena,3143,pes,1386,pan-prd-mc,1479,pri-pvem-panal,6864,pt-morena-pes,,,216759,,,,322728,ine
+767,2018,7,1,pres,16,1,LAZARO CARDENAS,6387,pan,22630,pri,10982,prd,1686,pvem,12305,pt,1493,mc,1376,panal,91338,morena,1949,pes,630,pan-prd-mc,430,pri-pvem-panal,4735,pt-morena-pes,,,159349,,,,265614,ine
+768,2018,7,1,pres,16,2,PURUANDIRO,18119,pan,27803,pri,22589,prd,8339,pvem,20627,pt,2974,mc,3178,panal,48671,morena,4752,pes,1811,pan-prd-mc,766,pri-pvem-panal,4596,pt-morena-pes,,,174219,,,,312570,ine
+769,2018,7,1,pres,16,3,HEROICA ZITACUARO,13006,pan,23095,pri,25367,prd,5168,pvem,17577,pt,1772,mc,1483,panal,60532,morena,3707,pes,1956,pan-prd-mc,888,pri-pvem-panal,5965,pt-morena-pes,,,167801,,,,272763,ine
+770,2018,7,1,pres,16,4,JIQUILPAN DE JUAREZ,34602,pan,22440,pri,10411,prd,4893,pvem,9262,pt,4133,mc,2159,panal,58034,morena,2584,pes,1630,pan-prd-mc,461,pri-pvem-panal,3301,pt-morena-pes,,,163347,,,,294299,ine
+771,2018,7,1,pres,16,5,ZAMORA DE HIDALGO,30259,pan,19674,pri,7590,prd,3033,pvem,12626,pt,2978,mc,1988,panal,56560,morena,2726,pes,1527,pan-prd-mc,581,pri-pvem-panal,4430,pt-morena-pes,,,155422,,,,297644,ine
+772,2018,7,1,pres,16,6,CIUDAD HIDALGO,20911,pan,23375,pri,12300,prd,5202,pvem,13906,pt,2619,mc,2583,panal,53267,morena,3493,pes,2052,pan-prd-mc,1047,pri-pvem-panal,5593,pt-morena-pes,,,157565,,,,280855,ine
+773,2018,7,1,pres,16,7,ZACAPU,16650,pan,20604,pri,11639,prd,7669,pvem,11004,pt,3126,mc,1642,panal,57805,morena,4262,pes,1292,pan-prd-mc,549,pri-pvem-panal,3689,pt-morena-pes,,,148762,,,,268631,ine
+774,2018,7,1,pres,16,8,MORELIA,19856,pan,18141,pri,4380,prd,2524,pvem,10394,pt,1605,mc,927,panal,65096,morena,5169,pes,1229,pan-prd-mc,913,pri-pvem-panal,5351,pt-morena-pes,,,152571,,,,291676,ine
+775,2018,7,1,pres,16,9,URUAPAN DEL PROGRESO,18232,pan,9611,pri,10957,prd,1407,pvem,9875,pt,964,mc,810,panal,53515,morena,1984,pes,1235,pan-prd-mc,485,pri-pvem-panal,4615,pt-morena-pes,,,124979,,,,239846,ine
+776,2018,7,1,pres,16,10,MORELIA,41016,pan,23135,pri,4236,prd,2411,pvem,9875,pt,1521,mc,1049,panal,67726,morena,4697,pes,1923,pan-prd-mc,1177,pri-pvem-panal,5098,pt-morena-pes,,,183837,,,,309830,ine
+777,2018,7,1,pres,16,11,PATZCUARO,17848,pan,21682,pri,17666,prd,6230,pvem,15658,pt,1764,mc,3263,panal,58804,morena,5525,pes,2067,pan-prd-mc,902,pri-pvem-panal,5150,pt-morena-pes,,,164698,,,,287236,ine
+778,2018,7,1,pres,16,12,APATZINGAN DE LA CONSTITUCION,11265,pan,18438,pri,12056,prd,5478,pvem,10638,pt,1288,mc,1664,panal,62530,morena,1963,pes,1129,pan-prd-mc,659,pri-pvem-panal,3966,pt-morena-pes,,,136587,,,,251974,ine
+779,2018,7,1,pres,17,1,CUERNAVACA,37440,pan,17634,pri,3739,prd,1866,pvem,12432,pt,1714,mc,1180,panal,87499,morena,7080,pes,2045,pan-prd-mc,1061,pri-pvem-panal,9708,pt-morena-pes,,,199733,,,,305520,ine
+780,2018,7,1,pres,17,2,JIUTEPEC,19144,pan,14704,pri,6219,prd,4697,pvem,13020,pt,1450,mc,1279,panal,85836,morena,7845,pes,1270,pan-prd-mc,1055,pri-pvem-panal,9749,pt-morena-pes,,,179748,,,,283166,ine
+781,2018,7,1,pres,17,3,CUAUTLA,11943,pan,12794,pri,4692,prd,1712,pvem,16794,pt,2917,mc,2102,panal,99874,morena,8224,pes,975,pan-prd-mc,755,pri-pvem-panal,10631,pt-morena-pes,,,183806,,,,287821,ine
+782,2018,7,1,pres,17,4,JOJUTLA,12464,pan,16516,pri,8350,prd,2093,pvem,17885,pt,1890,mc,1486,panal,97295,morena,9693,pes,956,pan-prd-mc,662,pri-pvem-panal,8969,pt-morena-pes,,,187963,,,,292132,ine
+783,2018,7,1,pres,17,5,YAUTEPEC,14161,pan,12016,pri,7093,prd,2481,pvem,22365,pt,2675,mc,2641,panal,92783,morena,9460,pes,1098,pan-prd-mc,717,pri-pvem-panal,10116,pt-morena-pes,,,188421,,,,270726,ine
+784,2018,7,1,pres,18,1,SANTIAGO IXCUINTLA,15883,pan,25405,pri,5060,prd,909,pvem,9065,pt,1728,mc,1270,panal,71947,morena,3992,pes,1092,pan-prd-mc,754,pri-pvem-panal,5150,pt-morena-pes,,,143816,,,,256770,ine
+785,2018,7,1,pres,18,2,TEPIC,19544,pan,16921,pri,2531,prd,842,pvem,12281,pt,2317,mc,926,panal,101355,morena,4824,pes,1243,pan-prd-mc,786,pri-pvem-panal,7630,pt-morena-pes,,,176984,,,,302091,ine
+786,2018,7,1,pres,18,3,COMPOSTELA,23965,pan,16222,pri,2343,prd,886,pvem,9489,pt,2711,mc,977,panal,80569,morena,3769,pes,1269,pan-prd-mc,503,pri-pvem-panal,4970,pt-morena-pes,,,150973,,,,287950,ine
+787,2018,7,1,pres,19,1,SANTA CATARINA,83044,pan,14263,pri,702,prd,979,pvem,8043,pt,2695,mc,969,panal,38425,morena,1939,pes,1895,pan-prd-mc,484,pri-pvem-panal,2427,pt-morena-pes,,,185176,,,,316603,ine
+788,2018,7,1,pres,19,2,APODACA,42714,pan,19783,pri,646,prd,1198,pvem,11033,pt,2137,mc,711,panal,54590,morena,2289,pes,1170,pan-prd-mc,558,pri-pvem-panal,3223,pt-morena-pes,,,176539,,,,326742,ine
+789,2018,7,1,pres,19,3,GRAL. ESCOBEDO,33523,pan,16522,pri,605,prd,2171,pvem,11264,pt,1802,mc,645,panal,39411,morena,1810,pes,928,pan-prd-mc,571,pri-pvem-panal,2830,pt-morena-pes,,,138403,,,,292781,ine
+790,2018,7,1,pres,19,4,SAN NICOLAS DE LOS GARZA,85419,pan,17581,pri,773,prd,1152,pvem,11569,pt,2907,mc,931,panal,51820,morena,2271,pes,2291,pan-prd-mc,681,pri-pvem-panal,3608,pt-morena-pes,,,219295,,,,365377,ine
+791,2018,7,1,pres,19,5,MONTERREY,20848,pan,19627,pri,530,prd,1228,pvem,18994,pt,1475,mc,613,panal,27351,morena,1218,pes,708,pan-prd-mc,776,pri-pvem-panal,3016,pt-morena-pes,,,116289,,,,253844,ine
+792,2018,7,1,pres,19,6,MONTERREY,91327,pan,25252,pri,807,prd,1485,pvem,13990,pt,3460,mc,877,panal,43201,morena,1826,pes,2840,pan-prd-mc,1006,pri-pvem-panal,3659,pt-morena-pes,,,219321,,,,355425,ine
+793,2018,7,1,pres,19,7,GARCIA,38410,pan,20478,pri,1759,prd,2680,pvem,17454,pt,3416,mc,1753,panal,50904,morena,3408,pes,835,pan-prd-mc,654,pri-pvem-panal,3887,pt-morena-pes,,,181815,,,,369113,ine
+794,2018,7,1,pres,19,8,GUADALUPE,37900,pan,20156,pri,791,prd,1270,pvem,10741,pt,2131,mc,871,panal,46151,morena,2804,pes,1362,pan-prd-mc,847,pri-pvem-panal,3298,pt-morena-pes,,,159449,,,,299696,ine
+795,2018,7,1,pres,19,9,LINARES,46669,pan,44375,pri,797,prd,2765,pvem,15574,pt,2395,mc,5104,panal,36611,morena,2713,pes,793,pan-prd-mc,1055,pri-pvem-panal,3082,pt-morena-pes,,,194162,,,,327919,ine
+796,2018,7,1,pres,19,10,MONTERREY,79096,pan,24041,pri,854,prd,1475,pvem,9000,pt,4342,mc,850,panal,39837,morena,1908,pes,2358,pan-prd-mc,1130,pri-pvem-panal,2995,pt-morena-pes,,,191433,,,,329254,ine
+797,2018,7,1,pres,19,11,GUADALUPE,58938,pan,24258,pri,1199,prd,1118,pvem,11500,pt,2539,mc,1049,panal,48197,morena,2649,pes,2079,pan-prd-mc,1071,pri-pvem-panal,4033,pt-morena-pes,,,190217,,,,330958,ine
+798,2018,7,1,pres,19,12,BENITO JUAREZ,23425,pan,21728,pri,957,prd,4133,pvem,12311,pt,2193,mc,1119,panal,50116,morena,3909,pes,874,pan-prd-mc,1156,pri-pvem-panal,4055,pt-morena-pes,,,153205,,,,332826,ine
+799,2018,7,1,pres,20,1,SAN JUAN BAUTISTA TUXTEPEC,18052,pan,26756,pri,5942,prd,4605,pvem,11561,pt,1877,mc,7211,panal,101714,morena,5771,pes,906,pan-prd-mc,1422,pri-pvem-panal,5374,pt-morena-pes,,,195090,,,,272575,ine
+800,2018,7,1,pres,20,2,TEOTITLAN DE FLORES MAGON,9442,pan,37957,pri,10005,prd,2060,pvem,13989,pt,3133,mc,4859,panal,92743,morena,3047,pes,706,pan-prd-mc,1845,pri-pvem-panal,5108,pt-morena-pes,,,187933,,,,271339,ine
+801,2018,7,1,pres,20,3,HEROICA CIUDAD DE HUAJUAPAN DE LEON,14104,pan,23621,pri,7817,prd,1897,pvem,14374,pt,1299,mc,1489,panal,100085,morena,3273,pes,998,pan-prd-mc,1048,pri-pvem-panal,6402,pt-morena-pes,,,182194,,,,287380,ine
+802,2018,7,1,pres,20,4,TLACOLULA DE MATAMOROS,12407,pan,22762,pri,4759,prd,2536,pvem,16105,pt,1846,mc,2083,panal,98582,morena,3163,pes,657,pan-prd-mc,994,pri-pvem-panal,7251,pt-morena-pes,,,178259,,,,309294,ine
+803,2018,7,1,pres,20,5,SALINA CRUZ,6588,pan,21351,pri,4604,prd,1687,pvem,15626,pt,1551,mc,1501,panal,109322,morena,3358,pes,438,pan-prd-mc,871,pri-pvem-panal,5512,pt-morena-pes,,,174845,,,,269697,ine
+804,2018,7,1,pres,20,6,HEROICA CIUDAD DE TLAXIACO,7030,pan,22596,pri,10809,prd,2480,pvem,12474,pt,1528,mc,1764,panal,92000,morena,3192,pes,603,pan-prd-mc,811,pri-pvem-panal,5448,pt-morena-pes,,,162911,,,,274610,ine
+805,2018,7,1,pres,20,7,CIUDAD IXTEPEC,6859,pan,33087,pri,9937,prd,5664,pvem,14261,pt,2260,mc,2936,panal,113229,morena,3471,pes,449,pan-prd-mc,1222,pri-pvem-panal,4148,pt-morena-pes,,,200366,,,,285218,ine
+806,2018,7,1,pres,20,8,OAXACA DE JUAREZ,22453,pan,24172,pri,1845,prd,1178,pvem,11325,pt,1012,mc,736,panal,120728,morena,3346,pes,1245,pan-prd-mc,1402,pri-pvem-panal,7998,pt-morena-pes,,,207696,,,,312825,ine
+807,2018,7,1,pres,20,9,PUERTO ESCONDIDO,6454,pan,35367,pri,12440,prd,2091,pvem,10545,pt,1688,mc,3734,panal,96328,morena,2648,pes,559,pan-prd-mc,1310,pri-pvem-panal,4566,pt-morena-pes,,,179211,,,,271574,ine
+808,2018,7,1,pres,20,10,MIAHUATLAN DE PORFIRIO DIAZ,18555,pan,24274,pri,4885,prd,2837,pvem,14075,pt,2876,mc,4434,panal,102668,morena,5926,pes,878,pan-prd-mc,1385,pri-pvem-panal,5950,pt-morena-pes,,,191627,,,,306787,ine
+809,2018,7,1,pres,21,1,HUAUCHINANGO DE DEGOLLADO,41531,pan,32635,pri,6310,prd,4994,pvem,9895,pt,5226,mc,2492,panal,80774,morena,3297,pes,1997,pan-prd-mc,1247,pri-pvem-panal,5415,pt-morena-pes,,,200852,,,,279935,ine
+810,2018,7,1,pres,21,2,CUAUTILULCO BARRIO,39194,pan,52344,pri,7368,prd,3040,pvem,11791,pt,7803,mc,3840,panal,63939,morena,3316,pes,1526,pan-prd-mc,1340,pri-pvem-panal,4045,pt-morena-pes,,,203894,,,,281834,ine
+811,2018,7,1,pres,21,3,TEZIUTLAN,33816,pan,34648,pri,2961,prd,3784,pvem,14189,pt,2877,mc,3951,panal,79599,morena,3830,pes,1320,pan-prd-mc,1065,pri-pvem-panal,6411,pt-morena-pes,,,195666,,,,286126,ine
+812,2018,7,1,pres,21,4,AJALPAN,29081,pan,30685,pri,6410,prd,2511,pvem,12926,pt,5967,mc,1677,panal,93706,morena,4199,pes,1061,pan-prd-mc,656,pri-pvem-panal,6046,pt-morena-pes,,,198083,,,,270988,ine
+813,2018,7,1,pres,21,5,SAN MARTIN TEXMELUCAN DE LABASTIDA,22135,pan,20625,pri,2760,prd,2517,pvem,15758,pt,2889,mc,2967,panal,92925,morena,3780,pes,1073,pan-prd-mc,840,pri-pvem-panal,8062,pt-morena-pes,,,186258,,,,295720,ine
+814,2018,7,1,pres,21,6,HEROICA PUEBLA DE ZARAGOZA,26412,pan,17391,pri,1244,prd,1216,pvem,9079,pt,1235,mc,735,panal,103082,morena,2977,pes,1476,pan-prd-mc,1042,pri-pvem-panal,8513,pt-morena-pes,,,183941,,,,305467,ine
+815,2018,7,1,pres,21,7,TEPEACA,27525,pan,20595,pri,2632,prd,3859,pvem,13223,pt,4079,mc,1635,panal,96686,morena,4248,pes,1489,pan-prd-mc,716,pri-pvem-panal,9166,pt-morena-pes,,,192395,,,,289617,ine
+816,2018,7,1,pres,21,8,CIUDAD SERDAN,34213,pan,31578,pri,3565,prd,3563,pvem,13370,pt,8849,mc,6955,panal,71992,morena,3591,pes,1676,pan-prd-mc,1032,pri-pvem-panal,5801,pt-morena-pes,,,192498,,,,272123,ine
+817,2018,7,1,pres,21,9,HEROICA PUEBLA DE ZARAGOZA,41658,pan,16533,pri,1218,prd,1070,pvem,8706,pt,1168,mc,823,panal,104972,morena,2749,pes,1717,pan-prd-mc,907,pri-pvem-panal,7785,pt-morena-pes,,,200085,,,,330112,ine
+818,2018,7,1,pres,21,10,CHOLULA DE RIVADAVIA,44812,pan,16854,pri,2118,prd,1923,pvem,9662,pt,1566,mc,1395,panal,111390,morena,4182,pes,1873,pan-prd-mc,802,pri-pvem-panal,8848,pt-morena-pes,,,216960,,,,328497,ine
+819,2018,7,1,pres,21,11,HEROICA PUEBLA DE ZARAGOZA,28266,pan,18872,pri,1345,prd,1264,pvem,9466,pt,2039,mc,926,panal,96030,morena,2799,pes,1441,pan-prd-mc,1199,pri-pvem-panal,8737,pt-morena-pes,,,181961,,,,307513,ine
+820,2018,7,1,pres,21,12,HEROICA PUEBLA DE ZARAGOZA,46587,pan,20611,pri,1198,prd,1223,pvem,8491,pt,1166,mc,883,panal,107473,morena,2868,pes,1905,pan-prd-mc,911,pri-pvem-panal,7459,pt-morena-pes,,,213196,,,,336747,ine
+821,2018,7,1,pres,21,13,ATLIXCO,30753,pan,31814,pri,3534,prd,4353,pvem,10650,pt,3943,mc,2185,panal,93474,morena,4301,pes,1438,pan-prd-mc,1050,pri-pvem-panal,6984,pt-morena-pes,,,200500,,,,310833,ine
+822,2018,7,1,pres,21,14,ACATLAN DE OSORIO,24063,pan,37243,pri,3741,prd,2386,pvem,13821,pt,4619,mc,2684,panal,104783,morena,4358,pes,1450,pan-prd-mc,855,pri-pvem-panal,7851,pt-morena-pes,,,212091,,,,307143,ine
+823,2018,7,1,pres,21,15,TEHUACAN,23132,pan,17396,pri,1413,prd,3769,pvem,11823,pt,1061,mc,1659,panal,113756,morena,3139,pes,809,pan-prd-mc,817,pri-pvem-panal,7365,pt-morena-pes,,,194409,,,,297925,ine
+824,2018,7,1,pres,22,1,CADEREYTA DE MONTES,44762,pan,29219,pri,2743,prd,1538,pvem,10923,pt,2245,mc,2875,panal,48447,morena,3566,pes,2023,pan-prd-mc,1343,pri-pvem-panal,4126,pt-morena-pes,,,162403,,,,252531,ine
+825,2018,7,1,pres,22,2,SAN JUAN DEL RIO,48589,pan,21045,pri,1544,prd,2559,pvem,8148,pt,1122,mc,1165,panal,70368,morena,3512,pes,1956,pan-prd-mc,1234,pri-pvem-panal,6510,pt-morena-pes,,,183569,,,,284047,ine
+826,2018,7,1,pres,22,3,SANTIAGO DE QUERETARO,63018,pan,21058,pri,1723,prd,1344,pvem,8812,pt,1382,mc,887,panal,80504,morena,3266,pes,2781,pan-prd-mc,1331,pri-pvem-panal,7035,pt-morena-pes,,,210943,,,,363990,ine
+827,2018,7,1,pres,22,4,SANTIAGO DE QUERETARO,84290,pan,25593,pri,1621,prd,1313,pvem,7753,pt,1290,mc,1028,panal,76947,morena,3011,pes,3235,pan-prd-mc,1521,pri-pvem-panal,6028,pt-morena-pes,,,231459,,,,361257,ine
+828,2018,7,1,pres,22,5,EL PUEBLITO,74924,pan,30324,pri,3765,prd,2134,pvem,9670,pt,1378,mc,1077,panal,56458,morena,3255,pes,2649,pan-prd-mc,2287,pri-pvem-panal,5113,pt-morena-pes,,,207201,,,,321128,ine
+829,2018,7,1,pres,23,1,PLAYA DEL CARMEN,24310,pan,19073,pri,2393,prd,1142,pvem,14081,pt,1724,mc,1012,panal,106097,morena,4952,pes,1596,pan-prd-mc,1092,pri-pvem-panal,7406,pt-morena-pes,,,192289,,,,338233,ine
+830,2018,7,1,pres,23,2,CHETUMAL,19538,pan,21216,pri,6873,prd,1029,pvem,9912,pt,1920,mc,2994,panal,94310,morena,7439,pes,1954,pan-prd-mc,1293,pri-pvem-panal,6805,pt-morena-pes,,,181515,,,,272867,ine
+831,2018,7,1,pres,23,3,CANCUN,11424,pan,5926,pri,1060,prd,3653,pvem,6626,pt,948,mc,600,panal,96192,morena,4349,pes,902,pan-prd-mc,840,pri-pvem-panal,7298,pt-morena-pes,,,146475,,,,264634,ine
+832,2018,7,1,pres,23,4,CANCUN,36451,pan,10960,pri,1298,prd,4180,pvem,7404,pt,1669,mc,691,panal,104092,morena,3775,pes,1794,pan-prd-mc,1044,pri-pvem-panal,7391,pt-morena-pes,,,190240,,,,332932,ine
+833,2018,7,1,pres,24,1,MATEHUALA,32032,pan,37760,pri,4566,prd,9121,pvem,13527,pt,4411,mc,1709,panal,42161,morena,2803,pes,2119,pan-prd-mc,1887,pri-pvem-panal,3589,pt-morena-pes,,,165510,,,,262221,ine
+834,2018,7,1,pres,24,2,SOLEDAD DE GRACIANO SANCHEZ,31374,pan,29545,pri,19596,prd,4345,pvem,11348,pt,1921,mc,1416,panal,62011,morena,3151,pes,2404,pan-prd-mc,1670,pri-pvem-panal,4656,pt-morena-pes,,,189699,,,,321336,ine
+835,2018,7,1,pres,24,3,RIOVERDE,30905,pan,38598,pri,5184,prd,7364,pvem,14294,pt,2784,mc,1859,panal,40105,morena,2334,pes,1973,pan-prd-mc,2882,pri-pvem-panal,3535,pt-morena-pes,,,159424,,,,263906,ine
+836,2018,7,1,pres,24,4,CIUDAD VALLES,21838,pan,22314,pri,4539,prd,2365,pvem,10939,pt,1732,mc,2391,panal,65973,morena,3597,pes,1185,pan-prd-mc,1420,pri-pvem-panal,4557,pt-morena-pes,,,151482,,,,238975,ine
+837,2018,7,1,pres,24,5,SAN LUIS POTOSI,59418,pan,22134,pri,8227,prd,1281,pvem,8244,pt,1042,mc,1062,panal,55895,morena,2143,pes,2316,pan-prd-mc,1143,pri-pvem-panal,4296,pt-morena-pes,,,184411,,,,311399,ine
+838,2018,7,1,pres,24,6,SAN LUIS POTOSI,36995,pan,16561,pri,7882,prd,1416,pvem,9690,pt,1102,mc,1064,panal,67002,morena,2668,pes,1815,pan-prd-mc,867,pri-pvem-panal,4995,pt-morena-pes,,,172322,,,,304359,ine
+839,2018,7,1,pres,24,7,TAMAZUNCHALE,33724,pan,38899,pri,8225,prd,2339,pvem,15744,pt,3180,mc,4016,panal,56769,morena,4979,pes,1775,pan-prd-mc,2682,pri-pvem-panal,5028,pt-morena-pes,,,181159,,,,272130,ine
+840,2018,7,1,pres,25,1,MAZATLAN,19287,pan,25902,pri,1844,prd,1147,pvem,8644,pt,1552,mc,1101,panal,87715,morena,3108,pes,984,pan-prd-mc,1431,pri-pvem-panal,5594,pt-morena-pes,,,162464,,,,293360,ine
+841,2018,7,1,pres,25,2,LOS MOCHIS,21869,pan,26237,pri,1436,prd,666,pvem,9893,pt,1176,mc,1040,panal,112500,morena,4075,pes,1075,pan-prd-mc,1785,pri-pvem-panal,8677,pt-morena-pes,,,195495,,,,321131,ine
+842,2018,7,1,pres,25,3,GUAMUCHIL,16148,pan,41628,pri,5415,prd,1712,pvem,13715,pt,3158,mc,2116,panal,94547,morena,5067,pes,1206,pan-prd-mc,2078,pri-pvem-panal,6988,pt-morena-pes,,,196345,,,,321025,ine
+843,2018,7,1,pres,25,4,GUASAVE,13012,pan,37528,pri,2167,prd,1011,pvem,10542,pt,1905,mc,2175,panal,105558,morena,4406,pes,660,pan-prd-mc,2369,pri-pvem-panal,7274,pt-morena-pes,,,190869,,,,304001,ine
+844,2018,7,1,pres,25,5,CULIACAN DE ROSALES,18487,pan,19665,pri,1002,prd,822,pvem,9660,pt,1343,mc,1352,panal,105121,morena,3380,pes,948,pan-prd-mc,1581,pri-pvem-panal,7743,pt-morena-pes,,,177342,,,,295854,ine
+845,2018,7,1,pres,25,6,MAZATLAN,21350,pan,28179,pri,1740,prd,3367,pvem,9622,pt,2469,mc,1149,panal,85976,morena,3464,pes,1272,pan-prd-mc,1811,pri-pvem-panal,6371,pt-morena-pes,,,171765,,,,294027,ine
+846,2018,7,1,pres,25,7,CULIACAN DE ROSALES,18355,pan,22875,pri,1444,prd,962,pvem,9192,pt,1469,mc,1100,panal,93463,morena,3530,pes,928,pan-prd-mc,1564,pri-pvem-panal,7344,pt-morena-pes,,,166567,,,,305860,ine
+847,2018,7,1,pres,26,1,SAN LUIS RIO COLORADO,19516,pan,18528,pri,1342,prd,1254,pvem,7831,pt,1852,mc,951,panal,63315,morena,2216,pes,854,pan-prd-mc,1134,pri-pvem-panal,4355,pt-morena-pes,,,131566,,,,288070,ine
+848,2018,7,1,pres,26,2,NOGALES,23504,pan,22870,pri,1369,prd,809,pvem,12960,pt,3028,mc,793,panal,70477,morena,2356,pes,1183,pan-prd-mc,1710,pri-pvem-panal,4791,pt-morena-pes,,,157893,,,,333881,ine
+849,2018,7,1,pres,26,3,HERMOSILLO,20081,pan,20077,pri,761,prd,817,pvem,7722,pt,1520,mc,860,panal,73891,morena,2049,pes,1044,pan-prd-mc,1388,pri-pvem-panal,4920,pt-morena-pes,,,147316,,,,304062,ine
+850,2018,7,1,pres,26,4,GUAYMAS,20113,pan,25883,pri,2436,prd,2018,pvem,11763,pt,1997,mc,2017,panal,76213,morena,2487,pes,1093,pan-prd-mc,2229,pri-pvem-panal,5170,pt-morena-pes,,,160937,,,,291128,ine
+851,2018,7,1,pres,26,5,HERMOSILLO,26631,pan,23971,pri,766,prd,709,pvem,7224,pt,1581,mc,828,panal,70837,morena,1816,pes,1280,pan-prd-mc,1695,pri-pvem-panal,4578,pt-morena-pes,,,154047,,,,295976,ine
+852,2018,7,1,pres,26,6,CD. OBREGON,12779,pan,17165,pri,1007,prd,992,pvem,7634,pt,2086,mc,694,panal,99284,morena,2801,pes,648,pan-prd-mc,1219,pri-pvem-panal,6452,pt-morena-pes,,,161772,,,,320447,ine
+853,2018,7,1,pres,26,7,NAVOJOA,13927,pan,26434,pri,2015,prd,723,pvem,8635,pt,1635,mc,1156,panal,81507,morena,2283,pes,905,pan-prd-mc,2054,pri-pvem-panal,5411,pt-morena-pes,,,149982,,,,268124,ine
+854,2018,7,1,pres,27,1,MACUSPANA,3935,pan,12529,pri,6330,prd,3905,pvem,5386,pt,1445,mc,1695,panal,119165,morena,7245,pes,631,pan-prd-mc,510,pri-pvem-panal,5270,pt-morena-pes,,,169129,,,,244672,ine
+855,2018,7,1,pres,27,2,HEROICA CARDENAS,2487,pan,14493,pri,20114,prd,1019,pvem,6226,pt,1280,mc,1015,panal,144615,morena,2705,pes,915,pan-prd-mc,442,pri-pvem-panal,6011,pt-morena-pes,,,202543,,,,300820,ine
+856,2018,7,1,pres,27,3,COMALCALCO,2736,pan,16580,pri,14670,prd,1014,pvem,5545,pt,979,mc,616,panal,116490,morena,2006,pes,1256,pan-prd-mc,475,pri-pvem-panal,4835,pt-morena-pes,,,168407,,,,240831,ine
+857,2018,7,1,pres,27,4,VILLAHERMOSA,5282,pan,12031,pri,2372,prd,702,pvem,5439,pt,1108,mc,756,panal,174813,morena,2155,pes,543,pan-prd-mc,491,pri-pvem-panal,8878,pt-morena-pes,,,217475,,,,309831,ine
+858,2018,7,1,pres,27,5,PARAISO,3678,pan,14121,pri,7545,prd,2904,pvem,8379,pt,1356,mc,1242,panal,162507,morena,4806,pes,635,pan-prd-mc,498,pri-pvem-panal,6361,pt-morena-pes,,,215557,,,,295256,ine
+859,2018,7,1,pres,27,6,VILLAHERMOSA,4315,pan,14647,pri,4714,prd,3756,pvem,7304,pt,2160,mc,1505,panal,144373,morena,3029,pes,799,pan-prd-mc,572,pri-pvem-panal,7590,pt-morena-pes,,,196945,,,,296208,ine
+860,2018,7,1,pres,28,1,NUEVO LAREDO,49681,pan,22126,pri,891,prd,1128,pvem,5703,pt,1125,mc,805,panal,55777,morena,1875,pes,1419,pan-prd-mc,525,pri-pvem-panal,3407,pt-morena-pes,,,162656,,,,310391,ine
+861,2018,7,1,pres,28,2,REYNOSA,41975,pan,17436,pri,885,prd,832,pvem,7263,pt,804,mc,858,panal,69567,morena,4644,pes,1408,pan-prd-mc,452,pri-pvem-panal,4428,pt-morena-pes,,,162458,,,,280245,ine
+862,2018,7,1,pres,28,3,RIO BRAVO,47888,pan,27974,pri,1640,prd,801,pvem,9522,pt,1302,mc,786,panal,66054,morena,3515,pes,1384,pan-prd-mc,481,pri-pvem-panal,3747,pt-morena-pes,,,173911,,,,293905,ine
+863,2018,7,1,pres,28,4,H. MATAMOROS,36421,pan,23655,pri,1233,prd,800,pvem,8443,pt,1258,mc,480,panal,80107,morena,2312,pes,1317,pan-prd-mc,659,pri-pvem-panal,3901,pt-morena-pes,,,170071,,,,298768,ine
+864,2018,7,1,pres,28,5,CIUDAD VICTORIA,59240,pan,34101,pri,948,prd,725,pvem,12706,pt,1567,mc,1115,panal,65038,morena,3044,pes,1915,pan-prd-mc,826,pri-pvem-panal,4094,pt-morena-pes,,,201871,,,,299833,ine
+865,2018,7,1,pres,28,6,CIUDAD MANTE,67371,pan,34056,pri,3366,prd,1791,pvem,8264,pt,4819,mc,1473,panal,58272,morena,3703,pes,1842,pan-prd-mc,711,pri-pvem-panal,3499,pt-morena-pes,,,196394,,,,280872,ine
+866,2018,7,1,pres,28,7,CIUDAD MADERO,41739,pan,18264,pri,1116,prd,1121,pvem,7937,pt,1211,mc,764,panal,83283,morena,2882,pes,1748,pan-prd-mc,546,pri-pvem-panal,5201,pt-morena-pes,,,178834,,,,284880,ine
+867,2018,7,1,pres,28,8,TAMPICO,53937,pan,18930,pri,1066,prd,879,pvem,8216,pt,1010,mc,478,panal,85262,morena,2487,pes,2006,pan-prd-mc,656,pri-pvem-panal,4966,pt-morena-pes,,,197399,,,,297197,ine
+868,2018,7,1,pres,28,9,REYNOSA,35648,pan,10611,pri,1120,prd,590,pvem,8692,pt,1010,mc,537,panal,80186,morena,2518,pes,1307,pan-prd-mc,299,pri-pvem-panal,4474,pt-morena-pes,,,155581,,,,282654,ine
+869,2018,7,1,pres,29,1,APIZACO,21201,pan,24818,pri,2272,prd,1667,pvem,14044,pt,1450,mc,1107,panal,99231,morena,3611,pes,1244,pan-prd-mc,1313,pri-pvem-panal,7703,pt-morena-pes,,,189795,,,,300472,ine
+870,2018,7,1,pres,29,2,TLAXCALA DE XICOHTENCATL,15893,pan,20931,pri,2289,prd,965,pvem,13470,pt,1520,mc,968,panal,131083,morena,4466,pes,1237,pan-prd-mc,1402,pri-pvem-panal,10705,pt-morena-pes,,,213105,,,,312644,ine
+871,2018,7,1,pres,29,3,ZACATELCO,14817,pan,18485,pri,2262,prd,893,pvem,14431,pt,1464,mc,1182,panal,119645,morena,4961,pes,1019,pan-prd-mc,997,pri-pvem-panal,9157,pt-morena-pes,,,197151,,,,308900,ine
+872,2018,7,1,pres,30,1,PANUCO,43569,pan,19486,pri,2583,prd,2484,pvem,5342,pt,2193,mc,1215,panal,64471,morena,5394,pes,1218,pan-prd-mc,753,pri-pvem-panal,3433,pt-morena-pes,,,156643,,,,241139,ine
+873,2018,7,1,pres,30,2,TANTOYUCA,49861,pan,23662,pri,11582,prd,7376,pvem,6309,pt,3707,mc,1484,panal,58893,morena,2190,pes,1766,pan-prd-mc,1215,pri-pvem-panal,2228,pt-morena-pes,,,172240,,,,246309,ine
+874,2018,7,1,pres,30,3,TUXPAN DE RODRIGUEZ CANO,40747,pan,19551,pri,2214,prd,1803,pvem,4562,pt,1565,mc,855,panal,77269,morena,1657,pes,1388,pan-prd-mc,722,pri-pvem-panal,3163,pt-morena-pes,,,161134,,,,248900,ine
+875,2018,7,1,pres,30,4,VERACRUZ,58252,pan,11220,pri,1724,prd,1555,pvem,4769,pt,887,mc,486,panal,83854,morena,1623,pes,3013,pan-prd-mc,669,pri-pvem-panal,3848,pt-morena-pes,,,185478,,,,321098,ine
+876,2018,7,1,pres,30,5,POZA RICA DE HIDALGO,21993,pan,14304,pri,10236,prd,808,pvem,4633,pt,883,mc,733,panal,91964,morena,1506,pes,2535,pan-prd-mc,541,pri-pvem-panal,4314,pt-morena-pes,,,161882,,,,250521,ine
+877,2018,7,1,pres,30,6,PAPANTLA DE OLARTE,38868,pan,22603,pri,11866,prd,3412,pvem,6120,pt,5421,mc,1499,panal,82534,morena,2274,pes,2115,pan-prd-mc,1008,pri-pvem-panal,3168,pt-morena-pes,,,184747,,,,286127,ine
+878,2018,7,1,pres,30,7,MARTINEZ DE LA TORRE,36384,pan,20850,pri,3957,prd,2455,pvem,5639,pt,4083,mc,1222,panal,89533,morena,2148,pes,1921,pan-prd-mc,1009,pri-pvem-panal,3478,pt-morena-pes,,,177401,,,,283027,ine
+879,2018,7,1,pres,30,8,XALAPA,53917,pan,23222,pri,7841,prd,2970,pvem,5744,pt,2028,mc,1080,panal,92297,morena,2384,pes,2800,pan-prd-mc,1394,pri-pvem-panal,3649,pt-morena-pes,,,206438,,,,315892,ine
+880,2018,7,1,pres,30,9,COATEPEC,46169,pan,24628,pri,5902,prd,1057,pvem,5342,pt,1646,mc,1014,panal,78493,morena,2238,pes,2357,pan-prd-mc,978,pri-pvem-panal,3097,pt-morena-pes,,,180080,,,,272503,ine
+881,2018,7,1,pres,30,10,XALAPA,44080,pan,19157,pri,2022,prd,1321,pvem,4888,pt,1303,mc,829,panal,116607,morena,2208,pes,1896,pan-prd-mc,1002,pri-pvem-panal,4959,pt-morena-pes,,,216006,,,,323195,ine
+882,2018,7,1,pres,30,11,COATZACOALCOS,21691,pan,14838,pri,2307,prd,459,pvem,4170,pt,956,mc,1098,panal,131941,morena,2535,pes,1403,pan-prd-mc,660,pri-pvem-panal,7753,pt-morena-pes,,,195740,,,,305208,ine
+883,2018,7,1,pres,30,12,VERACRUZ,82144,pan,17258,pri,1434,prd,2034,pvem,4923,pt,1428,mc,600,panal,83734,morena,2140,pes,3292,pan-prd-mc,1025,pri-pvem-panal,3685,pt-morena-pes,,,216454,,,,336028,ine
+884,2018,7,1,pres,30,13,HUATUSCO,53512,pan,22827,pri,4095,prd,2454,pvem,5563,pt,1903,mc,1236,panal,88564,morena,2280,pes,1963,pan-prd-mc,1134,pri-pvem-panal,3369,pt-morena-pes,,,194332,,,,303513,ine
+885,2018,7,1,pres,30,14,MINATITLAN,28841,pan,15851,pri,4593,prd,953,pvem,6238,pt,1635,mc,1037,panal,98771,morena,2497,pes,2258,pan-prd-mc,683,pri-pvem-panal,5433,pt-morena-pes,,,172592,,,,276057,ine
+886,2018,7,1,pres,30,15,ORIZABA,37981,pan,18335,pri,6522,prd,2218,pvem,5975,pt,2017,mc,889,panal,97271,morena,2481,pes,2502,pan-prd-mc,1098,pri-pvem-panal,5142,pt-morena-pes,,,191772,,,,292558,ine
+887,2018,7,1,pres,30,16,CORDOBA,39818,pan,21745,pri,2932,prd,1225,pvem,5823,pt,1541,mc,891,panal,108473,morena,2851,pes,1762,pan-prd-mc,1027,pri-pvem-panal,5184,pt-morena-pes,,,202532,,,,302994,ine
+888,2018,7,1,pres,30,17,COSAMALOAPAN,42485,pan,17441,pri,6551,prd,1426,pvem,6437,pt,1974,mc,975,panal,85439,morena,1970,pes,2086,pan-prd-mc,815,pri-pvem-panal,4292,pt-morena-pes,,,175539,,,,287016,ine
+889,2018,7,1,pres,30,18,ZONGOLICA,36343,pan,23439,pri,10122,prd,2734,pvem,7862,pt,4907,mc,1337,panal,87121,morena,3001,pes,2654,pan-prd-mc,1236,pri-pvem-panal,4370,pt-morena-pes,,,189513,,,,283145,ine
+890,2018,7,1,pres,30,19,SAN ANDRES TUXTLA,44302,pan,14907,pri,9549,prd,4154,pvem,4954,pt,2066,mc,1441,panal,84638,morena,2432,pes,3203,pan-prd-mc,1241,pri-pvem-panal,3867,pt-morena-pes,,,180995,,,,303659,ine
+891,2018,7,1,pres,30,20,COSOLEACAQUE,26711,pan,22009,pri,6355,prd,890,pvem,5808,pt,2056,mc,1040,panal,110797,morena,3139,pes,1703,pan-prd-mc,917,pri-pvem-panal,4916,pt-morena-pes,,,189727,,,,297029,ine
+892,2018,7,1,pres,31,1,VALLADOLID,53703,pan,71015,pri,2261,prd,4652,pvem,5695,pt,3046,mc,2020,panal,69897,morena,2430,pes,827,pan-prd-mc,964,pri-pvem-panal,2238,pt-morena-pes,,,222275,,,,278151,ine
+893,2018,7,1,pres,31,2,PROGRESO,50156,pan,55830,pri,4034,prd,7179,pvem,8418,pt,3467,mc,3938,panal,66887,morena,3748,pes,1201,pan-prd-mc,1062,pri-pvem-panal,3459,pt-morena-pes,,,215362,,,,293836,ine
+894,2018,7,1,pres,31,3,MERIDA,51507,pan,45619,pri,998,prd,954,pvem,8559,pt,1136,mc,655,panal,90716,morena,3083,pes,1908,pan-prd-mc,2021,pri-pvem-panal,5752,pt-morena-pes,,,225726,,,,341019,ine
+895,2018,7,1,pres,31,4,MERIDA,76779,pan,47129,pri,940,prd,1016,pvem,7682,pt,1179,mc,721,panal,85135,morena,2621,pes,2324,pan-prd-mc,1887,pri-pvem-panal,4845,pt-morena-pes,,,246475,,,,338827,ine
+896,2018,7,1,pres,31,5,TICUL,50548,pan,63886,pri,9106,prd,5874,pvem,11674,pt,3374,mc,6818,panal,67312,morena,2433,pes,1462,pan-prd-mc,770,pri-pvem-panal,2207,pt-morena-pes,,,228395,,,,292229,ine
+897,2018,7,1,pres,32,1,FRESNILLO,26558,pan,28880,pri,5482,prd,3382,pvem,14848,pt,1889,mc,1947,panal,67041,morena,2458,pes,1736,pan-prd-mc,765,pri-pvem-panal,4789,pt-morena-pes,,,169983,,,,277083,ine
+898,2018,7,1,pres,32,2,JEREZ DE GARCIA SALINAS,38638,pan,35019,pri,9862,prd,9308,pvem,14919,pt,2946,mc,2236,panal,56319,morena,3605,pes,2491,pan-prd-mc,833,pri-pvem-panal,3316,pt-morena-pes,,,188380,,,,307015,ine
+899,2018,7,1,pres,32,3,ZACATECAS,25842,pan,34152,pri,3928,prd,5324,pvem,15567,pt,1714,mc,7555,panal,75827,morena,2817,pes,1518,pan-prd-mc,974,pri-pvem-panal,4833,pt-morena-pes,,,189663,,,,291084,ine
+900,2018,7,1,pres,32,4,GUADALUPE,20967,pan,42404,pri,8447,prd,2407,pvem,15606,pt,3038,mc,1584,panal,75488,morena,2865,pes,1450,pan-prd-mc,787,pri-pvem-panal,4612,pt-morena-pes,,,187766,,,,287277,ine
