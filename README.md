@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#org645e43a)
-2.  [Files in the repository and how to cite them](#orgd739a1a)
-3.  [Codebook](#orgdc42dbf)
-4.  [Coding procedure for the incumbent's status](#orgc621334)
-5.  [Procedimiento para codificar el estatus del ocupante](#org2d2059e)
-6.  [Sources](#orgb0169a3)
-7.  [Acknowledgements](#org53e3381)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#org4906f6c)
+2.  [Files in the repository and how to cite them](#orge7b9c96)
+3.  [Codebook](#org46680e0)
+4.  [Coding procedure for the incumbent's status](#org9badf29)
+5.  [Procedimiento para codificar el estatus del ocupante](#org80149ee)
+6.  [Sources](#orge5227c8)
+7.  [Acknowledgements](#orgcdba9ba)
 
-Last revision: 2019-11-20
+Last revision: 2020-09-11
 
 
-<a id="org645e43a"></a>
+<a id="org4906f6c"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orgd739a1a"></a>
+<a id="orge7b9c96"></a>
 
 # Files in the repository and how to cite them
 
@@ -51,7 +51,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
 
 
-<a id="orgdc42dbf"></a>
+<a id="org46680e0"></a>
 
 # Codebook
 
@@ -88,12 +88,12 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orgd3655cc) for categories and coding procedure ([aquí](#org6b89eed) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orgd9d7385) for categories and coding procedure ([aquí](#org0b588c9) la versión en español del procedimiento codificador).
 
 
-<a id="orgc621334"></a>
+<a id="org9badf29"></a>
 
-# Coding procedure for the incumbent's status<a id="orgd3655cc"></a>
+# Coding procedure for the incumbent's status<a id="orgd9d7385"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
@@ -111,9 +111,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org2d2059e"></a>
+<a id="org80149ee"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org6b89eed"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org0b588c9"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 
@@ -131,7 +131,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="orgb0169a3"></a>
+<a id="orge5227c8"></a>
 
 # Sources
 
@@ -146,7 +146,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org53e3381"></a>
+<a id="orgcdba9ba"></a>
 
 # Acknowledgements
 
