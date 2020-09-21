@@ -5,9 +5,15 @@ setwd(dd)
 
 # read raw data file
 dat <- read.csv(file = "dfdf1979-on.csv", stringsAsFactors = FALSE)
+table(dat$yr, dat$dextra, useNA = "always")
 dim(dat)
 
-dat$pancoal <- dat$pricoal <- dat$pricoal <- NULL # drop coal cols, confuses code (taken from ay.r)
+# drop void elections
+sel <- which(dat$danul==1)
+if (length(sel)>0){
+    dat <- dat[-sel,]
+    dat$danul <- NULL
+}
 
 # re-compute effective and total votes
 sel <- grep("^v[0-9]{2}", colnames(dat))
@@ -367,7 +373,7 @@ I <- nrow(v)
 c1 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # will receive vector of 1st coalition's members
 c2 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 2nd coalition's members
 c3 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 3rd coalition's members
-c4 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 3rd coalition's members
+c4 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 4th coalition's members
 #
 # will receive columns corresponding to coalition members in v/l for use when weighting votes contributed by each member
 w1 <- as.list(rep("noCoal",I))
