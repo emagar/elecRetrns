@@ -2400,7 +2400,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,ncoal,win,v01,l01,v0
 2399,2010,Juárez,cua-14.037,8,37,8037,8037,ok,4,jul,5,1,1,pri-pvem-pna,162146,pri-pvem-pna,118287,pan,6217,prd,5491,pt,3856,conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,295997,408,13841,310246,1055761,iee,impugnada tribunal
 2400,2013,Juárez,cua-15.037,8,37,8037,8037,ok,7,jul,5,1,1,pri-pvem-pna,164227,pri-pvem-pna,112281,pan,8527,prd,6050,pt,3242,mc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,294327,392,9948,304667,NA,iee,
 2401,2016,Juárez,cua-16.037,8,37,8037,8037,ok,5,jun,6,1,1,hectorcabadaalvidrez,210490,hectorcabadaalvidrez,107370,pri-pvem-pt-pna,62482,pan,18255,morena,8149,pes,4720,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,411466,1496,16148,429110,1023228,iee,
-2402,2018,Juárez,cua-17.037,8,37,8037,8037,ok,1,jul,7,1,2,pt-morena-pes,177460,pt-morena-pes,176479,cabada,69312,pan-mc,45745,pri,12989,pvem,8811,pna,5201,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,495997,528,19167,515692,1076065,iee,
+2402,2018,Juárez,cua-17.037,8,37,8037,8037,ok,1,jul,7,1,2,hectorcabadaalvidrez,177023,hectorcabadaalvidrez,177460,pt-morena-pes,69312,pan-mc,45745,pri,12989,pvem,8811,pna,5201,prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,495997,528,19167,515692,1076065,iee,tepjf anulo triunfo morena-pt-pes
 2403,1989,Julimes,cua-07.038,8,38,8038,8038,ok,2,jul,4,0,0,pri,1058,pri,100,pan,64,pps,12,pcdp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1234,0,39,1273,3852,Magar 1994,banamex discrepa casi siempre con magar94
 2404,1992,Julimes,cua-08.038,8,38,8038,8038,ok,12,jul,3,0,0,pri,1307,pri,936,pan,7,pcdp,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2250,0,58,2308,3196,Magar 1994,banamex discrepa casi siempre con magar94
 2405,1995,Julimes,cua-09.038,8,38,8038,8038,ok,9,jul,2,0,0,pri,1328,pri,1133,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2461,0,24,2485,3625,Mau-Banamex,
@@ -12099,7 +12099,7 @@ ord,yr,mun,emm,edon,munn,inegi,ife,status,dy,mo,ncand,dcoal,ncoal,win,v01,l01,v0
 12097,2010,Santiago Laollaga,oax-14.472,20,472,20472,20473,ok,4,jul,3,1,2,pri-pvem,827,pri-pvem,672,pna,305,pan-prd-pt-conve,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1804,0,22,1826,2433,iee,
 12098,2013,Santiago Laollaga,oax-15.472,20,472,20472,20473,ok,7,jul,3,1,2,pri-pvem,879,pri-pvem,571,mc,553,pan-prd-pt,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2003,1,19,2023,2561,iee julio solis --- quite votos coalicion duplicados,
 12099,2016,Santiago Laollaga,oax-16.472,20,472,20472,20473,ok,5,jun,6,1,2,pri-pvem,773,pri-pvem,550,pna,244,pt,239,morena,40,mc,12,pan-prd,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1858,1,33,1892,2657,iee,
-12100,2018,Santiago Laollaga,oax-17.472,20,472,20472,20473,ok,1,jul,6,1,2,pri-pvem-pna,1154,pri-pvem-pna,994,pt-morena-pes,155,pup,6,prd,5,mc,1,pan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2315,1,36,2352,2801,iee,
+12100,2018,Santiago Laollaga,oax-17.472,20,472,20472,20473,ok,1,jul,4,1,2,pri-pvem-pna,1154,pri-pvem-pna,994,pt-morena-pes,155,pup,12,pan-prd-mc,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2315,1,36,2352,2801,iee,
 12101,1989,Santiago Laxopa,oax-07.473,20,473,20473,20474,ok,6,ago,1,0,0,pri,657,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,657,0,0,657,449,Mau-Banamex,
 12102,1992,Santiago Laxopa,oax-08.473,20,473,20473,20474,ok,8,nov,1,0,0,pri,626,pri,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,626,0,0,626,837,Mau-Banamex,usos y costumbres sig ciclo
 12103,1989,Santiago Llano Grande,oax-07.474,20,474,20474,20475,ok,6,ago,2,0,0,pri,452,pri,441,parm,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,893,0,0,893,1923,Mau-Banamex,
