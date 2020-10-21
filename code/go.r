@@ -1,12 +1,12 @@
 # get state-level gob elections
-vot <- read.csv("/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/goed1961-on.csv", stringsAsFactors = FALSE)
-vot <- within(vot, fuente <- nota <- vtot <- nr <- nulos <- fake <- NULL)
+dat <- read.csv("/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/goed1961-on.csv", stringsAsFactors = FALSE)
+dat <- within(dat, fuente <- nota <- vtot <- nr <- nulos <- fake <- NULL)
 
 # re-compute efec
-sel <- grep("v[0-9]+", colnames(vot))
-v <- vot[,sel]
+sel <- grep("v[0-9]+", colnames(dat))
+v <- dat[,sel]
 v[is.na(v)] <- 0 # NAs with 0s
-vot$efec <- rowSums(v)
+dat$efec <- rowSums(v)
 rm(v)
 
 ######################################################
@@ -14,21 +14,21 @@ rm(v)
 # identify coalitions by searching for "-" in labels #
 ######################################################
 ######################################################
-sel.l <- grep("^l[0-9]{2}", colnames(vot))
-l <- vot[,sel.l] # subset label columns
-sel.v <- grep("^v[0-9]{2}", colnames(vot))
-v <- vot[,sel.v] # subset vote columns
+sel.l <- grep("^l[0-9]{2}", colnames(dat))
+l <- dat[,sel.l] # subset label columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat))
+v <- dat[,sel.v] # subset vote columns
 #
 # dummy had at least one coalition
-vot$dcoal <- 0
+dat$dcoal <- 0
 for (i in 1:ncol(l)){
-    vot$dcoal[grep("-", l[,i])] <- 1
+    dat$dcoal[grep("-", l[,i])] <- 1
 }
 
 # create objects with vote for coalition(s) added and redudant columns dropped
 cv <- v; cv[] <- NA # will receive votes with coalitions aggregated
 cl <- l; cl[] <- NA # will keep coalition labels but drop coalition member labels 
-ci <- data.frame(dcoal=vot$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
+ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
 # ci$coal1 coal2 coal3 coal4 pre-filled
   # n is object reporting how many parties reported in a v/l cell?
@@ -67,7 +67,7 @@ w3 <- as.list(rep("noCoal",I))
 w4 <- as.list(rep("noCoal",I))
 #
 # fill in easy cases with no coalition
-sel <- which(vot$dcoal==0)
+sel <- which(dat$dcoal==0)
 cv[sel,] <- v[sel,]
 cl[sel,] <- l[sel,]
 # c1 c2 c3 c4 are pre-filled
@@ -84,7 +84,7 @@ tmp.w1 <- w1[sel7]
 tmp.ci <- ci[sel7,]
 
 # debug
-#i <- which(vot$ord[sel7]==847)
+#i <- which(dat$ord[sel7]==847)
 
 for (i in 1:length(sel7)){
     #i <- length(sel7) # debug
@@ -139,7 +139,7 @@ max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
 
 # debug
-#i <- which(vot$ord[sel7]==847)
+#i <- which(dat$ord[sel7]==847)
 
 for (i in 1:length(sel7)){
     #i <- 3079 # debug
@@ -295,7 +295,7 @@ max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
 # plug ncoal into data
-vot$ncoal  <- ci$ncoal
+dat$ncoal  <- ci$ncoal
 
 # prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
@@ -348,7 +348,7 @@ sortBy <- function(target, By){
 ## sortBy(target = v1, By = v1)
 ## 
 ## this sorts matrix rows faster than function above
-## vot <- t(apply(v1, 1, function(x) sort(x, decreasing = TRUE)))
+## dat <- t(apply(v1, 1, function(x) sort(x, decreasing = TRUE)))
 
 # sort coalition-aggregated data
 tail(cv)
@@ -368,41 +368,49 @@ tail(cv.sorted)
 tail(cl.sorted)
 
 
-# rename objects so that vot now has coalition aggregates
-vot.orig <- vot # original data
-vot[,sel.l] <- cl.sorted # return manipulated labels to data
-vot[,sel.v] <- cv.sorted # return manipulated votes to data
+# rename objects so that dat now has coalition aggregates
+dat.orig <- dat # original data
+dat[,sel.l] <- cl.sorted # return manipulated labels to data
+dat[,sel.v] <- cv.sorted # return manipulated votes to data
 #
 # NAs w 0s in votes
-sel.v <- grep("^v[0-9]{2}", colnames(vot))
-v <- vot[,sel.v] # subset vote columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat))
+v <- dat[,sel.v] # subset vote columns
 v[is.na(v)] <- 0
-vot[,sel.v] <- v # return
+dat[,sel.v] <- v # return
 #
 # move dcoal and ncoal columns before v01
-tmp <- vot # duplicate if I mess up
-tmp1 <- grep("v01", colnames(vot))
-tmp2 <- grep("dcoal", colnames(vot))
-tmp3 <- grep("ncoal", colnames(vot))
-vot <- vot[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
-colnames(vot)
+tmp <- dat # duplicate if I mess up
+tmp1 <- grep("v01", colnames(dat))
+tmp2 <- grep("dcoal", colnames(dat))
+tmp3 <- grep("ncoal", colnames(dat))
+dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
+colnames(dat)
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-table(vot$v12) # check that only has zeroes
-vot$v12 <- vot$v13 <- vot$v14 <- vot$v15 <- vot$v16 <- vot$v17 <- vot$v18 <- NULL # redundant columns
-vot$l12 <- vot$l13 <- vot$l14 <- vot$l15 <- vot$l16 <- vot$l17 <- vot$l18 <- NULL # redundant columns
+table(dat$v12) # check that only has zeroes
+dat$v12 <- dat$v13 <- dat$v14 <- dat$v15 <- dat$v16 <- dat$v17 <- dat$v18 <- NULL # redundant columns
+dat$l12 <- dat$l13 <- dat$l14 <- dat$l15 <- dat$l16 <- dat$l17 <- dat$l18 <- NULL # redundant columns
 #
-#vot$win <- vot$l01
+#dat$win <- dat$l01
 
 # recompute ncand
-sel.l <- grep("^l[0-9]{2}", colnames(vot))
-l <- vot[,sel.l] # subset label columns
-sel.v <- grep("^v[0-9]{2}", colnames(vot))
-v <- vot[,sel.v] # subset vote columns
+sel.l <- grep("^l[0-9]{2}", colnames(dat))
+l <- dat[,sel.l] # subset label columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat))
+v <- dat[,sel.v] # subset vote columns
 #
-sel <- which(vot$yr>1994 & vot$ncand!=apply(v, 1, function(x) length(x[x>0])))
+sel <- which(dat$yr>1994 & dat$ncand!=apply(v, 1, function(x) length(x[x>0])))
 sel
 #
-vot$ncand <- apply(v, 1, function(x) length(x[x>0]))
+dat$ncand <- apply(v, 1, function(x) length(x[x>0]))
 
-# I could save a coal-agg version here, not done yet
+# clean, levaes only object `dat'
+rm(coal.info,coal.weights)
+rm(dat.orig)
+rm(l,sel,sel.l,sel.v,sortBy,v)
+
+
+#################################################################
+## I could save a coal-agg version of go.ed here, not done yet ##
+#################################################################
