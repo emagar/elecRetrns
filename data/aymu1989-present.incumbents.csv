@@ -116,7 +116,7 @@ ags-12.010,114,Llano--El,2004,0,1,ago,1,10,1011,1010,pan,JOSE DE JESUS RODRIGUEZ
 ags-13.010,115,Llano--El,2007,0,5,ago,1,10,1011,1010,pri,SALVADOR MARTIN DEL CAMPO,Term-limited-p-won,,pvem,0.1467,,,0,0,,
 ags-14.010,116,Llano--El,2010,0,4,jul,1,10,1011,1010,pri-pvem-pna,JOSE LUIS MARTINEZ RODRIGUEZ,Term-limited-p-lost,,pt,0.0374,,,0,0,,
 ags-15.010,117,Llano--El,2013,0,7,jul,1,10,1011,1010,pt,CEZAR PEDROZA ORTEGA,Term-limited-p-won,DAVID NAJERA MORENO,pri,0.0466,,,0,0,,ok
-ags-16.010,118,Llano--El,2016,0,5,jun,1,10,1011,1010,pri-pt-pna,RAMIRO SALAS PIZAÑA,Beaten,JOSE JUAN REYES MARTIN DEL CAMPO,prd,0.1438,reran under pna and lost,,0,0,,
+ags-16.010,118,Llano--El,2016,0,5,jun,1,10,1011,1010,pri-pt-pna,RAMIRO SALAS PIZAÑA,Beaten-dif-p,JOSE JUAN REYES MARTIN DEL CAMPO,prd,0.1438,reran under pna and lost,,0,0,,
 ags-17.010,119,Llano--El,2019,0,2,jun,1,10,1011,1010,pt,CEZAR PEDROZA ORTEGA,2022,RAMIRO SALAS PIZAÑA,pna,0.0446,,,1,1,,ok
 bc-06.001,120,Ensenada,1986,0,0,jul,2,1,2001,2001,pan,ERNESTO RUFFO APPEL,Term-limited-p-won,,,,,inafed,0,0,,
 bc-07.001,121,Ensenada,1989,0,2,jul,2,1,2001,2001,pan,JESUS DEL PALACIO LAFONTAINE,Term-limited-p-won,,pri,0.1725,,inafed,0,0,,
@@ -1639,7 +1639,7 @@ cps-12.076,1637,Sabanilla,2004,0,3,oct,7,76,7075,7076,pri,JOSE OCIEL PEREZ PARCE
 cps-13.076,1638,Sabanilla,2007,0,7,oct,7,76,7075,7076,pri,CLAUDIO RAQUEL VERA MORALES,Term-limited-p-lost,,prd-pt-conve,0.0592,,,0,0,,
 cps-14.076,1639,Sabanilla,2010,0,4,jul,7,76,7075,7076,pan-prd-conve-pna,GENARO VAZQUEZ PEREZ,Term-limited-p-won,,pri,0.0358,,,0,0,,
 cps-15.076,1640,Sabanilla,2012,0,1,jul,7,76,7075,7076,prd-pt-conve,ARTEMIO GOMEZ SANCHEZ,Term-limited-p-lost,,pri,0.1129,,,0,0,,
-cps-16.076,1641,Sabanilla,2015,0,19,jul,7,76,7075,7076,pvem-pna,CARLOS CLEBER GONZALEZ CABELLO,Reelected,,prd,0.0884,reran under pmch,,0,0,,ok
+cps-16.076,1641,Sabanilla,2015,0,19,jul,7,76,7075,7076,pvem-pna,CARLOS CLEBER GONZALEZ CABELLO,Reelected-dif-p,,prd,0.0884,reran under pmch,,0,0,,ok
 cps-17.076,1642,Sabanilla,2018,0,1,jul,7,76,7075,7076,pmch,CARLOS CLEBER GONZALEZ CABELLO,2021,AURELIO PEREZ CRUZ,pri,0.4849,,,1,1,,ok
 cps-07.077,1643,Salto de Agua,1988,0,0,nov,7,77,7076,7077,pri,,Term-limited-p-won,,,,,inafed,0,0,,
 cps-08.077,1644,Salto de Agua,1991,0,18,ago,7,77,7076,7077,pri,,Term-limited-p-lost,,,1,,inafed,0,0,,
@@ -1908,7 +1908,7 @@ cps-12.100,1906,Tumbalá,2004,0,3,oct,7,100,7100,7100,pri,AGUSTIN LOPEZ PEÑATE,
 cps-13.100,1907,Tumbalá,2007,0,7,oct,7,100,7100,7100,pan,MERCEDES SOLIS SANCHEZ,Term-limited-p-lost,,pri-pvem,0.0115,,,0,0,,
 cps-14.100,1908,Tumbalá,2010,0,4,jul,7,100,7100,7100,pvem,PORFIRIO RAMOS TORRES,Term-limited-p-won,,pan-prd-conve-pna,0.1263,,,0,0,,ok
 cps-15.100,1909,Tumbalá,2012,0,1,jul,7,100,7100,7100,pvem,URBANO ALVARO ARCOS,Term-limited-p-won,,pri,0.2246,,,0,0,,
-cps-16.100,1910,Tumbalá,2015,0,19,jul,7,100,7100,7100,pvem,PORFIRIO RAMOS TORRES,Reelected,,pmch,0.1908,reran under pmch,,1,1,,ok
+cps-16.100,1910,Tumbalá,2015,0,19,jul,7,100,7100,7100,pvem,PORFIRIO RAMOS TORRES,Reelected-dif-p,,pmch,0.1908,reran under pmch,,1,1,,ok
 cps-17.100,1911,Tumbalá,2018,0,1,jul,7,100,7100,7100,pmch,PORFIRIO RAMOS TORRES,2021,JUAN JAVIER ALVARO LOPEZ,pna,0.2967,,,1,1,,ok
 cps-07.102,1912,Tuxtla Chico,1988,0,0,nov,7,102,7101,7102,pri,GUSTAVO BONILLA PIZANO,Term-limited-p-won,,,,,inafed,0,0,,ok
 cps-08.102,1913,Tuxtla Chico,1991,0,18,ago,7,102,7101,7102,pri,ALEJANDRO BIELMA CORDOVA,Term-limited-p-won,,pan,0.2356,,inafed,0,0,,ok
@@ -2135,7 +2135,7 @@ cua-12.004,2133,Aquiles Serdán,2004,0,4,jul,8,4,8004,8004,pri-pvem-pt,LEONEL RO
 cua-13.004,2134,Aquiles Serdán,2007,0,1,jul,8,4,8004,8004,pri-pna,ROBERTO RAMIREZ LOPEZ,Term-limited-p-won,,pan,0.019,,,0,0,,
 cua-14.004,2135,Aquiles Serdán,2010,0,4,jul,8,4,8004,8004,pri-pna,JUAN CARLOS HERNANDEZ MENDOZA,Term-limited-p-won,,pvem,0.1228,,,0,0,,
 cua-15.004,2136,Aquiles Serdán,2013,0,7,jul,8,4,8004,8004,pri-pt-pna,JORGE ADAN PEREZ PEREZ,Term-limited-p-lost,,pvem,0.0447,,,0,0,,
-cua-16.004,2137,Aquiles Serdán,2016,0,5,jun,8,4,8004,8004,pvem,HECTOR ARIEL FERNANDEZ MARTINEZ,Reelected,,pri-pna,0.1617,reran under pri,,0,0,,ok
+cua-16.004,2137,Aquiles Serdán,2016,0,5,jun,8,4,8004,8004,pvem,HECTOR ARIEL FERNANDEZ MARTINEZ,Reelected-dif-p,,pri-pna,0.1617,reran under pri,,0,0,,ok
 cua-17.004,2138,Aquiles Serdán,2018,0,1,jul,8,4,8004,8004,pri,HECTOR ARIEL FERNANDEZ MARTINEZ,Term-limited-pending,LAURA RODRIGUEZ MERAZ,pan-mc,0.3125,,,1,1,,ok
 cua-07.005,2139,Ascensión,1989,0,2,jul,8,5,8005,8005,pri,ALFONSO BLANCAS AGUIRRE,Term-limited-p-won,,pan,0.4432,,inafed,0,0,,
 cua-08.005,2140,Ascensión,1992,0,12,jul,8,5,8005,8005,pri,MANUEL GALVAN APOCADA,Term-limited-p-won,,pan,0.1036,,inafed,0,0,,
@@ -2432,7 +2432,7 @@ cua-12.031,2430,Guerrero,2004,0,4,jul,8,31,8031,8031,pri-pvem-pt,ALFONSO DOMINGU
 cua-13.031,2431,Guerrero,2007,0,1,jul,8,31,8031,8031,pan,J. GABRIEL BENJAMIN ALMEYDA OCHOA,Term-limited-p-lost,,pri-pna,0.0225,,,0,0,,
 cua-14.031,2432,Guerrero,2010,0,4,jul,8,31,8031,8031,pri-pna,AGUEDA TORRES VARELA,Term-limited-p-won,,pan,0.0409,,,0,0,,
 cua-15.031,2433,Guerrero,2013,0,7,jul,8,31,8031,8031,pri-pvem-pna,EFRAIN HERNANDEZ CABALLERO,Term-limited-p-won,,pan,0.0338,,,0,0,,
-cua-16.031,2434,Guerrero,2016,0,5,jun,8,31,8031,8031,pri-pvem-pt-pna,LUIS FERNANDO CHACON ERIVES,Beaten,,pan,0.1429,reran under pri and lost,https://www.reportecuauhtemoc.com/single-post/2018/01/15/Se-Registra-Luis-Fernando-Chacon-Erives-ante-PRI-busca-la-reelecci%C3%B3n-como-Alcalde-de-Guerrero,0,0,,ok
+cua-16.031,2434,Guerrero,2016,0,5,jun,8,31,8031,8031,pri-pvem-pt-pna,LUIS FERNANDO CHACON ERIVES,Beaten-dif-p,,pan,0.1429,reran under pri and lost,https://www.reportecuauhtemoc.com/single-post/2018/01/15/Se-Registra-Luis-Fernando-Chacon-Erives-ante-PRI-busca-la-reelecci%C3%B3n-como-Alcalde-de-Guerrero,0,0,,ok
 cua-17.031,2435,Guerrero,2018,0,1,jul,8,31,8031,8031,pt-morena-pes,CARLOS COMADURAN AMAYA,2021,LUIS FERNANDO CHACON ERIVES,pri,0.0591,,,1,1,,ok
 cua-07.032,2436,Hidalgo del Parral,1989,0,2,jul,8,32,8032,8032,pri,SERGIO QUIÑONEZ REYNA,Term-limited-p-lost,,pan,0.1549,,inafed,0,0,,
 cua-08.032,2437,Hidalgo del Parral,1992,0,12,jul,8,32,8032,8032,pan,ADALBERTO GUTIERREZ MELENDEZ,Term-limited-p-lost,,pri,0.2166,,inafed,0,0,,
@@ -2487,7 +2487,7 @@ cua-12.036,2485,Jiménez,2004,0,4,jul,8,36,8036,8036,pan-prd-conve,AMADOR MORENO
 cua-13.036,2486,Jiménez,2007,0,1,jul,8,36,8036,8036,pan,JESUS MANUEL VAZQUEZ MEDINA,Term-limited-p-won,,pri-pna,0.0788,,,0,0,,
 cua-14.036,2487,Jiménez,2010,0,4,jul,8,36,8036,8036,pan,MARCOS CHAVEZ TORRES,Term-limited-p-lost,,pri-pna,0.1374,,wikipedia ,0,0,,ok
 cua-15.036,2488,Jiménez,2013,0,7,jul,8,36,8036,8036,pri-pvem-pna,JOSE PILAR FLORES MARTINEZ,Term-limited-p-won,,pan,0.3798,,,0,0,,
-cua-16.036,2489,Jiménez,2016,0,5,jun,8,36,8036,8036,pri-pvem-pt-pna,JOSE ARNOLDO ABES DURAN,Beaten,MARIA DOLORES ACOSTA CANO DE LOS RIOS,pan,0.057,reran under pri only and lost,,0,0,,
+cua-16.036,2489,Jiménez,2016,0,5,jun,8,36,8036,8036,pri-pvem-pt-pna,JOSE ARNOLDO ABES DURAN,Beaten-dif-p,MARIA DOLORES ACOSTA CANO DE LOS RIOS,pan,0.057,reran under pri only and lost,,0,0,,
 cua-17.036,2490,Jiménez,2018,0,1,jul,8,36,8036,8036,pna,MARCOS CHAVEZ TORRES,2021,JOSE ARNOLDO ABES DURAN,pri,0.1479,,,0,0,,
 cua-07.037,2491,Juárez,1989,0,2,jul,8,37,8037,8037,pri,JESUS MACIAS DELGADO,Term-limited-p-lost,,pan,0.136,,inafed,0,0,,
 cua-08.037,2492,Juárez,1992,0,12,jul,8,37,8037,8037,pan,FRANCISCO VILLARREAL T.,Term-limited-p-won,,pri,0.1091,,inafed,0,0,,
@@ -2696,7 +2696,7 @@ cua-12.055,2694,Rosales,2004,0,4,jul,8,55,8055,8055,pan-prd-conve,APOLINAR QUINT
 cua-13.055,2695,Rosales,2007,0,1,jul,8,55,8055,8055,pri-pna,JESUS LOPEZ CARRILLO,Term-limited-p-won,,pan,0.1125,,,0,0,,
 cua-14.055,2696,Rosales,2010,0,4,jul,8,55,8055,8055,pri-pvem-pna,MARTIN AUSENCIO FUENTES CARDIEL,Term-limited-p-won,,pan,0.0567,,,0,0,,
 cua-15.055,2697,Rosales,2013,0,7,jul,8,55,8055,8055,pri-pvem-pna,EZEQUIEL BUENO TORRES,Term-limited-p-won,,pan,0.0492,,,0,0,,
-cua-16.055,2698,Rosales,2016,0,5,jun,8,55,8055,8055,pri-pvem-pt-pna,ELIDA AIMEE SANCHEZ DIAZ,Beaten,,pan,0.0969,reran under pri only and lost,,0,0,,
+cua-16.055,2698,Rosales,2016,0,5,jun,8,55,8055,8055,pri-pvem-pt-pna,ELIDA AIMEE SANCHEZ DIAZ,Beaten-dif-p,,pan,0.0969,reran under pri only and lost,,0,0,,
 cua-17.055,2699,Rosales,2018,0,1,jul,8,55,8055,8055,pt-morena-pes,JOSE FRANCISCO RAMIREZ LICON,2021,ELIDA AIMEE SANCHEZ DIAZ,pri,0.1015,,,0,0,,
 cua-07.056,2700,Rosario,1989,0,2,jul,8,56,8056,8056,pri,SILVIA DOMINGA DOMINGUEZ,Term-limited-p-won,,pps,0.7578,,inafed,0,0,,
 cua-08.056,2701,Rosario,1992,0,12,jul,8,56,8056,8056,pri,SANDALIO MENDOZA A.,Term-limited-p-won,,pan,0.3511,,inafed,0,0,,
@@ -2973,7 +2973,7 @@ dgo-12.003,2971,Coneto de Comonfort,2004,0,4,jul,10,3,10003,10003,prd-pt-conve,M
 dgo-13.003,2972,Coneto de Comonfort,2007,0,1,jul,10,3,10003,10003,pri-pna,GERINO MORALES ARREOLA,Term-limited-p-won,,pt-conve,0.1232,,,0,0,,
 dgo-14.003,2973,Coneto de Comonfort,2010,0,4,jul,10,3,10003,10003,pri-pvem-pna-pd1,FRANCISCO OCHOA ROMERO,Term-limited-p-won,,pt,0.0202,,,0,0,,
 dgo-15.003,2974,Coneto de Comonfort,2013,0,7,jul,10,3,10003,10003,pri-pvem-pna-pd1,OCHOA MEDINA JOSE OCTAVIO,Term-limited-p-won,,pt,0.0671,,,0,0,,
-dgo-16.003,2975,Coneto de Comonfort,2016,0,5,jun,10,3,10003,10003,pvem,MARTIN PINEDA ACOSTA,Reelected,,pna,0.2538,reran under pd,,0,0,,ok
+dgo-16.003,2975,Coneto de Comonfort,2016,0,5,jun,10,3,10003,10003,pvem,MARTIN PINEDA ACOSTA,Reelected-dif-p,,pna,0.2538,reran under pd,,0,0,,ok
 dgo-17.003,2976,Coneto de Comonfort,2019,0,2,jun,10,3,10003,10003,pd1,MARTIN PINEDA ACOSTA,Term-limited-pending,,mc,0.3489,,,1,1,,ok
 dgo-07.004,2977,Cuencamé,1989,0,12,jul,10,4,10004,10004,pri,JAIME FAVELA MARTINEZ,Term-limited-p-won,,pan,0.6583,,inafed,0,0,,
 dgo-08.004,2978,Cuencamé,1992,0,2,ago,10,4,10004,10004,pri,ERASMO MARTINEZ GALINDO,Term-limited-p-won,,pan,0.3975,,inafed,0,0,,
@@ -3336,7 +3336,7 @@ dgo-12.035,3334,Tepehuanes,2004,0,4,jul,10,35,10036,10035,pri,MIGUEL HERNANDEZ,T
 dgo-13.035,3335,Tepehuanes,2007,0,1,jul,10,35,10036,10035,pan,ALFONSO PEÑA PEÑA,Term-limited-p-won,,pri-pd1-pna,0.088,,,0,0,,
 dgo-14.035,3336,Tepehuanes,2010,0,4,jul,10,35,10036,10035,pan-prd-conve,JOSE FAVELA MENDOZA,Term-limited-p-lost,,pri-pvem-pna-pd1,0.1137,,,0,0,,
 dgo-15.035,3337,Tepehuanes,2013,0,7,jul,10,35,10036,10035,pri-pvem-pna-pd1,ALVAREZ NAVARRO CESAREO ALBERTO,Term-limited-p-won,,pan,0.2843,,,0,0,,
-dgo-16.035,3338,Tepehuanes,2016,0,5,jun,10,35,10036,10035,pri-pvem-pd1-pna,ENRIQUE CORRAL LOPEZ,Beaten,,mc,0.024,reran under pvem only and lost,,0,0,,
+dgo-16.035,3338,Tepehuanes,2016,0,5,jun,10,35,10036,10035,pri-pvem-pd1-pna,ENRIQUE CORRAL LOPEZ,Beaten-dif-p,,mc,0.024,reran under pvem only and lost,,0,0,,
 dgo-17.035,3339,Tepehuanes,2019,0,2,jun,10,35,10036,10035,pri,EDER RAUL GUTIERREZ DIAZ,2022,,pvem,0.0711,,,0,0,,
 dgo-07.036,3340,Tlahualilo,1989,0,12,jul,10,36,10037,10036,pri,MOISES CAMACHO MUÑIZ,Term-limited-p-lost,,prd,0.291,,inafed,0,0,,
 dgo-08.036,3341,Tlahualilo,1992,0,2,ago,10,36,10037,10036,prd,ESTANISLAO TORRES VAZQUEZ,Term-limited-p-lost,,pri,0.0158,,inafed,0,0,,
@@ -5651,7 +5651,7 @@ jal-12.022,5649,Cihuatlán,2003,0,6,jul,14,22,14022,14022,pan,MARTIN ORTIZ QUINT
 jal-13.022,5650,Cihuatlán,2006,0,2,jul,14,22,14022,14022,pri,ENRIQUE GONZALEZ GOMEZ,Term-limited-p-lost,,pan,0.1115,,,0,0,,
 jal-14.022,5651,Cihuatlán,2009,0,5,jul,14,22,14022,14022,pan,ROBERTO GALLARDO RUIZ,Term-limited-p-won,,pri-pna,0.428,,,0,0,,
 jal-15.022,5652,Cihuatlán,2012,0,1,jul,14,22,14022,14022,pan,JESUS HUERTA AGUILAR,Term-limited-p-lost,,pri-pvem,0.1224,,,0,0,,
-jal-16.022,5653,Cihuatlán,2015,0,7,jun,14,22,14022,14022,mc,FERNANDO MARTINEZ GUERRERO,Reelected,,pri-pvem,0.0786,reran under prd,,0,0,,ok
+jal-16.022,5653,Cihuatlán,2015,0,7,jun,14,22,14022,14022,mc,FERNANDO MARTINEZ GUERRERO,Reelected-dif-p,,pri-pvem,0.0786,reran under prd,,0,0,,ok
 jal-17.022,5654,Cihuatlán,2018,0,1,jul,14,22,14022,14022,prd,FERNANDO MARTINEZ GUERRERO,Term-limited-pending,MA. GUADALUPE LOPEZ TORRES,pri,0.0953,,,1,1,,ok
 jal-07.023,5655,Zapotlán El Grande,1988,0,4,dic,14,23,14023,14023,pri,LEON ELIZONDO DIAZ,Term-limited-p-lost,,,,,inafed,0,0,,
 jal-08.023,5656,Zapotlán El Grande,1992,0,9,feb,14,23,14023,14023,pan,ALBERTO CARDENAS JIMENEZ,Term-limited-p-won,,pri,0.1312,,inafed,0,0,,
@@ -5706,7 +5706,7 @@ jal-12.026,5704,Concepción de Buenos Aires,2003,0,6,jul,14,26,14027,14026,pan,A
 jal-13.026,5705,Concepción de Buenos Aires,2006,0,2,jul,14,26,14027,14026,pan,JOSE CARLOS CHAVEZ PANTOJA,Term-limited-p-won,,pri,0.2557,,,0,0,,
 jal-14.026,5706,Concepción de Buenos Aires,2009,0,5,jul,14,26,14027,14026,pan,MARIA GUADALUPE BUENRROSTRO ORTIZ,Term-limited-p-lost,,pri-pna,0.0551,,,0,0,,
 jal-15.026,5707,Concepción de Buenos Aires,2012,0,1,jul,14,26,14027,14026,pri-pvem,GONZALO ZUÑIGA ARIAS,Term-limited-p-won,,pan,0.16,,,1,1,,ok
-jal-16.026,5708,Concepción de Buenos Aires,2015,0,7,jun,14,26,14027,14026,pri,JOSE GUADALUPE BUENROSTRO MARTINEZ,Reelected,,mc,0.0406,reran under pvem,,0,0,,ok
+jal-16.026,5708,Concepción de Buenos Aires,2015,0,7,jun,14,26,14027,14026,pri,JOSE GUADALUPE BUENROSTRO MARTINEZ,Reelected-dif-p,,mc,0.0406,reran under pvem,,0,0,,ok
 jal-17.026,5709,Concepción de Buenos Aires,2018,0,1,jul,14,26,14027,14026,pvem,JOSE GUADALUPE BUENROSTRO MARTINEZ,Term-limited-pending,MARIA GUADALUPE BUENROSTRO ORTIZ,mc,0.1537,,,1,1,,ok
 jal-07.027,5710,Cuautitlán,1988,0,4,dic,14,27,14028,14027,pri,JUAN QUIÑONES CARRILLO,Term-limited-p-won,,,,,inafed,0,0,,
 jal-08.027,5711,Cuautitlán de García Barragán,1992,0,9,feb,14,27,14028,14027,pri,PASCUAL GONZALEZ HORTA,Term-limited-p-won,,prd,0.7356,,inafed,0,0,,
@@ -6057,7 +6057,7 @@ jal-12.057,6055,Manzanilla de la Paz--La,2003,0,6,jul,14,57,14059,14057,pri,RAFA
 jal-13.057,6056,Manzanilla de la Paz--La,2006,0,2,jul,14,57,14059,14057,prd-pt,JUAN MARTIN ESPINOZA CARDENAS,Term-limited-p-lost,,pan,0.0706,,,1,1,,ok
 jal-14.057,6057,Manzanilla de la Paz--La,2009,0,5,jul,14,57,14059,14057,pan,RAFAEL ALEJANDRO ALVAREZ ESPINOZA,Term-limited-p-lost,,prd,0.0827,,,0,0,,
 jal-15.057,6058,Manzanilla de la Paz--La,2012,0,1,jul,14,57,14059,14057,mc,JUAN MARTIN ESPINOZA CARDENAS,Term-limited-p-lost,,pan,0.0465,,,1,1,,ok
-jal-16.057,6059,Manzanilla de la Paz--La,2015,0,7,jun,14,57,14059,14057,pri,CARLOS ANDRES LOPEZ BARBOSA,Reelected,,pan,0.1399,reran under pvem,,0,0,,ok
+jal-16.057,6059,Manzanilla de la Paz--La,2015,0,7,jun,14,57,14059,14057,pri,CARLOS ANDRES LOPEZ BARBOSA,Reelected-dif-p,,pan,0.1399,reran under pvem,,0,0,,ok
 jal-17.057,6060,Manzanilla de la Paz--La,2018,0,1,jul,14,57,14059,14057,pvem,CARLOS ANDRES LOPEZ BARBOSA,Term-limited-pending,MARCELA YANET TRUJILLO SALCEDO,pan-prd-mc,0.3202,,,1,1,,ok
 jal-07.058,6061,Mascota,1988,0,4,dic,14,58,14060,14058,pri,HUGO MONTES GUZMAN,Term-limited-p-lost,,,,,inafed,0,0,,
 jal-08.058,6062,Mascota,1992,0,9,feb,14,58,14060,14058,pan,HUMBERTO RODRIGUEZ RODRIGUEZ,Term-limited-p-won,,pri,0.0252,,inafed,0,0,,ok
@@ -6907,7 +6907,7 @@ mex-11.013,6905,Atizapán de Zaragoza,2003,0,9,mar,15,13,15013,15013,pan,SALVADO
 mex-12.013,6906,Atizapán de Zaragoza,2006,0,12,mar,15,13,15013,15013,pan,GONZALO ALARCON BARDENA,Term-limited-p-lost,,pri-pvem,0.2527,,,0,0,,
 mex-13.013,6907,Atizapán de Zaragoza,2009,0,5,jul,15,13,15013,15013,pri-pvem-pna-psd1-pfd1,JESUS DAVID CASTAÑEDA DEGADO,Term-limited-p-lost,,pan,0.0863,,,0,0,,
 mex-14.013,6908,Atizapán de Zaragoza,2012,0,1,jul,15,13,15013,15013,pan,PEDRO DAVID RODRIGUEZ VILLEGAS,Term-limited-p-won,,pri-pvem-pna,0.034,,,0,0,,
-mex-15.013,6909,Atizapán de Zaragoza,2015,0,7,jun,15,13,15013,15013,pan-pt,ANA MARIA BALDERAS TREJO,Beaten,,pri-pvem-pna,0.0855,ran under pan-prd-mc and lost,,0,0,,
+mex-15.013,6909,Atizapán de Zaragoza,2015,0,7,jun,15,13,15013,15013,pan-pt,ANA MARIA BALDERAS TREJO,Beaten-dif-p,,pri-pvem-pna,0.0855,ran under pan-prd-mc and lost,,0,0,,
 mex-16.013,6910,Atizapán de Zaragoza,2018,0,1,jul,15,13,15013,15013,pt-morena-pes,RUTH OLVERA NIETO,2021,ANA BALDERAS TREJO,pan-prd-mc,0.0843,antes fue alcalde de tlalnepantla,,1,1,,ok
 mex-07.014,6911,Atlacomulco,1990,0,11,nov,15,14,15014,15014,pri,HERMILO MONROY PEREZ,Term-limited-p-won,,prd,0.6043,,inafed,0,0,,
 mex-08.014,6912,Atlacomulco,1993,0,14,nov,15,14,15014,15014,pri,RENE G. MONTIEL PEÑA,Term-limited-p-won,,prd,0.7851,,inafed,0,0,,
@@ -8131,7 +8131,7 @@ mic-09.012,8129,Buenavista,1995,0,12,nov,16,12,16012,16012,pri,ABEL ANAYA MARTIN
 mic-10.012,8130,Buenavista,1998,0,8,nov,16,12,16012,16012,prd,ARTURO ZUÑIGA ROMERO,Term-limited-p-won,,pri,0.0034,,,0,0,,
 mic-11.012,8131,Buenavista,2001,0,11,nov,16,12,16012,16012,prd-pt-pvem-conve-pasd-psn,SERGIO BAEZ TORRES,Term-limited-p-won,,pri,0.0855,,,0,0,,
 mic-12.012,8132,Buenavista,2004,0,14,nov,16,12,16012,16012,pri-pvem,FERNANDO CHAVEZ LOPEZ,Term-limited-p-lost,,prd,0.1662,,,0,0,,
-mic-13.012,8133,Buenavista,2007,0,11,nov,16,12,16012,16012,prd-pt-conve,OSBALDO ESQUIVEL LUCATERO,Term-limited-p-lost,,pri,0.1547,Inafed lo listaba en Briseñas…,iee,0,0,,
+mic-13.012,8133,Buenavista,2007,0,11,nov,16,12,16012,16012,prd-pt-conve,OSBALDO ESQUIVEL LUCATERO,Term-limited-p-lost,,pri,0.1547,Inafed lo listaba en Briseñas,iee,0,0,,
 mic-14.012,8134,Buenavista,2011,0,13,nov,16,12,16012,16012,pri-pvem,LUIS TORRES CHAVEZ,Term-limited-p-lost,,prd-pt,0.2986,,,0,0,,
 mic-15.012,8135,Buenavista,2015,0,7,jun,16,12,16012,16012,prd-pna,LORENZO BARAJAS HEREDIA,Beaten,,pri-pvem,0.0432,,,0,0,,
 mic-16.012,8136,Buenavista,2018,0,1,jul,16,12,16012,16012,pt-morena,ELISEO DELGADO SANCHEZ,2021,,pan-prd-mc,0.1958,,,0,0,,
@@ -9280,7 +9280,7 @@ mor-12.013,9278,Jonacatepec,2003,0,6,jul,17,13,17013,17013,pri,ISRAEL ANDRADE ZA
 mor-13.013,9279,Jonacatepec,2006,0,2,jul,17,13,17013,17013,pri,EDUARDO JOSE SANCHEZ MICHACA,Term-limited-p-lost,,pvem,0.0466,,,0,0,,
 mor-14.013,9280,Jonacatepec,2009,0,5,jul,17,13,17013,17013,psd1,ISMAEL ARIZA ROSAS,Term-limited-p-lost,,pri,0.0088,,,0,0,,
 mor-15.013,9281,Jonacatepec,2012,0,1,jul,17,13,17013,17013,pt,MARCOS ARAGON REYES,Term-limited-p-lost,,pna,0.1525,,,0,0,,
-mor-16.013,9282,Jonacatepec,2015,0,7,jun,17,13,17013,17013,mc,ISRAEL ANDRADE ZAVALA,Reelected,,pna,0.1443,reran under prd-psd,,1,1,,ok
+mor-16.013,9282,Jonacatepec,2015,0,7,jun,17,13,17013,17013,mc,ISRAEL ANDRADE ZAVALA,Reelected-dif-p,,pna,0.1443,reran under prd-psd,,1,1,,ok
 mor-17.013,9283,Jonacatepec,2018,0,1,jul,17,13,17013,17013,prd-psd1,ISRAEL ANDRADE ZAVALA,2021,BRENDA GUERRA VALAGUEZ,pt-morena-pes,0.0419,,,1,1,,ok
 mor-07.014,9284,Mazatepec,1988,0,20,mar,17,14,17014,17014,pri,NOE OCHOA CALDERON,Term-limited-p-won,,,,,inafed,0,0,,
 mor-08.014,9285,Mazatepec,1991,0,17,mar,17,14,17014,17014,pri,DONACIANO TOLEDO CABRERA,Term-limited-p-won,,prd,0.2126,,inafed,0,0,,
@@ -9961,7 +9961,7 @@ nl-12.024,9959,General Zaragoza,2003,0,6,jul,19,24,19024,19024,pri-pvem-plm-fc1,
 nl-13.024,9960,General Zaragoza,2006,0,2,jul,19,24,19024,19024,pri-pvem,MENTOR OSVALDO TORRES DE LEON,Term-limited-p-won,,pan,0.4003,,,0,0,,
 nl-14.024,9961,General Zaragoza,2009,0,5,jul,19,24,19024,19024,pri-pvem-pd1-cc1,SERGIO ALBERTO ROSAS CORTES,Term-limited-p-lost,,pan,0.475,,,0,0,,
 nl-15.024,9962,General Zaragoza,2012,0,1,jul,19,24,19024,19024,pan,JUAN ARTURO GUEVARA SOTO,Term-limited-p-lost,,pri-pvem,0.0236,,,0,0,,ok
-nl-16.024,9963,General Zaragoza,2015,0,7,jun,19,24,19024,19024,pt,AZAEL JAIME GALLEGOS ESCOBEDO,Beaten,,pri,0.1301,reran under pri,,0,0,,
+nl-16.024,9963,General Zaragoza,2015,0,7,jun,19,24,19024,19024,pt,AZAEL JAIME GALLEGOS ESCOBEDO,Beaten-dif-p,,pri,0.1301,reran under pri,,0,0,,
 nl-17.024,9964,General Zaragoza,2018,0,1,jul,19,24,19024,19024,pt-morena-pes,JUAN ARTURO GUEVARA SOTO,2021,MENTOR OSVALDO TORRES DE LEON,pna,0.1434,,,1,1,,ok
 nl-07.025,9965,General Zuazua,1988,0,9,nov,19,25,19025,19025,pri,JOSE LUIS CHAPA VILLARREAL,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.025,9966,General Zuazua,1991,0,10,nov,19,25,19025,19025,pri,JESUS ANGEL MONTEMAYOR MARTINEZ,Term-limited-p-won,,,1,,inafed,0,0,,
@@ -10016,7 +10016,7 @@ nl-12.028,10014,Higueras,2003,0,6,jul,19,28,19029,19028,pri-pvem-plm-fc1,IGNACIO
 nl-13.028,10015,Higueras,2006,0,2,jul,19,28,19029,19028,pri-pvem,RAFAEL RENE GONZALEZ MARTINEZ,Term-limited-p-won,,prd-pt,0.1001,,,1,1,,ok
 nl-14.028,10016,Higueras,2009,0,5,jul,19,28,19029,19028,pri-pvem-pd1-cc1,JUAN JESUS VILLAREAL GONSALEZ,Term-limited-p-won,,pna,0.1295,,,0,0,,
 nl-15.028,10017,Higueras,2012,0,1,jul,19,28,19029,19028,pri-pvem,RAFAEL RENE GONZALEZ MARTINEZ,Term-limited-p-lost,,pan,0.0972,,,1,1,,ok
-nl-16.028,10018,Higueras,2015,0,7,jun,19,28,19029,19028,pan,JESUS MANUEL RAMIREZ GONZALEZ,Reelected,,pri,0.0449,reran under prd,,0,0,,ok
+nl-16.028,10018,Higueras,2015,0,7,jun,19,28,19029,19028,pan,JESUS MANUEL RAMIREZ GONZALEZ,Reelected-dif-p,,pri,0.0449,reran under prd,,0,0,,ok
 nl-17.028,10019,Higueras,2018,0,1,jul,19,28,19029,19028,prd,JESUS MANUEL RAMIREZ GONZALEZ,2021,MARTHA LAURA GONZALEZ GONZALEZ,pan,0.228,,,1,1,,ok
 nl-07.029,10020,Hualahuises,1988,0,9,nov,19,29,19030,19029,pri,JOAQUIN GARCIA GARZA,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.029,10021,Hualahuises,1991,0,10,nov,19,29,19030,19029,pri,GRACIELA PEDRAZA MARTINEZ,Term-limited-p-won,,,1,,inafed,0,0,,
@@ -10049,7 +10049,7 @@ nl-12.031,10047,Juárez,2003,0,6,jul,19,31,19032,19031,pri-pvem-plm-fc1,JULIO CE
 nl-13.031,10048,Juárez,2006,0,2,jul,19,31,19032,19031,pri-pvem,HERIBERTO TREVIÑO CANTU,Term-limited-p-won,,pan,0.0451,,,0,0,,ok
 nl-14.031,10049,Juárez,2009,0,5,jul,19,31,19032,19031,pri-pvem-pd1-cc1,LUIS ALFREDO GARCIA GARZA,Term-limited-p-lost,,pan,0.1882,,,0,0,,
 nl-15.031,10050,Juárez,2012,0,1,jul,19,31,19032,19031,pan,RODOLFO AMBRIZ OVIEDO,Term-limited-p-lost,,pri-pvem,0.0376,,,0,0,,
-nl-16.031,10051,Juárez,2015,0,7,jun,19,31,19032,19031,pes,HERIBERTO TREVIÑO CANTU,Reelected,,pri-pvem-pna-pd1,0.0052,reran under pri-pvem,,1,1,,ok
+nl-16.031,10051,Juárez,2015,0,7,jun,19,31,19032,19031,pes,HERIBERTO TREVIÑO CANTU,Reelected-dif-p,,pri-pvem-pna-pd1,0.0052,reran under pri-pvem,,1,1,,ok
 nl-17.031,10052,Juárez,2018,0,1,jul,19,31,19032,19031,pri-pvem,HERIBERTO TREVIÑO CANTU,2021,AMERICO GARZA SALINAS,indep,0.0604,,,1,1,,ok
 nl-07.032,10053,Lampazos de Naranjo,1988,0,9,nov,19,32,19033,19032,pri,PEDRO ELIZALDE CANTU,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.032,10054,Lampazos de Naranjo,1991,0,10,nov,19,32,19033,19032,pri,MARIO GONZALEZ QUIROGA,Term-limited-p-won,,,1,,inafed,0,0,,
@@ -10202,7 +10202,7 @@ nl-12.045,10200,Salinas Victoria,2003,0,6,jul,19,45,19046,19045,pri-pvem-plm-fc1
 nl-13.045,10201,Salinas Victoria,2006,0,2,jul,19,45,19046,19045,pri-pvem,HELIODORO GERARDO TREVIÑO GUTIERREZ,Term-limited-p-won,,pan,0.4624,,,0,0,,
 nl-14.045,10202,Salinas Victoria,2009,0,5,jul,19,45,19046,19045,pri-pvem-pd1-cc1,REBECA LOZANO DEBORA,Term-limited-p-won,,pan,0.0217,,,0,0,,
 nl-15.045,10203,Salinas Victoria,2012,0,1,jul,19,45,19046,19045,pri-pvem,HELIODORO GERARDO TREVIÑO GUTIERREZ,Term-limited-p-lost,,pan,0.0598,,,1,1,,ok
-nl-16.045,10204,Salinas Victoria,2015,0,7,jun,19,45,19046,19045,prd,GONZALO ELIZONDO LIRA,Reelected,,pri,0.0178,reran under pan,,0,0,,ok
+nl-16.045,10204,Salinas Victoria,2015,0,7,jun,19,45,19046,19045,prd,GONZALO ELIZONDO LIRA,Reelected-dif-p,,pri,0.0178,reran under pan,,0,0,,ok
 nl-17.045,10205,Salinas Victoria,2018,0,1,jul,19,45,19046,19045,pan,GONZALO ELIZONDO LIRA,2021,ABEL FLORES REYES,pri-pvem,0.1992,,,1,1,,ok
 nl-07.046,10206,San Nicolás de los Garza,1988,0,9,nov,19,46,19047,19046,pri,JUAN ANGEL OCHOA SAENZ,Term-limited-p-lost,,,,,inafed,0,0,,
 nl-08.046,10207,San Nicolás de los Garza,1991,0,10,nov,19,46,19047,19046,pan,JESUS HINOJOSA TIJERINA,Term-limited-p-won,,pri,0.088,,inafed,0,0,,ok
@@ -10246,7 +10246,7 @@ nl-12.050,10244,Vallecillo,2003,0,6,jul,19,50,19050,19050,pri-pvem-plm-fc1,ARNUL
 nl-13.050,10245,Vallecillo,2006,0,2,jul,19,50,19050,19050,pri-pvem,MARIA LINA MARGARITA MARTINEZ SERNA,Term-limited-p-won,,prd-pt,0.1036,,,0,0,,ok
 nl-14.050,10246,Vallecillo,2009,0,5,jul,19,50,19050,19050,pri-pvem-pd1-cc1,NUMBERTO SERNA GUZMAN,Term-limited-p-lost,,pan,0.4222,,,0,0,,
 nl-15.050,10247,Vallecillo,2012,0,1,jul,19,50,19050,19050,pt,ARNULFO DE LEON VILLARREAL,Term-limited-p-won,,pri-pvem,0.0205,,,1,1,,ok
-nl-16.050,10248,Vallecillo,2015,0,7,jun,19,50,19050,19050,prd-pt,ADOLFO CHAPA RAMON,Beaten,,pri,0.041,reran under prd and lost,,0,0,,
+nl-16.050,10248,Vallecillo,2015,0,7,jun,19,50,19050,19050,prd-pt,ADOLFO CHAPA RAMON,Beaten-dif-p,,pri,0.041,reran under prd and lost,,0,0,,
 nl-17.050,10249,Vallecillo,2018,0,1,jul,19,50,19050,19050,pt-morena-pes,MARIA LINA MARGARITA MARTINEZ SERNA,2021,LUDIVINA GUZMAN VAZQUEZ,pri,0.14,,,1,1,,ok
 nl-07.051,10250,Villaldama,1988,0,9,nov,19,51,19051,19051,pri,REMIGIO VILLARREAL RODRIGUEZ,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.051,10251,Villaldama,1991,0,10,nov,19,51,19051,19051,pri,PEDRO GONZALEZ VAZQUEZ,Term-limited-p-won,,,1,,inafed,0,0,,ok
@@ -10939,7 +10939,7 @@ oax-12.184,10937,San Juan Bautista Tuxtepec,2004,0,3,oct,20,184,20182,20184,prd,
 oax-13.184,10938,San Juan Bautista Tuxtepec,2007,0,7,oct,20,184,20182,20184,pri,GUSTAVO PACHECO VILLASEÑOR ,Term-limited-p-lost,,conve,0.0919,,,0,0,,
 oax-14.184,10939,San Juan Bautista Tuxtepec,2010,0,4,jul,20,184,20182,20184,pan-prd-pt-conve,JOSE MANUEL BARRERA MUJICA,Term-limited-p-lost,,pri-pvem,0.1361,,,0,0,,
 oax-15.184,10940,San Juan Bautista Tuxtepec,2013,0,7,jul,20,184,20182,20184,pri-pvem,ANTONIO SACRE RANGEL,Term-limited-p-lost,,pna,0.0278,,,0,0,,
-oax-16.184,10941,San Juan Bautista Tuxtepec,2016,0,5,jun,20,184,20182,20184,pt,FERNANDO BAUTISTA DAVILA,Reelected,,pri-pvem,0.0517,reran under pna,,0,0,,ok
+oax-16.184,10941,San Juan Bautista Tuxtepec,2016,0,5,jun,20,184,20182,20184,pt,FERNANDO BAUTISTA DAVILA,Reelected-dif-p,,pri-pvem,0.0517,reran under pna,,0,0,,ok
 oax-17.184,10942,San Juan Bautista Tuxtepec,2018,0,1,jul,20,184,20182,20184,pna,FERNANDO BAUTISTA DAVILA,Term-limited-pending,,pt-morena-pes,0.1889,,,1,1,,ok
 oax-07.559,10943,San Juan Bautista Valle Nacional,1989,0,6,ago,20,559,20183,20559,consejoMun,,Term-limited-p-lost,,,,,,0,0,,
 oax-08.559,10944,San Juan Bautista Valle Nacional,1992,0,8,nov,20,559,20183,20559,pri,BARTOLO SANTIAGO HERNANANDEZ,Term-limited-p-won,,prt,0.3561,,,0,0,,
@@ -10972,7 +10972,7 @@ oax-12.187,10970,San Juan Coatzóspam,2004,0,3,oct,20,187,20189,20187,pri,GREGOR
 oax-13.187,10971,San Juan Coatzóspam,2007,0,7,oct,20,187,20189,20187,pri,EPIFANIO FLORES PUEBLITA ,Term-limited-p-won,,prd,0.409,,,0,0,,
 oax-14.187,10972,San Juan Coatzóspam,2010,0,4,jul,20,187,20189,20187,pri-pvem,PABLO VIVANCO BRAVO,Term-limited-p-won,,pan-prd-pt-conve,0.3836,,,0,0,,
 oax-15.187,10973,San Juan Coatzóspam,2013,0,7,jul,20,187,20189,20187,pri-pvem,ALEJANDRO MORALES PACHECO,Term-limited-p-lost,,pan-prd-pt,0.1086,,,0,0,,
-oax-16.187,10974,San Juan Coatzóspam,2016,0,5,jun,20,187,20189,20187,prs,ARTURO CARRERA GONZALEZ,Reelected,,pri-pvem,0.0661,reran under pt-morena-pes,,0,0,,ok
+oax-16.187,10974,San Juan Coatzóspam,2016,0,5,jun,20,187,20189,20187,prs,ARTURO CARRERA GONZALEZ,Reelected-dif-p,,pri-pvem,0.0661,reran under pt-morena-pes,,0,0,,ok
 oax-17.187,10975,San Juan Coatzóspam,2018,0,1,jul,20,187,20189,20187,pt-morena-pes,ARTURO CARRERA GONZALEZ,Term-limited-pending,,pvem,0.0517,,,1,1,,ok
 oax-07.188,10976,San Juan Colorado,1989,0,6,ago,20,188,20190,20188,pri,EMILIO TAPIA ALAVEZ,Term-limited-p-won,,parm,0.62,,,0,0,,
 oax-08.188,10977,San Juan Colorado,1992,0,8,nov,20,188,20190,20188,pri,CONSTANTINO GILBERTO LOPEZ GARCIA,Term-limited-p-lost,,prd,0.1432,,,0,0,,
@@ -11522,7 +11522,7 @@ oax-12.441,11520,Santa María Xadani,2004,0,3,oct,20,441,20442,20441,pri,AHUIZOT
 oax-13.441,11521,Santa María Xadani,2007,0,7,oct,20,441,20442,20441,pri,FEDERICO CORTEZ MANUEL,Term-limited-p-lost,,pan,0.0263,,,0,0,,
 oax-14.441,11522,Santa María Xadani,2010,0,4,jul,20,441,20442,20441,pan-prd-pt-conve,VICTORIANO LOPEZ LUIS,Term-limited-p-won,,pri-pvem,0.0487,,,0,0,,
 oax-15.441,11523,Santa María Xadani,2013,0,7,jul,20,441,20442,20441,pan-prd-pt,OSCAR SANCHEZ AQUINO,Term-limited-p-lost,,pup,0.138,,,0,0,,
-oax-16.441,11524,Santa María Xadani,2017,1,4,jun,20,441,20442,20441,prs,OSCAR SANCHEZ GUERRA,Reelected,,pri-pvem,0.0049,extraordinaria reran under pri-pvem-pna,,0,0,,ok
+oax-16.441,11524,Santa María Xadani,2017,1,4,jun,20,441,20442,20441,prs,OSCAR SANCHEZ GUERRA,Reelected-dif-p,,pri-pvem,0.0049,extraordinaria reran under pri-pvem-pna,,0,0,,ok
 oax-17.441,11525,Santa María Xadani,2018,0,1,jul,20,441,20442,20441,pri-pvem-pna,OSCAR SANCHEZ GUERRA,2021,,morena,0.0326,,,1,1,,ok
 oax-07.447,11526,Santa María Zacatepec,1989,0,6,ago,20,447,20448,20447,pri,LORENZO LUIS LOPEZ,Term-limited-p-won,,parm,0.8954,,,0,0,,
 oax-08.447,11527,Santa María Zacatepec,1992,0,8,nov,20,447,20448,20447,pri,JOSE AGUILAR CRUZ,Term-limited-p-lost,,,1,,,0,0,,
@@ -11830,7 +11830,7 @@ oax-12.545,11828,Teotitlán de Flores Magón,2004,0,3,oct,20,545,20545,20545,pri
 oax-13.545,11829,Teotitlán de Flores Magón,2007,0,7,oct,20,545,20545,20545,pri,ALBERTO AMADO OLMOS MEZA,Term-limited-p-won,,conve,0.0208,,,0,0,,
 oax-14.545,11830,Teotitlán de Flores Magón,2010,0,4,jul,20,545,20545,20545,pri-pvem,MIGUEL ANGEL OLMOS CORTES,Term-limited-p-lost,,pan-prd-pt-conve,0.0624,,,0,0,,
 oax-15.545,11831,Teotitlán de Flores Magón,2013,0,7,jul,20,545,20545,20545,pna,FRANCISCO MARTIN VELA GIL,Term-limited-p-lost,,pri-pvem,0.3119,,,0,0,,
-oax-16.545,11832,Teotitlán de Flores Magón,2016,0,5,jun,20,545,20545,20545,pan-prd,OSMIN NIETO RODRIGUEZ,Reelected,,pna,0.2072,reran under psd,,0,0,,ok
+oax-16.545,11832,Teotitlán de Flores Magón,2016,0,5,jun,20,545,20545,20545,pan-prd,OSMIN NIETO RODRIGUEZ,Reelected-dif-p,,pna,0.2072,reran under psd,,0,0,,ok
 oax-17.545,11833,Teotitlán de Flores Magón,2018,0,1,jul,20,545,20545,20545,psd1,OSMIN NIETO RODRIGUEZ,Term-limited-pending,,pri-pvem-pna,0.2085,,,1,1,,ok
 oax-07.549,11834,Tezoatlán de Segura y Luna,1989,0,6,ago,20,549,20549,20549,consejoMun,FRANCISCO HERRERA ZARAGOZA,Term-limited-p-lost,,,,,,0,0,,
 oax-08.549,11835,Tezoatlán de Segura y Luna,1992,0,8,nov,20,549,20549,20549,pri,TEODORO JORGE CIPRIAN GUZMAN,Term-limited-p-won,,pan,0.5984,,,0,0,,ok
@@ -19861,7 +19861,7 @@ yuc-12.048,19859,Maxcanú,2004,0,23,may,31,48,31048,31048,prd,JULIO CESAR RODRIG
 yuc-13.048,19860,Maxcanú,2007,0,20,may,31,48,31048,31048,pvem,FAUSTO JOSE PEREYRA CARMONA,Term-limited-p-lost,,pay,0.053,,,0,0,,
 yuc-14.048,19861,Maxcanú,2010,0,16,may,31,48,31048,31048,pri,REYNA MARLENE DE LOS ANGELES CATZIN CIH,Term-limited-p-won,,pan,0.1427,,,1,1,,ok
 yuc-15.048,19862,Maxcanú,2012,0,1,jul,31,48,31048,31048,pri-pvem,CAMILO DELELYS MAY Y CAUICH,Term-limited-p-won,,pan,0.0232,,,1,1,,
-yuc-16.048,19863,Maxcanú,2015,0,7,jun,31,48,31048,31048,pvem,REYNA MARLENE DE LOS ANGELES CATZIN CIH,Reelected,,pri,0.0057,reran under pri,,1,1,,ok
+yuc-16.048,19863,Maxcanú,2015,0,7,jun,31,48,31048,31048,pvem,REYNA MARLENE DE LOS ANGELES CATZIN CIH,Reelected-dif-p,,pri,0.0057,reran under pri,,1,1,,ok
 yuc-17.048,19864,Maxcanú,2018,0,1,jul,31,48,31048,31048,pri,REYNA MARLENE DE LOS ANGELES CATZIN CIH,Term-limited-pending,LUIS ALBERTO GARCIA CENTURION,pna,0.1123,,,1,1,,ok
 yuc-07.049,19865,Mayapán,1990,0,15,nov,31,49,31049,31049,pri,WILBERTH ARMIN CHAN FERNANDEZ,Term-limited-p-won,,,1,,inafed,0,0,,
 yuc-08.049,19866,Mayapán,1993,0,28,nov,31,49,31049,31049,pri,FREDDY OSCAR CHAN KANTUN,Term-limited-p-lost,,pan,0.5585,,inafed,0,0,,
@@ -20532,7 +20532,7 @@ zac-12.003,20530,Atolinga,2004,0,4,jul,32,3,32003,32003,pan,RODOLFO CASTRO LOPEZ
 zac-13.003,20531,Atolinga,2007,0,1,jul,32,3,32003,32003,prd-conve,CAMERINA BUGAIN ROSALES,Term-limited-p-won,,pan,0.0588,,,0,0,,
 zac-14.003,20532,Atolinga,2010,0,4,jul,32,3,32003,32003,prd-conve,ELIZABETH CORTES SANDOVAL,Term-limited-p-lost,JACOBO CASTAÑEDA CASTAÑEDA,pri-pvem-pna,0.0322,,,0,0,,
 zac-15.003,20533,Atolinga,2013,0,7,jul,32,3,32003,32003,pri,GERMAN ABEL CASTAÑEDA DELGADO,Term-limited-p-won,,pan-prd,0.292,,,0,0,,
-zac-16.003,20534,Atolinga,2016,0,5,jun,32,3,32003,32003,pri-pvem,GLORIA MARILU COVARRUBIAS FIGUEROA,Beaten,PEDRO JARA DELGADO,pna,0.1789,reran under pri only and lost,,0,0,,
+zac-16.003,20534,Atolinga,2016,0,5,jun,32,3,32003,32003,pri-pvem,GLORIA MARILU COVARRUBIAS FIGUEROA,Beaten-dif-p,PEDRO JARA DELGADO,pna,0.1789,reran under pri only and lost,,0,0,,
 zac-17.003,20535,Atolinga,2018,0,1,jul,32,3,32003,32003,pvem,ALONSO CASTAÑEDA RODRIGUEZ,2021,EDELMIRA SALINAS SALINAS,pan-prd-mc,0.1355,,,0,0,,
 zac-07.004,20536,Benito Juárez,1988,0,0,dic,32,4,32004,32004,pri,ROBERTO RAMIREZ RAMIREZ,Term-limited-p-won,,,,,inafed,0,0,,
 zac-08.004,20537,Benito Juárez,1992,0,2,ago,32,4,32004,32004,pri,ASTROBERTO LAMAS ARELLANO,Term-limited-p-lost,,pan,0.1971,,inafed,0,0,,
@@ -20618,7 +20618,7 @@ zac-12.011,20616,Trinidad García de la Cadena,2004,0,4,jul,32,11,32011,32011,pr
 zac-13.011,20617,Trinidad García de la Cadena,2007,0,1,jul,32,11,32011,32011,pri,MARIO CASTRO GUZMAN,Term-limited-p-won,,prd-conve,0.0849,,,0,0,,ok
 zac-14.011,20618,Trinidad García de la Cadena,2010,0,4,jul,32,11,32011,32011,pri-pvem-pna,ARNULFO GUZMAN GUZMAN,Term-limited-p-won,ALEJANDRO LARIOS MARISCAL,pan,0.118,,,0,0,,
 zac-15.011,20619,Trinidad García de la Cadena,2013,0,7,jul,32,11,32011,32011,pri,RAFAEL MARTINEZ PEREZ,Term-limited-p-won,,pan-prd,0.0565,,,0,0,,
-zac-16.011,20620,Trinidad García de la Cadena,2016,0,5,jun,32,11,32011,32011,pri-pvem,ROSIO MARGARITA CONTRERAS TOVAR,Beaten,CELIA GAMBOA GUZMAN,pan-prd,0.233,reran under pri and lost,,0,0,,
+zac-16.011,20620,Trinidad García de la Cadena,2016,0,5,jun,32,11,32011,32011,pri-pvem,ROSIO MARGARITA CONTRERAS TOVAR,Beaten-dif-p,CELIA GAMBOA GUZMAN,pan-prd,0.233,reran under pri and lost,,0,0,,
 zac-17.011,20621,Trinidad García de la Cadena,2018,0,1,jul,32,11,32011,32011,pvem,MARIO CASTRO GUZMAN,2021,ODILIA GUZMAN GARCIA,pt-morena-pes,0.0938,,,1,1,,ok
 zac-07.012,20622,Genaro Codina,1988,0,0,dic,32,12,32012,32012,pri,HUMBERTO HERNANDEZ C.,Term-limited-p-won,,,,,inafed,0,0,,
 zac-08.012,20623,Genaro Codina,1992,0,2,ago,32,12,32012,32012,pri,HERMINIA HERNANDEZ C.,Term-limited-p-won,,pfdz,0.2371,,inafed,0,0,,
