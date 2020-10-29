@@ -6907,15 +6907,15 @@ mex-11.013,6905,Atizapán de Zaragoza,2003,0,9,mar,15,13,15013,15013,pan,SALVADO
 mex-12.013,6906,Atizapán de Zaragoza,2006,0,12,mar,15,13,15013,15013,pan,GONZALO ALARCON BARDENA,Term-limited-p-lost,,pri-pvem,0.2527,,,0,0,,
 mex-13.013,6907,Atizapán de Zaragoza,2009,0,5,jul,15,13,15013,15013,pri-pvem-pna-psd1-pfd1,JESUS DAVID CASTAÑEDA DEGADO,Term-limited-p-lost,,pan,0.0863,,,0,0,,
 mex-14.013,6908,Atizapán de Zaragoza,2012,0,1,jul,15,13,15013,15013,pan,PEDRO DAVID RODRIGUEZ VILLEGAS,Term-limited-p-won,,pri-pvem-pna,0.034,,,0,0,,
-mex-15.013,6909,Atizapán de Zaragoza,2015,0,7,jun,15,13,15013,15013,pan-pt,ANA MARIA BALDERAS TREJO,Beaten-dif-p,,pri-pvem-pna,0.0855,ran under pan-prd-mc and lost,,0,0,,
-mex-16.013,6910,Atizapán de Zaragoza,2018,0,1,jul,15,13,15013,15013,pt-morena-pes,RUTH OLVERA NIETO,2021,ANA BALDERAS TREJO,pan-prd-mc,0.0843,antes fue alcalde de tlalnepantla,,1,1,,ok
+mex-15.013,6909,Atizapán de Zaragoza,2015,0,7,jun,15,13,15013,15013,pan-pt,ANA MARIA BALDERAS TREJO,Beaten-dif-p,,pri-pvem-pna,0.0855,reran under pan-prd-mc and lost,,0,0,,
+mex-16.013,6910,Atizapán de Zaragoza,2018,0,1,jul,15,13,15013,15013,pt-morena-pes,RUTH OLVERA NIETO,2021,ANA MARIA BALDERAS TREJO,pan-prd-mc,0.0843,antes fue alcalde de tlalnepantla,,1,1,,ok
 mex-07.014,6911,Atlacomulco,1990,0,11,nov,15,14,15014,15014,pri,HERMILO MONROY PEREZ,Term-limited-p-won,,prd,0.6043,,inafed,0,0,,
-mex-08.014,6912,Atlacomulco,1993,0,14,nov,15,14,15014,15014,pri,RENE G. MONTIEL PEÑA,Term-limited-p-won,,prd,0.7851,,inafed,0,0,,
+mex-08.014,6912,Atlacomulco,1993,0,14,nov,15,14,15014,15014,pri,RENE GABRIEL MONTIEL PEÑA,Term-limited-p-won,,prd,0.7851,,inafed,0,0,,
 mex-09.014,6913,Atlacomulco,1996,0,10,nov,15,14,15014,15014,pri,MARISOL DEL SOCORRO ARIAS FLORES,Term-limited-p-won,,pan,0.3247,,inafed,0,0,,
 mex-10.014,6914,Atlacomulco,2000,0,2,jul,15,14,15014,15014,pri,JUAN ANTONIO GUZMAN SANCHEZ,Term-limited-p-won,,pan,0.2156,,,0,0,,
 mex-11.014,6915,Atlacomulco,2003,0,9,mar,15,14,15014,15014,pri-pvem,NOE BECERRIL COLIN,Term-limited-p-won,,pan,0.2535,,,0,0,,
 mex-12.014,6916,Atlacomulco,2006,0,12,mar,15,14,15014,15014,pri-pvem,LUCAS ROGELIO CABALLERO MERAZ,Term-limited-p-won,,pt-conve,0.2403,,,0,0,,
-mex-13.014,6917,Atlacomulco,2009,0,5,jul,15,14,15014,15014,pri-pvem-pna-psd1-pfd1,FIDEL ALMANZA MONRROY,Term-limited-p-won,,pan,0.4284,,,0,0,,
+mex-13.014,6917,Atlacomulco,2009,0,5,jul,15,14,15014,15014,pri-pvem-pna-psd1-pfd1,FIDEL ALMANZA MONROY,Term-limited-p-won,,pan,0.4284,,,0,0,,
 mex-14.014,6918,Atlacomulco,2012,0,1,jul,15,14,15014,15014,pri-pvem-pna,ARTURO NEMECIO VELEZ ESCAMILLA,Term-limited-p-won,,pan,0.4923,,,0,0,,
 mex-15.014,6919,Atlacomulco,2015,0,7,jun,15,14,15014,15014,pri-pvem-pna,ANA MARIA CHIMAL VELASCO,Out-p-lost,,pt,0.2301,,,0,0,,
 mex-16.014,6920,Atlacomulco,2018,0,1,jul,15,14,15014,15014,pt-morena-pes,JOSE MARTIN ROBERTO TELLEZ MONROY,2021,,pri,0.2115,,,0,0,,
@@ -9930,7 +9930,7 @@ nl-13.021,9928,General Escobedo,2006,0,2,jul,19,21,19021,19021,pri-pvem,MARGARIT
 nl-14.021,9929,General Escobedo,2009,0,5,jul,19,21,19021,19021,pri-pvem-pd1-cc1,CLARA LUZ FLORES CARRALES,Term-limited-p-won,,pan,0.3077,,,0,0,,ok
 nl-15.021,9930,General Escobedo,2012,0,1,jul,19,21,19021,19021,pri-pvem,CESAR GERARDO CAVAZOS CABALLERO,Term-limited-p-won,,pan,0.2141,,,0,0,,
 nl-16.021,9931,General Escobedo,2015,0,7,jun,19,21,19021,19021,pri,CLARA LUZ FLORES CARRALES,Reelected,,indep,0.2219,,,1,1,,ok
-nl-17.021,9932,General Escobedo,2018,0,1,jul,19,21,19021,19021,pri,CLARA LUZ FLORES CARRALES,Term-limited-pending,GABRIEL EDUARDO ALMAGUER SEGURA,pan,0.1393,strong contender for nl governor 2021,,1,1,,ok
+nl-17.021,9932,General Escobedo,2018,0,1,jul,19,21,19021,19021,pri,CLARA LUZ FLORES CARRALES,Term-limited-pending,GABRIEL EDUARDO ALMAGUER SEGURA,pan,0.1393,strong contender for nl governor 2021 w Morena,,1,1,,ok
 nl-07.022,9933,General Terán,1988,0,9,nov,19,22,19022,19022,pri,GAMALIEL GARCIA LECHUGA,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.022,9934,General Terán,1991,0,10,nov,19,22,19022,19022,pri,JORGE CARRERA MARTINEZ,Term-limited-p-won,,pan,0.8798,,inafed,0,0,,
 nl-09.022,9935,General Terán,1994,0,21,ago,19,22,19022,19022,pri,JESUS CANTU GARCIA,Term-limited-p-won,,pan,0.2053,,inafed,0,0,,
@@ -9961,7 +9961,7 @@ nl-12.024,9959,General Zaragoza,2003,0,6,jul,19,24,19024,19024,pri-pvem-plm-fc1,
 nl-13.024,9960,General Zaragoza,2006,0,2,jul,19,24,19024,19024,pri-pvem,MENTOR OSVALDO TORRES DE LEON,Term-limited-p-won,,pan,0.4003,,,0,0,,
 nl-14.024,9961,General Zaragoza,2009,0,5,jul,19,24,19024,19024,pri-pvem-pd1-cc1,SERGIO ALBERTO ROSAS CORTES,Term-limited-p-lost,,pan,0.475,,,0,0,,
 nl-15.024,9962,General Zaragoza,2012,0,1,jul,19,24,19024,19024,pan,JUAN ARTURO GUEVARA SOTO,Term-limited-p-lost,,pri-pvem,0.0236,,,0,0,,ok
-nl-16.024,9963,General Zaragoza,2015,0,7,jun,19,24,19024,19024,pt,AZAEL JAIME GALLEGOS ESCOBEDO,Beaten-dif-p,,pri,0.1301,reran under pri,,0,0,,
+nl-16.024,9963,General Zaragoza,2015,0,7,jun,19,24,19024,19024,pt,AZAEL JAIME GALLEGOS ESCOBEDO,Beaten-dif-p,,pri,0.1301,reran under pri and lost,,0,0,,
 nl-17.024,9964,General Zaragoza,2018,0,1,jul,19,24,19024,19024,pt-morena-pes,JUAN ARTURO GUEVARA SOTO,2021,MENTOR OSVALDO TORRES DE LEON,pna,0.1434,,,1,1,,ok
 nl-07.025,9965,General Zuazua,1988,0,9,nov,19,25,19025,19025,pri,JOSE LUIS CHAPA VILLARREAL,Term-limited-p-won,,,,,inafed,0,0,,
 nl-08.025,9966,General Zuazua,1991,0,10,nov,19,25,19025,19025,pri,JESUS ANGEL MONTEMAYOR MARTINEZ,Term-limited-p-won,,,1,,inafed,0,0,,
