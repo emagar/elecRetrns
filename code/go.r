@@ -1,3 +1,11 @@
+#############################################################################
+## 2nov2020                                                                ##
+## Script manipulates governor votes in order to aggregate coalitions etc. ##
+## It generates object dat in memory that other scripts rely upon          ##
+## (eg. incumbent-reelection.r).                                           ##
+## At the end, the possibility of saving this object is commented out.     ##
+#############################################################################
+
 # get state-level gob elections
 dat <- read.csv("/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/goed1961-on.csv", stringsAsFactors = FALSE)
 dat <- within(dat, fuente <- nota <- vtot <- nr <- nulos <- fake <- NULL)
