@@ -484,7 +484,7 @@ coa-11.015,482,Juárez,2002,0,29,sep,5,15,5015,5015,pri,SERGIO KOBEL ROMANIA,Ter
 coa-12.015,483,Juárez,2005,0,25,sep,5,15,5015,5015,pan,RODOLFO ORTIZ GARCIA,Term-limited-p-lost,,pri,0.0656,,,0,0,,
 coa-13.015,484,Juárez,2010,1,4,jul,5,15,5015,5015,pri-pvem,ABELARDO ZALAZAR TAMEZ,Term-limited-p-won,,prd,0.0737,extraordinaria,,0,0,,
 coa-14.015,485,Juárez,2013,0,7,jul,5,15,5015,5015,pri-pvem-pna-psdc-pj1-prc,CARLOS ALBERTO CHACON MADRID,Term-limited-p-won,,pan-prd-pudc,0.0167,,,0,0,,
-coa-15.015,486,Juárez,2017,0,4,jun,5,15,5015,5015,pri-pvem-pna-si-pj1-prc-pcp,OLGA GABRIELA KOBEL LARA,Out-p-lost,,prd,0.0808,,,0,0,,
+coa-15.015,486,Juárez,2017,0,4,jun,5,15,5015,5015,pri-pvem-pna-si-pj1-prc-pcp,OLGA GABRIELA KOBEL LARA,Out-p-lost,,prd,0.0808,asesinada 17dic2018,,0,0,,
 coa-16.015,487,Juárez,2018,0,1,jul,5,15,5015,5015,prd,MARIA DEL CARMEN DURON OLIVARES,2021,VICTORINA RAMIREZ PEREZ,pri-pvem-pna,0.1632,,,0,0,,
 coa-07.016,488,Lamadrid,1990,0,28,oct,5,16,5016,5016,pri,MA DEL CARMEN RIVERA ESTRADA,Term-limited-p-won,,pan,0.0327,,inafed,0,0,,
 coa-08.016,489,Lamadrid,1993,0,26,sep,5,16,5016,5016,pri,YOLANDA RODRIGUEZ CAMPOS,Term-limited-p-won,,pan,0.078,,inafed,0,0,,
@@ -710,7 +710,7 @@ coa-07.038,708,Zaragoza,1990,0,28,oct,5,38,5038,5038,pan,REYNALDO SALINAS VARA,T
 coa-08.038,709,Zaragoza,1993,0,26,sep,5,38,5038,5038,pri,ELEUTERIO VILLALOBOS VICENCIO,Term-limited-p-lost,,pan,0.0249,,inafed,0,0,,
 coa-09.038,710,Zaragoza,1996,0,10,nov,5,38,5038,5038,pan,MATIAS BERRONES VELARDE,Term-limited-p-lost,,pri,0.1212,,inafed,0,0,,
 coa-10.038,711,Zaragoza,1999,0,26,sep,5,38,5038,5038,pri,JESUS RODRIGUEZ GARCIA,Term-limited-p-won,,pan,0.0233,,,0,0,,
-coa-11.038,712,Zaragoza,2002,0,29,sep,5,38,5038,5038,pri,SAUL VARA RIVERA,Term-limited-p-won,,pan,0.0406,,,0,0,,
+coa-11.038,712,Zaragoza,2002,0,29,sep,5,38,5038,5038,pri,SAUL VARA RIVERA,Term-limited-p-won,,pan,0.0406,asesinado 8ene2011,,0,0,,
 coa-12.038,713,Zaragoza,2005,0,25,sep,5,38,5038,5038,pri,JORGE ALBERTO SANTOS CHAVARRIA,Term-limited-p-won,,pan-pudc,0.0686,,,0,0,,
 coa-13.038,714,Zaragoza,2009,0,18,oct,5,38,5038,5038,pri-pvem-pna-psd1,VICTOR SAUCEDO GOMEZ,Term-limited-p-lost,,pt,0.1404,,,0,0,,
 coa-14.038,715,Zaragoza,2013,0,7,jul,5,38,5038,5038,pan-prd-pudc,LEONCIO MARTINEZ SANCHEZ,Term-limited-p-lost,,pri-pvem-pna-psdc-pj1-prc,0.0358,,,0,0,,
@@ -791,7 +791,7 @@ col-12.006,789,Ixtlahuacán,2003,0,6,jul,6,6,6007,6006,pan,CRISPIN GUTIERREZ MOR
 col-13.006,790,Ixtlahuacán,2006,0,2,jul,6,6,6007,6006,pri-pvem,JOSE CORTEZ NAVARRO,Term-limited-p-won,,pt-conve,0.0341,,,0,0,,
 col-14.006,791,Ixtlahuacán,2009,0,5,jul,6,6,6007,6006,pri-pna,JOSE CONCEPCION VAZQUEZ FLORES,Term-limited-p-won,,pan-adc,0.0906,,,0,0,,
 col-15.006,792,Ixtlahuacán,2012,0,1,jul,6,6,6007,6006,pri-pna,CARLOS ALBERTO CARRASCO CHAVEZ,Term-limited-p-won,,pan,0.2372,,,0,0,,ok
-col-16.006,793,Ixtlahuacán,2015,0,7,jun,6,6,6007,6006,pri,CRISPIN GUTIERREZ MORENO,Out-p-lost,,pvem,0.0899,,,1,1,,ok
+col-16.006,793,Ixtlahuacán,2015,0,7,jun,6,6,6007,6006,pri,CRISPIN GUTIERREZ MORENO,Out-p-lost,,pvem,0.0899,asesinado 20oct2017,,1,1,,ok
 col-17.006,794,Ixtlahuacán,2018,0,1,jul,6,6,6007,6006,pt-morena-pes,CARLOS ALBERTO CARRASCO CHAVEZ,2021,KARLA NALLELY CORTEZ ORTIZ ,pri-pvem,0.0301,,,1,1,,ok
 col-07.007,795,Manzanillo,1988,0,0,nov,6,7,6008,6007,pri,ALEJANDRO MEILLON SANCHEZ,Term-limited-p-won,,,,,inafed,0,0,,
 col-08.007,796,Manzanillo,1991,0,18,ago,6,7,6008,6007,pri,PORFIRIO GAYTAN GUDIÑO,Term-limited-p-won,,pan,0.3023,,inafed,0,0,,
@@ -9335,7 +9335,7 @@ mor-12.018,9333,Temixco,2003,0,6,jul,17,18,17018,17018,pan,NOE GREGORIO SANCHEZ 
 mor-13.018,9334,Temixco,2006,0,2,jul,17,18,17018,17018,prd-pt-conve,JAVIER ORIHUELA GARCIA,Term-limited-p-lost,,pan,0.0366,,,0,0,,
 mor-14.018,9335,Temixco,2009,0,5,jul,17,18,17018,17018,pri,NEREO BANDERA ZAVALETA,Term-limited-p-lost,,prd,0.1254,,,0,0,,
 mor-15.018,9336,Temixco,2012,0,1,jul,17,18,17018,17018,prd-pt-mc,MIGUEL ANGEL COLIN NAVA,Term-limited-p-won,,pan,0.5178,,,0,0,,
-mor-16.018,9337,Temixco,2015,0,7,jun,17,18,17018,17018,prd,GISELA RAQUEL MOTA OCAMPO,Out-p-lost,,pri,0.0851,Asesinada 2016,,0,0,,
+mor-16.018,9337,Temixco,2015,0,7,jun,17,18,17018,17018,prd,GISELA RAQUEL MOTA OCAMPO,Out-p-lost,,pri,0.0851,Asesinada 2ene2016,,0,0,,
 mor-17.018,9338,Temixco,2018,0,1,jul,17,18,17018,17018,pt-morena-pes,JAZMIN JUANA SOLANO LOPEZ,2021,DAVID MARTINEZ MARTINEZ,prd-psd1,0.2152,,,0,0,,
 mor-07.019,9339,Tepalcingo,1988,0,20,mar,17,19,17019,17019,pri,JORGE CORIA CHEPETLA,Term-limited-p-won,,,,,inafed,0,0,,
 mor-08.019,9340,Tepalcingo,1991,0,17,mar,17,19,17019,17019,pri,ERNESTO LORENZO GARCIA RAMIREZ,Term-limited-p-won,,prd,0.41,,inafed,0,0,,
@@ -13851,7 +13851,7 @@ pue-12.191,13849,Tulcingo,2004,0,14,nov,21,191,21191,21191,pan,ULAY VALLE FLORES
 pue-13.191,13850,Tulcingo,2007,0,11,nov,21,191,21191,21191,pri-pvem,IGNACIO ROJAS PEÑA,Term-limited-p-won,,prd-conve,0.1482,,,0,0,,
 pue-14.191,13851,Tulcingo,2010,0,4,jul,21,191,21191,21191,pri-pvem,ULISES RODRIGUEZ CAMPOS,Term-limited-p-lost,,pan-prd-conve-pna,0.0187,,,0,0,,
 pue-15.191,13852,Tulcingo,2013,0,7,jul,21,191,21191,21191,pan-prd-pna,EMILIO DELGADO DE DIOS,Term-limited-p-lost,,pri-pvem,0.1364,,,0,0,,
-pue-16.191,13853,Tulcingo,2018,0,1,jul,21,191,21191,21191,pri,JUAN MANUEL RODRIGUEZ RODRIGUEZ,2021,,pan-prd-mc,0.3082,,,0,0,,
+pue-16.191,13853,Tulcingo,2018,0,1,jul,21,191,21191,21191,pri,JUAN MANUEL RODRIGUEZ RODRIGUEZ,2021,,pan-prd-mc,0.3082,murio covid 26oct2020,,0,0,,
 pue-07.192,13854,Tuzamapan de Galeana,1989,0,26,nov,21,192,21192,21192,pri,JUAN VAZQUEZ MARTIN,Term-limited-p-won,,pps,0.9241,,inafed,0,0,,
 pue-08.192,13855,Tuzamapan de Galeana,1992,0,8,nov,21,192,21192,21192,pri,ARISTIDES GONZALEZ MORA,Term-limited-p-won,,pps,0.8859,,inafed,0,0,,
 pue-09.192,13856,Tuzamapan de Galeana,1995,0,12,nov,21,192,21192,21192,pri,HECTOR MANUEL CABRERA CARMONA,Term-limited-p-won,,pps,0.1609,,inafed,0,0,,
@@ -15197,7 +15197,7 @@ sin-13.015,15195,Salvador Alvarado,2007,0,11,nov,25,15,25015,25015,pri-pna,JORGE
 sin-14.015,15196,Salvador Alvarado,2010,0,1,jul,25,15,25015,25015,pan-prd-pt-conve,GONZALO CAMACHO ANGULO,Term-limited-p-lost,,pri-pvem-pna,0.0886,,,0,0,,
 sin-15.015,15197,Salvador Alvarado,2013,0,7,jul,25,15,25015,25015,pri-pvem-pna,LILIANA ANGELICA CARDENAS VALENZUELA,Term-limited-p-won,,pan-prd-pt,0.0143,,,0,0,,
 sin-16.015,15198,Salvador Alvarado,2016,0,5,jun,25,15,25015,25015,pri-pna,CARLO MARIO ORTIZ SANCHEZ,Reelected,,mc-pasd,0.3776,,,0,0,,ok
-sin-17.015,15199,Salvador Alvarado,2018,0,1,jul,25,15,25015,25015,pri-pvem-pna,CARLO MARIO ORTIZ SANCHEZ,Term-limited-pending,MONICA SANCHEZ AGRAMON,pan-prd-mc-pasd,0.0757,murio covid viuda Angely Camacho nombrada sustituta 13 oct2020 Reforma,,1,1,,ok
+sin-17.015,15199,Salvador Alvarado,2018,0,1,jul,25,15,25015,25015,pri-pvem-pna,CARLO MARIO ORTIZ SANCHEZ,Term-limited-pending,MONICA SANCHEZ AGRAMON,pan-prd-mc-pasd,0.0757,murio covid viuda Angely Camacho nombrada sustituta 13oct2020 Reforma,,1,1,,ok
 sin-07.016,15200,San Ignacio,1989,0,15,oct,25,16,25016,25016,pri,MALAQUIAS ARRELLANO LIRA,Term-limited-p-won,,pan,0.8699,,inafed,0,0,,
 sin-08.016,15201,San Ignacio,1992,0,8,nov,25,16,25016,25016,pri,MA EDUWIGES VEGA PADILLA,Term-limited-p-won,,pan,0.5841,,inafed,0,0,,
 sin-09.016,15202,San Ignacio,1995,0,12,nov,25,16,25016,25016,pri,AMADO LOAIZA PERALES,Term-limited-p-won,,pan,0.4615,,inafed,0,0,,
@@ -16374,7 +16374,7 @@ tam-09.016,16372,Hidalgo,1995,0,12,nov,28,16,28016,28016,pri,JAVIER IBARRA ECHAR
 tam-10.016,16373,Hidalgo,1998,0,25,oct,28,16,28016,28016,pri,SERGIO CARRILLO LUMBRERAS,Term-limited-p-won,,prd,0.4759,,,0,0,,
 tam-11.016,16374,Hidalgo,2001,0,7,oct,28,16,28016,28016,pri,JUAN LINARES REYES,Term-limited-p-won,,pan,0.2636,,,0,0,,
 tam-12.016,16375,Hidalgo,2004,0,14,nov,28,16,28016,28016,pri,CESAREO ROCHA VILLANUEVA,Term-limited-p-won,,prd-conve,0.2264,,,0,0,,
-tam-13.016,16376,Hidalgo,2007,0,11,nov,28,16,28016,28016,pri-pna,MARCO ANTONIO LEAL GARCIA,Term-limited-p-won,,pan,0.1398,,,0,0,,
+tam-13.016,16376,Hidalgo,2007,0,11,nov,28,16,28016,28016,pri-pna,MARCO ANTONIO LEAL GARCIA,Term-limited-p-won,,pan,0.1398,asesinado 28ago2010,,0,0,,
 tam-14.016,16377,Hidalgo,2010,0,4,jul,28,16,28016,28016,pri-pna,GONZALO UVALLE MORALES,Term-limited-p-won,,pan,0.5614,,,0,0,,
 tam-15.016,16378,Hidalgo,2013,0,7,jul,28,16,28016,28016,pri-pvem-pna,JESUS MANUEL GUERRERO GAMBOA,Term-limited-p-lost,,pan,0.8338,,,0,0,,
 tam-16.016,16379,Hidalgo,2016,0,5,jun,28,16,28016,28016,pan,MA. DE LOURDES DOMINGUEZ WALLE,Out-p-won,,morena,0.8388,,,0,0,,
@@ -16466,7 +16466,7 @@ tam-13.024,16464,Mier,2007,0,11,nov,28,24,28024,28024,pri-pna,JOSE IVAN MANCIAS 
 tam-14.024,16465,Mier,2010,0,4,jul,28,24,28024,28024,pri-pna,ALBERTO GONZALEZ PEÑA,Term-limited-p-lost,,pt,0.7834,,,0,0,,
 tam-15.024,16466,Mier,2013,0,7,jul,28,24,28024,28024,pan,ROBERTO GONZALEZ GONZALEZ,Term-limited-p-won,,pri-pvem-pna,0.0562,,,0,0,,
 tam-16.024,16467,Mier,2016,0,5,jun,28,24,28024,28024,pan,ROBERTO GUSTAVO GONZALEZ HINOJOSA,Reelected,,mc,0.2188,,,0,0,,ok
-tam-17.024,16468,Mier,2018,0,1,jul,28,24,28024,28024,pan,ROBERTO GUSTAVO GONZALEZ HINOJOSA,Term-limited-pending,MARIA HERLINDA GONZALEZ VAZQUEZ,pri,0.4163,,,1,1,,ok
+tam-17.024,16468,Mier,2018,0,1,jul,28,24,28024,28024,pan,ROBERTO GUSTAVO GONZALEZ HINOJOSA,Term-limited-pending,MARIA HERLINDA GONZALEZ VAZQUEZ,pri,0.4163,asesinado 13jul2018,,1,1,,ok
 tam-07.025,16469,Miguel Alemán,1989,0,26,nov,28,25,28025,28025,pri,JOSE BARRERA MANUEL BALDERAS RAMIREZ,Term-limited-p-won,,parm,0.6682,,inafed,0,0,,
 tam-08.025,16470,Miguel Alemán,1992,0,8,nov,28,25,28025,28025,pri,JESUS AMANDO SAENZ BARRERA,Term-limited-p-lost,,parm,0.7178,,inafed,0,0,,
 tam-09.025,16471,Miguel Alemán,1995,0,12,nov,28,25,28025,28025,pan,SANTIAGO GOMEZ STRINGEL,Term-limited-p-lost,,pri,0.1206,,inafed,0,0,,
@@ -16582,7 +16582,7 @@ tam-08.035,16580,San Fernando,1992,0,8,nov,28,35,28035,28035,pri,ROSALINDA BANDA
 tam-09.035,16581,San Fernando,1995,0,12,nov,28,35,28035,28035,pri,MARIA DELIA GARZA GUTIERREZ,Term-limited-p-won,,prd,0.438,,inafed,0,0,,ok
 tam-10.035,16582,San Fernando,1998,0,25,oct,28,35,28035,28035,pri,GABRIEL DE LA GARZA GARZA,Term-limited-p-lost,,prd,0.1979,,,0,0,,
 tam-11.035,16583,San Fernando,2001,0,7,oct,28,35,28035,28035,pan,JUAN JOSE GALVAN GARCIA,Term-limited-p-lost,,pri,0.0134,,,0,0,,
-tam-12.035,16584,San Fernando,2004,0,14,nov,28,35,28035,28035,pri,MARIA DELIA GARZA GUTIERREZ,Term-limited-p-won,,prd-conve,0.2942,,,1,1,,ok
+tam-12.035,16584,San Fernando,2004,0,14,nov,28,35,28035,28035,pri,MARIA DELIA GARZA GUTIERREZ,Term-limited-p-won,,prd-conve,0.2942,murio cancer 20jul2007,,1,1,,ok
 tam-13.035,16585,San Fernando,2007,0,11,nov,28,35,28035,28035,pri-pna,ALEJANDRO RENE FRANKLIN GALINDO,Term-limited-p-won,,pan,0.0679,,,0,0,,
 tam-14.035,16586,San Fernando,2010,0,4,jul,28,35,28035,28035,pri-pna,TOMAS GLORIA REQUENA,Term-limited-p-won,,pan,0.54,,,0,0,,
 tam-15.035,16587,San Fernando,2013,0,7,jul,28,35,28035,28035,pri-pvem-pna,MARIO ALBERTO DE LA GARZA GARZA,Term-limited-p-lost,,pan,0.1247,,,0,0,,
@@ -18157,7 +18157,7 @@ ver-12.090,18155,Jamapa,2004,0,5,sep,30,90,30092,30090,pan,EMILIO GOMEZ MOCTEZUM
 ver-13.090,18156,Jamapa,2007,0,2,sep,30,90,30092,30090,pri-pvem-pna-pasd,FRANCISCO MARTINEZ PEREZ,Term-limited-p-won,,conve,0.2274,,,0,0,,
 ver-14.090,18157,Jamapa,2010,0,4,jul,30,90,30092,30090,pri-pvem-prv,NOEL AQUINO PEREZ,Term-limited-p-won,,pan-pna,0.035,,,0,0,,
 ver-15.090,18158,Jamapa,2013,0,7,jul,30,90,30092,30090,pri-pvem-pna,MARIBEL DIAZ TOLEDO,Term-limited-p-lost,,pan,0.0525,,,0,0,,
-ver-16.090,18159,Jamapa,2017,0,4,jun,30,90,30092,30090,pan-prd,FLORISEL RIOS DELFIN,Term-limited-pending,,mc,0.0596,,,0,0,,
+ver-16.090,18159,Jamapa,2017,0,4,jun,30,90,30092,30090,pan-prd,FLORISEL RIOS DELFIN,Term-limited-pending,,mc,0.0596,asesinada 11nov2020,,0,0,,
 ver-07.091,18160,Jesús Carranza,1988,0,2,oct,30,91,30093,30091,pri,GILBERTO GUILLEN SERRANO,Term-limited-p-won,,,,,inafed,0,0,,ok
 ver-08.091,18161,Jesús Carranza,1991,0,10,nov,30,91,30093,30091,pri,EDUARDO CORTES MACON,Term-limited-p-won,,prd,0.0967,,inafed,0,0,,
 ver-09.091,18162,Jesús Carranza,1994,0,13,nov,30,91,30093,30091,pri,FLORENTINO GARCIA OCHOA,Term-limited-p-lost,,prd,0.134,,inafed,0,0,,
