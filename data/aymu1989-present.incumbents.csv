@@ -107,7 +107,7 @@ ags-13.011,105,San Francisco de los Romo,2007,0,5,ago,1,11,1010,1011,pvem,EFRAIN
 ags-14.011,106,San Francisco de los Romo,2010,0,4,jul,1,11,1010,1011,pri-pvem-pna,FRANCISCO JAVIER GUEL SOSA,Term-limited-p-won,,pan,0.2412,,,0,0,,
 ags-15.011,107,San Francisco de los Romo,2013,0,7,jul,1,11,1010,1011,pri,MARGARITA GALLEGOS SOTO,Term-limited-p-won,,pna,0.0622,,,0,0,,
 ags-16.011,108,San Francisco de los Romo,2016,0,5,jun,1,11,1010,1011,pri,IRAIS MARTINEZ DE LA CRUZ,Out-p-won,BEATRIZ MONTOYA HERNANDEZ,pan,0.0303,,,0,0,,
-ags-17.011,109,San Francisco de los Romo,2019,0,2,jun,1,11,1010,1011,pri,JUAN JOSE LOSOYA PONCE,2022,EFRAIN CASTILLO VALADEZ,morena,0.0728,,,0,0,,
+ags-17.011,109,San Francisco de los Romo,2019,0,2,jun,1,11,1010,1011,pri,JUAN JOSE LOSOYA PONCE,Dead-p-won,EFRAIN CASTILLO VALADEZ,morena,0.0728,murio paro cardiorespiratorio 5ene2021 probable covid19,,0,0,,
 ags-08.010,110,Llano--El,1992,0,2,ago,1,10,1011,1010,pri,JESUS GUERRERO ESCOBEDO,Term-limited-p-won,,pps,0.812,,inafed,0,0,,
 ags-09.010,111,Llano--El,1995,0,6,ago,1,10,1011,1010,pri,JUAN MANUEL RAMOS MIRELES,Term-limited-p-won,,pan,0.456,,inafed,0,0,,
 ags-10.010,112,Llano--El,1998,0,2,ago,1,10,1011,1010,pri,JOSE MANUEL MARTINEZ RODRIGUEZ,Term-limited-p-won,,pan,0.285,,,0,0,,
@@ -5164,7 +5164,7 @@ hgo-12.052,5162,San Agustín Tlaxiaca,2005,0,13,nov,13,52,13051,13052,pan,MAURO 
 hgo-13.052,5163,San Agustín Tlaxiaca,2008,0,9,nov,13,52,13051,13052,pri-pna,SEVERIANO LOPEZ OLVERA,Term-limited-p-won,,pan,0.1887,,,0,0,,
 hgo-14.052,5164,San Agustín Tlaxiaca,2011,0,3,jul,13,52,13051,13052,pri,BELEN ARTURO HERNANDEZ MAXIMO,Term-limited-p-won,,pan-prd,0.3016,,,0,0,,
 hgo-15.052,5165,San Agustín Tlaxiaca,2016,0,5,jun,13,52,13051,13052,pri-pvem-pna,ALMA DALILA LOPEZ SANTIAGO,Term-limited-p-won,,pes,0.053,,,0,0,,
-hgo-16.052,5166,San Agustín Tlaxiaca,2020,0,18,oct,13,52,13051,13052,pri,,Term-limited-pending,,pna,0.1359,,,,,,
+hgo-16.052,5166,San Agustín Tlaxiaca,2020,0,18,oct,13,52,13051,13052,pri,HECTOR FELIPE HERNANDEZ GONZALEZ,Term-limited-pending,,pna,0.1359,murio covid19 25oct2020 alcalde electo,,,,,
 hgo-07.053,5167,San Bartolo Tutotepec,1990,0,11,nov,13,53,13052,13053,pri,JACIEL V NERI GONZALEZ,Term-limited-p-won,,prd,0.2181,,inafed,0,0,,
 hgo-08.053,5168,San Bartolo Tutotepec,1993,0,5,dic,13,53,13052,13053,pri,FRANCISCO URIEL ISLAS TREJO,Term-limited-p-won,,prd,0.5137,,inafed,0,0,,ok
 hgo-09.053,5169,San Bartolo Tutotepec,1996,0,10,nov,13,53,13052,13053,pri,SALVADOR CRUZ ORTIZ,Term-limited-p-won,,prd,0.3715,,inafed,0,0,,
@@ -5234,7 +5234,7 @@ hgo-12.058,5232,Tasquillo,2005,0,13,nov,13,58,13058,13058,prd,GONZALO CALLEJAS U
 hgo-13.058,5233,Tasquillo,2008,0,9,nov,13,58,13058,13058,prd,ARTURO RAMIREZ MENDOZA,Term-limited-p-won,,pri-pna,0.0643,,,0,0,,
 hgo-14.058,5234,Tasquillo,2011,0,3,jul,13,58,13058,13058,prd,ALBERTO SANCHEZ GONZALEZ,Term-limited-p-won,,pri,0.0927,,,0,0,,
 hgo-15.058,5235,Tasquillo,2016,0,5,jun,13,58,13058,13058,prd,MIRIAM RAMIREZ MENDOZA,Term-limited-p-lost,,pri-pvem-pna,0.0659,,,0,0,,
-hgo-16.058,5236,Tasquillo,2020,0,18,oct,13,58,13058,13058,pri,,Term-limited-pending,,podemos,0.0688,,,,,,
+hgo-16.058,5236,Tasquillo,2020,0,18,oct,13,58,13058,13058,pri,MARIA DE JESUS CHAVEZ,Term-limited-pending,,podemos,0.0688,murio covid19 30ene2021,,,,,
 hgo-07.059,5237,Tecozautla,1990,0,11,nov,13,59,13059,13059,pri,PABLO ALVARADO MORAN,Term-limited-p-won,,pfcrn,0.9371,,inafed,0,0,,
 hgo-08.059,5238,Tecozautla,1993,0,5,dic,13,59,13059,13059,pri,HUMBERTO CAMPO TREJO,Term-limited-p-won,,prd,0.7686,,inafed,0,0,,
 hgo-09.059,5239,Tecozautla,1996,0,10,nov,13,59,13059,13059,pri,JAIME DIAZ ROJO,Term-limited-p-lost,,pan,0.4512,,inafed,0,0,,
@@ -5314,7 +5314,7 @@ hgo-12.067,5312,Tezontepec de Aldama,2005,0,13,nov,13,67,13066,13067,prd,MOISES 
 hgo-13.067,5313,Tezontepec de Aldama,2008,0,9,nov,13,67,13066,13067,pri-pna,CLEMENTE CORNEJO CERON,Term-limited-p-lost,,prd,0.1418,,,0,0,,
 hgo-14.067,5314,Tezontepec de Aldama,2011,0,3,jul,13,67,13066,13067,pan,ASAEL HERNANDEZ CERON,Term-limited-p-lost,,prd,0.0099,,,0,0,,
 hgo-15.067,5315,Tezontepec de Aldama,2016,0,5,jun,13,67,13066,13067,mc,PEDRO FORRAS PEREZ,Term-limited-p-lost,,pan,0.0743,,,0,0,,
-hgo-16.067,5316,Tezontepec de Aldama,2020,0,18,oct,13,67,13066,13067,pan,,Term-limited-pending,,prd,0.0675,,,,,,
+hgo-16.067,5316,Tezontepec de Aldama,2020,0,18,oct,13,67,13066,13067,pri,PATRICIA MARCELA GONZALEZ VALENCIA,Term-limited-pending,,mc,0.0675,Murió covid19 18feb2021,,,,,
 hgo-07.068,5317,Tianguistengo,1990,0,11,nov,13,68,13067,13068,pri,EDGAR CARPIO ALARCON,Term-limited-p-won,,pps,0.981,,inafed,0,0,,
 hgo-08.068,5318,Tianguistengo,1993,0,5,dic,13,68,13067,13068,pri,CONRADO CARPIO Z.,Term-limited-p-won,,prd,0.5516,,inafed,0,0,,
 hgo-09.068,5319,Tianguistengo,1996,0,10,nov,13,68,13067,13068,pri,JESUS CERVANTES R.,Term-limited-p-won,,pan,0.4467,,inafed,0,0,,
@@ -5792,7 +5792,7 @@ jal-14.026,5790,Concepción de Buenos Aires,2009,0,5,jul,14,26,14027,14026,pan,M
 jal-15.026,5791,Concepción de Buenos Aires,2012,0,1,jul,14,26,14027,14026,pri-pvem,GONZALO ZUÑIGA ARIAS,Term-limited-p-won,,pan,0.16,,,1,1,,ok
 jal-16.026,5792,Concepción de Buenos Aires,2015,0,7,jun,14,26,14027,14026,pri,JOSE GUADALUPE BUENROSTRO MARTINEZ,Reelected-dif-p,,mc,0.0406,reran under pvem,,0,0,,ok
 jal-17.026,5793,Concepción de Buenos Aires,2018,0,1,jul,14,26,14027,14026,pvem,JOSE GUADALUPE BUENROSTRO MARTINEZ,Term-limited-pending,MARIA GUADALUPE BUENROSTRO ORTIZ,mc,0.1537,,,1,1,,ok
-jal-07.027,5794,Cuautitlán,1988,0,4,dic,14,27,14028,14027,pri,JUAN QUIÑONES CARRILLO,Term-limited-p-won,,,,,inafed,0,0,,
+jal-07.027,5794,Cuautitlán de García Barragán,1988,0,4,dic,14,27,14028,14027,pri,JUAN QUIÑONES CARRILLO,Term-limited-p-won,,,,,inafed,0,0,,
 jal-08.027,5795,Cuautitlán de García Barragán,1992,0,9,feb,14,27,14028,14027,pri,PASCUAL GONZALEZ HORTA,Term-limited-p-won,,prd,0.7356,,inafed,0,0,,
 jal-09.027,5796,Cuautitlán de García Barragán,1995,0,12,feb,14,27,14028,14027,pri,GUADALUPE HORTA OCHOA,Term-limited-p-won,,pan,0.6149,,inafed,0,0,,
 jal-10.027,5797,Cuautitlán de García Barragán,1997,0,9,nov,14,27,14028,14027,pri,ESTEBAN ARIAS SOTO,Term-limited-p-won,,prd,0.0707,,,0,0,,
@@ -6045,7 +6045,7 @@ jal-14.048,6043,Jesús María,2009,0,5,jul,14,48,14050,14048,pan,FERNANDO OSCAR 
 jal-15.048,6044,Jesús María,2012,0,1,jul,14,48,14050,14048,pri-pvem,MARIA DE JESUS LOPEZ MELENDEZ,Term-limited-p-won,,pan,0.2087,,,0,0,,
 jal-16.048,6045,Jesús María,2015,0,7,jun,14,48,14050,14048,pri,GILBERTO LOPEZ ORNELAS,Out-p-lost,,pan,0.0172,,,0,0,,
 jal-17.048,6046,Jesús María,2018,0,1,jul,14,48,14050,14048,pan,RICARDO IVAN GONZALEZ GARCIA,2021,JUAN PABLO CERRILLO HERNÁNDEZ,mc,0.1106,,,1,1,,ok
-jal-07.049,6047,Jilotlán,1988,0,4,dic,14,49,14051,14049,pri,SALOMON GARIBAY ORTEGA,Term-limited-p-won,,,,,inafed,0,0,,
+jal-07.049,6047,Jilotlán de los Dolores,1988,0,4,dic,14,49,14051,14049,pri,SALOMON GARIBAY ORTEGA,Term-limited-p-won,,,,,inafed,0,0,,
 jal-08.049,6048,Jilotlán de los Dolores,1992,0,9,feb,14,49,14051,14049,pri,EMILIANO DOÑAN ALVAREZ,Term-limited-p-won,,pfcrn,0.9151,,inafed,0,0,,
 jal-09.049,6049,Jilotlán de los Dolores,1995,0,12,feb,14,49,14051,14049,pri,JAIME SOTO ISAIS,Term-limited-p-lost,,prd,0.1445,,inafed,0,0,,
 jal-10.049,6050,Jilotlán de los Dolores,1997,0,9,nov,14,49,14051,14049,pan,JESUS VALENCIA OROZCO,Term-limited-p-won,,pri,0.0604,,,0,0,,
@@ -6054,7 +6054,7 @@ jal-12.049,6052,Jilotlán de los Dolores,2003,0,6,jul,14,49,14051,14049,pri,HERM
 jal-13.049,6053,Jilotlán de los Dolores,2006,0,2,jul,14,49,14051,14049,pri,LUIS MANUEL GODINES GONZALEZ,Term-limited-p-won,,pan,0.0366,,,0,0,,
 jal-14.049,6054,Jilotlán de los Dolores,2009,0,5,jul,14,49,14051,14049,pri-pna,HERMILA MENDOZA MENDOZA,Term-limited-p-won,,pan,0.0751,,,0,0,,
 jal-15.049,6055,Jilotlán de los Dolores,2012,0,1,jul,14,49,14051,14049,pri-pvem,CARLOS ENRIQUE LLAMAS GONZALEZ,Term-limited-p-lost,,pan,0.149,,,0,0,,
-jal-16.049,6056,Jilotlán de los Dolores,2015,0,7,jun,14,49,14051,14049,mc,JUAN CARLOS ANDRADE MAGAÑA,Out-p-won,,pri,0.1711,Renominado asesinado 15abr2018,,0,0,,
+jal-16.049,6056,Jilotlán de los Dolores,2015,0,7,jun,14,49,14051,14049,mc,JUAN CARLOS ANDRADE MAGAÑA,Dead-p-lost,,pri,0.1711,Renominado asesinado 15abr2018,,0,0,,
 jal-17.049,6057,Jilotlán de los Dolores,2018,0,1,jul,14,49,14051,14049,pan-prd-mc,YDALIA CHAVEZ CONTREAS,2021,HERMILA MENDOZA MENDOZA,pri,0.5004,,,0,0,,
 jal-07.050,6058,Jocotepec,1988,0,4,dic,14,50,14052,14050,pri,MIGUEL IBARRA RAMIREZ,Term-limited-p-won,,,,,inafed,0,0,,
 jal-08.050,6059,Jocotepec,1992,0,9,feb,14,50,14052,14050,pri,CESAR RAMON LOPEZ JARA,Term-limited-p-lost,,pan,0.5869,,inafed,0,0,,
@@ -7092,7 +7092,7 @@ mex-12.023,7090,Coyotepec,2006,0,12,mar,15,23,15023,15023,prd-pt,CARLOS MELENDEZ
 mex-13.023,7091,Coyotepec,2009,0,5,jul,15,23,15023,15023,pri-pvem-pna-psd1-pfd1,JUAN ANTONIO CASAS RODRIGUEZ,Term-limited-p-won,,pan,0.1511,,,0,0,,
 mex-14.023,7092,Coyotepec,2012,0,1,jul,15,23,15023,15023,pri-pvem-pna,ALFREDO ANGUIANO FUENTES,Term-limited-p-lost,,pan,0.0514,,,0,0,,
 mex-15.023,7093,Coyotepec,2015,0,7,jun,15,23,15023,15023,pan,PEDRO LUNA VARGAS,Out-p-lost,,pri-pvem-pna,0.0703,,,0,0,,
-mex-16.023,7094,Coyotepec,2018,0,1,jul,15,23,15023,15023,pt-morena-pes,SERGIO ANGUIANO MELENDEZ,2021-died,,pan-prd-mc,0.0546,died in office covid 8jun2020,,0,0,,
+mex-16.023,7094,Coyotepec,2018,0,1,jul,15,23,15023,15023,pt-morena-pes,SERGIO ANGUIANO MELENDEZ,dead-2021,,pan-prd-mc,0.0546,died in office covid 8jun2020,,0,0,,
 mex-07.024,7095,Cuautitlán,1990,0,11,nov,15,24,15024,15024,pan,FRANCISCO SANTOS COVARRUBIAS,Term-limited-p-won,,pri,0.0436,,inafed,0,0,,
 mex-08.024,7096,Cuautitlán,1993,0,14,nov,15,24,15024,15024,pan,MARCO ANTONIO LOPEZ HERNANDEZ,Term-limited-p-won,,pri,0.2251,,inafed,0,0,,
 mex-09.024,7097,Cuautitlán,1996,0,10,nov,15,24,15024,15024,pan,PRUDENCIO CANO HERNANDEZ,Term-limited-p-won,,pri,0.2011,,inafed,0,0,,
@@ -7101,7 +7101,7 @@ mex-11.024,7099,Cuautitlán,2003,0,9,mar,15,24,15024,15024,pri-pvem,GABRIEL CASI
 mex-12.024,7100,Cuautitlán,2006,0,12,mar,15,24,15024,15024,pri-pvem,MIGUEL ANGEL BECERRIL LOPEZ,Term-limited-p-won,,prd-conve,0.1226,,,0,0,,
 mex-13.024,7101,Cuautitlán,2009,0,5,jul,15,24,15024,15024,pri-pvem-pna-psd1-pfd1,FRANCISCO JAVIER FERNANDEZ CLAMONT,Term-limited-p-won,,pan,0.3528,,,0,0,,
 mex-14.024,7102,Cuautitlán,2012,0,1,jul,15,24,15024,15024,pri-pvem-pna,GABRIEL CASILLAS ZANATTA,Term-limited-p-won,,prd,0.1267,,,1,1,,ok
-mex-15.024,7103,Cuautitlán,2015,0,7,jun,15,24,15024,15024,pri-pvem-pna,MARTHA ELVIA FERNANDEZ SANCHEZ,Out-p-lost,,pan,0.096,,,0,0,,
+mex-15.024,7103,Cuautitlán,2015,0,7,jun,15,24,15024,15024,pri-pvem-pna,MARTHA ELVIA FERNANDEZ SANCHEZ,Dead-p-lost,,pan,0.096,died cancer 5mar2017,,0,0,,
 mex-16.024,7104,Cuautitlán,2018,0,1,jul,15,24,15024,15024,pt-morena-pes,MARIO ARIEL JUAREZ RODRIGUEZ,2021,,pri,0.162,,,0,0,,
 mex-07.121,7105,Cuautitlán Izcalli,1990,0,11,nov,15,121,15025,15121,pri,MUCIO CARDOSO BELTRAN,Term-limited-p-won,,pan,0.1901,,inafed,0,0,,
 mex-08.121,7106,Cuautitlán Izcalli,1993,0,14,nov,15,121,15025,15121,pri,FERNANDO ALBERTO GARCIA CUEVAS,Term-limited-p-lost,,pan,0.258,,inafed,0,0,,
@@ -7268,7 +7268,7 @@ mex-08.040,7266,Ixtapan de la Sal,1993,0,14,nov,15,40,15041,15040,pri,FRANCISCO 
 mex-09.040,7267,Ixtapan de la Sal,1996,0,10,nov,15,40,15041,15040,pri,GUILLERMO ENRIQUE QUESNEY SANCHEZ,Term-limited-p-won,,pan,0.1496,,inafed,0,0,,
 mex-10.040,7268,Ixtapan de la Sal,2000,0,2,jul,15,40,15041,15040,pri,JOSE ADAN IGNACIO RUBI SALAZAR,Term-limited-p-won,,pan,0.2369,,,0,0,,
 mex-11.040,7269,Ixtapan de la Sal,2003,0,9,mar,15,40,15041,15040,pri-pvem,CESAREO ANTONIO DOMINGUEZ DIAZ,Term-limited-p-won,,pan,0.0356,,,0,0,,
-mex-12.040,7270,Ixtapan de la Sal,2006,0,12,mar,15,40,15041,15040,pri-pvem,SALVADOR CHRISTOPHER VERGARA CRUZ,Term-limited-p-won,,prd-pt,0.5787,,,0,0,,
+mex-12.040,7270,Ixtapan de la Sal,2006,0,12,mar,15,40,15041,15040,pri-pvem,SALVADOR CHRISTOPHER VERGARA CRUZ,dead-p-won,,prd-pt,0.5787,killed gunfire 6oct2008,,0,0,,
 mex-13.040,7271,Ixtapan de la Sal,2009,0,5,jul,15,40,15041,15040,pri-pvem-pna-psd1-pfd1,HUGO ANDRES HERNANDEZ VARGAS,Term-limited-p-lost,,prd,0.1637,,,0,0,,
 mex-14.040,7272,Ixtapan de la Sal,2012,0,1,jul,15,40,15041,15040,prd-pt,IGNACIO AVILA NAVARRETE,Term-limited-p-lost,,pri-pvem-pna,0.1077,,,0,0,,
 mex-15.040,7273,Ixtapan de la Sal,2015,0,7,jun,15,40,15041,15040,pri-pvem-pna,JULIO CESAR SERGIO BECERRIL ROMAN,Out-p-lost,,pan-pt,0.2913,,,0,0,,
@@ -7312,7 +7312,7 @@ mex-12.044,7310,Jaltenco,2006,0,12,mar,15,44,15045,15044,prd-conve,GERMAN ROMERO
 mex-13.044,7311,Jaltenco,2009,0,5,jul,15,44,15045,15044,pri-pvem-pna-psd1-pfd1,MARCO ANTONIO REYES OLIVARES,Term-limited-p-won,,prd,0.1865,,,0,0,,
 mex-14.044,7312,Jaltenco,2012,0,1,jul,15,44,15045,15044,pri-pvem-pna,GABINO PARDINES RODRIGUEZ,Term-limited-p-won,,prd-pt,0.0352,,,1,1,,ok
 mex-15.044,7313,Jaltenco,2015,0,7,jun,15,44,15045,15044,pri-pvem-pna,ARMANDO RAMIREZ RAMIREZ,Out-p-lost,,pan,0.0328,,,0,0,,
-mex-16.044,7314,Jaltenco,2018,0,1,jul,15,44,15045,15044,pt-morena-pes,JOSE ROSARIO ROMERO LUGO,2021,,pan-prd-mc,0.1684,,,0,0,,
+mex-16.044,7314,Jaltenco,2018,0,1,jul,15,44,15045,15044,pt-morena-pes,JOSE ROSARIO ROMERO LUGO,dead-2021,,pan-prd-mc,0.1684,murio covid 17dic2020,,0,0,,
 mex-07.045,7315,Jilotepec,1990,0,11,nov,15,45,15046,15045,pri,,Term-limited-p-won,,pan,0.835,,,0,0,,
 mex-08.045,7316,Jilotepec,1993,0,14,nov,15,45,15046,15045,pri,JOSE ROBERTO MALDONADO BARRERA,Term-limited-p-won,,pan,0.4415,,inafed,0,0,,
 mex-09.045,7317,Jilotepec,1996,0,10,nov,15,45,15046,15045,pri,HERIBERTO ORTEGA RAMIREZ,Term-limited-p-won,,pan,0.2284,,inafed,0,0,,
@@ -7331,7 +7331,7 @@ mex-11.046,7329,Jilotzingo,2003,0,9,mar,15,46,15047,15046,pri-pvem,ELEUTERIO CES
 mex-12.046,7330,Jilotzingo,2006,0,12,mar,15,46,15047,15046,prd,JAIME MAYEN NUÑEZ,Term-limited-p-lost,,pri-pvem,0.221,,,0,0,,
 mex-13.046,7331,Jilotzingo,2009,0,5,jul,15,46,15047,15046,pri-pvem-pna-psd1-pfd1,SILVIA CASAS GONZALEZ,Term-limited-p-won,,prd,0.1058,,,0,0,,
 mex-14.046,7332,Jilotzingo,2012,0,1,jul,15,46,15047,15046,pri-pvem-pna,REYNALDO TORRES GONZALEZ,Term-limited-p-lost,,pan,0.072,,,0,0,,
-mex-15.046,7333,Jilotzingo,2015,0,7,jun,15,46,15047,15046,pan,JUAN ANTONIO MAYEN SAUCEDO,Out-p-won,,pri-pvem-pna,0.1473,,,0,0,,
+mex-15.046,7333,Jilotzingo,2015,0,7,jun,15,46,15047,15046,pan,JUAN ANTONIO MAYEN SAUCEDO,Died-p-won,,pri-pvem-pna,0.1473,killed gunfire 22abr2016,,0,0,,
 mex-16.046,7334,Jilotzingo,2018,0,1,jul,15,46,15047,15046,pan-prd-mc,EVELIN MAYEN GONZALEZ,2021,,pvem,0.0095,,,0,0,,
 mex-07.047,7335,Jiquipilco,1990,0,11,nov,15,47,15048,15047,pri,ANTONIO ESCOBAR SOTERA,Term-limited-p-won,,pps,0.3175,,inafed,0,0,,
 mex-08.047,7336,Jiquipilco,1993,0,14,nov,15,47,15048,15047,pri,SONIA BECERRIL QUIJADA,Term-limited-p-lost,,prd,0.6126,,inafed,0,0,,
@@ -7502,7 +7502,7 @@ mex-12.063,7500,Ocuilan,2006,0,12,mar,15,63,15064,15063,prd-pt,FELIZ ALBERTO LIN
 mex-13.063,7501,Ocuilan,2009,0,5,jul,15,63,15064,15063,pri-pvem-pna-psd1-pfd1,JUAN JOSE LINARES MARTINEZ,Term-limited-p-won,,prd,0.0975,,,0,0,,
 mex-14.063,7502,Ocuilan,2012,0,1,jul,15,63,15064,15063,pri-pvem-pna,RUBEN ABILIO GONZALEZ MARQUEZ,Term-limited-p-lost,,pan,0.1535,,,0,0,,
 mex-15.063,7503,Ocuilan,2015,0,7,jun,15,63,15064,15063,prd,FELIX ALBERTO LINARES GONZALEZ,Reelected,,pri-pvem-pna,0.0274,,,0,0,,ok
-mex-16.063,7504,Ocuilan,2018,0,1,jul,15,63,15064,15063,pan-prd-mc,FELIX ALBERTO LINARES GONZALEZ,Term-limited-pending,,pri,0.1241,,,1,1,,ok
+mex-16.063,7504,Ocuilan,2018,0,1,jul,15,63,15064,15063,pan-prd-mc,FELIX ALBERTO LINARES GONZALEZ,dead-2021,,pri,0.1241,muere en accidente aéreo 4ene2020,,1,1,,ok
 mex-07.064,7505,Oro--El,1990,0,11,nov,15,64,15065,15064,pri,JAIME VICENTE REYES Y EULOGIO CARPIO,Term-limited-p-won,,prd,0.4146,,inafed,0,0,,
 mex-08.064,7506,Oro--El,1993,0,14,nov,15,64,15065,15064,pri,UBALDO GREGORIO VELAZQUEZ H.,Term-limited-p-lost,,pan,0.4687,,inafed,0,0,,
 mex-09.064,7507,Oro--El,1996,0,10,nov,15,64,15065,15064,pan,HECTOR ADRIAN DE LA TEJERA GARCIA,Term-limited-p-lost,,pri,0.0367,,inafed,0,0,,
@@ -7881,7 +7881,7 @@ mex-11.101,7879,Tianguistenco,2003,0,9,mar,15,101,15102,15101,pan,MARCO JESUS AC
 mex-12.101,7880,Tianguistenco,2006,0,12,mar,15,101,15102,15101,pan,ALFREDO RODRIGUEZ CASTRO,Term-limited-p-lost,,pri-pvem,0.003,,,0,0,,
 mex-13.101,7881,Tianguistenco,2009,0,5,jul,15,101,15102,15101,pri-pvem-pna-psd1-pfd1,LUIS ALFONSO ARANA CASTRO,Term-limited-p-won,,pan,0.1346,,,0,0,,
 mex-14.101,7882,Tianguistenco,2012,0,1,jul,15,101,15102,15101,pri-pvem-pna,JESUS ARRATIA GONZALEZ,Term-limited-p-lost,,prd,0.1361,,,0,0,,
-mex-15.101,7883,Tianguistenco,2015,0,7,jun,15,101,15102,15101,pan-pt,FERNANDO ALVARO GOMEZ,Out-p-won,,pri-pvem-pna,0.0144,,,0,0,,
+mex-15.101,7883,Tianguistenco,2015,0,7,jun,15,101,15102,15101,pan-pt,FERNANDO ALVARO GOMEZ,Dead-p-won,,pri-pvem-pna,0.0144,died heart attack 25mar2017,,0,0,,
 mex-16.101,7884,Tianguistenco,2018,0,1,jul,15,101,15102,15101,pt-morena-pes,ALFREDO BALTAZAR VILLASEÑOR,2021,,pvem,0.051,,,0,0,,
 mex-07.102,7885,Timilpan,1990,0,11,nov,15,102,15103,15102,pri,ALBERTO PICHARDO COLIN,Term-limited-p-won,,pan,0.4007,,inafed,0,0,,
 mex-08.102,7886,Timilpan,1993,0,14,nov,15,102,15103,15102,pri,ADRIAN ISABEL MONROY HUITRON,Term-limited-p-won,,pan,0.3479,,inafed,0,0,,
@@ -7952,7 +7952,7 @@ mex-12.108,7950,Tultepec,2006,0,12,mar,15,108,15109,15108,prd-pt,RAMON SERGIO LU
 mex-13.108,7951,Tultepec,2009,0,5,jul,15,108,15109,15108,prd,ARMANDO PORTUGUEZ FUENTES,Term-limited-p-won,,pri-pvem-pna-psd1-pfd1,0.079,,,1,1,,ok
 mex-14.108,7952,Tultepec,2012,0,1,jul,15,108,15109,15108,prd-mc,RAMON SERGIO LUNA CORTES,Term-limited-p-won,,pri-pvem-pna,0.0526,,,1,1,,ok
 mex-15.108,7953,Tultepec,2015,0,7,jun,15,108,15109,15108,prd,ARMANDO PORTUGUEZ FUENTES,Reelected,,pri-pvem-pna,0.0362,,,1,1,,ok
-mex-16.108,7954,Tultepec,2018,0,1,jul,15,108,15109,15108,pan-prd-mc,ARMANDO PORTUGUEZ FUENTES,Term-limited-pending,,pt-morena-pes,0.0195,,,1,1,,ok
+mex-16.108,7954,Tultepec,2018,0,1,jul,15,108,15109,15108,pan-prd-mc,ARMANDO PORTUGUEZ FUENTES,Term-limited-pending,,pt-morena-pes,0.0195,muere infarto 23may2020,,1,1,,ok
 mex-07.109,7955,Tultitlán,1990,0,11,nov,15,109,15110,15109,pri,ORLANDO MONDRAGON CORONEL,Term-limited-p-won,,prd,0.2719,,inafed,0,0,,
 mex-08.109,7956,Tultitlán,1993,0,14,nov,15,109,15110,15109,pri,VICTOR CAÑAS SANCHEZ,Term-limited-p-won,,pan,0.3869,,inafed,0,0,,
 mex-09.109,7957,Tultitlán,1996,0,10,nov,15,109,15110,15109,pri,HECTOR FRAGOSO PERETE,Term-limited-p-lost,,prd,0.0308,,inafed,0,0,,
@@ -8098,7 +8098,7 @@ mex-12.125,8096,Tonanitla,2006,0,12,mar,15,125,15125,15125,pt-conve,JERONIMO MAR
 mex-13.125,8097,Tonanitla,2009,0,5,jul,15,125,15125,15125,conve,JOSE TRINIDAD MARTINEZ MELCHOR,Term-limited-p-lost,,pri-pvem-pna-psd1-pfd1,0.0673,,,0,0,,
 mex-14.125,8098,Tonanitla,2012,0,1,jul,15,125,15125,15125,pri-pvem-pna,MIGUEL MARTINEZ ORTIZ,Term-limited-p-lost,,prd,0.2171,,,0,0,,
 mex-15.125,8099,Tonanitla,2015,0,7,jun,15,125,15125,15125,pt,GREGORIO MORALES GUTIERREZ,Out-p-lost,,pri-pvem-pna,0.02,,,0,0,,
-mex-16.125,8100,Tonanitla,2018,0,1,jul,15,125,15125,15125,pan-prd-mc,MAURO MARTINEZ MARTINEZ,2021,,pri,0,,,0,0,,
+mex-16.125,8100,Tonanitla,2018,0,1,jul,15,125,15125,15125,pri,MAURO MARTINEZ MARTINEZ,dead-2021,,pan-prd-mc,0.0001,murio covid19 30ago2020,,0,0,,
 mic-07.001,8101,Acuitzio,1989,0,3,dic,16,1,16001,16001,pri,SACRAMENTO VILLA BARAJAS,Term-limited-p-won,,prd,0.0238,,inafed,0,0,,
 mic-08.001,8102,Acuitzio,1992,0,6,dic,16,1,16001,16001,pri,JOSE GUADALUPE VILLASEÑOR,Term-limited-p-won,,pfcrn,0.1787,,inafed,0,0,,
 mic-09.001,8103,Acuitzio,1995,0,12,nov,16,1,16001,16001,pri,LUIS ARREOLA MAULEON,Term-limited-p-lost,,prd,0.0849,,inafed,0,0,,
@@ -8214,7 +8214,7 @@ mic-08.012,8212,Buenavista,1992,0,6,dic,16,12,16012,16012,prd,ARTURO ZUÑIGA MOR
 mic-09.012,8213,Buenavista,1995,0,12,nov,16,12,16012,16012,pri,ABEL ANAYA MARTINEZ,Term-limited-p-lost,,prd,0.1107,,inafed,0,0,,
 mic-10.012,8214,Buenavista,1998,0,8,nov,16,12,16012,16012,prd,ARTURO ZUÑIGA ROMERO,Term-limited-p-won,,pri,0.0034,,,0,0,,
 mic-11.012,8215,Buenavista,2001,0,11,nov,16,12,16012,16012,prd-pt-pvem-conve-pasd-psn,SERGIO BAEZ TORRES,Term-limited-p-won,,pri,0.0855,,,0,0,,
-mic-12.012,8216,Buenavista,2004,0,14,nov,16,12,16012,16012,pri-pvem,FERNANDO CHAVEZ LOPEZ,Term-limited-p-lost,,prd,0.1662,,,0,0,,
+mic-12.012,8216,Buenavista,2004,0,14,nov,16,12,16012,16012,pri-pvem,FERNANDO CHAVEZ LOPEZ,Dead-p-lost,,prd,0.1662,killed 9jul2005,,0,0,,
 mic-13.012,8217,Buenavista,2007,0,11,nov,16,12,16012,16012,prd-pt-conve,OSBALDO ESQUIVEL LUCATERO,Term-limited-p-lost,,pri,0.1547,Inafed lo listaba en Briseñas,iee,0,0,,
 mic-14.012,8218,Buenavista,2011,0,13,nov,16,12,16012,16012,pri-pvem,LUIS TORRES CHAVEZ,Term-limited-p-lost,,prd-pt,0.2986,,,0,0,,
 mic-15.012,8219,Buenavista,2015,0,7,jun,16,12,16012,16012,prd-pna,LORENZO BARAJAS HEREDIA,Beaten,,pri-pvem,0.0432,,,0,0,,
@@ -8602,7 +8602,7 @@ mic-09.049,8600,Madero,1995,0,12,nov,16,49,16051,16049,prd,CELSO ORTEGA BARRIGA,
 mic-10.049,8601,Madero,1998,0,8,nov,16,49,16051,16049,prd,LIVORIO PEREZ VARGAS,Term-limited-p-won,,pri,0.0998,,,0,0,,
 mic-11.049,8602,Madero,2001,0,11,nov,16,49,16051,16049,prd-pt-pvem-conve-pasd-psn,OTILIO SANCHEZ SANCHEZ,Term-limited-p-won,,pri,0.1796,,,0,0,,
 mic-12.049,8603,Madero,2004,0,14,nov,16,49,16051,16049,prd,ALBERTO VILLASEÑOR ROSALES,Term-limited-p-lost,,pri-pvem,0.0424,,,0,0,,
-mic-13.049,8604,Madero,2007,0,11,nov,16,49,16051,16049,pri,MARCELO IBARRA VILLA,Term-limited-p-won,,prd-pt-conve,0.1989,,,0,0,,
+mic-13.049,8604,Madero,2007,0,11,nov,16,49,16051,16049,pri,MARCELO IBARRA VILLA,Dead-p-won,,prd-pt-conve,0.1989,killed 3jun2008,,0,0,,
 mic-14.049,8605,Madero,2011,0,13,nov,16,49,16051,16049,pri-pvem,J. JESUS ROSALES GARCIA,Term-limited-p-lost,,prd-pt-conve,0.0169,,,0,0,,ok
 mic-15.049,8606,Madero,2015,0,7,jun,16,49,16051,16049,prd-pt,JORGE ARMANDO ORTEGA AVILA,Beaten,,pri-pvem,0.1107,,,0,0,,
 mic-16.049,8607,Madero,2018,0,1,jul,16,49,16051,16049,pna,RODRIGO VILLA PEREZ,2021,,pri,0.0951,,,0,0,,
@@ -8663,8 +8663,8 @@ mic-10.056,8661,Nahuatzen,1998,0,8,nov,16,56,16057,16056,pri,J JESUS MORALES ALV
 mic-11.056,8662,Nahuatzen,2001,0,11,nov,16,56,16057,16056,pri,MARIN SAENZ MIER,Term-limited-p-won,,prd-pt-pvem-conve-pasd-psn,0.0652,,,0,0,,
 mic-12.056,8663,Nahuatzen,2004,0,14,nov,16,56,16057,16056,pri-pvem,J JESUS MORALES ALVAREZ,Term-limited-p-lost,,prd,0.0093,,,1,1,,
 mic-13.056,8664,Nahuatzen,2007,0,11,nov,16,56,16057,16056,prd-pt-conve,JAVIER GARCIA MOLINA,Term-limited-p-lost,,pri,0.0088,,,0,0,,
-mic-14.056,8665,Nahuatzen,2011,0,13,nov,16,56,16057,16056,pri-pvem,IGNACIO RODRIGUEZ VILLA,Term-limited-p-won,,prd-conve,0.0314,,,0,0,,
-mic-15.056,8666,Nahuatzen,2015,0,7,jun,16,56,16057,16056,pan-pri-prd-pna-ph-pes,MIGUEL PRADO MORALES,Out-p-won,,morena,0.4198,,,0,0,,
+mic-14.056,8665,Nahuatzen,2011,0,13,nov,16,56,16057,16056,pri-pvem,IGNACIO RODRIGUEZ VILLA,Died-p-won,,prd-conve,0.0314,died cancer 29nov2012,,0,0,,
+mic-15.056,8666,Nahuatzen,2015,0,7,jun,16,56,16057,16056,pan-pri-prd-pna-ph-pes,MIGUEL PRADO MORALES,Out-p-won,,morena,0.4198,interim mayor Wilfrido Flores Villa killed 5feb2013,,0,0,,
 mic-16.056,8667,Nahuatzen,2018,0,1,jul,16,56,16057,16056,prd-pvem,DAVID EDUARDO OTLICA AVILES,2021,,pt-morena,0.1785,,,0,0,,
 mic-07.057,8668,Nocupétaro,1989,0,3,dic,16,57,16058,16057,pri,JUVENAL CARDENAS VALDOVINOS,Term-limited-p-won,,prd,0.0327,,inafed,0,0,,
 mic-08.057,8669,Nocupétaro,1992,0,6,dic,16,57,16058,16057,pri,OMAR ZARCO HERNANDEZ,Term-limited-p-lost,,,,,inafed,0,0,,
@@ -8754,7 +8754,7 @@ mic-11.065,8752,Paracho,2001,0,11,nov,16,65,16066,16065,prd-pt-pvem-conve-pasd-p
 mic-12.065,8753,Paracho,2004,0,14,nov,16,65,16066,16065,pri-pvem,MEDARDO ALEJO AMBROSIO,Term-limited-p-won,,prd,0.4236,,,0,0,,
 mic-13.065,8754,Paracho,2007,0,11,nov,16,65,16066,16065,pri,RAMON MEDINA ELIAS,Term-limited-p-lost,,prd-pt-conve,0.0636,,,0,0,,
 mic-14.065,8755,Paracho,2011,0,13,nov,16,65,16066,16065,prd-conve,NICOLAS ZALAPA VARGAS,Term-limited-p-won,,pri-pvem,0.086,,,0,0,,
-mic-15.065,8756,Paracho,2015,0,7,jun,16,65,16066,16065,prd-pt,STALIN SANCHEZ GONZALEZ,Out-p-lost,,pri-pvem,0.2067,,,0,0,,
+mic-15.065,8756,Paracho,2015,0,7,jun,16,65,16066,16065,prd-pt,STALIN SANCHEZ GONZALEZ,dead-p-lost,,pri-pvem,0.2067,killed gunfire 6oct2017,,0,0,,
 mic-16.065,8757,Paracho,2018,0,1,jul,16,65,16066,16065,pvem,JOSE MANUEL CABALLERO ESTRADA,2021,,pan-prd-mc,0.0983,,,0,0,,
 mic-07.066,8758,Pátzcuaro,1989,0,3,dic,16,66,16067,16066,prd,LUIS REY CORTES ORIGEL,Term-limited-p-lost,,pri,0.1114,,inafed,0,0,,
 mic-08.066,8759,Pátzcuaro,1992,0,6,dic,16,66,16067,16066,pri,ANTONIO MENDOZA ROJAS,Term-limited-p-lost,,prd,0.3198,,inafed,0,0,,
@@ -8792,7 +8792,7 @@ mic-09.069,8790,Piedad--La,1995,0,12,nov,16,69,16070,16069,pan,RAUL GARCIA CASTI
 mic-10.069,8791,Piedad--La,1998,0,8,nov,16,69,16070,16069,pri,RAMON MAYA MORALES,Term-limited-p-won,,pan,0.2253,,,0,0,,
 mic-11.069,8792,Piedad--La,2001,0,11,nov,16,69,16070,16069,pri,JOSE JAIME MARES CAMARENA,Term-limited-p-lost,,pan,0.1542,,,0,0,,
 mic-12.069,8793,Piedad--La,2004,0,14,nov,16,69,16070,16069,pan,SERGIO ARTURO TORRES SANTOS,Term-limited-p-won,,pri-pvem,0.1167,,,0,0,,
-mic-13.069,8794,Piedad--La,2007,0,11,nov,16,69,16070,16069,pan,RICARDO GUZMAN ROMERO,Term-limited-p-won,,pri,0.1997,,,0,0,,
+mic-13.069,8794,Piedad--La,2007,0,11,nov,16,69,16070,16069,pan,RICARDO GUZMAN ROMERO,Dead-p-won,,pri,0.1997,killed 2nov2011,,0,0,,
 mic-14.069,8795,Piedad--La,2011,0,13,nov,16,69,16070,16069,pan-pna,HUGO ANAYA AVILA,Term-limited-p-lost,,pri,0.2099,,,0,0,,
 mic-15.069,8796,Piedad--La,2015,0,7,jun,16,69,16070,16069,pri-pvem,JUAN MANUEL ESTRADA MEDINA,Beaten,,pan,0.0902,,,0,0,,
 mic-16.069,8797,Piedad--La,2018,0,1,jul,16,69,16070,16069,pan-prd,ALEJANDRO ESPINOZA AVILA,2021,,mc,0.074,,,0,0,,
@@ -8883,7 +8883,7 @@ mic-10.078,8881,Santa Ana Maya,1998,0,8,nov,16,78,16079,16078,pri,JOSE LOPEZ ZAM
 mic-11.078,8882,Santa Ana Maya,2001,0,11,nov,16,78,16079,16078,pan,LAURA OJEDA CALVILLO,Term-limited-p-lost,,pri,0.0964,,,0,0,,
 mic-12.078,8883,Santa Ana Maya,2004,0,14,nov,16,78,16079,16078,prd,JOSE FRANCISCO MENDOZA GUTIERREZ,Term-limited-p-lost,,pri-pvem,0.1822,,,0,0,,
 mic-13.078,8884,Santa Ana Maya,2007,0,11,nov,16,78,16079,16078,pri,ANTONIO SOSA LOPEZ,Term-limited-p-lost,,prd-pt-conve,0.1412,,,0,0,,
-mic-14.078,8885,Santa Ana Maya,2011,0,13,nov,16,78,16079,16078,pt,IGNACIO LOPEZ MENDOZA,Term-limited-p-lost,,pri-pvem,0.014,,,1,1,,ok
+mic-14.078,8885,Santa Ana Maya,2011,0,13,nov,16,78,16079,16078,pt,IGNACIO LOPEZ MENDOZA,Term-limited-p-lost,,pri-pvem,0.014,killed 9nov2013,,1,1,,ok
 mic-15.078,8886,Santa Ana Maya,2015,0,7,jun,16,78,16079,16078,pri-pvem,MARIA DE JESUS LOPEZ PARRA,Beaten,,mc,0.0183,,,0,0,,
 mic-16.078,8887,Santa Ana Maya,2018,0,1,jul,16,78,16079,16078,pan-prd-mc,JUAN AUDIEL CALDERON MENDOZA,2021,,pt-morena,0.0999,,,0,0,,
 mic-07.079,8888,Salvador Escalante,1989,0,3,dic,16,79,16080,16079,consejoMun,FELIX PARRA ESPINO,Term-limited-p-lost,,,,,inafed,0,0,,
@@ -8932,7 +8932,7 @@ mic-09.083,8930,Tancítaro,1995,0,12,nov,16,83,16084,16083,prd,,Term-limited-p-l
 mic-10.083,8931,Tancítaro,1998,0,8,nov,16,83,16084,16083,pri,JAVIER MEDINA VILLANUEVA,Term-limited-p-won,,prd,0.104,,,0,0,,
 mic-11.083,8932,Tancítaro,2001,0,11,nov,16,83,16084,16083,pri,ARTURO OLIVERA GUTIERREZ,Term-limited-p-lost,,prd-pt-pvem-conve-pasd-psn,0.0911,,,0,0,,
 mic-12.083,8933,Tancítaro,2004,0,14,nov,16,83,16084,16083,pan,RUMUALDO BUCIO CORTEZ,Term-limited-p-lost,,prd,0.0715,,,0,0,,
-mic-13.083,8934,Tancítaro,2007,0,11,nov,16,83,16084,16083,prd-pt-conve,J. TRINIDAD MEZA SANCHEZ,Term-limited-p-lost,,pan,0.0134,,,0,0,,
+mic-13.083,8934,Tancítaro,2007,0,11,nov,16,83,16084,16083,prd-pt-conve,J. TRINIDAD MEZA SANCHEZ,Term-limited-p-lost,,pan,0.0134,interim mayor Gustavo Sanchez Cervantes killed 27sep2010,,0,0,,
 mic-14.083,8935,Tancítaro,2011,0,13,nov,16,83,16084,16083,pan-pna,SALVADOR TORRES MORA,Term-limited-p-won,,prd-conve,0.0306,,,0,0,,
 mic-15.083,8936,Tancítaro,2015,0,7,jun,16,83,16084,16083,pan-pri-prd-pna-ph-pes,ARTURO OLVERA GUTIERREZ,Out-p-won,,mc,0.3754,,,0,0,,
 mic-16.083,8937,Tancítaro,2018,0,1,jul,16,83,16084,16083,pan-mc,ARACELI SOLORZANO SOLORZANO,2021,,pri,0.0047,,,0,0,,
@@ -8963,7 +8963,7 @@ mic-10.086,8961,Tanhuato,1998,0,8,nov,16,86,16087,16086,pri,JAIME FIGUEROA FIGUE
 mic-11.086,8962,Tanhuato,2001,0,11,nov,16,86,16087,16086,prd-pt-pvem-conve-pasd-psn,RAMON CASTILLO TAMAYO,Term-limited-p-won,,pan,0.2198,,,0,0,,
 mic-12.086,8963,Tanhuato,2004,0,14,nov,16,86,16087,16086,prd,JOSE ESTEBAN ALVARADO RUIZ,Term-limited-p-lost,,pt,0.0001,,,0,0,,
 mic-13.086,8964,Tanhuato,2007,0,11,nov,16,86,16087,16086,pt,JAIME FIGUEROA FIGUEROA,Term-limited-p-lost,,prd-conve,0.0311,,,1,1,,ok
-mic-14.086,8965,Tanhuato,2011,0,13,nov,16,86,16087,16086,pan-pna,GUSTAVO GARIBAY GARCIA,Term-limited-p-won,,prd,0.1354,,,0,0,,
+mic-14.086,8965,Tanhuato,2011,0,13,nov,16,86,16087,16086,pan-pna,GUSTAVO GARIBAY GARCIA,Dead-p-won,,prd,0.1354,killed 23mar2014,,0,0,,
 mic-15.086,8966,Tanhuato,2015,0,7,jun,16,86,16087,16086,prd-pt-pna,HUMBERTO RAMIREZ JARAMILLO,Out-p-lost,,pri-pvem,0.0102,,,0,0,,
 mic-16.086,8967,Tanhuato,2018,0,1,jul,16,86,16087,16086,indep,HECTOR DANIEL ARANDA PEREZ,2021,,prd,0.5052,,,0,0,,
 mic-07.087,8968,Taretan,1989,0,3,dic,16,87,16088,16087,pri,,Term-limited-p-won,,prd,0.0028,,,0,0,,
@@ -9134,7 +9134,7 @@ mic-11.103,9132,Venustiano Carranza,2001,0,11,nov,16,103,16104,16103,prd-pt-pvem
 mic-12.103,9133,Venustiano Carranza,2004,0,14,nov,16,103,16104,16103,pri-pvem,ISMAEL TORRES DEL RIO,Term-limited-p-lost,,prd,0.0789,,,0,0,,
 mic-13.103,9134,Venustiano Carranza,2007,0,11,nov,16,103,16104,16103,prd-pt-conve,HUGO MEJIA ZEPEDA,Term-limited-p-lost,,pri,0.181,,,0,0,,ok
 mic-14.103,9135,Venustiano Carranza,2011,0,13,nov,16,103,16104,16103,pri-pvem,NICOLAS CIBRIAN GONZALEZ,Term-limited-p-lost,,prd-conve,0.0601,,,0,0,,
-mic-15.103,9136,Venustiano Carranza,2015,0,7,jun,16,103,16104,16103,prd-pt-ph,EDGAR GIL YOGUEZ,Out-p-lost,,pan,0.1758,,,0,0,,
+mic-15.103,9136,Venustiano Carranza,2015,0,7,jun,16,103,16104,16103,prd-pt-ph,EDGAR GIL YOGUEZ,dead-p-lost,,pan,0.1758,died in office 26ago2017,,0,0,,
 mic-16.103,9137,Venustiano Carranza,2018,0,1,jul,16,103,16104,16103,mc,HUGO MEJIA ZEPEDA,2021,,pan-prd,0.0753,,,1,1,,ok
 mic-07.104,9138,Villamar,1989,0,3,dic,16,104,16105,16104,pri,J JESUS MENDOZA GONZALEZ,Term-limited-p-won,,prd,0.1998,,inafed,0,0,,
 mic-08.104,9139,Villamar,1992,0,6,dic,16,104,16105,16104,pri,JOAQUIN SANCHEZ CORTES,Term-limited-p-won,,prd,0.3687,,inafed,0,0,,
@@ -9152,7 +9152,7 @@ mic-09.105,9150,Vista Hermosa,1995,0,12,nov,16,105,16106,16105,prd,ALFREDO DEL T
 mic-10.105,9151,Vista Hermosa,1998,0,8,nov,16,105,16106,16105,prd,HECTOR GUILLERMO CERVANTES GIL,Term-limited-p-lost,,pri,0.0379,,,0,0,,
 mic-11.105,9152,Vista Hermosa,2001,0,11,nov,16,105,16106,16105,pri,JUAN CARLOS BECERRA BELTRAN,Term-limited-p-lost,,prd-pt-pvem-conve-pasd-psn,0.1031,,,0,0,,
 mic-12.105,9153,Vista Hermosa,2004,0,14,nov,16,105,16106,16105,prd,ROBERTO MARICHE DUEÑAS,Term-limited-p-lost,,pri-pvem,0.0887,,,0,0,,
-mic-13.105,9154,Vista Hermosa,2007,0,11,nov,16,105,16106,16105,pri,OCTAVIO MANUEL CARRILLO CASTELLANOS,Term-limited-p-lost,,psd1,0.0761,,,0,0,,
+mic-13.105,9154,Vista Hermosa,2007,0,11,nov,16,105,16106,16105,pri,OCTAVIO MANUEL CARRILLO CASTELLANOS,Dead-p-lost,,psd1,0.0761,killed 25feb2009,,0,0,,
 mic-14.105,9155,Vista Hermosa,2011,0,13,nov,16,105,16106,16105,pan-pna,FRANCISCO OMAR CORZA GALLEGOS,Term-limited-p-lost,,pri,0.1616,,,0,0,,
 mic-15.105,9156,Vista Hermosa,2015,0,7,jun,16,105,16106,16105,pvem,NICOLAS RAMIREZ ZARAGOZA,Beaten,,pri,0.0102,,,0,0,,
 mic-16.105,9157,Vista Hermosa,2018,0,1,jul,16,105,16106,16105,pri,ROSA ELENA DE LA CRUZ PEREZ TELLO,2021,,pt-morena,0.4521,,,0,0,,
@@ -10182,7 +10182,7 @@ nl-07.036,10180,Mier y Noriega,1988,0,9,nov,19,36,19037,19036,pri,OSCAR ZUÑIGA 
 nl-08.036,10181,Mier y Noriega,1991,0,10,nov,19,36,19037,19036,pri,JOAQUIN PEÑA SALINAS,Term-limited-p-won,,,1,,inafed,0,0,,
 nl-09.036,10182,Mier y Noriega,1994,0,21,ago,19,36,19037,19036,pri,FRANCISCO BRIONES TORRES,Term-limited-p-won,,prd,0.6503,,inafed,0,0,,
 nl-10.036,10183,Mier y Noriega,1997,0,18,ago,19,36,19037,19036,pri,IGNACIO MENDEZ ROSALES,Term-limited-p-won,,pan,0.7359,,,0,0,,
-nl-11.036,10184,Mier y Noriega,2000,0,2,jul,19,36,19037,19036,pri,OSCAR ZUÑIGA QUIROZ,Term-limited-p-won,,pan,0.4899,,,1,1,,ok
+nl-11.036,10184,Mier y Noriega,2000,0,2,jul,19,36,19037,19036,pri,OSCAR ZUÑIGA QUIROZ,Term-limited-p-won,,pan,0.4899,murio accidente auto 15mar2002,,1,1,,ok
 nl-12.036,10185,Mier y Noriega,2003,0,6,jul,19,36,19037,19036,pri-pvem-plm-fc1,RAMON ROBLES CASTILLEJA,Term-limited-p-won,,pan,0.6942,,,0,0,,
 nl-13.036,10186,Mier y Noriega,2006,0,2,jul,19,36,19037,19036,pri-pvem,CARLOS CORTEZ BRIONES,Term-limited-p-won,,pan,0.6809,,,0,0,,
 nl-14.036,10187,Mier y Noriega,2009,0,5,jul,19,36,19037,19036,pri-pvem-pd1-cc1,JOSE NAGEL VARGAS RODRIGUEZ,Term-limited-p-lost,,pan,0.0036,,,0,0,,
@@ -17551,7 +17551,7 @@ ver-12.022,17549,Atzacan,2004,0,5,sep,30,22,30023,30022,pan,FELIPE ANGEL ANTONIO
 ver-13.022,17550,Atzacan,2007,0,2,sep,30,22,30023,30022,pasd,OCTAVIO MISAEL LORENZO GONZALEZ,Term-limited-p-lost,,pri-pvem-pna,0.0205,,,0,0,,ok
 ver-14.022,17551,Atzacan,2010,0,4,jul,30,22,30023,30022,prd-pt-conve,LUCIO JUAREZ VELASQUEZ,Term-limited-p-lost,,pri-pvem-prv,0.1772,,,0,0,,
 ver-15.022,17552,Atzacan,2013,0,7,jul,30,22,30023,30022,pri-pvem-pna,MAGNO ROBERTO ROMERO ALVAREZ,Term-limited-p-won,,conve,0.0349,,,0,0,,
-ver-16.022,17553,Atzacan,2017,0,4,jun,30,22,30023,30022,pvem,OCTAVIO MISAEL LORENZO GONZALEZ,Term-limited-pending,,pan-prd,0.0887,reforma 9feb2021 dice q murio covid,,1,1,,ok
+ver-16.022,17553,Atzacan,2017,0,4,jun,30,22,30023,30022,pvem,OCTAVIO MISAEL LORENZO GONZALEZ,Term-limited-pending,,pan-prd,0.0887,reforma 8feb2021 dice q murio covid,,1,1,,ok
 ver-07.023,17554,Atzalan,1988,0,2,oct,30,23,30024,30023,pri,JOSE O ANDRADE ABURTO,Term-limited-p-won,,,,,inafed,0,0,,
 ver-08.023,17555,Atzalan,1991,0,10,nov,30,23,30024,30023,pri,EDMUNDO MENDEZ SANTOS,Term-limited-p-won,,pfcrn,0.5356,,inafed,0,0,,
 ver-09.023,17556,Atzalan,1994,0,13,nov,30,23,30024,30023,pri,ERNESTO ALARCON TRUJILLO,Term-limited-p-won,,pan,0.3472,,inafed,0,0,,
