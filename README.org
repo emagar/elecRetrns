@@ -33,7 +33,7 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - ~data/prdf2006-on.csv~
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
-- +~datosBrutos/~ = large directory containing primary sources+ (dropped from repo due to large size... [[mailto:emagar@itam.mx][mail me]] if you need this).
+- ~datosBrutos/~ = directory containing selected primary sources. Files for state elections were dropped from the repository due sizes above github's limit... [[mailto:emagar@itam.mx][mail me]] if you need these.
 
 * Codebook
 Most variables are included in every file, some appear in selected files only.  

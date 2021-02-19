@@ -1,18 +1,18 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#org4906f6c)
-2.  [Files in the repository and how to cite them](#orge7b9c96)
-3.  [Codebook](#org46680e0)
-4.  [Coding procedure for the incumbent's status](#org9badf29)
-5.  [Procedimiento para codificar el estatus del ocupante](#org80149ee)
-6.  [Sources](#orge5227c8)
-7.  [Acknowledgements](#orgcdba9ba)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#org362109f)
+2.  [Files in the repository and how to cite them](#org673a356)
+3.  [Codebook](#orgd80ab20)
+4.  [Coding procedure for the incumbent's status](#orgbeb03f8)
+5.  [Procedimiento para codificar el estatus del ocupante](#org9d78ea9)
+6.  [Sources](#orge05c876)
+7.  [Acknowledgements](#orgb9eaea5)
 
 Last revision: 2020-09-11
 
 
-<a id="org4906f6c"></a>
+<a id="org362109f"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +24,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orge7b9c96"></a>
+<a id="org673a356"></a>
 
 # Files in the repository and how to cite them
 
@@ -48,10 +48,10 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 -   `data/prdf2006-on.csv`
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
--   <del>`datosBrutos/` = large directory containing primary sources</del> (dropped from repo due to large size&#x2026; [mail me](mailto:emagar@itam.mx) if you need this).
+-   `datosBrutos/` = directory containing selected primary sources. Files for state elections were dropped from the repository due sizes above github's limit&#x2026; [mail me](mailto:emagar@itam.mx) if you need these.
 
 
-<a id="org46680e0"></a>
+<a id="orgd80ab20"></a>
 
 # Codebook
 
@@ -88,12 +88,12 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orgd9d7385) for categories and coding procedure ([aquí](#org0b588c9) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org86b8517) for categories and coding procedure ([aquí](#org798c8e2) la versión en español del procedimiento codificador).
 
 
-<a id="org9badf29"></a>
+<a id="orgbeb03f8"></a>
 
-# Coding procedure for the incumbent's status<a id="orgd9d7385"></a>
+# Coding procedure for the incumbent's status<a id="org86b8517"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
@@ -111,9 +111,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org80149ee"></a>
+<a id="org9d78ea9"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org0b588c9"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org798c8e2"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 
@@ -131,7 +131,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="orge5227c8"></a>
+<a id="orge05c876"></a>
 
 # Sources
 
@@ -146,7 +146,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="orgcdba9ba"></a>
+<a id="orgb9eaea5"></a>
 
 # Acknowledgements
 
