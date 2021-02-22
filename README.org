@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2020-09-11
+Last revision: 2021-02-22
 
 # Export to md: M-x org-md-export-to-markdown
 
@@ -110,3 +110,10 @@ Work in progress...
 
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data. 
+
+Many students over many years have provided extraordinary research assistance to retrieve and systematize information reported here. 
+- Under construction
+- Eugenio Solís Flores
+- Daniela Guzmán Lerma
+- Mauricio Fernández Duque
+
