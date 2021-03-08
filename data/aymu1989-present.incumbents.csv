@@ -16,7 +16,7 @@ ags-09.002,14,Asientos,1995,0,6,ago,1,2,1002,1002,pri,JESUS MARIA VILLALOBOS LEC
 ags-10.002,15,Asientos,1998,0,2,ago,1,2,1002,1002,pan,DANIEL BRIANO HERNANDEZ,Term-limited-p-lost,,pri,0.025,,0,,0,0,,
 ags-11.002,16,Asientos,2001,0,5,ago,1,2,1002,1002,pri,RAUL REYES MACIAS,Term-limited-p-lost,,pan,0.0413,,0,,0,0,,
 ags-12.002,17,Asientos,2004,0,1,ago,1,2,1002,1002,pan,SALVADOR DAVILA MONTOYA,Term-limited-p-lost,,prd-conve,0.204,,0,,0,0,,
-ags-13.002,18,Asientos,2007,0,5,ago,1,2,1002,1002,pri,JOSE LUIS REYES M,Term-limited-p-won,,pan-pna,0.0965,,0,,0,0,,
+ags-13.002,18,Asientos,2007,0,5,ago,1,2,1002,1002,pri,JOSE LUIS REYES MEDINA,Term-limited-p-won,,pan-pna,0.0965,,0,,0,0,,
 ags-14.002,19,Asientos,2010,0,4,jul,1,2,1002,1002,pri-pvem-pna,BAUDELIO ESPARZA REYES,Term-limited-p-won,,pan,0.0431,,0,,0,0,,
 ags-15.002,20,Asientos,2013,0,7,jul,1,2,1002,1002,pna,JOSE MANUEL GONZALEZ MOTA,Term-limited-p-won,JOSE LUIS (PELE) REYES,pri,0.1103,,0,,0,0,,
 ags-16.002,21,Asientos,2016,0,5,jun,1,2,1002,1002,pri-pt-pna,LORENZO MARTIN CARRILLO LARA,Out-p-lost,ARTURO CANDELAS RINCON,pan,0.2248,,0,,0,0,,
@@ -115,9 +115,9 @@ ags-11.010,113,Llano--El,2001,0,5,ago,1,10,1011,1010,pri,FRANCISCO SILVA MURILLO
 ags-12.010,114,Llano--El,2004,0,1,ago,1,10,1011,1010,pan,JOSE DE JESUS RODRIGUEZ ONTIVEROS,Term-limited-p-lost,,pri-pvem-pt,0.0663,,0,,0,0,,
 ags-13.010,115,Llano--El,2007,0,5,ago,1,10,1011,1010,pri,SALVADOR MARTIN DEL CAMPO,Term-limited-p-won,,pvem,0.1467,,0,,0,0,,
 ags-14.010,116,Llano--El,2010,0,4,jul,1,10,1011,1010,pri-pvem-pna,JOSE LUIS MARTINEZ RODRIGUEZ,Term-limited-p-lost,,pt,0.0374,,0,,0,0,,
-ags-15.010,117,Llano--El,2013,0,7,jul,1,10,1011,1010,pt,CEZAR PEDROZA ORTEGA,Term-limited-p-won,DAVID NAJERA MORENO,pri,0.0466,,0,,0,0,,ok
+ags-15.010,117,Llano--El,2013,0,7,jul,1,10,1011,1010,pt,CESAR PEDROZA ORTEGA,Term-limited-p-won,DAVID NAJERA MORENO,pri,0.0466,,0,,0,0,,ok
 ags-16.010,118,Llano--El,2016,0,5,jun,1,10,1011,1010,pri-pt-pna,RAMIRO SALAS PIZAÑA,Beaten-dif-p,JOSE JUAN REYES MARTIN DEL CAMPO,prd,0.1438,reran under pna and lost,0,,0,0,,
-ags-17.010,119,Llano--El,2019,0,2,jun,1,10,1011,1010,pt,CEZAR PEDROZA ORTEGA,2022,RAMIRO SALAS PIZAÑA,pna,0.0446,,0,,1,1,,ok
+ags-17.010,119,Llano--El,2019,0,2,jun,1,10,1011,1010,pt,CESAR PEDROZA ORTEGA,2022,RAMIRO SALAS PIZAÑA,pna,0.0446,,0,,1,1,,ok
 bc-06.001,120,Ensenada,1986,0,0,jul,2,1,2001,2001,pan,ERNESTO RUFFO APPEL,Term-limited-p-won,,,,,0,inafed,0,0,,
 bc-07.001,121,Ensenada,1989,0,2,jul,2,1,2001,2001,pan,JESUS DEL PALACIO LAFONTAINE,Term-limited-p-won,,pri,0.1725,,0,inafed,0,0,,
 bc-08.001,122,Ensenada,1992,0,2,ago,2,1,2001,2001,pan,OSCAR SANCHEZ DEL PALACIO,Term-limited-p-lost,,pri,0.0828,,0,inafed,0,0,,
@@ -340,7 +340,7 @@ coa-07.001,338,Abasolo,1990,0,28,oct,5,1,5001,5001,pri,ZEFERINO SANCHEZ VAZQUEZ,
 coa-08.001,339,Abasolo,1993,0,26,sep,5,1,5001,5001,pri,TOMAS LERMA HERNANDEZ,Term-limited-p-lost,,pan,0.2972,,0,inafed,0,0,,
 coa-09.001,340,Abasolo,1996,0,10,nov,5,1,5001,5001,pan,JOSE FORTUNATO RODRIGUEZ RODRIGUEZ,Term-limited-p-lost,,pri,0.0903,,0,inafed,0,0,,
 coa-10.001,341,Abasolo,1999,0,26,sep,5,1,5001,5001,pri,JUAN MANUEL LERMA SANDOVAL,Term-limited-p-won,,pan,0.0857,,0,,0,0,,ok
-coa-11.001,342,Abasolo,2002,0,29,sep,5,1,5001,5001,pri,SERGIO ALBARADO DEL TORO,Term-limited-p-lost,,pan,0.0606,,0,,0,0,,
+coa-11.001,342,Abasolo,2002,0,29,sep,5,1,5001,5001,pri,SERGIO ALVARADO DEL TORO,Term-limited-p-lost,,pan,0.0606,,0,,0,0,,
 coa-12.001,343,Abasolo,2005,0,25,sep,5,1,5001,5001,pan,SERGIO ENRIQUE TREVIÑO IBARRA,Term-limited-p-lost,,pri,0.0403,,0,,0,0,,
 coa-13.001,344,Abasolo,2009,0,18,oct,5,1,5001,5001,pri-pvem-pna,JUAN MANUEL LERMA SANDOVAL,Term-limited-p-won,,pan,0.3361,,0,,1,1,,ok
 coa-14.001,345,Abasolo,2013,0,7,jul,5,1,5001,5001,pri-pvem-pna-psdc-pj1,TOMAS LERMA ORTIZ,Term-limited-p-won,,pan-prd-pudc-ppro,0.066,,0,,0,0,,
@@ -2311,7 +2311,7 @@ cua-12.020,2309,Chínipas,2004,0,4,jul,8,20,8020,8020,pri-pvem-pt,LEONEL MARTINE
 cua-13.020,2310,Chínipas,2007,0,1,jul,8,20,8020,8020,pri-pna,LUIS MANUEL SCHULTZ TRASVIÑA,Term-limited-p-won,,pan,0.1467,,0,,0,0,,
 cua-14.020,2311,Chínipas,2010,0,4,jul,8,20,8020,8020,pri-pvem-pna,LEONEL MARTINEZ VELDUCEA,Term-limited-p-lost,,pan,0.0539,,0,,1,1,,ok
 cua-15.020,2312,Chínipas,2013,0,7,jul,8,20,8020,8020,pan,HUGO AMED SCHULTZ ALCARAZ,Term-limited-p-lost,,pri-pt-pvem-pna,0.036,reforma 23dic20 dice que vinculado a proceso x asesisato de periodista miroslava breach,0,,0,0,,
-cua-16.020,2313,Chínipas,2016,0,5,jun,8,20,8020,8020,pri-pvem-pt-pna,JESUS RAMON V. AGRAMON VARELA,Out-p-won,,pan,0.6031,,0,,0,0,,
+cua-16.020,2313,Chínipas,2016,0,5,jun,8,20,8020,8020,pri-pvem-pt-pna,JESUS RAMON QUINTO AGRAMON VARELA,Out-p-won,,pan,0.6031,,0,,0,0,,
 cua-17.020,2314,Chínipas,2018,0,1,jul,8,20,8020,8020,pri,SALOME RAMOS SALMON,2021,GUADALUPE PEREZ PALMA,pt-morena-pes,0.1942,,0,,0,0,,
 cua-07.021,2315,Delicias,1989,0,2,jul,8,21,8021,8021,pri,VICTOR VILLALOBOS,Term-limited-p-won,,pan,0.3032,,0,inafed,0,0,,
 cua-08.021,2316,Delicias,1992,0,12,jul,8,21,8021,8021,pri,ROGELIO BEJARANO,Term-limited-p-won,,pan,0.058,,0,inafed,0,0,,
@@ -2638,7 +2638,7 @@ cua-09.050,2636,Nuevo Casas Grandes,1995,0,9,jul,8,50,8050,8050,pri,EDUARDO MURI
 cua-10.050,2637,Nuevo Casas Grandes,1998,0,5,jul,8,50,8050,8050,pri,JOSE MARIO WONG PEREZ,Term-limited-p-won,,pan,0.0771,,0,,0,0,,
 cua-11.050,2638,Nuevo Casas Grandes,2001,0,1,jul,8,50,8050,8050,pri,JESUS MARIA AU DOMINGUEZ,Term-limited-p-lost,,pan,0.1757,,0,,0,0,,
 cua-12.050,2639,Nuevo Casas Grandes,2004,0,4,jul,8,50,8050,8050,pan-prd-conve,ORLANDO POLANCO RASCON,Term-limited-p-won,,pri-pvem-pt,0.0844,,0,,0,0,,
-cua-13.050,2640,Nuevo Casas Grandes,2007,0,1,jul,8,50,8050,8050,pan,JESUS MANUEL PENDONES FERNANDES,Term-limited-p-won,,pri-pna,0.0958,,0,,0,0,,
+cua-13.050,2640,Nuevo Casas Grandes,2007,0,1,jul,8,50,8050,8050,pan,JESUS MANUEL PENDONES FERNANDEZ,Term-limited-p-won,,pri-pna,0.0958,,0,,0,0,,
 cua-14.050,2641,Nuevo Casas Grandes,2010,0,4,jul,8,50,8050,8050,pan,LUIS FERNANDO COBOS SAENZ,Term-limited-p-lost,,pri-pvem-pna,0.0452,,0,,0,0,,
 cua-15.050,2642,Nuevo Casas Grandes,2013,0,7,jul,8,50,8050,8050,pri-pt-pvem-pna,JESUS RODOLFO SOLTERO AGUIRRE,Term-limited-p-lost,,pan,0.1797,,0,,0,0,,
 cua-16.050,2643,Nuevo Casas Grandes,2016,0,5,jun,8,50,8050,8050,pan,DAVID MARTINEZ GARRIDO,Out-p-lost,ANGEL GRABRIEL AU VASQUEZ,pri-pvem-pt-pna,0.0257,,0,,0,0,,
@@ -3115,7 +3115,7 @@ dgo-11.016,3113,Nombre de Dios,2001,0,1,jul,10,16,10016,10016,pt,EDUARDO ESCOBED
 dgo-12.016,3114,Nombre de Dios,2004,0,4,jul,10,16,10016,10016,pan,JUAN VAZQUEZ DERAS,Term-limited-p-lost,,pri,0.1937,,0,,0,0,,
 dgo-13.016,3115,Nombre de Dios,2007,0,1,jul,10,16,10016,10016,pri-pna,SERGIO JOSE LUIS MARTINEZ GONZALEZ,Term-limited-p-lost,,pt-conve,0.1967,,0,,0,0,,
 dgo-14.016,3116,Nombre de Dios,2010,0,4,jul,10,16,10016,10016,pan-prd-conve,NANCI CAROLINA VAZQUEZ LUNA,Term-limited-p-lost,,pt,0.036,,0,,0,0,,
-dgo-15.016,3117,Nombre de Dios,2013,0,7,jul,10,16,10016,10016,pri-pvem-pna-pd1,ROLDAN SOTO JESUS,Term-limited-p-lost,,pt,0.016,,0,,0,0,,
+dgo-15.016,3117,Nombre de Dios,2013,0,7,jul,10,16,10016,10016,pri-pvem-pna-pd1,JESUS ROLDAN SOTO,Term-limited-p-lost,,pt,0.016,,0,,0,0,,
 dgo-16.016,3118,Nombre de Dios,2016,0,5,jun,10,16,10016,10016,pt,JUAN FERNANDO SOLIS RIOS,Out-p-lost,,pri,0.1073,,0,,0,0,,
 dgo-17.016,3119,Nombre de Dios,2019,0,2,jun,10,16,10016,10016,pan-prd,DANIEL SIFUENTES SALAS,2022,,pt,0.0869,,0,,0,0,,
 dgo-07.039,3120,Nuevo Ideal,1989,0,12,jul,10,39,10017,10039,pri,VICTOR NEVAREZ ROBLES,Term-limited-p-won,,pan,0.5551,,0,inafed,0,0,,
@@ -3313,7 +3313,7 @@ dgo-11.033,3311,Súchil,2001,0,1,jul,10,33,10034,10033,pri,PEDRO GABINO GALVAN C
 dgo-12.033,3312,Súchil,2004,0,4,jul,10,33,10034,10033,prd-pt-conve,MARIO CORONA PEREZ,Term-limited-p-lost,,pri,0.0702,,0,,0,0,,
 dgo-13.033,3313,Súchil,2007,0,1,jul,10,33,10034,10033,pan,FRANCISCO MORA HERNANDEZ,Term-limited-p-lost,,pri-pd1-pna,0.2104,,0,,0,0,,
 dgo-14.033,3314,Súchil,2010,0,4,jul,10,33,10034,10033,pri-pvem-pna-pd1,GUILLERMO HERNANDEZ DAVALOS,Term-limited-p-won,,pt,0.1423,,0,,0,0,,
-dgo-15.033,3315,Súchil,2013,0,7,jul,10,33,10034,10033,pri-pvem-pna-pd1,MIER GOMEZ CINTHYA GUADALUPE,Term-limited-p-lost,,mc,0.077,,0,,0,0,,
+dgo-15.033,3315,Súchil,2013,0,7,jul,10,33,10034,10033,pri-pvem-pna-pd1,CINTHYA GUADALUPE MIER GOMEZ,Term-limited-p-lost,,mc,0.077,,0,,0,0,,
 dgo-16.033,3316,Súchil,2016,0,5,jun,10,33,10034,10033,pt,JAIME SARMIENTO MICHACA,Out-p-lost,,pri,0.0859,,0,,1,1,,ok
 dgo-17.033,3317,Súchil,2019,0,2,jun,10,33,10034,10033,pan-prd,ABEL SANTOYO SALAS,2022,,pri,0.0027,,0,,0,0,,
 dgo-07.034,3318,Tamazula,1989,0,12,jul,10,34,10035,10034,pri,JESUS SICAIROS BELTRAN,Term-limited-p-won,,,1,,0,inafed,0,0,,
@@ -3368,7 +3368,7 @@ dgo-11.038,3366,Vicente Guerrero,2001,0,1,jul,10,38,10039,10038,pan,JOSE ANTONIO
 dgo-12.038,3367,Vicente Guerrero,2004,0,4,jul,10,38,10039,10038,prd-pt-conve,BERNARDO NEVAREZ GUZMAN,Term-limited-p-lost,,pan,0.1565,,0,,0,0,,
 dgo-13.038,3368,Vicente Guerrero,2007,0,1,jul,10,38,10039,10038,pri-pd1-pna,FERNANDO ENRIQUE GARCIA SOLIS,Term-limited-p-lost,,pan,0.259,,0,,0,0,,
 dgo-14.038,3369,Vicente Guerrero,2010,0,4,jul,10,38,10039,10038,pan-prd-conve,LUIS ORLANDO CALZADA RIVERA,Term-limited-p-lost,,pri-pvem-pna-pd1,0.0609,,0,,0,0,,
-dgo-15.038,3370,Vicente Guerrero,2013,0,7,jul,10,38,10039,10038,pri-pvem-pna-pd1,VAZQUEZ HINOJOSA J. SALVADOR,Term-limited-p-won,,pan,0.1807,,0,,0,0,,
+dgo-15.038,3370,Vicente Guerrero,2013,0,7,jul,10,38,10039,10038,pri-pvem-pna-pd1,J. SALVADOR VAZQUEZ HINOJOSA,Term-limited-p-won,,pan,0.1807,,0,,0,0,,
 dgo-16.038,3371,Vicente Guerrero,2016,0,5,jun,10,38,10039,10038,pri-pvem-pd1-pna,MANUEL ASUNCION MERAZ HERNANDEZ,Out-p-lost,,pes,0.0414,,0,,0,0,,
 dgo-17.038,3372,Vicente Guerrero,2019,0,2,jun,10,38,10039,10038,pan-prd,ORLANDO GREGORIO HERRERA AVIÑA,2022,,pt,0.0142,,0,,0,0,,
 gua-07.001,3373,Abasolo,1988,0,0,dic,11,1,11001,11001,pri,ISIDRO CONRIQUEZ AGUILAR,Term-limited-p-won,,,,,0,inafed,0,0,,
@@ -3575,7 +3575,7 @@ gua-09.019,3573,Jerécuaro,1994,0,4,dic,11,19,11019,11019,pri,JOSE ANTONIO AGUIL
 gua-10.019,3574,Jerécuaro,1997,0,6,jul,11,19,11019,11019,pri,FERNANDO GRANADOS ALEJO,Term-limited-p-won,GERARDO ORTEGA MAGAÑA,prd,0.0479,,0,,0,0,,
 gua-11.019,3575,Jerécuaro,2000,0,2,jul,11,19,11019,11019,pri,JUAN SOTO FRAGA,Term-limited-p-lost,,pan,0.0366,,0,,0,0,,
 gua-12.019,3576,Jerécuaro,2003,0,6,jul,11,19,11019,11019,pan,JOSE AGUILERA AVILA,Term-limited-p-lost,,pri,0.0758,,0,,0,0,,
-gua-13.019,3577,Jerécuaro,2006,0,2,jul,11,19,11019,11019,pri,J. CARMEN MONDRAGON RECENDIZ,Term-limited-p-lost,,pan,0.1081,,0,,0,0,,
+gua-13.019,3577,Jerécuaro,2006,0,2,jul,11,19,11019,11019,pri,J. CARMEN MONDRAGON RESENDIZ,Term-limited-p-lost,,pan,0.1081,En prensa J. Carmen aparece como hombre,0,,0,0,,
 gua-14.019,3578,Jerécuaro,2009,0,5,jul,11,19,11019,11019,pan-pvem,ROGELIO SANCHEZ GALBAN,Term-limited-p-won,,pri,0.1584,,0,,0,0,,
 gua-15.019,3579,Jerécuaro,2012,0,1,jul,11,19,11019,11019,pan-pna,JAIME GARCIA CARDONA,Term-limited-p-lost,,pri-pvem,0.031,,0,,0,0,,
 gua-16.019,3580,Jerécuaro,2015,0,7,jun,11,19,11019,11019,pvem,ROGELIO SANCHEZ GALAN,Dead-p-lost,,pan,0.0748,Murdered 22jun2015 substitute JORGE VEGA CASTILLO,1,,0,0,,
