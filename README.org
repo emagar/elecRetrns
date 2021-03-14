@@ -1,8 +1,14 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
+
+----------
+
 Last revision: 2021-03-13
 
+
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
+
+----------
 
 # Export to md: M-x org-md-export-to-markdown
 
