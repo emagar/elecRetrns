@@ -1,18 +1,20 @@
 
 # Table of Contents
 
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#orgd87ac14)
-2.  [Files in the repository and how to cite them](#org2a381e9)
-3.  [Codebook](#org6f14531)
-4.  [Coding procedure for the incumbent's status](#org0b79ac1)
-5.  [Procedimiento para codificar el estatus del ocupante](#orgd4a279d)
-6.  [Sources](#org13c850d)
-7.  [Acknowledgements](#org2c3467d)
+1.  [Description of *Recent Mexican Election Vote Returns* repository](#org8a71c34)
+2.  [Files in the repository and how to cite them](#org3803c62)
+3.  [Codebook](#org5e29fa7)
+4.  [Coding procedure for the incumbent's status](#org265bf5e)
+5.  [Procedimiento para codificar el estatus del ocupante](#org20b1b5b)
+6.  [Sources](#orga0fa8c9)
+7.  [Acknowledgements](#org91a0f9d)
 
-Last revision: 2021-02-22
+Last revision: 2021-03-13
+
+**New script** `code/extract-state-yr-mu-returns.r`  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each &#x2014; easier to describe.  
 
 
-<a id="orgd87ac14"></a>
+<a id="org8a71c34"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -24,7 +26,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="org2a381e9"></a>
+<a id="org3803c62"></a>
 
 # Files in the repository and how to cite them
 
@@ -51,7 +53,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   `datosBrutos/` = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [mail me](mailto:emagar@itam.mx) if you need these.
 
 
-<a id="org6f14531"></a>
+<a id="org5e29fa7"></a>
 
 # Codebook
 
@@ -88,12 +90,12 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org0265336) for categories and coding procedure ([aquí](#orgd62e835) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org2f90bb7) for categories and coding procedure ([aquí](#org8a60841) la versión en español del procedimiento codificador).
 
 
-<a id="org0b79ac1"></a>
+<a id="org265bf5e"></a>
 
-# Coding procedure for the incumbent's status<a id="org0265336"></a>
+# Coding procedure for the incumbent's status<a id="org2f90bb7"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
 
@@ -111,9 +113,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="orgd4a279d"></a>
+<a id="org20b1b5b"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="orgd62e835"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org8a60841"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 
@@ -131,7 +133,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org13c850d"></a>
+<a id="orga0fa8c9"></a>
 
 # Sources
 
@@ -146,7 +148,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org2c3467d"></a>
+<a id="org91a0f9d"></a>
 
 # Acknowledgements
 
