@@ -31,6 +31,7 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - ~data/ayde2008-presentNayRegid.csv~ = Nayarit's municipal demarcaciones vote returns since 2008.
 - ~code/ay.r~ = script to manipulate /ayuntamiento/ returns.
 - ~code/ayClean.r~ = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
+- ~code/extract-state-yr-mu-returns.r~ = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
 - ~data/dfdf1979-on.csv~
   + *Citation for this dataset*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
 - ~data/dfdf1979-on.coalAgg.csv~ = pre-processed version of the above so that coalition votes appear properly aggregated.
@@ -42,7 +43,6 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - ~data/prdf2006-on.csv~
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - ~datosBrutos/~ = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit... [[mailto:emagar@itam.mx][mail me]] if you need these.
-
 * Codebook
 Most variables are included in every file, some appear in selected files only.  
 

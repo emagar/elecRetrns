@@ -3,11 +3,14 @@
 ## Output saved in ./xport/ directory with one column for each party.                       ##
 ##############################################################################################
 
+# Edit your path to code/
+setwd("/home/eric/Desktop/MXelsCalendGovt/elecReturns/code")
 
 # Reads xport function
-setwd("/home/eric/Downloads/Desktop/MXelsCalendGovt/elecReturns/code")
 source("xport-function.r")
 
 # Usage
 xport(e=2, y=2019)
 
+# or be prompted for e and y
+xport()
