@@ -10,6 +10,9 @@ oldVers/
 data/xport/
 tmp*.*
 
+# open libreoffice files
+.~*.*#
+
 # History files
 .Rhistory
 .Rapp.history
