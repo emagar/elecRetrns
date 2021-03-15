@@ -4516,7 +4516,7 @@ hgo-12.002,4672,Acaxochitlán,2005,0,13,nov,13,2,13002,13002,pri,m,MIGUEL ANGEL 
 hgo-13.002,4673,Acaxochitlán,2008,0,9,nov,13,2,13002,13002,pri,m,JULIAN PEREA CASTELAN,Term-limited-p-lost,,pan,0.1997,,0,,0,0,,,0,ok,2008,9,nov,pri,5261,pri,2736,pan,12639,0.1998
 hgo-14.002,4674,Acaxochitlán,2011,0,3,jul,13,2,13002,13002,pan-prd,m,ERICK ARNULFO SOSA CAMPOS SOSA,Term-limited-p-lost,,pri,0.1581,,0,,0,0,,,0,ok,2011,3,jul,pan-prd,7224,pan-prd,5001,pri,14057,0.1581
 hgo-15.002,4675,Acaxochitlán,2016,0,5,jun,13,2,13002,13002,pri-pvem-pna,f,ROCIO JAQUELINE SOSA JIMENEZ,Term-limited-p-won,,indep,0.1302,,0,,0,0,,,0,ok,2016,5,jun,pri-pvem-pna,5850,pri-pvem-pna,3815,indep,15628,0.1302
-hgo-16.002,4676,Acaxochitlán,2021,0,,,13,2,13002,13002,pri,,pending extra SALVADOR NERI SOSA,Term-limited-pending,,indep,0,,0,,,,,,0,pending extra,2021,,,pri,,,,,,0
+hgo-16.002,4676,Acaxochitlán,2021,0,,,13,2,13002,13002,pri,,pending extra SALVADOR NERI SOSA,Term-limited-pending,,indep,0,teeh anulled,0,,,,,,0,pending extra,2021,,,pri,,,,,,0
 hgo-07.003,4677,Actopan,1990,0,11,nov,13,3,13003,13003,pri,m,JESUS LUZ MENESES,Term-limited-p-won,,prd,0.782,,0,inafed,0,0,,,0,ok,1990,11,nov,pri,6142,pri,723,prd,6929,0.7821
 hgo-08.003,4678,Actopan,1993,0,5,dic,13,3,13003,13003,pri,m,REYES VARGAS PAREDES,Term-limited-p-won,,prd,0.7731,,0,inafed,0,0,,,0,ok,1993,5,dic,pri,7456,pri,721,prd,8711,0.7732
 hgo-09.003,4679,Actopan,1996,0,10,nov,13,3,13003,13003,pri,m,DANIEL MORENO QUIJANO,Term-limited-p-won,,prd,0.1612,,0,inafed,0,0,,,0,ok,1996,10,nov,pri,4182,pri,2623,prd,9670,0.1612
@@ -4796,7 +4796,7 @@ hgo-12.030,4952,Ixmiquilpan,2005,0,13,nov,13,30,13030,13030,prd,m,JOSE MANUEL ZU
 hgo-13.030,4953,Ixmiquilpan,2008,0,9,nov,13,30,13030,13030,pri-pna,m,HERIBERTO LUGO GONZALEZ,Term-limited-p-lost,,pan,0.0413,,0,,0,0,,,0,ok,2008,9,nov,pri-pna,8971,pri-pna,7838,pan,27402,0.0413
 hgo-14.030,4954,Ixmiquilpan,2011,0,3,jul,13,30,13030,13030,pan,m,CIPRIANO CHARREZ PEDRAZA,Term-limited-p-won,,pri-pvem-pna,0.0203,,0,,0,0,,,0,ok,2011,3,jul,pan,10844,pan,10170,pri-pvem-pna,33134,0.0203
 hgo-15.030,4955,Ixmiquilpan,2016,0,5,jun,13,30,13030,13030,pan,m,PASCUAL CHARREZ PEDRAZA,Term-limited-p-lost,,pri-pvem-pna,0.1873,,0,,0,0,,,0,ok,2016,5,jun,pan,22167,pan,14513,pri-pvem-pna,40860,0.1873
-hgo-16.030,4956,Ixmiquilpan,2021,0,,,13,30,13030,13030,pt,,pending extra VICENTE CHARREZ PEDRAZA,Term-limited-pending,,pan-prd,0.0027,,0,,,,,,0,pending extra,2021,,,pt,,,,,,0
+hgo-16.030,4956,Ixmiquilpan,2021,0,,,13,30,13030,13030,pt,,pending extra VICENTE CHARREZ PEDRAZA,Term-limited-pending,,pan-prd,0.0027,teeh anulled,0,,,,,,0,pending extra,2021,,,pt,,,,,,0
 hgo-07.031,4957,Jacala de Ledezma,1990,0,11,nov,13,31,13031,13031,pri,m,ARTEMIO ESTRADA OLGUIN,Term-limited-p-won,,,1,,0,inafed,0,0,,,0,ok,1990,11,nov,pri,2700,pri,0,0,2700,1
 hgo-08.031,4958,Jacala de Ledezma,1993,0,5,dic,13,31,13031,13031,pri,m,JESUS R AMADOR ZAMUDIO,Term-limited-p-won,,pan,0.9064,,0,inafed,0,0,,,0,ok,1993,5,dic,pri,4131,pri,188,pan,4350,0.9064
 hgo-09.031,4959,Jacala de Ledezma,1996,0,10,nov,13,31,13031,13031,pri,m,JOSAFAT ESTRADA MAYORGA,Term-limited-p-won,,prd,0.7947,,0,inafed,0,0,,,0,ok,1996,10,nov,pri,3392,pri,388,prd,3780,0.7947
@@ -5256,7 +5256,7 @@ hgo-12.077,5412,Tulancingo de Bravo,2005,0,13,nov,13,77,13076,13077,prd,m,RICARD
 hgo-13.077,5413,Tulancingo de Bravo,2008,0,9,nov,13,77,13076,13077,pri-pna,m,CESAREO JORGE MARQUEZ ALVARADO,Term-limited-p-lost,,prd,0.0143,,0,,0,0,,,0,ok,2008,9,nov,pri-pna,17453,pri-pna,16752,prd,48979,0.0143
 hgo-14.077,5414,Tulancingo de Bravo,2011,0,3,jul,13,77,13076,13077,pan,m,JULIO CESAR SOTO MARQUEZ,Term-limited-p-lost,,pna,0.0221,,0,,0,0,,,0,ok,2011,3,jul,pan,17338,pan,16090,pna,56409,0.0221
 hgo-15.077,5415,Tulancingo de Bravo,2016,0,5,jun,13,77,13076,13077,pri-pvem-pna,m,FERNANDO PEREZ RODRIGUEZ,Term-limited-p-won,,mc,0.1423,,0,,0,0,,,0,ok,2016,5,jun,pri-pvem-pna,19550,pri-pvem-pna,11604,mc,55833,0.1423
-hgo-16.077,5416,Tulancingo de Bravo,2021,0,,,13,77,13076,13077,pri,m,CESAREO JORGE MARQUEZ ALVARADO,Term-limited-pending,,pvem-pt-morena-pes,0.0064,,0,,,,,,0,pending extra,2021,,,pri,,,,,,0
+hgo-16.077,5416,Tulancingo de Bravo,2020,0,18,oct,13,77,13076,13077,pri,m,CESAREO JORGE MARQUEZ ALVARADO,Term-limited-pending,,pvem-pt-morena-pes,0.0064,tepjf overruled teeh anulacion,0,,,,,,0,pending extra,2021,,,pri,,,,,,0
 hgo-07.066,5417,Villa de Tezontepec,1990,0,11,nov,13,66,13077,13066,pri,m,JOSE VALDEMAR GARCIA SANCHEZ,Term-limited-p-won,,prd,0.4397,,0,inafed,0,0,,,0,ok,1990,11,nov,pri,1108,pri,415,prd,1576,0.4397
 hgo-08.066,5418,Villa de Tezontepec,1993,0,5,dic,13,66,13077,13066,pri,m,GERALDO JOSE GONZALEZ CRUZ,Term-limited-p-lost,,pan,0.6726,,0,inafed,0,0,,ok,0,ok,1993,5,dic,pri,2085,pri,396,pan,2511,0.6726
 hgo-09.066,5419,Villa de Tezontepec,1996,0,10,nov,13,66,13077,13066,prd,m,FERNANDO LUCIO GONZALEZ,Term-limited-p-lost,,pri,0.1891,,0,inafed,0,0,,,0,ok,1996,10,nov,prd,1824,prd,1223,pri,3177,0.1892
