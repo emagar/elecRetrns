@@ -633,6 +633,7 @@ w4[sel7] <- tmp.w4
 ci[sel7,] <- tmp.ci
 
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
+print("Table should have 0s and 1s")
 table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
 # plug ncoal into data
@@ -676,20 +677,14 @@ rm(c1, c2, c3, c4, I, i, j, max.tmp, n, pat, save.col, save.label, save.vote, se
 
 ## winner (sorts data to have largest vote-winning party in column 1)
 # handy function to sort one data frame's rows by order of another, matching data frame
-sortBy <- function(target, By){
-    t <- target; b <- By;
-    do.call(rbind, lapply(seq_len(nrow(b)), 
-            function(i) as.character(unlist(t[i,])[order(unlist(-b[i,]))]))) # change to -b for decreasing order
-}
-# example
-## v1 <- data.frame(c1=c(30,15,3), c2=c(10,25,2), c3=c(20,35,4))
-## l1 <- data.frame(c1=c("thirty","fifteen","three"), c2=c("ten","twenty-five","two"), c3=c("twenty","thirty-five","four"))
-## v1.sorted <- t(apply(v1, 1, function(x) sort(x, decreasing = TRUE))) # sort each row of df -- http://stackoverflow.com/questions/6063881/sorting-rows-alphabetically
-## l1.sorted <- sortBy(target = l1, By = v1)
-## sortBy(target = v1, By = v1)
-## 
-## this sorts matrix rows faster than function above
-## vot <- t(apply(v1, 1, function(x) sort(x, decreasing = TRUE)))
+# if my machine use scripts in disk
+pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
+    "~/Dropbox/data/useful-functions",
+    "https://raw.githubusercontent.com/emagar/useful-functions/master"
+    )
+# Reads sortBy function
+source( paste(pth, "sortBy.r", sep = "/") )
+rm(pth)
 
 # sort coalition-aggregated data
 tail(cv)
@@ -766,13 +761,21 @@ colnames(dat)
 ## table(dat$v01[sel]==0) # all report no votes?
 ## dat <- dat[-sel,]
 
-################################
-### export a coalAgg version ###
-################################
+
+
+  
+#########################################################
+## ################################################### ##
+## ## Export a coalAgg version of votes returns to  ## ##
+## ## the same directory where aymu1979-present.csv ## ##
+## ################################################### ##
+#########################################################
+
 sel <- dat$yr>=1989
 dat <- dat[sel,] # drop early years
 dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
+
 
 dat <- read.csv(file = "aymu1989-present.coalAgg.csv", stringsAsFactors = FALSE)
 dat[1,]
