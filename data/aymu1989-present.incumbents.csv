@@ -787,7 +787,7 @@ col-13.002,785,Colima,2006,0,2,jul,6,2,6001,6002,pri-pvem,m,MARIO ANGUIANO MOREN
 col-14.002,786,Colima,2009,0,5,jul,6,2,6001,6002,pri-pna,m,JOSE IGNACIO PERALTA SANCHEZ,Term-limited-p-won,,pan-adc,0.2234,,0,,0,0,,,
 col-15.002,787,Colima,2012,0,1,jul,6,2,6001,6002,pri-pna,m,FEDERICO RANGEL LOZANO,Term-limited-p-lost,,pan,0.1227,,0,,0,0,,,
 col-16.002,788,Colima,2015,0,7,jun,6,2,6001,6002,pan,m,HECTOR INSUA GARCIA,Beaten,,pri,0.0016,,0,,0,0,,,
-col-17.002,789,Colima,2018,0,1,jul,6,2,6001,6002,mc,m,LEONCIO ALFONSO MORAN SANCHEZ,2021,HECTOR INSUA GARCIA ,pan-prd,0.0134,,0,,1,1,,,ok
+col-17.002,789,Colima,2018,0,1,jul,6,2,6001,6002,mc,m,LEONCIO ALFONSO MORAN SANCHEZ,out-pending,HECTOR INSUA GARCIA ,pan-prd,0.0134,,0,,1,1,,,ok
 col-18.002,790,Colima,2021,0,6,jun,6,2,6001,6002,tbd,,tbd,2024,,,,,,,,,,,
 col-08.003,791,Comala,1991,0,18,ago,6,3,6002,6003,pri,m,ARTURO VALENCIA LOPEZ,Term-limited-p-won,,pdm,0.42,,0,inafed,0,0,,,
 col-09.003,792,Comala,1994,0,21,ago,6,3,6002,6003,pri,m,ARNOLDO CEBALLOS FIERROS,Term-limited-p-lost,,pan,0.4173,,0,inafed,0,0,,,
@@ -6238,7 +6238,7 @@ jal-13.039,6236,Guadalajara,2006,0,2,jul,14,39,14041,14039,pan,m,ALFONSO PETERSE
 jal-14.039,6237,Guadalajara,2009,0,5,jul,14,39,14041,14039,pri-pna,m,JORGE ARISTOTELES SANDOVAL DIAZ,Term-limited-p-won,,pan,0.1562,,0,,0,0,,,
 jal-15.039,6238,Guadalajara,2012,0,1,jul,14,39,14041,14039,pri-pvem,m,RAMIRO HERNANDEZ GARCIA,Term-limited-p-lost,,pan,0.0589,,0,,0,0,,,
 jal-16.039,6239,Guadalajara,2015,0,7,jun,14,39,14041,14039,mc,m,ENRIQUE ALFARO RAMIREZ,Out-p-won,,pri-pvem,0.2366,sought higher office,0,,1,1,,,ok
-jal-17.039,6240,Guadalajara,2018,0,1,jul,14,39,14041,14039,mc,m,ISMAEL DEL TORO CASTRO,2021,CLAUDIA DELGADILLO GONZALEZ,pt-morena-pes,0.0901,,0,,1,1,,,ok
+jal-17.039,6240,Guadalajara,2018,0,1,jul,14,39,14041,14039,mc,m,ISMAEL DEL TORO CASTRO,out-pending,CLAUDIA DELGADILLO GONZALEZ,pt-morena-pes,0.0901,,0,,1,1,,,ok
 jal-18.039,6241,Guadalajara,2021,0,6,jun,14,39,14041,14039,tbd,,tbd,2024,,,,,,,,,,,
 jal-08.040,6242,Hostotipaquillo,1992,0,9,feb,14,40,14042,14040,pri,m,JOSE DE JESUS CALDERA RUBIO,Term-limited-p-won,,pan,0.2233,,0,inafed,0,0,,,
 jal-09.040,6243,Hostotipaquillo,1995,0,12,feb,14,40,14042,14040,pri,m,ABRAHAM RODRIGUEZ GOMEZ,Term-limited-p-won,,pan,0.3254,,0,inafed,0,0,,,
@@ -8933,7 +8933,7 @@ mic-13.038,8931,Huetamo,2007,0,11,nov,16,38,16038,16038,pri,m,ROBERTO GARCIA SIE
 mic-14.038,8932,Huetamo,2011,0,13,nov,16,38,16038,16038,pri-pvem,f,DALIA SANTANA PINEDA,Term-limited-p-lost,,prd-pt,0.0059,,0,,0,0,,,
 mic-15.038,8933,Huetamo,2015,0,7,jun,16,38,16038,16038,prd,m,ELIAS IBARRA TORRES,Out-p-won,,pri-pvem,0.3655,,0,,0,0,,,
 mic-16.038,8934,Huetamo,2018,0,1,jul,16,38,16038,16038,pan-prd-mc,m,JUAN LUIS GARCIA CONEJO,2021,,pt-morena,0.4304,,0,,0,0,,,ok
-mic-17.038,8935,Huetamo,2021,0,6,jun,16,38,16038,16038,tbd,,tbd,2024,,,,,,,,,,,
+mic-17.038,8935,Huetamo,2021,0,6,jun,16,38,16038,16038,tbd,,tbd,2024,,,,reforma 28abr21 cand morena rogelio portillo buscado por dea,,,,,,,
 mic-07.039,8936,Huiramba,1989,0,3,dic,16,39,16039,16039,prd,m,ADRIAN CHAVEZ SOLORZANO,Term-limited-p-won,,pri,0.1199,,0,inafed,0,0,,,
 mic-08.039,8937,Huiramba,1992,0,6,dic,16,39,16039,16039,prd,m,BERNARDO GUTIERREZ,Term-limited-p-won,,pri,0.0353,,0,inafed,0,0,,,
 mic-09.039,8938,Huiramba,1995,0,12,nov,16,39,16039,16039,prd,m,DANIEL RANGEL PIÑON,Term-limited-p-lost,,pri,0.0158,,0,inafed,0,0,,,
@@ -10949,7 +10949,7 @@ oax-13.006,10947,Asunción Nochixtlán,2007,0,7,oct,20,6,20007,20006,prd,m,POLIC
 oax-14.006,10948,Asunción Nochixtlán,2010,0,4,jul,20,6,20007,20006,pan-prd-pt-conve,m,PEDRO SANTIAGO VALLE,Term-limited-p-lost,,pri-pvem,0.1623,,0,,0,0,,,
 oax-15.006,10949,Asunción Nochixtlán,2013,0,7,jul,20,6,20007,20006,pri-pvem,m,DANIEL ALBERTO CUEVAS CHAVEZ,Term-limited-p-lost,,pan-prd-pt,0.2865,,0,,0,0,,,
 oax-16.006,10950,Asunción Nochixtlán,2016,0,5,jun,20,6,20007,20006,psd1,m,RUBEN ALCIDES MIGUEL MIGUEL,Out-p-lost,,pri-pvem,0.1271,,0,,0,0,,,
-oax-17.006,10951,Asunción Nochixtlán,2018,0,1,jul,20,6,20007,20006,pt-morena-pes,f,LIZBETH VICTORIA HUERTA,2021,,pan-prd-mc,0.0178,,0,,0,0,,,
+oax-17.006,10951,Asunción Nochixtlán,2018,0,1,jul,20,6,20007,20006,pt-morena-pes,f,LIZBETH VICTORIA HUERTA,2021,,pan-prd-mc,0.0178,incumbent taken custody over activist disappearance Guardian 7may2021,0,,0,0,,,
 oax-18.006,10952,Asunción Nochixtlán,2021,0,6,jun,20,6,20007,20006,tbd,,tbd,2024,,,,,,,,,,,
 oax-07.007,10953,Asunción Ocotlán,1989,0,6,ago,20,7,20008,20007,pri,,,Term-limited-p-won,,pfcrn,0.3291,,0,,0,0,,,
 oax-08.007,10954,Asunción Ocotlán,1992,0,8,nov,20,7,20008,20007,pri,,,Term-limited-p-won,,prd,0.2258,,0,,0,0,,,
@@ -15278,7 +15278,7 @@ que-13.014,15276,Querétaro,2006,0,2,jul,22,14,22014,22014,pan,m,MANUEL GONZALEZ
 que-14.014,15277,Querétaro,2009,0,5,jul,22,14,22014,22014,pan,m,FRANCISCO DOMINGUEZ SERVIEN,Term-limited-p-lost,,pri-pna,0.0655,,0,,0,0,,,
 que-15.014,15278,Querétaro,2012,0,1,jul,22,14,22014,22014,pri-pvem-pna,m,ROBERTO LOYOLA VERA,Term-limited-p-lost,,pan,0.0424,,0,,0,0,,,
 que-16.014,15279,Querétaro,2015,0,7,jun,22,14,22014,22014,pan,m,MARCOS AGUILAR VEGA,Out-p-won,,pri-pna-pvem,0.1896,,0,,0,0,,,
-que-17.014,15280,Querétaro,2018,0,1,jul,22,14,22014,22014,pan-prd-mc,m,LUIS BERNARDO NAVA GUERRERO,2021,JOSE ADOLFO RIOS GARCIA,morena-pt-pes,0.0035,,0,,0,0,,,
+que-17.014,15280,Querétaro,2018,0,1,jul,22,14,22014,22014,pan-prd-mc,m,LUIS BERNARDO NAVA GUERRERO,reran-pending,JOSE ADOLFO RIOS GARCIA,morena-pt-pes,0.0035,,0,,0,0,,,
 que-18.014,15281,Querétaro,2021,0,6,jun,22,14,22014,22014,tbd,,tbd,2024,,,,,,,,,,,
 que-08.015,15282,San Joaquín,1991,0,18,ago,22,15,22015,22015,pri,m,J. TIMOTEO MARTINEZ PEREZ,Term-limited-p-won,,pfcrn,0.9812,,0,inafed,0,0,,,ok
 que-09.015,15283,San Joaquín,1994,0,21,ago,22,15,22015,22015,pri,m,ELIAS LEDESMA GARCIA,Term-limited-p-won,,pps,0.9266,,0,inafed,0,0,,,
@@ -15737,7 +15737,7 @@ san-13.028,15735,San Luis Potosí,2006,0,2,jul,24,28,24028,24028,pan-pna,m,JORGE
 san-14.028,15736,San Luis Potosí,2009,0,5,jul,24,28,24028,24028,pri-pvem,f,VICTORIA AMPARO G LABASTIDA AGUIRRE,Term-limited-p-won,,pan-pna,0.0887,,0,,0,0,,,
 san-15.028,15737,San Luis Potosí,2012,0,1,jul,24,28,24028,24028,pri-pvem,m,MARIO GARCIA VALDEZ,Term-limited-p-lost,,pan-pna,0.0293,,0,,0,0,,,
 san-16.028,15738,San Luis Potosí,2015,0,7,jun,24,28,24028,24028,prd-pt,m,RICARDO GALLARDO JUAREZ,Beaten,,pan,0.1822,,0,,1,1,,,ok
-san-17.028,15739,San Luis Potosí,2018,0,1,jul,24,28,24028,24028,pan-mc,m,FRANCISCO XAVIER NAVA PALACIOS,2021,RICARDO GALLARDO JUAREZ,prd,0.1836,wants to be pan gov candidate 2021,0,,0,0,,,
+san-17.028,15739,San Luis Potosí,2018,0,1,jul,24,28,24028,24028,pan-mc,m,FRANCISCO XAVIER NAVA PALACIOS,reran-pending,RICARDO GALLARDO JUAREZ,prd,0.1836,wants to be pan gov candidate 2021,0,,0,0,,,
 san-18.028,15740,San Luis Potosí,2021,0,6,jun,24,28,24028,24028,tbd,,tbd,2024,,,,,,,,,,,
 san-08.029,15741,San Martín Chalchicuautla,1991,0,0,dic,24,29,24029,24029,pri,m,MANUEL JUAREZ GALLEGOS,Term-limited-p-won,,pan,0.0142,,0,inafed,0,0,,,
 san-09.029,15742,San Martín Chalchicuautla,1994,0,4,dic,24,29,24029,24029,pri,,,Term-limited-p-won,,prd,0.1908,,0,,0,0,,,
