@@ -298,7 +298,7 @@ cam-14.005,296,Hecelchakán,2009,0,5,jul,4,4005,4005,pan,m,MODESTO ARCANGEL PECH
 cam-15.005,297,Hecelchakán,2012,0,1,jul,4,4005,4005,pri-pvem,m,FERNANDO ANTONIO NAHUM SLEME LAVADORES,,,Term-limited-p-lost,,pan,0.0008,,0,,0,0,,,
 cam-16.005,298,Hecelchakán,2015,0,7,jun,4,4005,4005,pan,m,MODESTO ARCANGEL PECH UITZ,,,Out-p-lost,,pes,0.1548,,0,,1,1,,,ok
 cam-17.005,299,Hecelchakán,2018,0,1,jul,4,4005,4005,pes,m,JOSE DOLORES BRITO PECH,yes,1,Reelected,JOSE CEVASTIAN YAM POOT,pan-mc,0.0308,brito pech regreso a filas pri,0,,1,1,,,ok
-cam-18.005,300,Hecelchakán,2021,0,6,jun,4,4005,4005,pan-pri-prd,m,JOSE DOLORES BRITO PECH,,,2024,JOSE CEVASTIAN YAM POOT,mc,,"prep margin .33 of a percent, check again",0,,,,,,
+cam-18.005,300,Hecelchakán,2021,0,6,jun,4,4005,4005,pan-pri-prd,m,JOSE DOLORES BRITO PECH,,,2024,JOSE CEVASTIAN YAM POOT,mc,,prep margin .33 of a percent check again,0,,,,,,
 cam-08.006,301,Hopelchén,1991,0,24,nov,4,4006,4006,pri,m,PEDRO LARA Y LARA,,,Term-limited-p-won,,parm,0.4258,,0,inafed,0,0,,,
 cam-09.006,302,Hopelchén,1994,0,21,ago,4,4006,4006,pri,m,JUAN JESUS INFANTE PACHECO,,,Term-limited-p-won,,prd,0.5317,,0,inafed,0,0,,,
 cam-10.006,303,Hopelchén,1997,0,6,jul,4,4006,4006,pri,m,JOSE ANTONIO LARA CAHUICH,,,Term-limited-p-won,,prd,0.445,,0,,0,0,,,
@@ -2197,8 +2197,8 @@ cua-13.001,2193,Ahumada,2007,0,1,jul,8,8001,8001,pri-pna,m,FIDEL CHAVEZ MOLINA,,
 cua-14.001,2194,Ahumada,2010,0,4,jul,8,8001,8001,pri-pvem-pna,m,FERNANDO VAZQUEZ RAMIEZ,,,Term-limited-p-won,,pan,0.2488,,0,,0,0,,,
 cua-15.001,2195,Ahumada,2013,0,7,jul,8,8001,8001,pri-pvem-pna,m,ROGELIO ACOSTA MARTINEZ,,,Term-limited-p-lost,,pan,0.2555,,0,,0,0,,,
 cua-16.001,2196,Ahumada,2016,0,5,jun,8,8001,8001,mc,m,LUIS MARCELO LOPEZ RUIZ,,,Out-p-lost,,pri-pvem-pna,0.1174,,0,,0,0,,,
-cua-17.001,2197,Ahumada,2018,0,1,jul,8,8001,8001,prd,m,JUAN DE DIOS VALLE CAMACHO,no,1,Out-,FABIAN FOURZAN TRUJILLO,pvem,0.0624,,0,,0,0,,,
-cua-18.001,2198,Ahumada,2021,0,6,jun,8,8001,8001,,,,,,2024,,,,,0,,,,,,
+cua-17.001,2197,Ahumada,2018,0,1,jul,8,8001,8001,prd,m,JUAN DE DIOS VALLE CAMACHO,no,1,Out-p-lost,FABIAN FOURZAN TRUJILLO,pvem,0.0624,,0,,0,0,,,
+cua-18.001,2198,Ahumada,2021,0,6,jun,8,8001,8001,pvem,,,,,2024,,,,,0,,,,,,
 cua-07.002,2199,Aldama,1989,0,2,jul,8,8002,8002,pri,m,ROBERTO SOSA GALINDO,,,Term-limited-p-won,,pan,0.6353,,0,inafed,0,0,,,
 cua-08.002,2200,Aldama,1992,0,12,jul,8,8002,8002,pri,m,ROGELIO CARRASCO GONZALEZ,,,Term-limited-p-lost,,pan,0.1196,,0,inafed,0,0,,,
 cua-09.002,2201,Aldama,1995,0,9,jul,8,8002,8002,pan,m,GASTON ARMENDARIZ LOPEZ,,,Term-limited-p-lost,,pri,0.0854,,0,inafed,0,0,,,
@@ -2209,8 +2209,8 @@ cua-13.002,2205,Aldama,2007,0,1,jul,8,8002,8002,pri-pna,m,MIGUEL RUBIO CASTILLO,
 cua-14.002,2206,Aldama,2010,0,4,jul,8,8002,8002,pri-pna,m,OSCAR RENE DAVILA TRUJILLO,,,Term-limited-p-won,,prd,0.0941,,0,,0,0,,,
 cua-15.002,2207,Aldama,2013,0,7,jul,8,8002,8002,pri-pvem-pna,m,LEONEL GUILLERMO GUTIERREZ ESTRADA,,,Term-limited-p-lost,,pan,0.0166,,0,,0,0,,,
 cua-16.002,2208,Aldama,2016,0,5,jun,8,8002,8002,pan,m,ALBERTO VAZQUEZ SOLIS,,,Out-p-lost,,pri-pvem-pt-pna,0.3867,,0,,0,0,,,
-cua-17.002,2209,Aldama,2018,0,1,jul,8,8002,8002,pna,m,MIGUEL RUBIO CASTILLO,yes,1,Reran-,SANDRA JUDITH GALINDO SINECIO,prd,0.1084,,0,,1,1,,,ok
-cua-18.002,2210,Aldama,2021,0,6,jun,8,8002,8002,,,,,,2024,,,,,0,,,,,,
+cua-17.002,2209,Aldama,2018,0,1,jul,8,8002,8002,pna,m,MIGUEL RUBIO CASTILLO,yes,1,Reelected,SANDRA JUDITH GALINDO SINECIO,prd,0.1084,,0,,1,1,,,ok
+cua-18.002,2210,Aldama,2021,0,6,jun,8,8002,8002,morena-pt-pna,m,MIGUEL RUBIO CASTILLO,,,Term-limited-,GILDARDO HUGO BARAJAS MARTINEZ,pan-prd,,,0,,,,,,
 cua-07.003,2211,Allende,1989,0,2,jul,8,8003,8003,pri,m,ANTONIO PERALTA SALGADO,,,Term-limited-p-won,,pan,0.5356,,0,inafed,0,0,,,
 cua-08.003,2212,Allende,1992,0,12,jul,8,8003,8003,pri,f,SILVIA E. VILLANUEVA R.,,,Term-limited-p-won,,pan,0.3037,,0,inafed,0,0,,,
 cua-09.003,2213,Allende,1995,0,9,jul,8,8003,8003,pri,m,GUILLERMO MUÑOZ M,,,Term-limited-p-won,,pvem,0.303,,0,inafed,0,0,,,
@@ -2221,8 +2221,8 @@ cua-13.003,2217,Allende,2007,0,1,jul,8,8003,8003,pri-pna,m,MAURO PAULO VAZQUEZ R
 cua-14.003,2218,Allende,2010,0,4,jul,8,8003,8003,pri-pvem-pna,m,JESUS HORACIO SOTO ARMENDARIZ,,,Term-limited-p-won,,pan,0.4257,,0,,0,0,,,
 cua-15.003,2219,Allende,2013,0,7,jul,8,8003,8003,pri-pvem-pna,m,GILBERTO GARCIA MENDOZA,,,Term-limited-p-won,,prd,0.067,,0,,0,0,,,
 cua-16.003,2220,Allende,2016,0,5,jun,8,8003,8003,pri-pvem-pna,m,RAMON EUSTACIO VILLEGAS CASTRO,,,Out-p-lost,,pan,0.029,,0,,0,0,,,
-cua-17.003,2221,Allende,2018,0,1,jul,8,8003,8003,pan-mc,f,BLANCA JENNYRA FIGUEROA CHAVEZ,yes,1,Reran-,MONICA ELIZABETH BAILON GUTIERREZ,pri,0.0015,,0,,0,0,,,
-cua-18.003,2222,Allende,2021,0,6,jun,8,8003,8003,,,,,,2024,,,,,0,,,,,,
+cua-17.003,2221,Allende,2018,0,1,jul,8,8003,8003,pan-mc,f,BLANCA JENNYRA FIGUEROA CHAVEZ,yes,1,Reran-beaten,MONICA ELIZABETH BAILON GUTIERREZ,pri,0.0015,,0,,0,0,,,
+cua-18.003,2222,Allende,2021,0,6,jun,8,8003,8003,pri,,JESUS HORACIO SOTO ARMENDARIZ,,,2024,BLANCA JENNYRA FIGUEROA CHAVEZ,pan-prd,,,0,,,,,,
 cua-07.004,2223,Aquiles Serdán,1989,0,2,jul,8,8004,8004,pri,m,SAMUEL FRANCO PORTILLO,,,Term-limited-p-won,,pan,0.6593,,0,inafed,0,0,,,
 cua-08.004,2224,Aquiles Serdán,1992,0,12,jul,8,8004,8004,pri,m,JESUS JARAMILLO JARAMILLO,,,Term-limited-p-won,,pan,0.3394,,0,inafed,0,0,,,
 cua-09.004,2225,Aquiles Serdán,1995,0,9,jul,8,8004,8004,pri,m,LEOPOLDO ERIVES SAENZ,,,Term-limited-p-won,,prd,0.0741,,0,inafed,0,0,,,
@@ -2233,8 +2233,8 @@ cua-13.004,2229,Aquiles Serdán,2007,0,1,jul,8,8004,8004,pri-pna,m,ROBERTO RAMIR
 cua-14.004,2230,Aquiles Serdán,2010,0,4,jul,8,8004,8004,pri-pna,m,JUAN CARLOS HERNANDEZ MENDOZA,,,Term-limited-p-won,,pvem,0.1229,,0,,0,0,,,
 cua-15.004,2231,Aquiles Serdán,2013,0,7,jul,8,8004,8004,pri-pt-pna,m,JORGE ADAN PEREZ PEREZ,,,Term-limited-p-lost,,pvem,0.0448,,0,,0,0,,,
 cua-16.004,2232,Aquiles Serdán,2016,0,5,jun,8,8004,8004,pvem,m,HECTOR ARIEL FERNANDEZ MARTINEZ,,,Reelected-dif-p,,pri-pna,0.1617,reran under pri,0,,0,0,,,ok
-cua-17.004,2233,Aquiles Serdán,2018,0,1,jul,8,8004,8004,pri,m,HECTOR ARIEL FERNANDEZ MARTINEZ,term limited,1,Term-limited-,LAURA RODRIGUEZ MERAZ,pan-mc,0.3125,,0,,1,1,,,ok
-cua-18.004,2234,Aquiles Serdán,2021,0,6,jun,8,8004,8004,,,,,,2024,,,,,0,,,,,,
+cua-17.004,2233,Aquiles Serdán,2018,0,1,jul,8,8004,8004,pri,m,HECTOR ARIEL FERNANDEZ MARTINEZ,term limited,1,Term-limited-p-won,LAURA RODRIGUEZ MERAZ,pan-mc,0.3125,,0,,1,1,,,ok
+cua-18.004,2234,Aquiles Serdán,2021,0,6,jun,8,8004,8004,pri,,,,,2024,,,,,0,,,,,,
 cua-07.005,2235,Ascensión,1989,0,2,jul,8,8005,8005,pri,m,ALFONSO BLANCAS AGUIRRE,,,Term-limited-p-won,,pan,0.4433,,0,inafed,0,0,,,
 cua-08.005,2236,Ascensión,1992,0,12,jul,8,8005,8005,pri,m,MANUEL GALVAN APOCADA,,,Term-limited-p-won,,pan,0.1036,,0,inafed,0,0,,,
 cua-09.005,2237,Ascensión,1995,0,9,jul,8,8005,8005,pri,m,OSWALDO BLANCAS FERNANDEZ,,,Term-limited-p-won,,pan,0.0329,,0,inafed,0,0,,,
@@ -2245,8 +2245,8 @@ cua-13.005,2241,Ascensión,2007,0,1,jul,8,8005,8005,pan,m,RAFAEL LORENZO CAMARIL
 cua-14.005,2242,Ascensión,2010,0,4,jul,8,8005,8005,pan,m,JAIME DOMINGUEZ LOYA,,,Term-limited-p-won,,pri-pna,0.0158,,0,,0,0,,,
 cua-15.005,2243,Ascensión,2013,0,7,jul,8,8005,8005,pan,m,SERGIO GONZALEZ SARABIA,,,Term-limited-p-lost,,pri-pt-pvem-pna,0.0146,,0,,0,0,,,
 cua-16.005,2244,Ascensión,2016,0,5,jun,8,8005,8005,pri-pvem-pt-pna,m,NOEL DOLORES LOYA LOZANO,,,Reran-beaten,,pan,0.1118,,0,,0,0,,,
-cua-17.005,2245,Ascensión,2018,0,1,jul,8,8005,8005,pan-mc,f,LAURA BERNARDA ROMERO GARCIA,yes,1,Reran-,NOEL DOLORES LOYA LOZANO,pri,0.0552,,0,,0,0,,,
-cua-18.005,2246,Ascensión,2021,0,6,jun,8,8005,8005,,,,,,2024,,,,,0,,,,,,
+cua-17.005,2245,Ascensión,2018,0,1,jul,8,8005,8005,pan-mc,f,LAURA BERNARDA ROMERO GARCIA,yes,1,Reran-beaten,NOEL DOLORES LOYA LOZANO,pri,0.0552,,0,,0,0,,,
+cua-18.005,2246,Ascensión,2021,0,6,jun,8,8005,8005,prd,f,IVONNE DE LA HOYA VENZOR,,,2024,LAURA BERNARDA ROMERO GARCIA,pan,,,0,,,,,,
 cua-07.006,2247,Bachíniva,1989,0,2,jul,8,8006,8006,pri,m,GABRIEL HERNANDEZ MARQUEZ,,,Term-limited-p-won,,pps,0.1661,,0,inafed,0,0,,,ok
 cua-08.006,2248,Bachíniva,1992,0,12,jul,8,8006,8006,pri,m,MACLOVIO BUSTILLOS TREVIZO,,,Term-limited-p-won,,prd,0.1007,,0,inafed,0,0,,,
 cua-09.006,2249,Bachíniva,1995,0,9,jul,8,8006,8006,pri,m,FELIX ALTAMIRANO MORALES,,,Term-limited-p-won,,pan,0.1894,,0,inafed,0,0,,,ok
@@ -2257,8 +2257,8 @@ cua-13.006,2253,Bachíniva,2007,0,1,jul,8,8006,8006,pri-pna,m,FELIX ALTAMIRANO M
 cua-14.006,2254,Bachíniva,2010,0,4,jul,8,8006,8006,pri-pvem-pna,m,JOSE ANGEL MERINO DOMINGUEZ,,,Term-limited-p-lost,,pan,0.0395,,0,,0,0,,,
 cua-15.006,2255,Bachíniva,2013,0,7,jul,8,8006,8006,pan,m,ARMANDO MENDOZA ANDUJO,,,Term-limited-p-lost,,pri-pvem-pna,0.0032,,0,,0,0,,,
 cua-16.006,2256,Bachíniva,2016,0,5,jun,8,8006,8006,pri-pvem-pt-pna,f,IRMA DELIA MORALES MENDOZA,,,Reran-beaten,,pan,0.0003,recuento para pri,0,,0,0,,,
-cua-17.006,2257,Bachíniva,2018,0,1,jul,8,8006,8006,pan,f,VIVIANA ALTAMIRANO CARDENAS,yes,1,Reran-,MINERVA ALMEIDA TREVIZO,pt-morena-pes,0.1341,,0,,0,0,,,
-cua-18.006,2258,Bachíniva,2021,0,6,jun,8,8006,8006,,,,,,2024,,,,,0,,,,,,
+cua-17.006,2257,Bachíniva,2018,0,1,jul,8,8006,8006,pan,f,VIVIANA ALTAMIRANO CARDENAS,yes,1,Reelected,MINERVA ALMEIDA TREVIZO,pt-morena-pes,0.1341,,0,,0,0,,,
+cua-18.006,2258,Bachíniva,2021,0,6,jun,8,8006,8006,pan,f,VIVIANA ALTAMIRANO CARDENAS,,,2024,,,,,0,,,,,,
 cua-07.007,2259,Balleza,1989,0,2,jul,8,8007,8007,pri,,,,,Term-limited-p-won,,pcdp,0.9811,,0,,0,0,,,
 cua-08.007,2260,Balleza,1992,0,12,jul,8,8007,8007,pri,m,RAUL FERNANDEZ VILLALOBOS,,,Term-limited-p-won,,pan,0.4385,,0,inafed,0,0,,,
 cua-09.007,2261,Balleza,1995,0,9,jul,8,8007,8007,pri,m,DAVID VARGAS HERRERA,,,Term-limited-p-won,,pan,0.2625,,0,inafed,0,0,,,
@@ -2269,20 +2269,20 @@ cua-13.007,2265,Balleza,2007,0,1,jul,8,8007,8007,pri-pna,f,SILVIA MORENO LEAL,,,
 cua-14.007,2266,Balleza,2010,0,4,jul,8,8007,8007,pan,m,RAMON JURADO BOJORQUEZ,,,Term-limited-p-lost,,pri-pvem-pna,0.0924,,0,,0,0,,,
 cua-15.007,2267,Balleza,2013,0,7,jul,8,8007,8007,pri-pt-pna,m,JESUS AUGUSTO MEDINA AGUIRRE,,,Term-limited-p-won,,pan,0.3554,,0,,0,0,,,
 cua-16.007,2268,Balleza,2016,0,5,jun,8,8007,8007,pri-pvem-pt-pna,m,ROBERTO ARTURO MEDINA AGUIRRE,,,Reelected,,pan,0.1722,,0,,0,0,,,ok
-cua-17.007,2269,Balleza,2018,0,1,jul,8,8007,8007,pri,m,ROBERTO ARTURO MEDINA AGUIRRE,term limited,1,Term-limited-,RAFAEL HUMBERTO VILLALOBOS CHAPARRO,pt-morena-pes,0.3305,,0,,1,1,,,ok
-cua-18.007,2270,Balleza,2021,0,6,jun,8,8007,8007,,,,,,2024,,,,,0,,,,,,
-cua-07.008,2271,Batopilas,1989,0,2,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
-cua-08.008,2272,Batopilas,1992,0,12,jul,8,8008,8008,pri,m,FRANCISCO BAEZ A.,,,Term-limited-p-won,,pan,0.8428,,0,inafed,0,0,,,
-cua-09.008,2273,Batopilas,1995,0,9,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.7046,,0,inafed,1,1,,,ok
-cua-10.008,2274,Batopilas,1998,0,5,jul,8,8008,8008,pri,m,BENJAMIN HERNANDEZ VAZQUEZ,,,Term-limited-p-won,,prd,0.1311,,0,,0,0,,,
-cua-11.008,2275,Batopilas,2001,0,1,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.1757,,0,,1,1,,,ok
-cua-12.008,2276,Batopilas,2004,0,4,jul,8,8008,8008,pri-pvem-pt,m,JESUS SALVADOR HERNANDEZ VEGA,,,Term-limited-p-won,,pan-prd-conve,0.0164,,0,,0,0,,,
-cua-13.008,2277,Batopilas,2007,0,1,jul,8,8008,8008,pri-pna,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.3945,,0,,1,1,,,ok
-cua-14.008,2278,Batopilas,2010,0,4,jul,8,8008,8008,pri-pvem-pna,m,LEONEL DAVID HERNANDEZ VEGA,,,Term-limited-p-won,,pan,0.019,,0,,0,0,,,
-cua-15.008,2279,Batopilas,2013,0,7,jul,8,8008,8008,pri-pvem-pna,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.1835,,0,,1,1,,,ok
-cua-16.008,2280,Batopilas,2016,0,5,jun,8,8008,8008,pri-pna,m,ISRAEL VARELA ORDOÑEZ,,,Reelected,,pan,0.5581,,0,,0,0,,,ok
-cua-17.008,2281,Batopilas,2018,0,1,jul,8,8008,8008,pri,m,ISRAEL VARELA ORDOÑEZ,term limited,1,Term-limited-,NORMA ALICIA VALENZUELA VEGA,pan-mc,0.1364,,0,,1,1,,,ok
-cua-18.008,2282,Batopilas,2021,0,6,jun,8,8008,8008,,,,,,2024,,,,,0,,,,,,
+cua-17.007,2269,Balleza,2018,0,1,jul,8,8007,8007,pri,m,ROBERTO ARTURO MEDINA AGUIRRE,term limited,1,Term-limited-p-won,RAFAEL HUMBERTO VILLALOBOS CHAPARRO,pt-morena-pes,0.3305,,0,,1,1,,,ok
+cua-18.007,2270,Balleza,2021,0,6,jun,8,8007,8007,pri,,,,,2024,,,,,0,,,,,,
+cua-07.008,2271,Batopilas de Manuel Gómez Morín,1989,0,2,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
+cua-08.008,2272,Batopilas de Manuel Gómez Morín,1992,0,12,jul,8,8008,8008,pri,m,FRANCISCO BAEZ A.,,,Term-limited-p-won,,pan,0.8428,,0,inafed,0,0,,,
+cua-09.008,2273,Batopilas de Manuel Gómez Morín,1995,0,9,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.7046,,0,inafed,1,1,,,ok
+cua-10.008,2274,Batopilas de Manuel Gómez Morín,1998,0,5,jul,8,8008,8008,pri,m,BENJAMIN HERNANDEZ VAZQUEZ,,,Term-limited-p-won,,prd,0.1311,,0,,0,0,,,
+cua-11.008,2275,Batopilas de Manuel Gómez Morín,2001,0,1,jul,8,8008,8008,pri,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.1757,,0,,1,1,,,ok
+cua-12.008,2276,Batopilas de Manuel Gómez Morín,2004,0,4,jul,8,8008,8008,pri-pvem-pt,m,JESUS SALVADOR HERNANDEZ VEGA,,,Term-limited-p-won,,pan-prd-conve,0.0164,,0,,0,0,,,
+cua-13.008,2277,Batopilas de Manuel Gómez Morín,2007,0,1,jul,8,8008,8008,pri-pna,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.3945,,0,,1,1,,,ok
+cua-14.008,2278,Batopilas de Manuel Gómez Morín,2010,0,4,jul,8,8008,8008,pri-pvem-pna,m,LEONEL DAVID HERNANDEZ VEGA,,,Term-limited-p-won,,pan,0.019,,0,,0,0,,,
+cua-15.008,2279,Batopilas de Manuel Gómez Morín,2013,0,7,jul,8,8008,8008,pri-pvem-pna,m,EMILIO BUSTILLOS MANJARREZ,,,Term-limited-p-won,,pan,0.1835,,0,,1,1,,,ok
+cua-16.008,2280,Batopilas de Manuel Gómez Morín,2016,0,5,jun,8,8008,8008,pri-pna,m,ISRAEL VARELA ORDOÑEZ,,,Reelected,,pan,0.5581,,0,,0,0,,,ok
+cua-17.008,2281,Batopilas de Manuel Gómez Morín,2018,0,1,jul,8,8008,8008,pri,m,ISRAEL VARELA ORDOÑEZ,term limited,1,Term-limited-p-won,NORMA ALICIA VALENZUELA VEGA,pan-mc,0.1364,,0,,1,1,,,ok
+cua-18.008,2282,Batopilas de Manuel Gómez Morín,2021,0,6,jun,8,8008,8008,pri,,,,,2024,,,,,0,,,,,,
 cua-07.009,2283,Bocoyna,1989,0,2,jul,8,8009,8009,pri,,,,,Term-limited-p-won,,prd,0.6953,,0,,0,0,,,
 cua-08.009,2284,Bocoyna,1992,0,12,jul,8,8009,8009,pri,m,JAIME E. GONZALEZ,,,Term-limited-p-won,,pan,0.4283,,0,inafed,0,0,,,
 cua-09.009,2285,Bocoyna,1995,0,9,jul,8,8009,8009,pri,m,FRANCISCO JAVIER GONZALEZ,,,Term-limited-p-won,,pan,0.091,,0,inafed,0,0,,,
@@ -2294,7 +2294,7 @@ cua-14.009,2290,Bocoyna,2010,0,4,jul,8,8009,8009,pan,m,ABEL HIPOLITO GUTIERREZ G
 cua-15.009,2291,Bocoyna,2013,0,7,jul,8,8009,8009,pri-prd-pvem-pna,m,ERNESTO ESTRADA GONZALEZ,,,Term-limited-p-lost,,pan,0.1526,,0,,1,1,,,ok
 cua-16.009,2292,Bocoyna,2016,0,5,jun,8,8009,8009,mc,m,HECTOR ERGADOR ROCHIN GONZALEZ,,,Reelected,,pri-pvem-pna,0.0412,,0,,0,0,,,
 cua-17.009,2293,Bocoyna,2018,0,1,jul,8,8009,8009,mc,m,HECTOR EDGARDO ROCHIN GONZALEZ,term limited,1,Term-limited-,ERNESTO ESTRADA GONZALEZ,pri,0.0961,,0,,0,0,,,
-cua-18.009,2294,Bocoyna,2021,0,6,jun,8,8009,8009,,,,,,2024,,,,,0,,,,,,
+cua-18.009,2294,Bocoyna,2021,0,6,jun,8,8009,8009,pan,m,MACARIO BALDIVAR HERMOSILLO POMPA,,,2024,,,,,0,,,,,,
 cua-07.010,2295,Buenaventura,1989,0,2,jul,8,8010,8010,pri,m,JOSE LUIS RIOS A.,,,Term-limited-p-won,,pan,0.3749,,0,inafed,0,0,,,
 cua-08.010,2296,Buenaventura,1992,0,12,jul,8,8010,8010,pri,m,MANUEL FERNANDEZ PONCE,,,Term-limited-p-won,,pan,0.1482,,0,inafed,0,0,,,
 cua-09.010,2297,Buenaventura,1995,0,9,jul,8,8010,8010,pri,m,MANUEL ANDRES RIOS M,,,Term-limited-p-won,,pan,0.0778,,0,inafed,0,0,,,
@@ -2305,8 +2305,8 @@ cua-13.010,2301,Buenaventura,2007,0,1,jul,8,8010,8010,pri-pna,m,ERASMO VEGA VEGA
 cua-14.010,2302,Buenaventura,2010,0,4,jul,8,8010,8010,pan,m,CECILIO HUMBERTO CHAVEZ BENCOMO,,,Term-limited-p-lost,,pri-pna,0.0732,,0,,0,0,,,
 cua-15.010,2303,Buenaventura,2013,0,7,jul,8,8010,8010,pri-pvem-pna,m,JUAN PABLO RUIZ SOLIS,,,Term-limited-p-won,,pt,0.0989,,0,,0,0,,,
 cua-16.010,2304,Buenaventura,2016,0,5,jun,8,8010,8010,pri-pvem-pt-pna,f,MIRIAM CABALLERO ARRAS,,,Reran-beaten,,pan,0.0601,,0,,0,0,,,
-cua-17.010,2305,Buenaventura,2018,0,1,jul,8,8010,8010,pan-mc,m,RAMON ARMANDO NORIEGA ARMENDARIZ,no,1,Out-,MIRIAM CABALLERO ARRAS,pri,0.0063,,0,,0,0,,,
-cua-18.010,2306,Buenaventura,2021,0,6,jun,8,8010,8010,,,,,,2024,,,,,0,,,,,,
+cua-17.010,2305,Buenaventura,2018,0,1,jul,8,8010,8010,pan-mc,m,RAMON ARMANDO NORIEGA ARMENDARIZ,no,1,Out-p-lost,MIRIAM CABALLERO ARRAS,pri,0.0063,,0,,0,0,,,
+cua-18.010,2306,Buenaventura,2021,0,6,jun,8,8010,8010,pri,,,,,2024,,,,,0,,,,,,
 cua-07.011,2307,Camargo,1989,0,2,jul,8,8011,8011,pri,m,RAFAEL ACOSTA LARA,,,Term-limited-p-lost,,pan,0.1755,,0,inafed,0,0,,,
 cua-08.011,2308,Camargo,1992,0,12,jul,8,8011,8011,pan,m,CARLOS AGUILAR C,,,Term-limited-p-lost,,pri,0.1345,,0,inafed,0,0,,,
 cua-09.011,2309,Camargo,1995,0,9,jul,8,8011,8011,pri,m,IGNACIO ARRIETA A,,,Term-limited-p-lost,,pan,0.0719,,0,inafed,0,0,,,
@@ -2317,8 +2317,8 @@ cua-13.011,2313,Camargo,2007,0,1,jul,8,8011,8011,pan,m,GENARO SOLIS GONZALEZ,,,T
 cua-14.011,2314,Camargo,2010,0,4,jul,8,8011,8011,pan,m,ARTURO SUBIA FERNANDEZ,,,Term-limited-p-lost,,pri-pna,0.0263,,0,,0,0,,,
 cua-15.011,2315,Camargo,2013,0,7,jul,8,8011,8011,pri-pvem-pna,m,JESUS JOSE SAENZ GABALDON,,,Term-limited-p-lost,,pan,0.1838,,0,,0,0,,,
 cua-16.011,2316,Camargo,2016,0,5,jun,8,8011,8011,pan,m,ARTURO ZUBIA FERNANDEZ,,,Reelected,FRANCISCO CARO VELO,pri-pvem-pt-pna,0.2922,,0,,0,0,,,ok
-cua-17.011,2317,Camargo,2018,0,1,jul,8,8011,8011,pan-mc,m,ARTURO ZUBIA FERNANDEZ,term limited,1,Term-limited-,ROSA ELIA ACEVES GUTIERREZ,pri,0.532,,0,,1,1,,,ok
-cua-18.011,2318,Camargo,2021,0,6,jun,8,8011,8011,,,,,,2024,,,,,0,,,,,,
+cua-17.011,2317,Camargo,2018,0,1,jul,8,8011,8011,pan-mc,m,ARTURO ZUBIA FERNANDEZ,term limited,1,Term-limited-p-won,ROSA ELIA ACEVES GUTIERREZ,pri,0.532,,0,,1,1,,,ok
+cua-18.011,2318,Camargo,2021,0,6,jun,8,8011,8011,pan,,,,,2024,,,,,0,,,,,,
 cua-07.012,2319,Carichí,1989,0,2,jul,8,8012,8012,pri,,MANUEL DAVID ARANDA MIRANDA,,,Term-limited-p-won,,pan,0.401,,0,,0,0,,,
 cua-08.012,2320,Carichí,1992,0,12,jul,8,8012,8012,pri,,HECTOR GUZMAN GUZMAN,,,Term-limited-p-won,,pan,0.4715,,0,,0,0,,,
 cua-09.012,2321,Carichí,1995,0,9,jul,8,8012,8012,pri,m,RAMIRO PEREZ TORRES,,,Term-limited-p-won,,pan,0.4527,,0,inafed,0,0,,,
@@ -2330,7 +2330,7 @@ cua-14.012,2326,Carichí,2010,0,4,jul,8,8012,8012,pan-prd,m,IGNACIO LEONEL VAREL
 cua-15.012,2327,Carichí,2013,0,7,jul,8,8012,8012,pri-prd-pt-pna,m,CIPRIANO ENRIQUEZ CHAVEZ,,,Term-limited-p-won,,pan,0.1853,,0,,0,0,,,
 cua-16.012,2328,Carichí,2016,0,5,jun,8,8012,8012,pri-pna,f,ROSA HILDA VILLARREAL MIRANDA,,,Reran-beaten,,pan,0.0901,,0,,0,0,,,
 cua-17.012,2329,Carichí,2018,0,1,jul,8,8012,8012,pan-mc,m,SANTOS CORDERO RODELAS,no,1,Out-,ROSA HILDA VILLARREAL MIRANDA,pri,0.0675,,0,,0,0,,,
-cua-18.012,2330,Carichí,2021,0,6,jun,8,8012,8012,,,,,,2024,,,,,0,,,,,,
+cua-18.012,2330,Carichí,2021,0,6,jun,8,8012,8012,pri,m,IVAN ALEJANDRO GUTIERREZ VILLARREAL,,,2024,,,,,0,,,,,,
 cua-07.013,2331,Casas Grandes,1989,0,2,jul,8,8013,8013,pri,m,MARIO MARQUEZ ORTEGA,,,Term-limited-p-lost,,pan,0.4213,,0,inafed,0,0,,,
 cua-08.013,2332,Casas Grandes,1992,0,12,jul,8,8013,8013,pan,,GUADALUPE SANCHEZ BUENROSTRO,,,Term-limited-p-lost,,pri,0.1387,,0,inafed,0,0,,,
 cua-09.013,2333,Casas Grandes,1995,0,9,jul,8,8013,8013,pri,m,ALFONSO BUSTILLOS ORDOÑEZ,,,Term-limited-p-lost,,pan,0.1175,,0,inafed,0,0,,,
@@ -2341,9 +2341,9 @@ cua-13.013,2337,Casas Grandes,2007,0,1,jul,8,8013,8013,pan,m,DAGOBERTO QUINTANA 
 cua-14.013,2338,Casas Grandes,2010,0,4,jul,8,8013,8013,prd,m,LUIS JAVIER MENDOZA VALDEZ,,,Term-limited-p-lost,,pri-pna,0.121,,0,,0,0,,,
 cua-15.013,2339,Casas Grandes,2013,0,7,jul,8,8013,8013,pri-pvem-pna,m,HUMBERTO BACA TENA,,,Term-limited-p-lost,,pan,0.1779,,0,,0,0,,,
 cua-16.013,2340,Casas Grandes,2016,0,5,jun,8,8013,8013,pan,f,YESENIA GUADALUPE REYES CALZADIAS,,,Reelected,,mc,0.0182,,0,,0,0,,,ok
-cua-17.013,2341,Casas Grandes,2018,0,1,jul,8,8013,8013,pan,f,YESENIA GUADALUPE REYES CALZADIAS,term limited,1,Term-limited-,JUAN FLORES ENRIQUEZ,prd,0.0012,,0,,1,1,,,ok
-cua-18.013,2342,Casas Grandes,2021,0,6,jun,8,8013,8013,,,,,,2024,,,,,0,,,,,,
-cua-07.014,2343,Coronado,1989,0,2,jul,8,8014,8014,pri,,ROGELIO MINJARES SIAÑEZ,,,Term-limited-p-lost,,pcdp,0.988,,0,,0,0,,,
+cua-17.013,2341,Casas Grandes,2018,0,1,jul,8,8013,8013,pan,f,YESENIA GUADALUPE REYES CALZADIAS,term limited,1,Term-limited-p-lost,JUAN FLORES ENRIQUEZ,prd,0.0012,,0,,1,1,,,ok
+cua-18.013,2342,Casas Grandes,2021,0,6,jun,8,8013,8013,pri,,,,,2024,,,,,0,,,,,,
+cua-07.014,2343,Coronado,1989,0,2,jul,8,8014,8014,pri,m,ROGELIO MINJARES SIAÑEZ,,,Term-limited-p-lost,,pcdp,0.988,,0,,0,0,,,
 cua-08.014,2344,Coronado,1992,0,12,jul,8,8014,8014,pan,f,JOSEFA GUADALUPE RENTERIA,,,Term-limited-p-lost,,pri,0.0733,,0,inafed,0,0,,,
 cua-09.014,2345,Coronado,1995,0,9,jul,8,8014,8014,pri,m,FRANCISCO JAVIER BARRON ORONA,,,Term-limited-p-lost,,pan,0.0272,,0,inafed,0,0,,,
 cua-10.014,2346,Coronado,1998,0,5,jul,8,8014,8014,pan,m,VENTURA TERRAZAS DURAN,,,Term-limited-p-lost,,pri,0.2065,,0,,0,0,,,
@@ -2353,8 +2353,8 @@ cua-13.014,2349,Coronado,2007,0,1,jul,8,8014,8014,pri-pna,m,HERMES SERVANDO QUIN
 cua-14.014,2350,Coronado,2010,0,4,jul,8,8014,8014,pan,m,JOSE BERNARDO AVILA MENDOZA,,,Term-limited-p-lost,,pri-pvem-pna,0.0818,,0,,0,0,,,
 cua-15.014,2351,Coronado,2013,0,7,jul,8,8014,8014,pri-pt-pvem-pna,m,ALEJANDRO DE JESUS OLIVAS CASAS,,,Term-limited-p-lost,,pan,0.0742,,0,,0,0,,,
 cua-16.014,2352,Coronado,2016,0,5,jun,8,8014,8014,pan,m,HECTOR ROACHO RODRIGUEZ,,,Reran-beaten,,pri-pvem-pna,0.0287,,0,,0,0,,,
-cua-17.014,2353,Coronado,2018,0,1,jul,8,8014,8014,pri,m,REFUGIO SOTO TERRAZAS,no,1,Out-,REINA SULEMA CERVANTES DURAN,pt-morena-pes,0.0667,,0,,0,0,,,
-cua-18.014,2354,Coronado,2021,0,6,jun,8,8014,8014,,,,,,2024,,,,,0,,,,,,
+cua-17.014,2353,Coronado,2018,0,1,jul,8,8014,8014,pri,m,REFUGIO SOTO TERRAZAS,no,1,Out-p-lost,REINA SULEMA CERVANTES DURAN,pt-morena-pes,0.0667,,0,,0,0,,,
+cua-18.014,2354,Coronado,2021,0,6,jun,8,8014,8014,pan,,,,,2024,,,,,0,,,,,,
 cua-07.015,2355,Coyame del Sotol,1989,0,2,jul,8,8015,8015,pri,m,RODOLFO GALLARDO ASTORGA,,,Term-limited-p-won,,pan,0.4514,,0,inafed,0,0,,,
 cua-08.015,2356,Coyame del Sotol,1992,0,12,jul,8,8015,8015,pri,m,IGNACIO ORTIZ VIEYRA,,,Term-limited-p-won,,pan,0.5354,,0,inafed,0,0,,,
 cua-09.015,2357,Coyame del Sotol,1995,0,9,jul,8,8015,8015,pri,m,FRANCISCO J BAEZA N,,,Term-limited-p-lost,,pan,0.094,,0,inafed,0,0,,,
@@ -2365,8 +2365,8 @@ cua-13.015,2361,Coyame del Sotol,2007,0,1,jul,8,8015,8015,pri-pna,m,OCTAVIO GARF
 cua-14.015,2362,Coyame del Sotol,2010,0,4,jul,8,8015,8015,pan,m,ISAAC CERVANTES MELENDEZ,,,Term-limited-p-lost,,pri-pvem-pna,0.158,,0,,0,0,,,
 cua-15.015,2363,Coyame del Sotol,2013,1,24,nov,8,8015,8015,pri-pvem-pna,m,SERGIO ALVAREZ NIETO,,,Term-limited-p-lost,,pan,0.0674,extraordinaria,0,,0,0,,,
 cua-16.015,2364,Coyame del Sotol,2016,0,5,jun,8,8015,8015,pan,m,ROBERTO CERVANTES ORTEGA,,,Reelected,,pri-pvem-pt-pna,0.0864,,0,,0,0,,,ok
-cua-17.015,2365,Coyame del Sotol,2018,0,1,jul,8,8015,8015,pan-mc,m,ROBERTO CERVANTES ORTEGA,term limited,1,Term-limited-,MARYELA MATURIN GARCIA,pri,0.0837,,0,,1,1,,,ok
-cua-18.015,2366,Coyame del Sotol,2021,0,6,jun,8,8015,8015,,,,,,2024,,,,,0,,,,,,
+cua-17.015,2365,Coyame del Sotol,2018,0,1,jul,8,8015,8015,pan-mc,m,ROBERTO CERVANTES ORTEGA,term limited,1,Term-limited-p-lost,MARYELA MATURIN GARCIA,pri,0.0837,,0,,1,1,,,ok
+cua-18.015,2366,Coyame del Sotol,2021,0,6,jun,8,8015,8015,pri,,,,,2024,,,,,0,,,,,,
 cua-07.016,2367,Cruz--La,1989,0,2,jul,8,8016,8016,pri,m,JESUS GONZALEZ ALMUINA,,,Term-limited-p-won,,pcdp,0.983,,0,inafed,0,0,,,
 cua-08.016,2368,Cruz--La,1992,0,12,jul,8,8016,8016,pri,m,IGNACIO GARCIA SANCHEZ,,,Term-limited-p-won,,pan,0.0722,,0,inafed,0,0,,,
 cua-09.016,2369,Cruz--La,1995,0,9,jul,8,8016,8016,pri,m,ALONSO ALCANTAR ACOSTA,,,Term-limited-p-won,,pan,0.0696,,0,inafed,0,0,,,
@@ -2377,8 +2377,8 @@ cua-13.016,2373,Cruz--La,2007,0,1,jul,8,8016,8016,pri-pna,m,SERVANDO SOTO RIVERA
 cua-14.016,2374,Cruz--La,2010,0,4,jul,8,8016,8016,pri-pvem-pna,m,FRANCISCO LERMA MARQUEZ,,,Term-limited-p-lost,,pan,0.1291,,0,,0,0,,,
 cua-15.016,2375,Cruz--La,2013,0,7,jul,8,8016,8016,pan,m,PABLO DOMINGO MORIEL,,,Term-limited-p-lost,,pri-pvem-pna,0.1023,,0,,0,0,,,
 cua-16.016,2376,Cruz--La,2016,0,5,jun,8,8016,8016,pri-pvem-pt-pna,m,ADOLFO TRILLO HERRERA,,,Reelected,,pan,0.1628,,0,,0,0,,,ok
-cua-17.016,2377,Cruz--La,2018,0,1,jul,8,8016,8016,pna,m,ADOLFO TRILLO HERRERA,term limited,1,Term-limited-,JUDITH LARA MARQUEZ,pan-mc,0.3107,,0,,1,1,,,ok
-cua-18.016,2378,Cruz--La,2021,0,6,jun,8,8016,8016,,,,,,2024,,,,,0,,,,,,
+cua-17.016,2377,Cruz--La,2018,0,1,jul,8,8016,8016,pna,m,ADOLFO TRILLO HERRERA,term limited,1,Term-limited-p-won,JUDITH LARA MARQUEZ,pan-mc,0.3107,,0,,1,1,,,ok
+cua-18.016,2378,Cruz--La,2021,0,6,jun,8,8016,8016,pna,m,SERGIO LUIS OLVERA GALLEGOS,,,2024,,,,,0,,,,,,
 cua-07.017,2379,Cuauhtémoc,1989,0,2,jul,8,8017,8017,pri,m,EFREN ROMO CHACON,,,Term-limited-p-lost,,pan,0.2209,,0,inafed,0,0,,,
 cua-08.017,2380,Cuauhtémoc,1992,0,12,jul,8,8017,8017,pan,m,CESAR CHAVIRA ENRIQUEZ,,,Term-limited-p-lost,,pri,0.1486,,0,inafed,0,0,,,
 cua-09.017,2381,Cuauhtémoc,1995,0,9,jul,8,8017,8017,pri,m,JOSE LUIS CARRASCO,,,Term-limited-p-lost,,pan,0.0725,,0,inafed,0,0,,,
@@ -2389,8 +2389,8 @@ cua-13.017,2385,Cuauhtémoc,2007,0,1,jul,8,8017,8017,pri-pna,m,GERMAN RUBEN HERN
 cua-14.017,2386,Cuauhtémoc,2010,0,4,jul,8,8017,8017,pri-pna,m,ISRAEL BELTRAN MONTES,,,Term-limited-p-lost,,pan,0.2422,,0,,1,1,,,ok
 cua-15.017,2387,Cuauhtémoc,2013,0,7,jul,8,8017,8017,pan,m,HELIODORO JUAREZ GONZALEZ,,,Term-limited-p-won,,pri-pvem-pna,0.0769,,0,,0,0,,,
 cua-16.017,2388,Cuauhtémoc,2016,0,5,jun,8,8017,8017,pan,m,ELIAS HUMBERTO PEREZ HOLGUIN,,,Out-p-lost,KAMEL ATHIE FLORES,pri-pvem-pt-pna,0.1002,,0,,0,0,,,
-cua-17.017,2389,Cuauhtémoc,2018,0,1,jul,8,8017,8017,pt-morena-pes,m,CARLOS TENA NEVAREZ,no,1,Out-,ELIAS HUMBERTO PEREZ HOLGUIN,pan-mc,0.1068,,0,,0,0,,,
-cua-18.017,2390,Cuauhtémoc,2021,0,6,jun,8,8017,8017,,,,,,2024,,,,,0,,,,,,
+cua-17.017,2389,Cuauhtémoc,2018,0,1,jul,8,8017,8017,pt-morena-pes,m,CARLOS TENA NEVAREZ,no,1,Out-p-lost,ELIAS HUMBERTO PEREZ HOLGUIN,pan-mc,0.1068,,0,,0,0,,,
+cua-18.017,2390,Cuauhtémoc,2021,0,6,jun,8,8017,8017,pan,m,ELIAS HUMBERTO PEREZ MENDOZA,,,2024,,,,,0,,,,,,
 cua-07.018,2391,Cusihuiriachi,1989,0,2,jul,8,8018,8018,pri,,,,,Term-limited-p-won,,pan,0.6105,,0,,0,0,,,
 cua-08.018,2392,Cusihuiriachi,1992,0,12,jul,8,8018,8018,pri,m,ROMAN ANDAZOLA G,,,Term-limited-p-lost,,pan,0.1293,,0,inafed,0,0,,,
 cua-09.018,2393,Cusihuiriachi,1995,0,9,jul,8,8018,8018,pt,m,JESUS SALVIDREZ G,,,Term-limited-p-lost,,pri,0.0259,,0,inafed,0,0,,,
@@ -2401,8 +2401,8 @@ cua-13.018,2397,Cusihuiriachi,2007,0,1,jul,8,8018,8018,pri-pna,m,JOSE DOLORES AN
 cua-14.018,2398,Cusihuiriachi,2010,0,4,jul,8,8018,8018,pri-pvem-pna,m,OCTAVIO SIAS LUGO,,,Term-limited-p-lost,,pan,0.1142,,0,,0,0,,,
 cua-15.018,2399,Cusihuiriachi,2013,0,7,jul,8,8018,8018,pan,m,ENRIQUE ESTRADA GUTIERREZ,,,Term-limited-p-lost,,pri-pt-pvem-pna,0.1697,,0,,0,0,,,
 cua-16.018,2400,Cusihuiriachi,2016,0,5,jun,8,8018,8018,pri-pna,m,ALFONSO ALBERTO PEREZ DOMINGUEZ,,,Out-p-won,,pt,0.2026,,0,,0,0,,,
-cua-17.018,2401,Cusihuiriachi,2018,0,1,jul,8,8018,8018,pri,m,ABEL ORDOÑEZ GARCIA,yes,1,Reran-,CAYETANO ORDOÑEZ RODRIGUEZ,pan-mc,0.1229,,0,,0,0,,,
-cua-18.018,2402,Cusihuiriachi,2021,0,6,jun,8,8018,8018,,,,,,2024,,,,,0,,,,,,
+cua-17.018,2401,Cusihuiriachi,2018,0,1,jul,8,8018,8018,pri,m,ABEL ORDOÑEZ GARCIA,yes,1,Reran-beaten,CAYETANO ORDOÑEZ RODRIGUEZ,pan-mc,0.1229,,0,,0,0,,,
+cua-18.018,2402,Cusihuiriachi,2021,0,6,jun,8,8018,8018,pan,m,CAYETANO ORDOÑEZ RODRIGUEZ,,,2024,,,,,0,,,,,,
 cua-07.019,2403,Chihuahua,1989,0,2,jul,8,8019,8019,pri,m,RODOLFO TORRES MEDINA,,,Term-limited-p-won,,pan,0.1603,,0,inafed,0,0,,,
 cua-08.019,2404,Chihuahua,1992,0,12,jul,8,8019,8019,pri,m,PATRICIO MARTINEZ GARCIA,,,Term-limited-p-won,,pan,0.0493,,0,inafed,0,0,,,
 cua-09.019,2405,Chihuahua,1995,0,9,jul,8,8019,8019,pri,m,GUSTAVO RAMOS BECERRA,,,Term-limited-p-won,,pan,0.0601,,0,inafed,0,0,,,
@@ -2413,8 +2413,8 @@ cua-13.019,2409,Chihuahua,2007,0,1,jul,8,8019,8019,pan,m,CARLOS MARCELINO BORRUE
 cua-14.019,2410,Chihuahua,2010,0,4,jul,8,8019,8019,pri-pvem-pna,m,MARCO ADAN QUEZADA MARTINEZ,,,Term-limited-p-won,,pan,0.2052,,0,,0,0,,,
 cua-15.019,2411,Chihuahua,2013,0,7,jul,8,8019,8019,pri-prd-pvem-pna,m,JAVIER ALFONSO GARFIO PACHECO,,,Term-limited-p-lost,,pan,0.092,,0,,0,0,,,
 cua-16.019,2412,Chihuahua,2016,0,5,jun,8,8019,8019,pan,f,MARIA EUGENIA CAMPOS GALVAN,,,Reelected,LUCIA CHAVIRA ACOSTA,pri-pvem-pt-pna,0.1855,,0,,0,0,,,ok
-cua-17.019,2413,Chihuahua,2018,0,1,jul,8,8019,8019,pan-mc,f,MARIA EUGENIA CAMPOS GALVAN,term limited,1,Term-limited-,GUADALUPE PEREZ PALMA,pt-morena-pes,0.2482,,0,,1,1,,,ok
-cua-18.019,2414,Chihuahua,2021,0,6,jun,8,8019,8019,,,,,,2024,,,,,0,,,,,,
+cua-17.019,2413,Chihuahua,2018,0,1,jul,8,8019,8019,pan-mc,f,MARIA EUGENIA CAMPOS GALVAN,term limited,1,Term-limited-p-won,GUADALUPE PEREZ PALMA,pt-morena-pes,0.2482,,0,,1,1,,,ok
+cua-18.019,2414,Chihuahua,2021,0,6,jun,8,8019,8019,pan,,,,,2024,,,,,0,,,,,,
 cua-07.020,2415,Chínipas,1989,0,2,jul,8,8020,8020,pri,m,ENRIQUE HERNANDEZ SANTINI,,,Term-limited-p-won,,pcdp,0.9934,,0,inafed,0,0,,,ok
 cua-08.020,2416,Chínipas,1992,0,12,jul,8,8020,8020,pri,m,CONRADO OCHOA,,,Term-limited-p-lost,,pan,0.599,,0,inafed,0,0,,,
 cua-09.020,2417,Chínipas,1995,0,9,jul,8,8020,8020,pan,m,RAMON ENRIQUE HERNANDEZ SANTINI,,,Term-limited-p-lost,,pri,0.064,,0,inafed,0,1,,,ok
@@ -2425,8 +2425,8 @@ cua-13.020,2421,Chínipas,2007,0,1,jul,8,8020,8020,pri-pna,m,LUIS MANUEL SCHULTZ
 cua-14.020,2422,Chínipas,2010,0,4,jul,8,8020,8020,pri-pvem-pna,m,LEONEL MARTINEZ VELDUCEA,,,Term-limited-p-lost,,pan,0.054,,0,,1,1,,,ok
 cua-15.020,2423,Chínipas,2013,0,7,jul,8,8020,8020,pan,m,HUGO AMED SCHULTZ ALCARAZ,,,Term-limited-p-lost,,pri-pt-pvem-pna,0.0361,reforma 23dic20 dice que vinculado a proceso x asesisato de periodista miroslava breach,0,,0,0,,,
 cua-16.020,2424,Chínipas,2016,0,5,jun,8,8020,8020,pri-pvem-pt-pna,m,JESUS RAMON QUINTO AGRAMON VARELA,,,Out-p-won,,pan,0.6031,,0,,0,0,,,
-cua-17.020,2425,Chínipas,2018,0,1,jul,8,8020,8020,pri,f,SALOME RAMOS SALMON,yes,1,Reran-,GUADALUPE PEREZ PALMA,pt-morena-pes,0.1942,,0,,0,0,,,
-cua-18.020,2426,Chínipas,2021,0,6,jun,8,8020,8020,,,,,,2024,,,,,0,,,,,,
+cua-17.020,2425,Chínipas,2018,0,1,jul,8,8020,8020,pri,f,SALOME RAMOS SALMON,yes,1,Reelected,GUADALUPE PEREZ PALMA,pt-morena-pes,0.1942,,0,,0,0,,,
+cua-18.020,2426,Chínipas,2021,0,6,jun,8,8020,8020,pri,f,SALOME RAMOS SALMON,,,2024,,,,,0,,,,,,
 cua-07.021,2427,Delicias,1989,0,2,jul,8,8021,8021,pri,m,VICTOR VILLALOBOS,,,Term-limited-p-won,,pan,0.3033,,0,inafed,0,0,,,
 cua-08.021,2428,Delicias,1992,0,12,jul,8,8021,8021,pri,m,ROGELIO BEJARANO,,,Term-limited-p-won,,pan,0.0581,,0,inafed,0,0,,,
 cua-09.021,2429,Delicias,1995,0,9,jul,8,8021,8021,pri,m,ROGELIO MUÑOZ OCHOA,,,Term-limited-p-won,,pan,0.0297,,0,inafed,0,0,,,
@@ -2437,8 +2437,8 @@ cua-13.021,2433,Delicias,2007,0,1,jul,8,8021,8021,pri-pna,m,JESUS HEBERTO VILLAL
 cua-14.021,2434,Delicias,2010,0,4,jul,8,8021,8021,pan,m,MARIO MATA CARRASCO,,,Term-limited-p-won,,pri-pna,0.0443,,0,,0,0,,,
 cua-15.021,2435,Delicias,2013,0,7,jul,8,8021,8021,pan,m,JAIME BELTRAN DEL RIO,,,Term-limited-p-won,,pri-pt-pvem-pna,0.0455,,0,,0,0,,,
 cua-16.021,2436,Delicias,2016,0,5,jun,8,8021,8021,pan,m,ELISEO COMPEAN FERNANDEZ,,,Reelected,RICARDO ORVIZ BLAKE,pri-pvem-pt-pna,0.1202,,0,,0,0,,,ok
-cua-17.021,2437,Delicias,2018,0,1,jul,8,8021,8021,pan-mc,m,ELISEO COMPEAN FERNANDEZ,term limited,1,Term-limited-,NORA ESTELA AGUEROS ECHAVARRIA,pt-morena-pes,0.1001,,0,,1,1,,,ok
-cua-18.021,2438,Delicias,2021,0,6,jun,8,8021,8021,,,,,,2024,,,,,0,,,,,,
+cua-17.021,2437,Delicias,2018,0,1,jul,8,8021,8021,pan-mc,m,ELISEO COMPEAN FERNANDEZ,term limited,1,Term-limited-p-won,NORA ESTELA AGUEROS ECHAVARRIA,pt-morena-pes,0.1001,,0,,1,1,,,ok
+cua-18.021,2438,Delicias,2021,0,6,jun,8,8021,8021,pan,,,,,2024,,,,,0,,,,,,
 cua-07.022,2439,Dr. Belisario Domínguez,1989,0,2,jul,8,8022,8022,pri,m,ARMANDO CHACON GALLARDO,,,Term-limited-p-won,,pan,0.3847,,0,inafed,0,0,,,
 cua-08.022,2440,Dr. Belisario Domínguez,1992,0,12,jul,8,8022,8022,pri,m,ISIDRO M. ANDRADE,,,Term-limited-p-won,,pan,0.51,,0,inafed,0,0,,,
 cua-09.022,2441,Dr. Belisario Domínguez,1995,0,9,jul,8,8022,8022,pri,m,SABINO TREVIZO D.,,,Term-limited-p-won,,pan,0.2017,,0,inafed,0,0,,,
@@ -2449,8 +2449,8 @@ cua-13.022,2445,Dr. Belisario Domínguez,2007,0,1,jul,8,8022,8022,pri-pna,m,ARTU
 cua-14.022,2446,Dr. Belisario Domínguez,2010,0,4,jul,8,8022,8022,pri-pvem-pna,m,ARON LOYA JAQUEZ,,,Term-limited-p-won,,pan,0.2935,,0,,0,0,,,ok
 cua-15.022,2447,Dr. Belisario Domínguez,2013,0,7,jul,8,8022,8022,pri-pt-pvem-pna,m,SAUL CARMONA QUEZADA,,,Term-limited-p-lost,,pan,0.1135,,0,,0,0,,,
 cua-16.022,2448,Dr. Belisario Domínguez,2016,0,5,jun,8,8022,8022,pan,m,JESUS ANTONIO PALOMO FRIAS,,,Out-p-lost,,pri-pvem-pt-pna,0.1865,,0,,0,0,,,
-cua-17.022,2449,Dr. Belisario Domínguez,2018,0,1,jul,8,8022,8022,pri,m,ARON LOYA JAQUEZ,yes,1,Reran-,BERENICE GUTIERREZ ALONSO,pan-mc,0.2674,,0,,1,1,,,ok
-cua-18.022,2450,Dr. Belisario Domínguez,2021,0,6,jun,8,8022,8022,,,,,,2024,,,,,0,,,,,,
+cua-17.022,2449,Dr. Belisario Domínguez,2018,0,1,jul,8,8022,8022,pri,m,ARON LOYA JAQUEZ,yes,1,Out-p-lost,BERENICE GUTIERREZ ALONSO,pan-mc,0.2674,,0,,1,1,,,ok
+cua-18.022,2450,Dr. Belisario Domínguez,2021,0,6,jun,8,8022,8022,mc,m,FELIZARDO GALLEGOS LOYA,,,2024,MAGDALENA ZAPATA AGUIRRE,pri,,,0,,,,,,
 cua-07.023,2451,Galeana,1989,0,2,jul,8,8023,8023,pri,m,TACHIQUIN ARREOLA ORTEGA,,,Term-limited-p-won,,,1,,0,inafed,0,0,,cua-09.023,
 cua-08.023,2452,Galeana,1992,0,12,jul,8,8023,8023,pri,m,NARCISO FAVELA S,,,Term-limited-p-won,,prd,0.4646,,0,inafed,0,0,,,
 cua-09.023,2453,Galeana,1995,0,9,jul,8,8023,8023,pri,m,TACHIQUIN ARREOLA ORTEGA,,,Term-limited-p-won,,pan,0.1961,,0,inafed,1,1,,cua-07.023,
@@ -2461,8 +2461,8 @@ cua-13.023,2457,Galeana,2007,0,1,jul,8,8023,8023,prd-conve,m,VERN ARIEL RAY ANGE
 cua-14.023,2458,Galeana,2010,0,4,jul,8,8023,8023,pri-pvem-pna,m,EVER UVALDO GARCIA RODRIGUEZ,,,Term-limited-p-won,,prd,0.1468,,0,,0,0,,,
 cua-15.023,2459,Galeana,2013,0,7,jul,8,8023,8023,pri-pvem-pna,m,HECTOR ALAN ARREOLA LOZANO,,,Term-limited-p-won,,pan,0.6042,,0,,0,0,,,
 cua-16.023,2460,Galeana,2016,0,5,jun,8,8023,8023,pri-pvem-pt-pna,m,ENRIQUE LUJAN ALVAREZ,,,Out-p-lost,,morena,0.1466,,0,,0,0,,,
-cua-17.023,2461,Galeana,2018,0,1,jul,8,8023,8023,pan-mc,m,AMMON DAYER LEBARON TRACY,yes,1,Reran-,CRUZ AARON FAVELA SABATA,pri,0.4055,,0,,0,0,,,
-cua-18.023,2462,Galeana,2021,0,6,jun,8,8023,8023,,,,,,2024,,,,,0,,,,,,
+cua-17.023,2461,Galeana,2018,0,1,jul,8,8023,8023,pan-mc,m,AMMON DAYER LEBARON TRACY,yes,1,Reelected,CRUZ AARON FAVELA SABATA,pri,0.4055,,0,,0,0,,,
+cua-18.023,2462,Galeana,2021,0,6,jun,8,8023,8023,pan,m,AMMON DAYER LEBARON TRACY,,,2024,,,,,0,,,,,,
 cua-07.024,2463,Santa Isabel,1989,0,2,jul,8,8024,8024,pri,f,OMELIA CHAVEZ,,,Term-limited-p-lost,,pan,0.1041,,0,inafed,0,0,,,
 cua-08.024,2464,Santa Isabel,1992,0,12,jul,8,8024,8024,pan,m,FRANCISCO CHAVEZ,,,Term-limited-p-lost,,pri,0.0195,,0,inafed,0,0,,,
 cua-09.024,2465,Santa Isabel,1995,0,9,jul,8,8024,8024,pri,m,ALEJANDRO CORTINAS,,,Term-limited-p-won,,pan,0.095,,0,inafed,0,0,,,
@@ -2473,8 +2473,8 @@ cua-13.024,2469,Santa Isabel,2007,0,1,jul,8,8024,8024,pri-pna,m,JESUS RAYMUNDO S
 cua-14.024,2470,Santa Isabel,2010,0,4,jul,8,8024,8024,pan,f,DULCES NOMBRES CHAVEZ BALDERRAMA,,,Term-limited-p-lost,,pri-pvem-pna,0.2668,,0,,0,0,,,
 cua-15.024,2471,Santa Isabel,2013,0,7,jul,8,8024,8024,pri-pvem-pna,m,GASPAR ARMENDARIZ GRANILLO,,,Term-limited-p-lost,,pan,0.031,,0,,0,0,,,
 cua-16.024,2472,Santa Isabel,2016,0,5,jun,8,8024,8024,pan,m,FERNANDO ORTEGA BALDERRAMA,,,Reelected,,pri-pvem-pt-pna,0.2123,,0,,0,0,,,ok
-cua-17.024,2473,Santa Isabel,2018,0,1,jul,8,8024,8024,pan-mc,m,FERNANDO ORTEGA BALDERRAMA,term limited,1,Term-limited-,ALMA ONDINA MONTES BARRERA,pri,0.2809,,0,,1,1,,,ok
-cua-18.024,2474,Santa Isabel,2021,0,6,jun,8,8024,8024,,,,,,2024,,,,,0,,,,,,
+cua-17.024,2473,Santa Isabel,2018,0,1,jul,8,8024,8024,pan-mc,m,FERNANDO ORTEGA BALDERRAMA,term limited,1,Term-limited-p-lost,ALMA ONDINA MONTES BARRERA,pri,0.2809,,0,,1,1,,,ok
+cua-18.024,2474,Santa Isabel,2021,0,6,jun,8,8024,8024,pri,,,,,2024,,,,,0,,,,,,
 cua-07.025,2475,Gómez Farías,1989,0,2,jul,8,8025,8025,pri,m,RAYMUNDO CADENA C,,,Term-limited-p-won,,pps,0.2264,,0,inafed,0,0,,,
 cua-08.025,2476,Gómez Farías,1992,0,12,jul,8,8025,8025,pri,m,ALVARO MUÑOZ,,,Term-limited-p-won,,pfcrn,0.3177,,0,inafed,0,0,,,
 cua-09.025,2477,Gómez Farías,1995,0,9,jul,8,8025,8025,pri,m,JORGE MUÑOZ MUÑOZ,,,Term-limited-p-won,,pan,0.0808,,0,inafed,0,0,,,
@@ -2485,8 +2485,8 @@ cua-13.025,2481,Gómez Farías,2007,0,1,jul,8,8025,8025,pri-pna,m,BENJAMIN SOSA 
 cua-14.025,2482,Gómez Farías,2010,0,4,jul,8,8025,8025,pri-pvem-pna,m,JUAN MARTIN GONZALEZ GODINEZ,,,Term-limited-p-won,,pan,0.047,,0,,1,1,,,ok
 cua-15.025,2483,Gómez Farías,2013,0,7,jul,8,8025,8025,pri-pt-pvem-pna,m,MANUEL HERRERA AGUIRRE,,,Term-limited-p-won,,,1,,0,,0,0,,,
 cua-16.025,2484,Gómez Farías,2016,0,5,jun,8,8025,8025,pri-pvem-pna,m,JESUS NOE MENDOZA OCHOA,,,Out-p-lost,,pan,0.3422,,0,,0,0,,,
-cua-17.025,2485,Gómez Farías,2018,0,1,jul,8,8025,8025,pt-morena-pes,m,BLAS JUAN GODINEZ ORTEGA,no,1,Out-,MARIA DE LOS ANGELES MORENO RASCON,pri,0.1351,,0,,0,0,,,
-cua-18.025,2486,Gómez Farías,2021,0,6,jun,8,8025,8025,,,,,,2024,,,,,0,,,,,,
+cua-17.025,2485,Gómez Farías,2018,0,1,jul,8,8025,8025,pt-morena-pes,m,BLAS JUAN GODINEZ ORTEGA,no,1,Out-p-lost,MARIA DE LOS ANGELES MORENO RASCON,pri,0.1351,,0,,0,0,,,
+cua-18.025,2486,Gómez Farías,2021,0,6,jun,8,8025,8025,pri,,,,,2024,,,,,0,,,,,,
 cua-07.026,2487,Gran Morelos,1989,0,2,jul,8,8026,8026,pri,m,EFREN GARCIA,,,Term-limited-p-won,,pps,0.3976,,0,inafed,0,0,,,
 cua-08.026,2488,Gran Morelos,1992,0,12,jul,8,8026,8026,pri,m,PEDRO E. MONTES,,,Term-limited-p-won,,pan,0.5656,,0,inafed,0,0,,,
 cua-09.026,2489,Gran Morelos,1995,0,9,jul,8,8026,8026,pri,m,ERNESTO AGUILAR,,,Term-limited-p-won,,pan,0.1254,,0,inafed,0,0,,,
@@ -2497,8 +2497,8 @@ cua-13.026,2493,Gran Morelos,2007,0,1,jul,8,8026,8026,pri-pna,m,PEDRO EFREN MONT
 cua-14.026,2494,Gran Morelos,2010,0,4,jul,8,8026,8026,pri-pvem-pna,m,RICARDO SOLIS MANRRIQUEZ,,,Term-limited-p-won,,pan,0.5129,,0,,0,0,,,
 cua-15.026,2495,Gran Morelos,2013,0,7,jul,8,8026,8026,pri-pt-pvem-pna,m,GILBERTO GUTIERREZ MONTES,,,Term-limited-p-lost,,pan,0.8146,,0,,0,0,,cua-17.026,
 cua-16.026,2496,Gran Morelos,2016,0,5,jun,8,8026,8026,pan,f,CLAUDIA GARCIA CHACON,,,Reran-beaten,,pri-pvem-pt-pna,0.0645,,0,,0,0,,,
-cua-17.026,2497,Gran Morelos,2018,0,1,jul,8,8026,8026,pvem,m,GILBERTO GUTIERREZ MONTES,yes,1,Reran-,YOLANDA ORTEGA MARTINEZ,pri,0.0246,,0,,1,1,,cua-15.026,
-cua-18.026,2498,Gran Morelos,2021,0,6,jun,8,8026,8026,,,,,,2024,,,,,0,,,,,,
+cua-17.026,2497,Gran Morelos,2018,0,1,jul,8,8026,8026,pvem,m,GILBERTO GUTIERREZ MONTES,yes,1,Reelected,YOLANDA ORTEGA MARTINEZ,pri,0.0246,,0,,1,1,,cua-15.026,
+cua-18.026,2498,Gran Morelos,2021,0,6,jun,8,8026,8026,pvem,m,GILBERTO GUTIERREZ MONTES,,,2024,,,,,0,,,,,,
 cua-07.027,2499,Guachochi,1989,0,2,jul,8,8027,8027,pri,m,FELIPE DIAZ PALMA,,,Term-limited-p-won,,pps,0.7317,,0,inafed,0,0,,,
 cua-08.027,2500,Guachochi,1992,0,12,jul,8,8027,8027,pri,m,ROGELIO YANEZ BUSTILLOS,,,Term-limited-p-won,,pan,0.509,,0,inafed,0,0,,cua-10.027,
 cua-09.027,2501,Guachochi,1995,0,9,jul,8,8027,8027,pri,m,JESUS E ARMENDARIZ GONZALEZ,,,Term-limited-p-won,,pan,0.2353,,0,inafed,0,0,,,
@@ -2509,8 +2509,8 @@ cua-13.027,2505,Guachochi,2007,0,1,jul,8,8027,8027,pri-pna,m,MARTIN WBALDO SOLIS
 cua-14.027,2506,Guachochi,2010,0,4,jul,8,8027,8027,pan,m,ANDRES BALLEZA CARREON,,,Term-limited-p-lost,,pri-pna,0.0386,,0,,0,0,,,
 cua-15.027,2507,Guachochi,2013,0,7,jul,8,8027,8027,pri-pt-pvem-pna,m,JOSE LEOBARDO ACOSTA AGUIRRE,,,Term-limited-p-won,,pan,0.3306,,0,,1,1,,cua-12.027,
 cua-16.027,2508,Guachochi,2016,0,5,jun,8,8027,8027,pri-pna,m,HUGO AGUIRRE GARCIA,,,Reelected,,pan,0.1921,,0,,0,0,,,ok
-cua-17.027,2509,Guachochi,2018,0,1,jul,8,8027,8027,pri,m,HUGO AGUIRRE GARCIA,term limited,1,Term-limited-,ANTONIO RONQUILLO AGUIRRE,pan-mc,0.0774,,0,,1,1,,,ok
-cua-18.027,2510,Guachochi,2021,0,6,jun,8,8027,8027,,,,,,2024,,,,,0,,,,,,
+cua-17.027,2509,Guachochi,2018,0,1,jul,8,8027,8027,pri,m,HUGO AGUIRRE GARCIA,term limited,1,Term-limited-p-won,ANTONIO RONQUILLO AGUIRRE,pan-mc,0.0774,,0,,1,1,,,ok
+cua-18.027,2510,Guachochi,2021,0,6,jun,8,8027,8027,pri,,,,,2024,,,,,0,,,,,,
 cua-07.028,2511,Guadalupe,1989,0,2,jul,8,8028,8028,pri,m,ENRIQUE HERNANDEZ CADENA,,,Term-limited-p-won,,pan,0.5184,,0,inafed,0,0,,,
 cua-08.028,2512,Guadalupe,1992,0,12,jul,8,8028,8028,pri,m,L ROGELIO SANCHEZ,,,Term-limited-p-won,,pan,0.3699,,0,inafed,0,0,,,
 cua-09.028,2513,Guadalupe,1995,0,9,jul,8,8028,8028,pri,m,ISRAEL TREJO GAMES,,,Term-limited-p-won,,pan,0.0687,,0,inafed,0,0,,,
@@ -2521,8 +2521,8 @@ cua-13.028,2517,Guadalupe,2007,0,1,jul,8,8028,8028,pri-pna,m,JESUS MANUEL LARA R
 cua-14.028,2518,Guadalupe,2010,0,4,jul,8,8028,8028,pri-pvem-pna,m,TOMAS ARCHULETA RODRIGUEZ,,,Term-limited-p-won,,pan,0.0451,,0,,0,0,,,
 cua-15.028,2519,Guadalupe,2013,0,7,jul,8,8028,8028,pri-pt-pvem-pna,m,GABRIEL URTEAGA NUÑEZ,,,Term-limited-p-won,,pan,0.141,,0,,0,0,,,
 cua-16.028,2520,Guadalupe,2016,0,5,jun,8,8028,8028,pri-pvem-pt-pna,m,JAIME GUERRERO GUADIAN,,,Reelected,,pan,0.3633,,0,,0,0,,,ok
-cua-17.028,2521,Guadalupe,2018,0,1,jul,8,8028,8028,pri,m,JAIME GUERRERO GUADIAN,term limited,1,Term-limited-,MARIA ESTANISLADA SANCHEZ PEREA,pan-mc,0.1617,,0,,1,1,,,ok
-cua-18.028,2522,Guadalupe,2021,0,6,jun,8,8028,8028,,,,,,2024,,,,,0,,,,,,
+cua-17.028,2521,Guadalupe,2018,0,1,jul,8,8028,8028,pri,m,JAIME GUERRERO GUADIAN,term limited,1,Term-limited-p-lost,MARIA ESTANISLADA SANCHEZ PEREA,pan-mc,0.1617,,0,,1,1,,,ok
+cua-18.028,2522,Guadalupe,2021,0,6,jun,8,8028,8028,pvem,,,,,2024,,,,,0,,,,,,
 cua-07.029,2523,Guadalupe y Calvo,1989,0,2,jul,8,8029,8029,pri,m,REYNALDO SOLIS GONZALEZ,,,Term-limited-p-won,,pcdp,0.9956,,0,inafed,0,0,,,
 cua-08.029,2524,Guadalupe y Calvo,1992,0,12,jul,8,8029,8029,pri,m,JOSE ANGEL AGUIRRE CAZARES,,,Term-limited-p-won,,pan,0.0974,,0,inafed,0,0,,,ok
 cua-09.029,2525,Guadalupe y Calvo,1995,0,9,jul,8,8029,8029,pri,m,RIGOBERTO MARTINEZ,,,Term-limited-p-won,,pan,0.2714,,0,inafed,0,0,,,
@@ -2532,9 +2532,9 @@ cua-12.029,2528,Guadalupe y Calvo,2004,0,4,jul,8,8029,8029,pri-pvem-pt,m,JESUS V
 cua-13.029,2529,Guadalupe y Calvo,2007,0,1,jul,8,8029,8029,pri-pna,m,RAMON MENDIVIL SOTELO,,,Dead-term-limited-p-won,,pan,0.3755,Murdered 18feb2010,1,,0,0,,,
 cua-14.029,2530,Guadalupe y Calvo,2010,0,4,jul,8,8029,8029,pri-pvem-pna,m,JOSE RUBEN GUTIERREZ LOERA,,,Term-limited-p-won,,pan,0.6308,,0,,0,0,,,
 cua-15.029,2531,Guadalupe y Calvo,2013,0,7,jul,8,8029,8029,pri-pt-pvem-pna,m,LEOPOLDO EDEN MOLINA CORRAL,,,Term-limited-p-won,,pan,0.7365,,0,,0,0,,,
-cua-16.029,2532,Guadalupe y Calvo,2016,0,5,jun,8,8029,8029,pri-pvem-pt-pna,,NOEL CHAVEZ VELAZQUEZ,,,Reelected,,pan,0.7387,,0,,0,0,,,ok
-cua-17.029,2533,Guadalupe y Calvo,2018,0,1,jul,8,8029,8029,pri,,NOEL CHAVEZ VELAZQUEZ,term limited,1,Term-limited-,HORTENCIA PORTILLO RAMOS,pt-morena-pes,0.1422,,0,,1,1,,,ok
-cua-18.029,2534,Guadalupe y Calvo,2021,0,6,jun,8,8029,8029,,,,,,2024,,,,,0,,,,,,
+cua-16.029,2532,Guadalupe y Calvo,2016,0,5,jun,8,8029,8029,pri-pvem-pt-pna,m,NOEL CHAVEZ VELAZQUEZ,,,Reelected,,pan,0.7387,,0,,0,0,,,ok
+cua-17.029,2533,Guadalupe y Calvo,2018,0,1,jul,8,8029,8029,pri,m,NOEL CHAVEZ VELAZQUEZ,term limited,1,Term-limited-p-won,HORTENCIA PORTILLO RAMOS,pt-morena-pes,0.1422,,0,,1,1,,,ok
+cua-18.029,2534,Guadalupe y Calvo,2021,0,6,jun,8,8029,8029,pri,,,,,2024,,,,,0,,,,,,
 cua-07.030,2535,Guazapares,1989,0,2,jul,8,8030,8030,pri,,GUADALUPE NOEL OCHOA A.,,,Term-limited-p-won,,pcdp,0.9731,,0,inafed,0,0,,,
 cua-08.030,2536,Guazapares,1992,0,12,jul,8,8030,8030,pri,m,RAUL RASCON RASCON,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-09.030,2537,Guazapares,1995,0,9,jul,8,8030,8030,pri,m,SOSTENES PORTILLO DIAZ,,,Term-limited-p-won,,pan,0.143,,0,inafed,0,0,,,
@@ -2545,8 +2545,8 @@ cua-13.030,2541,Guazapares,2007,0,1,jul,8,8030,8030,pri-pna,m,JESUS SALVADOR OCH
 cua-14.030,2542,Guazapares,2010,0,4,jul,8,8030,8030,pri-pvem-pna,m,BARTOLO MORENO BUSTILLOS,,,Term-limited-p-lost,,pan,0.3064,,0,,0,0,,,
 cua-15.030,2543,Guazapares,2013,0,7,jul,8,8030,8030,pan,m,CUTBERTO GONZALEZ BANDA,,,Term-limited-p-lost,,pri-pt-pvem-pna,0.2271,,0,,0,0,,,
 cua-16.030,2544,Guazapares,2016,0,5,jun,8,8030,8030,pri-pvem-pt-pna,f,DEYSI ARABETH RASCON OCHOA,,,Out-p-lost,,mc,0.1427,,0,https://www.pressreader.com/mexico/el-heraldo-de-chihuahua/20180831/281844349507307,0,0,,,ok
-cua-17.030,2545,Guazapares,2018,0,1,jul,8,8030,8030,pan-mc,m,JOEL GUILLERMO BUSTILLOS RAMIREZ,yes,1,Reran-,BLANCA ESTELA OCHOA REVUELTO,pri,0.0311,,0,,0,0,,,
-cua-18.030,2546,Guazapares,2021,0,6,jun,8,8030,8030,,,,,,2024,,,,,0,,,,,,
+cua-17.030,2545,Guazapares,2018,0,1,jul,8,8030,8030,pan-mc,m,JOEL GUILLERMO BUSTILLOS RAMIREZ,yes,1,Reelected,BLANCA ESTELA OCHOA REVUELTO,pri,0.0311,,0,,0,0,,,
+cua-18.030,2546,Guazapares,2021,0,6,jun,8,8030,8030,pan,m,JOEL GUILLERMO BUSTILLOS RAMIREZ,,,2024,,,,,0,,,,,,
 cua-07.031,2547,Guerrero,1989,0,2,jul,8,8031,8031,pri,m,LUIS MOYA ANCHONDO,,,Term-limited-p-won,,pan,0.8485,,0,inafed,0,0,,,
 cua-08.031,2548,Guerrero,1992,0,12,jul,8,8031,8031,pri,m,CARLOS COMADURAN AMAYA,,,Term-limited-p-won,,pan,0.3113,,0,inafed,0,0,,,ok
 cua-09.031,2549,Guerrero,1995,0,9,jul,8,8031,8031,pri,m,ALFONSO DOMINGUEZ CARREON,,,Term-limited-p-won,,pan,0.3138,,0,inafed,0,0,,,ok
@@ -2557,8 +2557,8 @@ cua-13.031,2553,Guerrero,2007,0,1,jul,8,8031,8031,pan,m,JOSE GABRIEL BENJAMIN AL
 cua-14.031,2554,Guerrero,2010,0,4,jul,8,8031,8031,pri-pna,,AGUEDA TORRES VARELA,,,Term-limited-p-won,,pan,0.041,,0,,0,0,,,
 cua-15.031,2555,Guerrero,2013,0,7,jul,8,8031,8031,pri-pvem-pna,m,EFRAIN HERNANDEZ CABALLERO,,,Term-limited-p-won,,pan,0.0338,,0,,0,0,,,
 cua-16.031,2556,Guerrero,2016,0,5,jun,8,8031,8031,pri-pvem-pt-pna,m,LUIS FERNANDO CHACON ERIVES,,,Beaten-dif-p,,pan,0.143,reran under pri and lost,0,https://www.reportecuauhtemoc.com/single-post/2018/01/15/Se-Registra-Luis-Fernando-Chacon-Erives-ante-PRI-busca-la-reelecci%C3%B3n-como-Alcalde-de-Guerrero,0,0,,,ok
-cua-17.031,2557,Guerrero,2018,0,1,jul,8,8031,8031,pt-morena-pes,m,CARLOS COMADURAN AMAYA,yes,1,Reran-,LUIS FERNANDO CHACON ERIVES,pri,0.0591,,0,,1,1,,,ok
-cua-18.031,2558,Guerrero,2021,0,6,jun,8,8031,8031,,,,,,2024,,,,,0,,,,,,
+cua-17.031,2557,Guerrero,2018,0,1,jul,8,8031,8031,pt-morena-pes,m,CARLOS COMADURAN AMAYA,yes,1,Reelected,LUIS FERNANDO CHACON ERIVES,pri,0.0591,,0,,1,1,,,ok
+cua-18.031,2558,Guerrero,2021,0,6,jun,8,8031,8031,morena,m,CARLOS COMADURAN AMAYA,,,2024,,,,,0,,,,,,
 cua-07.032,2559,Hidalgo del Parral,1989,0,2,jul,8,8032,8032,pri,m,SERGIO QUIÑONEZ REYNA,,,Term-limited-p-lost,,pan,0.1549,,0,inafed,0,0,,,
 cua-08.032,2560,Hidalgo del Parral,1992,0,12,jul,8,8032,8032,pan,m,ADALBERTO GUTIERREZ MELENDEZ,,,Term-limited-p-lost,,pri,0.2167,,0,inafed,0,0,,,
 cua-09.032,2561,Hidalgo del Parral,1995,0,9,jul,8,8032,8032,pri,m,JESUS J VILLALOBOS,,,Term-limited-p-lost,,pan,0.2062,,0,inafed,0,0,,,
@@ -2569,8 +2569,8 @@ cua-13.032,2565,Hidalgo del Parral,2007,0,1,jul,8,8032,8032,pan,m,OSCAR GONZALEZ
 cua-14.032,2566,Hidalgo del Parral,2010,0,4,jul,8,8032,8032,pri-pna,m,CESAR OMAR DAJLALA AMAYA,,,Term-limited-p-won,,pan,0.2723,,0,,0,0,,,
 cua-15.032,2567,Hidalgo del Parral,2013,0,7,jul,8,8032,8032,pri-prd-pt-pvem-pna,m,MIGUEL JURADO CONTRERAS,,,Term-limited-p-lost,,pan,0.131,,0,,1,1,,,ok
 cua-16.032,2568,Hidalgo del Parral,2016,0,5,jun,8,8032,8032,indep,m,JORGE ALFREDO LOZOYA SANTILLAN,,,Reelected,MIGUEL PRIMO ARMENDARIZ SONZA,pri-pvem-pt-pna,0.1729,,0,,0,0,,,ok
-cua-17.032,2569,Hidalgo del Parral,2018,0,1,jul,8,8032,8032,indep,m,JORGE ALFREDO LOZOYA SANTILLAN,term limited,1,Term-limited-,JOSE LUIS MARTINEZ ESTRADA,pri,0.5302,,0,,1,1,,,ok
-cua-18.032,2570,Hidalgo del Parral,2021,0,6,jun,8,8032,8032,,,,,,2024,,,,,0,,,,,,
+cua-17.032,2569,Hidalgo del Parral,2018,0,1,jul,8,8032,8032,indep,m,JORGE ALFREDO LOZOYA SANTILLAN,term limited,1,Term-limited-p-lost,JOSE LUIS MARTINEZ ESTRADA,pri,0.5302,,0,,1,1,,,ok
+cua-18.032,2570,Hidalgo del Parral,2021,0,6,jun,8,8032,8032,mc,,,,,2024,,,,,0,,,,,,
 cua-07.033,2571,Huejotitán,1989,0,2,jul,8,8033,8033,pri,m,RAFAEL H. GARCIA,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-08.033,2572,Huejotitán,1992,0,12,jul,8,8033,8033,pri,m,MELITON SANCHEZ SILVA,,,Term-limited-p-won,,pan,0.6578,,0,inafed,0,0,,,
 cua-09.033,2573,Huejotitán,1995,0,9,jul,8,8033,8033,pri,m,JESUS CHAVEZ YANEZ,,,Term-limited-p-won,,pvem,0.5878,,0,inafed,0,0,,,
@@ -2581,8 +2581,8 @@ cua-13.033,2577,Huejotitán,2007,0,1,jul,8,8033,8033,pri-pna,f,SOLEDAD GUTIERREZ
 cua-14.033,2578,Huejotitán,2010,0,4,jul,8,8033,8033,pri-pvem-pna,m,JULIO CESAR CHAVIRA MOLINA,,,Term-limited-p-lost,,pan,0.3096,,0,http://diario.mx/Estado/2013-08-08_28d123aa/alcaldes-de-la-region-sur-del-estado-de-los-mejor-pagados/,0,0,,,ok
 cua-15.033,2579,Huejotitán,2013,0,7,jul,8,8033,8033,pan,m,LUIS ELISEO RUIZ GUTIERREZ,,,Term-limited-p-won,,pri-pt-pvem-pna,0.0137,,0,,0,0,,,
 cua-16.033,2580,Huejotitán,2016,0,5,jun,8,8033,8033,pan,f,MARIA ESTELA CORRAL GANDARILLA,,,Out-p-lost,,pri-pvem-pna,0.0842,,0,,0,0,,,
-cua-17.033,2581,Huejotitán,2018,0,1,jul,8,8033,8033,pri,f,FLORA RUIZ CORRAL,yes,1,Reran-,LUIS ELISEO RUIZ GUTIERREZ,pan-mc,0.048,,0,,0,0,,,
-cua-18.033,2582,Huejotitán,2021,0,6,jun,8,8033,8033,,,,,,2024,,,,,0,,,,,,
+cua-17.033,2581,Huejotitán,2018,0,1,jul,8,8033,8033,pri,f,FLORA RUIZ CORRAL,yes,1,Reelected,LUIS ELISEO RUIZ GUTIERREZ,pan-mc,0.048,,0,,0,0,,,
+cua-18.033,2582,Huejotitán,2021,0,6,jun,8,8033,8033,pri,f,FLORA RUIZ CORRAL,,,2024,,,,,0,,,,,,
 cua-07.034,2583,Ignacio Zaragoza,1989,0,2,jul,8,8034,8034,pri,m,MIGUEL PEREA RASCON,,,Term-limited-p-won,,prd,0.6998,,0,inafed,0,0,,,
 cua-08.034,2584,Ignacio Zaragoza,1992,0,12,jul,8,8034,8034,pri,m,RENE CARMONA G.,,,Term-limited-p-lost,,prd,0.1515,,0,inafed,0,0,,,
 cua-09.034,2585,Ignacio Zaragoza,1995,0,9,jul,8,8034,8034,prd,m,OCTAVIO PEREA L.,,,Term-limited-p-lost,,pri,0.0086,,0,inafed,0,0,,,
@@ -2593,8 +2593,8 @@ cua-13.034,2589,Ignacio Zaragoza,2007,0,1,jul,8,8034,8034,pri-pna,m,BENJAMIN GAR
 cua-14.034,2590,Ignacio Zaragoza,2010,0,4,jul,8,8034,8034,prd,m,REYES FELIPE MEDOZA PEREZ,,,Term-limited-p-lost,,pri-pvem-pna,0.0776,,0,,0,0,,,
 cua-15.034,2591,Ignacio Zaragoza,2013,0,7,jul,8,8034,8034,pan,m,FLORENCIO NEVAREZ FRANCO,,,Term-limited-p-won,,pri-pt-pvem-pna,0.1332,,0,,0,0,,,
 cua-16.034,2592,Ignacio Zaragoza,2016,0,5,jun,8,8034,8034,pan,m,ERBEY RUIZ ORNELAS,,,Out-p-lost,,mc,0.0737,,0,,0,0,,,
-cua-17.034,2593,Ignacio Zaragoza,2018,0,1,jul,8,8034,8034,mc,m,LAURO OROZCO GOMEZ,yes,1,Reran-,OMAR ESCORZA ORTIZ,pan,0.0153,,0,,1,1,,,ok
-cua-18.034,2594,Ignacio Zaragoza,2021,0,6,jun,8,8034,8034,,,,,,2024,,,,,0,,,,,,
+cua-17.034,2593,Ignacio Zaragoza,2018,0,1,jul,8,8034,8034,mc,m,LAURO OROZCO GOMEZ,yes,1,Reelected,OMAR ESCORZA ORTIZ,pan,0.0153,,0,,1,1,,,ok
+cua-18.034,2594,Ignacio Zaragoza,2021,0,6,jun,8,8034,8034,mc,m,LAURO OROZCO GOMEZ,,,2024,,,,,0,,,,,,
 cua-07.035,2595,Janos,1989,0,2,jul,8,8035,8035,pri,m,LUIS MANUEL RENTERIA PARRA,,,Term-limited-p-won,,pan,0.8215,,0,inafed,0,0,,,
 cua-08.035,2596,Janos,1992,0,12,jul,8,8035,8035,pri,m,MARIO RICO PARRA,,,Term-limited-p-lost,,pan,0.3451,,0,inafed,0,0,,,
 cua-09.035,2597,Janos,1995,0,9,jul,8,8035,8035,pan,m,NAZARIO LEANDRO PRIETO ORBAÑANOS,,,Term-limited-p-lost,,pri,0.0344,,0,inafed,0,0,,,
@@ -2605,8 +2605,8 @@ cua-13.035,2601,Janos,2007,0,1,jul,8,8035,8035,pri-pna,m,LEONEL MOLINA GARCIA,,,
 cua-14.035,2602,Janos,2010,0,4,jul,8,8035,8035,pri-pvem-pna,m,JOSE MENDOZA GRADO,,,Term-limited-p-won,,pan,0.2486,,0,,0,0,,,
 cua-15.035,2603,Janos,2013,0,7,jul,8,8035,8035,pri-pvem-pna,m,RUBEN PARRA RENTERIA,,,Term-limited-p-lost,,pan,0.0061,,0,,0,0,,,
 cua-16.035,2604,Janos,2016,0,5,jun,8,8035,8035,mc,m,SEVASTIAN EFRAIN PINEDA ACEDO,,,Reelected,,pri-pvem-pt-pna,0.1296,,0,,0,0,,,ok
-cua-17.035,2605,Janos,2018,0,1,jul,8,8035,8035,pan-mc,m,SEVASTIAN EFRAIN PINEDA ACEDO,term limited,1,Term-limited-,DAVID RUBEN RAMIREZ LOPEZ,prd,0.1695,,0,,1,1,,,ok
-cua-18.035,2606,Janos,2021,0,6,jun,8,8035,8035,,,,,,2024,,,,,0,,,,,,
+cua-17.035,2605,Janos,2018,0,1,jul,8,8035,8035,pan-mc,m,SEVASTIAN EFRAIN PINEDA ACEDO,term limited,1,Term-limited-p-won,DAVID RUBEN RAMIREZ LOPEZ,prd,0.1695,,0,,1,1,,,ok
+cua-18.035,2606,Janos,2021,0,6,jun,8,8035,8035,pan,,,,,2024,,,,,0,,,,,,
 cua-07.036,2607,Jiménez,1989,0,2,jul,8,8036,8036,pri,f,CAROLINA PEREYRA DE ALVAREZ,,,Term-limited-p-lost,,pan,0.4212,,0,inafed,0,0,,,
 cua-08.036,2608,Jiménez,1992,0,12,jul,8,8036,8036,pan,m,FLAVIO FILOMENO ACOSTA CANO DE LOS RIOS,,,Term-limited-p-lost,,pri,0.1684,,0,inafed,0,0,,,
 cua-09.036,2609,Jiménez,1995,0,9,jul,8,8036,8036,pri,m,CESAR CABELLO RAMIREZ,,,Term-limited-p-lost,,pan,0.2355,,0,inafed,0,0,,,
@@ -2617,8 +2617,8 @@ cua-13.036,2613,Jiménez,2007,0,1,jul,8,8036,8036,pan,m,JESUS MANUEL VAZQUEZ MED
 cua-14.036,2614,Jiménez,2010,0,4,jul,8,8036,8036,pan,m,MARCOS CHAVEZ TORRES,,,Term-limited-p-lost,,pri-pna,0.1374,,0,wikipedia ,0,0,,,ok
 cua-15.036,2615,Jiménez,2013,0,7,jul,8,8036,8036,pri-pvem-pna,m,JOSE PILAR FLORES MARTINEZ,,,Term-limited-p-won,,pan,0.3799,,0,,0,0,,,
 cua-16.036,2616,Jiménez,2016,0,5,jun,8,8036,8036,pri-pvem-pt-pna,m,JOSE ARNOLDO ABES DURAN,,,Beaten-dif-p,MARIA DOLORES ACOSTA CANO DE LOS RIOS,pan,0.0571,reran under pri only and lost,0,,0,0,,,
-cua-17.036,2617,Jiménez,2018,0,1,jul,8,8036,8036,pna,m,MARCOS CHAVEZ TORRES,yes,1,Reran-,JOSE ARNOLDO ABES DURAN,pri,0.1479,,0,,0,0,,,
-cua-18.036,2618,Jiménez,2021,0,6,jun,8,8036,8036,,,,,,2024,,,,,0,,,,,,
+cua-17.036,2617,Jiménez,2018,0,1,jul,8,8036,8036,pna,m,MARCOS CHAVEZ TORRES,yes,1,Reelected,JOSE ARNOLDO ABES DURAN,pri,0.1479,,0,,0,0,,,
+cua-18.036,2618,Jiménez,2021,0,6,jun,8,8036,8036,morena-pt-pna,m,MARCOS CHAVEZ TORRES,,,2024,,,,,0,,,,,,
 cua-07.037,2619,Juárez,1989,0,2,jul,8,8037,8037,pri,m,JESUS MACIAS DELGADO,,,Term-limited-p-lost,,pan,0.1361,,0,inafed,0,0,,,
 cua-08.037,2620,Juárez,1992,0,12,jul,8,8037,8037,pan,m,FRANCISCO VILLARREAL T.,,,Term-limited-p-won,,pri,0.1091,,0,inafed,0,0,,,
 cua-09.037,2621,Juárez,1995,0,9,jul,8,8037,8037,pan,m,RAMON GALINDO NORIEGA,,,Term-limited-p-won,,pri,0.0056,,0,inafed,0,0,,,
@@ -2629,8 +2629,8 @@ cua-13.037,2625,Juárez,2007,0,1,jul,8,8037,8037,pri-pna,m,JOSE REYES FERRIZ,,,T
 cua-14.037,2626,Juárez,2010,0,4,jul,8,8037,8037,pri-pvem-pna,m,HECTOR MURGUIA LARDIZABAL,,,Term-limited-p-won,,pan,0.1482,,0,,1,1,,,ok
 cua-15.037,2627,Juárez,2013,0,7,jul,8,8037,8037,pri-pvem-pna,m,ENRIQUE SERRANO ESCOBAR,,,Term-limited-p-lost,,pan,0.1765,,0,,0,0,,,
 cua-16.037,2628,Juárez,2016,0,5,jun,8,8037,8037,indep,m,HECTOR ARMANDO CABADA ALVIDREZ,,,Reelected,HECTOR MURGUIA LARDIZABAL,pri-pvem-pt-pna,0.2506,decia Alejandro Loaeza Canizales,0,,0,0,,,
-cua-17.037,2629,Juárez,2018,0,1,jul,8,8037,8037,indep,m,HECTOR ARMANDO CABADA ALVIDREZ,term limited,1,Term-limited-,JAVIER GONZALEZ MOCKEN,pt-morena-pes,0.0018,recuento tepjf dio triunfo a indep,0,,0,0,,,
-cua-18.037,2630,Juárez,2021,0,6,jun,8,8037,8037,,,,,,2024,,,,,0,,,,,,
+cua-17.037,2629,Juárez,2018,0,1,jul,8,8037,8037,indep,m,HECTOR ARMANDO CABADA ALVIDREZ,term limited,1,Term-limited-p-lost,JAVIER GONZALEZ MOCKEN,pt-morena-pes,0.0018,recuento tepjf dio triunfo a indep,0,,0,0,,,
+cua-18.037,2630,Juárez,2021,0,6,jun,8,8037,8037,morena,,,,,2024,,,,,0,,,,,,
 cua-07.038,2631,Julimes,1989,0,2,jul,8,8038,8038,pri,m,ANTONIO CARNERO PORRAS,,,Term-limited-p-won,,pan,0.7763,,0,inafed,0,0,,,
 cua-08.038,2632,Julimes,1992,0,12,jul,8,8038,8038,pri,m,ADAN FRANCO ESPARZA,,,Term-limited-p-won,,pan,0.1649,,0,inafed,0,0,,,
 cua-09.038,2633,Julimes,1995,0,9,jul,8,8038,8038,pri,m,ELIAS CARNERO CONTRERAS,,,Term-limited-p-lost,,pan,0.0792,,0,inafed,0,0,,,
@@ -2641,8 +2641,8 @@ cua-13.038,2637,Julimes,2007,0,1,jul,8,8038,8038,pri-pna,m,JOSE MARIA AGUIRRE MO
 cua-14.038,2638,Julimes,2010,0,4,jul,8,8038,8038,pan,m,SERGIO RAMON PORRAS VALENCIA,,,Term-limited-p-lost,,pri-pvem-pna,0.1584,,0,,0,0,,,
 cua-15.038,2639,Julimes,2013,0,7,jul,8,8038,8038,pri-pt-pvem-pna,m,NARCISO NUÑEZ ALVAREZ,,,Term-limited-p-lost,,pan,0.0533,,0,,0,0,,,
 cua-16.038,2640,Julimes,2016,0,5,jun,8,8038,8038,pan,f,ANGELICA LUJAN JIMENEZ,,,Reelected,,pri-pvem-pt-pna,0.0028,,0,,0,0,,,ok
-cua-17.038,2641,Julimes,2018,0,1,jul,8,8038,8038,pan-mc,f,ANGELICA LUJAN JIMENEZ,term limited,1,Term-limited-,ARON MONTES ALVARADO,indep,0.0542,,0,,1,1,,,ok
-cua-18.038,2642,Julimes,2021,0,6,jun,8,8038,8038,,,,,,2024,,,,,0,,,,,,
+cua-17.038,2641,Julimes,2018,0,1,jul,8,8038,8038,pan-mc,f,ANGELICA LUJAN JIMENEZ,term limited,1,Term-limited-p-lost,ARON MONTES ALVARADO,indep,0.0542,,0,,1,1,,,ok
+cua-18.038,2642,Julimes,2021,0,6,jun,8,8038,8038,pri,,,,,2024,,,,,0,,,,,,
 cua-07.039,2643,López,1989,0,2,jul,8,8039,8039,pri,m,NESTOR MODESTO,,,Term-limited-p-won,,pan,0.3649,,0,inafed,0,0,,,
 cua-08.039,2644,López,1992,0,12,jul,8,8039,8039,pri,m,HERIBERTO MALDONADO,,,Term-limited-p-won,,pan,0.1164,,0,inafed,0,0,,,
 cua-09.039,2645,López,1995,0,9,jul,8,8039,8039,pri,,,,,Term-limited-p-lost,,pan,0.2983,,0,inafed,0,0,,,
@@ -2653,8 +2653,8 @@ cua-13.039,2649,López,2007,0,1,jul,8,8039,8039,pri-pna,m,OSCAR HERIBERTO CABALL
 cua-14.039,2650,López,2010,0,4,jul,8,8039,8039,pri-pvem-pna,m,RAUL MONTOYA LUJAN,,,Term-limited-p-lost,,pt,0.0482,,0,,0,0,,,
 cua-15.039,2651,López,2013,0,7,jul,8,8039,8039,pan-pt,f,MARIA PATRICIA VALDES ACOSTA,,,Term-limited-p-won,,pri-pvem-pna,0.0445,,0,,0,0,,,
 cua-16.039,2652,López,2016,0,5,jun,8,8039,8039,pri-pvem-pt-pna,m,MIGUEL ANGEL RODRIGUEZ DUARTE,,,Out-p-won,,pan,0.1084,,0,,0,0,,,
-cua-17.039,2653,López,2018,0,1,jul,8,8039,8039,pri,m,OSCAR MANUEL GALVAN NERI,no,1,Out-,LUIS ENRIQUE MONTOYA ESTRADA,prd,0.08,,0,,0,0,,,
-cua-18.039,2654,López,2021,0,6,jun,8,8039,8039,,,,,,2024,,,,,0,,,,,,
+cua-17.039,2653,López,2018,0,1,jul,8,8039,8039,pri,m,OSCAR MANUEL GALVAN NERI,no,1,Out-p-lost,LUIS ENRIQUE MONTOYA ESTRADA,prd,0.08,,0,,0,0,,,
+cua-18.039,2654,López,2021,0,6,jun,8,8039,8039,mc,,,,,2024,,,,,0,,,,,,
 cua-07.040,2655,Madera,1989,0,2,jul,8,8040,8040,pri,m,HUMBERTO PEREZ RODRIGUEZ,,,Term-limited-p-won,,pan,0.5114,,0,wikipedia,0,0,,,ok
 cua-08.040,2656,Madera,1992,0,12,jul,8,8040,8040,pri,m,ORESTES CHAVEZ CHAVIRA,,,Term-limited-p-won,,pan,0.0057,,0,inafed,0,0,,,
 cua-09.040,2657,Madera,1995,0,9,jul,8,8040,8040,pri,m,ALFREDO CALZADILLAS M,,,Term-limited-p-lost,,pan,0.0593,,0,inafed,0,0,,,
@@ -2665,8 +2665,8 @@ cua-13.040,2661,Madera,2007,0,1,jul,8,8040,8040,pan,m,REYES GONZALEZ RAMOS,,,Ter
 cua-14.040,2662,Madera,2010,0,4,jul,8,8040,8040,pri-pvem-pna,m,GUILBERTO ESTRADA TALAMANTES,,,Term-limited-p-won,,pan,0.2009,,0,,0,0,,,
 cua-15.040,2663,Madera,2013,0,7,jul,8,8040,8040,pri-pvem-pna,m,PABLO GRANADOS RASCON,,,Term-limited-p-lost,,pan,0.123,,0,,0,0,,,
 cua-16.040,2664,Madera,2016,0,5,jun,8,8040,8040,pan,m,JAIME TORRES AMAYA,,,Reelected,,pri-pvem-pt-pna,0.2869,,0,,0,0,,,ok
-cua-17.040,2665,Madera,2018,0,1,jul,8,8040,8040,pan-mc,m,JAIME TORRES AMAYA,term limited,1,Term-limited-,YOLANDA CHAVEZ WONG,pt-morena-pes,0.4418,,0,,1,1,,,ok
-cua-18.040,2666,Madera,2021,0,6,jun,8,8040,8040,,,,,,2024,,,,,0,,,,,,
+cua-17.040,2665,Madera,2018,0,1,jul,8,8040,8040,pan-mc,m,JAIME TORRES AMAYA,term limited,1,Term-limited-p-won,YOLANDA CHAVEZ WONG,pt-morena-pes,0.4418,,0,,1,1,,,ok
+cua-18.040,2666,Madera,2021,0,6,jun,8,8040,8040,pan,,,,,2024,,,,,0,,,,,,
 cua-07.041,2667,Maguarichi,1989,0,2,jul,8,8041,8041,pri,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 cua-08.041,2668,Maguarichi,1992,0,12,jul,8,8041,8041,pri,m,RAUL A PARRA RODRIGUEZ,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-09.041,2669,Maguarichi,1995,0,9,jul,8,8041,8041,pri,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,,,Term-limited-p-won,,pan,0.6237,,0,inafed,1,1,,,ok
@@ -2677,8 +2677,8 @@ cua-13.041,2673,Maguarichi,2007,0,1,jul,8,8041,8041,pri-pna,m,JOSE ESTHER PARRA 
 cua-14.041,2674,Maguarichi,2010,0,4,jul,8,8041,8041,pri-pvem-pna,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,,,Term-limited-p-won,,pan,0.7376,,0,,1,1,,,ok
 cua-15.041,2675,Maguarichi,2013,0,7,jul,8,8041,8041,pri-pt-pvem-pna,m,FLORENTINO NUÑEZ QUEZADA,,,Term-limited-p-won,,,1,,0,,0,0,,,
 cua-16.041,2676,Maguarichi,2016,0,5,jun,8,8041,8041,pri-pvem-pt-pna,f,ELIZABETH BANDA QUEZADA,,,Out-p-won,,pan,0.656,,0,,0,0,,,
-cua-17.041,2677,Maguarichi,2018,0,1,jul,8,8041,8041,pri,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,yes,1,Reran-,VIRGINIA ACOSTA VILLAR,pan-mc,0.7234,,0,,1,1,,,ok
-cua-18.041,2678,Maguarichi,2021,0,6,jun,8,8041,8041,,,,,,2024,,,,,0,,,,,,
+cua-17.041,2677,Maguarichi,2018,0,1,jul,8,8041,8041,pri,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,yes,1,Reelected,VIRGINIA ACOSTA VILLAR,pan-mc,0.7234,,0,,1,1,,,ok
+cua-18.041,2678,Maguarichi,2021,0,6,jun,8,8041,8041,pri,m,PEDRO IGNACIO QUEZADA ENRIQUEZ,,,2024,,,,,0,,,,,,
 cua-07.042,2679,Manuel Benavides,1989,0,2,jul,8,8042,8042,pri,m,SANTIAGO LUJAN CARRASCO,,,Term-limited-p-won,,pan,0.4173,,0,inafed,0,0,,,
 cua-08.042,2680,Manuel Benavides,1992,0,12,jul,8,8042,8042,pri,m,PEDRO VILLANUEVA ESCONTRIAS,,,Term-limited-p-won,,pan,0.2937,,0,inafed,0,0,,,ok
 cua-09.042,2681,Manuel Benavides,1995,0,9,jul,8,8042,8042,pri,m,HECTOR VILLA MORENO,,,Term-limited-p-won,,prd,0.2536,,0,inafed,0,0,,,
@@ -2689,8 +2689,8 @@ cua-13.042,2685,Manuel Benavides,2007,0,1,jul,8,8042,8042,pvem,m,BENJAMIN ENRIQU
 cua-14.042,2686,Manuel Benavides,2010,0,4,jul,8,8042,8042,pan,m,MANUEL BENAVIDES GARCIA ZAPATA,,,Term-limited-p-lost,,pri-pna,0.0507,,0,,0,0,,,
 cua-15.042,2687,Manuel Benavides,2013,0,7,jul,8,8042,8042,pt,m,BENJAMIN ENRIQUE ORTIZ AHUMADA,,,Term-limited-p-lost,,pri-pvem-pna,0.0032,,0,,1,1,,,ok
 cua-16.042,2688,Manuel Benavides,2016,0,5,jun,8,8042,8042,pri-pna,f,MARIA DE JESUS VILLANUEVA VILLA,,,Reelected,,pt,0.1459,,0,,1,1,,,ok
-cua-17.042,2689,Manuel Benavides,2018,0,1,jul,8,8042,8042,pri,f,MARIA DE JESUS VILLANUEVA VILLA,term limited,1,Term-limited-,BENJAMIN ENRIQUE ORTIZ AHUMADA,pt-morena-pes,0.2076,,0,,1,1,,,ok
-cua-18.042,2690,Manuel Benavides,2021,0,6,jun,8,8042,8042,,,,,,2024,,,,,0,,,,,,
+cua-17.042,2689,Manuel Benavides,2018,0,1,jul,8,8042,8042,pri,f,MARIA DE JESUS VILLANUEVA VILLA,term limited,1,Term-limited-p-lost,BENJAMIN ENRIQUE ORTIZ AHUMADA,pt-morena-pes,0.2076,,0,,1,1,,,ok
+cua-18.042,2690,Manuel Benavides,2021,0,6,jun,8,8042,8042,prd,,,,,2024,,,,,0,,,,,,
 cua-07.043,2691,Matachí,1989,0,2,jul,8,8043,8043,pri,m,JOSE DOLORES CARRASCO ARVIZO,,,Term-limited-p-won,,pcdp,0.976,,0,inafed,0,0,,,
 cua-08.043,2692,Matachí,1992,0,12,jul,8,8043,8043,pri,m,JAIME ARVIZO TELLO,,,Term-limited-p-won,,pan,0.0872,,0,inafed,0,0,,,
 cua-09.043,2693,Matachí,1995,0,9,jul,8,8043,8043,pri,m,LUIS CARLOS HOLGUIN VALERIO,,,Term-limited-p-lost,,pan,0.1554,,0,inafed,0,0,,,
@@ -2701,8 +2701,8 @@ cua-13.043,2697,Matachí,2007,0,1,jul,8,8043,8043,pri-pna,m,SERGIO QUEZADA ANTIL
 cua-14.043,2698,Matachí,2010,0,4,jul,8,8043,8043,pri-pvem-pna,m,ROBERTO LOYA ANTILLON,,,Term-limited-p-won,,prd,0.0596,,0,,1,1,,,ok
 cua-15.043,2699,Matachí,2013,0,7,jul,8,8043,8043,pri-pvem-pna,m,SERGIO QUEZADA ANTILLON,,,Term-limited-p-lost,,pan,0.038,,0,,1,1,,,ok
 cua-16.043,2700,Matachí,2016,0,5,jun,8,8043,8043,pan,f,DORA LUZ BENCOMO BAYRRUZ,,,Out-p-lost,,pri-pvem-pt-pna,0.2196,,0,,0,0,,,
-cua-17.043,2701,Matachí,2018,0,1,jul,8,8043,8043,pri,f,LORENA VAZQUEZ PEÑALOZA,yes,1,Reran-,IDA EDITH SUAREZ DUARTE,pt-morena-pes,0.0194,,0,,0,0,,,
-cua-18.043,2702,Matachí,2021,0,6,jun,8,8043,8043,,,,,,2024,,,,,0,,,,,,
+cua-17.043,2701,Matachí,2018,0,1,jul,8,8043,8043,pri,f,LORENA VAZQUEZ PEÑALOZA,yes,1,Reelected,IDA EDITH SUAREZ DUARTE,pt-morena-pes,0.0194,,0,,0,0,,,
+cua-18.043,2702,Matachí,2021,0,6,jun,8,8043,8043,pri,f,LORENA VAZQUEZ PEÑALOZA,,,2024,,,,,0,,,,,,
 cua-07.044,2703,Matamoros,1989,0,2,jul,8,8044,8044,pri,,,,,Term-limited-p-won,,pps,0.4317,,0,,0,0,,,
 cua-08.044,2704,Matamoros,1992,0,12,jul,8,8044,8044,pri,m,TIMOTEO CORRAL DE LEON,,,Term-limited-p-lost,,prd,0.3081,,0,inafed,0,0,,,
 cua-09.044,2705,Matamoros,1995,0,9,jul,8,8044,8044,pan,m,VICTOR MANUEL MEZA MEDINA,,,Term-limited-p-won,,pri,0.1444,,0,inafed,0,0,,,
@@ -2713,8 +2713,8 @@ cua-13.044,2709,Matamoros,2007,0,1,jul,8,8044,8044,pri-pna,m,MARTIN PRIMERO MARE
 cua-14.044,2710,Matamoros,2010,0,4,jul,8,8044,8044,pri-pvem-pna,,BUENAVENTURA CHAVEZ VILLALOBOS,,,Term-limited-p-won,,pan,0.0558,,0,,1,1,,,ok
 cua-15.044,2711,Matamoros,2013,0,7,jul,8,8044,8044,pri-pvem-pna,m,RUBEN RAFAEL BARRON GONZALEZ,,,Term-limited-p-lost,,pan,0.1181,,0,,0,0,,,
 cua-16.044,2712,Matamoros,2016,0,5,jun,8,8044,8044,pan,f,MARIA DE LOS ANGELES GAUCIN SALAS,,,Reelected,,pri-pvem-pt-pna,0.2251,,0,,0,0,,,ok
-cua-17.044,2713,Matamoros,2018,0,1,jul,8,8044,8044,pan-mc,f,MARIA DE LOS ANGELES GAUCIN SALAS,term limited,1,Term-limited-,ELOY FLORES ARMENDARIZ,pri,0.0483,,0,,1,1,,,ok
-cua-18.044,2714,Matamoros,2021,0,6,jun,8,8044,8044,,,,,,2024,,,,,0,,,,,,
+cua-17.044,2713,Matamoros,2018,0,1,jul,8,8044,8044,pan-mc,f,MARIA DE LOS ANGELES GAUCIN SALAS,term limited,1,Term-limited-p-won,ELOY FLORES ARMENDARIZ,pri,0.0483,,0,,1,1,,,ok
+cua-18.044,2714,Matamoros,2021,0,6,jun,8,8044,8044,pan,m,JESUS ENRIQUE PEÑA VAZQUEZ,,,2024,,,,,0,,,,,,
 cua-07.045,2715,Meoqui,1989,0,2,jul,8,8045,8045,pri,m,JOSE ALFREDO NAVARRETE,,,Term-limited-p-won,,pan,0.0676,,0,inafed,0,0,,,
 cua-08.045,2716,Meoqui,1992,0,12,jul,8,8045,8045,pri,m,MARTIN E. SILLER HERMOSILLO,,,Term-limited-p-won,,pan,0.0979,,0,inafed,0,0,,,
 cua-09.045,2717,Meoqui,1995,0,9,jul,8,8045,8045,pri,m,FRANCISCO GONZALEZ CARRASCO,,,Term-limited-p-lost,,pan,0.0715,,0,inafed,0,0,,,
@@ -2725,8 +2725,8 @@ cua-13.045,2721,Meoqui,2007,0,1,jul,8,8045,8045,pan,m,JESUS VILLAREAL MACIAS,,,T
 cua-14.045,2722,Meoqui,2010,0,4,jul,8,8045,8045,pri-pvem-pna,m,JESUS SALVADOR GARCIA ESQUIVEL,,,Term-limited-p-won,,pan,0.1054,,0,,0,0,,,
 cua-15.045,2723,Meoqui,2013,0,7,jul,8,8045,8045,pri-pt-pvem-pna,m,MANUEL DUARTE OLIVAS,,,Term-limited-p-lost,,mc,0.2639,,0,,0,0,,,
 cua-16.045,2724,Meoqui,2016,0,5,jun,8,8045,8045,pan,m,ISMAEL PEREZ PAVIA,,,Reelected,SONIA MARIA TORRES NIETO,pri-pvem-pt-pna,0.1003,,0,,0,0,,,ok
-cua-17.045,2725,Meoqui,2018,0,1,jul,8,8045,8045,pan-mc,m,ISMAEL PEREZ PAVIA,term limited,1,Term-limited-,LUZ KENIA LOPEZ RAMOS,pt-morena-pes,0.0704,,0,,1,1,,,ok
-cua-18.045,2726,Meoqui,2021,0,6,jun,8,8045,8045,,,,,,2024,,,,,0,,,,,,
+cua-17.045,2725,Meoqui,2018,0,1,jul,8,8045,8045,pan-mc,m,ISMAEL PEREZ PAVIA,term limited,1,Term-limited-p-won,LUZ KENIA LOPEZ RAMOS,pt-morena-pes,0.0704,,0,,1,1,,,ok
+cua-18.045,2726,Meoqui,2021,0,6,jun,8,8045,8045,pan-prd,f,MIRIAM SOTO ORNELAS,,,2024,,,,,0,,,,,,
 cua-07.046,2727,Morelos,1989,0,2,jul,8,8046,8046,pri,m,BERNABE ZAVALA SAENZ,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-08.046,2728,Morelos,1992,0,12,jul,8,8046,8046,pri,m,ARNOLDO CHAPARRO CRUZ,,,Term-limited-p-won,,pan,0.4601,,0,inafed,0,0,,,
 cua-09.046,2729,Morelos,1995,0,9,jul,8,8046,8046,pri,m,JOSE REFUGIO HERNANDEZ,,,Term-limited-p-lost,,pan,0.1725,,0,inafed,0,0,,,
@@ -2737,8 +2737,8 @@ cua-13.046,2733,Morelos,2007,0,1,jul,8,8046,8046,pan,m,SERGIO IBAÑEZ PORTILLO,,
 cua-14.046,2734,Morelos,2010,0,4,jul,8,8046,8046,pri-pvem-pna,m,SERGIO CRUZ CASTILLO,,,Term-limited-p-lost,,pan,0.0431,,0,,1,1,,,ok
 cua-15.046,2735,Morelos,2013,0,7,jul,8,8046,8046,pan,f,YUREN CHAVEZ BOJORQUEZ,,,Term-limited-p-lost,,pri-pt-pvem-pna,0.039,,0,,0,0,,,
 cua-16.046,2736,Morelos,2016,0,5,jun,8,8046,8046,pri-pvem-pt-pna,f,AIDA CHAPARRO CRUZ,,,Out-p-lost,,pan,0.1807,,0,,0,0,,,
-cua-17.046,2737,Morelos,2018,0,1,jul,8,8046,8046,pan-mc,m,EDGAR CESAR VENEGAS,no,1,Out-,AURELIANO CHAPARRO CRUZ,pri,0.0791,decia Ramiro Rivera Hernandez como en Moris,0,,0,0,,,ok
-cua-18.046,2738,Morelos,2021,0,6,jun,8,8046,8046,,,,,,2024,,,,,0,,,,,,
+cua-17.046,2737,Morelos,2018,0,1,jul,8,8046,8046,pan-mc,m,EDGAR CESAR VENEGAS,no,1,Out-p-lost,AURELIANO CHAPARRO CRUZ,pri,0.0791,decia Ramiro Rivera Hernandez como en Moris,0,,0,0,,,ok
+cua-18.046,2738,Morelos,2021,0,6,jun,8,8046,8046,morena,,,,,2024,,,,,0,,,,,,
 cua-07.047,2739,Moris,1989,0,2,jul,8,8047,8047,pri,m,CARLOS ALFREDO CARRILLO COLLIN,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-08.047,2740,Moris,1992,0,12,jul,8,8047,8047,pri,m,ELIZALDO CASTILLO PALMA,,,Term-limited-p-won,,pan,0.8054,,0,inafed,0,0,,,ok
 cua-09.047,2741,Moris,1995,0,9,jul,8,8047,8047,pri,m,MARTIN ALFONSO GARCIA AVILA,,,Term-limited-p-won,,prd,0.1046,,0,inafed,0,0,,,
@@ -2749,8 +2749,8 @@ cua-13.047,2745,Moris,2007,0,1,jul,8,8047,8047,pan,m,ELIZALDO CASTILLO PALMA,,,T
 cua-14.047,2746,Moris,2010,0,4,jul,8,8047,8047,pri-pvem-pna,m,JOSE MARTIN PEREZCAMPOS PEREZ,,,Term-limited-p-won,,pan,0.1178,,0,,1,1,,,ok
 cua-15.047,2747,Moris,2013,0,7,jul,8,8047,8047,pri-pt-pvem-pna,m,MANUEL CAMARGO PERLA,,,Term-limited-p-won,,pan,0.2697,,0,,0,0,,,
 cua-16.047,2748,Moris,2016,0,5,jun,8,8047,8047,pri-pvem-pna,f,PERLA GACELA LOPEZ PEREZ,,,Reran-beaten,,pan,0.0123,,0,,0,0,,,
-cua-17.047,2749,Moris,2018,0,1,jul,8,8047,8047,pan-mc,m,RAMIRO RIVERA HERNANDEZ,no,1,Out-,PERLA GACELA LOPEZ PEREZ,pri,0.039,,0,,0,0,,,ok
-cua-18.047,2750,Moris,2021,0,6,jun,8,8047,8047,,,,,,2024,,,,,0,,,,,,
+cua-17.047,2749,Moris,2018,0,1,jul,8,8047,8047,pan-mc,m,RAMIRO RIVERA HERNANDEZ,no,1,Out-p-lost,PERLA GACELA LOPEZ PEREZ,pri,0.039,,0,,0,0,,,ok
+cua-18.047,2750,Moris,2021,0,6,jun,8,8047,8047,pri,,,,,2024,,,,,0,,,,,,
 cua-07.048,2751,Namiquipa,1989,0,2,jul,8,8048,8048,pri,m,DANIEL SALAZAR QUINTANA,,,Term-limited-p-lost,,pan,0.456,,0,inafed,0,0,,,
 cua-08.048,2752,Namiquipa,1992,0,12,jul,8,8048,8048,pan,m,ALFREDO MARIO SAMANIEGO MATHUS,,,Term-limited-p-lost,,pri,0.0442,,0,inafed,0,0,,,ok
 cua-09.048,2753,Namiquipa,1995,0,9,jul,8,8048,8048,pri,m,JOSE ARMANDO JACQUEZ,,,Term-limited-p-lost,,prd,0.0703,,0,inafed,0,0,,,
@@ -2761,8 +2761,8 @@ cua-13.048,2757,Namiquipa,2007,0,1,jul,8,8048,8048,pri-pna,m,HECTOR ARIEL MEIXUE
 cua-14.048,2758,Namiquipa,2010,0,4,jul,8,8048,8048,pri-pvem-pna,m,JESUS MANUEL ORTEGA MERAZ,,,Term-limited-p-won,,prd,0.0455,,0,,0,0,,,
 cua-15.048,2759,Namiquipa,2013,0,7,jul,8,8048,8048,pri-pt-pna,m,DAGOBERTO TREVIZO TENA,,,Term-limited-p-won,,prd,0.5378,,0,,0,0,,,
 cua-16.048,2760,Namiquipa,2016,0,5,jun,8,8048,8048,pri-pna,m,RAMON ALONZO ENRIQUEZ MENDOZA,,,Out-p-won,,pan,0.0188,,0,,0,0,,,
-cua-17.048,2761,Namiquipa,2018,0,1,jul,8,8048,8048,pri,m,OSCAR BARRAZA ROBLEDO,yes,1,Reran-,ZONNIA DUNETSCHKA ALVARADO RENPENNING,pan-mc,0.0078,,0,,0,0,,,
-cua-18.048,2762,Namiquipa,2021,0,6,jun,8,8048,8048,,,,,,2024,,,,,0,,,,,,
+cua-17.048,2761,Namiquipa,2018,0,1,jul,8,8048,8048,pri,m,OSCAR BARRAZA ROBLEDO,yes,1,Reelected,ZONNIA DUNETSCHKA ALVARADO RENPENNING,pan-mc,0.0078,,0,,0,0,,,
+cua-18.048,2762,Namiquipa,2021,0,6,jun,8,8048,8048,pri,m,OSCAR BARRAZA ROBLEDO,,,2024,JOSE CRUZ RUIZ SOLIS,pan,,,0,,,,,,
 cua-07.049,2763,Nonoava,1989,0,2,jul,8,8049,8049,pri,m,ARCADIO CASTRO,,,Term-limited-p-won,,pcdp,0.8419,,0,inafed,0,0,,,
 cua-08.049,2764,Nonoava,1992,0,12,jul,8,8049,8049,pri,m,ALBERTO SANCHEZ GONZALEZ,,,Term-limited-p-won,,pan,0.6062,,0,inafed,0,0,,,
 cua-09.049,2765,Nonoava,1995,0,9,jul,8,8049,8049,pri,m,ISIDRO GONZALEZ MOLINA,,,Term-limited-p-won,,pan,0.1734,,0,inafed,0,0,,,ok
@@ -2773,8 +2773,8 @@ cua-13.049,2769,Nonoava,2007,0,1,jul,8,8049,8049,pri-pna,m,RAMIRO ANTONIO OCHOA 
 cua-14.049,2770,Nonoava,2010,0,4,jul,8,8049,8049,pri-pvem-pna,m,HOMERO CARMONA CARMONA,,,Term-limited-p-won,,pan,0.0978,,0,,1,1,,,ok
 cua-15.049,2771,Nonoava,2013,0,7,jul,8,8049,8049,pri-pt-pvem-pna,m,ISIDRO GONZALEZ MOLINA,,,Term-limited-p-lost,,pan,0.065,,0,,1,1,,,ok
 cua-16.049,2772,Nonoava,2016,0,5,jun,8,8049,8049,pan,m,JOSE REFUGIO MONGE QUEZADA,,,Out-p-won,,pri-pvem-pt-pna,0.0578,,0,,0,0,,,
-cua-17.049,2773,Nonoava,2018,0,1,jul,8,8049,8049,pan,m,JOSE HECTOR CARO VILLALOBOS,yes,1,Reran-,BERTHA ALICIA GONZALEZ QUINTANA,pri,0.1268,,0,,1,1,,,ok
-cua-18.049,2774,Nonoava,2021,0,6,jun,8,8049,8049,,,,,,2024,,,,,0,,,,,,
+cua-17.049,2773,Nonoava,2018,0,1,jul,8,8049,8049,pan,m,JOSE HECTOR CARO VILLALOBOS,yes,1,Reran-beaten,BERTHA ALICIA GONZALEZ QUINTANA,pri,0.1268,,0,,1,1,,,ok
+cua-18.049,2774,Nonoava,2021,0,6,jun,8,8049,8049,morena,m,ARTURO SALINAS VILLALOBOS,,,2024,,,,,0,,,,,,
 cua-07.050,2775,Nuevo Casas Grandes,1989,0,2,jul,8,8050,8050,pri,m,SAUL ARROYOS TORRES,,,Term-limited-p-lost,,pan,0.2886,,0,inafed,0,0,,,
 cua-08.050,2776,Nuevo Casas Grandes,1992,0,12,jul,8,8050,8050,pan,m,SAUL RUIZ ARRIAGA,,,Term-limited-p-lost,,pri,0.231,,0,inafed,0,0,,,
 cua-09.050,2777,Nuevo Casas Grandes,1995,0,9,jul,8,8050,8050,pri,m,EDUARDO MURILLO T.,,,Term-limited-p-won,,pan,0.1066,,0,inafed,0,0,,,
@@ -2785,8 +2785,8 @@ cua-13.050,2781,Nuevo Casas Grandes,2007,0,1,jul,8,8050,8050,pan,m,JESUS MANUEL 
 cua-14.050,2782,Nuevo Casas Grandes,2010,0,4,jul,8,8050,8050,pan,m,LUIS FERNANDO COBOS SAENZ,,,Term-limited-p-lost,,pri-pvem-pna,0.0453,,0,,0,0,,,
 cua-15.050,2783,Nuevo Casas Grandes,2013,0,7,jul,8,8050,8050,pri-pt-pvem-pna,m,JESUS RODOLFO SOLTERO AGUIRRE,,,Term-limited-p-lost,,pan,0.1797,,0,,0,0,,,
 cua-16.050,2784,Nuevo Casas Grandes,2016,0,5,jun,8,8050,8050,pan,m,DAVID MARTINEZ GARRIDO,,,Out-p-lost,ANGEL GRABRIEL AU VASQUEZ,pri-pvem-pt-pna,0.0257,,0,,0,0,,,
-cua-17.050,2785,Nuevo Casas Grandes,2018,0,1,jul,8,8050,8050,prd,m,HECTOR MARIO GALAZ GRIEGO,no,1,Out-,MIGUEL ANGEL ESCARCEGA SALINAS,pt-morena-pes,0.0251,,0,,0,0,,,
-cua-18.050,2786,Nuevo Casas Grandes,2021,0,6,jun,8,8050,8050,,,,,,2024,,,,,0,,,,,,
+cua-17.050,2785,Nuevo Casas Grandes,2018,0,1,jul,8,8050,8050,prd,m,HECTOR MARIO GALAZ GRIEGO,no,1,Out-p-won,MIGUEL ANGEL ESCARCEGA SALINAS,pt-morena-pes,0.0251,,0,,0,0,,,
+cua-18.050,2786,Nuevo Casas Grandes,2021,0,6,jun,8,8050,8050,pan-prd,m,PEDRO JOSE GARCIA VALENZUELA,,,2024,CYNTHIA MARINA CEBALLOS DELGADO,morena-pt-pna,,,0,,,,,,
 cua-07.051,2787,Ocampo,1989,0,2,jul,8,8051,8051,pri,m,OBED LARA CHAVEZ,,,Term-limited-p-won,,pan,0.8264,,0,inafed,0,0,,,
 cua-08.051,2788,Ocampo,1992,0,12,jul,8,8051,8051,pri,m,LORENZO TOVALI LUCERO,,,Term-limited-p-won,,pan,0.6727,,0,inafed,0,0,,,
 cua-09.051,2789,Ocampo,1995,0,9,jul,8,8051,8051,pri,m,CARLOS EMILIO ESCARCEGA,,,Term-limited-p-won,,pan,0.5514,,0,inafed,0,0,,,
@@ -2797,8 +2797,8 @@ cua-13.051,2793,Ocampo,2007,0,1,jul,8,8051,8051,pri-pna,m,FRANCISCO NOE PONCE DE
 cua-14.051,2794,Ocampo,2010,0,4,jul,8,8051,8051,pan,m,MANUEL HERNANDEZ MARTINEZ,,,Term-limited-p-lost,,pri-pna,0.1969,,0,,0,0,,,
 cua-15.051,2795,Ocampo,2013,0,7,jul,8,8051,8051,pri-pt-pna,m,CARLOS EMILIO ESCARZAGA LOZANO,,,Term-limited-p-won,,pan,0.1194,,0,,0,0,,,
 cua-16.051,2796,Ocampo,2016,0,5,jun,8,8051,8051,pri-pna,f,ANA MARIA SAENZ CAMPOS,,,Reelected,,pvem,0.0773,,0,,0,0,,,ok
-cua-17.051,2797,Ocampo,2018,0,1,jul,8,8051,8051,pri,f,ANA MARIA SAENZ CAMPOS,term limited,1,Term-limited-,MANUEL HERNANDEZ MARTINEZ,pan-mc,0.1965,,0,,1,1,,,ok
-cua-18.051,2798,Ocampo,2021,0,6,jun,8,8051,8051,,,,,,2024,,,,,0,,,,,,
+cua-17.051,2797,Ocampo,2018,0,1,jul,8,8051,8051,pri,f,ANA MARIA SAENZ CAMPOS,term limited,1,Term-limited-p-won,MANUEL HERNANDEZ MARTINEZ,pan-mc,0.1965,,0,,1,1,,,ok
+cua-18.051,2798,Ocampo,2021,0,6,jun,8,8051,8051,pri,,,,,2024,,,,,0,,,,,,
 cua-07.052,2799,Ojinaga,1989,0,2,jul,8,8052,8052,pri,m,JOSE J RODRIGUEZ B,,,Term-limited-p-lost,,pan,0.1149,,0,inafed,0,0,,,
 cua-08.052,2800,Ojinaga,1992,0,12,jul,8,8052,8052,pan,m,JOSE ISAAC URIBE,,,Term-limited-p-won,,pri,0.2044,,0,inafed,0,0,,,
 cua-09.052,2801,Ojinaga,1995,0,9,jul,8,8052,8052,pan,m,MANUEL TERCERO PROAÑO,,,Term-limited-p-won,,pri,0.0238,,0,inafed,0,0,,,
@@ -2809,8 +2809,8 @@ cua-13.052,2805,Ojinaga,2007,0,1,jul,8,8052,8052,pan,m,CESAR CARRASCO BAESA,,,Te
 cua-14.052,2806,Ojinaga,2010,0,4,jul,8,8052,8052,pan,m,JUAN CARLOS VALDIVIA CARNERO,,,Term-limited-p-lost,,pri-pvem-pna,0.0407,,0,,0,0,,,
 cua-15.052,2807,Ojinaga,2013,0,7,jul,8,8052,8052,pri-pt-pvem-pna,m,MIGUEL ANTONI CARREON ROHANA,,,Term-limited-p-lost,JOSE FRANCISCO PEREZ ARMENDARIZ,pan,0.038,,0,,0,0,,,
 cua-16.052,2808,Ojinaga,2016,0,5,jun,8,8052,8052,pan,m,MARTIN SANCHEZ VALLES,,,Reelected,,pri-pvem-pna,0.068,,0,,0,0,,,ok
-cua-17.052,2809,Ojinaga,2018,0,1,jul,8,8052,8052,pan-mc,m,MARTIN SANCHEZ VALLES,term limited,1,Term-limited-,GENOVEVA CERVANTES LEVARIO,pri,0.3393,,0,,1,1,,,ok
-cua-18.052,2810,Ojinaga,2021,0,6,jun,8,8052,8052,,,,,,2024,,,,,0,,,,,,
+cua-17.052,2809,Ojinaga,2018,0,1,jul,8,8052,8052,pan-mc,m,MARTIN SANCHEZ VALLES,term limited,1,Term-limited-p-lost,GENOVEVA CERVANTES LEVARIO,pri,0.3393,,0,,1,1,,,ok
+cua-18.052,2810,Ojinaga,2021,0,6,jun,8,8052,8052,pri,,,,,2024,,,,,0,,,,,,
 cua-07.053,2811,Praxedis G. Guerrero,1989,0,2,jul,8,8053,8053,pri,,,,,Term-limited-p-won,,pan,0.2226,,0,,0,0,,,
 cua-08.053,2812,Praxedis G. Guerrero,1992,0,12,jul,8,8053,8053,pri,m,RAFAEL CARREON OTERO,,,Term-limited-p-won,,pan,0.0906,,0,inafed,0,0,,,
 cua-09.053,2813,Praxedis G. Guerrero,1995,0,9,jul,8,8053,8053,pri,m,HUMBERTO AGUIRRE R,,,Term-limited-p-won,,pan,0.104,,0,inafed,0,0,,,
@@ -2821,8 +2821,8 @@ cua-13.053,2817,Praxedis G. Guerrero,2007,0,1,jul,8,8053,8053,pri-pna,m,MANUEL F
 cua-14.053,2818,Praxedis G. Guerrero,2010,0,4,jul,8,8053,8053,pan,m,JOSE LUIS GUERRERO DE LA PEÑA,,,Term-limited-p-lost,,pri-pvem-pna,0.0051,,0,,0,0,,,
 cua-15.053,2819,Praxedis G. Guerrero,2013,0,7,jul,8,8053,8053,pri-pt-pna,m,RODRIGO ACOSTA HERNANDEZ,,,Term-limited-p-won,,pan,0.2094,,0,,0,0,,,
 cua-16.053,2820,Praxedis G. Guerrero,2016,0,5,jun,8,8053,8053,pri-pvem-pna,f,MARTINA VIRGINIA CEDILLOS AGUIRRE,,,Out-p-lost,,pan,0.1052,,0,,0,0,,,
-cua-17.053,2821,Praxedis G. Guerrero,2018,0,1,jul,8,8053,8053,pan-mc,m,RICARDO LOZOYA BUZO,no,1,Out-,CESAR BALDOMERO CARREON GONZALEZ,pri,0.0099,,0,,0,0,,,
-cua-18.053,2822,Praxedis G. Guerrero,2021,0,6,jun,8,8053,8053,,,,,,2024,,,,,0,,,,,,
+cua-17.053,2821,Praxedis G. Guerrero,2018,0,1,jul,8,8053,8053,pan-mc,m,RICARDO LOZOYA BUZO,no,1,Out-p-lost,CESAR BALDOMERO CARREON GONZALEZ,pri,0.0099,,0,,0,0,,,
+cua-18.053,2822,Praxedis G. Guerrero,2021,0,6,jun,8,8053,8053,morena,,,,,2024,,,,,0,,,,,,
 cua-07.054,2823,Riva Palacio,1989,0,2,jul,8,8054,8054,pri,m,LEOPOLDO SILVA CHACON,,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 cua-08.054,2824,Riva Palacio,1992,0,12,jul,8,8054,8054,pri,m,HECTOR F. ONTIVEROS A.,,,Term-limited-p-won,,pan,0.204,,0,inafed,0,0,,,
 cua-09.054,2825,Riva Palacio,1995,0,9,jul,8,8054,8054,pri,m,JESUS A. MARIN PEREZ,,,Term-limited-p-won,,pan,0.3025,,0,inafed,0,0,,,
@@ -2833,8 +2833,8 @@ cua-13.054,2829,Riva Palacio,2007,0,1,jul,8,8054,8054,pri-pna,m,JESUS HECTOR CHA
 cua-14.054,2830,Riva Palacio,2010,0,4,jul,8,8054,8054,pri-pvem-pna,m,FRANCISCO ALAN ROBLES TERRAZAS,,,Term-limited-p-won,,pan,0.2481,,0,,0,0,,,
 cua-15.054,2831,Riva Palacio,2013,0,7,jul,8,8054,8054,pri-pt-pvem-pna,m,SALVADOR CHACON RIVERA,,,Term-limited-p-lost,,pan,0.4342,,0,,0,0,,,
 cua-16.054,2832,Riva Palacio,2016,0,5,jun,8,8054,8054,pan,m,MANUEL RODRIGUEZ ROBLES,,,Out-p-lost,,pri-pna,0.0512,,0,,0,0,,,
-cua-17.054,2833,Riva Palacio,2018,0,1,jul,8,8054,8054,pri,m,HERIBERTO PALACIOS PORTILLO,no,1,Out-,MARIO ALBERTO PEREZ NEVAREZ,pvem,0.0586,,0,,0,0,,,
-cua-18.054,2834,Riva Palacio,2021,0,6,jun,8,8054,8054,,,,,,2024,,,,,0,,,,,,
+cua-17.054,2833,Riva Palacio,2018,0,1,jul,8,8054,8054,pri,m,HERIBERTO PALACIOS PORTILLO,no,1,Out-p-won,MARIO ALBERTO PEREZ NEVAREZ,pvem,0.0586,,0,,0,0,,,
+cua-18.054,2834,Riva Palacio,2021,0,6,jun,8,8054,8054,pri,m,JORGE ADRIAN AGUILAR CORRAL,,,2024,SALVADOR CHACON RIVERA,pan,,,0,,,,,,
 cua-07.055,2835,Rosales,1989,0,2,jul,8,8055,8055,pri,m,RAMON ROJO,,,Term-limited-p-won,,pan,0.5144,,0,inafed,0,0,,,
 cua-08.055,2836,Rosales,1992,0,12,jul,8,8055,8055,pri,m,RAUL CHAVIRA MUÑIZ,,,Term-limited-p-lost,,pan,0.3308,,0,inafed,0,0,,,
 cua-09.055,2837,Rosales,1995,0,9,jul,8,8055,8055,pan,m,MARCIAL MARQUEZ Q.,,,Term-limited-p-won,,pri,0.22,,0,inafed,0,0,,,
@@ -2845,8 +2845,8 @@ cua-13.055,2841,Rosales,2007,0,1,jul,8,8055,8055,pri-pna,m,JESUS LOPEZ CARRILLO,
 cua-14.055,2842,Rosales,2010,0,4,jul,8,8055,8055,pri-pvem-pna,m,MARTIN AUSENCIO FUENTES CARDIEL,,,Term-limited-p-won,,pan,0.0567,,0,,0,0,,,
 cua-15.055,2843,Rosales,2013,0,7,jul,8,8055,8055,pri-pvem-pna,m,EZEQUIEL BUENO TORRES,,,Term-limited-p-won,,pan,0.0493,,0,,0,0,,,
 cua-16.055,2844,Rosales,2016,0,5,jun,8,8055,8055,pri-pvem-pt-pna,f,ELIDA AIMEE SANCHEZ DIAZ,,,Beaten-dif-p,,pan,0.0969,reran under pri only and lost,0,,0,0,,,
-cua-17.055,2845,Rosales,2018,0,1,jul,8,8055,8055,pt-morena-pes,m,JOSE FRANCISCO RAMIREZ LICON,yes,1,Reran-,ELIDA AIMEE SANCHEZ DIAZ,pri,0.1015,,0,,0,0,,,
-cua-18.055,2846,Rosales,2021,0,6,jun,8,8055,8055,,,,,,2024,,,,,0,,,,,,
+cua-17.055,2845,Rosales,2018,0,1,jul,8,8055,8055,pt-morena-pes,m,JOSE FRANCISCO RAMIREZ LICON,yes,1,Reran-beaten,ELIDA AIMEE SANCHEZ DIAZ,pri,0.1015,,0,,0,0,,,
+cua-18.055,2846,Rosales,2021,0,6,jun,8,8055,8055,pan-prd,m,MARCIAL ROMUALDO MARQUEZ GUTIERREZ,,,2024,JOSE FRANCISCO RAMIREZ LICON,pt,,,0,,,,,,
 cua-07.056,2847,Rosario,1989,0,2,jul,8,8056,8056,pri,f,SILVIA DOMINGA DOMINGUEZ,,,Term-limited-p-won,,pps,0.7579,,0,inafed,0,0,,,
 cua-08.056,2848,Rosario,1992,0,12,jul,8,8056,8056,pri,m,SANDALIO MENDOZA A.,,,Term-limited-p-won,,pan,0.3511,,0,inafed,0,0,,,
 cua-09.056,2849,Rosario,1995,0,9,jul,8,8056,8056,pri,m,FRANCISCO JAVIER PRIETO CHAVEZ,,,Term-limited-p-won,,pan,0.5144,,0,inafed,1,1,,,ok
@@ -2857,8 +2857,8 @@ cua-13.056,2853,Rosario,2007,0,1,jul,8,8056,8056,pri-pna,m,JOSE ALFREDO PRIETO C
 cua-14.056,2854,Rosario,2010,0,4,jul,8,8056,8056,pri-pvem-pna,f,LUCRECIA GONZALEZ ALMANZA,,,Term-limited-p-won,,prd,0.1001,,0,,0,0,,,ok
 cua-15.056,2855,Rosario,2013,0,7,jul,8,8056,8056,pri-prd-pt-pna,m,FRANCISCO JAVIER PRIETO CHAVEZ,,,Term-limited-p-lost,,pan,0.7695,,0,,1,1,,,ok
 cua-16.056,2856,Rosario,2016,0,5,jun,8,8056,8056,pan,m,JOSE ALFREDO PRIETO CHAVEZ,,,Out-p-won,,pri-pvem-pna,0.0273,,0,,1,1,,,ok
-cua-17.056,2857,Rosario,2018,0,1,jul,8,8056,8056,pan,f,LUCRECIA GONZALEZ ALMANZA,no,1,Out-,ROSA ELVIA MERAZ MORALES,pri,0.0082,,0,,1,1,,,ok
-cua-18.056,2858,Rosario,2021,0,6,jun,8,8056,8056,,,,,,2024,,,,,0,,,,,,
+cua-17.056,2857,Rosario,2018,0,1,jul,8,8056,8056,pan,f,LUCRECIA GONZALEZ ALMANZA,no,1,Out-p-lost,ROSA ELVIA MERAZ MORALES,pri,0.0082,,0,,1,1,,,ok
+cua-18.056,2858,Rosario,2021,0,6,jun,8,8056,8056,pri,,,,,2024,,,,,0,,,,,,
 cua-07.057,2859,San Francisco de Borja,1989,0,2,jul,8,8057,8057,pri,m,FELIPE PARRA CHAVEZ,,,Term-limited-p-won,,pan,0.6509,,0,inafed,0,0,,,
 cua-08.057,2860,San Francisco de Borja,1992,0,12,jul,8,8057,8057,pri,m,JOSE G. AGUIRRE,,,Term-limited-p-lost,,pan,0.3587,,0,inafed,0,0,,,
 cua-09.057,2861,San Francisco de Borja,1995,0,9,jul,8,8057,8057,pan,m,FELIX HILARIO PARRA CH.,,,Term-limited-p-lost,,pri,0.2819,,0,inafed,0,0,,,
@@ -2869,8 +2869,8 @@ cua-13.057,2865,San Francisco de Borja,2007,0,1,jul,8,8057,8057,pan,m,ANSELMO PA
 cua-14.057,2866,San Francisco de Borja,2010,0,4,jul,8,8057,8057,pan,m,ARTURO MENDOZA ARRAS,,,Term-limited-p-lost,,pri-pna,0.1646,,0,,1,1,,,ok
 cua-15.057,2867,San Francisco de Borja,2013,0,7,jul,8,8057,8057,pri-pvem-pna,m,ALEJANDRO PARRA QUEZADA,,,Term-limited-p-lost,,pan,0.1557,,0,,0,0,,,
 cua-16.057,2868,San Francisco de Borja,2016,0,5,jun,8,8057,8057,pan,f,HILDA MARIA CARO GUANESPEN,,,Reelected,,pri-pvem-pna,0.1111,,0,,0,0,,,ok
-cua-17.057,2869,San Francisco de Borja,2018,0,1,jul,8,8057,8057,pan-mc,f,HILDA MARIA CARO GUANESPEN,term limited,1,Term-limited-,FRANCISCO TAPIA MANRIQUEZ,pri,0.0142,,0,,1,1,,,ok
-cua-18.057,2870,San Francisco de Borja,2021,0,6,jun,8,8057,8057,,,,,,2024,,,,,0,,,,,,
+cua-17.057,2869,San Francisco de Borja,2018,0,1,jul,8,8057,8057,pan-mc,f,HILDA MARIA CARO GUANESPEN,term limited,1,Term-limited-p-lost,FRANCISCO TAPIA MANRIQUEZ,pri,0.0142,,0,,1,1,,,ok
+cua-18.057,2870,San Francisco de Borja,2021,0,6,jun,8,8057,8057,pri,,,,,2024,,,,,0,,,,,,
 cua-07.058,2871,San Francisco de Conchos,1989,0,2,jul,8,8058,8058,pri,m,JUAN NUÑEZ MORALES,,,Term-limited-p-won,,pan,0.6418,,0,inafed,0,0,,,
 cua-08.058,2872,San Francisco de Conchos,1992,0,12,jul,8,8058,8058,pri,f,XOCHITL HERMOSILLO V.,,,Term-limited-p-won,,pan,0.237,,0,inafed,0,0,,,
 cua-09.058,2873,San Francisco de Conchos,1995,0,9,jul,8,8058,8058,pri,m,TOMAS ANAYA BUSTILLOS,,,Term-limited-p-lost,,pan,0.0744,,0,inafed,0,0,,,
@@ -2881,8 +2881,8 @@ cua-13.058,2877,San Francisco de Conchos,2007,0,1,jul,8,8058,8058,pri-pna,m,FRAN
 cua-14.058,2878,San Francisco de Conchos,2010,0,4,jul,8,8058,8058,pri-pvem-pna,m,FRANCISCO JAVIER SILVA PAVIA,,,Term-limited-p-lost,,pan,0.0295,,0,,0,0,,,
 cua-15.058,2879,San Francisco de Conchos,2013,0,7,jul,8,8058,8058,pan,m,ELEAZAR VALLES VILLA,,,Term-limited-p-won,,pri-pvem-pna,0.165,,0,,0,0,,,
 cua-16.058,2880,San Francisco de Conchos,2016,0,5,jun,8,8058,8058,pan,,GUADALUPE IZAY VALLES VILLA,,,Reran-beaten,,pri-pvem-pt-pna,0.1445,,0,,0,0,,,
-cua-17.058,2881,San Francisco de Conchos,2018,0,1,jul,8,8058,8058,pri,m,JAIME RAMIREZ CARRASCO,yes,1,Reran-,GUADALUPE IZAY VALLES VILLA,pan-mc,0.1879,,0,,0,0,,,
-cua-18.058,2882,San Francisco de Conchos,2021,0,6,jun,8,8058,8058,,,,,,2024,,,,,0,,,,,,
+cua-17.058,2881,San Francisco de Conchos,2018,0,1,jul,8,8058,8058,pri,m,JAIME RAMIREZ CARRASCO,yes,1,Reelected,GUADALUPE IZAY VALLES VILLA,pan-mc,0.1879,,0,,0,0,,,
+cua-18.058,2882,San Francisco de Conchos,2021,0,6,jun,8,8058,8058,pri,m,JAIME RAMIREZ CARRASCO,,,2024,,,,,0,,,,,,
 cua-07.059,2883,San Francisco del Oro,1989,0,2,jul,8,8059,8059,pri,m,MANUEL A. RODRIGUEZ F.,,,Term-limited-p-won,,pan,0.4073,,0,inafed,0,0,,,
 cua-08.059,2884,San Francisco del Oro,1992,0,12,jul,8,8059,8059,pri,m,ARTURO HUERTA LUEVANO,,,Term-limited-p-won,,pan,0.1676,,0,inafed,0,0,,,ok
 cua-09.059,2885,San Francisco del Oro,1995,0,9,jul,8,8059,8059,pri,m,GERARDO MONTOYA O.,,,Term-limited-p-won,,pan,0.3846,,0,inafed,0,0,,,
@@ -2893,9 +2893,9 @@ cua-13.059,2889,San Francisco del Oro,2007,0,1,jul,8,8059,8059,pri-pna,m,RICARDO
 cua-14.059,2890,San Francisco del Oro,2010,0,4,jul,8,8059,8059,pan,m,JESUS MANUEL RAMIREZ ALVARADO,,,Term-limited-p-lost,,pri-pvem-pna,0.0412,,0,,0,0,,,
 cua-15.059,2891,San Francisco del Oro,2013,0,7,jul,8,8059,8059,pri-pvem-pna,m,RAFAEL MONTOYA VILLALOBOS,,,Term-limited-p-won,,pan,0.1895,,0,,0,0,,,
 cua-16.059,2892,San Francisco del Oro,2016,0,5,jun,8,8059,8059,pri-pvem-pt-pna,m,JESUS ENRIQUE PEREZ BARRAZA,,,Reran-beaten,,prd,0.0528,,0,,0,0,,,
-cua-17.059,2893,San Francisco del Oro,2018,0,1,jul,8,8059,8059,prd,m,FELIPE TERRAZAS GUTIERREZ,yes,1,Reran-,JESUS ENRIQUE PEREZ BARRAZA,pri,0.011,por el pes,0,,0,0,,,
-cua-18.059,2894,San Francisco del Oro,2021,0,6,jun,8,8059,8059,,,,,,2024,,,,,0,,,,,,
-cua-07.060,2895,Santa Bárbara,1989,0,2,jul,8,8060,8060,pri,,AROSTEGUI GUERRERO,,,Term-limited-p-won,,pan,0.2663,,0,inafed,0,0,,,
+cua-17.059,2893,San Francisco del Oro,2018,0,1,jul,8,8059,8059,prd,m,FELIPE TERRAZAS GUTIERREZ,yes,1,Reran-beaten-dif-p,JESUS ENRIQUE PEREZ BARRAZA,pri,0.011,por el pes,0,,0,0,,,
+cua-18.059,2894,San Francisco del Oro,2021,0,6,jun,8,8059,8059,pt,m,ARTURO HUERTA LUEVANO,,,2024,RAFAEL MONTOYA VILLALOBOS,pvem,,,0,,,,,,
+cua-07.060,2895,Santa Bárbara,1989,0,2,jul,8,8060,8060,pri,m,AROSTEGUI GUERRERO,,,Term-limited-p-won,,pan,0.2663,,0,inafed,0,0,,,
 cua-08.060,2896,Santa Bárbara,1992,0,12,jul,8,8060,8060,pri,m,JOSE RENE GOMEZ E.,,,Term-limited-p-won,,pan,0.0743,,0,inafed,0,0,,,
 cua-09.060,2897,Santa Bárbara,1995,0,9,jul,8,8060,8060,pri,m,ROBERTO GALLARDO G.,,,Term-limited-p-lost,,pan,0.2607,,0,inafed,0,0,,,
 cua-10.060,2898,Santa Bárbara,1998,0,5,jul,8,8060,8060,pan,m,JOSE DE LA LUZ BURCIAGA MATA,,,Term-limited-p-won,,pri,0.2014,,0,,0,0,,,ok
@@ -2905,8 +2905,8 @@ cua-13.060,2901,Santa Bárbara,2007,0,1,jul,8,8060,8060,pri-pna,m,FRANCISCO JAVI
 cua-14.060,2902,Santa Bárbara,2010,0,4,jul,8,8060,8060,pan,m,FRANCISCO JAVIER HERRERA CORRALES,,,Term-limited-p-lost,,pri-pna,0.1599,,0,,0,0,,,
 cua-15.060,2903,Santa Bárbara,2013,0,7,jul,8,8060,8060,pri-pvem-pna,m,JESUS ENRIQUE NUÑEZ OROPEZA,,,Term-limited-p-lost,,pan,0.1422,,0,,0,0,,,
 cua-16.060,2904,Santa Bárbara,2016,0,5,jun,8,8060,8060,mc,m,LUIS ALBERTO RODRIGUEZ CHAIREZ,,,Reran-beaten,,pri-pvem-pt-pna,0.0896,,0,,0,0,,,
-cua-17.060,2905,Santa Bárbara,2018,0,1,jul,8,8060,8060,pri,m,JOSE ANTONIO BILBAO MARTINEZ,yes,1,Reran-,LUIS ALBERTO RODRIGUEZ CHAIREZ,pan-mc,0.0046,,0,,0,0,,,
-cua-18.060,2906,Santa Bárbara,2021,0,6,jun,8,8060,8060,,,,,,2024,,,,,0,,,,,,
+cua-17.060,2905,Santa Bárbara,2018,0,1,jul,8,8060,8060,pri,m,JOSE ANTONIO BILBAO MARTINEZ,yes,1,Reelected,LUIS ALBERTO RODRIGUEZ CHAIREZ,pan-mc,0.0046,,0,,0,0,,,
+cua-18.060,2906,Santa Bárbara,2021,0,6,jun,8,8060,8060,pri,m,JOSE ANTONIO BILBAO MARTINEZ,,,2024,,,,,0,,,,,,
 cua-07.061,2907,Satevó,1989,0,2,jul,8,8061,8061,pri,m,ALVARO TERRAZAS SANCHEZ,,,Term-limited-p-won,,pcdp,0.9888,,0,inafed,0,0,,,
 cua-08.061,2908,Satevó,1992,0,12,jul,8,8061,8061,pri,m,MANUEL LOPEZ ZUBIATE,,,Term-limited-p-won,,pan,0.263,,0,inafed,0,0,,,
 cua-09.061,2909,Satevó,1995,0,9,jul,8,8061,8061,pri,m,SERGIO M. VALDERRAMA,,,Term-limited-p-won,,pan,0.1915,,0,inafed,0,0,,,
@@ -2917,8 +2917,8 @@ cua-13.061,2913,Satevó,2007,0,1,jul,8,8061,8061,pan,m,MARIO ALVAREZ TARANGO,,,T
 cua-14.061,2914,Satevó,2010,0,4,jul,8,8061,8061,pan,m,OSCAR GARCIA BACA,,,Term-limited-p-won,,pri-pvem-pna,0.0336,,0,,0,0,,,
 cua-15.061,2915,Satevó,2013,0,7,jul,8,8061,8061,pan,m,MARIO ALVAREZ TARANGO,,,Term-limited-p-won,,pri-pt-pvem-pna,0.0074,,0,,1,1,,,ok
 cua-16.061,2916,Satevó,2016,0,5,jun,8,8061,8061,pan,m,ERICK NOE PRIETO MENDOZA,,,Out-p-won,,pri-pvem-pt-pna,0.0789,,0,,0,0,,,
-cua-17.061,2917,Satevó,2018,0,1,jul,8,8061,8061,pan-mc,m,ADRIAN DURAN MENDOZA,no,1,Out-,ALONSO RODRIGUEZ MENDOZA,pt-morena-pes,0.0667,,0,,0,0,,,
-cua-18.061,2918,Satevó,2021,0,6,jun,8,8061,8061,,,,,,2024,,,,,0,,,,,,
+cua-17.061,2917,Satevó,2018,0,1,jul,8,8061,8061,pan-mc,m,ADRIAN DURAN MENDOZA,no,1,Out-p-won,ALONSO RODRIGUEZ MENDOZA,pt-morena-pes,0.0667,,0,,0,0,,,
+cua-18.061,2918,Satevó,2021,0,6,jun,8,8061,8061,pan,f,NORMA MUÑOZ ANCHONDO,,,2024,,,,,0,,,,,,
 cua-07.062,2919,Saucillo,1989,0,2,jul,8,8062,8062,pri,,,,,Term-limited-p-lost,,pan,0.2342,Obs was missing from this file,0,,0,0,,,
 cua-08.062,2920,Saucillo,1992,0,12,jul,8,8062,8062,pan,m,RAFAEL GUERRERO A,,,Term-limited-p-lost,,pri,0.0563,,0,inafed,0,0,,,ok
 cua-09.062,2921,Saucillo,1995,0,9,jul,8,8062,8062,pri,m,FERNANDO ROMERO S,,,Term-limited-p-won,,pan,0.1672,,0,inafed,0,0,,,
@@ -2929,20 +2929,20 @@ cua-13.062,2925,Saucillo,2007,0,1,jul,8,8062,8062,pan,m,ALEJANDRO GUERRERO MUÑO
 cua-14.062,2926,Saucillo,2010,0,4,jul,8,8062,8062,pri-pvem-pna,m,JULIO CESAR MUÑOZ REYES,,,Term-limited-p-won,,prd,0.0463,,0,,0,0,,,
 cua-15.062,2927,Saucillo,2013,0,7,jul,8,8062,8062,pri-pt-pna,f,MARTHA ALICIA GANDARA ACOSTA,,,Term-limited-p-lost,,pan,0.2151,,0,,0,0,,,
 cua-16.062,2928,Saucillo,2016,0,5,jun,8,8062,8062,pan,m,ARMANDO LOPEZ TORRES,,,Out-p-won,,pri-pvem-pt-pna,0.038,,0,,0,0,,,
-cua-17.062,2929,Saucillo,2018,0,1,jul,8,8062,8062,pan-mc,f,MANUELA AIDE LOPEZ DE ANDA,yes,1,Reran-,ELVIRA VILLA GOMEZ,pri,0.1289,,0,,0,0,,,
-cua-18.062,2930,Saucillo,2021,0,6,jun,8,8062,8062,,,,,,2024,,,,,0,,,,,,
-cua-07.063,2931,Temosachic,1989,0,2,jul,8,8063,8063,pri,m,RENE LOPEZ ARAGON,,,Term-limited-p-won,,pcdp,0.9461,,0,inafed,0,0,,,
-cua-08.063,2932,Temosachic,1992,0,12,jul,8,8063,8063,pri,m,OTONIEL RUIZ CORDOVA,,,Term-limited-p-won,,pan,0.3191,,0,inafed,0,0,,,ok
-cua-09.063,2933,Temosachic,1995,0,9,jul,8,8063,8063,pri,m,AGUSTIN AGUILAR WEBER,,,Term-limited-p-won,,pan,0.0272,,0,inafed,0,0,,,
-cua-10.063,2934,Temosachic,1998,0,5,jul,8,8063,8063,pri,m,HUMBERTO VARELA VARELA,,,Term-limited-p-won,,pan,0.2183,,0,,0,0,,,
-cua-11.063,2935,Temosachic,2001,0,1,jul,8,8063,8063,pri,m,OTONIEL RUIZ CORDOVA,,,Term-limited-p-lost,,pan,0.1706,,0,,1,1,,,ok
-cua-12.063,2936,Temosachic,2004,0,4,jul,8,8063,8063,pan-prd-conve,m,MAURICIO EDUARDO VELEZ PRIMERO,,,Term-limited-p-won,,pri-pvem-pt,0.0899,,0,,0,0,,,
-cua-13.063,2937,Temosachic,2007,0,1,jul,8,8063,8063,pan,m,JOSE LUIS GARCIA CASTILLO,,,Term-limited-p-lost,,pri-pna,0.0011,,0,,0,0,,,
-cua-14.063,2938,Temosachic,2010,0,4,jul,8,8063,8063,pri-pvem-pna,m,OSCAR MANUL MOLINAR BENCOMO,,,Term-limited-p-won,,prd,0.1348,,0,,0,0,,,
-cua-15.063,2939,Temosachic,2013,0,7,jul,8,8063,8063,pri-pvem-pna,m,PATRICIO TALAMANTES MONTES,,,Term-limited-p-lost,,pan,0.1426,,0,,0,0,,,
-cua-16.063,2940,Temósachic,2016,0,5,jun,8,8063,8063,pan,f,ANGELICA MARIA RODRIGUEZ BUSTILLOS,,,Reran-beaten,,pri-pvem-pt-pna,0.1313,,0,,0,0,,,
-cua-17.063,2941,Temósachic,2018,0,1,jul,8,8063,8063,prd,m,CARLOS IGNACIO BELTRAN BENCOMO,no,1,Dead-,VERONICA ACOSTA ANTILLON,pri,0.1824,Murdered 30sep2020,1,,0,0,,,
-cua-18.063,2942,Temósachic,2021,0,6,jun,8,8063,8063,,,,,,2024,,,,,0,,,,,,
+cua-17.062,2929,Saucillo,2018,0,1,jul,8,8062,8062,pan-mc,f,MANUELA AIDE LOPEZ DE ANDA,yes,1,Reelected,ELVIRA VILLA GOMEZ,pri,0.1289,,0,,0,0,,,
+cua-18.062,2930,Saucillo,2021,0,6,jun,8,8062,8062,pan,f,MANUELA AIDE LOPEZ DE ANDA,,,2024,,,,,0,,,,,,
+cua-07.063,2931,Temosáchic,1989,0,2,jul,8,8063,8063,pri,m,RENE LOPEZ ARAGON,,,Term-limited-p-won,,pcdp,0.9461,,0,inafed,0,0,,,
+cua-08.063,2932,Temosáchic,1992,0,12,jul,8,8063,8063,pri,m,OTONIEL RUIZ CORDOVA,,,Term-limited-p-won,,pan,0.3191,,0,inafed,0,0,,,ok
+cua-09.063,2933,Temosáchic,1995,0,9,jul,8,8063,8063,pri,m,AGUSTIN AGUILAR WEBER,,,Term-limited-p-won,,pan,0.0272,,0,inafed,0,0,,,
+cua-10.063,2934,Temosáchic,1998,0,5,jul,8,8063,8063,pri,m,HUMBERTO VARELA VARELA,,,Term-limited-p-won,,pan,0.2183,,0,,0,0,,,
+cua-11.063,2935,Temosáchic,2001,0,1,jul,8,8063,8063,pri,m,OTONIEL RUIZ CORDOVA,,,Term-limited-p-lost,,pan,0.1706,,0,,1,1,,,ok
+cua-12.063,2936,Temosáchic,2004,0,4,jul,8,8063,8063,pan-prd-conve,m,MAURICIO EDUARDO VELEZ PRIMERO,,,Term-limited-p-won,,pri-pvem-pt,0.0899,,0,,0,0,,,
+cua-13.063,2937,Temosáchic,2007,0,1,jul,8,8063,8063,pan,m,JOSE LUIS GARCIA CASTILLO,,,Term-limited-p-lost,,pri-pna,0.0011,,0,,0,0,,,
+cua-14.063,2938,Temosáchic,2010,0,4,jul,8,8063,8063,pri-pvem-pna,m,OSCAR MANUL MOLINAR BENCOMO,,,Term-limited-p-won,,prd,0.1348,,0,,0,0,,,
+cua-15.063,2939,Temosáchic,2013,0,7,jul,8,8063,8063,pri-pvem-pna,m,PATRICIO TALAMANTES MONTES,,,Term-limited-p-lost,,pan,0.1426,,0,,0,0,,,
+cua-16.063,2940,Temosáchic,2016,0,5,jun,8,8063,8063,pan,f,ANGELICA MARIA RODRIGUEZ BUSTILLOS,,,Reran-beaten,,pri-pvem-pt-pna,0.1313,,0,,0,0,,,
+cua-17.063,2941,Temosáchic,2018,0,1,jul,8,8063,8063,prd,m,CARLOS IGNACIO BELTRAN BENCOMO,no,1,Dead-p-won,VERONICA ACOSTA ANTILLON,pri,0.1824,Murdered 30sep2020,1,,0,0,,,
+cua-18.063,2942,Temosáchic,2021,0,6,jun,8,8063,8063,prd,m,RAMON HUMBERTO VARELA GODINA,,,2024,OMAR CALEB LAZO HERRERA,morena,,,0,,,,,,
 cua-07.064,2943,Tule--El,1989,0,2,jul,8,8064,8064,pri,,,,,Term-limited-p-won,,pan,0.5207,,0,,0,0,,,
 cua-08.064,2944,Tule--El,1992,0,12,jul,8,8064,8064,pri,m,SOSTENES SANDOVAL MORENO,,,Term-limited-p-won,,pan,0.3206,,0,inafed,0,0,,,
 cua-09.064,2945,Tule--El,1995,0,9,jul,8,8064,8064,pri,,GUADALUPE GUTIERREZ,,,Term-limited-p-won,,pan,0.2226,,0,inafed,0,0,,,
@@ -2953,8 +2953,8 @@ cua-13.064,2949,Tule--El,2007,0,1,jul,8,8064,8064,pri-pna,m,HECTOR MANUEL MORENO
 cua-14.064,2950,Tule--El,2010,0,4,jul,8,8064,8064,pri-pvem-pna,m,JUAN JOSE GARCIA VALDEZ,,,Term-limited-p-won,,pan,0.7411,,0,,0,0,,,
 cua-15.064,2951,Tule--El,2013,0,7,jul,8,8064,8064,pri-pt-pvem-pna,f,MATILDE HILARIO GARCIA LOPEZ,,,Term-limited-p-lost,,pan,0.0847,,0,,1,1,,,ok
 cua-16.064,2952,Tule--El,2016,0,5,jun,8,8064,8064,pan,f,ELVA LETICIA RODRIGUEZ RODRIGUEZ,,,Out-p-won,,pri-pvem-pna,0.003,,0,,0,0,,,
-cua-17.064,2953,Tule--El,2018,0,1,jul,8,8064,8064,pan-mc,m,JAVIER RODRIGUEZ CHAVEZ,yes,1,Reran-,GRACIELA RODRIGUEZ YAÑEZ,pri,0.3819,,0,,0,0,,,
-cua-18.064,2954,Tule--El,2021,0,6,jun,8,8064,8064,,,,,,2024,,,,,0,,,,,,
+cua-17.064,2953,Tule--El,2018,0,1,jul,8,8064,8064,pan-mc,m,JAVIER RODRIGUEZ CHAVEZ,yes,1,Reelected,GRACIELA RODRIGUEZ YAÑEZ,pri,0.3819,,0,,0,0,,,
+cua-18.064,2954,Tule--El,2021,0,6,jun,8,8064,8064,pan,m,JAVIER RODRIGUEZ CHAVEZ,,,2024,,,,,0,,,,,,
 cua-07.065,2955,Urique,1989,0,2,jul,8,8065,8065,pri,m,FLORENTINO LANGAREA QUINTANA,,,Term-limited-p-won,,pcdp,0.9582,,0,inafed,0,0,,,
 cua-08.065,2956,Urique,1992,0,12,jul,8,8065,8065,pri,m,FELICIANO VILLALOBOS REVUELTO,,,Term-limited-p-won,,pan,0.7339,,0,inafed,0,0,,,
 cua-09.065,2957,Urique,1995,0,9,jul,8,8065,8065,pri,,,,,Term-limited-p-won,,pan,0.2864,,0,,0,0,,,
@@ -2965,8 +2965,8 @@ cua-13.065,2961,Urique,2007,0,1,jul,8,8065,8065,pri-pna,m,OMAR LOYA GONZALEZ,,,T
 cua-14.065,2962,Urique,2010,0,4,jul,8,8065,8065,pri-pvem-pna,m,LEOBARDO DIAZ ESTRADA,,,Dead-term-limited-p-won,,pan,0.0606,Died car crash 7feb2013,1,,0,0,,,
 cua-15.065,2963,Urique,2013,0,7,jul,8,8065,8065,pri-pt-pvem-pna,m,DANIEL AARON SILVA FIGUEROA,,,Term-limited-p-won,,pan,0.491,,0,,0,0,,,
 cua-16.065,2964,Urique,2016,0,5,jun,8,8065,8065,pri-pvem-pt-pna,f,MARTINA EDIT DOMINGUEZ TEPEYAC,,,Out-p-lost,,pan,0.099,,0,,0,0,,,
-cua-17.065,2965,Urique,2018,0,1,jul,8,8065,8065,pan-mc,f,MAYRA DE JESUS DIAZ GUTIERREZ,yes,1,Reran-,JOSE LUIS HERRERA RENTERIA,pri,0.2934,,0,,0,0,,,
-cua-18.065,2966,Urique,2021,0,6,jun,8,8065,8065,,,,,,2024,,,,,0,,,,,,
+cua-17.065,2965,Urique,2018,0,1,jul,8,8065,8065,pan-mc,f,MAYRA DE JESUS DIAZ GUTIERREZ,yes,1,Reran-beaten,JOSE LUIS HERRERA RENTERIA,pri,0.2934,,0,,0,0,,,
+cua-18.065,2966,Urique,2021,0,6,jun,8,8065,8065,mc,m,DANIEL AARON SILVA FIGUEROA,,,2024,MAYRA DE JESUS DIAZ GUTIERREZ,pan,,,0,,,,,,
 cua-07.066,2967,Uruachi,1989,0,2,jul,8,8066,8066,pri,m,CANDELARIO RUBIO CARDENAS,,,Term-limited-p-won,,pcdp,0.9848,,0,inafed,0,0,,,
 cua-08.066,2968,Uruachi,1992,0,12,jul,8,8066,8066,pri,,GUADALUPE GONZALEZ,,,Term-limited-p-won,,prd,0.5336,,0,inafed,0,0,,,
 cua-09.066,2969,Uruachi,1995,0,9,jul,8,8066,8066,pri,m,OSCAR JAIME BANDA Z.,,,Term-limited-p-won,,pan,0.5183,,0,inafed,0,0,,,
@@ -2977,8 +2977,8 @@ cua-13.066,2973,Uruachi,2007,0,1,jul,8,8066,8066,pan,m,RAFAEL CANO CHAPARRO,,,Te
 cua-14.066,2974,Uruachi,2010,0,4,jul,8,8066,8066,pan,m,ALDO ALEJANDRO CAMPOS RASCON,,,Term-limited-p-lost,,pri-pvem-pna,0.0471,,0,,0,0,,,
 cua-15.066,2975,Uruachi,2013,0,7,jul,8,8066,8066,pri-prd-pt-pna,m,ANTONIO RUIZ MARTINEZ,,,Term-limited-p-won,,pan,0.4107,,0,,0,0,,,
 cua-16.066,2976,Uruachi,2016,0,5,jun,8,8066,8066,pri-pvem-pt-pna,f,HACEL ROCIO CAMPOS RASCON,,,Reran-beaten,,pan,0.0445,,0,,0,0,,,
-cua-17.066,2977,Uruachi,2018,0,1,jul,8,8066,8066,pan-mc,f,ADRIANA CAMPOS RASCON,yes,1,Reran-,HACEL ROCIO CAMPOS RASCON,pri,0.0185,,0,,0,0,,,
-cua-18.066,2978,Uruachi,2021,0,6,jun,8,8066,8066,,,,,,2024,,,,,0,,,,,,
+cua-17.066,2977,Uruachi,2018,0,1,jul,8,8066,8066,pan-mc,f,ADRIANA CAMPOS RASCON,yes,1,Reran-beaten,HACEL ROCIO CAMPOS RASCON,pri,0.0185,,0,,0,0,,,
+cua-18.066,2978,Uruachi,2021,0,6,jun,8,8066,8066,pri,m,MARCELO RASCON FELIX,,,2024,ADRIANA CAMPOS RASCON,pan,,,0,,,,,,
 cua-07.067,2979,Valle de Zaragoza,1989,0,2,jul,8,8067,8067,pri,m,ABRAHAM GONZALEZ CH.,,,Term-limited-p-won,,pan,0.4181,,0,inafed,0,0,,,
 cua-08.067,2980,Valle de Zaragoza,1992,0,12,jul,8,8067,8067,pri,m,JOSE LUIS PUGA TERRAZAS,,,Term-limited-p-won,,pan,0.4653,,0,inafed,0,0,,,
 cua-09.067,2981,Valle de Zaragoza,1995,0,9,jul,8,8067,8067,pri,m,ALEJANDRO DOMINGUEZ R.,,,Term-limited-p-won,,coaldemoc,0.4213,,0,inafed,0,0,,,
@@ -2989,8 +2989,8 @@ cua-13.067,2985,Valle de Zaragoza,2007,0,1,jul,8,8067,8067,pri-pna,m,ISAIAS PORT
 cua-14.067,2986,Valle de Zaragoza,2010,0,4,jul,8,8067,8067,pan,m,ROLANDO JAVIER SANCHEZ SANZ,,,Term-limited-p-lost,,pri-pna,0.1362,,0,,0,0,,,
 cua-15.067,2987,Valle de Zaragoza,2013,0,7,jul,8,8067,8067,pri-pt-pvem-pna,m,HECTOR DANIEL GONZALEZ SALCIDO,,,Term-limited-p-won,,pan,0.2328,,0,,0,0,,,
 cua-16.067,2988,Valle de Zaragoza,2016,0,5,jun,8,8067,8067,pri-pvem-pt-pna,f,CARMEN LETICIA SALCIDO GARCIA,,,Reran-beaten,,prd,0.3086,,0,,0,0,,,
-cua-17.067,2989,Valle de Zaragoza,2018,0,1,jul,8,8067,8067,prd,f,YOLANDA VENZOR MELENDEZ,yes,1,Reran-,CARMEN LETICIA SALCIDO GARCIA,pri,0.0862,,0,,0,0,,,
-cua-18.067,2990,Valle de Zaragoza,2021,0,6,jun,8,8067,8067,,,,,,2024,,,,,0,,,,,,
+cua-17.067,2989,Valle de Zaragoza,2018,0,1,jul,8,8067,8067,prd,f,YOLANDA VENZOR MELENDEZ,yes,1,Reran-beaten,CARMEN LETICIA SALCIDO GARCIA,pri,0.0862,,0,,0,0,,,
+cua-18.067,2990,Valle de Zaragoza,2021,0,6,jun,8,8067,8067,pri,m,MISAEL HOMERO MARQUEZ MORALES,,,2024,HECTOR DANIEL GONZALEZ SALCIDO,mc,,,0,,,,,,
 df-11.002,2991,Azcapotzalco,2000,0,2,jul,9,9002,9002,pan-pvem,f,MARGARITA SALDAÑA HERNANDEZ,,,Term-limited-p-lost,,prd-pcd1-pasd-pt-psn-conve,0.1639,,0,,0,0,,,
 df-12.002,2992,Azcapotzalco,2003,0,6,jul,9,9002,9002,prd,f,LAURA VELAZQUEZ ALZUA,,,Term-limited-p-won,JORGE PALACIOS ARROYO,pan,0.1,,0,,0,0,,,
 df-13.002,2993,Azcapotzalco,2006,0,2,jul,9,9002,9002,prd-pt-conve,m,ALEJANDRO CARBAJAL GONZALEZ,,,Term-limited-p-won,MARGARITA SALDAÑA HERNANDEZ,pan,0.1258,,0,,0,0,,,
@@ -15171,7 +15171,7 @@ que-13.005,15166,Colón,2006,0,2,jul,22,22004,22005,pan,m,J. ALEJANDRO NIEVES HE
 que-14.005,15167,Colón,2009,0,5,jul,22,22004,22005,pan,m,VICTOR ALONSO MORENO,,,Term-limited-p-won,,pri,0.0596,,0,,0,0,,,
 que-15.005,15168,Colón,2012,0,1,jul,22,22004,22005,pan,m,ALEJANDRO ARTEAGA CABRERA,,,Term-limited-p-won,,pri-pvem-pna,0.0819,,0,,0,0,,,
 que-16.005,15169,Colón,2015,0,7,jun,22,22004,22005,pan,m,JOSE ALEJANDRO OCHOA VALENCIA,,,Reelected,,pri,0.0762,,0,,0,0,,,ok
-que-17.005,15170,Colón,2018,0,1,jul,22,22004,22005,pan,m,JOSE ALEJANDRO OCHOA VALENCIA,term limited,1,Term-limited-p-won,LEOPOLDO BARCENAS HERNANDEZ,indep,0.0949,"0.06 of a percent margin in prep, check again",0,,1,1,,,ok
+que-17.005,15170,Colón,2018,0,1,jul,22,22004,22005,pan,m,JOSE ALEJANDRO OCHOA VALENCIA,term limited,1,Term-limited-p-won,LEOPOLDO BARCENAS HERNANDEZ,indep,0.0949,0.06 of a percent margin in prep check again,0,,1,1,,,ok
 que-18.005,15171,Colón,2021,0,6,jun,22,22004,22005,pan+1,m,LEOPOLDO BARCENAS HERNANDEZ,,,2024,MANUEL MONTES HERNANDEZ,,,,0,,,,1,,
 que-08.006,15172,Corregidora,1991,0,18,ago,22,22005,22006,pri,m,HILARIO ZUÑIGA CASTILLO,,,Term-limited-p-won,,pan,0.4391,,0,inafed,0,0,,,
 que-09.006,15173,Corregidora,1994,0,21,ago,22,22005,22006,pri,m,MIGUEL ANGEL PATIÑO ABOYTES,,,Term-limited-p-won,,pan,0.2813,,0,inafed,0,0,,,
