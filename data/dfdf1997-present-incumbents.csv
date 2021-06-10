@@ -2107,7 +2107,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2106,53,ARMANDO,REYES LEDESMA,bc-17.03p,bc03p,pt,,2018,1,2,Reelected,
 2107,62,SOCORRO IRMA,ANDAZOLA GOMEZ,bc-17.04p,bc04p,morena,,2018,1,2,Reelected,
 2108,70,MARIO ISMAEL,MORENO GIL,bc-17.05p,bc05p,morena,,2018,1,2,Out-p-won,
-2109,79,JAVIER JULIAN,CASTAÑEDA POMPOSO,bc-17.06p,bc06p,morena,pes,2018,1,2,Out-p-lost,
+2109,79,JAVIER JULIAN,CASTAÑEDA POMPOSO,bc-17.06p,bc06p,morena,pes,2018,1,2,Out-p-won,
 2110,85,ERIK ISAAC,MORALES ELVIRA,bc-17.07p,bc07p,morena,,2018,1,2,Out-p-won,
 2111,91,HECTOR RENE,CRUZ APARICIO,bc-17.08p,bc08p,pes,,2018,1,2,Out-p-lost,
 2112,101,ANA RUTH,GARCIA GRANDE,bcs-17.01p,bcs01p,morena,,2018,1,3,Out-p-lost,
@@ -2117,7 +2117,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2116,137,EVARISTO LENIN,PEREZ RIVERA,coa-17.01p,coa01p,pan,,2018,1,5,Out-p-lost,
 2117,146,FRANCISCO JAVIER,BORREGO ADAME,coa-17.02p,coa02p,morena,pes,2018,1,5,Reelected,
 2118,155,MELBA NELIA,FARIAS ZAMBRANO,coa-17.03p,coa03p,pt,,2018,1,5,Reran-beaten,
-2119,164,MARTHA HORTENCIA,GARAY CADENA,coa-17.04p,coa04p,pri,pna,2018,1,5,Out-p-lost,
+2119,164,MARTHA HORTENCIA,GARAY CADENA,coa-17.04p,coa04p,pri,pna,2018,1,5,Out-p-won,
 2120,173,LUIS FERNANDO,SALAZAR FERNANDEZ,coa-17.05p,coa05p,morena,pan,2018,1,5,Out-p-lost,sought torreon mayor w morena that ine removed
 2121,182,JOSE ANGEL,PEREZ HERNANDEZ,coa-17.06p,coa06p,pt,pes,2018,1,5,Out-p-lost,
 2122,191,FERNANDO DONATO,DE LAS FUENTES HERNANDEZ,coa-17.07p,coa07p,pri,,2018,1,5,Out-p-won,
@@ -2135,7 +2135,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2134,299,JUAN ENRIQUE,FARRERA ESPONDA,cps-17.10p,cps10p,pt,,2018,1,7,Out-p-won,
 2135,308,ROBERTO ANTONIO,RUBIO MONTEJO,cps-17.11p,cps11p,pvem,,2018,1,7,Reelected,
 2136,317,JOSE LUIS,ELORZA FLORES,cps-17.12p,cps12p,morena,,2018,1,7,Reelected,
-2137,319,MARICRUZ,ROBLERO GORDILLO,cps-17.13p,cps13p,pt,pes,2018,1,7,Out-p-lost,
+2137,319,MARICRUZ,ROBLERO GORDILLO,cps-17.13p,cps13p,pt,pes,2018,1,7,Out-p-won,
 2138,328,MARIA ESTHER,MEJIA CRUZ,cua-17.01p,cua01p,pt,,2018,1,8,Out-p-lost,
 2139,337,TERESITA DE JESUS,VARGAS MERAZ,cua-17.02p,cua02p,morena,,2018,1,8,Reelected,
 2140,346,CLAUDIA ELENA,LASTRA MUÑOZ,cua-17.03p,cua03p,morena,,2018,1,8,Out-p-won,
@@ -2166,7 +2166,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2165,571,ALEIDA,ALAVEZ RUIZ,df-17.19p,df19p,morena,,2018,1,9,Reelected,
 2166,580,ANA KARINA,ROJO PIMENTEL,df-17.20p,df20p,morena,,2018,1,9,Reelected,
 2167,589,FLOR IVONE,MORALES MIRANDA,df-17.21p,df21p,pt,,2018,1,9,Reelected,
-2168,598,VICTOR GABRIEL,VARELA LOPEZ,df-17.22p,df22p,morena,pes,2018,1,9,Reran-beaten,
+2168,598,VICTOR GABRIEL,VARELA LOPEZ,df-17.22p,df22p,morena,pes,2018,1,9,Reelected,
 2169,607,PABLO,GOMEZ ALVAREZ,df-17.23p,df23p,pt,,2018,1,9,Reran-beaten,
 2170,616,GUADALUPE,RAMOS SOTELO,df-17.24p,df24p,morena,,2018,1,9,Reran-beaten,
 2171,655,MARTHA OLIVIA,GARCIA VIDAÑA,dgo-17.01p,dgo01p,pt,,2018,1,10,Reran-beaten,
@@ -2194,7 +2194,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2193,852,ABELINA,LOPEZ RODRIGUEZ,gue-17.04p,gue04p,morena,,2018,1,12,Out-p-won,
 2194,861,JAVIER,MANZANO SALAZAR,gue-17.05p,gue05p,morena,,2018,1,12,Out-p-won,
 2195,870,RAYMUNDO,GARCIA GUTIERREZ,gue-17.06p,gue06p,prd,,2018,1,12,Out-p-won,
-2196,879,CARLOS,SANCHEZ BARRIOS,gue-17.07p,gue07p,pt,,2018,1,12,Reelected,
+2196,879,CARLOS,SANCHEZ BARRIOS,gue-17.07p,gue07p,morena,pt,2018,1,12,Reelected,
 2197,888,RUBEN,CAYETANO GARCIA,gue-17.08p,gue08p,morena,,2018,1,12,Out-p-won,
 2198,897,MARIA DEL ROSARIO,MERLIN GARCIA,gue-17.09p,gue09p,morena,pt,2018,1,12,Reelected,
 2199,909,FORTUNATO,RIVERA CASTILLO,hgo-17.01p,hgo01p,morena,,2018,1,13,Reran-beaten,
@@ -2208,7 +2208,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2207,981,MARTHA ESTELA,ROMO CUELLAR,jal-17.02p,jal02p,pan,,2018,1,14,Reelected,
 2208,990,GUADALUPE,ROMO ROMO,jal-17.03p,jal03p,pan,,2018,1,14,Out-p-won,
 2209,999,MARIO ALBERTO,RODRIGUEZ CARRILLO,jal-17.04p,jal04p,mc,,2018,1,14,Out-p-won,
-2210,1008,LORENA DEL SOCORRO,JIMENEZ ANDRADE,jal-17.05p,jal05p,pt,,2018,1,14,Out-p-won,
+2210,1008,LORENA DEL SOCORRO,JIMENEZ ANDRADE,jal-17.05p,jal05p,morena,pt,2018,1,14,Out-p-won,
 2211,1017,FABIOLA RAQUEL GUADALUPE,LOYA HERNANDEZ,jal-17.06p,jal06p,mc,,2018,1,14,Out-p-won,
 2212,1026,JUAN CARLOS,VILLARREAL SALAZAR,jal-17.07p,jal07p,mc,,2018,1,14,Out-p-lost,
 2213,1035,ABRIL,ALCALA PADILLA,jal-17.08p,jal08p,prd,,2018,1,14,Out-p-lost,
@@ -2219,13 +2219,13 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2218,1080,LOURDES CELENIA,CONTRERAS GONZALEZ,jal-17.13p,jal13p,mc,,2018,1,14,Out-p-won,
 2219,1089,JUAN FRANCISCO,RAMIREZ SALCIDO,jal-17.14p,jal14p,mc,,2018,1,14,Out-p-won,
 2220,1098,ABSALON,GARCIA OCHOA,jal-17.15p,jal15p,pan,,2018,1,14,Out-p-won,
-2221,1107,LAURA IMELDA,PEREZ SEGURA,jal-17.16p,jal16p,pt,,2018,1,14,Reelected,
+2221,1107,LAURA IMELDA,PEREZ SEGURA,jal-17.16p,jal16p,morena,pt,2018,1,14,Reelected,
 2222,1116,JUAN MARTIN,ESPINOZA CARDENAS,jal-17.17p,jal17p,mc,,2018,1,14,Reran-beaten,
 2223,1125,MONICA,ALMEIDA LOPEZ,jal-17.18p,jal18p,prd,,2018,1,14,Out-p-won,
 2224,1134,ALBERTO,ESQUER GUTIERREZ,jal-17.19p,jal19p,mc,,2018,1,14,Out-p-lost,
 2225,1136,ANA PRISCILA,GONZALEZ GARCIA,jal-17.20p,jal20p,mc,,2018,1,14,Out-p-lost,
 2226,1145,RICARDO,AGUILAR CASTILLO,mex-17.01p,mex01p,pri,,2018,1,15,Out-p-won,
-2227,1154,DIONICIA,VAZQUEZ GARCIA,mex-17.02p,mex02p,morena,,2018,1,15,Reelected,
+2227,1154,DIONICIA,VAZQUEZ GARCIA,mex-17.02p,mex02p,pt,morena,2018,1,15,Reelected,
 2228,1163,MARIA TERESA,MARU MEJIA,mex-17.03p,mex03p,pt,,2018,1,15,Reran-beaten,
 2229,1172,NELLY MINERVA,CARRASCO GODINEZ,mex-17.04p,mex04p,morena,,2018,1,15,Reelected,
 2230,1181,FRANCISCO,FAVELA PEÑUÑURI,mex-17.05p,mex05p,pt,,2018,1,15,Reelected,
@@ -2239,7 +2239,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2238,1253,MARIA ELIZABETH,DIAZ GARCIA,mex-17.13p,mex13p,morena,,2018,1,15,Out-p-won,
 2239,1262,CLAUDIA ANGELICA,DOMINGUEZ VAZQUEZ,mex-17.14p,mex14p,morena,,2018,1,15,Reran-beaten,
 2240,1271,RAUL ERNESTO SANCHEZ,BARRALES ZAVALZA,mex-17.15p,mex15p,pt,pes,2018,1,15,Out-p-lost,
-2241,1280,EMILIO,MANZANILLA TELLEZ,mex-17.16p,mex16p,morena,,2018,1,15,Out-p-won,
+2241,1280,EMILIO,MANZANILLA TELLEZ,mex-17.16p,mex16p,pt,morena,2018,1,15,Out-p-won,
 2242,1289,MARIA GUADALUPE,ROMAN AVILA,mex-17.17p,mex17p,morena,pt,2018,1,15,Reelected,
 2243,1298,CLAUDIA,REYES MONTIEL,mex-17.18p,mex18p,pan,,2018,1,15,Out-p-won,
 2244,1307,ULISES,MURGUIA SOTO,mex-17.19p,mex19p,morena,,2018,1,15,Reran-beaten,
@@ -2255,19 +2255,19 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2254,1397,MARTHA,ROBLES ORTIZ,mex-17.29p,mex29p,morena,,2018,1,15,Reelected,
 2255,1406,CESAR AGUSTIN,HERNANDEZ PEREZ,mex-17.30p,mex30p,morena,,2018,1,15,Reelected,
 2256,1415,JUAN ANGEL,BAUTISTA BRAVO,mex-17.31p,mex31p,morena,,2018,1,15,Reelected,
-2257,1424,LUIS ENRIQUE,MARTINEZ VENTURA,mex-17.32p,mex32p,morena,,2018,1,15,Reelected,
+2257,1424,LUIS ENRIQUE,MARTINEZ VENTURA,mex-17.32p,mex32p,pt,morena,2018,1,15,Reelected,
 2258,1433,VICENTE ALBERTO,ONOFRE VAZQUEZ,mex-17.33p,mex33p,morena,pes,2018,1,15,Reelected,
 2259,1442,MIROSLAVA,CARRILLO MARTINEZ,mex-17.34p,mex34p,morena,,2018,1,15,Out-p-lost,
-2260,1451,ARTURO ROBERTO,HERNANDEZ TAPIA,mex-17.35p,mex35p,pt,,2018,1,15,Reelected,
+2260,1451,ARTURO ROBERTO,HERNANDEZ TAPIA,mex-17.35p,mex35p,morena,pt,2018,1,15,Reelected,
 2261,1460,CRUZ JUVENAL,ROA SANCHEZ,mex-17.36p,mex36p,pri,,2018,1,15,Out-p-won,
 2262,1465,PEDRO MARIO,ZENTENO SANTAELLA,mex-17.37p,mex37p,morena,,2018,1,15,Out-p-won,
 2263,1472,KARLA YURITZI,ALMAZAN BURGOS,mex-17.38p,mex38p,morena,,2018,1,15,Reelected,
 2264,1478,JOSE LUIS,MONTALVO LUNA,mex-17.39p,mex39p,pt,,2018,1,15,Reran-beaten,
 2265,1484,MARCO ANTONIO,REYES COLIN,mex-17.40p,mex40p,pt,,2018,1,15,Out-p-lost,
 2266,1486,NANCY CLAUDIA,RESENDIZ HERNANDEZ,mex-17.41p,mex41p,morena,,2018,1,15,Out-p-lost,
-2267,1495,FELICIANO,FLORES ANGUIANO,mic-17.01p,mic01p,pt,,2018,1,16,Out-p-lost,
+2267,1495,FELICIANO,FLORES ANGUIANO,mic-17.01p,mic01p,morena,pt,2018,1,16,Out-p-won,
 2268,1504,ESTEBAN,BARAJAS BARAJAS,mic-17.02p,mic02p,pt,,2018,1,16,Out-p-lost,
-2269,1513,MARY CARMEN,BERNAL MARTINEZ,mic-17.03p,mic03p,morena,pes,2018,1,16,Reelected,
+2269,1513,MARY CARMEN,BERNAL MARTINEZ,mic-17.03p,mic03p,pt,pes,2018,1,16,Reelected,
 2270,1522,ARMANDO,TEJEDA CID,mic-17.04p,mic04p,pan,,2018,1,16,Out-p-won,
 2271,1531,YOLANDA,GUERRERO BARRERA,mic-17.05p,mic05p,morena,,2018,1,16,Reran-beaten,
 2272,1540,ANITA,SANCHEZ CASTRO,mic-17.06p,mic06p,morena,,2018,1,16,Out-p-lost,
@@ -2276,18 +2276,18 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2275,1567,IGNACIO BENJAMIN,CAMPOS EQUIHUA,mic-17.09p,mic09p,morena,,2018,1,16,Out-p-won,
 2276,1576,IVAN ARTURO PEREZ,NEGRON RUIZ,mic-17.10p,mic10p,morena,,2018,1,16,Out-p-lost,
 2277,1585,JOSE GUADALUPE,AGUILERA ROJAS,mic-17.11p,mic11p,prd,,2018,1,16,Out-p-won,
-2278,1594,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-17.12p,mic12p,morena,,2018,1,16,Reelected,
+2278,1594,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-17.12p,mic12p,pt,morena,2018,1,16,Reelected,
 2279,1606,ALEJANDRO,MOJICA TOLEDO,mor-17.01p,mor01p,morena,pes,2018,1,17,Out-p-won,
 2280,1615,ALEJANDRA,PANI BARRAGAN,mor-17.02p,mor02p,morena,,2018,1,17,Reelected,
 2281,1624,JUANITA,GUERRA MENA,mor-17.03p,mor03p,morena,pt,2018,1,17,Reelected,
 2282,1633,JORGE ARTURO,ARGUELLES VICTORERO,mor-17.04p,mor04p,pes,,2018,1,17,Out-p-lost,
 2283,1639,JOSE GUADALUPE,AMBROCIO GACHUZ,mor-17.05p,mor05p,morena,,2018,1,17,Reelected,
-2284,1648,MIGUEL PAVEL,JARERO VELAZQUEZ,nay-17.01p,nay01p,pt,,2018,1,18,Reelected,
+2284,1648,MIGUEL PAVEL,JARERO VELAZQUEZ,nay-17.01p,nay01p,morena,pt,2018,1,18,Reelected,
 2285,1657,MARIA GERALDINE,PONCE MENDEZ,nay-17.02p,nay02p,morena,pes,2018,1,18,Out-p-won,
 2286,1666,MIRTHA ILIANA,VILLALVAZO AMAYA,nay-17.03p,nay03p,morena,,2018,1,18,Out-p-won,
 2287,1675,HERNAN,SALINAS WOLBERG,nl-17.01p,nl01p,pan,,2018,1,19,Out-p-won,
 2288,1684,MARIA GUILLERMINA,ALVARADO MORENO,nl-17.02p,nl02p,morena,pes,2018,1,19,Reran-beaten,
-2289,1693,JOSE LUIS,GARCIA DUQUE,nl-17.03p,nl03p,morena,,2018,1,19,Reelected,
+2289,1693,JOSE LUIS,GARCIA DUQUE,nl-17.03p,nl03p,pt,morena,2018,1,19,Reelected,
 2290,1702,RICARDO,FLORES SUAREZ,nl-17.04p,nl04p,pan,,2018,1,19,Out-p-won,
 2291,1711,SANTIAGO,GONZALEZ SOTO,nl-17.05p,nl05p,pt,,2018,1,19,Reran-beaten,
 2292,1720,ANNIA SARAHI,GOMEZ CARDENAS,nl-17.06p,nl06p,pan,,2018,1,19,Reelected,
@@ -2300,11 +2300,11 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2299,1780,IRINEO,MOLINA ESPINOZA,oax-17.01p,oax01p,morena,pes,2018,1,20,Out-p-won,
 2300,1789,IRMA,JUAN CARLOS,oax-17.02p,oax02p,morena,,2018,1,20,Reelected,
 2301,1798,MARGARITA,GARCIA GARCIA,oax-17.03p,oax03p,pt,,2018,1,20,Reelected,
-2302,1807,AZAEL,SANTIAGO CHEPI,oax-17.04p,oax04p,pt,,2018,1,20,Reelected,
+2302,1807,AZAEL,SANTIAGO CHEPI,oax-17.04p,oax04p,morena,pt,2018,1,20,Reelected,
 2303,1816,CAROL,ANTONIO ALTAMIRANO,oax-17.05p,oax05p,morena,,2018,1,20,Reelected,
 2304,1825,BEATRIZ DOMINGA,PEREZ LOPEZ,oax-17.06p,oax06p,morena,,2018,1,20,Reelected,
 2305,1834,ROSALINDA,DOMINGUEZ FLORES,oax-17.07p,oax07p,morena,pes,2018,1,20,Out-p-won,
-2306,1843,ANGEL BENJAMIN,ROBLES MONTOYA,oax-17.08p,oax08p,morena,pes,2018,1,20,Reelected,
+2306,1843,ANGEL BENJAMIN,ROBLES MONTOYA,oax-17.08p,oax08p,pt,pes,2018,1,20,Reelected,
 2307,1852,MARIA DEL CARMEN,BAUTISTA PELAEZ,oax-17.09p,oax09p,morena,,2018,1,20,Reelected,
 2308,1861,DANIEL,GUTIERREZ GUTIERREZ,oax-17.10p,oax10p,morena,pt,2018,1,20,Reelected,
 2309,1877,MIGUEL,ACUNDO GONZALEZ,pue-17.01p,pue01p,pes,,2018,1,21,Out-p-lost,
@@ -2312,15 +2312,15 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2311,1895,CLAUDIA,BAEZ RUIZ,pue-17.03p,pue03p,pt,,2018,1,21,Out-p-won,
 2312,1904,INES,PARRA JUAREZ,pue-17.04p,pue04p,morena,,2018,1,21,Reelected,
 2313,1913,LIZETH,SANCHEZ GARCIA,pue-17.05p,pue05p,pt,,2018,1,21,Out-p-won,
-2314,1922,ALEJANDRO,CARVAJAL HIDALGO,pue-17.06p,pue06p,pt,,2018,1,21,Reelected,
-2315,1931,EDGAR,GUZMAN VALDEZ,pue-17.07p,pue07p,pt,,2018,1,21,Out-p-won,
+2314,1922,ALEJANDRO,CARVAJAL HIDALGO,pue-17.06p,pue06p,morena,pt,2018,1,21,Reelected,
+2315,1931,EDGAR,GUZMAN VALDEZ,pue-17.07p,pue07p,pes,pt,2018,1,21,Out-p-lost,
 2316,1940,JULIETA KRISTAL,VENCES VALENCIA,pue-17.08p,pue08p,morena,,2018,1,21,Out-p-won,
 2317,1949,JOSE GUILLERMO,ARECHIGA SANTAMARIA,pue-17.09p,pue09p,morena,pes,2018,1,21,Out-p-lost,
 2318,1958,NAYELI,SALVATORI BOJALIL,pue-17.10p,pue10p,morena,pes,2018,1,21,Reran-beaten,
 2319,1967,BENJAMIN SAUL,HUERTA CORONA,pue-17.11p,pue11p,morena,,2018,1,21,Reran-out-p-lost,reforma 21abr21 detenido por abuso menor 23abr renuncio cand
 2320,1976,FERNANDO LUIS,MANZANILLA PRIETO,pue-17.12p,pue12p,pes,,2018,1,21,Out-p-lost,
 2321,1985,HECTOR GUILLERMO DE JESUS,JIMENEZ Y MENESES,pue-17.13p,pue13p,morena,,2018,1,21,Out-p-won,
-2322,1994,NELLY,MACEDA CARRERA,pue-17.14p,pue14p,morena,,2018,1,21,Reelected,
+2322,1994,NELLY,MACEDA CARRERA,pue-17.14p,pue14p,pt,morena,2018,1,21,Reelected,
 2323,2003,ALEJANDRO,BARROSO CHAVEZ,pue-17.15p,pue15p,pt,,2018,1,21,Out-p-won,
 2324,2016,SONIA,ROCHA ACOSTA,que-17.01p,que01p,pan,,2018,1,22,Reelected,
 2325,2025,JORGE LUIS,MONTES NIEVES,que-17.02p,que02p,morena,pes,2018,1,22,Reran-beaten,
@@ -2359,7 +2359,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2358,2312,LAURA PATRICIA,AVALOS MAGAÑA,tab-17.05p,tab05p,morena,,2018,1,27,Out-p-won,
 2359,2321,RICARDO,DE LA PEÑA MARSHALL,tab-17.06p,tab06p,pes,,2018,1,27,Out-p-lost,
 2360,2330,JOSE SALVADOR,ROSAS QUINTANILLA,tam-17.01p,tam01p,pan,,2018,1,28,Out-p-lost,
-2361,2339,OLGA JULIANA,ELIZONDO GUERRA,tam-17.02p,tam02p,morena,pes,2018,1,28,Reelected,
+2361,2339,OLGA JULIANA,ELIZONDO GUERRA,tam-17.02p,tam02p,pt,pes,2018,1,28,Reelected,
 2362,2348,HECTOR JOEL,VILLEGAS GONZALEZ,tam-17.03p,tam03p,pes,,2018,1,28,Out-p-lost,
 2363,2357,ADRIANA,LOZANO RODRIGUEZ,tam-17.04p,tam04p,morena,pes,2018,1,28,Reelected,
 2364,2366,MARIO ALBERTO,RAMOS TAMEZ,tam-17.05p,tam05p,mc,,2018,1,28,Out-p-lost,
@@ -2384,7 +2384,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2383,2530,MARIANA DUNYASKA,GARCIA ROJAS,ver-17.12p,ver12p,pan,,2018,1,30,Out-p-won,
 2384,2539,ELEUTERIO,ARRIETA SANCHEZ,ver-17.13p,ver13p,morena,,2018,1,30,Out-p-won,
 2385,2548,CARMEN,MEDEL PALMA,ver-17.14p,ver14p,morena,,2018,1,30,Out-p-won,
-2386,2557,DULCE MARIA CORINA,VILLEGAS GUARNEROS,ver-17.15p,ver15p,pt,,2018,1,30,Reelected,
+2386,2557,DULCE MARIA CORINA,VILLEGAS GUARNEROS,ver-17.15p,ver15p,morena,pt,2018,1,30,Reelected,
 2387,2566,JUAN,MARTINEZ FLORES,ver-17.16p,ver16p,morena,,2018,1,30,Out-p-won,
 2388,2575,VALENTIN,REYES LOPEZ,ver-17.17p,ver17p,morena,,2018,1,30,Reelected,
 2389,2584,BONIFACIO,AGUILAR LINDA,ver-17.18p,ver18p,morena,pes,2018,1,30,Out-p-won,
@@ -2399,303 +2399,303 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,tmp,edon,race-after,note
 2398,2678,LYNDIANA ELIZABETH,BUGARIN CORTES,zac-17.02p,zac02p,pvem,,2018,1,32,Reran-beaten,
 2399,2687,ALFREDO,FEMAT BAÑUELOS,zac-17.03p,zac03p,pt,,2018,1,32,Reelected,
 2400,2696,SAMUEL,HERRERA CHAVEZ,zac-17.04p,zac04p,pt,,2018,1,32,Reran-beaten,
-2401,9,NOEL,MATA ATILANO,ags-18.01p,ags01p,,pan,2021,1,1,,elec-coal=PAN.PRI.PRD prep check again
-2402,18,MONICA,BECERRA MORENO,ags-18.02p,ags02p,,pan,2021,1,1,,prep check again
-2403,27,PAULO GONZALO,MARTINEZ LOPEZ,ags-18.03p,ags03p,,pan,2021,1,1,,prep check again
-2404,36,YESSENIA LETICIA,OLUA GONZALEZ,bc-18.01p,bc01p,,morena,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
-2405,45,JULIETA ANDREA,RAMIREZ PADILLA,bc-18.02p,bc02p,,morena,2021,1,2,,prep check again
-2406,54,ARMANDO,REYES LEDESMA,bc-18.03p,bc03p,,pt,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
-2407,63,SOCORRO IRMA,ANDAZOLA GOMEZ,bc-18.04p,bc04p,,morena,2021,1,2,,prep check again
-2408,71,EVANGELINA,MORENO GUERRA,bc-18.05p,bc05p,,morena,2021,1,2,,prep check again
-2409,80,HECTOR IRENEO,MARES COSSIO,bc-18.06p,bc06p,,morena,2021,1,2,,prep check again
-2410,86,JUAN ISAIAS,BERTIN SANDOVAL,bc-18.07p,bc07p,,morena,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
-2411,92,FAUSTO,GALLARDO GARCIA,bc-18.08p,bc08p,,pvem,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
-2412,102,MARCO ANTONIO,ALMENDARIZ PUPPO,bcs-18.01p,bcs01p,,pan,2021,1,3,,prep check again
-2413,111,ALFREDO,PORRAS DOMINGUEZ,bcs-18.02p,bcs02p,,pt,2021,1,3,,elec-coal=PVEM.PT.MORENA prep check again
-2414,120,JOSE LUIS,FLORES PACHECO,cam-18.01p,cam01p,,morena,2021,1,4,,prep check again
-2415,129,MARIA,SIERRA DAMIAN,cam-18.02p,cam02p,,morena,2021,1,4,,prep check again
-2416,138,BRIGIDO RAMIRO,MORENO HERNANDEZ,coa-18.01p,coa01p,,pt,2021,1,5,,elec-coal=PVEM.PT.MORENA prep check again
-2417,147,FRANCISCO JAVIER,BORREGO ADAME,coa-18.02p,coa02p,,morena,2021,1,5,,elec-coal=PVEM.PT.MORENA prep check again
-2418,156,CRISTINA,AMEZCUA GONZALEZ,coa-18.03p,coa03p,,pri,2021,1,5,,prep check again
-2419,165,YERICO,ABRAMO MASSO,coa-18.04p,coa04p,,pri,2021,1,5,,prep check again
-2420,174,JOSE ANTONIO,GUTIERREZ JARDON,coa-18.05p,coa05p,,pri,2021,1,5,,prep check again
-2421,183,SHAMIR,FERNANDEZ HERNANDEZ,coa-18.06p,coa06p,,pri,2021,1,5,,prep check again
-2422,192,JAIME,BUENO ZERTUCHE,coa-18.07p,coa07p,,pri,2021,1,5,,prep check again
-2423,201,RIULT,RIVERA GUTIERREZ,col-18.01p,col01p,,pan,2021,1,6,,elec-coal=PAN.PRI.PRD prep check again
-2424,210,ROSA MARIA,BAYARDO CABRERA,col-18.02p,col02p,,morena,2021,1,6,,prep check again
-2425,219,MANUELA DEL CARMEN,OBRADOR NARVAEZ,cps-18.01p,cps01p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2426,228,ADELA,RAMOS JUAREZ,cps-18.02p,cps02p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2427,237,ALFREDO,VAZQUEZ VAZQUEZ,cps-18.03p,cps03p,,morena,2021,1,7,,prep check again
-2428,246,JOAQUIN,ZEBADUA ALVA,cps-18.04p,cps04p,,morena,2021,1,7,,prep check again
-2429,255,YEIMI YAZMIN,AGUILAR CIFUENTES,cps-18.05p,cps05p,,pri,2021,1,7,,elec-coal=PAN.PRI.PRD prep check again
-2430,264,JORGE LUIS,LLAVEN ABARCA,cps-18.06p,cps06p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2431,273,MANUEL DE JESUS,NARCIA COUTIÑO,cps-18.07p,cps07p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2432,282,ISMAEL,BRITO MAZARIEGOS,cps-18.08p,cps08p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2433,291,ADRIANA,BUSTAMANTE CASTELLANOS,cps-18.09p,cps09p,,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2434,300,JUAN PABLO MONTES DE,OCA AVENDAÑO,cps-18.10p,cps10p,,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2435,309,ROBERTO ANTONIO,RUBIO MONTEJO,cps-18.11p,cps11p,,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2436,318,JOSE LUIS,ELORZA FLORES,cps-18.12p,cps12p,,morena,2021,1,7,,prep check again
-2437,320,LUIS ARMANDO,MELGAR BRAVO,cps-18.13p,cps13p,,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
-2438,329,DANIEL,MURGUIA LARDIZABAL,cua-18.01p,cua01p,,morena,2021,1,8,,prep check again
-2439,338,TERESITA DE JESUS,VARGAS MERAZ,cua-18.02p,cua02p,,morena,2021,1,8,,elec-coal=PVEM.PT.MORENA prep check again
-2440,347,LILIA,AGUILAR GIL,cua-18.03p,cua03p,,pt,2021,1,8,,elec-coal=PVEM.PT.MORENA prep check again
-2441,356,DANIELA SORAYA,ALVAREZ HERNANDEZ,cua-18.04p,cua04p,,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
-2442,365,MARIO,MATA CARRASCO,cua-18.05p,cua05p,,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
-2443,374,LAURA PATRICIA,CONTRERAS DUARTE,cua-18.06p,cua06p,,pan,2021,1,8,,prep check again
-2444,383,PATRICIA,TERRAZAS BACA,cua-18.07p,cua07p,,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
-2445,392,CARMEN ROCIO,GONZALEZ ALONSO,cua-18.08p,cua08p,,pan,2021,1,8,,prep check again
-2446,401,MARIA DE LOS ANGELES,GUTIERREZ VALDEZ,cua-18.09p,cua09p,,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
-2447,410,ERIKA VANESSA DEL,CASTILLO IBARRA,df-18.01p,df01p,,morena,2021,1,9,,prep check again
-2448,419,MARIBEL GUADALUPE,VILLASEÑOR DAVILA,df-18.02p,df02p,,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2449,428,GABRIELA GEORGINA,JIMENEZ GODOY,df-18.03p,df03p,,morena,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
-2450,437,JOSE GERARDO RODOLFO,FERNANDEZ NOROÑA,df-18.04p,df04p,,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
-2451,446,KARLA,AYALA VILLALOBOS,df-18.05p,df05p,,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2452,455,DIANA MARIA TERESA,LARA CARREON,df-18.06p,df06p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2453,464,BEATRIZ,ROJAS MARTINEZ,df-18.07p,df07p,,morena,2021,1,9,,prep check again
-2454,473,MARIA DE JESUS,ROSETE SANCHEZ,df-18.08p,df08p,,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
-2455,482,MARIA GUADALUPE CHAVIRA DE,LA ROSA,df-18.09p,df09p,,morena,2021,1,9,,prep check again
-2456,491,MARGARITA ESTER ZAVALA GOMEZ,DEL CAMPO,df-18.10p,df10p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2457,500,LIDIA,PEREZ BARCENAS,df-18.11p,df11p,,morena,2021,1,9,,prep check again
-2458,509,ANA CECILIA LUISA GABRIELA FERNANDA,SODI MIRANDA,df-18.12p,df12p,,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2459,518,OSCAR EUGENIO,GUTIERREZ CAMACHO,df-18.13p,df13p,,morena,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
-2460,527,MARIA DEL ROCIO,BANQUELLS NUÑEZ,df-18.14p,df14p,,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2461,536,LUIS ALBERTO,MENDOZA ACEVEDO,df-18.15p,df15p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2462,545,XAVIER,GONZALEZ ZIRION,df-18.16p,df16p,,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2463,554,JORGE,TRIANA TENA,df-18.17p,df17p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2464,563,MARCELINO,CASTAÑEDA NAVARRETE,df-18.18p,df18p,,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2465,572,ALEIDA,ALAVEZ RUIZ,df-18.19p,df19p,,morena,2021,1,9,,prep check again
-2466,581,ANA KARINA,ROJO PIMENTEL,df-18.20p,df20p,,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
-2467,590,FLOR IVONE,MORALES MIRANDA,df-18.21p,df21p,,morena,2021,1,9,,prep check again
-2468,599,MARIA VERONICA,MENDOZA CRUZ,df-18.22p,df22p,,morena,2021,1,9,,prep check again
-2469,608,GABRIEL RICARDO,QUADRI DE LA TORRE,df-18.23p,df23p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2470,617,HECTOR SAUL,TELLEZ HERNANDEZ,df-18.24p,df24p,,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
-2471,656,FRANCISCO JAVIER,CASTRELLON GARZA,dgo-18.01p,dgo01p,,pan,2021,1,10,,elec-coal=PAN.PRI.PRD prep check again
-2472,665,OMAR ENRIQUE,CASTAÑEDA GONZALEZ,dgo-18.02p,dgo02p,,morena,2021,1,10,,elec-coal=PVEM.PT.MORENA prep check again
-2473,674,MARIBEL,AGUILERA CHAIREZ,dgo-18.03p,dgo03p,,morena,2021,1,10,,elec-coal=PVEM.PT.MORENA prep check again
-2474,683,GINA GERARDINA,CAMPUZANO GONZALEZ,dgo-18.04p,dgo04p,,pan,2021,1,10,,elec-coal=PAN.PRI.PRD prep check again
-2475,695,BERENICE,MONTES ESTRADA,gua-18.01p,gua01p,,pan,2021,1,11,,prep check again
-2476,704,RICARDO,VILLARREAL GARCIA,gua-18.02p,gua02p,,pan,2021,1,11,,prep check again
-2477,713,FERNANDO,TORRES GRACIANO,gua-18.03p,gua03p,,pan,2021,1,11,,prep check again
-2478,722,JUAN CARLOS,ROMERO HICKS,gua-18.04p,gua04p,,pan,2021,1,11,,prep check again
-2479,731,ECTOR JAIME,RAMIREZ BARBA,gua-18.05p,gua05p,,pan,2021,1,11,,prep check again
-2480,740,ANA MARIA,ESQUIVEL ARRONA,gua-18.06p,gua06p,,pan,2021,1,11,,prep check again
-2481,749,KAREN MICHEL,GONZALEZ MARQUEZ,gua-18.07p,gua07p,,pan,2021,1,11,,prep check again
-2482,758,JUSTINO EUGENIO,ARRIAGA ROJAS,gua-18.08p,gua08p,,pan,2021,1,11,,elec-coal=PAN.PRI.PRD prep check again
-2483,767,JORGE ALBERTO,ROMERO VAZQUEZ,gua-18.09p,gua09p,,pan,2021,1,11,,prep check again
-2484,776,PEDRO DAVID,ORTEGA FONSECA,gua-18.10p,gua10p,,morena,2021,1,11,,prep check again
-2485,785,JORGE ARTURO,ESPADAS GALVAN,gua-18.11p,gua11p,,pan,2021,1,11,,prep check again
-2486,794,SARAI,NUÑEZ CERON,gua-18.12p,gua12p,,pan,2021,1,11,,prep check again
-2487,803,EMMANUEL,REYES CARMONA,gua-18.13p,gua13p,,morena,2021,1,11,,elec-coal=PVEM.PT.MORENA prep check again
-2488,812,ESTHER,MANDUJANO TINAJERO,gua-18.14p,gua14p,,pan,2021,1,11,,prep check again
-2489,817,ITZEL JOSEFINA,BALDERAS HERNANDEZ,gua-18.15p,gua15p,,pan,2021,1,11,,prep check again
-2490,826,REYNEL,RODRIGUEZ MUÑOZ,gue-18.01p,gue01p,,pri,2021,1,12,,elec-coal=PAN.PRI.PRD prep check again
-2491,835,ARACELI,OCAMPO MANZANARES,gue-18.02p,gue02p,,morena,2021,1,12,,prep check again
-2492,844,LUIS EDGARDO,PALACIOS DIAZ,gue-18.03p,gue03p,,pvem,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
-2493,853,PABLO AMILCAR,SANDOVAL BALLESTEROS,gue-18.04p,gue04p,,morena,2021,1,12,,prep check again
-2494,862,VICTORIANO,WENCES REAL,gue-18.05p,gue05p,,pt,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
-2495,871,FABIOLA,RAFAEL DIRCIO,gue-18.06p,gue06p,,prd,2021,1,12,,elec-coal=PAN.PRI.PRD prep check again
-2496,880,CARLOS,SANCHEZ BARRIOS,gue-18.07p,gue07p,,morena,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
-2497,889,EUNICE,MONZON GARCIA,gue-18.08p,gue08p,,pvem,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
-2498,898,MARIA DEL ROSARIO,MERLIN GARCIA,gue-18.09p,gue09p,,morena,2021,1,12,,prep check again
-2499,910,SAYONARA,VARGAS RODRIGUEZ,hgo-18.01p,hgo01p,,pri,2021,1,13,,elec-coal=PAN.PRI.PRD prep check again
-2500,919,CIRIA YAMILE,SALOMON DURAN,hgo-18.02p,hgo02p,,pvem,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
-2501,928,SANDRA SIMEY,OLVERA BAUTISTA,hgo-18.03p,hgo03p,,morena,2021,1,13,,prep check again
-2502,937,MARIA ISABEL,ALFARO MORALES,hgo-18.04p,hgo04p,,morena,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
-2503,946,CUAUHTEMOC,OCHOA FERNANDEZ,hgo-18.05p,hgo05p,,pvem,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
-2504,955,LIDIA,GARCIA ANAYA,hgo-18.06p,hgo06p,,morena,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
-2505,964,NAVOR ALBERTO,ROJAS MANCERA,hgo-18.07p,hgo07p,,morena,2021,1,13,,prep check again
-2506,973,GUSTAVO,MACIAS ZAMBRANO,jal-18.01p,jal01p,,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2507,982,MARTHA ESTELA,ROMO CUELLAR,jal-18.02p,jal02p,,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2508,991,DESIDERIO,TINAJERO ROBLES,jal-18.03p,jal03p,,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2509,1000,TAYGETE IRISAY,RODRIGUEZ GONZALEZ,jal-18.04p,jal04p,,mc,2021,1,14,,prep check again
-2510,1009,BRUNO,BLANCAS MERCADO,jal-18.05p,jal05p,,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2511,1018,MANUEL JESUS,HERRERA VEGA,jal-18.06p,jal06p,,mc,2021,1,14,,prep check again
-2512,1027,ALBERTO,VILLA VILLEGAS,jal-18.07p,jal07p,,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2513,1036,JOSE MAURO,GARZA MARIN,jal-18.08p,jal08p,,mc,2021,1,14,,prep check again
-2514,1045,MARIA DEL ROCIO,CORONA NAKAMURA,jal-18.09p,jal09p,,pvem,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2515,1054,HORACIO,FERNANDEZ CASTILLO,jal-18.10p,jal10p,,mc,2021,1,14,,prep check again
-2516,1063,CLAUDIA,DELGADILLO GONZALEZ,jal-18.11p,jal11p,,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2517,1072,MARIA ASENCION,ALVAREZ SOLIS,jal-18.12p,jal12p,,mc,2021,1,14,,prep check again
-2518,1081,SERGIO,BARRERA SEPULVEDA,jal-18.13p,jal13p,,mc,2021,1,14,,prep check again
-2519,1090,MARIA LETICIA,CHAVEZ PEREZ,jal-18.14p,jal14p,,mc,2021,1,14,,prep check again
-2520,1099,ANA LAURA,SANCHEZ VELAZQUEZ,jal-18.15p,jal15p,,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2521,1108,LAURA IMELDA,PEREZ SEGURA,jal-18.16p,jal16p,,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2522,1117,ANTONIO DE JESUS,RAMIREZ RAMOS,jal-18.17p,jal17p,,pvem,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2523,1126,JOSE GUADALUPE,FLETES ARAIZA,jal-18.18p,jal18p,,pri,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2524,1135,LUZ ADRIANA,CANDELARIO FIGUEROA,jal-18.19p,jal19p,,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
-2525,1137,MARIA DEL REFUGIO,CAMARENA JAUREGUI,jal-18.20p,jal20p,,pri,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
-2526,1146,MIGUEL,SAMANO PERALTA,mex-18.01p,mex01p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2527,1155,DIONICIA,VAZQUEZ GARCIA,mex-18.02p,mex02p,,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2528,1164,OSCAR GUSTAVO,CARDENAS MONROY,mex-18.03p,mex03p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2529,1173,NELLY MINERVA,CARRASCO GODINEZ,mex-18.04p,mex04p,,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2530,1182,FRANCISCO,FAVELA PEÑUÑURI,mex-18.05p,mex05p,,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2531,1191,ALI SAYURI,NUÑEZ MENESES,mex-18.06p,mex06p,,pvem,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2532,1200,JOANNA ALEJANDRA,FELIPE TORRES,mex-18.07p,mex07p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2533,1209,GUSTAVO,CONTRERAS MONTES,mex-18.08p,mex08p,,morena,2021,1,15,,prep check again
-2534,1218,EDUARDO,ZARZOSA SANCHEZ,mex-18.09p,mex09p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2535,1227,ALMA DELIA,NAVARRETE RIVERA,mex-18.10p,mex10p,,morena,2021,1,15,,prep check again
-2536,1236,MARIA EUGENIA,HERNANDEZ PEREZ,mex-18.11p,mex11p,,morena,2021,1,15,,prep check again
-2537,1245,ARMANDO,CORONA ARVIZU,mex-18.12p,mex12p,,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2538,1254,OLIMPIA TAMARA,GIRON HERNANDEZ,mex-18.13p,mex13p,,morena,2021,1,15,,prep check again
-2539,1263,ANA MARIA,BALDERAS TREJO,mex-18.14p,mex14p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2540,1272,CARLOS,MADRAZO LIMON,mex-18.15p,mex15p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2541,1281,MARISELA,GARDUÑO GARDUÑO,mex-18.16p,mex16p,,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2542,1290,MARIA GUADALUPE,ROMAN AVILA,mex-18.17p,mex17p,,morena,2021,1,15,,prep check again
-2543,1299,JOSE ANTONIO,GARCIA GARCIA,mex-18.18p,mex18p,,pan,2021,1,15,,prep check again
-2544,1308,KRISHNA KARINA,ROMERO VELAZQUEZ,mex-18.19p,mex19p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2545,1317,JUAN PABLO,SANCHEZ RODRIGUEZ,mex-18.20p,mex20p,,morena,2021,1,15,,prep check again
-2546,1326,GRACIELA,SANCHEZ ORTIZ,mex-18.21p,mex21p,,morena,2021,1,15,,prep check again
-2547,1335,IVAN ARTURO,RODRIGUEZ RIVERA,mex-18.22p,mex22p,,pan,2021,1,15,,prep check again
-2548,1344,MARTHA AZUCENA,CAMACHO REYNOSO,mex-18.23p,mex23p,,morena,2021,1,15,,prep check again
-2549,1353,CLAUDIA GABRIELA,OLVERA HIGUERA,mex-18.24p,mex24p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2550,1362,CARLOS,LOPEZ GUADARRAMA,mex-18.25p,mex25p,,morena,2021,1,15,,prep check again
-2551,1371,MELISSA ESTEFANIA,VARGAS CAMACHO,mex-18.26p,mex26p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2552,1380,ANA LILIA,HERRERA ANZALDO,mex-18.27p,mex27p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2553,1389,ROBERTO ANGEL,DOMINGUEZ RODRIGUEZ,mex-18.28p,mex28p,,morena,2021,1,15,,prep check again
-2554,1398,MARTHA,ROBLES ORTIZ,mex-18.29p,mex29p,,morena,2021,1,15,,prep check again
-2555,1407,CESAR AGUSTIN,HERNANDEZ PEREZ,mex-18.30p,mex30p,,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2556,1416,JUAN ANGEL,BAUTISTA BRAVO,mex-18.31p,mex31p,,morena,2021,1,15,,prep check again
-2557,1425,LUIS ENRIQUE,MARTINEZ VENTURA,mex-18.32p,mex32p,,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2558,1434,VICENTE ALBERTO,ONOFRE VAZQUEZ,mex-18.33p,mex33p,,morena,2021,1,15,,prep check again
-2559,1443,MARIA TERESA CASTELL DE,ORO PALACIOS,mex-18.34p,mex34p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2560,1452,ARTURO ROBERTO,HERNANDEZ TAPIA,mex-18.35p,mex35p,,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
-2561,1461,JAZMIN,JAIMES ALBARRAN,mex-18.36p,mex36p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2562,1466,JAVIER,HUERTA JURADO,mex-18.37p,mex37p,,morena,2021,1,15,,prep check again
-2563,1473,KARLA YURITZI,ALMAZAN BURGOS,mex-18.38p,mex38p,,morena,2021,1,15,,prep check again
-2564,1479,ALAN,CASTELLANOS RAMIREZ,mex-18.39p,mex39p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2565,1485,JAVIER,GONZALEZ ZEPEDA,mex-18.40p,mex40p,,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2566,1487,SUE ELLEN,BERNAL BOLNIK,mex-18.41p,mex41p,,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
-2567,1496,LEONEL,GODOY RANGEL,mic-18.01p,mic01p,,morena,2021,1,16,,prep check again
-2568,1505,MAURICIO,PRIETO GOMEZ,mic-18.02p,mic02p,,prd,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2569,1514,MARY CARMEN,BERNAL MARTINEZ,mic-18.03p,mic03p,,pt,2021,1,16,,elec-coal=PVEM.PT.MORENA prep check again
-2570,1523,RODRIGO,SANCHEZ ZEPEDA,mic-18.04p,mic04p,,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2571,1532,ENRIQUE GODINEZ,DEL RIO,mic-18.05p,mic05p,,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2572,1541,BERENICE,JUAREZ NAVARRETE,mic-18.06p,mic06p,,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2573,1550,ADRIANA,CAMPOS HUIRACHE,mic-18.07p,mic07p,,pri,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2574,1559,ROBERTO CARLOS,LOPEZ GARCIA,mic-18.08p,mic08p,,pri,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2575,1568,CARLOS ALBERTO,MANZO RODRIGUEZ,mic-18.09p,mic09p,,morena,2021,1,16,,prep check again
-2576,1577,CARLOS HUMBERTO,QUINTANA MARTINEZ,mic-18.10p,mic10p,,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2577,1586,MARIA MACARENA,CHAVEZ FLORES,mic-18.11p,mic11p,,prd,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
-2578,1595,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-18.12p,mic12p,,pt,2021,1,16,,elec-coal=PVEM.PT.MORENA prep check again
-2579,1607,JORGE ALBERTO,BARRERA TOLEDO,mor-18.01p,mor01p,,morena,2021,1,17,,prep check again
-2580,1616,ALEJANDRA,PANI BARRAGAN,mor-18.02p,mor02p,,morena,2021,1,17,,elec-coal=PVEM.PT.MORENA prep check again
-2581,1625,JUANITA,GUERRA MENA,mor-18.03p,mor03p,,morena,2021,1,17,,prep check again
-2582,1634,BRENDA,ESPINOZA LOPEZ,mor-18.04p,mor04p,,morena,2021,1,17,,elec-coal=PVEM.PT.MORENA prep check again
-2583,1640,JOSE GUADALUPE,AMBROCIO GACHUZ,mor-18.05p,mor05p,,morena,2021,1,17,,prep check again
-2584,1649,MIGUEL PAVEL,JARERO VELAZQUEZ,nay-18.01p,nay01p,,morena,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
-2585,1658,JASMINE,MARIA BUGARIN ,nay-18.02p,nay02p,,pvem,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
-2586,1667,JORGE ARMANDO,ORTIZ RODRIGUEZ,nay-18.03p,nay03p,,pt,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
-2587,1676,HECTOR ISRAEL,CASTILLO OLIVARES,nl-18.01p,nl01p,,pan,2021,1,19,,prep check again
-2588,1685,ANDRES MAURICIO,CANTU RAMIREZ,nl-18.02p,nl02p,,pri,2021,1,19,,prep check again
-2589,1694,JOSE LUIS,GARCIA DUQUE,nl-18.03p,nl03p,,pt,2021,1,19,,elec-coal=PVEM.PT.MORENA prep check again
-2590,1703,PEDRO,SALGADO ALMAGUER,nl-18.04p,nl04p,,pan,2021,1,19,,prep check again
-2591,1712,MARCELA,GUERRA CASTILLO,nl-18.05p,nl05p,,pri,2021,1,19,,prep check again
-2592,1721,ANNIA SARAHI,GOMEZ CARDENAS,nl-18.06p,nl06p,,pan,2021,1,19,,prep check again
-2593,1730,ANDRES,PINTOS CABALLERO,nl-18.07p,nl07p,,pvem,2021,1,19,,elec-coal=PVEM.PT.MORENA prep check again
-2594,1739,MA DE JESUS,AGUIRRE MALDONADO,nl-18.08p,nl08p,,pri,2021,1,19,,prep check again
-2595,1748,JUAN FRANCISCO,ESPINOZA EGUIA,nl-18.09p,nl09p,,pri,2021,1,19,,prep check again
-2596,1757,KARINA MARLEN,BARRON PERALES,nl-18.10p,nl10p,,pri,2021,1,19,,prep check again
-2597,1766,PEDRO,GARZA TREVIÑO,nl-18.11p,nl11p,,pan,2021,1,19,,prep check again
-2598,1772,JOSE LUIS,GARZA OCHOA,nl-18.12p,nl12p,,pri,2021,1,19,,prep check again
-2599,1781,ANGEL,DOMINGUEZ ESCOBAR,oax-18.01p,oax01p,,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2600,1790,IRMA,JUAN CARLOS,oax-18.02p,oax02p,,morena,2021,1,20,,prep check again
-2601,1799,MARGARITA,GARCIA GARCIA,oax-18.03p,oax03p,,pt,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2602,1808,AZAEL,SANTIAGO CHEPI,oax-18.04p,oax04p,,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2603,1817,CAROL,ANTONIO ALTAMIRANO,oax-18.05p,oax05p,,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2604,1826,BEATRIZ DOMINGA,PEREZ LOPEZ,oax-18.06p,oax06p,,morena,2021,1,20,,prep check again
-2605,1835,JOSE ANTONIO,ESTEFAN GILLESSEN,oax-18.07p,oax07p,,pvem,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2606,1844,ANGEL BENJAMIN,ROBLES MONTOYA,oax-18.08p,oax08p,,pt,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2607,1853,MARIA DEL CARMEN,BAUTISTA PELAEZ,oax-18.09p,oax09p,,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
-2608,1862,DANIEL,GUTIERREZ GUTIERREZ,oax-18.10p,oax10p,,morena,2021,1,20,,prep check again
-2609,1878,MARCO ANTONIO,NATALE GUTIERREZ,pue-18.01p,pue01p,,pvem,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2610,1887,FATIMA ALMENDRA,CRUZ PELAEZ,pue-18.02p,pue02p,,pvem,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2611,1896,ESTHER,MARTINEZ ROMANO,pue-18.03p,pue03p,,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2612,1905,INES,PARRA JUAREZ,pue-18.04p,pue04p,,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2613,1914,MAURICIO ALONSO,TOLEDO GUTIERREZ,pue-18.05p,pue05p,,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2614,1923,ALEJANDRO,CARVAJAL HIDALGO,pue-18.06p,pue06p,,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2615,1932,RAYMUNDO,ATANACIO LUNA,pue-18.07p,pue07p,,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2616,1941,ODETTE NAYERI,ALMAZAN MUÑOZ,pue-18.08p,pue08p,,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2617,1950,ANA TERESA,ARANDA OROZCO,pue-18.09p,pue09p,,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
-2618,1959,MARCO HUMBERTO,AGUILAR CORONADO,pue-18.10p,pue10p,,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
-2619,1968,CAROLINA,BEAUREGARD MARTINEZ,pue-18.11p,pue11p,,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
-2620,1977,MARIO GERARDO,RIESTRA PIÑA,pue-18.12p,pue12p,,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
-2621,1986,MARIO MIGUEL,CARRILLO CUBILLAS,pue-18.13p,pue13p,,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2622,1995,NELLY,MACEDA CARRERA,pue-18.14p,pue14p,,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2623,2004,ARACELI,CELESTINO ROSAS,pue-18.15p,pue15p,,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
-2624,2017,SONIA,ROCHA ACOSTA,que-18.01p,que01p,,pan,2021,1,22,,prep check again
-2625,2026,MARCIA,SOLORZANO GALLEGO,que-18.02p,que02p,,pan,2021,1,22,,prep check again
-2626,2035,IGNACIO,LOYOLA VERA,que-18.03p,que03p,,pan,2021,1,22,,prep check again
-2627,2044,FELIPE FERNANDO,MACIAS OLVERA,que-18.04p,que04p,,pan,2021,1,22,,prep check again
-2628,2046,ERIKA DE LOS ANGELES,DIAZ VILLALON,que-18.05p,que05p,,pan,2021,1,22,,prep check again
-2629,2055,JUAN LUIS,CARRILLO SOBERANIS,qui-18.01p,qui01p,,pvem,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
-2630,2064,ALMA ANAHI,GONZALEZ HERNANDEZ,qui-18.02p,qui02p,,morena,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
-2631,2070,WILLBERT ALBERTO,BATUN CHULIM,qui-18.03p,qui03p,,morena,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
-2632,2072,LAURA LYNN,FERNANDEZ PIÑA,qui-18.04p,qui04p,,pvem,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
-2633,2081,ROBERTO ALEJANDRO,SEGOVIA HERNANDEZ,san-18.01p,san01p,,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
-2634,2090,JUAN MANUEL,NAVARRO MUÑIZ,san-18.02p,san02p,,pvem,2021,1,24,,prep check again
-2635,2099,KEVIN ANGELO,AGUILAR PIÑA,san-18.03p,san03p,,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
-2636,2108,ANTOLIN,GUERRERO MARQUEZ,san-18.04p,san04p,,morena,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
-2637,2117,JOSE ANTONIO,ZAPATA MERAZ,san-18.05p,san05p,,pan,2021,1,24,,elec-coal=PAN.PRI.PRD prep check again
-2638,2126,GILBERTO,HERNANDEZ VILLAFUERTE,san-18.06p,san06p,,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
-2639,2135,CHRISTIAN JOAQUIN,SANCHEZ SANCHEZ,san-18.07p,san07p,,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
-2640,2144,LEOBARDO,ALCANTARA MARTINEZ,sin-18.01p,sin01p,,pt,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
-2641,2153,SIN CANDIDATURA,,sin-18.02p,sin02p,,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
-2642,2162,JESUS FERNANDO,GARCIA HERNANDEZ,sin-18.03p,sin03p,,pt,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
-2643,2171,CASIMIRO,ZAMORA VALDEZ,sin-18.04p,sin04p,,morena,2021,1,25,,prep check again
-2644,2180,NANCY YADIRA,SANTIAGO MARCOS,sin-18.05p,sin05p,,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
-2645,2189,OLEGARIA,CARRAZCO MACIAS,sin-18.06p,sin06p,,morena,2021,1,25,,prep check again
-2646,2198,MERARY,VILLEGAS SANCHEZ,sin-18.07p,sin07p,,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
-2647,2214,MANUEL DE JESUS,BALDENEBRO ARREDONDO,son-18.01p,son01p,,morena,2021,1,26,,prep check again
-2648,2223,ANA LAURA,BERNAL CAMARENA,son-18.02p,son02p,,pt,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
-2649,2232,LORENIA IVETH,VALLES SAMPEDRO,son-18.03p,son03p,,morena,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
-2650,2241,HERIBERTO MARCELO,AGUILAR CASTILLO,son-18.04p,son04p,,morena,2021,1,26,,prep check again
-2651,2250,MARIA WENDY,BRICEÑO ZULOAGA,son-18.05p,son05p,,morena,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
-2652,2259,GABRIELA,MARTINEZ ESPINOZA,son-18.06p,son06p,,morena,2021,1,26,,prep check again
-2653,2268,SHIRLEY GUADALUPE,VAZQUEZ ROMERO,son-18.07p,son07p,,pt,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
-2654,2277,MARCOS ROSENDO,MEDINA FILIGRANA,tab-18.01p,tab01p,,morena,2021,1,27,,prep check again
-2655,2286,KARLA MARIA,RABELO ESTRADA,tab-18.02p,tab02p,,morena,2021,1,27,,prep check again
-2656,2295,LORENA,MENDEZ DENIS,tab-18.03p,tab03p,,morena,2021,1,27,,prep check again
-2657,2304,MANUEL,RODRIGUEZ GONZALEZ,tab-18.04p,tab04p,,morena,2021,1,27,,prep check again
-2658,2313,JANICIE,CONTRERAS GARCIA,tab-18.05p,tab05p,,morena,2021,1,27,,prep check again
-2659,2322,MARIO RAFAEL,LLERGO LATOURNERIE,tab-18.06p,tab06p,,morena,2021,1,27,,prep check again
-2660,2331,ANA LAURA,HUERTA VALDOVINOS,tam-18.01p,tam01p,,pvem,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2661,2340,OLGA JULIANA,ELIZONDO GUERRA,tam-18.02p,tam02p,,pt,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2662,2349,TOMAS,GLORIA REQUENA,tam-18.03p,tam03p,,pvem,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2663,2358,ADRIANA,LOZANO RODRIGUEZ,tam-18.04p,tam04p,,morena,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2664,2367,OSCAR DE JESUS,ALMARAZ SMER,tam-18.05p,tam05p,,pan,2021,1,28,,prep check again
-2665,2376,VICENTE JAVIER,VERASTEGUI OSTOS,tam-18.06p,tam06p,,pan,2021,1,28,,prep check again
-2666,2385,ERASMO,GONZALEZ ROBLEDO,tam-18.07p,tam07p,,morena,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2667,2394,ROSA MARIA,GONZALEZ AZCARRAGA,tam-18.08p,tam08p,,pan,2021,1,28,,prep check again
-2668,2396,CLAUDIA ALEJANDRA,HERNANDEZ SAENZ,tam-18.09p,tam09p,,pt,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
-2669,2405,JOSE ALEJANDRO,AGUILAR LOPEZ,tla-18.01p,tla01p,,pt,2021,1,29,,elec-coal=PVEM.PT.MORENA prep check again
-2670,2414,IRMA YORDANA,GARAY LOREDO,tla-18.02p,tla02p,,pt,2021,1,29,,elec-coal=PVEM.PT.MORENA prep check again
-2671,2423,CARLOS AUGUSTO,PEREZ HERNANDEZ,tla-18.03p,tla03p,,morena,2021,1,29,,prep check again
-2672,2432,ARMANDO ANTONIO,GOMEZ BETANCOURT,ver-18.01p,ver01p,,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2673,2441,ERIC ABRAHAM,SOSA MAR,ver-18.02p,ver02p,,pan,2021,1,30,,prep check again
-2674,2450,MARIA BERTHA,ESPINOZA SEGURA,ver-18.03p,ver03p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2675,2459,ROSA,HERNANDEZ ESPEJO,ver-18.04p,ver04p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2676,2468,RAQUEL,BONILLA HERRERA,ver-18.05p,ver05p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2677,2477,JAIME HUMBERTO,PEREZ BERNABE,ver-18.06p,ver06p,,morena,2021,1,30,,prep check again
-2678,2486,MONICA,HERRERA VILLAVICENCIO,ver-18.07p,ver07p,,morena,2021,1,30,,prep check again
-2679,2495,CLAUDIA,TELLO ESPINOSA,ver-18.08p,ver08p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2680,2504,JOSE FRANCISCO,YUNES ZORRILLA,ver-18.09p,ver09p,,pri,2021,1,30,,prep check again
-2681,2513,RAFAEL,HERNANDEZ VILLALPANDO,ver-18.10p,ver10p,,morena,2021,1,30,,prep check again
-2682,2522,FLORA TANIA,CRUZ SANTOS,ver-18.11p,ver11p,,morena,2021,1,30,,prep check again
-2683,2531,MARIA JOSEFINA,GAMBOA TORALES,ver-18.12p,ver12p,,pan,2021,1,30,,elec-coal=PAN.PRI.PRD prep check again
-2684,2540,ANGELICA,PEÑA MARTINEZ,ver-18.13p,ver13p,,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2685,2549,ROSALBA,VALENCIA CRUZ,ver-18.14p,ver14p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2686,2558,DULCE MARIA CORINA,VILLEGAS GUARNEROS,ver-18.15p,ver15p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2687,2567,MARTHA ROSA,MORALES ROMERO,ver-18.16p,ver16p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2688,2576,VALENTIN,REYES LOPEZ,ver-18.17p,ver17p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2689,2585,ITZEL ALELI,DOMINGUEZ ZOPIYACTLE,ver-18.18p,ver18p,,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2690,2594,PAOLA,TENORIO ADAME,ver-18.19p,ver19p,,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
-2691,2603,ESTEBAN,BAUTISTA HERNANDEZ,ver-18.20p,ver20p,,morena,2021,1,30,,prep check again
-2692,2625,SERGIO ENRRIQUE,CHALE CAUICH,yuc-18.01p,yuc01p,,pan,2021,1,31,,prep check again
-2693,2634,MARIO XAVIER,PERAZA RAMIREZ,yuc-18.02p,yuc02p,,pvem,2021,1,31,,elec-coal=PVEM.PT.MORENA prep check again
-2694,2643,ROMMEL AGHMED,PACHECO MARRUFO,yuc-18.03p,yuc03p,,pan,2021,1,31,,prep check again
-2695,2652,CECILIA ANUNCIACION,PATRON LAVIADA,yuc-18.04p,yuc04p,,pan,2021,1,31,,prep check again
-2696,2661,CONSUELO DEL CARMEN,NAVARRETE NAVARRO,yuc-18.05p,yuc05p,,pvem,2021,1,31,,elec-coal=PVEM.PT.MORENA prep check again
-2697,2670,BENNELLY JOCABETH,HERNANDEZ RUEDAS,zac-18.01p,zac01p,,morena,2021,1,32,,elec-coal=PVEM.PT.MORENA prep check again
-2698,2679,MIGUEL ANGEL,VARELA PINEDO,zac-18.02p,zac02p,,pan,2021,1,32,,elec-coal=PAN.PRI.PRD prep check again
-2699,2688,ALFREDO,FEMAT BAÑUELOS,zac-18.03p,zac03p,,pt,2021,1,32,,elec-coal=PVEM.PT.MORENA prep check again
-2700,2697,CAROLINA,DAVILA RAMIREZ,zac-18.04p,zac04p,,prd,2021,1,32,,elec-coal=PAN.PRI.PRD prep check again
+2401,9,NOEL,MATA ATILANO,ags-18.01p,ags01p,pan,pan,2021,1,1,,elec-coal=PAN.PRI.PRD prep check again
+2402,18,MONICA,BECERRA MORENO,ags-18.02p,ags02p,pan,pan,2021,1,1,,prep check again
+2403,27,PAULO GONZALO,MARTINEZ LOPEZ,ags-18.03p,ags03p,pan,pan,2021,1,1,,prep check again
+2404,36,YESSENIA LETICIA,OLUA GONZALEZ,bc-18.01p,bc01p,morena,morena,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
+2405,45,JULIETA ANDREA,RAMIREZ PADILLA,bc-18.02p,bc02p,morena,morena,2021,1,2,,prep check again
+2406,54,ARMANDO,REYES LEDESMA,bc-18.03p,bc03p,pt,pt,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
+2407,63,SOCORRO IRMA,ANDAZOLA GOMEZ,bc-18.04p,bc04p,morena,morena,2021,1,2,,prep check again
+2408,71,EVANGELINA,MORENO GUERRA,bc-18.05p,bc05p,morena,morena,2021,1,2,,prep check again
+2409,80,HECTOR IRENEO,MARES COSSIO,bc-18.06p,bc06p,morena,morena,2021,1,2,,prep check again
+2410,86,JUAN ISAIAS,BERTIN SANDOVAL,bc-18.07p,bc07p,morena,morena,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
+2411,92,FAUSTO,GALLARDO GARCIA,bc-18.08p,bc08p,pvem,pvem,2021,1,2,,elec-coal=PVEM.PT.MORENA prep check again
+2412,102,MARCO ANTONIO,ALMENDARIZ PUPPO,bcs-18.01p,bcs01p,pan,pan,2021,1,3,,prep check again
+2413,111,ALFREDO,PORRAS DOMINGUEZ,bcs-18.02p,bcs02p,pt,pt,2021,1,3,,elec-coal=PVEM.PT.MORENA prep check again
+2414,120,JOSE LUIS,FLORES PACHECO,cam-18.01p,cam01p,morena,morena,2021,1,4,,prep check again
+2415,129,MARIA,SIERRA DAMIAN,cam-18.02p,cam02p,morena,morena,2021,1,4,,prep check again
+2416,138,BRIGIDO RAMIRO,MORENO HERNANDEZ,coa-18.01p,coa01p,pt,pt,2021,1,5,,elec-coal=PVEM.PT.MORENA prep check again
+2417,147,FRANCISCO JAVIER,BORREGO ADAME,coa-18.02p,coa02p,morena,morena,2021,1,5,,elec-coal=PVEM.PT.MORENA prep check again
+2418,156,CRISTINA,AMEZCUA GONZALEZ,coa-18.03p,coa03p,pri,pri,2021,1,5,,prep check again
+2419,165,YERICO,ABRAMO MASSO,coa-18.04p,coa04p,pri,pri,2021,1,5,,prep check again
+2420,174,JOSE ANTONIO,GUTIERREZ JARDON,coa-18.05p,coa05p,pri,pri,2021,1,5,,prep check again
+2421,183,SHAMIR,FERNANDEZ HERNANDEZ,coa-18.06p,coa06p,pri,pri,2021,1,5,,prep check again
+2422,192,JAIME,BUENO ZERTUCHE,coa-18.07p,coa07p,pri,pri,2021,1,5,,prep check again
+2423,201,RIULT,RIVERA GUTIERREZ,col-18.01p,col01p,pan,pan,2021,1,6,,elec-coal=PAN.PRI.PRD prep check again
+2424,210,ROSA MARIA,BAYARDO CABRERA,col-18.02p,col02p,morena,morena,2021,1,6,,prep check again
+2425,219,MANUELA DEL CARMEN,OBRADOR NARVAEZ,cps-18.01p,cps01p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2426,228,ADELA,RAMOS JUAREZ,cps-18.02p,cps02p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2427,237,ALFREDO,VAZQUEZ VAZQUEZ,cps-18.03p,cps03p,morena,morena,2021,1,7,,prep check again
+2428,246,JOAQUIN,ZEBADUA ALVA,cps-18.04p,cps04p,morena,morena,2021,1,7,,prep check again
+2429,255,YEIMI YAZMIN,AGUILAR CIFUENTES,cps-18.05p,cps05p,pri,pri,2021,1,7,,elec-coal=PAN.PRI.PRD prep check again
+2430,264,JORGE LUIS,LLAVEN ABARCA,cps-18.06p,cps06p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2431,273,MANUEL DE JESUS,NARCIA COUTIÑO,cps-18.07p,cps07p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2432,282,ISMAEL,BRITO MAZARIEGOS,cps-18.08p,cps08p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2433,291,ADRIANA,BUSTAMANTE CASTELLANOS,cps-18.09p,cps09p,morena,morena,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2434,300,JUAN PABLO MONTES DE,OCA AVENDAÑO,cps-18.10p,cps10p,pvem,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2435,309,ROBERTO ANTONIO,RUBIO MONTEJO,cps-18.11p,cps11p,pvem,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2436,318,JOSE LUIS,ELORZA FLORES,cps-18.12p,cps12p,morena,morena,2021,1,7,,prep check again
+2437,320,LUIS ARMANDO,MELGAR BRAVO,cps-18.13p,cps13p,pvem,pvem,2021,1,7,,elec-coal=PVEM.PT.MORENA prep check again
+2438,329,DANIEL,MURGUIA LARDIZABAL,cua-18.01p,cua01p,morena,morena,2021,1,8,,prep check again
+2439,338,TERESITA DE JESUS,VARGAS MERAZ,cua-18.02p,cua02p,morena,morena,2021,1,8,,elec-coal=PVEM.PT.MORENA prep check again
+2440,347,LILIA,AGUILAR GIL,cua-18.03p,cua03p,pt,pt,2021,1,8,,elec-coal=PVEM.PT.MORENA prep check again
+2441,356,DANIELA SORAYA,ALVAREZ HERNANDEZ,cua-18.04p,cua04p,pan,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
+2442,365,MARIO,MATA CARRASCO,cua-18.05p,cua05p,pan,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
+2443,374,LAURA PATRICIA,CONTRERAS DUARTE,cua-18.06p,cua06p,pan,pan,2021,1,8,,prep check again
+2444,383,PATRICIA,TERRAZAS BACA,cua-18.07p,cua07p,pan,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
+2445,392,CARMEN ROCIO,GONZALEZ ALONSO,cua-18.08p,cua08p,pan,pan,2021,1,8,,prep check again
+2446,401,MARIA DE LOS ANGELES,GUTIERREZ VALDEZ,cua-18.09p,cua09p,pan,pan,2021,1,8,,elec-coal=PAN.PRI.PRD prep check again
+2447,410,ERIKA VANESSA DEL,CASTILLO IBARRA,df-18.01p,df01p,morena,morena,2021,1,9,,prep check again
+2448,419,MARIBEL GUADALUPE,VILLASEÑOR DAVILA,df-18.02p,df02p,pri,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2449,428,GABRIELA GEORGINA,JIMENEZ GODOY,df-18.03p,df03p,morena,morena,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
+2450,437,JOSE GERARDO RODOLFO,FERNANDEZ NOROÑA,df-18.04p,df04p,pt,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
+2451,446,KARLA,AYALA VILLALOBOS,df-18.05p,df05p,pri,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2452,455,DIANA MARIA TERESA,LARA CARREON,df-18.06p,df06p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2453,464,BEATRIZ,ROJAS MARTINEZ,df-18.07p,df07p,morena,morena,2021,1,9,,prep check again
+2454,473,MARIA DE JESUS,ROSETE SANCHEZ,df-18.08p,df08p,pt,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
+2455,482,MARIA GUADALUPE CHAVIRA DE,LA ROSA,df-18.09p,df09p,morena,morena,2021,1,9,,prep check again
+2456,491,MARGARITA ESTER ZAVALA GOMEZ,DEL CAMPO,df-18.10p,df10p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2457,500,LIDIA,PEREZ BARCENAS,df-18.11p,df11p,morena,morena,2021,1,9,,prep check again
+2458,509,ANA CECILIA LUISA GABRIELA FERNANDA,SODI MIRANDA,df-18.12p,df12p,prd,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2459,518,OSCAR EUGENIO,GUTIERREZ CAMACHO,df-18.13p,df13p,morena,morena,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
+2460,527,MARIA DEL ROCIO,BANQUELLS NUÑEZ,df-18.14p,df14p,prd,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2461,536,LUIS ALBERTO,MENDOZA ACEVEDO,df-18.15p,df15p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2462,545,XAVIER,GONZALEZ ZIRION,df-18.16p,df16p,pri,pri,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2463,554,JORGE,TRIANA TENA,df-18.17p,df17p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2464,563,MARCELINO,CASTAÑEDA NAVARRETE,df-18.18p,df18p,prd,prd,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2465,572,ALEIDA,ALAVEZ RUIZ,df-18.19p,df19p,morena,morena,2021,1,9,,prep check again
+2466,581,ANA KARINA,ROJO PIMENTEL,df-18.20p,df20p,pt,pt,2021,1,9,,elec-coal=PVEM.PT.MORENA prep check again
+2467,590,FLOR IVONE,MORALES MIRANDA,df-18.21p,df21p,morena,morena,2021,1,9,,prep check again
+2468,599,VICTOR GABRIEL,VARELA LOPEZ,df-18.22p,df22p,morena,morena,2021,1,9,,prep check again
+2469,608,GABRIEL RICARDO,QUADRI DE LA TORRE,df-18.23p,df23p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2470,617,HECTOR SAUL,TELLEZ HERNANDEZ,df-18.24p,df24p,pan,pan,2021,1,9,,elec-coal=PAN.PRI.PRD prep check again
+2471,656,FRANCISCO JAVIER,CASTRELLON GARZA,dgo-18.01p,dgo01p,pan,pan,2021,1,10,,elec-coal=PAN.PRI.PRD prep check again
+2472,665,OMAR ENRIQUE,CASTAÑEDA GONZALEZ,dgo-18.02p,dgo02p,morena,morena,2021,1,10,,elec-coal=PVEM.PT.MORENA prep check again
+2473,674,MARIBEL,AGUILERA CHAIREZ,dgo-18.03p,dgo03p,morena,morena,2021,1,10,,elec-coal=PVEM.PT.MORENA prep check again
+2474,683,GINA GERARDINA,CAMPUZANO GONZALEZ,dgo-18.04p,dgo04p,pan,pan,2021,1,10,,elec-coal=PAN.PRI.PRD prep check again
+2475,695,BERENICE,MONTES ESTRADA,gua-18.01p,gua01p,pan,pan,2021,1,11,,prep check again
+2476,704,RICARDO,VILLARREAL GARCIA,gua-18.02p,gua02p,pan,pan,2021,1,11,,prep check again
+2477,713,FERNANDO,TORRES GRACIANO,gua-18.03p,gua03p,pan,pan,2021,1,11,,prep check again
+2478,722,JUAN CARLOS,ROMERO HICKS,gua-18.04p,gua04p,pan,pan,2021,1,11,,prep check again
+2479,731,ECTOR JAIME,RAMIREZ BARBA,gua-18.05p,gua05p,pan,pan,2021,1,11,,prep check again
+2480,740,ANA MARIA,ESQUIVEL ARRONA,gua-18.06p,gua06p,pan,pan,2021,1,11,,prep check again
+2481,749,KAREN MICHEL,GONZALEZ MARQUEZ,gua-18.07p,gua07p,pan,pan,2021,1,11,,prep check again
+2482,758,JUSTINO EUGENIO,ARRIAGA ROJAS,gua-18.08p,gua08p,pan,pan,2021,1,11,,elec-coal=PAN.PRI.PRD prep check again
+2483,767,JORGE ALBERTO,ROMERO VAZQUEZ,gua-18.09p,gua09p,pan,pan,2021,1,11,,prep check again
+2484,776,PEDRO DAVID,ORTEGA FONSECA,gua-18.10p,gua10p,morena,morena,2021,1,11,,prep check again
+2485,785,JORGE ARTURO,ESPADAS GALVAN,gua-18.11p,gua11p,pan,pan,2021,1,11,,prep check again
+2486,794,SARAI,NUÑEZ CERON,gua-18.12p,gua12p,pan,pan,2021,1,11,,prep check again
+2487,803,EMMANUEL,REYES CARMONA,gua-18.13p,gua13p,morena,morena,2021,1,11,,elec-coal=PVEM.PT.MORENA prep check again
+2488,812,ESTHER,MANDUJANO TINAJERO,gua-18.14p,gua14p,pan,pan,2021,1,11,,prep check again
+2489,817,ITZEL JOSEFINA,BALDERAS HERNANDEZ,gua-18.15p,gua15p,pan,pan,2021,1,11,,prep check again
+2490,826,REYNEL,RODRIGUEZ MUÑOZ,gue-18.01p,gue01p,pri,pri,2021,1,12,,elec-coal=PAN.PRI.PRD prep check again
+2491,835,ARACELI,OCAMPO MANZANARES,gue-18.02p,gue02p,morena,morena,2021,1,12,,prep check again
+2492,844,LUIS EDGARDO,PALACIOS DIAZ,gue-18.03p,gue03p,pvem,pvem,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
+2493,853,PABLO AMILCAR,SANDOVAL BALLESTEROS,gue-18.04p,gue04p,morena,morena,2021,1,12,,prep check again
+2494,862,VICTORIANO,WENCES REAL,gue-18.05p,gue05p,pt,pt,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
+2495,871,FABIOLA,RAFAEL DIRCIO,gue-18.06p,gue06p,prd,prd,2021,1,12,,elec-coal=PAN.PRI.PRD prep check again
+2496,880,CARLOS,SANCHEZ BARRIOS,gue-18.07p,gue07p,morena,morena,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
+2497,889,EUNICE,MONZON GARCIA,gue-18.08p,gue08p,pvem,pvem,2021,1,12,,elec-coal=PVEM.PT.MORENA prep check again
+2498,898,MARIA DEL ROSARIO,MERLIN GARCIA,gue-18.09p,gue09p,morena,morena,2021,1,12,,prep check again
+2499,910,SAYONARA,VARGAS RODRIGUEZ,hgo-18.01p,hgo01p,pri,pri,2021,1,13,,elec-coal=PAN.PRI.PRD prep check again
+2500,919,CIRIA YAMILE,SALOMON DURAN,hgo-18.02p,hgo02p,pvem,pvem,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
+2501,928,SANDRA SIMEY,OLVERA BAUTISTA,hgo-18.03p,hgo03p,morena,morena,2021,1,13,,prep check again
+2502,937,MARIA ISABEL,ALFARO MORALES,hgo-18.04p,hgo04p,morena,morena,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
+2503,946,CUAUHTEMOC,OCHOA FERNANDEZ,hgo-18.05p,hgo05p,pvem,pvem,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
+2504,955,LIDIA,GARCIA ANAYA,hgo-18.06p,hgo06p,morena,morena,2021,1,13,,elec-coal=PVEM.PT.MORENA prep check again
+2505,964,NAVOR ALBERTO,ROJAS MANCERA,hgo-18.07p,hgo07p,morena,morena,2021,1,13,,prep check again
+2506,973,GUSTAVO,MACIAS ZAMBRANO,jal-18.01p,jal01p,pan,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2507,982,MARTHA ESTELA,ROMO CUELLAR,jal-18.02p,jal02p,pan,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2508,991,DESIDERIO,TINAJERO ROBLES,jal-18.03p,jal03p,pan,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2509,1000,TAYGETE IRISAY,RODRIGUEZ GONZALEZ,jal-18.04p,jal04p,mc,mc,2021,1,14,,prep check again
+2510,1009,BRUNO,BLANCAS MERCADO,jal-18.05p,jal05p,morena,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2511,1018,MANUEL JESUS,HERRERA VEGA,jal-18.06p,jal06p,mc,mc,2021,1,14,,prep check again
+2512,1027,ALBERTO,VILLA VILLEGAS,jal-18.07p,jal07p,morena,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2513,1036,JOSE MAURO,GARZA MARIN,jal-18.08p,jal08p,mc,mc,2021,1,14,,prep check again
+2514,1045,MARIA DEL ROCIO,CORONA NAKAMURA,jal-18.09p,jal09p,pvem,pvem,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2515,1054,HORACIO,FERNANDEZ CASTILLO,jal-18.10p,jal10p,mc,mc,2021,1,14,,prep check again
+2516,1063,CLAUDIA,DELGADILLO GONZALEZ,jal-18.11p,jal11p,morena,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2517,1072,MARIA ASENCION,ALVAREZ SOLIS,jal-18.12p,jal12p,mc,mc,2021,1,14,,prep check again
+2518,1081,SERGIO,BARRERA SEPULVEDA,jal-18.13p,jal13p,mc,mc,2021,1,14,,prep check again
+2519,1090,MARIA LETICIA,CHAVEZ PEREZ,jal-18.14p,jal14p,mc,mc,2021,1,14,,prep check again
+2520,1099,ANA LAURA,SANCHEZ VELAZQUEZ,jal-18.15p,jal15p,pan,pan,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2521,1108,LAURA IMELDA,PEREZ SEGURA,jal-18.16p,jal16p,morena,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2522,1117,ANTONIO DE JESUS,RAMIREZ RAMOS,jal-18.17p,jal17p,pvem,pvem,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2523,1126,JOSE GUADALUPE,FLETES ARAIZA,jal-18.18p,jal18p,pri,pri,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2524,1135,LUZ ADRIANA,CANDELARIO FIGUEROA,jal-18.19p,jal19p,morena,morena,2021,1,14,,elec-coal=PVEM.PT.MORENA prep check again
+2525,1137,MARIA DEL REFUGIO,CAMARENA JAUREGUI,jal-18.20p,jal20p,pri,pri,2021,1,14,,elec-coal=PAN.PRI.PRD prep check again
+2526,1146,MIGUEL,SAMANO PERALTA,mex-18.01p,mex01p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2527,1155,DIONICIA,VAZQUEZ GARCIA,mex-18.02p,mex02p,pt,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2528,1164,OSCAR GUSTAVO,CARDENAS MONROY,mex-18.03p,mex03p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2529,1173,NELLY MINERVA,CARRASCO GODINEZ,mex-18.04p,mex04p,morena,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2530,1182,FRANCISCO,FAVELA PEÑUÑURI,mex-18.05p,mex05p,pt,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2531,1191,ALI SAYURI,NUÑEZ MENESES,mex-18.06p,mex06p,pvem,pvem,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2532,1200,JOANNA ALEJANDRA,FELIPE TORRES,mex-18.07p,mex07p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2533,1209,GUSTAVO,CONTRERAS MONTES,mex-18.08p,mex08p,morena,morena,2021,1,15,,prep check again
+2534,1218,EDUARDO,ZARZOSA SANCHEZ,mex-18.09p,mex09p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2535,1227,ALMA DELIA,NAVARRETE RIVERA,mex-18.10p,mex10p,morena,morena,2021,1,15,,prep check again
+2536,1236,MARIA EUGENIA,HERNANDEZ PEREZ,mex-18.11p,mex11p,morena,morena,2021,1,15,,prep check again
+2537,1245,ARMANDO,CORONA ARVIZU,mex-18.12p,mex12p,morena,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2538,1254,OLIMPIA TAMARA,GIRON HERNANDEZ,mex-18.13p,mex13p,morena,morena,2021,1,15,,prep check again
+2539,1263,ANA MARIA,BALDERAS TREJO,mex-18.14p,mex14p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2540,1272,CARLOS,MADRAZO LIMON,mex-18.15p,mex15p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2541,1281,MARISELA,GARDUÑO GARDUÑO,mex-18.16p,mex16p,pt,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2542,1290,MARIA GUADALUPE,ROMAN AVILA,mex-18.17p,mex17p,morena,morena,2021,1,15,,prep check again
+2543,1299,JOSE ANTONIO,GARCIA GARCIA,mex-18.18p,mex18p,pan,pan,2021,1,15,,prep check again
+2544,1308,KRISHNA KARINA,ROMERO VELAZQUEZ,mex-18.19p,mex19p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2545,1317,JUAN PABLO,SANCHEZ RODRIGUEZ,mex-18.20p,mex20p,morena,morena,2021,1,15,,prep check again
+2546,1326,GRACIELA,SANCHEZ ORTIZ,mex-18.21p,mex21p,morena,morena,2021,1,15,,prep check again
+2547,1335,IVAN ARTURO,RODRIGUEZ RIVERA,mex-18.22p,mex22p,pan,pan,2021,1,15,,prep check again
+2548,1344,MARTHA AZUCENA,CAMACHO REYNOSO,mex-18.23p,mex23p,morena,morena,2021,1,15,,prep check again
+2549,1353,CLAUDIA GABRIELA,OLVERA HIGUERA,mex-18.24p,mex24p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2550,1362,CARLOS,LOPEZ GUADARRAMA,mex-18.25p,mex25p,morena,morena,2021,1,15,,prep check again
+2551,1371,MELISSA ESTEFANIA,VARGAS CAMACHO,mex-18.26p,mex26p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2552,1380,ANA LILIA,HERRERA ANZALDO,mex-18.27p,mex27p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2553,1389,ROBERTO ANGEL,DOMINGUEZ RODRIGUEZ,mex-18.28p,mex28p,morena,morena,2021,1,15,,prep check again
+2554,1398,MARTHA,ROBLES ORTIZ,mex-18.29p,mex29p,morena,morena,2021,1,15,,prep check again
+2555,1407,CESAR AGUSTIN,HERNANDEZ PEREZ,mex-18.30p,mex30p,morena,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2556,1416,JUAN ANGEL,BAUTISTA BRAVO,mex-18.31p,mex31p,morena,morena,2021,1,15,,prep check again
+2557,1425,LUIS ENRIQUE,MARTINEZ VENTURA,mex-18.32p,mex32p,pt,pt,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2558,1434,VICENTE ALBERTO,ONOFRE VAZQUEZ,mex-18.33p,mex33p,morena,morena,2021,1,15,,prep check again
+2559,1443,MARIA TERESA CASTELL DE,ORO PALACIOS,mex-18.34p,mex34p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2560,1452,ARTURO ROBERTO,HERNANDEZ TAPIA,mex-18.35p,mex35p,morena,morena,2021,1,15,,elec-coal=PVEM.PT.MORENA prep check again
+2561,1461,JAZMIN,JAIMES ALBARRAN,mex-18.36p,mex36p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2562,1466,JAVIER,HUERTA JURADO,mex-18.37p,mex37p,morena,morena,2021,1,15,,prep check again
+2563,1473,KARLA YURITZI,ALMAZAN BURGOS,mex-18.38p,mex38p,morena,morena,2021,1,15,,prep check again
+2564,1479,ALAN,CASTELLANOS RAMIREZ,mex-18.39p,mex39p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2565,1485,JAVIER,GONZALEZ ZEPEDA,mex-18.40p,mex40p,pan,pan,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2566,1487,SUE ELLEN,BERNAL BOLNIK,mex-18.41p,mex41p,pri,pri,2021,1,15,,elec-coal=PAN.PRI.PRD prep check again
+2567,1496,LEONEL,GODOY RANGEL,mic-18.01p,mic01p,morena,morena,2021,1,16,,prep check again
+2568,1505,MAURICIO,PRIETO GOMEZ,mic-18.02p,mic02p,prd,prd,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2569,1514,MARY CARMEN,BERNAL MARTINEZ,mic-18.03p,mic03p,pt,pt,2021,1,16,,elec-coal=PVEM.PT.MORENA prep check again
+2570,1523,RODRIGO,SANCHEZ ZEPEDA,mic-18.04p,mic04p,pan,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2571,1532,ENRIQUE GODINEZ,DEL RIO,mic-18.05p,mic05p,pan,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2572,1541,BERENICE,JUAREZ NAVARRETE,mic-18.06p,mic06p,pan,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2573,1550,ADRIANA,CAMPOS HUIRACHE,mic-18.07p,mic07p,pri,pri,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2574,1559,ROBERTO CARLOS,LOPEZ GARCIA,mic-18.08p,mic08p,pri,pri,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2575,1568,CARLOS ALBERTO,MANZO RODRIGUEZ,mic-18.09p,mic09p,morena,morena,2021,1,16,,prep check again
+2576,1577,CARLOS HUMBERTO,QUINTANA MARTINEZ,mic-18.10p,mic10p,pan,pan,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2577,1586,MARIA MACARENA,CHAVEZ FLORES,mic-18.11p,mic11p,prd,prd,2021,1,16,,elec-coal=PAN.PRI.PRD prep check again
+2578,1595,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-18.12p,mic12p,pt,pt,2021,1,16,,elec-coal=PVEM.PT.MORENA prep check again
+2579,1607,JORGE ALBERTO,BARRERA TOLEDO,mor-18.01p,mor01p,morena,morena,2021,1,17,,prep check again
+2580,1616,ALEJANDRA,PANI BARRAGAN,mor-18.02p,mor02p,morena,morena,2021,1,17,,elec-coal=PVEM.PT.MORENA prep check again
+2581,1625,JUANITA,GUERRA MENA,mor-18.03p,mor03p,morena,morena,2021,1,17,,prep check again
+2582,1634,BRENDA,ESPINOZA LOPEZ,mor-18.04p,mor04p,morena,morena,2021,1,17,,elec-coal=PVEM.PT.MORENA prep check again
+2583,1640,JOSE GUADALUPE,AMBROCIO GACHUZ,mor-18.05p,mor05p,morena,morena,2021,1,17,,prep check again
+2584,1649,MIGUEL PAVEL,JARERO VELAZQUEZ,nay-18.01p,nay01p,morena,morena,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
+2585,1658,JASMINE,MARIA BUGARIN ,nay-18.02p,nay02p,pvem,pvem,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
+2586,1667,JORGE ARMANDO,ORTIZ RODRIGUEZ,nay-18.03p,nay03p,pt,pt,2021,1,18,,elec-coal=PVEM.PT.MORENA prep check again
+2587,1676,HECTOR ISRAEL,CASTILLO OLIVARES,nl-18.01p,nl01p,pan,pan,2021,1,19,,prep check again
+2588,1685,ANDRES MAURICIO,CANTU RAMIREZ,nl-18.02p,nl02p,pri,pri,2021,1,19,,prep check again
+2589,1694,JOSE LUIS,GARCIA DUQUE,nl-18.03p,nl03p,pt,pt,2021,1,19,,elec-coal=PVEM.PT.MORENA prep check again
+2590,1703,PEDRO,SALGADO ALMAGUER,nl-18.04p,nl04p,pan,pan,2021,1,19,,prep check again
+2591,1712,MARCELA,GUERRA CASTILLO,nl-18.05p,nl05p,pri,pri,2021,1,19,,prep check again
+2592,1721,ANNIA SARAHI,GOMEZ CARDENAS,nl-18.06p,nl06p,pan,pan,2021,1,19,,prep check again
+2593,1730,ANDRES,PINTOS CABALLERO,nl-18.07p,nl07p,pvem,pvem,2021,1,19,,elec-coal=PVEM.PT.MORENA prep check again
+2594,1739,MA DE JESUS,AGUIRRE MALDONADO,nl-18.08p,nl08p,pri,pri,2021,1,19,,prep check again
+2595,1748,JUAN FRANCISCO,ESPINOZA EGUIA,nl-18.09p,nl09p,pri,pri,2021,1,19,,prep check again
+2596,1757,KARINA MARLEN,BARRON PERALES,nl-18.10p,nl10p,pri,pri,2021,1,19,,prep check again
+2597,1766,PEDRO,GARZA TREVIÑO,nl-18.11p,nl11p,pan,pan,2021,1,19,,prep check again
+2598,1772,JOSE LUIS,GARZA OCHOA,nl-18.12p,nl12p,pri,pri,2021,1,19,,prep check again
+2599,1781,ANGEL,DOMINGUEZ ESCOBAR,oax-18.01p,oax01p,morena,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2600,1790,IRMA,JUAN CARLOS,oax-18.02p,oax02p,morena,morena,2021,1,20,,prep check again
+2601,1799,MARGARITA,GARCIA GARCIA,oax-18.03p,oax03p,pt,pt,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2602,1808,AZAEL,SANTIAGO CHEPI,oax-18.04p,oax04p,morena,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2603,1817,CAROL,ANTONIO ALTAMIRANO,oax-18.05p,oax05p,morena,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2604,1826,BEATRIZ DOMINGA,PEREZ LOPEZ,oax-18.06p,oax06p,morena,morena,2021,1,20,,prep check again
+2605,1835,JOSE ANTONIO,ESTEFAN GILLESSEN,oax-18.07p,oax07p,pvem,pvem,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2606,1844,ANGEL BENJAMIN,ROBLES MONTOYA,oax-18.08p,oax08p,pt,pt,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2607,1853,MARIA DEL CARMEN,BAUTISTA PELAEZ,oax-18.09p,oax09p,morena,morena,2021,1,20,,elec-coal=PVEM.PT.MORENA prep check again
+2608,1862,DANIEL,GUTIERREZ GUTIERREZ,oax-18.10p,oax10p,morena,morena,2021,1,20,,prep check again
+2609,1878,MARCO ANTONIO,NATALE GUTIERREZ,pue-18.01p,pue01p,pvem,pvem,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2610,1887,FATIMA ALMENDRA,CRUZ PELAEZ,pue-18.02p,pue02p,pvem,pvem,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2611,1896,ESTHER,MARTINEZ ROMANO,pue-18.03p,pue03p,pt,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2612,1905,INES,PARRA JUAREZ,pue-18.04p,pue04p,morena,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2613,1914,MAURICIO ALONSO,TOLEDO GUTIERREZ,pue-18.05p,pue05p,pt,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2614,1923,ALEJANDRO,CARVAJAL HIDALGO,pue-18.06p,pue06p,morena,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2615,1932,RAYMUNDO,ATANACIO LUNA,pue-18.07p,pue07p,morena,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2616,1941,ODETTE NAYERI,ALMAZAN MUÑOZ,pue-18.08p,pue08p,morena,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2617,1950,ANA TERESA,ARANDA OROZCO,pue-18.09p,pue09p,pan,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
+2618,1959,MARCO HUMBERTO,AGUILAR CORONADO,pue-18.10p,pue10p,pan,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
+2619,1968,CAROLINA,BEAUREGARD MARTINEZ,pue-18.11p,pue11p,pan,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
+2620,1977,MARIO GERARDO,RIESTRA PIÑA,pue-18.12p,pue12p,pan,pan,2021,1,21,,elec-coal=PAN.PRI.PRD prep check again
+2621,1986,MARIO MIGUEL,CARRILLO CUBILLAS,pue-18.13p,pue13p,morena,morena,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2622,1995,NELLY,MACEDA CARRERA,pue-18.14p,pue14p,pt,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2623,2004,ARACELI,CELESTINO ROSAS,pue-18.15p,pue15p,pt,pt,2021,1,21,,elec-coal=PVEM.PT.MORENA prep check again
+2624,2017,SONIA,ROCHA ACOSTA,que-18.01p,que01p,pan,pan,2021,1,22,,prep check again
+2625,2026,MARCIA,SOLORZANO GALLEGO,que-18.02p,que02p,pan,pan,2021,1,22,,prep check again
+2626,2035,IGNACIO,LOYOLA VERA,que-18.03p,que03p,pan,pan,2021,1,22,,prep check again
+2627,2044,FELIPE FERNANDO,MACIAS OLVERA,que-18.04p,que04p,pan,pan,2021,1,22,,prep check again
+2628,2046,ERIKA DE LOS ANGELES,DIAZ VILLALON,que-18.05p,que05p,pan,pan,2021,1,22,,prep check again
+2629,2055,JUAN LUIS,CARRILLO SOBERANIS,qui-18.01p,qui01p,pvem,pvem,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
+2630,2064,ALMA ANAHI,GONZALEZ HERNANDEZ,qui-18.02p,qui02p,morena,morena,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
+2631,2070,WILLBERT ALBERTO,BATUN CHULIM,qui-18.03p,qui03p,morena,morena,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
+2632,2072,LAURA LYNN,FERNANDEZ PIÑA,qui-18.04p,qui04p,pvem,pvem,2021,1,23,,elec-coal=PVEM.PT.MORENA prep check again
+2633,2081,ROBERTO ALEJANDRO,SEGOVIA HERNANDEZ,san-18.01p,san01p,pvem,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
+2634,2090,JUAN MANUEL,NAVARRO MUÑIZ,san-18.02p,san02p,pvem,pvem,2021,1,24,,prep check again
+2635,2099,KEVIN ANGELO,AGUILAR PIÑA,san-18.03p,san03p,pvem,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
+2636,2108,ANTOLIN,GUERRERO MARQUEZ,san-18.04p,san04p,morena,morena,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
+2637,2117,JOSE ANTONIO,ZAPATA MERAZ,san-18.05p,san05p,pan,pan,2021,1,24,,elec-coal=PAN.PRI.PRD prep check again
+2638,2126,GILBERTO,HERNANDEZ VILLAFUERTE,san-18.06p,san06p,pvem,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
+2639,2135,CHRISTIAN JOAQUIN,SANCHEZ SANCHEZ,san-18.07p,san07p,pvem,pvem,2021,1,24,,elec-coal=PVEM.PT.MORENA prep check again
+2640,2144,LEOBARDO,ALCANTARA MARTINEZ,sin-18.01p,sin01p,pt,pt,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
+2641,2153,SIN CANDIDATURA,,sin-18.02p,sin02p,morena,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
+2642,2162,JESUS FERNANDO,GARCIA HERNANDEZ,sin-18.03p,sin03p,pt,pt,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
+2643,2171,CASIMIRO,ZAMORA VALDEZ,sin-18.04p,sin04p,morena,morena,2021,1,25,,prep check again
+2644,2180,NANCY YADIRA,SANTIAGO MARCOS,sin-18.05p,sin05p,morena,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
+2645,2189,OLEGARIA,CARRAZCO MACIAS,sin-18.06p,sin06p,morena,morena,2021,1,25,,prep check again
+2646,2198,MERARY,VILLEGAS SANCHEZ,sin-18.07p,sin07p,morena,morena,2021,1,25,,elec-coal=PVEM.PT.MORENA prep check again
+2647,2214,MANUEL DE JESUS,BALDENEBRO ARREDONDO,son-18.01p,son01p,morena,morena,2021,1,26,,prep check again
+2648,2223,ANA LAURA,BERNAL CAMARENA,son-18.02p,son02p,pt,pt,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
+2649,2232,LORENIA IVETH,VALLES SAMPEDRO,son-18.03p,son03p,morena,morena,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
+2650,2241,HERIBERTO MARCELO,AGUILAR CASTILLO,son-18.04p,son04p,morena,morena,2021,1,26,,prep check again
+2651,2250,MARIA WENDY,BRICEÑO ZULOAGA,son-18.05p,son05p,morena,morena,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
+2652,2259,GABRIELA,MARTINEZ ESPINOZA,son-18.06p,son06p,morena,morena,2021,1,26,,prep check again
+2653,2268,SHIRLEY GUADALUPE,VAZQUEZ ROMERO,son-18.07p,son07p,pt,pt,2021,1,26,,elec-coal=PVEM.PT.MORENA prep check again
+2654,2277,MARCOS ROSENDO,MEDINA FILIGRANA,tab-18.01p,tab01p,morena,morena,2021,1,27,,prep check again
+2655,2286,KARLA MARIA,RABELO ESTRADA,tab-18.02p,tab02p,morena,morena,2021,1,27,,prep check again
+2656,2295,LORENA,MENDEZ DENIS,tab-18.03p,tab03p,morena,morena,2021,1,27,,prep check again
+2657,2304,MANUEL,RODRIGUEZ GONZALEZ,tab-18.04p,tab04p,morena,morena,2021,1,27,,prep check again
+2658,2313,JANICIE,CONTRERAS GARCIA,tab-18.05p,tab05p,morena,morena,2021,1,27,,prep check again
+2659,2322,MARIO RAFAEL,LLERGO LATOURNERIE,tab-18.06p,tab06p,morena,morena,2021,1,27,,prep check again
+2660,2331,ANA LAURA,HUERTA VALDOVINOS,tam-18.01p,tam01p,pvem,pvem,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2661,2340,OLGA JULIANA,ELIZONDO GUERRA,tam-18.02p,tam02p,pt,pt,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2662,2349,TOMAS,GLORIA REQUENA,tam-18.03p,tam03p,pvem,pvem,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2663,2358,ADRIANA,LOZANO RODRIGUEZ,tam-18.04p,tam04p,morena,morena,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2664,2367,OSCAR DE JESUS,ALMARAZ SMER,tam-18.05p,tam05p,pan,pan,2021,1,28,,prep check again
+2665,2376,VICENTE JAVIER,VERASTEGUI OSTOS,tam-18.06p,tam06p,pan,pan,2021,1,28,,prep check again
+2666,2385,ERASMO,GONZALEZ ROBLEDO,tam-18.07p,tam07p,morena,morena,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2667,2394,ROSA MARIA,GONZALEZ AZCARRAGA,tam-18.08p,tam08p,pan,pan,2021,1,28,,prep check again
+2668,2396,CLAUDIA ALEJANDRA,HERNANDEZ SAENZ,tam-18.09p,tam09p,pt,pt,2021,1,28,,elec-coal=PVEM.PT.MORENA prep check again
+2669,2405,JOSE ALEJANDRO,AGUILAR LOPEZ,tla-18.01p,tla01p,pt,pt,2021,1,29,,elec-coal=PVEM.PT.MORENA prep check again
+2670,2414,IRMA YORDANA,GARAY LOREDO,tla-18.02p,tla02p,pt,pt,2021,1,29,,elec-coal=PVEM.PT.MORENA prep check again
+2671,2423,CARLOS AUGUSTO,PEREZ HERNANDEZ,tla-18.03p,tla03p,morena,morena,2021,1,29,,prep check again
+2672,2432,ARMANDO ANTONIO,GOMEZ BETANCOURT,ver-18.01p,ver01p,pvem,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2673,2441,ERIC ABRAHAM,SOSA MAR,ver-18.02p,ver02p,pan,pan,2021,1,30,,prep check again
+2674,2450,MARIA BERTHA,ESPINOZA SEGURA,ver-18.03p,ver03p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2675,2459,ROSA,HERNANDEZ ESPEJO,ver-18.04p,ver04p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2676,2468,RAQUEL,BONILLA HERRERA,ver-18.05p,ver05p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2677,2477,JAIME HUMBERTO,PEREZ BERNABE,ver-18.06p,ver06p,morena,morena,2021,1,30,,prep check again
+2678,2486,MONICA,HERRERA VILLAVICENCIO,ver-18.07p,ver07p,morena,morena,2021,1,30,,prep check again
+2679,2495,CLAUDIA,TELLO ESPINOSA,ver-18.08p,ver08p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2680,2504,JOSE FRANCISCO,YUNES ZORRILLA,ver-18.09p,ver09p,pri,pri,2021,1,30,,prep check again
+2681,2513,RAFAEL,HERNANDEZ VILLALPANDO,ver-18.10p,ver10p,morena,morena,2021,1,30,,prep check again
+2682,2522,FLORA TANIA,CRUZ SANTOS,ver-18.11p,ver11p,morena,morena,2021,1,30,,prep check again
+2683,2531,MARIA JOSEFINA,GAMBOA TORALES,ver-18.12p,ver12p,pan,pan,2021,1,30,,elec-coal=PAN.PRI.PRD prep check again
+2684,2540,ANGELICA,PEÑA MARTINEZ,ver-18.13p,ver13p,pvem,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2685,2549,ROSALBA,VALENCIA CRUZ,ver-18.14p,ver14p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2686,2558,DULCE MARIA CORINA,VILLEGAS GUARNEROS,ver-18.15p,ver15p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2687,2567,MARTHA ROSA,MORALES ROMERO,ver-18.16p,ver16p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2688,2576,VALENTIN,REYES LOPEZ,ver-18.17p,ver17p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2689,2585,ITZEL ALELI,DOMINGUEZ ZOPIYACTLE,ver-18.18p,ver18p,pvem,pvem,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2690,2594,PAOLA,TENORIO ADAME,ver-18.19p,ver19p,morena,morena,2021,1,30,,elec-coal=PVEM.PT.MORENA prep check again
+2691,2603,ESTEBAN,BAUTISTA HERNANDEZ,ver-18.20p,ver20p,morena,morena,2021,1,30,,prep check again
+2692,2625,SERGIO ENRRIQUE,CHALE CAUICH,yuc-18.01p,yuc01p,pan,pan,2021,1,31,,prep check again
+2693,2634,MARIO XAVIER,PERAZA RAMIREZ,yuc-18.02p,yuc02p,pvem,pvem,2021,1,31,,elec-coal=PVEM.PT.MORENA prep check again
+2694,2643,ROMMEL AGHMED,PACHECO MARRUFO,yuc-18.03p,yuc03p,pan,pan,2021,1,31,,prep check again
+2695,2652,CECILIA ANUNCIACION,PATRON LAVIADA,yuc-18.04p,yuc04p,pan,pan,2021,1,31,,prep check again
+2696,2661,CONSUELO DEL CARMEN,NAVARRETE NAVARRO,yuc-18.05p,yuc05p,pvem,pvem,2021,1,31,,elec-coal=PVEM.PT.MORENA prep check again
+2697,2670,BENNELLY JOCABETH,HERNANDEZ RUEDAS,zac-18.01p,zac01p,morena,morena,2021,1,32,,elec-coal=PVEM.PT.MORENA prep check again
+2698,2679,MIGUEL ANGEL,VARELA PINEDO,zac-18.02p,zac02p,pan,pan,2021,1,32,,elec-coal=PAN.PRI.PRD prep check again
+2699,2688,ALFREDO,FEMAT BAÑUELOS,zac-18.03p,zac03p,pt,pt,2021,1,32,,elec-coal=PVEM.PT.MORENA prep check again
+2700,2697,CAROLINA,DAVILA RAMIREZ,zac-18.04p,zac04p,prd,prd,2021,1,32,,elec-coal=PAN.PRI.PRD prep check again
