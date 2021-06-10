@@ -6086,7 +6086,7 @@ jal-13.026,6082,Concepción de Buenos Aires,2006,0,2,jul,14,14027,14026,pan,m,JO
 jal-14.026,6083,Concepción de Buenos Aires,2009,0,5,jul,14,14027,14026,pan,f,MARIA GUADALUPE BUENRROSTRO ORTIZ,,Term-limited-p-lost,,pri-pna,0.0552,,0,,0,0,,,
 jal-15.026,6084,Concepción de Buenos Aires,2012,0,1,jul,14,14027,14026,pri-pvem,m,GONZALO ZUÑIGA ARIAS,,Term-limited-p-won,,pan,0.1601,,0,,1,1,,,ok
 jal-16.026,6085,Concepción de Buenos Aires,2015,0,7,jun,14,14027,14026,pri,m,JOSE GUADALUPE BUENROSTRO MARTINEZ,,Reelected-dif-p,,mc,0.0406,reran under pvem,0,,0,0,,,ok
-jal-17.026,6086,Concepción de Buenos Aires,2018,0,1,jul,14,14027,14026,pvem,m,JOSE GUADALUPE BUENROSTRO MARTINEZ,1,Term-limited-,MARIA GUADALUPE BUENROSTRO ORTIZ,mc,0.1538,,0,,1,1,,,ok
+jal-17.026,6086,Concepción de Buenos Aires,2018,0,1,jul,14,14027,14026,pvem,m,JOSE GUADALUPE BUENROSTRO MARTINEZ,1,Term-limited-p-lost,MARIA GUADALUPE BUENROSTRO ORTIZ,mc,0.1538,,0,,1,1,,,ok
 jal-18.026,6087,Concepción de Buenos Aires,2021,0,6,jun,14,14027,14026,pes,m,CESAR SALVADOR SANCHEZ NAVARRO,,2024,,,,,0,,,,,,
 jal-08.027,6088,Cuautitlán de García Barragán,1992,0,9,feb,14,14028,14027,pri,m,PASCUAL GONZALEZ HORTA,,Term-limited-p-won,,prd,0.7357,,0,inafed,0,0,,,
 jal-09.027,6089,Cuautitlán de García Barragán,1995,0,12,feb,14,14028,14027,pri,,GUADALUPE HORTA OCHOA,,Term-limited-p-won,,pan,0.6149,,0,inafed,0,0,,,
@@ -6504,7 +6504,7 @@ jal-13.063,6500,Ocotlán,2006,0,2,jul,14,14065,14063,pan,m,ABSALON GARCIA OCHOA,
 jal-14.063,6501,Ocotlán,2009,0,5,jul,14,14065,14063,pri-pna,m,JUAN MANUEL ALATORRE FRANCO,,Term-limited-p-won,,pan,0.3342,,0,,1,1,,,ok
 jal-15.063,6502,Ocotlán,2012,0,1,jul,14,14065,14063,pri-pvem,m,ENRIQUE ROBLEDO SAHAGUN,,Term-limited-p-lost,,pan,0.0684,,0,,0,0,,,
 jal-16.063,6503,Ocotlán,2015,0,7,jun,14,14065,14063,mc,m,PAULO GABRIEL HERNANDEZ HERNANDEZ,,Reelected,,pri-pvem,0.1077,,0,,0,0,,,ok
-jal-17.063,6504,Ocotlán,2018,0,1,jul,14,14065,14063,mc,m,PAULO GABRIEL HERNANDEZ HERNANDEZ,1,Term-limited-,ENRIQUE GARCIA HERNANDEZ,pt-morena-pes,0.1384,,0,,1,1,,,ok
+jal-17.063,6504,Ocotlán,2018,0,1,jul,14,14065,14063,mc,m,PAULO GABRIEL HERNANDEZ HERNANDEZ,1,Term-limited-p-lost,ENRIQUE GARCIA HERNANDEZ,pt-morena-pes,0.1384,,0,,1,1,,,ok
 jal-18.063,6505,Ocotlán,2021,0,6,jun,14,14065,14063,morena,m,JOSUE AVILA MORENO,,2024,,,,,0,,,,,,
 jal-08.064,6506,Ojuelos de Jalisco,1992,0,9,feb,14,14066,14064,pri,m,RAFAEL MARMOLEJO AMAYA,,Term-limited-p-won,,pan,0.5882,,0,inafed,0,0,,,
 jal-09.064,6507,Ojuelos de Jalisco,1995,0,12,feb,14,14066,14064,pri,m,SALVADOR VELA BRIONES,,Term-limited-p-lost,,pan,0.0051,,0,inafed,0,0,,,
@@ -15438,7 +15438,7 @@ san-08.001,15433,Ahualulco,1991,0,0,dic,24,24001,24001,pri,m,JUAN MORENO VAZQUEZ
 san-09.001,15434,Ahualulco,1994,0,4,dic,24,24001,24001,pri,m,FIDEL CASTRO PALOMO,,Term-limited-p-lost,,pan,0.4941,,0,inafed,0,0,,,
 san-10.001,15435,Ahualulco,1997,0,6,jul,24,24001,24001,pan,m,MANUEL CISNEROS MENDOZA,,Term-limited-p-won,,pri,0.0993,,0,,0,0,,,
 san-11.001,15436,Ahualulco,2000,0,2,jul,24,24001,24001,pan,m,CONSTANTINO HERNANDEZ MIRANDA,,Term-limited-p-won,,pri,0.1031,,0,,0,0,,,
-san-12.001,15437,Ahualulco,MARCIANO DZUL CAAMAL,0,13,oct,24,24001,24001,pan,m,CLAUDIO JUAREZ MENDOZA,,Term-limited-p-won,,pri,0.1426,,0,,0,0,,,
+san-12.001,15437,Ahualulco,2003,0,13,oct,24,24001,24001,pan,m,CLAUDIO JUAREZ MENDOZA,,Term-limited-p-won,,pri,0.1426,,0,,0,0,,,
 san-13.001,15438,Ahualulco,2006,0,2,jul,24,24001,24001,pan,m,JUAN JOSE JOVER NAVARRO,,Term-limited-p-lost,,pri-pasd,0.043,,0,,0,0,,,
 san-14.001,15439,Ahualulco,2009,0,5,jul,24,24001,24001,pri,,ASUNCION MENDOZA CUELLAR,,Term-limited-p-lost,,pan-pna,0.0118,,0,,0,0,,,
 san-15.001,15440,Ahualulco,2012,0,1,jul,24,24001,24001,pan-pna,m,GUILLERMO MORALES MARTINEZ,,Term-limited-p-won,,prd-pt-mc,0.0174,,0,,0,0,,,
