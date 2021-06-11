@@ -9,6 +9,7 @@ lit/
 oldVers/
 data/xport/
 tmp*.*
+tmp-prep/
 
 # open libreoffice files
 .~*.*#
