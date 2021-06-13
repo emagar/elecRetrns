@@ -29,11 +29,20 @@ d <- within(d, expr = {
     TOTAL_VOTOS_ASENTADO <- ave(TOTAL_VOTOS_ASENTADO, as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
     TOTAL_VOTOS_CALCULADO <- ave(TOTAL_VOTOS_CALCULADO, as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
     LISTA_NOMINAL <- ave(LISTA_NOMINAL, as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE)
-}
+    }
 )
 
 # drop redundant cols
 d <- d[duplicated(d$ID_MUNICIPIO)==FALSE,]
 
 # add coals
+
+# write to clipboard to export to excel
+clipboard <- function(x, sep=",", row.names=FALSE, col.names=TRUE){
+     con <- pipe("xclip -selection clipboard -i", open="w")
+     write.table(x, con, sep=sep, row.names=row.names, col.names=col.names)
+     close(con)
+}
+
+clipboard(d)
 

@@ -17114,7 +17114,7 @@ tab-13.004,17109,Centro,2006,0,15,oct,27,27004,27004,pri,m,EVARISTO HERNANDEZ CR
 tab-14.004,17110,Centro,2009,0,18,oct,27,27004,27004,pri-pna,m,JESUS ALI DE LA TORRE,,Term-limited-p-lost,,prd,0.0601,,0,,0,0,,,
 tab-15.004,17111,Centro,2012,0,1,jul,27,27004,27004,prd-pt-mc,m,HUMBERTO DE LOS SANTOS BERTRUY,,Term-limited-p-won,,pri-pvem-pna,0.122,,0,,0,0,,,
 tab-16.004,17112,Centro,2016,1,13,mar,27,27004,27004,prd-pt,m,GERARDO GAUDIANO ROVIROSA,,Out-p-won,,morena,0.1829,extraordinaria,0,,0,0,,,
-tab-17.004,17113,Centro,2018,0,1,jul,27,27004,27004,pt-morena,m,EVARISTO HERNANDEZ CRUZ,1,Reran-out-p-won,,pan-prd-mc,0.5668,tepjf anulo su candidatura morena por violencia de genero,0,,1,1,,,
+tab-17.004,17113,Centro,2018,0,1,jul,27,27004,27004,pt-morena,m,EVARISTO HERNANDEZ CRUZ,1,Out-p-won,,pan-prd-mc,0.5668,tepjf anulo su renominacion morena por violencia de genero,0,,1,1,,,
 tab-18.004,17114,Centro,2021,0,6,jun,27,27004,27004,morena,f,YOLANDA DEL CARMEN OSUNA HUERTA,,2024,ANDRES RAFAEL GRANIER MELO,pan-pri,,,0,,,,,,
 tab-08.005,17115,Comalcalco,1991,0,17,nov,27,27005,27005,pri,m,OSCAR CACEP PERALTA,,Term-limited-p-won,,prd,0.4179,,0,inafed,0,0,,,
 tab-09.005,17116,Comalcalco,1994,0,20,nov,27,27005,27005,pri,m,ROGELIO RODRIGUEZ JAVIER,,Term-limited-p-won,,prd,0.1641,,0,inafed,0,0,,,
@@ -20277,8 +20277,8 @@ ver-12.193,20272,Veracruz,2004,0,5,sep,30,30192,30193,pan,m,JULEN REMENTERIA DEL
 ver-13.193,20273,Veracruz,2007,0,2,sep,30,30192,30193,pri-pvem-pna,m,JON GURUTZ REMENTERIA SEMPRE,,Term-limited-p-won,,pan,0.0075,,0,,0,0,,,
 ver-14.193,20274,Veracruz,2010,0,4,jul,30,30192,30193,pri-pvem-prv,f,LUZ CAROLINA GARDUÑO CORRO,,Term-limited-p-won,,pan-pna,0.0009,,0,,0,0,,,
 ver-15.193,20275,Veracruz,2013,0,7,jul,30,30192,30193,pri-pvem-pna,m,RAMON POO GIL,,Term-limited-p-lost,,pan,0.176,,0,,0,0,,,
-ver-16.193,20276,Veracruz,2017,0,4,jun,30,30192,30193,pan-prd,m,FERNANDO YUNES MARQUEZ,1,Term-limited-,,morena,0.3387,,0,,0,0,,,
-ver-17.193,20277,Veracruz,2021,0,6,jun,30,30192,30193,,,,,2024,,,,,0,,,,,,
+ver-16.193,20276,Veracruz,2017,0,4,jun,30,30192,30193,pan-prd,m,FERNANDO YUNES MARQUEZ,1,Term-limited-p-won,,morena,0.3387,,0,,0,0,,,
+ver-17.193,20277,Veracruz,2021,0,6,jun,30,30192,30193,pan-pri-prd,f,PATRICIA LOBEIRA RODRIGUEZ,,2024,RICARDO FRANCISCO EXSOME ZAPATA,pvem-pt-morena,,esposa miguel angel yunes marquez al q tepjf bajo de candidatura,0,,0,0,1,,
 ver-08.194,20278,Villa Aldama,1991,0,10,nov,30,30193,30194,pps,m,JOSE SOTO TAPIA,,Term-limited-p-won,,pri,0.1897,,0,inafed,0,0,,,
 ver-09.194,20279,Villa Aldama,1994,0,13,nov,30,30193,30194,pps,m,RICARDO HERNANDEZ DIAZ,,Term-limited-p-lost,,pri,0.0069,,0,inafed,0,0,,,
 ver-10.194,20280,Villa Aldama,1997,0,0,oct,30,30193,30194,pri,m,LIBORIO FIGUEROA ROQUE,,Term-limited-p-lost,,pan,0.0241,,0,,0,0,,,
@@ -20536,7 +20536,7 @@ yuc-14.006,20531,Buctzotz,2010,0,16,may,31,31006,31006,pri,f,MARGARITA SANCHEZ M
 yuc-15.006,20532,Buctzotz,2012,0,1,jul,31,31006,31006,pan,m,MANUEL JESUS ARGAEZ CEPEDA,,Term-limited-p-won,,pri-pvem,0.1793,,0,,1,1,,,ok
 yuc-16.006,20533,Buctzotz,2015,0,7,jun,31,31006,31006,pan,m,JOSE REYES SANTOS AGUILAR,,Out-p-lost,,pri,0.0305,,0,,0,0,,,
 yuc-17.006,20534,Buctzotz,2018,0,1,jul,31,31006,31006,pri-pvem-pna,f,MARGARITA SANCHEZ MEDRANO,1,Reran-beaten-dif-p,EDDA MARIA ARGAEZ CEPEDA,pan-mc,0.0917,reran under pri-prd and lost,0,,1,1,,,ok
-yuc-18.006,20535,Buctzotz,2021,0,6,jun,31,31006,31006,pan-pna,,VICTOR MANUEL CAMPOS BAEZA,,2024,,,,,0,,,,,,
+yuc-18.006,20535,Buctzotz,2021,0,6,jun,31,31006,31006,pan-pna,m,VICTOR MANUEL CAMPOS BAEZA,,2024,,,,,0,,,,,,
 yuc-07.007,20536,Cacalchén,1990,0,15,nov,31,31007,31007,conve,m,TEOFILO CETZ COHUO,,Term-limited-p-lost,,pri,0.0455,,0,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,,ok
 yuc-08.007,20537,Cacalchén,1993,0,28,nov,31,31007,31007,pri,m,LUIS KIM MONTALVO,,Term-limited-p-lost,,pan,0.1893,,0,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,,ok
 yuc-09.007,20538,Cacalchén,1995,0,28,may,31,31007,31007,pfcrn,m,PEDRO ARMANDO PEREZ SOSA,,Term-limited-p-lost,,pri,0.0428,,0,https://www.monografias.com/trabajos60/cacalchen-yucatan-mexico/cacalchen-yucatan-mexico2.shtml,0,0,,,ok
@@ -20548,7 +20548,7 @@ yuc-14.007,20543,Cacalchén,2010,0,16,may,31,31007,31007,conve,m,FAUSTO EB LOPEZ
 yuc-15.007,20544,Cacalchén,2012,0,1,jul,31,31007,31007,pri,m,EITER GEOFREY VAZQUEZ SOSA,,Term-limited-p-won,,pan,0.0223,,0,,0,0,,,
 yuc-16.007,20545,Cacalchén,2015,0,7,jun,31,31007,31007,pri,m,PASTOR AGUSTIN CANUL ZARATE,,Out-p-won,,pan,0.0498,,0,,0,0,,,
 yuc-17.007,20546,Cacalchén,2018,0,1,jul,31,31007,31007,pri-pvem-pna,f,ABIGAIL DE GUADALUPE PEREZ VAZQUEZ,1,Reelected,MARISA GUADALUPE BARRERA SOSA,pt-morena-pes,0.2344,,0,,0,0,,,
-yuc-18.007,20547,Cacalchén,2021,0,6,jun,31,31007,31007,pri-prd,,ABIGAIL DE GUADALUPE PEREZ VAZQUEZ,,2024,,,,,0,,,,,,
+yuc-18.007,20547,Cacalchén,2021,0,6,jun,31,31007,31007,pri-prd,f,ABIGAIL DE GUADALUPE PEREZ VAZQUEZ,,2024,,,,,0,,,,,,
 yuc-07.008,20548,Calotmul,1990,0,15,nov,31,31008,31008,pri,m,EDER EVELIO CASTRO AZCORRA,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.008,20549,Calotmul,1993,0,28,nov,31,31008,31008,pri,m,RAMON MENDICUTI TUZ,,Term-limited-p-won,,pan,0.6582,,0,inafed,0,0,,,
 yuc-09.008,20550,Calotmul,1995,0,28,may,31,31008,31008,pri,m,SANTIAGO POLANCO MENESES,,Term-limited-p-won,,pan,0.8049,,0,inafed,0,0,,,
@@ -20572,7 +20572,7 @@ yuc-14.009,20567,Cansahcab,2010,0,16,may,31,31009,31009,pan,m,JUAN MANUEL LUGO K
 yuc-15.009,20568,Cansahcab,2012,0,1,jul,31,31009,31009,pri-pvem,m,FELIPE CHAN MAY,,Term-limited-p-won,,pan,0.2069,,0,,0,0,,,
 yuc-16.009,20569,Cansahcab,2015,0,7,jun,31,31009,31009,pri,m,VICTOR MANUEL POOT AYALA,,Out-p-lost,,pan,0.0189,,0,,0,0,,,
 yuc-17.009,20570,Cansahcab,2018,0,1,jul,31,31009,31009,prd,m,FRANCISCO JAVIER CHALE KU,1,Reran-beaten,WENDY GENOVEVA BRITO SANTANA,pri,0.0789,,0,,1,1,,,ok
-yuc-18.009,20571,Cansahcab,2021,0,6,jun,31,31009,31009,pan,,PAULINO EK CHAN,,2024,,,,,0,,,,,,
+yuc-18.009,20571,Cansahcab,2021,0,6,jun,31,31009,31009,pan,m,PAULINO EK CHAN,,2024,,,,,0,,,,,,
 yuc-07.010,20572,Cantamayec,1990,0,15,nov,31,31010,31010,pri,m,HUMBERTO DOMINGUEZ DZUL,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.010,20573,Cantamayec,1993,0,28,nov,31,31010,31010,pri,m,HIGINIO URTECHO VERMON,,Term-limited-p-won,,pan,0.7639,,0,inafed,0,0,,,
 yuc-09.010,20574,Cantamayec,1995,0,28,may,31,31010,31010,pri,m,JOSE REFUGIO CETINA DZIB,,Term-limited-p-won,,pan,0.4478,,0,inafed,0,0,,,
@@ -20584,7 +20584,7 @@ yuc-14.010,20579,Cantamayec,2010,0,16,may,31,31010,31010,pri,m,MIQUEAS GABRIEL E
 yuc-15.010,20580,Cantamayec,2012,0,1,jul,31,31010,31010,pri-pvem,m,JOSE MELCHOR DZIB DZIB,,Term-limited-p-lost,,pan,0.0193,,0,,0,0,,,
 yuc-16.010,20581,Cantamayec,2015,0,7,jun,31,31010,31010,pan,m,ORLANDO EK SANSORES,,Out-p-won,,pri,0.0803,,0,,1,1,,,ok
 yuc-17.010,20582,Cantamayec,2018,0,1,jul,31,31010,31010,pan,f,DORCA GRISELDA CHAN MAY,1,Reran-beaten,WILIAN RAFAEL BERMON CONRRADO,pvem,0.0969,,0,,0,0,,,
-yuc-18.010,20583,Cantamayec,2021,0,6,jun,31,31010,31010,pri,,WILIAN RAFAEL BERMON CONRRADO,,2024,,,,,0,,,,,,
+yuc-18.010,20583,Cantamayec,2021,0,6,jun,31,31010,31010,pri,m,WILIAN RAFAEL BERMON CONRRADO,,2024,,,,,0,,,,,,
 yuc-07.011,20584,Celestún,1990,0,15,nov,31,31011,31011,pri,,,,Term-limited-p-won,,pan,0.4358,,0,,0,0,,,
 yuc-08.011,20585,Celestún,1993,0,28,nov,31,31011,31011,pri,,,,Term-limited-p-lost,,pan,0.4577,,0,,0,0,,,
 yuc-09.011,20586,Celestún,1995,0,28,may,31,31011,31011,pan,,,,Term-limited-p-lost,,pri,0.0653,,0,,0,0,,,
@@ -20608,7 +20608,7 @@ yuc-14.012,20603,Cenotillo,2010,0,16,may,31,31012,31012,pan,m,RENE OSCAR BURGOS 
 yuc-15.012,20604,Cenotillo,2012,0,1,jul,31,31012,31012,pan,f,SONIA NOEMI VALLEJOS ALBORNOZ,,Term-limited-p-lost,,pvem,0.0586,,0,,0,0,,,
 yuc-16.012,20605,Cenotillo,2015,0,7,jun,31,31012,31012,pri,m,DOMINGO NAVARRETE MEDINA,,Out-p-won,,pan,0.1702,,0,,0,0,,,
 yuc-17.012,20606,Cenotillo,2018,0,1,jul,31,31012,31012,pri-pna,f,MARTA LETICIA NUÑEZ POLANCO,1,Out-p-lost,ANGEL HERMENEGILDO CARDOZ FERNANDEZ,pan,0.1084,,0,,0,0,,,
-yuc-18.012,20607,Cenotillo,2021,0,6,jun,31,31012,31012,pan,,ANGEL HERMENEGILDO CARDOZ FERNANDEZ,,2024,,,,,0,,,,,,
+yuc-18.012,20607,Cenotillo,2021,0,6,jun,31,31012,31012,pan,m,ANGEL HERMENEGILDO CARDOZ FERNANDEZ,,2024,,,,,0,,,,,,
 yuc-07.013,20608,Conkal,1990,0,15,nov,31,31013,31013,pri,m,BERNABE ALPUCHE CHI,,Term-limited-p-won,,parm,0.4167,,0,inafed,0,0,,,
 yuc-08.013,20609,Conkal,1993,0,28,nov,31,31013,31013,pri,m,MIGUEL ANGEL ARGAEZ AGUILAR,,Term-limited-p-won,,pan,0.2794,,0,inafed,0,0,,,
 yuc-09.013,20610,Conkal,1995,0,28,may,31,31013,31013,pri,m,MARIO OCTAVIANO AGUILAR GAMBOA,,Term-limited-p-won,,pan,0.3293,,0,inafed,0,0,,,
@@ -20620,7 +20620,7 @@ yuc-14.013,20615,Conkal,2010,0,16,may,31,31013,31013,pan,m,JORGE ENRIQUE PEREZ P
 yuc-15.013,20616,Conkal,2012,0,1,jul,31,31013,31013,pri-pvem,m,FRANCISCO EVIA GAMBOA,,Term-limited-p-lost,,pan,0.2037,,0,,1,1,,,ok
 yuc-16.013,20617,Conkal,2015,0,7,jun,31,31013,31013,pan,m,JORGE ENRIQUE PEREZ PARRA,,Reran-beaten,,pri,0.0065,,0,,1,1,,,ok
 yuc-17.013,20618,Conkal,2018,0,1,jul,31,31013,31013,pri-pvem-pna,f,HISELLE DEL CARMEN DIAZ DEL CASTILLO CANCHE,1,Reelected,JORGE ENRIQUE PEREZ PARRA,pan-mc,0.0527,,0,,0,0,,,
-yuc-18.013,20619,Conkal,2021,0,6,jun,31,31013,31013,pri-prd,,HISELLE DEL CARMEN DIAZ DEL CASTILLO CANCHE,,2024,,,,,0,,,,,,
+yuc-18.013,20619,Conkal,2021,0,6,jun,31,31013,31013,pri-prd,f,HISELLE DEL CARMEN DIAZ DEL CASTILLO CANCHE,,2024,,,,,0,,,,,,
 yuc-07.014,20620,Cuncunul,1990,0,15,nov,31,31014,31014,pri,m,ROGER JAVIER SUASTE SALAZAR,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.014,20621,Cuncunul,1993,0,28,nov,31,31014,31014,pri,m,REYNALDO PERERA DZUL,,Term-limited-p-won,,pan,0.8118,,0,inafed,0,0,,,
 yuc-09.014,20622,Cuncunul,1995,0,28,may,31,31014,31014,pri,m,ADOLFO NAUTA CHAN,,Term-limited-p-won,,otros,0.706,,0,inafed,0,0,,,
@@ -20644,7 +20644,7 @@ yuc-14.015,20639,Cuzamá,2010,0,16,may,31,31015,31015,pri,m,WILIAM ALBERTO PECH 
 yuc-15.015,20640,Cuzamá,2012,0,1,jul,31,31015,31015,pri-pvem,m,WILBERT ORLANDO SOBERANIS VILLANUEVA,,Term-limited-p-won,,pan,0.2458,,0,,0,0,,,
 yuc-16.015,20641,Cuzamá,2015,0,7,jun,31,31015,31015,pri,m,JOSE CARLOS AKE KU,,Out-p-won,,pan,0.0981,,0,,0,0,,,
 yuc-17.015,20642,Cuzamá,2018,0,1,jul,31,31015,31015,pri-pvem,f,MARIA ANTONIA ZAPATA MAAS,1,Reran-beaten,VICTOR MANUEL SOBERANIS VILLANUEVA,mc,0.0744,,0,,0,0,,,
-yuc-18.015,20643,Cuzamá,2021,0,6,jun,31,31015,31015,pan,,VICTOR MANUEL  SOBERANIS VILLANUEVA ,,2024,,,,,0,,,,,,
+yuc-18.015,20643,Cuzamá,2021,0,6,jun,31,31015,31015,pan,m,VICTOR MANUEL  SOBERANIS VILLANUEVA ,,2024,,,,,0,,,,,,
 yuc-07.016,20644,Chacsinkín,1990,0,15,nov,31,31016,31016,pri,m,ANATOLIO MUKUL MAY,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.016,20645,Chacsinkín,1993,0,28,nov,31,31016,31016,pri,m,ALVARO MATOS YAB,,Term-limited-p-won,,pan,0.7302,,0,inafed,0,0,,,
 yuc-09.016,20646,Chacsinkín,1995,0,28,may,31,31016,31016,pri,m,ANATOLIO MUKUL MAY,,Term-limited-p-won,,pan,0.022,,0,inafed,1,1,,,ok
@@ -20656,7 +20656,7 @@ yuc-14.016,20651,Chacsinkín,2010,0,16,may,31,31016,31016,pri,m,HUMBERTO CHABLE 
 yuc-15.016,20652,Chacsinkín,2012,0,1,jul,31,31016,31016,pri,f,GLORIA JESUS MUKUL BORGES,,Term-limited-p-won,,pan,0.139,,0,,0,0,,,
 yuc-16.016,20653,Chacsinkín,2015,0,7,jun,31,31016,31016,pri,m,JOSE ANTONIO SANCHEZ ANGULO,,Out-p-lost,,pan,0.1429,,0,,0,0,,,
 yuc-17.016,20654,Chacsinkín,2018,0,1,jul,31,31016,31016,pvem,m,JOSE FLAVIO MUKUL MEDINA,1,Out-p-lost,IRENE DEL ROSARIO KU KU,pri,0.1223,,0,,0,0,,,
-yuc-18.016,20655,Chacsinkín,2021,0,6,jun,31,31016,31016,pri,,ROGER HUMBERTO SANCHEZ ANGULO,,2024,,,,,0,,,,,,
+yuc-18.016,20655,Chacsinkín,2021,0,6,jun,31,31016,31016,pri,m,ROGER HUMBERTO SANCHEZ ANGULO,,2024,,,,,0,,,,,,
 yuc-07.017,20656,Chankom,1990,0,15,nov,31,31017,31017,pri,m,ARTURO CIME MIS,,Term-limited-p-won,,pan,0.3197,,0,inafed,0,0,,,
 yuc-08.017,20657,Chankom,1993,0,28,nov,31,31017,31017,pri,m,WILFREDO CIME ESTRELLA,,Term-limited-p-won,,pan,0.3237,,0,inafed,0,0,,,
 yuc-09.017,20658,Chankom,1995,0,28,may,31,31017,31017,pri,m,BENJAMIN CIME EK,,Term-limited-p-won,,pan,0.3726,,0,inafed,0,0,,,ok
@@ -20680,7 +20680,7 @@ yuc-14.018,20675,Chapab,2010,0,16,may,31,31018,31018,pri,m,RAMIRO ALONSO MATOS C
 yuc-15.018,20676,Chapab,2012,0,1,jul,31,31018,31018,pan,m,PEDRO PABLO ZAPATA PACHECO,,Term-limited-p-lost,,pri,0.0078,,0,,0,0,,,
 yuc-16.018,20677,Chapab,2015,0,7,jun,31,31018,31018,pri,f,RUTH MICAELA CAUICH COUOH,,Out-p-lost,,pan,0.0193,,0,,0,0,,,
 yuc-17.018,20678,Chapab,2018,0,1,jul,31,31018,31018,pan,m,ELBIER ANTONIO SALAZAR CHI,1,Out-p-lost,TERESITA DE JESUS AVILA CASTAÑEDA,pri,0.1467,,0,,0,0,,,
-yuc-18.018,20679,Chapab,2021,0,6,jun,31,31018,31018,pri,,LIZBET CONCEPCION RIVERO ZAPATA,,2024,,,,,0,,,,,,
+yuc-18.018,20679,Chapab,2021,0,6,jun,31,31018,31018,pri,f,LIZBET CONCEPCION RIVERO ZAPATA,,2024,,,,,0,,,,,,
 yuc-07.019,20680,Chemax,1990,0,15,nov,31,31019,31019,pri,m,ISIDRO EUAN CHI,,Term-limited-p-won,,pan,0.1103,,0,inafed,0,0,,,
 yuc-08.019,20681,Chemax,1993,0,28,nov,31,31019,31019,pri,m,PEDRO PASCUAL XIU PACHECO,,Term-limited-p-won,,pan,0.1514,,0,inafed,0,0,,,
 yuc-09.019,20682,Chemax,1995,0,28,may,31,31019,31019,pri,m,BERNARDINO HOIL PERERA,,Term-limited-p-won,,pan,0.1026,,0,inafed,0,0,,,
@@ -20692,7 +20692,7 @@ yuc-14.019,20687,Chemax,2010,0,16,may,31,31019,31019,pan,m,CAMILO UITZIL CHIMAL,
 yuc-15.019,20688,Chemax,2012,0,1,jul,31,31019,31019,pan,m,LUCIO BALAM HERRERA,,Term-limited-p-won,,pri-pvem,0.0131,,0,,1,1,,,ok
 yuc-16.019,20689,Chemax,2015,0,7,jun,31,31019,31019,pan,m,GASPAR BALAM HERRERA,,Out-p-won,,pri,0.0213,,0,,0,0,,,
 yuc-17.019,20690,Chemax,2018,0,1,jul,31,31019,31019,pan,m,LUCIO BALAM HERRERA,1,Reelected,MANUEL CAUICH EUAN,pri,0.1207,,0,,1,1,,,ok
-yuc-18.019,20691,Chemax,2021,0,6,jun,31,31019,31019,pan,,LUCIO BALAM HERRERA,,2024,,,,,0,,,,,,
+yuc-18.019,20691,Chemax,2021,0,6,jun,31,31019,31019,pan,m,LUCIO BALAM HERRERA,,2024,,,,,0,,,,,,
 yuc-07.020,20692,Chicxulub Pueblo,1990,0,15,nov,31,31020,31020,pri,m,CARLOS OMAR CARRILLO PECH,,Term-limited-p-won,,pan,0.4283,,0,inafed,0,0,,,
 yuc-08.020,20693,Chicxulub Pueblo,1993,0,28,nov,31,31020,31020,pri,m,GILBERTO JESUS ZAPATA ALE,,Term-limited-p-won,,pan,0.3763,,0,inafed,0,0,,,
 yuc-09.020,20694,Chicxulub Pueblo,1995,0,28,may,31,31020,31020,pri,f,GUADALUPE DEL ROSARIO CANTO ALE,,Term-limited-p-won,,pan,0.3578,,0,inafed,0,0,,,ok
@@ -20704,7 +20704,7 @@ yuc-14.020,20699,Chicxulub Pueblo,2010,0,16,may,31,31020,31020,pan,m,FELIX PADRO
 yuc-15.020,20700,Chicxulub Pueblo,2012,0,1,jul,31,31020,31020,pri-pvem,f,DANIELA ALICIA POOL ALVARADO,,Term-limited-p-won,,pan,0.0488,,0,,0,0,,,
 yuc-16.020,20701,Chicxulub Pueblo,2015,0,7,jun,31,31020,31020,pri,f,GUADALUPE CANTO ALE,,Reelected,,pan,0.0018,,0,,1,1,,,ok
 yuc-17.020,20702,Chicxulub Pueblo,2018,0,1,jul,31,31020,31020,pri-pvem-pna,f,GUADALUPE CANTO ALE,1,Term-limited-p-won,LUIS ASUNCION CANTO ALE,pan,0.1724,,0,,1,1,,,ok
-yuc-18.020,20703,Chicxulub Pueblo,2021,0,6,jun,31,31020,31020,pan-pna,,AMILCAR ABRICEL REYES MARIN,,2024,,,,,0,,,,,,
+yuc-18.020,20703,Chicxulub Pueblo,2021,0,6,jun,31,31020,31020,pan-pna,m,AMILCAR ABRICEL REYES MARIN,,2024,,,,,0,,,,,,
 yuc-07.021,20704,Chichimilá,1990,0,15,nov,31,31021,31021,pri,m,YUILEBALDO CHE Y BACAB,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.021,20705,Chichimilá,1993,0,28,nov,31,31021,31021,pri,m,GABRIEL H JIMENEZ AGUILAR,,Term-limited-p-won,,prd,0.7252,,0,inafed,0,0,,,
 yuc-09.021,20706,Chichimilá,1995,0,28,may,31,31021,31021,pri,m,JORGE ADRIAN MEDINA MARTIN,,Term-limited-p-won,,prd,0.9553,,0,inafed,0,0,,,
@@ -20716,7 +20716,7 @@ yuc-14.021,20711,Chichimilá,2010,0,16,may,31,31021,31021,pri,m,FRANCISCO MEDINA
 yuc-15.021,20712,Chichimilá,2012,0,1,jul,31,31021,31021,pri-pvem,m,JOEL EDUARDO TUZ,,Term-limited-p-won,,pna,0.0922,,0,,0,0,,,
 yuc-16.021,20713,Chichimilá,2015,0,7,jun,31,31021,31021,pri,m,FRANCISCO MEDINA MARTIN,,Out-p-won,,pan,0.1207,,0,,1,1,,,ok
 yuc-17.021,20714,Chichimilá,2018,0,1,jul,31,31021,31021,pri,m,SAMUEL UC POOT,1,Out-p-won,MIGUEL ANGEL AGUILAR NOVELO,pan-prd,0.2167,,0,,0,0,,,
-yuc-18.021,20715,Chichimilá,2021,0,6,jun,31,31021,31021,pri,,FRANCISCO MEDINA MARTIN,,2024,,,,,0,,,,,,
+yuc-18.021,20715,Chichimilá,2021,0,6,jun,31,31021,31021,pri,m,FRANCISCO MEDINA MARTIN,,2024,,,,,0,,1,1,,,
 yuc-07.022,20716,Chikindzonot,1990,0,15,nov,31,31022,31022,pri,m,ESTANISLAO POOT POOT,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.022,20717,Chikindzonot,1993,0,28,nov,31,31022,31022,pri,m,FELIX CHAN KAUIL,,Term-limited-p-won,,pan,0.5321,,0,inafed,0,0,,,
 yuc-09.022,20718,Chikindzonot,1995,0,28,may,31,31022,31022,pri,m,MACLOVIO PAAT POOT,,Term-limited-p-won,,pan,0.2533,,0,inafed,0,0,,,
@@ -20728,7 +20728,7 @@ yuc-14.022,20723,Chikindzonot,2010,0,16,may,31,31022,31022,pri,m,FLORENCIO KAUIL
 yuc-15.022,20724,Chikindzonot,2012,0,1,jul,31,31022,31022,pri-pvem,m,CATALINO CHAN CHUC,,Term-limited-p-won,,pan,0.0975,,0,,0,0,,,
 yuc-16.022,20725,Chikindzonot,2015,0,7,jun,31,31022,31022,pri,m,LUIS KAUIL CAHUM,,Out-p-won,,pan,0.1104,,0,,0,0,,,
 yuc-17.022,20726,Chikindzonot,2018,0,1,jul,31,31022,31022,pri,m,JOSE DOMINGO CHAN CHUC,1,Out-p-won,FEDERICO PECH CHUC,pt-morena-pes,0.5684,,0,,0,0,,,
-yuc-18.022,20727,Chikindzonot,2021,0,6,jun,31,31022,31022,pri,,ISIDRO KAUIL CHAN,,2024,,,,,0,,,,,,
+yuc-18.022,20727,Chikindzonot,2021,0,6,jun,31,31022,31022,pri,m,ISIDRO KAUIL CHAN,,2024,,,,,0,,,,,,
 yuc-07.023,20728,Chocholá,1990,0,15,nov,31,31023,31023,pri,m,ERMILO PEÑA,,Term-limited-p-won,,pan,0.2683,,0,inafed,0,0,,,
 yuc-08.023,20729,Chocholá,1993,0,28,nov,31,31023,31023,pri,m,CANDELARIO MEDINA PAREDES,,Term-limited-p-won,,pan,0.4489,,0,inafed,0,0,,,
 yuc-09.023,20730,Chocholá,1995,0,28,may,31,31023,31023,pri,m,VIRIGILIO MARTIN QUINTAL,,Term-limited-p-won,,pan,0.3368,,0,inafed,0,0,,,
@@ -20738,9 +20738,9 @@ yuc-12.023,20733,Chocholá,2004,0,23,may,31,31023,31023,pan,m,PEDRO ANTONIO COB 
 yuc-13.023,20734,Chocholá,2007,0,20,may,31,31023,31023,pri,m,JOSUE JESUS QUINTAL SOLIS,,Term-limited-p-won,,pan,0.1716,,0,,0,0,,,
 yuc-14.023,20735,Chocholá,2010,0,16,may,31,31023,31023,pri,f,IRMA NOEMI QUINTAL,,Term-limited-p-won,,pan,0.0382,,0,,1,1,,,ok
 yuc-15.023,20736,Chocholá,2012,0,1,jul,31,31023,31023,pri-pvem,m,GILBERTO ANDRES MEDINA PAREDES,,Term-limited-p-won,,pan,0.1196,,0,,0,0,,,
-yuc-16.023,20737,Chocholá,2015,0,7,jun,31,31023,31023,pri,m,ERWIN MARTIN ALCOCER,,Out-p-lost,,pan,0.2028,,0,,0,0,,,
+yuc-16.023,20737,Chocholá,2015,0,7,jun,31,31023,31023,pri,m,ERWIN OBET MARTIN ALCOCER,,Out-p-lost,,pan,0.2028,,0,,0,0,,,
 yuc-17.023,20738,Chocholá,2018,0,1,jul,31,31023,31023,mc,m,PEDRO ALCANTARA PECH ARAGON,1,Out-p-lost,JUANITA POLANCO QUINTAL,pri-pvem-pna,0.0291,,0,,0,0,,,
-yuc-18.023,20739,Chocholá,2021,0,6,jun,31,31023,31023,pri,,ERWIN OBET MARTIN ALCOCER,,2024,,,,,0,,,,,,
+yuc-18.023,20739,Chocholá,2021,0,6,jun,31,31023,31023,pri,m,ERWIN OBET MARTIN ALCOCER,,2024,,,,,0,,1,1,,,
 yuc-07.024,20740,Chumayel,1990,0,15,nov,31,31024,31024,pri,m,JORGE ARMANDO PERAZA POLANCO,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.024,20741,Chumayel,1993,0,28,nov,31,31024,31024,pri,m,EMILIANO CHAN CRUZ,,Term-limited-p-won,,pan,0.8145,,0,inafed,0,0,,,
 yuc-09.024,20742,Chumayel,1995,0,28,may,31,31024,31024,pri,m,LUIS DEMETRIO XICUM CANUL,,Term-limited-p-won,,prd,0.2485,,0,inafed,0,0,,,
@@ -20752,7 +20752,7 @@ yuc-14.024,20747,Chumayel,2010,0,16,may,31,31024,31024,pri,m,MANUEL ANTONIO COBA
 yuc-15.024,20748,Chumayel,2012,0,1,jul,31,31024,31024,pan,f,MARITZA JASMIN ITZA,,Term-limited-p-lost,,pri-pvem,0.1501,,0,,0,0,,,
 yuc-16.024,20749,Chumayel,2015,0,7,jun,31,31024,31024,pri,m,VIRGILIO ROMAN BRISEÑO CHAN,,Out-p-lost,,pan,0.0515,,0,,0,0,,,
 yuc-17.024,20750,Chumayel,2018,0,1,jul,31,31024,31024,pan,m,JUAN MANUEL UC CRUZ,1,Out-p-lost,FROILAN FLORENTINO BRICEÑO LOPEZ,pri,0.1429,,0,,0,0,,,
-yuc-18.024,20751,Chumayel,2021,0,6,jun,31,31024,31024,morena,,CLEMENTE JULIAN CANO CHAN,,2024,,,,,0,,,,,,
+yuc-18.024,20751,Chumayel,2021,0,6,jun,31,31024,31024,morena,m,CLEMENTE JULIAN CANO CHAN,,2024,,,,,0,,,,,,
 yuc-07.025,20752,Dzán,1990,0,15,nov,31,31025,31025,pan,m,JOSE JUSTINO KU KU,,Term-limited-p-won,,pri,0.1188,,0,inafed,0,0,,,
 yuc-08.025,20753,Dzán,1993,0,28,nov,31,31025,31025,pan,f,MIRNA TOMASA PAREDES INTERIAN,,Term-limited-p-won,,pri,0.1988,,0,inafed,0,0,,,ok
 yuc-09.025,20754,Dzán,1995,0,28,may,31,31025,31025,pan,m,FRANCISCO JAVIER NOVELO KU,,Term-limited-p-lost,,pri,0.6016,,0,inafed,0,0,,,
@@ -20764,7 +20764,7 @@ yuc-14.025,20759,Dzán,2010,0,16,may,31,31025,31025,pan,m,WILBERT CHAVEZ KU,,Ter
 yuc-15.025,20760,Dzán,2012,0,1,jul,31,31025,31025,pan,m,LUIS MANUEL NOVELO KU,,Term-limited-p-won,,pri-pvem,0.0731,,0,,0,0,,,ok
 yuc-16.025,20761,Dzán,2015,0,7,jun,31,31025,31025,pan,m,ROBERTO KU SANDOVAL,,Out-p-won,,pri,0.1222,,0,,0,0,,,
 yuc-17.025,20762,Dzán,2018,0,1,jul,31,31025,31025,pan,m,LUIS MANUEL NOVELO KU,1,Reran-beaten,JOSE JUSTINO KU KU,pri,0.0787,,0,,1,1,,,ok
-yuc-18.025,20763,Dzán,2021,0,6,jun,31,31025,31025,pri,,JOSE ANTONIO PEREZ  CABRERA,,2024,,,,,0,,,,,,
+yuc-18.025,20763,Dzán,2021,0,6,jun,31,31025,31025,pri,m,JOSE ANTONIO PEREZ  CABRERA,,2024,,,,,0,,,,,,
 yuc-07.026,20764,Dzemul,1990,0,15,nov,31,31026,31026,pri,m,JUAN A SANCHEZ ARGAEZ,,Term-limited-p-won,,pan,0.8232,,0,inafed,0,0,,,
 yuc-08.026,20765,Dzemul,1993,0,28,nov,31,31026,31026,pri,m,ROGER ORTEGA FALLA,,Term-limited-p-won,,pan,0.5004,,0,inafed,0,0,,,
 yuc-09.026,20766,Dzemul,1995,0,28,may,31,31026,31026,pri,m,RICARDO PACHECO ORTEGA,,Term-limited-p-won,,pan,0.5448,,0,inafed,0,0,,,
@@ -20776,7 +20776,7 @@ yuc-14.026,20771,Dzemul,2010,0,16,may,31,31026,31026,pan,f,ROSELY FRANCISCA BACE
 yuc-15.026,20772,Dzemul,2012,0,1,jul,31,31026,31026,pri-pvem,m,DOMINGO ARGIMIRO ORTEGA GRANIEL,,Term-limited-p-lost,,pan,0.0429,,0,,0,0,,,
 yuc-16.026,20773,Dzemul,2015,0,7,jun,31,31026,31026,pan,m,DANIEL GREGORIO CAMPOS ORTEGA,,Out-p-lost,,pri,0.0348,,0,,0,0,,,
 yuc-17.026,20774,Dzemul,2018,0,1,jul,31,31026,31026,pri,m,JOSE LUIS GRANIEL ORTEGA,1,Out-p-lost,JOSE WILBERTO FLOTA AKE,pvem,0.0261,,0,,0,0,,,
-yuc-18.026,20775,Dzemul,2021,0,6,jun,31,31026,31026,mc,,JOSE WILBERTO FLOTA AKE,,2024,,,,,0,,,,,,
+yuc-18.026,20775,Dzemul,2021,0,6,jun,31,31026,31026,mc,m,JOSE WILBERTO FLOTA AKE,,2024,,,,,0,,,,,,
 yuc-07.027,20776,Dzidzantún,1990,0,15,nov,31,31027,31027,pri,m,RAY VIVAS GUERRERA,,Term-limited-p-won,,prd,0.3596,,0,inafed,0,0,,,
 yuc-08.027,20777,Dzidzantún,1993,0,28,nov,31,31027,31027,pri,m,MIGUEL ANGEL AVILA Y CORAL,,Term-limited-p-won,,pan,0.3945,,0,inafed,0,0,,,
 yuc-09.027,20778,Dzidzantún,1995,0,28,may,31,31027,31027,pri,m,MIGUEL ANGEL ZALDIVAR Y FLORES,,Term-limited-p-won,,pan,0.5138,,0,inafed,0,0,,,ok
@@ -20788,7 +20788,7 @@ yuc-14.027,20783,Dzidzantún,2010,0,16,may,31,31027,31027,pri,m,ALVARO CORAL EST
 yuc-15.027,20784,Dzidzantún,2012,0,1,jul,31,31027,31027,pri-pvem,m,ISMAEL AGUILAR PUC,,Term-limited-p-lost,,pan,0.1755,,0,,0,0,,,ok
 yuc-16.027,20785,Dzidzantún,2015,0,7,jun,31,31027,31027,pan,m,RAUL ARCADIO TORRES FAISAL,,Reran-beaten,,pri,0.0722,,0,,0,0,,,
 yuc-17.027,20786,Dzidzantún,2018,0,1,jul,31,31027,31027,pri,m,ISMAEL AGUILAR PUC,1,Reelected,RAUL ARCADIO TORRES FAISAL,pan,0.0286,,0,,1,1,,,ok
-yuc-18.027,20787,Dzidzantún,2021,0,6,jun,31,31027,31027,pri,,ISMAEL AGUILAR PUC,,2024,,,,,0,,,,,,
+yuc-18.027,20787,Dzidzantún,2021,0,6,jun,31,31027,31027,pri,m,ISMAEL AGUILAR PUC,,2024,,,,,0,,,,,,
 yuc-07.028,20788,Dzilam de Bravo,1990,0,15,nov,31,31028,31028,pri,m,MANUEL SIERRA PERAZA,,Term-limited-p-won,,pan,0.2654,,0,inafed,0,0,,,
 yuc-08.028,20789,Dzilam de Bravo,1993,0,28,nov,31,31028,31028,pri,m,JAVIER LORETO MARRUFO GONZALEZ,,Term-limited-p-won,,pan,0.2571,,0,inafed,0,0,,,ok
 yuc-09.028,20790,Dzilam de Bravo,1995,0,28,may,31,31028,31028,pri,m,JOSE DOLORES ABRAHAM RIVERO CAMPOS,,Term-limited-p-won,,pan,0.2404,,0,inafed,0,0,,,ok
@@ -20800,7 +20800,7 @@ yuc-14.028,20795,Dzilam de Bravo,2010,0,16,may,31,31028,31028,pan,m,JAVIER LORET
 yuc-15.028,20796,Dzilam de Bravo,2012,0,1,jul,31,31028,31028,pri-pvem,m,PEDRO JESUS CASTILLO REYES,,Term-limited-p-won,,pan,0.2888,,0,,0,0,,,
 yuc-16.028,20797,Dzilam de Bravo,2015,0,7,jun,31,31028,31028,pri-pvem-pna,m,JULIO ABRAHAM VILLANUEVA RIVERO,,Out-p-won,,pan,0.1374,,0,,0,0,,,
 yuc-17.028,20798,Dzilam de Bravo,2018,0,1,jul,31,31028,31028,pri,m,DANIEL ARMANDO HERRERA RIVERA,1,Reelected,EDUARDO ALBERTO LOPEZ CRUZ,pan,0.0347,,0,,0,0,,,
-yuc-18.028,20799,Dzilam de Bravo,2021,0,6,jun,31,31028,31028,pri,,DANIEL ARMANDO HERRERA RIVERA,,2024,,,,,0,,,,,,
+yuc-18.028,20799,Dzilam de Bravo,2021,0,6,jun,31,31028,31028,pri,m,DANIEL ARMANDO HERRERA RIVERA,,2024,,,,,0,,,,,,
 yuc-07.029,20800,Dzilam González,1990,0,15,nov,31,31029,31029,pri,m,JULIO FRANCISCO CARRILLO HERRERA,,Term-limited-p-won,,pan,0.3039,,0,inafed,0,0,,,
 yuc-08.029,20801,Dzilam González,1993,0,28,nov,31,31029,31029,pri,m,MELESIO AGUILAR VELASQUEZ,,Term-limited-p-won,,pan,0.3967,,0,inafed,0,0,,,
 yuc-09.029,20802,Dzilam González,1995,0,28,may,31,31029,31029,pri,m,GUILLERMO BAEZA BOBADILLA,,Term-limited-p-won,,pan,0.2768,,0,inafed,0,0,,,
@@ -20812,7 +20812,7 @@ yuc-14.029,20807,Dzilam González,2010,0,16,may,31,31029,31029,pri,m,JOSE HERRON
 yuc-15.029,20808,Dzilam González,2012,0,1,jul,31,31029,31029,pri-pvem,m,EDWIN ROBERTO MARTIN SEGURA,,Term-limited-p-won,,pan,0.0721,,0,,0,0,,,
 yuc-16.029,20809,Dzilam González,2015,0,7,jun,31,31029,31029,pri,m,JOSE CONCEPCION MARTIN HEREDIA,,Out-p-won,,pan,0.1581,,0,,0,0,,,
 yuc-17.029,20810,Dzilam González,2018,0,1,jul,31,31029,31029,pri,m,CHRISTIAN ISMAEL CARRILLO BAEZA,1,Reelected,EDGAR LORENZO LIZAMA CAMACHO,pan-mc,0.0607,,0,,0,0,,,
-yuc-18.029,20811,Dzilam González,2021,0,6,jun,31,31029,31029,pri,,CHRISTIAN ISMAEL CARRILLO BAEZA,,2024,,,,,0,,,,,,
+yuc-18.029,20811,Dzilam González,2021,0,6,jun,31,31029,31029,pri,m,CHRISTIAN ISMAEL CARRILLO BAEZA,,2024,,,,,0,,,,,,
 yuc-07.030,20812,Dzitás,1990,0,15,nov,31,31030,31030,pri,m,JOSE HIPOLITO CHABLE HERRERA,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.030,20813,Dzitás,1993,0,28,nov,31,31030,31030,pri,m,EMILIANO YAH HAU,,Term-limited-p-won,,pan,0.5803,,0,inafed,0,0,,,
 yuc-09.030,20814,Dzitás,1995,0,28,may,31,31030,31030,pri,m,VENANCIO JAVIER CHABLE HERRERA,,Term-limited-p-won,,pan,0.3231,,0,inafed,0,0,,,ok
@@ -20824,7 +20824,7 @@ yuc-14.030,20819,Dzitás,2010,0,16,may,31,31030,31030,pan,f,ROSALIA HAU CAAMAL,,
 yuc-15.030,20820,Dzitás,2012,0,1,jul,31,31030,31030,pri-pvem,m,JOSE CRESENCIO CANUL POLANCO,,Term-limited-p-lost,,pan,0.006,,0,,1,1,,,ok
 yuc-16.030,20821,Dzitás,2015,0,7,jun,31,31030,31030,pan,m,NOE ESTELLIN PECH AGUILAR,,Out-p-lost,,pri,0.0321,,0,,0,0,,,
 yuc-17.030,20822,Dzitás,2018,0,1,jul,31,31030,31030,pri-pvem-pna,f,MIRIAM DEL SOCORRO ROSADO KOH,1,Out-p-won,JUAN FRANCISCO PEREZ KOH,pes,0.1055,,0,,0,0,,,
-yuc-18.030,20823,Dzitás,2021,0,6,jun,31,31030,31030,pan-pna,,JUAN FRANCISCO PEREZ KOH,,2024,,,,,0,,,,,,
+yuc-18.030,20823,Dzitás,2021,0,6,jun,31,31030,31030,pan-pna,m,JUAN FRANCISCO PEREZ KOH,,2024,,,,,0,,,,,,
 yuc-07.031,20824,Dzoncauich,1990,0,15,nov,31,31031,31031,pri,m,JUAN BAUTISTA CANCHE UH,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.031,20825,Dzoncauich,1993,0,28,nov,31,31031,31031,pri,m,GRACIANO CHIN HUAN,,Term-limited-p-won,,pan,0.6681,,0,inafed,0,0,,,
 yuc-09.031,20826,Dzoncauich,1995,0,28,may,31,31031,31031,pri,m,PASCUAL CHIN KIN,,Term-limited-p-won,,pan,0.7264,,0,inafed,0,0,,,
@@ -20836,7 +20836,7 @@ yuc-14.031,20831,Dzoncauich,2010,0,16,may,31,31031,31031,pan,f,ANGELICA M SANTOS
 yuc-15.031,20832,Dzoncauich,2012,0,1,jul,31,31031,31031,pan,m,RENAN ALBERTO COCOM VERDE,,Term-limited-p-lost,,pri,0.0243,,0,,0,0,,,
 yuc-16.031,20833,Dzoncauich,2015,0,7,jun,31,31031,31031,pri,m,EDUARDO ARON DIAZ SANTOS,,Out-p-won,,pan,0.0645,,0,,0,0,,,
 yuc-17.031,20834,Dzoncauich,2018,0,1,jul,31,31031,31031,pri-pvem-pna,f,GLORIA MAGALY RAZ COHUO,1,Reelected,ANGELICA MARIA SANTOS CHI,pan-mc,0.0678,,0,,0,0,,,
-yuc-18.031,20835,Dzoncauich,2021,0,6,jun,31,31031,31031,pri,,GLORIA MAGALY RAZ COHUO,,2024,,,,,0,,,,,,
+yuc-18.031,20835,Dzoncauich,2021,0,6,jun,31,31031,31031,pri,f,GLORIA MAGALY RAZ COHUO,,2024,,,,,0,,,,,,
 yuc-07.032,20836,Espita,1990,0,15,nov,31,31032,31032,pri,m,MATEO HAU KANTUN,,Term-limited-p-won,,pan,0.092,,0,inafed,0,0,,,
 yuc-08.032,20837,Espita,1993,0,28,nov,31,31032,31032,pri,m,FRANCISCO JAVIER LOPEZ OSORIO,,Term-limited-p-won,,pan,0.2401,,0,inafed,0,0,,,
 yuc-09.032,20838,Espita,1995,0,28,may,31,31032,31032,pri,m,JOSE RUY TRIAY PENICHE,,Term-limited-p-won,,pan,0.09,,0,inafed,0,0,,,
@@ -20848,7 +20848,7 @@ yuc-14.032,20843,Espita,2010,0,16,may,31,31032,31032,pri,m,JOSE LUIS UC MOO,,Ter
 yuc-15.032,20844,Espita,2012,0,1,jul,31,31032,31032,pri-pvem,m,CARLOS EROSA CORREA,,Term-limited-p-won,,pan,0.1145,,0,,0,0,,,
 yuc-16.032,20845,Espita,2015,0,7,jun,31,31032,31032,pri,m,MARCELINO CANUL CANUL,,Out-p-won,,pan,0.0568,,0,,0,0,,,
 yuc-17.032,20846,Espita,2018,0,1,jul,31,31032,31032,pri,m,JOSUE MANUEL CASTILLO AMEZQUITA,1,Out-p-lost,LAURO ISMAEL CANCHE CHAVES,pan,0.249,,0,,0,0,,,
-yuc-18.032,20847,Espita,2021,0,6,jun,31,31032,31032,pan-prd-pna,,MARTHA EUGENIA MENA ALCOCER,,2024,,,,,0,,,,,,
+yuc-18.032,20847,Espita,2021,0,6,jun,31,31032,31032,pan-prd-pna,f,MARTHA EUGENIA MENA ALCOCER,,2024,,,,,0,,,,,,
 yuc-07.033,20848,Halachó,1990,0,15,nov,31,31033,31033,pri,f,MELBA DEL ROSARIO ABRAHAM HOYOS,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.033,20849,Halachó,1993,0,28,nov,31,31033,31033,pri,m,PEDRO JAVIER CHI CAAMAL,,Term-limited-p-won,,pan,0.4529,,0,inafed,0,0,,,ok
 yuc-09.033,20850,Halachó,1995,0,28,may,31,31033,31033,pri,m,AMILCAR DAVID KU CASTILLO,,Term-limited-p-won,,prd,0.0464,,0,inafed,0,0,,,
@@ -20860,7 +20860,7 @@ yuc-14.033,20855,Halachó,2010,0,16,may,31,31033,31033,pan,m,RODOLFO AL CASTILLO
 yuc-15.033,20856,Halachó,2012,0,1,jul,31,31033,31033,pan,f,MARIA CECILIA ABRAHAM HOYOS,,Term-limited-p-lost,,pri-pvem,0.0338,,0,,0,0,,,
 yuc-16.033,20857,Halachó,2015,0,7,jun,31,31033,31033,pri,m,ERNESTO CHIM MUT,,Out-p-lost,,pan,0.0154,,0,,0,0,,,
 yuc-17.033,20858,Halachó,2018,0,1,jul,31,31033,31033,pna,m,RODOLFO ABELARDO CASTILLO HUCHIM,1,Reelected,DIANA CRISTINA HOYOS PUC,pri,0.073,,0,,1,1,,,ok
-yuc-18.033,20859,Halachó,2021,0,6,jun,31,31033,31033,pna,,RODOLFO ABELARDO CASTILLO  HUCHIM,,2024,,,,,0,,,,,,
+yuc-18.033,20859,Halachó,2021,0,6,jun,31,31033,31033,pna,m,RODOLFO ABELARDO CASTILLO  HUCHIM,,2024,,,,,0,,,,,,
 yuc-07.034,20860,Hocabá,1990,0,15,nov,31,31034,31034,pri,m,VIRGINO MEX DZIB,,Term-limited-p-won,,pan,0.4597,,0,inafed,0,0,,,
 yuc-08.034,20861,Hocabá,1993,0,28,nov,31,31034,31034,pri,m,ERIK EFRAIN CHAVARRIA DIAZ,,Term-limited-p-won,,pan,0.4005,,0,inafed,0,0,,,ok
 yuc-09.034,20862,Hocabá,1995,0,28,may,31,31034,31034,pri,m,LUIS FERNANDO SARABIA CASTRO,,Term-limited-p-won,,pan,0.494,,0,inafed,0,0,,,
@@ -20872,7 +20872,7 @@ yuc-14.034,20867,Hocabá,2010,0,16,may,31,31034,31034,pan,m,YMI GUIDILBERTO ECHE
 yuc-15.034,20868,Hocabá,2012,0,1,jul,31,31034,31034,pan,m,EULOGIO TZIB TUN,,Term-limited-p-lost,,pri,0.0867,,0,,0,0,,,
 yuc-16.034,20869,Hocabá,2015,0,7,jun,31,31034,31034,pri,m,MARCOS ANTONIO CAUICH YAH,,Out-p-lost,,pan,0.1421,,0,,0,0,,,
 yuc-17.034,20870,Hocabá,2018,0,1,jul,31,31034,31034,pt-morena,m,VICTOR JOSE CHAN CEN,1,Reran-beaten,DOMINGA DE JESUS TUN CHAN,pri,0.0554,,0,,0,0,,,
-yuc-18.034,20871,Hocabá,2021,0,6,jun,31,31034,31034,pri,,EDUARDO ENRIQUE EUAN FRANCO,,2024,,,,,0,,,,,,
+yuc-18.034,20871,Hocabá,2021,0,6,jun,31,31034,31034,pri,m,EDUARDO ENRIQUE EUAN FRANCO,,2024,,,,,0,,,,,,
 yuc-07.035,20872,Hoctún,1990,0,15,nov,31,31035,31035,pri,m,OCTAVIO ARJONA BARRERA,,Term-limited-p-won,,pan,0.8394,,0,inafed,0,0,,,
 yuc-08.035,20873,Hoctún,1993,0,28,nov,31,31035,31035,pri,m,MARIO ERNESTO SARABIA RICALDE,,Term-limited-p-won,,pan,0.5602,,0,inafed,0,0,,,ok
 yuc-09.035,20874,Hoctún,1995,0,28,may,31,31035,31035,pri,m,MIGUEL SANTIAGO TREJO MONTALVO,,Term-limited-p-won,,pan,0.4462,,0,inafed,0,0,,,
@@ -20896,7 +20896,7 @@ yuc-14.036,20891,Homún,2010,0,16,may,31,31036,31036,pri,m,EVELIO ECHEVERRIA CHA
 yuc-15.036,20892,Homún,2012,0,1,jul,31,31036,31036,pri-pvem,m,JOSE ALEJANDRO PECH PAT,,Term-limited-p-won,,pan,0.1726,,0,,0,0,,,
 yuc-16.036,20893,Homún,2015,0,7,jun,31,31036,31036,pri,m,ENRIQUE ECHEVERRIA CHAN,,Out-p-lost,,prd,0.451,,0,,0,0,,,
 yuc-17.036,20894,Homún,2018,0,1,jul,31,31036,31036,pan-mc,m,MANUEL JESUS CHI CHIN,1,Reran-beaten,JUAN LIMBER CHIM DZIB,pri,0.0191,,0,,0,0,,,
-yuc-18.036,20895,Homún,2021,0,6,jun,31,31036,31036,pri-prd,,SANDRA MARISOL GONGORA SALAS,,2024,,,,,0,,,,,,
+yuc-18.036,20895,Homún,2021,0,6,jun,31,31036,31036,pri-prd,f,SANDRA MARISOL GONGORA SALAS,,2024,,,,,0,,,,,,
 yuc-07.037,20896,Huhí,1990,0,15,nov,31,31037,31037,parm,m,SAMUEL CAUICH MONTALVO,,Term-limited-p-lost,,pri,0.2821,,0,inafed,0,0,,,
 yuc-08.037,20897,Huhí,1993,0,28,nov,31,31037,31037,pri,f,MICAELA MAGALY BENITEZ SANTOS,,Term-limited-p-won,,pan,0.1516,,0,inafed,0,0,,,
 yuc-09.037,20898,Huhí,1995,0,28,may,31,31037,31037,pri,m,JOSE CORNELIO CONTRERAS ECHEVERRIA,,Term-limited-p-won,,pan,0.2956,,0,inafed,0,0,,,
@@ -20920,7 +20920,7 @@ yuc-14.038,20915,Hunucmá,2010,0,16,may,31,31038,31038,pri,m,MARIO ANTONIO CHUC 
 yuc-15.038,20916,Hunucmá,2012,0,1,jul,31,31038,31038,pri-pvem,m,DELIO JAIME PEREZ TZAB,,Term-limited-p-lost,,pan,0.0613,,0,,0,0,,,
 yuc-16.038,20917,Hunucmá,2015,0,7,jun,31,31038,31038,pan,m,JOSE ALBERTO PADRON ROMERO,,Reelected,,pri,0.0746,,0,,0,0,,,ok
 yuc-17.038,20918,Hunucmá,2018,0,1,jul,31,31038,31038,pan-mc,m,JOSE ALBERTO PADRON ROMERO,1,Term-limited-p-lost,MARIO ALFONSO CEBALLOS BOJORQUEZ,pri,0.0748,,0,,1,1,,,ok
-yuc-18.038,20919,Hunucmá,2021,0,6,jun,31,31038,31038,morena,,EDNA MARISA FRANCO CEBALLOS,,2024,,,,,0,,,,,,
+yuc-18.038,20919,Hunucmá,2021,0,6,jun,31,31038,31038,morena,f,EDNA MARISA FRANCO CEBALLOS,,2024,,,,,0,,,,,,
 yuc-07.039,20920,Ixil,1990,0,15,nov,31,31039,31039,pri,m,ELEUTERIO A. MOGUEL PINTO,,Term-limited-p-won,,pan,0.427,,0,inafed,0,0,,,
 yuc-08.039,20921,Ixil,1993,0,28,nov,31,31039,31039,pri,m,VICTOR DANIEL HERNANDEZ TEC,,Term-limited-p-won,,pan,0.215,,0,inafed,0,0,,,
 yuc-09.039,20922,Ixil,1995,0,28,may,31,31039,31039,pri,m,EMILIO EK ORILLA,,Term-limited-p-won,,pan,0.3167,,0,inafed,0,0,,,
@@ -20932,7 +20932,7 @@ yuc-14.039,20927,Ixil,2010,0,16,may,31,31039,31039,pri,m,HECTOR CORDOVA MEZQUITA
 yuc-15.039,20928,Ixil,2012,0,1,jul,31,31039,31039,pri-pvem,m,JOSE EFRAIN AGUILAR MOGUEL,,Term-limited-p-won,,pan,0.1324,,0,,1,1,,,ok
 yuc-16.039,20929,Ixil,2015,0,7,jun,31,31039,31039,pri,m,ANASTASIO CORDOVA CHAN,,Out-p-won,,pan,0.0113,,0,,0,0,,,
 yuc-17.039,20930,Ixil,2018,0,1,jul,31,31039,31039,pri-pna,f,SANDRA GUADALUPE TEC YAM,1,Reran-beaten,SANDRA RAQUEL PECH CHI,pan-mc,0.0104,,0,,0,0,,,
-yuc-18.039,20931,Ixil,2021,0,6,jun,31,31039,31039,pan-pna,,SANDRA RAQUEL PECH CHI,,2024,,,,,0,,,,,,
+yuc-18.039,20931,Ixil,2021,0,6,jun,31,31039,31039,pan-pna,f,SANDRA RAQUEL PECH CHI,,2024,,,,,0,,,,,,
 yuc-07.040,20932,Izamal,1990,0,15,nov,31,31040,31040,pri,m,MANUEL JESUS PUGA BOLIO,,Term-limited-p-won,,pan,0.8507,,0,inafed,0,0,,,
 yuc-08.040,20933,Izamal,1993,0,28,nov,31,31040,31040,pri,m,JOSE MIGUEL RODRIGUEZ ASAF,,Term-limited-p-won,,pan,0.5849,,0,inafed,0,0,,,ok
 yuc-09.040,20934,Izamal,1995,0,28,may,31,31040,31040,pri,m,FRANCISCO LUGO GONZALEZ,,Term-limited-p-won,,pan,0.6331,,0,inafed,0,0,,,
@@ -20956,7 +20956,7 @@ yuc-14.041,20951,Kanasín,2010,0,16,may,31,31041,31041,pan,f,LEONOR CHAN UICAB,,
 yuc-15.041,20952,Kanasín,2012,0,1,jul,31,31041,31041,pri,m,CARLOS FERNANDO ANDRADE MUÑOZ,,Term-limited-p-won,,pan,0.0769,,0,,0,0,,,
 yuc-16.041,20953,Kanasín,2015,0,7,jun,31,31041,31041,pri,m,CARLOS MANUEL MORENO MAGAÑA,,Out-p-won,,pan,0.1854,,0,,0,0,,,
 yuc-17.041,20954,Kanasín,2018,0,1,jul,31,31041,31041,pri,m,WILLIAM ROMAN PEREZ CABRERA,1,Reran-beaten,LEONOR ERADIO CHAN UICAB,pan,0.04,,0,,0,0,,,
-yuc-18.041,20955,Kanasín,2021,0,6,jun,31,31041,31041,pan,,EDWIN JOSE BOJORQUEZ RAMIREZ,,2024,,,,,0,,,,,,
+yuc-18.041,20955,Kanasín,2021,0,6,jun,31,31041,31041,pan,m,EDWIN JOSE BOJORQUEZ RAMIREZ,,2024,,,,,0,,,,,,
 yuc-07.042,20956,Kantunil,1990,0,15,nov,31,31042,31042,pri,m,GASPAR RUIZ MAY,,Term-limited-p-won,,pan,0.4454,,0,inafed,0,0,,,
 yuc-08.042,20957,Kantunil,1993,0,28,nov,31,31042,31042,pri,m,LUIS ANGEL GAMBOA CONTRERAS,,Term-limited-p-won,,pan,0.5681,,0,inafed,0,0,,,ok
 yuc-09.042,20958,Kantunil,1995,0,28,may,31,31042,31042,pri,m,JOSE FRANCISCO RUIZ SOSA,,Term-limited-p-won,,pan,0.4675,,0,inafed,0,0,,,
@@ -20968,7 +20968,7 @@ yuc-14.042,20963,Kantunil,2010,0,16,may,31,31042,31042,pri,m,LUIS ANGEL GAMBOA C
 yuc-15.042,20964,Kantunil,2012,0,1,jul,31,31042,31042,pri-pvem,m,FELIPE PECH PADILLA,,Term-limited-p-lost,,pan,0.0672,,0,,0,0,,,
 yuc-16.042,20965,Kantunil,2015,0,7,jun,31,31042,31042,pan,m,VICTOR ALFONSO SOSA RUIZ,,Out-p-lost,,pri,0.0182,,0,,1,1,,,ok
 yuc-17.042,20966,Kantunil,2018,0,1,jul,31,31042,31042,pri-pna,f,MARIA RAYMUNDA CHE PECH,1,Dead-p-lost,LORENA PATRICIA GAMBOA MAY,pan-prd-mc,0.0462,Died in hospital 6oct2019,1,,1,1,,,ok
-yuc-18.042,20967,Kantunil,2021,0,6,jun,31,31042,31042,pan-prd,,LORENA PATRICIA GAMBOA MAY,,2024,,,,,0,,,,,,
+yuc-18.042,20967,Kantunil,2021,0,6,jun,31,31042,31042,pan-prd,f,LORENA PATRICIA GAMBOA MAY,,2024,,,,,0,,,,,,
 yuc-07.043,20968,Kaua,1990,0,15,nov,31,31043,31043,pri,m,FABIAN CHAN CEN,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.043,20969,Kaua,1993,0,28,nov,31,31043,31043,pri,m,EFREN DIACONO POOT MIS,,Term-limited-p-won,,pan,0.7427,,0,inafed,0,0,,,
 yuc-09.043,20970,Kaua,1995,0,28,may,31,31043,31043,pri,m,FABIAN CHAN CEN,,Term-limited-p-won,,pan,0.303,,0,inafed,1,1,,,ok
@@ -20980,7 +20980,7 @@ yuc-14.043,20975,Kaua,2010,0,16,may,31,31043,31043,pan,m,LAURO HAU MIS,,Term-lim
 yuc-15.043,20976,Kaua,2012,0,1,jul,31,31043,31043,pri-pvem,m,EDGAR RENE PERERA CAAMAL,,Term-limited-p-won,,pan,0.1215,,0,,0,0,,,
 yuc-16.043,20977,Kaua,2015,0,7,jun,31,31043,31043,pri,m,NICOLAS PASTOR KOYOC NOCH,,Out-p-won,,pan,0.0735,,0,,0,0,,,
 yuc-17.043,20978,Kaua,2018,0,1,jul,31,31043,31043,pri,m,JORGE HUMBERTO AGUILAR PERERA,1,Out-p-lost,CRESCENCIO NOH CEN,pt-morena-pes,0.0815,,0,,0,0,,,
-yuc-18.043,20979,Kaua,2021,0,6,jun,31,31043,31043,morena,,CRECENCIO  NOH CEN,,2024,,,,,0,,,,,,
+yuc-18.043,20979,Kaua,2021,0,6,jun,31,31043,31043,morena,m,CRECENCIO  NOH CEN,,2024,,,,,0,,,,,,
 yuc-07.044,20980,Kinchil,1990,0,15,nov,31,31044,31044,pri,m,ROBERTO VENTURA Y AGUAYO,,Term-limited-p-won,,pan,0.3623,,0,inafed,0,0,,,ok
 yuc-08.044,20981,Kinchil,1993,0,28,nov,31,31044,31044,pri,m,LUIS ANTONIO VARGUEZ,,Term-limited-p-won,,pan,0.3979,,0,inafed,0,0,,,
 yuc-09.044,20982,Kinchil,1995,0,28,may,31,31044,31044,pri,m,CARLOS ANTONIO TUN CASTRO,,Term-limited-p-won,,pan,0.1307,,0,inafed,0,0,,,ok
@@ -20991,8 +20991,8 @@ yuc-13.044,20986,Kinchil,2007,0,20,may,31,31044,31044,pri,m,CARLOS ANTONIO TUN C
 yuc-14.044,20987,Kinchil,2010,0,16,may,31,31044,31044,pri,m,ENRIQUE CHAC CHAN,,Term-limited-p-lost,,pan,0.0627,,0,,0,0,,,
 yuc-15.044,20988,Kinchil,2012,0,1,jul,31,31044,31044,pan,m,MARCO ANTONIO POOT AGUAYO,,Term-limited-p-lost,,pri,0.046,,0,,0,0,,,
 yuc-16.044,20989,Kinchil,2015,0,7,jun,31,31044,31044,pri,m,IRVIN DE LA CRUZ PISTE CANUL,,Out-p-lost,,pan,0.11,,0,,0,0,,,
-yuc-17.044,20990,Kinchil,2018,0,1,jul,31,31044,31044,pan-mc,m,CARLOS VALENTIN PECH DZIB,1,Reeleted,JUANITA DE JESUS TZUC DZIB,pri,0.3356,,0,,0,0,,,
-yuc-18.044,20991,Kinchil,2021,0,6,jun,31,31044,31044,pan-pna,,CARLOS VALENTIN PECH DZIB,,2024,,,,,0,,,,,,
+yuc-17.044,20990,Kinchil,2018,0,1,jul,31,31044,31044,pan-mc,m,CARLOS VALENTIN PECH DZIB,1,Reelected,JUANITA DE JESUS TZUC DZIB,pri,0.3356,,0,,0,0,,,
+yuc-18.044,20991,Kinchil,2021,0,6,jun,31,31044,31044,pan-pna,m,CARLOS VALENTIN PECH DZIB,,2024,,,,,0,,,,,,
 yuc-07.045,20992,Kopomá,1990,0,15,nov,31,31045,31045,pri,m,HONORATO TUT DZUL,,Term-limited-p-won,,pan,0.5972,,0,inafed,0,0,,,
 yuc-08.045,20993,Kopomá,1993,0,28,nov,31,31045,31045,pri,m,ANTONIO TUT CEN,,Term-limited-p-won,,pan,0.4787,,0,inafed,0,0,,,
 yuc-09.045,20994,Kopomá,1995,0,28,may,31,31045,31045,pri,m,CASTULO RAMIREZ MARTIN,,Term-limited-p-won,,pan,0.5814,,0,inafed,0,0,,,
@@ -21004,7 +21004,7 @@ yuc-14.045,20999,Kopomá,2010,0,16,may,31,31045,31045,pri,m,EMILIO DE JESUS KU P
 yuc-15.045,21000,Kopomá,2012,0,1,jul,31,31045,31045,pri-pvem,m,JOSE MIGUEL A BARBOSA EK,,Term-limited-p-won,,pan,0.511,,0,,0,0,,,
 yuc-16.045,21001,Kopomá,2015,0,7,jun,31,31045,31045,pri,m,NICACIO CHAN KOH,,Out-p-won,,pan,0.812,,0,,0,0,,,
 yuc-17.045,21002,Kopomá,2018,0,1,jul,31,31045,31045,pri,m,ADAN MOISES KUK MENA,1,Out-p-won,MARIA GUADALUPE TUT HAU,pt-morena-pes,0.2398,,0,,0,0,,,
-yuc-18.045,21003,Kopomá,2021,0,6,jun,31,31045,31045,pri,,HECTOR MANUEL YAH MOO,,2024,,,,,0,,,,,,
+yuc-18.045,21003,Kopomá,2021,0,6,jun,31,31045,31045,pri,m,HECTOR MANUEL YAH MOO,,2024,,,,,0,,,,,,
 yuc-07.046,21004,Mama,1990,0,15,nov,31,31046,31046,pri,m,NEMESIO DORANTES HERNANDEZ,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.046,21005,Mama,1993,0,28,nov,31,31046,31046,pri,m,ROGER RUBEN GONZALEZ ASCENCIO,,Term-limited-p-won,,pan,0.5858,,0,inafed,0,0,,,
 yuc-09.046,21006,Mama,1995,0,28,may,31,31046,31046,pri,m,PEDRO JAVIER HERNANDEZ ASCENCIO,,Term-limited-p-won,,prd,0.1431,,0,inafed,0,0,,,
@@ -21016,7 +21016,7 @@ yuc-14.046,21011,Mama,2010,0,16,may,31,31046,31046,pan,m,MAXIMILIANO DZIB XXIU,,
 yuc-15.046,21012,Mama,2012,0,1,jul,31,31046,31046,pan,m,DIEGO GERAN GONZALEZ MANZANERO,,Term-limited-p-lost,,pri-pvem,0,,0,,0,0,,,
 yuc-16.046,21013,Mama,2015,0,7,jun,31,31046,31046,pri,m,SERGIO ARTURO GONZALEZ POOT,,Out-p-won,,prd,0.0836,,0,,0,0,,,
 yuc-17.046,21014,Mama,2018,0,1,jul,31,31046,31046,pri-pvem-pna,f,MARIA INES PACHECO POOT,1,Reelected,LUIS MANUEL HERNANDEZ MANZANILLA,pan-prd-mc,0.0787,,0,,0,0,,,
-yuc-18.046,21015,Mama,2021,0,6,jun,31,31046,31046,pri-prd,,MARIA INES PACHECO POOT,,2024,,,,,0,,,,,,
+yuc-18.046,21015,Mama,2021,0,6,jun,31,31046,31046,pri-prd,f,MARIA INES PACHECO POOT,,2024,,,,,0,,,,,,
 yuc-07.047,21016,Maní,1990,0,15,nov,31,31047,31047,pri,m,JUAN QUIJADA CARRILLO,,Term-limited-p-won,,pan,0.1029,,0,inafed,0,0,,,
 yuc-08.047,21017,Maní,1993,0,28,nov,31,31047,31047,pri,m,JOSE LUIS PEREZ VILLACIS,,Term-limited-p-won,,pan,0.5947,,0,inafed,0,0,,,
 yuc-09.047,21018,Maní,1995,0,28,may,31,31047,31047,pri,m,MANUEL JESUS CAAMAL Y TUZ,,Term-limited-p-won,,pan,0.5626,,0,inafed,0,0,,,
@@ -21028,7 +21028,7 @@ yuc-14.047,21023,Maní,2010,0,16,may,31,31047,31047,pan,m,JULIO A. PEREZ PUC,,Te
 yuc-15.047,21024,Maní,2012,0,1,jul,31,31047,31047,pri-pvem,m,SANTOS ROMAN DZUL BEH,,Term-limited-p-lost,,pan,0.0478,,0,,0,0,,,
 yuc-16.047,21025,Maní,2015,0,7,jun,31,31047,31047,pan,m,WILBERT ARTEMI INTERIAN MENDEZ,,Out-p-lost,,pri,0.1716,,0,,0,0,,,
 yuc-17.047,21026,Maní,2018,0,1,jul,31,31047,31047,prd-mc,m,ARON DE JESUS INTERIAN BOJORQUEZ,1,Out-p-lost,ARTURO BURGOS BACAB,pri-pna,0.1311,,0,,0,0,,,
-yuc-18.047,21027,Maní,2021,0,6,jun,31,31047,31047,pan,,FREDI EVARISTO  INTERIAN  BOJORQUEZ,,2024,,,,,0,,,,,,
+yuc-18.047,21027,Maní,2021,0,6,jun,31,31047,31047,pan,m,FREDI EVARISTO  INTERIAN  BOJORQUEZ,,2024,,,,,0,,,,,,
 yuc-07.048,21028,Maxcanú,1990,0,15,nov,31,31048,31048,pri,m,VICTOR M. RODRIGUEZ UC,,Term-limited-p-won,,prd,0.6815,,0,inafed,0,0,,,
 yuc-08.048,21029,Maxcanú,1993,0,28,nov,31,31048,31048,pri,f,REYNA MARLENE DE LOS ANGELES CATZIN CIH,,Term-limited-p-won,,pan,0.5242,,0,inafed,0,0,,,ok
 yuc-09.048,21030,Maxcanú,1995,0,28,may,31,31048,31048,pri,m,CAMILO DELELYS MAY Y CAUICH,,Term-limited-p-won,,prd,0.4034,,0,inafed,0,0,,,ok
@@ -21040,10 +21040,10 @@ yuc-14.048,21035,Maxcanú,2010,0,16,may,31,31048,31048,pri,f,REYNA MARLENE DE LO
 yuc-15.048,21036,Maxcanú,2012,0,1,jul,31,31048,31048,pri-pvem,m,CAMILO DELELYS MAY Y CAUICH,,Term-limited-p-won,,pan,0.0233,,0,,1,1,,,
 yuc-16.048,21037,Maxcanú,2015,0,7,jun,31,31048,31048,pvem,f,REYNA MARLENE DE LOS ANGELES CATZIN CIH,,Reelected-dif-p,,pri,0.0057,reran under pri,0,,1,1,,,ok
 yuc-17.048,21038,Maxcanú,2018,0,1,jul,31,31048,31048,pri,f,REYNA MARLENE DE LOS ANGELES CATZIN CIH,1,Dead-term-limited-p-won,LUIS ALBERTO GARCIA CENTURION,pna,0.1123,Died covid19 9jul2020,1,,1,1,,,ok
-yuc-18.048,21039,Maxcanú,2021,0,6,jun,31,31048,31048,pri,,CAMILO DELELYS MAY CAUICH,,2024,,,,,0,,,,,,
+yuc-18.048,21039,Maxcanú,2021,0,6,jun,31,31048,31048,pri,m,CAMILO DELELYS MAY CAUICH,,2024,,,,,0,,,,,,
 yuc-07.049,21040,Mayapán,1990,0,15,nov,31,31049,31049,pri,m,WILBERTH ARMIN CHAN FERNANDEZ,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.049,21041,Mayapán,1993,0,28,nov,31,31049,31049,pri,m,FREDDY OSCAR CHAN KANTUN,,Term-limited-p-lost,,pan,0.5586,,0,inafed,0,0,,,
-yuc-09.049,21042,Mayapán,1995,0,28,may,31,31049,31049,pan,,ANATOLIO MUKUL MAY,,Term-limited-p-won,,pri,0.074,,0,,0,0,,,ok
+yuc-09.049,21042,Mayapán,1995,0,28,may,31,31049,31049,pan,m,ANATOLIO MUKUL MAY,,Term-limited-p-won,,pri,0.074,,0,,0,0,,,ok
 yuc-10.049,21043,Mayapán,1998,0,24,may,31,31049,31049,pan,m,DIEGO KANTUN KANTUN,,Term-limited-p-won,,pri,0.1296,,0,,0,0,,,
 yuc-11.049,21044,Mayapán,2001,0,27,may,31,31049,31049,pan-prd,m,MARCOS POOL MAY,,Term-limited-p-won,,pri,0.166,,0,,0,0,,,
 yuc-12.049,21045,Mayapán,2004,0,23,may,31,31049,31049,pan,m,ENRIQUE VENTURA EUAN CAAMAL,,Term-limited-p-lost,,pri,0.0749,,0,,0,0,,,
@@ -21052,7 +21052,7 @@ yuc-14.049,21047,Mayapán,2010,0,16,may,31,31049,31049,pan,f,GAUDI DE JESUS BALA
 yuc-15.049,21048,Mayapán,2012,0,1,jul,31,31049,31049,pan,m,VICTOR MANUEL POOL CEN,,Term-limited-p-lost,,pri-pvem,0.0317,,0,,0,0,,,
 yuc-16.049,21049,Mayapán,2015,0,7,jun,31,31049,31049,pri,m,ENRRI JOSUE KANTUN CHAN,,Out-p-won,,pan,0.0695,,0,,0,0,,,
 yuc-17.049,21050,Mayapán,2018,0,1,jul,31,31049,31049,pri,m,JENRRI DE JESUS CHAN PERAZA,1,Out-p-lost,VICTOR MANUEL POOL CEN,pan-prd,0.0008,,0,,0,0,,,
-yuc-18.049,21051,Mayapán,2021,0,6,jun,31,31049,31049,pan-pna,,VICTOR MANUEL POOL CEN,,2024,,,,,0,,,,,,
+yuc-18.049,21051,Mayapán,2021,0,6,jun,31,31049,31049,pan-pna,m,VICTOR MANUEL POOL CEN,,2024,,,,,0,,,,,,
 yuc-07.050,21052,Mérida,1990,0,15,nov,31,31050,31050,pan,f,ANA ROSA PAYAN CERVERA,,Term-limited-p-won,,pri,0.0058,,0,inafed,0,0,,,ok
 yuc-08.050,21053,Mérida,1993,0,28,nov,31,31050,31050,pan,m,LUIS HUMBERTO CORREA MENA,,Term-limited-p-won,,pri,0.0888,,0,inafed,0,0,,,
 yuc-09.050,21054,Mérida,1995,0,28,may,31,31050,31050,pan,m,PATRICIO PATRON LAVIADA,,Term-limited-p-won,,pri,0.236,,0,inafed,0,0,,,
@@ -21064,7 +21064,7 @@ yuc-14.050,21059,Mérida,2010,0,16,may,31,31050,31050,pri-pvem,f,ANGELICA ARAUJO
 yuc-15.050,21060,Mérida,2012,0,1,jul,31,31050,31050,pan,m,RENAN ALBERTO BARRERA CONCHA,,Term-limited-p-won,,pri-pvem-psdy,0.0446,,0,,0,0,,,ok
 yuc-16.050,21061,Mérida,2015,0,7,jun,31,31050,31050,pan,m,MAURICIO VILA DOSAL,,Out-p-won,,pri-pvem-pna,0.0252,,0,,0,0,,,
 yuc-17.050,21062,Mérida,2018,0,1,jul,31,31050,31050,pan-mc,m,RENAN ALBERTO BARRERA CONCHA,1,Reelected,VICTOR EDMUNDO CABALLERO DURAN,pri-pvem-pna,0.1684,,0,,1,1,,,ok
-yuc-18.050,21063,Mérida,2021,0,6,jun,31,31050,31050,pan,,RENAN ALBERTO BARRERA CONCHA,,2024,,,,,0,,,,,,
+yuc-18.050,21063,Mérida,2021,0,6,jun,31,31050,31050,pan,m,RENAN ALBERTO BARRERA CONCHA,,2024,,,,,0,,,,,,
 yuc-07.051,21064,Mocochá,1990,0,15,nov,31,31051,31051,pri,m,ROMULO CAUICH SALAZAR,,Term-limited-p-won,,parm,0.6711,,0,inafed,0,0,,,
 yuc-08.051,21065,Mocochá,1993,0,28,nov,31,31051,31051,pri,m,FREDI AGUILAR CRUZ,,Term-limited-p-won,,pan,0.554,,0,inafed,0,0,,,ok
 yuc-09.051,21066,Mocochá,1995,0,28,may,31,31051,31051,pri,m,HERBERT ALFONSO CRUZ BARQUET,,Term-limited-p-won,,pan,0.5158,,0,inafed,0,0,,,
@@ -21076,7 +21076,7 @@ yuc-14.051,21071,Mocochá,2010,0,16,may,31,31051,31051,pri,m,HEBERT ALFONSO CRUZ
 yuc-15.051,21072,Mocochá,2012,0,1,jul,31,31051,31051,pan,f,MANUELA DE JESUS CAUICH,,Term-limited-p-lost,,pri-pvem,0.0071,,0,,0,0,,,
 yuc-16.051,21073,Mocochá,2015,0,7,jun,31,31051,31051,pri,m,ALEJANDRO SILVA DZUL,,Out-p-won,,pan,0.0637,,0,,0,0,,,
 yuc-17.051,21074,Mocochá,2018,0,1,jul,31,31051,31051,pri-pvem,f,LUZ MARIA AGUILAR CRUZ,1,Out-p-won,MANUELA DE JESUS CAUICH EK,pan-mc,0.0037,,0,,0,0,,,
-yuc-18.051,21075,Mocochá,2021,0,6,jun,31,31051,31051,pri,,PABLO ALEJANDRO CUTZ DOMINGUEZ,,2024,,,,,0,,,,,,
+yuc-18.051,21075,Mocochá,2021,0,6,jun,31,31051,31051,pri,m,PABLO ALEJANDRO CUTZ DOMINGUEZ,,2024,,,,,0,,,,,,
 yuc-07.052,21076,Motul,1990,0,15,nov,31,31052,31052,pri,m,ROQUE J AVILES AGUILAR,,Term-limited-p-won,,pan,0.1876,,0,inafed,0,0,,,
 yuc-08.052,21077,Motul,1993,0,28,nov,31,31052,31052,pri,m,JUAN ANTONIO CENTENO Y SANCHEZ,,Term-limited-p-won,,pan,0.1827,,0,inafed,0,0,,,ok
 yuc-09.052,21078,Motul,1995,0,28,may,31,31052,31052,pri,m,LUIS EMIR CASTILLO,,Term-limited-p-won,,pan,0.1169,,0,inafed,0,0,,,
@@ -21088,7 +21088,7 @@ yuc-14.052,21083,Motul,2010,0,16,may,31,31052,31052,pan,m,MARIO ALBERTO SOSA Y L
 yuc-15.052,21084,Motul,2012,0,1,jul,31,31052,31052,pri-pvem,m,JOSE JULIAN PECH AGUILAR,,Term-limited-p-lost,,pan,0.025,,0,,0,0,,,
 yuc-16.052,21085,Motul,2015,0,7,jun,31,31052,31052,pan,m,VICENTE ANASTACIO EUAN ANDUEZA,,Out-p-lost,,pri,0.092,,0,,0,0,,,
 yuc-17.052,21086,Motul,2018,0,1,jul,31,31052,31052,pri,m,ROGER RAFAEL AGUILAR ARROYO,1,Reelected,MARIO XAVIER PERAZA RAMIREZ,pvem,0.1051,,0,,0,0,,,
-yuc-18.052,21087,Motul,2021,0,6,jun,31,31052,31052,pri,,ROGER RAFAEL AGUILAR ARROYO,,2024,,,,,0,,,,,,
+yuc-18.052,21087,Motul,2021,0,6,jun,31,31052,31052,pri,m,ROGER RAFAEL AGUILAR ARROYO,,2024,,,,,0,,,,,,
 yuc-07.053,21088,Muna,1990,0,15,nov,31,31053,31053,pri,m,FERNANDO DE LA CRUZ LOPEZ CAUICH,,Term-limited-p-won,,parm,0.1047,,0,inafed,0,0,,,
 yuc-08.053,21089,Muna,1993,0,28,nov,31,31053,31053,pri,m,SALOMON GUILLEN BARBOSA,,Term-limited-p-won,,pan,0.2807,,0,inafed,0,0,,,
 yuc-09.053,21090,Muna,1995,0,28,may,31,31053,31053,pri,m,ARMANDO CENTENO KEB,,Term-limited-p-lost,,pan,0.0171,,0,inafed,0,0,,,
@@ -21100,7 +21100,7 @@ yuc-14.053,21095,Muna,2010,0,16,may,31,31053,31053,pri,m,GASPAR PATOJA GUILLEN,,
 yuc-15.053,21096,Muna,2012,0,1,jul,31,31053,31053,pri-pvem,m,PEDRO RICARDO CALAM FARFAN,,Term-limited-p-lost,,pan,0.0169,,0,,0,0,,,
 yuc-16.053,21097,Muna,2015,0,7,jun,31,31053,31053,pan,m,VICTOR MANUEL MARVE SOSA,,Out-p-lost,,pri,0.0248,,0,,0,0,,,
 yuc-17.053,21098,Muna,2018,0,1,jul,31,31053,31053,pri,m,RUBEN CARRILLO SOSA,1,Out-p-lost,ALFONSO JESUS AGUIAR PASOS,prd,0.3,,0,,0,0,,,
-yuc-18.053,21099,Muna,2021,0,6,jun,31,31053,31053,pan-pna,,MARIA ELOISA CASTRO CONTRERAS,,2024,,,,,0,,,,,,
+yuc-18.053,21099,Muna,2021,0,6,jun,31,31053,31053,pan-pna,f,MARIA ELOISA CASTRO CONTRERAS,,2024,,,,,0,,,,,,
 yuc-07.054,21100,Muxupip,1990,0,15,nov,31,31054,31054,pri,m,ALFREDO CHAVEZ MAY,,Term-limited-p-won,,pan,0.8359,,0,inafed,0,0,,,
 yuc-08.054,21101,Muxupip,1993,0,28,nov,31,31054,31054,pri,m,FRANCISCO AKE CAT,,Term-limited-p-won,,pan,0.2332,,0,inafed,0,0,,,
 yuc-09.054,21102,Muxupip,1995,0,28,may,31,31054,31054,pri,m,ARMANDO CHIN CUTZ,,Term-limited-p-won,,pan,0.123,,0,inafed,0,0,,,
@@ -21112,7 +21112,7 @@ yuc-14.054,21107,Muxupip,2010,1,10,oct,31,31054,31054,pri,m,JUAN BAUTISTA NOH,,T
 yuc-15.054,21108,Muxupip,2012,0,1,jul,31,31054,31054,pvem,m,JOSE DEL CRMEN ESCAREÑO AKE,,Term-limited-p-lost,,pri,0.1253,,0,,0,0,,,
 yuc-16.054,21109,Muxupip,2015,0,7,jun,31,31054,31054,pna,m,ARMANDO ANTONIO AKE MACIAS,,Out-p-won,,pri,0.0291,,0,,0,0,,,
 yuc-17.054,21110,Muxupip,2018,0,1,jul,31,31054,31054,pna,m,DAVID FERNANDO PECH MARTIN,1,Out-p-lost,MARIA YNES CHIM AKE,pri,0.1932,,0,,0,0,,,
-yuc-18.054,21111,Muxupip,2021,0,6,jun,31,31054,31054,pan,,MARIA YNES CHIM AKE,,2024,,,,,0,,,,,,
+yuc-18.054,21111,Muxupip,2021,0,6,jun,31,31054,31054,pan,f,MARIA YNES CHIM AKE,,2024,,,,,0,,,,,,
 yuc-07.055,21112,Opichén,1990,0,15,nov,31,31055,31055,pri,m,CARLOS ENRIQUE EUAN XOOL,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.055,21113,Opichén,1993,0,28,nov,31,31055,31055,pri,m,PEDRO ESTRELLA ORDOÑEZ,,Term-limited-p-won,,pan,0.5556,,0,inafed,0,0,,,
 yuc-09.055,21114,Opichén,1995,0,28,may,31,31055,31055,pri,m,VICTOR MANUEL CALAN KUK,,Term-limited-p-won,,pan,0.5139,,0,inafed,0,0,,,
@@ -21124,7 +21124,7 @@ yuc-14.055,21119,Opichén,2010,0,16,may,31,31055,31055,pan,m,ARMANDO CALAN LEYDO
 yuc-15.055,21120,Opichén,2012,0,1,jul,31,31055,31055,pan,m,CARLOS ENRIQUE KU,,Term-limited-p-won,,pri,0.0639,,0,,0,0,,,
 yuc-16.055,21121,Opichén,2015,0,7,jun,31,31055,31055,pan,m,RICARDO ORDOÑEZ CHAN,,Reelected,,pri,0.2681,,0,,0,0,,,ok
 yuc-17.055,21122,Opichén,2018,0,1,jul,31,31055,31055,pan-mc,m,RICARDO ORDOÑEZ CHAN,1,Term-limited-p-lost,SANDI EMANUEL CALAN ORDOÑEZ,pt-morena-pes,0.0784,,0,,1,1,,,ok
-yuc-18.055,21123,Opichén,2021,0,6,jun,31,31055,31055,morena,,SANDI EMANUEL CALAN ORDOÑEZ,,2024,,,,,0,,,,,,
+yuc-18.055,21123,Opichén,2021,0,6,jun,31,31055,31055,morena,m,SANDI EMANUEL CALAN ORDOÑEZ,,2024,,,,,0,,,,,,
 yuc-07.056,21124,Oxkutzcab,1990,0,15,nov,31,31056,31056,pri,m,HECTOR DOROTEO LOPEZ CONTRERAS,,Term-limited-p-won,,pan,0.6596,,0,inafed,0,0,,,
 yuc-08.056,21125,Oxkutzcab,1993,0,28,nov,31,31056,31056,pri,m,SANTIAGO ARMANDO CACHON MEDINA,,Term-limited-p-lost,,pan,0.2383,,0,inafed,0,0,,,
 yuc-09.056,21126,Oxkutzcab,1995,0,28,may,31,31056,31056,pan,m,JUAN JOSE MARTIN BRICEÑO,,Term-limited-p-lost,,pri,0.0077,,0,inafed,0,0,,,ok
@@ -21136,7 +21136,7 @@ yuc-14.056,21131,Oxkutzcab,2010,0,16,may,31,31056,31056,pri,m,JOSE GUALBERTO AYO
 yuc-15.056,21132,Oxkutzcab,2012,0,1,jul,31,31056,31056,pri-pvem,m,OSCAR ESTEBAN MADRAZO GIO,,Term-limited-p-lost,,pt-prd-mc,0.0035,,0,,0,0,,,
 yuc-16.056,21133,Oxkutzcab,2015,0,7,jun,31,31056,31056,prd-pt,m,RAUL ANTONIO ROMERO CHEL,,Reelected,,pri,0.0257,,0,,0,0,,,ok
 yuc-17.056,21134,Oxkutzcab,2018,0,1,jul,31,31056,31056,pan-prd-mc,m,RAUL ANTONIO ROMERO CHEL,1,Term-limited-p-lost,FRANCISCO JAVIER MARTIN ESCOBEDO,pri,0.2794,,0,,1,1,,,ok
-yuc-18.056,21135,Oxkutzcab,2021,0,6,jun,31,31056,31056,pri-pna,,JUAN JOSE  MARTIN  FRAGOSO,,2024,,,,,0,,,,,,
+yuc-18.056,21135,Oxkutzcab,2021,0,6,jun,31,31056,31056,pri-pna,m,JUAN JOSE  MARTIN  FRAGOSO,,2024,,,,,0,,,,,,
 yuc-07.057,21136,Panabá,1990,0,15,nov,31,31057,31057,pri,m,RIGOBERTO MENESES LOPEZ,,Term-limited-p-won,,pan,0.0664,,0,inafed,0,0,,,
 yuc-08.057,21137,Panabá,1993,0,28,nov,31,31057,31057,pri,m,ERNESTO ALONZO LOPEZ NAVARRO,,Term-limited-p-won,,pan,0.1345,,0,inafed,0,0,,,
 yuc-09.057,21138,Panabá,1995,0,28,may,31,31057,31057,pri,m,MARIO HUMBERTO MENA NARVAEZ,,Term-limited-p-won,,pan,0.155,,0,inafed,0,0,,,
@@ -21148,7 +21148,7 @@ yuc-14.057,21143,Panabá,2010,0,16,may,31,31057,31057,pri,m,EMANUEL AVILA AVILA,
 yuc-15.057,21144,Panabá,2012,0,1,jul,31,31057,31057,pri-pvem,m,WILIAM EFREN LOPEZ NAVARRO,,Term-limited-p-won,,pan,0.021,,0,,0,0,,,
 yuc-16.057,21145,Panabá,2015,0,7,jun,31,31057,31057,pri,m,JORGE CARLOS TREJO MENA,,Out-p-lost,,pan,0.063,,0,,1,1,,,ok
 yuc-17.057,21146,Panabá,2018,0,1,jul,31,31057,31057,pan-mc,m,JORGE ABRAHAM JIMENEZ IUIT,1,Out-p-won,LINYU EVELYN ARANDA ALCOCER,pri-pvem-pna,0.1313,,0,,0,0,,,
-yuc-18.057,21147,Panabá,2021,0,6,jun,31,31057,31057,pan-prd-pna,,OMAR ADIEL MENA NARVAEZ,,2024,,,,,0,,,,,,
+yuc-18.057,21147,Panabá,2021,0,6,jun,31,31057,31057,pan-prd-pna,m,OMAR ADIEL MENA NARVAEZ,,2024,,,,,0,,,,,,
 yuc-07.058,21148,Peto,1990,0,15,nov,31,31058,31058,pri,m,JOSE VICENTE DOMINGUEZ CANTO,,Term-limited-p-won,,pan,0.4542,,0,inafed,0,0,,,ok
 yuc-08.058,21149,Peto,1993,0,28,nov,31,31058,31058,pri,m,CASTULO AKE CAN,,Term-limited-p-won,,pan,0.1786,,0,inafed,0,0,,,
 yuc-09.058,21150,Peto,1995,0,28,may,31,31058,31058,pri,m,SAMUEL CASTILLO YAH,,Term-limited-p-won,,pan,0.0586,,0,inafed,0,0,,,
@@ -21160,7 +21160,7 @@ yuc-14.058,21155,Peto,2010,0,16,may,31,31058,31058,pan,f,MARTHA GONZALEZ CAMARA,
 yuc-15.058,21156,Peto,2012,0,1,jul,31,31058,31058,pri-pvem,m,HIGINIO CHAN ACOSTA,,Term-limited-p-lost,,pan,0.1283,,0,,0,0,,,
 yuc-16.058,21157,Peto,2015,0,7,jun,31,31058,31058,pan,m,JAIME ARIEL HERNANDEZ SANTOS,,Out-p-lost,,pri,0.0627,,0,,0,0,,,
 yuc-17.058,21158,Peto,2018,0,1,jul,31,31058,31058,pri,m,EDGAR ROMAN CALDERON SOSA,1,Out-p-lost,RENAN GABRIEL JIMENEZ TAH,pvem-pna,0.0244,,0,,0,0,,,
-yuc-18.058,21159,Peto,2021,0,6,jun,31,31058,31058,pvem,,RENAN GABRIEL JIMENEZ TAH,,2024,,,,,0,,,,,,
+yuc-18.058,21159,Peto,2021,0,6,jun,31,31058,31058,pvem,m,RENAN GABRIEL JIMENEZ TAH,,2024,,,,,0,,,,,,
 yuc-07.059,21160,Progreso,1990,0,15,nov,31,31059,31059,pri,m,ALFREDO VILLALOBOS VAZQUEZ,,Term-limited-p-won,,pan,0.2804,,0,inafed,0,0,,,
 yuc-08.059,21161,Progreso,1993,0,28,nov,31,31059,31059,pri,m,LUIS SIERRA PEREZ,,Term-limited-p-won,,pan,0.2344,,0,inafed,0,0,,,
 yuc-09.059,21162,Progreso,1995,0,28,may,31,31059,31059,pri,m,RAUL ENRIQUE LARA CARO,,Term-limited-p-won,,pan,0.2942,,0,inafed,0,0,,,
@@ -21172,19 +21172,19 @@ yuc-14.059,21167,Progreso,2010,0,16,may,31,31059,31059,pri,f,MARIA ALONZO MORALE
 yuc-15.059,21168,Progreso,2012,0,1,jul,31,31059,31059,pri-pvem,m,DANIEL ZACARIAS MARTINEZ,,Term-limited-p-lost,,pan,0.4616,,0,,0,0,,,
 yuc-16.059,21169,Progreso,2015,0,7,jun,31,31059,31059,prd-pt-pna,m,JOSE ISABEL CORTES GONGORA,,Out-p-lost,,pri,0.0868,,0,,0,0,,,
 yuc-17.059,21170,Progreso,2018,0,1,jul,31,31059,31059,pan-mc,m,JULIAN ZACARIAS CURI,1,Reelected,MARIA DEL CARMEN ORDAZ MARTINEZ,pri-pvem-pna,0.05,,0,,0,0,,,
-yuc-18.059,21171,Progreso,2021,0,6,jun,31,31059,31059,pan,,JULIAN ZACARIAS CURI,,2024,,,,,0,,,,,,
+yuc-18.059,21171,Progreso,2021,0,6,jun,31,31059,31059,pan,m,JULIAN ZACARIAS CURI,,2024,,,,,0,,,,,,
 yuc-07.060,21172,Quintana Roo,1990,0,15,nov,31,31060,31060,pri,m,DIEGO ARCADIO CANCHE CEH,,Term-limited-p-won,,pan,0.7442,,0,inafed,0,0,,,
 yuc-08.060,21173,Quintana Roo,1993,0,28,nov,31,31060,31060,pri,f,FLORENCIA PECH MAY,,Term-limited-p-lost,,pan,0.2047,,0,inafed,0,0,,,
 yuc-09.060,21174,Quintana Roo,1995,0,28,may,31,31060,31060,prd,m,MARTIN ALBERTO CANCHE MUÑOZ,,Term-limited-p-won,,pri,0.0112,,0,inafed,0,0,,,
 yuc-10.060,21175,Quintana Roo,1998,0,24,may,31,31060,31060,prd,m,RUPERTO CANCHE COLLI,,Term-limited-p-won,,pri,0.167,,0,,0,0,,,
-yuc-11.060,21176,Quintana Roo,2001,0,27,may,31,31060,31060,pan-prd,,JOSE LUIS BLANCO PAJON,,Term-limited-p-lost,,pri,0.1477,,0,,0,0,,,ok
+yuc-11.060,21176,Quintana Roo,2001,0,27,may,31,31060,31060,pan-prd,m,JOSE LUIS BLANCO PAJON,,Term-limited-p-lost,,pri,0.1477,,0,,0,0,,,ok
 yuc-12.060,21177,Quintana Roo,2004,0,23,may,31,31060,31060,pri,m,SAMUEL ASUNCION ESTRELLA UC,,Term-limited-p-won,,prd,0.0481,,0,,0,0,,,
 yuc-13.060,21178,Quintana Roo,2007,0,20,may,31,31060,31060,pri,f,ALBA DEANELI AGUILAR MAY,,Term-limited-p-won,,pan,0.1299,,0,,0,0,,,
 yuc-14.060,21179,Quintana Roo,2010,0,16,may,31,31060,31060,pri,m,LUIS ABRAHAM BORGES CEL,,Term-limited-p-won,,pan,0.2186,,0,,0,0,,,
 yuc-15.060,21180,Quintana Roo,2012,0,1,jul,31,31060,31060,pri-pvem,f,ALBA DEANELI AGUILAR MAY,,Term-limited-p-won,,pan,0.1035,,0,,1,1,,,
 yuc-16.060,21181,Quintana Roo,2015,0,7,jun,31,31060,31060,pri,m,LUIS GABRIEL AGUILAR MAY,,Out-p-won,,pan,0.0475,,0,,0,0,,,
 yuc-17.060,21182,Quintana Roo,2018,0,1,jul,31,31060,31060,pri,m,JAIRO RODOLFO COLLI ABAN,1,Out-p-lost,MARIA MINELIA DE JESUS UICAB CEL,pan-mc,0.1149,,0,,0,0,,,
-yuc-18.060,21183,Quintana Roo,2021,0,6,jun,31,31060,31060,pan-pna,,MARIA MINELIA DE JESUS UICAB CEL,,2024,,,,,0,,,,,,
+yuc-18.060,21183,Quintana Roo,2021,0,6,jun,31,31060,31060,pan-pna,f,MARIA MINELIA DE JESUS UICAB CEL,,2024,,,,,0,,,,,,
 yuc-07.061,21184,Río Lagartos,1990,0,15,nov,31,31061,31061,pri,m,BERNABE MASSA MARRUFO,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.061,21185,Río Lagartos,1993,0,28,nov,31,31061,31061,pri,m,VICTORIANO RAMON PUCH MARFIL,,Term-limited-p-won,,pan,0.2244,,0,inafed,0,0,,,
 yuc-09.061,21186,Río Lagartos,1995,0,28,may,31,31061,31061,pri,,CONCEPCION RAMOS VALDEZ,,Term-limited-p-won,,pan,0.4891,,0,inafed,0,0,,,
@@ -21196,7 +21196,7 @@ yuc-14.061,21191,Río Lagartos,2010,0,16,may,31,31061,31061,pri,m,HYSLER PACHECO
 yuc-15.061,21192,Río Lagartos,2012,0,1,jul,31,31061,31061,pan,m,ELMER SANTIAGO CNTRERAS TBASCO,,Term-limited-p-lost,,pri-pvem,0.01,,0,,0,0,,,
 yuc-16.061,21193,Río Lagartos,2015,0,7,jun,31,31061,31061,pri,m,JUAN MARTIN CONTRERAS CELIS,,Out-p-lost,,pan,0.1282,,0,,0,0,,,
 yuc-17.061,21194,Río Lagartos,2018,0,1,jul,31,31061,31061,pan-mc,m,ERIK CANDELARIO ALCOCER ESTRADA,1,Out-p-lost,FLORICELY DEL CARMEN ALCOCER MARFIL,pri-pvem-pna,0.1283,,0,,0,0,,,
-yuc-18.061,21195,Río Lagartos,2021,0,6,jun,31,31061,31061,pri,,FLORICELY DEL CARMEN ALCOCER MARFIL,,2024,,,,,0,,,,,,
+yuc-18.061,21195,Río Lagartos,2021,0,6,jun,31,31061,31061,pri,f,FLORICELY DEL CARMEN ALCOCER MARFIL,,2024,,,,,0,,,,,,
 yuc-07.062,21196,Sacalum,1990,0,15,nov,31,31062,31062,pri,m,MARCOS JOSE INTERIAN VILLAFAÑA,,Term-limited-p-won,,pan,0.9202,,0,inafed,0,0,,,
 yuc-08.062,21197,Sacalum,1993,0,28,nov,31,31062,31062,pri,m,JOSE ISABEL CUTZ ALONSO,,Term-limited-p-won,,pan,0.322,,0,inafed,0,0,,,
 yuc-09.062,21198,Sacalum,1995,0,28,may,31,31062,31062,pri,m,CARLOS RODRIGO RODRIGUEZ SANTAMARIA,,Term-limited-p-won,,pan,0.3083,,0,inafed,0,0,,,ok
@@ -21208,7 +21208,7 @@ yuc-14.062,21203,Sacalum,2010,0,16,may,31,31062,31062,pri,m,OCTAVIO MEDINA VERGU
 yuc-15.062,21204,Sacalum,2012,0,1,jul,31,31062,31062,pan,f,ANA MARIA BALAM MEDINA,,Term-limited-p-lost,,pri-pvem,0.0632,,0,,0,0,,,
 yuc-16.062,21205,Sacalum,2015,0,7,jun,31,31062,31062,pri,m,JULIO CESAR RODRIGUEZ SANTAMARIA,,Out-p-lost,,pan,0.0995,,0,,0,0,,,
 yuc-17.062,21206,Sacalum,2018,0,1,jul,31,31062,31062,mc,m,MANUEL JESUS FLORES LOPEZ,1,Out-p-lost,NANCY JUDITH FLORES SANCHEZ,pri-pna,0.1893,,0,,1,1,,,ok
-yuc-18.062,21207,Sacalum,2021,0,6,jun,31,31062,31062,pan-pna,,SILVIA ESTER INTERIAN ESPADAS,,2024,,,,,0,,,,,,
+yuc-18.062,21207,Sacalum,2021,0,6,jun,31,31062,31062,pan-pna,f,SILVIA ESTER INTERIAN ESPADAS,,2024,,,,,0,,,,,,
 yuc-07.063,21208,Samahil,1990,0,15,nov,31,31063,31063,pan,m,JULIO ROSAURO PACHECO SALAS,,Term-limited-p-lost,,pri,0.02,,0,inafed,0,0,,,
 yuc-08.063,21209,Samahil,1993,0,28,nov,31,31063,31063,pri,m,EMANUEL J. KOYOC AGUAYO,,Term-limited-p-lost,,pan,0.2917,,0,inafed,0,0,,,
 yuc-09.063,21210,Samahil,1995,0,28,may,31,31063,31063,pan,m,JOSE HERMENEGILDO CANUL GARCIA,,Term-limited-p-lost,,pri,0.0681,,0,inafed,0,0,,,
@@ -21220,7 +21220,7 @@ yuc-14.063,21215,Samahil,2010,0,16,may,31,31063,31063,pri,m,FELIPE NERI GARCIA B
 yuc-15.063,21216,Samahil,2012,0,1,jul,31,31063,31063,pri,m,SAMUEL MAYEN POOT,,Term-limited-p-won,,prd,0.1671,,0,,1,1,,,ok
 yuc-16.063,21217,Samahil,2015,0,7,jun,31,31063,31063,pri,m,ISAIAS SALOMON GARCIA AGUAYO,,Out-p-lost,,prd,0.1381,,0,,0,0,,,
 yuc-17.063,21218,Samahil,2018,0,1,jul,31,31063,31063,prd,m,RIGOBERTO JAVIER TUN SALAS,1,Dead-p-lost,MARIA MARTA NUEMI SANCHEZ CHACON,pri-pvem,0.0605,Died covid19 19jul2020,1,,1,1,,,ok
-yuc-18.063,21219,Samahil,2021,0,6,jun,31,31063,31063,pvem,,SAMUEL  MAYEN POOT,,2024,,,,,0,,,,,,
+yuc-18.063,21219,Samahil,2021,0,6,jun,31,31063,31063,pvem,m,SAMUEL  MAYEN POOT,,2024,,,,,0,,,,,,
 yuc-07.064,21220,Sanahcat,1990,0,15,nov,31,31064,31064,pri,m,RENE HIPOLITO DIAZ MARRUFO,,Term-limited-p-won,,pan,0.1687,,0,inafed,0,0,,,ok
 yuc-08.064,21221,Sanahcat,1993,0,28,nov,31,31064,31064,pri,m,ALVARO JESUS DIAZ LOPEZ,,Term-limited-p-won,,pan,0.2799,,0,inafed,0,0,,,ok
 yuc-09.064,21222,Sanahcat,1995,0,28,may,31,31064,31064,pri,m,MANUEL DE ATOCHA LOPEZ ROSADO,,Term-limited-p-won,,pan,0.3538,,0,inafed,0,0,,,ok
@@ -21232,7 +21232,7 @@ yuc-14.064,21227,Sanahcat,2010,0,16,may,31,31064,31064,pri,m,VICTOR D DZUL MOD,,
 yuc-15.064,21228,Sanahcat,2012,0,1,jul,31,31064,31064,pri,m,VICTOR GABRIEL EK MOO,,Term-limited-p-won,,pvem,0.1549,,0,,0,0,,,
 yuc-16.064,21229,Sanahcat,2015,0,7,jun,31,31064,31064,pri,m,JOSE JAVIER MOO EK,,Out-p-won,,pan,0.1064,,0,,0,0,,,
 yuc-17.064,21230,Sanahcat,2018,0,1,jul,31,31064,31064,pri-pvem-pna,f,LANDI GABRIELA GAMBOA MOO,1,Out-p-won,ZUEMY MARIBEL CATZIM PALOMO,pan-mc,0.0919,,0,,0,0,,,
-yuc-18.064,21231,Sanahcat,2021,0,6,jun,31,31064,31064,pan-pna,,ALMA ERNESTINA  MANZANERO POLANCO,,2024,,,,,0,,,,,,
+yuc-18.064,21231,Sanahcat,2021,0,6,jun,31,31064,31064,pan-pna,f,ALMA ERNESTINA  MANZANERO POLANCO,,2024,,,,,0,,,,,,
 yuc-07.065,21232,San Felipe,1990,0,15,nov,31,31065,31065,pri,m,RENE HIPOLITO DIAZ MARRUFO,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.065,21233,San Felipe,1993,0,28,nov,31,31065,31065,pri,m,ALVARO JESUS DIAZ LOPEZ,,Term-limited-p-won,,pan,0.7287,,0,inafed,0,0,,,ok
 yuc-09.065,21234,San Felipe,1995,0,28,may,31,31065,31065,pri,m,MANUEL DE ATOCHA LOPEZ ROSADO,,Term-limited-p-won,,pan,0.8023,,0,inafed,0,0,,,ok
@@ -21244,7 +21244,7 @@ yuc-14.065,21239,San Felipe,2010,0,16,may,31,31065,31065,pan,f,ADLEMI MARGARITA 
 yuc-15.065,21240,San Felipe,2012,0,1,jul,31,31065,31065,pan,m,LORENZO YGNACIO BRICEÑO CAN,,Term-limited-p-lost,,pri-pvem,0.0166,,0,,0,0,,,
 yuc-16.065,21241,San Felipe,2015,0,7,jun,31,31065,31065,pri,m,GABRIEL ENRIQUE MARRUFO MARFIL,,Out-p-won,,pan,0.2,,0,,0,0,,,
 yuc-17.065,21242,San Felipe,2018,0,1,jul,31,31065,31065,pri-pvem-pna,f,JUANA MARIA BALTAZAR SANTOS,1,Out-p-won,RAMON ALFREDO DIAZ ALAMILLA,pan,0.0703,,0,,0,0,,,
-yuc-18.065,21243,San Felipe,2021,0,6,jun,31,31065,31065,pri,,FELIPE ANTONIO MARRUFO LOPEZ,,2024,,,,,0,,,,,,
+yuc-18.065,21243,San Felipe,2021,0,6,jun,31,31065,31065,pri,m,FELIPE ANTONIO MARRUFO LOPEZ,,2024,,,,,0,,,,,,
 yuc-07.066,21244,Santa Elena,1990,0,15,nov,31,31066,31066,pri,m,ZACARIAS KOYOC TUN,,Term-limited-p-won,,parm,0.9943,,0,inafed,0,0,,,
 yuc-08.066,21245,Santa Elena,1993,0,28,nov,31,31066,31066,pri,m,WILBERTH CHE LEON,,Term-limited-p-won,,pan,0.3844,,0,inafed,0,0,,,ok
 yuc-09.066,21246,Santa Elena,1995,0,28,may,31,31066,31066,pri,m,CANDIDO CHE MAAS,,Term-limited-p-won,,pan,0.2718,,0,inafed,0,0,,,
@@ -21256,7 +21256,7 @@ yuc-14.066,21251,Santa Elena,2010,0,16,may,31,31066,31066,pri,m,WILBERTH CHE LEO
 yuc-15.066,21252,Santa Elena,2012,0,1,jul,31,31066,31066,pri-pvem,m,ROGELIO KAUIL MORENO,,Term-limited-p-won,,pan,0.0922,,0,,0,0,,,
 yuc-16.066,21253,Santa Elena,2015,0,7,jun,31,31066,31066,pri,m,EDUARDO HUCHIN KAUIL,,Out-p-won,,pan,0.0917,,0,,1,1,,,ok
 yuc-17.066,21254,Santa Elena,2018,0,1,jul,31,31066,31066,pri,m,LUIS ALBERTO SANSORES MIAN,1,Reran-beaten,ROLANDO POOT MORENO,mc,0.3558,,0,,1,1,,,ok
-yuc-18.066,21255,Santa Elena,2021,0,6,jun,31,31066,31066,pan-prd-pna,,GALDINO POOT MORENO,,2024,,,,,0,,,,,,
+yuc-18.066,21255,Santa Elena,2021,0,6,jun,31,31066,31066,pan-prd-pna,m,GALDINO POOT MORENO,,2024,,,,,0,,,,,,
 yuc-07.067,21256,Seyé,1990,0,15,nov,31,31067,31067,pri,m,WILBERTH CANO GONZALEZ,,Term-limited-p-won,,pan,0.8879,,0,inafed,0,0,,,
 yuc-08.067,21257,Seyé,1993,0,28,nov,31,31067,31067,pri,m,CARLOS CAUICH SANTOS,,Term-limited-p-won,,pan,0.4572,,0,inafed,0,0,,,
 yuc-09.067,21258,Seyé,1995,0,28,may,31,31067,31067,pri,m,FELICIANO AMBROSIO CHUC,,Term-limited-p-lost,,pan,0.0622,,0,inafed,0,0,,,
@@ -21268,7 +21268,7 @@ yuc-14.067,21263,Seyé,2010,0,16,may,31,31067,31067,pan,m,JOSE MANUEL CAUICH MIA
 yuc-15.067,21264,Seyé,2012,0,1,jul,31,31067,31067,prd,m,HERMILO DZUL HUCHIM,,Term-limited-p-lost,,pan,0.048,,0,,0,0,,,
 yuc-16.067,21265,Seyé,2015,0,7,jun,31,31067,31067,pri,m,PEDRO PABLO PAREDES PEREIRA,,Out-p-lost,,pan,0.0731,,0,,0,0,,,
 yuc-17.067,21266,Seyé,2018,0,1,jul,31,31067,31067,pan-mc,f,LIZBETH MARIA CAUICH PUCH,1,Reran-beaten,DIANA ISABEL DZUL LEO,prd,0.1986,,0,,0,0,,,
-yuc-18.067,21267,Seyé,2021,0,6,jun,31,31067,31067,prd,,DIANA ISABEL DZUL LEO,,2024,,,,,0,,,,,,
+yuc-18.067,21267,Seyé,2021,0,6,jun,31,31067,31067,prd,f,DIANA ISABEL DZUL LEO,,2024,,,,,0,,,,,,
 yuc-07.068,21268,Sinanché,1990,0,15,nov,31,31068,31068,pri,m,EVERARDO JOSE MENA MENA,,Term-limited-p-won,,parm,0.9127,,0,inafed,0,0,,,
 yuc-08.068,21269,Sinanché,1993,0,28,nov,31,31068,31068,pri,m,RAFAEL MENA ABUD,,Term-limited-p-won,,pan,0.3127,,0,inafed,0,0,,,
 yuc-09.068,21270,Sinanché,1995,0,28,may,31,31068,31068,pri,m,SANTOS JOSE PINTO LORIA,,Term-limited-p-won,,pan,0.24,,0,inafed,0,0,,,
@@ -21280,7 +21280,7 @@ yuc-14.068,21275,Sinanché,2010,0,16,may,31,31068,31068,pri,m,NOE MANAC PALMA GU
 yuc-15.068,21276,Sinanché,2012,0,1,jul,31,31068,31068,pan,m,FELIPE DE JESUS ROJAS ESCALANTE,,Term-limited-p-lost,,pri,0.0719,,0,,1,1,,,ok
 yuc-16.068,21277,Sinanché,2015,0,7,jun,31,31068,31068,pri,f,MARIA LILIA ROMANA MENA RAMIREZ,,Out-p-lost,,pan,0.0788,,0,,0,0,,,
 yuc-17.068,21278,Sinanché,2018,0,1,jul,31,31068,31068,pan,m,FELIPE DE JESUS ROJAS ESCALANTE,1,Out-p-won,MARIA DE LOS ANGELES MAY BASTO,pri-pna,0.0037,,0,,1,1,,,ok
-yuc-18.068,21279,Sinanché,2021,0,6,jun,31,31068,31068,pan-pna,,FELIPA NERY MENA AGUILAR,,2024,,,,,0,,,,,,
+yuc-18.068,21279,Sinanché,2021,0,6,jun,31,31068,31068,pan-pna,f,FELIPA NERY MENA AGUILAR,,2024,,,,,0,,,,,,
 yuc-07.069,21280,Sotuta,1990,0,15,nov,31,31069,31069,pri,m,EMILIO COCOM OJEDA,,Term-limited-p-won,,pan,0.634,,0,inafed,0,0,,,
 yuc-08.069,21281,Sotuta,1993,0,28,nov,31,31069,31069,pri,m,ISMAEL MORALES MORALES,,Term-limited-p-won,,pan,0.658,,0,inafed,0,0,,,
 yuc-09.069,21282,Sotuta,1995,0,28,may,31,31069,31069,pri,f,MARIA ASUNCION PECH CASTILLO,,Term-limited-p-lost,,otros,0.2193,,0,inafed,0,0,,,
@@ -21292,7 +21292,7 @@ yuc-14.069,21287,Sotuta,2010,0,16,may,31,31069,31069,pri,m,JOSE TRINIDAD MOO MEZ
 yuc-15.069,21288,Sotuta,2012,0,1,jul,31,31069,31069,pri,f,GENY BLANCO GOMEZ,,Term-limited-p-won,,prd-mc,0.1511,,0,,0,0,,,
 yuc-16.069,21289,Sotuta,2015,0,7,jun,31,31069,31069,pri,m,ANDRES ISMAEL SANTANA FRAGA,,Out-p-won,,prd,0.0474,,0,,0,0,,,
 yuc-17.069,21290,Sotuta,2018,0,1,jul,31,31069,31069,pri-pna,f,REINA ISABEL YAM,1,Reran-beaten,LUIS REYES AKE ORTEGA,pan-prd,0.1003,,0,,0,0,,,
-yuc-18.069,21291,Sotuta,2021,0,6,jun,31,31069,31069,pvem,,GERARDO JACOBO CUXIN ALFARO,,2024,,,,,0,,,,,,
+yuc-18.069,21291,Sotuta,2021,0,6,jun,31,31069,31069,pvem,m,GERARDO JACOBO CUXIN ALFARO,,2024,,,,,0,,,,,,
 yuc-07.070,21292,Sucilá,1990,0,15,nov,31,31070,31070,pri,m,JOSE GERARDO PENICHE MEDRANO,,Term-limited-p-won,,pan,0.2478,,0,inafed,0,0,,,
 yuc-08.070,21293,Sucilá,1993,0,28,nov,31,31070,31070,pri,m,PAULINO INTERIAN OROZCO,,Term-limited-p-won,,pan,0.1802,,0,inafed,0,0,,,
 yuc-09.070,21294,Sucilá,1995,0,28,may,31,31070,31070,pri,m,WILBERTH RICARDO SUASTE MARFIL,,Term-limited-p-won,,pan,0.1806,,0,inafed,0,0,,,
@@ -21304,7 +21304,7 @@ yuc-14.070,21299,Sucilá,2010,0,16,may,31,31070,31070,pri,m,EYMER MARTIN LORIA T
 yuc-15.070,21300,Sucilá,2012,0,1,jul,31,31070,31070,pan,m,DELFINO AMIR PENICHE,,Term-limited-p-lost,,pri-pvem,0.0343,,0,,0,0,,,
 yuc-16.070,21301,Sucilá,2015,0,7,jun,31,31070,31070,pri,m,DIEGO ALBERTO LUGO INTERIAN,,Reelected,,pan,0.0624,,0,,1,1,,,ok
 yuc-17.070,21302,Sucilá,2018,0,1,jul,31,31070,31070,pri-pna,m,DIEGO ALBERTO LUGO INTERIAN,1,Term-limited-p-won,EDGAR RENE LORIA NOVELO,pan-mc,0.0495,,0,,1,1,,,ok
-yuc-18.070,21303,Sucilá,2021,0,6,jun,31,31070,31070,pan-prd-pna,,GABRIELA DE JESUS POOL CAMELO,,2024,,,,,0,,,,,,
+yuc-18.070,21303,Sucilá,2021,0,6,jun,31,31070,31070,pan-prd-pna,f,GABRIELA DE JESUS POOL CAMELO,,2024,,,,,0,,,,,,
 yuc-07.071,21304,Sudzal,1990,0,15,nov,31,31071,31071,pri,m,DEMETRIO CAAMAL CARVAJAL,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.071,21305,Sudzal,1993,0,28,nov,31,31071,31071,pri,m,PEDRO GONZALO BRICEÑO,,Term-limited-p-won,,pan,0.9212,,0,inafed,0,0,,,
 yuc-09.071,21306,Sudzal,1995,0,28,may,31,31071,31071,pri,m,DEMETRIO CAAMAL CARVAJAL,,Term-limited-p-won,,pan,0.4247,,0,inafed,1,1,,,ok
@@ -21316,7 +21316,7 @@ yuc-14.071,21311,Sudzal,2010,0,16,may,31,31071,31071,pan,m,NICOLAS CHUNAB CHAN,,
 yuc-15.071,21312,Sudzal,2012,0,1,jul,31,31071,31071,pri,f,PRKITHY JANET MAY CHUC,,Term-limited-p-won,,pan,0.0285,,0,,0,0,,,
 yuc-16.071,21313,Sudzal,2015,0,7,jun,31,31071,31071,pri,m,TEOFILO COCOM CAUICH,,Out-p-won,,pvem,0.0603,,0,,0,0,,,
 yuc-17.071,21314,Sudzal,2018,0,1,jul,31,31071,31071,pri,m,ALEJANDRO DUARTE CAAMAL,1,Reelected,ALBERT ALVARO REJON ACOSTA,mc,0.1173,,0,,0,0,,,
-yuc-18.071,21315,Sudzal,2021,0,6,jun,31,31071,31071,pri,,ALEJANDRO DUARTE CAAMAL,,2024,,,,,0,,,,,,
+yuc-18.071,21315,Sudzal,2021,0,6,jun,31,31071,31071,pri,m,ALEJANDRO DUARTE CAAMAL,,2024,,,,,0,,,,,,
 yuc-07.072,21316,Suma,1990,0,15,nov,31,31072,31072,pri,m,EDUARDO POOL CHI,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.072,21317,Suma,1993,0,28,nov,31,31072,31072,pri,m,NOE FIDEL CAMACHO QUIJANO,,Term-limited-p-won,,pan,0.5455,,0,inafed,0,0,,,ok
 yuc-09.072,21318,Suma,1995,0,28,may,31,31072,31072,pri,m,JOSE GUILLERMO TORRES GUEMEZ,,Term-limited-p-won,,pan,0.543,,0,inafed,0,0,,,
@@ -21328,7 +21328,7 @@ yuc-14.072,21323,Suma,2010,0,16,may,31,31072,31072,pvem,m,JOSE ALFREDO PECH COLL
 yuc-15.072,21324,Suma,2012,0,1,jul,31,31072,31072,pri,m,JOSE DE LA CRUZ PACHECO BAZAN,,Term-limited-p-won,,pvem,0.0688,,0,,1,1,,,ok
 yuc-16.072,21325,Suma,2015,0,7,jun,31,31072,31072,pri,m,GUDELIO PACHECO POOL,,Out-p-won,,prd,0.2565,,0,,0,0,,,
 yuc-17.072,21326,Suma,2018,0,1,jul,31,31072,31072,pri,m,JOSE DE LA CRUZ PACHECO BAZAN,1,Reelected,ELIAS VIVAS MATOS,pvem,0.1996,,0,,1,1,,,ok
-yuc-18.072,21327,Suma,2021,0,6,jun,31,31072,31072,pri,,JOSE DE LA CRUZ PACHECO BAZAN,,2024,,,,,0,,,,,,
+yuc-18.072,21327,Suma,2021,0,6,jun,31,31072,31072,pri,m,JOSE DE LA CRUZ PACHECO BAZAN,,2024,,,,,0,,,,,,
 yuc-07.073,21328,Tahdziú,1990,0,15,nov,31,31073,31073,pri,m,NARCISO MONTEJO ESCAMILLA,,Term-limited-p-won,,pan,0.7181,,0,inafed,0,0,,,
 yuc-08.073,21329,Tahdziú,1993,0,28,nov,31,31073,31073,pri,m,GUALBERTO UC NOH,,Term-limited-p-won,,pan,0.8171,,0,inafed,0,0,,,
 yuc-09.073,21330,Tahdziú,1995,0,28,may,31,31073,31073,pri,m,SILVESTRE PECH EK,,Term-limited-p-won,,prd,0.1248,,0,inafed,0,0,,,
@@ -21340,7 +21340,7 @@ yuc-14.073,21335,Tahdziú,2010,0,16,may,31,31073,31073,prd,m,ABRAHAM AKE UC,,Ter
 yuc-15.073,21336,Tahdziú,2012,0,1,jul,31,31073,31073,pri,f,VICTORIA YAH MEDINA,,Term-limited-p-won,,prd,0.0165,,0,,0,0,,,
 yuc-16.073,21337,Tahdziú,2015,0,7,jun,31,31073,31073,pri,m,PEDRO YAH SABIDO,,Reelected,,prd,0.0582,,0,,0,0,,,ok
 yuc-17.073,21338,Tahdziú,2018,0,1,jul,31,31073,31073,pri,m,PEDRO YAH SABIDO,1,Term-limited-p-lost,ABRAHAM AKE UC,prd,0.1199,,0,,1,1,,,ok
-yuc-18.073,21339,Tahdziú,2021,0,6,jun,31,31073,31073,pan-prd,,ABRAHAM AKE UC,,2024,,,,,0,,,,,,
+yuc-18.073,21339,Tahdziú,2021,0,6,jun,31,31073,31073,pan-prd,m,ABRAHAM AKE UC,,2024,,,,,0,,,,,,
 yuc-07.074,21340,Tahmek,1990,0,15,nov,31,31074,31074,pri,m,GONZALO MANUEL GAMBOA VEGA,,Term-limited-p-won,,prd,0.9151,,0,inafed,0,0,,,
 yuc-08.074,21341,Tahmek,1993,0,28,nov,31,31074,31074,pri,m,ALFONSO BAAS CASANOVA,,Term-limited-p-won,,pan,0.6213,,0,inafed,0,0,,,
 yuc-09.074,21342,Tahmek,1995,0,28,may,31,31074,31074,pri,m,SEBASTIAN CAUICH PECH,,Term-limited-p-won,,prd,0.1696,,0,inafed,0,0,,,
@@ -21352,7 +21352,7 @@ yuc-14.074,21347,Tahmek,2010,0,16,may,31,31074,31074,prd,m,JULIO CESAR ESPADAS T
 yuc-15.074,21348,Tahmek,2012,0,1,jul,31,31074,31074,pan,f,MARTHA PATRICIA SILVEIRA PUERTO,,Term-limited-p-lost,,prd-mc,0.0766,,0,,0,0,,,
 yuc-16.074,21349,Tahmek,2015,0,7,jun,31,31074,31074,pvem,m,JUAN JOSE GAMBOA CETINA,,Reran-beaten,,pri,0.0466,,0,,0,0,,,
 yuc-17.074,21350,Tahmek,2018,0,1,jul,31,31074,31074,pan,f,NEYDA MARIA HEREDIA LEAL,1,Reelected,JUAN JOSE GAMBOA CETINA,pvem,0.0694,,0,,1,1,,,ok
-yuc-18.074,21351,Tahmek,2021,0,6,jun,31,31074,31074,pan-pna,,NEYDA MARIA HEREDIA LEAL,,2024,,,,,0,,,,,,
+yuc-18.074,21351,Tahmek,2021,0,6,jun,31,31074,31074,pan-pna,f,NEYDA MARIA HEREDIA LEAL,,2024,,,,,0,,,,,,
 yuc-07.075,21352,Teabo,1990,0,15,nov,31,31075,31075,pri,m,MIGUEL ANGEL LOEZA CACHON,,Term-limited-p-won,,pan,0.6719,,0,inafed,0,0,,,
 yuc-08.075,21353,Teabo,1993,0,28,nov,31,31075,31075,pri,f,ADELINA R NOVELO CANCHE,,Term-limited-p-won,,pan,0.2597,,0,inafed,0,0,,,
 yuc-09.075,21354,Teabo,1995,0,28,may,31,31075,31075,pri,f,ADRIANA I FERNANDEZ GONGORA,,Term-limited-p-won,,pan,0.2399,,0,inafed,0,0,,,
@@ -21364,7 +21364,7 @@ yuc-14.075,21359,Teabo,2010,0,16,may,31,31075,31075,pan,m,FREDY ARIEL PERAZA CAA
 yuc-15.075,21360,Teabo,2012,0,1,jul,31,31075,31075,pri-pvem,m,ROBERTO ALEJANDRO LOPEZ MAY,,Term-limited-p-won,,pan,0.1795,,0,,0,0,,,
 yuc-16.075,21361,Teabo,2015,0,7,jun,31,31075,31075,pri,m,DANIEL FABIAN PUC NAAL,,Out-p-won,,pan,0.321,,0,,0,0,,,
 yuc-17.075,21362,Teabo,2018,0,1,jul,31,31075,31075,pri,f,FABIOLA LOEZA NOVELO,1,Out-p-lost,AIDA MARIA DE JESUS FERNANDEZ GONGORA,pvem,0.0653,,0,,0,0,,,
-yuc-18.075,21363,Teabo,2021,0,6,jun,31,31075,31075,pan-pna,,AIDA MARIA DE JESUS FERNANDEZ GONGORA,,2024,,,,,0,,,,,,
+yuc-18.075,21363,Teabo,2021,0,6,jun,31,31075,31075,pan-pna,f,AIDA MARIA DE JESUS FERNANDEZ GONGORA,,2024,,,,,0,,,,,,
 yuc-07.076,21364,Tecoh,1990,0,15,nov,31,31076,31076,pri,m,ROGER ACHACH CIMA,,Term-limited-p-won,,pan,0.8128,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",0,,0,0,,,ok
 yuc-08.076,21365,Tecoh,1993,0,28,nov,31,31076,31076,pri,m,AUSENCIO CANUL CHAN,,Term-limited-p-won,,pan,0.3481,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",0,,0,0,,,ok
 yuc-09.076,21366,Tecoh,1995,0,28,may,31,31076,31076,pri,m,RAUL FELIPE QUINTAL CARVAJAL,,Term-limited-p-won,,pan,0.4444,"Inafed lo listaba en Tekal tbien, deduje bloque aqui pq quinal carvajal reaparece",0,,0,0,,,ok
@@ -21376,7 +21376,7 @@ yuc-14.076,21371,Tecoh,2010,0,16,may,31,31076,31076,pri,m,JOEL ISAAC ACHACH DIAZ
 yuc-15.076,21372,Tecoh,2012,0,1,jul,31,31076,31076,pri-pvem,m,RAUL FELIPE QUINTAL CARVAJAL,,Term-limited-p-won,,pan,0.1079,,0,,1,1,,,ok
 yuc-16.076,21373,Tecoh,2015,0,7,jun,31,31076,31076,pri,m,JOEL ISAAC ACHACH DIAZ,,Out-p-lost,,pan,0.1566,,0,,1,1,,,ok
 yuc-17.076,21374,Tecoh,2018,0,1,jul,31,31076,31076,pan-mc,m,FELIPE AUDOMARO MAY ITZA,1,Out-p-lost,CARLOS ALBERTO CARVAJAL SOSA,pri,0.0954,,0,,0,0,,,
-yuc-18.076,21375,Tecoh,2021,0,6,jun,31,31076,31076,pri,,JOEL ISAAC  ACHACH DIAZ,,2024,,,,,0,,,,,,
+yuc-18.076,21375,Tecoh,2021,0,6,jun,31,31076,31076,pri,m,JOEL ISAAC  ACHACH DIAZ,,2024,,,,,0,,,,,,
 yuc-07.077,21376,Tekal de Venegas,1990,0,15,nov,31,31077,31077,pri,m,ROGER ACHACH CIMA,,Term-limited-p-won,,,1,,0,,0,0,,,ok
 yuc-08.077,21377,Tekal de Venegas,1993,0,28,nov,31,31077,31077,pri,m,AUSENCIO CANUL CHAN,,Term-limited-p-won,,pan,0.2813,,0,,0,0,,,ok
 yuc-09.077,21378,Tekal de Venegas,1995,0,28,may,31,31077,31077,pri,m,RAUL FELIPE QUINTAL CARVAJAL,,Term-limited-p-lost,,pan,0.3367,,0,,0,0,,,ok
@@ -21388,7 +21388,7 @@ yuc-14.077,21383,Tekal de Venegas,2010,0,16,may,31,31077,31077,pan,m,JOSE EFRAIN
 yuc-15.077,21384,Tekal de Venegas,2012,0,1,jul,31,31077,31077,pan,m,JOSE ANTONIO ARAGON UICAB,,Term-limited-p-won,,pri,0.1243,,0,,1,1,,,ok
 yuc-16.077,21385,Tekal de Venegas,2015,0,7,jun,31,31077,31077,pan,m,FRANCISCO VERDE ARAGON,,Out-p-won,,pri,0.1107,,0,,0,0,,,
 yuc-17.077,21386,Tekal de Venegas,2018,0,1,jul,31,31077,31077,pan-mc,m,JOSE ANTONIO ARAGON UICAB,1,Reelected,CANDELARIO DZIB BRITO,pvem,0.2352,,0,,1,1,,,ok
-yuc-18.077,21387,Tekal de Venegas,2021,0,6,jun,31,31077,31077,pan-pna,,JOSE ANTONIO ARAGON UICAB,,2024,,,,,0,,,,,,
+yuc-18.077,21387,Tekal de Venegas,2021,0,6,jun,31,31077,31077,pan-pna,m,JOSE ANTONIO ARAGON UICAB,,2024,,,,,0,,,,,,
 yuc-07.078,21388,Tekantó,1990,0,15,nov,31,31078,31078,pri,m,JOSE MANUEL R. PECH CRUZ,,Term-limited-p-won,,pan,0.3949,,0,inafed,0,0,,,
 yuc-08.078,21389,Tekantó,1993,0,28,nov,31,31078,31078,pri,m,FEDERICO CARRILLO CANDILA,,Term-limited-p-won,,conve,0.407,,0,inafed,0,0,,,
 yuc-09.078,21390,Tekantó,1995,0,28,may,31,31078,31078,pri,m,JULIO HUMBERTO CARRILLO BUENFIL,,Term-limited-p-lost,,otros,0.2332,,0,inafed,0,0,,,
@@ -21412,7 +21412,7 @@ yuc-14.079,21407,Tekax,2010,0,16,may,31,31079,31079,pri,m,FERNANDO ROMERO AVILA,
 yuc-15.079,21408,Tekax,2012,0,1,jul,31,31079,31079,pri-pvem,f,CONSUELO DEL CARMEN NAVARRETE,,Term-limited-p-won,,prd-mc,0.0037,,0,,0,0,,,
 yuc-16.079,21409,Tekax,2015,0,7,jun,31,31079,31079,pri,m,JOSUE MANANCE COUCH IZEC,,Out-p-lost,,prd,0.1081,,0,,0,0,,,
 yuc-17.079,21410,Tekax,2018,0,1,jul,31,31079,31079,pan-prd-mc,m,DIEGO JOSE AVILA ROMERO,1,Reelected,FERNANDO ROMERO AYUSO,pri-pna,0.1467,,0,,0,0,,,
-yuc-18.079,21411,Tekax,2021,0,6,jun,31,31079,31079,pan-prd,,DIEGO JOSE AVILA ROMERO,,2024,,,,,0,,,,,,
+yuc-18.079,21411,Tekax,2021,0,6,jun,31,31079,31079,pan-prd,m,DIEGO JOSE AVILA ROMERO,,2024,,,,,0,,,,,,
 yuc-07.080,21412,Tekit,1990,0,15,nov,31,31080,31080,pri,m,ISIDRO RICALDE VARGUEZ,,Term-limited-p-won,,parm,0.2299,,0,inafed,0,0,,,
 yuc-08.080,21413,Tekit,1993,0,28,nov,31,31080,31080,pri,m,JOSE FRANCISCO SUAREZ PIÑA,,Term-limited-p-won,,pan,0.3204,,0,inafed,0,0,,,
 yuc-09.080,21414,Tekit,1995,0,28,may,31,31080,31080,pri,m,LUIS ANTONIO ALONZO WORBIS,,Term-limited-p-lost,,otros,0.3193,,0,inafed,0,0,,,
@@ -21424,7 +21424,7 @@ yuc-14.080,21419,Tekit,2010,0,16,may,31,31080,31080,pan,m,MARCELO NAHUAT AKE,,Te
 yuc-15.080,21420,Tekit,2012,0,1,jul,31,31080,31080,pan,m,LUIS ENRIQUE MEDINA BACELIS,,Term-limited-p-won,,pri-pvem,0.035,,0,,0,0,,,
 yuc-16.080,21421,Tekit,2015,0,7,jun,31,31080,31080,pan,m,MIGUEL ANGEL VARGUEZ ALONZO,,Out-p-won,,pri,0.0368,,0,,0,0,,,
 yuc-17.080,21422,Tekit,2018,0,1,jul,31,31080,31080,pan,m,JOSE ARMANDO MEDINA KOH,1,Out-p-lost,FELIPE DE JESUS MEDINA COLLI,pna,0.0334,,0,,0,0,,,
-yuc-18.080,21423,Tekit,2021,0,6,jun,31,31080,31080,morena,,FELIPE DE JESUS MEDINA COLI,,2024,,,,,0,,,,,,
+yuc-18.080,21423,Tekit,2021,0,6,jun,31,31080,31080,morena,m,FELIPE DE JESUS MEDINA COLI,,2024,,,,,0,,,,,,
 yuc-07.081,21424,Tekom,1990,0,15,nov,31,31081,31081,pri,m,ESTEBAN PAAT CAAMAL,,Term-limited-p-won,,pan,0.988,,0,inafed,0,0,,,
 yuc-08.081,21425,Tekom,1993,0,28,nov,31,31081,31081,pri,m,WILFREDO COCOM Y PAT,,Term-limited-p-won,,pan,0.7044,,0,inafed,0,0,,,
 yuc-09.081,21426,Tekom,1995,0,28,may,31,31081,31081,pri,m,WILLIAM EDILBERTO CAN TEC,,Term-limited-p-won,,pan,0.3904,,0,inafed,0,0,,,ok
@@ -21436,7 +21436,7 @@ yuc-14.081,21431,Tekom,2010,0,16,may,31,31081,31081,pri,m,JONNHY MIK COCOM CAN,,
 yuc-15.081,21432,Tekom,2012,0,1,jul,31,31081,31081,pri-pvem,m,MANUEL ARTURO CHAY POOT,,Term-limited-p-won,,pan,0.3029,,0,,0,0,,,
 yuc-16.081,21433,Tekom,2015,0,7,jun,31,31081,31081,pri,m,ARMIN ARMANDO KUMUL COCOM,,Out-p-won,,pan,0.0301,,0,,0,0,,,
 yuc-17.081,21434,Tekom,2018,0,1,jul,31,31081,31081,pri,m,VICTOR MANUEL BATUN CAN,1,Out-p-won,KARLA NOEMI COCOM BATUN,pan-prd-mc,0.1863,,0,,0,0,,,
-yuc-18.081,21435,Tekom,2021,0,6,jun,31,31081,31081,pri,,GLORIA ARACELLY COCOM CAN,,2024,,,,,0,,,,,,
+yuc-18.081,21435,Tekom,2021,0,6,jun,31,31081,31081,pri,f,GLORIA ARACELLY COCOM CAN,,2024,,,,,0,,,,,,
 yuc-07.082,21436,Telchac Pueblo,1990,0,15,nov,31,31082,31082,pri,m,JUAN TAMAYO CAB,,Term-limited-p-won,,pan,0.5627,,0,inafed,0,0,,,ok
 yuc-08.082,21437,Telchac Pueblo,1993,0,28,nov,31,31082,31082,pri,m,JOSE ENRIQUE RUIZ MALDONADO,,Term-limited-p-won,,pan,0.3023,,0,inafed,0,0,,,ok
 yuc-09.082,21438,Telchac Pueblo,1995,0,28,may,31,31082,31082,pri,m,CARLOS RAUL JIMENEZ TAMAYO,,Term-limited-p-won,,pan,0.5122,,0,inafed,0,0,,,
@@ -21448,7 +21448,7 @@ yuc-14.082,21443,Telchac Pueblo,2010,0,16,may,31,31082,31082,pri,m,HEYDER ALF MA
 yuc-15.082,21444,Telchac Pueblo,2012,0,1,jul,31,31082,31082,pri-pvem,m,MANUEL JESUS AGUILAR PECH,,Term-limited-p-won,,pna,0.2654,,0,,1,1,,,ok
 yuc-16.082,21445,Telchac Pueblo,2015,0,7,jun,31,31082,31082,pri,m,CARLOS HUMBERTO CABRER RIVERO,,Out-p-won,,pan,0.4332,,0,,0,0,,,
 yuc-17.082,21446,Telchac Pueblo,2018,0,1,jul,31,31082,31082,pri-pna,m,JUAN JACOBO LOPEZ ALVAREZ,1,Reelected,LEIDY ALICIA CASTILLO MENA,pan-mc,0.3821,,0,,0,0,,,
-yuc-18.082,21447,Telchac Pueblo,2021,0,6,jun,31,31082,31082,pri,,JUAN JACOBO LOPEZ ALVAREZ,,2024,,,,,0,,,,,,
+yuc-18.082,21447,Telchac Pueblo,2021,0,6,jun,31,31082,31082,pri,m,JUAN JACOBO LOPEZ ALVAREZ,,2024,,,,,0,,,,,,
 yuc-07.083,21448,Telchac Puerto,1990,0,15,nov,31,31083,31083,pri,m,ANDRES CETINA CHAY,,Term-limited-p-won,,pan,0.7016,,0,inafed,0,0,,,
 yuc-08.083,21449,Telchac Puerto,1993,0,28,nov,31,31083,31083,pri,m,RUGIERO MIGUEL BOETA MARRUFO,,Term-limited-p-won,,pan,0.3075,,0,inafed,0,0,,,
 yuc-09.083,21450,Telchac Puerto,1995,0,28,may,31,31083,31083,pri,m,JORGE CARLOS POVEDANO ROSADO,,Term-limited-p-won,,pan,0.5747,,0,inafed,0,0,,,
@@ -21460,7 +21460,7 @@ yuc-14.083,21455,Telchac Puerto,2010,0,16,may,31,31083,31083,pri,m,SANTOS A ROSA
 yuc-15.083,21456,Telchac Puerto,2012,0,1,jul,31,31083,31083,pna,m,JOSE HUMBERTO MARRUFO RAMIREZ,,Term-limited-p-won,,pan,0.1113,,0,,0,0,,,
 yuc-16.083,21457,Telchac Puerto,2015,0,7,jun,31,31083,31083,pna,m,JOSE ALFREDO GARCIA CORDOBA,,Out-p-lost,,pri,0.009,,0,,0,0,,,
 yuc-17.083,21458,Telchac Puerto,2018,0,1,jul,31,31083,31083,pri,m,JUAN ALFREDO MARRUFO DIAZ,1,Reelected,ROSENDO CHALE KU,pan,0.1946,,0,,1,1,,,ok
-yuc-18.083,21459,Telchac Puerto,2021,0,6,jun,31,31083,31083,pri,,JUAN ALFREDO MARRUFO DIAZ,,2024,,,,,0,,,,,,
+yuc-18.083,21459,Telchac Puerto,2021,0,6,jun,31,31083,31083,pri,m,JUAN ALFREDO MARRUFO DIAZ,,2024,,,,,0,,,,,,
 yuc-07.084,21460,Temax,1990,0,15,nov,31,31084,31084,pri,m,CESAR JUAN DE DIOS CARDENAS RIVERO,,Term-limited-p-won,,prd,0.7736,,0,inafed,0,0,,,
 yuc-08.084,21461,Temax,1993,0,28,nov,31,31084,31084,pri,m,CARLOS CANUL CASTRO,,Term-limited-p-won,,pan,0.4046,,0,inafed,0,0,,,
 yuc-09.084,21462,Temax,1995,0,28,may,31,31084,31084,pri,f,LEANDRA MOGUEL LIZAMA,,Term-limited-p-won,,pan,0.3783,,0,inafed,0,0,,,ok
@@ -21472,7 +21472,7 @@ yuc-14.084,21467,Temax,2010,0,16,may,31,31084,31084,pri,m,WILIAN E. AYALA MARTI,
 yuc-15.084,21468,Temax,2012,0,1,jul,31,31084,31084,pri-pvem,m,MIGUEL ALONSO PACHECO DIAZ,,Term-limited-p-lost,,pan,0.0199,,0,,0,0,,,
 yuc-16.084,21469,Temax,2015,0,7,jun,31,31084,31084,pan,m,ANGEL ANTONIO GONZALEZ ESCALANTE,,Out-p-won,,pri,0.3048,,0,,0,0,1,,
 yuc-17.084,21470,Temax,2018,0,1,jul,31,31084,31084,pan,m,JORGE WILBERT GONZALEZ ESCALANTE,1,Out-p-won,FRANCELY DEL CARMEN CRUZ PUJOL,pri-pvem,0.3372,,0,,0,0,1,,
-yuc-18.084,21471,Temax,2021,0,6,jun,31,31084,31084,pan,,ANGEL ANTONIO GONZALEZ ESCALANTE,,2024,,,,,0,,1,1,1,,
+yuc-18.084,21471,Temax,2021,0,6,jun,31,31084,31084,pan,m,ANGEL ANTONIO GONZALEZ ESCALANTE,,2024,,,,,0,,1,1,1,,
 yuc-07.085,21472,Temozón,1990,0,15,nov,31,31085,31085,pri,m,PAULINO ALCOCER Y AGUILAR,,Term-limited-p-won,,pan,0.6745,,0,inafed,0,0,,,
 yuc-08.085,21473,Temozón,1993,0,28,nov,31,31085,31085,pri,m,SALVADOR ROSADO VALDEZ,,Term-limited-p-won,,pan,0.7682,,0,inafed,0,0,,,
 yuc-09.085,21474,Temozón,1995,0,28,may,31,31085,31085,pri,m,DIDDIER ALFREDO MARIN AGUILAR,,Term-limited-p-won,,pan,0.6843,,0,inafed,0,0,,,
@@ -21484,7 +21484,7 @@ yuc-14.085,21479,Temozón,2010,0,16,may,31,31085,31085,pna,m,DIONICIO NOVELO GON
 yuc-15.085,21480,Temozón,2012,0,1,jul,31,31085,31085,pri-pvem,m,DIDIER MARIN AGUILAR,,Term-limited-p-lost,,pna,0.1161,,0,,0,0,,,
 yuc-16.085,21481,Temozón,2015,0,7,jun,31,31085,31085,pan-pna,m,JOSE CONSEPCION DIAZ MENA,,Out-p-lost,,pri,0.1021,,0,,0,0,,,
 yuc-17.085,21482,Temozón,2018,0,1,jul,31,31085,31085,pt-morena-pes,m,CARLOS MANUEL KUYOC CASTILLO,1,Reelected,LINA ROSALBA FERNANDEZ AGUILAR,pri,0.0998,,0,,0,0,,,
-yuc-18.085,21483,Temozón,2021,0,6,jun,31,31085,31085,morena,,CARLOS MANUEL KUYOC CASTILLO,,2024,,,,,0,,,,,,
+yuc-18.085,21483,Temozón,2021,0,6,jun,31,31085,31085,morena,m,CARLOS MANUEL KUYOC CASTILLO,,2024,,,,,0,,,,,,
 yuc-07.086,21484,Tepakán,1990,0,15,nov,31,31086,31086,pri,m,GABRIEL ELOY FERNANDEZ RODRIGUEZ,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
 yuc-08.086,21485,Tepakán,1993,0,28,nov,31,31086,31086,pri,m,JUAN CHAIRES ACOSTA,,Term-limited-p-won,,pan,0.7855,,0,inafed,0,0,,,
 yuc-09.086,21486,Tepakán,1995,0,28,may,31,31086,31086,pri,m,GABRIEL ELOY FERNANDEZ RODRIGUEZ,,Term-limited-p-won,,pan,0.9029,,0,inafed,1,1,,,ok
@@ -21496,7 +21496,7 @@ yuc-14.086,21491,Tepakán,2010,0,16,may,31,31086,31086,prd,m,JOSE GUADALUPE LOPE
 yuc-15.086,21492,Tepakán,2012,0,1,jul,31,31086,31086,prd-mc,m,WEYLER AARON CORAL MANRIQUE,,Term-limited-p-won,,pri-pvem,0.0906,,0,,1,1,,,ok
 yuc-16.086,21493,Tepakán,2015,0,7,jun,31,31086,31086,prd,m,EUFRACIO UK CHAN,,Out-p-won,,pri,0.0638,,0,,0,0,,,
 yuc-17.086,21494,Tepakán,2018,0,1,jul,31,31086,31086,prd,m,WEYLER AARON CORAL MANRIQUE,1,Reelected,JOSE ROLANDO FERNANDEZ RODRIGUEZ,pvem,0.2766,,0,,1,1,,,ok
-yuc-18.086,21495,Tepakán,2021,0,6,jun,31,31086,31086,prd,,WEYLER AARON CORAL MANRIQUE,,2024,,,,,0,,,,,,
+yuc-18.086,21495,Tepakán,2021,0,6,jun,31,31086,31086,prd,m,WEYLER AARON CORAL MANRIQUE,,2024,,,,,0,,,,,,
 yuc-07.087,21496,Tetiz,1990,0,15,nov,31,31087,31087,pri,m,LUIS ADRIAN CONCHA RODRIGUEZ,,Term-limited-p-lost,,pan,0.0198,,0,inafed,0,0,,,
 yuc-08.087,21497,Tetiz,1993,0,28,nov,31,31087,31087,pan,m,ALEJANDRO TZUC TUZ,,Term-limited-p-won,,pri,0.1038,,0,inafed,0,0,,,
 yuc-09.087,21498,Tetiz,1995,0,28,may,31,31087,31087,pan,m,FELIX XOOL BAAS,,Term-limited-p-lost,,pri,0.1216,,0,inafed,0,0,,,
@@ -21508,7 +21508,7 @@ yuc-14.087,21503,Tetiz,2010,0,16,may,31,31087,31087,pan,m,ENRIQUE BALAM CHIM,,Te
 yuc-15.087,21504,Tetiz,2012,0,1,jul,31,31087,31087,pri-pvem,m,JESUS DAMIAN CHAN CAB,,Term-limited-p-won,,pan,0.21,,0,,0,0,,,
 yuc-16.087,21505,Tetiz,2015,0,7,jun,31,31087,31087,pri,m,JUAN KOYOC POOT,,Out-p-lost,,prd,0.0804,,0,,1,1,,,ok
 yuc-17.087,21506,Tetiz,2018,0,1,jul,31,31087,31087,prd,m,CATARINO POOT TINAL,1,Out-p-lost,MELESIO CANCHE RUIZ,pri,0.0174,,0,,1,1,,,ok
-yuc-18.087,21507,Tetiz,2021,0,6,jun,31,31087,31087,pri,,MELESIO CANCHE RUIZ,,2024,,,,,0,,,,,,
+yuc-18.087,21507,Tetiz,2021,0,6,jun,31,31087,31087,pri,m,MELESIO CANCHE RUIZ,,2024,,,,,0,,,,,,
 yuc-07.088,21508,Teya,1990,0,15,nov,31,31088,31088,pri,m,FERMIN CHAN COLLI,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.088,21509,Teya,1993,0,28,nov,31,31088,31088,pri,m,JULIAN CERVERA CRIOLLO,,Term-limited-p-won,,pan,0.7358,,0,inafed,0,0,,,ok
 yuc-09.088,21510,Teya,1995,0,28,may,31,31088,31088,pri,m,PORFIRIO ARCEO CORAL,,Term-limited-p-won,,pan,0.8568,,0,inafed,0,0,,,ok
@@ -21520,7 +21520,7 @@ yuc-14.088,21515,Teya,2010,0,16,may,31,31088,31088,pri,m,PORFIRIO ARCEO CORAL,,T
 yuc-15.088,21516,Teya,2012,0,1,jul,31,31088,31088,pri-pvem,m,RAMON ESTRELLA SANCHEZ,,Term-limited-p-won,,prd,0.3866,,0,,0,0,,,
 yuc-16.088,21517,Teya,2015,0,7,jun,31,31088,31088,pri,m,PORFIRIO ARCEO CORAL,,Out-p-won,,prd,0.5172,,0,,1,1,,,ok
 yuc-17.088,21518,Teya,2018,0,1,jul,31,31088,31088,pri,m,LUIS ALBERTO NUÑEZ HAU,1,Reran-beaten,JOSE BERNARDO RODRIGUEZ ARCEO,prd-mc,0.0988,,0,,0,0,,,
-yuc-18.088,21519,Teya,2021,0,6,jun,31,31088,31088,pan,,JOSE BERNARDO RODRIGUEZ ARCEO,,2024,,,,,0,,,,,,
+yuc-18.088,21519,Teya,2021,0,6,jun,31,31088,31088,pan,m,JOSE BERNARDO RODRIGUEZ ARCEO,,2024,,,,,0,,,,,,
 yuc-07.089,21520,Ticul,1990,0,15,nov,31,31089,31089,pri,m,JOSE E BALAM MARIN,,Term-limited-p-won,,pan,0.8673,,0,inafed,0,0,,,
 yuc-08.089,21521,Ticul,1993,0,28,nov,31,31089,31089,pri,m,CESAR AUGUSTO SANCHEZ BAUTISTA,,Term-limited-p-lost,,pan,0.2491,,0,inafed,0,0,,,
 yuc-09.089,21522,Ticul,1995,0,28,may,31,31089,31089,pan,m,MARCO ANTONIO PEREZ MEDINA,,Term-limited-p-lost,,pri,0.0235,,0,inafed,0,0,,,ok
@@ -21532,7 +21532,7 @@ yuc-14.089,21527,Ticul,2010,0,16,may,31,31089,31089,pri-pvem,m,RAFAEL CHAN MAGA�
 yuc-15.089,21528,Ticul,2012,0,1,jul,31,31089,31089,pri-pvem,m,ORLANDO RAFAEL MEDINA UN,,Term-limited-p-won,,pan,0.0687,,0,,0,0,,,
 yuc-16.089,21529,Ticul,2015,0,7,jun,31,31089,31089,pri,m,CAMILO MOISES SALOMON LOPEZ,,Out-p-lost,,pan,0.0826,,0,,0,0,,,
 yuc-17.089,21530,Ticul,2018,0,1,jul,31,31089,31089,pan-mc,m,RAFAEL GERARDO MONTALVO MATA,1,Reelected,EVELIO DZIB PERAZA,pri-pna,0.1074,,0,,0,0,,,
-yuc-18.089,21531,Ticul,2021,0,6,jun,31,31089,31089,pan-pna,,RAFAEL GERARDO  MONTALVO MATA,,2024,,,,,0,,,,,,
+yuc-18.089,21531,Ticul,2021,0,6,jun,31,31089,31089,pan-pna,m,RAFAEL GERARDO  MONTALVO MATA,,2024,,,,,0,,,,,,
 yuc-07.090,21532,Timucuy,1990,0,15,nov,31,31090,31090,pri,m,PEDRO LUIS TUN CHAN,,Term-limited-p-won,,pan,0.8679,,0,inafed,0,0,,,
 yuc-08.090,21533,Timucuy,1993,0,28,nov,31,31090,31090,pri,m,ISAIAS MORENO OJEDA,,Term-limited-p-won,,pan,0.5718,,0,inafed,0,0,,,
 yuc-09.090,21534,Timucuy,1995,0,28,may,31,31090,31090,pri,m,CARLOS SAMUEL UCAN PECH,,Term-limited-p-won,,pan,0.6499,,0,inafed,0,0,,,
@@ -21544,7 +21544,7 @@ yuc-14.090,21539,Timucuy,2010,0,16,may,31,31090,31090,pri,m,MISAEL CHAM YAM,,Ter
 yuc-15.090,21540,Timucuy,2012,0,1,jul,31,31090,31090,pan,m,CARLOS EUTIMIO CHAN MAY,,Term-limited-p-lost,,pri-pvem,0.1371,,0,,0,0,,,
 yuc-16.090,21541,Timucuy,2015,0,7,jun,31,31090,31090,pri,m,JUAN JAVIER COUOH SULUB,,Out-p-won,,pan,0.1153,,0,,0,0,,,
 yuc-17.090,21542,Timucuy,2018,0,1,jul,31,31090,31090,pri,f,SEYDI MARICRUZ CANUL UICAB,1,Out-p-won,CARLOS EUTIMIO CHAN MAY,pan,0.0435,,0,,0,0,,,
-yuc-18.090,21543,Timucuy,2021,0,6,jun,31,31090,31090,pri,,MARSI ROSANA CEH TEH,,2024,,,,,0,,,,,,
+yuc-18.090,21543,Timucuy,2021,0,6,jun,31,31090,31090,pri,f,MARSI ROSANA CEH TEH,,2024,,,,,0,,,,,,
 yuc-07.091,21544,Tinum,1990,0,15,nov,31,31091,31091,pri,m,OSWALDO YAM PUC,,Term-limited-p-won,,pan,0.3004,,0,inafed,0,0,,,
 yuc-08.091,21545,Tinum,1993,0,28,nov,31,31091,31091,pri,m,EMIR ANTONIO ALCOCER CETINA,,Term-limited-p-won,,pan,0.4459,,0,inafed,0,0,,,
 yuc-09.091,21546,Tinum,1995,0,28,may,31,31091,31091,pri,m,JUAN FRANCISCO HELIODORO DZIB,,Term-limited-p-won,,pan,0.1412,,0,inafed,0,0,,,
@@ -21568,7 +21568,7 @@ yuc-14.092,21563,Tixcacalcupul,2010,0,16,may,31,31092,31092,pri,m,FELIPE JOEL OY
 yuc-15.092,21564,Tixcacalcupul,2012,0,1,jul,31,31092,31092,pri-pvem,m,LEONARDO CHAY EK,,Term-limited-p-won,,pan,0.1142,,0,,0,0,,,
 yuc-16.092,21565,Tixcacalcupul,2015,0,7,jun,31,31092,31092,pri,m,MATEO CAHUM,,Out-p-won,,pan,0.1762,,0,,0,0,,,
 yuc-17.092,21566,Tixcacalcupul,2018,0,1,jul,31,31092,31092,pri,m,JOSUE RUBEN TUN HOIL,1,Out-p-won,AGUSTIN POOT PAT,pt-morena-pes,0.276,,0,,0,0,,,
-yuc-18.092,21567,Tixcacalcupul,2021,0,6,jun,31,31092,31092,pri,,RAMON NONATO TUN CHAN,,2024,,,,,0,,,,,,
+yuc-18.092,21567,Tixcacalcupul,2021,0,6,jun,31,31092,31092,pri,m,RAMON NONATO TUN CHAN,,2024,,,,,0,,,,,,
 yuc-07.093,21568,Tixkokob,1990,0,15,nov,31,31093,31093,pri,m,CARLOS A BASTARRACHEA LARA,,Term-limited-p-won,,pan,0.635,,0,inafed,0,0,,,
 yuc-08.093,21569,Tixkokob,1993,0,28,nov,31,31093,31093,pri,m,DIDIER MARRUFO ALCOCER,,Term-limited-p-won,,pan,0.3048,,0,inafed,0,0,,,
 yuc-09.093,21570,Tixkokob,1995,0,28,may,31,31093,31093,pri,f,GUADALUPE MARLENI JUAREZ RUBIO,,Term-limited-p-won,,pan,0.0956,,0,inafed,0,0,,,
@@ -21580,7 +21580,7 @@ yuc-14.093,21575,Tixkokob,2010,0,16,may,31,31093,31093,pri,m,RAUL ARMANDO GOMEZ 
 yuc-15.093,21576,Tixkokob,2012,0,1,jul,31,31093,31093,pan,m,MIGUEL ESTEBAN RODRIGUEZ BAQUEIRO,,Term-limited-p-lost,,pri-pvem,0.0524,,0,,0,0,,,
 yuc-16.093,21577,Tixkokob,2015,0,7,jun,31,31093,31093,pri,m,LIDIO ISAIAS JUAREZ GOMEZ,,Out-p-won,,pan,0.1264,,0,,0,0,,,
 yuc-17.093,21578,Tixkokob,2018,0,1,jul,31,31093,31093,pri,m,ERIC EDGARDO QUIJANO GONZALEZ,1,Reran-beaten,FABIAN ANDRES DE JESUS RIVERA FRIAS,pan-mc,0.0268,,0,,0,0,,,
-yuc-18.093,21579,Tixkokob,2021,0,6,jun,31,31093,31093,pna,,FABIAN ANDRES DE JESUS RIVERA FRIAS,,2024,,,,,0,,,,,,
+yuc-18.093,21579,Tixkokob,2021,0,6,jun,31,31093,31093,pna,m,FABIAN ANDRES DE JESUS RIVERA FRIAS,,2024,,,,,0,,,,,,
 yuc-07.094,21580,Tixmehuac,1990,0,15,nov,31,31094,31094,pri,m,CORNELIO RODRIGUEZ LOPEZ,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.094,21581,Tixmehuac,1993,0,28,nov,31,31094,31094,pri,m,WENCESLAO SOSA HERNANDEZ,,Term-limited-p-won,,pan,0.8618,,0,inafed,0,0,,,
 yuc-09.094,21582,Tixmehuac,1995,0,28,may,31,31094,31094,pri,m,DAVID D HERNANDEZ HERNANDEZ,,Term-limited-p-won,,pan,0.4176,,0,inafed,0,0,,,
@@ -21592,7 +21592,7 @@ yuc-14.094,21587,Tixmehuac,2010,0,16,may,31,31094,31094,pri,m,VICTOR PANTI CERVE
 yuc-15.094,21588,Tixmehuac,2012,0,1,jul,31,31094,31094,prd-mc,m,EDILBERTO RODRIGUEZ LOPEZ,,Term-limited-p-lost,,pri-pvem,0.0233,,0,,1,1,,,ok
 yuc-16.094,21589,Tixmehuac,2015,0,7,jun,31,31094,31094,pri,m,GASPAR PANTI SEL,,Reelected,,prd,0.1453,,0,,0,0,,,ok
 yuc-17.094,21590,Tixmehuac,2018,0,1,jul,31,31094,31094,pri-pna,m,GASPAR PANTI SEL,1,Term-limited-p-won,EDILBERTO RODRIGUEZ LOPEZ,prd,0.1883,,0,wikipedia,1,1,,,ok
-yuc-18.094,21591,Tixmehuac,2021,0,6,jun,31,31094,31094,pri,,ANGELICA PANTI CERVERA,,2024,,,,,0,,,,,,
+yuc-18.094,21591,Tixmehuac,2021,0,6,jun,31,31094,31094,pri,f,ANGELICA PANTI CERVERA,,2024,,,,,0,,,,,,
 yuc-07.095,21592,Tixpéhual,1990,0,15,nov,31,31095,31095,pan,m,RAMON ANTONIO BARRERA,,Term-limited-p-lost,,pri,0.0139,,0,inafed,0,0,,,
 yuc-08.095,21593,Tixpéhual,1993,0,28,nov,31,31095,31095,pri,f,AIDA DEL S. PECH BASTARRACHEA,,Term-limited-p-lost,,pan,0.0846,,0,inafed,0,0,,,
 yuc-09.095,21594,Tixpéhual,1995,0,28,may,31,31095,31095,pan,m,MANUEL JESUS VIERA BASTARRACHEA,,Term-limited-p-lost,,pri,0.0538,,0,inafed,0,0,,,ok
@@ -21604,7 +21604,7 @@ yuc-14.095,21599,Tixpéhual,2010,0,16,may,31,31095,31095,pvem,m,FAUSTO I. PAREJA
 yuc-15.095,21600,Tixpéhual,2012,0,1,jul,31,31095,31095,pri,m,JOSE ANGEL ISMAEL MEX SALAS,,Term-limited-p-lost,,pan,0.0928,,0,,0,0,,,
 yuc-16.095,21601,Tixpéhual,2015,0,7,jun,31,31095,31095,pan,m,MANUEL JESUS VIERA BASTARRACHEA,,Out-p-lost,,pri,0.0135,,0,,1,1,,,ok
 yuc-17.095,21602,Tixpéhual,2018,0,1,jul,31,31095,31095,pri,m,GERARDO ALBERTO CONCHA NAVARRETE,1,Out-p-lost,JUAN GABRIEL TEPAL POOL,prd,0.1055,,0,,0,0,,,
-yuc-18.095,21603,Tixpéhual,2021,0,6,jun,31,31095,31095,morena,,VICTOR RENE LARA CAUICH,,2024,,,,,0,,,,,,
+yuc-18.095,21603,Tixpéhual,2021,0,6,jun,31,31095,31095,morena,m,VICTOR RENE LARA CAUICH,,2024,,,,,0,,,,,,
 yuc-07.096,21604,Tizimín,1990,0,15,nov,31,31096,31096,pan,m,EDUARDO PEREZ SALAZAR,,Term-limited-p-lost,,pri,0.0663,,0,inafed,0,0,,,
 yuc-08.096,21605,Tizimín,1993,0,28,nov,31,31096,31096,pri,m,CARLOS ALAMILLA RODRIGUEZ,,Term-limited-p-won,,pan,0.2258,,0,inafed,0,0,,,
 yuc-09.096,21606,Tizimín,1995,0,28,may,31,31096,31096,pri,f,VERONICA FARJAT SANCHEZ,,Term-limited-p-won,,pan,0.2075,,0,inafed,0,0,,,
@@ -21616,7 +21616,7 @@ yuc-14.096,21611,Tizimín,2010,0,16,may,31,31096,31096,pan,m,JOSE ADOLFO MEZO PE
 yuc-15.096,21612,Tizimín,2012,0,1,jul,31,31096,31096,pri,f,MARIA DEL ROSARIO DIAZ GONGORA,,Term-limited-p-won,,pan,0.021,,0,,0,0,,,
 yuc-16.096,21613,Tizimín,2015,0,7,jun,31,31096,31096,pri,m,JORGE ALBERTO VALES TRACONIS,,Out-p-won,,pan,0.1556,,0,,0,0,,,
 yuc-17.096,21614,Tizimín,2018,0,1,jul,31,31096,31096,pri-pvem,m,MARIO ALBERTO GONZALEZ GONZALEZ,1,Reran-beaten,JOSE ALEJANDRO MEZO GASTELUM,pt-morena-pes,0.0975,,0,,0,0,,,
-yuc-18.096,21615,Tizimín,2021,0,6,jun,31,31096,31096,pan-pna,,PEDRO FRANCISCO COUOH SUASTE,,2024,,,,,0,,,,,,
+yuc-18.096,21615,Tizimín,2021,0,6,jun,31,31096,31096,pan-pna,m,PEDRO FRANCISCO COUOH SUASTE,,2024,,,,,0,,,,,,
 yuc-07.097,21616,Tunkás,1990,0,15,nov,31,31097,31097,pri,m,VICTOR GABRIEL ESTRELLA ADRIAN,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 yuc-08.097,21617,Tunkás,1993,0,28,nov,31,31097,31097,pri,m,OSWALDO DOMINGUEZ CORTES,,Term-limited-p-won,,pan,0.7521,,0,inafed,0,0,,,
 yuc-09.097,21618,Tunkás,1995,0,28,may,31,31097,31097,pri,m,LEOVIGILDO UICAB LOPEZ,,Term-limited-p-won,,pan,0.2989,,0,inafed,0,0,,,
@@ -21628,7 +21628,7 @@ yuc-14.097,21623,Tunkás,2010,0,16,may,31,31097,31097,pan,m,MANUEL PECH UICAB,,T
 yuc-15.097,21624,Tunkás,2012,0,1,jul,31,31097,31097,pan,f,MARIA ELENA DOMINGUEZ KU,,Term-limited-p-won,,pri-pvem,0.1548,,0,,0,0,,,
 yuc-16.097,21625,Tunkás,2015,0,7,jun,31,31097,31097,pan,m,OSCAR JACINTO LOPEZ CASTILLO,,Out-p-lost,,pri,0.125,,0,,0,0,,,
 yuc-17.097,21626,Tunkás,2018,0,1,jul,31,31097,31097,mc,m,EDUARDO CUPUL NOH,1,Reran-beaten,CLARA DE JESUS UCAN CANUL,pri-pna,0.0509,,0,,0,0,,,
-yuc-18.097,21627,Tunkás,2021,0,6,jun,31,31097,31097,pan-pna,,JORGE RICARDO KUH MENDEZ,,2024,,,,,0,,,,,,
+yuc-18.097,21627,Tunkás,2021,0,6,jun,31,31097,31097,pan-pna,m,JORGE RICARDO KUH MENDEZ,,2024,,,,,0,,,,,,
 yuc-07.098,21628,Tzucacab,1990,0,15,nov,31,31098,31098,pri,m,ROBERTO DE JESUS NAVARRETE MACHAIN,,Term-limited-p-won,,pan,0.6581,,0,inafed,0,0,,,
 yuc-08.098,21629,Tzucacab,1993,0,28,nov,31,31098,31098,pri,m,FRANCISCO JAVIER HERRERA POLANCO,,Term-limited-p-won,,pan,0.4414,,0,inafed,0,0,,,
 yuc-09.098,21630,Tzucacab,1995,0,28,may,31,31098,31098,pri,m,ARCADIO CAAMAL CHI,,Term-limited-p-lost,,pan,0.1096,,0,inafed,0,0,,,
@@ -21640,7 +21640,7 @@ yuc-14.098,21635,Tzucacab,2010,0,16,may,31,31098,31098,pri,m,YSMAEL ENRIQUE COCO
 yuc-15.098,21636,Tzucacab,2012,0,1,jul,31,31098,31098,pan,m,BERNABE ANTONIO TAH CHUC,,Term-limited-p-lost,,pri-pvem,0.0092,,0,,0,0,,,
 yuc-16.098,21637,Tzucacab,2015,0,7,jun,31,31098,31098,pri,m,DANNY ONAM BALAM BALAM,,Out-p-lost,,prd,0.0374,,0,,0,0,,,
 yuc-17.098,21638,Tzucacab,2018,0,1,jul,31,31098,31098,prd,m,JAVIER CUY CANUL,1,Out-p-lost,MARIO EFREN ESTRADA CAMARA,pri,0.1658,,0,,0,0,,,
-yuc-18.098,21639,Tzucacab,2021,0,6,jun,31,31098,31098,pt,,FREDDY ALEJANDRO CARRILLO BLANCO,,2024,,,,,0,,,,,,
+yuc-18.098,21639,Tzucacab,2021,0,6,jun,31,31098,31098,pt,m,FREDDY ALEJANDRO CARRILLO BLANCO,,2024,,,,,0,,,,,,
 yuc-07.099,21640,Uayma,1990,0,15,nov,31,31099,31099,pri,m,JOSE EMILIO ESPADAS DZUL,,Term-limited-p-won,,prd,0.2723,,0,inafed,0,0,,,
 yuc-08.099,21641,Uayma,1993,0,28,nov,31,31099,31099,pri,m,FORTUNATO CUPUL CUPUL,,Term-limited-p-won,,pan,0.2551,,0,inafed,0,0,,,
 yuc-09.099,21642,Uayma,1995,0,28,may,31,31099,31099,pri,m,ELADIO EK TAX,,Term-limited-p-lost,,pan,0.0227,,0,inafed,0,0,,,
@@ -21652,7 +21652,7 @@ yuc-14.099,21647,Uayma,2010,0,16,may,31,31099,31099,pri,m,JUAN R CIAU CHABLE,,Te
 yuc-15.099,21648,Uayma,2012,0,1,jul,31,31099,31099,pan,f,JUANA NEYVI CHI CASTRO,,Term-limited-p-won,,pri,0.2127,,0,,0,0,,,
 yuc-16.099,21649,Uayma,2015,0,7,jun,31,31099,31099,pan,m,RANULFO CUPUL CEME,,Out-p-lost,,pri,0.0245,,0,,1,1,,,ok
 yuc-17.099,21650,Uayma,2018,0,1,jul,31,31099,31099,pri,f,YAMILI IVONY CUPUL VAZQUEZ,1,Reelected,RANULFO CUPUL CEME,prd,0.024,,0,,0,0,,,
-yuc-18.099,21651,Uayma,2021,0,6,jun,31,31099,31099,pri,,YAMILI IVONY CUPUL VAZQUEZ,,2024,,,,,0,,,,,,
+yuc-18.099,21651,Uayma,2021,0,6,jun,31,31099,31099,pri,f,YAMILI IVONY CUPUL VAZQUEZ,,2024,,,,,0,,,,,,
 yuc-07.100,21652,Ucú,1990,0,15,nov,31,31100,31100,pri,m,LUIS FERNANDO BACAB CHAN,,Term-limited-p-won,,pan,0.4011,,0,inafed,0,0,,,
 yuc-08.100,21653,Ucú,1993,0,28,nov,31,31100,31100,pri,f,HIGINIA MAGAÑA,,Term-limited-p-won,,pan,0.4121,,0,inafed,0,0,,,
 yuc-09.100,21654,Ucú,1995,0,28,may,31,31100,31100,pri,m,FABIAN FRANCISCO MATU CABRERA,,Term-limited-p-won,,pan,0.2031,,0,inafed,0,0,,,
@@ -21664,7 +21664,7 @@ yuc-14.100,21659,Ucú,2010,0,16,may,31,31100,31100,pri,m,MARIO ALBERTO CHAN GARC
 yuc-15.100,21660,Ucú,2012,0,1,jul,31,31100,31100,pri,m,JORGE LUIS MAGAÑA TUN,,Term-limited-p-won,,pan,0.1089,,0,,0,0,,,
 yuc-16.100,21661,Ucú,2015,0,7,jun,31,31100,31100,pri,m,MARIO ALBERTO CHAN GARCIA,,Out-p-lost,,pan,0.03,,0,,1,1,,,ok
 yuc-17.100,21662,Ucú,2018,0,1,jul,31,31100,31100,pna,m,GASPAR ARIEL PINTO OJEDA,1,Reran-beaten,RUBI VIANEY SONDA PECH,pri,0.0265,,0,,0,0,,,
-yuc-18.100,21663,Ucú,2021,0,6,jun,31,31100,31100,pvem,,GENER ISMAEL  PECH LEON,,2024,,,,,0,,,,,,
+yuc-18.100,21663,Ucú,2021,0,6,jun,31,31100,31100,pvem,m,GENER ISMAEL  PECH LEON,,2024,,,,,0,,,,,,
 yuc-07.101,21664,Umán,1990,0,15,nov,31,31101,31101,pri,f,MINERVA RODRIGUEZ PAREDES,,Term-limited-p-won,,conve,0.3732,,0,inafed,0,0,,,
 yuc-08.101,21665,Umán,1993,0,28,nov,31,31101,31101,pri,m,WILLIAM MANUEL QUINTAL MONTERO,,Term-limited-p-lost,,pan,0.158,,0,inafed,0,0,,,
 yuc-09.101,21666,Umán,1995,0,28,may,31,31101,31101,pan,m,GREGORIO ERNESTO MONTERO MARTIN,,Term-limited-p-lost,,pri,0.0032,,0,inafed,0,0,,,
@@ -21676,7 +21676,7 @@ yuc-14.101,21671,Umán,2010,0,16,may,31,31101,31101,pri,m,JOSE JAVIER CASTILLO R
 yuc-15.101,21672,Umán,2012,0,1,jul,31,31101,31101,pri-pvem,m,JESUS ADRIAN QUINTAL IC,,Term-limited-p-lost,,pan,0.0147,,0,,1,1,,,ok
 yuc-16.101,21673,Umán,2015,0,7,jun,31,31101,31101,pan,m,FREDDY DE JESUS RUZ GUZMAN,,Reelected,,pri,0.1003,,0,,0,0,,,ok
 yuc-17.101,21674,Umán,2018,0,1,jul,31,31101,31101,pan-prd,m,FREDDY DE JESUS RUZ GUZMAN,1,Term-limited-p-won,ALBA PATRICIA NAH MAGAÑA,pri,0.0174,,0,,1,1,,,ok
-yuc-18.101,21675,Umán,2021,0,6,jun,31,31101,31101,pan-prd-pna,,GASPAR VENTURA CISNEROS POLANCO,,2024,,,,,0,,,,,,
+yuc-18.101,21675,Umán,2021,0,6,jun,31,31101,31101,pan-prd-pna,m,GASPAR VENTURA CISNEROS POLANCO,,2024,,,,,0,,,,,,
 yuc-07.102,21676,Valladolid,1990,0,15,nov,31,31102,31102,pri,m,LIBORIO VIDAL AGUILAR,,Term-limited-p-won,,pan,0.2514,,0,inafed,0,0,,,
 yuc-08.102,21677,Valladolid,1993,0,28,nov,31,31102,31102,pri,m,GONZALO DE J. CERVERA BONILLA,,Term-limited-p-won,,pan,0.1887,,0,inafed,0,0,,,
 yuc-09.102,21678,Valladolid,1995,0,28,may,31,31102,31102,pri,m,FRANCISCO JAVIER CANTON Y GODOY,,Term-limited-p-won,,pan,0.0512,,0,inafed,0,0,,,
@@ -21688,7 +21688,7 @@ yuc-14.102,21683,Valladolid,2010,0,16,may,31,31102,31102,pri,m,GONZALO JOSE ESCA
 yuc-15.102,21684,Valladolid,2012,0,1,jul,31,31102,31102,pri-pvem,m,ROGER DAVID ALCOCER GARCIA,,Term-limited-p-lost,,pan,0.1307,,0,,1,1,,,ok
 yuc-16.102,21685,Valladolid,2015,0,7,jun,31,31102,31102,morena,f,ALPHA ALEJANDRA TAVERA ESCALANTE,,Out-p-won,,pri,0.0332,,0,,0,0,,,
 yuc-17.102,21686,Valladolid,2018,0,1,jul,31,31102,31102,pt-morena-pes,m,ENRIQUE DE JESUS AYORA SOSA,1,Out-p-lost,ALFREDO FERNANDEZ ARCEO,pvem-pna,0.1205,,0,,0,0,,,
-yuc-18.102,21687,Valladolid,2021,0,6,jun,31,31102,31102,pan-pna,,ALFREDO FERNANDEZ ARCEO,,2024,,,,,0,,,,,,
+yuc-18.102,21687,Valladolid,2021,0,6,jun,31,31102,31102,pan-pna,m,ALFREDO FERNANDEZ ARCEO,,2024,,,,,0,,,,,,
 yuc-07.103,21688,Xocchel,1990,0,15,nov,31,31103,31103,pri,m,EDUARDO ERNESTO MAY MOO,,Term-limited-p-won,,pan,0.8529,,0,inafed,0,0,,,ok
 yuc-08.103,21689,Xocchel,1993,0,28,nov,31,31103,31103,pri,m,ROMULO HUMBERTO GIL CETINA,,Term-limited-p-won,,pan,0.1918,,0,inafed,0,0,,,
 yuc-09.103,21690,Xocchel,1995,0,28,may,31,31103,31103,pri,m,EDUARDO ERNESTO MAY MOO,,Term-limited-p-won,,pan,0.1401,,0,inafed,1,1,,,ok
@@ -21700,7 +21700,7 @@ yuc-14.103,21695,Xocchel,2010,0,16,may,31,31103,31103,pri,m,ANDRES O CETINA LUGO
 yuc-15.103,21696,Xocchel,2012,0,1,jul,31,31103,31103,prd-mc,f,LEYDI GUADALUPE CASTRO GAMBOA,,Term-limited-p-won,,pri,0.0263,,0,,0,0,,,ok
 yuc-16.103,21697,Xocchel,2015,0,7,jun,31,31103,31103,prd,m,JUAN MANUEL CASTRO LUGO,,Out-p-won,,pri,0.0394,,0,,0,0,,,
 yuc-17.103,21698,Xocchel,2018,0,1,jul,31,31103,31103,prd,f,LEYDI GUADALUPE CASTRO GAMBOA,1,Out-p-lost,LOURDES MARIA TAH MAAS,pan-mc,0.0087,,0,,1,1,,,ok
-yuc-18.103,21699,Xocchel,2021,0,6,jun,31,31103,31103,pan-pna,,LOURDES MARIA TAH MAAS,,2024,,,,,0,,,,,,
+yuc-18.103,21699,Xocchel,2021,0,6,jun,31,31103,31103,pan-pna,f,LOURDES MARIA TAH MAAS,,2024,,,,,0,,,,,,
 yuc-07.104,21700,Yaxcabá,1990,0,15,nov,31,31104,31104,pri,,,,Term-limited-p-won,,,1,,0,,0,0,,,
 yuc-08.104,21701,Yaxcabá,1993,0,28,nov,31,31104,31104,pri,,,,Term-limited-p-won,,pan,0.7922,,0,,0,0,,,
 yuc-09.104,21702,Yaxcabá,1995,0,28,may,31,31104,31104,pri,m,SANSON ISRAEL PALMA SANTOS,,Term-limited-p-won,,pan,0.7106,,0,,0,0,,,ok
@@ -21712,7 +21712,7 @@ yuc-14.104,21707,Yaxcabá,2010,0,16,may,31,31104,31104,pri,f,LORENA I. AVILA EUA
 yuc-15.104,21708,Yaxcabá,2012,0,1,jul,31,31104,31104,pan,f,MELBA ROSANA GAMBOA AVILA,,Term-limited-p-lost,,pri-pvem,0.0025,,0,,0,0,,,
 yuc-16.104,21709,Yaxcabá,2015,0,7,jun,31,31104,31104,pri,m,SANSON ISRAEL PALMA SANTOS,,Reelected,,pan,0.14,,0,,1,1,,,ok
 yuc-17.104,21710,Yaxcabá,2018,0,1,jul,31,31104,31104,pri,m,SANSON ISRAEL PALMA SANTOS,1,Term-limited-p-lost,MELBA ROSANA GAMBOA AVILA,pan,0.1312,,0,,1,1,,,ok
-yuc-18.104,21711,Yaxcabá,2021,0,6,jun,31,31104,31104,pan-pna,,GENRI ALBERTO PACAB HERRERA,,2024,,,,,0,,,,,,
+yuc-18.104,21711,Yaxcabá,2021,0,6,jun,31,31104,31104,pan-pna,m,GENRI ALBERTO PACAB HERRERA,,2024,,,,,0,,,,,,
 yuc-07.105,21712,Yaxkukul,1990,0,15,nov,31,31105,31105,pri,m,EMILIO JESUS MAY FALCON,,Term-limited-p-won,,parm,0.2834,,0,inafed,0,0,,,
 yuc-08.105,21713,Yaxkukul,1993,0,28,nov,31,31105,31105,pri,m,GUMERSINDO MAY Y UICAB,,Term-limited-p-won,,pan,0.5469,,0,inafed,0,0,,,
 yuc-09.105,21714,Yaxkukul,1995,0,28,may,31,31105,31105,pri,m,CESAR ANTONIO EK PECH,,Term-limited-p-won,,pan,0.4942,,0,inafed,0,0,,,
@@ -21724,7 +21724,7 @@ yuc-14.105,21719,Yaxkukul,2010,0,16,may,31,31105,31105,pri,m,HERMINIO A GARCIA P
 yuc-15.105,21720,Yaxkukul,2012,0,1,jul,31,31105,31105,pri,m,JESUS DELFINO MAY TUN,,Term-limited-p-lost,,pvem,0.4076,,0,,0,0,,,
 yuc-16.105,21721,Yaxkukul,2015,0,7,jun,31,31105,31105,pvem,m,JAVIER ANTONIO EK GARCIA,,Out-p-lost,,pri,0.0541,,0,,0,0,,,
 yuc-17.105,21722,Yaxkukul,2018,0,1,jul,31,31105,31105,pna,m,WILIAM JESUS GOROCICA FALCON,1,Reran-beaten,JAIME CERVANTES MAY,pri,0.0353,,0,,0,0,,,
-yuc-18.105,21723,Yaxkukul,2021,0,6,jun,31,31105,31105,pan,,DELTA MARIVI RAMIREZ GOMEZ,,2024,,,,,0,,,,,,
+yuc-18.105,21723,Yaxkukul,2021,0,6,jun,31,31105,31105,pan,f,DELTA MARIVI RAMIREZ GOMEZ,,2024,,,,,0,,,,,,
 yuc-07.106,21724,Yobaín,1990,0,15,nov,31,31106,31106,pri,m,JOSE GUADALUPE LIZAMA PINTO,,Term-limited-p-won,,pan,0.557,,0,inafed,0,0,,,
 yuc-08.106,21725,Yobaín,1993,0,28,nov,31,31106,31106,pri,m,WILMER AMI AVILES SIERRA,,Term-limited-p-won,,pan,0.5371,,0,inafed,0,0,,,ok
 yuc-09.106,21726,Yobaín,1995,0,28,may,31,31106,31106,pri,m,JOSE ADONAY AVILES SIERRA,,Term-limited-p-won,,pan,0.5891,,0,inafed,0,0,,,ok
@@ -21736,7 +21736,7 @@ yuc-14.106,21731,Yobaín,2010,0,16,may,31,31106,31106,pri,m,WILMER AMI AVILES SI
 yuc-15.106,21732,Yobaín,2012,0,1,jul,31,31106,31106,pri-pvem,m,JOSE ADONAY AVILES SIERRA,,Term-limited-p-lost,,pan,0.0031,,0,,1,1,,,ok
 yuc-16.106,21733,Yobaín,2015,0,7,jun,31,31106,31106,pan-pna,m,MIGUEL ANGEL MAY VERA,,Reelected,,pri,0.0752,,0,,0,0,,,ok
 yuc-17.106,21734,Yobaín,2018,0,1,jul,31,31106,31106,pan-pna,m,MIGUEL ANGEL MAY VERA,1,Term-limited-p-lost,CARMEN GABRIELA AGUILAR CORAL,pri-pvem,0.0921,,0,,1,1,,,ok
-yuc-18.106,21735,Yobaín,2021,0,6,jun,31,31106,31106,pes,,JESUS ALBERTO COOL AKE,,2024,,,,,0,,,,,,
+yuc-18.106,21735,Yobaín,2021,0,6,jun,31,31106,31106,pes,m,JESUS ALBERTO COOL AKE,,2024,,,,,0,,,,,,
 zac-08.001,21736,Apozol,1992,0,2,ago,32,32001,32001,pri,m,ABRAHAM CORTES VALLEJO,,Term-limited-p-won,,prd,0.669,,0,inafed,0,0,,,
 zac-09.001,21737,Apozol,1995,0,6,ago,32,32001,32001,pri,m,SERGIO VAZQUEZ JAUREGUI,,Term-limited-p-lost,,pan,0.0585,,0,inafed,0,0,,,
 zac-10.001,21738,Apozol,1998,0,5,jul,32,32001,32001,pan,m,FRANCISCO JAUREGUI SERRANO,,Term-limited-p-lost,,pri,0.067,,0,,0,0,,,
