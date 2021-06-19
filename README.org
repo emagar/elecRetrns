@@ -5,7 +5,7 @@
 
 Last revision: 2021-06-18
 
-*Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected and beaten in 25 of 27 states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
+*Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in 26 of 27 states that dropped term limits in races concurrent with this year's midterm election (data for Guerrero remains missing). And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
 
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 
