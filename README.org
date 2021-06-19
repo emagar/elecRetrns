@@ -3,8 +3,9 @@
 
 ----------
 
-Last revision: 2021-03-13
+Last revision: 2021-06-18
 
+*Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected and beaten in 25 of 27 states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
 
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 
@@ -27,7 +28,7 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 
 - ~data/aymu1977-present.csv~ = updated to 2018, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 - ~data/aymu1989-present.coalAgg.csv~ = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
-- ~data/aymu1989-present.incumbents.csv~ = names of municipal election winning candidates (/presidente municipal/ only) since 1989.
+- ~data/aymu1989-present.incumbents.csv~ = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status in 2018 and 2021. 
 - ~data/ayde2008-presentNayRegid.csv~ = Nayarit's municipal demarcaciones vote returns since 2008.
 - ~code/ay.r~ = script to manipulate /ayuntamiento/ returns.
 - ~code/ayClean.r~ = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
