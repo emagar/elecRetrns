@@ -15,47 +15,32 @@ sel <- which(colnames(d) %in% c("CLAVE_CASILLA", "CLAVE_ACTA", "ID_ESTADO", "EST
 d <- d[,-sel]
 
 # turn characters into NAs
-tmp <- d[,3:39]
+tmp <- d[,3:24]
 tmp <- lapply(tmp, as.numeric)
 tmp <- as.data.frame(do.call(cbind,tmp))
 tmp[is.na(tmp)] <- 0
 head(tmp)
-d[,3:39] <- tmp
+d[,3:24] <- tmp
 
 d <- within(d, expr = {
-    PAN                <- ave(PAN,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PRI                <- ave(PRI,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PRD                <- ave(PRD,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PVEM               <- ave(PVEM,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT                 <- ave(PT,              as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MC                 <- ave(MC,              as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PUP                <- ave(PUP,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MORENA             <- ave(MORENA,          as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    NAO                <- ave(NAO,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PES                <- ave(PES,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    RSP                <- ave(RSP,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    FXM                <- ave(FXM,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CI1                <- ave(CI1,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CI2                <- ave(CI2,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CI3                <- ave(CI3,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CO_PAN_PRI_PRD     <- ave(CO_PAN_PRI_PRD,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CO_PAN_PRI         <- ave(CO_PAN_PRI,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CO_PAN_PRD         <- ave(CO_PAN_PRD,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CO_PRI_PRD         <- ave(CO_PRI_PRD,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRI_PRD_NAO <- ave(CC_PAN_PRI_PRD_NAO,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRI_PRD     <- ave(CC_PAN_PRI_PRD,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRI_NAO     <- ave(CC_PAN_PRI_NAO,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRD_NAO     <- ave(CC_PAN_PRD_NAO,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PRI_PRD_NAO     <- ave(CC_PRI_PRD_NAO,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRI         <- ave(CC_PAN_PRI,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_PRD         <- ave(CC_PAN_PRD,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PAN_NAO         <- ave(CC_PAN_NAO,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PRI_PRD         <- ave(CC_PRI_PRD,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PRI_NAO         <- ave(CC_PRI_NAO,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PRD_NAO         <- ave(CC_PRD_NAO,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PVEM_PT         <- ave(CC_PVEM_PT,      as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CC_PVEM_NAO        <- ave(CC_PVEM_NAO,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
-    LISTA_NOMINAL      <- ave(LISTA_NOMINAL,   as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PAN           <- ave(PAN,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PRI           <- ave(PRI,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PRD           <- ave(PRD,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PT            <- ave(PT,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PVEM          <- ave(PVEM,           as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    MC            <- ave(MC,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    MOR           <- ave(MOR,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PES           <- ave(PES,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    RSP           <- ave(RSP,            as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    FM            <- ave(FM,             as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    CAND_IND_1    <- ave(CAND_IND_1,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    CAND_IND_2    <- ave(CAND_IND_2,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    C_PT_MOR      <- ave(C_PAN_PRI_PRD, as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    C_PAN_PRI_PRD <- ave(C_PAN_PRI_PRD, as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    C_PAN_PRI     <- ave(C_PAN_PRI,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    C_PAN_PRD     <- ave(C_PAN_PRD,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    C_PRI_PRD     <- ave(C_PRI_PRD,     as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+    LISTA_NOMINAL <- ave(LISTA_NOMINAL,  as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
     }
 )
 
