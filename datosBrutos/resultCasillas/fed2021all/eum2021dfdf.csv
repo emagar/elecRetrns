@@ -1,0 +1,301 @@
+edon,disn,cabecera,pan,tmp,pri,tmp,prd,tmp,pvem,tmp,pt,tmp,mc,tmp,morena,tmp,pes,tmp,rsp,tmp,fxm,tmp,indep,tmp,pan-pri-prd,tmp,pvem-pt-morena,tmp,nr,nul,tot,lisnom,fuente
+1,1,JESUS MARIA,62262,pan,23498,pri,7701,prd,11731,pvem,7696,pt,6494,mc,48317,morena,3184,pes,2208,rsp,9231,fxm,0,indep,977,pan-pri-prd,,,223,7006,190528,334777,computo distrital ine
+1,2,AGUASCALIENTES,64670,pan,10097,pri,3629,prd,3174,pvem,2320,pt,6339,mc,41108,morena,2433,pes,1049,rsp,2872,fxm,0,indep,390,pvem-pt-morena,,,232,5001,143314,331813,computo distrital ine
+1,3,AGUASCALIENTES,101758,pan,12857,pri,2692,prd,3424,pvem,1860,pt,7128,mc,38810,morena,2243,pes,975,rsp,3108,fxm,0,indep,312,pvem-pt-morena,,,197,4882,180246,350821,computo distrital ine
+2,1,MEXICALI,23651,pan,6410,pri,1134,prd,3178,pvem,1960,pt,8432,mc,59257,morena,20582,pes,1632,rsp,2650,fxm,0,indep,664,pan-pri-prd,642,pvem-pt-morena,112,4059,134363,359116,computo distrital ine
+2,2,MEXICALI,32136,pan,9237,pri,1461,prd,2713,pvem,1816,pt,7999,mc,58174,morena,22197,pes,2273,rsp,2546,fxm,0,indep,,,,,145,5060,145757,344830,computo distrital ine
+2,3,ENSENADA,15956,pan,8875,pri,2056,prd,2623,pvem,7616,pt,5337,mc,52844,morena,17317,pes,3907,rsp,14696,fxm,0,indep,673,pan-pri-prd,1718,pvem-pt-morena,121,4868,138607,348261,computo distrital ine
+2,4,TIJUANA,10322,pan,4825,pri,2155,prd,4001,pvem,4431,pt,5480,mc,81138,morena,19177,pes,1692,rsp,2558,fxm,0,indep,344,pan-pri-prd,,,106,4921,141150,395214,computo distrital ine
+2,5,TIJUANA,29449,pan,9673,pri,2135,prd,3645,pvem,3135,pt,6540,mc,60352,morena,26436,pes,2421,rsp,3085,fxm,0,indep,1236,pan-pri-prd,,,157,4606,152870,369354,computo distrital ine
+2,6,TIJUANA,24368,pan,9707,pri,2095,prd,3668,pvem,1956,pt,6103,mc,57298,morena,28160,pes,1688,rsp,2667,fxm,0,indep,997,pan-pri-prd,,,88,4914,143709,354821,computo distrital ine
+2,7,MEXICALI,12331,pan,8018,pri,1565,prd,4236,pvem,3006,pt,7050,mc,58113,morena,22148,pes,3142,rsp,5993,fxm,0,indep,503,pan-pri-prd,733,pvem-pt-morena,180,4806,131824,372488,computo distrital ine
+2,8,TIJUANA,14277,pan,5969,pri,2335,prd,3092,pvem,2063,pt,5109,mc,68282,morena,24246,pes,1517,rsp,2546,fxm,0,indep,573,pan-pri-prd,1042,pvem-pt-morena,113,3731,134895,375102,computo distrital ine
+3,1,LA PAZ,59218,pan,7859,pri,1548,prd,5070,pvem,6583,pt,5900,mc,56609,morena,3822,pes,1665,rsp,4254,fxm,0,indep,2954,pan-pri-prd,3559,pvem-pt-morena,126,5004,164171,292920,computo distrital ine
+3,2,SAN JOSE DEL CABO,35240,pan,3511,pri,874,prd,3541,pvem,7873,pt,3277,mc,41834,morena,2577,pes,2608,rsp,5527,fxm,0,indep,1449,pan-pri-prd,3647,pvem-pt-morena,106,3651,115715,268732,computo distrital ine
+4,1,SAN FRANCISCO DE CAMPECHE,7051,pan,61847,pri,1810,prd,3072,pvem,4450,pt,51026,mc,84232,morena,2015,pes,3189,rsp,1529,fxm,0,indep,2739,pan-pri-prd,,,90,5330,228380,335377,computo distrital ine
+4,2,CIUDAD DEL CARMEN,13813,pan,45194,pri,1641,prd,2551,pvem,3205,pt,28966,mc,88485,morena,1531,pes,1761,rsp,821,fxm,0,indep,2385,pan-pri-prd,,,43,5678,196074,333373,computo distrital ine
+5,1,PIEDRAS NEGRAS,20654,pan,55528,pri,962,prd,8550,pvem,12367,pt,3027,mc,65537,morena,1735,pes,1001,rsp,2415,fxm,0,indep,329,pvem-pt-morena,,,98,3602,175805,334986,computo distrital ine
+5,2,SAN PEDRO,18404,pan,75847,pri,1930,prd,12424,pvem,1417,pt,3234,mc,72825,morena,1904,pes,879,rsp,3158,fxm,0,indep,325,pvem-pt-morena,,,88,4250,196685,314549,computo distrital ine
+5,3,MONCLOVA,53858,pan,60769,pri,1004,prd,1553,pvem,870,pt,5193,mc,53312,morena,1069,pes,550,rsp,8588,fxm,0,indep,236,pvem-pt-morena,,,44,3418,190464,323421,computo distrital ine
+5,4,SALTILLO,20459,pan,90787,pri,1340,prd,4682,pvem,1076,pt,3903,mc,55845,morena,1286,pes,505,rsp,1449,fxm,0,indep,600,pvem-pt-morena,,,61,3956,185949,339754,computo distrital ine
+5,5,TORREON,43303,pan,74205,pri,1038,prd,1724,pvem,915,pt,1695,mc,61433,morena,611,pes,635,rsp,1438,fxm,0,indep,400,pvem-pt-morena,,,77,3090,190564,302880,computo distrital ine
+5,6,TORREON,21310,pan,79712,pri,2435,prd,6221,pvem,2543,pt,2082,mc,62581,morena,995,pes,691,rsp,5409,fxm,0,indep,384,pvem-pt-morena,,,53,3728,188144,314629,computo distrital ine
+5,7,SALTILLO,12681,pan,79397,pri,6213,prd,3362,pvem,1913,pt,4363,mc,60421,morena,1412,pes,768,rsp,4851,fxm,0,indep,,,,,83,4773,180237,331841,computo distrital ine
+6,1,COLIMA,19558,pan,26237,pri,1394,prd,20160,pvem,3931,pt,28765,mc,45758,morena,3610,pes,1699,rsp,4515,fxm,0,indep,2471,pan-pri-prd,,,139,4607,162844,292619,computo distrital ine
+6,2,MANZANILLO,12111,pan,15539,pri,906,prd,30126,pvem,3342,pt,9584,mc,45746,morena,5557,pes,1439,rsp,5022,fxm,0,indep,1518,pan-pri-prd,,,151,3811,134852,263700,computo distrital ine
+7,1,PALENQUE,2499,pan,8954,pri,2828,prd,59601,pvem,9397,pt,4214,mc,68885,morena,9637,pes,13149,rsp,2361,fxm,0,indep,278,pan-pri-prd,925,pvem-pt-morena,48,13657,196433,264887,computo distrital ine
+7,2,BOCHIL,6328,pan,44725,pri,12591,prd,43841,pvem,3011,pt,2702,mc,43349,morena,14607,pes,2773,rsp,4288,fxm,0,indep,473,pan-pri-prd,176,pvem-pt-morena,18,15635,194517,272398,computo distrital ine
+7,3,OCOSINGO,851,pan,3280,pri,986,prd,60315,pvem,21170,pt,2921,mc,74083,morena,4040,pes,4675,rsp,1336,fxm,0,indep,47,pan-pri-prd,,,18,8217,181939,259872,computo distrital ine
+7,4,PICHUCALCO,9805,pan,19754,pri,6832,prd,37628,pvem,11283,pt,5397,mc,72112,morena,10728,pes,6440,rsp,2493,fxm,0,indep,1150,pan-pri-prd,,,70,11880,195572,279029,computo distrital ine
+7,5,SAN CRISTOBAL DE LAS CASAS,3727,pan,64436,pri,3342,prd,17932,pvem,5634,pt,5871,mc,41903,morena,10085,pes,6249,rsp,2991,fxm,0,indep,626,pan-pri-prd,361,pvem-pt-morena,298,13662,177117,296936,computo distrital ine
+7,6,TUXTLA GUTIERREZ,10124,pan,13116,pri,6187,prd,38606,pvem,6842,pt,9962,mc,65487,morena,6207,pes,4802,rsp,4212,fxm,0,indep,1238,pan-pri-prd,1320,pvem-pt-morena,162,10408,178673,327399,computo distrital ine
+7,7,TONALA,6731,pan,12739,pri,1572,prd,29007,pvem,12895,pt,3716,mc,68129,morena,12695,pes,11198,rsp,3065,fxm,0,indep,764,pan-pri-prd,710,pvem-pt-morena,86,7092,170399,291793,computo distrital ine
+7,8,COMITAN DE DOMINGUEZ,3294,pan,22781,pri,1877,prd,26598,pvem,15392,pt,5127,mc,61715,morena,6544,pes,3763,rsp,2760,fxm,0,indep,782,pan-pri-prd,597,pvem-pt-morena,867,9988,162085,271504,computo distrital ine
+7,9,TUXTLA GUTIERREZ,12382,pan,18309,pri,2348,prd,2434,pvem,3303,pt,14612,mc,59914,morena,4573,pes,6542,rsp,2404,fxm,0,indep,2481,pan-pri-prd,1260,pvem-pt-morena,244,6587,137393,319920,computo distrital ine
+7,10,VILLAFLORES,3509,pan,12840,pri,2222,prd,48049,pvem,7287,pt,4600,mc,65169,morena,15211,pes,3465,rsp,2201,fxm,0,indep,317,pan-pri-prd,473,pvem-pt-morena,50,10944,176337,294529,computo distrital ine
+7,11,LAS MARGARITAS,1678,pan,9070,pri,3896,prd,19037,pvem,18553,pt,2340,mc,51405,morena,26254,pes,2496,rsp,1731,fxm,0,indep,325,pan-pri-prd,156,pvem-pt-morena,52,13776,150769,213227,computo distrital ine
+7,12,TAPACHULA,6998,pan,20108,pri,1488,prd,20835,pvem,10974,pt,3950,mc,70041,morena,8758,pes,4775,rsp,1884,fxm,0,indep,1204,pan-pri-prd,,,107,7457,158579,303775,computo distrital ine
+7,13,HUEHUETAN,3764,pan,14524,pri,3645,prd,31395,pvem,25787,pt,3036,mc,44768,morena,15494,pes,8599,rsp,1447,fxm,0,indep,630,pan-pri-prd,508,pvem-pt-morena,88,11317,165002,264527,computo distrital ine
+8,1,JUAREZ,20762,pan,8207,pri,942,prd,3807,pvem,2459,pt,8822,mc,63896,morena,2711,pes,944,rsp,1991,fxm,0,indep,267,pan-pri-prd,,,84,3925,118817,328503,computo distrital ine
+8,2,JUAREZ,25077,pan,14678,pri,2316,prd,6724,pvem,2517,pt,10691,mc,49733,morena,3166,pes,832,rsp,2434,fxm,0,indep,692,pan-pri-prd,706,pvem-pt-morena,51,4399,124016,309994,computo distrital ine
+8,3,JUAREZ,18496,pan,7383,pri,722,prd,3060,pvem,2462,pt,7624,mc,52527,morena,2776,pes,839,rsp,1955,fxm,0,indep,243,pan-pri-prd,859,pvem-pt-morena,101,3553,102600,299748,computo distrital ine
+8,4,JUAREZ,58596,pan,13487,pri,948,prd,3775,pvem,2446,pt,10326,mc,57135,morena,3221,pes,1614,rsp,2394,fxm,0,indep,569,pan-pri-prd,806,pvem-pt-morena,173,3981,159471,344702,computo distrital ine
+8,5,DELICIAS,75145,pan,22853,pri,3774,prd,4645,pvem,4250,pt,18891,mc,29114,morena,4214,pes,1002,rsp,1260,fxm,0,indep,851,pan-pri-prd,372,pvem-pt-morena,56,5423,171850,339372,computo distrital ine
+8,6,CHIHUAHUA,124009,pan,12308,pri,1294,prd,4217,pvem,2015,pt,11788,mc,43010,morena,2865,pes,740,rsp,1504,fxm,0,indep,,,,,107,4274,208131,366545,computo distrital ine
+8,7,CUAUHTEMOC,51010,pan,29306,pri,2075,prd,3386,pvem,1943,pt,11547,mc,32127,morena,2799,pes,1482,rsp,1230,fxm,0,indep,907,pan-pri-prd,394,pvem-pt-morena,23,6809,145038,296556,computo distrital ine
+8,8,CHIHUAHUA,78315,pan,10829,pri,1694,prd,4662,pvem,2678,pt,11025,mc,48474,morena,2974,pes,1126,rsp,1611,fxm,0,indep,929,pvem-pt-morena,,,80,4219,168616,350155,computo distrital ine
+8,9,HIDALGO DEL PARRAL,35291,pan,44092,pri,1602,prd,3492,pvem,2646,pt,23886,mc,25409,morena,5671,pes,1152,rsp,1729,fxm,0,indep,828,pan-pri-prd,300,pvem-pt-morena,62,7940,154100,258950,computo distrital ine
+9,1,GUSTAVO A. MADERO,18996,pan,14757,pri,8971,prd,4558,pvem,2927,pt,4193,mc,73175,morena,4085,pes,1778,rsp,2911,fxm,0,indep,1122,pan-pri-prd,,,211,5370,143054,314910,computo distrital ine
+9,2,GUSTAVO A. MADERO,51402,pan,29838,pri,15711,prd,5219,pvem,4530,pt,6085,mc,70059,morena,2998,pes,1555,rsp,3366,fxm,0,indep,2678,pan-pri-prd,1220,pvem-pt-morena,259,5188,200108,369677,computo distrital ine
+9,3,AZCAPOTZALCO,55752,pan,25985,pri,4533,prd,6111,pvem,3340,pt,4948,mc,78366,morena,4049,pes,1827,rsp,11213,fxm,0,indep,2800,pan-pri-prd,1519,pvem-pt-morena,214,5385,206042,381923,computo distrital ine
+9,4,IZTAPALAPA,19665,pan,15398,pri,4116,prd,3795,pvem,4772,pt,4553,mc,60795,morena,3437,pes,1175,rsp,2699,fxm,0,indep,1249,pan-pri-prd,1660,pvem-pt-morena,148,3978,127440,288317,computo distrital ine
+9,5,TLALPAN,42791,pan,19830,pri,4281,prd,2706,pvem,2198,pt,11299,mc,48945,morena,1663,pes,1005,rsp,6696,fxm,0,indep,2279,pan-pri-prd,1030,pvem-pt-morena,189,4106,149018,280902,computo distrital ine
+9,6,LA MAGDALENA CONTRERAS,55883,pan,36340,pri,5262,prd,4608,pvem,6103,pt,5770,mc,53164,morena,3739,pes,1345,rsp,5104,fxm,0,indep,2829,pan-pri-prd,,,195,5998,186340,326701,computo distrital ine
+9,7,GUSTAVO A. MADERO,30171,pan,27388,pri,18048,prd,4716,pvem,3519,pt,5881,mc,81197,morena,3113,pes,1779,rsp,4026,fxm,0,indep,2356,pan-pri-prd,,,211,5952,188357,368661,computo distrital ine
+9,8,CUAUHTEMOC,24891,pan,28912,pri,5407,prd,3154,pvem,3082,pt,4637,mc,58078,morena,3703,pes,1989,rsp,2573,fxm,0,indep,2109,pan-pri-prd,1097,pvem-pt-morena,245,4843,144720,282791,computo distrital ine
+9,9,TLAHUAC,14352,pan,22234,pri,8190,prd,7988,pvem,4485,pt,4162,mc,59829,morena,4449,pes,1477,rsp,3156,fxm,0,indep,1709,pan-pri-prd,,,151,5609,137791,306258,computo distrital ine
+9,10,MIGUEL HIDALGO,86850,pan,18626,pri,2972,prd,3059,pvem,3539,pt,9080,mc,60106,morena,1726,pes,1049,rsp,2227,fxm,0,indep,2443,pan-pri-prd,1695,pvem-pt-morena,198,3631,197201,323748,computo distrital ine
+9,11,VENUSTIANO CARRANZA,32676,pan,25693,pri,10533,prd,3602,pvem,3012,pt,6563,mc,74398,morena,2452,pes,1157,rsp,3252,fxm,0,indep,2667,pan-pri-prd,,,228,5227,171460,306401,computo distrital ine
+9,12,CUAUHTEMOC,46700,pan,29166,pri,4662,prd,3117,pvem,2289,pt,5400,mc,52173,morena,2339,pes,1178,rsp,3166,fxm,0,indep,2734,pan-pri-prd,,,318,4753,157995,302186,computo distrital ine
+9,13,IZTACALCO,42779,pan,25124,pri,9897,prd,11948,pvem,2963,pt,6070,mc,70842,morena,3584,pes,1798,rsp,4840,fxm,0,indep,1725,pan-pri-prd,1165,pvem-pt-morena,265,5085,188085,359482,computo distrital ine
+9,14,TLALPAN,35523,pan,18383,pri,3503,prd,3783,pvem,2822,pt,11341,mc,56656,morena,2030,pes,1125,rsp,5984,fxm,0,indep,1751,pan-pri-prd,,,243,5132,148276,278674,computo distrital ine
+9,15,BENITO JUAREZ,142519,pan,23558,pri,3728,prd,2336,pvem,1917,pt,6565,mc,46392,morena,1492,pes,835,rsp,1957,fxm,0,indep,2912,pan-pri-prd,875,pvem-pt-morena,276,3806,239168,374479,computo distrital ine
+9,16,ALVARO OBREGON,47069,pan,24385,pri,14072,prd,4315,pvem,2836,pt,5915,mc,60216,morena,2649,pes,1052,rsp,4259,fxm,0,indep,3196,pan-pri-prd,1238,pvem-pt-morena,209,4892,176303,331119,computo distrital ine
+9,17,CUAJIMALPA DE MORELOS,52585,pan,46599,pri,7911,prd,6838,pvem,2969,pt,5299,mc,54365,morena,3964,pes,1751,rsp,3931,fxm,0,indep,2909,pan-pri-prd,1133,pvem-pt-morena,128,4919,195301,334994,computo distrital ine
+9,18,IZTAPALAPA,36868,pan,23097,pri,8580,prd,7974,pvem,3295,pt,6328,mc,66453,morena,2721,pes,1125,rsp,2541,fxm,0,indep,2095,pan-pri-prd,,,279,5704,167060,325066,computo distrital ine
+9,19,IZTAPALAPA,21543,pan,18010,pri,7532,prd,5333,pvem,3238,pt,4652,mc,71656,morena,2944,pes,1058,rsp,2371,fxm,0,indep,1372,pan-pri-prd,,,148,5198,145055,305131,computo distrital ine
+9,20,IZTAPALAPA,14461,pan,15328,pri,10974,prd,4329,pvem,3607,pt,4418,mc,65956,morena,2227,pes,1105,rsp,2133,fxm,0,indep,1093,pan-pri-prd,1404,pvem-pt-morena,135,3945,131115,290479,computo distrital ine
+9,21,XOCHIMILCO,17426,pan,25540,pri,2810,prd,6872,pvem,5212,pt,5840,mc,66578,morena,4493,pes,2041,rsp,4845,fxm,0,indep,1664,pan-pri-prd,,,187,6402,149910,330380,computo distrital ine
+9,22,IZTAPALAPA,7802,pan,9324,pri,6218,prd,4054,pvem,3002,pt,3206,mc,66910,morena,2759,pes,809,rsp,1818,fxm,0,indep,643,pan-pri-prd,,,96,4817,111458,289994,computo distrital ine
+9,23,COYOACAN,59430,pan,24473,pri,14322,prd,3696,pvem,4013,pt,8331,mc,73794,morena,2352,pes,1201,rsp,3441,fxm,0,indep,3688,pan-pri-prd,1325,pvem-pt-morena,236,5418,205720,361934,computo distrital ine
+9,24,COYOACAN,68724,pan,27182,pri,5181,prd,6043,pvem,3892,pt,6100,mc,61922,morena,2296,pes,1213,rsp,3332,fxm,0,indep,3453,pan-pri-prd,,,235,4993,194566,338227,computo distrital ine
+10,1,VICTORIA DE DURANGO,31727,pan,37368,pri,2033,prd,8150,pvem,4692,pt,4968,mc,41992,morena,2318,pes,3203,rsp,1952,fxm,0,indep,2324,pan-pri-prd,1190,pvem-pt-morena,79,4270,146266,333512,computo distrital ine
+10,2,GOMEZ PALACIO,16214,pan,35341,pri,1372,prd,3739,pvem,2034,pt,3915,mc,65853,morena,2142,pes,784,rsp,1502,fxm,0,indep,1789,pan-pri-prd,1037,pvem-pt-morena,85,3174,138981,334571,computo distrital ine
+10,3,GUADALUPE VICTORIA,20445,pan,35742,pri,5032,prd,16889,pvem,4023,pt,5204,mc,45808,morena,2322,pes,3608,rsp,1724,fxm,0,indep,1524,pan-pri-prd,1116,pvem-pt-morena,49,3888,147374,321326,computo distrital ine
+10,4,VICTORIA DE DURANGO,31859,pan,23692,pri,1718,prd,2083,pvem,5417,pt,15375,mc,32696,morena,2982,pes,14110,rsp,3338,fxm,0,indep,2327,pan-pri-prd,1590,pvem-pt-morena,129,4024,141340,343405,computo distrital ine
+11,1,SAN LUIS DE LA PAZ,43911,pan,30284,pri,6625,prd,6913,pvem,3077,pt,2262,mc,23911,morena,4582,pes,2960,rsp,5606,fxm,0,indep,,,,,131,6878,137140,279598,computo distrital ine
+11,2,SAN MIGUEL DE ALLENDE,42933,pan,21391,pri,3378,prd,6304,pvem,7540,pt,6433,mc,31691,morena,4374,pes,1568,rsp,4315,fxm,0,indep,,,,,107,4947,134981,320317,computo distrital ine
+11,3,LEON,99667,pan,10498,pri,1114,prd,4890,pvem,872,pt,5197,mc,25927,morena,1005,pes,590,rsp,953,fxm,0,indep,,,,,91,2684,153488,299534,computo distrital ine
+11,4,GUANAJUATO,55770,pan,12186,pri,1878,prd,17240,pvem,3115,pt,4013,mc,18197,morena,1406,pes,5519,rsp,2502,fxm,0,indep,,,,,94,4378,126298,279500,computo distrital ine
+11,5,LEON,72977,pan,11045,pri,994,prd,4831,pvem,1033,pt,4114,mc,29142,morena,1455,pes,574,rsp,1310,fxm,0,indep,,,,,77,2893,130445,299263,computo distrital ine
+11,6,LEON,79939,pan,10103,pri,1039,prd,4744,pvem,946,pt,4169,mc,30050,morena,1075,pes,599,rsp,1016,fxm,0,indep,,,,,96,2790,136566,304633,computo distrital ine
+11,7,SAN FRANCISCO DEL RINCON,58653,pan,26453,pri,1531,prd,8245,pvem,996,pt,4603,mc,22745,morena,871,pes,369,rsp,563,fxm,0,indep,,,,,41,3235,128305,315900,computo distrital ine
+11,8,SALAMANCA,47317,pan,7775,pri,9293,prd,7741,pvem,5032,pt,12253,mc,50531,morena,2135,pes,4295,rsp,4229,fxm,0,indep,485,pan-pri-prd,,,150,4658,155894,331523,computo distrital ine
+11,9,IRAPUATO,50875,pan,14355,pri,1291,prd,4331,pvem,1160,pt,3850,mc,34454,morena,1567,pes,1171,rsp,1666,fxm,0,indep,,,,,101,2911,117732,299986,computo distrital ine
+11,10,URIANGATO,39487,pan,21201,pri,5445,prd,14023,pvem,1911,pt,12324,mc,41064,morena,3743,pes,2640,rsp,1517,fxm,0,indep,,,,,89,4563,148007,329915,computo distrital ine
+11,11,LEON,66851,pan,9615,pri,1293,prd,4368,pvem,956,pt,3792,mc,29026,morena,1100,pes,726,rsp,1231,fxm,0,indep,,,,,84,2587,121629,281244,computo distrital ine
+11,12,CELAYA,56265,pan,14286,pri,2336,prd,5841,pvem,4550,pt,5574,mc,44108,morena,2051,pes,1174,rsp,2038,fxm,0,indep,,,,,110,3670,142003,330818,computo distrital ine
+11,13,VALLE DE SANTIAGO,46290,pan,24483,pri,2814,prd,7132,pvem,2087,pt,7037,mc,38644,morena,2159,pes,8939,rsp,3317,fxm,0,indep,135,pvem-pt-morena,,,60,4649,147746,316814,computo distrital ine
+11,14,ACAMBARO,42847,pan,20434,pri,3462,prd,9823,pvem,3497,pt,7969,mc,30445,morena,4913,pes,2124,rsp,2529,fxm,0,indep,,,,,212,5455,133710,312677,computo distrital ine
+11,15,IRAPUATO,48051,pan,10831,pri,1601,prd,2730,pvem,1095,pt,4503,mc,37419,morena,1160,pes,1142,rsp,1184,fxm,0,indep,,,,,168,2988,112872,282134,computo distrital ine
+12,1,CD. ALTAMIRANO,1028,pan,50317,pri,24561,prd,1061,pvem,4770,pt,5106,mc,59368,morena,1139,pes,860,rsp,915,fxm,0,indep,1425,pan-pri-prd,457,pvem-pt-morena,12,4748,155767,261484,computo distrital ine
+12,2,IGUALA,16269,pan,37118,pri,21331,prd,7125,pvem,5900,pt,3967,mc,53567,morena,2973,pes,3020,rsp,8834,fxm,0,indep,,,,,62,6782,166948,296540,computo distrital ine
+12,3,ZIHUATANEJO,1853,pan,39759,pri,33822,prd,3447,pvem,2357,pt,3218,mc,84543,morena,4934,pes,2302,rsp,1221,fxm,0,indep,1425,pan-pri-prd,319,pvem-pt-morena,35,5333,184568,319427,computo distrital ine
+12,4,ACAPULCO,2938,pan,34327,pri,6681,prd,2291,pvem,1622,pt,9354,mc,82749,morena,2522,pes,1396,rsp,3124,fxm,0,indep,1255,pan-pri-prd,,,96,5150,153505,299066,computo distrital ine
+12,5,TLAPA,3413,pan,36742,pri,17341,prd,8914,pvem,27703,pt,9331,mc,56220,morena,5279,pes,1848,rsp,1264,fxm,0,indep,645,pan-pri-prd,1021,pvem-pt-morena,4179,8171,182071,276233,computo distrital ine
+12,6,CHILAPA,6484,pan,41875,pri,49624,prd,4169,pvem,4105,pt,3751,mc,51345,morena,2243,pes,2128,rsp,823,fxm,0,indep,1466,pan-pri-prd,221,pvem-pt-morena,82,7159,175475,282383,computo distrital ine
+12,7,CHILPANCINGO,6514,pan,47500,pri,9286,prd,2451,pvem,4734,pt,2480,mc,70073,morena,1886,pes,1656,rsp,1727,fxm,0,indep,2299,pan-pri-prd,442,pvem-pt-morena,99,5102,156249,278619,computo distrital ine
+12,8,AYUTLA DE LOS LIBRES,5415,pan,35502,pri,21931,prd,19770,pvem,5652,pt,2824,mc,60003,morena,4033,pes,1359,rsp,1974,fxm,0,indep,982,pan-pri-prd,688,pvem-pt-morena,21,7192,167346,259805,computo distrital ine
+12,9,ACAPULCO,2437,pan,44321,pri,5490,prd,2607,pvem,2155,pt,3154,mc,68008,morena,2595,pes,1445,rsp,1951,fxm,0,indep,1296,pan-pri-prd,,,45,4852,140356,289510,computo distrital ine
+13,1,HUEJUTLA DE REYES,13805,pan,48466,pri,4740,prd,3711,pvem,3532,pt,2227,mc,57922,morena,15150,pes,3366,rsp,2013,fxm,0,indep,925,pan-pri-prd,665,pvem-pt-morena,41,6734,163297,290286,computo distrital ine
+13,2,IXMIQUILPAN,14770,pan,30596,pri,7125,prd,2740,pvem,5594,pt,2111,mc,65616,morena,3250,pes,3404,rsp,2849,fxm,0,indep,1055,pan-pri-prd,1064,pvem-pt-morena,60,6043,146277,307644,computo distrital ine
+13,3,ACTOPAN,6140,pan,40734,pri,7024,prd,3546,pvem,2717,pt,2319,mc,63946,morena,2455,pes,1932,rsp,2419,fxm,0,indep,884,pan-pri-prd,,,64,5450,139630,312237,computo distrital ine
+13,4,TULANCINGO DE BRAVO,7286,pan,36710,pri,4609,prd,2711,pvem,2108,pt,3771,mc,54560,morena,2340,pes,2033,rsp,3132,fxm,0,indep,1140,pan-pri-prd,952,pvem-pt-morena,121,4888,126361,309706,computo distrital ine
+13,5,TULA DE ALLENDE,19612,pan,31295,pri,4608,prd,7412,pvem,2465,pt,4202,mc,69969,morena,2109,pes,3130,rsp,3315,fxm,0,indep,2838,pan-pri-prd,1798,pvem-pt-morena,54,4991,157798,335582,computo distrital ine
+13,6,PACHUCA DE SOTO,13809,pan,54687,pri,2118,prd,2561,pvem,2671,pt,5366,mc,75585,morena,2137,pes,1688,rsp,3639,fxm,0,indep,1815,pan-pri-prd,1201,pvem-pt-morena,127,4563,171967,371681,computo distrital ine
+13,7,TEPEAPULCO,9184,pan,44323,pri,2425,prd,2555,pvem,2090,pt,2843,mc,65984,morena,1696,pes,2543,rsp,2463,fxm,0,indep,1284,pan-pri-prd,,,93,4338,141821,312780,computo distrital ine
+14,1,TEQUILA,33833,pan,33096,pri,1964,prd,5256,pvem,5487,pt,47463,mc,31901,morena,3242,pes,1089,rsp,2474,fxm,0,indep,410,pan-pri-prd,212,pvem-pt-morena,43,4179,170649,281066,computo distrital ine
+14,2,LAGOS DE MORENO,41485,pan,14083,pri,637,prd,7986,pvem,887,pt,49948,mc,19621,morena,3404,pes,1896,rsp,1900,fxm,0,indep,245,pan-pri-prd,,,101,3508,145701,271892,computo distrital ine
+14,3,TEPATITLAN DE MORELOS,56883,pan,29530,pri,1101,prd,5786,pvem,1367,pt,40436,mc,18916,morena,4453,pes,601,rsp,6794,fxm,0,indep,626,pan-pri-prd,,,99,5154,171746,348465,computo distrital ine
+14,4,ZAPOPAN,18185,pan,15907,pri,823,prd,2877,pvem,1289,pt,45656,mc,34090,morena,3249,pes,1134,rsp,2863,fxm,0,indep,644,pan-pri-prd,282,pvem-pt-morena,122,3253,130374,301242,computo distrital ine
+14,5,PUERTO VALLARTA,8558,pan,10715,pri,1346,prd,20656,pvem,1338,pt,40968,mc,49577,morena,2988,pes,1663,rsp,1452,fxm,0,indep,327,pan-pri-prd,350,pvem-pt-morena,75,3518,143531,300977,computo distrital ine
+14,6,ZAPOPAN,25918,pan,16497,pri,828,prd,2992,pvem,1304,pt,63036,mc,34158,morena,3152,pes,1018,rsp,3011,fxm,0,indep,908,pan-pri-prd,311,pvem-pt-morena,220,3331,156684,352889,computo distrital ine
+14,7,TONALA,10244,pan,21390,pri,778,prd,3872,pvem,2626,pt,22195,mc,31217,morena,3234,pes,1209,rsp,2796,fxm,0,indep,427,pan-pri-prd,341,pvem-pt-morena,198,2851,103378,267588,computo distrital ine
+14,8,GUADALAJARA,35762,pan,23877,pri,1220,prd,2744,pvem,1125,pt,72639,mc,34907,morena,2652,pes,968,rsp,4133,fxm,0,indep,1495,pan-pri-prd,301,pvem-pt-morena,134,4157,186114,326458,computo distrital ine
+14,9,GUADALAJARA,14160,pan,14854,pri,1065,prd,3168,pvem,1443,pt,40058,mc,40571,morena,3041,pes,1053,rsp,3353,fxm,4097,indep,528,pan-pri-prd,364,pvem-pt-morena,142,3922,131819,308161,computo distrital ine
+14,10,ZAPOPAN,38734,pan,14912,pri,828,prd,2015,pvem,742,pt,70358,mc,23685,morena,1891,pes,874,rsp,2024,fxm,0,indep,1356,pan-pri-prd,228,pvem-pt-morena,134,2909,160690,307218,computo distrital ine
+14,11,GUADALAJARA,17592,pan,17607,pri,950,prd,3462,pvem,1558,pt,45841,mc,42672,morena,5351,pes,1214,rsp,4068,fxm,0,indep,775,pan-pri-prd,403,pvem-pt-morena,122,3943,145558,313346,computo distrital ine
+14,12,SANTA CRUZ DE LAS FLORES,20871,pan,10403,pri,1628,prd,2903,pvem,3145,pt,52851,mc,40229,morena,4471,pes,1370,rsp,2204,fxm,0,indep,770,pan-pri-prd,306,pvem-pt-morena,125,3142,144418,386496,computo distrital ine
+14,13,TLAQUEPAQUE,26359,pan,14565,pri,816,prd,2660,pvem,1073,pt,47544,mc,31174,morena,2835,pes,1336,rsp,2537,fxm,0,indep,944,pan-pri-prd,377,pvem-pt-morena,110,2920,135250,295904,computo distrital ine
+14,14,GUADALAJARA,23092,pan,18647,pri,1245,prd,3688,pvem,1349,pt,51669,mc,40568,morena,3465,pes,1145,rsp,3775,fxm,0,indep,1021,pan-pri-prd,360,pvem-pt-morena,131,4170,154325,315635,computo distrital ine
+14,15,LA BARCA,22513,pan,28563,pri,997,prd,4210,pvem,3688,pt,44958,mc,36035,morena,5563,pes,6793,rsp,4233,fxm,0,indep,476,pan-pri-prd,203,pvem-pt-morena,143,4008,162383,326502,computo distrital ine
+14,16,TLAQUEPAQUE,15976,pan,17860,pri,1747,prd,2729,pvem,2442,pt,31041,mc,39047,morena,4799,pes,1894,rsp,2362,fxm,0,indep,634,pan-pri-prd,273,pvem-pt-morena,88,3178,124070,309534,computo distrital ine
+14,17,JOCOTEPEC,19876,pan,22106,pri,881,prd,15836,pvem,2722,pt,45730,mc,34661,morena,5622,pes,807,rsp,6657,fxm,0,indep,206,pan-pri-prd,191,pvem-pt-morena,61,3946,159302,275878,computo distrital ine
+14,18,AUTLAN DE NAVARRO,19250,pan,42295,pri,2159,prd,4321,pvem,1498,pt,48405,mc,38895,morena,2604,pes,714,rsp,3433,fxm,0,indep,378,pan-pri-prd,117,pvem-pt-morena,95,5082,169246,296311,computo distrital ine
+14,19,CIUDAD GUZMAN,18636,pan,22434,pri,4853,prd,6521,pvem,7955,pt,52788,mc,41310,morena,3207,pes,1520,rsp,7290,fxm,0,indep,513,pan-pri-prd,416,pvem-pt-morena,97,5051,172591,309934,computo distrital ine
+14,20,TONALA,14775,pan,26246,pri,979,prd,3068,pvem,3368,pt,36422,mc,32564,morena,3701,pes,1288,rsp,2850,fxm,0,indep,336,pan-pri-prd,193,pvem-pt-morena,128,3315,129233,309352,computo distrital ine
+15,1,JILOTEPEC DE ANDRES MOLINA ENRIQUEZ,21083,pan,74892,pri,1782,prd,33290,pvem,2984,pt,7198,mc,55944,morena,4980,pes,5441,rsp,5729,fxm,0,indep,1682,pan-pri-prd,600,pvem-pt-morena,75,5555,221235,321012,computo distrital ine
+15,2,SANTA MARIA TULTEPEC,10830,pan,23650,pri,12468,prd,4546,pvem,2956,pt,7701,mc,62468,morena,3780,pes,3989,rsp,3618,fxm,0,indep,1045,pan-pri-prd,675,pvem-pt-morena,119,3637,141482,290517,computo distrital ine
+15,3,ATLACOMULCO DE FABELA,8848,pan,74673,pri,1391,prd,8667,pvem,4835,pt,16369,mc,64766,morena,8067,pes,2940,rsp,8415,fxm,0,indep,1659,pan-pri-prd,811,pvem-pt-morena,93,5373,206907,325312,computo distrital ine
+15,4,NICOLAS ROMERO,27113,pan,45592,pri,2423,prd,4830,pvem,2050,pt,6277,mc,57999,morena,3704,pes,4776,rsp,3802,fxm,0,indep,611,pvem-pt-morena,,,121,4157,163455,305942,computo distrital ine
+15,5,TEOTIHUACAN DE ARISTA,33982,pan,56226,pri,2566,prd,6286,pvem,4519,pt,3530,mc,57031,morena,3583,pes,4727,rsp,4211,fxm,0,indep,546,pvem-pt-morena,,,227,4202,181636,289197,computo distrital ine
+15,6,COACALCO DE BERRIOZABAL,17098,pan,33754,pri,7386,prd,8329,pvem,1811,pt,7067,mc,57657,morena,3308,pes,6059,rsp,4216,fxm,0,indep,1458,pan-pri-prd,732,pvem-pt-morena,179,3579,152633,293110,computo distrital ine
+15,7,CUAUTITLAN IZCALLI,46419,pan,29363,pri,1983,prd,9033,pvem,2783,pt,6643,mc,64265,morena,2358,pes,2064,rsp,2751,fxm,0,indep,3166,pan-pri-prd,,,137,4195,175160,309515,computo distrital ine
+15,8,TULTITLAN DE MARIANO ESCOBEDO,15993,pan,33057,pri,2766,prd,6327,pvem,2170,pt,3542,mc,54810,morena,1990,pes,994,rsp,3656,fxm,0,indep,,,,,107,3991,129403,257850,computo distrital ine
+15,9,SAN FELIPE DEL PROGRESO,7674,pan,76528,pri,10575,prd,12617,pvem,2814,pt,14915,mc,43688,morena,3868,pes,1751,rsp,1328,fxm,0,indep,2376,pan-pri-prd,,,44,6539,184717,296782,computo distrital ine
+15,10,ECATEPEC DE MORELOS,10568,pan,31548,pri,8398,prd,3037,pvem,1635,pt,3102,mc,56439,morena,1789,pes,1106,rsp,2668,fxm,0,indep,,,,,164,4034,124488,267583,computo distrital ine
+15,11,ECATEPEC DE MORELOS,11296,pan,38560,pri,6291,prd,4494,pvem,1898,pt,3472,mc,57216,morena,1844,pes,1570,rsp,2786,fxm,0,indep,,,,,183,4439,134049,285421,computo distrital ine
+15,12,IXTAPALUCA,6624,pan,45281,pri,2010,prd,3837,pvem,1716,pt,4285,mc,55693,morena,1774,pes,1168,rsp,5875,fxm,0,indep,720,pvem-pt-morena,,,113,3774,132870,272186,computo distrital ine
+15,13,ECATEPEC DE MORELOS,13127,pan,36401,pri,5502,prd,3998,pvem,1795,pt,3776,mc,59877,morena,1877,pes,946,rsp,2367,fxm,0,indep,,,,,173,4611,134450,266188,computo distrital ine
+15,14,CIUDAD ADOLFO LOPEZ MATEOS,52037,pan,29842,pri,2152,prd,5661,pvem,2151,pt,5492,mc,55273,morena,2225,pes,1341,rsp,3116,fxm,0,indep,2408,pan-pri-prd,730,pvem-pt-morena,137,3646,166211,304518,computo distrital ine
+15,15,CIUDAD ADOLFO LOPEZ MATEOS,58781,pan,23442,pri,1968,prd,5509,pvem,2168,pt,4850,mc,51853,morena,2357,pes,1552,rsp,3995,fxm,0,indep,2338,pan-pri-prd,849,pvem-pt-morena,100,3652,163414,309891,computo distrital ine
+15,16,ECATEPEC DE MORELOS,12809,pan,37634,pri,3659,prd,2805,pvem,3108,pt,3167,mc,60063,morena,2249,pes,921,rsp,2206,fxm,0,indep,1150,pvem-pt-morena,,,90,4326,134187,293963,computo distrital ine
+15,17,ECATEPEC DE MORELOS,11337,pan,35272,pri,3984,prd,3294,pvem,2757,pt,3468,mc,54189,morena,1992,pes,1108,rsp,2172,fxm,0,indep,,,,,167,4148,123888,253275,computo distrital ine
+15,18,HUIXQUILUCAN DE DEGOLLADO,76587,pan,47566,pri,7214,prd,4646,pvem,2900,pt,6036,mc,49466,morena,2819,pes,1251,rsp,4593,fxm,0,indep,,,,,68,5273,208419,325934,computo distrital ine
+15,19,TLALNEPANTLA DE BAZ,44579,pan,40873,pri,2094,prd,4615,pvem,2173,pt,5094,mc,63486,morena,1912,pes,1208,rsp,3518,fxm,0,indep,2137,pan-pri-prd,,,162,4573,176424,315468,computo distrital ine
+15,20,CD. NEZAHUALCOYOTL,14038,pan,24058,pri,7894,prd,2952,pvem,1846,pt,28967,mc,60062,morena,1694,pes,832,rsp,1759,fxm,0,indep,1194,pan-pri-prd,,,98,4236,149630,283370,computo distrital ine
+15,21,AMECAMECA DE JUAREZ,8480,pan,42822,pri,6957,prd,13288,pvem,1982,pt,11075,mc,57669,morena,5397,pes,3879,rsp,6543,fxm,0,indep,,,,,91,5119,163302,272352,computo distrital ine
+15,22,NAUCALPAN DE JUAREZ,76344,pan,35249,pri,2483,prd,3860,pvem,3782,pt,7664,mc,50568,morena,3056,pes,2368,rsp,2858,fxm,0,indep,,,,,149,6351,194732,358146,computo distrital ine
+15,23,LERMA DE VILLADA,16546,pan,62636,pri,4778,prd,16501,pvem,5676,pt,3029,mc,63760,morena,6304,pes,3032,rsp,5182,fxm,0,indep,,,,,112,5822,193378,312635,computo distrital ine
+15,24,NAUCALPAN DE JUAREZ,31686,pan,31635,pri,2064,prd,3887,pvem,2642,pt,8582,mc,58452,morena,5252,pes,1505,rsp,2963,fxm,0,indep,1540,pan-pri-prd,902,pvem-pt-morena,126,4514,155750,340407,computo distrital ine
+15,25,CHIMALHUACAN,3212,pan,44873,pri,1632,prd,2170,pvem,1988,pt,2028,mc,57495,morena,1430,pes,714,rsp,1574,fxm,0,indep,,,,,64,3557,120737,264210,computo distrital ine
+15,26,TOLUCA DE LERDO,21202,pan,54358,pri,1999,prd,6204,pvem,2443,pt,4537,mc,65495,morena,5195,pes,2264,rsp,3554,fxm,0,indep,2174,pan-pri-prd,861,pvem-pt-morena,120,4591,174997,332957,computo distrital ine
+15,27,METEPEC,37929,pan,62825,pri,2287,prd,6263,pvem,10014,pt,12855,mc,54007,morena,5107,pes,4404,rsp,6593,fxm,0,indep,3587,pan-pri-prd,1086,pvem-pt-morena,172,4477,211606,334262,computo distrital ine
+15,28,ZUMPANGO DE OCAMPO,33114,pan,32292,pri,11226,prd,12665,pvem,2880,pt,3723,mc,58748,morena,2091,pes,2122,rsp,12268,fxm,0,indep,,,,,235,5447,176811,347434,computo distrital ine
+15,29,CD. NEZAHUALCOYOTL,9107,pan,26686,pri,9600,prd,2684,pvem,2395,pt,30974,mc,64134,morena,2471,pes,1013,rsp,3356,fxm,0,indep,885,pan-pri-prd,,,131,4750,158186,297267,computo distrital ine
+15,30,CHIMALHUACAN,4178,pan,52278,pri,2925,prd,3345,pvem,1809,pt,1955,mc,54120,morena,2745,pes,1021,rsp,3623,fxm,0,indep,688,pvem-pt-morena,,,85,3574,132346,285102,computo distrital ine
+15,31,CD. NEZAHUALCOYOTL,6735,pan,22549,pri,7675,prd,2869,pvem,2348,pt,31868,mc,63124,morena,2257,pes,903,rsp,2187,fxm,0,indep,712,pan-pri-prd,,,97,4618,147942,290544,computo distrital ine
+15,32,VALLE DE CHALCO SOLIDARIDAD,3814,pan,15000,pri,24335,prd,10947,pvem,2741,pt,4504,mc,60311,morena,2118,pes,2013,rsp,2831,fxm,0,indep,879,pan-pri-prd,718,pvem-pt-morena,92,4774,135077,271794,computo distrital ine
+15,33,CHALCO DE DIAZ COVARRUBIAS,6850,pan,33850,pri,4252,prd,7452,pvem,2925,pt,6588,mc,58650,morena,2449,pes,2216,rsp,2650,fxm,0,indep,1299,pan-pri-prd,,,89,4625,133895,283478,computo distrital ine
+15,34,TOLUCA DE LERDO,33236,pan,58743,pri,2518,prd,6175,pvem,2818,pt,5300,mc,64340,morena,4020,pes,2652,rsp,4389,fxm,0,indep,2840,pan-pri-prd,976,pvem-pt-morena,178,4569,192754,339824,computo distrital ine
+15,35,TENANCINGO DE DEGOLLADO,7285,pan,49625,pri,7372,prd,18395,pvem,9473,pt,13261,mc,47714,morena,6979,pes,3385,rsp,5756,fxm,0,indep,1866,pan-pri-prd,840,pvem-pt-morena,89,5486,177526,300912,computo distrital ine
+15,36,TEJUPILCO DE HIDALGO,8868,pan,70261,pri,15259,prd,13659,pvem,3261,pt,4114,mc,67698,morena,4276,pes,2880,rsp,4371,fxm,0,indep,2889,pan-pri-prd,,,49,6643,204228,310693,computo distrital ine
+15,37,CUAUTITLAN,21228,pan,30317,pri,2814,prd,11267,pvem,2683,pt,14279,mc,63953,morena,5721,pes,5554,rsp,4933,fxm,0,indep,,,,,953,5725,169427,308152,computo distrital ine
+15,38,TEXCOCO DE MORA,13929,pan,36607,pri,5005,prd,20549,pvem,1797,pt,3606,mc,64680,morena,3675,pes,1965,rsp,3990,fxm,0,indep,,,,,125,4671,160599,307410,computo distrital ine
+15,39,LOS REYES ACAQUILPAN,4535,pan,51530,pri,2744,prd,4236,pvem,2692,pt,3158,mc,45299,morena,2453,pes,1445,rsp,7040,fxm,0,indep,1375,pan-pri-prd,716,pvem-pt-morena,121,3865,131209,273868,computo distrital ine
+15,40,SAN MIGUEL ZINACANTEPEC,15970,pan,54473,pri,3710,prd,22687,pvem,5845,pt,6811,mc,54082,morena,6197,pes,2246,rsp,4140,fxm,0,indep,1266,pan-pri-prd,,,160,6453,184040,331766,computo distrital ine
+15,41,OJO DE AGUA,34324,pan,56707,pri,1717,prd,7949,pvem,2462,pt,4869,mc,76155,morena,2400,pes,1168,rsp,3006,fxm,0,indep,1142,pan-pri-prd,998,pvem-pt-morena,198,4223,197318,346331,computo distrital ine
+16,1,LAZARO CARDENAS,6412,pan,15441,pri,15190,prd,5073,pvem,11248,pt,2096,mc,74453,morena,1489,pes,2104,rsp,2337,fxm,0,indep,1077,pan-pri-prd,,,55,6464,143439,273083,computo distrital ine
+16,2,PURUANDIRO,8500,pan,25728,pri,23912,prd,16776,pvem,13955,pt,7895,mc,38106,morena,14892,pes,1841,rsp,7851,fxm,0,indep,1247,pan-pri-prd,,,80,9066,169849,327943,computo distrital ine
+16,3,HEROICA ZITACUARO,8270,pan,20001,pri,32517,prd,12530,pvem,10841,pt,3776,mc,47641,morena,4361,pes,2907,rsp,2396,fxm,0,indep,4071,pan-pri-prd,3445,pvem-pt-morena,50,6544,159350,274591,computo distrital ine
+16,4,JIQUILPAN DE JUAREZ,32208,pan,23089,pri,10390,prd,10389,pvem,5842,pt,10805,mc,42251,morena,4178,pes,2187,rsp,5324,fxm,0,indep,1658,pan-pri-prd,,,49,5845,154215,307056,computo distrital ine
+16,5,ZAMORA DE HIDALGO,32532,pan,20959,pri,7745,prd,5571,pvem,6889,pt,10253,mc,35523,morena,3859,pes,1015,rsp,2887,fxm,0,indep,1414,pan-pri-prd,,,76,4777,133500,309510,computo distrital ine
+16,6,CIUDAD HIDALGO,12236,pan,20341,pri,21758,prd,17944,pvem,11842,pt,9385,mc,40288,morena,2725,pes,2799,rsp,2793,fxm,0,indep,2012,pan-pri-prd,,,85,7949,152157,294450,computo distrital ine
+16,7,ZACAPU,12013,pan,22088,pri,20790,prd,8237,pvem,6453,pt,8348,mc,45677,morena,9253,pes,2642,rsp,4917,fxm,0,indep,1680,pan-pri-prd,,,44,7287,149429,287467,computo distrital ine
+16,8,MORELIA,22366,pan,20767,pri,9197,prd,7401,pvem,3263,pt,3593,mc,49381,morena,3035,pes,2020,rsp,2760,fxm,0,indep,1954,pan-pri-prd,,,147,6985,132869,311253,computo distrital ine
+16,9,URUAPAN DEL PROGRESO,13478,pan,6816,pri,17934,prd,3168,pvem,3409,pt,2002,mc,46475,morena,969,pes,569,rsp,1190,fxm,9286,indep,1895,pan-pri-prd,,,39,4376,111606,251616,computo distrital ine
+16,10,MORELIA,48150,pan,23997,pri,9584,prd,9014,pvem,3946,pt,4105,mc,48319,morena,2617,pes,1933,rsp,2697,fxm,0,indep,2908,pan-pri-prd,,,149,6762,164181,324936,computo distrital ine
+16,11,PATZCUARO,14211,pan,26063,pri,18102,prd,13317,pvem,14846,pt,3239,mc,39982,morena,8140,pes,3955,rsp,5458,fxm,0,indep,2717,pan-pri-prd,,,55,9626,159711,298413,computo distrital ine
+16,12,APATZINGAN DE LA CONSTITUCION,8187,pan,19322,pri,14138,prd,18111,pvem,5210,pt,3336,mc,31697,morena,2865,pes,2636,rsp,5902,fxm,0,indep,940,pan-pri-prd,1345,pvem-pt-morena,519,5010,119218,260155,computo distrital ine
+17,1,CUERNAVACA,43993,pan,15685,pri,4867,prd,5637,pvem,4744,pt,5072,mc,47415,morena,4178,pes,2332,rsp,15803,fxm,0,indep,,,,,307,6575,156608,312202,computo distrital ine
+17,2,JIUTEPEC,19233,pan,13864,pri,10112,prd,6671,pvem,5253,pt,9890,mc,47547,morena,3778,pes,11086,rsp,9290,fxm,0,indep,396,pvem-pt-morena,,,147,6743,144010,298877,computo distrital ine
+17,3,CUAUTLA,17172,pan,13607,pri,3829,prd,5671,pvem,9078,pt,13411,mc,55074,morena,16775,pes,6664,rsp,6461,fxm,0,indep,,,,,164,7538,155444,298693,computo distrital ine
+17,4,JOJUTLA,8404,pan,11128,pri,3119,prd,4330,pvem,10503,pt,11821,mc,47137,morena,3282,pes,32236,rsp,25630,fxm,0,indep,370,pvem-pt-morena,,,107,7440,165507,301325,computo distrital ine
+17,5,YAUTEPEC,20813,pan,18145,pri,2897,prd,9121,pvem,11139,pt,13355,mc,54113,morena,11781,pes,9580,rsp,13088,fxm,0,indep,,,,,126,10276,174434,284986,computo distrital ine
+18,1,SANTIAGO IXCUINTLA,7172,pan,21671,pri,4557,prd,7381,pvem,9609,pt,30537,mc,55163,morena,3946,pes,3874,rsp,4752,fxm,0,indep,1819,pan-pri-prd,2139,pvem-pt-morena,47,7866,160533,263259,computo distrital ine
+18,2,TEPIC,14896,pan,10842,pri,3968,prd,7129,pvem,6181,pt,25307,mc,66783,morena,6933,pes,5023,rsp,4193,fxm,0,indep,2252,pan-pri-prd,3438,pvem-pt-morena,137,5351,162433,317068,computo distrital ine
+18,3,COMPOSTELA,26440,pan,10845,pri,2483,prd,7528,pvem,8774,pt,19475,mc,53464,morena,2714,pes,4820,rsp,5247,fxm,0,indep,2680,pan-pri-prd,2155,pvem-pt-morena,56,7147,153828,311181,computo distrital ine
+19,1,SANTA CATARINA,104458,pan,19267,pri,571,prd,2281,pvem,1154,pt,25629,mc,18563,morena,934,pes,958,rsp,2077,fxm,0,indep,,,,,159,3792,179843,333592,computo distrital ine
+19,2,APODACA,33409,pan,65907,pri,902,prd,2856,pvem,2267,pt,35216,mc,29522,morena,1701,pes,782,rsp,1774,fxm,0,indep,718,pvem-pt-morena,,,63,3538,178655,363234,computo distrital ine
+19,3,GRAL. ESCOBEDO,35091,pan,22355,pri,2124,prd,4104,pvem,3086,pt,35327,mc,27033,morena,1273,pes,1122,rsp,1833,fxm,0,indep,1210,pvem-pt-morena,,,47,3318,137923,321784,computo distrital ine
+19,4,SAN NICOLAS DE LOS GARZA,102762,pan,23960,pri,786,prd,3504,pvem,2326,pt,37210,mc,29453,morena,1174,pes,838,rsp,1576,fxm,0,indep,,,,,69,4225,207883,367332,computo distrital ine
+19,5,MONTERREY,11599,pan,55072,pri,486,prd,1697,pvem,7887,pt,22807,mc,14323,morena,747,pes,908,rsp,1088,fxm,0,indep,812,pvem-pt-morena,,,47,3840,121313,261261,computo distrital ine
+19,6,MONTERREY,69724,pan,63223,pri,1166,prd,2622,pvem,3608,pt,49974,mc,24770,morena,1851,pes,785,rsp,1453,fxm,0,indep,,,,,114,4796,224086,364495,computo distrital ine
+19,7,GARCIA,48250,pan,32426,pri,2124,prd,12103,pvem,4846,pt,47323,mc,31410,morena,2796,pes,3997,rsp,4707,fxm,0,indep,869,pvem-pt-morena,,,387,5828,197066,446531,computo distrital ine
+19,8,GUADALUPE,37804,pan,43421,pri,867,prd,5783,pvem,1922,pt,33545,mc,26480,morena,1720,pes,903,rsp,1648,fxm,0,indep,735,pvem-pt-morena,,,55,3794,158677,318955,computo distrital ine
+19,9,LINARES,51831,pan,71628,pri,852,prd,8245,pvem,6269,pt,22015,mc,28885,morena,1089,pes,2169,rsp,1092,fxm,0,indep,,,,,77,7654,201806,345421,computo distrital ine
+19,10,MONTERREY,49811,pan,72076,pri,945,prd,2029,pvem,1525,pt,42035,mc,20077,morena,1050,pes,739,rsp,1298,fxm,0,indep,530,pvem-pt-morena,,,78,4043,196236,336042,computo distrital ine
+19,11,GUADALUPE,60829,pan,43223,pri,944,prd,2975,pvem,2652,pt,31293,mc,27310,morena,2416,pes,1121,rsp,1167,fxm,0,indep,835,pvem-pt-morena,,,68,4207,179040,333407,computo distrital ine
+19,12,BENITO JUAREZ,37210,pan,41864,pri,995,prd,8063,pvem,2274,pt,32199,mc,28535,morena,1517,pes,1068,rsp,2971,fxm,0,indep,789,pvem-pt-morena,,,47,4349,161881,397641,computo distrital ine
+20,1,SAN JUAN BAUTISTA TUXTEPEC,7822,pan,40277,pri,8387,prd,4403,pvem,4189,pt,8797,mc,91577,morena,4748,pes,4291,rsp,5636,fxm,0,indep,1850,pan-pri-prd,590,pvem-pt-morena,311,6462,189340,280055,computo distrital ine
+20,2,TEOTITLAN DE FLORES MAGON,7914,pan,45466,pri,8204,prd,8837,pvem,10098,pt,4244,mc,73994,morena,3419,pes,4547,rsp,3654,fxm,0,indep,1183,pan-pri-prd,,,24,7418,179002,283688,computo distrital ine
+20,3,HEROICA CIUDAD DE HUAJUAPAN DE LEON,11642,pan,25812,pri,4287,prd,7320,pvem,12548,pt,4739,mc,73423,morena,3898,pes,3261,rsp,10444,fxm,0,indep,1282,pan-pri-prd,892,pvem-pt-morena,73,6163,165784,307933,computo distrital ine
+20,4,TLACOLULA DE MATAMOROS,7895,pan,24644,pri,2633,prd,7981,pvem,14936,pt,3685,mc,66197,morena,3028,pes,2172,rsp,4169,fxm,0,indep,845,pan-pri-prd,1097,pvem-pt-morena,58,6450,145790,327219,computo distrital ine
+20,5,SALINA CRUZ,3065,pan,27354,pri,2155,prd,4663,pvem,10411,pt,3058,mc,91070,morena,3131,pes,2887,rsp,4017,fxm,0,indep,609,pan-pri-prd,701,pvem-pt-morena,49,5132,158302,281467,computo distrital ine
+20,6,HEROICA CIUDAD DE TLAXIACO,4380,pan,26678,pri,5692,prd,6177,pvem,18403,pt,3156,mc,65285,morena,4644,pes,2869,rsp,5605,fxm,0,indep,878,pan-pri-prd,,,55,7949,151771,288511,computo distrital ine
+20,7,CIUDAD IXTEPEC,5454,pan,42601,pri,10660,prd,3309,pvem,17435,pt,4153,mc,87200,morena,5492,pes,3745,rsp,4209,fxm,0,indep,970,pan-pri-prd,384,pvem-pt-morena,55,5028,190695,288885,computo distrital ine
+20,8,OAXACA DE JUAREZ,11787,pan,35391,pri,2020,prd,2681,pvem,9178,pt,6329,mc,74870,morena,7174,pes,2790,rsp,6785,fxm,0,indep,1343,pan-pri-prd,1137,pvem-pt-morena,102,4873,166460,323518,computo distrital ine
+20,9,PUERTO ESCONDIDO,5106,pan,51416,pri,16078,prd,4445,pvem,8112,pt,3055,mc,68591,morena,2914,pes,4954,rsp,4033,fxm,0,indep,1265,pan-pri-prd,368,pvem-pt-morena,57,7625,178019,289014,computo distrital ine
+20,10,MIAHUATLAN DE PORFIRIO DIAZ,15270,pan,31158,pri,5916,prd,13943,pvem,9480,pt,3657,mc,69872,morena,3673,pes,2642,rsp,5813,fxm,0,indep,1437,pan-pri-prd,,,95,9520,172476,327513,computo distrital ine
+21,1,HUAUCHINANGO DE DEGOLLADO,27265,pan,37006,pri,8461,prd,13313,pvem,8420,pt,20645,mc,57696,morena,7699,pes,3645,rsp,4528,fxm,0,indep,1926,pan-pri-prd,1157,pvem-pt-morena,109,10233,202103,292805,computo distrital ine
+21,2,CUAUTILULCO BARRIO,13966,pan,62545,pri,4269,prd,19149,pvem,9248,pt,6443,mc,61634,morena,3674,pes,5369,rsp,8611,fxm,0,indep,1066,pan-pri-prd,1042,pvem-pt-morena,139,9359,206514,297916,computo distrital ine
+21,3,TEZIUTLAN,23961,pan,36585,pri,2511,prd,12667,pvem,12568,pt,19506,mc,51471,morena,8237,pes,4087,rsp,9831,fxm,0,indep,1797,pan-pri-prd,1901,pvem-pt-morena,85,9291,194498,302329,computo distrital ine
+21,4,AJALPAN,25386,pan,37013,pri,6410,prd,14966,pvem,15232,pt,10119,mc,48719,morena,9220,pes,6413,rsp,5270,fxm,0,indep,801,pan-pri-prd,706,pvem-pt-morena,54,11312,191621,288212,computo distrital ine
+21,5,SAN MARTIN TEXMELUCAN DE LABASTIDA,21095,pan,18762,pri,8243,prd,9154,pvem,18205,pt,12646,mc,45860,morena,8392,pes,6099,rsp,8339,fxm,0,indep,1465,pan-pri-prd,1815,pvem-pt-morena,177,7491,167743,315026,computo distrital ine
+21,6,HEROICA PUEBLA DE ZARAGOZA,33635,pan,12539,pri,1201,prd,3264,pvem,2446,pt,4217,mc,54846,morena,1930,pes,1472,rsp,3064,fxm,0,indep,2298,pan-pri-prd,1416,pvem-pt-morena,94,4608,127030,319034,computo distrital ine
+21,7,TEPEACA,22675,pan,23896,pri,4667,prd,10927,pvem,9225,pt,10425,mc,62536,morena,5515,pes,7991,rsp,8169,fxm,0,indep,1232,pan-pri-prd,1475,pvem-pt-morena,188,8598,177519,308443,computo distrital ine
+21,8,CIUDAD SERDAN,31698,pan,37397,pri,2621,prd,16184,pvem,12477,pt,23793,mc,51831,morena,4523,pes,2592,rsp,6956,fxm,0,indep,1834,pan-pri-prd,1120,pvem-pt-morena,65,9337,202428,290869,computo distrital ine
+21,9,HEROICA PUEBLA DE ZARAGOZA,59393,pan,11459,pri,1509,prd,4830,pvem,2747,pt,3796,mc,56475,morena,1796,pes,1416,rsp,2887,fxm,0,indep,2470,pan-pri-prd,1622,pvem-pt-morena,128,4978,155506,339027,computo distrital ine
+21,10,CHOLULA DE RIVADAVIA,62641,pan,13243,pri,3276,prd,5532,pvem,4373,pt,7730,mc,59307,morena,9973,pes,4387,rsp,6959,fxm,0,indep,2207,pan-pri-prd,1414,pvem-pt-morena,325,7210,188577,357851,computo distrital ine
+21,11,HEROICA PUEBLA DE ZARAGOZA,41571,pan,15588,pri,1577,prd,3572,pvem,3477,pt,4092,mc,50070,morena,2498,pes,2152,rsp,3102,fxm,0,indep,3277,pan-pri-prd,1631,pvem-pt-morena,132,5659,138398,334724,computo distrital ine
+21,12,HEROICA PUEBLA DE ZARAGOZA,71001,pan,15052,pri,1619,prd,3626,pvem,2583,pt,4815,mc,58166,morena,2211,pes,1231,rsp,3257,fxm,0,indep,3020,pan-pri-prd,1549,pvem-pt-morena,154,5404,173688,337166,computo distrital ine
+21,13,ATLIXCO,21402,pan,31606,pri,5694,prd,6497,pvem,7200,pt,7678,mc,68481,morena,5164,pes,6560,rsp,7939,fxm,0,indep,2004,pan-pri-prd,1438,pvem-pt-morena,149,8486,180298,324476,computo distrital ine
+21,14,ACATLAN DE OSORIO,16996,pan,41284,pri,11878,prd,9108,pvem,12202,pt,6340,mc,72936,morena,5772,pes,5056,rsp,5911,fxm,0,indep,2092,pan-pri-prd,1446,pvem-pt-morena,190,8749,199960,315327,computo distrital ine
+21,15,TEHUACAN,18050,pan,21086,pri,1342,prd,9091,pvem,11503,pt,6384,mc,63265,morena,7116,pes,1898,rsp,8847,fxm,0,indep,653,pan-pri-prd,2171,pvem-pt-morena,402,7598,159406,316732,computo distrital ine
+22,1,CADEREYTA DE MONTES,59436,pan,33950,pri,1562,prd,9896,pvem,1448,pt,2482,mc,31480,morena,2355,pes,3427,rsp,5884,fxm,0,indep,,,,,54,6994,158968,269449,computo distrital ine
+22,2,SAN JUAN DEL RIO,61347,pan,24919,pri,2739,prd,4867,pvem,1603,pt,2989,mc,41660,morena,3514,pes,3977,rsp,4008,fxm,0,indep,223,pvem-pt-morena,,,112,5147,157105,306248,computo distrital ine
+22,3,SANTIAGO DE QUERETARO,85358,pan,18274,pri,1707,prd,5393,pvem,1696,pt,4151,mc,55852,morena,2468,pes,1824,rsp,2968,fxm,0,indep,377,pvem-pt-morena,,,103,4559,184730,408415,computo distrital ine
+22,4,SANTIAGO DE QUERETARO,107568,pan,19438,pri,1908,prd,5434,pvem,1896,pt,3537,mc,51136,morena,2143,pes,1772,rsp,2698,fxm,0,indep,,,,,158,4971,202659,377186,computo distrital ine
+22,5,EL PUEBLITO,96816,pan,32815,pri,2031,prd,8051,pvem,2861,pt,3435,mc,41199,morena,2605,pes,2595,rsp,3579,fxm,0,indep,,,,,85,5697,201769,375080,computo distrital ine
+23,1,PLAYA DEL CARMEN,33556,pan,19501,pri,4008,prd,6279,pvem,5369,pt,6246,mc,67854,morena,4320,pes,2570,rsp,10859,fxm,0,indep,2138,pan-pri-prd,2056,pvem-pt-morena,279,6930,171965,381428,computo distrital ine
+23,2,CHETUMAL,12392,pan,24368,pri,5872,prd,2985,pvem,7442,pt,7966,mc,70781,morena,3268,pes,5414,rsp,8013,fxm,0,indep,2044,pan-pri-prd,2051,pvem-pt-morena,343,5682,158621,290122,computo distrital ine
+23,3,CANCUN,9013,pan,5010,pri,3269,prd,7647,pvem,1904,pt,2962,mc,46818,morena,7885,pes,1439,rsp,11594,fxm,0,indep,576,pan-pri-prd,1120,pvem-pt-morena,156,4894,104287,272767,computo distrital ine
+23,4,CANCUN,35001,pan,11005,pri,4254,prd,13410,pvem,2819,pt,5160,mc,49061,morena,5868,pes,1836,rsp,15802,fxm,0,indep,1242,pan-pri-prd,1474,pvem-pt-morena,258,5750,152940,378254,computo distrital ine
+24,1,MATEHUALA,23152,pan,28271,pri,2941,prd,41459,pvem,7947,pt,14230,mc,21563,morena,5204,pes,2267,rsp,2397,fxm,0,indep,2154,pan-pri-prd,3038,pvem-pt-morena,117,9732,164472,273579,computo distrital ine
+24,2,SOLEDAD DE GRACIANO SANCHEZ,27234,pan,25755,pri,10212,prd,68133,pvem,3668,pt,8777,mc,29708,morena,2550,pes,3864,rsp,1916,fxm,0,indep,2405,pan-pri-prd,,,143,12339,196704,343231,computo distrital ine
+24,3,RIOVERDE,24274,pan,38129,pri,2901,prd,32451,pvem,8376,pt,7536,mc,24278,morena,4415,pes,2566,rsp,1960,fxm,0,indep,1486,pan-pri-prd,2362,pvem-pt-morena,51,9621,160406,274741,computo distrital ine
+24,4,CIUDAD VALLES,16356,pan,16365,pri,3322,prd,24265,pvem,6830,pt,4754,mc,35180,morena,6302,pes,20278,rsp,5208,fxm,0,indep,978,pan-pri-prd,1839,pvem-pt-morena,127,7757,149561,246737,computo distrital ine
+24,5,SAN LUIS POTOSI,62371,pan,21860,pri,2283,prd,39608,pvem,2929,pt,5368,mc,29339,morena,2104,pes,1962,rsp,2304,fxm,0,indep,3574,pan-pri-prd,2609,pvem-pt-morena,279,5888,182478,326190,computo distrital ine
+24,6,SAN LUIS POTOSI,32051,pan,15108,pri,2113,prd,55195,pvem,3650,pt,5843,mc,32520,morena,2656,pes,3115,rsp,3500,fxm,0,indep,2357,pan-pri-prd,3351,pvem-pt-morena,296,6742,168497,318876,computo distrital ine
+24,7,TAMAZUNCHALE,30866,pan,22761,pri,4678,prd,37353,pvem,6785,pt,5172,mc,41537,morena,5612,pes,22335,rsp,1947,fxm,0,indep,1452,pan-pri-prd,2549,pvem-pt-morena,52,14712,197811,284946,computo distrital ine
+25,1,MAZATLAN,15063,pan,24504,pri,1903,prd,1917,pvem,4658,pt,8674,mc,71018,morena,3218,pes,1657,rsp,3400,fxm,0,indep,993,pan-pri-prd,492,pvem-pt-morena,41,4645,142183,308879,computo distrital ine
+25,2,LOS MOCHIS,14341,pan,33928,pri,1542,prd,2286,pvem,12244,pt,7780,mc,76341,morena,2295,pes,2462,rsp,3908,fxm,0,indep,2320,pan-pri-prd,958,pvem-pt-morena,60,4466,164931,339443,computo distrital ine
+25,3,GUAMUCHIL,7408,pan,50983,pri,4078,prd,2207,pvem,6524,pt,6905,mc,82970,morena,4008,pes,3728,rsp,2004,fxm,0,indep,1131,pan-pri-prd,362,pvem-pt-morena,24,5801,178133,332654,computo distrital ine
+25,4,GUASAVE,14284,pan,38597,pri,4646,prd,7455,pvem,728,pt,4097,mc,78956,morena,2734,pes,1990,rsp,1404,fxm,0,indep,2268,pan-pri-prd,,,40,4693,161892,315556,computo distrital ine
+25,5,CULIACAN DE ROSALES,15389,pan,37108,pri,1413,prd,2810,pvem,1650,pt,6915,mc,75993,morena,3469,pes,1502,rsp,3832,fxm,0,indep,2079,pan-pri-prd,390,pvem-pt-morena,119,3685,156354,319006,computo distrital ine
+25,6,MAZATLAN,11264,pan,39356,pri,1492,prd,3847,pvem,8044,pt,5603,mc,72596,morena,6968,pes,1431,rsp,3309,fxm,0,indep,1544,pan-pri-prd,,,67,5735,161256,312006,computo distrital ine
+25,7,CULIACAN DE ROSALES,13017,pan,34655,pri,1265,prd,2508,pvem,1926,pt,6495,mc,68493,morena,3049,pes,1729,rsp,2129,fxm,0,indep,1572,pan-pri-prd,387,pvem-pt-morena,166,4084,141475,324610,computo distrital ine
+26,1,SAN LUIS RIO COLORADO,15517,pan,18750,pri,1149,prd,5568,pvem,4151,pt,6267,mc,48358,morena,4247,pes,955,rsp,3847,fxm,0,indep,1939,pan-pri-prd,,,150,3619,114517,302495,computo distrital ine
+26,2,NOGALES,18199,pan,25912,pri,1875,prd,4530,pvem,4675,pt,9047,mc,51417,morena,10032,pes,1905,rsp,2514,fxm,0,indep,2073,pan-pri-prd,737,pvem-pt-morena,102,4763,137781,352802,computo distrital ine
+26,3,HERMOSILLO,13787,pan,28943,pri,789,prd,2713,pvem,2309,pt,16508,mc,60071,morena,1494,pes,1229,rsp,2429,fxm,0,indep,1371,pan-pri-prd,617,pvem-pt-morena,141,3450,135851,327277,computo distrital ine
+26,4,GUAYMAS,10958,pan,27022,pri,2688,prd,5027,pvem,18324,pt,10802,mc,60709,morena,2190,pes,2462,rsp,4118,fxm,0,indep,1792,pan-pri-prd,,,91,5276,151459,294879,computo distrital ine
+26,5,HERMOSILLO,18725,pan,41021,pri,1083,prd,2593,pvem,2225,pt,10305,mc,59453,morena,1757,pes,715,rsp,2087,fxm,0,indep,1853,pan-pri-prd,648,pvem-pt-morena,132,3611,146208,310854,computo distrital ine
+26,6,CD. OBREGON,10108,pan,27215,pri,2136,prd,3143,pvem,3567,pt,16486,mc,60877,morena,2551,pes,1265,rsp,3362,fxm,0,indep,1261,pan-pri-prd,,,120,3631,135722,324838,computo distrital ine
+26,7,NAVOJOA,10902,pan,29791,pri,1597,prd,3003,pvem,9611,pt,7182,mc,61122,morena,2585,pes,2995,rsp,1933,fxm,0,indep,1416,pan-pri-prd,721,pvem-pt-morena,312,3931,137101,274599,computo distrital ine
+27,1,MACUSPANA,1458,pan,10077,pri,9920,prd,18607,pvem,1361,pt,2147,mc,87842,morena,7037,pes,2727,rsp,1121,fxm,0,indep,700,pan-pri-prd,,,63,4009,147069,255771,computo distrital ine
+27,2,HEROICA CARDENAS,843,pan,3335,pri,42392,prd,6160,pvem,3429,pt,2131,mc,95430,morena,2717,pes,2772,rsp,1349,fxm,0,indep,441,pan-pri-prd,,,307,4320,165626,311717,computo distrital ine
+27,3,COMALCALCO,927,pan,7200,pri,32965,prd,1817,pvem,1934,pt,4191,mc,84500,morena,3004,pes,1940,rsp,2370,fxm,0,indep,290,pan-pri-prd,,,43,4117,145298,252245,computo distrital ine
+27,4,VILLAHERMOSA,4111,pan,22517,pri,4847,prd,3859,pvem,2826,pt,3187,mc,92162,morena,2108,pes,1916,rsp,3300,fxm,0,indep,527,pan-pri-prd,,,102,4445,145907,310991,computo distrital ine
+27,5,PARAISO,1446,pan,8155,pri,15285,prd,16170,pvem,9500,pt,7368,mc,95805,morena,4606,pes,9400,rsp,10698,fxm,0,indep,233,pan-pri-prd,,,55,6224,184945,313335,computo distrital ine
+27,6,VILLAHERMOSA,2763,pan,18597,pri,4475,prd,6428,pvem,1880,pt,11935,mc,89139,morena,2423,pes,1908,rsp,3381,fxm,0,indep,595,pan-pri-prd,,,79,4579,148182,308706,computo distrital ine
+28,1,NUEVO LAREDO,59758,pan,11630,pri,955,prd,2939,pvem,2045,pt,3267,mc,60861,morena,1958,pes,1478,rsp,2249,fxm,0,indep,577,pvem-pt-morena,,,108,3209,151034,324668,computo distrital ine
+28,2,REYNOSA,49815,pan,12285,pri,1163,prd,4729,pvem,3821,pt,4230,mc,47148,morena,5578,pes,1316,rsp,2299,fxm,0,indep,1057,pvem-pt-morena,,,51,3184,136676,288784,computo distrital ine
+28,3,RIO BRAVO,50591,pan,21123,pri,1925,prd,3942,pvem,5938,pt,3881,mc,58365,morena,2516,pes,1684,rsp,1702,fxm,0,indep,706,pvem-pt-morena,,,70,3733,156176,307311,computo distrital ine
+28,4,H. MATAMOROS,37205,pan,11810,pri,1083,prd,2482,pvem,2608,pt,3142,mc,80563,morena,1838,pes,1048,rsp,1332,fxm,0,indep,761,pvem-pt-morena,,,93,2793,146758,314138,computo distrital ine
+28,5,CIUDAD VICTORIA,75147,pan,28546,pri,1503,prd,3409,pvem,3652,pt,8891,mc,55987,morena,2558,pes,2966,rsp,1836,fxm,0,indep,745,pvem-pt-morena,,,81,3726,189047,307769,computo distrital ine
+28,6,CIUDAD MANTE,73171,pan,26955,pri,1611,prd,7381,pvem,6940,pt,6465,mc,60542,morena,2576,pes,2108,rsp,1616,fxm,0,indep,,,,,52,5981,195398,287847,computo distrital ine
+28,7,CIUDAD MADERO,54402,pan,6969,pri,2926,prd,2088,pvem,3165,pt,5027,mc,75620,morena,4944,pes,1698,rsp,1684,fxm,0,indep,1245,pvem-pt-morena,,,91,3278,163137,298881,computo distrital ine
+28,8,TAMPICO,79493,pan,4732,pri,1119,prd,1977,pvem,2664,pt,5883,mc,70737,morena,2456,pes,2170,rsp,1102,fxm,0,indep,1179,pvem-pt-morena,,,120,2773,176405,300467,computo distrital ine
+28,9,REYNOSA,36402,pan,7803,pri,1359,prd,2639,pvem,3024,pt,3871,mc,60164,morena,4633,pes,1685,rsp,1229,fxm,0,indep,895,pvem-pt-morena,,,37,3000,126741,306122,computo distrital ine
+29,1,APIZACO,29786,pan,26525,pri,8487,prd,8660,pvem,10123,pt,5538,mc,56268,morena,4806,pes,9522,rsp,7057,fxm,30928,indep,1061,pan-pri-prd,633,pvem-pt-morena,120,10574,210088,318970,computo distrital ine
+29,2,TLAXCALA DE XICOHTENCATL,15851,pan,32009,pri,8588,prd,10048,pvem,13950,pt,11809,mc,86984,morena,5436,pes,9520,rsp,12054,fxm,0,indep,723,pan-pri-prd,681,pvem-pt-morena,137,10828,218618,328630,computo distrital ine
+29,3,ZACATELCO,21185,pan,31651,pri,11952,prd,5829,pvem,14700,pt,6834,mc,86926,morena,5873,pes,11861,rsp,8588,fxm,0,indep,890,pan-pri-prd,,,83,12088,218460,325798,computo distrital ine
+30,1,PANUCO,28742,pan,12776,pri,8045,prd,19408,pvem,3138,pt,3455,mc,70171,morena,8005,pes,3655,rsp,5344,fxm,0,indep,1145,pan-pri-prd,1443,pvem-pt-morena,316,4592,170235,248398,computo distrital ine
+30,2,TANTOYUCA,43204,pan,19811,pri,17428,prd,19465,pvem,11253,pt,7069,mc,50499,morena,3786,pes,3190,rsp,2596,fxm,0,indep,1142,pan-pri-prd,975,pvem-pt-morena,156,6985,187559,257336,computo distrital ine
+30,3,TUXPAN DE RODRIGUEZ CANO,31470,pan,6160,pri,4863,prd,15636,pvem,3424,pt,13604,mc,53741,morena,3571,pes,2726,rsp,10617,fxm,0,indep,669,pan-pri-prd,567,pvem-pt-morena,91,4183,151322,259159,computo distrital ine
+30,4,VERACRUZ,57460,pan,6247,pri,1512,prd,4317,pvem,1939,pt,4899,mc,68098,morena,1758,pes,1696,rsp,1961,fxm,0,indep,1353,pan-pri-prd,1503,pvem-pt-morena,70,3314,156127,340227,computo distrital ine
+30,5,POZA RICA DE HIDALGO,9792,pan,9000,pri,21701,prd,2522,pvem,3307,pt,7055,mc,60412,morena,5500,pes,3593,rsp,6423,fxm,0,indep,1460,pan-pri-prd,1287,pvem-pt-morena,204,3717,135973,254444,computo distrital ine
+30,6,PAPANTLA DE OLARTE,19612,pan,10763,pri,31952,prd,13259,pvem,6803,pt,19208,mc,68655,morena,5127,pes,4066,rsp,3045,fxm,0,indep,1577,pan-pri-prd,,,35,5194,189296,298662,computo distrital ine
+30,7,MARTINEZ DE LA TORRE,20538,pan,20430,pri,4453,prd,11371,pvem,8251,pt,12108,mc,61963,morena,8873,pes,9138,rsp,5715,fxm,0,indep,911,pan-pri-prd,,,64,7874,171689,296007,computo distrital ine
+30,8,XALAPA,25087,pan,21588,pri,9993,prd,14861,pvem,11532,pt,27188,mc,69042,morena,5101,pes,8449,rsp,16474,fxm,0,indep,1588,pan-pri-prd,1807,pvem-pt-morena,84,8490,221284,334411,computo distrital ine
+30,9,COATEPEC,20429,pan,41806,pri,6458,prd,7771,pvem,6511,pt,15091,mc,62147,morena,3983,pes,8023,rsp,4410,fxm,0,indep,1868,pan-pri-prd,,,89,8122,186708,290671,computo distrital ine
+30,10,XALAPA,26694,pan,33251,pri,3045,prd,5094,pvem,3844,pt,12127,mc,71541,morena,4265,pes,2612,rsp,3798,fxm,0,indep,3127,pan-pri-prd,,,174,6330,175902,329779,computo distrital ine
+30,11,COATZACOALCOS,7747,pan,24372,pri,4390,prd,3888,pvem,3239,pt,9386,mc,93989,morena,4130,pes,1530,rsp,5443,fxm,0,indep,1078,pan-pri-prd,,,106,4697,163995,303140,computo distrital ine
+30,12,VERACRUZ,80638,pan,8492,pri,1540,prd,9104,pvem,1717,pt,11013,mc,61578,morena,2771,pes,2966,rsp,3178,fxm,0,indep,1519,pan-pri-prd,1531,pvem-pt-morena,101,4244,190392,339448,computo distrital ine
+30,13,HUATUSCO,41811,pan,30264,pri,4111,prd,11086,pvem,2696,pt,20464,mc,72856,morena,3637,pes,2425,rsp,5122,fxm,0,indep,929,pan-pri-prd,1588,pvem-pt-morena,81,6510,203580,313219,computo distrital ine
+30,14,MINATITLAN,15085,pan,11776,pri,11148,prd,8572,pvem,6044,pt,3827,mc,81426,morena,5472,pes,3279,rsp,6110,fxm,0,indep,1859,pan-pri-prd,1891,pvem-pt-morena,48,4905,161442,280557,computo distrital ine
+30,15,ORIZABA,23776,pan,35949,pri,15880,prd,6569,pvem,5075,pt,15399,mc,67243,morena,5355,pes,4104,rsp,3092,fxm,0,indep,3232,pan-pri-prd,1102,pvem-pt-morena,98,5759,192633,308333,computo distrital ine
+30,16,CORDOBA,30480,pan,22549,pri,5355,prd,5208,pvem,4372,pt,11575,mc,83381,morena,3926,pes,4609,rsp,7524,fxm,0,indep,1909,pan-pri-prd,1247,pvem-pt-morena,239,5850,188224,315982,computo distrital ine
+30,17,COSAMALOAPAN,19083,pan,12294,pri,11572,prd,14763,pvem,8810,pt,15174,mc,70607,morena,4788,pes,5872,rsp,8434,fxm,0,indep,1202,pan-pri-prd,1623,pvem-pt-morena,72,7860,182154,292926,computo distrital ine
+30,18,ZONGOLICA,21614,pan,27198,pri,14392,prd,19591,pvem,6920,pt,9421,mc,67506,morena,8810,pes,8000,rsp,9079,fxm,0,indep,1254,pan-pri-prd,1530,pvem-pt-morena,84,9732,205131,299378,computo distrital ine
+30,19,SAN ANDRES TUXTLA,13548,pan,9142,pri,14581,prd,9771,pvem,6642,pt,28956,mc,71103,morena,6116,pes,8177,rsp,5477,fxm,0,indep,1484,pan-pri-prd,1864,pvem-pt-morena,59,6897,183817,312803,computo distrital ine
+30,20,COSOLEACAQUE,10402,pan,29339,pri,9270,prd,3426,pvem,3425,pt,11110,mc,96941,morena,6342,pes,7045,rsp,7982,fxm,0,indep,1331,pan-pri-prd,,,71,7074,193758,304779,computo distrital ine
+31,1,VALLADOLID,87609,pan,65892,pri,2277,prd,3549,pvem,2568,pt,3474,mc,53694,morena,2129,pes,1176,rsp,2407,fxm,0,indep,,,,,71,5053,229899,300533,computo distrital ine
+31,2,PROGRESO,57804,pan,49277,pri,8023,prd,9006,pvem,3038,pt,10620,mc,66873,morena,6657,pes,1389,rsp,3929,fxm,0,indep,440,pvem-pt-morena,,,44,6510,223610,318248,computo distrital ine
+31,3,MERIDA,55580,pan,45909,pri,1348,prd,1819,pvem,1478,pt,3190,mc,53650,morena,1545,pes,698,rsp,2043,fxm,0,indep,,,,,89,5001,172350,368668,computo distrital ine
+31,4,MERIDA,96138,pan,33671,pri,1321,prd,1989,pvem,1280,pt,4821,mc,49420,morena,1797,pes,671,rsp,2549,fxm,0,indep,,,,,109,4714,198480,360059,computo distrital ine
+31,5,TICUL,68360,pan,53914,pri,11019,prd,10565,pvem,7808,pt,9722,mc,58116,morena,2948,pes,1385,rsp,4404,fxm,0,indep,290,pvem-pt-morena,,,49,6561,235141,312556,computo distrital ine
+32,1,FRESNILLO,16275,pan,39790,pri,3960,prd,7967,pvem,7549,pt,3841,mc,52893,morena,5290,pes,992,rsp,6414,fxm,0,indep,2222,pan-pri-prd,813,pvem-pt-morena,51,4962,153019,288032,computo distrital ine
+32,2,JEREZ DE GARCIA SALINAS,27787,pan,34256,pri,14807,prd,10566,pvem,9658,pt,7157,mc,54739,morena,5007,pes,1055,rsp,4380,fxm,0,indep,3162,pan-pri-prd,1270,pvem-pt-morena,68,6306,180218,317403,computo distrital ine
+32,3,ZACATECAS,14563,pan,43216,pri,7980,prd,8596,pvem,20560,pt,6815,mc,51119,morena,9284,pes,1605,rsp,5742,fxm,0,indep,2002,pan-pri-prd,1085,pvem-pt-morena,97,7442,180106,301068,computo distrital ine
+32,4,GUADALUPE,10716,pan,49580,pri,3107,prd,4952,pvem,17798,pt,6940,mc,62942,morena,4230,pes,2003,rsp,8815,fxm,0,indep,1942,pan-pri-prd,,,136,7119,180280,304537,computo distrital ine

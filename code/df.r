@@ -4,7 +4,7 @@ dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
 # read raw data file
-dat <- read.csv(file = "dfdf1979-on.csv", stringsAsFactors = FALSE)
+dat <- read.csv(file = "dfdf1979-present.csv", stringsAsFactors = FALSE)
 table(dat$yr, dat$dextra, useNA = "always")
 dim(dat)
 
@@ -687,7 +687,7 @@ colnames(dat)
 #sel <- dat$yr>=1985
 #dat <- dat[sel,] # drop early years
 dat$ord <- 1:nrow(dat)
-write.csv(dat, file = "dfdf1979-on.coalAgg.csv", row.names = FALSE)
+write.csv(dat, file = "dfdf1979-present.coalAgg.csv", row.names = FALSE)
 
 
 
