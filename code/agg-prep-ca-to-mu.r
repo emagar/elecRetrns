@@ -11,16 +11,48 @@ d2 <- d # duplicate
 d <- d2
 
 # clean
-sel <- which(colnames(d) %in% c("SECCION", "TIPO_CASILLA"))
+sel <- which(colnames(d) %in% c("SECCION", "ID_CASILLA", "TIPO_CASILLA","EXT_CONTIGUA","UBICACION_CASILLA","TIPO_ACTA","TOTAL_BOLETAS_SOBRANTES", "TOTAL_PERSONAS_VOTARON","TOTAL_REP_PARTIDO_CI_VOTARON","TOTAL_VOTOS_SACADOS"))
 d <- d[,-sel]
 
 # turn characters into NAs
-tmp <- d[,c(1,3:44)]
+sel <- c(1,3:32)
+tmp <- d[,sel]
 tmp <- lapply(tmp, as.numeric)
 tmp <- as.data.frame(do.call(cbind,tmp))
 tmp[is.na(tmp)] <- 0
 head(tmp)
-d[,c(1,3:44)] <- tmp
+d[,sel] <- tmp
+
+colnames(d)
+PAN <-                    ave(PAN                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PRI <-                    ave(PRI                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PRD <-                    ave(PRD                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PVEM <-                   ave(PVEM                    , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PT <-                     ave(PT                      , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+MC <-                     ave(MC                      , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+MORENA <-                 ave(MORENA                  , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PANAL <-                  ave(PANAL                   , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+PES <-                    ave(PES                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+RSP <-                    ave(RSP                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+FXM <-                    ave(FXM                     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+CI_1 <-                   ave(CI_1                    , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+CI_2 <-                   ave(CI_2                    , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PRI_PRD <-              ave(C_PRI_PRD               , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_PT_MORENA_PANAL <- ave(C_PVEM_PT_MORENA_PANAL  , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_PT_MORENA <-       ave(C_PVEM_PT_MORENA        , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_PT_PANAL <-        ave(C_PVEM_PT_PANAL         , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_MORENA_PANAL <-    ave(C_PVEM_MORENA_PANAL     , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PT_MORENA_PANAL <-      ave(C_PT_MORENA_PANAL       , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_PT <-              ave(C_PVEM_PT               , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_MORENA <-          ave(C_PVEM_MORENA           , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PVEM_PANAL <-           ave(C_PVEM_PANAL            , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PT_MORENA <-            ave(C_PT_MORENA             , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_PT_PANAL <-             ave(C_PT_PANAL              , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+C_MORENA_PANAL <-         ave(C_MORENA_PANAL          , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+NO_REGISTRADOS <-         ave(NO_REGISTRADOS          , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+NULOS <-                  ave(NULOS                   , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+LISTA_NOMINAL <-          ave(LISTA_NOMINAL           , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
+
 
 d <- within(d, expr = {
     PAN <-                   ave(PAN                    , as.factor(ID_MUNICIPIO), FUN=sum, na.rm=TRUE);
