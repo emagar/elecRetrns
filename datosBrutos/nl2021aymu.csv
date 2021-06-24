@@ -1,52 +1,52 @@
-inegi,ID_MUNICIPIO,MUNICIPIO,pan,pri,prd,pvem,pt,mc,morena,pna,pes,rsp,fxm,indep1,indep2,pt-pvem-morena-pna,pri-prd,nr,nul,lisnom,fuente
-19001,1,Abasolo,544,31,0,514,123,426,0,0,0,0,0,359,0,,,0,21,2512,iee computo municipal
-19002,2,Agualeguas,1795,128,4,2,0,806,80,0,0,3,0,0,0,,1,0,47,4147,iee computo municipal
-19003,3,Los Aldamas,6,563,9,5,7,647,6,66,0,0,0,0,0,1,11,0,42,2076,iee computo municipal
-19004,4,Allende,3417,5947,28,145,124,1251,618,207,0,1181,0,0,0,34,20,1,232,28919,iee computo municipal
-19005,5,Anahuac,635,4775,0,51,0,91,442,0,0,0,0,2740,0,,,1,229,14822,iee computo municipal
-19006,6,Apodaca,22136,141171,3525,1863,1722,21375,20008,895,1107,628,913,0,0,749,1009,57,3336,440894,iee computo municipal
-19007,7,Aramberri,3457,5026,15,18,1126,22,131,0,0,0,0,0,0,,44,2,216,12646,iee computo municipal
-19008,8,Bustamante,913,575,6,35,10,15,83,22,0,834,104,0,0,8,3,12,33,3354,iee computo municipal
-19009,9,Cadereyta Jimenez,15394,9194,236,3977,272,1656,2452,149,426,729,2463,0,0,287,,14,858,85414,iee computo municipal
-19010,10,El Carmen,3850,1301,55,2527,828,1002,1248,129,0,0,54,382,0,500,35,0,243,32600,iee computo municipal
-19011,11,Cerralvo,2333,228,5,0,18,51,1586,0,0,17,0,0,0,,3,1,71,6900,iee computo municipal
-19012,12,Cienega de Flores,4443,1422,207,5812,152,580,1027,92,0,59,837,0,0,215,51,1,270,39601,iee computo municipal
-19013,13,China,82,1694,19,103,53,145,175,1775,0,0,0,2040,0,287,32,0,255,9977,iee computo municipal
-19014,14,Dr. Arroyo,1054,13156,32,144,0,348,6614,0,0,199,0,0,0,,,1,504,29832,iee computo municipal
-19015,15,Dr. Coss,83,778,0,8,0,9,0,833,0,48,0,0,0,,1,0,28,2725,iee computo municipal
-19016,16,Dr. Gonzalez,222,887,19,40,598,25,0,510,0,0,0,0,0,,6,0,47,3273,iee computo municipal
-19017,17,Galeana,2481,8768,31,6999,494,301,0,0,0,20,0,0,0,,43,2,531,31230,iee computo municipal
-19018,18,Garcia,8010,7533,464,1115,1339,10274,9860,577,983,1117,884,17196,10955,270,74,42,1884,199018,iee computo municipal
-19019,19,San Pedro Garza Garcia,24300,2222,67,180,112,2018,1344,95,0,43,93,41862,0,21,14,5,936,107652,iee computo municipal
-19020,20,Gral. Bravo,1914,1691,5,21,0,14,0,31,0,0,0,0,0,,24,0,58,5852,iee computo municipal
-19021,21,Gral. Escobedo,36911,23485,1105,5194,3736,28827,29386,1947,0,1097,1309,0,0,1592,274,32,2712,321812,iee computo municipal
-19022,22,Gral. Teran,0,2985,32,72,49,3235,240,104,0,640,29,0,0,23,46,2,173,13304,iee computo municipal
-19023,23,Gral. Trevino,893,600,0,0,0,0,3,11,0,0,0,0,0,,2,0,14,2097,iee computo municipal
-19024,24,Gral. Zaragoza,327,1804,16,10,1887,0,21,6,0,17,0,0,0,97,35,0,74,5463,iee computo municipal
-19025,25,Gral. Zuazua,3052,3313,165,458,2399,1343,2419,117,731,4844,259,0,0,225,105,3,378,46179,iee computo municipal
-19026,26,Guadalupe,83348,83441,2363,8490,5670,48502,41389,3626,1944,1065,1569,0,0,1896,1021,95,5665,551656,iee computo municipal
-19027,27,Los Herreras,209,711,6,877,0,81,0,156,0,0,0,0,0,,1,0,45,2902,iee computo municipal
-19028,29,Higueras,752,5,459,2,5,0,0,1,0,0,0,0,0,,,0,12,1475,iee computo municipal
-19029,30,Hualahuises,70,2011,9,5,70,0,0,17,0,13,0,1985,0,,15,0,85,6307,iee computo municipal
-19030,31,Iturbide,1238,1568,1,1,12,0,0,0,0,0,0,0,0,,9,0,27,3243,iee computo municipal
-19031,32,Juarez,21984,36159,659,2470,952,20247,12573,751,690,276,1021,0,0,333,499,45,1783,251782,iee computo municipal
-19032,33,Lampazos de Naranjo,2672,128,2,16,0,108,702,0,0,0,0,0,0,,2,0,47,4921,iee computo municipal
-19033,34,Linares,9921,5307,93,327,522,2671,4151,500,0,250,0,6480,0,189,48,8,890,66567,iee computo municipal
-19034,35,Marin,594,301,2,2234,0,0,0,11,0,0,0,0,0,,3,1,41,4984,iee computo municipal
-19035,36,Melchor Ocampo,392,9,0,30,18,110,21,805,0,0,0,0,0,55,,0,36,1937,iee computo municipal
-19036,37,Mier y Noriega,1287,366,3,1192,9,843,1077,0,0,0,0,0,0,,2,0,101,6482,iee computo municipal
-19037,38,Mina,282,1940,10,1053,0,0,0,3,0,0,0,160,0,,5,0,41,4944,iee computo municipal
-19038,39,Montemorelos,3618,8963,127,344,1485,3820,3942,235,0,155,146,934,0,225,68,3,575,54852,iee computo municipal
-19039,40,Monterrey,43211,166156,3240,3388,9516,254541,38005,1951,1362,1909,1373,1785,0,1605,1562,193,9144,963019,iee computo municipal
-19040,41,Paras,852,723,4,5,5,0,15,2,0,0,0,0,0,1,2,0,21,2008,iee computo municipal
-19041,42,Pesqueria,10904,3016,179,883,1172,1858,4202,174,0,178,0,0,0,225,61,7,462,70795,iee computo municipal
-19042,43,Los Ramones,1174,354,7,0,0,0,22,1255,0,91,0,0,0,,1,11,72,5372,iee computo municipal
-19043,44,Rayones,1775,201,2,27,29,17,292,28,0,0,0,0,0,6,1,0,48,3110,iee computo municipal
-19044,45,Sabinas Hidalgo,4990,777,16,1229,64,8400,378,37,0,566,26,0,0,46,8,2,275,29104,iee computo municipal
-19045,46,Salinas Victoria,6247,4069,76,168,153,8136,1758,97,0,111,715,456,0,104,48,9,445,48612,iee computo municipal
-19046,47,San Nicolas de los Garza,118241,20258,1131,2438,1865,30999,22821,1264,0,578,1431,1825,0,771,295,141,3209,367121,iee computo municipal
-19047,28,Hidalgo,1206,229,738,643,29,2016,0,313,57,733,256,1738,0,,,1,195,13163,iee computo municipal
-19048,48,Santa Catarina,54666,10700,409,1684,966,16821,11894,1025,645,1252,2223,0,0,316,77,62,2211,225939,iee computo municipal
-19049,49,Santiago,3707,9056,140,756,1568,713,1944,198,128,41,0,6296,0,89,67,0,453,40354,iee computo municipal
-19050,50,Vallecillo,38,656,15,16,863,0,45,0,0,0,0,0,0,21,8,0,20,2334,iee computo municipal
-19051,51,Villaldama,889,81,2,1086,1,984,14,0,0,5,0,0,0,,2,0,37,3883,iee computo municipal
+inegi,ID_MUNICIPIO,MUNICIPIO,pan,lab,pri,lab,prd,lab,pvem,lab,pt,lab,mc,lab,morena,lab,pna,lab,pes,lab,rsp,lab,fxm,lab,indep1,lab,indep2,lab,pt-pvem-morena-pna,lab,pri-prd,lab,nr,nul,lisnom,fuente
+19001,1,Abasolo,544,pan,31,pri,0,prd,514,pvem,123,pt,426,mc,0,morena,0,pna,0,pes,0,rsp,0,fxm,359,indep1,0,indep2,,pt-pvem-morena-pna,,pri-prd,0,21,2512,iee computo municipal
+19002,2,Agualeguas,1795,pan,128,pri,4,prd,2,pvem,0,pt,806,mc,80,morena,0,pna,0,pes,3,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,1,pri-prd,0,47,4147,iee computo municipal
+19003,3,Los Aldamas,6,pan,563,pri,9,prd,5,pvem,7,pt,647,mc,6,morena,66,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,1,pt-pvem-morena-pna,11,pri-prd,0,42,2076,iee computo municipal
+19004,4,Allende,3417,pan,5947,pri,28,prd,145,pvem,124,pt,1251,mc,618,morena,207,pna,0,pes,1181,rsp,0,fxm,0,indep1,0,indep2,34,pt-pvem-morena-pna,20,pri-prd,1,232,28919,iee computo municipal
+19005,5,Anahuac,635,pan,4775,pri,0,prd,51,pvem,0,pt,91,mc,442,morena,0,pna,0,pes,0,rsp,0,fxm,2740,indep1,0,indep2,,pt-pvem-morena-pna,,pri-prd,1,229,14822,iee computo municipal
+19006,6,Apodaca,22136,pan,141171,pri,3525,prd,1863,pvem,1722,pt,21375,mc,20008,morena,895,pna,1107,pes,628,rsp,913,fxm,0,indep1,0,indep2,749,pt-pvem-morena-pna,1009,pri-prd,57,3336,440894,iee computo municipal
+19007,7,Aramberri,3457,pan,5026,pri,15,prd,18,pvem,1126,pt,22,mc,131,morena,0,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,44,pri-prd,2,216,12646,iee computo municipal
+19008,8,Bustamante,913,pan,575,pri,6,prd,35,pvem,10,pt,15,mc,83,morena,22,pna,0,pes,834,rsp,104,fxm,0,indep1,0,indep2,8,pt-pvem-morena-pna,3,pri-prd,12,33,3354,iee computo municipal
+19009,9,Cadereyta Jimenez,15394,pan,9194,pri,236,prd,3977,pvem,272,pt,1656,mc,2452,morena,149,pna,426,pes,729,rsp,2463,fxm,0,indep1,0,indep2,287,pt-pvem-morena-pna,,pri-prd,14,858,85414,iee computo municipal
+19010,10,El Carmen,3850,pan,1301,pri,55,prd,2527,pvem,828,pt,1002,mc,1248,morena,129,pna,0,pes,0,rsp,54,fxm,382,indep1,0,indep2,500,pt-pvem-morena-pna,35,pri-prd,0,243,32600,iee computo municipal
+19011,11,Cerralvo,2333,pan,228,pri,5,prd,0,pvem,18,pt,51,mc,1586,morena,0,pna,0,pes,17,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,3,pri-prd,1,71,6900,iee computo municipal
+19012,12,Cienega de Flores,4443,pan,1422,pri,207,prd,5812,pvem,152,pt,580,mc,1027,morena,92,pna,0,pes,59,rsp,837,fxm,0,indep1,0,indep2,215,pt-pvem-morena-pna,51,pri-prd,1,270,39601,iee computo municipal
+19013,13,China,82,pan,1694,pri,19,prd,103,pvem,53,pt,145,mc,175,morena,1775,pna,0,pes,0,rsp,0,fxm,2040,indep1,0,indep2,287,pt-pvem-morena-pna,32,pri-prd,0,255,9977,iee computo municipal
+19014,14,Dr. Arroyo,1054,pan,13156,pri,32,prd,144,pvem,0,pt,348,mc,6614,morena,0,pna,0,pes,199,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,,pri-prd,1,504,29832,iee computo municipal
+19015,15,Dr. Coss,83,pan,778,pri,0,prd,8,pvem,0,pt,9,mc,0,morena,833,pna,0,pes,48,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,1,pri-prd,0,28,2725,iee computo municipal
+19016,16,Dr. Gonzalez,222,pan,887,pri,19,prd,40,pvem,598,pt,25,mc,0,morena,510,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,6,pri-prd,0,47,3273,iee computo municipal
+19017,17,Galeana,2481,pan,8768,pri,31,prd,6999,pvem,494,pt,301,mc,0,morena,0,pna,0,pes,20,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,43,pri-prd,2,531,31230,iee computo municipal
+19018,18,Garcia,8010,pan,7533,pri,464,prd,1115,pvem,1339,pt,10274,mc,9860,morena,577,pna,983,pes,1117,rsp,884,fxm,17196,indep1,10955,indep2,270,pt-pvem-morena-pna,74,pri-prd,42,1884,199018,iee computo municipal
+19019,19,San Pedro Garza Garcia,24300,pan,2222,pri,67,prd,180,pvem,112,pt,2018,mc,1344,morena,95,pna,0,pes,43,rsp,93,fxm,41862,indep1,0,indep2,21,pt-pvem-morena-pna,14,pri-prd,5,936,107652,iee computo municipal
+19020,20,Gral. Bravo,1914,pan,1691,pri,5,prd,21,pvem,0,pt,14,mc,0,morena,31,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,24,pri-prd,0,58,5852,iee computo municipal
+19021,21,Gral. Escobedo,36911,pan,23485,pri,1105,prd,5194,pvem,3736,pt,28827,mc,29386,morena,1947,pna,0,pes,1097,rsp,1309,fxm,0,indep1,0,indep2,1592,pt-pvem-morena-pna,274,pri-prd,32,2712,321812,iee computo municipal
+19022,22,Gral. Teran,0,pan,2985,pri,32,prd,72,pvem,49,pt,3235,mc,240,morena,104,pna,0,pes,640,rsp,29,fxm,0,indep1,0,indep2,23,pt-pvem-morena-pna,46,pri-prd,2,173,13304,iee computo municipal
+19023,23,Gral. Trevino,893,pan,600,pri,0,prd,0,pvem,0,pt,0,mc,3,morena,11,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,2,pri-prd,0,14,2097,iee computo municipal
+19024,24,Gral. Zaragoza,327,pan,1804,pri,16,prd,10,pvem,1887,pt,0,mc,21,morena,6,pna,0,pes,17,rsp,0,fxm,0,indep1,0,indep2,97,pt-pvem-morena-pna,35,pri-prd,0,74,5463,iee computo municipal
+19025,25,Gral. Zuazua,3052,pan,3313,pri,165,prd,458,pvem,2399,pt,1343,mc,2419,morena,117,pna,731,pes,4844,rsp,259,fxm,0,indep1,0,indep2,225,pt-pvem-morena-pna,105,pri-prd,3,378,46179,iee computo municipal
+19026,26,Guadalupe,83348,pan,83441,pri,2363,prd,8490,pvem,5670,pt,48502,mc,41389,morena,3626,pna,1944,pes,1065,rsp,1569,fxm,0,indep1,0,indep2,1896,pt-pvem-morena-pna,1021,pri-prd,95,5665,551656,iee computo municipal
+19027,27,Los Herreras,209,pan,711,pri,6,prd,877,pvem,0,pt,81,mc,0,morena,156,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,1,pri-prd,0,45,2902,iee computo municipal
+19028,29,Higueras,752,pan,5,pri,459,prd,2,pvem,5,pt,0,mc,0,morena,1,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,,pri-prd,0,12,1475,iee computo municipal
+19029,30,Hualahuises,70,pan,2011,pri,9,prd,5,pvem,70,pt,0,mc,0,morena,17,pna,0,pes,13,rsp,0,fxm,1985,indep1,0,indep2,,pt-pvem-morena-pna,15,pri-prd,0,85,6307,iee computo municipal
+19030,31,Iturbide,1238,pan,1568,pri,1,prd,1,pvem,12,pt,0,mc,0,morena,0,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,9,pri-prd,0,27,3243,iee computo municipal
+19031,32,Juarez,21984,pan,36159,pri,659,prd,2470,pvem,952,pt,20247,mc,12573,morena,751,pna,690,pes,276,rsp,1021,fxm,0,indep1,0,indep2,333,pt-pvem-morena-pna,499,pri-prd,45,1783,251782,iee computo municipal
+19032,33,Lampazos de Naranjo,2672,pan,128,pri,2,prd,16,pvem,0,pt,108,mc,702,morena,0,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,2,pri-prd,0,47,4921,iee computo municipal
+19033,34,Linares,9921,pan,5307,pri,93,prd,327,pvem,522,pt,2671,mc,4151,morena,500,pna,0,pes,250,rsp,0,fxm,6480,indep1,0,indep2,189,pt-pvem-morena-pna,48,pri-prd,8,890,66567,iee computo municipal
+19034,35,Marin,594,pan,301,pri,2,prd,2234,pvem,0,pt,0,mc,0,morena,11,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,3,pri-prd,1,41,4984,iee computo municipal
+19035,36,Melchor Ocampo,392,pan,9,pri,0,prd,30,pvem,18,pt,110,mc,21,morena,805,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,55,pt-pvem-morena-pna,,pri-prd,0,36,1937,iee computo municipal
+19036,37,Mier y Noriega,1287,pan,366,pri,3,prd,1192,pvem,9,pt,843,mc,1077,morena,0,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,2,pri-prd,0,101,6482,iee computo municipal
+19037,38,Mina,282,pan,1940,pri,10,prd,1053,pvem,0,pt,0,mc,0,morena,3,pna,0,pes,0,rsp,0,fxm,160,indep1,0,indep2,,pt-pvem-morena-pna,5,pri-prd,0,41,4944,iee computo municipal
+19038,39,Montemorelos,3618,pan,8963,pri,127,prd,344,pvem,1485,pt,3820,mc,3942,morena,235,pna,0,pes,155,rsp,146,fxm,934,indep1,0,indep2,225,pt-pvem-morena-pna,68,pri-prd,3,575,54852,iee computo municipal
+19039,40,Monterrey,43211,pan,166156,pri,3240,prd,3388,pvem,9516,pt,254541,mc,38005,morena,1951,pna,1362,pes,1909,rsp,1373,fxm,1785,indep1,0,indep2,1605,pt-pvem-morena-pna,1562,pri-prd,193,9144,963019,iee computo municipal
+19040,41,Paras,852,pan,723,pri,4,prd,5,pvem,5,pt,0,mc,15,morena,2,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,1,pt-pvem-morena-pna,2,pri-prd,0,21,2008,iee computo municipal
+19041,42,Pesqueria,10904,pan,3016,pri,179,prd,883,pvem,1172,pt,1858,mc,4202,morena,174,pna,0,pes,178,rsp,0,fxm,0,indep1,0,indep2,225,pt-pvem-morena-pna,61,pri-prd,7,462,70795,iee computo municipal
+19042,43,Los Ramones,1174,pan,354,pri,7,prd,0,pvem,0,pt,0,mc,22,morena,1255,pna,0,pes,91,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,1,pri-prd,11,72,5372,iee computo municipal
+19043,44,Rayones,1775,pan,201,pri,2,prd,27,pvem,29,pt,17,mc,292,morena,28,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,6,pt-pvem-morena-pna,1,pri-prd,0,48,3110,iee computo municipal
+19044,45,Sabinas Hidalgo,4990,pan,777,pri,16,prd,1229,pvem,64,pt,8400,mc,378,morena,37,pna,0,pes,566,rsp,26,fxm,0,indep1,0,indep2,46,pt-pvem-morena-pna,8,pri-prd,2,275,29104,iee computo municipal
+19045,46,Salinas Victoria,6247,pan,4069,pri,76,prd,168,pvem,153,pt,8136,mc,1758,morena,97,pna,0,pes,111,rsp,715,fxm,456,indep1,0,indep2,104,pt-pvem-morena-pna,48,pri-prd,9,445,48612,iee computo municipal
+19046,47,San Nicolas de los Garza,118241,pan,20258,pri,1131,prd,2438,pvem,1865,pt,30999,mc,22821,morena,1264,pna,0,pes,578,rsp,1431,fxm,1825,indep1,0,indep2,771,pt-pvem-morena-pna,295,pri-prd,141,3209,367121,iee computo municipal
+19047,28,Hidalgo,1206,pan,229,pri,738,prd,643,pvem,29,pt,2016,mc,0,morena,313,pna,57,pes,733,rsp,256,fxm,1738,indep1,0,indep2,,pt-pvem-morena-pna,,pri-prd,1,195,13163,iee computo municipal
+19048,48,Santa Catarina,54666,pan,10700,pri,409,prd,1684,pvem,966,pt,16821,mc,11894,morena,1025,pna,645,pes,1252,rsp,2223,fxm,0,indep1,0,indep2,316,pt-pvem-morena-pna,77,pri-prd,62,2211,225939,iee computo municipal
+19049,49,Santiago,3707,pan,9056,pri,140,prd,756,pvem,1568,pt,713,mc,1944,morena,198,pna,128,pes,41,rsp,0,fxm,6296,indep1,0,indep2,89,pt-pvem-morena-pna,67,pri-prd,0,453,40354,iee computo municipal
+19050,50,Vallecillo,38,pan,656,pri,15,prd,16,pvem,863,pt,0,mc,45,morena,0,pna,0,pes,0,rsp,0,fxm,0,indep1,0,indep2,21,pt-pvem-morena-pna,8,pri-prd,0,20,2334,iee computo municipal
+19051,51,Villaldama,889,pan,81,pri,2,prd,1086,pvem,1,pt,984,mc,14,morena,0,pna,0,pes,5,rsp,0,fxm,0,indep1,0,indep2,,pt-pvem-morena-pna,2,pri-prd,0,37,3883,iee computo municipal
