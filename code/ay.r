@@ -321,7 +321,7 @@ sel.r <- which(dat$yr>2006)
 dat[,sel.l] <- l # return to data
 rm(l)
 
-## # shorter pty labels included in longer ones (eg pan panal) give false positives in regexes
+## # some longer pty labels include shorter ones (eg pan panal) giving false positives in regexes
 ## # figure which and change them
 ## sel.l <- grep("^l[0-9]{2}", colnames(dat))
 ## l <- dat[,sel.l] # subset label columns
@@ -633,7 +633,7 @@ w4[sel7] <- tmp.w4
 ci[sel7,] <- tmp.ci
 
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
-print("Table should have 0s and 1s")
+print("Table must have 0s and 1s only, else coalitions remain to manipulate")
 table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
 # plug ncoal into data
@@ -717,8 +717,11 @@ dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
 colnames(dat)
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-table(dat$v15) # check that only has zeroes
-dat$v15 <- dat$l15 <- dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # redundant columns
+table(dat$v16) # check that only has zeroes
+## # if not, which cases remain? 
+## sel <- which(dat$v15>0)
+## dat[sel,]
+dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # drop redundant columns
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
