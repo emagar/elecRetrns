@@ -92,3 +92,46 @@ clipboard <- function(x, sep=",", row.names=FALSE, col.names=TRUE){
 
 clipboard(d)
 
+# mich excel files
+
+library(xlsx)
+source("~/Dropbox/data/useful-functions/notin.r")
+setwd("/home/eric/Downloads/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/not-in-git/resultCasillas/subnat/mic2021ayca")
+
+all.f <- dir()
+
+
+# get all colnames
+all.n <- c()
+for (i in 1:length(all.f)){
+    #i <- 1
+    message(sprintf("loop %s", i))
+    d <- read.xlsx(all.f[i], sheetIndex = 1)
+    #d[1,]
+    all.n <- c(all.n, colnames(d))
+}
+all.n <- all.n[duplicated(all.n)==FALSE]
+all.n <- all.n[order(all.n)]
+
+# get all files, colSums into new object
+new.o <- matrix(rep(0, length(all.n)), nrow = 1)
+new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$MUNICIPIO <- "drop this obs"
+for (i in 1:length(all.f)){
+    #i <- 1
+    message(sprintf("loop %s", i))
+    d <- read.xlsx(all.f[i], sheetIndex = 1)
+    #d[1,]
+    tmp.n <- which(all.n %notin% colnames(d)) # missing columns
+    tmp.x <- matrix(0, nrow=nrow(d), ncol=length(tmp.n))
+    tmp.x <- data.frame(tmp.x); colnames(tmp.x) <- all.n[tmp.n]
+    d <- cbind(d, tmp.x)
+    tmp <- d[1,which(colnames(d) %in% c("MUNICIPIO"))] # keep mun
+    d <- colSums(d[,-which(colnames(d) %in% c("MUNICIPIO","TIPO.CASILLA","SECCION"))])
+    d <- c(mun=tmp, d) # paste mun
+    d <- d[order(names(d))]
+    new.o <- rbind(new.o, d)
+#    assign(d, paste0("f", sub("^([0-9]+)[,].+", "\\1", all.f[i]))) # rename object
+}
+    
+    
+tmp <- colnames(d)
