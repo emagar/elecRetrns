@@ -92,7 +92,12 @@ clipboard <- function(x, sep=",", row.names=FALSE, col.names=TRUE){
 
 clipboard(d)
 
-# mich excel files
+
+
+
+######################
+## mich excel files ##
+######################
 
 library(xlsx)
 source("~/Dropbox/data/useful-functions/notin.r")
@@ -129,9 +134,11 @@ for (i in 1:length(all.f)){
     d <- colSums(d[,-which(colnames(d) %in% c("MUNICIPIO","TIPO.CASILLA","SECCION"))])
     d <- c(mun=tmp, d) # paste mun
     d <- d[order(names(d))]
-    new.o <- rbind(new.o, d)
+    new.o <-
+        rbind(new.o, d)
 #    assign(d, paste0("f", sub("^([0-9]+)[,].+", "\\1", all.f[i]))) # rename object
 }
-    
-    
-tmp <- colnames(d)
+
+clipboard(new.o)
+
+new.o[1,]

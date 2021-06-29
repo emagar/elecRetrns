@@ -5,7 +5,9 @@
 
 Last revision: 2021-06-18
 
-*Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in 26 of 27 states that dropped term limits in races concurrent with this year's midterm election (data for Guerrero remains missing). And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
+*Letters of intent* of running (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) for reelection now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
+
+*Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
 
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 
@@ -79,7 +81,7 @@ Most variables are included in every file, some appear in selected files only.
 - /win/ = winner's party or coalition.
 - /incumbent/ = winning candidate's name. 
 - /race.after/ = incumbent's status in the subsequent race. See [[status-rules][this]] for categories and coding procedure ([[status-rules-esp][aquí]] la versión en español del procedimiento codificador). 
-
+- /dcarta/ = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]. 
 * Coding procedure for the incumbent's status<<status-rules>>
 In file ~data/aymu1985-present.incumbents.csv~, variable /race.after/ equals one of the following categories: 
 1. 'Beaten' if the incumbent re-ran and lost; 
