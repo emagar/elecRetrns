@@ -1,450 +1,450 @@
-ord,dip,pty,edo,disn,dsmd,dprop,fch.carta,id,emm
-145,Francisco Javier Luévano Núñez,pan,ags,1,1,1,20201216,ags01p,ags-17.01p
-111,Elba Lorena Torres Díaz,pt,ags,2,1,1,20201215,ags02p,ags-17.02p
-336,Martha Elisa González Estrada,pan,ags,3,1,1,20201216,ags03p,ags-17.03p
-192,Jesús Salvador Minor Mora,morena,bc,1,1,1,20201217,bc01p,bc-17.01p
-339,Martha Lizeth Noriega Galaz,morena,bc,2,1,0,20201222,bc02s,bc-17.02s
-43,Armando Reyes Ledesma,pt,bc,3,1,1,20201215,bc03p,bc-17.03p
-423,Socorro Irma Andazola Gómez,morena,bc,4,1,1,20201217,bc04p,bc-17.04p
-333,Mario Ismael Moreno Gil,morena,bc,5,1,1,20201217,bc05p,bc-17.05p
-188,Javier Julián Castañeda Pomposo,morena,bc,6,1,1,20201221,bc06p,bc-17.06p
-124,Erwin Jorge Areizaga Uribe,morena,bc,6,1,0,20201222,bc06s,bc-17.06s
-122,Erik Isaac Morales Elvira,morena,bc,7,1,1,20201222,bc07p,bc-17.07p
-161,Héctor René Cruz Aparicio,pes,bc,8,1,1,20201216,bc08p,bc-17.08p
-34,Ana Ruth García Grande,pt,bcs,1,1,1,20201215,bcs01p,bcs-17.01p
-23,Alfredo Porras Domínguez,pt,bcs,2,1,1,20201214,bcs02p,bcs-17.02p
-62,Carlos Enrique Martínez Aké,morena,cam,1,1,1,20201217,cam01p,cam-17.01p
-176,Irasema del Carmen Buenfil Díaz,pes,cam,2,1,1,20201216,cam02p,cam-17.02p
-129,Evaristo Lenin Pérez Rivera,morena,coa,1,1,1,20201222,coa01p,coa-17.01p
-142,Francisco Javier Borrego Adame,morena,coa,2,1,1,20201217,coa02p,coa-17.02p
-347,Melba Nelia Farías Zambrano,morena,coa,3,1,1,20201217,coa03p,coa-17.03p
-134,Fernando Donato De las Fuentes Hernández,pri,coa,7,1,1,20201230,coa07p,coa-17.07p
-87,Claudia Valeria Yáñez Centeno y Cabrera,morena,col,1,1,1,20201217,col01p,col-17.01p
-406,Rosa María Bayardo Cabrera,morena,col,2,1,0,20201217,col02s,col-17.02s
-280,Manuela del Carmen Obrador Narváez,morena,cps,1,1,1,20201217,cps01p,cps-17.01p
-21,Alfredo Antonio Gordillo Moreno,morena,cps,2,1,0,20201222,cps02s,cps-17.02s
-24,Alfredo Vázquez Vázquez,morena,cps,3,1,1,20201217,cps03p,cps-17.03p
-403,Roque Luis Rabelo Velasco,morena,cps,4,1,1,20201217,cps04p,cps-17.04p
-88,Clementina Marta Dekker Gómez,pt,cps,5,1,1,20201215,cps05p,cps-17.05p
-389,Raúl Eduardo Bonifaz Moedano,morena,cps,6,1,0,20201217,cps06s,cps-17.06s
-354,Miguel Prado de los Santos,morena,cps,7,1,1,20201221,cps07p,cps-17.07p
-323,María Roselia Jiménez Pérez,pt,cps,8,1,1,20201215,cps08p,cps-17.08p
-248,Leticia Arlett Aguilar Molina,pes,cps,9,1,1,20201217,cps09p,cps-17.09p
-222,Juan Enrique Farrera Esponda,morena,cps,10,1,1,20201217,cps10p,cps-17.10p
-400,Roberto Antonio Rubio Montejo,pvem,cps,11,1,1,20201218,cps11p,cps-17.11p
-211,José Luis Elorza Flores,morena,cps,12,1,1,20201217,cps12p,cps-17.12p
-330,Maricruz Roblero Gordillo,pt,cps,13,1,1,20201215,cps13p,cps-17.13p
-309,María Esther Mejía Cruz,morena,cua,1,1,1,20201217,cua01p,cua-17.01p
-430,Teresita de Jesús Vargas Meraz,morena,cua,2,1,1,20201218,cua02p,cua-17.02p
-81,Claudia Elena Lastra Muñoz,pt,cua,3,1,1,20201215,cua03p,cua-17.03p
-431,Ulises García Soto,morena,cua,4,1,1,20201217,cua04p,cua-17.04p
-334,Mario Mata Carrasco,pan,cua,5,1,1,20201222,cua05p,cua-17.05p
-349,Miguel Alonso Riggs Baeza,pan,cua,6,1,1,20201216,cua06p,cua-17.06p
-118,Eraclio Rodríguez Gómez,pt,cua,7,1,1,20201218,cua07p,cua-17.07p
-11,Alán Jesús Falomir Saenz,mc,cua,8,1,1,20201221,cua08p,cua-17.08p
-303,María de los Ángeles Gutiérrez Valdez,pan,cua,9,1,1,20201216,cua09p,cua-17.09p
-121,Erika Vanessa Del Castillo Ibarra,morena,df,1,1,1,20201217,df01p,df-17.01p
-41,Armando González Escoto,pes,df,2,1,1,20201216,df02p,df-17.02p
-351,Miguel Ángel Jáuregui Montes de Oca,morena,df,3,1,1,20201217,df03p,df-17.03p
-207,José Gerardo Rodolfo Fernández Noroña,pt,df,4,1,1,20201215,df04p,df-17.04p
-82,Claudia López Rayón,morena,df,5,1,1,20201217,df05p,df-17.05p
-417,Sergio Mayer Bretón,morena,df,6,1,1,20201222,df06p,df-17.06p
-49,Beatriz Rojas Martínez,morena,df,7,1,1,20201217,df07p,df-17.07p
-301,María de Jesús Rosete Sánchez,pt,df,8,1,1,20201215,df08p,df-17.08p
-8,Adriana María Guadalupe Espinosa de los Monteros,morena,df,9,1,1,20201217,df09p,df-17.09p
-187,Javier Ariel Hidalgo Ponce,morena,df,10,1,1,20201217,df10p,df-17.10p
-401,Rocío Barrera Badillo,morena,df,11,1,1,20201217,df11p,df-17.11p
-97,Dolores Padierna Luna,morena,df,12,1,1,20201217,df12p,df-17.12p
-374,Oscar Eugenio Gutiérrez Camacho,morena,df,13,1,1,20201217,df13p,df-17.13p
-20,Alfonso Ramírez Cuéllar,morena,df,14,1,1,20201217,df14p,df-17.14p
-265,Luis Alberto Mendoza Acevedo,pan,df,15,1,1,20201216,df15p,df-17.15p
-421,Silvia Lorena Villavicencio Ayala,morena,df,16,1,1,20201217,df16p,df-17.16p
-147,Francisco Javier Saldivar Camacho,pes,df,17,1,1,20201216,df17p,df-17.17p
-31,Ana María Rodríguez Ruiz,morena,df,18,1,1,20201217,df18p,df-17.18p
-13,Aleida Alavez Ruiz,morena,df,19,1,1,20201217,df19p,df-17.19p
-27,Ana Karina Rojo Pimentel,pt,df,20,1,1,20201215,df20p,df-17.20p
-237,Karen Ivette Audiffred Fernández,morena,df,21,1,0,20201217,df21s,df-17.21s
-441,Víctor Gabriel Varela López,morena,df,22,1,1,20201217,df22p,df-17.22p
-378,Pablo Gómez Álvarez,morena,df,23,1,1,20201217,df23p,df-17.23p
-155,Guadalupe Ramos Sotelo,morena,df,24,1,1,20201222,df24p,df-17.24p
-340,Martha Olivia García Vidaña,morena,dgo,1,1,1,20201217,dgo01p,dgo-17.01p
-328,Maribel Aguilera Chairez,morena,dgo,3,1,1,20201217,dgo03p,dgo-17.03p
-167,Hilda Patricia Ortega Nájera,morena,dgo,4,1,1,20201217,dgo04p,dgo-17.04p
-39,Ariel Rodríguez Vázquez,mc,gua,1,1,1,20201216,gua01p,gua-17.01p
-398,Ricardo Villareal García,pan,gua,2,1,1,20201216,gua02p,gua-17.02p
-276,Ma. de los Ángeles Ayala Díaz,pan,gua,3,1,1,20201216,gua03p,gua-17.03p
-221,Juan Carlos Romero Hicks,pan,gua,4,1,1,20201216,gua04p,gua-17.04p
-102,Éctor Jaime Ramírez Barba,pan,gua,5,1,1,20201216,gua05p,gua-17.05p
-305,María del Pilar Ortega Martínez,pan,gua,6,1,1,20201216,gua06p,gua-17.06p
-238,Karen Michel González Márquez,pan,gua,7,1,1,20201216,gua07p,gua-17.07p
-236,Justino Eugenio Arriaga Rojas,pan,gua,8,1,1,20201216,gua08p,gua-17.08p
-253,Lilia Villafuerte Zavala,pvem,gua,10,1,1,20201218,gua10p,gua-17.10p
-197,Jorge Arturo Espadas Galván,pan,gua,11,1,1,20201216,gua11p,gua-17.11p
-415,Sarai Núñez Cerón,pan,gua,12,1,1,20201216,gua12p,gua-17.12p
-115,Emmanuel Reyes Carmona,morena,gua,13,1,1,20201222,gua13p,gua-17.13p
-277,Ma. Eugenia Leticia Espinosa Rivas,pan,gua,14,1,1,20201216,gua14p,gua-17.14p
-439,Víctor Adolfo Mojica Wences,morena,gue,1,1,1,20201217,gue01p,gue-17.01p
-38,Araceli Ocampo Manzanares,morena,gue,2,1,1,20201217,gue02p,gue-17.02p
-274,Ma. del Carmen Cabrera Lagunas,pes,gue,3,1,1,20201215,gue03p,gue-17.03p
-1,Abelina López Rodríguez,morena,gue,4,1,1,20201217,gue04p,gue-17.04p
-189,Javier Manzano Salazar,morena,gue,5,1,1,20201217,gue05p,gue-17.05p
-67,Carlos Sánchez Barrios,morena,gue,7,1,1,20201217,gue07p,gue-17.07p
-306,María del Rosario Merlín García,morena,gue,9,1,1,20201217,gue09p,gue-17.09p
-139,Fortunato Rivera Castillo,morena,hgo,1,1,1,20201217,hgo01p,hgo-17.01p
-157,Gustavo Callejas Romero,morena,hgo,2,1,0,20201217,hgo02s,hgo-17.02s
-413,Sandra Simey Olvera Bautista,morena,hgo,3,1,1,20201217,hgo03p,hgo-17.03p
-316,María Isabel Alfaro Morales,morena,hgo,4,1,1,20201217,hgo04p,hgo-17.04p
-235,Julio César Ángeles Mendoza,morena,hgo,5,1,1,20201217,hgo05p,hgo-17.05p
-251,Lidia García Anaya,morena,hgo,6,1,1,20201217,hgo06p,hgo-17.06p
-186,Jannet Tellez Infante,morena,hgo,7,1,1,20201217,hgo07p,hgo-17.07p
-337,Martha Estela Romo Cuéllar,pan,jal,2,1,1,20201216,jal02p,jal-17.02p
-156,Guadalupe Romo Romo,pan,jal,3,1,1,20201228,jal03p,jal-17.03p
-332,Mario Alberto Rodríguez Carrillo,mc,jal,4,1,1,20201216,jal04p,jal-17.04p
-257,Lorena del Socorro Jiménez Andrade,morena,jal,5,1,1,20201217,jal05p,jal-17.05p
-130,Fabiola Raquel Guadalupe Loya Hernández,mc,jal,6,1,1,20201216,jal06p,jal-17.06p
-2,Abril Alcalá Padilla,prd,jal,8,1,1,20201222,jal08p,jal-17.08p
-69,Carmen Julia Prudencio González,mc,jal,9,1,1,20201216,jal09p,jal-17.09p
-150,Geraldina Isabel Herrera Vega,mc,jal,10,1,1,20201216,jal10p,jal-17.10p
-241,Kehila Abigail Ku Escalante,mc,jal,11,1,1,20201222,jal11p,jal-17.11p
-259,Lourdes Celenia Contreras González,mc,jal,13,1,1,20201216,jal13p,jal-17.13p
-224,Juan Francisco Ramírez Salcido,mc,jal,14,1,1,20201216,jal14p,jal-17.14p
-3,Absalón García Ochoa,pan,jal,15,1,1,20201216,jal15p,jal-17.15p
-244,Laura Imelda Pérez Segura,morena,jal,16,1,1,20201217,jal16p,jal-17.16p
-228,Juan Martín Espinoza Cárdenas,mc,jal,17,1,1,20201215,jal17p,jal-17.17p
-166,Higinio Del Toro Pérez,mc,jal,19,1,0,20201216,jal19s,jal-17.19s
-33,Ana Priscila González García,mc,jal,20,1,1,20201216,jal20p,jal-17.20p
-394,Ricardo Aguilar Castillo,pri,mex,1,1,1,20201222,mex01p,mex-17.01p
-96,Dionicia Vázquez García,pt,mex,2,1,1,20201215,mex02p,mex-17.02p
-325,María Teresa Marú Mejía,pt,mex,3,1,1,20201215,mex03p,mex-17.03p
-366,Nelly Minerva Carrasco Godínez,morena,mex,4,1,1,20201217,mex04p,mex-17.04p
-141,Francisco Favela Peñuñuri,pt,mex,5,1,1,20201214,mex05p,mex-17.05p
-75,Carolina García Aguilar,pes,mex,6,1,1,20201216,mex06p,mex-17.06p
-446,Xochitl Nashielly Zagal Ramírez,morena,mex,7,1,1,20201223,mex07p,mex-17.07p
-246,Laura Mónica Guerra Navarro,morena,mex,7,1,0,20201217,mex07s,mex-17.07s
-158,Gustavo Contreras Montes,morena,mex,8,1,1,20201217,mex08p,mex-17.08p
-109,Eduardo Zarzosa Sánchez,pri,mex,9,1,1,20201222,mex09p,mex-17.09p
-26,Alma Delia Navarrete Rivera,morena,mex,10,1,1,20201217,mex10p,mex-17.10p
-310,María Eugenia Hernández Pérez,morena,mex,11,1,1,20201217,mex11p,mex-17.11p
-133,Felipe Rafael Arvizu De la Luz,morena,mex,12,1,1,20201217,mex12p,mex-17.12p
-307,María Elizabeth Díaz García,morena,mex,13,1,1,20201217,mex13p,mex-17.13p
-79,Claudia Angélica Domínguez Vázquez,pt,mex,14,1,1,20201215,mex14p,mex-17.14p
-390,Raúl Ernesto Sánchez Barrales Zavalza,pt,mex,15,1,1,20201215,mex15p,mex-17.15p
-114,Emilio Manzanilla Téllez,pt,mex,16,1,1,20201216,mex16p,mex-17.16p
-314,María Guadalupe Román Ávila,morena,mex,17,1,1,20201217,mex17p,mex-17.17p
-85,Claudia Reyes Montiel,prd,mex,18,1,1,20201222,mex18p,mex-17.18p
-432,Ulises Murguía Soto,morena,mex,19,1,1,20201217,mex19p,mex-17.19p
-231,Juan Pablo Sánchez Rodríguez,morena,mex,20,1,1,20201217,mex20p,mex-17.20p
-153,Graciela Sánchez Ortiz,morena,mex,21,1,1,20201217,mex21p,mex-17.21p
-326,María Teresa Rebeca Rosa Mora Ríos,morena,mex,22,1,1,20210104,mex22p,mex-17.22p
-94,David Orihuela Nava,morena,mex,23,1,1,20201217,mex23p,mex-17.23p
-304,María de los Ángeles Huerta del Río,morena,mex,24,1,1,20201217,mex24p,mex-17.24p
-125,Esmeralda de los Ángeles Moreno Medina,pes,mex,26,1,1,20201216,mex26p,mex-17.26p
-375,Oscar González Yáñez,pt,mex,27,1,1,20201216,mex27p,mex-17.27p
-399,Roberto Ángel Domínguez Rodríguez,morena,mex,28,1,1,20201217,mex28p,mex-17.28p
-341,Martha Robles Ortiz,morena,mex,29,1,1,20201217,mex29p,mex-17.29p
-78,César Agustín Hernández Pérez,morena,mex,30,1,1,20201217,mex30p,mex-17.30p
-220,Juan Ángel Bautista Bravo,morena,mex,31,1,1,20201217,mex31p,mex-17.31p
-267,Luis Enrique Martínez Ventura,pt,mex,32,1,1,20201214,mex32p,mex-17.32p
-437,Vicente Alberto Onofre Vázquez,morena,mex,33,1,1,20201222,mex33p,mex-17.33p
-312,María Guadalupe Díaz Avilez,morena,mex,34,1,0,20201217,mex34s,mex-17.34s
-46,Arturo Roberto Hernández Tapia,morena,mex,35,1,1,20201217,mex35p,mex-17.35p
-89,Cruz Juvenal Roa Sánchez,pri,mex,36,1,1,20201222,mex36p,mex-17.36p
-104,Edgar Eduardo Arenas Madrigal,morena,mex,37,1,0,20201217,mex37s,mex-17.37s
-239,Karla Yuritzi Almazán Burgos,morena,mex,38,1,1,20201217,mex38p,mex-17.38p
-213,José Luis Montalvo Luna,pt,mex,39,1,1,20201214,mex39p,mex-17.39p
-293,Marco Antonio Reyes Colín,morena,mex,40,1,1,20201217,mex40p,mex-17.40p
-361,Nancy Claudia Reséndiz Hernández,pes,mex,41,1,1,20201216,mex41p,mex-17.41p
-131,Feliciano Flores Anguiano,morena,mic,1,1,1,20201217,mic01p,mic-17.01p
-126,Esteban Barajas Barajas,morena,mic,2,1,1,20201217,mic02p,mic-17.02p
-343,Mary Carmen Bernal Martínez,pt,mic,3,1,1,20201215,mic03p,mic-17.03p
-44,Armando Tejeda Cid,pan,mic,4,1,1,20201218,mic04p,mic-17.04p
-447,Yolanda Guerrero Barrera,morena,mic,5,1,1,20201217,mic05p,mic-17.05p
-36,Anita Sánchez Castro,morena,mic,6,1,1,20201217,mic06p,mic-17.06p
-152,Gonzalo Herrera Pérez,morena,mic,7,1,1,20201217,mic07p,mic-17.07p
-28,Ana Lilia Guillén Quiroz,morena,mic,8,1,1,20201217,mic08p,mic-17.08p
-173,Ignacio Benjamín Campos Equihua,morena,mic,9,1,1,20201217,mic09p,mic-17.09p
-271,lván Arturo Pérez Negrón,morena,mic,10,1,1,20201222,mic10p,mic-17.10p
-208,José Guadalupe Aguilera Rojas,prd,mic,11,1,1,20201221,mic11p,mic-17.11p
-144,Francisco Javier Huacus Esquivel,pt,mic,12,1,1,20201215,mic12p,mic-17.12p
-14,Alejandra Pani Barragán,morena,mor,2,1,1,20201217,mor02p,mor-17.02p
-226,Juanita Guerra Mena,morena,mor,3,1,1,20201217,mor03p,mor-17.03p
-196,Jorge Arturo Argüelles Victorero,pes,mor,4,1,1,20201216,mor04p,mor-17.04p
-209,José Guadalupe Ambrocio Gachuz,morena,mor,5,1,1,20201217,mor05p,mor-17.05p
-353,Miguel Pável Jarero Velázquez,morena,nay,1,1,1,20201217,nay01p,nay-17.01p
-311,María Geraldine Ponce Méndez,morena,nay,2,1,1,20201222,nay02p,nay-17.02p
-358,Mirtha Iliana Villalvazo Amaya,morena,nay,3,1,1,20201217,nay03p,nay-17.03p
-165,Hernán Salinas Wolberg,pan,nl,1,1,1,20201216,nl01p,nl-17.01p
-315,María Guillermina Alvarado Moreno,morena,nl,2,1,1,20201217,nl02p,nl-17.02p
-212,José Luis García Duque,pt,nl,3,1,1,20201215,nl03p,nl-17.03p
-414,Santiago González Soto,pt,nl,5,1,1,20201215,nl05p,nl-17.05p
-37,Annia Sarahí Gómez Cárdenas,pan,nl,6,1,1,20201216,nl06p,nl-17.06p
-223,Juan Francisco Espinoza Eguia,pri,nl,9,1,1,20201222,nl09p,nl-17.09p
-215,José Martín López Cisneros,pan,nl,10,1,1,20201216,nl10p,nl-17.10p
-123,Ernesto Alfonso Robledo Leal,pan,nl,11,1,1,20201222,nl11p,nl-17.11p
-412,Sandra Paola González Castañeda,morena,nl,12,1,1,20201217,nl12p,nl-17.12p
-177,Irma Juan Carlos,morena,oax,2,1,1,20201217,oax02p,oax-17.02p
-296,Margarita García García,pt,oax,3,1,1,20201215,oax03p,oax-17.03p
-47,Azael Santiago Chepi,morena,oax,4,1,1,20201217,oax04p,oax-17.04p
-74,Carol Antonio Altamirano,morena,oax,5,1,1,20201217,oax05p,oax-17.05p
-48,Beatriz Dominga Pérez López,morena,oax,6,1,1,20201217,oax06p,oax-17.06p
-405,Rosalinda Domínguez Flores,morena,oax,7,1,1,20201217,oax07p,oax-17.07p
-52,Benjamín Robles Montoya,pt,oax,8,1,1,20201215,oax08p,oax-17.08p
-302,María del Carmen Bautista Peláez,morena,oax,9,1,1,20201217,oax09p,oax-17.09p
-92,Daniel Gutiérrez Gutiérrez,morena,oax,10,1,1,20201217,oax10p,oax-17.10p
-206,José Francisco Esquitin Alonso,pes,pue,1,1,0,20201216,pue01s,pue-17.01s
-279,Maiella Martha Gabriela Gómez Maldonado,mc,pue,2,1,1,20201216,pue02p,pue-17.02p
-80,Claudia Báez Ruiz,pes,pue,3,1,1,20201216,pue03p,pue-17.03p
-174,Inés Parra Juárez,morena,pue,4,1,1,20201217,pue04p,pue-17.04p
-338,Martha Huerta Hernández,pt,pue,5,1,0,20201215,pue05s,pue-17.05s
-16,Alejandro Carvajal Hidalgo,morena,pue,6,1,1,20201217,pue06p,pue-17.06p
-105,Edgar Guzmán Valdéz,pes,pue,7,1,1,20201216,pue07p,pue-17.07p
-233,Julieta Kristal Vences Valencia,morena,pue,8,1,1,20201217,pue08p,pue-17.08p
-19,Alfonso Pérez Arroyo,morena,pue,9,1,0,20201217,pue09s,pue-17.09s
-364,Nayeli Salvatori Bojalil,pes,pue,10,1,1,20201216,pue10p,pue-17.10p
-53,Benjamín Saúl Huerta Corona,sin-partido,pue,11,1,1,20201217,pue11p,pue-17.11p
-136,Fernando Luis Manzanilla Prieto,pes,pue,12,1,1,20201216,pue12p,pue-17.12p
-159,Héctor Guillermo de Jesús Jiménez y Meneses,morena,pue,13,1,1,20201217,pue13p,pue-17.13p
-365,Nelly Maceda Carrera,pt,pue,14,1,1,20201218,pue14p,pue-17.14p
-15,Alejandro Barroso Chávez,pt,pue,15,1,1,20201215,pue15p,pue-17.15p
-424,Sonia Rocha Acosta,pan,que,1,1,1,20201216,que01p,que-17.01p
-201,Jorge Luis Montes Nieves,morena,que,2,1,1,20201217,que02p,que-17.02p
-50,Beatriz Silvia Robles Gutiérrez,morena,que,3,1,1,20201217,que03p,que-17.03p
-132,Felipe Fernando Macías Olvera,pan,que,4,1,1,20201216,que04p,que-17.04p
-32,Ana Paola López Birlain,pan,que,5,1,1,20201216,que05p,que-17.05p
-9,Adriana Paulina Teissier Zavala,pes,qui,1,1,1,20201216,qui01p,qui-17.01p
-72,Carmen Patricia Palma Olvera,morena,qui,2,1,1,20201217,qui02p,qui-17.02p
-355,Mildred Concepción Ávila Vera,morena,qui,3,1,1,20201217,qui03p,qui-17.03p
-344,Ma. Sara Rocha Medina,pri,san,1,1,1,20201222,san01p,san-17.01p
-372,Óscar Bautista Villegas,pri,san,3,1,1,20201222,san03p,san-17.03p
-216,José Ricardo Delsol Estrada,morena,san,4,1,1,20201217,san04p,san-17.04p
-205,Josefina Salazar Báez,pan,san,5,1,1,20201216,san05p,san-17.05p
-278,Ma. Guadalupe Almaguer Pardo,prd,san,6,1,1,20201222,san06p,san-17.06p
-287,Marcelino Rivera Hernández,pan,san,7,1,1,20201216,san07p,san-17.07p
-214,José Mario Osuna Medina,pt,sin,1,1,0,20201215,sin01s,sin-17.01s
-65,Carlos lván Ayala Bobadilla,morena,sin,2,1,0,20201222,sin02s,sin-17.02s
-191,Jesus Fernando Garcia Hernandez,pt,sin,3,1,1,20210412,sin03p,sin-17.03p
-76,Casimiro Zamora Valdéz,morena,sin,4,1,1,20201217,sin04p,sin-17.04p
-362,Nancy Yadira Santiago Marcos,morena,sin,5,1,1,20201217,sin05p,sin-17.05p
-369,Olegaria Carrazco Macías,morena,sin,6,1,1,20201217,sin06p,sin-17.06p
-348,Merary Villegas Sánchez,morena,sin,7,1,1,20201217,sin07p,sin-17.07p
-281,Manuel de Jesús Baldenebro Arredondo,pes,son,1,1,1,20201216,son01p,son-17.01p
-258,Lorenia Iveth Valles Sampedro,morena,son,3,1,1,20201217,son03p,son-17.03p
-164,Heriberto Marcelo Aguilar Castillo,morena,son,4,1,1,20201217,son04p,son-17.04p
-327,María Wendy Briceño Zuloaga,morena,son,5,1,1,20201217,son05p,son-17.05p
-64,Carlos Javier Lamarque Cano,morena,son,6,1,1,20201217,son06p,son-17.06p
-168,Hildelisa González Morales,pt,son,7,1,1,20201215,son07p,son-17.07p
-127,Estela Núñez Álvarez,morena,tab,1,1,1,20201217,tab01p,tab-17.01p
-285,Manuel Rodríguez González,morena,tab,4,1,1,20201217,tab04p,tab-17.04p
-395,Ricardo De la Peña Marshall,pes,tab,6,1,1,20201215,tab06p,tab-17.06p
-218,José Salvador Rosas Quintanilla,pan,tam,1,1,1,20201221,tam01p,tam-17.01p
-370,Olga Juliana Elizondo Guerra,pt,tam,2,1,1,20201215,tam02p,tam-17.02p
-160,Héctor Joel Villegas González,pes,tam,3,1,1,20201216,tam03p,tam-17.03p
-7,Adriana Lozano Rodríguez,morena,tam,4,1,1,20201216,tam04p,tam-17.04p
-331,Mario Alberto Ramos Tamez,pan,tam,5,1,1,20201216,tam05p,tam-17.05p
-438,Vicente Javier Verástegui Ostos,pan,tam,6,1,1,20201216,tam06p,tam-17.06p
-119,Erasmo González Robledo,morena,tam,7,1,1,20201217,tam07p,tam-17.07p
-371,Olga Patricia Sosa Ruiz,pes,tam,8,1,1,20201216,tam08p,tam-17.08p
-42,Armando Javier Zertuche Zuani,pt,tam,9,1,1,20201215,tam09p,tam-17.09p
-408,Rubén Terán Águila,morena,tla,2,1,1,20201217,tla02p,tla-17.02p
-84,Claudia Pérez Rodríguez,morena,tla,3,1,0,20201217,tla03s,tla-17.03s
-397,Ricardo García Escalante,pan,ver,1,1,1,20201216,ver01p,ver-17.01p
-299,María Bertha Espinoza Segura,morena,ver,3,1,1,20201217,ver03p,ver-17.03p
-396,Ricardo Francisco Exsome Zapata,morena,ver,4,1,1,20201217,ver04p,ver-17.04p
-185,Jaime Humberto Pérez Bernabé,morena,ver,6,1,1,20201217,ver06p,ver-17.06p
-116,Enrique Capetillo González,pt,ver,7,1,0,20210412,ver07s,ver-17.07s
-86,Claudia Tello Espinosa,morena,ver,8,1,1,20201217,ver08p,ver-17.08p
-71,Carmen Mora García,morena,ver,9,1,1,20201217,ver09p,ver-17.09p
-388,Rafael Hernández Villalpando,morena,ver,10,1,1,20201215,ver10p,ver-17.10p
-138,Flora Tania Cruz Santos,morena,ver,11,1,1,20201217,ver11p,ver-17.11p
-321,Mariana Dunyaska García Rojas,pan,ver,12,1,1,20201216,ver12p,ver-17.12p
-112,Eleuterio Arrieta Sánchez,morena,ver,13,1,1,20201217,ver13p,ver-17.13p
-70,Carmen Medel Palma,morena,ver,14,1,1,20201217,ver14p,ver-17.14p
-100,Dulce María Corina Villegas Guarneros,morena,ver,15,1,1,20201217,ver15p,ver-17.15p
-229,Juan Martínez Flores,morena,ver,16,1,1,20201217,ver16p,ver-17.16p
-433,Valentín Reyes López,morena,ver,17,1,1,20201217,ver17p,ver-17.17p
-54,Bonifacio Aguilar Linda,morena,ver,18,1,1,20201217,ver18p,ver-17.18p
-380,Paola Tenorio Adame,morena,ver,19,1,1,20201217,ver19p,ver-17.19p
-128,Eulalio Juan Ríos Fararoni,morena,ver,20,1,1,20201217,ver20p,ver-17.20p
-190,Jesús Carlos Vidal Peniche,pvem,yuc,1,1,1,20201218,yuc01p,yuc-17.01p
-308,María Ester Alonzo Morales,pri,yuc,2,1,1,20201222,yuc02p,yuc-17.02p
-254,Limbert Iván de Jesús Interian Gallegos,morena,yuc,3,1,0,20201217,yuc03s,yuc-17.03s
-204,José Elías Lixa Abimerhi,pan,yuc,4,1,1,20201216,yuc04p,yuc-17.04p
-227,Juan José Canul Pérez,pri,yuc,5,1,1,20201222,yuc05p,yuc-17.05p
-356,Mirna Zabeida Maldonado Tapia,morena,zac,1,1,1,20201217,zac01p,zac-17.01p
-272,Lyndiana Elizabeth Bugarín Cortés,pvem,zac,2,1,1,20201218,zac02p,zac-17.02p
-22,Alfredo Femat Bañuelos,pt,zac,3,1,1,20201215,zac03p,zac-17.03p
-411,Samuel Herrera Chávez,morena,zac,4,1,1,20201217,zac04p,zac-17.04p
-4,Adela Piña Bernal,morena,df,4,0,,20201217,c4morena15p,
-5,Adolfo Torres Ramírez,pan,mic,5,0,,20201216,c5pan05p,
-6,Adriana Dávila Fernández,pan,tla,4,0,,20201216,c4pan02p,
-10,Agustín Reynaldo Huerta González,morena,pue,4,0,,20201217,c4morena18p,
-12,Alberto Villa Villegas,morena,jal,1,0,,20201217,c1morena10p,
-17,Alejandro Ponce Cobos,morena,oax,3,0,,20201217,c3morena01p,
-18,Alejandro Viedma Velázquez,morena,mex,5,0,,20201217,c5morena18p,
-25,Alfredo Villegas Arreola,pri,sin,1,0,,20201222,c1pri03p,
-29,Ana Lilia Herrera Anzaldo,pri,mex,5,0,,20201222,c5pri02p,
-30,Ana Lucia Riojas Martínez,sin-partido,df,4,0,,20201222,c4pan06p,
-35,Anilú Ingram Vallines,pri,ver,3,0,,20201222,c3pri06p,
-40,Armando Contreras Castillo,morena,oax,3,0,,20201217,c3morena15p,
-45,Arturo Escobar y Vega,pvem,df,4,0,,20201218,c4pvem01p,
-51,Benito Medina Herrera,pri,bc,1,0,,20210104,c1pri01p,
-55,Brasil Alberto Acosta Peña,pri,mex,5,0,,20201222,c5pri05p,
-56,Brenda Espinosa López,morena,mor,4,0,,20201217,c4morena05p,
-57,Carlos Alberto Morales Vázquez,sin-partido,cps,3,0,,20201215,c3pan04p,
-58,Carlos Alberto Puente Salas,pvem,zac,2,0,,20201218,c2pvem01p,
-59,Carlos Alberto Valenzuela González,pan,ver,3,0,,20201218,c3pan02p,
-60,Carlos Carreón Mejía,pan,tla,4,0,,20201222,c4pan05p,
-61,Carlos Elhier Cinta Rodríguez,pan,gua,2,0,,20201216,c2pan13s,
-63,Carlos Humberto Castaños Valenzuela,pan,sin,1,0,,20201216,c1pan08p,
-66,Carlos Pavón Campos,pri,zac,2,0,,20201222,c2pri06p,
-68,Carlos Torres Piña,morena,mic,5,0,,20201222,c5prd01p,
-73,Carmina Yadira Regalado Mardueño,morena,nay,1,0,,20201217,c1morena05p,
-77,Cecilia Anunciación Patrón Laviada,pan,yuc,3,0,,20201216,c3pan01p,
-83,Claudia Pastor Badilla,pri,df,4,0,,20201222,c4pri05p,
-90,Cuauhtli Fernando Badillo Moreno,morena,san,2,0,,20201217,c2morena09p,
-91,Cynthia Iliana López Castro,pri,df,4,0,,20201222,c4pri03p,
-93,David Bautista Rivera,morena,pue,4,0,,20201217,c4morena04p,
-95,Diego Eduardo Del Bosque Villarreal,morena,coa,2,0,,20201217,c2morena07p,
-98,Dorheny García Cayetano,morena,ver,3,0,,20201217,c3morena18p,
-99,Dulce Alejandra García Morlan,pan,oax,3,0,,20201217,c3pan07p,
-101,Dulce María Méndez De La Luz Dauzón,mc,ver,3,0,,20201216,c3mc01p,
-103,Edelmiro Santiago Santos Díaz,morena,nl,2,0,,20201217,c2morena11p,
-106,Ediltrudis Rodríguez Arellano,morena,tab,3,0,,20201217,c3morena16p,
-107,Edith García Rosales,morena,ver,3,0,,20201217,c3morena20p,
-108,Edith Marisol Mercado Torres,morena,mex,5,0,,20201217,c5morena17p,
-110,Efraín Rocha Vega,morena,cua,1,0,,20201222,c1morena14p,
-113,Emeteria Claudia Martínez Aguilar,morena,cps,3,0,,20201217,c3morena08p,
-117,Enrique Ochoa Reza,pri,mic,5,0,,20201222,c5pri01p,
-120,Erika Mariana Rosas Uribe,morena,sin,1,0,,20201222,c1pvem01p,
-135,Fernando Galindo Favela,pri,df,4,0,,20201221,c4pri02p,
-137,Fernando Torres Graciano,pan,gua,2,0,,20201216,c2pan11p,
-140,Francisco Elizondo Garrido,morena,nl,2,0,,20201218,c2pvem03p,
-143,Francisco Javier Guzmán De la Torre,morena,jal,1,0,,20201217,c1morena06p,
-146,Francisco Javier Ramírez Navarrete,morena,mex,5,0,,20201217,c5morena14p,
-148,Frida Alejandra Esparza Márquez,prd,zac,2,0,,20201221,c2prd01p,
-149,Frinné Azuara Yarzábal,pri,san,2,0,,20201222,c2pri05p,
-151,Gloria Romero León,pan,hgo,5,0,,20201216,c5pan06p,
-154,Graciela Zavaleta Sánchez,morena,oax,3,0,,20201217,c3morena10p,
-162,Héctor Serrano Cortés,pt,df,4,0,,20201218,c4prd01p,
-163,Héctor Yunes Landa,pri,ver,3,0,,20201222,c3pri03p,
-169,Hirepan Maya Martínez,morena,mic,5,0,,20201217,c5morena04p,
-170,Hortensia María Luisa Noroña Quezada,pri,jal,1,0,,20201222,c1pri06p,
-171,Hugo Rafael Ruiz Lustre,morena,hgo,5,0,,20201217,c5morena12p,
-172,Idalia Reyes Miguel,morena,gue,4,0,,20201217,c4morena13p,
-175,Iran Santiago Manuel,morena,oax,3,0,,20201217,c3morena03p,
-178,Irma María Terán Villalobos,pes,son,1,0,,20201216,c1pri04p,
-179,Isabel Margarita Guerra Villareal,pan,nl,2,0,,20201216,c2pan12p,
-180,Ismael Alfredo Hernández Deras,pri,dgo,1,0,,20201222,c1pri07p,
-181,Itzcóatl Tonatiuh Bravo Padilla,mc,jal,1,0,,20201216,c1mc01p,
-182,Iván Arturo Rodríguez Rivera,pan,mex,5,0,,20201216,c5pan01p,
-183,Jacobo David Cheja Alfaro,mc,mex,5,0,,20201216,c5mc01p,
-184,Jacquelina Martínez Juárez,pan,zac,2,0,,20201216,c2pan04p,
-193,Jesús Sergio Alcántara Núñez,pri,mex,5,0,,20201222,c5pvem02p,
-194,Jorge Alcibíades García Lara,mc,bc,1,0,,20201216,c1mc03p,
-195,Jorge Ángel Sibaja Mendoza,morena,cps,3,0,,20201217,c3morena11s,
-198,Jorge Emilio González Martínez,pvem,df,4,0,,20201218,c3pvem01p,
-199,Jorge Eugenio Russo Salido,mc,son,1,0,,20201216,c1mc05p,
-200,Jorge Francisco Corona Méndez,pvem,qui,3,0,,20201218,c3pvem01s,
-202,Jorge Luis Preciado Rodríguez,pan,col,5,0,,20201216,c5pan03p,
-203,Jorge Romero Herrera,pan,df,4,0,,20201216,c4pan01p,
-210,José Isabel Trejo Reyes,pan,zac,2,0,,20201216,c2pan03p,
-217,José Rigoberto Mares Aguilar,pan,bcs,1,0,,20201216,c1pan04p,
-219,Juana Carrillo Luna,morena,mex,5,0,,20201217,c5morena07p,
-225,Juan Israel Ramos Ruiz,morena,gua,2,0,,20201217,c2morena05p,
-230,Juan Ortiz Guarneros,pri,ver,3,0,,20201222,c3pri01p,
-232,Julieta García Zepeda,morena,mic,5,0,,20201217,c5morena11p,
-234,Julio Carranza Aréas,morena,ver,3,0,,20201217,c3morena05p,
-240,Katia Alejandra Castillo Lozano,morena,jal,1,0,,20201217,c1morena13p,
-242,Laura Angélica Rojas Hernández,pan,mex,5,0,,20201216,c5pan02p,
-243,Laura Barrera Fortoul,pri,mex,5,0,,20201222,c5pri08p,
-245,Laura Martínez González,morena,df,4,0,,20201217,c4morena19p,
-247,Lenin Nelson Campos Córdova,pri,san,2,0,,20201222,c2pri08p,
-249,Leticia Díaz Aguilar,morena,df,4,0,,20201217,c4morena07p,
-250,Leticia Mariana Gómez Ordaz,pvem,mex,5,0,,20201218,c5pvem01p,
-252,Lidia Nallely Vargas Hernández,morena,san,2,0,,20201217,c2morena04p,
-255,Lizbeth Mata Lozano,pan,bc,1,0,,20201216,c1pan07p,
-256,Lizeth Amayrani Guerra Méndez,morena,ver,3,0,,20201217,c3morena04p,
-260,Lourdes Erika Sánchez Martínez,pri,sin,1,0,,20201222,c1pri02p,
-261,Lucía Flores Olivo,morena,df,4,0,,20201217,c4morena17p,
-262,Lucinda Sandoval Soberanes,morena,sin,1,0,,20201217,c1morena11p,
-263,Lucio De Jesús Jiménez,morena,df,4,0,,20201217,c4morena10p,
-264,Lucio Ernesto Palacios Cordero,morena,df,4,0,,20201217,c4morena08p,
-266,Luis Eleusis Leónidas Córdova Morán,pri,pue,4,0,,20201222,c4pri06p,
-268,Luis Enrique Miranda Nava,pri,mex,5,0,,20201222,c5pri03p,
-269,Luis Javier Alegre Salazar,morena,qui,3,0,,20201217,c3morena09p,
-270,Luz Estefanía Rosas Martínez,morena,df,4,0,,20201222,c4prd04p,
-273,Ma. de Jesús García Guardado,morena,zac,2,0,,20201217,c2morena12p,
-275,Madeleine Bonnafoux Alcaraz,pan,son,1,0,,20201216,c1pan05p,
-282,Manuel Gómez Ventura,morena,ver,3,0,,20201217,c3morena07p,
-283,Manuel Huerta Martínez,pt,gue,4,0,,20201215,c4morena14p,
-284,Manuel López Castillo,morena,son,1,0,,20201222,c1morena16p,
-286,Marcela Guillermina Velasco González,pri,mex,5,0,,20201222,c5pri04p,
-288,Marco Antonio Andrade Zavala,morena,cps,3,0,,20201217,c3morena13p,
-289,Marco Antonio Carbajal Miranda,morena,son,1,0,,20201217,c1morena02p,
-290,Marco Antonio Gómez Alcantar,pvem,sin,1,0,,20201221,c1pvem02p,
-291,Marco Antonio González Reyes,morena,mex,5,0,,20201217,c5morena10p,
-292,Marco Antonio Medina Pérez,morena,ver,3,0,,20201217,c3morena17p,
-294,Marcos Aguilar Vega,pan,que,2,0,,20201216,c2pan05p,
-295,Margarita Flores Sánchez,pri,nay,1,0,,20201222,c1pri08p,
-297,María Alemán Muñoz Castillo,pri,que,2,0,,20201222,c2pri07p,
-298,María Beatriz López Chávez,morena,df,4,0,,20201217,c4morena01p,
-300,María Chávez Pérez,morena,mic,5,0,,20201217,c5morena15p,
-313,María Guadalupe Edith Castañeda Ortíz,morena,mex,5,0,,20201217,c5morena13p,
-317,María Libier González Anaya,mc,jal,1,0,,20201216,c1mc04p,
-318,María Liduvina Sandoval Mendoza,pan,col,5,0,,20201216,c5pan04p,
-319,María Lucero Saldaña Pérez,pri,pue,4,0,,20201222,c4pri01p,
-320,María Marivel Solís Barrera,morena,hgo,5,0,,20201217,c5morena09s,
-322,Mariana Rodríguez Mier y Terán,pri,tam,2,0,,20201222,c2pri03p,
-324,María Teresa López Pérez,morena,jal,1,0,,20201217,c1morena07p,
-329,Maribel Martínez Ruiz,pt,oax,3,0,,20201215,c3pt01p,
-335,Martha Angélica Zamudio Macías,mc,jal,1,0,,20201216,c1mc02p,
-342,Martina Cazarez Yañez,morena,san,2,0,,20201217,c2morena08p,
-345,Mauricio Alonso Toledo Gutiérrez,pt,df,4,0,,20201217,c4prd03p,
-346,Maximino Alejandro Candelaria,morena,df,4,0,,20201217,c4morena16p,
-350,Miguel Ángel Chico Herrera,morena,gua,2,0,,20201217,c2morena03p,
-352,Miguel Ángel Márquez González,morena,jal,1,0,,20201222,c1morena04p,
-357,Miroslava Sánchez Galván,morena,coa,2,0,,20201217,c2morena06p,
-359,Moisés Ignacio Mier Velazco,morena,pue,4,0,,20201217,c4morena06p,
-360,Mónica Bautista Rodríguez,prd,mex,5,0,,20201218,c5prd02p,
-363,Nayeli Arlen Fernández Cruz,morena,df,4,0,,20201218,c4pvem02p,
-367,Nohemí Alemán Hernández,morena,tam,2,0,,20201222,c2pan08p,
-368,Norma Guel Saldívar,pri,ags,2,0,,20201222,c2pri09p,
-373,Oscar Daniel Martínez Terrazas,pan,mor,4,0,,20201216,c4pan07p,
-376,Oscar Jiménez Rayón,pri,mex,5,0,,20201222,c5pri07s,
-377,Oscar Rafael Novella Macías,morena,zac,2,0,,20201217,c2morena01p,
-379,Pablo Guillermo Angulo Briceño,pri,cam,3,0,,20201222,c3pri05p,
-381,Patricia del Carmen De la Cruz Delucio,morena,cps,3,0,,20201217,c3morena02p,
-382,Patricia Terrazas Baca,pan,cua,1,0,,20201216,c1pan01p,
-383,Paulo César Juárez Segura,pri,mex,5,0,,20201223,c5pri03s,
-384,Pedro Daniel Abasolo Sánchez,pt,mex,5,0,,20201221,c5morena02p,
-385,Pedro Pablo Treviño Villarreal,pri,nl,2,0,,20201222,c2pri02p,
-386,Pilar Lozano Mac Donald,mc,nl,2,0,,20201216,c2mc01p,
-387,Porfirio Muñoz Ledo,morena,df,4,0,,20201215,c4morena12p,
-391,Reginaldo Sandoval Flores,pt,mic,5,0,,20201222,c5pt01p,
-392,René Juárez Cisneros,pri,gue,4,0,,20201222,c4pri04p,
-393,Reyna Celeste Ascensio Ortega,morena,mic,5,0,,20201217,c5morena03p,
-402,Rocío del Pilar Villarauz Martínez,morena,df,4,0,,20201217,c4morena21p,
-404,Rosalba Valencia Cruz,morena,ver,3,0,,20201217,c3morena14p,
-407,Rubén Ignacio Moreira Valdez,pri,coa,2,0,,20201218,c2pri04p,
-409,Ruth Salinas Reyes,mc,mex,5,0,,20201216,c5mc02p,
-410,Samuel Calderón Medina,pes,mor,4,0,,20201217,c4morena02p,
-416,Sergio Carlos Gutiérrez Luna,morena,mex,5,0,,20201217,c5morena06s,
-418,Sergio Pérez Hernández,morena,mex,5,0,,20201217,c5morena08p,
-419,Silvano Garay Ulloa,pt,tla,4,0,,20201222,c4pt01s,
-420,Silvia Guadalupe Garza Galván,pan,coa,2,0,,20201216,c2pan10p,
-422,Socorro Bahena Jiménez,morena,mex,5,0,,20201217,c5morena01p,
-425,Soraya Pérez Munguía,pri,tab,3,0,,20201222,c3pri04p,
-426,Susana Beatriz Cuaxiloa Serrano,morena,pue,4,0,,20201217,c4morena11p,
-427,Susana Cano González,morena,mex,5,0,,20201217,c5morena05p,
-428,Sylvia Violeta Garfías Cedillo,pan,ags,2,0,,20201216,c2pan06p,
-429,Teófilo Manuel García Corpus,morena,oax,3,0,,20201222,c3prd02p,
-434,Verónica Beatriz Juárez Piña,prd,jal,1,0,,20201223,c1prd01p,
-435,Verónica María Sobrado Rodríguez,pan,pue,4,0,,20201216,c4pan04p,
-436,Verónica Ramos Cruz,morena,jal,1,0,,20201217,c1morena01p,
-440,Víctor Blas López,morena,oax,3,0,,20201217,c3morena19p,
-442,Víctor Manuel Pérez Díaz,pan,nl,2,0,,20201216,c2pan07p,
-443,Virginia Merino García,morena,oax,3,0,,20201217,c3morena06s,
-444,Xavier Azuara Zúñiga,pan,san,2,0,,20201216,c2pan09p,
-445,Ximena Puente De La Mora,pri,col,5,0,,20201222,c5pri06p,
-448,Zaira Ochoa Valdivia,morena,ver,3,0,,20201217,c3morena12p,
-449,Zulma Espinoza Mata,pvem,nl,2,0,,20201218,c2pvem02s,
+ord,dip,pty,edo,disn,dsmd,dprop,fch.carta,id,emm,nota
+145,Francisco Javier Luévano Núñez,pan,ags,1,1,1,20201216,ags01p,ags-17.01p,
+111,Elba Lorena Torres Díaz,pt,ags,2,1,1,20201215,ags02p,ags-17.02p,
+336,Martha Elisa González Estrada,pan,ags,3,1,1,20201216,ags03p,ags-17.03p,
+192,Jesús Salvador Minor Mora,morena,bc,1,1,1,20201217,bc01p,bc-17.01p,
+339,Martha Lizeth Noriega Galaz,morena,bc,2,1,0,20201222,bc02s,bc-17.02s,
+43,Armando Reyes Ledesma,pt,bc,3,1,1,20201215,bc03p,bc-17.03p,
+423,Socorro Irma Andazola Gómez,morena,bc,4,1,1,20201217,bc04p,bc-17.04p,
+333,Mario Ismael Moreno Gil,morena,bc,5,1,1,20201217,bc05p,bc-17.05p,
+188,Javier Julián Castañeda Pomposo,morena,bc,6,1,1,20201221,bc06p,bc-17.06p,p and s filed
+124,Erwin Jorge Areizaga Uribe,morena,bc,6,1,0,20201222,bc06s,bc-17.06s,
+122,Erik Isaac Morales Elvira,morena,bc,7,1,1,20201222,bc07p,bc-17.07p,
+161,Héctor René Cruz Aparicio,pes,bc,8,1,1,20201216,bc08p,bc-17.08p,
+34,Ana Ruth García Grande,pt,bcs,1,1,1,20201215,bcs01p,bcs-17.01p,
+23,Alfredo Porras Domínguez,pt,bcs,2,1,1,20201214,bcs02p,bcs-17.02p,
+62,Carlos Enrique Martínez Aké,morena,cam,1,1,1,20201217,cam01p,cam-17.01p,
+176,Irasema del Carmen Buenfil Díaz,pes,cam,2,1,1,20201216,cam02p,cam-17.02p,
+129,Evaristo Lenin Pérez Rivera,morena,coa,1,1,1,20201222,coa01p,coa-17.01p,
+142,Francisco Javier Borrego Adame,morena,coa,2,1,1,20201217,coa02p,coa-17.02p,
+347,Melba Nelia Farías Zambrano,morena,coa,3,1,1,20201217,coa03p,coa-17.03p,
+134,Fernando Donato De las Fuentes Hernández,pri,coa,7,1,1,20201230,coa07p,coa-17.07p,
+87,Claudia Valeria Yáñez Centeno y Cabrera,morena,col,1,1,1,20201217,col01p,col-17.01p,
+406,Rosa María Bayardo Cabrera,morena,col,2,1,0,20201217,col02s,col-17.02s,
+280,Manuela del Carmen Obrador Narváez,morena,cps,1,1,1,20201217,cps01p,cps-17.01p,
+21,Alfredo Antonio Gordillo Moreno,morena,cps,2,1,0,20201222,cps02s,cps-17.02s,
+24,Alfredo Vázquez Vázquez,morena,cps,3,1,1,20201217,cps03p,cps-17.03p,
+403,Roque Luis Rabelo Velasco,morena,cps,4,1,1,20201217,cps04p,cps-17.04p,
+88,Clementina Marta Dekker Gómez,pt,cps,5,1,1,20201215,cps05p,cps-17.05p,
+389,Raúl Eduardo Bonifaz Moedano,morena,cps,6,1,0,20201217,cps06s,cps-17.06s,
+354,Miguel Prado de los Santos,morena,cps,7,1,1,20201221,cps07p,cps-17.07p,
+323,María Roselia Jiménez Pérez,pt,cps,8,1,1,20201215,cps08p,cps-17.08p,
+248,Leticia Arlett Aguilar Molina,pes,cps,9,1,1,20201217,cps09p,cps-17.09p,
+222,Juan Enrique Farrera Esponda,morena,cps,10,1,1,20201217,cps10p,cps-17.10p,
+400,Roberto Antonio Rubio Montejo,pvem,cps,11,1,1,20201218,cps11p,cps-17.11p,
+211,José Luis Elorza Flores,morena,cps,12,1,1,20201217,cps12p,cps-17.12p,
+330,Maricruz Roblero Gordillo,pt,cps,13,1,1,20201215,cps13p,cps-17.13p,
+309,María Esther Mejía Cruz,morena,cua,1,1,1,20201217,cua01p,cua-17.01p,
+430,Teresita de Jesús Vargas Meraz,morena,cua,2,1,1,20201218,cua02p,cua-17.02p,
+81,Claudia Elena Lastra Muñoz,pt,cua,3,1,1,20201215,cua03p,cua-17.03p,
+431,Ulises García Soto,morena,cua,4,1,1,20201217,cua04p,cua-17.04p,
+334,Mario Mata Carrasco,pan,cua,5,1,1,20201222,cua05p,cua-17.05p,
+349,Miguel Alonso Riggs Baeza,pan,cua,6,1,1,20201216,cua06p,cua-17.06p,
+118,Eraclio Rodríguez Gómez,pt,cua,7,1,1,20201218,cua07p,cua-17.07p,
+11,Alán Jesús Falomir Saenz,mc,cua,8,1,1,20201221,cua08p,cua-17.08p,
+303,María de los Ángeles Gutiérrez Valdez,pan,cua,9,1,1,20201216,cua09p,cua-17.09p,
+121,Erika Vanessa Del Castillo Ibarra,morena,df,1,1,1,20201217,df01p,df-17.01p,
+41,Armando González Escoto,pes,df,2,1,1,20201216,df02p,df-17.02p,
+351,Miguel Ángel Jáuregui Montes de Oca,morena,df,3,1,1,20201217,df03p,df-17.03p,
+207,José Gerardo Rodolfo Fernández Noroña,pt,df,4,1,1,20201215,df04p,df-17.04p,
+82,Claudia López Rayón,morena,df,5,1,1,20201217,df05p,df-17.05p,
+417,Sergio Mayer Bretón,morena,df,6,1,1,20201222,df06p,df-17.06p,
+49,Beatriz Rojas Martínez,morena,df,7,1,1,20201217,df07p,df-17.07p,
+301,María de Jesús Rosete Sánchez,pt,df,8,1,1,20201215,df08p,df-17.08p,
+8,Adriana María Guadalupe Espinosa de los Monteros,morena,df,9,1,1,20201217,df09p,df-17.09p,
+187,Javier Ariel Hidalgo Ponce,morena,df,10,1,1,20201217,df10p,df-17.10p,
+401,Rocío Barrera Badillo,morena,df,11,1,1,20201217,df11p,df-17.11p,
+97,Dolores Padierna Luna,morena,df,12,1,1,20201217,df12p,df-17.12p,
+374,Oscar Eugenio Gutiérrez Camacho,morena,df,13,1,1,20201217,df13p,df-17.13p,
+20,Alfonso Ramírez Cuéllar,morena,df,14,1,1,20201217,df14p,df-17.14p,
+265,Luis Alberto Mendoza Acevedo,pan,df,15,1,1,20201216,df15p,df-17.15p,
+421,Silvia Lorena Villavicencio Ayala,morena,df,16,1,1,20201217,df16p,df-17.16p,
+147,Francisco Javier Saldivar Camacho,pes,df,17,1,1,20201216,df17p,df-17.17p,
+31,Ana María Rodríguez Ruiz,morena,df,18,1,1,20201217,df18p,df-17.18p,
+13,Aleida Alavez Ruiz,morena,df,19,1,1,20201217,df19p,df-17.19p,
+27,Ana Karina Rojo Pimentel,pt,df,20,1,1,20201215,df20p,df-17.20p,
+237,Karen Ivette Audiffred Fernández,morena,df,21,1,0,20201217,df21s,df-17.21s,
+441,Víctor Gabriel Varela López,morena,df,22,1,1,20201217,df22p,df-17.22p,
+378,Pablo Gómez Álvarez,morena,df,23,1,1,20201217,df23p,df-17.23p,
+155,Guadalupe Ramos Sotelo,morena,df,24,1,1,20201222,df24p,df-17.24p,
+340,Martha Olivia García Vidaña,morena,dgo,1,1,1,20201217,dgo01p,dgo-17.01p,
+328,Maribel Aguilera Chairez,morena,dgo,3,1,1,20201217,dgo03p,dgo-17.03p,
+167,Hilda Patricia Ortega Nájera,morena,dgo,4,1,1,20201217,dgo04p,dgo-17.04p,
+39,Ariel Rodríguez Vázquez,mc,gua,1,1,1,20201216,gua01p,gua-17.01p,
+398,Ricardo Villareal García,pan,gua,2,1,1,20201216,gua02p,gua-17.02p,
+276,Ma. de los Ángeles Ayala Díaz,pan,gua,3,1,1,20201216,gua03p,gua-17.03p,
+221,Juan Carlos Romero Hicks,pan,gua,4,1,1,20201216,gua04p,gua-17.04p,
+102,Éctor Jaime Ramírez Barba,pan,gua,5,1,1,20201216,gua05p,gua-17.05p,
+305,María del Pilar Ortega Martínez,pan,gua,6,1,1,20201216,gua06p,gua-17.06p,
+238,Karen Michel González Márquez,pan,gua,7,1,1,20201216,gua07p,gua-17.07p,
+236,Justino Eugenio Arriaga Rojas,pan,gua,8,1,1,20201216,gua08p,gua-17.08p,
+253,Lilia Villafuerte Zavala,pvem,gua,10,1,1,20201218,gua10p,gua-17.10p,
+197,Jorge Arturo Espadas Galván,pan,gua,11,1,1,20201216,gua11p,gua-17.11p,
+415,Sarai Núñez Cerón,pan,gua,12,1,1,20201216,gua12p,gua-17.12p,
+115,Emmanuel Reyes Carmona,morena,gua,13,1,1,20201222,gua13p,gua-17.13p,
+277,Ma. Eugenia Leticia Espinosa Rivas,pan,gua,14,1,1,20201216,gua14p,gua-17.14p,
+439,Víctor Adolfo Mojica Wences,morena,gue,1,1,1,20201217,gue01p,gue-17.01p,
+38,Araceli Ocampo Manzanares,morena,gue,2,1,1,20201217,gue02p,gue-17.02p,
+274,Ma. del Carmen Cabrera Lagunas,pes,gue,3,1,1,20201215,gue03p,gue-17.03p,
+1,Abelina López Rodríguez,morena,gue,4,1,1,20201217,gue04p,gue-17.04p,
+189,Javier Manzano Salazar,morena,gue,5,1,1,20201217,gue05p,gue-17.05p,
+67,Carlos Sánchez Barrios,morena,gue,7,1,1,20201217,gue07p,gue-17.07p,
+306,María del Rosario Merlín García,morena,gue,9,1,1,20201217,gue09p,gue-17.09p,
+139,Fortunato Rivera Castillo,morena,hgo,1,1,1,20201217,hgo01p,hgo-17.01p,
+157,Gustavo Callejas Romero,morena,hgo,2,1,0,20201217,hgo02s,hgo-17.02s,
+413,Sandra Simey Olvera Bautista,morena,hgo,3,1,1,20201217,hgo03p,hgo-17.03p,
+316,María Isabel Alfaro Morales,morena,hgo,4,1,1,20201217,hgo04p,hgo-17.04p,
+235,Julio César Ángeles Mendoza,morena,hgo,5,1,1,20201217,hgo05p,hgo-17.05p,
+251,Lidia García Anaya,morena,hgo,6,1,1,20201217,hgo06p,hgo-17.06p,
+186,Jannet Tellez Infante,morena,hgo,7,1,1,20201217,hgo07p,hgo-17.07p,
+337,Martha Estela Romo Cuéllar,pan,jal,2,1,1,20201216,jal02p,jal-17.02p,
+156,Guadalupe Romo Romo,pan,jal,3,1,1,20201228,jal03p,jal-17.03p,
+332,Mario Alberto Rodríguez Carrillo,mc,jal,4,1,1,20201216,jal04p,jal-17.04p,
+257,Lorena del Socorro Jiménez Andrade,morena,jal,5,1,1,20201217,jal05p,jal-17.05p,
+130,Fabiola Raquel Guadalupe Loya Hernández,mc,jal,6,1,1,20201216,jal06p,jal-17.06p,
+2,Abril Alcalá Padilla,prd,jal,8,1,1,20201222,jal08p,jal-17.08p,
+69,Carmen Julia Prudencio González,mc,jal,9,1,1,20201216,jal09p,jal-17.09p,
+150,Geraldina Isabel Herrera Vega,mc,jal,10,1,1,20201216,jal10p,jal-17.10p,
+241,Kehila Abigail Ku Escalante,mc,jal,11,1,1,20201222,jal11p,jal-17.11p,
+259,Lourdes Celenia Contreras González,mc,jal,13,1,1,20201216,jal13p,jal-17.13p,
+224,Juan Francisco Ramírez Salcido,mc,jal,14,1,1,20201216,jal14p,jal-17.14p,
+3,Absalón García Ochoa,pan,jal,15,1,1,20201216,jal15p,jal-17.15p,
+244,Laura Imelda Pérez Segura,morena,jal,16,1,1,20201217,jal16p,jal-17.16p,
+228,Juan Martín Espinoza Cárdenas,mc,jal,17,1,1,20201215,jal17p,jal-17.17p,
+166,Higinio Del Toro Pérez,mc,jal,19,1,0,20201216,jal19s,jal-17.19s,
+33,Ana Priscila González García,mc,jal,20,1,1,20201216,jal20p,jal-17.20p,
+394,Ricardo Aguilar Castillo,pri,mex,1,1,1,20201222,mex01p,mex-17.01p,
+96,Dionicia Vázquez García,pt,mex,2,1,1,20201215,mex02p,mex-17.02p,
+325,María Teresa Marú Mejía,pt,mex,3,1,1,20201215,mex03p,mex-17.03p,
+366,Nelly Minerva Carrasco Godínez,morena,mex,4,1,1,20201217,mex04p,mex-17.04p,
+141,Francisco Favela Peñuñuri,pt,mex,5,1,1,20201214,mex05p,mex-17.05p,
+75,Carolina García Aguilar,pes,mex,6,1,1,20201216,mex06p,mex-17.06p,
+446,Xochitl Nashielly Zagal Ramírez,morena,mex,7,1,1,20201223,mex07p,mex-17.07p,p and s filed
+246,Laura Mónica Guerra Navarro,morena,mex,7,1,0,20201217,mex07s,mex-17.07s,p and s filed
+158,Gustavo Contreras Montes,morena,mex,8,1,1,20201217,mex08p,mex-17.08p,
+109,Eduardo Zarzosa Sánchez,pri,mex,9,1,1,20201222,mex09p,mex-17.09p,
+26,Alma Delia Navarrete Rivera,morena,mex,10,1,1,20201217,mex10p,mex-17.10p,
+310,María Eugenia Hernández Pérez,morena,mex,11,1,1,20201217,mex11p,mex-17.11p,
+133,Felipe Rafael Arvizu De la Luz,morena,mex,12,1,1,20201217,mex12p,mex-17.12p,
+307,María Elizabeth Díaz García,morena,mex,13,1,1,20201217,mex13p,mex-17.13p,
+79,Claudia Angélica Domínguez Vázquez,pt,mex,14,1,1,20201215,mex14p,mex-17.14p,
+390,Raúl Ernesto Sánchez Barrales Zavalza,pt,mex,15,1,1,20201215,mex15p,mex-17.15p,
+114,Emilio Manzanilla Téllez,pt,mex,16,1,1,20201216,mex16p,mex-17.16p,
+314,María Guadalupe Román Ávila,morena,mex,17,1,1,20201217,mex17p,mex-17.17p,
+85,Claudia Reyes Montiel,prd,mex,18,1,1,20201222,mex18p,mex-17.18p,
+432,Ulises Murguía Soto,morena,mex,19,1,1,20201217,mex19p,mex-17.19p,
+231,Juan Pablo Sánchez Rodríguez,morena,mex,20,1,1,20201217,mex20p,mex-17.20p,
+153,Graciela Sánchez Ortiz,morena,mex,21,1,1,20201217,mex21p,mex-17.21p,
+326,María Teresa Rebeca Rosa Mora Ríos,morena,mex,22,1,1,20210104,mex22p,mex-17.22p,
+94,David Orihuela Nava,morena,mex,23,1,1,20201217,mex23p,mex-17.23p,
+304,María de los Ángeles Huerta del Río,morena,mex,24,1,1,20201217,mex24p,mex-17.24p,
+125,Esmeralda de los Ángeles Moreno Medina,pes,mex,26,1,1,20201216,mex26p,mex-17.26p,
+375,Oscar González Yáñez,pt,mex,27,1,1,20201216,mex27p,mex-17.27p,
+399,Roberto Ángel Domínguez Rodríguez,morena,mex,28,1,1,20201217,mex28p,mex-17.28p,
+341,Martha Robles Ortiz,morena,mex,29,1,1,20201217,mex29p,mex-17.29p,
+78,César Agustín Hernández Pérez,morena,mex,30,1,1,20201217,mex30p,mex-17.30p,
+220,Juan Ángel Bautista Bravo,morena,mex,31,1,1,20201217,mex31p,mex-17.31p,
+267,Luis Enrique Martínez Ventura,pt,mex,32,1,1,20201214,mex32p,mex-17.32p,
+437,Vicente Alberto Onofre Vázquez,morena,mex,33,1,1,20201222,mex33p,mex-17.33p,
+312,María Guadalupe Díaz Avilez,morena,mex,34,1,0,20201217,mex34s,mex-17.34s,
+46,Arturo Roberto Hernández Tapia,morena,mex,35,1,1,20201217,mex35p,mex-17.35p,
+89,Cruz Juvenal Roa Sánchez,pri,mex,36,1,1,20201222,mex36p,mex-17.36p,
+104,Edgar Eduardo Arenas Madrigal,morena,mex,37,1,0,20201217,mex37s,mex-17.37s,
+239,Karla Yuritzi Almazán Burgos,morena,mex,38,1,1,20201217,mex38p,mex-17.38p,
+213,José Luis Montalvo Luna,pt,mex,39,1,1,20201214,mex39p,mex-17.39p,
+293,Marco Antonio Reyes Colín,morena,mex,40,1,1,20201217,mex40p,mex-17.40p,
+361,Nancy Claudia Reséndiz Hernández,pes,mex,41,1,1,20201216,mex41p,mex-17.41p,
+131,Feliciano Flores Anguiano,morena,mic,1,1,1,20201217,mic01p,mic-17.01p,
+126,Esteban Barajas Barajas,morena,mic,2,1,1,20201217,mic02p,mic-17.02p,
+343,Mary Carmen Bernal Martínez,pt,mic,3,1,1,20201215,mic03p,mic-17.03p,
+44,Armando Tejeda Cid,pan,mic,4,1,1,20201218,mic04p,mic-17.04p,
+447,Yolanda Guerrero Barrera,morena,mic,5,1,1,20201217,mic05p,mic-17.05p,
+36,Anita Sánchez Castro,morena,mic,6,1,1,20201217,mic06p,mic-17.06p,
+152,Gonzalo Herrera Pérez,morena,mic,7,1,1,20201217,mic07p,mic-17.07p,
+28,Ana Lilia Guillén Quiroz,morena,mic,8,1,1,20201217,mic08p,mic-17.08p,
+173,Ignacio Benjamín Campos Equihua,morena,mic,9,1,1,20201217,mic09p,mic-17.09p,
+271,lván Arturo Pérez Negrón,morena,mic,10,1,1,20201222,mic10p,mic-17.10p,
+208,José Guadalupe Aguilera Rojas,prd,mic,11,1,1,20201221,mic11p,mic-17.11p,
+144,Francisco Javier Huacus Esquivel,pt,mic,12,1,1,20201215,mic12p,mic-17.12p,
+14,Alejandra Pani Barragán,morena,mor,2,1,1,20201217,mor02p,mor-17.02p,
+226,Juanita Guerra Mena,morena,mor,3,1,1,20201217,mor03p,mor-17.03p,
+196,Jorge Arturo Argüelles Victorero,pes,mor,4,1,1,20201216,mor04p,mor-17.04p,
+209,José Guadalupe Ambrocio Gachuz,morena,mor,5,1,1,20201217,mor05p,mor-17.05p,
+353,Miguel Pável Jarero Velázquez,morena,nay,1,1,1,20201217,nay01p,nay-17.01p,
+311,María Geraldine Ponce Méndez,morena,nay,2,1,1,20201222,nay02p,nay-17.02p,
+358,Mirtha Iliana Villalvazo Amaya,morena,nay,3,1,1,20201217,nay03p,nay-17.03p,
+165,Hernán Salinas Wolberg,pan,nl,1,1,1,20201216,nl01p,nl-17.01p,
+315,María Guillermina Alvarado Moreno,morena,nl,2,1,1,20201217,nl02p,nl-17.02p,
+212,José Luis García Duque,pt,nl,3,1,1,20201215,nl03p,nl-17.03p,
+414,Santiago González Soto,pt,nl,5,1,1,20201215,nl05p,nl-17.05p,
+37,Annia Sarahí Gómez Cárdenas,pan,nl,6,1,1,20201216,nl06p,nl-17.06p,
+223,Juan Francisco Espinoza Eguia,pri,nl,9,1,1,20201222,nl09p,nl-17.09p,
+215,José Martín López Cisneros,pan,nl,10,1,1,20201216,nl10p,nl-17.10p,
+123,Ernesto Alfonso Robledo Leal,pan,nl,11,1,1,20201222,nl11p,nl-17.11p,
+412,Sandra Paola González Castañeda,morena,nl,12,1,1,20201217,nl12p,nl-17.12p,
+177,Irma Juan Carlos,morena,oax,2,1,1,20201217,oax02p,oax-17.02p,
+296,Margarita García García,pt,oax,3,1,1,20201215,oax03p,oax-17.03p,
+47,Azael Santiago Chepi,morena,oax,4,1,1,20201217,oax04p,oax-17.04p,
+74,Carol Antonio Altamirano,morena,oax,5,1,1,20201217,oax05p,oax-17.05p,
+48,Beatriz Dominga Pérez López,morena,oax,6,1,1,20201217,oax06p,oax-17.06p,
+405,Rosalinda Domínguez Flores,morena,oax,7,1,1,20201217,oax07p,oax-17.07p,
+52,Benjamín Robles Montoya,pt,oax,8,1,1,20201215,oax08p,oax-17.08p,
+302,María del Carmen Bautista Peláez,morena,oax,9,1,1,20201217,oax09p,oax-17.09p,
+92,Daniel Gutiérrez Gutiérrez,morena,oax,10,1,1,20201217,oax10p,oax-17.10p,
+206,José Francisco Esquitin Alonso,pes,pue,1,1,0,20201216,pue01s,pue-17.01s,
+279,Maiella Martha Gabriela Gómez Maldonado,mc,pue,2,1,1,20201216,pue02p,pue-17.02p,
+80,Claudia Báez Ruiz,pes,pue,3,1,1,20201216,pue03p,pue-17.03p,
+174,Inés Parra Juárez,morena,pue,4,1,1,20201217,pue04p,pue-17.04p,
+338,Martha Huerta Hernández,pt,pue,5,1,0,20201215,pue05s,pue-17.05s,
+16,Alejandro Carvajal Hidalgo,morena,pue,6,1,1,20201217,pue06p,pue-17.06p,
+105,Edgar Guzmán Valdéz,pes,pue,7,1,1,20201216,pue07p,pue-17.07p,
+233,Julieta Kristal Vences Valencia,morena,pue,8,1,1,20201217,pue08p,pue-17.08p,
+19,Alfonso Pérez Arroyo,morena,pue,9,1,0,20201217,pue09s,pue-17.09s,
+364,Nayeli Salvatori Bojalil,pes,pue,10,1,1,20201216,pue10p,pue-17.10p,
+53,Benjamín Saúl Huerta Corona,sin-partido,pue,11,1,1,20201217,pue11p,pue-17.11p,
+136,Fernando Luis Manzanilla Prieto,pes,pue,12,1,1,20201216,pue12p,pue-17.12p,
+159,Héctor Guillermo de Jesús Jiménez y Meneses,morena,pue,13,1,1,20201217,pue13p,pue-17.13p,
+365,Nelly Maceda Carrera,pt,pue,14,1,1,20201218,pue14p,pue-17.14p,
+15,Alejandro Barroso Chávez,pt,pue,15,1,1,20201215,pue15p,pue-17.15p,
+424,Sonia Rocha Acosta,pan,que,1,1,1,20201216,que01p,que-17.01p,
+201,Jorge Luis Montes Nieves,morena,que,2,1,1,20201217,que02p,que-17.02p,
+50,Beatriz Silvia Robles Gutiérrez,morena,que,3,1,1,20201217,que03p,que-17.03p,
+132,Felipe Fernando Macías Olvera,pan,que,4,1,1,20201216,que04p,que-17.04p,
+32,Ana Paola López Birlain,pan,que,5,1,1,20201216,que05p,que-17.05p,
+9,Adriana Paulina Teissier Zavala,pes,qui,1,1,1,20201216,qui01p,qui-17.01p,
+72,Carmen Patricia Palma Olvera,morena,qui,2,1,1,20201217,qui02p,qui-17.02p,
+355,Mildred Concepción Ávila Vera,morena,qui,3,1,1,20201217,qui03p,qui-17.03p,
+344,Ma. Sara Rocha Medina,pri,san,1,1,1,20201222,san01p,san-17.01p,
+372,Óscar Bautista Villegas,pri,san,3,1,1,20201222,san03p,san-17.03p,
+216,José Ricardo Delsol Estrada,morena,san,4,1,1,20201217,san04p,san-17.04p,
+205,Josefina Salazar Báez,pan,san,5,1,1,20201216,san05p,san-17.05p,
+278,Ma. Guadalupe Almaguer Pardo,prd,san,6,1,1,20201222,san06p,san-17.06p,
+287,Marcelino Rivera Hernández,pan,san,7,1,1,20201216,san07p,san-17.07p,
+214,José Mario Osuna Medina,pt,sin,1,1,0,20201215,sin01s,sin-17.01s,
+65,Carlos lván Ayala Bobadilla,morena,sin,2,1,0,20201222,sin02s,sin-17.02s,
+191,Jesus Fernando Garcia Hernandez,pt,sin,3,1,1,20210412,sin03p,sin-17.03p,
+76,Casimiro Zamora Valdéz,morena,sin,4,1,1,20201217,sin04p,sin-17.04p,
+362,Nancy Yadira Santiago Marcos,morena,sin,5,1,1,20201217,sin05p,sin-17.05p,
+369,Olegaria Carrazco Macías,morena,sin,6,1,1,20201217,sin06p,sin-17.06p,
+348,Merary Villegas Sánchez,morena,sin,7,1,1,20201217,sin07p,sin-17.07p,
+281,Manuel de Jesús Baldenebro Arredondo,pes,son,1,1,1,20201216,son01p,son-17.01p,
+258,Lorenia Iveth Valles Sampedro,morena,son,3,1,1,20201217,son03p,son-17.03p,
+164,Heriberto Marcelo Aguilar Castillo,morena,son,4,1,1,20201217,son04p,son-17.04p,
+327,María Wendy Briceño Zuloaga,morena,son,5,1,1,20201217,son05p,son-17.05p,
+64,Carlos Javier Lamarque Cano,morena,son,6,1,1,20201217,son06p,son-17.06p,
+168,Hildelisa González Morales,pt,son,7,1,1,20201215,son07p,son-17.07p,
+127,Estela Núñez Álvarez,morena,tab,1,1,1,20201217,tab01p,tab-17.01p,
+285,Manuel Rodríguez González,morena,tab,4,1,1,20201217,tab04p,tab-17.04p,
+395,Ricardo De la Peña Marshall,pes,tab,6,1,1,20201215,tab06p,tab-17.06p,
+218,José Salvador Rosas Quintanilla,pan,tam,1,1,1,20201221,tam01p,tam-17.01p,
+370,Olga Juliana Elizondo Guerra,pt,tam,2,1,1,20201215,tam02p,tam-17.02p,
+160,Héctor Joel Villegas González,pes,tam,3,1,1,20201216,tam03p,tam-17.03p,
+7,Adriana Lozano Rodríguez,morena,tam,4,1,1,20201216,tam04p,tam-17.04p,
+331,Mario Alberto Ramos Tamez,pan,tam,5,1,1,20201216,tam05p,tam-17.05p,
+438,Vicente Javier Verástegui Ostos,pan,tam,6,1,1,20201216,tam06p,tam-17.06p,
+119,Erasmo González Robledo,morena,tam,7,1,1,20201217,tam07p,tam-17.07p,
+371,Olga Patricia Sosa Ruiz,pes,tam,8,1,1,20201216,tam08p,tam-17.08p,
+42,Armando Javier Zertuche Zuani,pt,tam,9,1,1,20201215,tam09p,tam-17.09p,
+408,Rubén Terán Águila,morena,tla,2,1,1,20201217,tla02p,tla-17.02p,
+84,Claudia Pérez Rodríguez,morena,tla,3,1,0,20201217,tla03s,tla-17.03s,
+397,Ricardo García Escalante,pan,ver,1,1,1,20201216,ver01p,ver-17.01p,
+299,María Bertha Espinoza Segura,morena,ver,3,1,1,20201217,ver03p,ver-17.03p,
+396,Ricardo Francisco Exsome Zapata,morena,ver,4,1,1,20201217,ver04p,ver-17.04p,
+185,Jaime Humberto Pérez Bernabé,morena,ver,6,1,1,20201217,ver06p,ver-17.06p,
+116,Enrique Capetillo González,pt,ver,7,1,0,20210412,ver07s,ver-17.07s,
+86,Claudia Tello Espinosa,morena,ver,8,1,1,20201217,ver08p,ver-17.08p,
+71,Carmen Mora García,morena,ver,9,1,1,20201217,ver09p,ver-17.09p,
+388,Rafael Hernández Villalpando,morena,ver,10,1,1,20201215,ver10p,ver-17.10p,
+138,Flora Tania Cruz Santos,morena,ver,11,1,1,20201217,ver11p,ver-17.11p,
+321,Mariana Dunyaska García Rojas,pan,ver,12,1,1,20201216,ver12p,ver-17.12p,
+112,Eleuterio Arrieta Sánchez,morena,ver,13,1,1,20201217,ver13p,ver-17.13p,
+70,Carmen Medel Palma,morena,ver,14,1,1,20201217,ver14p,ver-17.14p,
+100,Dulce María Corina Villegas Guarneros,morena,ver,15,1,1,20201217,ver15p,ver-17.15p,
+229,Juan Martínez Flores,morena,ver,16,1,1,20201217,ver16p,ver-17.16p,
+433,Valentín Reyes López,morena,ver,17,1,1,20201217,ver17p,ver-17.17p,
+54,Bonifacio Aguilar Linda,morena,ver,18,1,1,20201217,ver18p,ver-17.18p,
+380,Paola Tenorio Adame,morena,ver,19,1,1,20201217,ver19p,ver-17.19p,
+128,Eulalio Juan Ríos Fararoni,morena,ver,20,1,1,20201217,ver20p,ver-17.20p,
+190,Jesús Carlos Vidal Peniche,pvem,yuc,1,1,1,20201218,yuc01p,yuc-17.01p,
+308,María Ester Alonzo Morales,pri,yuc,2,1,1,20201222,yuc02p,yuc-17.02p,
+254,Limbert Iván de Jesús Interian Gallegos,morena,yuc,3,1,0,20201217,yuc03s,yuc-17.03s,
+204,José Elías Lixa Abimerhi,pan,yuc,4,1,1,20201216,yuc04p,yuc-17.04p,
+227,Juan José Canul Pérez,pri,yuc,5,1,1,20201222,yuc05p,yuc-17.05p,
+356,Mirna Zabeida Maldonado Tapia,morena,zac,1,1,1,20201217,zac01p,zac-17.01p,
+272,Lyndiana Elizabeth Bugarín Cortés,pvem,zac,2,1,1,20201218,zac02p,zac-17.02p,
+22,Alfredo Femat Bañuelos,pt,zac,3,1,1,20201215,zac03p,zac-17.03p,
+411,Samuel Herrera Chávez,morena,zac,4,1,1,20201217,zac04p,zac-17.04p,
+4,Adela Piña Bernal,morena,df,4,0,,20201217,c4morena15p,,
+5,Adolfo Torres Ramírez,pan,mic,5,0,,20201216,c5pan05p,,
+6,Adriana Dávila Fernández,pan,tla,4,0,,20201216,c4pan02p,,
+10,Agustín Reynaldo Huerta González,morena,pue,4,0,,20201217,c4morena18p,,
+12,Alberto Villa Villegas,morena,jal,1,0,,20201217,c1morena10p,,
+17,Alejandro Ponce Cobos,morena,oax,3,0,,20201217,c3morena01p,,
+18,Alejandro Viedma Velázquez,morena,mex,5,0,,20201217,c5morena18p,,
+25,Alfredo Villegas Arreola,pri,sin,1,0,,20201222,c1pri03p,,
+29,Ana Lilia Herrera Anzaldo,pri,mex,5,0,,20201222,c5pri02p,,
+30,Ana Lucia Riojas Martínez,sin-partido,df,4,0,,20201222,c4pan06p,,
+35,Anilú Ingram Vallines,pri,ver,3,0,,20201222,c3pri06p,,
+40,Armando Contreras Castillo,morena,oax,3,0,,20201217,c3morena15p,,
+45,Arturo Escobar y Vega,pvem,df,4,0,,20201218,c4pvem01p,,
+51,Benito Medina Herrera,pri,bc,1,0,,20210104,c1pri01p,,
+55,Brasil Alberto Acosta Peña,pri,mex,5,0,,20201222,c5pri05p,,
+56,Brenda Espinosa López,morena,mor,4,0,,20201217,c4morena05p,,
+57,Carlos Alberto Morales Vázquez,sin-partido,cps,3,0,,20201215,c3pan04p,,
+58,Carlos Alberto Puente Salas,pvem,zac,2,0,,20201218,c2pvem01p,,
+59,Carlos Alberto Valenzuela González,pan,ver,3,0,,20201218,c3pan02p,,
+60,Carlos Carreón Mejía,pan,tla,4,0,,20201222,c4pan05p,,
+61,Carlos Elhier Cinta Rodríguez,pan,gua,2,0,,20201216,c2pan13s,,
+63,Carlos Humberto Castaños Valenzuela,pan,sin,1,0,,20201216,c1pan08p,,
+66,Carlos Pavón Campos,pri,zac,2,0,,20201222,c2pri06p,,
+68,Carlos Torres Piña,morena,mic,5,0,,20201222,c5prd01p,,
+73,Carmina Yadira Regalado Mardueño,morena,nay,1,0,,20201217,c1morena05p,,
+77,Cecilia Anunciación Patrón Laviada,pan,yuc,3,0,,20201216,c3pan01p,,
+83,Claudia Pastor Badilla,pri,df,4,0,,20201222,c4pri05p,,
+90,Cuauhtli Fernando Badillo Moreno,morena,san,2,0,,20201217,c2morena09p,,
+91,Cynthia Iliana López Castro,pri,df,4,0,,20201222,c4pri03p,,
+93,David Bautista Rivera,morena,pue,4,0,,20201217,c4morena04p,,
+95,Diego Eduardo Del Bosque Villarreal,morena,coa,2,0,,20201217,c2morena07p,,
+98,Dorheny García Cayetano,morena,ver,3,0,,20201217,c3morena18p,,
+99,Dulce Alejandra García Morlan,pan,oax,3,0,,20201217,c3pan07p,,
+101,Dulce María Méndez De La Luz Dauzón,mc,ver,3,0,,20201216,c3mc01p,,
+103,Edelmiro Santiago Santos Díaz,morena,nl,2,0,,20201217,c2morena11p,,
+106,Ediltrudis Rodríguez Arellano,morena,tab,3,0,,20201217,c3morena16p,,
+107,Edith García Rosales,morena,ver,3,0,,20201217,c3morena20p,,
+108,Edith Marisol Mercado Torres,morena,mex,5,0,,20201217,c5morena17p,,
+110,Efraín Rocha Vega,morena,cua,1,0,,20201222,c1morena14p,,
+113,Emeteria Claudia Martínez Aguilar,morena,cps,3,0,,20201217,c3morena08p,,
+117,Enrique Ochoa Reza,pri,mic,5,0,,20201222,c5pri01p,,
+120,Erika Mariana Rosas Uribe,morena,sin,1,0,,20201222,c1pvem01p,,
+135,Fernando Galindo Favela,pri,df,4,0,,20201221,c4pri02p,,
+137,Fernando Torres Graciano,pan,gua,2,0,,20201216,c2pan11p,,
+140,Francisco Elizondo Garrido,morena,nl,2,0,,20201218,c2pvem03p,,
+143,Francisco Javier Guzmán De la Torre,morena,jal,1,0,,20201217,c1morena06p,,
+146,Francisco Javier Ramírez Navarrete,morena,mex,5,0,,20201217,c5morena14p,,
+148,Frida Alejandra Esparza Márquez,prd,zac,2,0,,20201221,c2prd01p,,
+149,Frinné Azuara Yarzábal,pri,san,2,0,,20201222,c2pri05p,,
+151,Gloria Romero León,pan,hgo,5,0,,20201216,c5pan06p,,
+154,Graciela Zavaleta Sánchez,morena,oax,3,0,,20201217,c3morena10p,,
+162,Héctor Serrano Cortés,pt,df,4,0,,20201218,c4prd01p,,
+163,Héctor Yunes Landa,pri,ver,3,0,,20201222,c3pri03p,,
+169,Hirepan Maya Martínez,morena,mic,5,0,,20201217,c5morena04p,,
+170,Hortensia María Luisa Noroña Quezada,pri,jal,1,0,,20201222,c1pri06p,,
+171,Hugo Rafael Ruiz Lustre,morena,hgo,5,0,,20201217,c5morena12p,,
+172,Idalia Reyes Miguel,morena,gue,4,0,,20201217,c4morena13p,,
+175,Iran Santiago Manuel,morena,oax,3,0,,20201217,c3morena03p,,
+178,Irma María Terán Villalobos,pes,son,1,0,,20201216,c1pri04p,,
+179,Isabel Margarita Guerra Villareal,pan,nl,2,0,,20201216,c2pan12p,,
+180,Ismael Alfredo Hernández Deras,pri,dgo,1,0,,20201222,c1pri07p,,
+181,Itzcóatl Tonatiuh Bravo Padilla,mc,jal,1,0,,20201216,c1mc01p,,
+182,Iván Arturo Rodríguez Rivera,pan,mex,5,0,,20201216,c5pan01p,,
+183,Jacobo David Cheja Alfaro,mc,mex,5,0,,20201216,c5mc01p,,
+184,Jacquelina Martínez Juárez,pan,zac,2,0,,20201216,c2pan04p,,
+193,Jesús Sergio Alcántara Núñez,pri,mex,5,0,,20201222,c5pvem02p,,
+194,Jorge Alcibíades García Lara,mc,bc,1,0,,20201216,c1mc03p,,
+195,Jorge Ángel Sibaja Mendoza,morena,cps,3,0,,20201217,c3morena11s,,
+198,Jorge Emilio González Martínez,pvem,df,4,0,,20201218,c3pvem01p,,
+199,Jorge Eugenio Russo Salido,mc,son,1,0,,20201216,c1mc05p,,
+200,Jorge Francisco Corona Méndez,pvem,qui,3,0,,20201218,c3pvem01s,,
+202,Jorge Luis Preciado Rodríguez,pan,col,5,0,,20201216,c5pan03p,,
+203,Jorge Romero Herrera,pan,df,4,0,,20201216,c4pan01p,,
+210,José Isabel Trejo Reyes,pan,zac,2,0,,20201216,c2pan03p,,
+217,José Rigoberto Mares Aguilar,pan,bcs,1,0,,20201216,c1pan04p,,
+219,Juana Carrillo Luna,morena,mex,5,0,,20201217,c5morena07p,,
+225,Juan Israel Ramos Ruiz,morena,gua,2,0,,20201217,c2morena05p,,
+230,Juan Ortiz Guarneros,pri,ver,3,0,,20201222,c3pri01p,,
+232,Julieta García Zepeda,morena,mic,5,0,,20201217,c5morena11p,,
+234,Julio Carranza Aréas,morena,ver,3,0,,20201217,c3morena05p,,
+240,Katia Alejandra Castillo Lozano,morena,jal,1,0,,20201217,c1morena13p,,
+242,Laura Angélica Rojas Hernández,pan,mex,5,0,,20201216,c5pan02p,,
+243,Laura Barrera Fortoul,pri,mex,5,0,,20201222,c5pri08p,,
+245,Laura Martínez González,morena,df,4,0,,20201217,c4morena19p,,
+247,Lenin Nelson Campos Córdova,pri,san,2,0,,20201222,c2pri08p,,
+249,Leticia Díaz Aguilar,morena,df,4,0,,20201217,c4morena07p,,
+250,Leticia Mariana Gómez Ordaz,pvem,mex,5,0,,20201218,c5pvem01p,,
+252,Lidia Nallely Vargas Hernández,morena,san,2,0,,20201217,c2morena04p,,
+255,Lizbeth Mata Lozano,pan,bc,1,0,,20201216,c1pan07p,,
+256,Lizeth Amayrani Guerra Méndez,morena,ver,3,0,,20201217,c3morena04p,,
+260,Lourdes Erika Sánchez Martínez,pri,sin,1,0,,20201222,c1pri02p,,
+261,Lucía Flores Olivo,morena,df,4,0,,20201217,c4morena17p,,
+262,Lucinda Sandoval Soberanes,morena,sin,1,0,,20201217,c1morena11p,,
+263,Lucio De Jesús Jiménez,morena,df,4,0,,20201217,c4morena10p,,
+264,Lucio Ernesto Palacios Cordero,morena,df,4,0,,20201217,c4morena08p,,
+266,Luis Eleusis Leónidas Córdova Morán,pri,pue,4,0,,20201222,c4pri06p,,
+268,Luis Enrique Miranda Nava,pri,mex,5,0,,20201222,c5pri03p,,
+269,Luis Javier Alegre Salazar,morena,qui,3,0,,20201217,c3morena09p,,
+270,Luz Estefanía Rosas Martínez,morena,df,4,0,,20201222,c4prd04p,,
+273,Ma. de Jesús García Guardado,morena,zac,2,0,,20201217,c2morena12p,,
+275,Madeleine Bonnafoux Alcaraz,pan,son,1,0,,20201216,c1pan05p,,
+282,Manuel Gómez Ventura,morena,ver,3,0,,20201217,c3morena07p,,
+283,Manuel Huerta Martínez,pt,gue,4,0,,20201215,c4morena14p,,
+284,Manuel López Castillo,morena,son,1,0,,20201222,c1morena16p,,
+286,Marcela Guillermina Velasco González,pri,mex,5,0,,20201222,c5pri04p,,
+288,Marco Antonio Andrade Zavala,morena,cps,3,0,,20201217,c3morena13p,,
+289,Marco Antonio Carbajal Miranda,morena,son,1,0,,20201217,c1morena02p,,
+290,Marco Antonio Gómez Alcantar,pvem,sin,1,0,,20201221,c1pvem02p,,
+291,Marco Antonio González Reyes,morena,mex,5,0,,20201217,c5morena10p,,
+292,Marco Antonio Medina Pérez,morena,ver,3,0,,20201217,c3morena17p,,
+294,Marcos Aguilar Vega,pan,que,2,0,,20201216,c2pan05p,,
+295,Margarita Flores Sánchez,pri,nay,1,0,,20201222,c1pri08p,,
+297,María Alemán Muñoz Castillo,pri,que,2,0,,20201222,c2pri07p,,
+298,María Beatriz López Chávez,morena,df,4,0,,20201217,c4morena01p,,
+300,María Chávez Pérez,morena,mic,5,0,,20201217,c5morena15p,,
+313,María Guadalupe Edith Castañeda Ortíz,morena,mex,5,0,,20201217,c5morena13p,,
+317,María Libier González Anaya,mc,jal,1,0,,20201216,c1mc04p,,
+318,María Liduvina Sandoval Mendoza,pan,col,5,0,,20201216,c5pan04p,,
+319,María Lucero Saldaña Pérez,pri,pue,4,0,,20201222,c4pri01p,,
+320,María Marivel Solís Barrera,morena,hgo,5,0,,20201217,c5morena09s,,
+322,Mariana Rodríguez Mier y Terán,pri,tam,2,0,,20201222,c2pri03p,,
+324,María Teresa López Pérez,morena,jal,1,0,,20201217,c1morena07p,,
+329,Maribel Martínez Ruiz,pt,oax,3,0,,20201215,c3pt01p,,
+335,Martha Angélica Zamudio Macías,mc,jal,1,0,,20201216,c1mc02p,,
+342,Martina Cazarez Yañez,morena,san,2,0,,20201217,c2morena08p,,
+345,Mauricio Alonso Toledo Gutiérrez,pt,df,4,0,,20201217,c4prd03p,,
+346,Maximino Alejandro Candelaria,morena,df,4,0,,20201217,c4morena16p,,
+350,Miguel Ángel Chico Herrera,morena,gua,2,0,,20201217,c2morena03p,,
+352,Miguel Ángel Márquez González,morena,jal,1,0,,20201222,c1morena04p,,
+357,Miroslava Sánchez Galván,morena,coa,2,0,,20201217,c2morena06p,,
+359,Moisés Ignacio Mier Velazco,morena,pue,4,0,,20201217,c4morena06p,,
+360,Mónica Bautista Rodríguez,prd,mex,5,0,,20201218,c5prd02p,,
+363,Nayeli Arlen Fernández Cruz,morena,df,4,0,,20201218,c4pvem02p,,
+367,Nohemí Alemán Hernández,morena,tam,2,0,,20201222,c2pan08p,,
+368,Norma Guel Saldívar,pri,ags,2,0,,20201222,c2pri09p,,
+373,Oscar Daniel Martínez Terrazas,pan,mor,4,0,,20201216,c4pan07p,,
+376,Oscar Jiménez Rayón,pri,mex,5,0,,20201222,c5pri07s,,
+377,Oscar Rafael Novella Macías,morena,zac,2,0,,20201217,c2morena01p,,
+379,Pablo Guillermo Angulo Briceño,pri,cam,3,0,,20201222,c3pri05p,,
+381,Patricia del Carmen De la Cruz Delucio,morena,cps,3,0,,20201217,c3morena02p,,
+382,Patricia Terrazas Baca,pan,cua,1,0,,20201216,c1pan01p,,
+383,Paulo César Juárez Segura,pri,mex,5,0,,20201223,c5pri03s,,
+384,Pedro Daniel Abasolo Sánchez,pt,mex,5,0,,20201221,c5morena02p,,
+385,Pedro Pablo Treviño Villarreal,pri,nl,2,0,,20201222,c2pri02p,,
+386,Pilar Lozano Mac Donald,mc,nl,2,0,,20201216,c2mc01p,,
+387,Porfirio Muñoz Ledo,morena,df,4,0,,20201215,c4morena12p,,
+391,Reginaldo Sandoval Flores,pt,mic,5,0,,20201222,c5pt01p,,
+392,René Juárez Cisneros,pri,gue,4,0,,20201222,c4pri04p,,
+393,Reyna Celeste Ascensio Ortega,morena,mic,5,0,,20201217,c5morena03p,,
+402,Rocío del Pilar Villarauz Martínez,morena,df,4,0,,20201217,c4morena21p,,
+404,Rosalba Valencia Cruz,morena,ver,3,0,,20201217,c3morena14p,,
+407,Rubén Ignacio Moreira Valdez,pri,coa,2,0,,20201218,c2pri04p,,
+409,Ruth Salinas Reyes,mc,mex,5,0,,20201216,c5mc02p,,
+410,Samuel Calderón Medina,pes,mor,4,0,,20201217,c4morena02p,,
+416,Sergio Carlos Gutiérrez Luna,morena,mex,5,0,,20201217,c5morena06s,,
+418,Sergio Pérez Hernández,morena,mex,5,0,,20201217,c5morena08p,,
+419,Silvano Garay Ulloa,pt,tla,4,0,,20201222,c4pt01s,,
+420,Silvia Guadalupe Garza Galván,pan,coa,2,0,,20201216,c2pan10p,,
+422,Socorro Bahena Jiménez,morena,mex,5,0,,20201217,c5morena01p,,
+425,Soraya Pérez Munguía,pri,tab,3,0,,20201222,c3pri04p,,
+426,Susana Beatriz Cuaxiloa Serrano,morena,pue,4,0,,20201217,c4morena11p,,
+427,Susana Cano González,morena,mex,5,0,,20201217,c5morena05p,,
+428,Sylvia Violeta Garfías Cedillo,pan,ags,2,0,,20201216,c2pan06p,,
+429,Teófilo Manuel García Corpus,morena,oax,3,0,,20201222,c3prd02p,,
+434,Verónica Beatriz Juárez Piña,prd,jal,1,0,,20201223,c1prd01p,,
+435,Verónica María Sobrado Rodríguez,pan,pue,4,0,,20201216,c4pan04p,,
+436,Verónica Ramos Cruz,morena,jal,1,0,,20201217,c1morena01p,,
+440,Víctor Blas López,morena,oax,3,0,,20201217,c3morena19p,,
+442,Víctor Manuel Pérez Díaz,pan,nl,2,0,,20201216,c2pan07p,,
+443,Virginia Merino García,morena,oax,3,0,,20201217,c3morena06s,,
+444,Xavier Azuara Zúñiga,pan,san,2,0,,20201216,c2pan09p,,
+445,Ximena Puente De La Mora,pri,col,5,0,,20201222,c5pri06p,,
+448,Zaira Ochoa Valdivia,morena,ver,3,0,,20201217,c3morena12p,,
+449,Zulma Espinoza Mata,pvem,nl,2,0,,20201218,c2pvem02s,,

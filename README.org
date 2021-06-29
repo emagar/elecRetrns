@@ -1,11 +1,11 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
+Last revision: 2021-06-29
+
 
 ----------
 
-Last revision: 2021-06-18
-
-*Letters of intent* of running (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) for reelection now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
+*Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
 
 *Reelection in 2021 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
 
