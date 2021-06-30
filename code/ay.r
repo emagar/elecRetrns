@@ -717,10 +717,11 @@ dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
 colnames(dat)
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-table(dat$v16) # check that only has zeroes
-## # if not, which cases remain? 
-## sel <- which(dat$v15>0)
-## dat[sel,]
+table(dat$v15) # check that only has zeroes
+# if not, which cases remain? 
+#sel <- which(dat$v14>0)
+#dat[sel,]
+dat$v15 <- dat$l15 <- NULL # drop redundant columns
 dat$v16 <- dat$l16 <- dat$v17 <- dat$l17 <- dat$v18 <- dat$l18 <- NULL # drop redundant columns
 dat$win <- dat$l01
 # move win column before v01
