@@ -1,0 +1,747 @@
+ord,edon,ID_MUNICIPIO_LOCAL,mun,PARTIDO_CI,CANDIDATURA_PROPIETARIA,CANDIDATURA_SUPLENTE
+1,12,1,Acapulco de Juárez,PAN,LUISA FERNANDA FONTOVA TORREBLANCA,Luisa Fernanda Fontova Torreblanca
+2,12,1,Acapulco de Juárez,PRI,RICARDO TAJA RAMIREZ,Ricardo Taja Ramirez
+3,12,1,Acapulco de Juárez,PRD,RICARDO TAJA RAMIREZ,Ricardo Taja Ramirez
+4,12,1,Acapulco de Juárez,PT,IGOR ALEJANDRO AGUIRRE VAZQUEZ,Igor Alejandro Aguirre Vazquez
+5,12,1,Acapulco de Juárez,PVEM,ALEJANDRO CARABIAS ICAZA,Alejandro Carabias Icaza
+6,12,1,Acapulco de Juárez,MC,RAMIRO SOLORIO ALMAZAN,Ramiro Solorio Almazan
+7,12,1,Acapulco de Juárez,MORENA,ABELINA LOPEZ RODRIGUEZ,Abelina Lopez Rodriguez
+8,12,1,Acapulco de Juárez,PES,RAUL MAURICIO LEGARRETA MARTINEZ,Raul Mauricio Legarreta Martinez
+9,12,1,Acapulco de Juárez,RSP,PATRICIA MANZANO RESENDIZ,Patricia Manzano Resendiz
+10,12,1,Acapulco de Juárez,FXM,JOSE ALBERTO ALONSO GUTIERREZ,Jose Alberto Alonso Gutierrez
+11,12,1,Acapulco de Juárez,PRI_PRD,RICARDO TAJA RAMIREZ,Ricardo Taja Ramirez
+12,12,2,Ahuacuotzingo,PAN,ANTONIA PAREDES TEJEDA,Antonia Paredes Tejeda
+13,12,2,Ahuacuotzingo,PRI,JACOBO AGUIRRE GARCIA,Jacobo Aguirre Garcia
+14,12,2,Ahuacuotzingo,PRD,GLORINDA CASARRUBIAS NAVA,Glorinda Casarrubias Nava
+15,12,2,Ahuacuotzingo,MORENA,JACINTO PARRA CHAUTLA,Jacinto Parra Chautla
+16,12,2,Ahuacuotzingo,PES,CONSTANTINA SANCHEZ PABLO,Constantina Sanchez Pablo
+17,12,2,Ahuacuotzingo,FXM,ZACARIAS AMBROCIO MOCTEZUMA,Zacarias Ambrocio Moctezuma
+18,12,3,Ajuchitlán del Progreso,PRI,VICTOR HUGO VEGA HERNANDEZ,Victor Hugo Vega Hernandez
+19,12,3,Ajuchitlán del Progreso,PRD,SOLYANET LARA ANTUNEZ,Solyanet Lara Antunez
+20,12,3,Ajuchitlán del Progreso,PT,OMAR SANTAMARIA AVILES,Omar Santamaria Aviles
+21,12,3,Ajuchitlán del Progreso,PVEM,OMAR SANTAMARIA AVILES,Omar Santamaria Aviles
+22,12,3,Ajuchitlán del Progreso,MORENA,HILDA REFUGIO CHAMU,Hilda Refugio Chamu
+23,12,3,Ajuchitlán del Progreso,PES,LIZBETH PEÑALOZA DAMASO,Lizbeth Peñaloza Damaso
+24,12,3,Ajuchitlán del Progreso,FXM,GILDARDO FIGUEROA ROBLES,Gildardo Figueroa Robles
+25,12,3,Ajuchitlán del Progreso,PT_PVEM,OMAR SANTAMARIA AVILES,Omar Santamaria Aviles
+26,12,4,Alcozauca de Guerrero,PRI,TANIA AZUCENA MARTINEZ NAVA,Tania Azucena Martinez Nava
+27,12,4,Alcozauca de Guerrero,PRD,SEBASTIAN ORTIZ SAYAZ,Sebastian Ortiz Sayaz
+28,12,4,Alcozauca de Guerrero,PT,ALFONSO GARCIA ORTEGA,Alfonso Garcia Ortega
+29,12,4,Alcozauca de Guerrero,PVEM,NICOLAS DIEGO HERRERA,Nicolas Diego Herrera
+30,12,4,Alcozauca de Guerrero,MORENA,ABEL CAMPOS ORTEGA,Abel Campos Ortega
+31,12,5,Alpoyeca,PAN,VICENTE POLICARPIO HERNANDEZ,Vicente Policarpio Hernandez
+32,12,5,Alpoyeca,PRI,YARELI ESCAMILLA GOMEZ,Yareli Escamilla Gomez
+33,12,5,Alpoyeca,PRD,OSIEL HUMBERTO GONZALEZ ALMAZAN,Osiel Humberto Gonzalez Almazan
+34,12,5,Alpoyeca,PT,MARCELINA LEAL ESCOBAR,Marcelina Leal Escobar
+35,12,5,Alpoyeca,PVEM,GABRIELA BERISTAIN CERON,Gabriela Beristain Ceron
+36,12,5,Alpoyeca,MC,NELZON GARCIA MORALES,Nelzon Garcia Morales
+37,12,5,Alpoyeca,MORENA,GRACIELA ORTIZ BALTAZAR,Graciela Ortiz Baltazar
+38,12,6,Apaxtla de Castrejón,PRI,TULIO IVAN TELLEZ SILVA,Tulio Ivan Tellez Silva
+39,12,6,Apaxtla de Castrejón,PRD,JUAN SALGADO SANTANA,Juan Salgado Santana
+40,12,6,Apaxtla de Castrejón,PT,GILDARDO VAZQUEZ HERNANDEZ,Gildardo Vazquez Hernandez
+41,12,6,Apaxtla de Castrejón,PVEM,GILDARDO VAZQUEZ HERNANDEZ,Gildardo Vazquez Hernandez
+42,12,6,Apaxtla de Castrejón,MC,DAVID MANJARREZ MIRANDA,David Manjarrez Miranda
+43,12,6,Apaxtla de Castrejón,MORENA,YAMILET ARTEAGA BRITO,Yamilet Arteaga Brito
+44,12,6,Apaxtla de Castrejón,PES,FRANCISCO REYNOSO ERAZO,Francisco Reynoso Erazo
+45,12,6,Apaxtla de Castrejón,PT_PVEM,GILDARDO VAZQUEZ HERNANDEZ,Gildardo Vazquez Hernandez
+46,12,7,Arcelia,PRI,BULMARO TORRES BERRUM,Bulmaro Torres Berrum
+47,12,7,Arcelia,PRD,ZURI SADAI PARAMO FRANCO,Zuri Sadai Paramo Franco
+48,12,7,Arcelia,PT,YESENIA HERNANDEZ MARTINEZ,Yesenia Hernandez Martinez
+49,12,7,Arcelia,PVEM,YESENIA HERNANDEZ MARTINEZ,Yesenia Hernandez Martinez
+50,12,7,Arcelia,MORENA,GILDA GARCIA SALGADO,Gilda Garcia Salgado
+51,12,7,Arcelia,PES,AMANDO SAMANO VEGA,Amando Samano Vega
+52,12,7,Arcelia,PT_PVEM,YESENIA HERNANDEZ MARTINEZ,Yesenia Hernandez Martinez
+53,12,8,Atenango del Río,PRI,ALGIMIRA GONZALEZ MARTINEZ,Algimira Gonzalez Martinez
+54,12,8,Atenango del Río,PRD,ALGIMIRA GONZALEZ MARTINEZ,Algimira Gonzalez Martinez
+55,12,8,Atenango del Río,PT,ENRIQUE MARBAN SANCHEZ,Enrique Marban Sanchez
+56,12,8,Atenango del Río,PVEM,LEOBARDO BARRERAVILLAREAL,Leobardo Barreravillareal
+57,12,8,Atenango del Río,MORENA,KENIA GISELA GONZALEZ BARRERA,Kenia Gisela Gonzalez Barrera
+58,12,8,Atenango del Río,PES,JONATHAN MOISES ENSALDO MUÑOZ,Jonathan Moises Ensaldo Muñoz
+59,12,8,Atenango del Río,FXM,EMMANUEL GUEVARA CARDENAS,Emmanuel Guevara Cardenas
+60,12,8,Atenango del Río,PRI_PRD,ALGIMIRA GONZALEZ MARTINEZ,Algimira Gonzalez Martinez
+61,12,9,Atlamajalcingo del Monte,PRI,NOEL COMONFORT BRUNO,Noel Comonfort Bruno
+62,12,9,Atlamajalcingo del Monte,PRD,MARIA GUZMAN CANO,Maria Guzman Cano
+63,12,9,Atlamajalcingo del Monte,PT,EULALIO MADRID SIMON,Eulalio Madrid Simon
+64,12,9,Atlamajalcingo del Monte,PVEM,AMERICA GABRIELA ROSAS DAMIAN,America Gabriela Rosas Damian
+65,12,9,Atlamajalcingo del Monte,MORENA,CAMILO CANO GUZMAN,Camilo Cano Guzman
+66,12,10,Atlixtac,PAN,REYNA IBARRA VEGA,Reyna Ibarra Vega
+67,12,10,Atlixtac,PRI,LIBRADA VARGAS HERNANDEZ,Librada Vargas Hernandez
+68,12,10,Atlixtac,PRD,LEONARDO MUÑOZ TAPIA,Leonardo Muñoz Tapia
+69,12,10,Atlixtac,PT,RUBY ROMUALDA RODRIGUEZ REYES,Ruby Romualda Rodriguez Reyes
+70,12,10,Atlixtac,PVEM,RUBY ROMUALDA RODRIGUEZ REYES,Ruby Romualda Rodriguez Reyes
+71,12,10,Atlixtac,MC,LUMINOSA VARGAS HERNANDEZ,Luminosa Vargas Hernandez
+72,12,10,Atlixtac,MORENA,ELOY ROSENDO BIBIANO,Eloy Rosendo Bibiano
+73,12,10,Atlixtac,PT_PVEM,RUBY ROMUALDA RODRIGUEZ REYES,Ruby Romualda Rodriguez Reyes
+74,12,11,Atoyac de Álvarez,PAN,SOFIA BENITEZ SALINAS,Sofia Benitez Salinas
+75,12,11,Atoyac de Álvarez,PRI,JOSE ANTONIO GUTIERREZ MARTINEZ,Jose Antonio Gutierrez Martinez
+76,12,11,Atoyac de Álvarez,PRD,JOSE ANTONIO GUTIERREZ MARTINEZ,Jose Antonio Gutierrez Martinez
+77,12,11,Atoyac de Álvarez,PT,KENIA NAZARET LOEZA LAUREL,Kenia Nazaret Loeza Laurel
+78,12,11,Atoyac de Álvarez,PVEM,GUILLERMO ORTEGA CISNEROS,Guillermo Ortega Cisneros
+79,12,11,Atoyac de Álvarez,MC,GUADALUPE NOEL PINO PEREZ,Guadalupe Noel Pino Perez
+80,12,11,Atoyac de Álvarez,MORENA,CLARA ELIZABETH BELLO RIOS,Clara Elizabeth Bello Rios
+81,12,11,Atoyac de Álvarez,PES,GUILLERMO MAGAÑA MONDRAGON,Guillermo Magaña Mondragon
+82,12,11,Atoyac de Álvarez,RSP,BERNARDO NERI BENITEZ,Bernardo Neri Benitez
+83,12,11,Atoyac de Álvarez,PRI_PRD,JOSE ANTONIO GUTIERREZ MARTINEZ,Jose Antonio Gutierrez Martinez
+84,12,13,Azoyú,PAN,GLORIA ALVAREZ JAVIER,Gloria Alvarez Javier
+85,12,13,Azoyú,PRI,LUIS JUSTO BAUTISTA,Luis Justo Bautista
+86,12,13,Azoyú,PRD,LUIS JUSTO BAUTISTA,Luis Justo Bautista
+87,12,13,Azoyú,PT,GUADALUPE JUSTO RODRIGUEZ,Guadalupe Justo Rodriguez
+88,12,13,Azoyú,PVEM,GUADALUPE JUSTO RODRIGUEZ,Guadalupe Justo Rodriguez
+89,12,13,Azoyú,MC,NANCY CLAVEL JUSTO,Nancy Clavel Justo
+90,12,13,Azoyú,MORENA,LETICIA JAVIER MARIN,Leticia Javier Marin
+91,12,13,Azoyú,RSP,SONIA ALVARADO CALIXTO,Sonia Alvarado Calixto
+92,12,13,Azoyú,FXM,LUCINA CRISPIN DE JESUS,Lucina Crispin De Jesus
+93,12,13,Azoyú,PRI_PRD,LUIS JUSTO BAUTISTA,Luis Justo Bautista
+94,12,13,Azoyú,PT_PVEM,GUADALUPE JUSTO RODRIGUEZ,Guadalupe Justo Rodriguez
+95,12,14,Benito Juárez,PAN,DEHYSSI SYMONA CORIA GALEANA,Dehyssi Symona Coria Galeana
+96,12,14,Benito Juárez,PRI,MARTHA PATRICIA GALEANA ROBLES,Martha Patricia Galeana Robles
+97,12,14,Benito Juárez,PRD,MARTHA PATRICIA GALEANA ROBLES,Martha Patricia Galeana Robles
+98,12,14,Benito Juárez,PT,MOISES AVILA ROMAN,Moises Avila Roman
+99,12,14,Benito Juárez,PVEM,LAZARO SANDOVAL NAVA,Lazaro Sandoval Nava
+100,12,14,Benito Juárez,MORENA,GLAFIRA MERAZA PRUDENTE,Glafira Meraza Prudente
+101,12,14,Benito Juárez,PES,FLORENCIA SOLANO ROJAS,Florencia Solano Rojas
+102,12,14,Benito Juárez,FXM,CLEMENTINA HERNANDEZ DE LA CRUZ,Clementina Hernandez De La Cruz
+103,12,14,Benito Juárez,PRI_PRD,MARTHA PATRICIA GALEANA ROBLES,Martha Patricia Galeana Robles
+104,12,15,Buenavista de Cuéllar,PAN,JANETH LANDA ELIZALDE,Janeth Landa Elizalde
+105,12,15,Buenavista de Cuéllar,PRI,MA. CRISTINA NIETO URIBE,Ma. Cristina Nieto Uribe
+106,12,15,Buenavista de Cuéllar,PRD,MA. CRISTINA NIETO URIBE,Ma. Cristina Nieto Uribe
+107,12,15,Buenavista de Cuéllar,PT,RUBEN SALGADO ALEMAN,Ruben Salgado Aleman
+108,12,15,Buenavista de Cuéllar,PVEM,ROCIO MORENO CARDENAS,Rocio Moreno Cardenas
+109,12,15,Buenavista de Cuéllar,MC,EVELYN LANDA ABARCA,Evelyn Landa Abarca
+110,12,15,Buenavista de Cuéllar,MORENA,ANA LILIA BOTELLO FIGUEROA,Ana Lilia Botello Figueroa
+111,12,15,Buenavista de Cuéllar,PES,VELIA GUTIERREZ AVILEZ,Velia Gutierrez Avilez
+112,12,15,Buenavista de Cuéllar,RSP,HUGO AMADO PERALTA OCAMPO,Hugo Amado Peralta Ocampo
+113,12,15,Buenavista de Cuéllar,FXM,MA. DOLORES NAVA BENITEZ,Ma. Dolores Nava Benitez
+114,12,15,Buenavista de Cuéllar,PRI_PRD,MA. CRISTINA NIETO URIBE,Ma. Cristina Nieto Uribe
+115,12,16,Coahuayutla de José María Izazaga,PAN,JOSE CASIMIRO BASURTO CORREA,Jose Casimiro Basurto Correa
+116,12,16,Coahuayutla de José María Izazaga,PRI,MA. DE JESUS LEYVA BUSTOS,Ma. De Jesus Leyva Bustos
+117,12,16,Coahuayutla de José María Izazaga,PRD,MA. DE JESUS LEYVA BUSTOS,Ma. De Jesus Leyva Bustos
+118,12,16,Coahuayutla de José María Izazaga,PT,PABLO REYES ZARCO,Pablo Reyes Zarco
+119,12,16,Coahuayutla de José María Izazaga,PVEM,MARIA CRUZ AYALA HUATO,Maria Cruz Ayala Huato
+120,12,16,Coahuayutla de José María Izazaga,MC,MARINA LEMUS LOPEZ,Marina Lemus Lopez
+121,12,16,Coahuayutla de José María Izazaga,MORENA,RAFAEL MARTINEZ RAMIREZ,Rafael Martinez Ramirez
+122,12,16,Coahuayutla de José María Izazaga,PES,NADIA ZUREIBI NUÑEZ PEÑALOZA,Nadia Zureibi Nuñez Peñaloza
+123,12,16,Coahuayutla de José María Izazaga,PRI_PRD,MA. DE JESUS LEYVA BUSTOS,Ma. De Jesus Leyva Bustos
+124,12,17,Cocula,PRI,SODIA MARTIZA SALGADO REYES,Sodia Martiza Salgado Reyes
+125,12,17,Cocula,PRD,JACOBO GUADARRAMA OCAMPO,Jacobo Guadarrama Ocampo
+126,12,17,Cocula,PT,ELSA MORALES PANTALEON,Elsa Morales Pantaleon
+127,12,17,Cocula,PVEM,ELSA MORALES PANTALEON,Elsa Morales Pantaleon
+128,12,17,Cocula,MC,ERIK ULISES RAMIREZ CRESPO,Erik Ulises Ramirez Crespo
+129,12,17,Cocula,MORENA,CARLOS ALBERTO DUARTE BAHENA,Carlos Alberto Duarte Bahena
+130,12,17,Cocula,PT_PVEM,ELSA MORALES PANTALEON,Elsa Morales Pantaleon
+131,12,18,Copala,PAN,LEOVA GARCIA LORENZO,Leova Garcia Lorenzo
+132,12,18,Copala,PRI,MARIA DEL CARMEN VENTURA PRUDENTE,Maria Del Carmen Ventura Prudente
+133,12,18,Copala,PRD,GUADALUPE GARCIA VILLALVA,Guadalupe Garcia Villalva
+134,12,18,Copala,PT,JESUS GONZALEZ RIOS,Jesus Gonzalez Rios
+135,12,18,Copala,PVEM,JESUS GONZALEZ RIOS,Jesus Gonzalez Rios
+136,12,18,Copala,MORENA,XOCHITL POBLETE MENDOZA,Xochitl Poblete Mendoza
+137,12,18,Copala,PES,CRISTINA AGUILAR PIZA,Cristina Aguilar Piza
+138,12,18,Copala,RSP,BLANCA ESTELA MEJIA BELTRAN,Blanca Estela Mejia Beltran
+139,12,18,Copala,PT_PVEM,JESUS GONZALEZ RIOS,Jesus Gonzalez Rios
+140,12,19,Copalillo,PAN,JULIAN CASTRO SANTOS,Julian Castro Santos
+141,12,19,Copalillo,PRI,REYNA CASTRO BUENO,Reyna Castro Bueno
+142,12,19,Copalillo,PRD,REYNA CASTRO BUENO,Reyna Castro Bueno
+143,12,19,Copalillo,PT,SOTERO SANCHEZ BELLO,Sotero Sanchez Bello
+144,12,19,Copalillo,PVEM,GETULIO RAMIREZ CHINO,Getulio Ramirez Chino
+145,12,19,Copalillo,MC,JOSUE DIAZ GONZALEZ,Josue Diaz Gonzalez
+146,12,19,Copalillo,MORENA,AIDA BOBADILLA PALACIOS,Aida Bobadilla Palacios
+147,12,19,Copalillo,PES,JULIO CESAR ROSAS RAMIREZ,Julio Cesar Rosas Ramirez
+148,12,19,Copalillo,RSP,JESUS LINARES TRINIDAD,Jesus Linares Trinidad
+149,12,19,Copalillo,FXM,SERGIO CENOBIO MORALES,Sergio Cenobio Morales
+150,12,19,Copalillo,PRI_PRD,REYNA CASTRO BUENO,Reyna Castro Bueno
+151,12,20,Copanatoyac,PAN,ANGELA CANTU MORALES,Angela Cantu Morales
+152,12,20,Copanatoyac,PRI,ELEUTERIO REYES CALLEJA,Eleuterio Reyes Calleja
+153,12,20,Copanatoyac,PRD,ALBERTO ESPINOBARROS BONILLA,Alberto Espinobarros Bonilla
+154,12,20,Copanatoyac,PT,ROSALVA VARGAS BARRAGAN,Rosalva Vargas Barragan
+155,12,20,Copanatoyac,PVEM,ROSALVA VARGAS BARRAGAN,Rosalva Vargas Barragan
+156,12,20,Copanatoyac,MORENA,ABELINA TORRES MERCED,Abelina Torres Merced
+157,12,20,Copanatoyac,PT_PVEM,ROSALVA VARGAS BARRAGAN,Rosalva Vargas Barragan
+158,12,21,Coyuca de Benítez,PAN,ARTURO RIOS MORALES,Arturo Rios Morales
+159,12,21,Coyuca de Benítez,PRI,RAMIRO AVILA MORALES,Ramiro Avila Morales
+160,12,21,Coyuca de Benítez,PRD,ALBERTO DE LOS SANTOS DIAZ,Alberto De Los Santos Diaz
+161,12,21,Coyuca de Benítez,PT,CAYETANO DORANTES PASTOR,Cayetano Dorantes Pastor
+162,12,21,Coyuca de Benítez,MC,LUZ DEL CARMEN CORTEZ CEDEÑO,Luz Del Carmen Cortez Cedeño
+163,12,21,Coyuca de Benítez,MORENA,OSSIEL PACHECO SALAS,Ossiel Pacheco Salas
+164,12,21,Coyuca de Benítez,PES,JOSE DE JESUS QUEVEDO CABRERA,Jose De Jesus Quevedo Cabrera
+165,12,21,Coyuca de Benítez,RSP,LUIS LLANES LEON,Luis Llanes Leon
+166,12,21,Coyuca de Benítez,FXM,JUDITH TELLEZ NUÑEZ,Judith Tellez Nuñez
+167,12,22,Coyuca de Catalán,PRI,EUSEBIO ECHEVERRIA TABARES,Eusebio Echeverria Tabares
+168,12,22,Coyuca de Catalán,PRD,EUSEBIO ECHEVERRIA TABARES,Eusebio Echeverria Tabares
+169,12,22,Coyuca de Catalán,PT,IRERI CORAL NUÑEZ BERNACHE,Ireri Coral Nuñez Bernache
+170,12,22,Coyuca de Catalán,PVEM,IRERI CORAL NUÑEZ BERNACHE,Ireri Coral Nuñez Bernache
+171,12,22,Coyuca de Catalán,MORENA,CARLOS JIMENEZ TAMAYO,Carlos Jimenez Tamayo
+172,12,22,Coyuca de Catalán,PES,FLOR DEL CARMEN NERVIÑO CALVO,Flor Del Carmen Nerviño Calvo
+173,12,22,Coyuca de Catalán,RSP,LIZETH GUADALUPE ROMERO GARCIA,Lizeth Guadalupe Romero Garcia
+174,12,22,Coyuca de Catalán,FXM,ELIUPTER ARZATE NUÑEZ,Eliupter Arzate Nuñez
+175,12,22,Coyuca de Catalán,PRI_PRD,EUSEBIO ECHEVERRIA TABARES,Eusebio Echeverria Tabares
+176,12,22,Coyuca de Catalán,PT_PVEM,IRERI CORAL NUÑEZ BERNACHE,Ireri Coral Nuñez Bernache
+177,12,23,Cuajinicuilapa,PAN,DORA LUZ RAMOS BERNARDINO,Dora Luz Ramos Bernardino
+178,12,23,Cuajinicuilapa,PRI,LORENA QUITERIO RUIZ,Lorena Quiterio Ruiz
+179,12,23,Cuajinicuilapa,PRD,LORENA QUITERIO RUIZ,Lorena Quiterio Ruiz
+180,12,23,Cuajinicuilapa,PT,MADRID MARIA ZAMORA CABRERA,Madrid Maria Zamora Cabrera
+181,12,23,Cuajinicuilapa,PVEM,EDGARDO MIGUEL PAZ ROJAS,Edgardo Miguel Paz Rojas
+182,12,23,Cuajinicuilapa,MC,IRINEO LOYA FLORES,Irineo Loya Flores
+183,12,23,Cuajinicuilapa,MORENA,EVANGELINA INES SALINAS ROJAS,Evangelina Ines Salinas Rojas
+184,12,23,Cuajinicuilapa,FXM,SANDRA LUZ BRACAMONTES COLON,Sandra Luz Bracamontes Colon
+185,12,23,Cuajinicuilapa,PRI_PRD,LORENA QUITERIO RUIZ,Lorena Quiterio Ruiz
+186,12,24,Cualác,PAN,MARIA URSULA MAGDALENA DE JESUS MAXIMO,Maria Ursula Magdalena De Jesus Maximo
+187,12,24,Cualác,PRI,HAZAEL ABURTO ORTEGA,Hazael Aburto Ortega
+188,12,24,Cualác,PRD,PETRA VAZQUEZ ORTEGA,Petra Vazquez Ortega
+189,12,24,Cualác,PT,EUGENIO CORNELIO GARCIA MEZA,Eugenio Cornelio Garcia Meza
+190,12,24,Cualác,PVEM,JOSE LUIS ABURTO ZARATE,Jose Luis Aburto Zarate
+191,12,24,Cualác,MORENA,ANA MARIA NAVARRETE GARCIA,Ana Maria Navarrete Garcia
+192,12,24,Cualác,FXM,MARÍA MANUELA AQUINO FLORES,María Manuela Aquino Flores
+193,12,25,Cuautepec,PRI,EDEL CHONA MORALES,Edel Chona Morales
+194,12,25,Cuautepec,PRD,CESAR IVAN PEREZVARGAS RIOS,Cesar Ivan Perezvargas Rios
+195,12,25,Cuautepec,PT,MARINA JOAQUINA RIZO,Marina Joaquina Rizo
+196,12,25,Cuautepec,PVEM,ARQUIMEDES QUINTERO DIAZ,Arquimedes Quintero Diaz
+197,12,25,Cuautepec,MC,JOSEFINA MOCTEZUMA VINIEGRA,Josefina Moctezuma Viniegra
+198,12,25,Cuautepec,MORENA,NAPOLEON HERNANDEZ GARIBO,Napoleon Hernandez Garibo
+199,12,25,Cuautepec,PES,CECILA ALICIA ANDRACA GARCIA,Cecila Alicia Andraca Garcia
+200,12,25,Cuautepec,RSP,JORGE DOMINGUEZ TRUJILLO,Jorge Dominguez Trujillo
+201,12,25,Cuautepec,FXM,SANDRELI ORTEGA ESTRADA,Sandreli Ortega Estrada
+202,12,26,Cuetzala del Progreso,PRI,ALBERTA ARTEAGA LUNA,Alberta Arteaga Luna
+203,12,26,Cuetzala del Progreso,PRD,SALVADOR LUGARDA MATIAS,Salvador Lugarda Matias
+204,12,26,Cuetzala del Progreso,PT,OLGA LIDIA SALGADO CASTILLO,Olga Lidia Salgado Castillo
+205,12,26,Cuetzala del Progreso,PVEM,OLGA LIDIA SALGADO CASTILLO,Olga Lidia Salgado Castillo
+206,12,26,Cuetzala del Progreso,MORENA,ELIZABETH MENDOZA DAMACIO,Elizabeth Mendoza Damacio
+207,12,26,Cuetzala del Progreso,RSP,LUCIO ARTURO PADILLA DIAZ,Lucio Arturo Padilla Diaz
+208,12,26,Cuetzala del Progreso,PT_PVEM,OLGA LIDIA SALGADO CASTILLO,Olga Lidia Salgado Castillo
+209,12,27,Cutzamala de Pinzón,PRI,ROSA JAIMES LOPEZ,Rosa Jaimes Lopez
+210,12,27,Cutzamala de Pinzón,PRD,DAMARIS DOMINGUEZ RODRIGUEZ,Damaris Dominguez Rodriguez
+211,12,27,Cutzamala de Pinzón,PT,RUBI SANTOS BENITEZ,Rubi Santos Benitez
+212,12,27,Cutzamala de Pinzón,PVEM,RUBI SANTOS BENITEZ,Rubi Santos Benitez
+213,12,27,Cutzamala de Pinzón,MC,MARILU MARTINEZ NUÑEZ,Marilu Martinez Nuñez
+214,12,27,Cutzamala de Pinzón,MORENA,MARTIN APARICIO CALIXTO,Martin Aparicio Calixto
+215,12,27,Cutzamala de Pinzón,PT_PVEM,RUBI SANTOS BENITEZ,Rubi Santos Benitez
+216,12,28,Chilapa de Alvarez,PAN,CRISTINO TEPEQUILLO SOLIS,Cristino Tepequillo Solis
+217,12,28,Chilapa de Alvarez,PRI,ALDY ESTEBAN ROMAN,Aldy Esteban Roman
+218,12,28,Chilapa de Alvarez,PRD,JOB ENCARNACION CUENCA,Job Encarnacion Cuenca
+219,12,28,Chilapa de Alvarez,PT,BLANCA FLOR NAVA GARCIA,Blanca Flor Nava Garcia
+220,12,28,Chilapa de Alvarez,PVEM,MARIA ELENA GUTIERREZ SILVA,Maria Elena Gutierrez Silva
+221,12,28,Chilapa de Alvarez,MC,ROCIO DIEGO HERNANDEZ,Rocio Diego Hernandez
+222,12,28,Chilapa de Alvarez,MORENA,JOSE MUÑIZ CASARRUBIAS,Jose Muñiz Casarrubias
+223,12,28,Chilapa de Alvarez,PES,CAROLINA LIMONTECO LUCIANO,Carolina Limonteco Luciano
+224,12,28,Chilapa de Alvarez,RSP,DANIELA RAMIREZ SILVESTRE,Daniela Ramirez Silvestre
+225,12,28,Chilapa de Alvarez,FXM,JOAQUINA PINEDA SILVA,Joaquina Pineda Silva
+226,12,29,Chilpancingo de Los Bravo,PAN,GUSTAVO ALARCON HERRERA,Gustavo Alarcon Herrera
+227,12,29,Chilpancingo de Los Bravo,PRI,ALEJANDRO ARCOS CATALAN,Alejandro Arcos Catalan
+228,12,29,Chilpancingo de Los Bravo,PRD,ALEJANDRO ARCOS CATALAN,Alejandro Arcos Catalan
+229,12,29,Chilpancingo de Los Bravo,PT,FATIMA ARELI CARBAJAL SANCHEZ,Fatima Areli Carbajal Sanchez
+230,12,29,Chilpancingo de Los Bravo,PVEM,JOSE ALBERTO SANTOS GARCIA,Jose Alberto Santos Garcia
+231,12,29,Chilpancingo de Los Bravo,MC,PIOQUINTO DAMIAN HUATO,Pioquinto Damian Huato
+232,12,29,Chilpancingo de Los Bravo,MORENA,NORMA OTILIA HERNANDEZ MARTINEZ,Norma Otilia Hernandez Martinez
+233,12,29,Chilpancingo de Los Bravo,PES,REGISTRO CANCELADO,Registro Cancelado
+234,12,29,Chilpancingo de Los Bravo,RSP,NELLYDA PETATAN CALLEJA,Nellyda Petatan Calleja
+235,12,29,Chilpancingo de Los Bravo,FXM,ERIKA SALINAS VALADEZ,Erika Salinas Valadez
+236,12,29,Chilpancingo de Los Bravo,PRI_PRD,ALEJANDRO ARCOS CATALAN,Alejandro Arcos Catalan
+237,12,30,Eduardo Neri,PAN,ANDRES RODRIGUEZ RIOS,Andres Rodriguez Rios
+238,12,30,Eduardo Neri,PRI,PABLO HIGUERA FUENTES,Pablo Higuera Fuentes
+239,12,30,Eduardo Neri,PRD,PABLO HIGUERA FUENTES,Pablo Higuera Fuentes
+240,12,30,Eduardo Neri,PT,SARA SALINAS BRAVO,Sara Salinas Bravo
+241,12,30,Eduardo Neri,MORENA,MA. GADALUPE DELOYA BELLO,Ma. Gadalupe Deloya Bello
+242,12,30,Eduardo Neri,RSP,CRISTIAN ELIZABETH PERALTA HERNANDEZ,Cristian Elizabeth Peralta Hernandez
+243,12,30,Eduardo Neri,PRI_PRD,PABLO HIGUERA FUENTES,Pablo Higuera Fuentes
+244,12,31,Florencio Villarreal,PRI,FLOR BERNAL GARIBO,Flor Bernal Garibo
+245,12,31,Florencio Villarreal,PRD,RODRIGO PAVON GALLARDO,Rodrigo Pavon Gallardo
+246,12,31,Florencio Villarreal,PT,MARGARITA NATHALIE FLORES LARUMBE,Margarita Nathalie Flores Larumbe
+247,12,31,Florencio Villarreal,PVEM,VIRGILIA PALACIOS GUTIERREZ,Virgilia Palacios Gutierrez
+248,12,31,Florencio Villarreal,MC,VALENCIA SANTIAGO CANTU,Valencia Santiago Cantu
+249,12,31,Florencio Villarreal,MORENA,RAFAEL RAMIREZ AVILEZ,Rafael Ramirez Avilez
+250,12,31,Florencio Villarreal,PES,SULEYDI FELIPE RODRIGUEZ,Suleydi Felipe Rodriguez
+251,12,31,Florencio Villarreal,FXM,LUIS ANTONIO MALDONADO CAYETANO,Luis Antonio Maldonado Cayetano
+252,12,32,General Canuto A. Neri,PAN,MARIA APOLINAR RODRIGUEZ MORALES,Maria Apolinar Rodriguez Morales
+253,12,32,General Canuto A. Neri,PRI,RUBICELIA MELQUIADES GIL,Rubicelia Melquiades Gil
+254,12,32,General Canuto A. Neri,PRD,RUBICELIA MELQUIADES GIL,Rubicelia Melquiades Gil
+255,12,32,General Canuto A. Neri,PT,RUBICELIA BUSTOS FIGUEROA,Rubicelia Bustos Figueroa
+256,12,32,General Canuto A. Neri,PVEM,RUBICELIA BUSTOS FIGUEROA,Rubicelia Bustos Figueroa
+257,12,32,General Canuto A. Neri,MC,ZESAR ORTIZ TORRES,Zesar Ortiz Torres
+258,12,32,General Canuto A. Neri,MORENA,ALMA ROSA RODRIGUEZ,Alma Rosa Rodriguez
+259,12,32,General Canuto A. Neri,PRI_PRD,RUBICELIA MELQUIADES GIL,Rubicelia Melquiades Gil
+260,12,32,General Canuto A. Neri,PT_PVEM,RUBICELIA BUSTOS FIGUEROA,Rubicelia Bustos Figueroa
+261,12,33,General Heliodoro Castillo,PAN,GENARO MOTA LOPEZ,Genaro Mota Lopez
+262,12,33,General Heliodoro Castillo,PRI,SERAFIN HERNANDEZ LANDA,Serafin Hernandez Landa
+263,12,33,General Heliodoro Castillo,PRD,MA. DE JESUS ORTIZ BRAVO,Ma. De Jesus Ortiz Bravo
+264,12,33,General Heliodoro Castillo,PT,CLEMENTINA DIAZ PASCUAL,Clementina Diaz Pascual
+265,12,33,General Heliodoro Castillo,PVEM,CLEMENTINA DIAZ PASCUAL,Clementina Diaz Pascual
+266,12,33,General Heliodoro Castillo,MC,OMAR CRUZ ALVARADO,Omar Cruz Alvarado
+267,12,33,General Heliodoro Castillo,MORENA,MA. GUADALUPE MOZO MARQUEZ,Ma. Guadalupe Mozo Marquez
+268,12,33,General Heliodoro Castillo,PT_PVEM,CLEMENTINA DIAZ PASCUAL,Clementina Diaz Pascual
+269,12,34,Huamuxtitlán,PRI,SOLEDAD ROMERO ESPINAL,Soledad Romero Espinal
+270,12,34,Huamuxtitlán,PRD,SOLEDAD ROMERO ESPINAL,Soledad Romero Espinal
+271,12,34,Huamuxtitlán,PT,ELIDETH GARCIA VISOSO,Elideth Garcia Visoso
+272,12,34,Huamuxtitlán,PVEM,CECILIO LEANDRO GARCIA ACEVEDO,Cecilio Leandro Garcia Acevedo
+273,12,34,Huamuxtitlán,MC,ELPIDIO NAVA RODRIGUEZ,Elpidio Nava Rodriguez
+274,12,34,Huamuxtitlán,MORENA,AURELIO MENDEZ ROSALES,Aurelio Mendez Rosales
+275,12,34,Huamuxtitlán,RSP,ROGELIO ANTONIO RIVERA,Rogelio Antonio Rivera
+276,12,34,Huamuxtitlán,PRI_PRD,SOLEDAD ROMERO ESPINAL,Soledad Romero Espinal
+277,12,35,Huitzuco de los Figueroa,PAN,LORENA MARBAN ASTUDILLO,Lorena Marban Astudillo
+278,12,35,Huitzuco de los Figueroa,PRI,HECTOR OCAMPO ARCOS,Hector Ocampo Arcos
+279,12,35,Huitzuco de los Figueroa,PRD,LISBETH ROBLES OCAMPO,Lisbeth Robles Ocampo
+280,12,35,Huitzuco de los Figueroa,PT,MAYORICO LOPEZ ESTRADA,Mayorico Lopez Estrada
+281,12,35,Huitzuco de los Figueroa,PVEM,ADOLFO VELAZQUEZ ARCOS,Adolfo Velazquez Arcos
+282,12,35,Huitzuco de los Figueroa,MORENA,EDER NAJERA NAJERA,Eder Najera Najera
+283,12,35,Huitzuco de los Figueroa,PES,ANA OLIVIA CASTRO ZEQUEIRA,Ana Olivia Castro Zequeira
+284,12,35,Huitzuco de los Figueroa,RSP,MA. SOLEDAD ENRIQUEZ PEREZ,Ma. Soledad Enriquez Perez
+285,12,35,Huitzuco de los Figueroa,FXM,EFIGENIA RIQUELME ALCOCER,Efigenia Riquelme Alcocer
+286,12,36,Iguala de la Independencia,PAN,MARIA DEL ROSARIO BUSTILLOS MUÑOZ,Maria Del Rosario Bustillos Muñoz
+287,12,36,Iguala de la Independencia,PRI,DAVID GAMA PEREZ,David Gama Perez
+288,12,36,Iguala de la Independencia,PRD,DAVID GAMA PEREZ,David Gama Perez
+289,12,36,Iguala de la Independencia,PT,ERIK CATALAN RENDON,Erik Catalan Rendon
+290,12,36,Iguala de la Independencia,PVEM,ERIK CATALAN RENDON,Erik Catalan Rendon
+291,12,36,Iguala de la Independencia,MC,KAREN GETZAMANY SERRANO TOLEDO,Karen Getzamany Serrano Toledo
+292,12,36,Iguala de la Independencia,MORENA,ANTONIO SALVADOR JAIMES HERRERA,Antonio Salvador Jaimes Herrera
+293,12,36,Iguala de la Independencia,PES,LEONEL GALLEGOS LOME,Leonel Gallegos Lome
+294,12,36,Iguala de la Independencia,RSP,GABRIEL DIAZ HERNANDEZ,Gabriel Diaz Hernandez
+295,12,36,Iguala de la Independencia,FXM,DANIEL FIGUEROA PALACIOS,Daniel Figueroa Palacios
+296,12,36,Iguala de la Independencia,PRI_PRD,DAVID GAMA PEREZ,David Gama Perez
+297,12,36,Iguala de la Independencia,PT_PVEM,ERIK CATALAN RENDON,Erik Catalan Rendon
+298,12,37,Igualapa,PRI,MARIA VAZQUEZ CANO,Maria Vazquez Cano
+299,12,37,Igualapa,PRD,OMAR GONZALEZ ALVAREZ,Omar Gonzalez Alvarez
+300,12,37,Igualapa,PT,QUEREN VAZQUEZ PEREZ,Queren Vazquez Perez
+301,12,37,Igualapa,PVEM,APOLONIO ALVAREZ MONTES,Apolonio Alvarez Montes
+302,12,37,Igualapa,MORENA,ALFREDO GONZALEZ NICOLAS,Alfredo Gonzalez Nicolas
+303,12,38,Ixcateopan de Cuauhtémoc,PRI,ESMERALDA MORALES RODRIGUEZ,Esmeralda Morales Rodriguez
+304,12,38,Ixcateopan de Cuauhtémoc,PRD,NAUCELIA CASTILLO BAUTISTA,Naucelia Castillo Bautista
+305,12,38,Ixcateopan de Cuauhtémoc,PT,MA. CRISTINA DOMINGUEZ GARCIA,Ma. Cristina Dominguez Garcia
+306,12,38,Ixcateopan de Cuauhtémoc,PVEM,MA. CRISTINA DOMINGUEZ GARCIA,Ma. Cristina Dominguez Garcia
+307,12,38,Ixcateopan de Cuauhtémoc,MORENA,CUAUHTEMOC BARRERA TREVIÑO,Cuauhtemoc Barrera Treviño
+308,12,38,Ixcateopan de Cuauhtémoc,PT_PVEM,MA. CRISTINA DOMINGUEZ GARCIA,Ma. Cristina Dominguez Garcia
+309,12,39,Zihuatanejo de Azueta,PAN,JUAN CARLOS OLMOS VALENCIA,Juan Carlos Olmos Valencia
+310,12,39,Zihuatanejo de Azueta,PRI,JORGE SANCHEZ ALLEC,Jorge Sanchez Allec
+311,12,39,Zihuatanejo de Azueta,PRD,JORGE SANCHEZ ALLEC,Jorge Sanchez Allec
+312,12,39,Zihuatanejo de Azueta,PT,JOSE JAVIER MEDEL BUSTOS,Jose Javier Medel Bustos
+313,12,39,Zihuatanejo de Azueta,PVEM,BEATRIZ ALICIA LOPEZ PEREZ,Beatriz Alicia Lopez Perez
+314,12,39,Zihuatanejo de Azueta,MC,YOANA LEYVA NARIO,Yoana Leyva Nario
+315,12,39,Zihuatanejo de Azueta,MORENA,MA. DEL CARMEN CABREA LAGUNAS,Ma. Del Carmen Cabrea Lagunas
+316,12,39,Zihuatanejo de Azueta,PES,JAVIER MIRALRIO GARCIA,Javier Miralrio Garcia
+317,12,39,Zihuatanejo de Azueta,FXM,ANDREA PEREZ BUENROSTRO,Andrea Perez Buenrostro
+318,12,39,Zihuatanejo de Azueta,PRI_PRD,JORGE SANCHEZ ALLEC,Jorge Sanchez Allec
+319,12,40,Juan R. Escudero,PAN,EDUARDO ARMANDO MAYA NAVA,Eduardo Armando Maya Nava
+320,12,40,Juan R. Escudero,PRI,DIANA CAROLINA COSTILLA VILLANUEVA,Diana Carolina Costilla Villanueva
+321,12,40,Juan R. Escudero,PRD,ISRAEL HERNANDEZ ESPINOSA,Israel Hernandez Espinosa
+322,12,40,Juan R. Escudero,PT,SELEDONIO BELLO CIENFUEGOS,Seledonio Bello Cienfuegos
+323,12,40,Juan R. Escudero,PVEM,GUSTAVO GATICA NAVARRETE,Gustavo Gatica Navarrete
+324,12,40,Juan R. Escudero,MC,LEYLANI DE LA CRUZ HIPOLITO,Leylani De La Cruz Hipolito
+325,12,40,Juan R. Escudero,MORENA,RUTH ALINE DELGADO BAHENA,Ruth Aline Delgado Bahena
+326,12,40,Juan R. Escudero,PES,ARIANNA SADAY ANGEL GARCIA,Arianna Saday Angel Garcia
+327,12,40,Juan R. Escudero,RSP,MA. DE JESUS EMIGDIO ALVAREZ,Ma. De Jesus Emigdio Alvarez
+328,12,40,Juan R. Escudero,FXM,RENE ALVAREZ ZACARIAZ,Rene Alvarez Zacariaz
+329,12,41,Leonardo Bravo,PAN,JORGE SAUL VILLA ADAME,Jorge Saul Villa Adame
+330,12,41,Leonardo Bravo,PRI,MA. DEL SOCORRO CERON ALARCON,Ma. Del Socorro Ceron Alarcon
+331,12,41,Leonardo Bravo,PRD,NATIVIDAD ROMERO MADORA,Natividad Romero Madora
+332,12,41,Leonardo Bravo,PT,ALICIA VELEZ ALARCON,Alicia Velez Alarcon
+333,12,41,Leonardo Bravo,MC,VIRGINIA MARINO MALDONADO,Virginia Marino Maldonado
+334,12,41,Leonardo Bravo,MORENA,LIDIA AVILA VELEZ,Lidia Avila Velez
+335,12,41,Leonardo Bravo,RSP,RUPERTO PACHECO VEGA,Ruperto Pacheco Vega
+336,12,41,Leonardo Bravo,FXM,CANDIDATO 505,Candidato 505
+337,12,42,Malinaltepec,PAN,CONCEPCION RUIZ CANTU,Concepcion Ruiz Cantu
+338,12,42,Malinaltepec,PRI,EFREN LOPEZ HERNANDEZ,Efren Lopez Hernandez
+339,12,42,Malinaltepec,PRD,EFREN LOPEZ HERNANDEZ,Efren Lopez Hernandez
+340,12,42,Malinaltepec,PT,LUIS GARCIA BERNARDINO,Luis Garcia Bernardino
+341,12,42,Malinaltepec,PVEM,LUIS GARCIA BERNARDINO,Luis Garcia Bernardino
+342,12,42,Malinaltepec,MC,HECTOR TORRES SOLANO,Hector Torres Solano
+343,12,42,Malinaltepec,MORENA,ABEL BRUNO ARRIAGA,Abel Bruno Arriaga
+344,12,42,Malinaltepec,PES,ACASIO FLORES GUERRERO,Acasio Flores Guerrero
+345,12,42,Malinaltepec,PRI_PRD,EFREN LOPEZ HERNANDEZ,Efren Lopez Hernandez
+346,12,42,Malinaltepec,PT_PVEM,LUIS GARCIA BERNARDINO,Luis Garcia Bernardino
+347,12,43,Mártir de Cuilapan,PAN,ROSA ARELY GUTIERREZ TEZOPTITLAN,Rosa Arely Gutierrez Tezoptitlan
+348,12,43,Mártir de Cuilapan,PRI,JENNY GONZALEZ OCAMPO,Jenny Gonzalez Ocampo
+349,12,43,Mártir de Cuilapan,PRD,JENNY GONZALEZ OCAMPO,Jenny Gonzalez Ocampo
+350,12,43,Mártir de Cuilapan,PT,EDITA IVON NAVA SANCHEZ,Edita Ivon Nava Sanchez
+351,12,43,Mártir de Cuilapan,PVEM,CLARA ALVAREZ FISCAL,Clara Alvarez Fiscal
+352,12,43,Mártir de Cuilapan,MC,FELICITAS MUÑIZ GOMEZ,Felicitas Muñiz Gomez
+353,12,43,Mártir de Cuilapan,MORENA,ELEUTERIO VILLEGAS CARLOS,Eleuterio Villegas Carlos
+354,12,43,Mártir de Cuilapan,PES,LEOPOLDO MUÑIZ NAVA,Leopoldo Muñiz Nava
+355,12,43,Mártir de Cuilapan,RSP,ESTEBAN TORRES NAVA,Esteban Torres Nava
+356,12,43,Mártir de Cuilapan,PRI_PRD,JENNY GONZALEZ OCAMPO,Jenny Gonzalez Ocampo
+357,12,44,Metlatónoc,PRI,ELOY VILLANUEVA MORENO,Eloy Villanueva Moreno
+358,12,44,Metlatónoc,PRD,CLAUDIA ROZALEZ GUERRERO,Claudia Rozalez Guerrero
+359,12,44,Metlatónoc,PT,IDELFONSO MONTEALEGRE VAZQUEZ,Idelfonso Montealegre Vazquez
+360,12,44,Metlatónoc,MC,ROGELIO ROJAS SAAVEDRA,Rogelio Rojas Saavedra
+361,12,44,Metlatónoc,MORENA,ZEFERINO VILLANUEVA GALINDO,Zeferino Villanueva Galindo
+362,12,44,Metlatónoc,PES,ISABEL VILLEGAS LOPEZ,Isabel Villegas Lopez
+363,12,45,Mochitlán,PRI,LUCESITA SANCHEZ REYES,Lucesita Sanchez Reyes
+364,12,45,Mochitlán,PRD,LUCESITA SANCHEZ REYES,Lucesita Sanchez Reyes
+365,12,45,Mochitlán,PT,CARLOS MILLAN VEGA,Carlos Millan Vega
+366,12,45,Mochitlán,PVEM,GERARDO MOSSO LOPEZ,Gerardo Mosso Lopez
+367,12,45,Mochitlán,MC,CANDIDATO 528,Candidato 528
+368,12,45,Mochitlán,MORENA,MARIO POLO CONTRERAS CAMPOS,Mario Polo Contreras Campos
+369,12,45,Mochitlán,PES,CARLOS DANIEL ACEVEDO GRANDE,Carlos Daniel Acevedo Grande
+370,12,45,Mochitlán,RSP,MA. DEL ROCIO HERNANDEZ CASTRO,Ma. Del Rocio Hernandez Castro
+371,12,45,Mochitlán,FXM,MARIA DE LOS REMEDIOS VALENZO TAQUILLO,Maria De Los Remedios Valenzo Taquillo
+372,12,45,Mochitlán,PRI_PRD,LUCESITA SANCHEZ REYES,Lucesita Sanchez Reyes
+373,12,46,Olinalá,PRI,SAUL APREZA PATRON,Saul Apreza Patron
+374,12,46,Olinalá,PRD,ALHELI VILLA ESPINOZA,Alheli Villa Espinoza
+375,12,46,Olinalá,PT,OLIVA FRANCO GARCIA,Oliva Franco Garcia
+376,12,46,Olinalá,MC,NALLELI SALGADO PATRON,Nalleli Salgado Patron
+377,12,46,Olinalá,MORENA,MIGUEL REYES PATRON,Miguel Reyes Patron
+378,12,47,Ometepec,PAN,JOSE EDUARDO MARTINEZ SALINAS,Jose Eduardo Martinez Salinas
+379,12,47,Ometepec,PRI,EFREN ADAME MONTALVAN,Efren Adame Montalvan
+380,12,47,Ometepec,PRD,EFREN ADAME MONTALVAN,Efren Adame Montalvan
+381,12,47,Ometepec,PT,RIGOBERTO CHACON MELO,Rigoberto Chacon Melo
+382,12,47,Ometepec,PVEM,ELIDA GARCIA MARTINEZ,Elida Garcia Martinez
+383,12,47,Ometepec,MORENA,OMAR ESTRADA BUSTOS,Omar Estrada Bustos
+384,12,47,Ometepec,PES,GABINO CORONADO MARCIAL,Gabino Coronado Marcial
+385,12,47,Ometepec,FXM,MATILDE SAGUILAN PRUDENTE,Matilde Saguilan Prudente
+386,12,47,Ometepec,PRI_PRD,EFREN ADAME MONTALVAN,Efren Adame Montalvan
+387,12,48,Pedro Ascencio Alquisiras,PRI,AUSTREBERTA LOPEZ ROGEL,Austreberta Lopez Rogel
+388,12,48,Pedro Ascencio Alquisiras,PRD,AUSTREBERTA LOPEZ ROGEL,Austreberta Lopez Rogel
+389,12,48,Pedro Ascencio Alquisiras,PT,YAZMIN MARTINEZ VELAZQUEZ,Yazmin Martinez Velazquez
+390,12,48,Pedro Ascencio Alquisiras,PVEM,YAZMIN MARTINEZ VELAZQUEZ,Yazmin Martinez Velazquez
+391,12,48,Pedro Ascencio Alquisiras,MC,OLIVIA AZUCENA LOPEZ ROGEL,Olivia Azucena Lopez Rogel
+392,12,48,Pedro Ascencio Alquisiras,MORENA,IDALIA ARIAS ALATORRE,Idalia Arias Alatorre
+393,12,48,Pedro Ascencio Alquisiras,PRI_PRD,AUSTREBERTA LOPEZ ROGEL,Austreberta Lopez Rogel
+394,12,48,Pedro Ascencio Alquisiras,PT_PVEM,YAZMIN MARTINEZ VELAZQUEZ,Yazmin Martinez Velazquez
+395,12,49,Petatlán,PAN,MARIO CORTES ARREOLA,Mario Cortes Arreola
+396,12,49,Petatlán,PRI,PERFECTO JAVIER AGUILAR SILVA,Perfecto Javier Aguilar Silva
+397,12,49,Petatlán,PRD,MIRIAM GALEANA BUSTOS,Miriam Galeana Bustos
+398,12,49,Petatlán,PT,ANA KAREN MACIEL ECHEVERRIA,Ana Karen Maciel Echeverria
+399,12,49,Petatlán,MC,NAZARIO MERCADO DIAZ,Nazario Mercado Diaz
+400,12,49,Petatlán,MORENA,LETICIA RODRIGUEZ ARMENTA,Leticia Rodriguez Armenta
+401,12,49,Petatlán,PES,ANA BARBARA JAIMEZ FERNANDEZ,Ana Barbara Jaimez Fernandez
+402,12,49,Petatlán,RSP,PAOLA POPOCA FUERTE,Paola Popoca Fuerte
+403,12,50,Pilcaya,PAN,SANDRA VELAZQUEZ LARA,Sandra Velazquez Lara
+404,12,50,Pilcaya,PRI,SILVIA MEJIA SILVA,Silvia Mejia Silva
+405,12,50,Pilcaya,PRD,SILVIA MEJIA SILVA,Silvia Mejia Silva
+406,12,50,Pilcaya,PVEM,MA. CARMEN HERNANDEZ SANCHEZ,Ma. Carmen Hernandez Sanchez
+407,12,50,Pilcaya,MORENA,MARICELA MORALES ORTIZ,Maricela Morales Ortiz
+408,12,50,Pilcaya,PRI_PRD,SILVIA MEJIA SILVA,Silvia Mejia Silva
+409,12,51,Pungarabato,PAN,JUAN JOSE BENITEZ ALONSO,Juan Jose Benitez Alonso
+410,12,51,Pungarabato,PRI,CUAUHTEMOC MASTACHI AGUARIO,Cuauhtemoc Mastachi Aguario
+411,12,51,Pungarabato,PRD,DAMIANA GAMA GARCIA,Damiana Gama Garcia
+412,12,51,Pungarabato,PT,ROSALINDA PINEDA DUQUE,Rosalinda Pineda Duque
+413,12,51,Pungarabato,PVEM,ROSALINDA PINEDA DUQUE,Rosalinda Pineda Duque
+414,12,51,Pungarabato,MC,DANIEL OMAR ARRAZOLA REYES,Daniel Omar Arrazola Reyes
+415,12,51,Pungarabato,MORENA,FRANCISCA BALTAZAR BRAVO,Francisca Baltazar Bravo
+416,12,51,Pungarabato,PES,VICTOR JULIAN ALONZO,Victor Julian Alonzo
+417,12,51,Pungarabato,FXM,VANY JOCELYN VAZQUEZ LORENZO,Vany Jocelyn Vazquez Lorenzo
+418,12,51,Pungarabato,PT_PVEM,ROSALINDA PINEDA DUQUE,Rosalinda Pineda Duque
+419,12,52,Quechultenango,PAN,NATIVIDAD VAZQUEZ MORENO,Natividad Vazquez Moreno
+420,12,52,Quechultenango,PRI,CRISOFORO CASTRO CASTRO,Crisoforo Castro Castro
+421,12,52,Quechultenango,PRD,CRISOFORO CASTRO CASTRO,Crisoforo Castro Castro
+422,12,52,Quechultenango,MC,ANAYELY MARTINEZ GONZALEZ,Anayely Martinez Gonzalez
+423,12,52,Quechultenango,MORENA,SABINA CASTRO CASTRO,Sabina Castro Castro
+424,12,52,Quechultenango,RSP,JOSEFA REYES NAVA,Josefa Reyes Nava
+425,12,52,Quechultenango,PRI_PRD,CRISOFORO CASTRO CASTRO,Crisoforo Castro Castro
+426,12,53,San Luis Acatlán,PAN,NAYDA NIÑO VENTURA,Nayda Niño Ventura
+427,12,53,San Luis Acatlán,PRI,LUZ DIVINA RAMIREZ MARROQUIN,Luz Divina Ramirez Marroquin
+428,12,53,San Luis Acatlán,PRD,LUZ DIVINA RAMIREZ MARROQUIN,Luz Divina Ramirez Marroquin
+429,12,53,San Luis Acatlán,PT,ADAIR HERNANDEZ MARTINEZ,Adair Hernandez Martinez
+430,12,53,San Luis Acatlán,PVEM,ADRIANA DE LOS SANTOS LEONARDO,Adriana De Los Santos Leonardo
+431,12,53,San Luis Acatlán,MC,VIANEY GARCIA MORALES,Vianey Garcia Morales
+432,12,53,San Luis Acatlán,MORENA,FRANCISCO ANTONIO GARCIA BAUTISTA,Francisco Antonio Garcia Bautista
+433,12,53,San Luis Acatlán,FXM,EUSEBIO GALINDO SIERRA,Eusebio Galindo Sierra
+434,12,53,San Luis Acatlán,PRI_PRD,LUZ DIVINA RAMIREZ MARROQUIN,Luz Divina Ramirez Marroquin
+435,12,54,San Marcos,PAN,HUMBERTO BELLO GARCIA,Humberto Bello Garcia
+436,12,54,San Marcos,PRI,MACARIO NAVARRETE CHAVEZ,Macario Navarrete Chavez
+437,12,54,San Marcos,PRD,TOMAS HERNANDEZ PALMA,Tomas Hernandez Palma
+438,12,54,San Marcos,PT,JESUS HERBEY ARREDONDO DIAZ,Jesus Herbey Arredondo Diaz
+439,12,54,San Marcos,PVEM,MISAEL LORENZO CASTILLO,Misael Lorenzo Castillo
+440,12,54,San Marcos,MC,HIGINIO TORRES LUCENA,Higinio Torres Lucena
+441,12,54,San Marcos,MORENA,GLADYS CORTES GENCHI,Gladys Cortes Genchi
+442,12,54,San Marcos,PES,JEOVANI ALEXIS LOPEZ ZAMACONA,Jeovani Alexis Lopez Zamacona
+443,12,54,San Marcos,FXM,MARIO EDUARDO GARCIA HERNANDEZ,Mario Eduardo Garcia Hernandez
+444,12,55,San Miguel Totolapan,PAN,GERMAYN MORELOS CRUZ,Germayn Morelos Cruz
+445,12,55,San Miguel Totolapan,PRI,ANA MARIA LOURDES PEDRAZA CRESCENCIO,Ana Maria Lourdes Pedraza Crescencio
+446,12,55,San Miguel Totolapan,PRD,CONRADO MENDOZA ALMEDA,Conrado Mendoza Almeda
+447,12,55,San Miguel Totolapan,PT,SARAI MOSSO ABARCA,Sarai Mosso Abarca
+448,12,55,San Miguel Totolapan,PVEM,SARAI MOSSO ABARCA,Sarai Mosso Abarca
+449,12,55,San Miguel Totolapan,MORENA,MA. GUADALUPE PALACIOS CASTILLO,Ma. Guadalupe Palacios Castillo
+450,12,55,San Miguel Totolapan,PT_PVEM,SARAI MOSSO ABARCA,Sarai Mosso Abarca
+451,12,56,Taxco de Alarcón,PAN,MARCOS EFREN PARRA GOMEZ,Marcos Efren Parra Gomez
+452,12,56,Taxco de Alarcón,PRI,OMAR JALIL FLORES MAJUL,Omar Jalil Flores Majul
+453,12,56,Taxco de Alarcón,PRD,OMAR JALIL FLORES MAJUL,Omar Jalil Flores Majul
+454,12,56,Taxco de Alarcón,PT,ADRIANA CORINA GAMA BELTRAN,Adriana Corina Gama Beltran
+455,12,56,Taxco de Alarcón,PVEM,COREY SANCHEZ SILVAR,Corey Sanchez Silvar
+456,12,56,Taxco de Alarcón,MC,FERNANDO CUTBERTO FIGUEROA ROMAN,Fernando Cutberto Figueroa Roman
+457,12,56,Taxco de Alarcón,MORENA,FULGENCIO BUSTAMENTE MENDOZA,Fulgencio Bustamente Mendoza
+458,12,56,Taxco de Alarcón,PES,NOE ANTONIO LOPEZ RAMIREZ,Noe Antonio Lopez Ramirez
+459,12,56,Taxco de Alarcón,RSP,RAYMUNDO SANDOVAL QUEZADA,Raymundo Sandoval Quezada
+460,12,56,Taxco de Alarcón,FXM,MARIO FIGUEROA MUNDO,Mario Figueroa Mundo
+461,12,56,Taxco de Alarcón,CI,EDGAR EDUARDO CAMPUZANO ROMERO,Edgar Eduardo Campuzano Romero
+462,12,56,Taxco de Alarcón,PRI_PRD,OMAR JALIL FLORES MAJUL,Omar Jalil Flores Majul
+463,12,57,Tecoanapa,PAN,JUVENAL POBLETE VELAZQUEZ,Juvenal Poblete Velazquez
+464,12,57,Tecoanapa,PRI,TEODOSIA LUNA PONCE,Teodosia Luna Ponce
+465,12,57,Tecoanapa,PRD,ULISES CANO APARICIO,Ulises Cano Aparicio
+466,12,57,Tecoanapa,PT,FREDY GARCIA GUEVARA,Fredy Garcia Guevara
+467,12,57,Tecoanapa,PVEM,CARMEN ILIANA CASTILLO AVILA,Carmen Iliana Castillo Avila
+468,12,57,Tecoanapa,MC,JAZMIN LEYVA MORALES,Jazmin Leyva Morales
+469,12,57,Tecoanapa,MORENA,URIEL ABUNDIS MATILDES,Uriel Abundis Matildes
+470,12,57,Tecoanapa,PES,ELIONEI NELXON BARANDA ALTAMIRANO,Elionei Nelxon Baranda Altamirano
+471,12,57,Tecoanapa,RSP,MARIO ENRIQUE SANCHEZ RAMIREZ,Mario Enrique Sanchez Ramirez
+472,12,57,Tecoanapa,FXM,ALEX LOAEZA PIOQUINTO,Alex Loaeza Pioquinto
+473,12,58,Técpan de Galeana,PAN,SUSANA RAMOS ARANA,Susana Ramos Arana
+474,12,58,Técpan de Galeana,PRI,JESUS YASIR DELOYA DIAZ,Jesus Yasir Deloya Diaz
+475,12,58,Técpan de Galeana,PRD,JESUS YASIR DELOYA DIAZ,Jesus Yasir Deloya Diaz
+476,12,58,Técpan de Galeana,PT,VICTOR MARTIN RAMOS BARRIENTOS,Victor Martin Ramos Barrientos
+477,12,58,Técpan de Galeana,PVEM,VICTOR MARTIN RAMOS BARRIENTOS,Victor Martin Ramos Barrientos
+478,12,58,Técpan de Galeana,MC,JOSE OCHOA RAMIREZ,Jose Ochoa Ramirez
+479,12,58,Técpan de Galeana,MORENA,VLADIMIR BARRERA FUERTE,Vladimir Barrera Fuerte
+480,12,58,Técpan de Galeana,PES,ANGELICA LOPEZ CORTEZ,Angelica Lopez Cortez
+481,12,58,Técpan de Galeana,FXM,LUCIANA MOJICA REBOLLAR,Luciana Mojica Rebollar
+482,12,58,Técpan de Galeana,PRI_PRD,JESUS YASIR DELOYA DIAZ,Jesus Yasir Deloya Diaz
+483,12,58,Técpan de Galeana,PT_PVEM,VICTOR MARTIN RAMOS BARRIENTOS,Victor Martin Ramos Barrientos
+484,12,59,Teloloapan,PAN,JOSE DOLORES VALENTIN SALGADO,Jose Dolores Valentin Salgado
+485,12,59,Teloloapan,PRI,HOMERO HURTADO FLORES,Homero Hurtado Flores
+486,12,59,Teloloapan,PRD,HOMERO HURTADO FLORES,Homero Hurtado Flores
+487,12,59,Teloloapan,PT,PABLO SEGURA VALLADARES,Pablo Segura Valladares
+488,12,59,Teloloapan,PVEM,PABLO SEGURA VALLADARES,Pablo Segura Valladares
+489,12,59,Teloloapan,MORENA,VALENTIN GUZMAN SOTO,Valentin Guzman Soto
+490,12,59,Teloloapan,PES,NANCY FABIOLA BARRERA TEJEDA,Nancy Fabiola Barrera Tejeda
+491,12,59,Teloloapan,RSP,ANGEL DONACIANO BELTRAN TAPIA,Angel Donaciano Beltran Tapia
+492,12,59,Teloloapan,FXM,YAZMIN CATALAN BRAVO,Yazmin Catalan Bravo
+493,12,59,Teloloapan,PRI_PRD,HOMERO HURTADO FLORES,Homero Hurtado Flores
+494,12,59,Teloloapan,PT_PVEM,PABLO SEGURA VALLADARES,Pablo Segura Valladares
+495,12,60,Tepecoacuilco de Trujano,PAN,FELIX LOPEZ OLIVARES,Felix Lopez Olivares
+496,12,60,Tepecoacuilco de Trujano,PRI,IGNACIO OCAMPO ZAVALETA,Ignacio Ocampo Zavaleta
+497,12,60,Tepecoacuilco de Trujano,PT,HECTOR TABOADA NAVA,Hector Taboada Nava
+498,12,60,Tepecoacuilco de Trujano,MC,PABLO LANDA SOTELO,Pablo Landa Sotelo
+499,12,60,Tepecoacuilco de Trujano,MORENA,ALEJANDRO GONZALEZ NAVA,Alejandro Gonzalez Nava
+500,12,60,Tepecoacuilco de Trujano,FXM,ANTONIO VELAZQUEZ ADAN,Antonio Velazquez Adan
+501,12,61,Tetipac,PAN,VICENTE JAIMES ZAGAL,Vicente Jaimes Zagal
+502,12,61,Tetipac,PRI,BARBARA MERCADO ARCE,Barbara Mercado Arce
+503,12,61,Tetipac,PRD,BARBARA MERCADO ARCE,Barbara Mercado Arce
+504,12,61,Tetipac,PT,JUANA MILLAN RODRIGUEZ,Juana Millan Rodriguez
+505,12,61,Tetipac,PVEM,MARIANA ALANIZ GOMEZ,Mariana Alaniz Gomez
+506,12,61,Tetipac,MORENA,PEDRO BAHENA ALVITER,Pedro Bahena Alviter
+507,12,61,Tetipac,PRI_PRD,BARBARA MERCADO ARCE,Barbara Mercado Arce
+508,12,62,Tixtla de Guerrero,PAN,ALMA ARELY HERNANDEZ ALBAÑIL,Alma Arely Hernandez Albañil
+509,12,62,Tixtla de Guerrero,PRI,ERIKA ALCARAZ SOSA,Erika Alcaraz Sosa
+510,12,62,Tixtla de Guerrero,PRD,ERIKA ALCARAZ SOSA,Erika Alcaraz Sosa
+511,12,62,Tixtla de Guerrero,PT,MARICELA TENERO LORANCA,Maricela Tenero Loranca
+512,12,62,Tixtla de Guerrero,MORENA,MOISES ANTONIO GONZALEZ CABAÑAS,Moises Antonio Gonzalez Cabañas
+513,12,62,Tixtla de Guerrero,PES,HECTOR ROBLEDO HONORATO,Hector Robledo Honorato
+514,12,62,Tixtla de Guerrero,RSP,ISAI SANDOVAL PADILLA,Isai Sandoval Padilla
+515,12,62,Tixtla de Guerrero,PRI_PRD,ERIKA ALCARAZ SOSA,Erika Alcaraz Sosa
+516,12,63,Tlacoachistlahuaca,PAN,SILVERIO SALMERON VILLAVICENCIO,Silverio Salmeron Villavicencio
+517,12,63,Tlacoachistlahuaca,PRI,OSVALDO SOCRATES SALMERON GUERRERO,Osvaldo Socrates Salmeron Guerrero
+518,12,63,Tlacoachistlahuaca,PRD,YARETH SARAI PINEDA ARCE,Yareth Sarai Pineda Arce
+519,12,63,Tlacoachistlahuaca,PT,JOSE ALFREDO CARMONA VILLAVICENCIO,Jose Alfredo Carmona Villavicencio
+520,12,63,Tlacoachistlahuaca,PVEM,EMMANUEL CUEVAS RODRIGUEZ,Emmanuel Cuevas Rodriguez
+521,12,63,Tlacoachistlahuaca,MORENA,SATURNINO GONZALEZ ESPINOBARROS,Saturnino Gonzalez Espinobarros
+522,12,63,Tlacoachistlahuaca,PES,CLAUDIA DIAZ SANTIAGO,Claudia Diaz Santiago
+523,12,63,Tlacoachistlahuaca,FXM,OFELIA CHAVES PRIMO,Ofelia Chaves Primo
+524,12,64,Tlacoapa,PAN,AMADO BASURTO GALVEZ,Amado Basurto Galvez
+525,12,64,Tlacoapa,PRI,ESMERALDA CASTAÑEDA CORNELIO,Esmeralda Castañeda Cornelio
+526,12,64,Tlacoapa,PRD,GRACIELA NAVARRO GONZAGA,Graciela Navarro Gonzaga
+527,12,64,Tlacoapa,PT,ESTELA CANTU ROSAS,Estela Cantu Rosas
+528,12,64,Tlacoapa,PVEM,ESTELA CANTU ROSAS,Estela Cantu Rosas
+529,12,64,Tlacoapa,MORENA,INES MARCOS GONZALEZ,Ines Marcos Gonzalez
+530,12,64,Tlacoapa,PES,FONTAIME RODRIGUEZ RECENDIZ,Fontaime Rodriguez Recendiz
+531,12,64,Tlacoapa,PT_PVEM,ESTELA CANTU ROSAS,Estela Cantu Rosas
+532,12,65,Tlalchapa,PAN,GABRIELA TOLEDO HERNANDEZ,Gabriela Toledo Hernandez
+533,12,65,Tlalchapa,PRI,VIANEY PEÑA VALENCIA,Vianey Peña Valencia
+534,12,65,Tlalchapa,PRD,VIANEY PEÑA VALENCIA,Vianey Peña Valencia
+535,12,65,Tlalchapa,PT,GEORGINA LIZETH CARRERA GAONA,Georgina Lizeth Carrera Gaona
+536,12,65,Tlalchapa,PVEM,GEORGINA LIZETH CARRERA GAONA,Georgina Lizeth Carrera Gaona
+537,12,65,Tlalchapa,MORENA,TANIA MORA EGUILUZ,Tania Mora Eguiluz
+538,12,65,Tlalchapa,PRI_PRD,VIANEY PEÑA VALENCIA,Vianey Peña Valencia
+539,12,65,Tlalchapa,PT_PVEM,GEORGINA LIZETH CARRERA GAONA,Georgina Lizeth Carrera Gaona
+540,12,66,Tlalixtaquilla de Maldonado,PAN,FRANCISCA SILVA ACEVEDO,Francisca Silva Acevedo
+541,12,66,Tlalixtaquilla de Maldonado,PRI,RITA PEREZ SAAVEDRA,Rita Perez Saavedra
+542,12,66,Tlalixtaquilla de Maldonado,PRD,RITA PEREZ SAAVEDRA,Rita Perez Saavedra
+543,12,66,Tlalixtaquilla de Maldonado,PT,KARLA LIZBETH HERNANDEZ RIVAS,Karla Lizbeth Hernandez Rivas
+544,12,66,Tlalixtaquilla de Maldonado,PVEM,MAGALY GONZALEZ ALEJANDRO,Magaly Gonzalez Alejandro
+545,12,66,Tlalixtaquilla de Maldonado,MORENA,RAQUEL GARCIA ORDUÑO,Raquel Garcia Orduño
+546,12,66,Tlalixtaquilla de Maldonado,PRI_PRD,RITA PEREZ SAAVEDRA,Rita Perez Saavedra
+547,12,67,Tlapa de Comonfort,PAN,ORACIO FLORES RUIZ,Oracio Flores Ruiz
+548,12,67,Tlapa de Comonfort,PRI,GILBERTO SOLANO ARREAGA,Gilberto Solano Arreaga
+549,12,67,Tlapa de Comonfort,PRD,GILBERTO SOLANO ARREAGA,Gilberto Solano Arreaga
+550,12,67,Tlapa de Comonfort,PT,JUAN ANDRES SANCHEZ GOMEZ,Juan Andres Sanchez Gomez
+551,12,67,Tlapa de Comonfort,PVEM,JUAN ANDRES SANCHEZ GOMEZ,Juan Andres Sanchez Gomez
+552,12,67,Tlapa de Comonfort,MC,ISRAEL MARTINEZ LABRA,Israel Martinez Labra
+553,12,67,Tlapa de Comonfort,MORENA,FREDY DE JESUS CASTRO GUEVARA,Fredy De Jesus Castro Guevara
+554,12,67,Tlapa de Comonfort,PRI_PRD,GILBERTO SOLANO ARREAGA,Gilberto Solano Arreaga
+555,12,67,Tlapa de Comonfort,PT_PVEM,JUAN ANDRES SANCHEZ GOMEZ,Juan Andres Sanchez Gomez
+556,12,68,Tlapehuala,PAN,DELIA ROJAS DE JESUS,Delia Rojas De Jesus
+557,12,68,Tlapehuala,PRI,JOSE LUIS ANTUNEZ GOICOCHEA,Jose Luis Antunez Goicochea
+558,12,68,Tlapehuala,PRD,MA. DEL CARMEN BARRERA GALARZA,Ma. Del Carmen Barrera Galarza
+559,12,68,Tlapehuala,PT,YESENIA SUAREZ MERLAN,Yesenia Suarez Merlan
+560,12,68,Tlapehuala,PVEM,YESENIA SUAREZ MERLAN,Yesenia Suarez Merlan
+561,12,68,Tlapehuala,MORENA,ADAN MIRANDA AGUILAR,Adan Miranda Aguilar
+562,12,68,Tlapehuala,RSP,ESMERALDA GARCIA MOJICA,Esmeralda Garcia Mojica
+563,12,68,Tlapehuala,PT_PVEM,YESENIA SUAREZ MERLAN,Yesenia Suarez Merlan
+564,12,69,La Unión de Isidoro Montes de Oca,PRI,HELIODORA CONTRERAS GARCIA,Heliodora Contreras Garcia
+565,12,69,La Unión de Isidoro Montes de Oca,PRD,CRESCENCIO REYES TORRES,Crescencio Reyes Torres
+566,12,69,La Unión de Isidoro Montes de Oca,PT,ITSELY ANAI HERNANDEZ GUZMAN,Itsely Anai Hernandez Guzman
+567,12,69,La Unión de Isidoro Montes de Oca,PVEM,ITSELY ANAI HERNANDEZ GUZMAN,Itsely Anai Hernandez Guzman
+568,12,69,La Unión de Isidoro Montes de Oca,MC,ANED NAYELY SANCHEZ SANCHEZ,Aned Nayely Sanchez Sanchez
+569,12,69,La Unión de Isidoro Montes de Oca,MORENA,MARCIA ELSA VALENCIA GUZMAN,Marcia Elsa Valencia Guzman
+570,12,69,La Unión de Isidoro Montes de Oca,PES,LAURA ITZEL RODRIGUEZ GONZALEZ,Laura Itzel Rodriguez Gonzalez
+571,12,69,La Unión de Isidoro Montes de Oca,FXM,JUAN ANTONIO ROJAS MORENO,Juan Antonio Rojas Moreno
+572,12,69,La Unión de Isidoro Montes de Oca,PT_PVEM,ITSELY ANAI HERNANDEZ GUZMAN,Itsely Anai Hernandez Guzman
+573,12,70,Xalpatláhuac,PAN,NAMIYUVI SALAZAR GARCIA,Namiyuvi Salazar Garcia
+574,12,70,Xalpatláhuac,PRI,SELENE SOTELO MALDONADO,Selene Sotelo Maldonado
+575,12,70,Xalpatláhuac,PRD,ROSELIA CARDENAS ZAVALA,Roselia Cardenas Zavala
+576,12,70,Xalpatláhuac,PT,JUSTINA ESPIRITU MALDONADO,Justina Espiritu Maldonado
+577,12,70,Xalpatláhuac,PVEM,JUSTINA ESPIRITU MALDONADO,Justina Espiritu Maldonado
+578,12,70,Xalpatláhuac,MC,EDMUNDO DELGADO GALLARDO,Edmundo Delgado Gallardo
+579,12,70,Xalpatláhuac,MORENA,LIDOINE BENITEZ DIAZ,Lidoine Benitez Diaz
+580,12,70,Xalpatláhuac,PT_PVEM,JUSTINA ESPIRITU MALDONADO,Justina Espiritu Maldonado
+581,12,71,Xochihuehuetlán,PAN,DORA LILIA SORIANO VAZQUEZ,Dora Lilia Soriano Vazquez
+582,12,71,Xochihuehuetlán,PRI,CARMEN ODALYS PONCIANO JUAREZ,Carmen Odalys Ponciano Juarez
+583,12,71,Xochihuehuetlán,PRD,EZEQUIEL FLORES RAYMUNDO,Ezequiel Flores Raymundo
+584,12,71,Xochihuehuetlán,PT,FLORENCIA VAZQUEZ RIVERA,Florencia Vazquez Rivera
+585,12,71,Xochihuehuetlán,PVEM,ROSEMBERT PONCIANO VENEGAS,Rosembert Ponciano Venegas
+586,12,71,Xochihuehuetlán,MORENA,ELISEO ASTUDILLO VARGAS,Eliseo Astudillo Vargas
+587,12,72,Xochistlahuaca,PAN,FERNANDO MORALES DOMINGUEZ,Fernando Morales Dominguez
+588,12,72,Xochistlahuaca,PRI,ACEADETH ROCHA RAMIREZ,Aceadeth Rocha Ramirez
+589,12,72,Xochistlahuaca,PRD,LIDUVINA MONICO MARTINEZ,Liduvina Monico Martinez
+590,12,72,Xochistlahuaca,PT,JOSE FELIPE LOPEZ NESTOR,Jose Felipe Lopez Nestor
+591,12,72,Xochistlahuaca,PVEM,MARCELA DE JESUS NATALIA,Marcela De Jesus Natalia
+592,12,72,Xochistlahuaca,MC,EVA GONZALEZ DE JESUS,Eva Gonzalez De Jesus
+593,12,72,Xochistlahuaca,MORENA,BARTOLOME LOPEZ GUZMAN,Bartolome Lopez Guzman
+594,12,72,Xochistlahuaca,PES,CELERINO ROJAS MORALES,Celerino Rojas Morales
+595,12,72,Xochistlahuaca,RSP,JOOHNNY PELAEZ EPITACIO,Joohnny Pelaez Epitacio
+596,12,72,Xochistlahuaca,FXM,VIANNEY IRENE LOPEZ JULIANA,Vianney Irene Lopez Juliana
+597,12,73,Zapotitlán Tablas,PAN,NASXYELY ESTRADA POLICARPO,Nasxyely Estrada Policarpo
+598,12,73,Zapotitlán Tablas,PRI,LEYDI ALVAREZ SANCHEZ,Leydi Alvarez Sanchez
+599,12,73,Zapotitlán Tablas,PRD,NATIVIDAD JERONIMO CANO,Natividad Jeronimo Cano
+600,12,73,Zapotitlán Tablas,PT,JOAQUIN ROSENDO LUCIANO,Joaquin Rosendo Luciano
+601,12,73,Zapotitlán Tablas,PVEM,ROXANA IBAÑEZ NAVARRO,Roxana Ibañez Navarro
+602,12,73,Zapotitlán Tablas,MC,ABEL SANCHEZ GARCIA,Abel Sanchez Garcia
+603,12,73,Zapotitlán Tablas,MORENA,CIPRIANO FLORES ARRIAGA,Cipriano Flores Arriaga
+604,12,74,Zirándaro,PRI,JAIME TORRES GARCIA,Jaime Torres Garcia
+605,12,74,Zirándaro,PRD,JAIME TORRES GARCIA,Jaime Torres Garcia
+606,12,74,Zirándaro,PT,YURISBEL ORTUÑO ORTUÑO,Yurisbel Ortuño Ortuño
+607,12,74,Zirándaro,PVEM,YURISBEL ORTUÑO ORTUÑO,Yurisbel Ortuño Ortuño
+608,12,74,Zirándaro,MORENA,TANIA GUADALUPE PACHECO DUARTE,Tania Guadalupe Pacheco Duarte
+609,12,74,Zirándaro,PES,MAGALI ALEGRIA HERNANDEZ,Magali Alegria Hernandez
+610,12,74,Zirándaro,FXM,MARGARITO BARRERA ALVEAR,Margarito Barrera Alvear
+611,12,74,Zirándaro,PRI_PRD,JAIME TORRES GARCIA,Jaime Torres Garcia
+612,12,74,Zirándaro,PT_PVEM,YURISBEL ORTUÑO ORTUÑO,Yurisbel Ortuño Ortuño
+613,12,75,Zitlala,PAN,JAIME DAMASO SOLIS,Jaime Damaso Solis
+614,12,75,Zitlala,PRI,ROGELIO RAMOS TECORRAL,Rogelio Ramos Tecorral
+615,12,75,Zitlala,PRD,ROGELIO RAMOS TECORRAL,Rogelio Ramos Tecorral
+616,12,75,Zitlala,PT,MAGNOLIA GRANDE TIANGUIS,Magnolia Grande Tianguis
+617,12,75,Zitlala,PVEM,MAGNOLIA GRANDE TIANGUIS,Magnolia Grande Tianguis
+618,12,75,Zitlala,MC,VERONICA LORENZO GODINEZ,Veronica Lorenzo Godinez
+619,12,75,Zitlala,MORENA,ALEJANDRA HILARIO VILLALVA,Alejandra Hilario Villalva
+620,12,75,Zitlala,RSP,MARIA DE LOS ANGELES ORTEGA ALEJO,Maria De Los Angeles Ortega Alejo
+621,12,75,Zitlala,PRI_PRD,ROGELIO RAMOS TECORRAL,Rogelio Ramos Tecorral
+622,12,75,Zitlala,PT_PVEM,MAGNOLIA GRANDE TIANGUIS,Magnolia Grande Tianguis
+623,12,76,Acatepec,PAN,EUCARIO MARIANO ELENA,Eucario Mariano Elena
+624,12,76,Acatepec,PRI,CESAR DOLORES HERNANDEZ,Cesar Dolores Hernandez
+625,12,76,Acatepec,PRD,ROMOALDO DIAZ ROSAS,Romoaldo Diaz Rosas
+626,12,76,Acatepec,PT,URSULA BASURTO SANTIAGO,Ursula Basurto Santiago
+627,12,76,Acatepec,PVEM,URSULA BASURTO SANTIAGO,Ursula Basurto Santiago
+628,12,76,Acatepec,MORENA,ROSENDO CASIMIRO DIRCIO,Rosendo Casimiro Dircio
+629,12,76,Acatepec,PT_PVEM,URSULA BASURTO SANTIAGO,Ursula Basurto Santiago
+630,12,77,José Joaquín de Herrera,PAN,NICERATA TEPEQUILLO SANCHEZ,Nicerata Tepequillo Sanchez
+631,12,77,José Joaquín de Herrera,PRI,ORQUIDIA HERNANDEZ MENDOZA,Orquidia Hernandez Mendoza
+632,12,77,José Joaquín de Herrera,PRD,ANDRES VALENTIN SALVADOR GONZALEZ,Andres Valentin Salvador Gonzalez
+633,12,77,José Joaquín de Herrera,PT,MAURINO SANTOS MERINO,Maurino Santos Merino
+634,12,77,José Joaquín de Herrera,PVEM,ANDRES ZOSIMO CARBALLO ORTIZ,Andres Zosimo Carballo Ortiz
+635,12,77,José Joaquín de Herrera,MORENA,MICAELA MANZANO MARTINEZ,Micaela Manzano Martinez
+636,12,77,José Joaquín de Herrera,RSP,ADRIANA CARBALLO RODRIGUEZ,Adriana Carballo Rodriguez
+637,12,78,Iliatenco,PAN,LUZ IMELDA VALDEZ MARTINEZ,Luz Imelda Valdez Martinez
+638,12,78,Iliatenco,PRI,YARETH FACUNDO VALDEZ,Yareth Facundo Valdez
+639,12,78,Iliatenco,PRD,RUMEL RAMOS ROMERO,Rumel Ramos Romero
+640,12,78,Iliatenco,PT,ERIC SANDRO LEAL CANTU,Eric Sandro Leal Cantu
+641,12,78,Iliatenco,PVEM,IRLETTE MARTINEZ SANTILLAN,Irlette Martinez Santillan
+642,12,78,Iliatenco,MC,RUPERTA NICOLAS HILARIO,Ruperta Nicolas Hilario
+643,12,78,Iliatenco,MORENA,EUGENIA PACHECO CANTU,Eugenia Pacheco Cantu
+644,12,79,Cochoapa el Grande,PAN,MAXIMILIANO DIAZ GARCIA,Maximiliano Diaz Garcia
+645,12,79,Cochoapa el Grande,PRI,PETRA MARTINEZ VAZQUEZ,Petra Martinez Vazquez
+646,12,79,Cochoapa el Grande,PRD,VICTORIA LOPEZ ANGEL,Victoria Lopez Angel
+647,12,79,Cochoapa el Grande,PT,JAVIER GALVEZ GARCIA,Javier Galvez Garcia
+648,12,79,Cochoapa el Grande,PVEM,BERNARDO PONCE GARCIA,Bernardo Ponce Garcia
+649,12,79,Cochoapa el Grande,MC,ALBERTO ORTIZ GOMEZ,Alberto Ortiz Gomez
+650,12,79,Cochoapa el Grande,MORENA,FRANCISCA GERVACIO MENDOZA,Francisca Gervacio Mendoza
+651,12,80,Marquelia,PAN,DAE ROMERO ZUÑIGA,Dae Romero Zuñiga
+652,12,80,Marquelia,PRI,LINCER CASIANO CLEMENTE,Lincer Casiano Clemente
+653,12,80,Marquelia,PRD,LINCER CASIANO CLEMENTE,Lincer Casiano Clemente
+654,12,80,Marquelia,PT,RAUL URANGA CARMONA,Raul Uranga Carmona
+655,12,80,Marquelia,PVEM,RAUL URANGA CARMONA,Raul Uranga Carmona
+656,12,80,Marquelia,MORENA,MARIA THELMA ZUÑIGA VILLANUEVA,Maria Thelma Zuñiga Villanueva
+657,12,80,Marquelia,PES,LAURA SIERRA RAMOS,Laura Sierra Ramos
+658,12,80,Marquelia,PRI_PRD,LINCER CASIANO CLEMENTE,Lincer Casiano Clemente
+659,12,80,Marquelia,PT_PVEM,RAUL URANGA CARMONA,Raul Uranga Carmona
+660,12,81,Juchitán,PAN,ALFONSO AQUILEO SORIANO ZAVALETA,Alfonso Aquileo Soriano Zavaleta
+661,12,81,Juchitán,PRI,OLIVIA HERNANDEZ HERRERA,Olivia Hernandez Herrera
+662,12,81,Juchitán,PRD,OLIVIA HERNANDEZ HERRERA,Olivia Hernandez Herrera
+663,12,81,Juchitán,PT,DEMETRIO GUZMAN AGUILAR,Demetrio Guzman Aguilar
+664,12,81,Juchitán,PVEM,MIGUEL ANTONIO MOCTEZUMA FLORES,Miguel Antonio Moctezuma Flores
+665,12,81,Juchitán,MORENA,MARGARITA JUANICO FIGUEROA,Margarita Juanico Figueroa
+666,12,81,Juchitán,PRI_PRD,OLIVIA HERNANDEZ HERRERA,Olivia Hernandez Herrera
+667,,29,Chilpancingo de Los Bravo,,,
+668,,1,Acapulco de Juárez,,,
+669,,21,Coyuca de Benítez,,,
+670,,11,Atoyac de Álvarez,,,
+671,,14,Benito Juárez,,,
+672,,58,Técpan de Galeana,,,
+673,,39,Zihuatanejo de Azueta,,,
+674,,49,Petatlán,,,
+675,,16,Coahuayutla de José María Izazaga,,,
+676,,69,La Unión de Isidoro Montes de Oca,,,
+677,,40,Juan R. Escudero,,,
+678,,54,San Marcos,,,
+679,,57,Tecoanapa,,,
+680,,18,Copala,,,
+681,,25,Cuautepec,,,
+682,,31,Florencio Villarreal,,,
+683,,13,Azoyú,,,
+684,,23,Cuajinicuilapa,,,
+685,,37,Igualapa,,,
+686,,44,Metlatónoc,,,
+687,,53,San Luis Acatlán,,,
+688,,80,Marquelia,,,
+689,,81,Juchitán,,,
+690,,47,Ometepec,,,
+691,,63,Tlacoachistlahuaca,,,
+692,,72,Xochistlahuaca,,,
+693,,3,Ajuchitlán del Progreso,,,
+694,,22,Coyuca de Catalán,,,
+695,,55,San Miguel Totolapan,,,
+696,,74,Zirándaro,,,
+697,,7,Arcelia,,,
+698,,27,Cutzamala de Pinzón,,,
+699,,51,Pungarabato,,,
+700,,65,Tlalchapa,,,
+701,,68,Tlapehuala,,,
+702,,30,Eduardo Neri,,,
+703,,33,General Heliodoro Castillo,,,
+704,,41,Leonardo Bravo,,,
+705,,6,Apaxtla de Castrejón,,,
+706,,17,Cocula,,,
+707,,26,Cuetzala del Progreso,,,
+708,,32,General Canuto A. Neri,,,
+709,,38,Ixcateopan de Cuauhtémoc,,,
+710,,48,Pedro Ascencio Alquisiras,,,
+711,,59,Teloloapan,,,
+712,,50,Pilcaya,,,
+713,,56,Taxco de Alarcón,,,
+714,,61,Tetipac,,,
+715,,36,Iguala de la Independencia,,,
+716,,8,Atenango del Río,,,
+717,,15,Buenavista de Cuéllar,,,
+718,,19,Copalillo,,,
+719,,35,Huitzuco de los Figueroa,,,
+720,,60,Tepecoacuilco de Trujano,,,
+721,,43,Mártir de Cuilapan,,,
+722,,45,Mochitlán,,,
+723,,52,Quechultenango,,,
+724,,62,Tixtla de Guerrero,,,
+725,,75,Zitlala,,,
+726,,28,Chilapa de Alvarez,,,
+727,,77,José Joaquín de Herrera,,,
+728,,2,Ahuacuotzingo,,,
+729,,10,Atlixtac,,,
+730,,20,Copanatoyac,,,
+731,,64,Tlacoapa,,,
+732,,73,Zapotitlán Tablas,,,
+733,,76,Acatepec,,,
+734,,5,Alpoyeca,,,
+735,,24,Cualác,,,
+736,,34,Huamuxtitlán,,,
+737,,46,Olinalá,,,
+738,,66,Tlalixtaquilla de Maldonado,,,
+739,,67,Tlapa de Comonfort,,,
+740,,71,Xochihuehuetlán,,,
+741,,4,Alcozauca de Guerrero,,,
+742,,9,Atlamajalcingo del Monte,,,
+743,,42,Malinaltepec,,,
+744,,70,Xalpatláhuac,,,
+745,,78,Iliatenco,,,
+746,,79,Cochoapa el Grande,,,
