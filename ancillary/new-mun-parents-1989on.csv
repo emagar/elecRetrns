@@ -1,14 +1,14 @@
 emm,yr,estado,inegi mun ife,padre,padre2,padre3,padre4,note
-ags-08.010,1992,aguascalientes,10 LLANO—EL 11,1 AGUASCALIENTES 1,,,,
+ags-08.010,1992,aguascalientes,10 LLANO--EL 11,1 AGUASCALIENTES 1,,,,
 ags-08.011,1992,aguascalientes,11 SAN FRANCISCO DE LOS ROMO 10,1 AGUASCALIENTES 1,,,,
 bc-10.005,1998,baja california,5 PLAYAS DE ROSARITO 5,4 TIJUANA 4,,,,
-bc-18.006,2021,baja california,6 SAN QUINTIN,1 ENSENADA 1,,,,
+bc-19.006,2024,baja california,6 SAN QUINTIN,1 ENSENADA 1,,,,quizas para 2024
 bcs-08.009,1993,baja california sur,9 LORETO 5,3 LA PAZ 3,,,,
 cam-08.009,1991,campeche,9 ESCARCEGA 9,3 CARMEN 3,,,,
 cam-10.010,1997,campeche,10 CALAKMUL 11,6 HOPELCHEN 6,,,,
 cam-11.011,2000,campeche,11 CANDELARIA 10,3 CARMEN 3,,,,
 cam-18.012,2019,campeche,12 SEYBAPLAYA 13,2 CAMPECHE 1,4 CHAMPOTON 4,,,
-cam-18.xxx,2019,campeche,DZTILBALCHE 12,1 CALKINI 2,,,,
+cam-18.xxx,2019,campeche,xxx DZITBALCHE 12,1 CALKINI 2,,,,falta codigo inegi
 cps-08.112,1991,chiapas,112 SAN JUAN CANCUC 79,59 OCOSINGO 59,,,,
 cps-11.113,2001,chiapas,113 ALDAMA 112,26 CHENALHO 26,,,,
 cps-11.114,2001,chiapas,114 BENEMERITO DE LAS AMERICAS 113,59 OCOSINGO 59,,,,
@@ -23,7 +23,23 @@ cps-15.122,2015,chiapas,122 PARRAL--EL 121,107 VILLA CORZO 108,108 VILLAFLORES 1
 cps-15.123,2015,chiapas,123 EMILIANO ZAPATA 122,2 ACALA 2,27 CHIAPA DE CORZO,106 VENUSTIANO CARRANZA,,
 cps-15.124,2015,chiapas,124 MEZCALAPA 123,61 OCOZOCOAUTLA DE ESPINOZA,62 OSTUACAN,92 TECPATAN 93,,
 cps-18.125,2020,chiapas,125 HONDURAS DE LA SIERRA 124,80 SILTEPEC 81,,,,
-cps-15.xxx,2012,chiapas,BELISARIO DOMINGUEZ,17 CINTALAPA 17,,,,nunca se censo y solo se uso en mun2012 y 2015
+cps-15.xxx,2012,chiapas,xxx BELISARIO DOMINGUEZ xxx,17 CINTALAPA 17,,,,nunca se censo y solo se uso en ay2012 y 2015 litigio con oax
+df-11.002,2000,distrito federal,9002 AZCAPOTZALCO 9002,9002 AZCAPOTZALCO 9002,,,,primera eleccion de jefes delegacionales en 2000
+df-11.003,2000,distrito federal,9003 COYOACAN 9003,9003 COYOACAN 9003,,,,primera eleccion de jefes delegacionales en 2000
+df-11.004,2000,distrito federal,9004 CUAJIMALPA DE MORELOS 9004,9004 CUAJIMALPA DE MORELOS 9004,,,,primera eleccion de jefes delegacionales en 2000
+df-11.005,2000,distrito federal,9005 GUSTAVO A. MADERO 9005,9005 GUSTAVO A. MADERO 9005,,,,primera eleccion de jefes delegacionales en 2000
+df-11.006,2000,distrito federal,9006 IZTACALCO 9006,9006 IZTACALCO 9006,,,,primera eleccion de jefes delegacionales en 2000
+df-11.007,2000,distrito federal,9007 IZTAPALAPA 9007,9007 IZTAPALAPA 9007,,,,primera eleccion de jefes delegacionales en 2000
+df-11.008,2000,distrito federal,9008 MAGDALENA CONTRERAS--LA 9008,9008 MAGDALENA CONTRERAS--LA 9008,,,,primera eleccion de jefes delegacionales en 2000
+df-11.009,2000,distrito federal,9009 MILPA ALTA 9009,9009 MILPA ALTA 9009,,,,primera eleccion de jefes delegacionales en 2000
+df-11.010,2000,distrito federal,9010 ALVARO OBREGÓN 9010,9010 ALVARO OBREGÓN 9010,,,,primera eleccion de jefes delegacionales en 2000
+df-11.011,2000,distrito federal,9011 TLAHUAC 9011,9011 TLAHUAC 9011,,,,primera eleccion de jefes delegacionales en 2000
+df-11.012,2000,distrito federal,9012 TLALPAN 9012,9012 TLALPAN 9012,,,,primera eleccion de jefes delegacionales en 2000
+df-11.013,2000,distrito federal,9013 XOCHIMILCO 9013,9013 XOCHIMILCO 9013,,,,primera eleccion de jefes delegacionales en 2000
+df-11.014,2000,distrito federal,9014 BENITO JUAREZ 9014,9014 BENITO JUAREZ 9014,,,,primera eleccion de jefes delegacionales en 2000
+df-11.015,2000,distrito federal,9015 CUAUHTEMOC 9015,9015 CUAUHTEMOC 9015,,,,primera eleccion de jefes delegacionales en 2000
+df-11.016,2000,distrito federal,9016 MIGUEL HIDALGO 9016,9016 MIGUEL HIDALGO 9016,,,,primera eleccion de jefes delegacionales en 2000
+df-11.017,2000,distrito federal,9017 VENUSTIANO CARRANZA 9017,9017 VENUSTIANO CARRANZA 9017,,,,primera eleccion de jefes delegacionales en 2000
 dgo-07.039,1989,durango,39 NUEVO IDEAL 17,32 SANTIAGO PAPASQUIARO 33 Y/O 1 CANATLAN 1,,,,
 gue-09.076,1996,guerrero,76 ACATEPEC 76,72 ZAPOTITLAN TABLAS 73,,,,
 gue-12.077,2005,guerrero,77 MARQUELIA 80,13 AZOYU 13,23 CUAJINICUILAPA 23,,,
@@ -32,6 +48,7 @@ gue-13.079,2008,guerrero,79 JOSE JOAQUIN DE HERRERA 77,28 CHILAPA DE ALVAREZ 28,
 gue-13.080,2008,guerrero,80 JUCHITAN 81,13 AZOYU 13,,,,
 gue-13.081,2008,guerrero,81 ILIATENCO 78,41 MALINALTEPEC 42,52 SAN LUIS ACATLÁN 53,,,
 jal-13.125,2006,jalisco,125 SAN IGNACIO CERRO GORDO,8 ARANDAS,,,,
+jal-xx.xxx,xxxx,jalisco,xxx CAPILLA DE GUADALUPE xxx,,,,,intenta ser municipio desde 2010
 mex-08.122,1993,mexico,122 VALLE DE CHALCO SOLIDARIDAD 122,25 CHALCO 26,39 IXTAPALUCA 40,,,
 mex-11.123,2003,mexico,123 LUVIANOS 123,82 TEJUPILCO 83,,,,
 mex-11.124,2003,mexico,124 SAN JOSE DEL RINCON 124,74 SAN FELIPE DEL PROGRESO 75,,,,
