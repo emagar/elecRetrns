@@ -1,4 +1,5 @@
 rm(list=ls())
+options(width = 120)
 
 # read from clipboard
 d <- read.table(pipe("xclip -selection clipboard -o", open="r"), sep = "\t", header = TRUE)
@@ -11,12 +12,11 @@ d2 <- d # duplicate
 d <- d2
 
 # clean
-sel <- which(colnames(d) %in% c("SECCION", "ID_CASILLA", "TIPO_CASILLA","EXT_CONTIGUA","TIPO_ACTA"))
-sel <- which(colnames(d) %in% c("DISTRITO","SECCIÓN","CASILLA"))
+sel <- which(colnames(d) %in% c("NOMBRE_ESTADO", "ID_CASILLA", "TIPO_CASILLA","EXT_CONTIGUA","CASILLA","NUM_ACTA_IMPRESO","OBSERVACIONES","MECANISMOS_TRASLADO","FECHA_HORA"))
 d <- d[,-sel]
 
 # turn characters into NAs
-sel <- c(1,3:35)
+sel <- c(1:2,4:27)
 tmp <- d[,sel]
 tmp <- lapply(tmp, as.numeric)
 tmp <- as.data.frame(do.call(cbind,tmp))
@@ -28,44 +28,35 @@ colnames(d)
 
 
 d <- within(d, expr = {
-    PAN <- ave(PAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PRI <- ave(PRI, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PRD <- ave(PRD, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT <- ave(PT, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PVEM <- ave(PVEM, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MC <- ave(MC, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MORENA <- ave(MORENA, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    NAN <- ave(NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    VIVA <- ave(VIVA, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MLN <- ave(MLN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PES <- ave(PES, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    RSP <- ave(RSP, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    FXM <- ave(FXM, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    CI <- ave(CI, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PAN_PRI_PRD <- ave(PAN_PRI_PRD, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PAN_PRI <- ave(PAN_PRI, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PAN_PRD <- ave(PAN_PRD, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PRI_PRD <- ave(PRI_PRD, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_PVEM_MORENA_NAN <- ave(PT_PVEM_MORENA_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_PVEM_MORENA <- ave(PT_PVEM_MORENA, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_PVEM_NAN <- ave(PT_PVEM_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_MORENA_NAN <- ave(PT_MORENA_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PVEM_MORENA_NAN <- ave(PVEM_MORENA_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_PVEM <- ave(PT_PVEM, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_MORENA <- ave(PT_MORENA, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PT_NAN <- ave(PT_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PVEM_MORENA <- ave(PVEM_MORENA, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    PVEM_NAN <- ave(PVEM_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    MORENA_NAN <- ave(MORENA_NAN, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    NO_REGISTRADOS <- ave(NO_REGISTRADOS, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    NULOS <- ave(NULOS, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    TOTAL_VOTOS <- ave(TOTAL_VOTOS, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
-    LISTA_NOMINAL <- ave(LISTA_NOMINAL, as.factor(MUNICIPIO), FUN=sum, na.rm=TRUE);
+    PAN <- ave(PAN, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PRI <- ave(PRI, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PRD <- ave(PRD, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PVEM <- ave(PVEM, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PT <- ave(PT, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    MC <- ave(MC, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    MORENA <- ave(MORENA, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PES <- ave(PES, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    RSP <- ave(RSP, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    FXM <- ave(FXM, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    CI <- ave(CI, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PAN.PRI.PRD <- ave(PAN.PRI.PRD, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PAN.PRI <- ave(PAN.PRI, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PAN.PRD <- ave(PAN.PRD, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PRI.PRD <- ave(PRI.PRD, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PVEM.PT.MORENA <- ave(PVEM.PT.MORENA, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PVEM.PT <- ave(PVEM.PT, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PVEM.MORENA <- ave(PVEM.MORENA, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    PT.MORENA <- ave(PT.MORENA, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    CANDIDATO.A.NO.REGISTRADO.A <- ave(CANDIDATO.A.NO.REGISTRADO.A, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    VOTOS.NULOS <- ave(VOTOS.NULOS, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    TOTAL_VOTOS_CALCULADOS <- ave(TOTAL_VOTOS_CALCULADOS, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
+    LISTA_NOMINAL_CASILLA <- ave(LISTA_NOMINAL_CASILLA, as.factor(ID_ESTADO*10000+SECCION), FUN=sum, na.rm=TRUE);
 }
 )
 
 # drop redundant cols
-d <- d[duplicated(as.factor(d$MUNICIPIO))==FALSE,]
+d <- d[duplicated(as.factor(d$ID_ESTADO*10000+d$SECCION))==FALSE,]
+dim(d)
 
 # rename some cols
 sel <- grep("LISTA", colnames(d))
