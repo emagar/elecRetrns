@@ -2110,7 +2110,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2109,80,JAVIER JULIAN,CASTAÑEDA POMPOSO,bc-17.06p,bc06p,morena,pes,2018,m,1,1,2,Quit-suplente-out-p-won,1,0,0,0,suplente ALSO dcarta=1
 2110,87,ERIK ISAAC,MORALES ELVIRA,bc-17.07p,bc07p,morena,morena,2018,m,1,1,2,Out-p-won,1,0,0,0,
 2111,93,HECTOR RENE,CRUZ APARICIO,bc-17.08p,bc08p,pes,pes,2018,m,1,1,2,Out-p-lost,1,0,0,0,
-2112,103,ANA RUTH,GARCIA GRANDE,bcs-17.01p,bcs01p,pt,morena,2018,f,1,1,3,Out-p-won,1,0,0,0,
+2112,103,ANA RUTH,GARCIA GRANDE,bcs-17.01p,bcs01p,pt,morena,2018,f,1,1,3,Out-p-lost,1,0,0,0,
 2113,112,ALFREDO,PORRAS DOMINGUEZ,bcs-17.02p,bcs02p,pt,pt,2018,m,1,1,3,Reelected,1,1,1,1,
 2114,121,CARLOS ENRIQUE,MARTINEZ AKE,cam-17.01p,cam01p,morena,morena,2018,m,1,1,4,Out-p-won,1,0,0,0,
 2115,130,IRASEMA DEL CARMEN,BUENFIL DIAZ,cam-17.02p,cam02p,pes,morena,2018,f,1,1,4,Out-p-lost,1,0,0,0,
@@ -2434,7 +2434,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2433,82,HECTOR IRENEO,MARES COSSIO,bc-18.06p,bc06p,morena,morena,2021,m,1,,2,2024,,,,,
 2434,88,JUAN ISAIAS,BERTIN SANDOVAL,bc-18.07p,bc07p,morena,morena,2021,m,1,,2,2024,,,,,elec-coal=PVEM.PT.MORENA
 2435,94,FAUSTO,GALLARDO GARCIA,bc-18.08p,bc08p,pvem,pvem,2021,m,1,,2,2024,,,,,elec-coal=PVEM.PT.MORENA
-2436,104,MARIA MERCEDES,MACIEL ORTIZ,bcs-18.01p,bcs01p,pt,pt,2021,,1,,3,2024,,,,,elec-coal=PVEM.PT.MORENA
+2436,104,MARCO ANTONIO,ARMENDARIZ PUPPO,bcs-18.01p,bcs01p,pan,pan,2021,,1,,3,2024,,,,,tepjf anulo casillas quito triunfo a MARIA MERCEDES MACIEL ORTIZ pt elec-coal=PAN.PRI.PRD
 2437,113,ALFREDO,PORRAS DOMINGUEZ,bcs-18.02p,bcs02p,pt,pt,2021,m,1,,3,2024,,,,,elec-coal=PVEM.PT.MORENA
 2438,122,JOSE LUIS,FLORES PACHECO,cam-18.01p,cam01p,morena,morena,2021,m,1,,4,2024,,,,,
 2439,131,MARIA,SIERRA DAMIAN,cam-18.02p,cam02p,morena,morena,2021,,1,,4,2024,,,,,
@@ -2471,7 +2471,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2470,407,MARIA DE LOS ANGELES,GUTIERREZ VALDEZ,cua-18.09p,cua09p,pan,pan,2021,,1,,8,2024,,,,,elec-coal=PAN.PRI.PRD
 2471,416,ERIKA VANESSA DEL,CASTILLO IBARRA,df-18.01p,df01p,morena,morena,2021,f,1,,9,2024,,,,,
 2472,425,MARIBEL GUADALUPE,VILLASEÑOR DAVILA,df-18.02p,df02p,pri,pri,2021,,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
-2473,434,GABRIELA GEORGINA,JIMENEZ GODOY,df-18.03p,df03p,morena,morena,2021,f,1,,9,2024,,,,,elec-coal=PVEM.PT.MORENA
+2473,434,WENDY,GONZALEZ URRUTIA,df-18.03p,df03p,pan,pan,2021,f,1,,9,2024,,,,,tepjf anulo casillas quito triunfo a GABRIELA GEORGINA JIMENEZ GODOY pvem.pt.morena
 2474,443,JOSE GERARDO RODOLFO,FERNANDEZ NOROÑA,df-18.04p,df04p,pt,pt,2021,m,1,,9,2024,,,,,elec-coal=PVEM.PT.MORENA
 2475,452,KARLA,AYALA VILLALOBOS,df-18.05p,df05p,pri,pri,2021,,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
 2476,461,DIANA MARIA TERESA,LARA CARREON,df-18.06p,df06p,pan,pan,2021,f,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
@@ -2611,7 +2611,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2610,1681,JORGE ARMANDO,ORTIZ RODRIGUEZ,nay-18.03p,nay03p,pt,pt,2021,m,1,,18,2024,,,,,elec-coal=PVEM.PT.MORENA
 2611,1690,HECTOR ISRAEL,CASTILLO OLIVARES,nl-18.01p,nl01p,pan,pan,2021,m,1,,19,2024,,,,,
 2612,1699,ANDRES MAURICIO,CANTU RAMIREZ,nl-18.02p,nl02p,pri,pri,2021,m,1,,19,2024,,,,,
-2613,1708,JOSE LUIS,GARCIA DUQUE,nl-18.03p,nl03p,pt,pt,2021,m,1,,19,2024,,,,,elec-coal=PVEM.PT.MORENA
+2613,1708,WENDY MARICELA,CORDERO GONZALEZ,nl-18.03p,nl03p,pan,pan,2021,m,1,,19,2024,,,,,tepjf anulo casillas quito triunfo a JOSE LUIS GARCIA DUQUE pt
 2614,1717,PEDRO,SALGADO ALMAGUER,nl-18.04p,nl04p,pan,pan,2021,,1,,19,2024,,,,,
 2615,1726,MARCELA,GUERRA CASTILLO,nl-18.05p,nl05p,pri,pri,2021,,1,,19,2024,,,,,
 2616,1735,ANNIA SARAHI,GOMEZ CARDENAS,nl-18.06p,nl06p,pan,pan,2021,f,1,,19,2024,,,,,

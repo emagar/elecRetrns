@@ -2182,7 +2182,7 @@ cps-18.119,2168,Santiago el Pinar,2021,0,6,jun,7,7118,7119,,pvem,f,ROSA DIAZ MEN
 cps-18.120,2170,Capitán Luis Angel Vidal,2021,0,6,jun,7,7119,7120,,morena,f,MONICA SOFIA CORDOVA ROBLERO,,2024,,,,,0,,,,,,
 cps-18.121,2172,Rincón Chamula,2021,0,6,jun,7,7120,7121,,pchu,m,PEDRO BAUTISTA AGUILAR,,2024,,,,,0,,,,,,
 cps-18.122,2176,Parral--El,2021,0,6,jun,7,7121,7122,,?,,?,,2024,,,,,0,,,,,,
-cps-18.123,2180,Emiliano Zapata,2021,0,6,jun,7,7122,7123,,?,,?,,2024,,,,,0,,,,,,
+cps-18.123,2180,Emiliano Zapata,2021,0,6,jun,7,7122,7123,,?,,?,,2024,,,,tepjf anulo 10ago2021,0,,,,,,
 cps-18.124,2184,Mezcalapa,2021,0,6,jun,7,7123,7124,,rsp,m,JOSE TILO ALCUDIA HERNANDEZ,,2024,,,,,0,,,,,,
 cps-18.125,2185,Honduras de la Sierra,2021,0,6,jun,7,7124,7125,,?,,?,,2024,,,,,,,,,,,
 cua-07.001,2190,Ahumada,1989,0,2,jul,8,8001,8001,,pri,,,,Term-limited-p-won,,pan,0.4143,,0,,0,0,,,
@@ -10384,7 +10384,7 @@ nl-08.038,10766,Montemorelos,1991,0,10,nov,19,19039,19038,,pan,m,JUAN DE DIOS ES
 nl-08.039,10777,Monterrey,1991,0,10,nov,19,19040,19039,,pri,m,BENJAMIN CLARIOND REYES-RETANA,,Term-limited-p-lost,,pan,0.1653,,0,inafed,0,0,,,
 nl-08.040,10788,Parás,1991,0,10,nov,19,19041,19040,,pri,m,CRECENSIO OLIVEIRA CANTU,,Term-limited-p-won,,,1,,0,inafed,0,0,,,
 nl-08.041,10799,Pesquería,1991,0,10,nov,19,19042,19041,,pri,m,REGOLDO GONZALEZ GUAJARDO,,Term-limited-p-won,,prd,0.4313,,0,inafed,0,0,,,
-nl-08.042,10810,Ramones--Los,1991,0,10,nov,19,19043,19042,,pri,,ABIUD FEDERICO GONZALEZ SALINAS,,Term-limited-p-won,,pdm,0.9968,,0,inafed,0,0,,,
+nl-08.042,10810,Ramones--Los,1991,0,10,nov,19,19043,19042,,pri,m,ABIUD FEDERICO GONZALEZ SALINAS,,Term-limited-p-won,,pdm,0.9968,,0,inafed,0,0,,,
 nl-08.043,10821,Rayones,1991,0,10,nov,19,19044,19043,,pri,m,JUAN OYERVIDES VALDEZ,,Term-limited-p-won,,prd,0.1842,,0,inafed,0,0,,,
 nl-08.044,10832,Sabinas Hidalgo,1991,0,10,nov,19,19045,19044,,pri,m,RODOLFO GARZA ANCIRA,,Term-limited-p-won,,pan,0.657,,0,inafed,0,0,,,
 nl-08.045,10843,Salinas Victoria,1991,0,10,nov,19,19046,19045,,pri,m,OSCAR DE LA GARZA CANTU,,Term-limited-p-won,,,1,,0,inafed,0,0,,,ok
@@ -10763,7 +10763,7 @@ nl-16.009,10443,Cadereyta Jiménez,2015,0,7,jun,19,19009,19009,,pan,m,JOSE SANTI
 nl-16.010,10454,Carmen,2015,0,7,jun,19,19010,19010,,pri-pvem-pna-pd1,m,GERARDO ALFONSO DE LA MAZA VILLARREAL,,Reelected,,prd-pt,0.0133,,0,,0,0,,,ok
 nl-16.011,10465,Cerralvo,2015,0,7,jun,19,19011,19011,,pan,m,BALTAZAR GILBERTO MARTINEZ RIOS,,Reelected,,pri,0.2103,,0,,0,0,,,ok
 nl-16.012,10476,Ciénega de Flores,2015,0,7,jun,19,19012,19012,,prd,m,PEDRO ALFONSO CASAS QUIÑONES,,Reelected,,pri,0.2787,reran as indep,0,,0,0,,,ok
-nl-16.013,10487,China,2015,0,7,jun,19,19013,19013,,pri-pvem-pna-pd1,,BUENAVENTURA TIJERINA CANTU,,Out-p-won,,pan,0.0996,,0,,0,0,,,
+nl-16.013,10487,China,2015,0,7,jun,19,19013,19013,,pri-pvem-pna-pd1,m,BUENAVENTURA TIJERINA CANTU,,Out-p-won,,pan,0.0996,,0,,0,0,,,
 nl-16.014,10498,Doctor Arroyo,2015,0,7,jun,19,19014,19014,,pri,m,JUAN ANTONIO MARTINEZ RODRIGUEZ,,Reelected,,pan,0.1502,,0,,0,0,,,ok
 nl-16.015,10509,Doctor Coss,2015,0,7,jun,19,19015,19015,,pri,m,SIMON RIOS RANGEL,,Reran-beaten,,pan,0.094,,0,,1,1,,,ok
 nl-16.016,10520,Doctor González,2015,0,7,jun,19,19016,19016,,prd-pt,m,JUAN JOSE COSTILLA VILLA,,Out-p-lost,,pan,0.0101,,0,,0,0,,,
@@ -12598,7 +12598,7 @@ oax-18.013,11028,Ciénega de Zimatlán,2021,0,6,jun,20,20017,20013,,pan-pri-prd,
 oax-18.014,11148,Ciudad Ixtepec,2021,0,6,jun,20,20041,20014,,morena,f,GABRIELA LOPEZ OLIVERA LOPEZ,,2024,,,,,0,,,,,,
 oax-18.021,11040,Cosolapa,2021,0,6,jun,20,20024,20021,,pan-pri-prd,f,LORENA LOPEZ CARRANZA,,2024,,,,,0,,,,,,
 oax-18.023,11052,Cuilápam de Guerrero,2021,0,6,jun,20,20026,20023,,mc,m,JAVIER MORENO COLMENARES,,2024,,,,,0,,,,,,
-oax-18.025,11004,Chahuites,2021,0,6,jun,20,20015,20025,,pvem,m,JOAQUIN MARTINEZ LOPEZ,,2024,,,,,0,,,,,,
+oax-18.025,11004,Chahuites,2021,0,6,jun,20,20015,20025,,pvem,m,JOAQUIN MARTINEZ LOPEZ,,2024,,,,tepjf anulo 13ago2021,0,,,,,,
 oax-18.026,11016,Chalcatongo de Hidalgo,2021,0,6,jun,20,20016,20026,,morena,f,MARIA DE LOURDES JIMENEZ LIERA,,2024,,,,,0,,,,,,
 oax-18.028,11064,Heroica Ciudad de Ejutla de Crespo,2021,0,6,jun,20,20028,20028,,pan-pri-prd,m,CARLOS ARMANDO DIAZ JIMENEZ,,2024,,,,,0,,,,,,
 oax-18.030,11076,Espinal--El,2021,0,6,jun,20,20030,20030,,morena,f,ESPERANZA BENITEZ ARIZMENDI,,2024,,,,,0,,,,,,
@@ -21727,7 +21727,7 @@ yuc-18.095,21607,Tixpéhual,2021,0,6,jun,31,31095,31095,,morena,m,VICTOR RENE LA
 yuc-18.096,21619,Tizimín,2021,0,6,jun,31,31096,31096,,pan-pna,m,PEDRO FRANCISCO COUOH SUASTE,,2024,,,,,0,,,,,,
 yuc-18.097,21631,Tunkás,2021,0,6,jun,31,31097,31097,,pan-pna,m,JORGE RICARDO KUH MENDEZ,,2024,,,,,0,,,,,,
 yuc-18.098,21643,Tzucacab,2021,0,6,jun,31,31098,31098,,pt,m,FREDDY ALEJANDRO CARRILLO BLANCO,,2024,,,,,0,,,,,,
-yuc-18.099,21655,Uayma,2021,0,6,jun,31,31099,31099,,pri,f,YAMILI IVONY CUPUL VAZQUEZ,,2024,,,,,0,,,,,,
+yuc-18.099,21655,Uayma,2021,0,6,jun,31,31099,31099,,pri,f,YAMILI IVONY CUPUL VAZQUEZ,,2024,,,,tepjf anulo 6ago2021,0,,,,,,
 yuc-18.100,21667,Ucú,2021,0,6,jun,31,31100,31100,,pvem,m,GENER ISMAEL  PECH LEON,,2024,,,,,0,,,,,,
 yuc-18.101,21679,Umán,2021,0,6,jun,31,31101,31101,,pan-prd-pna,m,GASPAR VENTURA CISNEROS POLANCO,,2024,,,,,0,,,,,,
 yuc-18.102,21691,Valladolid,2021,0,6,jun,31,31102,31102,,pan-pna,m,ALFREDO FERNANDEZ ARCEO,,2024,,,,,0,,,,,,
