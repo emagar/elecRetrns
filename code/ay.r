@@ -315,6 +315,13 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pcu-", replacement = "pchu-", l[,i])
     }
 #
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^fsm$", replacement = "fxm", l[,i])
+    l[,i] <- gsub(pattern = "-fsm-", replacement = "-fxm-", l[,i])
+    l[,i] <- gsub(pattern = "-fsm$", replacement = "-fxm", l[,i])
+    l[,i] <- gsub(pattern = "^fsm-", replacement = "fxm-", l[,i])
+    }
+#
 #
 sel.r <- which(dat$yr>2006)
 #table(l[sel.r,18]) # easier to verify one column at a time
