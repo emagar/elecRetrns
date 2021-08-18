@@ -782,7 +782,6 @@ colnames(dat)
 ## ## the same directory where aymu1979-present.csv ## ##
 ## ################################################### ##
 #########################################################
-
 sel <- dat$yr>=1989
 dat <- dat[sel,] # drop early years
 dat$nr <- dat$nulos <- dat$total <- dat$fuente <- NULL # drop void ballots
