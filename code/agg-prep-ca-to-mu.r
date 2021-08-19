@@ -28,6 +28,7 @@ d[1,]
 colnames(d)
 
 d <- within(d, expr = {
+    listanom <- ave(listanom, as.factor(ife), FUN=sum, na.rm=TRUE);
     pan <- ave(pan, as.factor(ife), FUN=sum, na.rm=TRUE);
     pri <- ave(pri, as.factor(ife), FUN=sum, na.rm=TRUE);
     prd <- ave(prd, as.factor(ife), FUN=sum, na.rm=TRUE);
@@ -54,12 +55,12 @@ d <- within(d, expr = {
     ci2 <- ave(ci2, as.factor(ife), FUN=sum, na.rm=TRUE);
     nr <- ave(nr, as.factor(ife), FUN=sum, na.rm=TRUE);
     nul <- ave(nul, as.factor(ife), FUN=sum, na.rm=TRUE);
+}
 )
 
 
-
-# drop redundant cols
-d <- d[duplicated(as.factor(d$ID_ESTADO*1000+d$ID_MUNICIPIO))==FALSE,]
+# drop redundant rows
+d <- d[duplicated(as.factor(d$ife))==FALSE,]
 dim(d)
 head(d)
 
@@ -138,3 +139,64 @@ for (i in 1:length(all.f)){
 clipboard(new.o)
 
 new.o[1,]
+
+
+
+#####################
+## cua excel files ##
+#####################
+rm(list = ls())
+#library(xlsx)
+library(readxl)
+source("~/Dropbox/data/useful-functions/notin.r")
+f <- "/home/eric/Downloads/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/not-in-git/resultCasillas/subnat/cua2021ay-casilla.xlsx"
+
+# get all colnames
+all.n <- c()
+for (i in 1:67){
+    #i <- 11
+    message(sprintf("loop %s", i))
+    #d <- read.xlsx(f, sheetIndex = i)
+    #d <- read.xlsx(f, sheetIndex = i, header = FALSE, startRow = 1, endRow = 1)
+    d <- read_excel(f, sheet = i)
+    #d[1,]
+    all.n <- c(all.n, colnames(d))
+    rm(d)
+}
+all.n <- all.n[duplicated(all.n)==FALSE]
+all.n <- all.n[order(all.n)]
+all.n <- all.n[-which(all.n %in% c("Seccion","Casilla","Eleccion"))]
+
+# get all files, colSums into new object
+new.o <- matrix(rep(0, length(all.n)), nrow = 1)
+new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$Municipio <- "drop this obs"
+#new.o <- new.o[,-which(colnames(new.o) %in% c("Seccion","Casilla","Eleccion"))]
+for (i in 1:67){
+    #i <- 1
+    message(sprintf("loop %s", i))
+    d <- read_excel(f, sheet = i)
+    d <- as.data.frame(d) # chg tibble to data frame
+    #d[1,]
+    tmp.n <- which(all.n %notin% colnames(d)) # missing columns
+    tmp.x <- matrix(0, nrow=nrow(d), ncol=length(tmp.n))
+    tmp.x <- data.frame(tmp.x); colnames(tmp.x) <- all.n[tmp.n]
+    d <- cbind(d, tmp.x)
+    tmp <- d[1,which(colnames(d) %in% c("Municipio"))] # keep mun
+    tmp2 <- d[1,which(colnames(d) %in% c("NoMpio"))] # keep ife
+    d <- colSums(d[,-which(colnames(d) %in% c("Municipio","NoMpio","Seccion","Casilla","Eleccion"))])
+    d <- c(Municipio=tmp, NoMpio=tmp2, d) # paste mun
+    d <- d[order(names(d))]
+    table(colnames(new.o)==names(d))
+    new.o <- rbind(new.o, d)
+#    assign(d, paste0("f", sub("^([0-9]+)[,].+", "\\1", all.f[i]))) # rename object
+}
+
+clipboard <- function(x, sep=",", row.names=FALSE, col.names=TRUE){
+     con <- pipe("xclip -selection clipboard -i", open="w")
+     write.table(x, con, sep=sep, row.names=row.names, col.names=col.names)
+     close(con)
+}
+clipboard(new.o)
+
+new.o[2,]
+
