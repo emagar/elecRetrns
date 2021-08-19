@@ -12,55 +12,75 @@ d2 <- d # duplicate
 d <- d2
 
 # clean
-sel <- which(colnames(d) %in% c("cabecera", "disn", "dis", "tiposec", "casilla", "idcasilla", "tipocasilla","extcon","abreviatura"))
+sel <- which(colnames(d) %in% c("SECCION", "ID_CASILLA", "TIPO_CASILLA", "EXT_CONTIGUA", "CASILLA", "ID_TIPO_CANDIDATURA", "NUM_ACTA_IMPRESO","CASILLA_INSTALADA","ESTATUS_PAQUETE", "ID_INCIDENTE", "NUMERO_VOTOS_VALIDOS", "TOTAL_VOTOS_ACTA", "TOTAL_VOTOS"))
 d <- d[,-sel]
 
 # turn characters into NAs
-sel <- c(1,3:33)
-tmp <- d[,sel]
+sel <- c(1)
+tmp <- d[,-sel]
 tmp <- lapply(tmp, as.numeric)
 tmp <- as.data.frame(do.call(cbind,tmp))
 tmp[is.na(tmp)] <- 0
 head(tmp)
-d[,sel] <- tmp
+d[,-sel] <- tmp
 
 d[1,]
 colnames(d)
 
 d <- within(d, expr = {
-    listanom <- ave(listanom, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pan <- ave(pan, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pri <- ave(pri, as.factor(ife), FUN=sum, na.rm=TRUE);
-    prd <- ave(prd, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pvem <- ave(pvem, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pt <- ave(pt, as.factor(ife), FUN=sum, na.rm=TRUE);
-    mc <- ave(mc, as.factor(ife), FUN=sum, na.rm=TRUE);
-    morena <- ave(morena, as.factor(ife), FUN=sum, na.rm=TRUE);
-    txver <- ave(txver, as.factor(ife), FUN=sum, na.rm=TRUE);
-    podemos <- ave(podemos, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pc <- ave(pc, as.factor(ife), FUN=sum, na.rm=TRUE);
-    uc <- ave(uc, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pes <- ave(pes, as.factor(ife), FUN=sum, na.rm=TRUE);
-    rsp <- ave(rsp, as.factor(ife), FUN=sum, na.rm=TRUE);
-    fxm <- ave(fxm, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pan_pri_prd <- ave(pan_pri_prd, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pan_pri <- ave(pan_pri, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pan_prd <- ave(pan_prd, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pri_prd <- ave(pri_prd, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pvem_pt_morena <- ave(pvem_pt_morena, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pvem_pt <- ave(pvem_pt, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pvem_morena <- ave(pvem_morena, as.factor(ife), FUN=sum, na.rm=TRUE);
-    pt_morena <- ave(pt_morena, as.factor(ife), FUN=sum, na.rm=TRUE);
-    ci1 <- ave(ci1, as.factor(ife), FUN=sum, na.rm=TRUE);
-    ci2 <- ave(ci2, as.factor(ife), FUN=sum, na.rm=TRUE);
-    nr <- ave(nr, as.factor(ife), FUN=sum, na.rm=TRUE);
-    nul <- ave(nul, as.factor(ife), FUN=sum, na.rm=TRUE);
+    pan <- ave(pan, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pri <- ave(pri, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    prd <- ave(prd, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pvem <- ave(pvem, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pt <- ave(pt, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    mc <- ave(mc, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pup <- ave(pup, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pna <- ave(pna, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    morena <- ave(morena, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pes <- ave(pes, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    psd <- ave(psd, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pmr <- ave(pmr, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pan.pri.mc <- ave(pan.pri.mc, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pri.pvem.pna <- ave(pri.pvem.pna, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pt.morena.pes <- ave(pt.morena.pes, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    prd.mc.pup <- ave(prd.mc.pup, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pri.pvem <- ave(pri.pvem, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pri.pna <- ave(pri.pna, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    pvem.pna <- ave(pvem.pna, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    prd.mc <- ave(prd.mc, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ALBERTO <- ave(ind.ALBERTO, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.JUAN.DE.DIOS <- ave(ind.JUAN.DE.DIOS, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ELIAZAR <- ave(ind.ELIAZAR, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.JOSE.D. <- ave(ind.JOSE.D., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.PEDRO <- ave(ind.PEDRO, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ARIEL.A. <- ave(ind.ARIEL.A., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.MANUEL <- ave(ind.MANUEL, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.SANTIAGO <- ave(ind.SANTIAGO, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.IVAN <- ave(ind.IVAN, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.GERMAN <- ave(ind.GERMAN, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ROSA.M. <- ave(ind.ROSA.M., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.RUFFO.E. <- ave(ind.RUFFO.E., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ARTEMIO <- ave(ind.ARTEMIO, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.BARUCH <- ave(ind.BARUCH, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.CARLOS.R. <- ave(ind.CARLOS.R., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.LUIS.E. <- ave(ind.LUIS.E., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.IVONNE <- ave(ind.IVONNE, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.RAYMUNDO <- ave(ind.RAYMUNDO, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.VICTOR <- ave(ind.VICTOR, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.LUIS.E..1 <- ave(ind.LUIS.E..1, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.ADOLFO.J. <- ave(ind.ADOLFO.J., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.RAUL <- ave(ind.RAUL, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    ind.JOEL.A. <- ave(ind.JOEL.A., as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    nr <- ave(nr, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    nul <- ave(nul, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    tot <- ave(tot, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
+    lisnom <- ave(lisnom, as.factor(UBICACION), FUN=sum, na.rm=TRUE);
 }
 )
 
 
 # drop redundant rows
-d <- d[duplicated(as.factor(d$ife))==FALSE,]
+d <- d[duplicated(as.factor(d$UBICACION))==FALSE,]
 dim(d)
 head(d)
 
