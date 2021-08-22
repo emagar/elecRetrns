@@ -697,11 +697,11 @@ rm(pth)
 tail(cv)
 tail(cl)
 ###########################################
-cv.sorted <- sortBy(target = cv, By = cv) # slow! wait for process 
-#                                         # end before continuing
+cv.sorted <- sortBy(target = cv, By = cv) # slow! convenient to wait for  
+#                                         # process end before continuing
 ###########################################
-cl.sorted <- sortBy(target = cl, By = cv) # slow! wait for process
-#                                         # end before continuing
+cl.sorted <- sortBy(target = cl, By = cv) # slow! convenient to wait for
+#                                         # process end before continuing
 ###########################################
 cv.sorted <- as.data.frame(cv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 cl.sorted <- as.data.frame(cl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
