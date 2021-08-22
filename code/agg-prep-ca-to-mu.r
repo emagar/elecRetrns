@@ -219,11 +219,13 @@ for (i in 1:length(all.f)){
     all.n <- c(all.n, colnames(d))
 }
 all.n <- all.n[duplicated(all.n)==FALSE]
+all.n <- all.n[-which(all.n %in% c("Municipio","Casilla","Dto..Local","No..Mpo"))]
+all.n <- c(all.n, "mun", "ife")
 all.n <- all.n[order(all.n)]
 
 # get all files, colSums into new object
 new.o <- matrix(rep(0, length(all.n)), nrow = 1)
-new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$Municipio <- "drop this obs"
+new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$mun <- "drop this obs"
 for (i in 1:length(all.f)){
     #i <- 1
     message(sprintf("loop %s", i))
@@ -237,7 +239,8 @@ for (i in 1:length(all.f)){
     tmp <- d[1,which(colnames(d) %in% c("Municipio"))] # keep mun
     tmp2 <- as.numeric(d[1,which(colnames(d) %in% c("No..Mpo"))]) # keep ife
     d <- colSums(d[,-which(colnames(d) %in% c("Municipio","Casilla","Dto..Local","No..Mpo"))])
-    d <- c(mun=tmp, d) # paste mun
+    d["mun"] <- tmp   # paste mun
+    d["ife"] <- tmp2  # paste ife
     d <- d[order(names(d))]
     new.o <-
         rbind(new.o, d)
