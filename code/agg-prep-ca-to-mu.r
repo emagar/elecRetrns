@@ -98,7 +98,6 @@ setwd("/home/eric/Downloads/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/not-
 
 all.f <- dir()
 
-
 # get all colnames
 all.n <- c()
 for (i in 1:length(all.f)){
@@ -109,23 +108,26 @@ for (i in 1:length(all.f)){
     all.n <- c(all.n, colnames(d))
 }
 all.n <- all.n[duplicated(all.n)==FALSE]
+all.n <- all.n[-which(all.n %in% c("Distrito","Cabecera.distrital","Sección","Casilla","Recuento"))]
 all.n <- all.n[order(all.n)]
 
 # get all files, colSums into new object
 new.o <- matrix(rep(0, length(all.n)), nrow = 1)
-new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$MUNICIPIO <- "drop this obs"
+new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$Municipio <- "drop this obs"
 for (i in 1:length(all.f)){
     #i <- 1
     message(sprintf("loop %s", i))
     d <- read.xlsx(all.f[i], sheetIndex = 1)
+    #str(d)
     #d[1,]
     tmp.n <- which(all.n %notin% colnames(d)) # missing columns
     tmp.x <- matrix(0, nrow=nrow(d), ncol=length(tmp.n))
     tmp.x <- data.frame(tmp.x); colnames(tmp.x) <- all.n[tmp.n]
     d <- cbind(d, tmp.x)
-    tmp <- d[1,which(colnames(d) %in% c("MUNICIPIO"))] # keep mun
-    d <- colSums(d[,-which(colnames(d) %in% c("MUNICIPIO","TIPO.CASILLA","SECCION"))])
-    d <- c(mun=tmp, d) # paste mun
+    tmp <- d[1,which(colnames(d) %in% c("Municipio"))] # keep mun
+    tmp2 <- d[1,which(colnames(d) %in% c("Cve..Municipio"))] # keep ife
+    d <- colSums(d[,-which(colnames(d) %in% c("Municipio","Cve..Municipio","Distrito","Cabecera.distrital","Sección","Casilla","Recuento"))], na.rm=TRUE)
+    d <- c(Municipio=tmp, Cve..Municipio=tmp2, d) # paste mun
     d <- d[order(names(d))]
     new.o <-
         rbind(new.o, d)

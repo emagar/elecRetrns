@@ -1,0 +1,356 @@
+info extra
+1) coal pri-pvem-panal en todos los municipios
+2) columns: munic x3, avance, pan, pri, prd, pt, pvem, conve, panal, pri-pvem, pri-panal, pvem-panal, pri-pvem-panal, suma pri-pvem-panal, nr, nul, total, lisnom, partic
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Aguascalientes :: Elecciones 2010</title>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />    
+<style>
+	table#box_menu  {
+		background: #E4DFCC url(img/fndmenu.jpg) repeat-x;
+		margin: 0 auto;
+		width: 1004px;
+		height: 74px;
+	}
+	#box_menu td {
+		margin: 0;
+		padding: 0;
+	}
+	#box_menu td.s_menu a {
+		font-size: .7em;
+		font-style: normal;
+		line-height: normal;
+		text-decoration:none;
+		font-weight: 600;
+		color: #FFFFFF;
+		border-bottom:3px solid #a39d53;
+		margin: 0;
+	}
+	#box_menu td.s_menu a:hover {
+		font-size: .8em;
+		font-style: normal;
+		line-height: normal;
+		text-decoration:none;
+		font-weight: 600;
+		color: #FFDF80;
+		border-bottom:3px solid #ffffff;
+	}
+	.podernet {
+	background-image:url('img/logo_poder.gif');
+	width:77px;
+	height:70px;
+	}
+</style>
+</head>
+
+<body>
+
+<table id="box_menu" style="width:1004px;margin: 0 auto" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+	<embed width="185" height="74" flashvars="dir=www.podernet.com.mx" wmode="transparent" allowscriptaccess="always" quality="high" src="swf/digiprep.swf" type="application/x-shockwave-flash"></embed>
+</td><td class="s_menu" style="width:823px;height:74px;text-align:center;">
+	<a href="index.php" target="_top">Inicio</a>
+	<a href="grafica.php?candidatura=1" target="_top">Gobernador</a>
+	<a href="tsuma.php?candidatura=2" target="_top">Diputados</a>
+	<a href="tsuma.php?candidatura=3" target="_top">Ayuntamientos</a>
+
+	<a href="busca_cas.php" target="_top">Busca tu Casilla</a>
+<!--	<a href="sesion.php" target="_top">Video Promocional</a>-->
+	<a href="excel.php" target="_top">Resultados en Hoja de Cálculo</a>
+</td>
+<td width="77">
+	<div class="podernet"></div>
+</td>
+</tr></table>
+<div id="cont_banner"></div>
+<link href="css/tsuma.css" rel="stylesheet" type="text/css" />
+<div id="contenido">
+<div id="dsuma">
+
+<table style="border:0;margin:0;padding:0;width:100%">
+<tr><td style="width:50%;border:0">&nbsp;</td>
+<td nowrap style="white-space:nowrap;border:0"><span class="s_titulo">Tabla de resultados para Ayuntamientos por Municipio</span></td>
+<td style="width:50%;text-align:right;border:0" align=right><span style="font-size:10px;color:brown;font-weight:600;">Última Captura para Ayuntamientos: </span><span style="font-size:10px;color:grey;font-weight:600;"> 5/jul 04:12:25</span></td>
+</tr></table>
+<table id="tsuma">
+	<thead align="center">
+	<tr ><th colspan=4><th class="sinbor">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_1.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_2.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_2.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_2.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_3.jpg');">&nbsp;<th class="sinbor" style="background-image : url('img/flecha_6.jpg');">&nbsp;<th class="sinbor">&nbsp;<th class="sinbor">&nbsp;<th class=\"sinbor\" colspan=3></tr><tr><th colspan=3>Municipio<th>Avance<th><img class="s_logo" src="/logos/logo_pan.jpg"  title="PARTIDO ACCIÓN NACIONAL"><th><img class="s_logo" src="/logos/logo_pri.jpg"  title="PARTIDO REVOLUCIONARIO INSTITUCIONAL"><th><img class="s_logo" src="/logos/logo_prd.jpg"  title="PARTIDO DE LA REVOLUCIÓN DEMOCRÁTICA"><th><img class="s_logo" src="/logos/logo_pt.jpg"  title="PARTIDO DEL TRABAJO"><th><img class="s_logo" src="/logos/logo_pvem.jpg"  title="PARTIDO VERDE ECOLOGISTA DE MÉXICO"><th><img class="s_logo" src="/logos/logo_conv.jpg"  title="CONVERGENCIA"><th><img class="s_logo" src="/logos/logo_pna.jpg"  title="NUEVA ALIANZA"><th><img class="s_logo" src="/logos/logo_pri_pvem.jpg"  title="Votos combinados en boleta para (PRI, PVEM)"><th><img class="s_logo" src="/logos/logo_pri_pna.jpg"  title="Votos combinados en boleta para (PRI, PNA)"><th><img class="s_logo" src="/logos/logo_pvem_pna.jpg"  title="Votos combinados en boleta para (PVEM, PNA)"><th><img class="s_logo" src="/logos/logo_pri_pvem_pna.jpg"  title="Votos combinados en boleta para (PRI, PVEM, PNA)"><th><img class="s_logo" src="/logos/coalicion_aptb.jpg"  title="Coalición Aliados por tu Bienestar (Suma PRI, PVEM, PNA y sus combinaciones)"><th><img class="s_logo" src="/logos/logo_noreg.jpg"  title="CANDIDATOS NO REGISTRADOS"><th><img class="s_logo" src="/logos/logo_nulos.jpg"  title="VOTOS NULOS"><th>Total<br>Votos<th>Listado<br>Nominal<th>Partici_<br>pación</tr>	</thead>
+
+	<tbody>
+	<tr class="s_fila0">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=1" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=1" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Aguascalientes<td class="s_avanceFull">100%	<td >
+		93,845<br><span class="s_porcentaje">34.29%</span>	<td >
+
+		133,853<br><span class="s_porcentaje">48.90%</span>	<td >
+		4,706<br><span class="s_porcentaje">1.72%</span>	<td >
+		3,644<br><span class="s_porcentaje">1.33%</span>	<td >
+		5,042<br><span class="s_porcentaje">1.84%</span>	<td >
+
+		14,083<br><span class="s_porcentaje">5.15%</span>	<td >
+		9,592<br><span class="s_porcentaje">3.50%</span>	<td >
+		497<br><span class="s_porcentaje">0.18%</span>	<td >
+		573<br><span class="s_porcentaje">0.21%</span>	<td >
+
+		40<br><span class="s_porcentaje">0.01%</span>	<td >
+		957<br><span class="s_porcentaje">0.35%</span>	<td  class="s_win" >
+		150,554<br><span class="s_porcentaje">55.00%</span>	<td >
+		389<br><span class="s_porcentaje">0.14%</span>	<td >
+
+		6,497<br><span class="s_porcentaje">2.37%</span><td class="s_emitidos">273718<td class="s_padron">510291<td class="s_participa">53.64%<tr class="s_fila1">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=2" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=2" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Asientos<td class="s_avanceFull">100%	<td >
+
+		7,517<br><span class="s_porcentaje">42.49%</span>	<td >
+		5,649<br><span class="s_porcentaje">31.93%</span>	<td >
+		232<br><span class="s_porcentaje">1.31%</span>	<td >
+		687<br><span class="s_porcentaje">3.88%</span>	<td >
+
+		211<br><span class="s_porcentaje">1.19%</span>	<td >
+		470<br><span class="s_porcentaje">2.66%</span>	<td >
+		1,887<br><span class="s_porcentaje">10.67%</span>	<td >
+		15<br><span class="s_porcentaje">0.08%</span>	<td >
+
+		207<br><span class="s_porcentaje">1.17%</span>	<td >
+		15<br><span class="s_porcentaje">0.08%</span>	<td >
+		290<br><span class="s_porcentaje">1.64%</span>	<td  class="s_win" >
+		8,274<br><span class="s_porcentaje">46.76%</span>	<td >
+
+		20<br><span class="s_porcentaje">0.11%</span>	<td >
+		493<br><span class="s_porcentaje">2.79%</span><td class="s_emitidos">17693<td class="s_padron">28901<td class="s_participa">61.22%<tr class="s_fila0">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=3" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=3" target="_top">
+
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Calvillo<td class="s_avanceFull">100%	<td >
+		4,991<br><span class="s_porcentaje">26.89%</span>	<td >
+		5,774<br><span class="s_porcentaje">31.10%</span>	<td >
+		4,334<br><span class="s_porcentaje">23.35%</span>	<td >
+
+		282<br><span class="s_porcentaje">1.52%</span>	<td >
+		479<br><span class="s_porcentaje">2.58%</span>	<td >
+		1,359<br><span class="s_porcentaje">7.32%</span>	<td >
+		416<br><span class="s_porcentaje">2.24%</span>	<td >
+
+		130<br><span class="s_porcentaje">0.70%</span>	<td >
+		80<br><span class="s_porcentaje">0.43%</span>	<td >
+		11<br><span class="s_porcentaje">0.06%</span>	<td >
+		152<br><span class="s_porcentaje">0.82%</span>	<td  class="s_win" >
+
+		7,042<br><span class="s_porcentaje">37.94%</span>	<td >
+		25<br><span class="s_porcentaje">0.13%</span>	<td >
+		530<br><span class="s_porcentaje">2.86%</span><td class="s_emitidos">18563<td class="s_padron">37251<td class="s_participa">49.83%<tr class="s_fila1">
+
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=4" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=4" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Cosío<td class="s_avanceFull">100%	<td >
+		1,378<br><span class="s_porcentaje">24.24%</span>	<td >
+
+		2,276<br><span class="s_porcentaje">40.04%</span>	<td >
+		86<br><span class="s_porcentaje">1.51%</span>	<td >
+		1,083<br><span class="s_porcentaje">19.05%</span>	<td >
+		124<br><span class="s_porcentaje">2.18%</span>	<td >
+
+		173<br><span class="s_porcentaje">3.04%</span>	<td >
+		345<br><span class="s_porcentaje">6.07%</span>	<td >
+		7<br><span class="s_porcentaje">0.12%</span>	<td >
+		28<br><span class="s_porcentaje">0.49%</span>	<td >
+
+		2<br><span class="s_porcentaje">0.04%</span>	<td >
+		28<br><span class="s_porcentaje">0.49%</span>	<td  class="s_win" >
+		2,810<br><span class="s_porcentaje">49.44%</span>	<td >
+		4<br><span class="s_porcentaje">0.07%</span>	<td >
+
+		150<br><span class="s_porcentaje">2.64%</span><td class="s_emitidos">5684<td class="s_padron">8728<td class="s_participa">65.12%<tr class="s_fila0">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=5" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=5" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">El Llano<td class="s_avanceFull">100%	<td >
+
+		1,330<br><span class="s_porcentaje">17.82%</span>	<td >
+		2,423<br><span class="s_porcentaje">32.47%</span>	<td >
+		117<br><span class="s_porcentaje">1.57%</span>	<td >
+		2,712<br><span class="s_porcentaje">36.34%</span>	<td >
+
+		206<br><span class="s_porcentaje">2.76%</span>	<td >
+		87<br><span class="s_porcentaje">1.17%</span>	<td >
+		239<br><span class="s_porcentaje">3.20%</span>	<td >
+		11<br><span class="s_porcentaje">0.15%</span>	<td >
+
+		29<br><span class="s_porcentaje">0.39%</span>	<td >
+		8<br><span class="s_porcentaje">0.11%</span>	<td >
+		33<br><span class="s_porcentaje">0.44%</span>	<td  class="s_win" >
+		2,949<br><span class="s_porcentaje">39.52%</span>	<td >
+
+		4<br><span class="s_porcentaje">0.05%</span>	<td >
+		263<br><span class="s_porcentaje">3.52%</span><td class="s_emitidos">7462<td class="s_padron">11583<td class="s_participa">64.42%<tr class="s_fila1">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=6" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=6" target="_top">
+
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Jesús María<td class="s_avanceFull">100%	<td >
+		10,179<br><span class="s_porcentaje">37.37%</span>	<td >
+		12,126<br><span class="s_porcentaje">44.51%</span>	<td >
+		868<br><span class="s_porcentaje">3.19%</span>	<td >
+
+		749<br><span class="s_porcentaje">2.75%</span>	<td >
+		636<br><span class="s_porcentaje">2.33%</span>	<td >
+		916<br><span class="s_porcentaje">3.36%</span>	<td >
+		847<br><span class="s_porcentaje">3.11%</span>	<td >
+
+		63<br><span class="s_porcentaje">0.23%</span>	<td >
+		28<br><span class="s_porcentaje">0.10%</span>	<td >
+		7<br><span class="s_porcentaje">0.03%</span>	<td >
+		65<br><span class="s_porcentaje">0.24%</span>	<td  class="s_win" >
+
+		13,772<br><span class="s_porcentaje">50.55%</span>	<td >
+		56<br><span class="s_porcentaje">0.21%</span>	<td >
+		702<br><span class="s_porcentaje">2.58%</span><td class="s_emitidos">27242<td class="s_padron">52599<td class="s_participa">51.79%<tr class="s_fila0">
+
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=7" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=7" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Pabellón de Arteaga<td class="s_avanceFull">100%	<td >
+		2,731<br><span class="s_porcentaje">19.58%</span>	<td >
+
+		1,591<br><span class="s_porcentaje">11.41%</span>	<td >
+		2,540<br><span class="s_porcentaje">18.21%</span>	<td >
+		1,251<br><span class="s_porcentaje">8.97%</span>	<td >
+		213<br><span class="s_porcentaje">1.53%</span>	<td >
+
+		491<br><span class="s_porcentaje">3.52%</span>	<td >
+		4,380<br><span class="s_porcentaje">31.40%</span>	<td >
+		16<br><span class="s_porcentaje">0.11%</span>	<td >
+		176<br><span class="s_porcentaje">1.26%</span>	<td >
+
+		5<br><span class="s_porcentaje">0.04%</span>	<td >
+		61<br><span class="s_porcentaje">0.44%</span>	<td  class="s_win" >
+		6,442<br><span class="s_porcentaje">46.18%</span>	<td >
+		32<br><span class="s_porcentaje">0.23%</span>	<td >
+
+		463<br><span class="s_porcentaje">3.32%</span><td class="s_emitidos">13950<td class="s_padron">23164<td class="s_participa">60.22%<tr class="s_fila1">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=8" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=8" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Rincón de Romos<td class="s_avanceFull">100%	<td >
+
+		2,047<br><span class="s_porcentaje">13.39%</span>	<td >
+		3,506<br><span class="s_porcentaje">22.93%</span>	<td >
+		1,642<br><span class="s_porcentaje">10.74%</span>	<td >
+		2,978<br><span class="s_porcentaje">19.47%</span>	<td >
+
+		331<br><span class="s_porcentaje">2.16%</span>	<td >
+		2,018<br><span class="s_porcentaje">13.20%</span>	<td >
+		1,959<br><span class="s_porcentaje">12.81%</span>	<td >
+		20<br><span class="s_porcentaje">0.13%</span>	<td >
+
+		91<br><span class="s_porcentaje">0.60%</span>	<td >
+		11<br><span class="s_porcentaje">0.07%</span>	<td >
+		82<br><span class="s_porcentaje">0.54%</span>	<td  class="s_win" >
+		6,000<br><span class="s_porcentaje">39.24%</span>	<td >
+
+		30<br><span class="s_porcentaje">0.20%</span>	<td >
+		577<br><span class="s_porcentaje">3.77%</span><td class="s_emitidos">15292<td class="s_padron">28104<td class="s_participa">54.41%<tr class="s_fila0">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=9" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=9" target="_top">
+
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">San Francisco de los Romo<td class="s_avanceFull">100%	<td >
+		3,045<br><span class="s_porcentaje">28.31%</span>	<td >
+		4,543<br><span class="s_porcentaje">42.24%</span>	<td >
+		156<br><span class="s_porcentaje">1.45%</span>	<td >
+
+		1,486<br><span class="s_porcentaje">13.82%</span>	<td >
+		306<br><span class="s_porcentaje">2.84%</span>	<td >
+		281<br><span class="s_porcentaje">2.61%</span>	<td >
+		523<br><span class="s_porcentaje">4.86%</span>	<td >
+
+		15<br><span class="s_porcentaje">0.14%</span>	<td >
+		24<br><span class="s_porcentaje">0.22%</span>	<td >
+		0<br><span class="s_porcentaje">0.00%</span>	<td >
+		37<br><span class="s_porcentaje">0.34%</span>	<td  class="s_win" >
+
+		5,448<br><span class="s_porcentaje">50.65%</span>	<td >
+		21<br><span class="s_porcentaje">0.20%</span>	<td >
+		319<br><span class="s_porcentaje">2.97%</span><td class="s_emitidos">10756<td class="s_padron">19792<td class="s_participa">54.35%<tr class="s_fila1">
+
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=10" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=10" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">San José de Gracia<td class="s_avanceFull">100%	<td >
+		865<br><span class="s_porcentaje">20.76%</span>	<td >
+
+		1,450<br><span class="s_porcentaje">34.80%</span>	<td >
+		122<br><span class="s_porcentaje">2.93%</span>	<td >
+		1,291<br><span class="s_porcentaje">30.98%</span>	<td >
+		71<br><span class="s_porcentaje">1.70%</span>	<td >
+
+		0<br><span class="s_porcentaje">0.00%</span>	<td >
+		232<br><span class="s_porcentaje">5.57%</span>	<td >
+		7<br><span class="s_porcentaje">0.17%</span>	<td >
+		7<br><span class="s_porcentaje">0.17%</span>	<td >
+
+		0<br><span class="s_porcentaje">0.00%</span>	<td >
+		26<br><span class="s_porcentaje">0.62%</span>	<td  class="s_win" >
+		1,793<br><span class="s_porcentaje">43.03%</span>	<td >
+		2<br><span class="s_porcentaje">0.05%</span>	<td >
+
+		94<br><span class="s_porcentaje">2.26%</span><td class="s_emitidos">4167<td class="s_padron">5841<td class="s_participa">71.34%<tr class="s_fila0">
+	<td class="s_links"><a href="grafica.php?candidatura=3&divnum=11" target="_top">
+		<img src="img/ver_grafica.gif" title="Ver Gráfica"></a>
+		<td class="s_links"><a href="tcasillas.php?candidatura=3&divnum=11" target="_top">
+		<img src="img/ver_casilla.gif" title="Ver Casillas"></a>
+	<td class="s_name">Tepezalá<td class="s_avanceFull">100%	<td >
+
+		2,627<br><span class="s_porcentaje">30.91%</span>	<td >
+		1,121<br><span class="s_porcentaje">13.19%</span>	<td >
+		512<br><span class="s_porcentaje">6.02%</span>	<td >
+		295<br><span class="s_porcentaje">3.47%</span>	<td >
+
+		80<br><span class="s_porcentaje">0.94%</span>	<td >
+		1,383<br><span class="s_porcentaje">16.27%</span>	<td >
+		1,968<br><span class="s_porcentaje">23.15%</span>	<td >
+		6<br><span class="s_porcentaje">0.07%</span>	<td >
+
+		127<br><span class="s_porcentaje">1.49%</span>	<td >
+		5<br><span class="s_porcentaje">0.06%</span>	<td >
+		96<br><span class="s_porcentaje">1.13%</span>	<td  class="s_win" >
+		3,403<br><span class="s_porcentaje">40.04%</span>	<td >
+
+		14<br><span class="s_porcentaje">0.16%</span>	<td >
+		266<br><span class="s_porcentaje">3.13%</span><td class="s_emitidos">8500<td class="s_padron">13071<td class="s_participa">65.03%	<tr><td colspan="22" style="background-color:black"></td>
+	</tbody>
+	<tfoot>
+	<tr><td colspan=3 class="s_total">Total<td class="s_avanceFull">100%<td>130,555<br><span class="s_porcentaje">32.39%</span><td>174,312<br><span class="s_porcentaje">43.25%</span><td>15,315<br><span class="s_porcentaje">3.80%</span><td>16,458<br><span class="s_porcentaje">4.08%</span><td>7,699<br><span class="s_porcentaje">1.91%</span><td>21,261<br><span class="s_porcentaje">5.28%</span><td>22,388<br><span class="s_porcentaje">5.55%</span><td>787<br><span class="s_porcentaje">0.20%</span><td>1,370<br><span class="s_porcentaje">0.34%</span><td>104<br><span class="s_porcentaje">0.03%</span><td>1,827<br><span class="s_porcentaje">0.45%</span><td>208,487<br><span class="s_porcentaje">51.73%</span><td>597<br><span class="s_porcentaje">0.15%</span><td>10,354<br><span class="s_porcentaje">2.57%</span><td class="s_emitidos">403027<td class="s_padron">739325<td class="s_participa">54.51%</tr>	<tr><td colspan="22" style="background-color:black"></td>
+
+	</tfoot>
+</table>
+</div><!--tsuma-->
+</div><!--contenido-->
+<div id="cont_pie">
+PoderNet, S.A. de C.V., Gob. Ignacio Esteva No. 57, San Miguel Chapultepec 11850 México, D.F. Tel. 5257-0730  <a href="mailto:comentarios@podernet.com.mx">comentarios@podernet.com.mx</a>
+</div>
+</body>
+</html>
+
