@@ -1,0 +1,68 @@
+ord,disn,munn,mun,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07,l07,v08,l08,v09,l09,v10,l10,v11,l11,v12,l12,v13,l13,v14,l14,v15,l15,nr,nul,tot,lisnom
+1,11,1,AHUMADA,150,pan,0,pri,37,prd,0,pvem,0,pt,2837,mc,0,pna,0,morena,0,pes,0,pri.pna,2221,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,1,128,5374,8909
+23,11,2,ALDAMA,6863,pan,2562,pri,591,prd,41,pvem,38,pt,0,mc,96,pna,174,morena,110,pes,0,pri.pna,0,pri.pvem.pna,54,pri.pvem.pt.pna,0,0,0,0,0,0,0,223,10752,18678
+59,20,3,ALLENDE,2289,pan,0,pri,102,prd,0,pvem,0,pt,0,mc,0,pna,0,morena,101,pes,0,pri.pna,2432,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,2,91,5017,7280
+80,11,4,AQUILES SERDÁN,660,pan,0,pri,82,prd,3023,pvem,0,pt,206,mc,0,pna,74,morena,0,pes,2039,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,195,6279,10327
+98,1,5,ASCENSIÓN,3276,pan,3848,pri,68,prd,56,pvem,75,pt,405,mc,64,pna,57,morena,0,pes,0,pri.pna,0,pri.pvem.pna,124,pri.pvem.pt.pna,0,0,0,0,0,0,1,210,8184,17014
+131,13,6,BACHÍNIVA,1639,pan,1530,pri,107,prd,14,pvem,8,pt,0,mc,30,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,57,pri.pvem.pt.pna,0,0,0,0,0,0,1,103,3489,5582
+150,22,7,BALLEZA,3282,pan,4335,pri,14,prd,24,pvem,16,pt,0,mc,40,pna,0,morena,22,pes,0,pri.pna,0,pri.pvem.pna,240,pri.pvem.pt.pna,0,0,0,0,0,0,3,389,8365,12851
+174,22,8,BATOPILAS,737,pan,0,pri,0,prd,0,pvem,0,pt,35,mc,0,pna,0,morena,0,pes,2643,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,7,559,3981,8459
+191,13,9,BOCOYNA,2962,pan,0,pri,107,prd,0,pvem,104,pt,3697,mc,0,pna,0,morena,1758,pes,0,pri.pna,3209,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,4,748,12589,20561
+233,11,10,BUENAVENTURA,4111,pan,4445,pri,147,prd,39,pvem,47,pt,377,mc,78,pna,76,morena,0,pes,0,pri.pna,0,pri.pvem.pna,66,pri.pvem.pt.pna,0,0,0,0,0,0,1,230,9617,17751
+271,20,11,CAMARGO,13454,pan,6511,pri,392,prd,65,pvem,88,pt,438,mc,336,pna,233,morena,151,pes,0,pri.pna,0,pri.pvem.pna,95,pri.pvem.pt.pna,0,0,0,0,0,0,9,348,22120,37310
+344,22,12,CARICHÍ,1057,pan,0,pri,819,prd,0,pvem,0,pt,783,mc,0,pna,164,morena,0,pes,1441,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,3,367,4634,7058
+363,1,13,CASAS GRANDES,1219,pan,332,pri,867,prd,46,pvem,219,pt,1130,mc,76,pna,955,morena,0,pes,0,pri.pna,0,pri.pvem.pna,34,pri.pvem.pt.pna,0,0,0,0,0,0,18,199,5095,9716
+387,20,14,CORONADO,612,pan,0,pri,0,prd,0,pvem,306,pt,0,mc,0,pna,9,morena,0,pes,0,pri.pna,569,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,1,23,1520,1890
+396,11,15,COYAME DEL SOTOL,843,pan,683,pri,6,prd,2,pvem,2,pt,0,mc,10,pna,6,morena,0,pes,0,pri.pna,0,pri.pvem.pna,11,pri.pvem.pt.pna,0,0,0,0,0,0,0,14,1577,2150
+401,20,16,LA CRUZ,743,pan,940,pri,26,prd,13,pvem,8,pt,205,mc,91,pna,68,morena,0,pes,0,pri.pna,0,pri.pvem.pna,38,pri.pvem.pt.pna,0,0,0,0,0,0,0,51,2183,3330
+408,14,17,CUAUHTÉMOC,20654,pan,12912,pri,975,prd,802,pvem,475,pt,5202,mc,1090,pna,1259,morena,984,pes,0,pri.pna,0,pri.pvem.pna,276,pri.pvem.pt.pna,6263,Carlos.Tena.Nevárez,0,0,0,0,90,1680,52662,121142
+638,13,18,CUSIHUIRIACHI,348,pan,0,pri,157,prd,199,pvem,405,pt,328,mc,0,pna,0,morena,343,pes,960,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,138,2878,5164
+652,18,19,CHIHUAHUA,154028,pan,75688,pri,3106,prd,4030,pvem,2858,pt,4676,mc,6604,pna,8666,morena,3905,pes,0,pri.pna,0,pri.pvem.pna,1742,pri.pvem.pt.pna,74830,Luis.E.Terrazas.Seyffert,0,0,0,0,705,7148,347986,651314
+1862,13,20,CHÍNIPAS,630,pan,2503,pri,0,prd,6,pvem,6,pt,0,mc,2,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,28,pri.pvem.pt.pna,0,0,0,0,0,0,2,66,3243,5146
+1877,19,21,DELICIAS,23617,pan,14560,pri,3151,prd,491,pvem,814,pt,1034,mc,1179,pna,1781,morena,636,pes,0,pri.pna,0,pri.pvem.pna,293,pri.pvem.pt.pna,4700,Roberto.A.González.García,0,0,0,0,27,1208,53491,108796
+2073,21,22,DR. BELISARIO DOMÍNGUEZ,1059,pan,627,pri,17,prd,8,pvem,7,pt,15,mc,43,pna,19,morena,0,pes,0,pri.pna,0,pri.pvem.pna,33,pri.pvem.pt.pna,0,0,0,0,0,0,0,40,1868,3116
+2083,1,23,GALEANA,90,pan,1207,pri,35,prd,11,pvem,25,pt,0,mc,22,pna,953,morena,0,pes,0,pri.pna,0,pri.pvem.pna,37,pri.pvem.pt.pna,0,0,0,0,0,0,4,85,2469,3999
+2091,21,24,SANTA ISABEL,1529,pan,928,pri,0,prd,5,pvem,7,pt,0,mc,15,pna,26,morena,0,pes,0,pri.pna,0,pri.pvem.pna,34,pri.pvem.pt.pna,0,0,0,0,0,0,2,50,2596,4035
+2100,1,25,GÓMEZ FARÍAS,795,pan,0,pri,119,prd,0,pvem,222,pt,0,mc,0,pna,251,morena,0,pes,0,pri.pna,1930,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,4,230,3551,7285
+2116,21,26,GRAN MORELOS,988,pan,828,pri,19,prd,12,pvem,4,pt,2,mc,8,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,15,pri.pvem.pt.pna,0,0,0,0,0,0,0,55,1931,3243
+2129,22,27,GUACHOCHI,4869,pan,0,pri,419,prd,375,pvem,326,pt,736,mc,0,pna,323,morena,261,pes,7765,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,9,2520,17603,33832
+2196,11,28,GUADALUPE,511,pan,1204,pri,56,prd,8,pvem,12,pt,0,mc,46,pna,368,morena,0,pes,0,pri.pna,0,pri.pvem.pna,66,pri.pvem.pt.pna,0,0,0,0,0,0,1,79,2351,5296
+2208,22,29,GUADALUPE Y CALVO,1348,pan,8419,pri,0,prd,235,pvem,202,pt,164,mc,1031,pna,265,morena,0,pes,0,pri.pna,0,pri.pvem.pna,296,pri.pvem.pt.pna,0,0,0,0,0,0,12,967,12939,29607
+2265,13,30,GUAZAPARES,996,pan,1481,pri,20,prd,21,pvem,14,pt,1055,mc,21,pna,118,morena,0,pes,0,pri.pna,0,pri.pvem.pna,58,pri.pvem.pt.pna,0,0,0,0,0,0,0,264,4048,6758
+2284,13,31,GUERRERO,5403,pan,6534,pri,819,prd,134,pvem,83,pt,57,mc,498,pna,214,morena,297,pes,0,pri.pna,0,pri.pvem.pna,188,pri.pvem.pt.pna,0,0,0,0,0,0,8,579,14814,30026
+2375,21,32,HIDALGO DEL PARRAL,6427,pan,14090,pri,176,prd,214,pvem,186,pt,0,mc,526,pna,593,morena,413,pes,0,pri.pna,0,pri.pvem.pna,257,pri.pvem.pt.pna,23360,Jorge.A.Lozoya.Santillán,536,Jesús.G.Mariscal.Vargas,0,0,39,1379,48196,83776
+2534,21,33,HUEJOTITÁN,586,pan,0,pri,0,prd,0,pvem,0,pt,0,mc,0,pna,0,morena,0,pes,0,pri.pna,495,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,15,1096,1402
+2536,1,34,IGNACIO ZARAGOZA,1280,pan,596,pri,0,prd,15,pvem,24,pt,1033,mc,28,pna,354,morena,0,pes,0,pri.pna,0,pri.pvem.pna,22,pri.pvem.pt.pna,0,0,0,0,0,0,1,129,3482,6097
+2555,1,35,JANOS,591,pan,1155,pri,0,prd,7,pvem,21,pt,1668,mc,15,pna,5,morena,0,pes,0,pri.pna,0,pri.pvem.pna,19,pri.pvem.pt.pna,0,0,0,0,0,0,0,72,3553,7325
+2573,20,36,JIMÉNEZ,5489,pan,4897,pri,463,prd,75,pvem,1068,pt,943,mc,253,pna,1389,morena,59,pes,0,pri.pna,0,pri.pvem.pna,101,pri.pvem.pt.pna,188,Luis.Nevárez.Guillén,526,Manuel.A.Cano.Villalobos,408,Noé.Sotelo.Casillas,4,441,16304,29522
+2631,2,37,JUÁREZ,62482,pan,83675,pri,4720,prd,6679,pvem,4033,pt,0,mc,9316,pna,18255,morena,8149,pes,0,pri.pna,0,pri.pvem.pna,3667,pri.pvem.pt.pna,210490,Héctor.A.Cabada.Alvidrez,0,0,0,0,1496,16148,429159,1023228
+4568,11,38,JULIMES,1372,pan,1232,pri,51,prd,8,pvem,4,pt,6,mc,70,pna,32,morena,0,pes,0,pri.pna,0,pri.pvem.pna,50,pri.pvem.pt.pna,0,0,0,0,0,0,1,57,2883,4656
+4577,20,39,LÓPEZ,860,pan,646,pri,52,prd,6,pvem,377,pt,0,mc,8,pna,277,morena,49,pes,0,pri.pna,0,pri.pvem.pna,78,pri.pvem.pt.pna,0,0,0,0,0,0,0,71,2424,3484
+4587,1,40,MADERA,7335,pan,3453,pri,765,prd,81,pvem,69,pt,139,mc,152,pna,0,morena,148,pes,0,pri.pna,0,pri.pvem.pna,75,pri.pvem.pt.pna,0,0,0,0,0,0,3,357,12577,22370
+4646,13,41,MAGUARICHI,124,pan,582,pri,0,prd,4,pvem,2,pt,11,mc,11,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,19,pri.pvem.pt.pna,0,0,0,0,0,0,0,25,778,1414
+4651,11,42,MANUEL BENAVIDES,34,pan,0,pri,46,prd,72,pvem,489,pt,0,mc,0,pna,0,morena,0,pes,682,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,49,1372,1927
+4656,13,43,MATACHÍ,764,pan,364,pri,0,prd,3,pvem,9,pt,410,mc,23,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,16,pri.pvem.pt.pna,0,0,0,0,0,0,1,60,1650,2636
+4664,21,44,MATAMOROS,1318,pan,596,pri,0,prd,6,pvem,99,pt,383,mc,16,pna,18,morena,0,pes,0,pri.pna,0,pri.pvem.pna,43,pri.pvem.pt.pna,0,0,0,0,0,0,0,69,2548,3959
+4676,11,45,MEOQUI,6428,pan,3361,pri,956,prd,154,pvem,147,pt,2439,mc,1084,pna,489,morena,297,pes,0,pri.pna,0,pri.pvem.pna,129,pri.pvem.pt.pna,0,0,0,0,0,0,136,389,16009,33726
+4740,22,46,MORELOS,1036,pan,1541,pri,894,prd,15,pvem,20,pt,3,mc,16,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,99,pri.pvem.pt.pna,0,0,0,0,0,0,0,195,3819,5331
+4751,13,47,MORIS,1093,pan,0,pri,0,prd,0,pvem,0,pt,232,mc,0,pna,0,morena,0,pes,0,pri.pna,1123,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,74,2522,4012
+4762,13,48,NAMIQUIPA,2998,pan,0,pri,1508,prd,207,pvem,0,pt,90,mc,0,pna,230,morena,0,pes,3152,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,3,435,8623,18913
+4814,21,49,NONOAVA,1080,pan,923,pri,0,prd,5,pvem,3,pt,0,mc,5,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,26,pri.pvem.pt.pna,0,0,0,0,0,0,0,25,2067,2547
+4821,1,50,NVO. CASAS GRANDES,7371,pan,5210,pri,6321,prd,236,pvem,831,pt,307,mc,376,pna,606,morena,294,pes,0,pri.pna,0,pri.pvem.pna,159,pri.pvem.pt.pna,0,0,0,0,0,0,11,656,22378,47026
+4911,13,51,OCAMPO,421,pan,0,pri,357,prd,903,pvem,0,pt,401,mc,0,pna,25,morena,0,pes,1184,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,343,Jorge.A.Daniel.González,0,0,0,0,0,177,3811,5813
+4928,11,52,OJINAGA,5721,pan,0,pri,73,prd,0,pvem,150,pt,55,mc,0,pna,102,morena,52,pes,0,pri.pna,4965,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,8,566,11692,21390
+4972,11,53,PRAXEDIS G. GUERRERO,830,pan,0,pri,695,prd,0,pvem,0,pt,92,mc,0,pna,54,morena,59,pes,0,pri.pna,1131,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,3,107,2971,6141
+4984,14,54,RIVA PALACIO,1361,pan,0,pri,42,prd,0,pvem,0,pt,0,mc,0,pna,7,morena,0,pes,1226,pri.pna,0,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,1,50,2687,7330
+5001,19,55,ROSALES,2911,pan,3278,pri,284,prd,44,pvem,63,pt,107,mc,148,pna,112,morena,180,pes,0,pri.pna,0,pri.pvem.pna,76,pri.pvem.pt.pna,0,0,0,0,0,0,1,193,7397,13135
+5028,21,56,ROSARIO,810,pan,0,pri,0,prd,0,pvem,0,pt,0,mc,0,pna,0,morena,0,pes,0,pri.pna,767,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,11,1588,2007
+5032,21,57,SAN FRANCISCO DE BORJA,851,pan,0,pri,0,prd,0,pvem,21,pt,57,mc,0,pna,0,morena,0,pes,0,pri.pna,673,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,39,1641,2358
+5041,20,58,SAN FRANCISCO DE CONCHOS,763,pan,476,pri,473,prd,1,pvem,4,pt,64,mc,7,pna,20,morena,0,pes,0,pri.pna,0,pri.pvem.pna,12,pri.pvem.pt.pna,0,0,0,0,0,0,0,15,1835,2590
+5048,21,59,SAN FRANCISCO DEL ORO,207,pan,1288,pri,1243,prd,6,pvem,30,pt,32,mc,45,pna,0,morena,38,pes,0,pri.pna,0,pri.pvem.pna,28,pri.pvem.pt.pna,0,0,0,0,0,0,0,88,3005,4295
+5061,21,60,SANTA BÁRBARA,813,pan,1133,pri,1012,prd,27,pvem,61,pt,1790,mc,51,pna,101,morena,78,pes,0,pri.pna,0,pri.pvem.pna,23,pri.pvem.pt.pna,113,Mayra.A.Aguirre.Maciel,321,José.G.Gallardo.Molina,0,0,4,144,5671,8584
+5085,21,61,SATEVÓ,1492,pan,1214,pri,0,prd,6,pvem,1,pt,3,mc,8,pna,0,morena,23,pes,0,pri.pna,0,pri.pvem.pna,43,pri.pvem.pt.pna,0,0,0,0,0,0,0,72,2862,4088
+5099,20,62,SAUCILLO,5152,pan,3926,pri,1932,prd,68,pvem,96,pt,131,mc,504,pna,264,morena,219,pes,0,pri.pna,0,pri.pvem.pna,87,pri.pvem.pt.pna,0,0,0,0,0,0,7,314,12700,24234
+5144,13,63,TEMÓSACHIC,1621,pan,1147,pri,15,prd,28,pvem,11,pt,34,mc,15,pna,44,morena,0,pes,0,pri.pna,0,pri.pvem.pna,33,pri.pvem.pt.pna,0,0,0,0,0,0,0,110,3058,5315
+5160,21,64,EL TULE,832,pan,0,pri,0,prd,0,pvem,0,pt,0,mc,0,pna,0,morena,0,pes,0,pri.pna,827,pri.pvem.pna,0,pri.pvem.pt.pna,0,0,0,0,0,0,0,10,1669,2210
+5167,22,65,URIQUE,3010,pan,3322,pri,193,prd,41,pvem,31,pt,39,mc,66,pna,7,morena,0,pes,0,pri.pna,0,pri.pvem.pna,238,pri.pvem.pt.pna,0,0,0,0,0,0,0,430,7377,13291
+5195,13,66,URUACHI,1241,pan,1247,pri,414,prd,26,pvem,10,pt,4,mc,22,pna,0,morena,0,pes,0,pri.pna,0,pri.pvem.pna,71,pri.pvem.pt.pna,0,0,0,0,0,0,0,160,3195,5462
+5211,21,67,VALLE DE ZARAGOZA,380,pan,1434,pri,707,prd,14,pvem,22,pt,48,mc,14,pna,0,morena,9,pes,0,pri.pna,0,pri.pvem.pna,49,pri.pvem.pt.pna,0,0,0,0,0,0,0,107,2784,4346
