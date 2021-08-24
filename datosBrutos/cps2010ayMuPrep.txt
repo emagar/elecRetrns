@@ -1,0 +1,2350 @@
+Extra info:
+1) alianza pri-pvem en algunos municipios, reportan agregado. alianza pan-prd-conve-panal en todos los municipios.
+2) columns: ayunt, %casillas, pri, pt, pvem, psd, pan-prd-conve-panal, pri-pvem, nulos, nr, grafica, inconsistencias
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>PREP Chiapas Programa de Resultados Electorales Preliminares del Estado de Chiapas - DSI Elecciones</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="/templates/css/stylesheet.css" rel="stylesheet" type="text/css">
+
+<meta name="pragma" content="no-cache">
+<meta name="cache-content" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-content" content="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="0">
+<meta http-equiv="cache-control" content="no-cache">
+
+<script language="JavaScript" type="text/JavaScript" src="/templates/js/jquery-1.4.2.min.js"></script>
+
+<script language="JavaScript" type="text/JavaScript" src="/templates/js/excel.js"></script>
+
+<script language="JavaScript" type="text/JavaScript" src="/templates/js/javascript.js"></script>
+
+<script type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script language="JavaScript">
+// This is a function that returns a function that is used
+// in the event listener
+function getOnScrollFunction(oElement) {
+	return function () {
+		if (oElement._scrollSyncDirection == "horizontal" || oElement._scrollSyncDirection == "both") {
+			oElement.scrollLeft = event.srcElement.scrollLeft;
+		}
+		if (oElement._scrollSyncDirection == "vertical" || oElement._scrollSyncDirection == "both") {
+			oElement.scrollTop = event.srcElement.scrollTop;
+		}
+	};
+
+}
+
+// removes the scroll synchronization for an element
+function removeScrollSynchronization(fromElement) {
+	if (fromElement._syncTo != null) {
+		fromElement._syncTo.detachEvent("onscroll", fromElement._syncScroll);
+	}
+
+	fromElement._syncTo = null;
+	fromElement._syncScroll = null;
+	fromElement._scrollSyncDirection = null;
+}
+
+
+// This function adds scroll syncronization for the fromElement to the toElement
+// this means that the fromElement will be updated when the toElement is scrolled
+function addScrollSynchronization(fromElement, toElement, direction) {
+	removeScrollSynchronization(fromElement);
+	
+	fromElement._syncScroll = getOnScrollFunction(fromElement);
+	fromElement._scrollSyncDirection = direction;
+	fromElement._syncTo = toElement;
+	//toElement.attachEvent("onscroll", fromElement._syncScroll);
+	
+	if (toElement.addEventListener) {
+		toElement.addEventListener ("onscroll",fromElement._syncScroll,true);
+	} else if (toElement.attachEvent) {
+		toElement.attachEvent ("onscroll",fromElement._syncScroll);
+	} else {
+		toElement.onScroll = fromElement._syncScroll;
+	}	
+	
+	
+}
+
+
+// This function adds scroll syncronization for the fromElement to the toElement
+// this means that the fromElement will be updated when the toElement is scrolled
+function addScrollSynchronization_ORGGOOD(fromElement, toElement, direction) {
+	removeScrollSynchronization(fromElement);
+	
+	fromElement._syncScroll = getOnScrollFunction(fromElement);
+	fromElement._scrollSyncDirection = direction;
+	fromElement._syncTo = toElement;
+	toElement.attachEvent("onscroll", fromElement._syncScroll);
+}
+
+
+//-->
+
+</script> 
+
+<script type="text/JavaScript">
+
+// Configure refresh interval (in seconds)
+var refreshinterval=300;
+
+// Do not edit the code below
+var starttime;
+var nowtime;
+var reloadseconds=0;
+var secondssinceloaded=0;
+
+function countdown() {
+	nowtime= new Date();
+	nowtime=nowtime.getTime();
+	secondssinceloaded=(nowtime-starttime)/1000;
+	reloadseconds=Math.round(refreshinterval-secondssinceloaded);
+	if (refreshinterval>=secondssinceloaded) {
+        var timer=setTimeout("countdown()",1000);
+    }
+    else {
+        clearTimeout(timer);
+		window.location.reload(true);
+    } 
+}
+
+
+function starttimer() {
+	starttime=new Date();
+	starttime=starttime.getTime();
+    countdown();
+}
+
+window.onload=starttimer;
+</script>
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-503502-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+</script>
+
+</head>
+<body onLoad="starttimer(); MM_preloadImages('/images/header_btn_principal_on.png','/images/header_btn_gobernador_on.png','/images/header_btn_ayuntamiento_on.png','/images/header_btn_diputado_on.png','/images/header_btn_dsi_on.png')">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="3772ac">
+  <tr class="h-txtmenu">
+    <td bgcolor="3772ac"><img src="/images/header_banner_chiapas_left.png" width="493" height="73" vspace="0" border="0" usemap="#Map"></td>
+    <td width="100%" height="73"></td>
+    <td><img src="/images/header_banner_guerrero_right.png" width="280" height="73" hspace="0" vspace="0"></td>
+  </tr>
+</table>
+<table width=100% border=0 cellspacing=0 cellpadding=0 style="background-image: url(/images/header_bg_grey.gif); height:42px;">
+
+        <tr class="h-txtmenu">
+          <td align="left" width="100%" height=42><a href="/index.html"><img src="/images/header_btn_principal_off.png" name="btnPrincipal" width="77" height="42" border="0" id="btnPrincipal" onMouseOver="MM_swapImage('btnPrincipal','','/images/header_btn_principal_on.png',1)" onMouseOut="MM_swapImgRestore()"></a><!--<a href="/current/gobernador/"><img src="/images/header_btn_gobernador_off.png" name="btnGobernador" width="170" height="42" border="0" id="btnGobernador" onMouseOver="MM_swapImage('btnGobernador','','/images/header_btn_gobernador_on.png',1)" onMouseOut="MM_swapImgRestore()"></a>--><a href="/current/diputado/"><img src="/images/header_btn_diputado_off.png" name="btnDiputado" width="170" height="42" border="0" id="btnDiputado" onMouseOver="MM_swapImage('btnDiputado','','/images/header_btn_diputado_on.png',1)" onMouseOut="MM_swapImgRestore()"></a><a id="LastBtn" href="/current/ayuntamiento/"><img src="/images/header_btn_ayuntamiento_off.png" name="btnAyuntamiento" width="256" height="42" border="0" id="btnAyuntamiento" onMouseOver="MM_swapImage('btnAyuntamiento','','/images/header_btn_ayuntamiento_on.png',1)" onMouseOut="MM_swapImgRestore()"></a><img src="/images/header_btn_blank.png"  width="107" height="42" border="0"></td>
+  </tr>
+</table>
+
+<map name="Map"><area shape="rect" coords="358,6,485,68" href="http://www.iepc-chiapas.org.mx/" target="_blank">
+</map>
+<div style="position:absolute; top:15; left:500;">
+<table border=0 align=center cellpadding=0 cellspacing=0>
+<tr>
+  <td class="txttitulo" colspan="2" align="center">Elecci&oacute;n de Miembros de Ayuntamiento</td>
+
+</tr>
+<tr>
+  <td height=25 class="txthorafecha" id="aDate"></td>
+  <td align="right" class="txthorafecha" id="aTime"></td>
+</tr>
+</table>
+</div>
+
+<br />
+<table border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+
+          <td><img src="/images/table_corner_top_left.gif" width="12" height="21" /></td>
+          <td background="/images/table_bg_top_left.gif"><div class="tableTitle"></div>
+            <img src="/images/pixel.gif" width="1" height="1" /></td>
+          <td width="100%" background="/images/table_bg_top_left.gif"><img src="/images/pixel.gif" width="10" height="21" /></td>
+          <td><img src="/images/table_corner_top_right.gif" width="128" height="21" /></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+
+    <td><table border=0 align=center cellpadding=0 cellspacing=0 class="tableBlue">
+        <tr>
+          <td valign=top><div style="width:auto; height:55px; overflow:hidden;" id="topLeftDiv"><table class='vptable' width="100%" style="table-layout : fixed;" > <tr class='vptableheading'>
+  <th nowrap  class='vptablecellHeadingMunicipio' >AYUNTAMIENTO</th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/avance.png" border="0" width='50' height='50' vspace='0' hspace='0' alt='Avance' title="Avance" /></th>
+ </tr>
+</table>
+</div></td>
+          <td valign=top><div style="width:auto; height:55px; overflow:hidden; border:thin #000000; padding:0px; padding-right:0px;" id="topRightDiv"> <table class='vptable' width="100%" style="table-layout : fixed;" > <tr class='vptableheading'>
+
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pri.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Revolucionario Institucional' title="Partido Revolucionario Institucional" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pt.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido del Trabajo' title="Partido del Trabajo" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pvem.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Verde Ecologista de M&eacute;xico' title="Partido Verde Ecologista de M&eacute;xico" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/psd.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Social Democrata' title="Partido Social Democrata" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pan-prd-pc-pna.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Coalicion Unidos Por Chiapas' title="Coalicion Unidos Por Chiapas" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pri-pvem.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Alianza por la Unidad' title="Alianza por la Unidad" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/noreg.png" border="0" width='50' height='50' vspace='0' hspace='0' alt='' title="" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/nulos.png" border="0" width='50' height='50' vspace='0' hspace='0' alt='' title="" /></th>
+  <th class=vptableheading><img src="/images/graf.gif" border="0" width='50' height='50' vspace='0' hspace='0' alt='Ver gr�fica' title="Ver gr�fica" /></th>  <th class=vptableheadingend><img src="/images/logos/inconsistencias.png" border="0" width='50' height='50' vspace='0' hspace='0' alt='Inconsistencias' title="Inconsistencias" /></th> </tr>
+
+</table>
+ </div></td>
+        </tr>
+        <tr>
+<!-- 
+//Para usar scroll, en vez de auto
+height:483px;
+height:500px;
+-->         
+          <td valign=top><div style="width:auto; height:auto; overflow:hidden;" id="leftDiv"> <table class='vptable' width="100%" style="table-layout : fixed;" > <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_acacoyagua.htm'> Acacoyagua</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_acala.htm'> Acala</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_acapetahua.htm'> Acapetahua</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_aldama.htm'> Aldama</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_altamirano.htm'> Altamirano</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_amatan.htm'> Amatan</a></td>
+  <td class='vptablecell' >95.45%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_amatenango_de_la_frontera.htm'> Amatenango de la Frontera</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_amatenango_del_valle.htm'> Amatenango del Valle</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_angel_albino_corzo.htm'> Angel Albino Corzo</a></td>
+  <td class='vptablecell' >96.42%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_arriaga.htm'> Arriaga</a></td>
+  <td class='vptablecell' >96.29%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_bejucal_de_ocampo.htm'> Bejucal de Ocampo</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_bella_vista.htm'> Bella Vista</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_benemerito_de_las_americas.htm'> Benemerito de las Americas</a></td>
+
+  <td class='vptablecell' >84.21%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_berriozabal.htm'> Berriozabal</a></td>
+  <td class='vptablecell' >97.29%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_bochil.htm'> Bochil</a></td>
+  <td class='vptablecell' >93.75%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_cacahoatan.htm'> Cacahoatan</a></td>
+  <td class='vptablecell' >98.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_catazaja.htm'> Catazaja</a></td>
+  <td class='vptablecell' >86.95%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_chalchihuitan.htm'> Chalchihuitan</a></td>
+
+  <td class='vptablecell' >94.73%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_chamula.htm'> Chamula</a></td>
+  <td class='vptablecell' >60.91%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_chanal.htm'> Chanal</a></td>
+  <td class='vptablecell' >90.90%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_chapultenango.htm'> Chapultenango</a></td>
+  <td class='vptablecell' >77.77%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_chenalho.htm'> Chenalho</a></td>
+  <td class='vptablecell' >97.56%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_chiapa_de_corzo.htm'> Chiapa de Corzo</a></td>
+
+  <td class='vptablecell' >98.85%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_chiapilla.htm'> Chiapilla</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_chicoasen.htm'> Chicoasen</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_chicomuselo.htm'> Chicomuselo</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_chilon.htm'> Chilon</a></td>
+  <td class='vptablecell' >96.03%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_cintalapa.htm'> Cintalapa</a></td>
+
+  <td class='vptablecell' >85.05%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_coapilla.htm'> Coapilla</a></td>
+  <td class='vptablecell' >90.90%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_comitan_de_dominguez.htm'> Comitan de Dominguez</a></td>
+  <td class='vptablecell' >91.15%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_copainala.htm'> Copainala</a></td>
+  <td class='vptablecell' >92.85%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_el_bosque.htm'> El Bosque</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_el_porvenir.htm'> El Porvenir</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_escuintla.htm'> Escuintla</a></td>
+  <td class='vptablecell' >94.11%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_francisco_leon.htm'> Francisco Leon</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_frontera_comalapa.htm'> Frontera Comalapa</a></td>
+  <td class='vptablecell' >97.05%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_frontera_hidalgo.htm'> Frontera Hidalgo</a></td>
+  <td class='vptablecell' >92.85%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_huehuetan.htm'> Huehuetan</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_huitiupan.htm'> Huitiupan</a></td>
+  <td class='vptablecell' >92.30%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_huixtan.htm'> Huixtan</a></td>
+  <td class='vptablecell' >95.45%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_huixtla.htm'> Huixtla</a></td>
+  <td class='vptablecell' >98.36%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_ixhuatan.htm'> Ixhuatan</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_ixtacomitan.htm'> Ixtacomitan</a></td>
+
+  <td class='vptablecell' >61.53%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_ixtapa.htm'> Ixtapa</a></td>
+  <td class='vptablecell' >92.85%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_ixtapangajoya.htm'> Ixtapangajoya</a></td>
+  <td class='vptablecell' >71.42%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_jiquipilas.htm'> Jiquipilas</a></td>
+  <td class='vptablecell' >90.19%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_jitotol.htm'> Jitotol</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_juarez.htm'> Juarez</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_la_concordia.htm'> La Concordia</a></td>
+  <td class='vptablecell' >98.07%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_la_grandeza.htm'> La Grandeza</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_la_independencia.htm'> La Independencia</a></td>
+  <td class='vptablecell' >90.00%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_la_libertad.htm'> La Libertad</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_la_trinitaria.htm'> La Trinitaria</a></td>
+
+  <td class='vptablecell' >98.75%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_larrainzar.htm'> Larrainzar</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_las_margaritas.htm'> Las Margaritas</a></td>
+  <td class='vptablecell' >83.60%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_las_rosas.htm'> Las Rosas</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_mapastepec.htm'> Mapastepec</a></td>
+  <td class='vptablecell' >94.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_maravilla_tenejapa.htm'> Maravilla Tenejapa</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_marques_de_comillas.htm'> Marques de Comillas</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_mazapa_de_madero.htm'> Mazapa de Madero</a></td>
+  <td class='vptablecell' >91.66%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_mazatan.htm'> Mazatan</a></td>
+  <td class='vptablecell' >96.96%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_metapa_de_dominguez.htm'> Metapa de Dominguez</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_mitontic.htm'> Mitontic</a></td>
+
+  <td class='vptablecell' >87.50%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_montecristo_de_guerrero.htm'> Montecristo de Guerrero</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_motozintla.htm'> Motozintla</a></td>
+  <td class='vptablecell' >95.89%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_nicolas_ruiz.htm'> Nicolas Ruiz</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_ocosingo.htm'> Ocosingo</a></td>
+  <td class='vptablecell' >84.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_ocotepec.htm'> Ocotepec</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_ocozocuautla_de_espinoza.htm'> Ocozocuautla de Espinoza</a></td>
+  <td class='vptablecell' >91.46%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_ostuacan.htm'> Ostuacan</a></td>
+  <td class='vptablecell' >96.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_osumacinta.htm'> Osumacinta</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_oxchuc.htm'> Oxchuc</a></td>
+  <td class='vptablecell' >98.18%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_palenque.htm'> Palenque</a></td>
+
+  <td class='vptablecell' >66.08%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_pantelho.htm'> Pantelho</a></td>
+  <td class='vptablecell' >96.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_pantepec.htm'> Pantepec</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_pichucalco.htm'> Pichucalco</a></td>
+  <td class='vptablecell' >92.30%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_pijijiapan.htm'> Pijijiapan</a></td>
+  <td class='vptablecell' >87.50%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_pueblo_nuevo_solistauacan.htm'> Pueblo Nuevo Solistauacan</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_rayon.htm'> Rayon</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_reforma.htm'> Reforma</a></td>
+  <td class='vptablecell' >93.33%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_sabanilla.htm'> Sabanilla</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_salto_de_agua.htm'> Salto de Agua</a></td>
+  <td class='vptablecell' >95.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_san_andres_duraznal.htm'> San Andres Duraznal</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_san_cristobal_de_las_casas.htm'> San Cristobal de las casas</a></td>
+  <td class='vptablecell' >85.95%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_san_fernando.htm'> San Fernando</a></td>
+  <td class='vptablecell' >97.29%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_san_juan_cancuc.htm'> San Juan Cancuc</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_san_lucas.htm'> San Lucas</a></td>
+  <td class='vptablecell' >85.71%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_santiago_el_pinar.htm'> Santiago el Pinar</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_siltepec.htm'> Siltepec</a></td>
+  <td class='vptablecell' >60.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_simojovel.htm'> Simojovel</a></td>
+  <td class='vptablecell' >97.43%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_sitala.htm'> Sitala</a></td>
+  <td class='vptablecell' >66.66%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_socoltenango.htm'> Socoltenango</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_solosuchiapa.htm'> Solosuchiapa</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_soyalo.htm'> Soyalo</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_suchiapa.htm'> Suchiapa</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_suchiate.htm'> Suchiate</a></td>
+  <td class='vptablecell' >96.96%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_sunuapa.htm'> Sunuapa</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_tapachula.htm'> Tapachula</a></td>
+
+  <td class='vptablecell' >91.34%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_tapalapa.htm'> Tapalapa</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_tapilula.htm'> Tapilula</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_tecpatan.htm'> Tecpatan</a></td>
+  <td class='vptablecell' >75.47%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_tenejapa.htm'> Tenejapa</a></td>
+  <td class='vptablecell' >91.11%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_teopisca.htm'> Teopisca</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_tila.htm'> Tila</a></td>
+  <td class='vptablecell' >93.24%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_tonala.htm'> Tonala</a></td>
+  <td class='vptablecell' >95.32%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_totolapa.htm'> Totolapa</a></td>
+  <td class='vptablecell' >100.00%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_tumbala.htm'> Tumbala</a></td>
+  <td class='vptablecell' >97.14%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_tuxtla_chico.htm'> Tuxtla Chico</a></td>
+
+  <td class='vptablecell' >91.48%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_tuxtla_gutierrez.htm'> Tuxtla Gutierrez</a></td>
+  <td class='vptablecell' >89.37%</td>
+ </tr>
+ <tr class='vptableroweven' >
+
+  <td class='vptablecellMunicipio' ><a href='det_tuzantan.htm'> Tuzantan</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_tzimol.htm'> Tzimol</a></td>
+  <td class='vptablecell' >94.11%</td>
+
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_union_juarez.htm'> Union Juarez</a></td>
+  <td class='vptablecell' >88.88%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_venustiano_carranza.htm'> Venustiano Carranza</a></td>
+
+  <td class='vptablecell' >95.65%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_villa_comaltitlan.htm'> Villa Comaltitlan</a></td>
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+
+  <td class='vptablecellMunicipio' ><a href='det_villa_corzo.htm'> Villa Corzo</a></td>
+  <td class='vptablecell' >96.15%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_villaflores.htm'> Villaflores</a></td>
+  <td class='vptablecell' >86.23%</td>
+
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecellMunicipio' ><a href='det_yajalon.htm'> Yajalon</a></td>
+  <td class='vptablecell' >97.22%</td>
+ </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecellMunicipio' ><a href='det_zinacantan.htm'> Zinacantan</a></td>
+
+  <td class='vptablecell' >100.00%</td>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td  class='vptablecellDiputadofooter'>Total de Votos</td>
+  <td  class='vptablecellfooter'></td>
+ </tr>
+</table>
+ </div></td>
+
+          <td valign=top><div style="width:auto; height:auto; overflow:scroll" id="rightDiv"> <table class='vptable' width="100%" style="table-layout : fixed;" > <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,051<br></td>
+  <td class='vptablecell' >712<br></td>
+  <td class='vptablecell' >376<br></td>
+  <td class='vptablecell' >422<br></td>
+  <td class='vptablecell' >1,644<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >179</td>
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_acacoyagua.htm','showGraph0','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,200<br></td>
+
+  <td class='vptablecell' >2,975<br></td>
+  <td class='vptablecell' >4,538<br></td>
+  <td class='vptablecell' >51<br></td>
+  <td class='vptablecell' >3,842<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >459</td>
+
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_acala.htm','showGraph1','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,168<br></td>
+  <td class='vptablecell' >4,300<br></td>
+  <td class='vptablecell' >2,644<br></td>
+
+  <td class='vptablecell' >1,679<br></td>
+  <td class='vptablecell' >1,007<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >305</td>
+  <td class='vptablecell' >6</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_acapetahua.htm','showGraph2','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,211<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >43<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >359<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >149</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_aldama.htm','showGraph3','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >4,201<br></td>
+
+  <td class='vptablecell' >225<br></td>
+  <td class='vptablecell' >1,866<br></td>
+  <td class='vptablecell' >1,939<br></td>
+  <td class='vptablecell' >2,137<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >482</td>
+
+  <td class='vptablecell' >16</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_altamirano.htm','showGraph4','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,590<br></td>
+  <td class='vptablecell' >7<br></td>
+  <td class='vptablecell' >1,919<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,593<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >364</td>
+  <td class='vptablecell' >25</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_amatan.htm','showGraph5','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,825<br></td>
+  <td class='vptablecell' >1,060<br></td>
+  <td class='vptablecell' >3,732<br></td>
+  <td class='vptablecell' >1<br></td>
+  <td class='vptablecell' >4,191<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >490</td>
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_amatenango_de_la_frontera.htm','showGraph6','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,597<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >688<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,526<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >150</td>
+
+  <td class='vptablecell' >16</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_amatenango_del_valle.htm','showGraph7','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,516<br></td>
+  <td class='vptablecell' >207<br></td>
+  <td class='vptablecell' >1,217<br></td>
+
+  <td class='vptablecell' >4,293<br></td>
+  <td class='vptablecell' >1,137<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >341</td>
+  <td class='vptablecell' >7</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_angel_albino_corzo.htm','showGraph8','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >975<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >4,845<br></td>
+  <td class='vptablecell' >4,862<br></td>
+
+  <td class='vptablecell' >3,085<br></td>
+  <td class='vptablecell' >694</td>
+  <td class='vptablecell' >279</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_arriaga.htm','showGraph9','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >85<br></td>
+
+  <td class='vptablecell' >907<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,405<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >37</td>
+
+  <td class='vptablecell' >7</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_bejucal_de_ocampo.htm','showGraph10','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >260<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >57<br></td>
+  <td class='vptablecell' >4,208<br></td>
+  <td class='vptablecell' >3,511<br></td>
+  <td class='vptablecell' >425</td>
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_bella_vista.htm','showGraph11','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,299<br></td>
+  <td class='vptablecell' >85<br></td>
+  <td class='vptablecell' >1,437<br></td>
+  <td class='vptablecell' >21<br></td>
+  <td class='vptablecell' >1,172<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >182</td>
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_benemerito_de_las_americas.htm','showGraph12','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >3,386<br></td>
+
+  <td class='vptablecell' >568<br></td>
+  <td class='vptablecell' >4,167<br></td>
+  <td class='vptablecell' >83<br></td>
+  <td class='vptablecell' >4,225<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >374</td>
+
+  <td class='vptablecell' >17</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_berriozabal.htm','showGraph13','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >4,223<br></td>
+  <td class='vptablecell' >1,079<br></td>
+  <td class='vptablecell' >2,399<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,966<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >421</td>
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_bochil.htm','showGraph14','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >4,859<br></td>
+  <td class='vptablecell' >1,643<br></td>
+  <td class='vptablecell' >1,338<br></td>
+  <td class='vptablecell' >192<br></td>
+  <td class='vptablecell' >6,459<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,053</td>
+  <td class='vptablecell' >8</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_cacahoatan.htm','showGraph15','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,658<br></td>
+
+  <td class='vptablecell' >67<br></td>
+  <td class='vptablecell' >2,869<br></td>
+  <td class='vptablecell' >24<br></td>
+  <td class='vptablecell' >1,958<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >176</td>
+
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_catazaja.htm','showGraph16','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,429<br></td>
+  <td class='vptablecell' >2,509<br></td>
+  <td class='vptablecell' >74<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >228<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >421</td>
+  <td class='vptablecell' >26</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chalchihuitan.htm','showGraph17','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >7,632<br></td>
+  <td class='vptablecell' >32<br></td>
+  <td class='vptablecell' >1,191<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >5,846<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,328</td>
+  <td class='vptablecell' >104</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chamula.htm','showGraph18','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,495<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,169<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >979<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >140</td>
+
+  <td class='vptablecell' >7</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chanal.htm','showGraph19','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,013<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >194<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,119<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >119</td>
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chapultenango.htm','showGraph20','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >6,432<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >209<br></td>
+  <td class='vptablecell' >61<br></td>
+  <td class='vptablecell' >5,514<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >584</td>
+  <td class='vptablecell' >22</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chenalho.htm','showGraph21','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >12,800<br></td>
+
+  <td class='vptablecell' >523<br></td>
+  <td class='vptablecell' >1,656<br></td>
+  <td class='vptablecell' >321<br></td>
+  <td class='vptablecell' >10,648<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,409</td>
+
+  <td class='vptablecell' >39</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chiapa_de_corzo.htm','showGraph22','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,638<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >31<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,247<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >77</td>
+  <td class='vptablecell' >1</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chiapilla.htm','showGraph23','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >944<br></td>
+  <td class='vptablecell' >747<br></td>
+  <td class='vptablecell' >236<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >603<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >60</td>
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chicoasen.htm','showGraph24','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >4,944<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >781<br></td>
+  <td class='vptablecell' >4,056<br></td>
+  <td class='vptablecell' >2,430<br></td>
+  <td class='vptablecell' >885</td>
+
+  <td class='vptablecell' >11</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chicomuselo.htm','showGraph25','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >9,362<br></td>
+  <td class='vptablecell' >3,533<br></td>
+  <td class='vptablecell' >13,155<br></td>
+
+  <td class='vptablecell' >2,091<br></td>
+  <td class='vptablecell' >6,639<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,311</td>
+  <td class='vptablecell' >13</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_chilon.htm','showGraph26','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>4</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >3,733<br></td>
+  <td class='vptablecell' >1,939<br></td>
+  <td class='vptablecell' >1,408<br></td>
+  <td class='vptablecell' >193<br></td>
+  <td class='vptablecell' >11,389<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,072</td>
+  <td class='vptablecell' >177</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_cintalapa.htm','showGraph27','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>13</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,743<br></td>
+
+  <td class='vptablecell' >2<br></td>
+  <td class='vptablecell' >38<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,872<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >81</td>
+
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_coapilla.htm','showGraph28','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >2,100<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >565<br></td>
+  <td class='vptablecell' >4,750<br></td>
+  <td class='vptablecell' >15,409<br></td>
+  <td class='vptablecell' >2,742</td>
+  <td class='vptablecell' >159</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_comitan_de_dominguez.htm','showGraph29','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>13</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >4,508<br></td>
+  <td class='vptablecell' >823<br></td>
+  <td class='vptablecell' >440<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,948<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >487</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_copainala.htm','showGraph30','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,643<br></td>
+
+  <td class='vptablecell' >2,401<br></td>
+  <td class='vptablecell' >188<br></td>
+  <td class='vptablecell' >122<br></td>
+  <td class='vptablecell' >1,049<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >350</td>
+
+  <td class='vptablecell' >30</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_el_bosque.htm','showGraph31','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,257<br></td>
+  <td class='vptablecell' >1,880<br></td>
+  <td class='vptablecell' >853<br></td>
+
+  <td class='vptablecell' >41<br></td>
+  <td class='vptablecell' >1,121<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >179</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_el_porvenir.htm','showGraph32','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,261<br></td>
+  <td class='vptablecell' >1,562<br></td>
+  <td class='vptablecell' >2,909<br></td>
+  <td class='vptablecell' >1,827<br></td>
+  <td class='vptablecell' >2,226<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >382</td>
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_escuintla.htm','showGraph33','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >333<br></td>
+
+  <td class='vptablecell' >840<br></td>
+  <td class='vptablecell' >906<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >853<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >50</td>
+
+  <td class='vptablecell' >1</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_francisco_leon.htm','showGraph34','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >832<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >220<br></td>
+  <td class='vptablecell' >10,042<br></td>
+  <td class='vptablecell' >7,786<br></td>
+  <td class='vptablecell' >1,805</td>
+  <td class='vptablecell' >26</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_frontera_comalapa.htm','showGraph35','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,704<br></td>
+  <td class='vptablecell' >1,139<br></td>
+  <td class='vptablecell' >706<br></td>
+  <td class='vptablecell' >251<br></td>
+  <td class='vptablecell' >1,108<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >244</td>
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_frontera_hidalgo.htm','showGraph36','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >5,234<br></td>
+
+  <td class='vptablecell' >426<br></td>
+  <td class='vptablecell' >3,043<br></td>
+  <td class='vptablecell' >256<br></td>
+  <td class='vptablecell' >4,280<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >614</td>
+
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_huehuetan.htm','showGraph37','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,655<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >493<br></td>
+
+  <td class='vptablecell' >44<br></td>
+  <td class='vptablecell' >3,698<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >562</td>
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_huitiupan.htm','showGraph38','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,902<br></td>
+  <td class='vptablecell' >1<br></td>
+  <td class='vptablecell' >298<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >3,276<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >557</td>
+  <td class='vptablecell' >39</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_huixtan.htm','showGraph39','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,287<br></td>
+
+  <td class='vptablecell' >820<br></td>
+  <td class='vptablecell' >3,828<br></td>
+  <td class='vptablecell' >2,488<br></td>
+  <td class='vptablecell' >5,935<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >707</td>
+
+  <td class='vptablecell' >23</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_huixtla.htm','showGraph40','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,881<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >62<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,384<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >164</td>
+  <td class='vptablecell' >8</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ixhuatan.htm','showGraph41','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >630<br></td>
+  <td class='vptablecell' >126<br></td>
+  <td class='vptablecell' >1,203<br></td>
+  <td class='vptablecell' >9<br></td>
+  <td class='vptablecell' >756<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >75</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ixtacomitan.htm','showGraph42','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >5,326<br></td>
+
+  <td class='vptablecell' >972<br></td>
+  <td class='vptablecell' >75<br></td>
+  <td class='vptablecell' >74<br></td>
+  <td class='vptablecell' >4,304<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >304</td>
+
+  <td class='vptablecell' >5</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ixtapa.htm','showGraph43','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >840<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >727<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >40</td>
+  <td class='vptablecell' >6</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ixtapangajoya.htm','showGraph44','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >5,420<br></td>
+  <td class='vptablecell' >1,756<br></td>
+  <td class='vptablecell' >2,775<br></td>
+  <td class='vptablecell' >91<br></td>
+  <td class='vptablecell' >4,982<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >657</td>
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_jiquipilas.htm','showGraph45','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>5</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >4,471<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >101<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,983<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >321</td>
+
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_jitotol.htm','showGraph46','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >672<br></td>
+  <td class='vptablecell' >762<br></td>
+  <td class='vptablecell' >2,160<br></td>
+
+  <td class='vptablecell' >93<br></td>
+  <td class='vptablecell' >3,659<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >297</td>
+  <td class='vptablecell' >17</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_juarez.htm','showGraph47','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,415<br></td>
+  <td class='vptablecell' >419<br></td>
+  <td class='vptablecell' >4,848<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >7,279<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >749</td>
+  <td class='vptablecell' >29</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_la_concordia.htm','showGraph48','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,342<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >36<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,218<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >24</td>
+
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_la_grandeza.htm','showGraph49','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >553<br></td>
+  <td class='vptablecell' >304<br></td>
+  <td class='vptablecell' >6,498<br></td>
+
+  <td class='vptablecell' >4<br></td>
+  <td class='vptablecell' >7,017<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >734</td>
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_la_independencia.htm','showGraph50','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,816<br></td>
+  <td class='vptablecell' >39<br></td>
+  <td class='vptablecell' >9<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,578<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >97</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_la_libertad.htm','showGraph51','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >573<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >5<br></td>
+  <td class='vptablecell' >14,574<br></td>
+  <td class='vptablecell' >14,907<br></td>
+  <td class='vptablecell' >1,645</td>
+
+  <td class='vptablecell' >46</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_la_trinitaria.htm','showGraph52','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >4,765<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >432<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,528<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >254</td>
+  <td class='vptablecell' >20</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_larrainzar.htm','showGraph53','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >6,664<br></td>
+  <td class='vptablecell' >1,135<br></td>
+  <td class='vptablecell' >18,681<br></td>
+  <td class='vptablecell' >310<br></td>
+  <td class='vptablecell' >8,970<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,442</td>
+  <td class='vptablecell' >33</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_las_margaritas.htm','showGraph54','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >1,457<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >672<br></td>
+  <td class='vptablecell' >4,137<br></td>
+  <td class='vptablecell' >1,609<br></td>
+  <td class='vptablecell' >724</td>
+
+  <td class='vptablecell' >14</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_las_rosas.htm','showGraph55','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >2,653<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >206<br></td>
+  <td class='vptablecell' >5,761<br></td>
+  <td class='vptablecell' >4,042<br></td>
+  <td class='vptablecell' >604</td>
+  <td class='vptablecell' >31</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_mapastepec.htm','showGraph56','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,237<br></td>
+  <td class='vptablecell' >2<br></td>
+  <td class='vptablecell' >184<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,730<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >115</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_maravilla_tenejapa.htm','showGraph57','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,069<br></td>
+
+  <td class='vptablecell' >287<br></td>
+  <td class='vptablecell' >1,358<br></td>
+  <td class='vptablecell' >10<br></td>
+  <td class='vptablecell' >1,222<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >153</td>
+
+  <td class='vptablecell' >7</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_marques_de_comillas.htm','showGraph58','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,354<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >530<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,396<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >61</td>
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_mazapa_de_madero.htm','showGraph59','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,812<br></td>
+  <td class='vptablecell' >1,966<br></td>
+  <td class='vptablecell' >2,124<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,999<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >316</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_mazatan.htm','showGraph60','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >761<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >601<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,421<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >77</td>
+
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_metapa_de_dominguez.htm','showGraph61','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,266<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,253<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >318</td>
+  <td class='vptablecell' >36</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_mitontic.htm','showGraph62','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >637<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,246<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,292<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >82</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_montecristo_de_guerrero.htm','showGraph63','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >7,732<br></td>
+
+  <td class='vptablecell' >2,105<br></td>
+  <td class='vptablecell' >1,923<br></td>
+  <td class='vptablecell' >263<br></td>
+  <td class='vptablecell' >6,121<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >922</td>
+
+  <td class='vptablecell' >68</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_motozintla.htm','showGraph64','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >29<br></td>
+  <td class='vptablecell' >5<br></td>
+  <td class='vptablecell' >0<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,134<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >171</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_nicolas_ruiz.htm','showGraph65','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >11,521<br></td>
+  <td class='vptablecell' >2,168<br></td>
+  <td class='vptablecell' >12,825<br></td>
+  <td class='vptablecell' >257<br></td>
+  <td class='vptablecell' >14,666<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >2,910</td>
+  <td class='vptablecell' >118</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ocosingo.htm','showGraph66','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>12</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,307<br></td>
+
+  <td class='vptablecell' >3<br></td>
+  <td class='vptablecell' >24<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,329<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >50</td>
+
+  <td class='vptablecell' >1</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ocotepec.htm','showGraph67','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >6,873<br></td>
+  <td class='vptablecell' >3,332<br></td>
+  <td class='vptablecell' >4,947<br></td>
+
+  <td class='vptablecell' >86<br></td>
+  <td class='vptablecell' >6,213<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >859</td>
+  <td class='vptablecell' >28</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ocozocuautla_de_espinoza.htm','showGraph68','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,931<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >392<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >3,412<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >258</td>
+  <td class='vptablecell' >17</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_ostuacan.htm','showGraph69','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >929<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,025<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >15</td>
+
+  <td class='vptablecell' >1</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_osumacinta.htm','showGraph70','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >3,375<br></td>
+  <td class='vptablecell' >436<br></td>
+  <td class='vptablecell' >4,828<br></td>
+
+  <td class='vptablecell' >112<br></td>
+  <td class='vptablecell' >5,100<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,161</td>
+  <td class='vptablecell' >32</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_oxchuc.htm','showGraph71','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,625<br></td>
+  <td class='vptablecell' >9,715<br></td>
+  <td class='vptablecell' >756<br></td>
+  <td class='vptablecell' >149<br></td>
+  <td class='vptablecell' >6,291<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >967</td>
+  <td class='vptablecell' >40</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_palenque.htm','showGraph72','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,502<br></td>
+
+  <td class='vptablecell' >6<br></td>
+  <td class='vptablecell' >1,344<br></td>
+  <td class='vptablecell' >21<br></td>
+  <td class='vptablecell' >3,413<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >360</td>
+
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_pantelho.htm','showGraph73','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,514<br></td>
+  <td class='vptablecell' >857<br></td>
+  <td class='vptablecell' >126<br></td>
+
+  <td class='vptablecell' >937<br></td>
+  <td class='vptablecell' >1,489<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >160</td>
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_pantepec.htm','showGraph74','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >7,080<br></td>
+  <td class='vptablecell' >441<br></td>
+  <td class='vptablecell' >322<br></td>
+  <td class='vptablecell' >105<br></td>
+  <td class='vptablecell' >3,355<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >495</td>
+  <td class='vptablecell' >16</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_pichucalco.htm','showGraph75','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >1,405<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >7<br></td>
+  <td class='vptablecell' >8,282<br></td>
+  <td class='vptablecell' >5,328<br></td>
+  <td class='vptablecell' >722</td>
+
+  <td class='vptablecell' >31</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_pijijiapan.htm','showGraph76','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>8</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >5,448<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >135<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >6,515<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >420</td>
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_pueblo_nuevo_solistauacan.htm','showGraph77','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,118<br></td>
+  <td class='vptablecell' >320<br></td>
+  <td class='vptablecell' >1,235<br></td>
+  <td class='vptablecell' >103<br></td>
+  <td class='vptablecell' >556<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >238</td>
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_rayon.htm','showGraph78','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,149<br></td>
+
+  <td class='vptablecell' >1,144<br></td>
+  <td class='vptablecell' >3,289<br></td>
+  <td class='vptablecell' >643<br></td>
+  <td class='vptablecell' >4,750<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >383</td>
+
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_reforma.htm','showGraph79','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,518<br></td>
+  <td class='vptablecell' >377<br></td>
+  <td class='vptablecell' >1,858<br></td>
+
+  <td class='vptablecell' >1,197<br></td>
+  <td class='vptablecell' >3,907<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >504</td>
+  <td class='vptablecell' >44</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_sabanilla.htm','showGraph80','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >2,755<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >5,782<br></td>
+  <td class='vptablecell' >8,237<br></td>
+
+  <td class='vptablecell' >3,370<br></td>
+  <td class='vptablecell' >1,353</td>
+  <td class='vptablecell' >17</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_salto_de_agua.htm','showGraph81','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >869<br></td>
+
+  <td class='vptablecell' >747<br></td>
+  <td class='vptablecell' >46<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >534<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >61</td>
+
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_san_andres_duraznal.htm','showGraph82','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >4,347<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >1,530<br></td>
+  <td class='vptablecell' >15,755<br></td>
+  <td class='vptablecell' >9,329<br></td>
+  <td class='vptablecell' >2,509</td>
+  <td class='vptablecell' >252</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_san_cristobal_de_las_casas.htm','showGraph83','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>25</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,533<br></td>
+  <td class='vptablecell' >1,132<br></td>
+  <td class='vptablecell' >2,125<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >5,955<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >389</td>
+  <td class='vptablecell' >6</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_san_fernando.htm','showGraph84','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >6,626<br></td>
+
+  <td class='vptablecell' >623<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >27<br></td>
+  <td class='vptablecell' >4,764<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >749</td>
+
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_san_juan_cancuc.htm','showGraph85','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >962<br></td>
+  <td class='vptablecell' >25<br></td>
+  <td class='vptablecell' >126<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,641<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >97</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_san_lucas.htm','showGraph86','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >622<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >810<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >38</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_santiago_el_pinar.htm','showGraph87','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,492<br></td>
+
+  <td class='vptablecell' >163<br></td>
+  <td class='vptablecell' >2,872<br></td>
+  <td class='vptablecell' >81<br></td>
+  <td class='vptablecell' >1,508<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >429</td>
+
+  <td class='vptablecell' >11</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_siltepec.htm','showGraph88','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >4,741<br></td>
+  <td class='vptablecell' >2,298<br></td>
+  <td class='vptablecell' >2,409<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >4,683<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >622</td>
+  <td class='vptablecell' >9</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_simojovel.htm','showGraph89','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,760<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >40<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,925<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >76</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_sitala.htm','showGraph90','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>4</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >414<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >964<br></td>
+  <td class='vptablecell' >3,362<br></td>
+  <td class='vptablecell' >2,039<br></td>
+  <td class='vptablecell' >440</td>
+
+  <td class='vptablecell' >13</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_socoltenango.htm','showGraph91','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,560<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >498<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,666<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >82</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_solosuchiapa.htm','showGraph92','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,075<br></td>
+  <td class='vptablecell' >763<br></td>
+  <td class='vptablecell' >704<br></td>
+  <td class='vptablecell' >438<br></td>
+  <td class='vptablecell' >1,153<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >133</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_soyalo.htm','showGraph93','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >839<br></td>
+
+  <td class='vptablecell' >2,441<br></td>
+  <td class='vptablecell' >3,778<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,337<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >267</td>
+
+  <td class='vptablecell' >3</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_suchiapa.htm','showGraph94','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,189<br></td>
+  <td class='vptablecell' >1,110<br></td>
+  <td class='vptablecell' >3,261<br></td>
+
+  <td class='vptablecell' >335<br></td>
+  <td class='vptablecell' >3,076<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >525</td>
+  <td class='vptablecell' >13</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_suchiate.htm','showGraph95','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >504<br></td>
+  <td class='vptablecell' >26<br></td>
+  <td class='vptablecell' >98<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >619<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >16</td>
+  <td class='vptablecell' >1</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_sunuapa.htm','showGraph96','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >3,960<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >910<br></td>
+  <td class='vptablecell' >33,607<br></td>
+  <td class='vptablecell' >30,750<br></td>
+  <td class='vptablecell' >4,389</td>
+
+  <td class='vptablecell' >142</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tapachula.htm','showGraph97','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>6</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >1,092<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >0<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >1,237<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >56</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tapalapa.htm','showGraph98','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,286<br></td>
+  <td class='vptablecell' >6<br></td>
+  <td class='vptablecell' >484<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,102<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >246</td>
+  <td class='vptablecell' >4</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tapilula.htm','showGraph99','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >6,509<br></td>
+
+  <td class='vptablecell' >271<br></td>
+  <td class='vptablecell' >1,314<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >4,028<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >572</td>
+
+  <td class='vptablecell' >10</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tecpatan.htm','showGraph100','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>9</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >3,384<br></td>
+  <td class='vptablecell' >1,801<br></td>
+  <td class='vptablecell' >2,299<br></td>
+
+  <td class='vptablecell' >298<br></td>
+  <td class='vptablecell' >3,493<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >682</td>
+  <td class='vptablecell' >36</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tenejapa.htm','showGraph101','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >2,691<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >852<br></td>
+  <td class='vptablecell' >3,517<br></td>
+
+  <td class='vptablecell' >2,438<br></td>
+  <td class='vptablecell' >868</td>
+  <td class='vptablecell' >8</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_teopisca.htm','showGraph102','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >4,707<br></td>
+
+  <td class='vptablecell' >577<br></td>
+  <td class='vptablecell' >11,051<br></td>
+  <td class='vptablecell' >2,380<br></td>
+  <td class='vptablecell' >5,516<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,857</td>
+
+  <td class='vptablecell' >123</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tila.htm','showGraph103','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>5</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >5,352<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >701<br></td>
+  <td class='vptablecell' >12,292<br></td>
+  <td class='vptablecell' >5,812<br></td>
+  <td class='vptablecell' >1,032</td>
+  <td class='vptablecell' >240</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tonala.htm','showGraph104','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>4</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,426<br></td>
+  <td class='vptablecell' >19<br></td>
+  <td class='vptablecell' >24<br></td>
+  <td class='vptablecell' >47<br></td>
+  <td class='vptablecell' >2,005<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >57</td>
+  <td class='vptablecell' >2</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_totolapa.htm','showGraph105','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >2,795<br></td>
+
+  <td class='vptablecell' >2,715<br></td>
+  <td class='vptablecell' >4,666<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,926<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >510</td>
+
+  <td class='vptablecell' >53</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tumbala.htm','showGraph106','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >3,008<br></td>
+  <td class='vptablecell' >1,184<br></td>
+  <td class='vptablecell' >1,711<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >6,210<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >746</td>
+  <td class='vptablecell' >12</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tuxtla_chico.htm','showGraph107','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>4</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >16,652<br></td>
+  <td class='vptablecell' >4,728<br></td>
+  <td class='vptablecell' >7,656<br></td>
+  <td class='vptablecell' >1,404<br></td>
+  <td class='vptablecell' >45,315<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >8,711</td>
+  <td class='vptablecell' >686</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tuxtla_gutierrez.htm','showGraph108','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>48</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,211<br></td>
+
+  <td class='vptablecell' >3,527<br></td>
+  <td class='vptablecell' >828<br></td>
+  <td class='vptablecell' >307<br></td>
+  <td class='vptablecell' >4,026<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >476</td>
+
+  <td class='vptablecell' >18</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tuzantan.htm','showGraph109','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >695<br></td>
+  <td class='vptablecell' >--</td>
+
+  <td class='vptablecell' >207<br></td>
+  <td class='vptablecell' >2,134<br></td>
+  <td class='vptablecell' >3,414<br></td>
+  <td class='vptablecell' >270</td>
+  <td class='vptablecell' >17</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_tzimol.htm','showGraph110','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >1,734<br></td>
+  <td class='vptablecell' >603<br></td>
+  <td class='vptablecell' >1,861<br></td>
+  <td class='vptablecell' >74<br></td>
+  <td class='vptablecell' >1,454<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >262</td>
+  <td class='vptablecell' >0</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_union_juarez.htm','showGraph111','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>2</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >4,071<br></td>
+
+  <td class='vptablecell' >722<br></td>
+  <td class='vptablecell' >1,921<br></td>
+  <td class='vptablecell' >5,004<br></td>
+  <td class='vptablecell' >6,988<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,580</td>
+
+  <td class='vptablecell' >45</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_venustiano_carranza.htm','showGraph112','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>3</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >2,742<br></td>
+  <td class='vptablecell' >4,139<br></td>
+  <td class='vptablecell' >1,163<br></td>
+
+  <td class='vptablecell' >112<br></td>
+  <td class='vptablecell' >2,938<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >386</td>
+  <td class='vptablecell' >16</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_villa_comaltitlan.htm','showGraph113','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >8,708<br></td>
+  <td class='vptablecell' >1,384<br></td>
+  <td class='vptablecell' >6,901<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >9,239<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >945</td>
+  <td class='vptablecell' >6</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_villa_corzo.htm','showGraph114','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >12,551<br></td>
+
+  <td class='vptablecell' >1,008<br></td>
+  <td class='vptablecell' >8,328<br></td>
+  <td class='vptablecell' >208<br></td>
+  <td class='vptablecell' >2,215<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >1,406</td>
+
+  <td class='vptablecell' >240</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_villaflores.htm','showGraph115','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>15</td> </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >3,624<br></td>
+  <td class='vptablecell' >421<br></td>
+  <td class='vptablecell' >4,737<br></td>
+
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >2,419<br></td>
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >641</td>
+  <td class='vptablecell' >21</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_yajalon.htm','showGraph116','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>1</td> </tr>
+
+ <tr class='vptableroweven' >
+  <td class='vptablecell' >7,965<br></td>
+  <td class='vptablecell' >9<br></td>
+  <td class='vptablecell' >254<br></td>
+  <td class='vptablecell' >0<br></td>
+  <td class='vptablecell' >7,890<br></td>
+
+  <td class='vptablecell' >--</td>
+  <td class='vptablecell' >596</td>
+  <td class='vptablecell' >21</td>
+ <td nowrap  class=vptablecell width='10%' align='center'><a href="#sys" onmouseout="window.status='';" onmouseover="window.status='Ver grafica'; return true;" onClick="winOpen('chart_zinacantan.htm','showGraph117','760','610','toolbar=no,location=no,status=yes,menubar=no,scrollbars=yes,resizable=yes', true, '','','');"><img src="/images/icono_grafica.gif" border="0" width='20' height='20' vspace='0' hspace='0' alt='Ver grafica' title="Ver grafica" /></a></td> <td nowrap  class='vptablecellend' width='10%' align='center'>0</td> </tr>
+ <tr class='vptablerowodd' >
+  <td  class='vptablecellfooter'>333,693</td>
+
+  <td  class='vptablecellfooter'>129,544</td>
+  <td  class='vptablecellfooter'>210,340</td>
+  <td  class='vptablecellfooter'>49,883</td>
+  <td  class='vptablecellfooter'>517,421</td>
+  <td  class='vptablecellfooter'>115,259</td>
+  <td  class='vptablecellfooter'>76,369</td>
+
+  <td  class='vptablecellfooter'>3,888</td>
+ </tr>
+</table>
+ </div></td>
+        </tr>
+      </table>
+<!-- 
+width:678px;
+width:695px;
+//-->      
+      
+      </td>
+  </tr>
+  <tr>
+
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/images/table_corner_bottom_left.gif" width="35" height="20" /></td>
+          <td width="50%" background="/images/table_bg_bottom_left.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+          <td><img src="/images/table_bottom_middle.gif" width="14" height="20" /></td>
+          <td width="50%" background="/images/table_bg_bottom_right.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+          <td><img src="/images/table_corner_bottom_right.gif" width="16" height="20" /></td>
+        </tr>
+      </table></td>
+
+  </tr>
+</table>
+<br />
+
+<div align="center" class="txtnotascenter">-- No Registr&oacute;<br />
+</div>
+
+<!--
+<br />
+<div align="center"><table border="0" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/images/table_corner_top_left.gif" width="12" height="21" /></td>
+    <td nowrap="nowrap" background="/images/table_bg_top_left.gif"><div class="tableTitle">Ayuntamientos ganados por partido </div></td>
+    <td width="100%" background="/images/table_bg_top_left.gif"><img src="/images/pixel.gif" width="10" height="21" /></td>
+    <td><img src="/images/table_corner_top_right.gif" width="128" height="21" /></td>
+  </tr>
+</table>	
+	</td>
+  </tr>
+  <tr>
+    <td style="border-left: #0b3359 1px solid; border-right: #0b3359 1px solid;"><table class='vptable' width="100%" style="table-layout : fixed;" > <tr class='vptableheading'>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pri.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Revolucionario Institucional' title="Partido Revolucionario Institucional" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pt.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido del Trabajo' title="Partido del Trabajo" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pvem.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Verde Ecologista de M&eacute;xico' title="Partido Verde Ecologista de M&eacute;xico" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/psd.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Partido Social Democrata' title="Partido Social Democrata" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pan-prd-pc-pna.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Coalicion Unidos Por Chiapas' title="Coalicion Unidos Por Chiapas" /></th>
+  <th nowrap  class='vptableheading' ><img src="/images/logos/partidos/pri-pvem.jpg" border="0" width='50' height='50' vspace='0' hspace='0' alt='Alianza por la Unidad' title="Alianza por la Unidad" /></th>
+ </tr>
+ <tr class='vptablerowodd' >
+  <td class='vptablecell' >38</td>
+  <td class='vptablecell' >15</td>
+  <td class='vptablecell' >0</td>
+  <td class='vptablecell' >0</td>
+  <td class='vptablecell' >3</td>
+  <td class='vptablecell' >&nbsp;</td>
+ </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/images/table_corner_bottom_left.gif" width="35" height="20" /></td>
+    <td width="50%" background="/images/table_bg_bottom_left.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+    <td><img src="/images/table_bottom_middle.gif" width="14" height="20" /></td>
+    <td width="50%" background="/images/table_bg_bottom_right.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+    <td><img src="/images/table_corner_bottom_right.gif" width="16" height="20" /></td>
+  </tr>
+</table>	
+	</td>
+  </tr>
+</table>
+</div><br />
+-->
+<div align="center"><br />
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+    <td><img src="/images/table_corner_top_left.gif" width="12" height="21" /></td>
+    <td background="/images/table_bg_top_left.gif"><div class="tableTitle">Estad&iacute;sticas</div></td>
+    <td width="100%" background="/images/table_bg_top_left.gif"><img src="/images/pixel.gif" width="10" height="21" /></td>
+    <td><img src="/images/table_corner_top_right.gif" width="128" height="21" /></td>
+  </tr>
+</table>	
+	</td>
+  </tr>
+
+  <tr>
+    <td>
+<table border=0 bordercolor="#FFFFFF" cellpadding=3 cellspacing=0 class="txtnotas">
+  <tr class="tab1X">
+    <td align="right" bgcolor="f2f2f2" style="border-left: #0b3359 1px solid"><b>Total de Casillas:</b></td>
+    <td align="right" bgcolor="#FFFFFF" style="border-right: #0b3359 1px solid;">5,211</td>
+    <td align="right" bgcolor="f2f2f2" >&nbsp;</td>
+    <td align="right" style="border-right: #0b3359 1px solid;">&nbsp;</td>
+
+    </tr>
+  <tr class="tab2X">
+    <td align="right" bgcolor="f2f2f2" style="border-left: #0b3359 1px solid"><b>Casillas con Votos:</b></td>
+    <td align="right" bgcolor="#FFFFFF" style="border-right: #0b3359 1px solid;">4,772</td>
+    <td align="right" bgcolor="f2f2f2" ><b>Casillas con inconsistencias :</b></td>
+    <td align="right" style="border-right: #0b3359 1px solid; ">237</td>
+    </tr>
+
+  <tr class="tab1X">
+    <td align="right" bgcolor="f2f2f2" style="border-left: #0b3359 1px solid"><b>% Casillas con Votos:</b></td>
+    <td align="right" bgcolor="#FFFFFF" style="border-right: #0b3359 1px solid;">90.86%</td>
+    <td align="right" bgcolor="f2f2f2"><b>% Inconsistencias :</b></td>
+    <td align="right" style="border-right: #0b3359 1px solid; ">4.51%</td>
+    </tr>
+</table>	
+	
+	</td>
+
+  </tr>
+  <tr>
+    <td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="/images/table_corner_bottom_left.gif" width="35" height="20" /></td>
+    <td width="50%" background="/images/table_bg_bottom_left.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+    <td><img src="/images/table_bottom_middle.gif" width="14" height="20" /></td>
+    <td width="50%" background="/images/table_bg_bottom_right.gif"><img src="/images/pixel.gif" width="1" height="20" /></td>
+
+    <td><img src="/images/table_corner_bottom_right.gif" width="16" height="20" /></td>
+  </tr>
+</table>	
+	</td>
+  </tr>
+</table>
+
+</div><br />
+
+<script type="text/javascript">
+addScrollSynchronization(document.getElementById("leftDiv"), document.getElementById("rightDiv"), "vertical");
+addScrollSynchronization(document.getElementById("topRightDiv"), document.getElementById("rightDiv"), "horizontal");
+</script>
+
+<div align="center"><style type="text/css">
+<!--
+.hid {color: #FFFFFF; font-size:9px; font-family:Arial, Helvetica, sans-serif;}
+-->
+</style>
+
+<center>
+<table border=0 align=center cellpadding=0 cellspacing=0 bgcolor="#FFFFFF" class="tabdatoxtra">
+<tr>
+  <td width=650 class="txtnotas">Cualquier modificaci&oacute;n o alteraci&oacute;n de la&nbsp; informaci&oacute;n contenida &nbsp;en este sitio, sin autorizaci&oacute;n del Instituto de Elecciones y  Participaci&oacute;n Ciudadana de Chiapas, dar&aacute; lugar a las responsabilidades civiles, penales y administrativas que en su caso correspondan.<br></td><td width=30 align=right class="txthorafecha"><font color="#FFFFFF">13:30</font></td></tr></table>
+
+  <span class="hid" id="-13:30:01"></span>
+</center>
+
+</body>
+</html></div>
+<a href="index.xls" id="btnExcel"><img src="/images/header_btn_excel.png" name="btnExcel" width="44" height="42" border="0" id="btnExcel"></a>
+
+
+
