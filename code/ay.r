@@ -775,7 +775,6 @@ colnames(dat)
 
 
 
-  
 #########################################################
 ## ################################################### ##
 ## ## Export a coalAgg version of votes returns to  ## ##
@@ -784,48 +783,7 @@ colnames(dat)
 #########################################################
 sel <- dat$yr>=1989
 dat <- dat[sel,] # drop early years
-dat$nr <- dat$nulos <- dat$total <- dat$fuente <- NULL # drop void ballots
+dat$nr <- dat$nulos <- dat$tot <- dat$fuente <- NULL # drop void ballots and other columns
 dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
-
-
-dat <- read.csv(file = "aymu1989-present.coalAgg.csv", stringsAsFactors = FALSE)
-dat[1,]
-
-sel.l <- grep("^l[0-9]{2}", colnames(dat))
-l <- dat[,sel.l] # subset label columns
-sel.v <- grep("^v[0-9]{2}", colnames(dat))
-v <- dat[,sel.v] # subset vote columns
-
-ci <- coal.info
-head(ci[ci$ncoal==3,])
-#compare this to pancoal etc columns
-
-#table(gsub(pattern = "([0-9a-zA-Záéíóúñ])", replacement = "", tmp)) # keep only non-letter-number characters
-
-###########################
-# ESTO ANALIZA INCUMBENTS #
-###########################
-
-dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
-setwd(dd)
-
-# read raw data file
-inc <- read.csv(file = "aymu1985-present.incumbents.csv", stringsAsFactors = FALSE)
-dim(inc)
-colnames(inc)
-
-sel <- which(inc$edon==24)
-tmp <- inc[sel,]
-
-table(tmp$reelec.post)
-
-
-i <- 0
-
-i <- i+1
-sel <- which(tmp$munn==i)
-tmp[sel, c("yr","incumbent","dreran.post","dreelec.post")]
-
-
 
