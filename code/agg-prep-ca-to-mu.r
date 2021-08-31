@@ -253,3 +253,57 @@ clipboard(new.o)
 
 new.o[1,]
 
+
+
+###################
+## oax csv files ##
+###################
+
+source("~/Dropbox/data/useful-functions/notin.r")
+setwd("/home/eric/Downloads/Desktop/MXelsCalendGovt/elecReturns/datosBrutos/not-in-git/resultCasillas/subnat/oax2021ayca")
+all.f <- dir()
+
+# get all colnames
+all.n <- c()
+for (i in 1:length(all.f)){
+    #i <- 1
+    message(sprintf("loop %s", i))
+    d <- read.csv(file = all.f[i], skip = 2, nrows = 1, header = TRUE)
+    #d[1,]
+    all.n <- c(all.n, colnames(d))
+}
+all.n <- all.n[duplicated(all.n)==FALSE]
+all.n <- all.n[-which(all.n %in% c("ID_ESTADO","NOMBRE_ESTADO","ID_DISTRITO_LOCAL","CABECERA_DISTRITO_LOCAL","SECCION","ID_CASILLA","TIPO_CASILLA","EXT_CONTIGUA","ID_TIPO_CANDIDATURA","ESTATUS_ACTA","CASILLA_INSTALADA","ESTATUS_PAQUETE","ID_INCIDENTE","NUM_ACTA_IMPRESO"))]
+#all.n <- c(all.n, "mun", "ife")
+all.n <- all.n[order(all.n)]
+
+# get all files, colSums into new object
+new.o <- matrix(rep(0, length(all.n)), nrow = 1)
+new.o  <- data.frame(new.o); colnames(new.o)  <- all.n; new.o$MUNICIPIO_LOCAL <- "drop this obs"
+for (i in 1:length(all.f)){
+    #i <- 1
+    message(sprintf("loop %s", i))
+    d <- read.csv(file = all.f[i], skip = 2, header = TRUE)
+    sel <- which(colnames(d) %in% c("ID_ESTADO","NOMBRE_ESTADO","ID_DISTRITO_LOCAL","CABECERA_DISTRITO_LOCAL","SECCION","ID_CASILLA","TIPO_CASILLA","EXT_CONTIGUA","ID_TIPO_CANDIDATURA","ESTATUS_ACTA","CASILLA_INSTALADA","ESTATUS_PAQUETE","ID_INCIDENTE","NUM_ACTA_IMPRESO"))
+    d <- d[,-sel]
+    #d[1,]
+    #str(d)
+    tmp.n <- which(all.n %notin% colnames(d)) # missing columns
+    tmp.x <- matrix(0, nrow=nrow(d), ncol=length(tmp.n))
+    tmp.x <- data.frame(tmp.x); colnames(tmp.x) <- all.n[tmp.n]
+    d <- cbind(d, tmp.x)
+    tmp <- d[1,which(colnames(d) %in% c("MUNICIPIO_LOCAL"))] # keep mun
+    tmp1 <- d[1,which(colnames(d) %in% c("ID_MUNICIPIO_LOCAL"))] # keep ife
+    d <- colSums(d[,-which(colnames(d) %in% c("MUNICIPIO_LOCAL"))])
+    d["MUNICIPIO_LOCAL"] <- tmp   # paste mun
+    d["ID_MUNICIPIO_LOCAL"] <- tmp1   # paste ife
+    d <- d[order(names(d))]
+    new.o <-
+        rbind(new.o, d)
+#    assign(d, paste0("f", sub("^([0-9]+)[,].+", "\\1", all.f[i]))) # rename object
+}
+
+clipboard(new.o)
+
+new.o[1,]
+

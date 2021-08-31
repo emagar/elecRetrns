@@ -1888,7 +1888,7 @@ cps-14.091,1886,Tapilula,2010,0,4,jul,7,7092,7091,,pri,m,DAVID GARCIA URBINA,,Te
 cps-15.091,1887,Tapilula,2012,0,1,jul,7,7092,7091,,pvem,m,ROSSEY ANTONIO MAYORGA URBINA,,Term-limited-p-lost,,pan,0.0614,,0,,0,0,,,
 cps-16.091,1888,Tapilula,2015,1,6,dic,7,7092,7091,,pmch,m,MARGARITO ALVAREZ ALVAREZ,,Out-p-lost,,pchu,0.0894,,0,,0,0,,,
 cps-17.091,1889,Tapilula,2018,1,25,nov,7,7092,7091,,pchu,m,DAVID GARCIA URBINA,1,Out-p-lost,ROSEMBERG DIAZ SANCHEZ,pri,0.0499,extraordinaria,0,,1,1,,,ok
-cps-18.091,1890,Tapilula,2021,0,6,jun,7,7092,7091,ok,pan-pri-prd,m,ROSEMBERG DIAZ SANCHEZ,,2024,HIASMIN LETICIA MARIN DOMINGUEZ,pchu,,,0,,,,,,
+cps-18.091,1890,Tapilula,2021,0,6,jun,7,7092,7091,ok,pan-pri-prd,m,ROSEMBERG DIAZ SANCHEZ,,2024,HIASMIN LETICIA MARIN DOMINGUEZ,pchu,,,0,,0,0,,,
 cps-08.092,1891,Tecpatán,1991,0,18,ago,7,7093,7092,,pri,,?,,Term-limited-p-won,,,1,,0,,0,0,,,
 cps-09.092,1892,Tecpatán,1995,0,15,oct,7,7093,7092,,pri,,?,,Term-limited-p-won,,prd,0.4586,,0,,0,0,,,
 cps-10.092,1893,Tecpatán,1998,0,4,oct,7,7093,7092,,pri,m,WALBERTO ALVAREZ LOPEZ,,Term-limited-p-won,,prd,0.3477,,0,,0,0,,,
@@ -2185,7 +2185,7 @@ cps-18.125,2183,Honduras de la Sierra,2021,1,,,7,7124,7125,ok,?,,?,,2024,,,,,,,,
 cps-15.xxx,2184,Belisario Domínguez,2012,0,1,jul,7,7xxx,7xxx,,pri,m,OEL LEON REYES,,Term-limited-p-lost,,pvem,0.0687,Oel es su nombre,0,,0,0,,,
 cps-16.xxx,2185,Belisario Domínguez,2015,0,19,jul,7,7xxx,7xxx,,pvem-pna,m,OBED CRUZ SANTIAGO,,litigio,,,1,,0,,0,0,,,
 cps-17.xxx,2186,Belisario Domínguez,2018,0,1,jul,7,7xxx,7xxx,,litigio,0,none,1,litigio,,pan-prd-mc,0.0929,Litigio scjn entre oax y cps por este municipio,0,,0,0,,,
-cua-07.001,2187,Ahumada,1989,0,2,jul,8,8001,8001,,0,,?,,Term-limited-p-won,,pan,0.4143,,0,,0,0,,,
+cua-07.001,2187,Ahumada,1989,0,2,jul,8,8001,8001,,?,,?,,Term-limited-p-won,,pan,0.4143,,0,,0,0,,,
 cua-08.001,2188,Ahumada,1992,0,12,jul,8,8001,8001,,pri,m,FIDEL CHAVEZ MOLINA,,Term-limited-p-lost,,pan,0.0371,,0,inafed,0,0,,,ok
 cua-09.001,2189,Ahumada,1995,0,9,jul,8,8001,8001,,pan,m,MIGUEL GARCIA GARCIA,,Term-limited-p-lost,,pri,0.0951,,0,inafed,0,0,,,
 cua-10.001,2190,Ahumada,1998,0,5,jul,8,8001,8001,,pri,m,JOSE EDGAR BURCIAGA,,Term-limited-p-won,,pan,0.074,,0,,0,0,,,
