@@ -447,7 +447,7 @@ for (i in 1:length(sel7)){
     for (j in 1:7){
         #j <- 1 # debug
         if (tmp.c1[i,j]=="0") next
-        pat <- paste("^", tmp.c1[i,j], "$|", tmp.c1[i,j], "-|-", tmp.c1[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        pat <- paste("^", tmp.c1[i,j], "$|", tmp.c1[i,j], "-|-", tmp.c1[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- reduntant given label changes
         tmp.target <- grep(pattern = pat, x = tmp.l[i,])
         #tmp.target <- grep(pattern = tmp.c1[i,j], x = tmp.l[i,]) # version hits panal when searching pan
         if (length(tmp.target)>0) {
@@ -787,3 +787,12 @@ dat$nr <- dat$nulos <- dat$tot <- dat$fuente <- NULL # drop void ballots and oth
 dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
 
+
+# save coalition weights and info
+save(coal.weights # list with total vote
+   , coal.info # data frame with coalitions
+     , file = "aymu1989-present.coalAgg-weights-info.RData")
+
+coal.weights[100]
+coal.info[100,]
+dat.orig[100,]
