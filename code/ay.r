@@ -383,11 +383,13 @@ for (i in 1:ncol(l)){
 }
 
 # create objects with vote for coalition(s) added and redudant columns dropped
-cv <- v; cv[] <- NA # will receive votes with coalitions aggregated
-cl <- l; cl[] <- NA # will keep coalition labels but drop coalition member labels 
+# 3sep2021: old version used to empty contents which set a bug --- 2nd round manip would forget 1st round manip
+# 3sep2021: new precidure keeps votes/labels in to avoid this
+cv <- v; #cv[] <- NA # will receive votes with coalitions aggregated
+cl <- l; #cl[] <- NA # will keep coalition labels but drop coalition member labels 
 # create "split" objects for votes contrinuted by each coalition member and joint column dropped
-sv <- v; sv[] <- NA 
-sl <- l; sl[] <- NA 
+sv <- v; #sv[] <- NA 
+sl <- l; #sl[] <- NA 
 #
 ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
@@ -416,33 +418,27 @@ ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 I <- nrow(v)
-c1 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # will receive vector of 1st coalition's members
-c2 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 2nd coalition's members
-c3 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 3rd coalition's members
-c4 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # 3rd coalition's members
+c4 <- c3 <- c2 <- c1 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # will receive vector of 1st 2nd 3rd 4th coalition's members
 #
 # will receive columns corresponding to coalition members in v/l for use when weighting votes contributed by each member
-w1 <- as.list(rep("noCoal",I))
-w2 <- as.list(rep("noCoal",I))
-w3 <- as.list(rep("noCoal",I))
-w4 <- as.list(rep("noCoal",I))
+w4 <- w3 <- w2 <- w1 <- as.list(rep("noCoal",I))
 #
-# fill in easy cases with no coalition
-sel <- which(dat$dcoal==0)
-cv[sel,] <- v[sel,]
-cl[sel,] <- l[sel,]
-sv[sel,] <- v[sel,]
-sl[sel,] <- l[sel,]
-# c1 c2 c3 c4 are pre-filled
-# w1 w2 w3 w4 are pre-filled
+## # fill in easy cases with no coalition --- 3sep2021 no longer needed with new procedure
+## sel <- which(dat$dcoal==0)
+## cv[sel,] <- v[sel,]
+## cl[sel,] <- l[sel,]
+## sv[sel,] <- v[sel,]
+## sl[sel,] <- l[sel,]
+## # c1 c2 c3 c4 are pre-filled
+## # w1 w2 w3 w4 are pre-filled
 
 # fill in info selecting cases of coalitions with most members 
 sel7 <- which(max.tmp>1) 
 #grep("ags-18", dat$emm[sel7]) # debug
-tmp.v  <- v[sel7,] # subset for manipulation
-tmp.vw <- v[sel7,] # will receive votes contributed by each coalition member
-tmp.l  <- l[sel7,]
-tmp.lw <- l[sel7,] # will receive labels of vote-contributing parties
+tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
+tmp.vw <- sv[sel7,] # will receive votes contributed by each coalition member
+tmp.l  <- cl[sel7,]
+tmp.lw <- sl[sel7,] # will receive labels of vote-contributing parties
 tmp.n  <- n[sel7,]
 tmp.c1 <- c1[sel7,]
 tmp.w1  <- w1[sel7] # will receive indices to manipulate
@@ -510,10 +506,11 @@ sl[sel7,] <- tmp.lw
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 sel7 <- which(max.tmp>1) 
-tmp.v <- v[sel7,] # subset for manipulation
-tmp.vw <- v[sel7,] # will receive votes contributed y each coalition member
-tmp.l <- l[sel7,]
-tmp.lw <- l[sel7,] # will receive labels of vote-contributing parties
+#grep("ags-18", dat$emm[sel7]) # debug
+tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
+tmp.vw <- sv[sel7,] # will receive votes contributed by each coalition member
+tmp.l  <- cl[sel7,]
+tmp.lw <- sl[sel7,] # will receive labels of vote-contributing parties
 tmp.n <- n[sel7,]
 tmp.c2 <- c2[sel7,]
 tmp.w2 <- w2[sel7]
@@ -525,7 +522,7 @@ tmp.ci <- ci[sel7,]
 #i <- which(dat$ord[sel7]==847)
 
 for (i in 1:length(sel7)){
-    #i <- length(sel7) # debug
+    #i <- 50 # debug
     #tmp.l[i,] # debug
     #tmp.n[i,] # debug
     message(sprintf("loop %s of %s", i, length(sel7)))
@@ -584,10 +581,10 @@ sl[sel7,] <- tmp.lw
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 sel7 <- which(max.tmp>1) 
-tmp.v <- v[sel7,] # subset for manipulation
-tmp.vw <- v[sel7,] # will receive votes contributed y each coalition member
-tmp.l <- l[sel7,]
-tmp.lw <- l[sel7,] # will receive labels of vote-contributing parties
+tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
+tmp.vw <- sv[sel7,] # will receive votes contributed by each coalition member
+tmp.l  <- cl[sel7,]
+tmp.lw <- sl[sel7,] # will receive labels of vote-contributing parties
 tmp.n <- n[sel7,]
 tmp.c3 <- c3[sel7,]
 tmp.w3 <- w3[sel7]
@@ -655,10 +652,10 @@ sl[sel7,] <- tmp.lw
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 sel7 <- which(max.tmp>1) 
-tmp.v <- cv[sel7,] # subset for manipulation
-tmp.vw <- v[sel7,] # will receive votes contributed y each coalition member
-tmp.l <- cl[sel7,]
-tmp.lw <- l[sel7,] # will receive labels of vote-contributing parties
+tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
+tmp.vw <- sv[sel7,] # will receive votes contributed by each coalition member
+tmp.l  <- cl[sel7,]
+tmp.lw <- sl[sel7,] # will receive labels of vote-contributing parties
 tmp.n <- n[sel7,]
 tmp.c4 <- c4[sel7,]
 tmp.w4 <- w4[sel7]
@@ -782,6 +779,11 @@ pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
 # Reads sortBy function
 source( paste(pth, "sortBy.r", sep = "/") )
 rm(pth)
+
+## # debug
+## grep("ags-18", dat$emm)
+## sl[156,]
+## x
 
 # sort coalition-aggregated data
 tail(cv)
