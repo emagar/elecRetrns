@@ -438,6 +438,7 @@ sl[sel,] <- l[sel,]
 
 # fill in info selecting cases of coalitions with most members 
 sel7 <- which(max.tmp>1) 
+#grep("ags-18", dat$emm[sel7]) # debug
 tmp.v  <- v[sel7,] # subset for manipulation
 tmp.vw <- v[sel7,] # will receive votes contributed by each coalition member
 tmp.l  <- l[sel7,]
@@ -449,12 +450,9 @@ tmp.vw1 <- w1[sel7] # will receive manipulated votes
 max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
 
-# debug
-#i <- which(dat$ord[sel7]==847)
-
 for (i in 1:length(sel7)){
     #i <- length(sel7) # debug
-    #i <- 1 # debug
+    #i <- 50 # debug
     #tmp.l[i,]
     message(sprintf("loop %s of %s", i, length(sel7)))
     tmp.ci$ncoal[i] <- 1               # running tally ncoal
@@ -478,22 +476,23 @@ for (i in 1:length(sel7)){
     target.cols <- unique(target.cols); target.cols <- target.cols[order(target.cols)]
     tmp.w1[[i]] <- target.cols # cols to use when replacing coalition members' contributed votes
     sel <- setdiff(target.cols, save.col)  # setdiffs joint votes
-    if (length(sel)<2) sel <- target.cols # or all if singleton
+    if (length(sel)==0) sel <- target.cols # or all if singleton (ie setdiff empty)
     tmp.vw1[[i]] <- tmp.v[i, sel] # keep to fill coalition members' contribution 
     save.vote <- sum(tmp.v[i,target.cols])
-    tmp.vw1[[i]] <- tmp.vw1[[i]] / sum(tmp.v[i,sel]) # relative contributions
-    tmp.vw1[[i]] <- tmp.vw1[[i]] * save.vote         # relative votes contributed
-    tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-    tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
-    tmp.n[i, target.cols] <- 0   # erase ns
-    tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
-    tmp.l[i, save.col] <- save.label # place coalition label back in
-    # votes contributed
-    tmp.vw[i, save.col] <- 0   # erase joint votes
-    tmp.lw[i, save.col] <- "0" # erase joint label
-    tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
+    tmp.vw1[[i]] <- tmp.vw1[[i]] / sum(tmp.v[i,sel])   # relative contributions
+    tmp.vw1[[i]] <- round(tmp.vw1[[i]] * save.vote, 2) # relative votes contributed
+    if (length(sel)>1){ # do not manipulate if singleton
+        tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label manipulation
+        tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
+        tmp.l[i, save.col] <- save.label # place coalition label back in
+        # votes contributed
+        tmp.vw[i, save.col] <- 0   # erase joint votes
+        tmp.lw[i, save.col] <- "0" # erase joint label
+        tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
+    }
+    tmp.n[i, target.cols] <- 0   # erase ns, prep for obs's next coalition
 }
-
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
@@ -551,20 +550,22 @@ for (i in 1:length(sel7)){
     target.cols <- unique(target.cols); target.cols <- target.cols[order(target.cols)]
     tmp.w2[[i]] <- target.cols # for use when computing coalition members' contribution
     sel <- setdiff(target.cols, save.col)  # setdiffs joint votes
-    if (length(sel)<2) sel <- target.cols # or all if singleton
+    if (length(sel)==0) sel <- target.cols # or all if singleton
     tmp.vw2[[i]] <- tmp.v[i, sel] # keep to fill coalition members' contribution (setdiffs joint votes)
     save.vote <- sum(tmp.v[i,target.cols])
-    tmp.vw2[[i]] <- tmp.vw2[[i]] / sum(tmp.v[i,sel]) # relative contributions (setdiffs joint votes)
-    tmp.vw2[[i]] <- tmp.vw2[[i]] * save.vote                                    # relative votes contributed
-    tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-    tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+    tmp.vw2[[i]] <- tmp.vw2[[i]] / sum(tmp.v[i,sel])   # relative contributions
+    tmp.vw2[[i]] <- round(tmp.vw2[[i]] * save.vote, 2) # relative votes contributed
+    if (length(sel)>1){ # do not manipulate if singleton
+        tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+        tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
+        tmp.l[i, save.col] <- save.label # place coalition label back in
+        # votes contributed
+        tmp.vw[i, save.col] <- 0   # erase joint votes
+        tmp.lw[i, save.col] <- "0" # erase joint label
+        tmp.vw[i, sel] <- tmp.vw2[[i]]  # place contributed votes back in
+    }
     tmp.n[i, target.cols] <- 0   # erase ns
-    tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
-    tmp.l[i, save.col] <- save.label # place coalition label back in
-    # votes contributed
-    tmp.vw[i, save.col] <- 0   # erase joint votes
-    tmp.lw[i, save.col] <- "0" # erase joint label
-    tmp.vw[i, sel] <- tmp.vw2[[i]]  # place contributed votes back in
 }
 # return to data
 cv[sel7,] <- tmp.v
@@ -620,20 +621,22 @@ for (i in 1:length(sel7)){
     target.cols <- unique(target.cols); target.cols <- target.cols[order(target.cols)]
     tmp.w3[[i]] <- target.cols # for use when computing coalition members' contribution
     sel <- setdiff(target.cols, save.col)  # setdiffs joint votes
-    if (length(sel)<2) sel <- target.cols # or all if singleton
+    if (length(sel)==0) sel <- target.cols # or all if singleton
     tmp.vw3[[i]] <- tmp.v[i, sel] # keep to fill coalition members' contribution (setdiffs joint votes)
     save.vote <- sum(tmp.v[i,target.cols])
-    tmp.vw3[[i]] <- tmp.vw3[[i]] / sum(tmp.v[i,sel]) # relative contributions (setdiffs joint votes)
-    tmp.vw3[[i]] <- tmp.vw3[[i]] * save.vote                                    # relative votes contributed
-    tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-    tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+    tmp.vw3[[i]] <- tmp.vw3[[i]] / sum(tmp.v[i,sel])   # relative contributions
+    tmp.vw3[[i]] <- round(tmp.vw3[[i]] * save.vote, 2) # relative votes contributed
+    if (length(sel)>1){ # do not manipulate if singleton
+        tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+        tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
+        tmp.l[i, save.col] <- save.label # place coalition label back in
+        # votes contributed
+        tmp.vw[i, save.col] <- 0   # erase joint votes
+        tmp.lw[i, save.col] <- "0" # erase joint label
+        tmp.vw[i, sel] <- tmp.vw3[[i]]  # place contributed votes back in
+    }
     tmp.n[i, target.cols] <- 0   # erase ns
-    tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
-    tmp.l[i, save.col] <- save.label # place coalition label back in
-    # votes contributed
-    tmp.vw[i, save.col] <- 0   # erase joint votes
-    tmp.lw[i, save.col] <- "0" # erase joint label
-    tmp.vw[i, sel] <- tmp.vw3[[i]]  # place contributed votes back in
 }
 # return to data
 cv[sel7,] <- tmp.v
@@ -689,20 +692,22 @@ for (i in 1:length(sel7)){
     target.cols <- unique(target.cols); target.cols <- target.cols[order(target.cols)]
     tmp.w4[[i]] <- target.cols # for use when computing coalition members' contribution
     sel <- setdiff(target.cols, save.col)  # setdiffs joint votes
-    if (length(sel)<2) sel <- target.cols # or all if singleton
+    if (length(sel)==0) sel <- target.cols # or all if singleton
     tmp.vw4[[i]] <- tmp.v[i, sel] # keep to fill coalition members' contribution (setdiffs joint votes)
     save.vote <- sum(tmp.v[i,target.cols])
-    tmp.vw4[[i]] <- tmp.vw4[[i]] / sum(tmp.v[i,sel]) # relative contributions (setdiffs joint votes)
-    tmp.vw4[[i]] <- tmp.vw4[[i]] * save.vote                                    # relative votes contributed
-    tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-    tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+    tmp.vw4[[i]] <- tmp.vw4[[i]] / sum(tmp.v[i,sel])   # relative contributions
+    tmp.vw4[[i]] <- round(tmp.vw4[[i]] * save.vote, 2) # relative votes contributed
+    if (length(sel)>1){ # do not manipulate if singleton
+        tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+        tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
+        tmp.l[i, save.col] <- save.label # place coalition label back in
+        # votes contributed
+        tmp.vw[i, save.col] <- 0   # erase joint votes
+        tmp.lw[i, save.col] <- "0" # erase joint label
+        tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
+    }
     tmp.n[i, target.cols] <- 0   # erase ns
-    tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
-    tmp.l[i, save.col] <- save.label # place coalition label back in
-    # votes contributed
-    tmp.vw[i, save.col] <- 0   # erase joint votes
-    tmp.lw[i, save.col] <- "0" # erase joint label
-    tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
 }
 # return to data
 cv[sel7,] <- tmp.v
@@ -718,15 +723,16 @@ max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 print("Table must have 0s and 1s only, else coalitions remain to manipulate")
 table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
-# debug
-sel <- which(max.tmp==2)
-cv[sel[2],]
-cl[sel[2],]
-sv[sel[2],]
-sl[sel[2],]
-dat[sel[2],]
-dat$emm[sel]
-x
+## # debug
+## sel <- which(max.tmp==2)
+## cv[sel[2],]
+## cl[sel[2],]
+## sv[sel[2],]
+## sl[sel[2],]
+## dat[sel[2],]
+## dat$emm[sel]
+## x
+
 # plug ncoal into data
 dat$ncoal  <- ci$ncoal
 
@@ -875,14 +881,23 @@ dat$nr <- dat$nulos <- dat$tot <- dat$fuente <- NULL # drop void ballots and oth
 dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
 
+save.image(file = "tmp1.RData")
+
+rm(list = ls())
+dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
+setwd(dd)
+load(file = "tmp1.RData")
+
+
 #########################################################
 ## ################################################### ##
 ## ## Export splitCoal version of votes returns to  ## ##
 ## ## the same directory where aymu1979-present.csv ## ##
 ## ################################################### ##
 #########################################################
-sel <- dat.split$yr>=1989
+sel <- which(dat.split$yr>=1989)
 dat.split <- dat.split[sel,] # drop early years
+
 dat.split$ord <- 1:nrow(dat.split)
 write.csv(dat.split, file = "aymu1989-present.coalSplit.csv", row.names = FALSE)
 
