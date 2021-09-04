@@ -886,8 +886,7 @@ write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
 save.image(file = "tmp1.RData")
 
 rm(list = ls())
-dd <- "/h
-ome/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
+dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 load(file = "tmp1.RData")
 
