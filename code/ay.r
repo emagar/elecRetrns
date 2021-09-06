@@ -102,20 +102,6 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^mrn$", replacement = "morena", l[,i])
-    l[,i] <- gsub(pattern = "^mrn-", replacement = "morena-", l[,i])
-    l[,i] <- gsub(pattern = "-mrn-", replacement = "-morena-", l[,i])
-    l[,i] <- gsub(pattern = "-mrn$", replacement = "-morena", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^cc$", replacement = "cc1", l[,i])
-    l[,i] <- gsub(pattern = "^cc-", replacement = "cc1-", l[,i])
-    l[,i] <- gsub(pattern = "-cc-", replacement = "-cc1-", l[,i])
-    l[,i] <- gsub(pattern = "-cc$", replacement = "-cc1", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pmc$", replacement = "mc", l[,i])
     l[,i] <- gsub(pattern = "^pmc-", replacement = "mc-", l[,i])
     l[,i] <- gsub(pattern = "-pmc-", replacement = "-mc-", l[,i])
@@ -123,10 +109,10 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^mp$", replacement = "mexpos", l[,i])
-    l[,i] <- gsub(pattern = "^mp-", replacement = "mexpos-", l[,i])
-    l[,i] <- gsub(pattern = "-mp-", replacement = "-mexpos-", l[,i])
-    l[,i] <- gsub(pattern = "-mp$", replacement = "-mexpos", l[,i])
+    l[,i] <- gsub(pattern = "^mrn$", replacement = "morena", l[,i])
+    l[,i] <- gsub(pattern = "^mrn-", replacement = "morena-", l[,i])
+    l[,i] <- gsub(pattern = "-mrn-", replacement = "-morena-", l[,i])
+    l[,i] <- gsub(pattern = "-mrn$", replacement = "-morena", l[,i])
     }
 #
 for (i in 1:ncol(l)){
@@ -135,20 +121,6 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "-pd-", replacement = "-pd1-", l[,i])
     l[,i] <- gsub(pattern = "-pd$", replacement = "-pd1", l[,i])
     }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pj$", replacement = "pj1", l[,i])
-    l[,i] <- gsub(pattern = "^pj-", replacement = "pj1-", l[,i])
-    l[,i] <- gsub(pattern = "-pj-", replacement = "-pj1-", l[,i])
-    l[,i] <- gsub(pattern = "-pj$", replacement = "-pj1", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^p?fc$|^fzaciud$|^fuerciud$", replacement = "fc1", l[,i])
-    l[,i] <- gsub(pattern = "-p?fc-|-fzaciud-|-fuerciud-", replacement = "-fc1-", l[,i])
-    l[,i] <- gsub(pattern = "-p?fc$|-fzaciud$|-fuerciud$", replacement = "-fc1", l[,i])
-    }
-#
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^p?asd?c?$|^alter(nativa)?$", replacement = "pasd", l[,i])
     l[,i] <- gsub(pattern = "-p?asd?c?-|-alter(nativa)?-", replacement = "-pasd-", l[,i])
@@ -898,6 +870,7 @@ load(file = "tmp1.RData")
 #########################################################
 sel <- which(dat.split$yr>=1989)
 dat.split <- dat.split[sel,] # drop early years
+dat.split <- dat.split[order(dat.split$emm),] # sort emm
 
 dat.split$ord <- 1:nrow(dat.split)
 write.csv(dat.split, file = "aymu1989-present.coalSplit.csv", row.names = FALSE)
