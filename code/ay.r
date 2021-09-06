@@ -4,7 +4,7 @@ dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
 # read raw data file
-dat <- read.csv(file = "aymu1977-present.csv", stringsAsFactors = FALSE)
+dat <- read.csv(file = "aymu1989-present.csv", stringsAsFactors = FALSE)
 dim(dat)
 
 #########################################################################
@@ -116,18 +116,33 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^panal$", replacement = "pna", l[,i])
+    l[,i] <- gsub(pattern = "-panal-", replacement = "-pna-", l[,i])
+    l[,i] <- gsub(pattern = "-panal$", replacement = "-pna", l[,i])
+    l[,i] <- gsub(pattern = "^panal-", replacement = "pna-", l[,i])
+    }
+#
+# avoid "na" in csv, recognized as missing...
+for (i in 1:ncol(l)){
+    l[,i] <- gsub(pattern = "^na$", replacement = "pna", l[,i])
+    l[,i] <- gsub(pattern = "-na-", replacement = "-pna-", l[,i])
+    l[,i] <- gsub(pattern = "-na$", replacement = "-pna", l[,i])
+    l[,i] <- gsub(pattern = "^na-", replacement = "pna-", l[,i])
+    }
+#
+for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pd$", replacement = "pd1", l[,i])
     l[,i] <- gsub(pattern = "^pd-", replacement = "pd1-", l[,i])
     l[,i] <- gsub(pattern = "-pd-", replacement = "-pd1-", l[,i])
     l[,i] <- gsub(pattern = "-pd$", replacement = "-pd1", l[,i])
     }
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^p?asd?c?$|^alter(nativa)?$", replacement = "pasd", l[,i])
-    l[,i] <- gsub(pattern = "-p?asd?c?-|-alter(nativa)?-", replacement = "-pasd-", l[,i])
-    l[,i] <- gsub(pattern = "-p?asd?c?$|-alter(nativa)?$", replacement = "-pasd", l[,i])
-    l[,i] <- gsub(pattern = "^p?asd?c?-|^alter(nativa)?-", replacement = "pasd-", l[,i])
-    }
-#
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^p?asd?c?$|^alter(nativa)?$", replacement = "pasd", l[,i])
+##     l[,i] <- gsub(pattern = "-p?asd?c?-|-alter(nativa)?-", replacement = "-pasd-", l[,i])
+##     l[,i] <- gsub(pattern = "-p?asd?c?$|-alter(nativa)?$", replacement = "-pasd", l[,i])
+##     l[,i] <- gsub(pattern = "^p?asd?c?-|^alter(nativa)?-", replacement = "pasd-", l[,i])
+##     }
+## #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pl$", replacement = "pl1", l[,i])
     l[,i] <- gsub(pattern = "^pl-", replacement = "pl1-", l[,i])
@@ -163,91 +178,76 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^pt-", replacement = "pt1-", l[,i])
 ##     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pac$", replacement = "pac1", l[,i])
-    l[,i] <- gsub(pattern = "-pac-", replacement = "-pac1-", l[,i])
-    l[,i] <- gsub(pattern = "-pac$", replacement = "-pac1", l[,i])
-    l[,i] <- gsub(pattern = "^pac-", replacement = "pac1-", l[,i])
-    }
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pac$", replacement = "pac1", l[,i])
+##     l[,i] <- gsub(pattern = "-pac-", replacement = "-pac1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pac$", replacement = "-pac1", l[,i])
+##     l[,i] <- gsub(pattern = "^pac-", replacement = "pac1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pbc$", replacement = "ppbc", l[,i])
+##     l[,i] <- gsub(pattern = "-pbc-", replacement = "-ppbc-", l[,i])
+##     l[,i] <- gsub(pattern = "-pbc$", replacement = "-ppbc", l[,i])
+##     l[,i] <- gsub(pattern = "^pbc-", replacement = "ppbc-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pcd$", replacement = "pcd1", l[,i])
+##     l[,i] <- gsub(pattern = "-pcd-", replacement = "-pcd1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pcd$", replacement = "-pcd1", l[,i])
+##     l[,i] <- gsub(pattern = "^pcd-", replacement = "pcd1-", l[,i])
+##     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^panal$", replacement = "pna", l[,i])
-    l[,i] <- gsub(pattern = "-panal-", replacement = "-pna-", l[,i])
-    l[,i] <- gsub(pattern = "-panal$", replacement = "-pna", l[,i])
-    l[,i] <- gsub(pattern = "^panal-", replacement = "pna-", l[,i])
-    }
-#
-# avoid "na" in csv, recognized as missing...
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^na$", replacement = "pna", l[,i])
-    l[,i] <- gsub(pattern = "-na-", replacement = "-pna-", l[,i])
-    l[,i] <- gsub(pattern = "-na$", replacement = "-pna", l[,i])
-    l[,i] <- gsub(pattern = "^na-", replacement = "pna-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pbc$", replacement = "ppbc", l[,i])
-    l[,i] <- gsub(pattern = "-pbc-", replacement = "-ppbc-", l[,i])
-    l[,i] <- gsub(pattern = "-pbc$", replacement = "-ppbc", l[,i])
-    l[,i] <- gsub(pattern = "^pbc-", replacement = "ppbc-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pcd$", replacement = "pcd1", l[,i])
-    l[,i] <- gsub(pattern = "-pcd-", replacement = "-pcd1-", l[,i])
-    l[,i] <- gsub(pattern = "-pcd$", replacement = "-pcd1", l[,i])
-    l[,i] <- gsub(pattern = "^pcd-", replacement = "pcd1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pcm$", replacement = "pcm1", l[,i])
-    l[,i] <- gsub(pattern = "-pcm-", replacement = "-pcm1-", l[,i])
-    l[,i] <- gsub(pattern = "-pcm$", replacement = "-pcm1", l[,i])
-    l[,i] <- gsub(pattern = "^pcm-", replacement = "pcm1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pds$", replacement = "pds1", l[,i])
-    l[,i] <- gsub(pattern = "-pds-", replacement = "-pds1-", l[,i])
-    l[,i] <- gsub(pattern = "-pds$", replacement = "-pds1", l[,i])
-    l[,i] <- gsub(pattern = "^pds-", replacement = "pds1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^pfd$", replacement = "pfd1", l[,i])
-    l[,i] <- gsub(pattern = "-pfd-", replacement = "-pfd1-", l[,i])
-    l[,i] <- gsub(pattern = "-pfd$", replacement = "-pfd1", l[,i])
-    l[,i] <- gsub(pattern = "^pfd-", replacement = "pfd1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^ppn$", replacement = "ppn1", l[,i])
-    l[,i] <- gsub(pattern = "-ppn-", replacement = "-ppn1-", l[,i])
-    l[,i] <- gsub(pattern = "-ppn$", replacement = "-ppn1", l[,i])
-    l[,i] <- gsub(pattern = "^ppn-", replacement = "ppn1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^psd$", replacement = "psd1", l[,i])
-    l[,i] <- gsub(pattern = "-psd-", replacement = "-psd1-", l[,i])
-    l[,i] <- gsub(pattern = "-psd$", replacement = "-psd1", l[,i])
-    l[,i] <- gsub(pattern = "^psd-", replacement = "psd1-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^udc$", replacement = "pudc", l[,i])
-    l[,i] <- gsub(pattern = "-udc-", replacement = "-pudc-", l[,i])
-    l[,i] <- gsub(pattern = "-udc$", replacement = "-pudc", l[,i])
-    l[,i] <- gsub(pattern = "^udc-", replacement = "pudc-", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^mrps$", replacement = "pmrps", l[,i])
-    l[,i] <- gsub(pattern = "-mrps-", replacement = "-pmrps-", l[,i])
-    l[,i] <- gsub(pattern = "-mrps$", replacement = "-pmrps", l[,i])
-    l[,i] <- gsub(pattern = "^mrps-", replacement = "pmrps-", l[,i])
-    }
-#
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pcm$", replacement = "pcm1", l[,i])
+##     l[,i] <- gsub(pattern = "-pcm-", replacement = "-pcm1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pcm$", replacement = "-pcm1", l[,i])
+##     l[,i] <- gsub(pattern = "^pcm-", replacement = "pcm1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pds$", replacement = "pds1", l[,i])
+##     l[,i] <- gsub(pattern = "-pds-", replacement = "-pds1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pds$", replacement = "-pds1", l[,i])
+##     l[,i] <- gsub(pattern = "^pds-", replacement = "pds1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^pfd$", replacement = "pfd1", l[,i])
+##     l[,i] <- gsub(pattern = "-pfd-", replacement = "-pfd1-", l[,i])
+##     l[,i] <- gsub(pattern = "-pfd$", replacement = "-pfd1", l[,i])
+##     l[,i] <- gsub(pattern = "^pfd-", replacement = "pfd1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^ppn$", replacement = "ppn1", l[,i])
+##     l[,i] <- gsub(pattern = "-ppn-", replacement = "-ppn1-", l[,i])
+##     l[,i] <- gsub(pattern = "-ppn$", replacement = "-ppn1", l[,i])
+##     l[,i] <- gsub(pattern = "^ppn-", replacement = "ppn1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^psd$", replacement = "psd1", l[,i])
+##     l[,i] <- gsub(pattern = "-psd-", replacement = "-psd1-", l[,i])
+##     l[,i] <- gsub(pattern = "-psd$", replacement = "-psd1", l[,i])
+##     l[,i] <- gsub(pattern = "^psd-", replacement = "psd1-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^udc$", replacement = "pudc", l[,i])
+##     l[,i] <- gsub(pattern = "-udc-", replacement = "-pudc-", l[,i])
+##     l[,i] <- gsub(pattern = "-udc$", replacement = "-pudc", l[,i])
+##     l[,i] <- gsub(pattern = "^udc-", replacement = "pudc-", l[,i])
+##     }
+## #
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^mrps$", replacement = "pmrps", l[,i])
+##     l[,i] <- gsub(pattern = "-mrps-", replacement = "-pmrps-", l[,i])
+##     l[,i] <- gsub(pattern = "-mrps$", replacement = "-pmrps", l[,i])
+##     l[,i] <- gsub(pattern = "^mrps-", replacement = "pmrps-", l[,i])
+##     }
+## #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^otro$", replacement = "otros", l[,i])
     l[,i] <- gsub(pattern = "-otro-", replacement = "-otros-", l[,i])
@@ -255,12 +255,12 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^otro-", replacement = "otros-", l[,i])
     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^parme.$", replacement = "parm", l[,i])
-    l[,i] <- gsub(pattern = "-parme.-", replacement = "-parm-", l[,i])
-    l[,i] <- gsub(pattern = "-parme.$", replacement = "-parm", l[,i])
-    l[,i] <- gsub(pattern = "^parme.-", replacement = "parm-", l[,i])
-    }
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^parme.$", replacement = "parm", l[,i])
+##     l[,i] <- gsub(pattern = "-parme.-", replacement = "-parm-", l[,i])
+##     l[,i] <- gsub(pattern = "-parme.$", replacement = "-parm", l[,i])
+##     l[,i] <- gsub(pattern = "^parme.-", replacement = "parm-", l[,i])
+##     }
 #
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^indep$", replacement = "indep1", l[,i])
@@ -269,12 +269,12 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^indep-", replacement = "indep1-", l[,i])
 ##     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^alianza$", replacement = "alianza1", l[,i])
-    l[,i] <- gsub(pattern = "-alianza-", replacement = "-alianza1-", l[,i])
-    l[,i] <- gsub(pattern = "-alianza$", replacement = "-alianza1", l[,i])
-    l[,i] <- gsub(pattern = "^alianza-", replacement = "alianza1-", l[,i])
-    }
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^alianza$", replacement = "alianza1", l[,i])
+##     l[,i] <- gsub(pattern = "-alianza-", replacement = "-alianza1-", l[,i])
+##     l[,i] <- gsub(pattern = "-alianza$", replacement = "-alianza1", l[,i])
+##     l[,i] <- gsub(pattern = "^alianza-", replacement = "alianza1-", l[,i])
+##     }
 #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^es$", replacement = "pes", l[,i])
