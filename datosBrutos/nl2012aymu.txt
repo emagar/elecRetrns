@@ -1,0 +1,747 @@
+Ayuntamiento por Municipio
+Nuevo León, 1 de julio 2012
+Del html del cee
+<div class=d_update>Resultados al: 27 de Agosto de 2012 6:35:09 PM</div>
+
+pan
+pri-pvem
+prd
+pt
+conve
+panal
+nul
+tot
+lisnom
+partic
+%casillasProcesadas
+
+</tr>
+</thead>
+<tbody id=t_body>
+<tr class=r_total_p>
+<td class=c_lugar><a href="g_1_E_1.html">T O T A L</a></td>
+<td class=c_mo>848,816<br>42.8%</td>
+<td class=c_o>797,396<br>40.2%</td>
+<td class=c_o>96,158<br>4.8%</td>
+<td class=c_o>86,329<br>4.4%</td>
+<td class=c_o>14,867<br>0.7%</td>
+<td class=c_o>81,047<br>4.1%</td>
+<td class=c_o>58,295<br>2.9%</td>
+<td class=c_votos>1,982,908</td>
+<td class=c_nominal>3,324,155</td>
+<td class=c_participacion>59.7</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_1.html">1 Abasolo</a></td>
+<td class=c_o>91<br>5.2%</td>
+<td class=c_o>421<br>24.2%</td>
+<td class=c_mo>730<br>41.9%</td>
+<td class=c_o>306<br>17.6%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>161<br>9.2%</td>
+<td class=c_o>34<br>2.0%</td>
+<td class=c_votos>1,743</td>
+<td class=c_nominal>2,234</td>
+<td class=c_participacion>78.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_2.html">2 Agualeguas</a></td>
+<td class=c_o>514<br>18.8%</td>
+<td class=c_mo>1,211<br>44.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>963<br>35.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>43<br>1.6%</td>
+<td class=c_votos>2,731</td>
+<td class=c_nominal>3,864</td>
+<td class=c_participacion>70.7</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_3.html">3 Los Aldamas</a></td>
+<td class=c_o>549<br>43.3%</td>
+<td class=c_mo>714<br>56.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>4<br>0.3%</td>
+<td class=c_votos>1,267</td>
+<td class=c_nominal>2,321</td>
+<td class=c_participacion>54.6</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_4.html">4 Allende</a></td>
+<td class=c_o>3,111<br>23.0%</td>
+<td class=c_mo>8,430<br>62.3%</td>
+<td class=c_o>367<br>2.7%</td>
+<td class=c_o>613<br>4.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>532<br>3.9%</td>
+<td class=c_o>488<br>3.6%</td>
+<td class=c_votos>13,541</td>
+<td class=c_nominal>23,773</td>
+<td class=c_participacion>57.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_5.html">5 Anáhuac</a></td>
+<td class=c_o>724<br>7.7%</td>
+<td class=c_mo>4,760<br>51.0%</td>
+<td class=c_o>144<br>1.5%</td>
+<td class=c_o>3,182<br>34.1%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>217<br>2.3%</td>
+<td class=c_o>315<br>3.4%</td>
+<td class=c_votos>9,342</td>
+<td class=c_nominal>13,927</td>
+<td class=c_participacion>67.1</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_6.html">6 Apodaca</a></td>
+<td class=c_o>46,739<br>26.4%</td>
+<td class=c_mo>106,130<br>59.9%</td>
+<td class=c_o>9,000<br>5.1%</td>
+<td class=c_o>4,796<br>2.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>6,424<br>3.6%</td>
+<td class=c_o>4,235<br>2.4%</td>
+<td class=c_votos>177,324</td>
+<td class=c_nominal>313,592</td>
+<td class=c_participacion>56.5</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_7.html">7 Aramberri</a></td>
+<td class=c_o>3,899<br>41.8%</td>
+<td class=c_mo>5,119<br>54.9%</td>
+<td class=c_o>20<br>0.2%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>76<br>0.8%</td>
+<td class=c_o>209<br>2.2%</td>
+<td class=c_votos>9,323</td>
+<td class=c_nominal>11,127</td>
+<td class=c_participacion>83.8</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_8.html">8 Bustamante</a></td>
+<td class=c_o>1,104<br>42.4%</td>
+<td class=c_mo>1,434<br>55.1%</td>
+<td class=c_o>39<br>1.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>27<br>1.0%</td>
+<td class=c_votos>2,604</td>
+<td class=c_nominal>3,137</td>
+<td class=c_participacion>83.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_9.html">9 Cadereyta Jiménez</a></td>
+<td class=c_o>15,197<br>41.4%</td>
+<td class=c_mo>17,471<br>47.5%</td>
+<td class=c_o>837<br>2.3%</td>
+<td class=c_o>1,066<br>2.9%</td>
+<td class=c_o>140<br>0.4%</td>
+<td class=c_o>524<br>1.4%</td>
+<td class=c_o>1,512<br>4.1%</td>
+<td class=c_votos>36,747</td>
+<td class=c_nominal>63,019</td>
+<td class=c_participacion>58.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_10.html">10 El Carmen</a></td>
+<td class=c_o>875<br>16.2%</td>
+<td class=c_mo>1,701<br>31.5%</td>
+<td class=c_o>298<br>5.5%</td>
+<td class=c_o>775<br>14.4%</td>
+<td class=c_o>569<br>10.5%</td>
+<td class=c_o>1,091<br>20.2%</td>
+<td class=c_o>90<br>1.7%</td>
+<td class=c_votos>5,399</td>
+<td class=c_nominal>7,940</td>
+<td class=c_participacion>68.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_11.html">11 Cerralvo</a></td>
+<td class=c_o>1,254<br>30.9%</td>
+<td class=c_mo>1,535<br>37.8%</td>
+<td class=c_o>81<br>2.0%</td>
+<td class=c_o>155<br>3.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>912<br>22.5%</td>
+<td class=c_o>120<br>3.0%</td>
+<td class=c_votos>4,057</td>
+<td class=c_nominal>6,592</td>
+<td class=c_participacion>61.5</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_12.html">12 Ciénega de Flores</a></td>
+<td class=c_mo>3,306<br>33.8%</td>
+<td class=c_o>1,942<br>19.9%</td>
+<td class=c_o>2,633<br>27.0%</td>
+<td class=c_o>1,532<br>15.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>176<br>1.8%</td>
+<td class=c_o>178<br>1.8%</td>
+<td class=c_votos>9,767</td>
+<td class=c_nominal>16,495</td>
+<td class=c_participacion>59.2</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_13.html">13 China</a></td>
+<td class=c_o>1,791<br>28.9%</td>
+<td class=c_mo>2,280<br>36.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>2,001<br>32.3%</td>
+<td class=c_o>122<br>2.0%</td>
+<td class=c_votos>6,194</td>
+<td class=c_nominal>9,536</td>
+<td class=c_participacion>65.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_14.html">14 Dr. Arroyo</a></td>
+<td class=c_o>2,545<br>13.2%</td>
+<td class=c_mo>8,125<br>42.0%</td>
+<td class=c_o>187<br>1.0%</td>
+<td class=c_o>6,442<br>33.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>1,238<br>6.4%</td>
+<td class=c_o>816<br>4.2%</td>
+<td class=c_votos>19,353</td>
+<td class=c_nominal>25,684</td>
+<td class=c_participacion>75.4</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_15.html">15 Dr. Coss</a></td>
+<td class=c_o>562<br>33.9%</td>
+<td class=c_mo>1,085<br>65.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>13<br>0.8%</td>
+<td class=c_votos>1,660</td>
+<td class=c_nominal>2,901</td>
+<td class=c_participacion>57.2</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_16.html">16 Dr. González</a></td>
+<td class=c_o>434<br>20.8%</td>
+<td class=c_o>737<br>35.3%</td>
+<td class=c_o>110<br>5.3%</td>
+<td class=c_mo>775<br>37.2%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>30<br>1.4%</td>
+<td class=c_votos>2,086</td>
+<td class=c_nominal>3,004</td>
+<td class=c_participacion>69.4</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_17.html">17 Galeana</a></td>
+<td class=c_o>5,211<br>27.6%</td>
+<td class=c_mo>10,021<br>53.1%</td>
+<td class=c_o>188<br>1.0%</td>
+<td class=c_o>538<br>2.9%</td>
+<td class=c_o>168<br>0.9%</td>
+<td class=c_o>1,831<br>9.7%</td>
+<td class=c_o>908<br>4.8%</td>
+<td class=c_votos>18,865</td>
+<td class=c_nominal>28,460</td>
+<td class=c_participacion>66.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_18.html">18 García</a></td>
+<td class=c_o>12,847<br>29.9%</td>
+<td class=c_mo>20,824<br>48.5%</td>
+<td class=c_o>5,617<br>13.1%</td>
+<td class=c_o>1,130<br>2.6%</td>
+<td class=c_o>512<br>1.2%</td>
+<td class=c_o>820<br>1.9%</td>
+<td class=c_o>1,227<br>2.9%</td>
+<td class=c_votos>42,977</td>
+<td class=c_nominal>74,818</td>
+<td class=c_participacion>57.4</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_19.html">19 San Pedro Garza García</a></td>
+<td class=c_mo>41,263<br>62.6%</td>
+<td class=c_o>18,687<br>28.3%</td>
+<td class=c_o>1,051<br>1.6%</td>
+<td class=c_o>586<br>0.9%</td>
+<td class=c_o>2,013<br>3.1%</td>
+<td class=c_o>1,122<br>1.7%</td>
+<td class=c_o>1,214<br>1.8%</td>
+<td class=c_votos>65,936</td>
+<td class=c_nominal>98,716</td>
+<td class=c_participacion>66.8</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_20.html">20 Gral. Bravo</a></td>
+<td class=c_mo>1,747<br>49.4%</td>
+<td class=c_o>1,629<br>46.1%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>24<br>0.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>60<br>1.7%</td>
+<td class=c_o>75<br>2.1%</td>
+<td class=c_votos>3,535</td>
+<td class=c_nominal>5,556</td>
+<td class=c_participacion>63.6</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_21.html">21 Gral. Escobedo</a></td>
+<td class=c_o>35,140<br>31.5%</td>
+<td class=c_mo>58,374<br>52.3%</td>
+<td class=c_o>6,451<br>5.8%</td>
+<td class=c_o>4,742<br>4.2%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>3,806<br>3.4%</td>
+<td class=c_o>3,199<br>2.9%</td>
+<td class=c_votos>111,712</td>
+<td class=c_nominal>219,447</td>
+<td class=c_participacion>50.9</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_22.html">22 Gral. Terán</a></td>
+<td class=c_o>499<br>6.4%</td>
+<td class=c_mo>4,298<br>55.4%</td>
+<td class=c_o>38<br>0.5%</td>
+<td class=c_o>92<br>1.2%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>2,566<br>33.0%</td>
+<td class=c_o>272<br>3.5%</td>
+<td class=c_votos>7,765</td>
+<td class=c_nominal>12,563</td>
+<td class=c_participacion>61.8</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_23.html">23 Gral. Treviño</a></td>
+<td class=c_o>470<br>41.2%</td>
+<td class=c_mo>660<br>57.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>12<br>1.1%</td>
+<td class=c_votos>1,142</td>
+<td class=c_nominal>1,777</td>
+<td class=c_participacion>64.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_24.html">24 Gral. Zaragoza</a></td>
+<td class=c_mo>1,731<br>50.8%</td>
+<td class=c_o>1,651<br>48.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>25<br>0.7%</td>
+<td class=c_votos>3,407</td>
+<td class=c_nominal>4,006</td>
+<td class=c_participacion>85.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_25.html">25 Gral. Zuazua</a></td>
+<td class=c_o>2,188<br>17.8%</td>
+<td class=c_mo>3,336<br>27.2%</td>
+<td class=c_o>3,250<br>26.5%</td>
+<td class=c_o>3,252<br>26.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>247<br>2.0%</td>
+<td class=c_votos>12,273</td>
+<td class=c_nominal>23,271</td>
+<td class=c_participacion>52.7</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_26.html">26 Guadalupe</a></td>
+<td class=c_o>119,081<br>39.0%</td>
+<td class=c_mo>142,895<br>46.8%</td>
+<td class=c_o>13,310<br>4.4%</td>
+<td class=c_o>10,283<br>3.4%</td>
+<td class=c_o>1,882<br>0.6%</td>
+<td class=c_o>8,889<br>2.9%</td>
+<td class=c_o>9,023<br>3.0%</td>
+<td class=c_votos>305,363</td>
+<td class=c_nominal>517,564</td>
+<td class=c_participacion>59.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_27.html">27 Los Herreras</a></td>
+<td class=c_o>319<br>17.2%</td>
+<td class=c_mo>733<br>39.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>144<br>7.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>639<br>34.4%</td>
+<td class=c_o>25<br>1.3%</td>
+<td class=c_votos>1,860</td>
+<td class=c_nominal>2,763</td>
+<td class=c_participacion>67.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_28.html">28 Hidalgo</a></td>
+<td class=c_o>1,585<br>18.6%</td>
+<td class=c_mo>3,391<br>39.8%</td>
+<td class=c_o>1,189<br>14.0%</td>
+<td class=c_o>315<br>3.7%</td>
+<td class=c_o>961<br>11.3%</td>
+<td class=c_o>880<br>10.3%</td>
+<td class=c_o>194<br>2.3%</td>
+<td class=c_votos>8,515</td>
+<td class=c_nominal>11,841</td>
+<td class=c_participacion>71.9</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_29.html">29 Higueras</a></td>
+<td class=c_o>464<br>44.7%</td>
+<td class=c_mo>564<br>54.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>11<br>1.1%</td>
+<td class=c_votos>1,039</td>
+<td class=c_nominal>1,257</td>
+<td class=c_participacion>82.7</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_30.html">30 Hualahuises</a></td>
+<td class=c_o>1,525<br>38.0%</td>
+<td class=c_mo>1,746<br>43.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>681<br>17.0%</td>
+<td class=c_o>63<br>1.6%</td>
+<td class=c_votos>4,015</td>
+<td class=c_nominal>5,784</td>
+<td class=c_participacion>69.4</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_31.html">31 Iturbide</a></td>
+<td class=c_o>257<br>10.7%</td>
+<td class=c_mo>1,260<br>52.5%</td>
+<td class=c_o>762<br>31.8%</td>
+<td class=c_o>12<br>0.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>10<br>0.4%</td>
+<td class=c_o>98<br>4.1%</td>
+<td class=c_votos>2,399</td>
+<td class=c_nominal>2,804</td>
+<td class=c_participacion>85.6</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_32.html">32 Juárez</a></td>
+<td class=c_mo>31,201<br>44.8%</td>
+<td class=c_o>28,679<br>41.2%</td>
+<td class=c_o>2,656<br>3.8%</td>
+<td class=c_o>1,695<br>2.4%</td>
+<td class=c_o>649<br>0.9%</td>
+<td class=c_o>2,087<br>3.0%</td>
+<td class=c_o>2,689<br>3.9%</td>
+<td class=c_votos>69,656</td>
+<td class=c_nominal>132,587</td>
+<td class=c_participacion>52.5</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_33.html">33 Lampazos de Naranjo</a></td>
+<td class=c_mo>1,742<br>52.8%</td>
+<td class=c_o>1,379<br>41.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>89<br>2.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>57<br>1.7%</td>
+<td class=c_o>30<br>0.9%</td>
+<td class=c_votos>3,297</td>
+<td class=c_nominal>4,260</td>
+<td class=c_participacion>77.4</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_34.html">34 Linares</a></td>
+<td class=c_o>2,562<br>7.2%</td>
+<td class=c_o>8,796<br>24.8%</td>
+<td class=c_o>206<br>0.6%</td>
+<td class=c_o>471<br>1.3%</td>
+<td class=c_o>90<br>0.3%</td>
+<td class=c_mo>21,996<br>62.1%</td>
+<td class=c_o>1,280<br>3.6%</td>
+<td class=c_votos>35,401</td>
+<td class=c_nominal>58,714</td>
+<td class=c_participacion>60.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_35.html">35 Marín</a></td>
+<td class=c_o>1,137<br>37.7%</td>
+<td class=c_mo>1,769<br>58.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>72<br>2.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>34<br>1.1%</td>
+<td class=c_votos>3,012</td>
+<td class=c_nominal>4,253</td>
+<td class=c_participacion>70.8</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_36.html">36 Melchor Ocampo</a></td>
+<td class=c_o>44<br>4.6%</td>
+<td class=c_mo>450<br>47.1%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>12<br>1.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>434<br>45.4%</td>
+<td class=c_o>15<br>1.6%</td>
+<td class=c_votos>955</td>
+<td class=c_nominal>1,292</td>
+<td class=c_participacion>73.9</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_37.html">37 Mier y Noriega</a></td>
+<td class=c_mo>2,264<br>52.4%</td>
+<td class=c_o>1,929<br>44.6%</td>
+<td class=c_o>3<br>0.1%</td>
+<td class=c_o>11<br>0.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>14<br>0.3%</td>
+<td class=c_o>103<br>2.4%</td>
+<td class=c_votos>4,324</td>
+<td class=c_nominal>5,605</td>
+<td class=c_participacion>77.1</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_38.html">38 Mina</a></td>
+<td class=c_o>187<br>5.7%</td>
+<td class=c_mo>1,684<br>51.2%</td>
+<td class=c_o>45<br>1.4%</td>
+<td class=c_o>1,311<br>39.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>63<br>1.9%</td>
+<td class=c_votos>3,290</td>
+<td class=c_nominal>4,177</td>
+<td class=c_participacion>78.8</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_39.html">39 Montemorelos</a></td>
+<td class=c_o>8,746<br>31.1%</td>
+<td class=c_mo>16,657<br>59.3%</td>
+<td class=c_o>648<br>2.3%</td>
+<td class=c_o>649<br>2.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>494<br>1.8%</td>
+<td class=c_o>911<br>3.2%</td>
+<td class=c_votos>28,105</td>
+<td class=c_nominal>45,613</td>
+<td class=c_participacion>61.6</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_40.html">40 Monterrey</a></td>
+<td class=c_mo>276,178<br>51.7%</td>
+<td class=c_o>186,243<br>34.9%</td>
+<td class=c_o>20,708<br>3.9%</td>
+<td class=c_o>18,516<br>3.5%</td>
+<td class=c_o>6,051<br>1.1%</td>
+<td class=c_o>8,767<br>1.6%</td>
+<td class=c_o>17,815<br>3.3%</td>
+<td class=c_votos>534,278</td>
+<td class=c_nominal>888,129</td>
+<td class=c_participacion>60.2</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_41.html">41 Parás</a></td>
+<td class=c_o>23<br>1.9%</td>
+<td class=c_mo>744<br>61.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>432<br>35.7%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>12<br>1.0%</td>
+<td class=c_votos>1,211</td>
+<td class=c_nominal>1,593</td>
+<td class=c_participacion>76.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_42.html">42 Pesquería</a></td>
+<td class=c_mo>4,757<br>54.9%</td>
+<td class=c_o>3,243<br>37.4%</td>
+<td class=c_o>156<br>1.8%</td>
+<td class=c_o>242<br>2.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>71<br>0.8%</td>
+<td class=c_o>199<br>2.3%</td>
+<td class=c_votos>8,668</td>
+<td class=c_nominal>13,539</td>
+<td class=c_participacion>64.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_43.html">43 Los Ramones</a></td>
+<td class=c_mo>1,611<br>50.9%</td>
+<td class=c_o>1,534<br>48.4%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>22<br>0.7%</td>
+<td class=c_votos>3,167</td>
+<td class=c_nominal>5,056</td>
+<td class=c_participacion>62.6</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_44.html">44 Rayones</a></td>
+<td class=c_mo>1,227<br>51.4%</td>
+<td class=c_o>1,146<br>48.0%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>15<br>0.6%</td>
+<td class=c_votos>2,388</td>
+<td class=c_nominal>2,714</td>
+<td class=c_participacion>88.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_45.html">45 Sabinas Hidalgo</a></td>
+<td class=c_o>7,194<br>42.6%</td>
+<td class=c_mo>7,755<br>45.9%</td>
+<td class=c_o>309<br>1.8%</td>
+<td class=c_o>868<br>5.1%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>355<br>2.1%</td>
+<td class=c_o>414<br>2.5%</td>
+<td class=c_votos>16,895</td>
+<td class=c_nominal>25,881</td>
+<td class=c_participacion>65.3</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_46.html">46 Salinas Victoria</a></td>
+<td class=c_o>4,635<br>32.1%</td>
+<td class=c_mo>5,485<br>38.0%</td>
+<td class=c_o>4,084<br>28.3%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>237<br>1.6%</td>
+<td class=c_votos>14,441</td>
+<td class=c_nominal>22,372</td>
+<td class=c_participacion>64.5</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_47.html">47 San Nicolás de los Garza</a></td>
+<td class=c_mo>143,122<br>62.1%</td>
+<td class=c_o>52,405<br>22.7%</td>
+<td class=c_o>15,611<br>6.8%</td>
+<td class=c_o>7,268<br>3.2%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>6,452<br>2.8%</td>
+<td class=c_o>5,642<br>2.4%</td>
+<td class=c_votos>230,500</td>
+<td class=c_nominal>365,670</td>
+<td class=c_participacion>63.0</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_48.html">48 Santa Catarina</a></td>
+<td class=c_mo>49,774<br>48.1%</td>
+<td class=c_o>35,810<br>34.6%</td>
+<td class=c_o>4,168<br>4.0%</td>
+<td class=c_o>3,643<br>3.5%</td>
+<td class=c_o>1,832<br>1.8%</td>
+<td class=c_o>4,738<br>4.6%</td>
+<td class=c_o>3,473<br>3.4%</td>
+<td class=c_votos>103,438</td>
+<td class=c_nominal>184,448</td>
+<td class=c_participacion>56.1</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_49.html">49 Santiago</a></td>
+<td class=c_o>4,766<br>22.0%</td>
+<td class=c_o>6,875<br>31.8%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_mo>8,617<br>39.9%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>926<br>4.3%</td>
+<td class=c_o>435<br>2.0%</td>
+<td class=c_votos>21,619</td>
+<td class=c_nominal>32,829</td>
+<td class=c_participacion>65.9</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_b>
+<td class=c_lugar><a href="g_1_M_50.html">50 Vallecillo</a></td>
+<td class=c_o>64<br>4.1%</td>
+<td class=c_o>679<br>44.0%</td>
+<td class=c_o>53<br>3.4%</td>
+<td class=c_mo>710<br>46.0%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>38<br>2.5%</td>
+<td class=c_votos>1,544</td>
+<td class=c_nominal>2,117</td>
+<td class=c_participacion>72.9</td>
+<td class=c_pcapturadas>100.0</td>
+</tr>
+<tr class=r_ls_a>
+<td class=c_lugar><a href="g_1_M_51.html">51 Villaldama</a></td>
+<td class=c_o>560<br>20.2%</td>
+<td class=c_o>970<br>34.9%</td>
+<td class=c_mo>1,209<br>43.5%</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_no>&nbsp;</td>
+<td class=c_o>39<br>1.4%</td>
+<td class=c_votos>2,778</td>
+<td class=c_nominal>3,533</td>
+<td class=c_participacion>78.6</td>
+<td class=c_pcapturadas>100.0</td>

@@ -109,13 +109,6 @@ for (i in 1:ncol(l)){
     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^mrn$", replacement = "morena", l[,i])
-    l[,i] <- gsub(pattern = "^mrn-", replacement = "morena-", l[,i])
-    l[,i] <- gsub(pattern = "-mrn-", replacement = "-morena-", l[,i])
-    l[,i] <- gsub(pattern = "-mrn$", replacement = "-morena", l[,i])
-    }
-#
-for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^panal$", replacement = "pna", l[,i])
     l[,i] <- gsub(pattern = "-panal-", replacement = "-pna-", l[,i])
     l[,i] <- gsub(pattern = "-panal$", replacement = "-pna", l[,i])
