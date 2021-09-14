@@ -864,9 +864,164 @@ load(file = "tmp1.RData")
 sel <- which(dat.split$yr>=1989)
 dat.split <- dat.split[sel,] # drop early years
 dat.split <- dat.split[order(dat.split$emm),] # sort emm
-
-dat.split$ord <- 1:nrow(dat.split)
+#
+################################################################
+## manipulate coalitions remaining in split vote object       ##
+## these should all be cases where no vote split is available ##
+################################################################
+sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
+l <- dat.split[,sel.l] # subset label columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
+v <- dat.split[,sel.v] # subset vote columns
+# need to manipulate indicator: dummy had at least one coalition
+dat.split$dhascoal <- rep(0, nrow(dat.split))
+for (i in 1:ncol(l)){
+    dat.split$dhascoal[grep("-", l[,i])] <- 1
+}
+table(dat.split$dhascoal)
+#
+# function manipulate cases by hand: select state-year function grants all joint votes to party reported first in label
+by.hand <- function(edo.cyc = NA){ # example: edo.cyc = "ags-12"
+    sel <- grep(edo.cyc, dat.split$emm)
+    for (i in 1:ncol(l)){
+        #i <- 2
+        l[sel,i] <- sub("^([a-z]+)[-].+$", "\\1", l[sel,i]) # keeps first pty in coal label
+    }
+    dat.split[sel,sel.l] <- l[sel,] # return manipulated labels to data
+    dat.split$dhascoal[sel] <- 0 # reset indices
+    return(dat.split)
+}
+#
+# manipulate cases where source offers no clue about intra-coal vote split --- all votes to 1st pty listed
+dat.split <- by.hand("ags-12")
+dat.split <- by.hand("ags-13")
+dat.split <- by.hand("bc-11")
+dat.split <- by.hand("bc-12")
+dat.split <- by.hand("bc-13")
+dat.split <- by.hand("bc-14")
+dat.split <- by.hand("bc-15")
+dat.split <- by.hand("bcs-10")
+dat.split <- by.hand("bcs-11")
+dat.split <- by.hand("bcs-12")
+dat.split <- by.hand("bcs-13")
+dat.split <- by.hand("bcs-14")
+dat.split <- by.hand("bcs-15")
+dat.split <- by.hand("cam-11")
+dat.split <- by.hand("cam-13")
+dat.split <- by.hand("cam-14")
+dat.split <- by.hand("cam-15")
+dat.split <- by.hand("coa-08")
+dat.split <- by.hand("coa-10") # 1999 pan-prd to pan
+dat.split <- by.hand("col-11")
+dat.split <- by.hand("col-13")
+dat.split <- by.hand("col-14")
+dat.split <- by.hand("col-15")
+dat.split <- by.hand("cps-11")
+dat.split <- by.hand("cps-12") # 2004 prd-pan to prd
+dat.split <- by.hand("cps-13")
+dat.split <- by.hand("cps-14")
+dat.split <- by.hand("cps-15")
+dat.split <- by.hand("cps-16")
+dat.split <- by.hand("cps-17a")
+dat.split <- by.hand("cua-11") # 2001 pan-prd to pan
+dat.split <- by.hand("cua-12") # 2004 pan-prd to pan pri-pvem to pri
+dat.split <- by.hand("cua-13") # 2007 pri-pna to pri
+dat.split <- by.hand("cua-14") # 2010 pri-pvem-pna to pri
+dat.split <- by.hand("cua-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("cua-16") # 2016 pri-pvem-pna to pri
+dat.split <- by.hand("df-11") # 2000 pan-pvem to pan
+dat.split <- by.hand("dgo-11") # 2000 pt-prd to pt
+dat.split <- by.hand("dgo-13") # 2007 pri-pna to pri pt-c to pt
+dat.split <- by.hand("dgo-14") # 2010 pri-pvem-pna to pri
+dat.split <- by.hand("dgo-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("dgo-16") # 2016 pri-pvem-pna to pri
+dat.split <- by.hand("gua-11") # 2000 prd-pt-ps to prd
+dat.split <- by.hand("gua-13") # 2006 prd-pt to prd
+dat.split <- by.hand("gue-09") # 1996 pps-c to pps
+dat.split <- by.hand("gue-11") # 2002 prd-pt to prd
+dat.split <- by.hand("gue-12") # 2005 prd-prs to prd
+dat.split <- by.hand("gue-13") # 2008 pri-pvem to pri c-pt to c
+dat.split <- by.hand("gue-14") # 2012 pri-pvem to pri prd-pt-c to prd
+dat.split <- by.hand("gue-16") # 2018 prd-mc to prd
+dat.split <- by.hand("hgo-11") # 2002 pri-pvem to pri
+dat.split <- by.hand("hgo-13") # 2008 pri-pna to pri
+dat.split <- by.hand("hgo-14") # 2011 pt-conve to pt
+dat.split <- by.hand("jal-13") # 2006 prd-pt to prd
+dat.split <- by.hand("jal-15") # 2012 pt-mc to pt
+dat.split <- by.hand("mex-12") # 2006 pri-pvem to pri
+dat.split <- by.hand("mex-14") # 2012 pt-mc to pt
+dat.split <- by.hand("mic-11") # 2001 prd+5 to prd
+dat.split <- by.hand("mic-12") # 2004 pri-prd to pri
+dat.split <- by.hand("mic-13") # 2007 prd-pt-conve to prd
+dat.split <- by.hand("mic-14") # 2011 prd-pt to prd
+dat.split <- by.hand("mic-15") # 2015 prd-pt to prd
+dat.split <- by.hand("mor-09") # 1994 pps-pt to pps
+dat.split <- by.hand("mor-13") # 2006 prd-pt-c to prd
+dat.split <- by.hand("nay-09") # 1996 pps-oth to pps
+dat.split <- by.hand("nay-13") # 2008 pri-pna to pri prd-pvem to prd
+dat.split <- by.hand("nay-14") # 2011 pri-pvem-pna to pri
+dat.split <- by.hand("nay-15") # 2014 pri-pvem-pna to pri
+dat.split <- by.hand("nl-10") # 1997 prd-pvem to prd
+dat.split <- by.hand("nl-11") # 2000 prd-oth to prd
+dat.split <- by.hand("nl-12") # 2003 pri-pvem to pri
+dat.split <- by.hand("nl-13") # 2006 pri-pvem to pri
+dat.split <- by.hand("nl-14") # 2009 pri-pvem to pri
+dat.split <- by.hand("nl-15") # 2012 pri-pvem to pri
+dat.split <- by.hand("pue-13") # 2007 pri-pvem to pri prd-mc to prd
+dat.split <- by.hand("pue-14") # 2010 pri-pvem to pri
+dat.split <- by.hand("pue-15") # 2013 pri-pvem to pri
+dat.split <- by.hand("que-11") # 2000 pt-conve-psn to pt
+dat.split <- by.hand("que-12") # 2003 pri-pvem to pri
+dat.split <- by.hand("que-13") # 2006 pri-pvem to pri
+dat.split <- by.hand("que-14") # 2009 pri-pna to pri
+dat.split <- by.hand("que-15") # 2012 pri-pvem-pna to pri
+dat.split <- by.hand("qui-13.009") # 2009 tulum--new pri-pvem to pri
+dat.split <- by.hand("qui-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("san-11") # 2000 prd-etc to prd
+dat.split <- by.hand("san-12") # 2003 pri-pvem to pri
+dat.split <- by.hand("sin-11") # 2001 pt-pas to pt
+dat.split <- by.hand("sin-13") # 2007 pri-pna to pri
+dat.split <- by.hand("sin-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("son-12") # 2003 pas-mexpos to pas
+dat.split <- by.hand("son-13") # 2006 pri-pna to pri
+dat.split <- by.hand("son-14") # 2009 pri-pvem to pri (except few cases where pvem nominated in 2006)
+dat.split <- by.hand("son-15.029") # 2012 pri-pvem to pri
+dat.split <- by.hand("son-15.030") # 2012 pri-pvem to pri
+dat.split <- by.hand("tam-08") # 1992 pan-prd to pan
+dat.split <- by.hand("tam-11.021") # 2001 pt-pvem to pt
+dat.split <- by.hand("tam-11.032") # 2001 pt-pvem-pas-local to pt
+dat.split <- by.hand("tam-13") # 2007 pri-pna to pri
+dat.split <- by.hand("tam-14") # 2010 pri-pna or pri-pvem-pna to pri
+dat.split <- by.hand("tam-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("tla-11.016") # 2002 pt-oth to pt
+dat.split <- by.hand("tla-11.044") # 2002 pas-loc to pas
+dat.split <- by.hand("tla-12") # 2004 pri-pvem to pri
+dat.split <- by.hand("tla-13") # 2007 pri-pvem to pri pan-pac to pan
+dat.split <- by.hand("tla-14") # 2010 pri-pvem to pri pan-panal-pac to pan
+dat.split <- by.hand("tla-15") # 2013 pt-pac to pt pvem-ps to pvem
+dat.split <- by.hand("tla-16") # 2016 pvem-ps to pvem
+dat.split <- by.hand("ver-11") # 2000 pri-chicos to pri
+dat.split <- by.hand("yuc-11") # 2001 pt-conve to pt
+dat.split <- by.hand("yuc-13") # 2007 pt-conve to pt
+dat.split <- by.hand("yuc-16") # 2015 pes-ph to pes
+#
+## # debug
+## tmp <- dat.split[dat.split$dhascoal==1,]; i <- 1
+## tmp[i,]
+## tmp[i,grep("^l[0-9]{2}", colnames(dat.split))]
+## tmp$emm[i] 
+## tmp$yr[i] 
+## #
+## pat <- "sin-13.018"
+## tmp2 <- dat.split[grep(pat, dat.split$emm), grep("^[lv][0-9]{2}", colnames(dat.split))]
+## #tmp2
+## round(tmp2$v02/(tmp2$v02+tmp2$v05), 3) - .001
+## table(dat.split$dhascoal)
+# save
 write.csv(dat.split, file = "aymu1989-present.coalSplit.csv", row.names = FALSE)
+
+
+
 
 
 ## # save coalition weights and info
