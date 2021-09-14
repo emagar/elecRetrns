@@ -1005,6 +1005,12 @@ dat.split <- by.hand("yuc-11") # 2001 pt-conve to pt
 dat.split <- by.hand("yuc-13") # 2007 pt-conve to pt
 dat.split <- by.hand("yuc-16") # 2015 pes-ph to pes
 #
+table(dat.split$dhascoal)
+# drop little-use columns
+dat.split$dhascoal <- dat.split$dcoal <- NULL
+dat.split$ord <- dat.split$fuente <- NULL
+dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
+#
 ## # debug
 ## tmp <- dat.split[dat.split$dhascoal==1,]; i <- 1
 ## tmp[i,]
