@@ -666,21 +666,6 @@ dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
 colnames(dat)
 
 
-## #################################
-## #### DROPS USOS Y COSTUMBRES ####
-## #################################
-## # any dusos==1?
-## table(dat$dusos)
-## # caso Cherán
-## sel <- which(dat$dusos==1 & dat$edon==16)
-## dat$munn[sel]
-## sel <- which(dat$edon==16 & dat$munn==24)
-## dat[sel, c("yr","efec","status")]
-## # drop uyc
-## sel <- which(dat$dusos==1)
-## table(dat$v01[sel]==0) # all report no votes?
-## dat <- dat[-sel,]
-
 ################################
 ### export a coalAgg version ###
 ################################
