@@ -1,4 +1,4 @@
-ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcarta,drenuncia_apoyo,dreran,dreelected,note,Nota Daniela
+ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcarta,drenuncia_apoyo,dreran,dreelected,note,Nota_Daniela
 1,1,OSCAR,GONZALEZ RODRIGUEZ,ags-10.01p,ags01p,,,1997,m,,,1,Term-limit-,,,,,,
 2,10,BENJAMIN,GALLEGOS SOTO,ags-10.02p,ags02p,,,1997,f,,,1,Term-limit-,,,,,,
 3,19,FERNANDO,GOMEZ ESPARZA,ags-10.03p,ags03p,,,1997,m,,,1,Term-limit-,,,,,,
@@ -2207,7 +2207,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2206,982,EDUARDO,RON RAMOS,jal-17.01p,jal01p,mc,mc,2018,m,1,1,14,Out-p-lost,0,0,0,0,,
 2207,991,MARTHA ESTELA,ROMO CUELLAR,jal-17.02p,jal02p,pan,pan,2018,f,1,1,14,Reelected,1,0,1,1,,
 2208,1000,GUADALUPE,ROMO ROMO,jal-17.03p,jal03p,pan,pan,2018,f,1,1,14,Out-p-won,1,0,0,0,,
-2209,1009,MARIO ALBERTO,RODRIGUEZ CARRILLO,jal-17.04p,jal04p,mc,mc,2018,m,1,1,14,Out-p-won,1,1,0,0,,x
+2209,1009,MARIO ALBERTO,RODRIGUEZ CARRILLO,jal-17.04p,jal04p,mc,mc,2018,m,1,1,14,Out-p-won,1,1,0,0,,xx
 2210,1018,LORENA DEL SOCORRO,JIMENEZ ANDRADE,jal-17.05p,jal05p,morena,pt,2018,f,1,1,14,Out-p-won,1,0,0,0,,
 2211,1027,FABIOLA RAQUEL GUADALUPE,LOYA HERNANDEZ,jal-17.06p,jal06p,mc,mc,2018,f,1,1,14,Out-p-won,1,0,0,0,,
 2212,1036,JUAN CARLOS,VILLARREAL SALAZAR,jal-17.07p,jal07p,mc,mc,2018,m,1,1,14,Out-p-lost,0,0,0,0,,
