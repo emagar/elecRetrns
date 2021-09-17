@@ -68,7 +68,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 67,616,ARMANDO,LOPEZ ROMERO,df-10.24p,df24p,,,1997,m,,,9,Term-limit-,,,,,
 68,625,ROSALIO,HERNANDEZ BELTRAN,df-10.25p,df25p,,,1997,m,,,9,Term-limit-,,,,,
 69,632,DEMETRIO JAVIER,SODI DE LA TIJERA,df-10.26p,df26p,,,1997,m,,,9,Term-limit-,,,,,
-70,639,ALEJANDRO V.,ORDORICA SAAVEDRA,df-10.27p,df27p,,,1997,m,,,9,Term-limit-,,,,,
+70,639,ALEJANDRO VICTORIANO,ORDORICA SAAVEDRA,df-10.27p,df27p,prd,,1997,m,,,9,Term-limit-,,,,,
 71,646,MIGUEL ANGEL,SOLARES CHAVEZ,df-10.28p,df28p,,,1997,,,,9,Term-limit-,,,,,
 72,649,SERGIO MARCELINO,GEORGE CRUZ,df-10.29p,df29p,,,1997,m,,,9,Term-limit-,,,,,
 73,652,DAVID RICARDO,CERVANTES PEREDO,df-10.30p,df30p,,,1997,m,,,9,Term-limit-,,,,,
@@ -440,7 +440,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 439,1232,HECTOR,TABOADA CONTRERAS,mex-11.10p,mex10p,pan,,2000,m,,,15,Term-limit-,,,,,
 440,1241,MARTIN HUGO,SOLIS ALATORRE,mex-11.11p,mex11p,pan,,2000,,,,15,Term-limit-,,,,,
 441,1250,BEATRIZ,CERVANTES MANDUJANO,mex-11.12p,mex12p,pri,,2000,f,,,15,Term-limit-,,,,,
-442,1259,MARIA CRISITNA,MOCTEZUMA LULE,mex-11.13p,mex13p,pvem,,2000,,,,15,Term-limit-,,,,,
+442,1259,MARIA CRISTINA,MOCTEZUMA LULE,mex-11.13p,mex13p,pvem,,2000,,,,15,Term-limit-,,,,,
 443,1268,EDUARDO,ARNAL PALOMERA,mex-11.14p,mex14p,pan,,2000,m,,,15,Term-limit-,,,,,
 444,1277,ULISES,RAMIREZ NUÑEZ,mex-11.15p,mex15p,pan,,2000,m,,,15,Term-limit-,,,,,
 445,1286,VALDEMAR,ROMERO REYNA,mex-11.16p,mex16p,pan,,2000,m,,,15,Term-limit-,,,,,
@@ -681,7 +681,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 680,706,ARMANDO,RANGEL HERNANDEZ,gua-12.02p,gua02p,pan,,2003,m,,,11,Term-limit-,,,,,
 681,715,JORGE CARLOS,OBREGON SERRANO,gua-12.03p,gua03p,pan,,2003,m,,,11,Term-limit-,,,,,
 682,724,FRANCISCO,ARROYO VIEYRA ,gua-12.04p,gua04p,pri ,,2003,m,,,11,Term-limit-,,,,,
-683,733,MARIO ERNESTO DE SAN ALBERTO,MAGNO DAVILA ARANDA ,gua-12.05p,gua05p,pan,,2003,,,,11,Term-limit-,,,,,
+683,733,MARIO ERNESTO DE SAN ALBERTO MAGNO,DAVILA ARANDA ,gua-12.05p,gua05p,pan,,2003,,,,11,Term-limit-,,,,,
 684,742,SALVADOR,MARQUEZ LOZORNIO ,gua-12.06p,gua06p,pan,,2003,m,,,11,Term-limit-,,,,,
 685,751,JUAN MANUEL,DAVALOS PADILLA,gua-12.07p,gua07p,pri ,,2003,m,,,11,Term-limit-,,,,,
 686,760,CARLA,ROCHIN NIETO ,gua-12.08p,gua08p,pan,,2003,f,,,11,Term-limit-,,,,,
@@ -811,7 +811,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 810,1905,JOSE LUIS,FLORES HERNANDEZ ,pue-12.03p,pue03p,pri,,2003,m,,,21,Term-limit-,,,,,
 811,1914,JOSE PORFIRIO,ALARCON HERNANDEZ ,pue-12.04p,pue04p,pri,,2003,m,,,21,Term-limit-,,,,,
 812,1923,ADRIAN VICTOR HUGO,ISLAS HERNANDEZ,pue-12.05p,pue05p,pri,,2003,m,,,21,Term-limit-,,,,,
-813,1933,JORGE ROBERTO RUIZ,ESPARZA ORUÑA,pue-12.06p,pue06p,pan,,2003,m,,,21,Term-limit-,,,,,
+813,1933,JORGE ROBERTO,RUIZ ESPARZA ORUÑA,pue-12.06p,pue06p,pan,,2003,m,,,21,Term-limit-,,,,,
 814,1942,JESUS,MORALES FLORES ,pue-12.07p,pue07p,pri,,2003,m,,,21,Term-limit-,,,,,
 815,1951,RAFAEL,MORENO VALLE ROSAS,pue-12.08p,pue08p,pri,,2003,,,,21,Term-limit-,,,,,
 816,1960,JOSE FELIPE,PUELLES ESPINA ,pue-12.09p,pue09p,pan,,2003,m,,,21,Term-limit-,,,,,
@@ -855,7 +855,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 854,2319,EUGENIO,MIER Y CONCHA CAMPOS,tab-12.04p,tab04p,pri,,2003,m,,,27,Term-limit-,,,,,
 855,2328,CARLOS MANUEL,ROVIROSA RAMIREZ,tab-12.05p,tab05p,pri,,2003,m,,,27,Term-limit-,,,,,
 856,2337,AMALIN,YABUR ELIAS ,tab-12.06p,tab06p,pri,,2003,,,,27,Term-limit-,,,,,
-857,2346,JOSE MANUEL ABDALA,DE LA FUENTE,tam-12.01p,tam01p,pri,,2003,m,,,28,Term-limit-,,,,,
+857,2346,JOSE MANUEL,ABDALA DE LA FUENTE,tam-12.01p,tam01p,pri,,2003,m,,,28,Term-limit-,,,,,
 858,2355,MAKI ESTHER,ORTIZ DOMINGUEZ ,tam-12.02p,tam02p,pan,,2003,f,,,28,Term-limit-,,,,,
 859,2364,JESUS HUMBERTO,MARTINEZ DE LA CRUZ ,tam-12.03p,tam03p,pri,,2003,m,,,28,Term-limit-,,,,,
 860,2373,BALTAZAR MANUEL,HINOJOSA OCHOA,tam-12.04p,tam04p,pri,,2003,m,,,28,Term-limit-,,,,,
@@ -1365,8 +1365,8 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1364,1489,ANDRES,AGUIRRE ROMERO,mex-14.39p,mex39p,pri,,2009,m,,,15,Term-limit-,,,,,
 1365,1495,JOSE ADAN IGNACIO,RUBI SALAZAR,mex-14.40p,mex40p,pri,,2009,m,,,15,Term-limit-,,,,,
 1366,1506,JULIO CESAR,GODOY TOSCANO,mic-14.01p,mic01p,prd,,2009,m,,,16,Term-limit-,,,,,
-1367,1515,JOSE M.,TORRES ROBLEDO,mic-14.02p,mic02p,prd,,2009,m,,,16,Term-limit-,,,,,
-1368,1524,MA. DINA,HERRERA SOTO,mic-14.03p,mic03p,prd,,2009,f,,,16,Term-limit-,,,,,
+1367,1515,JOSE MARCIANO,TORRES ROBLEDO,mic-14.02p,mic02p,prd,,2009,m,,,16,Term-limit-,,,,,
+1368,1524,MARIA DINA,HERRERA SOTO,mic-14.03p,mic03p,prd,,2009,f,,,16,Term-limit-,,,,,
 1369,1533,RICARDO,SANCHEZ GALVEZ,mic-14.04p,mic04p,pri,,2009,,,,16,Term-limit-,,,,,
 1370,1542,SERGIO ARTURO,TORRES SANTOS,mic-14.05p,mic05p,pan,,2009,m,,,16,Term-limit-,,,,,
 1371,1551,EMILIANO,VELAZQUEZ ESQUIVEL,mic-14.06p,mic06p,prd,,2009,m,,,16,Term-limit-,,,,,
@@ -1499,7 +1499,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1498,2699,RAMON,JIMENEZ FUENTES,zac-14.02p,zac02p,prd,,2009,,,,32,Term-limit-,,,,,
 1499,2708,HELADIO GERARDO,VERVER Y VARGAS RAMIREZ,zac-14.03p,zac03p,prd,,2009,m,,,32,Term-limit-,,,,,
 1500,2717,SAMUEL,HERRERA CHAVEZ,zac-14.04p,zac04p,prd,,2009,m,,,32,Term-limit-,,,,,
-1501,6,J. PILAR,MORENO MONTOYA,ags-15.01p,ags01p,pri,,2012,,,,1,Term-limit-,,,,,
+1501,6,JOSE PILAR,MORENO MONTOYA,ags-15.01p,ags01p,pri,,2012,,,,1,Term-limit-,,,,,
 1502,15,MARIA TERESA,JIMENEZ ESQUIVEL,ags-15.02p,ags02p,pan,,2012,,,,1,Term-limit-,,,,,
 1503,24,JOSE ANGEL,GONZALEZ SERNA,ags-15.03p,ags03p,pan,,2012,m,,,1,Term-limit-,,,,,
 1504,33,BENJAMIN,CASTILLO VALDEZ,bc-15.01p,bc01p,pri,,2012,f,,,2,Term-limit-,,,,,
@@ -1545,7 +1545,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1544,395,PEDRO IGNACIO,DOMINGUEZ ZEPEDA,cua-15.08p,cua08p,pri,,2012,,,,8,Term-limit-,,,,,
 1545,404,DIANA KARINA,VELAZQUEZ RAMIREZ,cua-15.09p,cua09p,pri,,2012,f,,,8,Term-limit-,,,,,
 1546,413,LIZBETH EUGENIA,ROSAS MONTERO,df-15.01p,df01p,prd,,2012,,,,9,Term-limit-,,,,,
-1547,422,MANUEL RAFAEL HUERTA LADRON,DE GUEVARA,df-15.02p,df02p,pt,,2012,,,,9,Term-limit-,,,,,
+1547,422,MANUEL RAFAEL,HUERTA LADRON DE GUEVARA,df-15.02p,df02p,pt,,2012,,,,9,Term-limit-,,,,,
 1548,431,FERNANDO,CUELLAR REYES,df-15.03p,df03p,prd,,2012,m,,,9,Term-limit-,,,,,
 1549,440,CARLOS AUGUSTO,MORALES LOPEZ,df-15.04p,df04p,prd,,2012,m,,,9,Term-limit-,,,,,
 1550,449,JOSE ANTONIO,HURTADO GALLEGOS,df-15.05p,df05p,mc,,2012,m,,,9,Term-limit-,,,,,
@@ -1602,7 +1602,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1601,925,DULCE MARIA,MUÑIZ MARTINEZ,hgo-15.02p,hgo02p,pri,,2012,f,,,13,Term-limit-,,,,,
 1602,935,VICTOR HUGO,VELASCO OROZCO,hgo-15.03p,hgo03p,pri,,2012,m,,,13,Term-limit-,,,,,
 1603,944,EMILSE,MIRANDA MUNIVE,hgo-15.04p,hgo04p,pri,,2012,,,,13,Term-limit-,,,,,
-1604,953,JOSE ANTONIO ROJO GARCIA,DE ALBA,hgo-15.05p,hgo05p,pri,,2012,m,,,13,Term-limit-,,,,,
+1604,953,JOSE ANTONIO,ROJO GARCIA DE ALBA,hgo-15.05p,hgo05p,pri,,2012,m,,,13,Term-limit-,,,,,
 1605,962,MIRNA ESMERALDA,HERNANDEZ MORALES,hgo-15.06p,hgo06p,pri,,2012,,,,13,Term-limit-,,,,,
 1606,971,FRANCISCO,GONZALEZ VARGAS,hgo-15.07p,hgo07p,pri,,2012,m,,,13,Term-limit-,,,,,
 1607,980,CESARIO,PADILLA NAVARRO,jal-15.01p,jal01p,pri,,2012,m,,,14,Term-limit-,,,,,
@@ -1616,7 +1616,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1615,1052,MA. LETICIA,MENDOZA CURIEL,jal-15.09p,jal09p,pri,,2012,f,,,14,Term-limit-,,,,,
 1616,1061,OMAR ANTONIO,BORBOA BECERRA,jal-15.10p,jal10p,pan,,2012,,,,14,Term-limit-,,,,,
 1617,1070,CLAUDIA,DELGADILLO GONZALEZ,jal-15.11p,jal11p,pri,,2012,f,,,14,Term-limit-,,,,,
-1618,1079,CELIA ISABEL GAUNA RUIZ,DE LEON,jal-15.12p,jal12p,pri,,2012,f,,,14,Term-limit-,,,,,
+1618,1079,CELIA ISABEL,GAUNA RUIZ DE LEON,jal-15.12p,jal12p,pri,,2012,f,,,14,Term-limit-,,,,,
 1619,1088,MARCO ANTONIO,BARBA MARISCAL,jal-15.13p,jal13p,pri,,2012,,,,14,Term-limit-,,,,,
 1620,1097,ENRIQUE AUBRY,DE CASTRO PALOMINO,jal-15.14p,jal14p,pvem,,2012,m,,,14,Term-limit-,,,,,
 1621,1106,OSSIEL OMAR,NIAVES LOPEZ,jal-15.15p,jal15p,pri,,2012,,,,14,Term-limit-,,,,,
@@ -1930,7 +1930,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1929,1183,MARIA MONSERRATH,SOBREYRA SANTOS,mex-16.04p,mex04p,pri,,2015,,,1,15,Term-limit-redistricted,,,,,
 1930,1192,CRISTINA,SANCHEZ CORONEL,mex-16.05p,mex05p,pri,,2015,f,,1,15,Term-limit-redistricted,,,,,
 1931,1201,DAVID,SANCHEZ ISIDORO,mex-16.06p,mex06p,pri,,2015,m,,1,15,Term-limit-redistricted,,,,,
-1932,1210,FRANCISCO LAURO ROJAS,SAN ROMAN,mex-16.07p,mex07p,pri,,2015,m,,1,15,Term-limit-redistricted,,,,,
+1932,1210,FRANCISCO LAURO,ROJAS SAN ROMAN,mex-16.07p,mex07p,pri,,2015,m,,1,15,Term-limit-redistricted,,,,,
 1933,1219,SANDRA,MENDEZ HERNANDEZ,mex-16.08p,mex08p,pri,,2015,f,,1,15,Term-limit-redistricted,,,,,
 1934,1228,DORA ELENA,REAL SALINAS,mex-16.09p,mex09p,pri,,2015,f,,1,15,Term-limit-redistricted,,,,,
 1935,1237,VIRGINIA NALLELY,GUTIERREZ RAMIREZ,mex-16.10p,mex10p,pri,,2015,f,,1,15,Term-limit-redistricted,,,,,
@@ -1970,7 +1970,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 1969,1535,ALFREDO,ANAYA OROZCO,mic-16.04p,mic04p,pri,,2015,m,,1,16,Term-limit-redistricted,,,,,
 1970,1544,ROSA ALICIA,ALVAREZ PIÑONES,mic-16.05p,mic05p,pvem,,2015,f,,1,16,Term-limit-redistricted,,,,,
 1971,1553,NORBERTO ANTONIO,MARTINEZ SOTO,mic-16.06p,mic06p,prd,,2015,,,1,16,Term-limit-redistricted,,,,,
-1972,1562,J. GUADALUPE,HERNANDEZ ALCALA,mic-16.07p,mic07p,prd,,2015,,,1,16,Term-limit-redistricted,,,,,
+1972,1562,JOSE GUADALUPE,HERNANDEZ ALCALA,mic-16.07p,mic07p,prd,,2015,,,1,16,Term-limit-redistricted,,,,,
 1973,1571,MARCO POLO,AGUIRRE CHAVEZ,mic-16.08p,mic08p,pri,,2015,,,1,16,Term-limit-redistricted,,,,,
 1974,1580,ANGEL II,ALANIS PEDRAZA,mic-16.09p,mic09p,prd,,2015,m,,1,16,Term-limit-redistricted,,,,,Angel ii parece nombre correcto
 1975,1589,DANIELA,DE LOS SANTOS TORRES,mic-16.10p,mic10p,pvem,,2015,f,,1,16,Term-limit-redistricted,,,,,
@@ -2072,7 +2072,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2071,2452,SOFIA DEL SAGRARIO,DE LEON MAZA,ver-16.01p,ver01p,pri,,2015,f,,1,30,Term-limit-redistricted,,,,,
 2072,2461,MARIA DEL CARMEN,PINETE VARGAS,ver-16.02p,ver02p,pri,,2015,,,1,30,Term-limit-redistricted,,,,,
 2073,2470,ALBERTO,SILVA RAMOS,ver-16.03p,ver03p,pri,,2015,m,,1,30,Term-limit-redistricted,,,,,
-2074,2479,FRANCISCO JOSE GUTIERREZ,DE VELASCO URTAZA,ver-16.04p,ver04p,pan,,2015,m,,1,30,Term-limit-redistricted,,,,,
+2074,2479,FRANCISCO JOSE,GUTIERREZ DE VELASCO URTAZA,ver-16.04p,ver04p,pan,,2015,m,,1,30,Term-limit-redistricted,,,,,
 2075,2488,LEONARDO,AMADOR RODRIGUEZ,ver-16.05p,ver05p,prd,,2015,m,,1,30,Term-limit-redistricted,,,,,
 2076,2497,HEIDI,SALAZAR ESPINOSA,ver-16.06p,ver06p,pri,,2015,f,,1,30,Term-limit-redistricted,,,,,
 2077,2506,EDGAR,SPINOSO CARRERA,ver-16.07p,ver07p,pvem,,2015,m,,1,30,Term-limit-redistricted,,,,,
@@ -2456,7 +2456,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2455,279,MANUEL DE JESUS,NARCIA COUTIÑO,cps-18.07p,cps07p,morena,morena,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
 2456,288,ISMAEL,BRITO MAZARIEGOS,cps-18.08p,cps08p,morena,morena,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
 2457,297,ADRIANA,BUSTAMANTE CASTELLANOS,cps-18.09p,cps09p,morena,morena,2021,f,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
-2458,306,JUAN PABLO MONTES DE,OCA AVENDAÑO,cps-18.10p,cps10p,pvem,pvem,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
+2458,306,JUAN PABLO,MONTES DE OCA AVENDAÑO,cps-18.10p,cps10p,pvem,pvem,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
 2459,315,ROBERTO ANTONIO,RUBIO MONTEJO,cps-18.11p,cps11p,pvem,pvem,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
 2460,324,JOSE LUIS,ELORZA FLORES,cps-18.12p,cps12p,morena,morena,2021,m,1,,7,2024,,,,,
 2461,326,LUIS ARMANDO,MELGAR BRAVO,cps-18.13p,cps13p,pvem,pvem,2021,m,1,,7,2024,,,,,elec-coal=PVEM.PT.MORENA
@@ -2478,7 +2478,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2477,470,BEATRIZ,ROJAS MARTINEZ,df-18.07p,df07p,morena,morena,2021,f,1,,9,2024,,,,,
 2478,479,MARIA DE JESUS,ROSETE SANCHEZ,df-18.08p,df08p,pt,pt,2021,f,1,,9,2024,,,,,elec-coal=PVEM.PT.MORENA
 2479,488,MARIA GUADALUPE,CHAVIRA DE LA ROSA,df-18.09p,df09p,morena,morena,2021,f,1,,9,2024,,,,,
-2480,497,MARGARITA ESTER ZAVALA GOMEZ,DEL CAMPO,df-18.10p,df10p,pan,pan,2021,f,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
+2480,497,MARGARITA ESTER,ZAVALA GOMEZ DEL CAMPO,df-18.10p,df10p,pan,pan,2021,f,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
 2481,506,LIDIA,PEREZ BARCENAS,df-18.11p,df11p,morena,morena,2021,f,1,,9,2024,,,,,
 2482,515,ANA CECILIA LUISA GABRIELA FERNANDA,SODI MIRANDA,df-18.12p,df12p,prd,prd,2021,f,1,,9,2024,,,,,elec-coal=PAN.PRI.PRD
 2483,525,OSCAR EUGENIO,GUTIERREZ CAMACHO,df-18.13p,df13p,morena,morena,2021,m,1,,9,2024,,,,,elec-coal=PVEM.PT.MORENA
@@ -2591,7 +2591,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2590,1501,SUE ELLEN,BERNAL BOLNIK,mex-18.41p,mex41p,pri,pri,2021,f,1,,15,2024,,,,,elec-coal=PAN.PRI.PRD
 2591,1510,LEONEL,GODOY RANGEL,mic-18.01p,mic01p,morena,morena,2021,m,1,,16,2024,,,,,
 2592,1519,MAURICIO,PRIETO GOMEZ,mic-18.02p,mic02p,prd,prd,2021,m,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
-2593,1528,MARY CARMEN,BERNAL MARTINEZ,mic-18.03p,mic03p,pt,pt,2021,f,1,,16,2024,,,,,elec-coal=PVEM.PT.MORENA - sala tepjf anulo 3ago2021 y pleno restituyo 19ago
+2593,1528,MARY CARMEN,BERNAL MARTINEZ,mic-18.03p,mic03p,pt,pt,2021,f,1,,16,2024,,,,,sala tepjf anulo 3ago2021 y pleno restituyo 19ago elec-coal=PVEM.PT.MORENA
 2594,1537,RODRIGO,SANCHEZ ZEPEDA,mic-18.04p,mic04p,pan,pan,2021,m,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
 2595,1546,ENRIQUE,GODINEZ DEL RIO,mic-18.05p,mic05p,pan,pan,2021,m,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
 2596,1555,BERENICE,JUAREZ NAVARRETE,mic-18.06p,mic06p,pan,pan,2021,f,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
@@ -2600,7 +2600,7 @@ ord.y,ord.dis,nom,patmat,emm,id,part,postulo,yr,fm,tmp,tmp2,edon,race-after,dcar
 2599,1582,CARLOS ALBERTO,MANZO RODRIGUEZ,mic-18.09p,mic09p,morena,morena,2021,m,1,,16,2024,,,,,
 2600,1591,CARLOS HUMBERTO,QUINTANA MARTINEZ,mic-18.10p,mic10p,pan,pan,2021,m,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
 2601,1600,MARIA MACARENA,CHAVEZ FLORES,mic-18.11p,mic11p,prd,prd,2021,f,1,,16,2024,,,,,elec-coal=PAN.PRI.PRD
-2602,1609,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-18.12p,mic12p,prd,pt,2021,m,1,,16,2024,,,,,elec-coal=PVEM.PT.MORENA | Reforma 21ago21 Renuncia diputado al PT tras criticar 'abrazos no balazos'
+2602,1609,FRANCISCO JAVIER,HUACUS ESQUIVEL,mic-18.12p,mic12p,prd,pt,2021,m,1,,16,2024,,,,,elec-coal=PVEM.PT.MORENA | Reforma 21ago21 Renuncia al PT tras criticar 'abrazos no balazos'
 2603,1621,JORGE ALBERTO,BARRERA TOLEDO,mor-18.01p,mor01p,morena,morena,2021,m,1,,17,2024,,,,,
 2604,1630,ALEJANDRA,PANI BARRAGAN,mor-18.02p,mor02p,morena,morena,2021,f,1,,17,2024,,,,,elec-coal=PVEM.PT.MORENA
 2605,1639,JUANITA,GUERRA MENA,mor-18.03p,mor03p,morena,morena,2021,f,1,,17,2024,,,,,
