@@ -1,0 +1,6 @@
+
+
+- Files ~mu.phys.csv~ and ~se.phys.csv~ created with code in data/mapas/physical/code/get-se-mu-phys-attrib.r using INE and INEGI geo-referenced info. Indicators included: 
+  - ~ffcc.dis~ is the distance from the unit's centroid to the nearest railroad line in km. 
+
+- Files 
