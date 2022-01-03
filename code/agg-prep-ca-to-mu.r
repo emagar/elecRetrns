@@ -30,7 +30,6 @@ d[2,]
 colnames(d)
 
 
- 
 
 d <- within(d, expr = {
 PAN <- ave(PAN, as.factor(paste(munn,demn,sep=".")), FUN=sum, na.rm=TRUE);
@@ -71,7 +70,7 @@ lisnom <- ave(lisnom, as.factor(paste(munn,demn,sep=".")), FUN=sum, na.rm=TRUE);
 
 
 # drop redundant rows
-d <- d[duplicated(as.factor(d$ID_MUNICIPIO))==FALSE,]
+d <- d[duplicated(as.factor(paste(d$munn,d$demn,sep=".")))==FALSE,]
 dim(d)
 head(d)
 
