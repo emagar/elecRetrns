@@ -164,21 +164,21 @@ ord,edo,disn,cab,yr,part.elec,part.origen,npart,propietario,suplente,drp,dmuj,no
 163,cps,9,TUXTLA GUTIERREZ,2006,prd-pt-conve,,3,MORALES VAZQUEZ CARLOS ORSOE,DE LEON VILLARD KALYANAMAYA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 164,cps,9,TUXTLA GUTIERREZ,2006,pna,,7,ZENTELLA Y SASSO FRANCISCO JUSTINIANO,GALINDEZ ALCAZAR NELVY,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 165,cps,9,TUXTLA GUTIERREZ,2006,asd,,11,GUILLEN MICELI JUAN JESUS,MAZARIEGOS GONZALEZ CAMILA GUILLERMINA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
-165.1,cps,10,VILLAFLORES,2006,pan,,1,falta,,,,,
-165.11,cps,10,VILLAFLORES,2006,pri-pvem,,2,falta,,,,,
+165.1,cps,10,VILLAFLORES,2006,pan,,1,LLAVEN MARTINEZ JAIME,,,,,
+165.11,cps,10,VILLAFLORES,2006,pri-pvem,,2,CORDOVA OCHOA MIGUEL ANGEL,,,,,
 165.12,cps,10,VILLAFLORES,2006,prd-pt-conve,prd,3,RAMOS CASTELLANOS MARTIN,,,,,
-165.13,cps,10,VILLAFLORES,2006,pna,,7,falta,,,,,
-165.14,cps,10,VILLAFLORES,2006,asd,,11,falta,,,,,
-165.2,cps,11,HUIXTLA,2006,pan,,1,falta,,,,,
-165.21,cps,11,HUIXTLA,2006,pri-pvem,,2,falta,,,,,
+165.13,cps,10,VILLAFLORES,2006,pna,,7,MARTINEZ CAMACHO MARIA DEL SOCORRO,,,,,
+165.14,cps,10,VILLAFLORES,2006,asd,,11,CAAMAL TAMAYO MARIA EUNICE,,,,,
+165.2,cps,11,HUIXTLA,2006,pan,,1,AVENDAÑO NAGAYA CARLOS ENRIQUE,,,,,
+165.21,cps,11,HUIXTLA,2006,pri-pvem,,2,PEREZ ANZUETO HUGO MAURICIO,,,,,
 165.22,cps,11,HUIXTLA,2006,prd-pt-conve,pt,3,HERRERA SOLIS ANUARIO LUIS,,,,,
-165.23,cps,11,HUIXTLA,2006,pna,,7,falta,,,,,
-165.24,cps,11,HUIXTLA,2006,asd,,11,falta,,,,,
-165.3,cps,12,TAPACHULA,2006,pan,,1,falta,,,,,
-165.31,cps,12,TAPACHULA,2006,pri-pvem,pri,2,DIAZ ATHIE ANTONIO,,,,,
-165.32,cps,12,TAPACHULA,2006,prd-pt-conve,,3,falta,,,,,
-165.33,cps,12,TAPACHULA,2006,pna,,7,falta,,,,,
-165.34,cps,12,TAPACHULA,2006,asd,,11,falta,,,,,
+165.23,cps,11,HUIXTLA,2006,pna,,7,VERA GORDILLO REYNA ESPERANZA,,,,,
+165.24,cps,11,HUIXTLA,2006,asd,,11,RAMOS RAMOS PEDRO FRANCISCO,,,,,
+165.3,cps,12,TAPACHULA,2006,pan,,1,DE LA CRUZ VILLEGAS JOSE RUPERTO,,,,,
+165.31,cps,12,TAPACHULA,2006,pri-pvem,pri,2,DIAZ ATHIE ANTONIO DE JESUS,,,,,
+165.32,cps,12,TAPACHULA,2006,prd-pt-conve,,3,DIAZ REYES JOSE OCTAVIO,,,,,
+165.33,cps,12,TAPACHULA,2006,pna,,7,DIAZ SALDAÑA CARLOS,,,,,
+165.34,cps,12,TAPACHULA,2006,asd,,11,BARRAGAN SOLIS MARCO ANTONIO,,,,,
 166,cua,1,JUAREZ,2006,pan,,1,CHACON ROJO JUAN RAMON,ARAMBULA ARCHULETA CORINA IVETTE,0,1,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 167,cua,1,JUAREZ,2006,pri-pvem,,2,SERRANO ESCOBAR ENRIQUE,TERRAZAS PORRAS ADRIANA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 168,cua,1,JUAREZ,2006,prd-pt-conve,,3,REYES SALAZAR ELEAZAR,CISNEROS PEDRAZA VICTOR DANIEL,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
@@ -389,7 +389,7 @@ ord,edo,disn,cab,yr,part.elec,part.origen,npart,propietario,suplente,drp,dmuj,no
 373,gua,2,SAN MIGUEL DE ALLENDE,2006,pna,,7,ORTIZ RUBALCAVA JOSE,TORRES PUGA MA. DEL SOCORRO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 374,gua,2,SAN MIGUEL DE ALLENDE,2006,asd,,11,MILAN PEREZ ANICETO,MONTOYA SALINAS MA. MAGDALENA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 375,gua,3,LEON,2006,pan,,1,OVIEDO OVIEDO ERNESTO,ENRIQUEZ VAN DER KAM ARIADNA,0,1,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
-376,gua,3,LEON,2006,pri-pvem,,2,PROPIETARIO 15/04/06,REA AVILA FRANCISCO JAVIER,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
+376,gua,3,LEON,2006,pri-pvem,,2,HERNANDEZ BELTRAN MATILDE,REA AVILA FRANCISCO JAVIER,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 377,gua,3,LEON,2006,prd-pt-conve,,3,OROZCO REYNOSO PASCUAL,TORRES MARTIN DEL CAMPO ILDEFONSO FRANCISCO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 378,gua,3,LEON,2006,pna,,7,ROCHA GOMEZ MARGARITA,PEREZ BECERRA J. REYES,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 379,gua,3,LEON,2006,asd,,11,ARIAS CERVERA LUZ PATRICIA,BERMUDEZ MELENDEZ CESAREO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
@@ -399,7 +399,7 @@ ord,edo,disn,cab,yr,part.elec,part.origen,npart,propietario,suplente,drp,dmuj,no
 383,gua,4,GUANAJUATO,2006,pna,,7,BUSTAMANTE CARDONA MA. CRISTINA DEL SOCORRO,TORRES CRUZ GILDARDO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 384,gua,4,GUANAJUATO,2006,asd,,11,YEBRA YEBRA J. JESUS,HERNANDEZ MENDEZ JOSE JUAN,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 385,gua,5,LEON,2006,pan,,1,RAMIREZ BARBA ECTOR JAIME,SANCHEZ JUNQUERA FABIOLA,0,1,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
-386,gua,5,LEON,2006,pri-pvem,,2,PROPIETARIO 15/04/06,VAZQUEZ MACHUCA OLIVIA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
+386,gua,5,LEON,2006,pri-pvem,,2,GUERRERO MORENO JOSE ARTURO,VAZQUEZ MACHUCA OLIVIA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 387,gua,5,LEON,2006,prd-pt-conve,,3,VIRAMONTES MARTINEZ IGNACIO DEL SAGRADO CORAZON,ALMAGUER RIOS FRANCISCO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 388,gua,5,LEON,2006,pna,,7,AGUIRRE CASAS MARIO,VILLEGAS MARTINEZ FIDEL,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 389,gua,5,LEON,2006,asd,,11,MOJICA RODRIGUEZ ANTONIO,PRECIADO DE ANDA MA. ELENA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
@@ -514,7 +514,7 @@ ord,edo,disn,cab,yr,part.elec,part.origen,npart,propietario,suplente,drp,dmuj,no
 498,hgo,4,TULANCINGO DE BRAVO,2006,pna,,7,SANCHEZ HERNANDEZ SANDRA,FUENTES HERNANDEZ ALFREDO ANTONIO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 499,hgo,4,TULANCINGO DE BRAVO,2006,asd,,11,ORTIZ FERNANDEZ MARIA DEL ROCIO,ARIAS TREJO LUIS,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 500,hgo,5,TULA DE ALLENDE,2006,pan,,1,ROMERO ALCANTARA ISIDRO,REYES SANTAMARIA DAVID,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
-501,hgo,5,TULA DE ALLENDE,2006,pri-pvem,,2,MOCTEZUMA PEREDA FERNANDO QUETZALCOATL.,NARVAEZ BRAVO HILDA ARELI,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
+501,hgo,5,TULA DE ALLENDE,2006,pri-pvem,,2,MOCTEZUMA PEREDA FERNANDO QUETZALCOATL,NARVAEZ BRAVO HILDA ARELI,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 502,hgo,5,TULA DE ALLENDE,2006,prd-pt-conve,,3,HERNANDEZ BADILLO MANUEL,CORNEJO PORRAS MARIO,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 503,hgo,5,TULA DE ALLENDE,2006,pna,,7,GAMEZ REYES JEANETH DOLORES,HIDEROA PELCASTRE GUADALUPE,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
 504,hgo,5,TULA DE ALLENDE,2006,asd,,11,URIBE RODRIGUEZ FELIPE,PEREZ MARTINEZ MARIA LUISA,0,,,https://portalanterior.ine.mx/documentos/DEOE/MemoriasProcesos/memorias2006/03/00/cap07.pdf
