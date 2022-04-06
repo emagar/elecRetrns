@@ -1,13 +1,10 @@
-
-# Table of Contents
-
-1.  [Description of *Recent Mexican Election Vote Returns* repository](#org5e37b0f)
-2.  [Files in the repository and how to cite them](#orgd71bcf0)
-3.  [Codebook](#org698784a)
-4.  [Coding procedure for the incumbent's status](#org8b5defb)
-5.  [Procedimiento para codificar el estatus del ocupante](#org1a152d3)
-6.  [Sources](#org84e345b)
-7.  [Acknowledgements](#orgd697837)
+- [Description of *Recent Mexican Election Vote Returns* repository](#orgff50d71)
+- [Files in the repository and how to cite them](#org6218923)
+- [Codebook](#org2181bfb)
+- [Coding procedure for the incumbent's status<a id="org5adb558"></a>](#org91d54e8)
+- [Procedimiento para codificar el estatus del ocupante<a id="orgdf04964"></a>](#orgc63c37f)
+- [Sources](#org96f215c)
+- [Acknowledgements](#orgabc54be)
 
 Last revision: 2021-06-29
 
@@ -17,24 +14,24 @@ Last revision: 2021-06-29
 
 **Reelection in 2021 info is here** `data/aymu1989-present.incumbents.csv` reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And `data/dfdf1997-present.incumbents.csv` does the same for federal deputies.
 
-**New script** `code/extract-state-yr-mu-returns.r`  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each &#x2014; easier to describe.  
+**New script** `code/extract-state-yr-mu-returns.r` exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each &#x2014; easier to describe.
 
 ---
 
 
-<a id="org5e37b0f"></a>
+<a id="orgff50d71"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
 -   Author: Eric Magar
 -   Email: emagar at itam dot mx
 
-The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
+The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot).
 
 *Important note:* older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orgd71bcf0"></a>
+<a id="org6218923"></a>
 
 # Files in the repository and how to cite them
 
@@ -63,11 +60,11 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   `datosBrutos/` = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [mail me](mailto:emagar@itam.mx) if you need these.
 
 
-<a id="org698784a"></a>
+<a id="org2181bfb"></a>
 
 # Codebook
 
-Most variables are included in every file, some appear in selected files only.  
+Most variables are included in every file, some appear in selected files only.
 
 -   *edon* = state number 1:32.
 -   *edo* = state abbreviation (may differ from the 'official' abbreviations so that sorting them alphabetically preserves the order set by *edon*).
@@ -100,15 +97,15 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orgee60dd6) for categories and coding procedure ([aquí](#orgc9f13dd) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org5adb558) for categories and coding procedure ([aquí](#orgdf04964) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="org8b5defb"></a>
+<a id="org91d54e8"></a>
 
-# Coding procedure for the incumbent's status<a id="orgee60dd6"></a>
+# Coding procedure for the incumbent's status<a id="org5adb558"></a>
 
-In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories: 
+In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories:
 
 1.  'Beaten' if the incumbent re-ran and lost;
 2.  'Reelected' if the incumbent re-ran and won;
@@ -118,17 +115,17 @@ In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one
 6.  'Term-limited' if the incumbent was ineligible for reelection due to a term limit;
 7.  A year indicates that it is too early to know the incumbent's status (and the year of the next race).
 
-In categories other than the first two above, a suffix may be present. 
+In categories other than the first two above, a suffix may be present.
 
 -   Suffix '-p-lost' indicates that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition).
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org1a152d3"></a>
+<a id="orgc63c37f"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="orgc9f13dd"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="orgdf04964"></a>
 
-En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
+En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
 1.  'Beaten' si el ocupante volvió a contender y perdió;
 2.  'Reelected' si el ocupante volvió a contender y ganó;
@@ -138,13 +135,13 @@ En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* i
 6.  'Term-limited' si el ocupante estaba constitucionalmente impedido para aspirar a reelegirse;
 7.  Un año indica que aún es temprano para conocer el estatus (y el año de la próxima elección).
 
-En las categorías 3 en adelante, un sufijo puede estar presente. 
+En las categorías 3 en adelante, un sufijo puede estar presente.
 
 -   El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora).
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org84e345b"></a>
+<a id="org96f215c"></a>
 
 # Sources
 
@@ -159,16 +156,17 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="orgd697837"></a>
+<a id="orgabc54be"></a>
 
 # Acknowledgements
 
-Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data. 
+Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data.
 
-Many students over many years have provided extraordinary research assistance to retrieve and systematize information reported here. 
+Many students over many years have provided extraordinary research assistance to retrieve and systematize information reported here.
 
 -   Under construction
+-   Sonia Kuri Kosegarten
 -   Eugenio Solís Flores
 -   Daniela Guzmán Lerma
+-   José Angel Torrens Hernández
 -   Mauricio Fernández Duque
-
