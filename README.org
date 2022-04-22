@@ -1,9 +1,11 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2021-06-29
+Last revision: 2022-04-22
 
 
 ----------
+
+*Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013
 
 *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
 

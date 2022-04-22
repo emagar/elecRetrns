@@ -3,7 +3,7 @@ library(plyr)
 # still has zeroes, see ancillary/mun.yrs when available, then fix 
 ife <- c(1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1011, 1010, 2001,
 2002, 2003, 2004, 2005, 3001, 3002, 3003, 3004, 3005, 4002, 4001, 4003,
-4004, 4005, 4006, 4007, 4008, 4009, 4011, 4010, 5001, 5002, 5003, 5004,
+4004, 4005, 4006, 4007, 4008, 4009, 4011, 4010, 4013, 4012, 5001, 5002, 5003, 5004,
 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014, 5015, 5016,
 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026, 5027, 5028,
 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 6006, 6001,
@@ -247,7 +247,7 @@ ife <- c(1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1011, 1010, 2001,
 # still has zeroes, see ancillary/mun.yrs when available, then fix 
 inegi <- c(1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010,
 1011, 2001, 2002, 2003, 2004, 2005, 3001, 3002, 3003, 3008, 3009, 4001,
-4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 5001, 5002,
+4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 5001, 5002,
 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5014,
 5015, 5016, 5017, 5018, 5019, 5020, 5021, 5022, 5023, 5024, 5025, 5026,
 5027, 5028, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038,
@@ -494,7 +494,7 @@ mun <- c("Aguascalientes", "Asientos", "Calvillo", "Cosío", "Jesús María",
 "Tijuana", "Playas de Rosarito", "Comondú", "Mulegé", "Paz--La", "Cabos--Los",
 "Loreto", "Calkiní", "Campeche", "Carmen", "Champotón", "Hecelchakán",
 "Hopelchén", "Palizada", "Tenabo", "Escárcega", "Calakmul", "Candelaria",
-"Abasolo", "Acuña", "Allende", "Arteaga", "Candela", "Castaños", "Cuatrociénegas",
+"Seybaplaya", "Dzitbalche", "Abasolo", "Acuña", "Allende", "Arteaga", "Candela", "Castaños", "Cuatrociénegas",
 "Escobedo", "Francisco I. Madero", "Frontera", "General Cepeda", "Guerrero",
 "Hidalgo", "Jiménez", "Juárez", "Lamadrid", "Matamoros", "Monclova",
 "Morelos", "Múzquiz", "Nadadores", "Nava", "Ocampo", "Parras", "Piedras Negras",
@@ -1057,8 +1057,10 @@ mun <- c("Aguascalientes", "Asientos", "Calvillo", "Cosío", "Jesús María",
 # make data frame, clean
 eq <- data.frame(inegi = inegi, ife = ife, mun = mun, stringsAsFactors = FALSE)
 rm(inegi, ife, mun)
-#head(eq)
-
+eq$edon <- as.integer(eq$inegi/1000) # ojo: no work when inegi==0
+eq[eq$edon==0,]
+eq[eq$edon==4,]
+x
 # functions to make translations
 ife.to.inegi <- function(x){ # x is a vector to convert
     y <- mapvalues(x, from = eq$ife, to = eq$inegi, warn_missing = FALSE)
