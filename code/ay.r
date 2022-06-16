@@ -22,6 +22,7 @@ for (i in 1:ncol(v)){
     v[,i] <- as.numeric(v[,i])
 }
 dat[,sel] <- v # return votes without missing to data
+
 v$efec <- round(rowSums(v), 0)
 dat$efec <- v$efec
 tmp <- dat$nr # remove NAs
@@ -349,7 +350,7 @@ for (i in 1:ncol(l)){
 
 # create objects with vote for coalition(s) added and redudant columns dropped
 # 3sep2021: old version used to empty contents which set a bug --- 2nd round manip would forget 1st round manip
-# 3sep2021: new precidure keeps votes/labels in to avoid this
+# 3sep2021: new procidure keeps votes/labels in to avoid this
 cv <- v; #cv[] <- NA # will receive votes with coalitions aggregated
 cl <- l; #cl[] <- NA # will keep coalition labels but drop coalition member labels 
 # create "split" objects for votes contrinuted by each coalition member and joint column dropped
@@ -781,6 +782,7 @@ tmp2 <- grep("dcoal", colnames(dat))
 tmp3 <- grep("ncoal", colnames(dat))
 dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
 colnames(dat)
+dat[1,]
 rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
 ## # All 18 cols needed thanks to mor 2021...
