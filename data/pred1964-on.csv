@@ -1,289 +1,321 @@
-ordorig,elec,status,yr,mo,dy,clave,edon,edo,v01,l01,v02,l02,v03,l03,p4,p4lab,p5,p5lab,p6,p6lab,p7,p7lab,p8,p8lab,p9,p9lab,p10,p10lab,otr,efec,nr,nulos,vtot,lisnom,prwin,fuente,notas,distpan,distpri,distprd,imputacion
-1,presid,oth!,1964,jul,5,1.1964,1,Aguascalientes,6549,pan,66924,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,414,73887,.,.,.,.,pri,banamex,.,1,1,1,no
-2,presid,oth!,1964,jul,5,2.1964,2,Baja California,38760,pan,142948,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,0,181708,.,.,.,.,pri,banamex,.,1,1,1,no
-3,presid,oth!,1964,jul,5,3.1964,3,Baja California Sur,850,pan,25996,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,175,27021,.,.,.,.,pri,banamex,.,1,1,1,no
-4,presid,oth!,1964,jul,5,4.1964,4,Campeche,2396,pan,56701,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,162,59259,.,.,.,.,pri,banamex,.,1,1,1,no
-5,presid,oth!,1964,jul,5,5.1964,5,Coahuila,17500,pan,247926,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,842,266268,.,.,.,.,pri,banamex,.,1,1,1,no
-6,presid,oth!,1964,jul,5,6.1964,6,Colima,4960,pan,34216,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,77,39253,.,.,.,.,pri,banamex,.,1,1,1,no
-7,presid,oth!,1964,jul,5,7.1964,7,Chiapas,3702,pan,331437,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,699,335838,.,.,.,.,pri,banamex,.,1,1,1,no
-8,presid,oth!,1964,jul,5,8.1964,8,Chihuahua,58332,pan,221760,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2192,282284,.,.,.,.,pri,banamex,.,1,1,1,no
-9,presid,oth!,1964,jul,5,9.1964,9,Distrito Federal,355798,pan,1024598,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,37264,1417660,.,.,.,.,pri,banamex,.,1,1,1,no
-10,presid,oth!,1964,jul,5,10.1964,10,Durango,32490,pan,205625,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1028,239143,.,.,.,.,pri,banamex,.,1,1,1,no
-11,presid,oth!,1964,jul,5,11.1964,11,Guanajuato,85290,pan,326172,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,7349,418811,.,.,.,.,pri,banamex,.,1,1,1,no
-12,presid,oth!,1964,jul,5,12.1964,12,Guerrero,11867,pan,381736,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3515,397118,.,.,.,.,pri,banamex,.,1,1,1,no
-13,presid,oth!,1964,jul,5,13.1964,13,Hidalgo,5603,pan,339620,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,253,345476,.,.,.,.,pri,banamex,.,1,1,1,no
-14,presid,oth!,1964,jul,5,14.1964,14,Jalisco,76320,pan,507795,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5162,589277,.,.,.,.,pri,banamex,.,1,1,1,no
-15,presid,oth!,1964,jul,5,15.1964,15,México,41690,pan,459309,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3960,504959,.,.,.,.,pri,banamex,.,1,1,1,no
-16,presid,oth!,1964,jul,5,16.1964,16,Michoacán,54500,pan,332395,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3400,390295,.,.,.,.,pri,banamex,.,1,1,1,no
-17,presid,oth!,1964,jul,5,17.1964,17,Morelos,6802,pan,108415,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1946,117163,.,.,.,.,pri,banamex,.,1,1,1,no
-18,presid,oth!,1964,jul,5,18.1964,18,Nayarit,5679,pan,67101,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3597,76377,.,.,.,.,pri,banamex,.,1,1,1,no
-19,presid,oth!,1964,jul,5,19.1964,19,Nuevo León,40733,pan,219270,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1298,261301,.,.,.,.,pri,banamex,.,1,1,1,no
-20,presid,oth!,1964,jul,5,20.1964,20,Oaxaca,14950,pan,429996,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3488,448434,.,.,.,.,pri,banamex,.,1,1,1,no
-21,presid,oth!,1964,jul,5,21.1964,21,Puebla,34275,pan,514063,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5083,553421,.,.,.,.,pri,banamex,.,1,1,1,no
-22,presid,oth!,1964,jul,5,22.1964,22,Queretaro,9725,pan,101996,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,803,112524,.,.,.,.,pri,banamex,.,1,1,1,no
-23,presid,oth!,1964,jul,5,23.1964,23,Quintana Roo,598,pan,16926,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,53,17577,.,.,.,.,pri,banamex,.,1,1,1,no
-24,presid,oth!,1964,jul,5,24.1964,24,San Luis Potosí,24757,pan,258162,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1562,284481,.,.,.,.,pri,banamex,.,1,1,1,no
-25,presid,oth!,1964,jul,5,25.1964,25,Sinaloa,4126,pan,207079,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2749,213954,.,.,.,.,pri,banamex,.,1,1,1,no
-26,presid,oth!,1964,jul,5,26.1964,26,Sonora,2601,pan,145380,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,9897,157878,.,.,.,.,pri,banamex,.,1,1,1,no
-27,presid,oth!,1964,jul,5,27.1964,27,Tabasco,990,pan,146433,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,221,147644,.,.,.,.,pri,banamex,.,1,1,1,no
-28,presid,oth!,1964,jul,5,28.1964,28,Tamaulipas,10502,pan,287484,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2542,300528,.,.,.,.,pri,banamex,.,1,1,1,no
-29,presid,oth!,1964,jul,5,29.1964,29,Tlaxcala,1610,pan,98293,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2541,102444,.,.,.,.,pri,banamex,.,1,1,1,no
-30,presid,oth!,1964,jul,5,30.1964,30,Veracruz,21816,pan,654211,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,6208,682235,.,.,.,.,pri,banamex,.,1,1,1,no
-31,presid,oth!,1964,jul,5,31.1964,31,Yucatán,28914,pan,177326,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,468,206708,.,.,.,.,pri,banamex,.,1,1,1,no
-32,presid,oth!,1964,jul,5,32.1964,32,Zacatecas,36942,pan,140921,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,505,178368,.,.,.,.,pri,banamex,.,1,1,1,no
-33,presid,oth!,1970,jul,5,1.1970,1,Aguascalientes,11959,pan,81969,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,876,94804,.,.,.,.,pri,banamex,.,1,1,1,no
-34,presid,oth!,1970,jul,5,2.1970,2,Baja California,72175,pan,205454,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1672,279301,.,.,.,.,pri,banamex,.,1,1,1,no
-35,presid,oth!,1970,jul,5,3.1970,3,Baja California Sur,2023,pan,35367,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,294,37684,.,.,.,.,pri,banamex,.,1,1,1,no
-36,presid,oth!,1970,jul,5,4.1970,4,Campeche,1768,pan,89945,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,73,91786,.,.,.,.,pri,banamex,.,1,1,1,no
-37,presid,oth!,1970,jul,5,5.1970,5,Coahuila,30350,pan,313036,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1510,344896,.,.,.,.,pri,banamex,.,1,1,1,no
-38,presid,oth!,1970,jul,5,6.1970,6,Colima,5005,pan,49085,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,239,54329,.,.,.,.,pri,banamex,.,1,1,1,no
-39,presid,oth!,1970,jul,5,7.1970,7,Chiapas,4853,pan,439754,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2581,447188,.,.,.,.,pri,banamex,.,1,1,1,no
-40,presid,oth!,1970,jul,5,8.1970,8,Chihuahua,83120,pan,351477,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5375,439972,.,.,.,.,pri,banamex,.,1,1,1,no
-41,presid,oth!,1970,jul,5,9.1970,9,Distrito Federal,696651,pan,1510519,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,56990,2264160,.,.,.,.,pri,banamex,.,1,1,1,no
-42,presid,oth!,1970,jul,5,10.1970,10,Durango,28895,pan,185791,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3143,217829,.,.,.,.,pri,banamex,.,1,1,1,no
-43,presid,oth!,1970,jul,5,11.1970,11,Guanajuato,108938,pan,449691,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,9637,568266,.,.,.,.,pri,banamex,.,1,1,1,no
-44,presid,oth!,1970,jul,5,12.1970,12,Guerrero,20341,pan,447079,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4357,471777,.,.,.,.,pri,banamex,.,1,1,1,no
-45,presid,oth!,1970,jul,5,13.1970,13,Hidalgo,12798,pan,437913,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,826,451537,.,.,.,.,pri,banamex,.,1,1,1,no
-46,presid,oth!,1970,jul,5,14.1970,14,Jalisco,167629,pan,789628,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,15210,972467,.,.,.,.,pri,banamex,.,1,1,1,no
-47,presid,oth!,1970,jul,5,15.1970,15,México,134949,pan,730599,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,14227,879775,.,.,.,.,pri,banamex,.,1,1,1,no
-48,presid,oth!,1970,jul,5,16.1970,16,Michoacán,82909,pan,539026,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5150,627085,.,.,.,.,pri,banamex,.,1,1,1,no
-49,presid,oth!,1970,jul,5,17.1970,17,Morelos,17583,pan,161500,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2012,181095,.,.,.,.,pri,banamex,.,1,1,1,no
-50,presid,oth!,1970,jul,5,18.1970,18,Nayarit,4686,pan,124269,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4798,133753,.,.,.,.,pri,banamex,.,1,1,1,no
-51,presid,oth!,1970,jul,5,19.1970,19,Nuevo León,67704,pan,356230,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4098,428032,.,.,.,.,pri,banamex,.,1,1,1,no
-52,presid,oth!,1970,jul,5,20.1970,20,Oaxaca,23465,pan,652620,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,8448,684533,.,.,.,.,pri,banamex,.,1,1,1,no
-53,presid,oth!,1970,jul,5,21.1970,21,Puebla,96313,pan,555109,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,12919,664341,.,.,.,.,pri,banamex,.,1,1,1,no
-54,presid,oth!,1970,jul,5,22.1970,22,Queretaro,13620,pan,132368,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1112,147100,.,.,.,.,pri,banamex,.,1,1,1,no
-55,presid,oth!,1970,jul,5,23.1970,23,Quintana Roo,582,pan,32069,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,58,32709,.,.,.,.,pri,banamex,.,1,1,1,no
-56,presid,oth!,1970,jul,5,24.1970,24,San Luis Potosí,35947,pan,329548,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2451,367946,.,.,.,.,pri,banamex,.,1,1,1,no
-57,presid,oth!,1970,jul,5,25.1970,25,Sinaloa,15440,pan,263554,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5638,284632,.,.,.,.,pri,banamex,.,1,1,1,no
-58,presid,oth!,1970,jul,5,26.1970,26,Sonora,14714,pan,208701,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2972,226387,.,.,.,.,pri,banamex,.,1,1,1,no
-59,presid,oth!,1970,jul,5,27.1970,27,Tabasco,2735,pan,233653,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2110,238498,.,.,.,.,pri,banamex,.,1,1,1,no
-60,presid,oth!,1970,jul,5,28.1970,28,Tamaulipas,34209,pan,372413,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2080,408702,.,.,.,.,pri,banamex,.,1,1,1,no
-61,presid,oth!,1970,jul,5,29.1970,29,Tlaxcala,7098,pan,117805,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,448,125351,.,.,.,.,pri,banamex,.,1,1,1,no
-62,presid,oth!,1970,jul,5,30.1970,30,Veracruz,84422,pan,1048451,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,20120,1152993,.,.,.,.,pri,banamex,.,1,1,1,no
-63,presid,oth!,1970,jul,5,31.1970,31,Yucatán,35546,pan,203883,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1401,240830,.,.,.,.,pri,banamex,.,1,1,1,no
-64,presid,oth!,1970,jul,5,32.1970,32,Zacatecas,26643,pan,260267,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1289,288199,.,.,.,.,pri,banamex,.,1,1,1,no
-65,presid,oth!,1976,jul,4,1.1976,1,Aguascalientes,0,.,98770,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4198,102968,406,6451,109825,198930,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-66,presid,oth!,1976,jul,4,2.1976,2,Baja California,0,.,292808,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,22142,314950,1559,27893,344402,525293,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-67,presid,oth!,1976,jul,4,3.1976,3,Baja California Sur,0,.,44620,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,463,45083,201,2699,47983,72858,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-68,presid,oth!,1976,jul,4,4.1976,4,Campeche,0,.,138772,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,141,138913,66,460,139439,144891,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-69,presid,oth!,1976,jul,4,5.1976,5,Coahuila,0,.,500441,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,16005,516446,927,312,517685,672945,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-70,presid,oth!,1976,jul,4,6.1976,6,Colima,0,.,61987,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,986,62973,382,1371,64726,147814,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-71,presid,oth!,1976,jul,4,7.1976,7,Chiapas,0,.,465432,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,0,465432,191,1978,467601,716223,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-72,presid,oth!,1976,jul,4,8.1976,8,Chihuahua,0,.,375891,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,27459,403350,1800,47073,452223,928704,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-73,presid,oth!,1976,jul,4,9.1976,9,Distrito Federal,0,.,1932482,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,278191,2210673,121042,458744,2790459,4519658,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-74,presid,oth!,1976,jul,4,10.1976,10,Durango,0,.,331940,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10020,341960,850,3330,346140,525885,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-75,presid,oth!,1976,jul,4,11.1976,11,Guanajuato,0,.,767540,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,43079,810619,1546,15022,827187,1079893,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-76,presid,oth!,1976,jul,4,12.1976,12,Guerrero,0,.,682712,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,7117,689829,1585,7189,698603,955373,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-77,presid,oth!,1976,jul,4,13.1976,13,Hidalgo,0,.,500864,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,19164,520028,1767,17193,538988,659154,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-78,presid,oth!,1976,jul,4,14.1976,14,Jalisco,0,.,945650,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,41290,986940,7949,58360,1053249,1471794,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-79,presid,oth!,1976,jul,4,15.1976,15,México,0,.,1234812,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,106979,1341791,22830,118628,1483249,1986365,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-80,presid,oth!,1976,jul,4,16.1976,16,Michoacán,0,.,723071,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,22040,745111,1548,15507,762166,1158788,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-81,presid,oth!,1976,jul,4,17.1976,17,Morelos,0,.,193339,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10973,204312,2413,14825,221550,352414,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-82,presid,oth!,1976,jul,4,18.1976,18,Nayarit,0,.,202150,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3588,205738,649,5589,211976,324737,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-83,presid,oth!,1976,jul,4,19.1976,19,Nuevo León,0,.,316711,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,18763,335474,20757,15945,372176,714755,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-84,presid,oth!,1976,jul,4,20.1976,20,Oaxaca,0,.,663507,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,97247,760754,1581,474,762809,1060668,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-85,presid,oth!,1976,jul,4,21.1976,21,Puebla,0,.,713186,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,39229,752415,5402,30528,788345,1265197,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-86,presid,oth!,1976,jul,4,22.1976,22,Queretaro,0,.,209382,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4755,214137,847,5601,220585,279110,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-87,presid,oth!,1976,jul,4,23.1976,23,Quintana Roo,0,.,48658,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,302,48960,17,1163,50140,56473,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-88,presid,oth!,1976,jul,4,24.1976,24,San Luis Potosí,0,.,479402,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,16461,495863,3789,7615,507267,677688,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-89,presid,oth!,1976,jul,4,25.1976,25,Sinaloa,0,.,284051,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10460,294511,1559,4650,300720,650897,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-90,presid,oth!,1976,jul,4,26.1976,26,Sonora,0,.,498031,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,16647,514678,597,1725,517000,672221,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-91,presid,oth!,1976,jul,4,27.1976,27,Tabasco,0,.,274284,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,11137,285421,425,796,286642,340313,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-92,presid,oth!,1976,jul,4,28.1976,28,Tamaulipas,0,.,418257,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,27932,446189,2569,15767,464525,883743,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-93,presid,oth!,1976,jul,4,29.1976,29,Tlaxcala,0,.,196789,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,6154,202943,16,9,202968,234372,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-94,presid,oth!,1976,jul,4,30.1976,30,Veracruz,0,.,1245764,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,85321,1331085,4762,16032,1351879,1741527,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-95,presid,oth!,1976,jul,4,31.1976,31,Yucatán,0,.,325189,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,8413,333602,56,26114,359772,411829,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-96,presid,oth!,1976,jul,4,32.1976,32,Zacatecas,0,.,293084,pri,0,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3599,296683,1476,2826,300985,482703,pri,"Mau - Mexico Electoral, Banamex",.,1,1,1,no
-97,presid,oth!,1982,jul,4,1.1982,1,Aguascalientes,31570,pan,137647,pri,1879,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10155,182021,33,16967,199021,260868,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-98,presid,oth!,1982,jul,4,2.1982,2,Baja California,147092,pan,271899,pri,6436,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,42013,470950,346,50996,522292,635922,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-99,presid,oth!,1982,jul,4,3.1982,3,Baja California Sur,13858,pan,64573,pri,2336,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5864,87110,23,3617,90750,116364,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-100,presid,oth!,1982,jul,4,4.1982,4,Campeche,8052,pan,103193,pri,898,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2198,114571,29,9631,124231,168338,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-101,presid,oth!,1982,jul,4,5.1982,5,Coahuila,86155,pan,224753,pri,4770,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,12761,329874,292,4806,334972,681635,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-102,presid,oth!,1982,jul,4,6.1982,6,Colima,7126,pan,136139,pri,1331,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,5581,150444,19,3534,153997,170791,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-103,presid,oth!,1982,jul,4,7.1982,7,Chiapas,21043,pan,679429,pri,7745,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,23042,738122,762,15206,754090,923098,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-104,presid,oth!,1982,jul,4,8.1982,8,Chihuahua,153704,pan,362038,pri,13157,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,20625,552586,67,47626,600279,963883,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-105,presid,oth!,1982,jul,4,9.1982,9,Distrito Federal,892214,pan,1853279,pri,286661,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,478184,3546539,10779,260092,3817410,4779964,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-106,presid,oth!,1982,jul,4,10.1982,10,Durango,67159,pan,280606,pri,7619,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10498,369466,12,8053,377531,603027,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-107,presid,oth!,1982,jul,4,11.1982,11,Guanajuato,178468,pan,578412,pri,10755,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,85688,859423,76,29716,889215,1398807,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-108,presid,oth!,1982,jul,4,12.1982,12,Guerrero,22392,pan,422905,pri,20798,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,31884,502398,17,14926,517341,984325,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-109,presid,oth!,1982,jul,4,13.1982,13,Hidalgo,50641,pan,487739,pri,8876,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,27661,577324,0,107,577431,748930,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-110,presid,oth!,1982,jul,4,14.1982,14,Jalisco,359328,pan,813568,pri,89945,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,85716,1360422,112,76308,1436842,2031506,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-111,presid,oth!,1982,jul,4,15.1982,15,México,606665,pan,1496601,pri,137571,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,174628,2440414,851,180793,2622058,3102137,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-112,presid,oth!,1982,jul,4,16.1982,16,Michoacán,90201,pan,599459,pri,16774,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,55928,766612,87,29380,796079,1359175,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-113,presid,oth!,1982,jul,4,17.1982,17,Morelos,33673,pan,249769,pri,8587,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,31022,325377,44,12116,337537,392556,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-114,presid,oth!,1982,jul,4,18.1982,18,Nayarit,6883,pan,157242,pri,22577,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,7171,195008,48,10103,205159,332502,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-115,presid,oth!,1982,jul,4,19.1982,19,Nuevo León,213606,pan,633826,pri,4494,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,15553,872173,39,8653,880865,1155687,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-116,presid,oth!,1982,jul,4,20.1982,20,Oaxaca,46185,pan,638965,pri,20908,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,32187,752794,58,11057,763909,1131450,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-117,presid,oth!,1982,jul,4,21.1982,21,Puebla,135615,pan,1090647,pri,25668,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,41243,1299195,126,119393,1418714,1591940,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-118,presid,oth!,1982,jul,4,22.1982,22,Queretaro,40518,pan,197152,pri,3439,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,9056,251781,18,11222,263021,347054,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-119,presid,oth!,1982,jul,4,23.1982,23,Quintana Roo,3513,pan,87798,pri,896,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,2803,95229,15,1343,96587,108075,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-120,presid,oth!,1982,jul,4,24.1982,24,San Luis Potosí,41171,pan,411943,pri,3907,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,30486,489714,49,10321,500084,728011,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-121,presid,oth!,1982,jul,4,25.1982,25,Sinaloa,65035,pan,475275,pri,31947,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,22776,599772,48,15112,614932,864566,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-122,presid,oth!,1982,jul,4,26.1982,26,Sonora,113166,pan,422712,pri,6759,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,11090,554977,152,15335,570464,727705,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-123,presid,oth!,1982,jul,4,27.1982,27,Tabasco,11706,pan,309194,pri,2129,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,10004,333993,9,5080,339082,446381,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-124,presid,oth!,1982,jul,4,28.1982,28,Tamaulipas,6665,pan,464208,pri,8219,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,19232,543835,53,21960,565848,887181,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-125,presid,oth!,1982,jul,4,29.1982,29,Tlaxcala,21890,pan,187790,pri,3897,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,14057,228597,35,5758,234390,260973,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-126,presid,oth!,1982,jul,4,30.1982,30,Veracruz,69622,pan,1688845,pri,43769,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,174803,2022142,14246,44492,2080880,2517944,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-127,presid,oth!,1982,jul,4,31.1982,31,Yucatán,59275,pan,270002,pri,3322,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,3240,336329,4,1395,337728,511279,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-128,presid,oth!,1982,jul,4,32.1982,32,Zacatecas,39859,pan,347836,pri,6903,psum,.,.,.,.,.,.,.,.,.,.,.,.,.,.,7803,403593,25,8518,412136,544252,pri,"Mau - Mexico Electoral, Banamex",prd=psum,1,1,1,no
-129,presid,oth!,1988,jul,6,1.1988,1,Aguascalientes,47012,pan,82177,pri,4120,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,31166,164475,.,.,.,334920,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-130,presid,oth!,1988,jul,6,2.1988,2,Baja California,99757,pan,155744,pri,13296,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,154666,423463,.,.,.,817466,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-131,presid,oth!,1988,jul,6,3.1988,3,Baja California Sur,16463,pan,45684,pri,1369,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,21492,85008,.,.,.,150348,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-132,presid,oth!,1988,jul,6,4.1988,4,Campeche,13783,pan,82499,pri,1065,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,18066,115413,.,.,.,229954,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-133,presid,oth!,1988,jul,6,5.1988,5,Coahuila,40165,pan,130061,pri,4040,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,76370,250636,.,.,.,866211,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-134,presid,oth!,1988,jul,6,6.1988,6,Colima,14533,pan,46145,pri,1616,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,33440,95734,.,.,.,218028,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-135,presid,oth!,1988,jul,6,7.1988,7,Chiapas,22573,pan,580673,pri,9475,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,36470,649191,.,.,.,1189034,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-136,presid,oth!,1988,jul,6,8.1988,8,Chihuahua,197674,pan,285367,pri,4102,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,33240,520383,.,.,.,1295067,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-137,presid,oth!,1988,jul,6,9.1988,9,Distrito Federal,635974,pan,785035,pri,191707,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1238455,2851171,.,.,.,5095462,pri,"Mau - Mexico Electoral, Banamex",prd=pms; en partidos gano pri pero fdn sumo mucho mas,1,1,1,no
-138,presid,oth!,1988,jul,6,10.1988,10,Durango,60965,pan,191531,pri,13738,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,53237,319471,.,.,.,682290,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-139,presid,oth!,1988,jul,6,11.1988,11,Guanajuato,212948,pan,317477,pri,8813,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,177113,716351,.,.,.,1572760,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-140,presid,oth!,1988,jul,6,12.1988,12,Guerrero,12649,pan,312854,pri,14991,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,177413,517907,.,.,.,1200804,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-141,presid,oth!,1988,jul,6,13.1988,13,Hidalgo,24450,pan,270465,pri,16199,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,106881,417995,.,.,.,812252,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-142,presid,oth!,1988,jul,6,14.1988,14,Jalisco,364729,pan,501863,pri,28552,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,284278,1179422,.,.,.,2514777,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-143,presid,oth!,1988,jul,6,15.1988,15,México,368537,pan,692065,pri,182836,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,1031195,2274633,.,.,.,4190232,pri,"Mau - Mexico Electoral, Banamex",prd=pms; en partidos gano pri pero fdn sumo mucho mas,1,1,1,no
-144,presid,oth!,1988,jul,6,16.1988,16,Michoacán,65153,pan,143213,pri,12094,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,384195,604655,.,.,.,1549843,otr,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-145,presid,oth!,1988,jul,6,17.1988,17,Morelos,20426,pan,93314,pri,8555,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,137068,259363,.,.,.,583597,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-146,presid,oth!,1988,jul,6,18.1988,18,Nayarit,11539,pan,115299,pri,11549,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,65260,203647,.,.,.,405300,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-147,presid,oth!,1988,jul,6,19.1988,19,Nuevo León,172576,pan,540568,pri,3927,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,32266,749337,.,.,.,1625718,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-148,presid,oth!,1988,jul,6,20.1988,20,Oaxaca,30313,pan,390916,pri,16605,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,166020,603854,.,.,.,1364539,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-149,presid,oth!,1988,jul,6,21.1988,21,Puebla,107569,pan,825261,pri,27601,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,175737,1136168,.,.,.,1693380,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-150,presid,oth!,1988,jul,6,22.1988,22,Queretaro,38082,pan,136909,pri,2416,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,42666,220073,.,.,.,409408,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-151,presid,oth!,1988,jul,6,23.1988,23,Quintana Roo,9256,pan,61521,pri,1215,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,22125,94117,.,.,.,188191,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-152,presid,oth!,1988,jul,6,24.1988,24,San Luis Potosí,80106,pan,259776,pri,2530,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,37443,379855,.,.,.,868279,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-153,presid,oth!,1988,jul,6,25.1988,25,Sinaloa,153806,pan,319207,pri,8314,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,51944,533271,.,.,.,1113969,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-154,presid,oth!,1988,jul,6,26.1988,26,Sonora,83592,pan,278938,pri,4886,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,38205,405621,.,.,.,899250,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-155,presid,oth!,1988,jul,6,27.1988,27,Tabasco,14574,pan,198615,pri,5196,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,48961,267346,.,.,.,634687,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-156,presid,oth!,1988,jul,6,28.1988,28,Tamaulipas,46101,pan,276263,pri,6323,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,134928,463615,.,.,.,1120265,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-157,presid,oth!,1988,jul,6,29.1988,29,Tlaxcala,10740,pan,110169,pri,5772,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,56654,183335,.,.,.,331907,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-158,presid,oth!,1988,jul,6,30.1988,30,Veracruz,80017,pan,877460,pri,30308,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,449795,1437580,.,.,.,3045721,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-159,presid,oth!,1988,jul,6,31.1988,31,Yucatán,94472,pan,206500,pri,889,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,4448,306309,.,.,.,602041,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-160,presid,oth!,1988,jul,6,32.1988,32,Zacatecas,30584,pan,192670,pri,13363,fdn,.,.,.,.,.,.,.,.,.,.,.,.,.,.,51543,288160,.,.,.,602780,pri,"Mau - Mexico Electoral, Banamex",prd=pms,1,1,1,no
-161,presid,,1994,ago,21,1.1994,1,Aguascalientes,124484,pan,157736,pri,29236,prd,1271,pps,6610,pfcrn,1320,parm,1048,uno-pdm,6518,pt,3794,pvem,.,.,0,332017,136,7463,339616,420935,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-162,presid,,1994,ago,21,2.1994,2,Baja California,297565,pan,402332,pri,68669,prd,3088,pps,3399,pfcrn,2044,parm,1310,uno-pdm,15953,pt,7853,pvem,.,.,0,802213,1882,18393,822488,1038561,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-163,presid,,1994,ago,21,3.1994,3,Baja California Sur,46907,pan,80097,pri,9463,prd,324,pps,564,pfcrn,386,parm,242,uno-pdm,3905,pt,786,pvem,.,.,0,142674,35,2580,145289,182596,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-164,presid,,1994,ago,21,4.1994,4,Campeche,41910,pan,123225,pri,47640,prd,1051,pps,1139,pfcrn,3241,parm,384,uno-pdm,2935,pt,720,pvem,.,.,0,222245,433,6328,229006,296117,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-165,presid,,1994,ago,21,5.1994,5,Coahuila,226621,pan,359168,pri,97121,prd,2355,pps,14760,pfcrn,5088,parm,816,uno-pdm,17954,pt,3157,pvem,.,.,0,727040,420,15582,743042,1101180,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-166,presid,,1994,ago,21,6.1994,6,Colima,60338,pan,102903,pri,24157,prd,627,pps,3448,pfcrn,424,parm,1247,uno-pdm,2882,pt,1316,pvem,.,.,0,197342,548,5354,203244,254837,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-167,presid,,1994,ago,21,7.1994,7,Chiapas,126266,pan,493135,pri,347981,prd,6183,pps,17404,pfcrn,7255,parm,1348,uno-pdm,19381,pt,4274,pvem,.,.,0,1023227,3495,63987,1090709,1625874,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-168,presid,,1994,ago,21,8.1994,8,Chihuahua,308590,pan,660874,pri,68251,prd,3300,pps,3615,pfcrn,2702,parm,1424,uno-pdm,39901,pt,5102,pvem,.,.,0,1093759,640,28751,1123150,1476801,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-169,presid,,1994,ago,21,9.1994,9,Distrito Federal,1172438,pan,1873059,pri,902199,prd,19084,pps,37370,pfcrn,15402,parm,12246,uno-pdm,185903,pt,91839,pvem,.,.,0,4309540,7157,98706,4415403,5362764,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-170,presid,,1994,ago,21,10.1994,10,Durango,141818,pan,266837,pri,49793,prd,2181,pps,2712,pfcrn,1950,parm,545,uno-pdm,43351,pt,2466,pvem,.,.,0,511653,602,13833,526088,707682,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-171,presid,,1994,ago,21,11.1994,11,Guanajuato,513865,pan,945088,pri,149268,prd,6691,pps,13838,pfcrn,10031,parm,14685,uno-pdm,32763,pt,10906,pvem,.,.,0,1697135,2873,57808,1757816,2099320,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-172,presid,,1994,ago,21,12.1994,12,Guerrero,74198,pan,385590,pri,266818,prd,4300,pps,13485,pfcrn,7037,parm,2634,uno-pdm,9168,pt,2951,pvem,.,.,0,766181,1057,25973,793211,1188918,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-173,presid,,1994,ago,21,13.1994,13,Hidalgo,134171,pan,450800,pri,115693,prd,3442,pps,8668,pfcrn,7253,parm,1107,uno-pdm,14988,pt,4992,pvem,.,.,0,741114,794,29754,771662,1005722,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-174,presid,,1994,ago,21,14.1994,14,Jalisco,1008234,pan,1050815,pri,166226,prd,9528,pps,17464,pfcrn,11566,parm,11289,uno-pdm,47854,pt,20023,pvem,.,.,0,2342999,3181,59081,2405261,2885694,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-175,presid,,1994,ago,21,15.1994,15,México,1179422,pan,2143122,pri,835135,prd,26053,pps,45385,pfcrn,22075,parm,14193,uno-pdm,150186,pt,82171,pvem,.,.,0,4497742,4481,114214,4616437,5846382,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-176,presid,,1994,ago,21,16.1994,16,Michoacán,212921,pan,612040,pri,493236,prd,4293,pps,8542,pfcrn,8584,parm,6160,uno-pdm,17729,pt,7606,pvem,.,.,0,1371111,1130,36124,1408365,1825105,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-177,presid,,1994,ago,21,17.1994,17,Morelos,128942,pan,282821,pri,109560,prd,2073,pps,5845,pfcrn,3249,parm,1305,uno-pdm,14399,pt,6509,pvem,.,.,0,554703,1075,14063,569841,749176,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-178,presid,,1994,ago,21,18.1994,18,Nayarit,59925,pan,179411,pri,50717,prd,2394,pps,1758,pfcrn,1661,parm,310,uno-pdm,8862,pt,1243,pvem,.,.,0,306281,775,9031,316087,459663,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-179,presid,,1994,ago,21,19.1994,19,Nuevo León,596820,pan,723629,pri,44413,prd,2409,pps,2917,pfcrn,2874,parm,2144,uno-pdm,89387,pt,5860,pvem,.,.,0,1470453,2193,31091,1503737,1899908,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-180,presid,,1994,ago,21,20.1994,20,Oaxaca,131225,pan,509776,pri,276758,prd,10816,pps,9665,pfcrn,12803,parm,1445,uno-pdm,17221,pt,5044,pvem,.,.,0,974753,891,44163,1019807,1429854,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-181,presid,,1994,ago,21,21.1994,21,Puebla,399942,pan,787493,pri,216200,prd,9493,pps,11750,pfcrn,10850,parm,2885,uno-pdm,37141,pt,13263,pvem,.,.,0,1489017,1196,61865,1552078,2096193,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-182,presid,,1994,ago,21,22.1994,22,Querétaro,149540,pan,275788,pri,26969,prd,2127,pps,3122,pfcrn,1572,parm,1554,uno-pdm,11077,pt,2937,pvem,.,.,0,474686,231,14419,489336,589907,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-183,presid,,1994,ago,21,23.1994,23,Quintana Roo,62006,pan,112546,pri,26301,prd,1026,pps,1550,pfcrn,902,parm,174,uno-pdm,2665,pt,1304,pvem,.,.,0,208474,80,5522,214076,301248,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-184,presid,,1994,ago,21,24.1994,24,San Luis Potosí,196351,pan,440601,pri,73523,prd,2537,pps,2980,pfcrn,3701,parm,3192,uno-pdm,19705,pt,4546,pvem,.,.,0,747136,996,26783,774915,1039977,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-185,presid,,1994,ago,21,25.1994,25,Sinaloa,285207,pan,474882,pri,129025,prd,4098,pps,2973,pfcrn,4383,parm,580,uno-pdm,12059,pt,3982,pvem,.,.,0,917189,835,20680,938704,1205235,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-186,presid,,1994,ago,21,26.1994,26,Sonora,330272,pan,361835,pri,111978,prd,1741,pps,2698,pfcrn,1646,parm,961,uno-pdm,33118,pt,2778,pvem,.,.,0,847027,1066,17745,865838,1120700,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-187,presid,,1994,ago,21,27.1994,27,Tabasco,44763,pan,335851,pri,196100,prd,1563,pps,3158,pfcrn,1645,parm,399,uno-pdm,5832,pt,1583,pvem,.,.,0,590894,293,22427,613614,824166,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-188,presid,,1994,ago,21,28.1994,28,Tamaulipas,275989,pan,481595,pri,192900,prd,3301,pps,5307,pfcrn,20502,parm,1604,uno-pdm,23916,pt,5155,pvem,.,.,0,1010269,1357,30058,1041684,1330814,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-189,presid,,1994,ago,21,29.1994,29,Tlaxcala,84582,pan,186126,pri,54029,prd,2138,pps,2120,pfcrn,1819,parm,1887,uno-pdm,7799,pt,2862,pvem,.,.,0,343362,114,9681,353157,436723,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-190,presid,,1994,ago,21,30.1994,30,Veracruz,419109,pan,1360540,pri,612354,prd,23508,pps,40825,pfcrn,16127,parm,7810,uno-pdm,50492,pt,16342,pvem,.,.,0,2547107,3115,93331,2643553,3522994,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-191,presid,,1994,ago,21,31.1994,31,Yucatán,195986,pan,251699,pri,15009,prd,867,pps,1127,pfcrn,799,parm,330,uno-pdm,3583,pt,2102,pvem,.,.,0,471502,84,10429,482015,729746,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-192,presid,,1994,ago,21,32.1994,32,Zacatecas,116434,pan,310237,pri,45412,prd,2732,pps,1703,pfcrn,1904,parm,677,uno-pdm,21494,pt,1847,pvem,.,.,0,502440,550,13072,516062,674265,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,1,1,1,no
-193,presid,,2000,jul,2,1.2000,1,Aguascalientes,202335,pan-pvem,127134,pri,26264,prd-pt-conve-psn-pas,2202,pcd,1389,parm,9467,demsoc,.,.,.,.,.,.,.,.,0,368791,83,6291,375165,562390,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8953494378,1,0.8829759445,con df t-3
-194,presid,,2000,jul,2,2.2000,2,Baja California,429194,pan-pvem,319477,pri,77340,prd-pt-conve-psn-pas,3470,pcd,3080,parm,14562,demsoc,.,.,.,.,.,.,.,.,0,847123,507,14965,862595,1498939,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9156121958,1,0.8846793734,con df t-3
-195,presid,,2000,jul,2,3.2000,3,Baja California Sur,60834,pan-pvem,56230,pri,45229,prd-pt-conve-psn-pas,460,pcd,364,parm,2107,demsoc,.,.,.,.,.,.,.,.,0,165224,17,2804,168045,250155,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8989119277,1,0.4343987449,con df t-3
-196,presid,,2000,jul,2,4.2000,4,Campeche,104498,pan-pvem,106347,pri,35090,prd-pt-conve-psn-pas,1406,pcd,1247,parm,2485,demsoc,.,.,.,.,.,.,.,.,0,251073,559,9309,260941,384547,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9026784761,1,0.8506502303,con df t-3
-197,presid,,2000,jul,2,5.2000,5,Coahuila,398800,pan-pvem,311480,pri,77393,prd-pt-conve-psn-pas,2111,pcd,1880,parm,10392,demsoc,.,.,.,.,.,.,.,.,0,802056,1454,12464,815974,1392564,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9400803077,1,0.8724101192,con df t-3
-198,presid,,2000,jul,2,6.2000,6,Colima,106445,pan-pvem,81099,pri,23313,prd-pt-conve-psn-pas,1028,pcd,542,parm,3159,demsoc,.,.,.,.,.,.,.,.,0,215586,39,4377,220002,331661,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9706237738,1,0.961542311,con df t-3
-199,presid,,2000,jul,2,7.2000,7,Chiapas,288204,pan-pvem,469392,pri,272182,prd-pt-conve-psn-pas,4659,pcd,4063,parm,5340,demsoc,.,.,.,.,.,.,.,.,0,1043840,1056,44551,1089447,2087585,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9126278246,1,0.8997795891,con df t-3
-200,presid,,2000,jul,2,8.2000,8,Chihuahua,549177,pan-pvem,460931,pri,76810,prd-pt-conve-psn-pas,4487,pcd,3166,parm,11569,demsoc,.,.,.,.,.,.,.,.,0,1106140,609,21350,1128099,1938388,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.936075589,1,0.8131031161,con df t-3
-201,presid,,2000,jul,2,9.2000,9,Distrito Federal,1928035,pan-pvem,1060227,pri,1146131,prd-pt-conve-psn-pas,36383,pcd,18843,parm,149312,demsoc,.,.,.,.,.,.,.,.,0,4338931,2009,75669,4416609,6256698,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.6768063573,1,0.9651759478,con df t-3
-202,presid,,2000,jul,2,10.2000,10,Durango,211361,pan-pvem,222892,pri,50592,prd-pt-conve-psn-pas,1579,pcd,1469,parm,6144,demsoc,.,.,.,.,.,.,.,.,0,494037,859,9294,504190,868791,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9356765849,1,0.3125311045,con df t-3
-203,presid,,2000,jul,2,11.2000,11,Guanajuato,1128780,pan-pvem,517815,pri,121489,prd-pt-conve-psn-pas,10800,pcd,8473,parm,18248,demsoc,.,.,.,.,.,.,.,.,0,1805605,2873,49039,1857517,2784508,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9221910382,1,0.8722344221,con df t-3
-204,presid,,2000,jul,2,12.2000,12,Guerrero,174962,pan-pvem,402091,pri,332091,prd-pt-conve-psn-pas,2913,pcd,3003,parm,6179,demsoc,.,.,.,.,.,.,.,.,0,921239,954,20180,942373,1740426,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.7877467055,1,0.9626960905,con df t-3
-205,presid,,2000,jul,2,13.2000,13,Hidalgo,282864,pan-pvem,355565,pri,136861,prd-pt-conve-psn-pas,5034,pcd,4078,parm,12319,demsoc,.,.,.,.,.,.,.,.,0,796721,758,19997,817476,1322845,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8599663263,1,0.9081447011,con df t-3
-206,presid,,2000,jul,2,14.2000,14,Jalisco,1392535,pan-pvem,941962,pri,163269,prd-pt-conve-psn-pas,17567,pcd,11110,parm,45494,demsoc,.,.,.,.,.,.,.,.,0,2571937,3287,48736,2623960,3846656,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9136240991,1,0.9029985807,con df t-3
-207,presid,,2000,jul,2,15.2000,15,México,2239750,pan-pvem,1637714,pri,961876,prd-pt-conve-psn-pas,40733,pcd,27203,parm,121137,demsoc,.,.,.,.,.,.,.,.,0,5028413,3416,92743,5124572,7547729,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.7511880236,1,0.9576805036,con df t-3
-208,presid,,2000,jul,2,16.2000,16,Michoacán,419188,pan-pvem,441871,pri,543804,prd-pt-conve-psn-pas,7444,pcd,6404,parm,13058,demsoc,.,.,.,.,.,.,.,.,0,1431769,2060,30448,1464277,2408934,prd,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.881821426,1,0.9686208689,con df t-3
-209,presid,,2000,jul,2,17.2000,17,Morelos,290639,pan-pvem,193861,pri,124368,prd-pt-conve-psn-pas,2916,pcd,3010,parm,12539,demsoc,.,.,.,.,.,.,.,.,0,627333,136,12296,639765,979260,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.7982116688,1,0.9545720192,con df t-3
-210,presid,,2000,jul,2,18.2000,18,Nayarit,107417,pan-pvem,173479,pri,63121,prd-pt-conve-psn-pas,1175,pcd,1024,parm,3092,demsoc,.,.,.,.,.,.,.,.,0,349308,351,7043,356702,568885,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9396570659,1,0.9082256751,con df t-3
-211,presid,,2000,jul,2,19.2000,19,Nuevo León,760093,pan-pvem,615907,pri,96637,prd-pt-conve-psn-pas,7478,pcd,2658,parm,20448,demsoc,.,.,.,.,.,.,.,.,0,1503221,1519,27201,1531941,2413486,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9784377567,1,0.3380352947,con df t-3
-212,presid,,2000,jul,2,20.2000,20,Oaxaca,301195,pan-pvem,486496,pri,282587,prd-pt-conve-psn-pas,8372,pcd,7305,parm,11074,demsoc,.,.,.,.,.,.,.,.,0,1097029,1851,39616,1138496,1938597,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8621457575,1,0.9457438237,con df t-3
-213,presid,,2000,jul,2,21.2000,21,Puebla,732435,pan-pvem,698974,pri,208688,prd-pt-conve-psn-pas,8609,pcd,7849,parm,20170,demsoc,.,.,.,.,.,.,.,.,0,1676725,1142,44305,1722172,2753111,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8724884728,1,0.9125052377,con df t-3
-214,presid,,2000,jul,2,22.2000,22,Querétaro,290977,pan-pvem,192622,pri,39629,prd-pt-conve-psn-pas,3768,pcd,8670,parm,10585,demsoc,.,.,.,.,.,.,.,.,0,546251,170,13849,560270,800359,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9459633367,1,0.8115488254,con df t-3
-215,presid,,2000,jul,2,23.2000,23,Quintana Roo,132383,pan-pvem,94202,pri,50487,prd-pt-conve-psn-pas,916,pcd,729,parm,2399,demsoc,.,.,.,.,.,.,.,.,0,281116,70,5216,286402,461417,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8998723036,1,0.9107807546,con df t-3
-216,presid,,2000,jul,2,24.2000,24,San Luis Potosí,393997,pan-pvem,324234,pri,72599,prd-pt-conve-psn-pas,3306,pcd,2287,parm,11073,demsoc,.,.,.,.,.,.,.,.,0,807496,407,22673,830576,1315822,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.954641517,1,0.7488792372,con df t-3
-217,presid,,2000,jul,2,25.2000,25,Sinaloa,230777,pan-pvem,621369,pri,90488,prd-pt-conve-psn-pas,2189,pcd,1675,parm,7205,demsoc,.,.,.,.,.,.,.,.,0,953703,1290,15920,970913,1509567,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9499397306,1,0.9366234981,con df t-3
-218,presid,,2000,jul,2,26.2000,26,Sonora,447496,pan-pvem,296267,pri,114580,prd-pt-conve-psn-pas,1672,pcd,1325,parm,6426,demsoc,.,.,.,.,.,.,.,.,0,867766,94,13269,881129,1378741,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9740313504,1,0.9343534892,con df t-3
-219,presid,,2000,jul,2,27.2000,27,Tabasco,174840,pan-pvem,269519,pri,213983,prd-pt-conve-psn-pas,2599,pcd,1732,parm,5817,demsoc,.,.,.,.,.,.,.,.,0,668490,655,14036,683181,1089295,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8169572108,1,0.9716936166,con df t-3
-220,presid,,2000,jul,2,28.2000,28,Tamaulipas,521486,pan-pvem,445737,pri,91426,prd-pt-conve-psn-pas,3210,pcd,6932,parm,9387,demsoc,.,.,.,.,.,.,.,.,0,1078178,1157,19659,1098994,1748366,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9329049874,1,0.8695130727,con df t-3
-221,presid,,2000,jul,2,29.2000,29,Tlaxcala,123880,pan-pvem,127163,pri,82073,prd-pt-conve-psn-pas,2508,pcd,1450,parm,5185,demsoc,.,.,.,.,.,.,.,.,0,342259,53,6639,348951,562612,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.8222584166,1,0.8132436191,con df t-3
-222,presid,,2000,jul,2,30.2000,30,Veracruz,1066719,pan-pvem,1008933,pri,491791,prd-pt-conve-psn-pas,11343,pcd,10956,parm,25474,demsoc,.,.,.,.,.,.,.,.,0,2615216,985,58630,2674831,4232824,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9078620271,1,0.899879846,con df t-3
-223,presid,,2000,jul,2,31.2000,31,Yucatán,328503,pan-pvem,321392,pri,27214,prd-pt-conve-psn-pas,1344,pcd,987,parm,4258,demsoc,.,.,.,.,.,.,.,.,0,683698,602,13127,697427,969134,pan,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9593112962,1,0.8914534783,con df t-3
-224,presid,,2000,jul,2,32.2000,32,Zacatecas,169837,pan-pvem,197336,pri,117375,prd-pt-conve-psn-pas,2908,pcd,1993,parm,6277,demsoc,.,.,.,.,.,.,.,.,0,495726,439,12461,508626,838445,pri,Mau - Atlas Electoral Feleral de Mexico 1991-2000 IFE,.,0.9336251417,1,0.6850703763,con df t-3
-225,presid,,2006,jul,2,1.2006,1,Aguascalientes,193588,pan,97513,pri-pvem,89920,prd-pt-conve,5597,panal,16275,pasd,.,.,.,.,.,.,.,.,.,.,0,402893,3335,7669,413897,703700,pan,ife antes trife,.,1,0.8756145663,0.6258972555,dipfed t-3
-226,presid,,2006,jul,2,2.2006,2,Baja California,450186,pan,203233,pri-pvem,224275,prd-pt-conve,13522,panal,35917,pasd,.,.,.,.,.,.,.,.,.,.,0,927133,6488,17099,950720,2024311,pan,ife antes trife,.,1,0.7619393468,0.6499869007,dipfed t-3
-227,presid,,2006,jul,2,3.2006,3,Baja California Sur,62127,pan,29874,pri-pvem,77875,prd-pt-conve,1475,panal,5470,pasd,.,.,.,.,.,.,.,.,.,.,0,176821,1225,2801,180847,329952,prd-pt-conve,ife antes trife,.,1,0.9224267405,0.8859289223,"pri: df t-6, prd: df t-3"
-228,presid,,2006,jul,2,4.2006,4,Campeche,99526,pan,87412,pri-pvem,101192,prd-pt-conve,8470,panal,4756,pasd,.,.,.,.,.,.,.,.,.,.,0,301356,1652,9514,312522,483244,prd-pt-conve,ife antes trife,.,1,0.9321057944,0.1596828131,"pri: df t-6, prd: df t-3"
-229,presid,,2006,jul,2,5.2006,5,Coahuila,400894,pan,245960,pri-pvem,225117,prd-pt-conve,8412,panal,26450,pasd,.,.,.,.,.,.,.,.,.,.,0,906833,8192,14919,929944,1707904,pan,ife antes trife,.,1,0.8752648352,0.5916460626,dipfed t-3
-230,presid,,2006,jul,2,6.2006,6,Colima,107880,pan,76586,pri-pvem,61434,prd-pt-conve,1567,panal,5284,pasd,.,.,.,.,.,.,.,.,.,.,0,252751,784,4591,258126,410285,pan,ife antes trife,.,1,0.9502525253,0.8455082375,dipfed t-3
-231,presid,,2006,jul,2,7.2006,7,Chiapas,215358,pan,427351,pri-pvem,551749,prd-pt-conve,7378,panal,15065,pasd,.,.,.,.,.,.,.,.,.,.,0,1216901,8395,47327,1272623,2594044,prd-pt-conve,ife antes trife,.,1,0.8278163343,0.7933529668,dipfed t-3
-232,presid,,2006,jul,2,8.2006,8,Chihuahua,523914,pan,341916,pri-pvem,212069,prd-pt-conve,20375,panal,31414,pasd,.,.,.,.,.,.,.,.,.,.,0,1129688,6540,25405,1161633,2382460,pan,ife antes trife,.,1,0.9319910482,0.6677528122,"pri: df t-6, prd: df t-3"
-233,presid,,2006,jul,2,9.2006,9,Distrito Federal,1325474,pan,413644,pri-pvem,2813112,prd-pt-conve,27152,panal,175517,pasd,.,.,.,.,.,.,.,.,.,.,0,4754899,14833,69553,4839285,7111118,prd-pt-conve,ife antes trife,.,1,0.5838978121,0.9360876205,dipfed t-3
-234,presid,,2006,jul,2,10.2006,10,Durango,255229,pan,153990,pri-pvem,128881,prd-pt-conve,5769,panal,11188,pasd,.,.,.,.,.,.,.,.,.,.,0,555057,6113,10873,572043,1052052,pan,ife antes trife,.,1,0.942321715,0.3399906455,dipfed t-3
-235,presid,,2006,jul,2,11.2006,11,Guanajuato,1155403,pan,368789,pri-pvem,301463,prd-pt-conve,18611,panal,49753,pasd,.,.,.,.,.,.,.,.,.,.,0,1894019,17136,49896,1961051,3425081,pan,ife antes trife,.,1,0.8751113058,0.7051925399,"pri: df t-6, prd: df t-3"
-236,presid,,2006,jul,2,12.2006,12,Guerrero,160253,pan,263055,pri-pvem,510217,prd-pt-conve,10493,panal,16809,pasd,.,.,.,.,.,.,.,.,.,.,0,960827,7132,24172,992131,2135213,prd-pt-conve,ife antes trife,.,1,0.9302002505,0.8503626299,dipfed t-3
-237,presid,,2006,jul,2,13.2006,13,Hidalgo,251772,pan,235926,pri-pvem,385750,prd-pt-conve,15360,panal,25702,pasd,.,.,.,.,.,.,.,.,.,.,0,914510,6444,24636,945590,1621727,prd-pt-conve,ife antes trife,.,1,0.9049937104,0.7931716466,dipfed t-3
-238,presid,,2006,jul,2,14.2006,14,Jalisco,1435334,pan,705925,pri-pvem,559266,prd-pt-conve,37739,panal,93836,pasd,.,.,.,.,.,.,.,.,.,.,0,2832100,16537,61729,2910366,4711399,pan,ife antes trife,.,1,0.8247102574,0.775473064,dipfed t-3
-239,presid,,2006,jul,2,15.2006,15,México,1771515,pan,1033110,pri-pvem,2469093,prd-pt-conve,61494,panal,215857,pasd,.,.,.,.,.,.,.,.,.,.,0,5551069,48075,101888,5701032,9155396,prd-pt-conve,ife antes trife,.,1,0.7669139524,0.8477096887,"pri: df t-6, prd: df t-3"
-240,presid,,2006,jul,2,16.2006,16,Michoacán,515600,pan,283157,pri-pvem,615535,prd-pt-conve,8229,panal,29951,pasd,.,.,.,.,.,.,.,.,.,.,0,1452472,10780,31845,1495097,2952114,prd-pt-conve,ife antes trife,.,1,0.7869051167,0.9342139806,dipfed t-3
-241,presid,,2006,jul,2,17.2006,17,Morelos,226340,pan,111118,pri-pvem,312815,prd-pt-conve,12129,panal,24736,pasd,.,.,.,.,.,.,.,.,.,.,0,687138,6901,15062,709101,1176598,prd-pt-conve,ife antes trife,.,1,0.7656887002,0.7457081857,dipfed t-3
-242,presid,,2006,jul,2,18.2006,18,Nayarit,69097,pan,123284,pri-pvem,152999,prd-pt-conve,3840,panal,7730,pasd,.,.,.,.,.,.,.,.,.,.,0,356950,1919,6978,365847,673987,prd-pt-conve,ife antes trife,.,1,0.9241076585,0.5571516181,dipfed t-3
-243,presid,,2006,jul,2,19.2006,19,Nuevo León,865006,pan,488402,pri-pvem,282384,prd-pt-conve,31112,panal,51760,pasd,.,.,.,.,.,.,.,.,.,.,0,1718664,11343,39211,1769218,2947532,pan,ife antes trife,.,1,0.9752980814,0.2427099338,"pri: df t-6, prd: df t-3"
-244,presid,,2006,jul,2,20.2006,20,Oaxaca,226304,pan,428026,pri-pvem,620062,prd-pt-conve,5620,panal,19482,pasd,.,.,.,.,.,.,.,.,.,.,0,1299494,7672,42017,1349183,2322949,prd-pt-conve,ife antes trife,.,1,0.9074360535,0.6871327738,dipfed t-3
-245,presid,,2006,jul,2,21.2006,21,Puebla,743831,pan,460183,pri-pvem,639659,prd-pt-conve,20418,panal,50234,pasd,.,.,.,.,.,.,.,.,.,.,0,1914325,16227,53614,1984166,3436519,pan,ife antes trife,.,1,0.8818594132,0.6845788748,dipfed t-3
-246,presid,,2006,jul,2,22.2006,22,Querétaro,322975,pan,133188,pri-pvem,160383,prd-pt-conve,6028,panal,16536,pasd,.,.,.,.,.,.,.,.,.,.,0,639110,5823,15451,660384,1033114,pan,ife antes trife,.,1,0.928505814,0.5932988003,"pri: df t-6, prd: df t-3"
-247,presid,,2006,jul,2,23.2006,23,Quintana Roo,111485,pan,105086,pri-pvem,147839,prd-pt-conve,2768,panal,8801,pasd,.,.,.,.,.,.,.,.,.,.,0,375979,2729,7014,385722,675884,prd-pt-conve,ife antes trife,.,1,0.7438659043,0.4293215339,dipfed t-3
-248,presid,,2006,jul,2,24.2006,24,San Luis Potosí,462329,pan,207602,pri-pvem,204983,prd-pt-conve,8360,panal,23648,pasd,.,.,.,.,.,.,.,.,.,.,0,906922,7470,37332,951724,1592136,pan,ife antes trife,.,1,0.9566298929,0.6623150673,"pri: df t-6, prd: df t-3"
-249,presid,,2006,jul,2,25.2006,25,Sinaloa,363461,pan,263553,pri-pvem,301709,prd-pt-conve,6717,panal,20620,pasd,.,.,.,.,.,.,.,.,.,.,0,956060,5397,19227,980684,1732096,pan,ife antes trife,.,1,0.9176652397,0.8097004507,dipfed t-3
-250,presid,,2006,jul,2,26.2006,26,Sonora,468288,pan,175365,pri-pvem,240114,prd-pt-conve,6914,panal,23187,pasd,.,.,.,.,.,.,.,.,.,.,0,913868,3724,16735,934327,1669403,pan,ife antes trife,.,1,0.9711160535,0.7992543368,"pri: df t-6, prd: df t-3"
-251,presid,,2006,jul,2,27.2006,27,Tabasco,31975,pan,344526,pri-pvem,512743,prd-pt-conve,1906,panal,4261,pasd,.,.,.,.,.,.,.,.,.,.,0,895411,1582,14120,911113,1335454,prd-pt-conve,ife antes trife,.,1,0.9377801286,0.9420798711,dipfed t-3
-252,presid,,2006,jul,2,28.2006,28,Tamaulipas,506177,pan,317849,pri-pvem,324491,prd-pt-conve,12424,panal,25025,pasd,.,.,.,.,.,.,.,.,.,.,0,1185966,15853,24103,1225922,2225129,pan,ife antes trife,.,1,0.9347690583,0.6034220495,dipfed t-3
-253,presid,,2006,jul,2,29.2006,29,Tlaxcala,140128,pan,59672,pri-pvem,180487,prd-pt-conve,3426,panal,11130,pasd,.,.,.,.,.,.,.,.,.,.,0,394843,6504,8883,410230,704648,prd-pt-conve,ife antes trife,.,1,0.8564764314,0.816988659,dipfed t-3
-254,presid,,2006,jul,2,30.2006,30,Veracruz,1006676,pan,727638,pri-pvem,1036494,prd-pt-conve,17777,panal,55971,pasd,.,.,.,.,.,.,.,.,.,.,0,2844556,25396,72412,2942364,4875677,prd-pt-conve,ife antes trife,.,1,0.9145794073,0.5690606364,dipfed t-3
-255,presid,,2006,jul,2,31.2006,31,Yucatán,364353,pan,260116,pri-pvem,125152,prd-pt-conve,4504,panal,12962,pasd,.,.,.,.,.,.,.,.,.,.,0,767087,6784,15284,789155,1178719,pan,ife antes trife,.,1,0.9707541558,0.8078150154,dipfed t-3
-256,presid,,2006,jul,2,32.2006,32,Zacatecas,167806,pan,128392,pri-pvem,187088,prd-pt-conve,6218,panal,13523,pasd,.,.,.,.,.,.,.,.,.,.,0,503027,9004,13244,525275,994528,prd-pt-conve,ife antes trife,.,1,0.8980557488,0.8728076267,dipfed t-3
-257,presid,,2012,jul,1,1.2012,1,Aguascalientes,150231,pan,189027,pri-pvem,100958,prd-pt-conve,33432,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,473648,589,13049,487286,808064,pri-pvem,Prep 98.95%,.,1,.,.,.
-258,presid,,2012,jul,1,2.2012,2,Baja California,328116,pan,446192,pri-pvem,375803,prd-pt-conve,33823,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1183934,903,21265,1206102,2251645,pri-pvem,Prep 98.95%,.,1,.,.,.
-259,presid,,2012,jul,1,3.2012,3,Baja California Sur,73985,pan,103396,pri-pvem,62104,prd-pt-conve,4890,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,244375,104,4648,249127,422704,pri-pvem,Prep 98.95%,.,1,.,.,.
-260,presid,,2012,jul,1,4.2012,4,Campeche,98204,pan,136036,pri-pvem,94292,prd-pt-conve,9048,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,337580,177,9203,346960,515852,pri-pvem,Prep 98.95%,.,1,.,.,.
-261,presid,,2012,jul,1,5.2012,5,Coahuila,418386,pan,453044,pri-pvem,227287,prd-pt-conve,27342,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1126059,754,21382,1148195,1849664,pri-pvem,Prep 98.95%,.,1,.,.,.
-262,presid,,2012,jul,1,6.2012,6,Colima,99883,pan,122315,pri-pvem,67087,prd-pt-conve,4824,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,294109,105,6029,300243,467058,pri-pvem,Prep 98.95%,.,1,.,.,.
-263,presid,,2012,jul,1,7.2012,7,Chiapas,319537,pan,910478,pri-pvem,619677,prd-pt-conve,47078,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1896770,957,84028,1981755,2947408,pri-pvem,Prep 98.95%,.,1,.,.,.
-264,presid,,2012,jul,1,8.2012,8,Chihuahua,309399,pan,566705,pri-pvem,285176,prd-pt-conve,45843,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1207123,1786,30425,1239334,2324637,pri-pvem,Prep 98.95%,.,1,.,.,.
-265,presid,,2012,jul,1,9.2012,9,Distrito Federal,836026,pan,1244091,pri-pvem,2532981,prd-pt-conve,86894,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,4699992,4171,89471,4793634,7146401,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-266,presid,,2012,jul,1,10.2012,10,Durango,176206,pan,279020,pri-pvem,133710,prd-pt-conve,14251,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,603187,298,11473,614958,1024689,pri-pvem,Prep 98.95%,.,1,.,.,.
-267,presid,,2012,jul,1,11.2012,11,Guanajuato,935197,pan,920008,pri-pvem,295477,prd-pt-conve,62249,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,2212931,1486,66490,2280907,3809386,pan,Prep 98.95%,.,1,.,.,.
-268,presid,,2012,jul,1,12.2012,12,Guerrero,147620,pan,511807,pri-pvem,632564,prd-pt-conve,19623,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1311614,735,42414,1354763,2257204,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-269,presid,,2012,jul,1,13.2012,13,Hidalgo,212808,pan,514006,pri-pvem,409277,prd-pt-conve,49856,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1185947,660,29315,1215922,1852477,pri-pvem,Prep 98.95%,.,1,.,.,.
-270,presid,,2012,jul,1,14.2012,14,Jalisco,1077656,pan,1332333,pri-pvem,756907,prd-pt-conve,91819,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,3258715,1855,78347,3338917,5143145,pri-pvem,Prep 98.95%,.,1,.,.,.
-271,presid,,2012,jul,1,15.2012,15,México,1232619,pan,2923003,pri-pvem,2304129,prd-pt-conve,158748,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,6618499,4468,142022,6764989,10251266,pri-pvem,Prep 98.95%,.,1,.,.,.
-272,presid,,2012,jul,1,16.2012,16,Michoacán,335333,pan,708057,pri-pvem,513659,prd-pt-conve,34289,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1591338,1410,45915,1638663,3116491,pri-pvem,Prep 98.95%,.,1,.,.,.
-273,presid,,2012,jul,1,17.2012,17,Morelos,156431,pan,293965,pri-pvem,360212,prd-pt-conve,18943,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,829551,417,19823,849791,1301651,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-274,presid,,2012,jul,1,18.2012,18,Nayarit,79935,pan,211844,pri-pvem,139613,prd-pt-conve,8671,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,440063,177,10354,450594,718760,pri-pvem,Prep 98.95%,.,1,.,.,.
-275,presid,,2012,jul,1,19.2012,19,Nuevo León,786652,pan,653193,pri-pvem,434650,prd-pt-conve,61346,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1935841,1650,36926,1974417,3260842,pan,Prep 98.95%,.,1,.,.,.
-276,presid,,2012,jul,1,20.2012,20,Oaxaca,285787,pan,546981,pri-pvem,684005,prd-pt-conve,18034,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1534807,773,42794,1578374,2546485,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-277,presid,,2012,jul,1,21.2012,21,Puebla,638428,pan,850521,pri-pvem,853320,prd-pt-conve,56162,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,2398431,1371,69197,2468999,3897115,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-278,presid,,2012,jul,1,22.2012,22,Querétaro,284055,pan,326650,pri-pvem,190514,prd-pt-conve,19965,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,821184,507,23028,844719,1263554,pri-pvem,Prep 98.95%,.,1,.,.,.
-279,presid,,2012,jul,1,23.2012,23,Quintana Roo,107047,pan,171506,pri-pvem,216517,prd-pt-conve,9971,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,505041,307,10178,515526,886694,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-280,presid,,2012,jul,1,24.2012,24,San Luis Potosí,344546,pan,426425,pri-pvem,262752,prd-pt-conve,32195,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1065918,858,44210,1110986,1747800,pri-pvem,Prep 98.95%,.,1,.,.,.
-281,presid,,2012,jul,1,25.2012,25,Sinaloa,285417,pan,531120,pri-pvem,268408,prd-pt-conve,22540,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1107485,788,30202,1138475,1844223,pri-pvem,Prep 98.95%,.,1,.,.,.
-282,presid,,2012,jul,1,26.2012,26,Sonora,327743,pan,413033,pri-pvem,254752,prd-pt-conve,15445,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1010973,741,26172,1037886,1780074,pri-pvem,Prep 98.95%,.,1,.,.,.
-283,presid,,2012,jul,1,27.2012,27,Tabasco,63545,pan,338014,pri-pvem,628188,prd-pt-conve,5841,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1035588,261,25152,1061001,1491490,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-284,presid,,2012,jul,1,28.2012,28,Tamaulipas,580417,pan,474857,pri-pvem,273508,prd-pt-conve,30865,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1359647,1027,27062,1387736,2371066,pan,Prep 98.95%,.,1,.,.,.
-285,presid,,2012,jul,1,29.2012,29,Tlaxcala,96883,pan,182120,pri-pvem,207571,prd-pt-conve,15673,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,502247,157,10947,513351,807620,prd-pt-conve,Prep 98.95%,.,1,.,.,.
-286,presid,,2012,jul,1,30.2012,30,Veracruz,1179327,pan,1180147,pri-pvem,1012818,prd-pt-conve,49992,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,3422284,1556,82775,3506615,5229735,pri-pvem,Prep 98.95%,.,1,.,.,.
-287,presid,,2012,jul,1,31.2012,31,Yucatán,385352,pan,432566,pri-pvem,176394,prd-pt-conve,18032,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,1012344,328,20477,1033149,1334931,pri-pvem,Prep 98.95%,.,1,.,.,.
-288,presid,,2012,jul,1,32.2012,32,Zacatecas,120335,pan,334938,pri-pvem,160807,prd-pt-conve,21424,panal,.,.,.,.,.,.,.,.,.,.,.,.,0,637504,284,16284,654072,1068363,pri-pvem,Prep 98.95%,.,1,.,.,.
+ord,status,yr,mo,dy,clave,edon,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07,l07,v08,l08,v09,l09,v10,l10,v11,l11,v12,l12,efec,nr,nulos,vtot,lisnom,fuente,note
+1,ok,1964,jul,5,1.1964,1,ags,AGUASCALIENTES,6549,pan,66924,pri,284,parm,130,pps,,,,,,,,,,,,,,,,,73887,,,,.,banamex,.
+2,ok,1964,jul,5,2.1964,2,bc,BAJA CALIFORNIA,38760,pan,142948,pri,0,parm,0,pps,,,,,,,,,,,,,,,,,181708,,,,.,banamex,.
+3,ok,1964,jul,5,3.1964,3,bcs,BAJA CALIFORNIA SUR,850,pan,25996,pri,164,parm,11,pps,,,,,,,,,,,,,,,,,27021,,,,.,banamex,.
+4,ok,1964,jul,5,4.1964,4,cam,CAMPECHE,2396,pan,56701,pri,0,parm,162,pps,,,,,,,,,,,,,,,,,59259,,,,.,banamex,.
+5,ok,1964,jul,5,5.1964,5,coa,COAHUILA,17500,pan,247926,pri,277,parm,565,pps,,,,,,,,,,,,,,,,,266268,,,,.,banamex,.
+6,ok,1964,jul,5,6.1964,6,col,COLIMA,4960,pan,34216,pri,49,parm,28,pps,,,,,,,,,,,,,,,,,39253,,,,.,banamex,.
+7,ok,1964,jul,5,7.1964,7,cps,CHIAPAS,3702,pan,331437,pri,487,parm,212,pps,,,,,,,,,,,,,,,,,335838,,,,.,banamex,.
+8,ok,1964,jul,5,8.1964,8,cua,CHIHUAHUA,58332,pan,221760,pri,834,parm,1358,pps,,,,,,,,,,,,,,,,,282284,,,,.,banamex,.
+9,ok,1964,jul,5,9.1964,9,df,DISTRITO FEDERAL,355798,pan,1024598,pri,18917,parm,18347,pps,,,,,,,,,,,,,,,,,1417660,,,,.,banamex,.
+10,ok,1964,jul,5,10.1964,10,dgo,DURANGO,32490,pan,205625,pri,439,parm,589,pps,,,,,,,,,,,,,,,,,239143,,,,.,banamex,.
+11,ok,1964,jul,5,11.1964,11,gua,GUANAJUATO,85290,pan,326172,pri,3093,parm,4256,pps,,,,,,,,,,,,,,,,,418811,,,,.,banamex,.
+12,ok,1964,jul,5,12.1964,12,gue,GUERRERO,11867,pan,381736,pri,620,parm,2895,pps,,,,,,,,,,,,,,,,,397118,,,,.,banamex,.
+13,ok,1964,jul,5,13.1964,13,hgo,HIDALGO,5603,pan,339620,pri,107,parm,146,pps,,,,,,,,,,,,,,,,,345476,,,,.,banamex,.
+14,ok,1964,jul,5,14.1964,14,jal,JALISCO,76320,pan,507795,pri,2441,parm,2721,pps,,,,,,,,,,,,,,,,,589277,,,,.,banamex,.
+15,ok,1964,jul,5,15.1964,15,mex,MEXICO,41690,pan,459309,pri,1786,parm,2174,pps,,,,,,,,,,,,,,,,,504959,,,,.,banamex,.
+16,ok,1964,jul,5,16.1964,16,mic,MICHOACAN,54500,pan,332395,pri,1317,parm,2083,pps,,,,,,,,,,,,,,,,,390295,,,,.,banamex,.
+17,ok,1964,jul,5,17.1964,17,mor,MORELOS,6802,pan,108415,pri,1137,parm,809,pps,,,,,,,,,,,,,,,,,117163,,,,.,banamex,.
+18,ok,1964,jul,5,18.1964,18,nay,NAYARIT,5679,pan,67101,pri,861,parm,2736,pps,,,,,,,,,,,,,,,,,76377,,,,.,banamex,.
+19,ok,1964,jul,5,19.1964,19,nl,NUEVO LEON,40733,pan,219270,pri,463,parm,835,pps,,,,,,,,,,,,,,,,,261301,,,,.,banamex,.
+20,ok,1964,jul,5,20.1964,20,oax,OAXACA,14950,pan,429996,pri,1293,parm,2195,pps,,,,,,,,,,,,,,,,,448434,,,,.,banamex,.
+21,ok,1964,jul,5,21.1964,21,pue,PUEBLA,34275,pan,514063,pri,2530,parm,2553,pps,,,,,,,,,,,,,,,,,553421,,,,.,banamex,.
+22,ok,1964,jul,5,22.1964,22,que,QUERETARO,9725,pan,101996,pri,581,parm,222,pps,,,,,,,,,,,,,,,,,112524,,,,.,banamex,.
+23,ok,1964,jul,5,23.1964,23,qui,QUINTANA ROO,598,pan,16926,pri,43,parm,10,pps,,,,,,,,,,,,,,,,,17577,,,,.,banamex,.
+24,ok,1964,jul,5,24.1964,24,san,SAN LUIS POTOSI,24757,pan,258162,pri,1013,parm,549,pps,,,,,,,,,,,,,,,,,284481,,,,.,banamex,.
+25,ok,1964,jul,5,25.1964,25,sin,SINALOA,4126,pan,207079,pri,178,parm,2571,pps,,,,,,,,,,,,,,,,,213954,,,,.,banamex,.
+26,ok,1964,jul,5,26.1964,26,son,SONORA,2601,pan,145380,pri,121,parm,9776,pps,,,,,,,,,,,,,,,,,157878,,,,.,banamex,.
+27,ok,1964,jul,5,27.1964,27,tab,TABASCO,990,pan,146433,pri,49,parm,172,pps,,,,,,,,,,,,,,,,,147644,,,,.,banamex,.
+28,ok,1964,jul,5,28.1964,28,tam,TAMAULIPAS,10502,pan,287484,pri,690,parm,1852,pps,,,,,,,,,,,,,,,,,300528,,,,.,banamex,.
+29,ok,1964,jul,5,29.1964,29,tla,TLAXCALA,1610,pan,98293,pri,2510,parm,31,pps,,,,,,,,,,,,,,,,,102444,,,,.,banamex,.
+30,ok,1964,jul,5,30.1964,30,ver,VERACRUZ,21816,pan,654211,pri,2540,parm,3668,pps,,,,,,,,,,,,,,,,,682235,,,,.,banamex,.
+31,ok,1964,jul,5,31.1964,31,yuc,YUCATAN,28914,pan,177326,pri,60,parm,408,pps,,,,,,,,,,,,,,,,,206708,,,,.,banamex,.
+32,ok,1964,jul,5,32.1964,32,zac,ZACATECAS,36942,pan,140921,pri,201,parm,304,pps,,,,,,,,,,,,,,,,,178368,,,,.,banamex,.
+33,ok,1970,jul,5,1.197,1,ags,AGUASCALIENTES,11959,pan,81969,pri,389,parm,487,pps,,,,,,,,,,,,,,,,,94804,,,,.,banamex,.
+34,ok,1970,jul,5,2.197,2,bc,BAJA CALIFORNIA,72175,pan,205454,pri,1672,parm,0,pps,,,,,,,,,,,,,,,,,279301,,,,.,banamex,.
+35,ok,1970,jul,5,3.197,3,bcs,BAJA CALIFORNIA SUR,2023,pan,35367,pri,121,parm,173,pps,,,,,,,,,,,,,,,,,37684,,,,.,banamex,.
+36,ok,1970,jul,5,4.197,4,cam,CAMPECHE,1768,pan,89945,pri,22,parm,51,pps,,,,,,,,,,,,,,,,,91786,,,,.,banamex,.
+37,ok,1970,jul,5,5.197,5,coa,COAHUILA,30350,pan,313036,pri,395,parm,1115,pps,,,,,,,,,,,,,,,,,344896,,,,.,banamex,.
+38,ok,1970,jul,5,6.197,6,col,COLIMA,5005,pan,49085,pri,112,parm,127,pps,,,,,,,,,,,,,,,,,54329,,,,.,banamex,.
+39,ok,1970,jul,5,7.197,7,cps,CHIAPAS,4853,pan,439754,pri,1188,parm,1393,pps,,,,,,,,,,,,,,,,,447188,,,,.,banamex,.
+40,ok,1970,jul,5,8.197,8,cua,CHIHUAHUA,83120,pan,351477,pri,1255,parm,4120,pps,,,,,,,,,,,,,,,,,439972,,,,.,banamex,.
+41,ok,1970,jul,5,9.197,9,df,DISTRITO FEDERAL,696651,pan,1510519,pri,22761,parm,34229,pps,,,,,,,,,,,,,,,,,2264160,,,,.,banamex,.
+42,ok,1970,jul,5,10.197,10,dgo,DURANGO,28895,pan,185791,pri,444,parm,2699,pps,,,,,,,,,,,,,,,,,217829,,,,.,banamex,.
+43,ok,1970,jul,5,11.197,11,gua,GUANAJUATO,108938,pan,449691,pri,5125,parm,4512,pps,,,,,,,,,,,,,,,,,568266,,,,.,banamex,.
+44,ok,1970,jul,5,12.197,12,gue,GUERRERO,20341,pan,447079,pri,1806,parm,2551,pps,,,,,,,,,,,,,,,,,471777,,,,.,banamex,.
+45,ok,1970,jul,5,13.197,13,hgo,HIDALGO,12798,pan,437913,pri,343,parm,483,pps,,,,,,,,,,,,,,,,,451537,,,,.,banamex,.
+46,ok,1970,jul,5,14.197,14,jal,JALISCO,167629,pan,789628,pri,6672,parm,8538,pps,,,,,,,,,,,,,,,,,972467,,,,.,banamex,.
+47,ok,1970,jul,5,15.197,15,mex,MEXICO,134949,pan,730599,pri,6547,parm,7680,pps,,,,,,,,,,,,,,,,,879775,,,,.,banamex,.
+48,ok,1970,jul,5,16.197,16,mic,MICHOACAN,82909,pan,539026,pri,2049,parm,3101,pps,,,,,,,,,,,,,,,,,627085,,,,.,banamex,.
+49,ok,1970,jul,5,17.197,17,mor,MORELOS,17583,pan,161500,pri,945,parm,1067,pps,,,,,,,,,,,,,,,,,181095,,,,.,banamex,.
+50,ok,1970,jul,5,18.197,18,nay,NAYARIT,4686,pan,124269,pri,360,parm,4438,pps,,,,,,,,,,,,,,,,,133753,,,,.,banamex,.
+51,ok,1970,jul,5,19.197,19,nl,NUEVO LEON,67704,pan,356230,pri,2376,parm,1722,pps,,,,,,,,,,,,,,,,,428032,,,,.,banamex,.
+52,ok,1970,jul,5,20.197,20,oax,OAXACA,23465,pan,652620,pri,1560,parm,6888,pps,,,,,,,,,,,,,,,,,684533,,,,.,banamex,.
+53,ok,1970,jul,5,21.197,21,pue,PUEBLA,96313,pan,555109,pri,8107,parm,4812,pps,,,,,,,,,,,,,,,,,664341,,,,.,banamex,.
+54,ok,1970,jul,5,22.197,22,que,QUERETARO,13620,pan,132368,pri,636,parm,476,pps,,,,,,,,,,,,,,,,,147100,,,,.,banamex,.
+55,ok,1970,jul,5,23.197,23,qui,QUINTANA ROO,582,pan,32069,pri,33,parm,25,pps,,,,,,,,,,,,,,,,,32709,,,,.,banamex,.
+56,ok,1970,jul,5,24.197,24,san,SAN LUIS POTOSI,35947,pan,329548,pri,1551,parm,900,pps,,,,,,,,,,,,,,,,,367946,,,,.,banamex,.
+57,ok,1970,jul,5,25.197,25,sin,SINALOA,15440,pan,263554,pri,1098,parm,4540,pps,,,,,,,,,,,,,,,,,284632,,,,.,banamex,.
+58,ok,1970,jul,5,26.197,26,son,SONORA,14714,pan,208701,pri,389,parm,2583,pps,,,,,,,,,,,,,,,,,226387,,,,.,banamex,.
+59,ok,1970,jul,5,27.197,27,tab,TABASCO,2735,pan,233653,pri,45,parm,2065,pps,,,,,,,,,,,,,,,,,238498,,,,.,banamex,.
+60,ok,1970,jul,5,28.197,28,tam,TAMAULIPAS,34209,pan,372413,pri,1029,parm,1051,pps,,,,,,,,,,,,,,,,,408702,,,,.,banamex,.
+61,ok,1970,jul,5,29.197,29,tla,TLAXCALA,7098,pan,117805,pri,154,parm,294,pps,,,,,,,,,,,,,,,,,125351,,,,.,banamex,.
+62,ok,1970,jul,5,30.197,30,ver,VERACRUZ,84422,pan,1048451,pri,5987,parm,14133,pps,,,,,,,,,,,,,,,,,1152993,,,,.,banamex,.
+63,ok,1970,jul,5,31.197,31,yuc,YUCATAN,35546,pan,203883,pri,58,parm,1343,pps,,,,,,,,,,,,,,,,,240830,,,,.,banamex,.
+64,ok,1970,jul,5,32.197,32,zac,ZACATECAS,26643,pan,260267,pri,580,parm,709,pps,,,,,,,,,,,,,,,,,288199,,,,.,banamex,.
+65,ok,1976,jul,4,1.1976,1,ags,AGUASCALIENTES,98770,pri,4198,pps.parm,,,,,,,,,,,,,,,,,,,,,102968,406,6451,109825,198930,banamex,pps.parm coalesced with pri
+66,ok,1976,jul,4,2.1976,2,bc,BAJA CALIFORNIA,292808,pri,22142,pps.parm,,,,,,,,,,,,,,,,,,,,,314950,1559,27893,344402,525293,banamex,pps.parm coalesced with pri
+67,ok,1976,jul,4,3.1976,3,bcs,BAJA CALIFORNIA SUR,44620,pri,463,pps.parm,,,,,,,,,,,,,,,,,,,,,45083,201,2699,47983,72858,banamex,pps.parm coalesced with pri
+68,ok,1976,jul,4,4.1976,4,cam,CAMPECHE,138772,pri,141,pps.parm,,,,,,,,,,,,,,,,,,,,,138913,66,460,139439,144891,banamex,pps.parm coalesced with pri
+69,ok,1976,jul,4,5.1976,5,coa,COAHUILA,500441,pri,16005,pps.parm,,,,,,,,,,,,,,,,,,,,,516446,927,312,517685,672945,banamex,pps.parm coalesced with pri
+70,ok,1976,jul,4,6.1976,6,col,COLIMA,61987,pri,986,pps.parm,,,,,,,,,,,,,,,,,,,,,62973,382,1371,64726,147814,banamex,pps.parm coalesced with pri
+71,ok,1976,jul,4,7.1976,7,cps,CHIAPAS,465432,pri,0,pps.parm,,,,,,,,,,,,,,,,,,,,,465432,191,1978,467601,716223,banamex,pps.parm coalesced with pri
+72,ok,1976,jul,4,8.1976,8,cua,CHIHUAHUA,375891,pri,27459,pps.parm,,,,,,,,,,,,,,,,,,,,,403350,1800,47073,452223,928704,banamex,pps.parm coalesced with pri
+73,ok,1976,jul,4,9.1976,9,df,DISTRITO FEDERAL,1932482,pri,278191,pps.parm,,,,,,,,,,,,,,,,,,,,,2210673,121042,458744,2790459,4519658,banamex,pps.parm coalesced with pri
+74,ok,1976,jul,4,10.1976,10,dgo,DURANGO,331940,pri,10020,pps.parm,,,,,,,,,,,,,,,,,,,,,341960,850,3330,346140,525885,banamex,pps.parm coalesced with pri
+75,ok,1976,jul,4,11.1976,11,gua,GUANAJUATO,767540,pri,43079,pps.parm,,,,,,,,,,,,,,,,,,,,,810619,1546,15022,827187,1079893,banamex,pps.parm coalesced with pri
+76,ok,1976,jul,4,12.1976,12,gue,GUERRERO,682712,pri,7117,pps.parm,,,,,,,,,,,,,,,,,,,,,689829,1585,7189,698603,955373,banamex,pps.parm coalesced with pri
+77,ok,1976,jul,4,13.1976,13,hgo,HIDALGO,500864,pri,19164,pps.parm,,,,,,,,,,,,,,,,,,,,,520028,1767,17193,538988,659154,banamex,pps.parm coalesced with pri
+78,ok,1976,jul,4,14.1976,14,jal,JALISCO,945650,pri,41290,pps.parm,,,,,,,,,,,,,,,,,,,,,986940,7949,58360,1053249,1471794,banamex,pps.parm coalesced with pri
+79,ok,1976,jul,4,15.1976,15,mex,MEXICO,1234812,pri,106979,pps.parm,,,,,,,,,,,,,,,,,,,,,1341791,22830,118628,1483249,1986365,banamex,pps.parm coalesced with pri
+80,ok,1976,jul,4,16.1976,16,mic,MICHOACAN,723071,pri,22040,pps.parm,,,,,,,,,,,,,,,,,,,,,745111,1548,15507,762166,1158788,banamex,pps.parm coalesced with pri
+81,ok,1976,jul,4,17.1976,17,mor,MORELOS,193339,pri,10973,pps.parm,,,,,,,,,,,,,,,,,,,,,204312,2413,14825,221550,352414,banamex,pps.parm coalesced with pri
+82,ok,1976,jul,4,18.1976,18,nay,NAYARIT,202150,pri,3588,pps.parm,,,,,,,,,,,,,,,,,,,,,205738,649,5589,211976,324737,banamex,pps.parm coalesced with pri
+83,ok,1976,jul,4,19.1976,19,nl,NUEVO LEON,316711,pri,18763,pps.parm,,,,,,,,,,,,,,,,,,,,,335474,20757,15945,372176,714755,banamex,pps.parm coalesced with pri
+84,ok,1976,jul,4,20.1976,20,oax,OAXACA,663507,pri,97247,pps.parm,,,,,,,,,,,,,,,,,,,,,760754,1581,474,762809,1060668,banamex,pps.parm coalesced with pri
+85,ok,1976,jul,4,21.1976,21,pue,PUEBLA,713186,pri,39229,pps.parm,,,,,,,,,,,,,,,,,,,,,752415,5402,30528,788345,1265197,banamex,pps.parm coalesced with pri
+86,ok,1976,jul,4,22.1976,22,que,QUERETARO,209382,pri,4755,pps.parm,,,,,,,,,,,,,,,,,,,,,214137,847,5601,220585,279110,banamex,pps.parm coalesced with pri
+87,ok,1976,jul,4,23.1976,23,qui,QUINTANA ROO,48658,pri,302,pps.parm,,,,,,,,,,,,,,,,,,,,,48960,17,1163,50140,56473,banamex,pps.parm coalesced with pri
+88,ok,1976,jul,4,24.1976,24,san,SAN LUIS POTOSI,479402,pri,16461,pps.parm,,,,,,,,,,,,,,,,,,,,,495863,3789,7615,507267,677688,banamex,pps.parm coalesced with pri
+89,ok,1976,jul,4,25.1976,25,sin,SINALOA,284051,pri,10460,pps.parm,,,,,,,,,,,,,,,,,,,,,294511,1559,4650,300720,650897,banamex,pps.parm coalesced with pri
+90,ok,1976,jul,4,26.1976,26,son,SONORA,498031,pri,16647,pps.parm,,,,,,,,,,,,,,,,,,,,,514678,597,1725,517000,672221,banamex,pps.parm coalesced with pri
+91,ok,1976,jul,4,27.1976,27,tab,TABASCO,274284,pri,11137,pps.parm,,,,,,,,,,,,,,,,,,,,,285421,425,796,286642,340313,banamex,pps.parm coalesced with pri
+92,ok,1976,jul,4,28.1976,28,tam,TAMAULIPAS,418257,pri,27932,pps.parm,,,,,,,,,,,,,,,,,,,,,446189,2569,15767,464525,883743,banamex,pps.parm coalesced with pri
+93,ok,1976,jul,4,29.1976,29,tla,TLAXCALA,196789,pri,6154,pps.parm,,,,,,,,,,,,,,,,,,,,,202943,16,9,202968,234372,banamex,pps.parm coalesced with pri
+94,ok,1976,jul,4,30.1976,30,ver,VERACRUZ,1245764,pri,85321,pps.parm,,,,,,,,,,,,,,,,,,,,,1331085,4762,16032,1351879,1741527,banamex,pps.parm coalesced with pri
+95,ok,1976,jul,4,31.1976,31,yuc,YUCATAN,325189,pri,8413,pps.parm,,,,,,,,,,,,,,,,,,,,,333602,56,26114,359772,411829,banamex,pps.parm coalesced with pri
+96,ok,1976,jul,4,32.1976,32,zac,ZACATECAS,293084,pri,3599,pps.parm,,,,,,,,,,,,,,,,,,,,,296683,1476,2826,300985,482703,banamex,pps.parm coalesced with pri
+97,ok,1982,jul,4,1.1982,1,ags,AGUASCALIENTES,31570,pan,137647,pri,2149,pps.parm,1879,psum,3122,pdm,1300,prt,4009,pst,345,psd,,,,,,,,,182021,33,16967,199021,260868,banamex,pps.parm coalesced with pri
+98,ok,1982,jul,4,2.1982,2,bc,BAJA CALIFORNIA,147092,pan,271899,pri,15774,pps.parm,16456,psum,6298,pdm,12403,prt,11047,pst,1149,psd,,,,,,,,,482118,346,50996,522292,635922,banamex,pps.parm coalesced with pri
+99,ok,1982,jul,4,3.1982,3,bcs,BAJA CALIFORNIA SUR,13852,pan,64573,pri,1475,pps.parm,2336,psum,537,pdm,3444,prt,763,pst,124,psd,,,,,,,,,87104,23,3617,90750,116364,banamex,pps.parm coalesced with pri
+100,ok,1982,jul,4,4.1982,4,cam,CAMPECHE,8052,pan,103193,pri,1223,pps.parm,898,psum,401,pdm,333,prt,419,pst,52,psd,,,,,,,,,114571,29,9631,124231,168338,banamex,pps.parm coalesced with pri
+101,ok,1982,jul,4,5.1982,5,coa,COAHUILA,86155,pan,224753,pri,3934,pps.parm,4770,psum,996,pdm,2334,prt,6581,pst,351,psd,,,,,,,,,329874,292,4806,334972,681635,banamex,pps.parm coalesced with pri
+102,ok,1982,jul,4,6.1982,6,col,COLIMA,7126,pan,136139,pri,1232,pps.parm,1331,psum,2009,pdm,737,prt,1788,pst,82,psd,,,,,,,,,150444,19,3534,153997,170791,banamex,pps.parm coalesced with pri
+103,ok,1982,jul,4,7.1982,7,cps,CHIAPAS,21043,pan,679429,pri,12554,pps.parm,7745,psum,1436,pdm,4958,prt,8848,pst,1109,psd,,,,,,,,,737122,762,15206,754090,923098,banamex,pps.parm coalesced with pri
+104,ok,1982,jul,4,8.1982,8,cua,CHIHUAHUA,153704,pan,362038,pri,10246,pps.parm,13157,psum,4719,pdm,2813,prt,5169,pst,740,psd,,,,,,,,,552586,67,47626,600279,963883,banamex,pps.parm coalesced with pri
+105,ok,1982,jul,4,9.1982,9,df,DISTRITO FEDERAL,892214,pan,1853279,pri,123900,pps.parm,286661,psum,90003,pdm,199963,prt,81817,pst,18702,psd,,,,,,,,,3546539,10779,260092,3817410,4779964,banamex,pps.parm coalesced with pri
+106,ok,1982,jul,4,10.1982,10,dgo,DURANGO,67159,pan,280606,pri,8204,pps.parm,7619,psum,2732,pdm,280,prt,2453,pst,413,psd,,,,,,,,,369466,12,8053,377531,603027,banamex,pps.parm coalesced with pri
+107,ok,1982,jul,4,11.1982,11,gua,GUANAJUATO,178468,pan,578412,pri,14232,pps.parm,10755,psum,61125,pdm,3063,prt,12214,pst,1154,psd,,,,,,,,,859423,76,29716,889215,1398807,banamex,pps.parm coalesced with pri
+108,ok,1982,jul,4,12.1982,12,gue,GUERRERO,22392,pan,422905,pri,7935,pps.parm,20798,psum,5667,pdm,6524,prt,15583,pst,594,psd,,,,,,,,,502398,17,14926,517341,984325,banamex,pps.parm coalesced with pri
+109,ok,1982,jul,4,13.1982,13,hgo,HIDALGO,50641,pan,487739,pri,11384,pps.parm,8876,psum,2998,pdm,4806,prt,10289,pst,537,psd,,,,,,,,,577270,0,107,577431,748930,banamex,pps.parm coalesced with pri
+110,ok,1982,jul,4,14.1982,14,jal,JALISCO,359328,pan,813568,pri,27236,pps.parm,89946,psum,49284,pdm,6691,prt,12122,pst,2248,psd,,,,,,,,,1360423,112,76308,1436842,2031506,banamex,pps.parm coalesced with pri
+111,ok,1982,jul,4,15.1982,15,mex,MEXICO,606668,pan,1496601,pri,57023,pps.parm,137571,psum,67423,pdm,91453,prt,40497,pst,7643,psd,,,,,,,,,2504879,851,180793,2622058,3102137,banamex,pps.parm coalesced with pri
+112,ok,1982,jul,4,16.1982,16,mic,MICHOACAN,90201,pan,599459,pri,11793,pps.parm,16774,psum,34978,pdm,5106,prt,7524,pst,723,psd,,,,,,,,,766558,87,29380,796079,1359175,banamex,pps.parm coalesced with pri
+113,ok,1982,jul,4,17.1982,17,mor,MORELOS,33673,pan,249769,pri,6294,pps.parm,8587,psum,4754,pdm,15142,prt,6514,pst,644,psd,,,,,,,,,325377,44,12116,337537,392556,banamex,pps.parm coalesced with pri
+114,ok,1982,jul,4,18.1982,18,nay,NAYARIT,6833,pan,157242,pri,4319,pps.parm,22577,psum,2013,pdm,708,prt,1106,pst,160,psd,,,,,,,,,194958,48,10103,205159,332502,banamex,pps.parm coalesced with pri
+115,ok,1982,jul,4,19.1982,19,nl,NUEVO LEON,213606,pan,633826,pri,8822,pps.parm,4494,psum,2984,pdm,3973,prt,3615,pst,853,psd,,,,,,,,,872173,39,8653,880865,1155687,banamex,pps.parm coalesced with pri
+116,ok,1982,jul,4,20.1982,20,oax,OAXACA,46185,pan,638965,pri,37445,pps.parm,20908,psum,2296,pdm,4948,prt,4467,pst,580,psd,,,,,,,,,755794,58,11057,763909,1131450,banamex,pps.parm coalesced with pri
+117,ok,1982,jul,4,21.1982,21,pue,PUEBLA,135615,pan,1090647,pri,19224,pps.parm,25668,psum,8455,pdm,9575,prt,8802,pst,1209,psd,,,,,,,,,1299195,126,119393,1418714,1591940,banamex,pps.parm coalesced with pri
+118,ok,1982,jul,4,22.1982,22,que,QUERETARO,40518,pan,197152,pri,2966,pps.parm,3439,psum,4543,pdm,1267,prt,1429,pst,467,psd,,,,,,,,,251781,18,11222,263021,347054,banamex,pps.parm coalesced with pri
+119,ok,1982,jul,4,23.1982,23,qui,QUINTANA ROO,3513,pan,87798,pri,1563,pps.parm,896,psum,247,pdm,302,prt,845,pst,65,psd,,,,,,,,,95229,15,1343,96587,108075,banamex,pps.parm coalesced with pri
+120,ok,1982,jul,4,24.1982,24,san,SAN LUIS POTOSI,41171,pan,411943,pri,4056,pps.parm,3907,psum,21209,pdm,2389,prt,4149,pst,710,psd,,,,,,,,,489534,49,10321,500084,728011,banamex,pps.parm coalesced with pri
+121,ok,1982,jul,4,25.1982,25,sin,SINALOA,65035,pan,475275,pri,14005,pps.parm,31947,psum,2713,pdm,5374,prt,4596,pst,827,psd,,,,,,,,,599772,48,15112,614932,864566,banamex,pps.parm coalesced with pri
+122,ok,1982,jul,4,26.1982,26,son,SONORA,113166,pan,422712,pri,3936,pps.parm,6759,psum,1688,pdm,4759,prt,1215,pst,742,psd,,,,,,,,,554977,152,15335,570464,727705,banamex,pps.parm coalesced with pri
+123,ok,1982,jul,4,27.1982,27,tab,TABASCO,11706,pan,309194,pri,6146,pps.parm,2129,psum,645,pdm,1045,prt,2921,pst,207,psd,,,,,,,,,333993,9,5080,339082,446381,banamex,pps.parm coalesced with pri
+124,ok,1982,jul,4,28.1982,28,tam,TAMAULIPAS,60663,pan,464208,pri,50264,pps.parm,8219,psum,6293,pdm,3311,prt,3917,pst,958,psd,,,,,,,,,597833,53,21960,565848,887181,banamex,pps.parm coalesced with pri
+125,ok,1982,jul,4,29.1982,29,tla,TLAXCALA,21890,pan,187790,pri,2964,pps.parm,3897,psum,10035,pdm,1048,prt,836,pst,139,psd,,,,,,,,,228599,35,5758,234390,260973,banamex,pps.parm coalesced with pri
+126,ok,1982,jul,4,30.1982,30,ver,VERACRUZ,69622,pan,1688845,pri,98472,pps.parm,43769,psum,29187,pdm,14017,prt,73672,pst,4569,psd,,,,,,,,,2022153,14246,44492,2080880,2517944,banamex,pps.parm coalesced with pri
+127,ok,1982,jul,4,31.1982,31,yuc,YUCATAN,59275,pan,270002,pri,1842,pps.parm,322,psum,389,pdm,947,prt,411,pst,141,psd,,,,,,,,,333329,4,1395,337728,511279,banamex,pps.parm coalesced with pri
+128,ok,1982,jul,4,32.1982,32,zac,ZACATECAS,39859,pan,347836,pri,3150,pps.parm,6903,psum,2707,pdm,1435,prt,1587,pst,176,psd,,,,,,,,,403653,25,8518,412136,544252,banamex,pps.parm coalesced with pri
+129,ok,1988,jul,6,1.1988,1,ags,AGUASCALIENTES,47012,pan,82177,pri,4120,pms.parm.pfcrn.pps,9038,pdm,1558,prt,,,,,,,,,,,,,,,143905,,,,334920,banamex,pdm and prt split w uam-i
+130,ok,1988,jul,6,2.1988,2,bc,BAJA CALIFORNIA,99757,pan,155744,pri,13296,pms.parm.pfcrn.pps,146933,pdm,64960,prt,,,,,,,,,,,,,,,480690,,,,817466,banamex,pdm and prt split w uam-i
+131,ok,1988,jul,6,3.1988,3,bcs,BAJA CALIFORNIA SUR,16463,pan,45684,pri,1369,pms.parm.pfcrn.pps,13540,pdm,3224,prt,,,,,,,,,,,,,,,80280,,,,150348,banamex,pdm and prt split w uam-i
+132,ok,1988,jul,6,4.1988,4,cam,CAMPECHE,13783,pan,82499,pri,1065,pms.parm.pfcrn.pps,2529,pdm,0,prt,,,,,,,,,,,,,,,99876,,,,229954,banamex,pdm and prt split w uam-i
+133,ok,1988,jul,6,5.1988,5,coa,COAHUILA,40165,pan,130061,pri,4040,pms.parm.pfcrn.pps,10692,pdm,32839,prt,,,,,,,,,,,,,,,217797,,,,866211,banamex,pdm and prt split w uam-i
+134,ok,1988,jul,6,6.1988,6,col,COLIMA,14533,pan,46145,pri,1616,pms.parm.pfcrn.pps,19395,pdm,0,prt,,,,,,,,,,,,,,,81689,,,,218028,banamex,pdm and prt split w uam-i
+135,ok,1988,jul,6,7.1988,7,cps,CHIAPAS,22573,pan,580673,pri,9475,pms.parm.pfcrn.pps,4012,pdm,729,prt,,,,,,,,,,,,,,,617462,,,,1189034,banamex,pdm and prt split w uam-i
+136,ok,1988,jul,6,8.1988,8,cua,CHIHUAHUA,197674,pan,285367,pri,4102,pms.parm.pfcrn.pps,6648,pdm,2992,prt,,,,,,,,,,,,,,,496783,,,,1295067,banamex,pdm and prt split w uam-i
+137,ok,1988,jul,6,9.1988,9,df,DISTRITO FEDERAL,635974,pan,785035,pri,191707,pms.parm.pfcrn.pps,916457,pdm,1238455,prt,,,,,,,,,,,,,,,3767628,,,,5095462,banamex,pdm and prt split w uam-i
+138,ok,1988,jul,6,10.1988,10,dgo,DURANGO,60965,pan,191531,pri,13738,pms.parm.pfcrn.pps,17568,pdm,0,prt,,,,,,,,,,,,,,,283802,,,,682290,banamex,pdm and prt split w uam-i
+139,ok,1988,jul,6,11.1988,11,gua,GUANAJUATO,212948,pan,317477,pri,8813,pms.parm.pfcrn.pps,40736,pdm,1771,prt,,,,,,,,,,,,,,,581745,,,,1572760,banamex,pdm and prt split w uam-i
+140,ok,1988,jul,6,12.1988,12,gue,GUERRERO,12649,pan,312854,pri,14991,pms.parm.pfcrn.pps,65643,pdm,3548,prt,,,,,,,,,,,,,,,409685,,,,1200804,banamex,pdm and prt split w uam-i
+141,ok,1988,jul,6,13.1988,13,hgo,HIDALGO,24450,pan,270465,pri,16199,pms.parm.pfcrn.pps,29927,pdm,14963,prt,,,,,,,,,,,,,,,356004,,,,812252,banamex,pdm and prt split w uam-i
+142,ok,1988,jul,6,14.1988,14,jal,JALISCO,364729,pan,501863,pri,28552,pms.parm.pfcrn.pps,85283,pdm,42642,prt,,,,,,,,,,,,,,,1023069,,,,2514777,banamex,pdm and prt split w uam-i
+143,ok,1988,jul,6,15.1988,15,mex,MEXICO,368537,pan,692065,pri,182836,pms.parm.pfcrn.pps,773396,pdm,268111,prt,,,,,,,,,,,,,,,2284945,,,,4190232,banamex,pdm and prt split w uam-i
+144,ok,1988,jul,6,16.1988,16,mic,MICHOACAN,65153,pan,143213,pri,12094,pms.parm.pfcrn.pps,92207,pdm,153678,prt,,,,,,,,,,,,,,,466345,,,,1549843,banamex,pdm and prt split w uam-i
+145,ok,1988,jul,6,17.1988,17,mor,MORELOS,20426,pan,93314,pri,8555,pms.parm.pfcrn.pps,69905,pdm,0,prt,,,,,,,,,,,,,,,192200,,,,583597,banamex,pdm and prt split w uam-i
+146,ok,1988,jul,6,18.1988,18,nay,NAYARIT,11539,pan,115299,pri,11549,pms.parm.pfcrn.pps,13052,pdm,10442,prt,,,,,,,,,,,,,,,161881,,,,405300,banamex,pdm and prt split w uam-i
+147,ok,1988,jul,6,19.1988,19,nl,NUEVO LEON,172576,pan,540568,pri,3927,pms.parm.pfcrn.pps,5808,pdm,0,prt,,,,,,,,,,,,,,,722879,,,,1625718,banamex,pdm and prt split w uam-i
+148,ok,1988,jul,6,20.1988,20,oax,OAXACA,30313,pan,390916,pri,16605,pms.parm.pfcrn.pps,137797,pdm,3320,prt,,,,,,,,,,,,,,,578951,,,,1364539,banamex,pdm and prt split w uam-i
+149,ok,1988,jul,6,21.1988,21,pue,PUEBLA,107569,pan,825261,pri,27601,pms.parm.pfcrn.pps,57993,pdm,5272,prt,,,,,,,,,,,,,,,1023696,,,,1693380,banamex,pdm and prt split w uam-i
+150,ok,1988,jul,6,22.1988,22,que,QUERETARO,38082,pan,136909,pri,2416,pms.parm.pfcrn.pps,11520,pdm,0,prt,,,,,,,,,,,,,,,188927,,,,409408,banamex,pdm and prt split w uam-i
+151,ok,1988,jul,6,23.1988,23,qui,QUINTANA ROO,9256,pan,61521,pri,1215,pms.parm.pfcrn.pps,3319,pdm,2213,prt,,,,,,,,,,,,,,,77524,,,,188191,banamex,pdm and prt split w uam-i
+152,ok,1988,jul,6,24.1988,24,san,SAN LUIS POTOSI,80106,pan,259776,pri,2530,pms.parm.pfcrn.pps,6740,pdm,374,prt,,,,,,,,,,,,,,,349526,,,,868279,banamex,pdm and prt split w uam-i
+153,ok,1988,jul,6,25.1988,25,sin,SINALOA,153806,pan,319207,pri,8314,pms.parm.pfcrn.pps,8311,pdm,0,prt,,,,,,,,,,,,,,,489638,,,,1113969,banamex,pdm and prt split w uam-i
+154,ok,1988,jul,6,26.1988,26,son,SONORA,83592,pan,278938,pri,4886,pms.parm.pfcrn.pps,11844,pdm,0,prt,,,,,,,,,,,,,,,379260,,,,899250,banamex,pdm and prt split w uam-i
+155,ok,1988,jul,6,27.1988,27,tab,TABASCO,14574,pan,198615,pri,5196,pms.parm.pfcrn.pps,4406,pdm,979,prt,,,,,,,,,,,,,,,223770,,,,634687,banamex,pdm and prt split w uam-i
+156,ok,1988,jul,6,28.1988,28,tam,TAMAULIPAS,46101,pan,276263,pri,6323,pms.parm.pfcrn.pps,24287,pdm,6746,prt,,,,,,,,,,,,,,,359720,,,,1120265,banamex,pdm and prt split w uam-i
+157,ok,1988,jul,6,29.1988,29,tla,TLAXCALA,10740,pan,110169,pri,5772,pms.parm.pfcrn.pps,22095,pdm,0,prt,,,,,,,,,,,,,,,148776,,,,331907,banamex,pdm and prt split w uam-i
+158,ok,1988,jul,6,30.1988,30,ver,VERACRUZ,80017,pan,877460,pri,30308,pms.parm.pfcrn.pps,125943,pdm,4498,prt,,,,,,,,,,,,,,,1118226,,,,3045721,banamex,pdm and prt split w uam-i
+159,ok,1988,jul,6,31.1988,31,yuc,YUCATAN,94472,pan,206500,pri,889,pms.parm.pfcrn.pps,267,pdm,0,prt,,,,,,,,,,,,,,,302128,,,,602041,banamex,pdm and prt split w uam-i
+160,ok,1988,jul,6,32.1988,32,zac,ZACATECAS,30584,pan,192670,pri,13363,pms.parm.pfcrn.pps,7216,pdm,4639,prt,,,,,,,,,,,,,,,248472,,,,602780,banamex,pdm and prt split w uam-i
+161,ok,1994,ago,21,1.1994,1,ags,AGUASCALIENTES,124484,pan,157736,pri,29236,prd,1271,pps,6610,pfcrn,1320,parm,1048,uno.pdm,6518,pt,3794,pvem,.,.,,,,,332017,136,7463,339616,420935,ife (27nov2010),.
+162,ok,1994,ago,21,2.1994,2,bc,BAJA CALIFORNIA,297565,pan,402332,pri,68669,prd,3088,pps,3399,pfcrn,2044,parm,1310,uno.pdm,15953,pt,7853,pvem,.,.,,,,,802213,1882,18393,822488,1038561,ife (27nov2010),.
+163,ok,1994,ago,21,3.1994,3,bcs,BAJA CALIFORNIA SUR,46907,pan,80097,pri,9463,prd,324,pps,564,pfcrn,386,parm,242,uno.pdm,3905,pt,786,pvem,.,.,,,,,142674,35,2580,145289,182596,ife (27nov2010),.
+164,ok,1994,ago,21,4.1994,4,cam,CAMPECHE,41910,pan,123225,pri,47640,prd,1051,pps,1139,pfcrn,3241,parm,384,uno.pdm,2935,pt,720,pvem,.,.,,,,,222245,433,6328,229006,296117,ife (27nov2010),.
+165,ok,1994,ago,21,5.1994,5,coa,COAHUILA,226621,pan,359168,pri,97121,prd,2355,pps,14760,pfcrn,5088,parm,816,uno.pdm,17954,pt,3157,pvem,.,.,,,,,727040,420,15582,743042,1101180,ife (27nov2010),.
+166,ok,1994,ago,21,6.1994,6,col,COLIMA,60338,pan,102903,pri,24157,prd,627,pps,3448,pfcrn,424,parm,1247,uno.pdm,2882,pt,1316,pvem,.,.,,,,,197342,548,5354,203244,254837,ife (27nov2010),.
+167,ok,1994,ago,21,7.1994,7,cps,CHIAPAS,126266,pan,493135,pri,347981,prd,6183,pps,17404,pfcrn,7255,parm,1348,uno.pdm,19381,pt,4274,pvem,.,.,,,,,1023227,3495,63987,1090709,1625874,ife (27nov2010),.
+168,ok,1994,ago,21,8.1994,8,cua,CHIHUAHUA,308590,pan,660874,pri,68251,prd,3300,pps,3615,pfcrn,2702,parm,1424,uno.pdm,39901,pt,5102,pvem,.,.,,,,,1093759,640,28751,1123150,1476801,ife (27nov2010),.
+169,ok,1994,ago,21,9.1994,9,df,DISTRITO FEDERAL,1172438,pan,1873059,pri,902199,prd,19084,pps,37370,pfcrn,15402,parm,12246,uno.pdm,185903,pt,91839,pvem,.,.,,,,,4309540,7157,98706,4415403,5362764,ife (27nov2010),.
+170,ok,1994,ago,21,10.1994,10,dgo,DURANGO,141818,pan,266837,pri,49793,prd,2181,pps,2712,pfcrn,1950,parm,545,uno.pdm,43351,pt,2466,pvem,.,.,,,,,511653,602,13833,526088,707682,ife (27nov2010),.
+171,ok,1994,ago,21,11.1994,11,gua,GUANAJUATO,513865,pan,945088,pri,149268,prd,6691,pps,13838,pfcrn,10031,parm,14685,uno.pdm,32763,pt,10906,pvem,.,.,,,,,1697135,2873,57808,1757816,2099320,ife (27nov2010),.
+172,ok,1994,ago,21,12.1994,12,gue,GUERRERO,74198,pan,385590,pri,266818,prd,4300,pps,13485,pfcrn,7037,parm,2634,uno.pdm,9168,pt,2951,pvem,.,.,,,,,766181,1057,25973,793211,1188918,ife (27nov2010),.
+173,ok,1994,ago,21,13.1994,13,hgo,HIDALGO,134171,pan,450800,pri,115693,prd,3442,pps,8668,pfcrn,7253,parm,1107,uno.pdm,14988,pt,4992,pvem,.,.,,,,,741114,794,29754,771662,1005722,ife (27nov2010),.
+174,ok,1994,ago,21,14.1994,14,jal,JALISCO,1008234,pan,1050815,pri,166226,prd,9528,pps,17464,pfcrn,11566,parm,11289,uno.pdm,47854,pt,20023,pvem,.,.,,,,,2342999,3181,59081,2405261,2885694,ife (27nov2010),.
+175,ok,1994,ago,21,15.1994,15,mex,MEXICO,1179422,pan,2143122,pri,835135,prd,26053,pps,45385,pfcrn,22075,parm,14193,uno.pdm,150186,pt,82171,pvem,.,.,,,,,4497742,4481,114214,4616437,5846382,ife (27nov2010),.
+176,ok,1994,ago,21,16.1994,16,mic,MICHOACAN,212921,pan,612040,pri,493236,prd,4293,pps,8542,pfcrn,8584,parm,6160,uno.pdm,17729,pt,7606,pvem,.,.,,,,,1371111,1130,36124,1408365,1825105,ife (27nov2010),.
+177,ok,1994,ago,21,17.1994,17,mor,MORELOS,128942,pan,282821,pri,109560,prd,2073,pps,5845,pfcrn,3249,parm,1305,uno.pdm,14399,pt,6509,pvem,.,.,,,,,554703,1075,14063,569841,749176,ife (27nov2010),.
+178,ok,1994,ago,21,18.1994,18,nay,NAYARIT,59925,pan,179411,pri,50717,prd,2394,pps,1758,pfcrn,1661,parm,310,uno.pdm,8862,pt,1243,pvem,.,.,,,,,306281,775,9031,316087,459663,ife (27nov2010),.
+179,ok,1994,ago,21,19.1994,19,nl,NUEVO LEON,596820,pan,723629,pri,44413,prd,2409,pps,2917,pfcrn,2874,parm,2144,uno.pdm,89387,pt,5860,pvem,.,.,,,,,1470453,2193,31091,1503737,1899908,ife (27nov2010),.
+180,ok,1994,ago,21,20.1994,20,oax,OAXACA,131225,pan,509776,pri,276758,prd,10816,pps,9665,pfcrn,12803,parm,1445,uno.pdm,17221,pt,5044,pvem,.,.,,,,,974753,891,44163,1019807,1429854,ife (27nov2010),.
+181,ok,1994,ago,21,21.1994,21,pue,PUEBLA,399942,pan,787493,pri,216200,prd,9493,pps,11750,pfcrn,10850,parm,2885,uno.pdm,37141,pt,13263,pvem,.,.,,,,,1489017,1196,61865,1552078,2096193,ife (27nov2010),.
+182,ok,1994,ago,21,22.1994,22,que,QUERETARO,149540,pan,275788,pri,26969,prd,2127,pps,3122,pfcrn,1572,parm,1554,uno.pdm,11077,pt,2937,pvem,.,.,,,,,474686,231,14419,489336,589907,ife (27nov2010),.
+183,ok,1994,ago,21,23.1994,23,qui,QUINTANA ROO,62006,pan,112546,pri,26301,prd,1026,pps,1550,pfcrn,902,parm,174,uno.pdm,2665,pt,1304,pvem,.,.,,,,,208474,80,5522,214076,301248,ife (27nov2010),.
+184,ok,1994,ago,21,24.1994,24,san,SAN LUIS POTOSI,196351,pan,440601,pri,73523,prd,2537,pps,2980,pfcrn,3701,parm,3192,uno.pdm,19705,pt,4546,pvem,.,.,,,,,747136,996,26783,774915,1039977,ife (27nov2010),.
+185,ok,1994,ago,21,25.1994,25,sin,SINALOA,285207,pan,474882,pri,129025,prd,4098,pps,2973,pfcrn,4383,parm,580,uno.pdm,12059,pt,3982,pvem,.,.,,,,,917189,835,20680,938704,1205235,ife (27nov2010),.
+186,ok,1994,ago,21,26.1994,26,son,SONORA,330272,pan,361835,pri,111978,prd,1741,pps,2698,pfcrn,1646,parm,961,uno.pdm,33118,pt,2778,pvem,.,.,,,,,847027,1066,17745,865838,1120700,ife (27nov2010),.
+187,ok,1994,ago,21,27.1994,27,tab,TABASCO,44763,pan,335851,pri,196100,prd,1563,pps,3158,pfcrn,1645,parm,399,uno.pdm,5832,pt,1583,pvem,.,.,,,,,590894,293,22427,613614,824166,ife (27nov2010),.
+188,ok,1994,ago,21,28.1994,28,tam,TAMAULIPAS,275989,pan,481595,pri,192900,prd,3301,pps,5307,pfcrn,20502,parm,1604,uno.pdm,23916,pt,5155,pvem,.,.,,,,,1010269,1357,30058,1041684,1330814,ife (27nov2010),.
+189,ok,1994,ago,21,29.1994,29,tla,TLAXCALA,84582,pan,186126,pri,54029,prd,2138,pps,2120,pfcrn,1819,parm,1887,uno.pdm,7799,pt,2862,pvem,.,.,,,,,343362,114,9681,353157,436723,ife (27nov2010),.
+190,ok,1994,ago,21,30.1994,30,ver,VERACRUZ,419109,pan,1360540,pri,612354,prd,23508,pps,40825,pfcrn,16127,parm,7810,uno.pdm,50492,pt,16342,pvem,.,.,,,,,2547107,3115,93331,2643553,3522994,ife (27nov2010),.
+191,ok,1994,ago,21,31.1994,31,yuc,YUCATAN,195986,pan,251699,pri,15009,prd,867,pps,1127,pfcrn,799,parm,330,uno.pdm,3583,pt,2102,pvem,.,.,,,,,471502,84,10429,482015,729746,ife (27nov2010),.
+192,ok,1994,ago,21,32.1994,32,zac,ZACATECAS,116434,pan,310237,pri,45412,prd,2732,pps,1703,pfcrn,1904,parm,677,uno.pdm,21494,pt,1847,pvem,.,.,,,,,502440,550,13072,516062,674265,ife (27nov2010),.
+193,ok,2000,jul,2,1.2,1,ags,AGUASCALIENTES,181160,pan,127134,pri,23189,prd,2202,pcd,1389,parm,9467,demsoc,21173,pvem,2,pan.pvem,3070,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,368791,83,6291,375165,562390,ife,pan (0.8953) and prd (0.8830) coal shares imputed w df t-3
+194,ok,2000,jul,2,2.2,2,bc,BAJA CALIFORNIA,392974,pan,319477,pri,68420,prd,3470,pcd,3080,parm,14562,demsoc,36218,pvem,2,pan.pvem,8915,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,847123,507,14965,862595,1498939,ife,pan (0.9156) and prd (0.8847) coal shares imputed w df t-3
+195,ok,2000,jul,2,3.2,3,bcs,BAJA CALIFORNIA SUR,54683,pan,56230,pri,19646,prd,460,pcd,364,parm,2107,demsoc,6149,pvem,2,pan.pvem,25578,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,165224,17,2804,168045,250155,ife,pan (0.8989) and prd (0.4344) coal shares imputed w df t-3
+196,ok,2000,jul,2,4.2,4,cam,CAMPECHE,94327,pan,106347,pri,29848,prd,1406,pcd,1247,parm,2485,demsoc,10169,pvem,2,pan.pvem,5237,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,251073,559,9309,260941,384547,ife,pan (0.9027) and prd (0.8507) coal shares imputed w df t-3
+197,ok,2000,jul,2,5.2,5,coa,COAHUILA,374903,pan,311480,pri,67517,prd,2111,pcd,1880,parm,10392,demsoc,23895,pvem,2,pan.pvem,9871,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,802056,1454,12464,815974,1392564,ife,pan (0.9401) and prd (0.8724) coal shares imputed w df t-3
+198,ok,2000,jul,2,6.2,6,col,COLIMA,103317,pan,81099,pri,22415,prd,1028,pcd,542,parm,3159,demsoc,3126,pvem,2,pan.pvem,893,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,215586,39,4377,220002,331661,ife,pan (0.9706) and prd (0.9615) coal shares imputed w df t-3
+199,ok,2000,jul,2,7.2,7,cps,CHIAPAS,263022,pan,469392,pri,244903,prd,4659,pcd,4063,parm,5340,demsoc,25180,pvem,2,pan.pvem,27274,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1043840,1056,44551,1089447,2087585,ife,pan (0.9126) and prd (0.8998) coal shares imputed w df t-3
+200,ok,2000,jul,2,8.2,8,cua,CHIHUAHUA,514070,pan,460931,pri,62453,prd,4487,pcd,3166,parm,11569,demsoc,35105,pvem,2,pan.pvem,14352,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1106140,609,21350,1128099,1938388,ife,pan (0.9361) and prd (0.8131) coal shares imputed w df t-3
+201,ok,2000,jul,2,9.2,9,df,DISTRITO FEDERAL,1304905,pan,1060227,pri,1106217,prd,36383,pcd,18843,parm,149312,demsoc,623128,pvem,2,pan.pvem,39909,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,4338931,2009,75669,4416609,6256698,ife,pan (0.6768) and prd (0.9652) coal shares imputed w df t-3
+202,ok,2000,jul,2,10.2,10,dgo,DURANGO,197765,pan,222892,pri,15811,prd,1579,pcd,1469,parm,6144,demsoc,13594,pvem,2,pan.pvem,34776,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,494037,859,9294,504190,868791,ife,pan (0.9357) and prd (0.3125) coal shares imputed w df t-3
+203,ok,2000,jul,2,11.2,11,gua,GUANAJUATO,1040950,pan,517815,pri,105966,prd,10800,pcd,8473,parm,18248,demsoc,87828,pvem,2,pan.pvem,15518,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1805605,2873,49039,1857517,2784508,ife,pan (0.9222) and prd (0.8722) coal shares imputed w df t-3
+204,ok,2000,jul,2,12.2,12,gue,GUERRERO,137825,pan,402091,pri,319702,prd,2913,pcd,3003,parm,6179,demsoc,37135,pvem,2,pan.pvem,12384,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,921239,954,20180,942373,1740426,ife,pan (0.7877) and prd (0.9627) coal shares imputed w df t-3
+205,ok,2000,jul,2,13.2,13,hgo,HIDALGO,243253,pan,355565,pri,124289,prd,5034,pcd,4078,parm,12319,demsoc,39609,pvem,2,pan.pvem,12567,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,796721,758,19997,817476,1322845,ife,pan (0.8600) and prd (0.9081) coal shares imputed w df t-3
+206,ok,2000,jul,2,14.2,14,jal,JALISCO,1272253,pan,941962,pri,147431,prd,17567,pcd,11110,parm,45494,demsoc,120280,pvem,2,pan.pvem,15833,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,2571937,3287,48736,2623960,3846656,ife,pan (0.9136) and prd (0.9030) coal shares imputed w df t-3
+207,ok,2000,jul,2,15.2,15,mex,MEXICO,1682472,pan,1637714,pri,921169,prd,40733,pcd,27203,parm,121137,demsoc,557276,pvem,2,pan.pvem,40702,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,5028413,3416,92743,5124572,7547729,ife,pan (0.7512) and prd (0.9577) coal shares imputed w df t-3
+208,ok,2000,jul,2,16.2,16,mic,MICHOACAN,369648,pan,441871,pri,526739,prd,7444,pcd,6404,parm,13058,demsoc,49538,pvem,2,pan.pvem,17060,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1431769,2060,30448,1464277,2408934,ife,pan (0.8818) and prd (0.9686) coal shares imputed w df t-3
+209,ok,2000,jul,2,17.2,17,mor,MORELOS,231990,pan,193861,pri,118717,prd,2916,pcd,3010,parm,12539,demsoc,58647,pvem,2,pan.pvem,5646,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,627333,136,12296,639765,979260,ife,pan (0.7982) and prd (0.9546) coal shares imputed w df t-3
+210,ok,2000,jul,2,18.2,18,nay,NAYARIT,100934,pan,173479,pri,57327,prd,1175,pcd,1024,parm,3092,demsoc,6481,pvem,2,pan.pvem,5789,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,349308,351,7043,356702,568885,ife,pan (0.9397) and prd (0.9082) coal shares imputed w df t-3
+211,ok,2000,jul,2,19.2,19,nl,NUEVO LEON,743703,pan,615907,pri,32666,prd,7478,pcd,2658,parm,20448,demsoc,16388,pvem,2,pan.pvem,63966,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1503221,1519,27201,1531941,2413486,ife,pan (0.9784) and prd (0.3380) coal shares imputed w df t-3
+212,ok,2000,jul,2,20.2,20,oax,OAXACA,259673,pan,486496,pri,267254,prd,8372,pcd,7305,parm,11074,demsoc,41520,pvem,2,pan.pvem,15328,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1097029,1851,39616,1138496,1938597,ife,pan (0.8621) and prd (0.9457) coal shares imputed w df t-3
+213,ok,2000,jul,2,21.2,21,pue,PUEBLA,639040,pan,698974,pri,190428,prd,8609,pcd,7849,parm,20170,demsoc,93393,pvem,2,pan.pvem,18255,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1676725,1142,44305,1722172,2753111,ife,pan (0.8725) and prd (0.9125) coal shares imputed w df t-3
+214,ok,2000,jul,2,22.2,22,que,QUERETARO,275253,pan,192622,pri,32160,prd,3768,pcd,8670,parm,10585,demsoc,15722,pvem,2,pan.pvem,7464,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,546251,170,13849,560270,800359,ife,pan (0.9460) and prd (0.8115) coal shares imputed w df t-3
+215,ok,2000,jul,2,23.2,23,qui,QUINTANA ROO,119127,pan,94202,pri,45982,prd,916,pcd,729,parm,2399,demsoc,13254,pvem,2,pan.pvem,4500,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,281116,70,5216,286402,461417,ife,pan (0.8999) and prd (0.9108) coal shares imputed w df t-3
+216,ok,2000,jul,2,24.2,24,san,SAN LUIS POTOSI,376125,pan,324234,pri,54367,prd,3306,pcd,2287,parm,11073,demsoc,17870,pvem,2,pan.pvem,18227,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,807496,407,22673,830576,1315822,ife,pan (0.9546) and prd (0.7489) coal shares imputed w df t-3
+217,ok,2000,jul,2,25.2,25,sin,SINALOA,219223,pan,621369,pri,84752,prd,2189,pcd,1675,parm,7205,demsoc,11552,pvem,2,pan.pvem,5731,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,953703,1290,15920,970913,1509567,ife,pan (0.9499) and prd (0.9366) coal shares imputed w df t-3
+218,ok,2000,jul,2,26.2,26,son,SONORA,435874,pan,296267,pri,107057,prd,1672,pcd,1325,parm,6426,demsoc,11620,pvem,2,pan.pvem,7518,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,867766,94,13269,881129,1378741,ife,pan (0.9740) and prd (0.9344) coal shares imputed w df t-3
+219,ok,2000,jul,2,27.2,27,tab,TABASCO,142836,pan,269519,pri,207925,prd,2599,pcd,1732,parm,5817,demsoc,32002,pvem,2,pan.pvem,6053,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,668490,655,14036,683181,1089295,ife,pan (0.8170) and prd (0.9717) coal shares imputed w df t-3
+220,ok,2000,jul,2,28.2,28,tam,TAMAULIPAS,486496,pan,445737,pri,79495,prd,3210,pcd,6932,parm,9387,demsoc,34988,pvem,2,pan.pvem,11926,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,1078178,1157,19659,1098994,1748366,ife,pan (0.9329) and prd (0.8695) coal shares imputed w df t-3
+221,ok,2000,jul,2,29.2,29,tla,TLAXCALA,101860,pan,127163,pri,66744,prd,2508,pcd,1450,parm,5185,demsoc,22018,pvem,2,pan.pvem,15324,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,342259,53,6639,348951,562612,ife,pan (0.8223) and prd (0.8132) coal shares imputed w df t-3
+222,ok,2000,jul,2,30.2,30,ver,VERACRUZ,968433,pan,1008933,pri,442552,prd,11343,pcd,10956,parm,25474,demsoc,98284,pvem,2,pan.pvem,49234,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,2615216,985,58630,2674831,4232824,ife,pan (0.9079) and prd (0.8999) coal shares imputed w df t-3
+223,ok,2000,jul,2,31.2,31,yuc,YUCATAN,315136,pan,321392,pri,24259,prd,1344,pcd,987,parm,4258,demsoc,13365,pvem,2,pan.pvem,2950,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,683698,602,13127,697427,969134,ife,pan (0.9593) and prd (0.8915) coal shares imputed w df t-3
+224,ok,2000,jul,2,32.2,32,zac,ZACATECAS,158563,pan,197336,pri,80409,prd,2908,pcd,1993,parm,6277,demsoc,11272,pvem,2,pan.pvem,36961,pt.conve.psn.pas,5,prd.pt.conve.psn.pas,,,,,495726,439,12461,508626,838445,ife,pan (0.9336) and prd (0.6851) coal shares imputed w df t-3
+225,ok,2006,jul,2,1.2006,1,ags,AGUASCALIENTES,191789,pan,84199,pri,55681,prd,5420,pna,16209,asdc,11960,pvem,2,pri.pvem,33280,pt.conve,3,prd.pt.conve,,,,,,,398543,3238,7783,409564,703700,IFE post tribunal,pri (0.8756) and prd (0.6259) coal shares imputed w df t-3
+226,ok,2006,jul,2,2.2006,2,bc,BAJA CALIFORNIA,445057,pan,152740,pri,144199,prd,13273,pna,35646,asdc,47722,pvem,2,pri.pvem,77648,pt.conve,3,prd.pt.conve,,,,,,,916290,6545,16747,939582,2024311,IFE post tribunal,pri (0.7619) and prd (0.6500) coal shares imputed w df t-3
+227,ok,2006,jul,2,3.2006,3,bcs,BAJA CALIFORNIA SUR,62127,pan,27556,pri,68991,prd,1475,pna,5470,asdc,2316,pvem,2,pri.pvem,8881,pt.conve,3,prd.pt.conve,,,,,,,176821,1225,2801,180847,329952,IFE post tribunal,pri (0.9224) and prd (0.8859) coal shares imputed w df t-6 and t-3 respectively
+228,ok,2006,jul,2,4.2006,4,cam,CAMPECHE,93563,pan,77628,pri,15310,prd,8209,pna,4426,asdc,5654,pvem,2,pri.pvem,80568,pt.conve,3,prd.pt.conve,,,,,,,285363,1546,8903,295812,483244,IFE post tribunal,pri (0.9321) and prd (0.1597) coal shares imputed w df t-6 and t-3 respectively
+229,ok,2006,jul,2,5.2006,5,coa,COAHUILA,399476,pan,214468,pri,132835,prd,8320,pna,26450,asdc,30563,pvem,2,pri.pvem,91681,pt.conve,3,prd.pt.conve,,,,,,,903798,8200,14883,926881,1707904,IFE post tribunal,pri (0.8753) and prd (0.5916) coal shares imputed w df t-3
+230,ok,2006,jul,2,6.2006,6,col,COLIMA,107490,pan,72563,pri,51762,prd,1548,pna,5324,asdc,3798,pvem,2,pri.pvem,9456,pt.conve,3,prd.pt.conve,,,,,,,251946,796,4705,257447,410285,IFE post tribunal,pri (0.9503) and prd (0.8455) coal shares imputed w df t-3
+231,ok,2006,jul,2,7.2006,7,cps,CHIAPAS,213749,pan,351427,pri,433204,prd,7257,pna,14941,asdc,73095,pvem,2,pri.pvem,112836,pt.conve,3,prd.pt.conve,,,,,,,1206514,8311,47114,1261939,2594044,IFE post tribunal,pri (0.8278) and prd (0.7934) coal shares imputed w df t-3
+232,ok,2006,jul,2,8.2006,8,cua,CHIHUAHUA,520671,pan,315786,pri,140524,prd,20023,pna,31373,asdc,23042,pvem,2,pri.pvem,69918,pt.conve,3,prd.pt.conve,,,,,,,1121342,6669,24736,1152747,2382460,IFE post tribunal,pri (0.9320) and prd (0.6678) coal shares imputed w df t-6 and t-3 respectively
+233,ok,2006,jul,2,9.2006,9,df,DISTRITO FEDERAL,1321210,pan,240894,pri,2628928,prd,27039,pna,175162,asdc,171668,pvem,2,pri.pvem,179491,pt.conve,3,prd.pt.conve,,,,,,,4744397,14819,69260,4828476,7111118,IFE post tribunal,pri (0.5839) and prd (0.9361) coal shares imputed w df t-3
+234,ok,2006,jul,2,10.2006,10,dgo,DURANGO,253115,pan,143317,pri,43312,prd,5673,pna,11191,asdc,8771,pvem,2,pri.pvem,84081,pt.conve,3,prd.pt.conve,,,,,,,549465,6092,10938,566495,1052052,IFE post tribunal,pri (0.9423) and prd (0.3400) coal shares imputed w df t-3
+235,ok,2006,jul,2,11.2006,11,gua,GUANAJUATO,1154852,pan,322296,pri,212116,prd,18538,pna,49808,asdc,45995,pvem,2,pri.pvem,88674,pt.conve,3,prd.pt.conve,,,,,,,1892284,17059,50056,1959399,3425081,IFE post tribunal,pri (0.8751) and prd (0.7052) coal shares imputed w df t-6 and t-3 respectively
+236,ok,2006,jul,2,12.2006,12,gue,GUERRERO,159327,pan,243502,pri,431658,prd,10905,pna,16208,asdc,18271,pvem,2,pri.pvem,75957,pt.conve,3,prd.pt.conve,,,,,,,955833,7090,24066,986989,2135213,IFE post tribunal,pri (0.9302) and prd (0.8504) coal shares imputed w df t-3
+237,ok,2006,jul,2,13.2006,13,hgo,HIDALGO,251772,pan,213511,pri,305965,prd,15360,pna,25702,asdc,22413,pvem,2,pri.pvem,79782,pt.conve,3,prd.pt.conve,,,,,,,914510,6444,24636,945590,1621727,IFE post tribunal,pri (0.9050) and prd (0.7932) coal shares imputed w df t-3
+238,ok,2006,jul,2,14.2006,14,jal,JALISCO,1426237,pan,575959,pri,430572,prd,37032,pna,93509,asdc,122418,pvem,2,pri.pvem,124664,pt.conve,3,prd.pt.conve,,,,,,,2810396,16901,62109,2889406,4711399,IFE post tribunal,pri (0.8247) and prd (0.7755) coal shares imputed w df t-3
+239,ok,2006,jul,2,15.2006,15,mex,MEXICO,1766443,pan,789183,pri,2087581,prd,61204,pna,215238,asdc,239853,pvem,2,pri.pvem,375030,pt.conve,3,prd.pt.conve,,,,,,,5534537,47998,101628,5684163,9155396,IFE post tribunal,pri (0.7669) and prd (0.8477) coal shares imputed w df t-6 and t-3 respectively
+240,ok,2006,jul,2,16.2006,16,mic,MICHOACAN,509046,pan,220471,pri,568761,prd,8059,pna,29560,asdc,59703,pvem,2,pri.pvem,40049,pt.conve,3,prd.pt.conve,,,,,,,1435654,10741,31643,1478038,2952114,IFE post tribunal,pri (0.7869) and prd (0.9342) coal shares imputed w df t-3
+241,ok,2006,jul,2,17.2006,17,mor,MORELOS,225259,pan,84634,pri,232479,prd,12051,pna,24662,asdc,25899,pvem,2,pri.pvem,79275,pt.conve,3,prd.pt.conve,,,,,,,684264,6858,15064,706186,1176598,IFE post tribunal,pri (0.7657) and prd (0.7457) coal shares imputed w df t-3
+242,ok,2006,jul,2,18.2006,18,nay,NAYARIT,68925,pan,113516,pri,84940,prd,3825,pna,7699,asdc,9322,pvem,2,pri.pvem,67513,pt.conve,3,prd.pt.conve,,,,,,,355745,1911,6967,364623,673987,IFE post tribunal,pri (0.9241) and prd (0.5572) coal shares imputed w df t-3
+243,ok,2006,jul,2,19.2006,19,nl,NUEVO LEON,859303,pan,471868,pri,68018,prd,30664,pna,51287,asdc,11950,pvem,2,pri.pvem,212229,pt.conve,3,prd.pt.conve,,,,,,,1705324,11359,38655,1755338,2947532,IFE post tribunal,pri (0.9753) and prd (0.2427) coal shares imputed w df t-6 and t-3 respectively
+244,ok,2006,jul,2,20.2006,20,oax,OAXACA,225740,pan,387330,pri,425032,prd,5603,pna,19428,asdc,39509,pvem,2,pri.pvem,193525,pt.conve,3,prd.pt.conve,,,,,,,1296172,7651,41877,1345700,2322949,IFE post tribunal,pri (0.9074) and prd (0.6871) coal shares imputed w df t-3
+245,ok,2006,jul,2,21.2006,21,pue,PUEBLA,742736,pan,404981,pri,437252,prd,20378,pna,50192,asdc,54254,pvem,2,pri.pvem,201463,pt.conve,3,prd.pt.conve,,,,,,,1911261,16253,53597,1981111,3436519,IFE post tribunal,pri (0.8819) and prd (0.6846) coal shares imputed w df t-3
+246,ok,2006,jul,2,22.2006,22,que,QUERETARO,321912,pan,122821,pri,94735,prd,6008,pna,16498,asdc,9456,pvem,2,pri.pvem,64938,pt.conve,3,prd.pt.conve,,,,,,,636373,5932,15340,657645,1033114,IFE post tribunal,pri (0.9285) and prd (0.5933) coal shares imputed w df t-6 and t-3 respectively
+247,ok,2006,jul,2,23.2006,23,qui,QUINTANA ROO,110737,pan,77666,pri,63235,prd,2754,pna,8732,asdc,26742,pvem,2,pri.pvem,84056,pt.conve,3,prd.pt.conve,,,,,,,373927,2729,6985,383641,675884,IFE post tribunal,pri (0.7439) and prd (0.4293) coal shares imputed w df t-3
+248,ok,2006,jul,2,24.2006,24,san,SAN LUIS POTOSI,460707,pan,197438,pri,135121,prd,8275,pna,23656,asdc,8950,pvem,2,pri.pvem,68891,pt.conve,3,prd.pt.conve,,,,,,,903043,7435,37270,947748,1592136,IFE post tribunal,pri (0.9566) and prd (0.6623) coal shares imputed w df t-6 and t-3 respectively
+249,ok,2006,jul,2,25.2006,25,sin,SINALOA,362082,pan,241014,pri,243751,prd,6693,pna,20525,asdc,21623,pvem,2,pri.pvem,57286,pt.conve,3,prd.pt.conve,,,,,,,952979,5379,19227,977585,1732096,IFE post tribunal,pri (0.9177) and prd (0.8097) coal shares imputed w df t-3
+250,ok,2006,jul,2,26.2006,26,son,SONORA,460717,pan,166717,pri,187510,prd,6725,pna,22943,asdc,4958,pvem,2,pri.pvem,47095,pt.conve,3,prd.pt.conve,,,,,,,896670,3817,16511,916998,1669403,IFE post tribunal,pri (0.9711) and prd (0.7993) coal shares imputed w df t-6 and t-3 respectively
+251,ok,2006,jul,2,27.2006,27,tab,TABASCO,31685,pan,319179,pri,478176,prd,1731,pna,4227,asdc,21176,pvem,2,pri.pvem,29397,pt.conve,3,prd.pt.conve,,,,,,,885576,1555,13988,901119,1335454,IFE post tribunal,pri (0.9378) and prd (0.9421) coal shares imputed w df t-3
+252,ok,2006,jul,2,28.2006,28,tam,TAMAULIPAS,500799,pan,293503,pri,193940,prd,12019,pna,24881,asdc,20481,pvem,2,pri.pvem,127459,pt.conve,3,prd.pt.conve,,,,,,,1173087,16042,23407,1212536,2225129,IFE post tribunal,pri (0.9348) and prd (0.6034) coal shares imputed w df t-3
+253,ok,2006,jul,2,29.2006,29,tla,TLAXCALA,140128,pan,51107,pri,147455,prd,3426,pna,11130,asdc,8563,pvem,2,pri.pvem,33029,pt.conve,3,prd.pt.conve,,,,,,,394843,6504,8883,410230,704648,IFE post tribunal,pri (0.8565) and prd (0.8170) coal shares imputed w df t-3
+254,ok,2006,jul,2,30.2006,30,ver,VERACRUZ,1002862,pan,662633,pri,587662,prd,17632,pna,55903,asdc,61888,pvem,2,pri.pvem,445024,pt.conve,3,prd.pt.conve,,,,,,,2833609,25311,72193,2931113,4875677,IFE post tribunal,pri (0.9146) and prd (0.5691) coal shares imputed w df t-3
+255,ok,2006,jul,2,31.2006,31,yuc,YUCATAN,362519,pan,251012,pri,100608,prd,4346,pna,12962,asdc,7561,pvem,2,pri.pvem,23933,pt.conve,3,prd.pt.conve,,,,,,,762946,6862,15382,785190,1178719,IFE post tribunal,pri (0.9708) and prd (0.8078) coal shares imputed w df t-3
+256,ok,2006,jul,2,32.2006,32,zac,ZACATECAS,164892,pan,113554,pri,161103,prd,6085,pna,13338,asdc,12889,pvem,2,pri.pvem,23475,pt.conve,3,prd.pt.conve,,,,,,,495341,8932,13019,517292,994528,IFE post tribunal,pri (0.8981) and prd (0.8728) coal shares imputed w df t-3
+257,ok,2012,jul,1,1.2012,1,ags,AGUASCALIENTES,152543,pan,165618,pri,68539,prd,25154,pvem,19626,pt,14458,mc,33705,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,479648,392,13426,493466,808064,IFE post tribunal,.
+258,ok,2012,jul,1,2.2012,2,bc,BAJA CALIFORNIA,339508,pan,392968,pri,272368,prd,70380,pvem,65043,pt,52508,mc,34893,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1227673,492,22232,1250397,2251645,IFE post tribunal,.
+259,ok,2012,jul,1,3.2012,3,bcs,BAJA CALIFORNIA SUR,75066,pan,90495,pri,41083,prd,14253,pvem,11817,pt,10274,mc,4940,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,247933,97,5138,253168,422704,IFE post tribunal,.
+260,ok,2012,jul,1,4.2012,4,cam,CAMPECHE,107881,pan,129769,pri,67144,prd,19439,pvem,16329,pt,18892,mc,9707,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,369166,86,10036,379288,515852,IFE post tribunal,.
+261,ok,2012,jul,1,5.2012,5,coa,COAHUILA,325666,pan,541363,pri,454341,prd,392137,pvem,116628,pt,63114,mc,47943,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1941197,381,89725,2031303,1849664,IFE post tribunal,.
+262,ok,2012,jul,1,6.2012,6,col,COLIMA,328048,pan,540951,pri,208710,prd,77685,pvem,54008,pt,38808,mc,48219,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1296434,748,34189,1331371,467058,IFE post tribunal,.
+263,ok,2012,jul,1,7.2012,7,cps,CHIAPAS,428998,pan,415460,pri,165487,prd,49313,pvem,40717,pt,27611,mc,27833,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1155424,382,21612,1177418,2947408,IFE post tribunal,.
+264,ok,2012,jul,1,8.2012,8,cua,CHIHUAHUA,101083,pan,110960,pri,46961,prd,12714,pvem,12949,pt,8096,mc,4855,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,297623,109,6159,303891,2324637,IFE post tribunal,.
+265,ok,2012,jul,1,9.2012,9,df,DISTRITO FEDERAL,844110,pan,1054395,pri,1783327,prd,203772,pvem,449682,pt,335932,mc,87332,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,4758555,3940,90434,4852929,7146401,IFE post tribunal,.
+266,ok,2012,jul,1,10.2012,10,dgo,DURANGO,194052,pan,284569,pri,77329,prd,35790,pvem,47887,pt,16393,mc,15407,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,671432,182,13094,684708,1024689,IFE post tribunal,.
+267,ok,2012,jul,1,11.2012,11,gua,GUANAJUATO,944158,pan,793306,pri,222390,prd,136187,pvem,41755,pt,33832,mc,62920,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,2234553,806,68669,2304028,3809386,IFE post tribunal,.
+268,ok,2012,jul,1,12.2012,12,gue,GUERRERO,153627,pan,455619,pri,491703,prd,74450,pvem,84966,pt,83882,mc,20163,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1364415,221,45016,1409652,2257204,IFE post tribunal,.
+269,ok,2012,jul,1,13.2012,13,hgo,HIDALGO,215101,pan,456389,pri,306872,prd,60614,pvem,62701,pt,42404,mc,50197,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1194283,312,29842,1224437,1852477,IFE post tribunal,.
+270,ok,2012,jul,1,14.2012,14,jal,JALISCO,1098252,pan,1183649,pri,378891,prd,179139,pvem,109675,pt,281202,mc,93506,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,3324319,1500,82891,3408710,5143145,IFE post tribunal,.
+271,ok,2012,jul,1,15.2012,15,mex,MEXICO,1250707,pan,2563525,pri,1684464,prd,402583,pvem,342055,pt,313203,mc,160462,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,6717004,3379,145111,6865494,10251266,IFE post tribunal,.
+272,ok,2012,jul,1,16.2012,16,mic,MICHOACAN,337512,pan,614458,pri,403174,prd,95842,pvem,66292,pt,47645,mc,34427,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1599355,1046,46697,1647098,3116491,IFE post tribunal,.
+273,ok,2012,jul,1,17.2012,17,mor,MORELOS,157027,pan,246209,pri,259658,prd,49523,pvem,57925,pt,45694,mc,19036,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,835077,299,20255,855631,1301651,IFE post tribunal,.
+274,ok,2012,jul,1,18.2012,18,nay,NAYARIT,82970,pan,197603,pri,98886,prd,23803,pvem,27178,pt,19573,mc,8907,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,458925,116,10808,469849,718760,IFE post tribunal,.
+275,ok,2012,jul,1,19.2012,19,nl,NUEVO LEON,800099,pan,595646,pri,277999,prd,71342,pvem,119732,pt,43716,mc,62159,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1970698,613,38503,2009814,3260842,IFE post tribunal,.
+276,ok,2012,jul,1,20.2012,20,oax,OAXACA,290645,pan,486718,pri,514554,prd,68930,pvem,92350,pt,88776,mc,18330,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1560308,440,43371,1604119,2546485,IFE post tribunal,.
+277,ok,2012,jul,1,21.2012,21,pue,PUEBLA,640977,pan,712251,pri,532606,prd,142129,pvem,204728,pt,121773,mc,56040,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,2410509,782,69727,2481018,3897115,IFE post tribunal,.
+278,ok,2012,jul,1,22.2012,22,que,QUERETARO,288343,pan,295364,pri,141413,prd,35360,pvem,27326,pt,23702,mc,20285,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,831798,333,23671,855802,1263554,IFE post tribunal,.
+279,ok,2012,jul,1,23.2012,23,qui,QUINTANA ROO,111303,pan,150670,pri,169153,prd,28337,pvem,33549,pt,23349,mc,10362,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,526728,248,10822,537798,886694,IFE post tribunal,.
+280,ok,2012,jul,1,24.2012,24,san,SAN LUIS POTOSI,346576,pan,363572,pri,167962,prd,65223,pvem,53701,pt,42096,mc,32282,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1071417,587,45755,1117759,1747800,IFE post tribunal,.
+281,ok,2012,jul,1,25.2012,25,sin,SINALOA,295585,pan,487054,pri,207175,prd,64084,pvem,38900,pt,32727,mc,22584,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1148114,540,31361,1180015,1844223,IFE post tribunal,.
+282,ok,2012,jul,1,26.2012,26,son,SONORA,342168,pan,384105,pri,196650,prd,46032,pvem,39992,pt,29354,mc,16125,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1054431,722,28412,1083565,1780074,IFE post tribunal,.
+283,ok,2012,jul,1,27.2012,27,tab,TABASCO,65018,pan,313612,pri,522610,prd,32769,pvem,68127,pt,56241,mc,5766,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1064148,148,26606,1090902,1491490,IFE post tribunal,.
+284,ok,2012,jul,1,28.2012,28,tam,TAMAULIPAS,597387,pan,438495,pri,198399,prd,52524,pvem,46468,pt,35964,mc,31465,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1400707,383,28973,1430063,2371066,IFE post tribunal,.
+285,ok,2012,jul,1,29.2012,29,tla,TLAXCALA,98450,pan,155588,pri,141615,prd,28657,pvem,39263,pt,29296,mc,15933,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,508807,90,11295,520192,807620,IFE post tribunal,.
+286,ok,2012,jul,1,30.2012,30,ver,VERACRUZ,1203157,pan,1051975,pri,782202,prd,149347,pvem,137839,pt,115746,mc,50740,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,3491011,877,85188,3577076,5229735,IFE post tribunal,.
+287,ok,2012,jul,1,31.2012,31,yuc,YUCATAN,394197,pan,396526,pri,136710,prd,43483,pvem,23387,pt,17596,mc,18131,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,1030035,188,20986,1051209,1334931,IFE post tribunal,.
+288,ok,2012,jul,1,32.2012,32,zac,ZACATECAS,122416,pan,286024,pri,101844,prd,52627,pvem,45278,pt,14782,mc,21431,pna,2,pri.pvem,3,prd.pt.mc,,,,,,,644407,186,16853,661446,1068363,IFE post tribunal,.
+289,ok,2018,jul,1,1.2018,1,ags,AGUASCALIENTES,162102,pan,88783,pri,7434,prd,6215,pvem,23555,pt,4403,mc,6145,pna,177557,morena,9676,pes,4766,pan.prd.mc,2451,pri.pvem.pna,11277,morena.pt.pes,545178,,,,943448,ine,.
+290,ok,2018,jul,1,2.2018,2,bc,BAJA CALIFORNIA,238697,pan,102210,pri,13079,prd,8870,pvem,70327,pt,11987,mc,6930,pna,764146,morena,27358,pes,11335,pan.prd.mc,6135,pri.pvem.pna,56162,morena.pt.pes,1407492,,,,2731567,ine,.
+291,ok,2018,jul,1,3.2018,3,bcs,BAJA CALIFORNIA SUR,51781,pan,21625,pri,1408,prd,2796,pvem,24096,pt,1453,mc,2478,pna,151013,morena,6174,pes,2114,pan.prd.mc,1295,pri.pvem.pna,12463,morena.pt.pes,295865,,,,516146,ine,.
+292,ok,2018,jul,1,4.2018,4,cam,CAMPECHE,43714,pan,82289,pri,4944,prd,2949,pvem,29951,pt,3329,mc,3560,pna,220772,morena,9699,pes,2400,pan.prd.mc,7772,pri.pvem.pna,14677,morena.pt.pes,437457,,,,642056,ine,.
+293,ok,2018,jul,1,5.2018,5,coa,COAHUILA,278383,pan,330440,pri,10795,prd,10336,pvem,61700,pt,10518,mc,8143,pna,502833,morena,20044,pes,7380,pan.prd.mc,9292,pri.pvem.pna,24037,morena.pt.pes,1345638,,,,2154098,ine,.
+294,ok,2018,jul,1,6.2018,6,col,COLIMA,46884,pan,49016,pri,2553,prd,6472,pvem,20483,pt,4563,mc,2850,pna,158936,morena,5837,pes,2335,pan.prd.mc,3636,pri.pvem.pna,11618,morena.pt.pes,331268,,,,530720,ine,.
+295,ok,2018,jul,1,7.2018,7,cps,CHIAPAS,100228,pan,266961,pri,55090,prd,243730,pvem,167227,pt,35722,mc,38667,pna,1168857,morena,66564,pes,7012,pan.prd.mc,13482,pri.pvem.pna,82346,morena.pt.pes,2287178,,,,3541181,ine,.
+296,ok,2018,jul,1,8.2018,8,cua,CHIHUAHUA,378243,pan,202248,pri,15614,prd,16727,pvem,75245,pt,17582,mc,14785,pna,495999,morena,32107,pes,13524,pan.prd.mc,6812,pri.pvem.pna,38744,morena.pt.pes,1441384,,,,2743260,ine,.
+297,ok,2018,jul,1,9.2018,9,df,DISTRITO FEDERAL,921553,pan,563876,pri,251610,prd,32180,pvem,187336,pt,37132,mc,22198,pna,2600692,morena,81197,pes,73200,pan.prd.mc,32259,pri.pvem.pna,237264,morena.pt.pes,5266512,,,,7628256,ine,.
+298,ok,2018,jul,1,10.2018,10,dgo,DURANGO,164666,pan,123544,pri,7288,prd,9229,pvem,61304,pt,8181,mc,4573,pna,241002,morena,15020,pes,7377,pan.prd.mc,3841,pri.pvem.pna,22136,morena.pt.pes,714728,,,,1279679,ine,.
+299,ok,2018,jul,1,11.2018,11,gua,GUANAJUATO,843356,pan,288036,pri,41231,prd,58480,pvem,82275,pt,29327,mc,24295,pna,557469,morena,26645,pes,24992,pan.prd.mc,10672,pri.pvem.pna,37687,morena.pt.pes,2249166,,,,4359531,ine,.
+300,ok,2018,jul,1,12.2018,12,gue,GUERRERO,75283,pan,221329,pri,103057,prd,37772,pvem,121838,pt,31104,mc,13407,pna,806639,morena,35844,pes,8131,pan.prd.mc,13190,pri.pvem.pna,49944,morena.pt.pes,1542299,,,,2506912,ine,.
+301,ok,2018,jul,1,13.2018,13,hgo,HIDALGO,141438,pan,214642,pri,27268,prd,11271,pvem,56586,pt,10716,mc,22111,pna,716557,morena,33691,pes,8398,pan.prd.mc,9466,pri.pvem.pna,42148,morena.pt.pes,1354367,,,,2118481,ine,.
+302,ok,2018,jul,1,14.2018,14,jal,JALISCO,804348,pan,413021,pri,31718,prd,52117,pvem,152938,pt,294786,mc,30886,pna,1162833,morena,66279,pes,45950,pan.prd.mc,12715,pri.pvem.pna,74471,morena.pt.pes,3391913,,,,5896959,ine,.
+303,ok,2018,jul,1,15.2018,15,mex,MEXICO,1206182,pan,1333248,pri,206588,prd,92490,pvem,302908,pt,65574,mc,68994,pna,3673893,morena,128135,pes,69826,pan.prd.mc,53628,pri.pvem.pna,264850,morena.pt.pes,7852979,,,,11832184,ine,.
+304,ok,2018,jul,1,16.2018,16,mic,MICHOACAN,248151,pan,250628,pri,150173,prd,54040,pvem,153747,pt,26237,mc,22122,pna,733878,morena,42811,pes,18481,pan.prd.mc,8858,pri.pvem.pna,56489,morena.pt.pes,1889137,,,,3372938,ine,.
+305,ok,2018,jul,1,17.2018,17,mor,MORELOS,95152,pan,73664,pri,30093,prd,12849,pvem,82496,pt,10646,mc,8688,pna,463287,morena,42302,pes,6344,pan.prd.mc,4250,pri.pvem.pna,49173,morena.pt.pes,939671,,,,1439365,ine,.
+306,ok,2018,jul,1,18.2018,18,nay,NAYARIT,59392,pan,58548,pri,9934,prd,2637,pvem,30835,pt,6756,mc,3173,pna,253871,morena,12585,pes,3604,pan.prd.mc,2043,pri.pvem.pna,17750,morena.pt.pes,471773,,,,846811,ine,.
+307,ok,2018,jul,1,19.2018,19,nl,NUEVO LEON,641313,pan,268064,pri,10420,prd,21654,pvem,151473,pt,31492,mc,15492,pna,526614,morena,28744,pes,18133,pan.prd.mc,9989,pri.pvem.pna,40113,morena.pt.pes,2125304,,,,3900538,ine,.
+308,ok,2018,jul,1,20.2018,20,oax,OAXACA,121944,pan,271943,pri,73043,prd,27035,pvem,134335,pt,19070,mc,30747,pna,1027399,morena,37195,pes,7439,pan.prd.mc,12310,pri.pvem.pna,57757,morena.pt.pes,1860132,,,,2861299,ine,.
+309,ok,2018,jul,1,21.2018,21,pue,PUEBLA,493178,pan,399824,pri,47817,prd,41472,pvem,172850,pt,54487,mc,34807,pna,1414581,morena,53634,pes,22251,pan.prd.mc,14479,pri.pvem.pna,108488,morena.pt.pes,2972789,,,,4500580,ine,.
+310,ok,2018,jul,1,22.2018,22,que,QUERETARO,315583,pan,127239,pri,11396,prd,8888,pvem,45306,pt,7417,mc,7032,pna,332724,morena,16610,pes,12644,pan.prd.mc,7716,pri.pvem.pna,28812,morena.pt.pes,995575,,,,1582953,ine,.
+311,ok,2018,jul,1,23.2018,23,qui,QUINTANA ROO,91723,pan,57175,pri,11624,prd,10004,pvem,38023,pt,6261,mc,5297,pna,400691,morena,20515,pes,6246,pan.prd.mc,4269,pri.pvem.pna,28900,morena.pt.pes,710519,,,,1208666,ine,.
+312,ok,2018,jul,1,24.2018,24,san,SAN LUIS POTOSI,246286,pan,205811,pri,58219,prd,28231,pvem,83786,pt,16172,mc,13517,pna,389916,morena,21675,pes,13587,pan.prd.mc,12551,pri.pvem.pna,30656,morena.pt.pes,1204007,,,,1974326,ine,.
+313,ok,2018,jul,1,25.2018,25,sin,SINALOA,128508,pan,202014,pri,15048,prd,9687,pvem,71268,pt,13072,mc,10033,pna,684880,morena,27030,pes,7073,pan.prd.mc,12619,pri.pvem.pna,49991,morena.pt.pes,1260847,,,,2135258,ine,.
+314,ok,2018,jul,1,26.2018,26,son,SONORA,136551,pan,154928,pri,9696,prd,7322,pvem,63769,pt,13699,mc,7299,pna,535524,morena,16008,pes,7007,pan.prd.mc,11429,pri.pvem.pna,35677,morena.pt.pes,1063513,,,,2101688,ine,.
+315,ok,2018,jul,1,27.2018,27,tab,TABASCO,22433,pan,84401,pri,55745,prd,13300,pvem,38279,pt,8328,mc,6829,pna,861963,morena,21946,pes,4779,pan.prd.mc,2988,pri.pvem.pna,38945,morena.pt.pes,1170056,,,,1687618,ine,.
+316,ok,2018,jul,1,28.2018,28,tam,TAMAULIPAS,433900,pan,207153,pri,12265,prd,8667,pvem,76746,pt,14106,mc,7296,pna,643546,morena,26980,pes,14346,pan.prd.mc,5155,pri.pvem.pna,37717,morena.pt.pes,1599175,,,,2628745,ine,.
+317,ok,2018,jul,1,29.2018,29,tla,TLAXCALA,51911,pan,64234,pri,6823,prd,3525,pvem,41945,pt,4434,mc,3257,pna,349959,morena,13038,pes,3500,pan.prd.mc,3712,pri.pvem.pna,27565,morena.pt.pes,600051,,,,922016,ine,.
+318,ok,2018,jul,1,30.2018,30,ver,VERACRUZ,847668,pan,387333,pri,114387,prd,43788,pvem,111101,pt,44199,mc,20961,pna,1812664,morena,48948,pes,43835,pan.prd.mc,19127,pri.pvem.pna,83348,morena.pt.pes,3711245,,,,5775918,ine,.
+319,ok,2018,jul,1,31.2018,31,yuc,YUCATAN,282693,pan,283479,pri,17339,prd,19675,pvem,42028,pt,12202,mc,14152,pna,379947,morena,14315,pes,7722,pan.prd.mc,6704,pri.pvem.pna,18501,morena.pt.pes,1138233,,,,1544062,ine,.
+320,ok,2018,jul,1,32.2018,32,zac,ZACATECAS,112005,pan,140455,pri,27719,prd,20421,pvem,60940,pt,9587,mc,13322,pna,274675,morena,11745,pes,7195,pan.prd.mc,3359,pri.pvem.pna,17550,morena.pt.pes,735792,,,,1162459,ine,.
