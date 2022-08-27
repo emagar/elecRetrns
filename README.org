@@ -4,7 +4,7 @@ Last revision: 2022-08-12
 
 ----------
 
-*State-level presidential returns* cleaned and updated.
+*State-level presidential and senate returns* cleaned and updated.
 
 *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
 
