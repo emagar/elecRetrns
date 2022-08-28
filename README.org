@@ -7,9 +7,7 @@ Last revision: 2022-08-28
 <h2>
 
 ```diff
-
 + Recent additions
-
 ```
 
 </h2>
