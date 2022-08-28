@@ -1,8 +1,12 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2022-08-12
+Last revision: 2022-08-28
 
 ----------
+
+```diff
++ Recent additions
+```
 
 *State-level presidential and senate returns* cleaned and updated.
 
