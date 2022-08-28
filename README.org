@@ -72,7 +72,7 @@ Most variables are included in every file, some appear in selected files only.
 - /c01/, /c02/, ... = candidate 1's, 2's, ... name.
 - /s01/, /s02/, ... = suplente (substitute) for candidate 1, 2, etc.
 - /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates and invalid ballots. 
-- /nr/ = votes for write-in candidates.
+- /nr/ = votes for write-in candidates (void in Mexican election law).
 - /nul/ = invalid ballots.
 - /tot/ = total raw votes.
 - /lisnom/ = eligible voters (/lista nominal/).
