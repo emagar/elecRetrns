@@ -61,7 +61,7 @@ Most variables are included in every file, some appear in selected files only.
 - /edon/ = state number 1:32.
 - /edo/ = state abbreviation (may differ from the 'official' abbreviations so that sorting them alphabetically preserves the order set by /edon/).
 - /disn/ = district number.
-- /emm/ = municipal indentifying code (/edo/-electionCycle./munn/). 
+- /emm/ = municipal indentifying code (edo-electionCycle.inegi). 
 - /mun/ = municipality.
 - /munn/, /inegi/, /ife/ = municipal identifier, reporting the number and the codes used by INEGI and IFE, respectively.
 - /yr/, /mo/, /dy/ = year, month, day of the election. 
