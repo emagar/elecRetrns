@@ -4,9 +4,13 @@ Last revision: 2022-08-28
 
 ----------
 
+<h2>
+
 ```diff
 + Recent additions
 ```
+
+</h2>
 
 *State-level presidential and senate returns* cleaned and updated.
 
