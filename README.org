@@ -38,7 +38,7 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - ~data/aymu1989-present.csv~ = updated to 2021, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 - ~data/aymu-upto-1988.csv~ = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 - ~data/aymu1989-present.coalAgg.csv~ = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
-- ~data/aymu1989-present.incumbents.csv~ = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status in 2018 and 2021. 
+- ~data/aymu1989-present.incumbents.csv~ = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status since 2018. 
 - ~data/ayde2008-presentNayRegid.csv~ = Nayarit's municipal demarcaciones vote returns since 2008.
 - ~code/ay.r~ = script to manipulate /ayuntamiento/ returns.
 - ~code/ayClean.r~ = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
@@ -48,10 +48,11 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - ~data/dfdf1979-on.coalAgg.csv~ = pre-processed version of the above so that coalition votes appear properly aggregated.
   + *Citation for this dataset*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
 - ~data/dfdf2012-onCandidates.csv~ = names of all federal deputy candidates in districts and party lists since 2012. 
-- ~data/seedcandidates2018.csv~ = names of all senatorial candidates in states and party lists in 2018. 
-- ~data/goed1961-on.csv~ = updated to 2010
+- ~data/seed2012-on.candidates.csv~ = names of all senatorial candidates in states and party lists since 2012. 
+- ~data/goed1961-on.csv~ = updated to 2018
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - ~data/prdf2006-on.csv~
+- ~data/pred1964-on.csv~
   + *Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - ~datosBrutos/~ = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit... [[mailto:emagar@itam.mx][mail me]] if you need these.
 * Codebook

@@ -1,10 +1,10 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#orgffb1dd0)
-- [Files in the repository and how to cite them](#org0156766)
-- [Codebook](#org4273682)
-- [Coding procedure for the incumbent's status<a id="org5824b29"></a>](#orgc106bde)
-- [Procedimiento para codificar el estatus del ocupante<a id="orgc9c8fc9"></a>](#org2084ecf)
-- [Sources](#org266ef6e)
-- [Acknowledgements](#org12a9106)
+- [Description of *Recent Mexican Election Vote Returns* repository](#orga03aa2c)
+- [Files in the repository and how to cite them](#org62699f0)
+- [Codebook](#org1a62e49)
+- [Coding procedure for the incumbent's status<a id="org0d83e03"></a>](#org963fa87)
+- [Procedimiento para codificar el estatus del ocupante<a id="org7f64594"></a>](#org0756b29)
+- [Sources](#org365d1e8)
+- [Acknowledgements](#org08fa147)
 
 Last revision: 2022-08-28
 
@@ -25,7 +25,7 @@ Last revision: 2022-08-28
 ---
 
 
-<a id="orgffb1dd0"></a>
+<a id="orga03aa2c"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -37,7 +37,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="org0156766"></a>
+<a id="org62699f0"></a>
 
 # Files in the repository and how to cite them
 
@@ -48,7 +48,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   `data/aymu1989-present.csv` = updated to 2021, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 -   `data/aymu-upto-1988.csv` = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 -   `data/aymu1989-present.coalAgg.csv` = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
--   `data/aymu1989-present.incumbents.csv` = names of municipal election winning candidates (*presidente municipal* only) since 1989. Includes reelection status in 2018 and 2021.
+-   `data/aymu1989-present.incumbents.csv` = names of municipal election winning candidates (*presidente municipal* only) since 1989. Includes reelection status since 2018.
 -   `data/ayde2008-presentNayRegid.csv` = Nayarit's municipal demarcaciones vote returns since 2008.
 -   `code/ay.r` = script to manipulate *ayuntamiento* returns.
 -   `code/ayClean.r` = script used to clean *ayuntamiento* returns, should be unnecessary unless new data are added because output has been saved into csv file.
@@ -58,15 +58,16 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   `data/dfdf1979-on.coalAgg.csv` = pre-processed version of the above so that coalition votes appear properly aggregated.
     -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
 -   `data/dfdf2012-onCandidates.csv` = names of all federal deputy candidates in districts and party lists since 2012.
--   `data/seedcandidates2018.csv` = names of all senatorial candidates in states and party lists in 2018.
--   `data/goed1961-on.csv` = updated to 2010
+-   `data/seed2012-on.candidates.csv` = names of all senatorial candidates in states and party lists since 2012.
+-   `data/goed1961-on.csv` = updated to 2018
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 -   `data/prdf2006-on.csv`
+-   `data/pred1964-on.csv`
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 -   `datosBrutos/` = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [mail me](mailto:emagar@itam.mx) if you need these.
 
 
-<a id="org4273682"></a>
+<a id="org1a62e49"></a>
 
 # Codebook
 
@@ -103,13 +104,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org5824b29) for categories and coding procedure ([aquí](#orgc9c8fc9) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org0d83e03) for categories and coding procedure ([aquí](#org7f64594) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="orgc106bde"></a>
+<a id="org963fa87"></a>
 
-# Coding procedure for the incumbent's status<a id="org5824b29"></a>
+# Coding procedure for the incumbent's status<a id="org0d83e03"></a>
 
 In file `data/aymu1985-present.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -127,9 +128,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org2084ecf"></a>
+<a id="org0756b29"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="orgc9c8fc9"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org7f64594"></a>
 
 En el archivo `data/aymu1985-present.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -147,7 +148,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org266ef6e"></a>
+<a id="org365d1e8"></a>
 
 # Sources
 
@@ -162,7 +163,7 @@ Work in progress&#x2026;
 -   *Fuente* = voz y voto
 
 
-<a id="org12a9106"></a>
+<a id="org08fa147"></a>
 
 # Acknowledgements
 
