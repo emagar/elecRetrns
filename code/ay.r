@@ -1026,9 +1026,18 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 # save
 write.csv(dat.split, file = "aymu1989-present.coalSplit.csv", row.names = FALSE)
 
+# clean
+rm(tmp,tmp1,tmp2,sel,sel.l,sel.r,sel.v,i)
 
+# check lisnom
+sel.c <- grep("^v", colnames(dat))
+summary(dat$lisnom - rowSums(dat[,sel.c]))
 
+sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0)
+length(sel)
 
+dat[sel[4],]
+x
 
 ## # save coalition weights and info
 ## save(coal.weights # list with total vote
