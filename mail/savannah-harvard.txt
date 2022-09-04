@@ -1,0 +1,26 @@
+Hi Savannah, thank you for your interest in the dataset. It is still work-in-progress, so this is a good opportunity to clarify obscurity and rectify mistakes. 
+
+1. My understanding is that the data in aymu1989-present.csv reflects votes for mun presidents ("mayors") at the mun level since 1989. Can you please confirm?
+
+Yes, this dataset reports votes received by candidates running for municipal president (similar to mayors in the U.S.). 
+
+2. I could not replicate the "tot" variable with the given variables. What does this represent exactly? Does it include null ballots? Does it include write-in votes?
+
+'Tot' should be the summation of votes received by each party (v01 + v02 + ...) plus 'nr' (no registrados = write-in candidates, void in Mexican election law) plus 'nulos' (void ballots). Primary sources often report aggregates not matching that actual summation. You should recompute the vote totals for use in denominators. The standard is to add the 'effective vote' = v01 + v02 + ... (excluding nr and nul). 
+
+3. My reading of the data is that voter participation rate = tot / lisnom. However, when I construct it, the value is > 1 for some municipalities. How is that possible? Perhaps I am misunderstanding what is meant by eligible voters.
+
+This is correct. The problem is that primary sources often omit reporting the lista nominal (registered voters), leaving NAs in your turnout figures. The standard here, going back to the hegemonic era when lista nominales weren't trustworthy, is to compute turnout relative to the adult population in the census (18 years and older). That has drawbacks too, as you need to project inter-census populations. But you will not have NAs. That said, I report lisnom and total votes in the data in order to control for errors, like those you have encountered.
+
+I found ~660 observations with efec > lisnom in the data. I checked a handful and found mistakes on my part. Fixing the rest will take time. If you tell me what years/states you will be analyzing, I could start fixing those. 
+
+- Alternatively, when I construct voter participation rates using population counts (18 years +), I get some muns with > 1 voter participation rate, but the problem is less severe.
+
+Yes, this should occur more often in inter-census years, when a linear projection gives a poor population estimate.
+
+4. My understanding is that muns vote on their president every 3 years, but the election years differ by mun. For example one mun may vote on a mayor in 2016 and 2019 and 2021, etc., while another may have a vote in 2017 and 2020 and 2022, etc. However, when I collapse the data in 3-yr intervals, I see that 65 muns have TWO elections in year bins 2011-2013 and 2017-2019. E.g. Mun 5001 (INEGI code) appeared to vote in both 2017 and 2018. Do you happen to know why this is possible?
+
+It is possible. Mexico experiences election reforms very often. Some federal reforms mandate changes at the local level (eg. in 2014, states were forced to make at least one office's election concurrent with federal elections, forcing many states to change their calendars). Take a look at https://github.com/emagar/calendarioReelecion/blob/master/fechasEleccionesMexicoDesde1994.xlsx, which summarizes local election calendars since 1994. Another exception are 4-year municipal election cycles, used by Coahuila up to ~2018 and by Hidalgo since ~2016.
+
+My emm code in the data reports the cycle in question, regardless of its actual duration (eg. coa-15.001 refers to Coahuila's first municipio in cycle #15.)
+
