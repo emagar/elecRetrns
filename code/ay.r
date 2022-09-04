@@ -1032,12 +1032,12 @@ rm(tmp,tmp1,tmp2,sel,sel.l,sel.r,sel.v,i)
 # check lisnom
 sel.c <- grep("^v", colnames(dat))
 summary(dat$lisnom - rowSums(dat[,sel.c]))
-
-sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0 & dat$yr >2010)
+#
+sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0)
 length(sel)
+#
+dat[sel[4],]
 
-dat[sel[1],]
-x
 
 ## # save coalition weights and info
 ## save(coal.weights # list with total vote
