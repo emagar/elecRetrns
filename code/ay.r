@@ -1036,7 +1036,7 @@ summary(dat$lisnom - rowSums(dat[,sel.c]))
 sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0 & dat$yr > 1997)
 length(sel)
 #
-dat[sel[1],]
+dat[sel[2],]
 
 
 ## # save coalition weights and info
