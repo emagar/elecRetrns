@@ -8,6 +8,8 @@ Last revision: 2022-09-29
 Recent additions
 </h2>
 
+*Special municipal elections* in 2021/22 added. 
+
 *Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
 
 *State-level presidential and senate returns* cleaned and updated.
