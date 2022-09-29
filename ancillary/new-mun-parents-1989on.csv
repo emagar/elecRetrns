@@ -2,7 +2,7 @@ emm,yr,estado,inegi mun ife,padre,padre2,padre3,padre4,note
 ags-08.010,1992,aguascalientes,10 LLANO--EL 11,1 AGUASCALIENTES 1,,,,
 ags-08.011,1992,aguascalientes,11 SAN FRANCISCO DE LOS ROMO 10,1 AGUASCALIENTES 1,,,,
 bc-10.005,1998,baja california,5 PLAYAS DE ROSARITO 5,4 TIJUANA 4,,,,
-bc-19.006,2024,baja california,6 SAN QUINTIN,1 ENSENADA 1,,,,quizas para 2024
+bc-19.006,2024,baja california,6 SAN QUINTIN 6,1 ENSENADA 1,,,,quizas para 2024
 bcs-08.009,1993,baja california sur,9 LORETO 5,3 LA PAZ 3,,,,
 cam-08.009,1991,campeche,9 ESCARCEGA 9,3 CARMEN 3,,,,
 cam-10.010,1997,campeche,10 CALAKMUL 11,6 HOPELCHEN 6,,,,
@@ -47,7 +47,7 @@ gue-13.078,2008,guerrero,78 COCHOAPA EL GRANDE 79,43 METLATONOC 44,,,,
 gue-13.079,2008,guerrero,79 JOSE JOAQUIN DE HERRERA 77,28 CHILAPA DE ALVAREZ 28,,,,
 gue-13.080,2008,guerrero,80 JUCHITAN 81,13 AZOYU 13,,,,
 gue-13.081,2008,guerrero,81 ILIATENCO 78,41 MALINALTEPEC 42,52 SAN LUIS ACATLÁN 53,,,
-jal-13.125,2006,jalisco,125 SAN IGNACIO CERRO GORDO,8 ARANDAS,,,,
+jal-13.125,2006,jalisco,125 SAN IGNACIO CERRO GORDO,8 ARANDAS 8,,,,
 jal-xx.xxx,xxxx,jalisco,xxx CAPILLA DE GUADALUPE xxx,,,,,intenta ser municipio desde 2010
 mex-08.122,1993,mexico,122 VALLE DE CHALCO SOLIDARIDAD 122,25 CHALCO 26,39 IXTAPALUCA 40,,,
 mex-11.123,2003,mexico,123 LUVIANOS 123,82 TEJUPILCO 83,,,,

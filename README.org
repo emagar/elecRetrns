@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2022-08-28
+Last revision: 2022-09-29
 
 ----------
 
@@ -8,13 +8,15 @@ Last revision: 2022-08-28
 Recent additions
 </h2>
 
+*Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
+
 *State-level presidential and senate returns* cleaned and updated.
 
 *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
 
-*Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
+# *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
 
-*Reelection in 2021-22 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
+# *Reelection in 2021-22 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
 
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 

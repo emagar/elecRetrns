@@ -349,13 +349,11 @@ for (i in 1:ncol(l)){
 }
 
 # create objects with vote for coalition(s) added and redudant columns dropped
-# 3sep2021: old version used to empty contents which set a bug --- 2nd round manip would forget 1st round manip
-# 3sep2021: new procidure keeps votes/labels in to avoid this
-cv <- v; #cv[] <- NA # will receive votes with coalitions aggregated
-cl <- l; #cl[] <- NA # will keep coalition labels but drop coalition member labels 
+cv <- v; # will receive votes with coalitions aggregated
+cl <- l; # will keep coalition labels but drop coalition member labels 
 # create "split" objects for votes contrinuted by each coalition member and joint column dropped
-sv <- v; #sv[] <- NA 
-sl <- l; #sl[] <- NA 
+sv <- v;
+sl <- l;
 #
 ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
@@ -364,7 +362,7 @@ ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
   ln1 <- v # duplicate votes
   ln1[] <- 0 # will receive info
   ln2 <- ln1 # duplicate
-  # replace each label with its character length
+  # replace each label by its character length
   for (i in 1:ncol(ln1)){
       #i <- 16 # debug
       tmp <- l[,i] # pick ith column as vector
@@ -604,9 +602,9 @@ for (i in 1:length(sel7)){
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
-n[sel7,] <- tmp.n
+n[sel7,]  <- tmp.n
 c3[sel7,] <- tmp.c3
-w3[sel7] <- tmp.w3
+w3[sel7]  <- tmp.w3
 ci[sel7,] <- tmp.ci
 sv[sel7,] <- tmp.vw
 sl[sel7,] <- tmp.lw
@@ -629,10 +627,12 @@ tmp.vw4 <- w4[sel7] # will receive manipulated votes
 max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
 
+
 for (i in 1:length(sel7)){
-    #i <- 1 # debug
-    #tmp.l[i,] # debug
-    #tmp.n[i,] # debug
+    ## i <- 5 # debug
+    ## tmp.l[i,] # debug
+    ## tmp.n[i,] # debug
+    ## dat[sel7[i],] # debug
     message(sprintf("loop %s of %s", i, length(sel7)))
     tmp.ci$ncoal[i] <- 4               # running tally co ncoal
     save.col <- which(tmp.n[i,]==max.tmp[i])[1] # spare this column from erasure in process below (1st if multiple hits)
@@ -668,10 +668,11 @@ for (i in 1:length(sel7)){
         # votes contributed
         tmp.vw[i, save.col] <- 0   # erase joint votes
         tmp.lw[i, save.col] <- "0" # erase joint label
-        tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
+        tmp.vw[i, sel] <- tmp.vw4[[i]]  # place contributed votes back in
     }
     tmp.n[i, target.cols] <- 0   # erase ns
 }
+
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
