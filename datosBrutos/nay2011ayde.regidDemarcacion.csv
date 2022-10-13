@@ -1,140 +1,139 @@
-"","ord","yr","munn","mun","nr","nul","v01","l01","v02","l02","v03","l03","v04","l04","v05","l05","demar"
-"1",1,2011,18001,"acaponeta",0,69,436,"pan",680,"prd",56,"prs",1147,"pri-pvem-panal",49,"pt-conve","18001.01"
-"6",6,2011,18001,"acaponeta",0,72,476,"pan",624,"prd",33,"prs",1380,"pri-pvem-panal",92,"pt-conve","18001.02"
-"13",13,2011,18001,"acaponeta",0,49,738,"pan",447,"prd",87,"prs",1083,"pri-pvem-panal",65,"pt-conve","18001.03"
-"19",19,2011,18001,"acaponeta",0,16,442,"pan",452,"prd",106,"prs",1021,"pri-pvem-panal",36,"pt-conve","18001.04"
-"24",24,2011,18001,"acaponeta",1,115,939,"pan",547,"prd",39,"prs",1039,"pri-pvem-panal",69,"pt-conve","18001.05"
-"37",37,2011,18001,"acaponeta",0,103,689,"pan",998,"prd",28,"prs",1258,"pri-pvem-panal",26,"pt-conve","18001.06"
-"45",45,2011,18001,"acaponeta",0,23,485,"pan",506,"prd",25,"prs",1223,"pri-pvem-panal",19,"pt-conve","18001.07"
-"60",60,2011,18002,"ahuacatlan",0,35,266,"pan",158,"prd",3,"prs",275,"pri-pvem-panal",201,"pt-conve","18002.01"
-"62",62,2011,18002,"ahuacatlan",3,103,972,"pan",128,"prd",16,"prs",955,"pri-pvem-panal",500,"pt-conve","18002.02"
-"69",69,2011,18002,"ahuacatlan",0,52,510,"pan",51,"prd",4,"prs",944,"pri-pvem-panal",46,"pt-conve","18002.03"
-"73",73,2011,18002,"ahuacatlan",4,38,557,"pan",126,"prd",10,"prs",690,"pri-pvem-panal",123,"pt-conve","18002.04"
-"78",78,2011,18002,"ahuacatlan",2,60,401,"pan",78,"prd",8,"prs",671,"pri-pvem-panal",132,"pt-conve","18002.05"
-"83",83,2011,18003,"amatlan de cañas",0,57,995,"pan",155,"prd",204,"prs",422,"pri-pvem-panal",18,"pt-conve","18003.01"
-"88",88,2011,18003,"amatlan de cañas",0,36,380,"pan",23,"prd",81,"prs",361,"pri-pvem-panal",4,"pt-conve","18003.02"
-"93",93,2011,18003,"amatlan de cañas",1,63,351,"pan",33,"prd",466,"prs",298,"pri-pvem-panal",82,"pt-conve","18003.03"
-"97",97,2011,18003,"amatlan de cañas",0,85,411,"pan",390,"prd",167,"prs",197,"pri-pvem-panal",84,"pt-conve","18003.04"
-"100",100,2011,18003,"amatlan de cañas",0,52,378,"pan",132,"prd",101,"prs",234,"pri-pvem-panal",81,"pt-conve","18003.05"
-"107",107,2011,18020,"bahia banderas",0,105,1913,"pan",493,"prd",13,"prs",2202,"pri-pvem-panal",109,"pt-conve","18020.01"
-"118",118,2011,18020,"bahia banderas",2,97,985,"pan",367,"prd",11,"prs",2099,"pri-pvem-panal",111,"pt-conve","18020.02"
-"127",127,2011,18020,"bahia banderas",1,139,1469,"pan",524,"prd",33,"prs",1723,"pri-pvem-panal",227,"pt-conve","18020.03"
-"135",135,2011,18020,"bahia banderas",1,153,1132,"pan",1041,"prd",30,"prs",1435,"pri-pvem-panal",327,"pt-conve","18020.04"
-"145",145,2011,18020,"bahia banderas",0,81,993,"pan",250,"prd",8,"prs",813,"pri-pvem-panal",113,"pt-conve","18020.05"
-"151",151,2011,18020,"bahia banderas",5,100,672,"pan",443,"prd",167,"prs",1036,"pri-pvem-panal",166,"pt-conve","18020.06"
-"156",156,2011,18020,"bahia banderas",0,129,1947,"pan",665,"prd",39,"prs",2301,"pri-pvem-panal",324,"pt-conve","18020.07"
-"166",166,2011,18020,"bahia banderas",0,165,1566,"pan",860,"prd",6,"prs",1692,"pri-pvem-panal",124,"pt-conve","18020.08"
-"176",176,2011,18020,"bahia banderas",0,119,1309,"pan",1077,"prd",18,"prs",3273,"pri-pvem-panal",550,"pt-conve","18020.09"
-"192",192,2011,18004,"compostela",2,197,1914,"pan",893,"prd",110,"prs",1635,"pri-pvem-panal",100,"pt-conve","18004.01"
-"203",203,2011,18004,"compostela",1,159,1745,"pan",609,"prd",31,"prs",1567,"pri-pvem-panal",501,"pt-conve","18004.02"
-"214",214,2011,18004,"compostela",6,146,1246,"pan",510,"prd",22,"prs",1553,"pri-pvem-panal",110,"pt-conve","18004.03"
-"227",227,2011,18004,"compostela",0,125,1335,"pan",317,"prd",15,"prs",1621,"pri-pvem-panal",524,"pt-conve","18004.04"
-"239",239,2011,18004,"compostela",0,95,1347,"pan",331,"prd",233,"prs",880,"pri-pvem-panal",391,"pt-conve","18004.05"
-"250",250,2011,18004,"compostela",0,148,916,"pan",183,"prd",81,"prs",1053,"pri-pvem-panal",767,"pt-conve","18004.06"
-"258",258,2011,18004,"compostela",1,127,1667,"pan",339,"prd",61,"prs",1132,"pri-pvem-panal",93,"pt-conve","18004.07"
-"269",269,2011,18004,"compostela",2,65,1061,"pan",495,"prd",68,"prs",1017,"pri-pvem-panal",128,"pt-conve","18004.08"
-"276",276,2011,18004,"compostela",1,53,903,"pan",275,"prd",26,"prs",1217,"pri-pvem-panal",224,"pt-conve","18004.09"
-"290",290,2011,18005,"huajicori",1,44,98,"pan",784,"prd",2,"prs",698,"pri-pvem-panal",7,"pt-conve","18005.01"
-"294",294,2011,18005,"huajicori",0,36,95,"pan",402,"prd",5,"prs",552,"pri-pvem-panal",4,"pt-conve","18005.02"
-"302",302,2011,18005,"huajicori",1,8,61,"pan",356,"prd",3,"prs",507,"pri-pvem-panal",0,"pt-conve","18005.03"
-"309",309,2011,18005,"huajicori",0,32,22,"pan",405,"prd",2,"prs",378,"pri-pvem-panal",1,"pt-conve","18005.04"
-"314",314,2011,18005,"huajicori",0,15,44,"pan",312,"prd",2,"prs",391,"pri-pvem-panal",1,"pt-conve","18005.05"
-"322",322,2011,18006,"ixtlan del rio",0,70,646,"pan",440,"prd",35,"prs",400,"pri-pvem-panal",195,"pt-conve","18006.01"
-"326",326,2011,18006,"ixtlan del rio",0,77,607,"pan",280,"prd",71,"prs",1199,"pri-pvem-panal",61,"pt-conve","18006.02"
-"331",331,2011,18006,"ixtlan del rio",0,60,951,"pan",310,"prd",48,"prs",319,"pri-pvem-panal",84,"pt-conve","18006.03"
-"334",334,2011,18006,"ixtlan del rio",1,75,831,"pan",243,"prd",52,"prs",383,"pri-pvem-panal",117,"pt-conve","18006.04"
-"338",338,2011,18006,"ixtlan del rio",4,72,743,"pan",671,"prd",70,"prs",660,"pri-pvem-panal",92,"pt-conve","18006.05"
-"343",343,2011,18006,"ixtlan del rio",0,102,586,"pan",361,"prd",65,"prs",457,"pri-pvem-panal",146,"pt-conve","18006.06"
-"348",348,2011,18006,"ixtlan del rio",0,90,455,"pan",179,"prd",75,"prs",442,"pri-pvem-panal",65,"pt-conve","18006.07"
-"356",356,2011,18007,"jala",0,59,666,"pan",284,"prd",3,"prs",676,"pri-pvem-panal",69,"pt-conve","18007.01"
-"360",360,2011,18007,"jala",0,57,447,"pan",256,"prd",2,"prs",841,"pri-pvem-panal",8,"pt-conve","18007.02"
-"364",364,2011,18007,"jala",1,101,653,"pan",511,"prd",5,"prs",804,"pri-pvem-panal",109,"pt-conve","18007.03"
-"369",369,2011,18007,"jala",0,55,523,"pan",339,"prd",3,"prs",505,"pri-pvem-panal",131,"pt-conve","18007.04"
-"373",373,2011,18007,"jala",0,73,592,"pan",583,"prd",7,"prs",460,"pri-pvem-panal",15,"pt-conve","18007.05"
-"379",379,2011,18009,"el nayar",2,43,675,"pan",257,"prd",5,"prs",480,"pri-pvem-panal",81,"pt-conve","18009.01"
-"382",382,2011,18009,"el nayar",0,45,815,"pan",183,"prd",7,"prs",464,"pri-pvem-panal",13,"pt-conve","18009.02"
-"389",389,2011,18009,"el nayar",0,122,587,"pan",196,"prd",21,"prs",639,"pri-pvem-panal",12,"pt-conve","18009.03"
-"393",393,2011,18009,"el nayar",0,124,658,"pan",208,"prd",10,"prs",292,"pri-pvem-panal",29,"pt-conve","18009.04"
-"398",398,2011,18009,"el nayar",0,91,1058,"pan",90,"prd",28,"prs",993,"pri-pvem-panal",14,"pt-conve","18009.05"
-"406",406,2011,18009,"el nayar",1,36,1341,"pan",32,"prd",3,"prs",803,"pri-pvem-panal",6,"pt-conve","18009.06"
-"414",414,2011,18009,"el nayar",0,138,709,"pan",137,"prd",14,"prs",496,"pri-pvem-panal",21,"pt-conve","18009.07"
-"418",418,2011,18010,"rosamorada",0,64,926,"pan",349,"prd",17,"prs",757,"pri-pvem-panal",144,"pt-conve","18010.01"
-"426",426,2011,18010,"rosamorada",0,52,1003,"pan",392,"prd",13,"prs",1073,"pri-pvem-panal",59,"pt-conve","18010.02"
-"433",433,2011,18010,"rosamorada",1,58,726,"pan",457,"prd",22,"prs",1390,"pri-pvem-panal",24,"pt-conve","18010.03"
-"440",440,2011,18010,"rosamorada",0,80,1256,"pan",531,"prd",8,"prs",1049,"pri-pvem-panal",57,"pt-conve","18010.04"
-"447",447,2011,18010,"rosamorada",0,130,527,"pan",784,"prd",34,"prs",527,"pri-pvem-panal",435,"pt-conve","18010.05"
-"454",454,2011,18010,"rosamorada",0,38,749,"pan",301,"prd",10,"prs",868,"pri-pvem-panal",30,"pt-conve","18010.06"
-"464",464,2011,18010,"rosamorada",1,100,1127,"pan",357,"prd",12,"prs",1044,"pri-pvem-panal",40,"pt-conve","18010.07"
-"472",472,2011,18011,"ruiz",0,13,435,"pan",328,"prd",7,"prs",462,"pri-pvem-panal",58,"pt-conve","18011.01"
-"475",475,2011,18011,"ruiz",1,39,455,"pan",168,"prd",10,"prs",723,"pri-pvem-panal",29,"pt-conve","18011.02"
-"478",478,2011,18011,"ruiz",0,26,916,"pan",138,"prd",21,"prs",652,"pri-pvem-panal",29,"pt-conve","18011.03"
-"482",482,2011,18011,"ruiz",0,58,623,"pan",233,"prd",14,"prs",344,"pri-pvem-panal",41,"pt-conve","18011.04"
-"485",485,2011,18011,"ruiz",0,34,743,"pan",105,"prd",9,"prs",683,"pri-pvem-panal",33,"pt-conve","18011.05"
-"488",488,2011,18011,"ruiz",0,69,864,"pan",292,"prd",9,"prs",678,"pri-pvem-panal",10,"pt-conve","18011.06"
-"495",495,2011,18011,"ruiz",0,29,587,"pan",455,"prd",9,"prs",614,"pri-pvem-panal",17,"pt-conve","18011.07"
-"505",505,2011,18012,"san blas",0,89,529,"pan",360,"prd",31,"prs",840,"pri-pvem-panal",444,"pt-conve","18012.01"
-"510",510,2011,18012,"san blas",0,71,568,"pan",422,"prd",24,"prs",749,"pri-pvem-panal",284,"pt-conve","18012.02"
-"515",515,2011,18012,"san blas",0,134,844,"pan",530,"prd",18,"prs",755,"pri-pvem-panal",352,"pt-conve","18012.03"
-"524",524,2011,18012,"san blas",2,104,560,"pan",123,"prd",63,"prs",1067,"pri-pvem-panal",472,"pt-conve","18012.04"
-"533",533,2011,18012,"san blas",1,94,431,"pan",106,"prd",16,"prs",1303,"pri-pvem-panal",666,"pt-conve","18012.05"
-"546",546,2011,18012,"san blas",3,242,686,"pan",1102,"prd",40,"prs",764,"pri-pvem-panal",310,"pt-conve","18012.06"
-"555",555,2011,18012,"san blas",0,127,1153,"pan",203,"prd",25,"prs",1257,"pri-pvem-panal",517,"pt-conve","18012.07"
-"566",566,2011,18013,"san pedro lagunillas",1,64,323,"pan",139,"prd",0,"prs",225,"pri-pvem-panal",382,"pt-conve","18013.01"
-"568",568,2011,18013,"san pedro lagunillas",0,19,266,"pan",253,"prd",2,"prs",170,"pri-pvem-panal",7,"pt-conve","18013.02"
-"570",570,2011,18013,"san pedro lagunillas",2,24,194,"pan",139,"prd",3,"prs",502,"pri-pvem-panal",19,"pt-conve","18013.03"
-"574",574,2011,18013,"san pedro lagunillas",0,2,27,"pan",8,"prd",1,"prs",36,"pri-pvem-panal",13,"pt-conve","18013.04 "
-"575",575,2011,18013,"san pedro lagunillas",0,64,276,"pan",28,"prd",4,"prs",269,"pri-pvem-panal",186,"pt-conve","18013.04"
-"577",577,2011,18013,"san pedro lagunillas",1,12,442,"pan",90,"prd",0,"prs",223,"pri-pvem-panal",14,"pt-conve","18013.05"
-"580",580,2011,18014,"santa maria del oro",0,46,296,"pan",408,"prd",3,"prs",593,"pri-pvem-panal",4,"pt-conve","18014.01"
-"582",582,2011,18014,"santa maria del oro",0,52,357,"pan",141,"prd",4,"prs",426,"pri-pvem-panal",7,"pt-conve","18014.02"
-"585",585,2011,18014,"santa maria del oro",0,80,602,"pan",102,"prd",3,"prs",1276,"pri-pvem-panal",14,"pt-conve","18014.03"
-"591",591,2011,18014,"santa maria del oro",7,102,827,"pan",229,"prd",5,"prs",833,"pri-pvem-panal",11,"pt-conve","18014.04"
-"598",598,2011,18014,"santa maria del oro",0,109,364,"pan",456,"prd",5,"prs",708,"pri-pvem-panal",7,"pt-conve","18014.05"
-"605",605,2011,18014,"santa maria del oro",0,45,603,"pan",136,"prd",3,"prs",1046,"pri-pvem-panal",3,"pt-conve","18014.06"
-"611",611,2011,18014,"santa maria del oro",0,125,320,"pan",796,"prd",8,"prs",483,"pri-pvem-panal",96,"pt-conve","18014.07"
-"615",615,2011,18015,"santiago ixc",0,113,1727,"pan",510,"prd",22,"prs",1808,"pri-pvem-panal",137,"pt-conve","18015.01"
-"625",625,2011,18015,"santiago ixc",0,138,833,"pan",1058,"prd",36,"prs",2582,"pri-pvem-panal",252,"pt-conve","18015.02"
-"641",641,2011,18015,"santiago ixc",2,221,683,"pan",1820,"prd",112,"prs",1846,"pri-pvem-panal",791,"pt-conve","18015.03"
-"657",657,2011,18015,"santiago ixc",1,164,1445,"pan",956,"prd",35,"prs",1831,"pri-pvem-panal",362,"pt-conve","18015.04"
-"670",670,2011,18015,"santiago ixc",0,153,2145,"pan",715,"prd",17,"prs",2198,"pri-pvem-panal",38,"pt-conve","18015.05"
-"684",684,2011,18015,"santiago ixc",0,162,894,"pan",1661,"prd",260,"prs",1854,"pri-pvem-panal",123,"pt-conve","18015.06"
-"700",700,2011,18015,"santiago ixc",5,110,1353,"pan",1178,"prd",57,"prs",2578,"pri-pvem-panal",145,"pt-conve","18015.07"
-"723",723,2011,18015,"santiago ixc",0,223,770,"pan",1732,"prd",38,"prs",2694,"pri-pvem-panal",114,"pt-conve","18015.08"
-"742",742,2011,18015,"santiago ixc",0,220,369,"pan",1546,"prd",71,"prs",2435,"pri-pvem-panal",225,"pt-conve","18015.09"
-"754",754,2011,18016,"tecuala",1,164,301,"pan",587,"prd",9,"prs",1292,"pri-pvem-panal",653,"pt-conve","18016.01"
-"762",762,2011,18016,"tecuala",1,99,664,"pan",572,"prd",19,"prs",912,"pri-pvem-panal",327,"pt-conve","18016.02"
-"769",769,2011,18016,"tecuala",0,76,346,"pan",730,"prd",59,"prs",833,"pri-pvem-panal",378,"pt-conve","18016.03"
-"776",776,2011,18016,"tecuala",0,110,307,"pan",932,"prd",19,"prs",1151,"pri-pvem-panal",475,"pt-conve","18016.04"
-"786",786,2011,18016,"tecuala",1,103,436,"pan",1186,"prd",45,"prs",1232,"pri-pvem-panal",131,"pt-conve","18016.05"
-"793",793,2011,18016,"tecuala",0,172,834,"pan",566,"prd",43,"prs",1258,"pri-pvem-panal",224,"pt-conve","18016.06"
-"805",805,2011,18016,"tecuala",1,171,929,"pan",499,"prd",88,"prs",957,"pri-pvem-panal",336,"pt-conve","18016.07"
-"811",811,2011,18017,"tepic",5,335,4472,"pan",2428,"prd",195,"prs",5916,"pri-pvem-panal",594,"pt-conve","18017.01"
-"841",841,2011,18017,"tepic",7,402,5452,"pan",1860,"prd",298,"prs",6717,"pri-pvem-panal",595,"pt-conve","18017.02"
-"877",877,2011,18017,"tepic",6,375,5432,"pan",2466,"prd",279,"prs",6430,"pri-pvem-panal",856,"pt-conve","18017.03"
-"910",910,2011,18017,"tepic",15,516,8138,"pan",1879,"prd",400,"prs",6597,"pri-pvem-panal",1181,"pt-conve","18017.04"
-"955",955,2011,18017,"tepic",26,500,6453,"pan",1809,"prd",266,"prs",6327,"pri-pvem-panal",1212,"pt-conve","18017.05"
-"991",991,2011,18017,"tepic",8,267,5506,"pan",2269,"prd",302,"prs",5159,"pri-pvem-panal",628,"pt-conve","18017.06"
-"1018",1018,2011,18017,"tepic",16,356,6042,"pan",3285,"prd",268,"prs",8263,"pri-pvem-panal",657,"pt-conve","18017.07"
-"1055",1055,2011,18017,"tepic",12,458,6621,"pan",1795,"prd",248,"prs",6663,"pri-pvem-panal",810,"pt-conve","18017.08"
-"1091",1091,2011,18017,"tepic",7,422,7472,"pan",2811,"prd",322,"prs",6915,"pri-pvem-panal",642,"pt-conve","18017.09"
-"1127",1127,2011,18017,"tepic",11,366,3270,"pan",2249,"prd",77,"prs",5238,"pri-pvem-panal",594,"pt-conve","18017.10"
-"1153",1153,2011,18017,"tepic",8,287,2821,"pan",1765,"prd",85,"prs",4118,"pri-pvem-panal",334,"pt-conve","18017.11"
-"1189",1189,2011,18018,"tuxpan",0,91,899,"pan",563,"prd",30,"prs",632,"pri-pvem-panal",323,"pt-conve","18018.01"
-"1194",1194,2011,18018,"tuxpan",4,54,669,"pan",315,"prd",17,"prs",529,"pri-pvem-panal",70,"pt-conve","18018.02"
-"1198",1198,2011,18018,"tuxpan",0,77,516,"pan",687,"prd",113,"prs",626,"pri-pvem-panal",134,"pt-conve","18018.03"
-"1205",1205,2011,18018,"tuxpan",2,97,582,"pan",370,"prd",87,"prs",795,"pri-pvem-panal",419,"pt-conve","18018.04"
-"1211",1211,2011,18018,"tuxpan",0,104,626,"pan",541,"prd",19,"prs",592,"pri-pvem-panal",269,"pt-conve","18018.05"
-"1215",1215,2011,18018,"tuxpan",1,84,772,"pan",317,"prd",5,"prs",921,"pri-pvem-panal",18,"pt-conve","18018.06"
-"1221",1221,2011,18018,"tuxpan",0,122,778,"pan",275,"prd",256,"prs",798,"pri-pvem-panal",100,"pt-conve","18018.07"
-"1226",1226,2011,18008,"xalisco",1,72,1125,"pan",155,"prd",12,"prs",782,"pri-pvem-panal",106,"pt-conve","18008.01"
-"1230",1230,2011,18008,"xalisco",0,57,917,"pan",565,"prd",17,"prs",1113,"pri-pvem-panal",155,"pt-conve","18008.02"
-"1235",1235,2011,18008,"xalisco",0,90,1301,"pan",481,"prd",13,"prs",964,"pri-pvem-panal",192,"pt-conve","18008.03"
-"1240",1240,2011,18008,"xalisco",1,67,1295,"pan",229,"prd",15,"prs",987,"pri-pvem-panal",55,"pt-conve","18008.04"
-"1245",1245,2011,18008,"xalisco",0,96,1416,"pan",291,"prd",15,"prs",1435,"pri-pvem-panal",95,"pt-conve","18008.05"
-"1251",1251,2011,18008,"xalisco",1,69,1814,"pan",237,"prd",8,"prs",1431,"pri-pvem-panal",62,"pt-conve","18008.06"
-"1260",1260,2011,18008,"xalisco",1,72,1104,"pan",247,"prd",8,"prs",1466,"pri-pvem-panal",11,"pt-conve","18008.07"
-"1270",1270,2011,18019,"la yesca",0,33,456,"pan",3,"prd",0,"prs",702,"pri-pvem-panal",0,"pt-conve","18019.01"
-"1274",1274,2011,18019,"la yesca",0,8,291,"pan",1,"prd",4,"prs",391,"pri-pvem-panal",1,"pt-conve","18019.02"
-"1281",1281,2011,18019,"la yesca",0,20,775,"pan",6,"prd",0,"prs",494,"pri-pvem-panal",0,"pt-conve","18019.03"
-"1284",1284,2011,18019,"la yesca",0,18,613,"pan",5,"prd",11,"prs",426,"pri-pvem-panal",8,"pt-conve","18019.04"
-"1289",1289,2011,18019,"la yesca",1,20,350,"pan",1,"prd",3,"prs",321,"pri-pvem-panal",19,"pt-conve","18019.05"
+,ord,yr,munn,mun,nr,nul,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,demar
+1,1,2011,18001,acaponeta,0,69,436,pan,680,prd,56,prs,1147,pri-pvem-panal,49,pt-conve,18001.01
+6,6,2011,18001,acaponeta,0,72,476,pan,624,prd,33,prs,1380,pri-pvem-panal,92,pt-conve,18001.02
+13,13,2011,18001,acaponeta,0,49,738,pan,447,prd,87,prs,1083,pri-pvem-panal,65,pt-conve,18001.03
+19,19,2011,18001,acaponeta,0,16,442,pan,452,prd,106,prs,1021,pri-pvem-panal,36,pt-conve,18001.04
+24,24,2011,18001,acaponeta,1,115,939,pan,547,prd,39,prs,1039,pri-pvem-panal,69,pt-conve,18001.05
+37,37,2011,18001,acaponeta,0,103,689,pan,998,prd,28,prs,1258,pri-pvem-panal,26,pt-conve,18001.06
+45,45,2011,18001,acaponeta,0,23,485,pan,506,prd,25,prs,1223,pri-pvem-panal,19,pt-conve,18001.07
+60,60,2011,18002,ahuacatlan,0,35,266,pan,158,prd,3,prs,275,pri-pvem-panal,201,pt-conve,18002.01
+62,62,2011,18002,ahuacatlan,3,103,972,pan,128,prd,16,prs,955,pri-pvem-panal,500,pt-conve,18002.02
+69,69,2011,18002,ahuacatlan,0,52,510,pan,51,prd,4,prs,944,pri-pvem-panal,46,pt-conve,18002.03
+73,73,2011,18002,ahuacatlan,4,38,557,pan,126,prd,10,prs,690,pri-pvem-panal,123,pt-conve,18002.04
+78,78,2011,18002,ahuacatlan,2,60,401,pan,78,prd,8,prs,671,pri-pvem-panal,132,pt-conve,18002.05
+83,83,2011,18003,amatlan de cañas,0,57,995,pan,155,prd,204,prs,422,pri-pvem-panal,18,pt-conve,18003.01
+88,88,2011,18003,amatlan de cañas,0,36,380,pan,23,prd,81,prs,361,pri-pvem-panal,4,pt-conve,18003.02
+93,93,2011,18003,amatlan de cañas,1,63,351,pan,33,prd,466,prs,298,pri-pvem-panal,82,pt-conve,18003.03
+97,97,2011,18003,amatlan de cañas,0,85,411,pan,390,prd,167,prs,197,pri-pvem-panal,84,pt-conve,18003.04
+100,100,2011,18003,amatlan de cañas,0,52,378,pan,132,prd,101,prs,234,pri-pvem-panal,81,pt-conve,18003.05
+107,107,2011,18020,bahia banderas,0,105,1913,pan,493,prd,13,prs,2202,pri-pvem-panal,109,pt-conve,18020.01
+118,118,2011,18020,bahia banderas,2,97,985,pan,367,prd,11,prs,2099,pri-pvem-panal,111,pt-conve,18020.02
+127,127,2011,18020,bahia banderas,1,139,1469,pan,524,prd,33,prs,1723,pri-pvem-panal,227,pt-conve,18020.03
+135,135,2011,18020,bahia banderas,1,153,1132,pan,1041,prd,30,prs,1435,pri-pvem-panal,327,pt-conve,18020.04
+145,145,2011,18020,bahia banderas,0,81,993,pan,250,prd,8,prs,813,pri-pvem-panal,113,pt-conve,18020.05
+151,151,2011,18020,bahia banderas,5,100,672,pan,443,prd,167,prs,1036,pri-pvem-panal,166,pt-conve,18020.06
+156,156,2011,18020,bahia banderas,0,129,1947,pan,665,prd,39,prs,2301,pri-pvem-panal,324,pt-conve,18020.07
+166,166,2011,18020,bahia banderas,0,165,1566,pan,860,prd,6,prs,1692,pri-pvem-panal,124,pt-conve,18020.08
+176,176,2011,18020,bahia banderas,0,119,1309,pan,1077,prd,18,prs,3273,pri-pvem-panal,550,pt-conve,18020.09
+192,192,2011,18004,compostela,2,197,1914,pan,893,prd,110,prs,1635,pri-pvem-panal,100,pt-conve,18004.01
+203,203,2011,18004,compostela,1,159,1745,pan,609,prd,31,prs,1567,pri-pvem-panal,501,pt-conve,18004.02
+214,214,2011,18004,compostela,6,146,1246,pan,510,prd,22,prs,1553,pri-pvem-panal,110,pt-conve,18004.03
+227,227,2011,18004,compostela,0,125,1335,pan,317,prd,15,prs,1621,pri-pvem-panal,524,pt-conve,18004.04
+239,239,2011,18004,compostela,0,95,1347,pan,331,prd,233,prs,880,pri-pvem-panal,391,pt-conve,18004.05
+250,250,2011,18004,compostela,0,148,916,pan,183,prd,81,prs,1053,pri-pvem-panal,767,pt-conve,18004.06
+258,258,2011,18004,compostela,1,127,1667,pan,339,prd,61,prs,1132,pri-pvem-panal,93,pt-conve,18004.07
+269,269,2011,18004,compostela,2,65,1061,pan,495,prd,68,prs,1017,pri-pvem-panal,128,pt-conve,18004.08
+276,276,2011,18004,compostela,1,53,903,pan,275,prd,26,prs,1217,pri-pvem-panal,224,pt-conve,18004.09
+290,290,2011,18005,huajicori,1,44,98,pan,784,prd,2,prs,698,pri-pvem-panal,7,pt-conve,18005.01
+294,294,2011,18005,huajicori,0,36,95,pan,402,prd,5,prs,552,pri-pvem-panal,4,pt-conve,18005.02
+302,302,2011,18005,huajicori,1,8,61,pan,356,prd,3,prs,507,pri-pvem-panal,0,pt-conve,18005.03
+309,309,2011,18005,huajicori,0,32,22,pan,405,prd,2,prs,378,pri-pvem-panal,1,pt-conve,18005.04
+314,314,2011,18005,huajicori,0,15,44,pan,312,prd,2,prs,391,pri-pvem-panal,1,pt-conve,18005.05
+322,322,2011,18006,ixtlan del rio,0,70,646,pan,440,prd,35,prs,400,pri-pvem-panal,195,pt-conve,18006.01
+326,326,2011,18006,ixtlan del rio,0,77,607,pan,280,prd,71,prs,1199,pri-pvem-panal,61,pt-conve,18006.02
+331,331,2011,18006,ixtlan del rio,0,60,951,pan,310,prd,48,prs,319,pri-pvem-panal,84,pt-conve,18006.03
+334,334,2011,18006,ixtlan del rio,1,75,831,pan,243,prd,52,prs,383,pri-pvem-panal,117,pt-conve,18006.04
+338,338,2011,18006,ixtlan del rio,4,72,743,pan,671,prd,70,prs,660,pri-pvem-panal,92,pt-conve,18006.05
+343,343,2011,18006,ixtlan del rio,0,102,586,pan,361,prd,65,prs,457,pri-pvem-panal,146,pt-conve,18006.06
+348,348,2011,18006,ixtlan del rio,0,90,455,pan,179,prd,75,prs,442,pri-pvem-panal,65,pt-conve,18006.07
+356,356,2011,18007,jala,0,59,666,pan,284,prd,3,prs,676,pri-pvem-panal,69,pt-conve,18007.01
+360,360,2011,18007,jala,0,57,447,pan,256,prd,2,prs,841,pri-pvem-panal,8,pt-conve,18007.02
+364,364,2011,18007,jala,1,101,653,pan,511,prd,5,prs,804,pri-pvem-panal,109,pt-conve,18007.03
+369,369,2011,18007,jala,0,55,523,pan,339,prd,3,prs,505,pri-pvem-panal,131,pt-conve,18007.04
+373,373,2011,18007,jala,0,73,592,pan,583,prd,7,prs,460,pri-pvem-panal,15,pt-conve,18007.05
+379,379,2011,18009,el nayar,2,43,675,pan,257,prd,5,prs,480,pri-pvem-panal,81,pt-conve,18009.01
+382,382,2011,18009,el nayar,0,45,815,pan,183,prd,7,prs,464,pri-pvem-panal,13,pt-conve,18009.02
+389,389,2011,18009,el nayar,0,122,587,pan,196,prd,21,prs,639,pri-pvem-panal,12,pt-conve,18009.03
+393,393,2011,18009,el nayar,0,124,658,pan,208,prd,10,prs,292,pri-pvem-panal,29,pt-conve,18009.04
+398,398,2011,18009,el nayar,0,91,1058,pan,90,prd,28,prs,993,pri-pvem-panal,14,pt-conve,18009.05
+406,406,2011,18009,el nayar,1,36,1341,pan,32,prd,3,prs,803,pri-pvem-panal,6,pt-conve,18009.06
+414,414,2011,18009,el nayar,0,138,709,pan,137,prd,14,prs,496,pri-pvem-panal,21,pt-conve,18009.07
+418,418,2011,18010,rosamorada,0,64,926,pan,349,prd,17,prs,757,pri-pvem-panal,144,pt-conve,18010.01
+426,426,2011,18010,rosamorada,0,52,1003,pan,392,prd,13,prs,1073,pri-pvem-panal,59,pt-conve,18010.02
+433,433,2011,18010,rosamorada,1,58,726,pan,457,prd,22,prs,1390,pri-pvem-panal,24,pt-conve,18010.03
+440,440,2011,18010,rosamorada,0,80,1256,pan,531,prd,8,prs,1049,pri-pvem-panal,57,pt-conve,18010.04
+447,447,2011,18010,rosamorada,0,130,527,pan,784,prd,34,prs,527,pri-pvem-panal,435,pt-conve,18010.05
+454,454,2011,18010,rosamorada,0,38,749,pan,301,prd,10,prs,868,pri-pvem-panal,30,pt-conve,18010.06
+464,464,2011,18010,rosamorada,1,100,1127,pan,357,prd,12,prs,1044,pri-pvem-panal,40,pt-conve,18010.07
+472,472,2011,18011,ruiz,0,13,435,pan,328,prd,7,prs,462,pri-pvem-panal,58,pt-conve,18011.01
+475,475,2011,18011,ruiz,1,39,455,pan,168,prd,10,prs,723,pri-pvem-panal,29,pt-conve,18011.02
+478,478,2011,18011,ruiz,0,26,916,pan,138,prd,21,prs,652,pri-pvem-panal,29,pt-conve,18011.03
+482,482,2011,18011,ruiz,0,58,623,pan,233,prd,14,prs,344,pri-pvem-panal,41,pt-conve,18011.04
+485,485,2011,18011,ruiz,0,34,743,pan,105,prd,9,prs,683,pri-pvem-panal,33,pt-conve,18011.05
+488,488,2011,18011,ruiz,0,69,864,pan,292,prd,9,prs,678,pri-pvem-panal,10,pt-conve,18011.06
+495,495,2011,18011,ruiz,0,29,587,pan,455,prd,9,prs,614,pri-pvem-panal,17,pt-conve,18011.07
+505,505,2011,18012,san blas,0,89,529,pan,360,prd,31,prs,840,pri-pvem-panal,444,pt-conve,18012.01
+510,510,2011,18012,san blas,0,71,568,pan,422,prd,24,prs,749,pri-pvem-panal,284,pt-conve,18012.02
+515,515,2011,18012,san blas,0,134,844,pan,530,prd,18,prs,755,pri-pvem-panal,352,pt-conve,18012.03
+524,524,2011,18012,san blas,2,104,560,pan,123,prd,63,prs,1067,pri-pvem-panal,472,pt-conve,18012.04
+533,533,2011,18012,san blas,1,94,431,pan,106,prd,16,prs,1303,pri-pvem-panal,666,pt-conve,18012.05
+546,546,2011,18012,san blas,3,242,686,pan,1102,prd,40,prs,764,pri-pvem-panal,310,pt-conve,18012.06
+555,555,2011,18012,san blas,0,127,1153,pan,203,prd,25,prs,1257,pri-pvem-panal,517,pt-conve,18012.07
+566,566,2011,18013,san pedro lagunillas,1,64,323,pan,139,prd,0,prs,225,pri-pvem-panal,382,pt-conve,18013.01
+568,568,2011,18013,san pedro lagunillas,0,19,266,pan,253,prd,2,prs,170,pri-pvem-panal,7,pt-conve,18013.02
+570,570,2011,18013,san pedro lagunillas,2,24,194,pan,139,prd,3,prs,502,pri-pvem-panal,19,pt-conve,18013.03
+575,575,2011,18013,san pedro lagunillas,1,56,308,pan,36,prd,5,prs,310,pri-pvem-panal,198,pt-conve,18013.04
+577,577,2011,18013,san pedro lagunillas,1,12,442,pan,90,prd,0,prs,223,pri-pvem-panal,14,pt-conve,18013.05
+580,580,2011,18014,santa maria del oro,0,46,296,pan,408,prd,3,prs,593,pri-pvem-panal,4,pt-conve,18014.01
+582,582,2011,18014,santa maria del oro,0,52,357,pan,141,prd,4,prs,426,pri-pvem-panal,7,pt-conve,18014.02
+585,585,2011,18014,santa maria del oro,0,80,602,pan,102,prd,3,prs,1276,pri-pvem-panal,14,pt-conve,18014.03
+591,591,2011,18014,santa maria del oro,7,102,827,pan,229,prd,5,prs,833,pri-pvem-panal,11,pt-conve,18014.04
+598,598,2011,18014,santa maria del oro,0,109,364,pan,456,prd,5,prs,708,pri-pvem-panal,7,pt-conve,18014.05
+605,605,2011,18014,santa maria del oro,0,45,603,pan,136,prd,3,prs,1046,pri-pvem-panal,3,pt-conve,18014.06
+611,611,2011,18014,santa maria del oro,0,125,320,pan,796,prd,8,prs,483,pri-pvem-panal,96,pt-conve,18014.07
+615,615,2011,18015,santiago ixc,0,113,1727,pan,510,prd,22,prs,1808,pri-pvem-panal,137,pt-conve,18015.01
+625,625,2011,18015,santiago ixc,0,138,833,pan,1058,prd,36,prs,2582,pri-pvem-panal,252,pt-conve,18015.02
+641,641,2011,18015,santiago ixc,2,221,683,pan,1820,prd,112,prs,1846,pri-pvem-panal,791,pt-conve,18015.03
+657,657,2011,18015,santiago ixc,1,164,1445,pan,956,prd,35,prs,1831,pri-pvem-panal,362,pt-conve,18015.04
+670,670,2011,18015,santiago ixc,0,153,2145,pan,715,prd,17,prs,2198,pri-pvem-panal,38,pt-conve,18015.05
+684,684,2011,18015,santiago ixc,0,162,894,pan,1661,prd,260,prs,1854,pri-pvem-panal,123,pt-conve,18015.06
+700,700,2011,18015,santiago ixc,5,110,1353,pan,1178,prd,57,prs,2578,pri-pvem-panal,145,pt-conve,18015.07
+723,723,2011,18015,santiago ixc,0,223,770,pan,1732,prd,38,prs,2694,pri-pvem-panal,114,pt-conve,18015.08
+742,742,2011,18015,santiago ixc,0,220,369,pan,1546,prd,71,prs,2435,pri-pvem-panal,225,pt-conve,18015.09
+754,754,2011,18016,tecuala,1,164,301,pan,587,prd,9,prs,1292,pri-pvem-panal,653,pt-conve,18016.01
+762,762,2011,18016,tecuala,1,99,664,pan,572,prd,19,prs,912,pri-pvem-panal,327,pt-conve,18016.02
+769,769,2011,18016,tecuala,0,76,346,pan,730,prd,59,prs,833,pri-pvem-panal,378,pt-conve,18016.03
+776,776,2011,18016,tecuala,0,110,307,pan,932,prd,19,prs,1151,pri-pvem-panal,475,pt-conve,18016.04
+786,786,2011,18016,tecuala,1,103,436,pan,1186,prd,45,prs,1232,pri-pvem-panal,131,pt-conve,18016.05
+793,793,2011,18016,tecuala,0,172,834,pan,566,prd,43,prs,1258,pri-pvem-panal,224,pt-conve,18016.06
+805,805,2011,18016,tecuala,1,171,929,pan,499,prd,88,prs,957,pri-pvem-panal,336,pt-conve,18016.07
+811,811,2011,18017,tepic,5,335,4472,pan,2428,prd,195,prs,5916,pri-pvem-panal,594,pt-conve,18017.01
+841,841,2011,18017,tepic,7,402,5452,pan,1860,prd,298,prs,6717,pri-pvem-panal,595,pt-conve,18017.02
+877,877,2011,18017,tepic,6,375,5432,pan,2466,prd,279,prs,6430,pri-pvem-panal,856,pt-conve,18017.03
+910,910,2011,18017,tepic,15,516,8138,pan,1879,prd,400,prs,6597,pri-pvem-panal,1181,pt-conve,18017.04
+955,955,2011,18017,tepic,26,500,6453,pan,1809,prd,266,prs,6327,pri-pvem-panal,1212,pt-conve,18017.05
+991,991,2011,18017,tepic,8,267,5506,pan,2269,prd,302,prs,5159,pri-pvem-panal,628,pt-conve,18017.06
+1018,1018,2011,18017,tepic,16,356,6042,pan,3285,prd,268,prs,8263,pri-pvem-panal,657,pt-conve,18017.07
+1055,1055,2011,18017,tepic,12,458,6621,pan,1795,prd,248,prs,6663,pri-pvem-panal,810,pt-conve,18017.08
+1091,1091,2011,18017,tepic,7,422,7472,pan,2811,prd,322,prs,6915,pri-pvem-panal,642,pt-conve,18017.09
+1127,1127,2011,18017,tepic,11,366,3270,pan,2249,prd,77,prs,5238,pri-pvem-panal,594,pt-conve,18017.1
+1153,1153,2011,18017,tepic,8,287,2821,pan,1765,prd,85,prs,4118,pri-pvem-panal,334,pt-conve,18017.11
+1189,1189,2011,18018,tuxpan,0,91,899,pan,563,prd,30,prs,632,pri-pvem-panal,323,pt-conve,18018.01
+1194,1194,2011,18018,tuxpan,4,54,669,pan,315,prd,17,prs,529,pri-pvem-panal,70,pt-conve,18018.02
+1198,1198,2011,18018,tuxpan,0,77,516,pan,687,prd,113,prs,626,pri-pvem-panal,134,pt-conve,18018.03
+1205,1205,2011,18018,tuxpan,2,97,582,pan,370,prd,87,prs,795,pri-pvem-panal,419,pt-conve,18018.04
+1211,1211,2011,18018,tuxpan,0,104,626,pan,541,prd,19,prs,592,pri-pvem-panal,269,pt-conve,18018.05
+1215,1215,2011,18018,tuxpan,1,84,772,pan,317,prd,5,prs,921,pri-pvem-panal,18,pt-conve,18018.06
+1221,1221,2011,18018,tuxpan,0,122,778,pan,275,prd,256,prs,798,pri-pvem-panal,100,pt-conve,18018.07
+1226,1226,2011,18008,xalisco,1,72,1125,pan,155,prd,12,prs,782,pri-pvem-panal,106,pt-conve,18008.01
+1230,1230,2011,18008,xalisco,0,57,917,pan,565,prd,17,prs,1113,pri-pvem-panal,155,pt-conve,18008.02
+1235,1235,2011,18008,xalisco,0,90,1301,pan,481,prd,13,prs,964,pri-pvem-panal,192,pt-conve,18008.03
+1240,1240,2011,18008,xalisco,1,67,1295,pan,229,prd,15,prs,987,pri-pvem-panal,55,pt-conve,18008.04
+1245,1245,2011,18008,xalisco,0,96,1416,pan,291,prd,15,prs,1435,pri-pvem-panal,95,pt-conve,18008.05
+1251,1251,2011,18008,xalisco,1,69,1814,pan,237,prd,8,prs,1431,pri-pvem-panal,62,pt-conve,18008.06
+1260,1260,2011,18008,xalisco,1,72,1104,pan,247,prd,8,prs,1466,pri-pvem-panal,11,pt-conve,18008.07
+1270,1270,2011,18019,la yesca,0,33,456,pan,3,prd,0,prs,702,pri-pvem-panal,0,pt-conve,18019.01
+1274,1274,2011,18019,la yesca,0,8,291,pan,1,prd,4,prs,391,pri-pvem-panal,1,pt-conve,18019.02
+1281,1281,2011,18019,la yesca,0,20,775,pan,6,prd,0,prs,494,pri-pvem-panal,0,pt-conve,18019.03
+1284,1284,2011,18019,la yesca,0,18,613,pan,5,prd,11,prs,426,pri-pvem-panal,8,pt-conve,18019.04
+1289,1289,2011,18019,la yesca,1,20,350,pan,1,prd,3,prs,321,pri-pvem-panal,19,pt-conve,18019.05
