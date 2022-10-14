@@ -1,5 +1,5 @@
 rm(list = ls())
-
+#
 dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
@@ -33,7 +33,7 @@ for (i in 1:ncol(l)){
 # create objects with vote for coalition(s) added and redudant columns dropped
 cv <- v; # will receive votes with coalitions aggregated
 cl <- l; # will keep coalition labels but drop coalition member labels 
-
+#
 ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
 # ci$coal1 coal2 coal3 coal4 pre-filled
@@ -117,7 +117,6 @@ for (i in 1:length(sel7)){
     tmp.n[i, target.cols] <- 0   # erase ns, prep for obs's next coalition
 }
 # return to data
-
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
 n[sel7,] <- tmp.n
@@ -141,9 +140,6 @@ tmp.n <- n[sel7,]
 tmp.c2 <- c2[sel7,]
 max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
-
-# debug
-#i <- which(dat$ord[sel7]==847)
 
 for (i in 1:length(sel7)){
     #i <- 50 # debug
@@ -259,12 +255,14 @@ c3[sel7,] <- tmp.c3
 ci[sel7,] <- tmp.ci
 
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
-print("Table must have 0s and 1s only, else coalitions remain to manipulate")
-table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
+print("Table must have 0s and 1s only, else coalitions remain to manipulate"); table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
 # plug ncoal into data
 dat$ncoal  <- ci$ncoal
-
+# number of candidates
+dat$ncand <- apply(cv, 1, FUN = function(x) sum(as.numeric(x>0)))
+#
+rm(c1, c2, c3, c4, I, i, j, max.tmp, n, pat, save.col, save.label, save.vote, sel, sel7, target.cols, tmp, tmp.c1, tmp.c2, tmp.c3, tmp.ci, tmp.l, tmp.n, tmp.target, tmp.v) # housecleaning
 
 ############################################
 ## SORTS COLUMNS IN VOTE DECREASING ORDER ##
@@ -288,12 +286,60 @@ cl.sorted <- sortBy(target = cl, By = cv) # slow! better wait for process end be
 cv.sorted <- as.data.frame(cv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 cl.sorted <- as.data.frame(cl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 colnames(cv.sorted) <- colnames(v); colnames(cl.sorted) <- colnames(l)
-cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15), v16 = as.numeric(v16), v17 = as.numeric(v17), v18 = as.numeric(v18), v19 = as.numeric(v19) , v20 = as.numeric(v20) , v21 = as.numeric(v21) , v22 = as.numeric(v22) , v23 = as.numeric(v23) , v24 = as.numeric(v24) , v25 = as.numeric(v25)) # return to numeric format
+cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15)) # return to numeric format
 tail(cv.sorted)
 tail(cl.sorted)
 
+# rename objects so that dat now has coalition aggregates
+dat.orig <- dat # duplicate original data
+dat[,sel.l] <- cl.sorted # return manipulated labels to data
+dat[,sel.v] <- cv.sorted # return manipulated votes to data
+head(dat)
+
+# move dcoal and ncoal columns before v01
+tmp <- dat # duplicate if I mess up
+tmp1 <- grep("v01", colnames(dat))
+tmp2 <- grep("dcoal", colnames(dat))
+tmp3 <- grep("ncoal", colnames(dat))
+tmp4 <- grep("ncand", colnames(dat))
+dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp4, tmp1:(tmp2-1))]
+colnames(dat)
+dat[1,]
+rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
+
+## # 11 cols needed
+table(dat$v12) # check that only has zeroes
+## # if not, which cases remain? 
+## #sel <- which(dat$v14>0)
+## #dat[sel,]
+dat$v12 <- dat$l13 <- dat$v14 <- dat$l15 <- NULL # drop redundant columns
+dat$win <- dat$l01
+# move win column before v01
+tmp <- dat # duplicate if I mess up
+tmp1 <- grep("v01", colnames(dat))
+tmp2 <- grep("win", colnames(dat))
+dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
+colnames(dat)
+
+sel.l <- grep("^l[0-9]{2}", colnames(dat))
+l <- dat[,sel.l] # subset label columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat))
+v <- dat[,sel.v] # subset vote columns
+# check that coal aggregation produces same efec as before
+check <- rowSums(v) - dat$efec
+table(check==0) # all must be true
+## sel <- which(check!=0)
+## dat[sel[2],]
+## dat.orig[sel[2],]
+
+#######################################################
+## Export a coalAgg version of votes returns to the  ##
+## same directory where ayde2008-presentNayRegid.csv ##
+#######################################################
+dat[1,]
+dat$munn <- dat$fuente <- NULL # drop these columns
+#dat$ord <- 1:nrow(dat)
+write.csv(dat, file = "ayde2008-presentNayRegid.coalAgg.csv", row.names = FALSE)
 
 
 
-l[1,]
-dat$l13
