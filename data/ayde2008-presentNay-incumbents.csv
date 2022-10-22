@@ -355,7 +355,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2039,nay-14.020.07,20,Bahía de Banderas,2011,pri-pvem-pna,,7,JOSE ASCENCION GIL CALLEJA        ,pan,IRMA PEÑA MARTINEZ 
 2040,nay-14.020.08,20,Bahía de Banderas,2011,pri-pvem-pna,,8,JUAN TORRES PEREZ          ,pan,GERARDO AGUIRREN CARNACION 
 2041,nay-14.020.09,20,Bahía de Banderas,2011,pri-pvem-pna,,9,VICTOR MANUEL SALVATIERRA GUTIERREZ    ,pan,FRANCISCO JAVIER VILLALVAZO PEÑA       
-2087,nay-15.001.01,1,Acaponeta,2014,prd,,1,MANUEL RAMON SALCEDO OSUNA    ,pri-pvem-pna,buscar en ayde2008-presentNayRegidCand.csv
+2087,nay-15.001.01,1,Acaponeta,2014,prd,,1,MANUEL RAMON SALCEDO OSUNA    ,pri-pvem-pna,buscar en fuente primaria---no sale en ayde2008-presentNayRegidCand.csv
 2088,nay-15.001.02,1,Acaponeta,2014,prd,,2,SERGIO SANCHEZ DIAZ           ,pri-pvem-pna,
 2077,nay-15.001.03,1,Acaponeta,2014,pri-pvem-pna,,3,ANUAR KARIM ABUD ESPINOSA     ,prd,
 2078,nay-15.001.04,1,Acaponeta,2014,pri-pvem-pna,,4,GLADYS LIVIER ESPINOSA DIAZ   ,prd,
@@ -718,21 +718,21 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2897,nay-17.001.05,1,Acaponeta,2021,pt-pvem-morena-pna,pna,5,TAMARA BETHZALI GOMEZ CORTEZ,pan-pri-prd,
 2898,nay-17.001.06,1,Acaponeta,2021,mln,mln,6,ROBERTO GASPAR TIZNADO AVILES,morena-pt-pvem-pna,
 2899,nay-17.001.07,1,Acaponeta,2021,pt-pvem-morena-pna,pvem,7,DAVID ERNESTO SANTILLAN DURAN,pan-pri-prd,
-2903,nay-17.001.pm,1,Acaponeta,2021,pt-pvem-morena-pna,morena,0,MANUEL RAMON SALCEDO OSUNA,pan-pri-prd,
+2903,nay-17.001.pm,1,Acaponeta,2021,pt-pvem-morena-pna,morena,0,MANUEL RAMON SALCEDO OSUNA,pan-pri-prd,EFRAIN ARELLANO NUÑEZ
 2904,nay-17.001.sind,1,Acaponeta,2021,pt-pvem-morena-pna,pvem,0,MARIA ELENA ORNELAS DOMINGUEZ,pan-pri-prd,
 2905,nay-17.002.01,2,Ahuacatlán,2021,mc,mc,1,JUAN ANTONIO HERNANDEZ RAMIREZ,morena-pt-pvem-pna,
 2906,nay-17.002.02,2,Ahuacatlán,2021,pan-pri-prd,pri,2,ROSA MARIA GUTIERREZ PEÑA,morena-pt-pvem-pna,
 2907,nay-17.002.03,2,Ahuacatlán,2021,pt-pvem-morena-pna,pna,3,ANDRES ORTEGA MORA,pan-pri-prd,
 2908,nay-17.002.04,2,Ahuacatlán,2021,mc,mc,4,FELIPE DE JESUS BENITEZ BARRAGAN,pan-pri-prd,
 2909,nay-17.002.05,2,Ahuacatlán,2021,pan-pri-prd,pri,5,JORGE NISSAT TISNADO DOMINGUEZ,morena-pt-pvem-pna,
-2912,nay-17.002.pm,2,Ahuacatlán,2021,pt-pvem-morena-pna,morena,0,LUCRECIA DE JESUS ALDUENDA ECHEAGARAY,pan-pri-prd,
+2912,nay-17.002.pm,2,Ahuacatlán,2021,pt-pvem-morena-pna,morena,0,LUCRECIA DE JESUS ALDUENDA ECHEAGARAY,pan-pri-prd,JOSE DE JESUS BERNAL LAMAS
 2913,nay-17.002.sind,2,Ahuacatlán,2021,pt-pvem-morena-pna,morena,0,J. SANTOS PONCE GARCIA,pan-pri-prd,
 2914,nay-17.003.01,3,Amatlán de Cañas,2021,pt-pvem-morena-pna,pvem,1,JORGE RAMON SOTO AGUILAR,fxm,
 2915,nay-17.003.02,3,Amatlán de Cañas,2021,pt-pvem-morena-pna,morena,2,GABRIELA NOEMI PARRA AGUIAR,pan-pri-prd,
 2916,nay-17.003.03,3,Amatlán de Cañas,2021,pan-pri-prd,prd,3,JOSE VALENTIN AGUIAR ROBLES,fxm,
 2917,nay-17.003.04,3,Amatlán de Cañas,2021,fxm,fxm,4,HECTOR ARMANDO ALTAMIRANO GARCIA,pan-pri-prd,
 2918,nay-17.003.05,3,Amatlán de Cañas,2021,pan-pri-prd,pan,5,ERIKA VALENZUELA ARIZON,morena-pt-pvem-pna,
-2921,nay-17.003.pm,3,Amatlán de Cañas,2021,pt-pvem-morena-pna,pvem,0,JESUS RAFAEL SANDOVAL DIAZ,fxm,
+2921,nay-17.003.pm,3,Amatlán de Cañas,2021,pt-pvem-morena-pna,pvem,0,JESUS RAFAEL SANDOVAL DIAZ,fxm,GUSTAVO QUINTERO MONTEON
 2922,nay-17.003.sind,3,Amatlán de Cañas,2021,pt-pvem-morena-pna,morena,0,MIRIAM AURORA VAZQUEZ GARCIA,fxm,
 2923,nay-17.004.01,4,Compostela,2021,pan-pri-prd,pan,1,MARIA EMIGDIA JIMENEZ CARRILLO,mc,
 2924,nay-17.004.02,4,Compostela,2021,pan-pri-prd,pan,2,NADIA ELIZABETH PANIAGUA ROBLES,mc,
@@ -743,14 +743,14 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2929,nay-17.004.07,4,Compostela,2021,mln,mln,7,MARTIN AGUIRRE RAMIREZ,mc,
 2930,nay-17.004.08,4,Compostela,2021,pt-pvem-morena-pna,morena,8,MARIA DEL CARMEN LEON OLVERA,mc,
 2931,nay-17.004.09,4,Compostela,2021,pt-pvem-morena-pna,morena,9,ELDA MINJAREZ GARCIA,pan-pri-prd,
-2936,nay-17.004.pm,4,Compostela,2021,pt-pvem-morena-pna,morena,0,ROMINA CHANG AGUILAR,mc,
+2936,nay-17.004.pm,4,Compostela,2021,pt-pvem-morena-pna,morena,0,ROMINA CHANG AGUILAR,mc,MANUEL GRADILLA RODRÍGUEZ
 2937,nay-17.004.sind,4,Compostela,2021,pt-pvem-morena-pna,morena,0,JESUS ALBERTO BAUTISTA ARIAS,mc,
 2938,nay-17.005.01,5,Huajicori,2021,pt-pvem-morena-pna,morena,1,ELOIZA GARCIA BENITEZ,mln,
 2939,nay-17.005.02,5,Huajicori,2021,pt-pvem-morena-pna,pvem,2,CYNTHIA NATHALY LOPEZ NAVARRO,morena-pt-pvem-pna,
 2940,nay-17.005.03,5,Huajicori,2021,pt-pvem-morena-pna,morena,3,CARLOS ALBERTO VILLASEÑOR ROSALES,mc,
 2941,nay-17.005.04,5,Huajicori,2021,pt-pvem-morena-pna,pvem,4,HERIBERTO ULLOA LOPEZ,mln,
 2942,nay-17.005.05,5,Huajicori,2021,pt-pvem-morena-pna,pt,5,ALDO MICHEL HERNANDEZ BOBADILLA,mc,
-2945,nay-17.005.pm,5,Huajicori,2021,pt-pvem-morena-pna,morena,0,VICENTE RANGEL CERVANTES,mc,
+2945,nay-17.005.pm,5,Huajicori,2021,pt-pvem-morena-pna,morena,0,VICENTE RANGEL CERVANTES,mc,NORMA ALICIA PALOMARES CORTEZ
 2946,nay-17.005.sind,5,Huajicori,2021,pt-pvem-morena-pna,morena,0,DIANA GEORGINA OSUNA DE LA CRUZ,mc,
 2947,nay-17.006.01,6,Ixtlán del Río,2021,pt-pvem-morena-pna,morena,1,ANDREA LOPEZ ALATORRE,morena-pt-pvem-pna,
 2948,nay-17.006.02,6,Ixtlán del Río,2021,pt-pvem-morena-pna,morena,2,MARIA DE LOURDES NUÑEZ BLAS,pan-pri-prd,
@@ -759,14 +759,14 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2951,nay-17.006.05,6,Ixtlán del Río,2021,pan-pri-prd,pan,5,GAUDENCIO AGUILAR MOLINA,morena-pt-pvem-pna,
 2952,nay-17.006.06,6,Ixtlán del Río,2021,pan-pri-prd,pri,6,NICOLASA DE LA CRUZ CARRILLO,morena-pt-pvem-pna,
 2953,nay-17.006.07,6,Ixtlán del Río,2021,pt,pt,7,PABLO GARAY DE LA TORRE,morena-pt-pvem-pna,
-2957,nay-17.006.pm,6,Ixtlán del Río,2021,pan-pri-prd,pan,0,ELSA NAYELI PARDO RIVERA,pt-pvem-morena-pna,
+2957,nay-17.006.pm,6,Ixtlán del Río,2021,pan-pri-prd,pan,0,ELSA NAYELI PARDO RIVERA,pt-pvem-morena-pna,MARISOL SANCHEZ NAVARRO
 2958,nay-17.006.sind,6,Ixtlán del Río,2021,pan-pri-prd,pan,0,DAVID HORACIO SALAS GARCÌA,pt-pvem-morena-pna,
 2959,nay-17.007.01,7,Jala,2021,pan-pri-prd,prd,1,JUANITA SOLIS SOLIS,morena-pt-pvem-pna,
 2960,nay-17.007.02,7,Jala,2021,pan-pri-prd,pan,2,JUAN SALAS DE LA CRUZ,mc,
 2961,nay-17.007.03,7,Jala,2021,pt,pt,3,UBALDO CARRILLO TEOFILO,pan-pri-prd,
 2962,nay-17.007.04,7,Jala,2021,mc,mc,4,LUIS LOPEZ LOBATOS,rsp,
 2963,nay-17.007.05,7,Jala,2021,pan-pri-prd,prd,5,IRENE DE LA PAZ LOPEZ,rsp,
-2966,nay-17.007.pm,7,Jala,2021,pt-pvem-morena-pna,pna,0,ANTONIO CARRILLO RAMOS,pan-pri-prd,
+2966,nay-17.007.pm,7,Jala,2021,pt-pvem-morena-pna,pna,0,ANTONIO CARRILLO RAMOS,pan-pri-prd,BIBIANA JEZABEL CASTRO ARECHIGA
 2967,nay-17.007.sind,7,Jala,2021,pt-pvem-morena-pna,pna,0,VANESSA ZUÑIGA RAFAEL,pan-pri-prd,
 2968,nay-17.008.01,8,Xalisco,2021,mc,mc,1,FLORENCIO CORTEZ OCHOA,pan-pri-prd,
 2969,nay-17.008.02,8,Xalisco,2021,pt-pvem-morena-pna,morena,2,MARINO TORRES FRUCTOSO,pan-pri-prd,
@@ -775,7 +775,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2972,nay-17.008.05,8,Xalisco,2021,pan-pri-prd,pri,5,FRANCISCO VILLANUEVA HERNANDEZ,pan-pri-prd,
 2973,nay-17.008.06,8,Xalisco,2021,pt-pvem-morena-pna,pt,6,BLANCA AURORA BALBUENA VENTURA,mc,
 2974,nay-17.008.07,8,Xalisco,2021,pt-pvem-morena-pna,pna,7,JUAN CARLOS SANCHEZ ASTORGA,mc,
-2978,nay-17.008.pm,8,Xalisco,2021,pt-pvem-morena-pna,morena,0,HERIBERTO CASTAÑEDA ULLOA,pan-pri-prd,
+2978,nay-17.008.pm,8,Xalisco,2021,pt-pvem-morena-pna,morena,0,HERIBERTO CASTAÑEDA ULLOA,pan-pri-prd,NADIA ALEJANDRA RAMÍREZ LÓPEZ
 2979,nay-17.008.sind,8,Xalisco,2021,pt-pvem-morena-pna,pt,0,PATRICIA YARED GOMEZ GAMEROS,pan-pri-prd,
 2980,nay-17.009.01,9,Nayar--El,2021,pt-pvem-morena-pna,pt,1,MIGUEL ANGEL MEDINA BAÑUELOS,pvem,
 2981,nay-17.009.02,9,Nayar--El,2021,pan-pri-prd,pan,2,CRISTINA AZUCENA PARRA SANCHEZ,pvem,
@@ -784,7 +784,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2984,nay-17.009.05,9,Nayar--El,2021,mc,mc,5,EDWIN FRANCISCO VENTURA LOPEZ,mc,
 2985,nay-17.009.06,9,Nayar--El,2021,pt-pvem-morena-pna,morena,6,DINORA ORTIZ ORTEGA,pan-pri-prd,
 2986,nay-17.009.07,9,Nayar--El,2021,pt-pvem-morena-pna,pt,7,GERARDO MONCADA FRANQUEZ,pan-pri-prd,
-2990,nay-17.009.pm,9,Nayar--El,2021,pt,pt,0,EUGENIO ALVAREZ GOMEZ,pan-pri-prd,
+2990,nay-17.009.pm,9,Nayar--El,2021,pt,pt,0,EUGENIO ALVAREZ GOMEZ,pan-pri-prd,OCTAVIO LOPEZ DE LA CRUZ
 2991,nay-17.009.sind,9,Nayar--El,2021,pt,pt,0,MARIA GLORIA PARADA MUÑOZ,pan-pri-prd,
 2992,nay-17.010.01,10,Rosamorada,2021,pt-pvem-morena-pna,pvem,1,LUCERO ELIZABETH SANTANA PEREZ,morena-pt-pvem-pna,
 2993,nay-17.010.02,10,Rosamorada,2021,pt-pvem-morena-pna,morena,2,CARLOS ULISES JACOBO SOLIS,pan-pri-prd,
@@ -793,7 +793,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 2996,nay-17.010.05,10,Rosamorada,2021,pt-pvem-morena-pna,morena,5,ANA BERTHA PARTIDA RAMIREZ,pan-pri-prd,
 2997,nay-17.010.06,10,Rosamorada,2021,pt-pvem-morena-pna,pvem,6,KARLA SINAI PEÑA PARTIDA,pan-pri-prd,
 2998,nay-17.010.07,10,Rosamorada,2021,mc,mc,7,JESUS FRIAS HERNANDEZ,morena-pt-pvem-pna,
-3002,nay-17.010.pm,10,Rosamorada,2021,pt-pvem-morena-pna,pt,0,RITO ALFONSO GALVAN ZERMEÑO,pan-pri-prd,
+3002,nay-17.010.pm,10,Rosamorada,2021,pt-pvem-morena-pna,pt,0,RITO ALFONSO GALVAN ZERMEÑO,pan-pri-prd,JOSE AMPELIO GUTIERREZ GARCIA
 3003,nay-17.010.sind,10,Rosamorada,2021,pt-pvem-morena-pna,pt,0,ROSA GARDENIA GONZALEZ NARANJO,pan-pri-prd,
 3004,nay-17.011.01,11,Ruiz ,2021,pt-pvem-morena-pna,pna,1,VERONICA HARO FLORES,mc,
 3005,nay-17.011.02,11,Ruiz ,2021,pan-pri-prd,pri,2,OSCAR IBARRA DURAN,mc,
@@ -802,7 +802,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3008,nay-17.011.05,11,Ruiz ,2021,pt-pvem-morena-pna,morena,5,PERLA RAQUEL ABUD CISNEROS,morena-pt-pvem-pna,
 3009,nay-17.011.06,11,Ruiz ,2021,mc,mc,6,DANIEL ALFREDO DOMINGUEZ NODAL,morena-pt-pvem-pna,
 3010,nay-17.011.07,11,Ruiz ,2021,pes,pes,7,WALBERTO DE LOS SANTOS CASILLAS,morena-pt-pvem-pna,
-3014,nay-17.011.pm,11,Ruiz ,2021,pt-pvem-morena-pna,morena,0,OSCAR FLORES ESTRADA,mc,
+3014,nay-17.011.pm,11,Ruiz ,2021,pt-pvem-morena-pna,morena,0,OSCAR FLORES ESTRADA,mc,JOSE MARTIN MEJIA SORIA
 3015,nay-17.011.sind,11,Ruiz ,2021,pt-pvem-morena-pna,morena,0,SONIA SELENE RODRIGUEZ ELIAS,mc,
 3016,nay-17.012.01,12,San Blas,2021,mc,mc,1,HECTOR EFRAIN VEGA CRUZ,pan-pri-prd,
 3017,nay-17.012.02,12,San Blas,2021,rsp,rsp,2,JUAN JOSE GOMEZ TORRES,pan-pri-prd,
@@ -811,14 +811,14 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3020,nay-17.012.05,12,San Blas,2021,pt-pvem-morena-pna,morena,5,RAMON ECHEVARRIA RIOS,morena-pt-pvem-pna,
 3021,nay-17.012.06,12,San Blas,2021,pan-pri-prd,pan,6,JESUS GABRIELA RIOS ESTRADA,fxm,
 3022,nay-17.012.07,12,San Blas,2021,mc,mc,7,LUIS FERNANDO LOPEZ GONZALEZ,pan-pri-prd,
-3026,nay-17.012.pm,12,San Blas,2021,pan-pri-prd,pan,0,JOSE ANTONIO BARAJAS LOPEZ,pt-pvem-morena-pna,
+3026,nay-17.012.pm,12,San Blas,2021,pan-pri-prd,pan,0,JOSE ANTONIO BARAJAS LOPEZ,pt-pvem-morena-pna,BERTHA ELISA YERENA RAMIREZ
 3027,nay-17.012.sind,12,San Blas,2021,pan-pri-prd,pri,0,YENNI PALOMA HERNANDEZ TOVAR,pt-pvem-morena-pna,
 3028,nay-17.013.01,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,pna,1,MATEO GONZALEZ LEAL,mc,
 3029,nay-17.013.02,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,pvem,2,ULISSES TONATIU GARCIA RAMOS,morena-pt-pvem-pna,
 3030,nay-17.013.03,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,morena,3,CONCEPCION AZUCENA HERNANDEZ SAUCEDA,mln,
 3031,nay-17.013.04,13,San Pedro Lagunillas,2021,mc,mc,4,ELEUTERIO BUENO SERAFIN,mc,
 3032,nay-17.013.05,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,morena,5,FRANCISCO JAVIER LOPEZ HERNANDEZ,pan-pri-prd,
-3035,nay-17.013.pm,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,morena,0,ISABEL CRISTINA CORONADO RODRIGUEZ,mc,
+3035,nay-17.013.pm,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,morena,0,ISABEL CRISTINA CORONADO RODRIGUEZ,mc,MARIA GUADALUPE GONZALEZ TREVIÑO
 3036,nay-17.013.sind,13,San Pedro Lagunillas,2021,pt-pvem-morena-pna,pna,0,JOSE LUIS OCEGUEDA PEREZ,mc,
 3037,nay-17.014.01,14,Santa María del Oro ,2021,pt-pvem-morena-pna,pvem,1,MARIA DE LOS ANGELES GUZMAN BETANCOURT,rsp,
 3038,nay-17.014.02,14,Santa María del Oro ,2021,mc,mc,2,EDGAR DAVID GARCIA SUAREZ,pan-pri-prd,
@@ -827,7 +827,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3041,nay-17.014.05,14,Santa María del Oro ,2021,pan-pri-prd,pri,5,JUAN CARLOS INDA HERNANDEZ,morena-pt-pvem-pna,
 3042,nay-17.014.06,14,Santa María del Oro ,2021,pt-pvem-morena-pna,morena,6,ALEX EMANUEL HOLGUIN BALTIERRA,morena-pt-pvem-pna,
 3043,nay-17.014.07,14,Santa María del Oro ,2021,mln,mln,7,MARIA CONCEPCION ULLOA PEREZ,viva,
-3047,nay-17.014.pm,14,Santa María del Oro ,2021,pt-pvem-morena-pna,pna,0,MARISA SOLANO TRUJILLO,pan-pri-prd,
+3047,nay-17.014.pm,14,Santa María del Oro ,2021,pt-pvem-morena-pna,pna,0,MARISA SOLANO TRUJILLO,pan-pri-prd,GLADYS GABRIELA ESPIRICUETA ARJONA
 3048,nay-17.014.sind,14,Santa María del Oro ,2021,pt-pvem-morena-pna,pna,0,BERNARDO MURO SANCHEZ,pan-pri-prd,
 3049,nay-17.015.01,15,Santiago Ixcuintla,2021,pan-pri-prd,prd,1,ANGEL MANUEL CONTRERAS VALENZUELA,mc,
 3050,nay-17.015.02,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,morena,2,DORIS GETSEMANI AVILA MARTINEZ,pan-pri-prd,
@@ -838,7 +838,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3055,nay-17.015.07,15,Santiago Ixcuintla,2021,mc,mc,7,LUIS MIGUEL MEDINA TORRES,mc,
 3056,nay-17.015.08,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,morena,8,ANA ARIZBE DELGADILLO PARRA,pan-pri-prd,
 3057,nay-17.015.09,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,pt,9,BLANCA PATRICIA HINOJOSA PARRA,morena-pt-pvem-pna,
-3062,nay-17.015.pm,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,morena,0,EDUARDO LUGO LOPEZ,pan-pri-prd,
+3062,nay-17.015.pm,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,morena,0,EDUARDO LUGO LOPEZ,pan-pri-prd,MANUEL NARVAEZ NAVARRO
 3063,nay-17.015.sind,15,Santiago Ixcuintla,2021,pt-pvem-morena-pna,morena,0,MARISOL CONTRERAS PEREZ,pan-pri-prd,
 3064,nay-17.016.01,16,Tecuala,2021,pt-pvem-morena-pna,morena,1,JOSE TEOFILO CORONADO GAMBOA,morena-pt-pvem-pna,
 3065,nay-17.016.02,16,Tecuala,2021,pan-pri-prd,pan,2,THELMA CONCEPCION FERNANDEZ VILLARREAL,viva,
@@ -847,7 +847,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3068,nay-17.016.05,16,Tecuala,2021,mc,mc,5,ZULEMA GUADALUPE BUENO LOPEZ,morena-pt-pvem-pna,
 3069,nay-17.016.06,16,Tecuala,2021,pt-pvem-morena-pna,pt,6,FRANCISCO JAVIER PATRON SALAS,pan-pri-prd,
 3070,nay-17.016.07,16,Tecuala,2021,fxm,fxm,7,PEDRO ALEJANDRO PARTIDA CORONADO,morena-pt-pvem-pna,
-3074,nay-17.016.pm,16,Tecuala,2021,pt-pvem-morena-pna,pna,0,GABINO JIMENEZ HUERTA,pan-pri-prd,
+3074,nay-17.016.pm,16,Tecuala,2021,pt-pvem-morena-pna,pna,0,GABINO JIMENEZ HUERTA,pan-pri-prd,ADALBERTO CABUTO DIAZ
 3075,nay-17.016.sind,16,Tecuala,2021,pt-pvem-morena-pna,morena,0,MARIA TERESA VALDEZ SOTOMAYOR,pan-pri-prd,
 3076,nay-17.017.01,17,Tepic,2021,pt-pvem-morena-pna,morena,1,CRISTINA IBARRA ROBLES,pan-pri-prd,
 3077,nay-17.017.02,17,Tepic,2021,pan-pri-prd,pri,2,JORGE EDUARDO CEDANO AMPARO,mc,
@@ -860,7 +860,7 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3084,nay-17.017.09,17,Tepic,2021,pt-pvem-morena-pna,morena,9,VICTOR HUGO ALVARADO VILLA,pan-pri-prd,
 3085,nay-17.017.10,17,Tepic,2021,pt-pvem-morena-pna,morena,10,JOSE MARCO ANTONIO MARTINEZ PEREZ,pan-pri-prd,
 3086,nay-17.017.11,17,Tepic,2021,pt-pvem-morena-pna,pna,11,LUIS RICARDO SANCHEZ MARTIR,mc,
-3092,nay-17.017.pm,17,Tepic,2021,pt-pvem-morena-pna,morena,0,MARIA GERALDINE PONCE MENDEZ,pan-pri-prd,
+3092,nay-17.017.pm,17,Tepic,2021,pt-pvem-morena-pna,morena,0,MARIA GERALDINE PONCE MENDEZ,pan-pri-prd,ADAHAN CASAS RIVAS
 3093,nay-17.017.sind,17,Tepic,2021,pt-pvem-morena-pna,morena,0,JOSUE DANIEL MERCADO RAMIREZ,pan-pri-prd,
 3094,nay-17.018.01,18,Tuxpan,2021,pt-pvem-morena-pna,pvem,1,IVAN PETROVICH LOPEZ MUÑOZ,pan-pri-prd,
 3095,nay-17.018.02,18,Tuxpan,2021,pt-pvem-morena-pna,morena,2,YULIANA VAZQUEZ CEJA,viva,
@@ -869,23 +869,23 @@ ord,emm,munn,mun,yr,won,postulo,demn,propietario,p2nd,c2
 3098,nay-17.018.05,18,Tuxpan,2021,rsp,rsp,5,ALAIN CUAUHTEMOC MOLINA RAMOS,mc,
 3099,nay-17.018.06,18,Tuxpan,2021,pan-pri-prd,pri,6,RAFAEL GOMEZ VEGA,mln,
 3100,nay-17.018.07,18,Tuxpan,2021,pt-pvem-morena-pna,morena,7,YOSIMAR PALOMARES BETANCOURT,mc,
-3104,nay-17.018.pm,18,Tuxpan,2021,mc,mc,0,JOSE LUIS TOVAR RUVALCABA,pt-pvem-morena-pna,
+3104,nay-17.018.pm,18,Tuxpan,2021,mc,mc,0,JOSE LUIS TOVAR RUVALCABA,pt-pvem-morena-pna,MARGARITA MORAN FLORES
 3105,nay-17.018.sind,18,Tuxpan,2021,mc,mc,0,DOLORES ADRIANA MEDINA AVALOS,pt-pvem-morena-pna,
 3106,nay-17.019.01,19,Yesca--La,2021,viva,viva,1,,mc,
-3107,nay-17.019.02,19,Yesca--La,2021,morena-pt-pvem-pna,,2,,viva,
-3108,nay-17.019.03,19,Yesca--La,2021,morena-pt-pvem-pna,,3,,pan-pri-prd,
-3109,nay-17.019.04,19,Yesca--La,2021,morena-pt-pvem-pna,,4,,viva,
-3110,nay-17.019.05,19,Yesca--La,2021,morena-pt-pvem-pna,,5,,mc,
-3113,nay-17.019.pm,19,Yesca--La,2021,pt-pvem-morena-pna,,0,,mc,
-3114,nay-17.019.sind,19,Yesca--La,2021,pt-pvem-morena-pna,,0,,mc,
+3107,nay-17.019.02,19,Yesca--La,2021,morena-pt-pvem-pna,morena,2,,viva,
+3108,nay-17.019.03,19,Yesca--La,2021,morena-pt-pvem-pna,pvem,3,,pan-pri-prd,
+3109,nay-17.019.04,19,Yesca--La,2021,morena-pt-pvem-pna,morena,4,,viva,
+3110,nay-17.019.05,19,Yesca--La,2021,morena-pt-pvem-pna,pt,5,,mc,
+3113,nay-17.019.pm,19,Yesca--La,2021,pt-pvem-morena-pna,morena,0,REYNA LUCIA DE HARO,mc,MARIA ELIZABETH MELCHOR GONZALEZ
+3114,nay-17.019.sind,19,Yesca--La,2021,pt-pvem-morena-pna,morena,0,,mc,
 3115,nay-17.020.01,20,Bahía de Banderas,2021,mc,mc,1,VICENTE PEREZ MEZA,morena-pt-pvem-pna,
 3116,nay-17.020.02,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,2,RANDY MISAEL LOPEZ ALVAREZ,morena-pt-pvem-pna,
 3117,nay-17.020.03,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,3,MARIA DEL SOCORRO CERVANTES GARCIA,pan-pri-prd,
 3118,nay-17.020.04,20,Bahía de Banderas,2021,pt-pvem-morena-pna,pt,4,JUAN STEVEN MICHAEL CASILLAS HERNANDEZ,pan-pri-prd,
 3119,nay-17.020.05,20,Bahía de Banderas,2021,pt-pvem-morena-pna,pvem,5,LUZ SANCHEZ MENDEZ,pan-pri-prd,
 3120,nay-17.020.06,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,6,RUSLAN MAYORGA SUAREZ,mc,
-3121,nay-17.020.07,20,Bahía de Banderas,2021,pt-pvem-morena-pna,pvem,7,BLANCA LUCIA HERNANDEZ CASILLAS,morena-pt-pvem-pna,
+3121,nay-17.020.07,20,Bahía de Banderas,2021,mln,mln,7,BLANCA LUCIA HERNANDEZ CASILLAS,morena-pt-pvem-pna,
 3122,nay-17.020.08,20,Bahía de Banderas,2021,pt-pvem-morena-pna,pna,8,LEOPOLDO ISIORDIA AZPEITIA,pan-pri-prd,
 3123,nay-17.020.09,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,9,ANGELICA PASOS SANDOVAL,pan-pri-prd,
-3128,nay-17.020.pm,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,0,MIRTHA ILIANA VILLALVAZO AMAYA,pan-pri-prd,
+3128,nay-17.020.pm,20,Bahía de Banderas,2021,pt-pvem-morena-pna,morena,0,MIRTHA ILIANA VILLALVAZO AMAYA,pan-pri-prd,JAIME ALONSO CUEVAS TELLO
 3129,nay-17.020.sind,20,Bahía de Banderas,2021,pt-pvem-morena-pna,pt,0,JULIO CESAR ROBLES LIMA,pan-pri-prd,
