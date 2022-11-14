@@ -50,46 +50,63 @@ l <- l[,c("edon","seccion","casilla","lisnom")]
 # verify casillas named equally in both files
 table(d$casilla)
 table(l$casilla)
-sel.d <- grep("^C", d$casilla)
-sel.l <- grep("^C", l$casilla)
-table(d$casilla[sel.d])
-table(l$casilla[sel.l])
-# C1 needs to turn into C
-sel.l <- grep("^C1$", l$casilla)
-l$casilla[sel.l] <- "C"
 #
+# use casillaln to match casillas extraordinarias names towards merge (EX 1 B to E etc.)
 sel.d <- grep("^E", d$casilla)
 sel.l <- grep("^E", l$casilla)
-
-# EX 1 B to E etc
 table(d$casilla[sel.d])
 table(l$casilla[sel.l])
-sel.l <- grep("^EX 1 B$", l$casilla)
-l$casilla[sel.l] <- "E"
-
-sel.d <- grep("^E.", d$casilla)
-sel.l <- grep("^E.", l$casilla)
-table(d$casilla[sel.d])
-table(l$casilla[sel.l])
-
-table(paste0(d$edon[sel.d],"-",d$seccion[sel.d]))
-table(paste0(d$edon[sel.d],"-",d$seccion[sel.d]))
-x
-
+table(d$casilla[sel.d], d$casillaln[sel.d])
 #
+## # was used once to extract casilla extra names (match was done using indexes in originally-sorted source files)
+## table(paste0(d$edon[sel.d],"-",d$seccion[sel.d]))
+## table(paste0(d$edon[sel.d],"-",d$seccion[sel.d]))
+
+# C1 needs to turn into C
 sel.d <- grep("^C", d$casilla)
 sel.l <- grep("^C", l$casilla)
-# all ok here
 table(d$casilla[sel.d])
 table(l$casilla[sel.l])
+sel.l <- grep("^C1$", l$casilla)
+l$casilla[sel.l] <- "C"
+# fill casillaln for merge
+sel.d <- grep("^C", d$casilla)
+d$casillaln[sel.d] <- d$casilla[sel.d]
 #
+# B needs no manip
+sel.d <- grep("^B", d$casilla)
+sel.l <- grep("^B", l$casilla)
+table(d$casilla[sel.d])
+table(l$casilla[sel.l])
+# fill casillaln for merge
+d$casillaln[sel.d] <- d$casilla[sel.d]
+#
+# no hay casillas S en lista nominal
 sel.d <- grep("^S", d$casilla)
 sel.l <- grep("^S", l$casilla)
-# no hay casillas S en lista nominal
 table(d$casilla[sel.d])
 table(l$casilla[sel.l])
+# fill casillaln for merge
+d$casillaln[sel.d] <- d$casilla[sel.d]
+#
+table(d$casilla, d$casillaln)
+table(is.na(d$casillaln))
 
 # merge lisnom into d
+d <- merge(x=d, y=l, by.x=c("edon","seccion","casillaln"), by.l=c("edon","seccion","casilla"), all.x = TRUE, all.y = FALSE)
+head(d)
+
+# these casillas do not match an observation in l and get lisnom=NA
+sel.d <- which(is.na(d$lisnom))
+table(d$casilla[sel.d])
+
+# clean for saving
+d[1,]
+d$casillaln <- NULL # drop seccionln after merge is done
+d <- d[order(d$ord),] # sort as unmanipulated
+
+# save manipulated data
+write.csv(d, paste0(md, "dip2000m.csv"), row.names = FALSE)
 
 ##########
 ## 2003 ##
@@ -140,7 +157,8 @@ sel.d <- which(is.na(d$lisnom))
 d[sel.d, c("edon","seccion","casilla","tot","lisnom")]
 table(d$casilla[sel.d])
 
-# will save manupulated data here
+## # save manipulated data
+## write.csv(d, paste0(md, "dip2003m.csv"))
 
 head(d)
 head(l)
