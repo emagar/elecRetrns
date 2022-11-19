@@ -4,6 +4,7 @@
 ## When sección has no casillas especiales, this approximation should be on target. ##
 ## When there is a casilla especial, even split is slightly off target, as can be   ##
 ## seen in post-2003 returns.                                                       ##
+## SCRIPT IS MEANT TO BE USED ONCE, THEN BECOMES USELESS                            ## 
 ######################################################################################
 
 rm(list = ls())
