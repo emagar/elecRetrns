@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2022-09-29
+Last revision: 2022-11-18
 
 ----------
 
@@ -8,7 +8,7 @@ Last revision: 2022-09-29
 Recent additions
 </h2>
 
-*Casilla-level lista nominal* added to 1991-2003 federal deputy files (<2022-11-18 Fri>).
+*Casilla-level lista nominal* added to 1991-2003 federal deputy files (<sup><sub>2022-11-18</sub></sup>).
 
 *Special municipal elections* in 2021/22 added, elected mayors updated. 
 
