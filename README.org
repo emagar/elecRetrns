@@ -8,13 +8,15 @@ Last revision: 2022-09-29
 Recent additions
 </h2>
 
-*Special municipal elections* in 2021/22 added, elected mayors updated. 
+*Casilla-level lista nominal* added to 1991-2003 federal deputy files (<2022-11-18 Fri>).
 
-*Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
+*Special municipal elections* in 2021/22 added, elected mayors updated. 
 
 *State-level presidential and senate returns* cleaned and updated.
 
 *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
+
+# *Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
 
 # *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
 
