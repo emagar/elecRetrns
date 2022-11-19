@@ -1060,7 +1060,7 @@ rm(inegi, ife, mun)
 eq$edon <- as.integer(eq$inegi/1000) # ojo: no work when inegi==0
 eq[eq$edon==0,]
 eq[eq$edon==4,]
-x
+
 # functions to make translations
 ife.to.inegi <- function(x){ # x is a vector to convert
     y <- mapvalues(x, from = eq$ife, to = eq$inegi, warn_missing = FALSE)
