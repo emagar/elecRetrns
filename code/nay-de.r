@@ -5,16 +5,19 @@ setwd(dd)
 
 # read data
 dat <- read.csv(file = "ayde2008-presentNayRegid.csv")
+dat[1,]
 #
 # drop void elections
 sel <- which(dat$status=="anulada")
-dat <- dat[-sel,]
+if (length(sel)>0) dat <- dat[-sel,]
 
 # subset label and vote columns for manipulation
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel.v] # subset vote columns
+sel.c <- grep("^c[0-9]{2}", colnames(dat))
+c <- dat[,sel.c] # subset cand columns
 #
 # replace NAs with 0s
 v[is.na(v)] <- 0
@@ -32,7 +35,8 @@ for (i in 1:ncol(l)){
 }
 # create objects with vote for coalition(s) added and redudant columns dropped
 cv <- v; # will receive votes with coalitions aggregated
-cl <- l; # will keep coalition labels but drop coalition member labels 
+cl <- l; # will keep coalition labels but drop coalition member labels
+cc <- c; # will keep coalition candidates but drop redundant names
 #
 ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
@@ -43,7 +47,7 @@ ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
   ln2 <- ln1 # duplicate
   # replace each label by its character length
   for (i in 1:ncol(ln1)){
-      #i <- 15 # debug
+      #i <- 16 # debug
       tmp <- l[,i] # pick ith column as vector
       ln1[,i] <- nchar(tmp) # replace items with num characters
   }
@@ -68,6 +72,7 @@ sel7 <- which(max.tmp>1)
 #grep("ags-18", dat$emm[sel7]) # debug
 tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
 tmp.l  <- cl[sel7,]
+tmp.c  <- cc[sel7,]
 tmp.n  <- n[sel7,]
 tmp.c1 <- c1[sel7,]
 max.tmp <- max.tmp[sel7]
@@ -81,6 +86,7 @@ for (i in 1:length(sel7)){
     tmp.ci$ncoal[i] <- 1                               # running tally ncoal
     save.col <- which(tmp.n[i,]==max.tmp[i])[1]        # spare this column from erasure in process below (1st if multiple hits)
     save.label <- tmp.l[i, save.col]                   # keep coalition full label
+    save.cand <-  tmp.c[i, save.col]                   # keep coalition candidate
     tmp.ci$coal1[i] <- save.label                      # plug coal label into summary
     tmp <- strsplit(save.label, split = "-")           # break into component character vector
     tmp.c1[i,1:length(tmp[[1]])] <- tmp[[1]]           # fill in coalition members
@@ -107,8 +113,10 @@ for (i in 1:length(sel7)){
     if (length(sel)>1){ # do not manipulate if singleton
         tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
         tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label manipulation
+        tmp.c[i, target.cols] <- "0" # erase names to keep only full coalition candidate manipulation
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
+        tmp.c[i, save.col] <- save.cand # place coalition label back in
         # votes contributed
         #tmp.vw[i, save.col] <- 0   # erase joint votes
         #tmp.lw[i, save.col] <- "0" # erase joint label
@@ -119,6 +127,7 @@ for (i in 1:length(sel7)){
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
+cc[sel7,] <- tmp.c
 n[sel7,] <- tmp.n
 c1[sel7,] <- tmp.c1
 #w1[sel7] <- tmp.w1
@@ -136,6 +145,7 @@ sel7 <- which(max.tmp>1)
 #grep("ags-18", dat$emm[sel7]) # debug
 tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
 tmp.l  <- cl[sel7,]
+tmp.c  <- cc[sel7,]
 tmp.n <- n[sel7,]
 tmp.c2 <- c2[sel7,]
 max.tmp <- max.tmp[sel7]
@@ -149,6 +159,7 @@ for (i in 1:length(sel7)){
     tmp.ci$ncoal[i] <- 2               # running tally co ncoal
     save.col <- which(tmp.n[i,]==max.tmp[i])[1] # spare this column from erasure in process below (1st if multiple hits)
     save.label <- tmp.l[i, save.col]            # keep coalition full label
+    save.cand <-  tmp.c[i, save.col]            # keep coalition candidate
     tmp.ci$coal2[i] <- save.label      # plug coal label into summary
     tmp <- strsplit(save.label, split = "-") # break into component character vector
     tmp.c2[i,1:length(tmp[[1]])] <- tmp[[1]] # fill in coalition members
@@ -174,9 +185,11 @@ for (i in 1:length(sel7)){
     #tmp.vw2[[i]] <- round(tmp.vw2[[i]] * save.vote, 2) # relative votes contributed
     if (length(sel)>1){ # do not manipulate if singleton
         tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label manipulation
+        tmp.c[i, target.cols] <- "0" # erase names to keep only full coalition candidate manipulation
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
+        tmp.c[i, save.col] <- save.cand # place coalition label back in
         # votes contributed
         #tmp.vw[i, save.col] <- 0   # erase joint votes
         #tmp.lw[i, save.col] <- "0" # erase joint label
@@ -187,6 +200,7 @@ for (i in 1:length(sel7)){
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
+cc[sel7,] <- tmp.c
 n[sel7,] <- tmp.n
 c2[sel7,] <- tmp.c2
 ci[sel7,] <- tmp.ci
@@ -199,6 +213,7 @@ table(max.tmp) # coal w most members has 7
 sel7 <- which(max.tmp>1) 
 tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
 tmp.l  <- cl[sel7,]
+tmp.c  <- cc[sel7,]
 tmp.n <- n[sel7,]
 tmp.c3 <- c3[sel7,]
 max.tmp <- max.tmp[sel7]
@@ -212,6 +227,7 @@ for (i in 1:length(sel7)){
     tmp.ci$ncoal[i] <- 3               # running tally co ncoal
     save.col <- which(tmp.n[i,]==max.tmp[i])[1] # spare this column from erasure in process below (1st if multiple hits)
     save.label <- tmp.l[i, save.col]            # keep coalition full label
+    save.cand <-  tmp.c[i, save.col]            # keep coalition candidate
     tmp.ci$coal3[i] <- save.label      # plug coal label into summary
     tmp <- strsplit(save.label, split = "-") # break into component character vector
     tmp.c3[i,1:length(tmp[[1]])] <- tmp[[1]] # fill in coalition members
@@ -237,9 +253,11 @@ for (i in 1:length(sel7)){
     #tmp.vw3[[i]] <- round(tmp.vw3[[i]] * save.vote, 2) # relative votes contributed
     if (length(sel)>1){ # do not manipulate if singleton
         tmp.v[i, target.cols] <- 0   # erase votes to keep only aggregate
-        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
+        tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label manipulation
+        tmp.c[i, target.cols] <- "0" # erase names to keep only full coalition candidate manipulation
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
+        tmp.c[i, save.col] <- save.cand # place coalition label back in
         # votes contributed
         #tmp.vw[i, save.col] <- 0   # erase joint votes
         #tmp.lw[i, save.col] <- "0" # erase joint label
@@ -250,6 +268,7 @@ for (i in 1:length(sel7)){
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
+cc[sel7,] <- tmp.c
 n[sel7,]  <- tmp.n
 c3[sel7,] <- tmp.c3
 ci[sel7,] <- tmp.ci
@@ -278,22 +297,28 @@ rm(pth)
 # sort coalition-aggregated data
 tail(cv)
 tail(cl)
+tail(cc)
 ###########################################
 cv.sorted <- sortBy(target = cv, By = cv) # slow! better wait for process end before continuing  
 ###########################################
 cl.sorted <- sortBy(target = cl, By = cv) # slow! better wait for process end before continuing
 ###########################################
+cc.sorted <- sortBy(target = cc, By = cv) # slow! better wait for process end before continuing
+###########################################
 cv.sorted <- as.data.frame(cv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
 cl.sorted <- as.data.frame(cl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
-colnames(cv.sorted) <- colnames(v); colnames(cl.sorted) <- colnames(l)
+cc.sorted <- as.data.frame(cc.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
+colnames(cv.sorted) <- colnames(v); colnames(cl.sorted) <- colnames(l); colnames(cc.sorted) <- colnames(c)
 cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15)) # return to numeric format
 tail(cv.sorted)
 tail(cl.sorted)
+tail(cc.sorted)
 
 # rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
 dat[,sel.v] <- cv.sorted # return manipulated votes to data
+dat[,sel.c] <- cc.sorted # return manipulated votes to data
 head(dat)
 
 # move dcoal and ncoal columns before v01
@@ -325,6 +350,8 @@ sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel.v] # subset vote columns
+sel.c <- grep("^c[0-9]{2}", colnames(dat))
+c <- dat[,sel.c] # subset vote columns
 # check that coal aggregation produces same efec as before
 check <- rowSums(v) - dat$efec
 table(check==0) # all must be true
