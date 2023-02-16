@@ -127,24 +127,24 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 * Sources
 Work in progress...
 
-- /Fuente/ = iee indicates data obtined from the primary source, the state's election board's web site. 
+- /Fuente/ = iee/ife/ine indicates data obtained from the primary source, the state/federal election board's web site. 
 - /Fuente/ = tesis Melissa
 - /Fuente/ = Mexico Electoral Banamex
-- /Fuente/ = prep
 - /Fuente/ = Toledo Patiño paper
-- /Fuente/ = UAM Iztapalapa
+- /Fuente/ = UAM Iztapalapa for older state races
 - /Fuente/ = voz y voto
 
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data. 
 
-Many students over many years have provided extraordinary research assistance to retrieve and systematize information reported here. 
+Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
 - Under construction
-- Sonia Kuri Kosegarten
-- Eugenio Solís Flores
 - Daniela Guzmán Lerma
+- Eugenio Solís Flores
+- Francisco Garfias
 - José Angel Torrens Hernández
+- Lucía Motolinia
 - Mauricio Fernández Duque
-
-
+- Sonia Kuri Kosegarten
+- Vidal Mendoza Tinoco
 
