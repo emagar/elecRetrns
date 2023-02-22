@@ -86,7 +86,7 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "dip2006.csv"))
+# write.csv(v2, file=paste0(vd, "dip2006.csv"), row.names = FALSE)
 
 #############################
 ## 2006 presidential votes ##
@@ -119,7 +119,7 @@ table(is.na(g2$latitude))
 v2$id <- NULL
 v2 <- v2[order(v2$ord),]
 head(v2)
-# write.csv(v2, file=paste0(vd, "pre2006.csv"))
+# write.csv(v2, file=paste0(vd, "pre2006.csv"), row.names = FALSE)
 
 
 ###################
