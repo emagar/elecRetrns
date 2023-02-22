@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2022-11-18
+Last revision: 2023-02-22
 
 ----------
 
@@ -8,11 +8,13 @@ Last revision: 2022-11-18
 Recent additions
 </h2>
 
+<sup><sub>2023-02-22</sub></sup> *Casilla latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, where source requires debugging).
+
 <sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
 
 *Special municipal elections* in 2021/22 added, elected mayors updated. 
 
-*State-level presidential and senate returns* cleaned and updated.
+# *State-level presidential and senate returns* cleaned and updated.
 
 *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
 
@@ -83,6 +85,7 @@ Most variables are included in every file, some appear in selected files only.
 - /nul/ = invalid ballots.
 - /tot/ = total raw votes.
 - /lisnom/ = eligible voters (/lista nominal/).
+- /latitude/, /longitude/ = coordinates indicating a precinct's (casilla) north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 - /nota/ = notes.
 - /fuente/ = source.
 - /ncand/ = number of candidates running.
