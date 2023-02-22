@@ -73,7 +73,7 @@ v2 <- v
 v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
 g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
 g2$edon <- g2$seccion <- g2$casilla <- NULL
-v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = TRUE)
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
 #
 head(g2)
 head(v2)
@@ -105,7 +105,7 @@ v2 <- v
 v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
 g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
 g2$edon <- g2$seccion <- g2$casilla <- NULL
-v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = TRUE)
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
 #
 head(g2)
 head(v2)
@@ -176,7 +176,7 @@ v2 <- v
 v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
 g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
 g2$edon <- g2$seccion <- g2$casilla <- NULL
-v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = TRUE)
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
 #
 head(g2)
 head(v2)
@@ -189,7 +189,7 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "dip2009.csv"))
+# write.csv(v2, file=paste0(vd, "dip2009.csv"), row.names = FALSE)
 
 ############################################################################
 ## 2012 lat long casilla names and votes casilla names have huge mismatch ##
@@ -249,7 +249,7 @@ v2 <- v
 v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
 g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
 g2$edon <- g2$seccion <- g2$casilla <- NULL
-v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = TRUE)
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
 #
 head(g2)
 head(v2)
@@ -275,7 +275,7 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "dip2012.csv"))
+# write.csv(v2, file=paste0(vd, "dip2012.csv"), row.names = FALSE)
 
 ###################
 ## 2015 lat long ##
@@ -312,7 +312,7 @@ v2 <- v
 v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
 g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
 g2$edon <- g2$seccion <- g2$casilla <- NULL
-v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = TRUE)
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
 #
 head(g2)
 head(v2)
@@ -325,7 +325,7 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "dip2015.csv"))
+# write.csv(v2, file=paste0(vd, "dip2015.csv"), row.names = FALSE)
 
 ###################
 ## 2018 lat long ##
@@ -395,7 +395,7 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "dip2018.csv"))
+# write.csv(v2, file=paste0(vd, "dip2018.csv"), row.names = FALSE)
 
 #############################
 ## 2018 presidential votes ##
@@ -433,9 +433,5 @@ table(is.na(g2$latitude))
 # replace with manipulated version
 v2$id <- NULL
 head(v2)
-# write.csv(v2, file=paste0(vd, "pre2018.csv"))
+# write.csv(v2, file=paste0(vd, "pre2018.csv"), row.names = FALSE)
 
-# debug
-dim(v2)
-g[which(g$edon==10 & g$seccion==561),]
-v2[which(v2$edon==10 & v2$seccion==561),]
