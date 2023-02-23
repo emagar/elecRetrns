@@ -1,0 +1,3 @@
+* Data downloaded from https://siceen21.ine.mx/downloadzip (16jan2023).
+* With the exception of Senate votes in 1997, all returns are for SMD votes (in IFE notation, these are `MR' files, not `RP'). Votes cast in special precincts outside the district/state in congressional elections are counted in the proportional representation tier only. `MR' files exclude these votes, which do not affect district-level returns.    
+* In 1997 only proportional representation Senators were elected, so IFE reports `RP' files only. 
