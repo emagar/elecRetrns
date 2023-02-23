@@ -225,9 +225,6 @@ while(length(sel.r)>0){
 # sort
 g <- g[order(g$edon, g$seccion, g$casilla),]
 #
-# 2012 votes
-v <- read.csv(file=paste0(vd, "dip2012.csv"))
-#
 # homogenize casilla nomenclature
 c <- g$casilla
 table(c)
@@ -236,6 +233,10 @@ c <- sub("E([1-9])$", paste0("E0","\\1"), c)
 c <- sub("E([1-9])C", paste0("E0","\\1","C"), c)
 g$casilla <- c
 #
+########################
+## 2012 dip fed votes ##
+########################
+v <- read.csv(file=paste0(vd, "dip2012.csv"))
 c <- v$casilla
 table(c)
 c <- sub("SMR0", "S", c)
@@ -276,6 +277,52 @@ table(is.na(g2$latitude))
 v2$id <- NULL
 head(v2)
 # write.csv(v2, file=paste0(vd, "dip2012.csv"), row.names = FALSE)
+
+########################
+## 2012 presid votes  ##
+########################
+v <- read.csv(file=paste0(vd, "pre2012.csv"))
+c <- v$casilla
+table(c)
+c <- sub("^M0([1-9]{1})$", "M00\\1", c)
+c <- sub("^M([0-9]{2})$", "M0\\1", c)
+v$casilla <- c
+# casilla name mismatch between v and g:
+print("These casilla names in v not in g:"); names(table(v$casilla))[which(names(table(v$casilla)) %notin% names(table(g$casilla)))]
+print("These casilla names in g not in v:"); names(table(g$casilla))[which(names(table(g$casilla)) %notin% names(table(v$casilla)))]
+#
+g2 <- g
+v2 <- v
+v2$id <- factor(paste(v2$edon*10000 + v2$seccion, v2$casilla, sep = "-"))
+g2$id <- factor(paste(g2$edon*10000 + g2$seccion, g2$casilla, sep = "-"))
+g2$edon <- g2$seccion <- g2$casilla <- NULL
+v2 <- merge(x = v2, y = g2, by = "id", all.x = TRUE, all.y = FALSE)
+#
+head(g2)
+head(v2)
+#
+v2$id[which(v2$id %notin% g2$id)]
+#
+v2 <- v2[order(v2$edon, v2$seccion, v2$casilla),]
+#
+sel.m <- which(is.na(v2$latitude)) # missing comes from casillas_2012
+sel.m <- sel.m[grep("^C", v2$casilla[sel.m])] # subset missing contiguas
+#
+sel.nm <- which(!is.na(v2$latitude)) # non-missing comes from casillas_2012
+sel.nm <- sel.nm[grep("^B", v2$casilla[sel.nm])] # subset non-missing basicas
+#
+which(v2$seccion[sel.nm] %in% v2$seccion[sel.m])
+#
+tmp <- v2$id[is.na(v2$latitude)]
+#
+tmp[grep("C",tmp)]
+#
+table(is.na(g2$latitude))
+#
+# replace with manipulated version
+v2$id <- NULL
+head(v2)
+# write.csv(v2, file=paste0(vd, "pre2012.csv"), row.names = FALSE)
 
 ###################
 ## 2015 lat long ##
