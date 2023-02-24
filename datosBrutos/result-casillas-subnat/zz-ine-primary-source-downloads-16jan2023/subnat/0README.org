@@ -1,0 +1,4 @@
+* All zip downloaded from https://siceen21.ine.mx/downloadzip. 
+* zip files renamed to conform with this repository's naming conventions.
+* Subnational returns include ayuntamientos, state Congress, and gubernatorial elections. 
+* Campeche also reports Juntas Locales, Chihuahua Sindicaturas, Nayarit Regidurías, Tlaxcala Presidencias de comunidad.
