@@ -128,15 +128,14 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 - El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 * Sources
-Work in progress...
-
+Work in progress
 - /Fuente/ = iee/ife/ine indicates data obtained from the primary source, the state/federal election board's web site. 
 - /Fuente/ = tesis Melissa
+- /Fuente/ = Magar 1994
 - /Fuente/ = Mexico Electoral Banamex
 - /Fuente/ = Toledo Patiño paper
 - /Fuente/ = UAM Iztapalapa for older state races
 - /Fuente/ = voz y voto
-
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data. 
 
@@ -151,3 +150,4 @@ Many students over the years have provided research assistance to retrieve and s
 - Sonia Kuri Kosegarten
 - Vidal Mendoza Tinoco
 - Odette
+- Julio Solís Ríos
