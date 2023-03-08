@@ -129,6 +129,7 @@ ord,emm,mun,yr,dextra,dy,mo,edon,ife,inegi,win,mf,incumbent,sel,race.after,runne
 128,ags-16.011,SAN FRANCISCO DE LOS ROMO,2016,0,5,jun,1,1010,1011,pri,f,IRAIS MARTINEZ DE LA CRUZ,,Out-p-won,BEATRIZ MONTOYA HERNANDEZ,pan,0.0305,0,0,0,,,,,
 129,ags-17.011,SAN FRANCISCO DE LOS ROMO,2019,0,2,jun,1,1010,1011,pri,m,JUAN JOSE LOSOYA PONCE,,Dead-p-lost,EFRAIN CASTILLO VALADEZ,morena,0.0729,1,0,0,,,,Died covid19 5ene2021,
 130,ags-18.011,SAN FRANCISCO DE LOS ROMO,2021,0,6,jun,1,1010,1011,pri,f,MARGARITA GALLEGOS SOTO,,2024,KARINA IVETTE EUDAVE DELGADO,pan-prd,0.0732,0,,,,,,,
+130.1,bc-05.001,ENSENADA,1983,0,4,sep,2,2001,2001,pri,,,,,,,,,,,,,,,
 131,bc-06.001,ENSENADA,1986,0,0,jul,2,2001,2001,pan,m,ERNESTO RUFFO APPEL,,Term-limited-p-won,,pri,0.2197,0,0,0,,,,,inafed
 132,bc-07.001,ENSENADA,1989,0,2,jul,2,2001,2001,pan,m,JESUS DEL PALACIO LAFONTAINE,,Term-limited-p-won,,pri,0.1726,0,0,0,,,,,inafed
 133,bc-08.001,ENSENADA,1992,0,2,ago,2,2001,2001,pan,m,OSCAR SANCHEZ DEL PALACIO,,Term-limited-p-lost,,pri,0.0828,0,0,0,,,,,inafed
@@ -142,6 +143,7 @@ ord,emm,mun,yr,dextra,dy,mo,edon,ife,inegi,win,mf,incumbent,sel,race.after,runne
 141,bc-16.001,ENSENADA,2016,0,5,jun,2,2001,2001,pri-pt-pvem-pna,m,MARCO ANTONIO NOVELO OSUNA,,Out-p-won,CARLOS LOYOLA PETERSON,pan,0.0324,0,0,0,,,,,
 142,bc-17.001,ENSENADA,2019,0,2,jun,2,2001,2001,pvem-pt-trans-morena,m,ARMANDO AYALA ROBLES,,Reelected,MARIA ELOISA TALAVERA HERNANDEZ,pan,0.3471,0,0,0,,,,,
 143,bc-18.001,ENSENADA,2021,0,6,jun,2,2001,2001,pt-pvem-morena,m,ARMANDO AYALA ROBLES,,2024,BRENDA MENDOZA KAWANISHI,pan-pri-prd,0.3475,0,,,,,,,
+143.1,bc-05.002,MEXICALI,1983,0,4,sep,2,2002,2002,pri,,,,,,,,,,,,,,,
 144,bc-06.002,MEXICALI,1986,0,0,jul,2,2002,2002,pri,m,GUILLERMO ALDRETE HASS,,Term-limited-p-won,,pan,0.2019,0,0,0,,,,,inafed
 145,bc-07.002,MEXICALI,1989,0,2,jul,2,2002,2002,pri,m,MILTON CASTELLANOS GOUT,,Term-limited-p-won,,pan,0.1564,0,0,0,,,,,inafed
 146,bc-08.002,MEXICALI,1992,0,2,ago,2,2002,2002,pri,m,FRANCISCO JOSE PEREZ TEJADA,,Term-limited-p-lost,,pan,0.0478,0,0,0,,,,,inafed
@@ -155,6 +157,7 @@ ord,emm,mun,yr,dextra,dy,mo,edon,ife,inegi,win,mf,incumbent,sel,race.after,runne
 154,bc-16.002,MEXICALI,2016,0,5,jun,2,2002,2002,pan,m,GUSTAVO SANCHEZ VASQUEZ,,Reran-beaten,ANAHI MARTINEZ GARCIA,pri-pt-pvem-pna,0.0666,0,0,0,,,,,
 155,bc-17.002,MEXICALI,2019,0,2,jun,2,2002,2002,pvem-pt-trans-morena,f,MARINA DEL PILAR AVILA OLMEDA,,Out-p-won,GUSTAVO SANCHEZ VASQUEZ,pan,0.1522,0,0,0,,,,,
 156,bc-18.002,MEXICALI,2021,0,6,jun,2,2002,2002,morena,f,NORMA ALICIA BUSTAMENTE MARTINEZ,,2024,EVA MARIA VASQUEZ HERNANDEZ,pan-pri-prd,0.1401,0,,,,,,,
+156.1,bc-05.003,TECATE,1983,0,4,sep,2,2003,2003,pri,,,,,,,,,,,,,,,
 157,bc-06.003,TECATE,1986,0,0,jul,2,2003,2003,pri,m,JESUS MENDEZ ZAYAS,,Term-limited-p-won,,pan,0.2582,0,0,0,,,,,inafed
 158,bc-07.003,TECATE,1989,0,2,jul,2,2003,2003,pri,m,JESUS RUBEN ADAME LOSTANAU,,Term-limited-p-lost,,pan,0.0023,0,0,0,,,,,wikipedia
 159,bc-08.003,TECATE,1992,0,2,ago,2,2003,2003,pan,m,PABLO CONTRERAS RODRIGUEZ,,Term-limited-p-lost,,pri,0.0246,0,0,0,,,,,inafed
@@ -168,6 +171,7 @@ ord,emm,mun,yr,dextra,dy,mo,edon,ife,inegi,win,mf,incumbent,sel,race.after,runne
 167,bc-16.003,TECATE,2016,0,5,jun,2,2003,2003,pri-pt-pvem-pna,f,NEREIDA FUENTES GONZALEZ,,Out-p-won,LUCINA RODRIGUEZ MARTINEZ,pan,0.0396,0,0,0,,,,,
 168,bc-17.003,TECATE,2019,0,2,jun,2,2003,2003,pvem-pt-trans-morena,f,OLGA ZULEMA ADAMS PEREYRA,,Out-p-won,LUCINA RODRIGUEZ MARTINEZ,pan,0.1437,0,0,0,,,,,
 169,bc-18.003,TECATE,2021,0,6,jun,2,2003,2003,morena,m,EDGAR DARIO BENITZ RUIZ,,2024,JOSE ALFREDO FERREIRO VELAZCO,pes,0.0501,0,,,,,,,
+169.1,bc-05.004,TIJUANA,1983,0,4,sep,2,2004,2004,pri,,,,,,,,,,,,,,,
 170,bc-06.004,TIJUANA,1986,0,0,jul,2,2004,2004,pri,m,FEDERICO VALDES MARTINEZ,,Term-limited-p-lost,,pan,0.3646,0,0,0,,,,,inafed
 171,bc-07.004,TIJUANA,1989,0,2,jul,2,2004,2004,pan,m,CARLOS MONTEJO FABELA,,Term-limited-p-won,,pri,0.1601,0,0,0,,,,,inafed
 172,bc-08.004,TIJUANA,1992,0,2,ago,2,2004,2004,pan,m,HECTOR GUILLERMO OSUNA JAIME,,Term-limited-p-won,,pri,0.0242,0,0,0,,,,,inafed
