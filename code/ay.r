@@ -892,27 +892,27 @@ length(sel6); length(sel6)*57 < 400000
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
-write.csv(dat2, file = "aymu1970s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg1970s.csv", row.names = FALSE)
 # subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel2,] # subset
-write.csv(dat2, file = "aymu1980s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg1980s.csv", row.names = FALSE)
 # subset 1990s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel3,] # subset
-write.csv(dat2, file = "aymu1990s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg1990s.csv", row.names = FALSE)
 # subset 2000s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel4,] # subset
-write.csv(dat2, file = "aymu2000s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg2000s.csv", row.names = FALSE)
 # subset 2010s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel5,] # subset
-write.csv(dat2, file = "aymu2010s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg2010s.csv", row.names = FALSE)
 # subset 2020s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel6,] # subset
-write.csv(dat2, file = "aymu2020s.coalAgg.csv", row.names = FALSE)
+write.csv(dat2, file = "aymu.coalAgg2020s.csv", row.names = FALSE)
 
 rm(dat2)
 
