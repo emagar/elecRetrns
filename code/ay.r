@@ -935,9 +935,6 @@ load(file = "tmp1.RData")
 ## ## the same directory where aymu1979-on.csv is   ## ##
 ## ################################################### ##
 #########################################################
-sel <- which(dat.split$yr>=1989)
-dat.split <- dat.split[sel,] # drop early years
-dat.split <- dat.split[order(dat.split$emm),] # sort emm
 #
 ################################################################
 ## manipulate coalitions remaining in split vote object       ##
@@ -1097,8 +1094,73 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 ## #tmp2
 ## round(tmp2$v02/(tmp2$v02+tmp2$v05), 3) - .001
 ## table(dat.split$dhascoal)
-# save
-write.csv(dat.split, file = "aymu1989-on.coalSplit.csv", row.names = FALSE)
+
+##########
+## save ##
+##########
+# repeat this block from above, in case dat.split is sorted differently
+
+# drop these obs for analysis
+table(dat.split$status)
+drop.r <- which(dat.split$status %in% c("voided",
+                                    "missing--keepHistory",
+                                    "new--voided",
+                                    "pending",
+                                    "uyc"
+                                    ))
+
+# could import ncand from dat here
+
+# drop these cols to trim file size for gsheets
+drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
+            "date", "edon", "lisnom", "dextra") # drops these additional cols to accommodate 4 more v/l cols
+ncol(dat.split[, colnames(dat.split) %notin% drop.c])
+ncol(dat.split[, colnames(dat.split) %notin% drop.c])
+drop.c <- which(colnames(dat.split) %in% drop.c)
+
+dat.split2 <- dat.split[-drop.r, -drop.c]
+# subsets by yrs
+sel1 <- which(dat.split2$yr>=1970 & dat.split2$yr<1982)
+sel2 <- which(dat.split2$yr>=1982 & dat.split2$yr<1990)
+sel3 <- which(dat.split2$yr>=1990 & dat.split2$yr<2000)
+sel4 <- which(dat.split2$yr>=2000 & dat.split2$yr<2010)
+sel5 <- which(dat.split2$yr>=2010 & dat.split2$yr<2020)
+sel6 <- which(dat.split2$yr>=2020 & dat.split2$yr<2030)
+length(sel1); length(sel1)*57 < 400000 # 400k cells is gsheets max
+length(sel2); length(sel2)*57 < 400000
+length(sel3); length(sel3)*57 < 400000
+length(sel4); length(sel4)*57 < 400000
+length(sel5); length(sel5)*57 < 400000
+length(sel6); length(sel6)*57 < 400000
+#6756*58
+
+# subset ~1970s
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel1,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit1970s.csv", row.names = FALSE)
+# subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel2,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit1980s.csv", row.names = FALSE)
+# subset 1990s
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel3,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit1990s.csv", row.names = FALSE)
+# subset 2000s
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel4,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit2000s.csv", row.names = FALSE)
+# subset 2010s
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel5,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit2010s.csv", row.names = FALSE)
+# subset 2020s
+dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+dat.split2 <- dat.split2[sel6,] # subset
+write.csv(dat.split2, file = "aymu.coalSplit2020s.csv", row.names = FALSE)
+
+
+
 
 # clean
 rm(tmp,tmp1,tmp2,sel,sel.l,sel.r,sel.v,i)
