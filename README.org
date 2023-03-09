@@ -20,9 +20,9 @@ Recent additions
 
 # *Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
 
-# *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-present.incumbents.csv~. See codebook below.
+# *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-on.incumbents.csv~. See codebook below.
 
-# *Reelection in 2021-22 info is here* ~data/aymu1989-present.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-present.incumbents.csv~ does the same for federal deputies.
+# *Reelection in 2021-22 info is here* ~data/aymu1989-on.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-on.incumbents.csv~ does the same for federal deputies.
 
 *New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 
@@ -43,12 +43,12 @@ You are free to download and modify the data (see the LICENSE document for detai
 
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/.
 
-- [[./data/aymu1989-present.csv][~data/aymu1989-present.csv~]] = updated to 2021, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
+- [[./data/aymu1989-present.csv][~data/aymu1970-on.csv~]] = updated to 2022, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 - [[./data/aymu-upto-1988.csv][~data/aymu-upto-1988.csv~]] = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-- [[./data/aymu1989-present.coalAgg.csv][~data/aymu1989-present.coalAgg.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
-- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1989-present.coalSplit.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly split among its members.
-- [[./data/aymu1989-present.incumbents.csv][~data/aymu1989-present.incumbents.csv~]] = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status since 2018. 
-- [[./data/ayde2008-presentNayRegid.csv][~data/ayde2008-presentNayRegid.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008.
+- [[./data/aymu1989-present.coalAgg.csv][~data/aymu1989-on.coalAgg.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
+- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1989-on.coalSplit.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly split among its members.
+- [[./data/aymu1989-present.incumbents.csv][~data/aymu1989-on.incumbents.csv~]] = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status since 2018. 
+- [[./data/ayde2008-presentNayRegid.csv][~data/ayde2008-onNayRegid.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008.
 - [[./code/ay.r][~code/ay.r~]] = script to manipulate /ayuntamiento/ returns.
 - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
@@ -102,7 +102,7 @@ Most variables are included in every file, some appear in selected files only.
 - /race.after/ = incumbent's status in the subsequent race. See [[status-rules][this]] for categories and coding procedure ([[status-rules-esp][aquí]] la versión en español del procedimiento codificador). 
 - /dcarta/ = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]. 
 * Coding procedure for the incumbent's status<<status-rules>>
-In file ~data/aymu1985-present.incumbents.csv~, variable /race.after/ equals one of the following categories: 
+In file ~data/aymu1985-on.incumbents.csv~, variable /race.after/ equals one of the following categories: 
 1. 'Beaten' if the incumbent re-ran and lost; 
 2. 'Reelected' if the incumbent re-ran and won; 
 3. 'Renom-killed' if the incumbent re-ran and was killed in the campaign; 
@@ -115,7 +115,7 @@ In categories other than the first two above, a suffix may be present.
 - Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 * Procedimiento para codificar el estatus del ocupante<<status-rules-esp>>
-En el archivo ~data/aymu1985-present.incumbents.csv~, la variable /race.after/ indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
+En el archivo ~data/aymu1985-on.incumbents.csv~, la variable /race.after/ indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
 1. 'Beaten' si el ocupante volvió a contender y perdió; 
 2. 'Reelected' si el ocupante volvió a contender y ganó; 
 3. 'Renom-killed' si el ocupante volvió a contender y fue asesinado en la campaña; 

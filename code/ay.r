@@ -4,8 +4,7 @@ dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
 # read raw data file
-dat <- read.csv(file = "aymu1989-present.csv", stringsAsFactors = FALSE)
-dim(dat)
+dat <- read.csv(file = "aymu1970-on.csv", stringsAsFactors = FALSE)
 
 #########################################################################
 #########################################################################
@@ -793,7 +792,7 @@ colnames(dat)
 dat[1,]
 rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-## # All 18 cols needed thanks to mor 2021...
+## # 23 cols needed thanks to mor 2021...
 ## table(dat$v24) # check that only has zeroes
 ## # if not, which cases remain? 
 ## #sel <- which(dat$v14>0)
@@ -841,19 +840,81 @@ colnames(dat)
 ## table(dat$v01[sel]==0) # all report no votes?
 ## dat <- dat[-sel,]
 
-
+# sort columns
+pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
+    "~/Dropbox/data/useful-functions",
+    "https://raw.githubusercontent.com/emagar/useful-functions/master"
+    )
+# Reads function
+source( paste(pth, "moveme.r", sep = "/") )
+source( paste(pth, "notin.r", sep = "/") )
+rm(pth)
+colnames(dat)
+dat <- dat[moveme(names(dat), "efec before nr")]
 
 #########################################################
 ## ################################################### ##
 ## ## Export a coalAgg version of votes returns to  ## ##
-## ## the same directory where aymu1979-present.csv ## ##
+## ## the same directory where aymu1970-on.csv is   ## ##
 ## ################################################### ##
 #########################################################
-sel <- dat$yr>=1989
-dat <- dat[sel,] # drop early years
-dat$nr <- dat$nulos <- dat$tot <- dat$fuente <- NULL # drop void ballots and other columns
-dat$ord <- 1:nrow(dat)
-write.csv(dat, file = "aymu1989-present.coalAgg.csv", row.names = FALSE)
+
+# drop these obs for analysis
+table(dat$status)
+drop.r <- which(dat$status %in% c("voided",
+                                    "missing--keepHistory",
+                                    "new--voided",
+                                    "pending",
+                                    "uyc"
+                                    ))
+
+# drop these cols to trim file size for gsheets
+drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas")
+ncol(dat[, colnames(dat) %notin% drop.c])
+drop.c <- which(colnames(dat) %in% drop.c)
+
+dat2 <- dat[-drop.r, -drop.c]
+# subsets by yrs
+sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
+sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
+sel3 <- which(dat2$yr>=1990 & dat2$yr<2000)
+sel4 <- which(dat2$yr>=2000 & dat2$yr<2010)
+sel5 <- which(dat2$yr>=2010 & dat2$yr<2020)
+sel6 <- which(dat2$yr>=2020 & dat2$yr<2030)
+length(sel1); length(sel1)*57 < 400000 # 400k cells is gsheets max
+length(sel2); length(sel2)*57 < 400000
+length(sel3); length(sel3)*57 < 400000
+length(sel4); length(sel4)*57 < 400000
+length(sel5); length(sel5)*57 < 400000
+length(sel6); length(sel6)*57 < 400000
+#6756*57
+
+# subset ~1970s
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel1,] # subset
+write.csv(dat2, file = "aymu1970s.coalAgg.csv", row.names = FALSE)
+# subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel2,] # subset
+write.csv(dat2, file = "aymu1980s.coalAgg.csv", row.names = FALSE)
+# subset 1990s
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel3,] # subset
+write.csv(dat2, file = "aymu1990s.coalAgg.csv", row.names = FALSE)
+# subset 2000s
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel4,] # subset
+write.csv(dat2, file = "aymu2000s.coalAgg.csv", row.names = FALSE)
+# subset 2010s
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel5,] # subset
+write.csv(dat2, file = "aymu2010s.coalAgg.csv", row.names = FALSE)
+# subset 2020s
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat2[sel6,] # subset
+write.csv(dat2, file = "aymu2020s.coalAgg.csv", row.names = FALSE)
+
+rm(dat2)
 
 save.image(file = "tmp1.RData")
 
@@ -866,7 +927,7 @@ load(file = "tmp1.RData")
 #########################################################
 ## ################################################### ##
 ## ## Export splitCoal version of votes returns to  ## ##
-## ## the same directory where aymu1979-present.csv ## ##
+## ## the same directory where aymu1979-on.csv is   ## ##
 ## ################################################### ##
 #########################################################
 sel <- which(dat.split$yr>=1989)
@@ -1032,7 +1093,7 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 ## round(tmp2$v02/(tmp2$v02+tmp2$v05), 3) - .001
 ## table(dat.split$dhascoal)
 # save
-write.csv(dat.split, file = "aymu1989-present.coalSplit.csv", row.names = FALSE)
+write.csv(dat.split, file = "aymu1989-on.coalSplit.csv", row.names = FALSE)
 
 # clean
 rm(tmp,tmp1,tmp2,sel,sel.l,sel.r,sel.v,i)
@@ -1050,7 +1111,7 @@ dat[sel[2],]
 ## # save coalition weights and info
 ## save(coal.weights # list with total vote
 ##    , coal.info # data frame with coalitions
-##      , file = "aymu1989-present.coalAgg-weights-info.RData")
+##      , file = "aymu1989-on.coalAgg-weights-info.RData")
 ## coal.weights[100]
 ## coal.info[100,]
 ## dat.orig[100,]
