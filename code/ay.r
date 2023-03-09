@@ -859,11 +859,13 @@ dat <- dat[moveme(names(dat), "efec before nr")]
 ## ################################################### ##
 #########################################################
 
+# add dextra dummy
+dat$dextra <- 0
+dat$dextra[grep("extra", dat$status)] <- 1
+table(dat$dextra)
+
 # drop these obs for analysis
 table(dat$status)
-
-ADD dextra
-
 drop.r <- which(dat$status %in% c("voided",
                                     "missing--keepHistory",
                                     "new--voided",
@@ -884,13 +886,13 @@ sel3 <- which(dat2$yr>=1990 & dat2$yr<2000)
 sel4 <- which(dat2$yr>=2000 & dat2$yr<2010)
 sel5 <- which(dat2$yr>=2010 & dat2$yr<2020)
 sel6 <- which(dat2$yr>=2020 & dat2$yr<2030)
-length(sel1); length(sel1)*57 < 400000 # 400k cells is gsheets max
-length(sel2); length(sel2)*57 < 400000
-length(sel3); length(sel3)*57 < 400000
-length(sel4); length(sel4)*57 < 400000
-length(sel5); length(sel5)*57 < 400000
-length(sel6); length(sel6)*57 < 400000
-#6756*57
+length(sel1); length(sel1)*58 < 400000 # 400k cells is gsheets max
+length(sel2); length(sel2)*58 < 400000
+length(sel3); length(sel3)*58 < 400000
+length(sel4); length(sel4)*58 < 400000
+length(sel5); length(sel5)*58 < 400000
+length(sel6); length(sel6)*58 < 400000
+#6756*58
 
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
