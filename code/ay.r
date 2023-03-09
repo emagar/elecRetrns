@@ -861,6 +861,9 @@ dat <- dat[moveme(names(dat), "efec before nr")]
 
 # drop these obs for analysis
 table(dat$status)
+
+ADD dextra
+
 drop.r <- which(dat$status %in% c("voided",
                                     "missing--keepHistory",
                                     "new--voided",
