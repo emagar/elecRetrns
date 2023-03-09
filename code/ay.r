@@ -897,27 +897,27 @@ length(sel6); length(sel6)*58 < 400000
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
-write.csv(dat2, file = "aymu.coalAgg1970s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1970s.csv", row.names = FALSE)
 # subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel2,] # subset
-write.csv(dat2, file = "aymu.coalAgg1980s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1980s.csv", row.names = FALSE)
 # subset 1990s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel3,] # subset
-write.csv(dat2, file = "aymu.coalAgg1990s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1990s.csv", row.names = FALSE)
 # subset 2000s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel4,] # subset
-write.csv(dat2, file = "aymu.coalAgg2000s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2000s.csv", row.names = FALSE)
 # subset 2010s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel5,] # subset
-write.csv(dat2, file = "aymu.coalAgg2010s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2010s.csv", row.names = FALSE)
 # subset 2020s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel6,] # subset
-write.csv(dat2, file = "aymu.coalAgg2020s.csv", row.names = FALSE)
+write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
 
 rm(dat2)
 
@@ -1110,6 +1110,8 @@ drop.r <- which(dat.split$status %in% c("voided",
                                     ))
 
 # could import ncand from dat here
+table(dat$emm==dat.split$emm)
+dat.split$ncand <- dat$ncand
 
 # drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
@@ -1137,27 +1139,27 @@ length(sel6); length(sel6)*57 < 400000
 # subset ~1970s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel1,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit1970s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1970s.csv", row.names = FALSE)
 # subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel2,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit1980s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1980s.csv", row.names = FALSE)
 # subset 1990s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel3,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit1990s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1990s.csv", row.names = FALSE)
 # subset 2000s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel4,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit2000s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2000s.csv", row.names = FALSE)
 # subset 2010s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel5,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit2010s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2010s.csv", row.names = FALSE)
 # subset 2020s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel6,] # subset
-write.csv(dat.split2, file = "aymu.coalSplit2020s.csv", row.names = FALSE)
+write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2020s.csv", row.names = FALSE)
 
 
 
