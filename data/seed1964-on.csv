@@ -1,7 +1,7 @@
 ord,edon,yr,mo,dy,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07,l07,v08,l08,v09,l09,v10,l10,v11,l11,v12,l12,v13,l13,efec,nr,nul,tot,lisnom,fuente,shpan,shpri,shprd,note
 1,1,1964,jul,5,ags,Aguascalientes,6334,pan,66016,pri,64,oth,,,,,,,,,,,,,,,,,,,,,72414,0,0,72414,100551,cd banamex,1,1,1,
 2,2,1964,jul,5,bc,Baja California,39039,pan,117802,pri,,,,,,,,,,,,,,,,,,,,,,,156841,0,0,156841,257984,cd banamex,1,1,1,
-3,3,1964,jul,5,bcs,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,35025,cd banamex,1,1,1,was not a state yet
+3,3,1964,jul,5,bcs,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,35025,cd banamex,1,1,1,territory
 4,4,1964,jul,5,cam,Campeche,1851,pan,57079,pri,,,,,,,,,,,,,,,,,,,,,,,58930,0,0,58930,69833,cd banamex,1,1,1,
 5,5,1964,jul,5,coa,Coahuila,16367,pan,235603,pri,94,oth,,,,,,,,,,,,,,,,,,,,,252064,288,0,252352,340419,cd banamex,1,1,1,
 6,6,1964,jul,5,col,Colima,4738,pan,33490,pri,,,,,,,,,,,,,,,,,,,,,,,38228,1,0,38229,68902,cd banamex,1,1,1,
@@ -21,7 +21,7 @@ ord,edon,yr,mo,dy,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 20,20,1964,jul,5,oax,Oaxaca,15696,pan,426510,pri,389,oth,,,,,,,,,,,,,,,,,,,,,442595,389,0,442984,576228,cd banamex,1,1,1,
 21,21,1964,jul,5,pue,Puebla,32274,pan,514063,pri,5083,oth,,,,,,,,,,,,,,,,,,,,,551420,762,0,543195,762202,cd banamex,1,1,1,
 22,22,1964,jul,5,que,Querétaro,11427,pan,92309,pri,535,oth,,,,,,,,,,,,,,,,,,,,,104271,0,0,104271,142834,cd banamex,1,1,1,
-23,23,1964,jul,5,qui,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,17829,cd banamex,1,1,1,was not a state yet
+23,23,1964,jul,5,qui,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,17829,cd banamex,1,1,1,territory
 24,24,1964,jul,5,san,San Luis Potosí,24789,pan,253741,pri,1676,oth,,,,,,,,,,,,,,,,,,,,,280206,300,0,280506,406639,cd banamex,1,1,1,
 25,25,1964,jul,5,sin,Sinaloa,3605,pan,199245,pri,213,oth,,,,,,,,,,,,,,,,,,,,,203063,114,0,203177,297960,cd banamex,1,1,1,
 26,26,1964,jul,5,son,Sonora,2327,pan,116305,pri,11938,oth,,,,,,,,,,,,,,,,,,,,,130570,4,0,130574,273594,cd banamex,1,1,1,
@@ -33,7 +33,7 @@ ord,edon,yr,mo,dy,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 32,32,1964,jul,5,zac,Zacatecas,23397,pan,150476,pri,161,oth,,,,,,,,,,,,,,,,,,,,,174034,0,0,174034,241539,cd banamex,1,1,1,
 33,1,1970,jul,5,ags,Aguascalientes,10842,pan,82114,pri,,,,,,,,,,,,,,,,,,,,,,,92956,305,495,93756,152001,cd banamex,1,1,1,
 34,2,1970,jul,5,bc,Baja California,73070,pan,176073,pri,4405,oth,,,,,,,,,,,,,,,,,,,,,253548,162,24902,278612,458164,cd banamex,1,1,1,
-35,3,1970,jul,5,bcs,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55676,cd banamex,1,1,1,was not a state yet
+35,3,1970,jul,5,bcs,Baja California Sur,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55676,cd banamex,1,1,1,territory
 36,4,1970,jul,5,cam,Campeche,,,89395,pri,,,,,,,,,,,,,,,,,,,,,,,89395,0,60,89455,108020,cd banamex,1,1,1,
 37,5,1970,jul,5,coa,Coahuila,24486,pan,305885,pri,1148,oth,,,,,,,,,,,,,,,,,,,,,331519,78,1559,333156,584319,cd banamex,1,1,1,
 38,6,1970,jul,5,col,Colima,4369,pan,46863,pri,152,oth,,,,,,,,,,,,,,,,,,,,,51384,59,548,51991,115027,cd banamex,1,1,1,
@@ -53,7 +53,7 @@ ord,edon,yr,mo,dy,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 52,20,1970,jul,5,oax,Oaxaca,23100,pan,645376,pri,8066,oth,,,,,,,,,,,,,,,,,,,,,676542,83,29344,705969,893478,cd banamex,1,1,1,
 53,21,1970,jul,5,pue,Puebla,94684,pan,541591,pri,5729,oth,,,,,,,,,,,,,,,,,,,,,642004,1154,8375,651533,1040977,cd banamex,1,1,1,
 54,22,1970,jul,5,que,Querétaro,12362,pan,131173,pri,,,,,,,,,,,,,,,,,,,,,,,143535,3,2235,145773,219479,cd banamex,1,1,1,
-55,23,1970,jul,5,qui,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34928,cd banamex,1,1,1,was not a state yet
+55,23,1970,jul,5,qui,Quintana Roo,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34928,cd banamex,1,1,1,territory
 56,24,1970,jul,5,san,San Luis Potosí,33538,pan,312798,pri,,,,,,,,,,,,,,,,,,,,,,,346336,285,5514,352135,566233,cd banamex,1,1,1,
 57,25,1970,jul,5,sin,Sinaloa,15843,pan,259035,pri,4692,oth,,,,,,,,,,,,,,,,,,,,,279570,253,2251,282074,529427,cd banamex,1,1,1,
 58,26,1970,jul,5,son,Sonora,14607,pan,203675,pri,1594,oth,,,,,,,,,,,,,,,,,,,,,219876,43,0,219919,484880,cd banamex,1,1,1,
@@ -95,70 +95,70 @@ ord,edon,yr,mo,dy,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 94,30,1976,jul,0,ver,Veracruz,44326,pan,1133642,pri,50587,oth,,,,,,,,,,,,,,,,,,,,,1228555,4430,23634,1256619,1741527,mau - cd Banamex,1,1,1,
 95,31,1976,jul,0,yuc,Yucatán,,,312082,pri,10013,oth,,,,,,,,,,,,,,,,,,,,,322095,51,29750,351896,411829,mau - cd Banamex,1,1,1,
 96,32,1976,jul,0,zac,Zacatecas,,,286491,pri,4495,oth,,,,,,,,,,,,,,,,,,,,,290986,502,2733,294221,482703,mau - cd Banamex,1,1,1,
-97,1,1982,jul,0,ags,Aguascalientes,30755,pan,129901,pri,2118,prd,10896,oth,,,,,,,,,,,,,,,,,,,173993,7,18874,192874,260868,mau - cd Banamex,1,1,1,pcm=prd
-98,2,1982,jul,0,bc,Baja California,152744,pan,242274,pri,17752,prd,35844,oth,,,,,,,,,,,,,,,,,,,456293,10,61271,517574,685922,mau - cd Banamex,1,1,1,pcm=prd
-99,3,1982,jul,0,bcs,Baja California Sur,11362,pan,62825,pri,2241,prd,1736,oth,,,,,,,,,,,,,,,,,,,80652,10,9375,90037,116364,mau - cd Banamex,1,1,1,pcm=prd
-100,4,1982,jul,0,cam,Campeche,7224,pan,95737,pri,724,prd,1546,oth,,,,,,,,,,,,,,,,,,,105231,284,9730,115245,168338,mau - cd Banamex,1,1,1,pcm=prd
-101,5,1982,jul,0,coa,Coahuila,89305,pan,209651,pri,965,prd,10521,oth,,,,,,,,,,,,,,,,,,,311500,396,11460,323356,681635,mau - cd Banamex,1,1,1,pcm=prd
-102,6,1982,jul,0,col,Colima,4191,pan,64207,pri,864,prd,2674,oth,,,,,,,,,,,,,,,,,,,72281,9,2250,74540,170791,mau - cd Banamex,1,1,1,pcm=prd
-103,7,1982,jul,0,cps,Chiapas,21054,pan,569552,pri,7629,prd,21041,oth,,,,,,,,,,,,,,,,,,,622887,22,23784,646693,923098,mau - cd Banamex,1,1,1,pcm=prd
-104,8,1982,jul,0,cua,Chihuahua,158910,pan,337483,pri,14241,prd,19566,oth,,,,,,,,,,,,,,,,,,,530200,262,45718,576180,963853,mau - cd Banamex,1,1,1,pcm=prd
-105,9,1982,jul,0,df,Distrito Federal,894350,pan,1663851,pri,326327,prd,312472,oth,,,,,,,,,,,,,,,,,,,3331247,1453,460568,3793268,4779964,mau - cd Banamex,1,1,1,pcm=prd
-106,10,1982,jul,0,dgo,Durango,62470,pan,270401,pri,7637,prd,9535,oth,,,,,,,,,,,,,,,,,,,351232,9,12942,364183,603027,mau - cd Banamex,1,1,1,pcm=prd
-107,11,1982,jul,0,gua,Guanajuato,182679,pan,558688,pri,10993,prd,80163,oth,,,,,,,,,,,,,,,,,,,832523,50,37370,869943,1398807,mau - cd Banamex,1,1,1,pcm=prd
-108,12,1982,jul,0,gue,Guerrero,21939,pan,408345,pri,,,3866,oth,,,,,,,,,,,,,,,,,,,434150,0,11522,445672,984325,mau - cd Banamex,1,1,1,pcm=prd
-109,13,1982,jul,0,hgo,Hidalgo,50651,pan,465877,pri,9467,prd,21649,oth,,,,,,,,,,,,,,,,,,,547644,93,11436,559173,748930,mau - cd Banamex,1,1,1,pcm=prd
-110,14,1982,jul,0,jal,Jalisco,353123,pan,762633,pri,103363,prd,79481,oth,,,,,,,,,,,,,,,,,,,1298600,0,106241,1404841,2031506,mau - cd Banamex,1,1,1,pcm=prd
-111,15,1982,jul,0,mex,México,612609,pan,1417367,pri,147084,prd,179385,oth,,,,,,,,,,,,,,,,,,,2409961,0,587080,2997041,3102137,mau - cd Banamex,1,1,1,pcm=prd
-112,16,1982,jul,0,mic,Michoacán,86484,pan,577323,pri,16796,prd,52093,oth,,,,,,,,,,,,,,,,,,,734741,17,37420,772178,1359175,mau - cd Banamex,1,1,1,pcm=prd
-113,17,1982,jul,0,mor,Morelos,29325,pan,231710,pri,8681,prd,17906,oth,,,,,,,,,,,,,,,,,,,296885,52,18466,315403,392556,mau - cd Banamex,1,1,1,pcm=prd
-114,18,1982,jul,0,nay,Nayarit,4965,pan,148255,pri,22324,prd,7425,oth,,,,,,,,,,,,,,,,,,,182969,18,17044,200031,332502,mau - cd Banamex,1,1,1,pcm=prd
-115,19,1982,jul,0,nl,Nuevo León,218724,pan,608366,pri,5529,prd,16449,oth,,,,,,,,,,,,,,,,,,,849068,0,24213,873281,1155687,mau - cd Banamex,1,1,1,pcm=prd
-116,20,1982,jul,0,oax,Oaxaca,48196,pan,543515,pri,21956,prd,39468,oth,,,,,,,,,,,,,,,,,,,653135,72,10467,663674,1131450,mau - cd Banamex,1,1,1,pcm=prd
-117,21,1982,jul,0,pue,Puebla,139076,pan,917147,pri,28834,prd,44382,oth,,,,,,,,,,,,,,,,,,,1132527,43,59849,1192419,1591940,mau - cd Banamex,1,1,1,pcm=prd
-118,22,1982,jul,0,que,Querétaro,33284,pan,193681,pri,3225,prd,8015,oth,,,,,,,,,,,,,,,,,,,238205,4,14120,252329,347054,mau - cd Banamex,1,1,1,pcm=prd
-119,23,1982,jul,0,qui,Quintana Roo,2856,pan,86143,pri,950,prd,2819,oth,,,,,,,,,,,,,,,,,,,92768,5,923,93696,108075,mau - cd Banamex,1,1,1,pcm=prd
-120,24,1982,jul,0,san,San Luis Potosí,46978,pan,352978,pri,4315,prd,26783,oth,,,,,,,,,,,,,,,,,,,431572,14,0,431586,728011,mau - cd Banamex,1,1,1,pcm=prd
-121,25,1982,jul,0,sin,Sinaloa,59549,pan,450660,pri,31326,prd,20560,oth,,,,,,,,,,,,,,,,,,,565196,96,22591,587883,864566,mau - cd Banamex,1,1,1,pcm=prd
-122,26,1982,jul,0,son,Sonora,121824,pan,246869,pri,6693,prd,6002,oth,,,,,,,,,,,,,,,,,,,383308,162,26615,410085,727765,mau - cd Banamex,1,1,1,pcm=prd
-123,27,1982,jul,0,tab,Tabasco,11210,pan,299649,pri,1741,prd,4450,oth,,,,,,,,,,,,,,,,,,,317050,11,6756,323817,446581,mau - cd Banamex,1,1,1,pcm=prd
-124,28,1982,jul,0,tam,Tamaulipas,36404,pan,432681,pri,7667,prd,71524,oth,,,,,,,,,,,,,,,,,,,548276,26,46897,595199,887181,mau - cd Banamex,1,1,1,pcm=prd
-125,29,1982,jul,0,tla,Tlaxcala,20061,pan,134954,pri,3774,prd,13013,oth,,,,,,,,,,,,,,,,,,,171802,22,5862,177686,260973,mau - cd Banamex,1,1,1,pcm=prd
-126,30,1982,jul,0,ver,Veracruz,71223,pan,1569368,pri,41375,prd,154959,oth,,,,,,,,,,,,,,,,,,,1836925,8346,63264,1908535,2517944,mau - cd Banamex,1,1,1,pcm=prd
-127,31,1982,jul,0,yuc,Yucatán,56148,pan,253893,pri,3179,prd,2841,oth,,,,,,,,,,,,,,,,,,,316061,6,6341,322408,511279,mau - cd Banamex,1,1,1,pcm=prd
-128,32,1982,jul,0,zac,Zacatecas,38425,pan,278130,pri,6621,prd,6608,oth,,,,,,,,,,,,,,,,,,,329784,0,9874,339658,544252,mau - cd Banamex,1,1,1,pcm=prd
-129,1,1988,jul,6,ags,Aguascalientes,46554,pan,85947,pri,4502,prd,8301,pps,3008,parm,4450,pdm,11224,pfcrn,395,prt,1,prd-pps-parm-pfcrn,,,,,,,,,164381,,,,0,mau - cd Banamex,1,1,1,pms=prd
-130,2,1988,jul,6,bc,Baja California,110455,pan,166751,pri,15171,prd,62973,pps,15786,parm,5392,pdm,31448,pfcrn,3172,prt,1,prd-pps-parm-pfcrn,,,,,,,,,411148,,,,817466,mau - cd Banamex,1,1,1,pms=prd
-131,3,1988,jul,6,bcs,Baja California Sur,15238,pan,48287,pri,1645,prd,3897,pps,6376,parm,578,pdm,6301,pfcrn,613,prt,1,prd-pps-parm-pfcrn,,,,,,,,,82935,,,,150348,mau - cd Banamex,1,1,1,pms=prd
-132,4,1988,jul,6,cam,Campeche,13499,pan,81965,pri,1289,prd,6162,pps,1005,parm,241,pdm,7950,pfcrn,148,prt,1,prd-pps-parm-pfcrn,,,,,,,,,112259,,,,229954,mau - cd Banamex,1,1,1,pms=prd
-133,5,1988,jul,6,coa,Coahuila,52159,pan,182481,pri,6369,prd,14169,pps,22722,parm,1154,pdm,49716,pfcrn,796,prt,1,prd-pps-parm-pfcrn,,,,,,,,,329566,,,,0,mau - cd Banamex,1,1,1,pms=prd
-134,6,1988,jul,6,col,Colima,13413,pan,47575,pri,1939,prd,5905,pps,10406,parm,1282,pdm,12001,pfcrn,533,prt,1,prd-pps-parm-pfcrn,,,,,,,,,93054,,,,218028,mau - cd Banamex,1,1,1,pms=prd
-135,7,1988,jul,6,cps,Chiapas,22924,pan,553892,pri,10497,prd,6433,pps,7531,parm,1281,pdm,11912,pfcrn,1046,prt,1,prd-pps-parm-pfcrn,,,,,,,,,615516,,,,1189034,mau - cd Banamex,1,1,1,pms=prd
-136,8,1988,jul,6,cua,Chihuahua,200749,pan,282803,pri,4553,prd,9897,pps,3680,parm,1601,pdm,7556,pfcrn,896,prt,1,prd-pps-parm-pfcrn,,,,,,,,,511735,,,,1295067,mau - cd Banamex,1,1,1,pms=prd
-137,9,1988,jul,6,df,Distrito Federal,682309,pan,753478,pri,231722,prd,468022,pps,220113,parm,32492,pdm,410724,pfcrn,22092,prt,1,prd-pps-parm-pfcrn,,,,,,,,,2820952,,,,0,mau - cd Banamex,1,1,1,pms=prd
-138,10,1988,jul,6,dgo,Durango,60588,pan,199315,pri,16346,prd,16153,pps,13996,parm,516,pdm,12632,pfcrn,1345,prt,1,prd-pps-parm-pfcrn,,,,,,,,,320891,,,,682290,mau - cd Banamex,1,1,1,pms=prd
-139,11,1988,jul,6,gua,Guanajuato,201346,pan,276404,pri,8973,prd,22593,pps,17192,parm,30221,pdm,83714,pfcrn,1204,prt,1,prd-pps-parm-pfcrn,,,,,,,,,641647,,,,0,mau - cd Banamex,1,1,1,pms=prd
-140,12,1988,jul,6,gue,Guerrero,11431,pan,311646,pri,17241,prd,14475,pps,53433,parm,5198,pdm,89802,pfcrn,2156,prt,1,prd-pps-parm-pfcrn,,,,,,,,,505382,,,,1200804,mau - cd Banamex,1,1,1,pms=prd
-141,13,1988,jul,6,hgo,Hidalgo,21651,pan,252881,pri,15685,prd,22970,pps,14222,parm,3749,pdm,29068,pfcrn,1205,prt,1,prd-pps-parm-pfcrn,,,,,,,,,361431,,,,812252,mau - cd Banamex,1,1,1,pms=prd
-142,14,1988,jul,6,jal,Jalisco,386773,pan,507102,pri,32355,prd,67846,pps,73943,parm,33305,pdm,84453,pfcrn,3400,prt,1,prd-pps-parm-pfcrn,,,,,,,,,1189177,,,,2514777,mau - cd Banamex,1,1,1,pms=prd
-143,15,1988,jul,6,mex,México,396273,pan,733039,pri,196125,prd,421722,pps,172602,parm,35473,pdm,309647,pfcrn,13605,prt,1,prd-pps-parm-pfcrn,,,,,,,,,2278486,,,,4190232,mau - cd Banamex,1,1,1,pms=prd
-144,16,1988,jul,6,mic,Michoacán,68018,pan,141790,pri,12143,prd,38062,pps,223517,parm,12950,pdm,92656,pfcrn,1199,prt,1,prd-pps-parm-pfcrn,,,,,,,,,590335,,,,1549843,mau - cd Banamex,1,1,1,pms=prd
-145,17,1988,jul,6,mor,Morelos,22165,pan,95699,pri,11950,prd,22804,pps,42796,parm,2609,pdm,51017,pfcrn,1585,prt,1,prd-pps-parm-pfcrn,,,,,,,,,250625,,,,583597,mau - cd Banamex,1,1,1,pms=prd
-146,18,1988,jul,6,nay,Nayarit,22929,pan,120065,pri,13412,prd,24523,pps,9293,parm,1213,pdm,18792,pfcrn,393,prt,1,prd-pps-parm-pfcrn,,,,,,,,,210620,,,,405300,mau - cd Banamex,1,1,1,pms=prd
-147,19,1988,jul,6,nl,Nuevo León,153871,pan,509865,pri,4067,prd,4556,pps,3468,parm,1692,pdm,7754,pfcrn,1536,prt,1,prd-pps-parm-pfcrn,,,,,,,,,686809,,,,1625718,mau - cd Banamex,1,1,1,pms=prd
-148,20,1988,jul,6,oax,Oaxaca,30546,pan,398175,pri,21211,prd,70316,pps,33739,parm,3920,pdm,47236,pfcrn,4604,prt,1,prd-pps-parm-pfcrn,,,,,,,,,609747,,,,1364539,mau - cd Banamex,1,1,1,pms=prd
-149,21,1988,jul,6,pue,Puebla,116733,pan,511377,pri,31322,prd,66794,pps,31168,parm,10430,pdm,51989,pfcrn,11538,prt,1,prd-pps-parm-pfcrn,,,,,,,,,831351,,,,1693380,mau - cd Banamex,1,1,1,pms=prd
-150,22,1988,jul,6,que,Querétaro,44312,pan,153643,pri,3580,prd,11368,pps,1569,parm,3615,pdm,10580,pfcrn,421,prt,1,prd-pps-parm-pfcrn,,,,,,,,,229088,,,,409408,mau - cd Banamex,1,1,1,pms=prd
-151,23,1988,jul,6,qui,Quintana Roo,7511,pan,63156,pri,1389,prd,5467,pps,4642,parm,218,pdm,7683,pfcrn,106,prt,1,prd-pps-parm-pfcrn,,,,,,,,,90172,,,,188191,mau - cd Banamex,1,1,1,pms=prd
-152,24,1988,jul,6,san,San Luis Potosí,74407,pan,264629,pri,2772,prd,5824,pps,6541,parm,6773,pdm,8516,pfcrn,588,prt,1,prd-pps-parm-pfcrn,,,,,,,,,370050,,,,868279,mau - cd Banamex,1,1,1,pms=prd
-153,25,1988,jul,6,sin,Sinaloa,142673,pan,319358,pri,9574,prd,15240,pps,12879,parm,908,pdm,17483,pfcrn,843,prt,1,prd-pps-parm-pfcrn,,,,,,,,,518958,,,,1113969,mau - cd Banamex,1,1,1,pms=prd
-154,26,1988,jul,6,son,Sonora,85998,pan,283071,pri,5892,prd,5251,pps,6069,parm,1276,pdm,8663,pfcrn,1554,prt,1,prd-pps-parm-pfcrn,,,,,,,,,397774,,,,899250,mau - cd Banamex,1,1,1,pms=prd
-155,27,1988,jul,6,tab,Tabasco,13806,pan,202644,pri,5321,prd,10509,pps,2075,parm,772,pdm,26935,pfcrn,309,prt,1,prd-pps-parm-pfcrn,,,,,,,,,262371,,,,634687,mau - cd Banamex,1,1,1,pms=prd
-156,28,1988,jul,6,tam,Tamaulipas,44788,pan,290791,pri,10966,prd,19398,pps,72978,parm,2802,pdm,19517,pfcrn,877,prt,1,prd-pps-parm-pfcrn,,,,,,,,,462117,,,,1120265,mau - cd Banamex,1,1,1,pms=prd
-157,29,1988,jul,6,tla,Tlaxcala,10594,pan,114028,pri,6006,prd,20441,pps,8433,parm,5427,pdm,15922,pfcrn,835,prt,1,prd-pps-parm-pfcrn,,,,,,,,,181686,,,,331907,mau - cd Banamex,1,1,1,pms=prd
-158,30,1988,jul,6,ver,Veracruz,107436,pan,884626,pri,37293,prd,187423,pps,74117,parm,19534,pdm,136486,pfcrn,4521,prt,1,prd-pps-parm-pfcrn,,,,,,,,,1451436,,,,3045721,mau - cd Banamex,1,1,1,pms=prd
-159,31,1988,jul,6,yuc,Yucatán,88473,pan,206938,pri,1106,prd,1054,pps,381,parm,83,pdm,1200,pfcrn,222,prt,1,prd-pps-parm-pfcrn,,,,,,,,,299457,,,,602041,mau - cd Banamex,1,1,1,pms=prd
-160,32,1988,jul,6,zac,Zacatecas,31160,pan,193554,pri,16039,prd,16190,pps,13196,parm,1424,pdm,15434,pfcrn,500,prt,1,prd-pps-parm-pfcrn,,,,,,,,,287497,,,,602780,mau - cd Banamex,1,1,1,pms=prd
+97,1,1982,jul,0,ags,Aguascalientes,30755,pan,129901,pri,2118,pcm,10896,oth,,,,,,,,,,,,,,,,,,,173993,7,18874,192874,260868,mau - cd Banamex,1,1,1,
+98,2,1982,jul,0,bc,Baja California,152744,pan,242274,pri,17752,pcm,35844,oth,,,,,,,,,,,,,,,,,,,456293,10,61271,517574,685922,mau - cd Banamex,1,1,1,
+99,3,1982,jul,0,bcs,Baja California Sur,11362,pan,62825,pri,2241,pcm,1736,oth,,,,,,,,,,,,,,,,,,,80652,10,9375,90037,116364,mau - cd Banamex,1,1,1,
+100,4,1982,jul,0,cam,Campeche,7224,pan,95737,pri,724,pcm,1546,oth,,,,,,,,,,,,,,,,,,,105231,284,9730,115245,168338,mau - cd Banamex,1,1,1,
+101,5,1982,jul,0,coa,Coahuila,89305,pan,209651,pri,965,pcm,10521,oth,,,,,,,,,,,,,,,,,,,311500,396,11460,323356,681635,mau - cd Banamex,1,1,1,
+102,6,1982,jul,0,col,Colima,4191,pan,64207,pri,864,pcm,2674,oth,,,,,,,,,,,,,,,,,,,72281,9,2250,74540,170791,mau - cd Banamex,1,1,1,
+103,7,1982,jul,0,cps,Chiapas,21054,pan,569552,pri,7629,pcm,21041,oth,,,,,,,,,,,,,,,,,,,622887,22,23784,646693,923098,mau - cd Banamex,1,1,1,
+104,8,1982,jul,0,cua,Chihuahua,158910,pan,337483,pri,14241,pcm,19566,oth,,,,,,,,,,,,,,,,,,,530200,262,45718,576180,963853,mau - cd Banamex,1,1,1,
+105,9,1982,jul,0,df,Distrito Federal,894350,pan,1663851,pri,326327,pcm,312472,oth,,,,,,,,,,,,,,,,,,,3331247,1453,460568,3793268,4779964,mau - cd Banamex,1,1,1,
+106,10,1982,jul,0,dgo,Durango,62470,pan,270401,pri,7637,pcm,9535,oth,,,,,,,,,,,,,,,,,,,351232,9,12942,364183,603027,mau - cd Banamex,1,1,1,
+107,11,1982,jul,0,gua,Guanajuato,182679,pan,558688,pri,10993,pcm,80163,oth,,,,,,,,,,,,,,,,,,,832523,50,37370,869943,1398807,mau - cd Banamex,1,1,1,
+108,12,1982,jul,0,gue,Guerrero,21939,pan,408345,pri,,,3866,oth,,,,,,,,,,,,,,,,,,,434150,0,11522,445672,984325,mau - cd Banamex,1,1,1,
+109,13,1982,jul,0,hgo,Hidalgo,50651,pan,465877,pri,9467,pcm,21649,oth,,,,,,,,,,,,,,,,,,,547644,93,11436,559173,748930,mau - cd Banamex,1,1,1,
+110,14,1982,jul,0,jal,Jalisco,353123,pan,762633,pri,103363,pcm,79481,oth,,,,,,,,,,,,,,,,,,,1298600,0,106241,1404841,2031506,mau - cd Banamex,1,1,1,
+111,15,1982,jul,0,mex,México,612609,pan,1417367,pri,147084,pcm,179385,oth,,,,,,,,,,,,,,,,,,,2409961,0,587080,2997041,3102137,mau - cd Banamex,1,1,1,
+112,16,1982,jul,0,mic,Michoacán,86484,pan,577323,pri,16796,pcm,52093,oth,,,,,,,,,,,,,,,,,,,734741,17,37420,772178,1359175,mau - cd Banamex,1,1,1,
+113,17,1982,jul,0,mor,Morelos,29325,pan,231710,pri,8681,pcm,17906,oth,,,,,,,,,,,,,,,,,,,296885,52,18466,315403,392556,mau - cd Banamex,1,1,1,
+114,18,1982,jul,0,nay,Nayarit,4965,pan,148255,pri,22324,pcm,7425,oth,,,,,,,,,,,,,,,,,,,182969,18,17044,200031,332502,mau - cd Banamex,1,1,1,
+115,19,1982,jul,0,nl,Nuevo León,218724,pan,608366,pri,5529,pcm,16449,oth,,,,,,,,,,,,,,,,,,,849068,0,24213,873281,1155687,mau - cd Banamex,1,1,1,
+116,20,1982,jul,0,oax,Oaxaca,48196,pan,543515,pri,21956,pcm,39468,oth,,,,,,,,,,,,,,,,,,,653135,72,10467,663674,1131450,mau - cd Banamex,1,1,1,
+117,21,1982,jul,0,pue,Puebla,139076,pan,917147,pri,28834,pcm,44382,oth,,,,,,,,,,,,,,,,,,,1132527,43,59849,1192419,1591940,mau - cd Banamex,1,1,1,
+118,22,1982,jul,0,que,Querétaro,33284,pan,193681,pri,3225,pcm,8015,oth,,,,,,,,,,,,,,,,,,,238205,4,14120,252329,347054,mau - cd Banamex,1,1,1,
+119,23,1982,jul,0,qui,Quintana Roo,2856,pan,86143,pri,950,pcm,2819,oth,,,,,,,,,,,,,,,,,,,92768,5,923,93696,108075,mau - cd Banamex,1,1,1,
+120,24,1982,jul,0,san,San Luis Potosí,46978,pan,352978,pri,4315,pcm,26783,oth,,,,,,,,,,,,,,,,,,,431572,14,0,431586,728011,mau - cd Banamex,1,1,1,
+121,25,1982,jul,0,sin,Sinaloa,59549,pan,450660,pri,31326,pcm,20560,oth,,,,,,,,,,,,,,,,,,,565196,96,22591,587883,864566,mau - cd Banamex,1,1,1,
+122,26,1982,jul,0,son,Sonora,121824,pan,246869,pri,6693,pcm,6002,oth,,,,,,,,,,,,,,,,,,,383308,162,26615,410085,727765,mau - cd Banamex,1,1,1,
+123,27,1982,jul,0,tab,Tabasco,11210,pan,299649,pri,1741,pcm,4450,oth,,,,,,,,,,,,,,,,,,,317050,11,6756,323817,446581,mau - cd Banamex,1,1,1,
+124,28,1982,jul,0,tam,Tamaulipas,36404,pan,432681,pri,7667,pcm,71524,oth,,,,,,,,,,,,,,,,,,,548276,26,46897,595199,887181,mau - cd Banamex,1,1,1,
+125,29,1982,jul,0,tla,Tlaxcala,20061,pan,134954,pri,3774,pcm,13013,oth,,,,,,,,,,,,,,,,,,,171802,22,5862,177686,260973,mau - cd Banamex,1,1,1,
+126,30,1982,jul,0,ver,Veracruz,71223,pan,1569368,pri,41375,pcm,154959,oth,,,,,,,,,,,,,,,,,,,1836925,8346,63264,1908535,2517944,mau - cd Banamex,1,1,1,
+127,31,1982,jul,0,yuc,Yucatán,56148,pan,253893,pri,3179,pcm,2841,oth,,,,,,,,,,,,,,,,,,,316061,6,6341,322408,511279,mau - cd Banamex,1,1,1,
+128,32,1982,jul,0,zac,Zacatecas,38425,pan,278130,pri,6621,pcm,6608,oth,,,,,,,,,,,,,,,,,,,329784,0,9874,339658,544252,mau - cd Banamex,1,1,1,
+129,1,1988,jul,6,ags,Aguascalientes,46554,pan,85947,pri,4502,pms,8301,pps,3008,parm,4450,pdm,11224,pfcrn,395,prt,1,pms-pps-parm-pfcrn,,,,,,,,,164381,,,,0,mau - cd Banamex,1,1,1,
+130,2,1988,jul,6,bc,Baja California,110455,pan,166751,pri,15171,pms,62973,pps,15786,parm,5392,pdm,31448,pfcrn,3172,prt,1,pms-pps-parm-pfcrn,,,,,,,,,411148,,,,817466,mau - cd Banamex,1,1,1,
+131,3,1988,jul,6,bcs,Baja California Sur,15238,pan,48287,pri,1645,pms,3897,pps,6376,parm,578,pdm,6301,pfcrn,613,prt,1,pms-pps-parm-pfcrn,,,,,,,,,82935,,,,150348,mau - cd Banamex,1,1,1,
+132,4,1988,jul,6,cam,Campeche,13499,pan,81965,pri,1289,pms,6162,pps,1005,parm,241,pdm,7950,pfcrn,148,prt,1,pms-pps-parm-pfcrn,,,,,,,,,112259,,,,229954,mau - cd Banamex,1,1,1,
+133,5,1988,jul,6,coa,Coahuila,52159,pan,182481,pri,6369,pms,14169,pps,22722,parm,1154,pdm,49716,pfcrn,796,prt,1,pms-pps-parm-pfcrn,,,,,,,,,329566,,,,0,mau - cd Banamex,1,1,1,
+134,6,1988,jul,6,col,Colima,13413,pan,47575,pri,1939,pms,5905,pps,10406,parm,1282,pdm,12001,pfcrn,533,prt,1,pms-pps-parm-pfcrn,,,,,,,,,93054,,,,218028,mau - cd Banamex,1,1,1,
+135,7,1988,jul,6,cps,Chiapas,22924,pan,553892,pri,10497,pms,6433,pps,7531,parm,1281,pdm,11912,pfcrn,1046,prt,1,pms-pps-parm-pfcrn,,,,,,,,,615516,,,,1189034,mau - cd Banamex,1,1,1,
+136,8,1988,jul,6,cua,Chihuahua,200749,pan,282803,pri,4553,pms,9897,pps,3680,parm,1601,pdm,7556,pfcrn,896,prt,1,pms-pps-parm-pfcrn,,,,,,,,,511735,,,,1295067,mau - cd Banamex,1,1,1,
+137,9,1988,jul,6,df,Distrito Federal,682309,pan,753478,pri,231722,pms,468022,pps,220113,parm,32492,pdm,410724,pfcrn,22092,prt,1,pms-pps-parm-pfcrn,,,,,,,,,2820952,,,,0,mau - cd Banamex,1,1,1,
+138,10,1988,jul,6,dgo,Durango,60588,pan,199315,pri,16346,pms,16153,pps,13996,parm,516,pdm,12632,pfcrn,1345,prt,1,pms-pps-parm-pfcrn,,,,,,,,,320891,,,,682290,mau - cd Banamex,1,1,1,
+139,11,1988,jul,6,gua,Guanajuato,201346,pan,276404,pri,8973,pms,22593,pps,17192,parm,30221,pdm,83714,pfcrn,1204,prt,1,pms-pps-parm-pfcrn,,,,,,,,,641647,,,,0,mau - cd Banamex,1,1,1,
+140,12,1988,jul,6,gue,Guerrero,11431,pan,311646,pri,17241,pms,14475,pps,53433,parm,5198,pdm,89802,pfcrn,2156,prt,1,pms-pps-parm-pfcrn,,,,,,,,,505382,,,,1200804,mau - cd Banamex,1,1,1,
+141,13,1988,jul,6,hgo,Hidalgo,21651,pan,252881,pri,15685,pms,22970,pps,14222,parm,3749,pdm,29068,pfcrn,1205,prt,1,pms-pps-parm-pfcrn,,,,,,,,,361431,,,,812252,mau - cd Banamex,1,1,1,
+142,14,1988,jul,6,jal,Jalisco,386773,pan,507102,pri,32355,pms,67846,pps,73943,parm,33305,pdm,84453,pfcrn,3400,prt,1,pms-pps-parm-pfcrn,,,,,,,,,1189177,,,,2514777,mau - cd Banamex,1,1,1,
+143,15,1988,jul,6,mex,México,396273,pan,733039,pri,196125,pms,421722,pps,172602,parm,35473,pdm,309647,pfcrn,13605,prt,1,pms-pps-parm-pfcrn,,,,,,,,,2278486,,,,4190232,mau - cd Banamex,1,1,1,
+144,16,1988,jul,6,mic,Michoacán,68018,pan,141790,pri,12143,pms,38062,pps,223517,parm,12950,pdm,92656,pfcrn,1199,prt,1,pms-pps-parm-pfcrn,,,,,,,,,590335,,,,1549843,mau - cd Banamex,1,1,1,
+145,17,1988,jul,6,mor,Morelos,22165,pan,95699,pri,11950,pms,22804,pps,42796,parm,2609,pdm,51017,pfcrn,1585,prt,1,pms-pps-parm-pfcrn,,,,,,,,,250625,,,,583597,mau - cd Banamex,1,1,1,
+146,18,1988,jul,6,nay,Nayarit,22929,pan,120065,pri,13412,pms,24523,pps,9293,parm,1213,pdm,18792,pfcrn,393,prt,1,pms-pps-parm-pfcrn,,,,,,,,,210620,,,,405300,mau - cd Banamex,1,1,1,
+147,19,1988,jul,6,nl,Nuevo León,153871,pan,509865,pri,4067,pms,4556,pps,3468,parm,1692,pdm,7754,pfcrn,1536,prt,1,pms-pps-parm-pfcrn,,,,,,,,,686809,,,,1625718,mau - cd Banamex,1,1,1,
+148,20,1988,jul,6,oax,Oaxaca,30546,pan,398175,pri,21211,pms,70316,pps,33739,parm,3920,pdm,47236,pfcrn,4604,prt,1,pms-pps-parm-pfcrn,,,,,,,,,609747,,,,1364539,mau - cd Banamex,1,1,1,
+149,21,1988,jul,6,pue,Puebla,116733,pan,511377,pri,31322,pms,66794,pps,31168,parm,10430,pdm,51989,pfcrn,11538,prt,1,pms-pps-parm-pfcrn,,,,,,,,,831351,,,,1693380,mau - cd Banamex,1,1,1,
+150,22,1988,jul,6,que,Querétaro,44312,pan,153643,pri,3580,pms,11368,pps,1569,parm,3615,pdm,10580,pfcrn,421,prt,1,pms-pps-parm-pfcrn,,,,,,,,,229088,,,,409408,mau - cd Banamex,1,1,1,
+151,23,1988,jul,6,qui,Quintana Roo,7511,pan,63156,pri,1389,pms,5467,pps,4642,parm,218,pdm,7683,pfcrn,106,prt,1,pms-pps-parm-pfcrn,,,,,,,,,90172,,,,188191,mau - cd Banamex,1,1,1,
+152,24,1988,jul,6,san,San Luis Potosí,74407,pan,264629,pri,2772,pms,5824,pps,6541,parm,6773,pdm,8516,pfcrn,588,prt,1,pms-pps-parm-pfcrn,,,,,,,,,370050,,,,868279,mau - cd Banamex,1,1,1,
+153,25,1988,jul,6,sin,Sinaloa,142673,pan,319358,pri,9574,pms,15240,pps,12879,parm,908,pdm,17483,pfcrn,843,prt,1,pms-pps-parm-pfcrn,,,,,,,,,518958,,,,1113969,mau - cd Banamex,1,1,1,
+154,26,1988,jul,6,son,Sonora,85998,pan,283071,pri,5892,pms,5251,pps,6069,parm,1276,pdm,8663,pfcrn,1554,prt,1,pms-pps-parm-pfcrn,,,,,,,,,397774,,,,899250,mau - cd Banamex,1,1,1,
+155,27,1988,jul,6,tab,Tabasco,13806,pan,202644,pri,5321,pms,10509,pps,2075,parm,772,pdm,26935,pfcrn,309,prt,1,pms-pps-parm-pfcrn,,,,,,,,,262371,,,,634687,mau - cd Banamex,1,1,1,
+156,28,1988,jul,6,tam,Tamaulipas,44788,pan,290791,pri,10966,pms,19398,pps,72978,parm,2802,pdm,19517,pfcrn,877,prt,1,pms-pps-parm-pfcrn,,,,,,,,,462117,,,,1120265,mau - cd Banamex,1,1,1,
+157,29,1988,jul,6,tla,Tlaxcala,10594,pan,114028,pri,6006,pms,20441,pps,8433,parm,5427,pdm,15922,pfcrn,835,prt,1,pms-pps-parm-pfcrn,,,,,,,,,181686,,,,331907,mau - cd Banamex,1,1,1,
+158,30,1988,jul,6,ver,Veracruz,107436,pan,884626,pri,37293,pms,187423,pps,74117,parm,19534,pdm,136486,pfcrn,4521,prt,1,pms-pps-parm-pfcrn,,,,,,,,,1451436,,,,3045721,mau - cd Banamex,1,1,1,
+159,31,1988,jul,6,yuc,Yucatán,88473,pan,206938,pri,1106,pms,1054,pps,381,parm,83,pdm,1200,pfcrn,222,prt,1,pms-pps-parm-pfcrn,,,,,,,,,299457,,,,602041,mau - cd Banamex,1,1,1,
+160,32,1988,jul,6,zac,Zacatecas,31160,pan,193554,pri,16039,pms,16190,pps,13196,parm,1424,pdm,15434,pfcrn,500,prt,1,pms-pps-parm-pfcrn,,,,,,,,,287497,,,,602780,mau - cd Banamex,1,1,1,
 161,1,1991,ago,18,ags,Aguascalientes,42926,pan,137111,pri,1387,pps,5744,prd,11235,pfcrn,2439,parm,3018,pdm,681,prt,1177,pem,2058,pt,,,,,,,207776,160,8686,216622,,Atlas Electoral Federal de Mexico 1991-2000 IFE,1,1,1,
 162,2,1991,ago,18,bc,Baja California,268563,pan,259586,pri,8724,pps,15330,prd,8600,pfcrn,5284,parm,889,pdm,1518,prt,4059,pem,6841,pt,,,,,,,579394,172,28928,608494,,Atlas Electoral Federal de Mexico 1991-2000 IFE,1,1,1,
 163,3,1991,ago,18,bcs,Baja California Sur,23262,pan,61295,pri,1106,pps,1484,prd,1404,pfcrn,1370,parm,257,pdm,1423,prt,184,pem,574,pt,,,,,,,92359,40,3450,95849,,Atlas Electoral Federal de Mexico 1991-2000 IFE,1,1,1,
