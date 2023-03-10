@@ -894,6 +894,9 @@ length(sel5); length(sel5)*58 < 400000
 length(sel6); length(sel6)*58 < 400000
 #6756*58
 
+# save full file
+write.csv(dat, file = "aymu1970-on.coalAgg.csv", row.names = FALSE)
+
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
@@ -1136,6 +1139,10 @@ length(sel5); length(sel5)*57 < 400000
 length(sel6); length(sel6)*57 < 400000
 #6756*58
 
+# save full file
+write.csv(dat.split, file = "aymu1970-on.coalSplit2000s.csv", row.names = FALSE)
+
+
 # subset ~1970s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel1,] # subset
@@ -1161,6 +1168,17 @@ dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel6,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2020s.csv", row.names = FALSE)
 
+
+########################################
+## SUBSET INCUMBETS FOR GOOGLE SHEETS ##
+########################################
+dat.i <- read.csv(file = "aymu1989-on.incumbents.csv", stringsAsFactors = FALSE)
+median(dat.i$edon)
+write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
+write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
+
+
+x
 
 
 
