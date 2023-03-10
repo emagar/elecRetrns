@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2023-02-22
+Last revision: 2023-03-10
 
 ----------
 
@@ -8,15 +8,17 @@ Last revision: 2023-02-22
 Recent additions
 </h2>
 
+<sup><sub>2023-03-10</sub></sup> *Inspect election returns online in Google sheets [[https://emagar.github.io/view-in-gSheets/][here]] (Beta)*
+
 <sup><sub>2023-02-22</sub></sup> *Casilla latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, where source requires debugging).
 
 <sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
 
-*Special municipal elections* in 2021/22 added, elected mayors updated. 
+# *Special municipal elections* in 2021/22 added, elected mayors updated. 
 
 # *State-level presidential and senate returns* cleaned and updated.
 
-*Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
+# *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
 
 # *Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
 
