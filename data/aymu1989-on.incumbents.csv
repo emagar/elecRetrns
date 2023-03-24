@@ -2286,7 +2286,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 2285,cua-17.008,BATOPILAS DE MANUEL GOMEZ MORIN,2018,0,8,8008,8008,pri,m,ISRAEL VARELA ORDOÑEZ,Term-limited-p-won,NORMA ALICIA VALENZUELA VEGA,pan-mc,0.1364,0,1,1,,,ok,,
 2286,cua-18.008,BATOPILAS DE MANUEL GOMEZ MORIN,2021,0,8,8008,8008,pri,m,EDUARDO AARON RUELAS FERNANDEZ,2024,,morena,0.6344,0,,,,,,,
 2287,cua-07.009,BOCOYNA,1989,0,8,8009,8009,pri,,,Term-limited-p-won,,prd,0.6953,0,0,0,,,,,
-2288,cua-08.009,BOCOYNA,1992,0,8,8009,8009,pri,m,JAIME E. GONZALEZ,Term-limited-p-won,,pan,0.4283,0,0,0,,,,,inafed
+2288,cua-08.009,BOCOYNA,1992,0,8,8009,8009,pri,m,JAIME E GONZALEZ,Term-limited-p-won,,pan,0.4283,0,0,0,,,,,inafed
 2289,cua-09.009,BOCOYNA,1995,0,8,8009,8009,pri,m,FRANCISCO JAVIER GONZALEZ,Term-limited-p-won,,pan,0.091,0,0,0,,,,,inafed
 2290,cua-10.009,BOCOYNA,1998,0,8,8009,8009,pri,m,JAIME EDUARDO GONZALEZ MUÑOZ,Term-limited-p-won,,pan,0.1705,0,0,0,,,,,
 2291,cua-11.009,BOCOYNA,2001,0,8,8009,8009,pri,m,MANUEL RAMON CARRERA AGUILAR,Term-limited-p-won,,pan,0.1964,0,0,0,,,,,
@@ -2556,7 +2556,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 2555,cua-11.031,GUERRERO,2001,0,8,8031,8031,pri,m,JORGE MORALES MORALES,Term-limited-p-won,,prd,0.3752,0,0,0,,,,,
 2556,cua-12.031,GUERRERO,2004,0,8,8031,8031,pri-pvem-pt,m,ALFONSO DOMINGUEZ CARREON,Term-limited-p-lost,,pan-prd-conve,0.1498,0,1,1,,,ok,,
 2557,cua-13.031,GUERRERO,2007,0,8,8031,8031,pan,m,JOSE GABRIEL BENJAMIN ALMEYDA OCHOA,Term-limited-p-lost,,pri-pna,0.0225,0,0,0,,,,,
-2558,cua-14.031,GUERRERO,2010,0,8,8031,8031,pri-pna,,AGUEDA TORRES VARELA,Term-limited-p-won,,pan,0.041,0,0,0,,,,,
+2558,cua-14.031,GUERRERO,2010,0,8,8031,8031,pri-pna,f,AGUEDA TORRES VARELA,Term-limited-p-won,,pan,0.041,0,0,0,,,,,
 2559,cua-15.031,GUERRERO,2013,0,8,8031,8031,pri-pvem-pna,m,EFRAIN HERNANDEZ CABALLERO,Term-limited-p-won,,pan,0.0338,0,0,0,,,,,
 2560,cua-16.031,GUERRERO,2016,0,8,8031,8031,pri-pvem-pt-pna,m,LUIS FERNANDO CHACON ERIVES,Reran-beaten-dif-p,,pan,0.143,0,0,0,,,ok,reran under pri and lost,https://www.reportecuauhtemoc.com/single-post/2018/01/15/Se-Registra-Luis-Fernando-Chacon-Erives-ante-PRI-busca-la-reelecci%C3%B3n-como-Alcalde-de-Guerrero
 2561,cua-17.031,GUERRERO,2018,0,8,8031,8031,pt-morena-pes,m,CARLOS COMADURAN AMAYA,Reelected,LUIS FERNANDO CHACON ERIVES,pri,0.0591,0,1,1,,,ok,,
@@ -2709,10 +2709,10 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 2708,cua-08.044,MATAMOROS,1992,0,8,8044,8044,pri,m,TIMOTEO CORRAL DE LEON,Term-limited-p-lost,,prd,0.3081,0,0,0,,,,,inafed
 2709,cua-09.044,MATAMOROS,1995,0,8,8044,8044,pan,m,VICTOR MANUEL MEZA MEDINA,Term-limited-p-won,,pri,0.1444,0,0,0,,,,,inafed
 2710,cua-10.044,MATAMOROS,1998,0,8,8044,8044,pan,m,FELIX JESUS JUAREZ MARES,Term-limited-p-lost,,pri,0.0272,0,0,0,,,,,
-2711,cua-11.044,MATAMOROS,2001,0,8,8044,8044,pri,,BUENAVENTURA CHAVEZ VILLALOBOS,Term-limited-p-won,,pan,0.1099,0,0,0,,,ok,,
+2711,cua-11.044,MATAMOROS,2001,0,8,8044,8044,pri,m,BUENAVENTURA CHAVEZ VILLALOBOS,Term-limited-p-won,,pan,0.1099,0,0,0,,,ok,,
 2712,cua-12.044,MATAMOROS,2004,0,8,8044,8044,pri-pvem-pt,m,ANDRES ESPARZA ORTIZ,Term-limited-p-won,,pan-prd-conve,0.025,0,0,0,,,,,
 2713,cua-13.044,MATAMOROS,2007,0,8,8044,8044,pri-pna,m,MARTIN PRIMERO MARES,Term-limited-p-won,,pan,0.0185,0,0,0,,,,,
-2714,cua-14.044,MATAMOROS,2010,0,8,8044,8044,pri-pvem-pna,,BUENAVENTURA CHAVEZ VILLALOBOS,Term-limited-p-won,,pan,0.0558,0,1,1,,,ok,,
+2714,cua-14.044,MATAMOROS,2010,0,8,8044,8044,pri-pvem-pna,m,BUENAVENTURA CHAVEZ VILLALOBOS,Term-limited-p-won,,pan,0.0558,0,1,1,,,ok,,
 2715,cua-15.044,MATAMOROS,2013,0,8,8044,8044,pri-pvem-pna,m,RUBEN RAFAEL BARRON GONZALEZ,Term-limited-p-lost,,pan,0.1181,0,0,0,,,,,
 2716,cua-16.044,MATAMOROS,2016,0,8,8044,8044,pan,f,MARIA DE LOS ANGELES GAUCIN SALAS,Reelected,,pri-pvem-pt-pna,0.2251,0,0,0,,,ok,,
 2717,cua-17.044,MATAMOROS,2018,0,8,8044,8044,pan-mc,f,MARIA DE LOS ANGELES GAUCIN SALAS,Term-limited-p-won,ELOY FLORES ARMENDARIZ,pri,0.0483,0,1,1,,,ok,,
@@ -3649,7 +3649,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 3648,gua-10.006,ATARJEA,1997,0,11,11006,11006,pri,m,RIGOBERTO GONZALEZ LEON,Term-limited-p-won,ARTURO DAVILA MEDINA,pan,0.0486,0,0,0,,,,,
 3649,gua-11.006,ATARJEA,2000,0,11,11006,11006,pri,m,J NEFTALI RAFAEL GARCIA FLORES,Term-limited-p-won,,pcd,0.1325,0,0,0,,,,,
 3650,gua-12.006,ATARJEA,2003,0,11,11006,11006,pri,m,FIDEL LOPEZ MUÑOZ,Term-limited-p-lost,,pan,0.1797,0,0,0,,,,,
-3651,gua-13.006,ATARJEA,2006,0,11,11006,11006,pan,,J GUADALUPE FLORES LOYOLA,Term-limited-p-won,,pvem,0.0017,0,0,0,,,,,
+3651,gua-13.006,ATARJEA,2006,0,11,11006,11006,pan,m,J GUADALUPE FLORES LOYOLA,Term-limited-p-won,,pvem,0.0017,0,0,0,,,,,
 3652,gua-14.006,ATARJEA,2009,0,11,11006,11006,pan,m,RIGOBERTO HURTADO ROSALES,Term-limited-p-won,,prd-pvem,0.0436,0,0,0,,,,,
 3653,gua-15.006,ATARJEA,2012,0,11,11006,11006,pan,m,JOSE NOE GARCIA ZUÑIGA,Term-limited-p-won,,pri,0.0403,0,0,0,,,,,
 3654,gua-16.006,ATARJEA,2015,0,11,11006,11006,pan,m,JOSE LUIS RIVAS LOYOLA,Out-p-won,,pri-pvem-pna,0.2011,0,0,0,,,,,
@@ -4085,7 +4085,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4084,gua-17.045,XICHU,2018,0,11,11045,11045,pan,f,MARIA GUADALUPE RAMIREZ ESQUIVEL,Out-p-lost,,pri,0.1375,0,0,0,,,,,
 4085,gua-18.045,XICHU,2021,0,11,11045,11045,prd,m,FRANCISCO OROZCO MARTINEZ,2024,,pan,0.0303,0,,,,,,,
 4086,gua-08.046,YURIRIA,1991,0,11,11046,11046,pri,,,Term-limited-p-won,,pps,0.3828,0,0,0,,,,inafed ponia el de silao,
-4087,gua-09.046,YURIRIA,1994,0,11,11046,11046,pri,m,J JESUS SOTO V.,Term-limited-p-lost,,pan,0.5127,0,0,0,,,,inafed ponia el de silao,
+4087,gua-09.046,YURIRIA,1994,0,11,11046,11046,pri,m,J JESUS SOTO V,Term-limited-p-lost,,pan,0.5127,0,0,0,,,,inafed ponia el de silao,
 4088,gua-10.046,YURIRIA,1997,0,11,11046,11046,pan,m,LUIS GERARDO VALDOVINO FUENTES,Term-limited-p-won,JOSE LUIS RAMIREZ TORRES,pri,0.2139,0,0,0,,,,,
 4089,gua-11.046,YURIRIA,2000,0,11,11046,11046,pan,m,ARTEMIO TORRES GOMEZ,Term-limited-p-won,,pcd,0.0366,0,0,0,,,,,
 4090,gua-12.046,YURIRIA,2003,0,11,11046,11046,pan,m,GUILLERMO ZAVALA ALCARAZ,Term-limited-p-lost,,pvem,0.0485,0,0,0,,,,,
@@ -4225,7 +4225,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4224,gue-13.012,AYUTLA DE LOS LIBRES,2008,0,12,12012,12012,pri,m,ARMANDO GARCIA RENDON,Term-limited-p-lost,,pvem,0.0083,0,0,0,,,,,
 4225,gue-14.012,AYUTLA DE LOS LIBRES,2012,0,12,12012,12012,pvem,m,SEVERO CASTRO GODINEZ,Term-limited-p-won,,prd-pt-conve,0.0493,0,0,0,,,,,
 4226,gue-15.012,AYUTLA DE LOS LIBRES,2015,0,12,12012,12012,pri-pvem,f,HORTENCIA ALDACO QUINTANA,uyc,,prd,0.0123,0,0,0,,,,pasó a usos y costumbres en 2018,
-4227,gue-07.013,AZOYU,1989,0,12,12013,12013,pri,,SABDI BAUTISTA VARGAS,Term-limited-p-won,,prd,0.3414,0,0,0,,,,,inafed
+4227,gue-07.013,AZOYU,1989,0,12,12013,12013,pri,m,SABDI BAUTISTA VARGAS,Term-limited-p-won,,prd,0.3414,0,0,0,,,,,inafed
 4228,gue-08.013,AZOYU,1993,0,12,12013,12013,pri,m,LAURO JUSTOS HERRERA,Term-limited-p-lost,,prd,0.4248,0,0,0,,,,,inafed
 4229,gue-09.013,AZOYU,1996,0,12,12013,12013,prd,m,RAUL EVARISTO ABUNDIS,Term-limited-p-lost,,pri,0.0056,0,0,0,,,,,inafed
 4230,gue-10.013,AZOYU,1999,0,12,12013,12013,pri,m,TOBIAS BAUTISTA MIRANDA,Term-limited-p-won,,prd,0.0075,0,0,0,,,,,
@@ -4273,11 +4273,11 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4272,gue-08.017,COCULA,1993,0,12,12017,12017,pri,m,JOSE DANIEL ROMAN SALAZAR,Term-limited-p-lost,,prd,0.4153,0,0,0,,,,,inafed
 4273,gue-09.017,COCULA,1996,0,12,12017,12017,prd,m,JACOBO GUADARRAMA OCAMPO,Term-limited-p-lost,,pri,0.0991,0,0,0,,,ok,,inafed
 4274,gue-10.017,COCULA,1999,0,12,12017,12017,pri,m,CESAR PEÑALOZA ESPINOZA,Term-limited-p-won,,prd,0.133,0,0,0,,,,,
-4275,gue-11.017,COCULA,2002,0,12,12017,12017,pri,,ALCIBIADES RAMIREZ CHAVEZ,Term-limited-p-lost,,prd,0.2252,0,0,0,,,,,
+4275,gue-11.017,COCULA,2002,0,12,12017,12017,pri,m,ALCIBIADES RAMIREZ CHAVEZ,Term-limited-p-lost,,prd,0.2252,0,0,0,,,,,
 4276,gue-12.017,COCULA,2005,0,12,12017,12017,prd,m,JACOBO GUADARRAMA OCAMPO,Term-limited-p-lost,,pri,0.0547,0,1,1,,,ok,,
 4277,gue-13.017,COCULA,2008,0,12,12017,12017,pri,f,TERESA DE JESUS MANJARRES SEGURA,Term-limited-p-won,,prd,0.176,0,0,0,,,,,
 4278,gue-14.017,COCULA,2012,0,12,12017,12017,pri,m,CESAR MIGUEL PEÑALOZA SANTANA,Term-limited-p-lost,,prd,0.0496,0,0,0,,,,,
-4279,gue-15.017,COCULA,2015,0,12,12017,12017,prd,m,ERIK ULISES RAMIREZ CRESPO,Out-p-lost,,pri-pvem,0.1148,0,0,0,,,,,
+4279,gue-15.017,COCULA,2015,0,12,12017,12017,prd,m,ERIK ULISES RAMIREZ CRESPO,Out-p-lost,,pri-pvem,0.1148,0,0,0,1,hijo de ALCIBIADES RAMIREZ CHAVEZ,,,
 4280,gue-16.017,COCULA,2018,0,12,12017,12017,pna,m,CARLOS ALBERTO DUARTE BAHENA,Reelected-dif-p,,pri-pvem,0.0278,0,0,0,,,,reran under morena and won,
 4281,gue-17.017,COCULA,2021,0,12,12017,12017,morena,m,CARLOS ALBERTO DUARTE BAHENA,2024,,mc,0.0563,0,,,,,,,
 4282,gue-07.018,COPALA,1989,0,12,12018,12018,pri,m,PABLO CESAR CLEMENTE TENORIO,Term-limited-p-won,,parm,0.8192,0,0,0,,,ok,,inafed
@@ -4287,7 +4287,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4286,gue-11.018,COPALA,2002,0,12,12018,12018,prd,m,OSCAR BONILLA PEREZ,Term-limited-p-lost,,pri,0.1509,0,0,0,,,,,
 4287,gue-12.018,COPALA,2005,0,12,12018,12018,pvem,m,GONZALO GALLARDO GARCIA,Term-limited-p-lost,,pri,0.0699,0,0,0,,,,,
 4288,gue-13.018,COPALA,2008,0,12,12018,12018,pri,m,CARLOS ALBERTO GUERRERO TEJEDA,Term-limited-p-won,,conve,0.1584,0,0,0,,,,,
-4289,gue-14.018,COPALA,2012,0,12,12018,12018,pri-pvem,,SADOT BELLO GARCIA,Dead-term-limited-p-won,,prd-pt-conve,0.0031,1,0,0,,,,Died health 19jun2015,
+4289,gue-14.018,COPALA,2012,0,12,12018,12018,pri-pvem,m,SADOT BELLO GARCIA,Dead-term-limited-p-won,,prd-pt-conve,0.0031,1,0,0,,,,Died health 19jun2015,
 4290,gue-15.018,COPALA,2015,0,12,12018,12018,pri-pvem,m,NAZARIO DAMIAN CESPEDES,Out-p-lost,,mc,0.0086,0,0,0,,,,,
 4291,gue-16.018,COPALA,2018,0,12,12018,12018,pan-prd,f,GUADALUPE GARCIA VILLALBA,Reelected,,pri,0.2625,0,0,0,,,,,
 4292,gue-17.018,COPALA,2021,0,12,12018,12018,prd,f,GUADALUPE GARCIA VILLALVA,2024,,pt-pvem,0.0299,0,,,,,,,
@@ -4319,7 +4319,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4318,gue-10.021,COYUCA DE BENITEZ,1999,0,12,12021,12021,pri,m,JULIO CESAR DIEGO GALEANA,Term-limited-p-lost,,prd,0.1829,0,0,0,,,,,
 4319,gue-11.021,COYUCA DE BENITEZ,2002,0,12,12021,12021,prd,m,RAFAEL ARIZA BIBIANO,Term-limited-p-lost,,pri,0.0335,0,0,0,,,,,
 4320,gue-12.021,COYUCA DE BENITEZ,2005,0,12,12021,12021,pri,m,ALBERTO DE LOS SANTOS DIAZ,Term-limited-p-lost,,prd-prs,0.2147,0,0,0,,,ok,,
-4321,gue-13.021,COYUCA DE BENITEZ,2008,0,12,12021,12021,conve-pt,,MERCED VALDOVINO DIEGO,Term-limited-p-lost,,pri,0.0493,0,0,0,,,,,
+4321,gue-13.021,COYUCA DE BENITEZ,2008,0,12,12021,12021,conve-pt,m,MERCED VALDOVINO DIEGO,Term-limited-p-lost,,pri,0.0493,0,0,0,,,,,
 4322,gue-14.021,COYUCA DE BENITEZ,2012,0,12,12021,12021,pri,m,RAMIRO AVILA MORALES,Term-limited-p-won,,pan,0.0607,0,0,0,,,,,
 4323,gue-15.021,COYUCA DE BENITEZ,2015,0,12,12021,12021,pri,m,JAVIER ESCOBAR PARRA,Out-p-lost,,pvem,0.0713,0,0,0,,,,,
 4324,gue-16.021,COYUCA DE BENITEZ,2018,0,12,12021,12021,pt-morena-pes,m,ALBERTO DE LOS SANTOS DIAZ,Reran-beaten-dif-p,,pri-pvem,0.0263,0,1,1,,,ok,reran under prd and lost,
@@ -4330,7 +4330,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4329,gue-10.022,COYUCA DE CATALAN,1999,0,12,12022,12022,pri,m,RAFAEL HIGUERA SANDOVAL,Term-limited-p-won,,prd,0.1196,0,0,0,,,,,
 4330,gue-11.022,COYUCA DE CATALAN,2002,0,12,12022,12022,pri,m,ALFONSO MANJARREZ GOMEZ,Term-limited-p-lost,,pan,0.0313,0,0,0,,,,,
 4331,gue-12.022,COYUCA DE CATALAN,2005,0,12,12022,12022,prd-prs,f,ORBELIN PINEDA MALDONADO,Term-limited-p-won,,pri,0.0006,0,0,0,,,,,
-4332,gue-13.022,COYUCA DE CATALAN,2008,0,12,12022,12022,prd,,ELI CAMACHO GOICOCHEA,Term-limited-p-won,,pri,0.064,0,0,0,,,,,
+4332,gue-13.022,COYUCA DE CATALAN,2008,0,12,12022,12022,prd,m,ELI CAMACHO GOICOCHEA,Term-limited-p-won,,pri,0.064,0,0,0,,,,murdered 22may2017 when was diploc,
 4333,gue-14.022,COYUCA DE CATALAN,2012,0,12,12022,12022,prd,m,REY HILARIO SERRANO,Term-limited-p-lost,,pri,0.0257,0,0,0,,,,,
 4334,gue-15.022,COYUCA DE CATALAN,2015,0,12,12022,12022,pri-pvem,m,ABEL MONTUFAR MENDOZA,Out-p-lost,,prd-pt,0.0971,1,0,0,,,,Murdered 8may2018 when running for state deputy,
 4335,gue-16.022,COYUCA DE CATALAN,2018,0,12,12022,12022,prd,m,EUSEBIO ECHEVERRIA TABARES,Reelected,,pt-morena-pes,0.3667,0,0,0,,,,,
@@ -4362,7 +4362,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4361,gue-09.025,CUAUTEPEC,1996,0,12,12025,12025,pri,m,JOSE DE JESUS CHAPA MARTINEZ,Term-limited-p-lost,,prd-pps-conve,0.0197,0,0,0,,,,,inafed
 4362,gue-10.025,CUAUTEPEC,1999,0,12,12025,12025,prd,m,MIGUEL ANGEL GALLEGOS PANFILO,Term-limited-p-lost,,pri,0.014,0,0,0,,,,,
 4363,gue-11.025,CUAUTEPEC,2002,0,12,12025,12025,pri,m,HILARIO CIRIACO TENORIO,Term-limited-p-lost,,prd,0.1937,0,0,0,,,,,
-4364,gue-12.025,CUAUTEPEC,2005,0,12,12025,12025,prd,,MERCED GOMEZ GARCIA,Term-limited-p-lost,,pri,0.0364,0,0,0,,,,,
+4364,gue-12.025,CUAUTEPEC,2005,0,12,12025,12025,prd,m,MERCED GOMEZ GARCIA,Term-limited-p-lost,,pri,0.0364,0,0,0,,,,,
 4365,gue-13.025,CUAUTEPEC,2008,0,12,12025,12025,pri,m,HERMELINDO GUTIERREZ TORREBLANCA,Term-limited-p-lost,,prd,0.192,0,0,0,,,,,
 4366,gue-14.025,CUAUTEPEC,2012,0,12,12025,12025,prd,m,ARQUIMEDES QUINTERO DIAZ,Term-limited-p-won,,pri-pvem,0.1989,0,0,0,,,,,
 4367,gue-15.025,CUAUTEPEC,2015,0,12,12025,12025,prd,m,EMMANUEL GUTIERREZ ANDRACA,Out-p-lost,,pvem,0.1067,0,0,0,,,,,
@@ -4380,7 +4380,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4379,gue-16.026,CUETZALA DEL PROGRESO,2018,0,12,12026,12026,pt-morena-pes,f,ELIZABETH MENDOZA DAMACIO,Reelected,,pri,0.0871,0,0,0,,,,,
 4380,gue-17.026,CUETZALA DEL PROGRESO,2021,0,12,12026,12026,morena,f,ELIZABETH MENDOZA DAMACIO,2024,,pri,0.1707,0,,,,,,,
 4381,gue-07.027,CUTZAMALA DE PINZON,1989,0,12,12027,12027,prd,,,Term-limited-p-lost,,pri,0.0394,0,0,0,,,,,
-4382,gue-08.027,CUTZAMALA DE PINZON,1993,0,12,12027,12027,pri,,RANFERI SUAREZ BERRUM,Term-limited-p-lost,,prd,0.0092,0,0,0,,,,,inafed
+4382,gue-08.027,CUTZAMALA DE PINZON,1993,0,12,12027,12027,pri,m,RANFERI SUAREZ BERRUM,Term-limited-p-lost,,prd,0.0092,0,0,0,,,,,inafed
 4383,gue-09.027,CUTZAMALA DE PINZON,1996,0,12,12027,12027,prd,m,ESTEBAN JULIAN MIRELES MARTINEZ,Term-limited-p-lost,,pri,0.0354,0,0,0,,,,,inafed
 4384,gue-10.027,CUTZAMALA DE PINZON,1999,0,12,12027,12027,pri,m,JUSTINIANO ARMENDARIS YAÑEZ,Term-limited-p-won,,prd,0.0649,0,0,0,,,,,
 4385,gue-11.027,CUTZAMALA DE PINZON,2002,0,12,12027,12027,pri,m,ISIDRO DUARTE CABRERA,Term-limited-p-won,,prd,0.1624,0,0,0,,,ok,,
@@ -4414,8 +4414,8 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4413,gue-17.029,CHILPANCINGO DE LOS BRAVO,2021,0,12,12029,12029,morena,f,NORMA OTILIA HERNANDEZ MARTINEZ,2024,,pri-prd,0.1266,0,,,,,,,
 4414,gue-07.030,FLORENCIO VILLARREAL,1989,0,12,12031,12030,pri,m,PEDRO VARGAS NAVA,Term-limited-p-won,,prd,0.0639,0,0,0,,,,,inafed
 4415,gue-08.030,FLORENCIO VILLARREAL,1993,0,12,12031,12030,pri,m,RODOLFO PIZA MOLINA,Term-limited-p-lost,,prd,0.1739,0,0,0,,,,,inafed
-4416,gue-09.030,FLORENCIO VILLARREAL,1996,0,12,12031,12030,prd,,VISMAR MOLINA GUTIERREZ,Term-limited-p-lost,,pri,0.1738,0,0,0,,,,,inafed
-4417,gue-10.030,FLORENCIO VILLARREAL,1999,0,12,12031,12030,pri,,ALVIS GALLARDO CARMONA,Term-limited-p-won,,prd,0.1018,0,0,0,,,,,
+4416,gue-09.030,FLORENCIO VILLARREAL,1996,0,12,12031,12030,prd,m,VISMAR MOLINA GUTIERREZ,Term-limited-p-lost,,pri,0.1738,0,0,0,,,,,inafed
+4417,gue-10.030,FLORENCIO VILLARREAL,1999,0,12,12031,12030,pri,m,ALVIS GALLARDO CARMONA,Term-limited-p-won,,prd,0.1018,0,0,0,,,,,
 4418,gue-11.030,FLORENCIO VILLARREAL,2002,0,12,12031,12030,pri,m,TEODORO LUVIO BERNAL,Term-limited-p-lost,,prd,0.0128,0,0,0,,,,,
 4419,gue-12.030,FLORENCIO VILLARREAL,2005,0,12,12031,12030,prd,m,MARGARITO GENCHI CASIANO,Term-limited-p-lost,,pri,0.018,0,0,0,,,,,
 4420,gue-13.030,FLORENCIO VILLARREAL,2008,0,12,12031,12030,pri,m,FULGENCIO GARIGO ONOFRE,Term-limited-p-lost,,prd,0.1241,0,0,0,,,,,
@@ -4440,7 +4440,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4439,gue-10.032,GENERAL HELIODORO CASTILLO,1999,0,12,12033,12032,pri,m,JOSE CONCEPCION HERNANDEZ SOLANO,Term-limited-p-won,,prs,0.194,0,0,0,,,,,
 4440,gue-11.032,GENERAL HELIODORO CASTILLO,2002,0,12,12033,12032,pri,m,SEVERO OYORZABAL DIAZ,Term-limited-p-lost,,prd,0.0101,0,0,0,,,,,
 4441,gue-12.032,GENERAL HELIODORO CASTILLO,2005,0,12,12033,12032,pan,m,EFRAIN FIGUEROA DURAN,Term-limited-p-lost,,pri,0.1109,0,0,0,,,,,
-4442,gue-13.032,GENERAL HELIODORO CASTILLO,2008,0,12,12033,12032,pri,,OLAGER HERNANDEZ FLORES,Term-limited-p-lost,,pan,0.3766,0,0,0,,,,,
+4442,gue-13.032,GENERAL HELIODORO CASTILLO,2008,0,12,12033,12032,pri,m,OLAGER HERNANDEZ FLORES,Term-limited-p-lost,,pan,0.3766,0,0,0,,,,,
 4443,gue-14.032,GENERAL HELIODORO CASTILLO,2012,0,12,12033,12032,prd,m,MARIO ALBERTO CHAVEZ CARBAJAL,Term-limited-p-lost,,pri,0.0906,0,0,0,,,,,
 4444,gue-15.032,GENERAL HELIODORO CASTILLO,2015,0,12,12033,12032,pri,m,JUAN PEDRO SALGADO ROMAN,Out-p-won,,prd,0.6289,0,0,0,,,,,
 4445,gue-16.032,GENERAL HELIODORO CASTILLO,2018,0,12,12033,12032,pri,m,SERAFIN HERNANDEZ LANDA,Reelected,,pt-morena-pes,0.5618,0,0,0,,,,,
@@ -4659,7 +4659,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4658,gue-09.052,SAN LUIS ACATLAN,1996,0,12,12053,12052,prd,m,GERARDO REYES ORTEGA,Term-limited-p-lost,,pri,0.1481,0,0,0,,,,,inafed
 4659,gue-10.052,SAN LUIS ACATLAN,1999,0,12,12053,12052,pri,m,ABDIAS ACEVEDO ROJAS,Term-limited-p-lost,,prd,0.0964,0,0,0,,,,,
 4660,gue-11.052,SAN LUIS ACATLAN,2002,0,12,12053,12052,prd,m,GENARO VASQUEZ SOLIS,Term-limited-p-lost,,pri,0.1601,0,0,0,,,,,
-4661,gue-12.052,SAN LUIS ACATLAN,2005,0,12,12053,12052,pri,,SANTACRUZ NAVA LEZAMA,Term-limited-p-lost,,prd-prs,0.13,0,0,0,,,,,
+4661,gue-12.052,SAN LUIS ACATLAN,2005,0,12,12053,12052,pri,m,SANTACRUZ NAVA LEZAMA,Term-limited-p-lost,,prd-prs,0.13,0,0,0,,,,,
 4662,gue-13.052,SAN LUIS ACATLAN,2008,0,12,12053,12052,prd,m,VICARIO PORTILLO MARTINEZ,Term-limited-p-lost,,pri,0.0317,0,0,0,,,,,
 4663,gue-14.052,SAN LUIS ACATLAN,2012,0,12,12053,12052,pri-pvem,m,ALEJANDRO CONTRERAS VELASCO,Term-limited-p-lost,,prd,0.0429,0,0,0,,,,,
 4664,gue-15.052,SAN LUIS ACATLAN,2015,0,12,12053,12052,mc,m,JAVIER VAZQUEZ GARCIA,Out-p-lost,,prd-pt,0.0844,0,0,0,,,,,
@@ -4668,7 +4668,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4667,gue-07.053,SAN MARCOS,1989,0,12,12054,12053,pri,,,Term-limited-p-won,,prd,0.7283,0,0,0,,,,,
 4668,gue-08.053,SAN MARCOS,1993,0,12,12054,12053,pri,m,ARQUIMIDEZ SANDOVAL VAZQUEZ,Term-limited-p-won,,prd,0.1888,0,0,0,,,,,inafed
 4669,gue-09.053,SAN MARCOS,1996,0,12,12054,12053,pri,m,JAIME HEREDIA GUTIERREZ,Term-limited-p-won,,prd,0.5189,0,0,0,,,,,inafed
-4670,gue-10.053,SAN MARCOS,1999,0,12,12054,12053,pri,,CANTORBEY HERRERA LOZANO,Term-limited-p-lost,,prd,0.1373,0,0,0,,,,,
+4670,gue-10.053,SAN MARCOS,1999,0,12,12054,12053,pri,m,CANTORBEY HERRERA LOZANO,Term-limited-p-lost,,prd,0.1373,0,0,0,,,,,
 4671,gue-11.053,SAN MARCOS,2002,0,12,12054,12053,pan,m,FERNANDO SOTELO DEL CARMEN,Term-limited-p-lost,,pri,0.0262,0,0,0,,,,,
 4672,gue-12.053,SAN MARCOS,2005,0,12,12054,12053,pri,m,ARMANDO BIBIANO GARCIA,Term-limited-p-lost,,pan,0.0971,0,0,0,,,,,
 4673,gue-13.053,SAN MARCOS,2008,0,12,12054,12053,prd,m,GUSTAVO VILLANUEVA BARRERA,Term-limited-p-won,,pri-pvem,0.0012,0,1,1,,,,,
@@ -4715,7 +4715,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4714,gue-10.057,TECPAN DE GALEANA,1999,0,12,12058,12057,pri,f,SANDRA B OCAMPO HERNANDEZ,Term-limited-p-won,,prd,0.2443,0,0,0,,,,,
 4715,gue-11.057,TECPAN DE GALEANA,2002,0,12,12058,12057,pri,m,JESUS ORBE TORRES,Term-limited-p-lost,,prd,0.0448,0,0,0,,,,,
 4716,gue-12.057,TECPAN DE GALEANA,2005,0,12,12058,12057,prd,m,ELFEGO MARTINEZ GONZALEZ,Term-limited-p-lost,,pri,0.001,0,0,0,,,,,
-4717,gue-13.057,TECPAN DE GALEANA,2008,0,12,12058,12057,pri,,NADIN TORREALBA MEJIA,Term-limited-p-lost,,prd,0.064,0,0,0,,,,,
+4717,gue-13.057,TECPAN DE GALEANA,2008,0,12,12058,12057,pri,m,NADIN TORREALBA MEJIA,Term-limited-p-lost,,prd,0.064,0,0,0,,,,,
 4718,gue-14.057,TECPAN DE GALEANA,2012,0,12,12058,12057,prd-pt-conve,m,CRISOFORO OTERO HEREDIA,Term-limited-p-lost,,pna,0.0643,0,0,0,,,,,
 4719,gue-15.057,TECPAN DE GALEANA,2015,0,12,12058,12057,pri,m,LEOPOLDO SOBERANIS HERNANDEZ,Out-p-lost,,prd,0.2085,0,0,0,,,,,
 4720,gue-16.057,TECPAN DE GALEANA,2018,0,12,12058,12057,pan-prd-mc,m,JESUS YASIR DELOYA DIAZ,Reelected-dif-p,,pri,0.0387,0,0,0,,,,reran under pri-prd and won,
@@ -4838,7 +4838,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 4837,gue-12.068,UNION DE ISIDORO MONTES DE OCA--LA,2005,0,12,12069,12068,pri,m,SERVANDO AYALA RODRIGUEZ,Term-limited-p-won,,prd-prs,0.0151,0,0,0,,,,,
 4838,gue-13.068,UNION DE ISIDORO MONTES DE OCA--LA,2008,0,12,12069,12068,pri,m,JORGE LUIS SOLCHAGA MARTINEZ,Term-limited-p-lost,,prd,0.0645,0,0,0,,,,,
 4839,gue-14.068,UNION DE ISIDORO MONTES DE OCA--LA,2012,0,12,12069,12068,prd,m,CRESCENCIO REYES TORRES,Term-limited-p-won,,pri,0.0974,0,0,0,,,ok,,
-4840,gue-15.068,UNION DE ISIDORO MONTES DE OCA--LA,2015,0,12,12069,12068,prd,,AVIUD ROSAS RUIZ,Out-p-won,,pri-pvem,0.1023,0,0,0,,,,,
+4840,gue-15.068,UNION DE ISIDORO MONTES DE OCA--LA,2015,0,12,12069,12068,prd,m,AVIUD ROSAS RUIZ,Out-p-won,,pri-pvem,0.1023,0,0,0,,,,,
 4841,gue-16.068,UNION DE ISIDORO MONTES DE OCA--LA,2018,0,12,12069,12068,pan-prd-mc,m,CRESCENCIO REYES TORRES,Out-p-won,,pvem,0.3069,0,1,1,,,ok,,
 4842,gue-17.068,UNION DE ISIDORO MONTES DE OCA--LA,2021,0,12,12069,12068,prd,m,CRESCENCIO REYES TORRES,2024,,morena,0.2465,0,,,,,,,
 4843,gue-07.069,XALPATLAHUAC,1989,0,12,12070,12069,pri,,,Term-limited-p-won,,prd,0.5189,0,0,0,,,,,
@@ -5216,7 +5216,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 5215,hgo-07.027,HUEHUETLA,1990,0,13,13027,13027,pri,m,TOMAS FLORES TOLENTINO,Term-limited-p-won,,prd,0.6513,0,0,0,,,,,inafed
 5216,hgo-08.027,HUEHUETLA,1993,0,13,13027,13027,pri,m,ERNESTO VARGAS CADENA,Term-limited-p-won,,prd,0.6571,0,0,0,,,,,inafed
 5217,hgo-09.027,HUEHUETLA,1996,0,13,13027,13027,pri,m,JOSE ROLANDO SEVILLA,Term-limited-p-won,,prd,0.5231,0,0,0,,,,,inafed
-5218,hgo-10.027,HUEHUETLA,1999,0,13,13027,13027,pri,,SALI BASS ARROYO,Term-limited-p-won,,prd,0.0503,0,0,0,,,,,
+5218,hgo-10.027,HUEHUETLA,1999,0,13,13027,13027,pri,m,SALI BASS ARROYO,Term-limited-p-won,,prd,0.0503,0,0,0,,,,,
 5219,hgo-11.027,HUEHUETLA,2002,0,13,13027,13027,pri,m,ALEJANDRO ESCOBAR LEYVA,Term-limited-p-lost,,prd,0.1591,0,0,0,,,,,
 5220,hgo-12.027,HUEHUETLA,2005,0,13,13027,13027,prd,m,PLINIO ISLAS OLIVARES,Term-limited-p-lost,,pri,0.1763,0,0,0,,,,,
 5221,hgo-13.027,HUEHUETLA,2008,0,13,13027,13027,pvem,m,FREDY LAU RIOS,Term-limited-p-lost,,pri-pna,0.0816,0,0,0,,,,,
@@ -5374,7 +5374,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,win,mf,incumbent,race.after,runnerup,pty2nd
 5373,hgo-15.042,MOLANGO DE ESCAMILLA,2016,0,13,13042,13042,pes,m,RAUL LOZANO CANO,Term-limited-p-lost,,pri-pvem-pna,0.0768,0,0,0,,,,,
 5374,hgo-16.042,MOLANGO DE ESCAMILLA,2020,0,13,13042,13042,pri,m,ALEJANDRO DIONICIO VELASCO,2024,,prd,0.0201,0,,,,,,,
 5375,hgo-07.043,NICOLAS FLORES,1990,0,13,13043,13043,pri,m,HECTOR GARCIA LEAL,Term-limited-p-won,,prd,0.8845,0,0,0,,,,,inafed
-5376,hgo-08.043,NICOLAS FLORES,1993,0,13,13043,13043,pri,,MISAEL TORRES F.,Term-limited-p-won,,prd,0.6521,0,0,0,,,,,inafed
+5376,hgo-08.043,NICOLAS FLORES,1993,0,13,13043,13043,pri,,MISAEL TORRES F,Term-limited-p-won,,prd,0.6521,0,0,0,,,,,inafed
 5377,hgo-09.043,NICOLAS FLORES,1996,0,13,13043,13043,pri,f,EVANGELINA FEDERICO M.,Term-limited-p-won,,prd,0.3465,0,0,0,,,,,inafed
 5378,hgo-10.043,NICOLAS FLORES,1999,0,13,13043,13043,pri,m,ERIC TORRES GARCIA,Term-limited-p-won,,prd,0.266,0,0,0,,,,,
 5379,hgo-11.043,NICOLAS FLORES,2002,0,13,13043,13043,pri,m,SABINO OLGUIN CHAVEZ,Term-limited-p-lost,,pan,0.5992,0,0,0,,,,,
