@@ -40,9 +40,10 @@ l <- read.csv(paste0(sd, "lisnom1991se.csv"))
 #
 ## 1991 reports use inegi instead of ife (???)
 ## import conversion function
-source("../ancillary/ife_to_inegi.r")
+source("../../ancillary/ife_to_inegi.r")
 d$inegi <- inegi.to.ife(d$inegi)
 d <- col.rename(d, "inegi", "ife")
+d$edosecn <- d$ife*1000000 + d$disn*10000 + d$seccion
 # rename columns
 l <- col.rename(l, "ESTADO",    "edon")
 l <- col.rename(l, "SECCION",   "seccion")
@@ -50,13 +51,14 @@ l <- col.rename(l, "LISTA",     "lisnom")
 l <- col.rename(l, "DISTRITO",  "disn")
 l <- col.rename(l, "MUNICIPIO", "ife")
 l$ife <- l$edon*1000 + l$ife
+l$edosecn <- l$ife*1000000 + l$disn*10000 + l$seccion
 # no seccion duplicates
-l$id <- l$edon*10000000 + l$disn*10000 + l$ife + l$seccion/10000
-table(duplicated(l$id))
+table(duplicated(l$edosecn))
 #table(l$id[l$edon==29])
 #
 # subset
-l <- l[,c("edon","disn","ife","seccion","lisnom")]
+##l <- l[,c("edon","disn","ife","seccion","lisnom")]
+l <- l[,c("edosecn","lisnom")]
 l <- col.rename(l, "lisnom",  "lisnom.se")
 #
 # merge seccion-level lisnom into d
