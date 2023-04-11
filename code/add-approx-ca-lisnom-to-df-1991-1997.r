@@ -62,7 +62,7 @@ l <- l[,c("edosecn","lisnom")]
 l <- col.rename(l, "lisnom",  "lisnom.se")
 #
 # merge seccion-level lisnom into d
-d <- merge(x=d, y=l, by=c("edon","disn","ife","seccion"), all.x = TRUE, all.y = FALSE)
+d <- merge(x=d, y=l, by="edosecn", all.x = TRUE, all.y = FALSE)
 #
 head(d)
 head(l)
@@ -71,7 +71,7 @@ table(is.na(d$lisnom.se)) # these secciones do not appear in lista nominal
 sel <- which(is.na(d$lisnom.se))
 head(d[sel,c("edon","disn","ife","seccion","casilla","lisnom.se")])
 #
-d$lisnom.ca <- ave(d$lisnom.se, as.factor(paste(d$edon, d$seccion, sep = "-")), FUN=even.out, na.rm=TRUE)
+d$lisnom.ca <- ave(d$lisnom.se, as.factor(d$edosecn), FUN=even.out, na.rm=TRUE)
 #    
 table(is.na(d$lisnom.ca))
 #
