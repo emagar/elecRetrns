@@ -3,12 +3,13 @@
 POBTOT/
 code/stata/
 colindanciasMun/
+data/deprecated/
+data/xport/
 datosBrutos/not-in-git
 datosBrutos/acuerdosCoalicion/not-in-git
 datospibe/
 lit/
 oldVers/
-data/xport/
 tmp*.*
 tmp-prep/
 

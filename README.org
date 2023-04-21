@@ -34,12 +34,12 @@ Recent additions
 
 * Description of /Recent Mexican Election Vote Returns/ repository
 - Author: Eric Magar
+- Location https://github.com/emagar/elecRetrns
 - Email: emagar at itam dot mx
-
+- Citation for the data: see 'About' on the repository landing page
 The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
 
-/Important note:/ older incarnations of this this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
-
+/Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 * Files in the repository and how to cite them
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted next to the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 
@@ -68,10 +68,9 @@ In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*
 - [[./datosBrutos/][~datosBrutos/~]] = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit... [[mailto:emagar@itam.mx][e-mail me]] if you need any of these.
 * Codebook
 Most variables are included in every file, some appear in selected files only.  
-
 - /edon/ = state number 1:32.
 - /edo/ = state abbreviation (may differ from the 'official' abbreviations so that sorting them alphabetically preserves the order set by /edon/).
-- /disn/ = district number.
+- /disn/ = /edon/*100 + district number.
 - /emm/ = municipal indentifying code (edo-electionCycle.inegi). 
 - /mun/ = municipality.
 - /munn/, /inegi/, /ife/ = municipal identifier, reporting the number and the codes used by INEGI and IFE, respectively.

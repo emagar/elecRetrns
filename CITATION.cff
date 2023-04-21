@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Magar
+    given-names: Eric
+    orcid: https://orcid.org/0000-0002-6766-1677
+title: "Recent Mexican Election Vote Returns"
+#version: 1.0
+#doi: 10.5281/zenodo.1234
+date-released: 2018-04-04
+last-revision: 2023-03-10
+url: "https://github.com/emagar/elecRetrns"
+#commit: "40f8e8ee7ce699af1a77582e5363b25b260b8585"
