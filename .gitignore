@@ -5,6 +5,7 @@ code/stata/
 colindanciasMun/
 data/deprecated/
 data/xport/
+data/v-hats-etc/too-big-4-github
 datosBrutos/not-in-git
 datosBrutos/acuerdosCoalicion/not-in-git
 datospibe/
@@ -81,6 +82,13 @@ tramp
 
 # AUCTeX auto folder
 /auto/
+
+# tex files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
 
 # cask packages
 .cask/
