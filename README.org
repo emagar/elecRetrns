@@ -8,9 +8,7 @@ Last revision: 2023-03-10
 Recent additions
 </h2>
 
-<sup><sup>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. 
-
-Despite using electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. See [[https://emagar.github.io/residuales-2018-english/][this]] blog post for details. There are several additions: (1) Pre-2009 v.hat predictions generated using same general approach, but backwards. Year t's predicted vote in the period is a linear projection of the unit's vote observed in years t+15, t+12 ... t+3. (2) Estimates and predictions for districts as units of obsevation added, including predicted votes for the suspicious 1988 election. (3) Script for split secciones finalized. 
+<sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite using electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. See [[https://emagar.github.io/residuales-2018-english/][this]] blog post for details. There are several additions: (1) Pre-2009 v.hat predictions generated using same general approach, but backwards. Year t's predicted vote in the period is a linear projection of the unit's vote observed in years t+15, t+12 ... t+3. (2) Estimates and predictions for districts as units of obsevation added, including predicted votes for the suspicious 1988 election. (3) Script for split secciones finalized. 
 
 <sup><sub>2023-03-10</sub></sup> *Inspect election returns online in Google sheets [[https://emagar.github.io/view-in-gSheets/][here]] (Beta)*
 

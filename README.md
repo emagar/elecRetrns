@@ -1,10 +1,10 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#org9e9caa8)
-- [Files in the repository and how to cite them](#org0066bff)
-- [Codebook](#org6f2eb82)
-- [Coding procedure for the incumbent's status<a id="org1cb0ce3"></a>](#orgf48c446)
-- [Procedimiento para codificar el estatus del ocupante<a id="orgc65a945"></a>](#org5432db6)
-- [Sources](#org285e385)
-- [Acknowledgements](#org9d7057d)
+- [Description of *Recent Mexican Election Vote Returns* repository](#orga61cb4e)
+- [Files in the repository and how to cite them](#orge47befa)
+- [Codebook](#org7bc3a6e)
+- [Coding procedure for the incumbent's status<a id="org56fe5bf"></a>](#orgac1771d)
+- [Procedimiento para codificar el estatus del ocupante<a id="org29da4ff"></a>](#orga880a64)
+- [Sources](#org1cd52b5)
+- [Acknowledgements](#orgaccaeae)
 
 Last revision: 2023-03-10
 
@@ -12,9 +12,7 @@ Last revision: 2023-03-10
 
 <h2> Recent additions </h2>
 
-<sup><sup>2023-05-26</sub></sup> **v.hat and alpha regressions**, summaring each unit's electoral history, migrated from <https://github.com/emagar/mxDistritos>.
-
-Despite using electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. See [this](https://emagar.github.io/residuales-2018-english/) blog post for details. There are several additions: (1) Pre-2009 v.hat predictions generated using same general approach, but backwards. Year t's predicted vote in the period is a linear projection of the unit's vote observed in years t+15, t+12 &#x2026; t+3. (2) Estimates and predictions for districts as units of obsevation added, including predicted votes for the suspicious 1988 election. (3) Script for split secciones finalized.
+<sup><sub>2023-05-26</sub></sup> **v.hat and alpha regressions**, summaring each unit's electoral history, migrated from <https://github.com/emagar/mxDistritos>. Despite using electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. See [this](https://emagar.github.io/residuales-2018-english/) blog post for details. There are several additions: (1) Pre-2009 v.hat predictions generated using same general approach, but backwards. Year t's predicted vote in the period is a linear projection of the unit's vote observed in years t+15, t+12 &#x2026; t+3. (2) Estimates and predictions for districts as units of obsevation added, including predicted votes for the suspicious 1988 election. (3) Script for split secciones finalized.
 
 <sup><sub>2023-03-10</sub></sup> **Inspect election returns online in Google sheets [here](https://emagar.github.io/view-in-gSheets/) (Beta)**
 
@@ -27,7 +25,7 @@ Despite using electoral maps to maintain unit geography longitudinally constant,
 ---
 
 
-<a id="org9e9caa8"></a>
+<a id="orga61cb4e"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -41,7 +39,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="org0066bff"></a>
+<a id="orge47befa"></a>
 
 # Files in the repository and how to cite them
 
@@ -72,7 +70,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
 
-<a id="org6f2eb82"></a>
+<a id="org7bc3a6e"></a>
 
 # Codebook
 
@@ -110,13 +108,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org1cb0ce3) for categories and coding procedure ([aquí](#orgc65a945) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org56fe5bf) for categories and coding procedure ([aquí](#org29da4ff) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="orgf48c446"></a>
+<a id="orgac1771d"></a>
 
-# Coding procedure for the incumbent's status<a id="org1cb0ce3"></a>
+# Coding procedure for the incumbent's status<a id="org56fe5bf"></a>
 
 In file `data/aymu1985-on.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -134,9 +132,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org5432db6"></a>
+<a id="orga880a64"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="orgc65a945"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org29da4ff"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -154,7 +152,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org285e385"></a>
+<a id="org1cd52b5"></a>
 
 # Sources
 
@@ -169,7 +167,7 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="org9d7057d"></a>
+<a id="orgaccaeae"></a>
 
 # Acknowledgements
 
