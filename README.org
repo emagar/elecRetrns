@@ -48,7 +48,7 @@ You are free to download and modify the data (see the LICENSE document for detai
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/.
 
 - [[./data/aymu1989-present.csv][~data/aymu1970-on.csv~]] = updated to 2022, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-  - Inspect data online in Google sheets: coalitions aggregated by candidate [[https://emagar.github.io/view-in-gSheets/::aymu_cand][here]].
+  - Inspect data online in Google sheets: coalitions aggregated by candidate [[https://emagar.github.io/view-in-gSheets.html::aymu_cand][here]]. 
 
 # - [[https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy][1970s]
 # - [[https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy][1980s]]

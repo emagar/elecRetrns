@@ -1,10 +1,10 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#org543e0e9)
-- [Files in the repository and how to cite them](#org94853f6)
-- [Codebook](#org8d8081c)
-- [Coding procedure for the incumbent's status<a id="org488cfe6"></a>](#org04e19da)
-- [Procedimiento para codificar el estatus del ocupante<a id="org7d16def"></a>](#org11bb4b9)
-- [Sources](#org6a6c29b)
-- [Acknowledgements](#org274cd5b)
+- [Description of *Recent Mexican Election Vote Returns* repository](#org79ea5dd)
+- [Files in the repository and how to cite them](#org385f69b)
+- [Codebook](#orgef719b2)
+- [Coding procedure for the incumbent's status<a id="org5490263"></a>](#org7b15728)
+- [Procedimiento para codificar el estatus del ocupante<a id="org831e5d8"></a>](#orgc5cb96f)
+- [Sources](#org48a9cbd)
+- [Acknowledgements](#orgf6296d5)
 
 Last revision: 2023-05-27
 
@@ -25,7 +25,7 @@ Last revision: 2023-05-27
 ---
 
 
-<a id="org543e0e9"></a>
+<a id="org79ea5dd"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -39,7 +39,7 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="org94853f6"></a>
+<a id="org385f69b"></a>
 
 # Files in the repository and how to cite them
 
@@ -48,7 +48,7 @@ You are free to download and modify the data (see the LICENSE document for detai
 In general, file names identify the office elected (i.e., **df**, **se**, **pr**, **dl**, **go**, **ay** for *diputados federales*, *senadores*, *presidente*, *diputados locales*, *gobernador*, and *ayuntamiento*, respectively), followed by the unit of observation (i.e., **ed**, **df**, **dl**, **mu**, **de**, **se**, **ca** for *estado*, *distrito federal*, *distrito local*, *municipio*, *demarcación*, *sección*, and *casilla* respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), *ayuntamientos* are elected in fused ballots for a *presidente municipal* and a fraction of the municipal council (*regidores* and *síndicos*). Nayarit elects these members of the municipal council in single-member plurality districts called *demarcaciones*.
 
 -   [`data/aymu1970-on.csv`](./data/aymu1989-present.csv) = updated to 2022, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-    -   Inspect data online in Google sheets: coalitions aggregated by candidate [here](https://emagar.github.io/view-in-gSheets/::aymu_cand).
+    -   Inspect data online in Google sheets: coalitions aggregated by candidate [here](https://emagar.github.io/view-in-gSheets.html::aymu_cand).
 
 -   [`data/aymu-upto-1988.csv`](./data/aymu-upto-1988.csv) = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
 -   [`data/aymu1989-on.coalAgg.csv`](./data/aymu1989-present.coalAgg.csv) = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
@@ -72,7 +72,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
 
-<a id="org8d8081c"></a>
+<a id="orgef719b2"></a>
 
 # Codebook
 
@@ -110,13 +110,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org488cfe6) for categories and coding procedure ([aquí](#org7d16def) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#org5490263) for categories and coding procedure ([aquí](#org831e5d8) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="org04e19da"></a>
+<a id="org7b15728"></a>
 
-# Coding procedure for the incumbent's status<a id="org488cfe6"></a>
+# Coding procedure for the incumbent's status<a id="org5490263"></a>
 
 In file `data/aymu1985-on.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -134,9 +134,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org11bb4b9"></a>
+<a id="orgc5cb96f"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org7d16def"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org831e5d8"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -154,7 +154,7 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org6a6c29b"></a>
+<a id="org48a9cbd"></a>
 
 # Sources
 
@@ -169,7 +169,7 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="org274cd5b"></a>
+<a id="orgf6296d5"></a>
 
 # Acknowledgements
 
