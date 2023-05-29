@@ -48,17 +48,17 @@ You are free to download and modify the data (see the LICENSE document for detai
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/.
 
 - [[./data/aymu1989-present.csv][~data/aymu1970-on.csv~]] = updated to 2022, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-  - Inspect data online in Google sheets: 
+  - Inspect data online in Google sheets (basic instructions [[instrucciones][here]]): 
       - coalitions aggregated by candidate [[https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy][1970s]] [[https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy][1990s]] [[https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy][2000s]] [[https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy][2010s]] [[https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy][2020s]]
       - coalitions split by party [[https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/edit?usp=sharing][1970s]] [[https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/edit?usp=sharing][1990s]] [[https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/edit?usp=sharing][2000s]] [[https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/edit?usp=sharing][2010s]] [[https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/edit?usp=sharing][2020s]]
 
+/Note/: data split by approximate decades to comply with Google's maximum spreadsheet size (400k cells); files have identical columns to ease appending one another off Google drive.
 
-
-- [[./data/aymu-upto-1988.csv][~data/aymu-upto-1988.csv~]] = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-- [[./data/aymu1989-present.coalAgg.csv][~data/aymu1989-on.coalAgg.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
-- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1989-on.coalSplit.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly split among its members.
+# - [[./data/aymu-upto-1988.csv][~data/aymu-upto-1988.csv~]] = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
+- [[./data/aymu1989-present.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = pre-processed version of the above so that coalition votes appear properly aggregated.
+- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = pre-processed version of the above (starting in 1989) so that coalition votes appear properly split among its members.
 - [[./data/aymu1989-present.incumbents.csv][~data/aymu1989-on.incumbents.csv~]] = names of municipal election winning candidates (/presidente municipal/ only) since 1989. Includes reelection status since 2018. 
-- [[./data/ayde2008-presentNayRegid.csv][~data/ayde2008-onNayRegid.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008.
+- [[./data/ayde2008-presentNayRegid.csv][~data/ayde2008-on-Nayarit-regid.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008.
 - [[./code/ay.r][~code/ay.r~]] = script to manipulate /ayuntamiento/ returns.
 - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
@@ -136,6 +136,14 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 - El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora). 
 - El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
+* <<instrucciones>>Basic instructions to inspect data online: 
+You can open election returns in online spreadsheet form. 
+
+a. To use this feature, you must first log into a Google account. Then click the desired file's link, and confirm you wish a copy. A Google spreadsheet will open in your browser. 
+
+b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a subset of the observations only), or save the file to your hard drive, you must unlink the data from the repository. To do this type CTRL+A (ie., select all) then CTRL+SHIFT+V (ie., paste values only). 
+
+c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change. 
 * Sources
 Work in progress
 - /Fuente/ = iee/ife/ine indicates data obtained from the primary source, the state/federal election board's web site. 

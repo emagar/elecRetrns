@@ -14,6 +14,9 @@ oldVers/
 tmp*.*
 tmp-prep/
 
+# data the needs not be distrubuted
+data/aymu1970-on.csv
+
 # open libreoffice files
 .~*.*#
 
