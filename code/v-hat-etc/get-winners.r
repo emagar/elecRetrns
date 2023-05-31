@@ -11,6 +11,10 @@ if (agg=="m") {
     winner <- v21[,c("edon","inegi","ife")] # will receive data, change to latest v.. after new election to get full list of muns 
     rownames(winner) <- NULL
 }
+if (agg=="d") {
+    winner <- v21[,c("edon","disn")] # will receive data
+    rownames(winner) <- NULL
+}
 if (agg=="s") {
     winner <- v21[,c("edon","seccion")] # will receive data
     rownames(winner) <- NULL
@@ -151,7 +155,7 @@ message("2018 done")
 ######################
 ## 2021 (uses v21w) ##
 ######################
-# OJO 22jul2021: need to check that this works when agg=="s", esp. line 146
+# OJO 22jul2021: need to check that this works when agg=="s"
 sel.c <- c("pan","pri","prd","pvem","pt","mc","morena","pes","rsp","fxm","indep","panc","pric","morenac")
 v <- v21w[,sel.c]
 v <- v / rowSums(v)

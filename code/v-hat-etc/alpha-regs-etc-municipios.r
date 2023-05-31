@@ -5,7 +5,7 @@
 ## Author: Eric Magar                                             ##
 ## emagar at itam dot mx                                          ##
 ## Date: 17apr2023                                                ##
-## Last modified:  9may2023                                       ##
+## Last modified: 30may2023                                       ##
 ####################################################################
 
 ###################################################################
@@ -2799,18 +2799,14 @@ extendCoalm94 <-
     tmp
 rm(tmp)
 
-## if (agg=="s"){
-##     extendCoal <- as.list(rep(NA, nrow(v00s))) # empty list will receive one data.frame per unit
-##     names(extendCoal) <- v00s$edon*10000 + v00s$seccion # untested
-## }
 
-# loop over municipios
+## loop over municipios
 for (i in 1:nmun){
-    #i <- 81 # debug
+    ##i <- 81 # debug
     message(sprintf("loop %s of %s", i, nmun))
-    #########################
+    ## ######################
     ## votes with 2021 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm21   [,i] ,
                       pri    = prim21   [,i] ,
@@ -2818,7 +2814,7 @@ for (i in 1:nmun){
                       oth    = othm21   [,i] ,
                       efec   = efecm21  [,i] ,
                       lisnom = lisnomm21[,i] )
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2828,22 +2824,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm21[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm21)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2018 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm18[,i],
                       pri    = prim18[,i],
@@ -2851,7 +2847,7 @@ for (i in 1:nmun){
                       oth    = othm18[,i],
                       efec   = efecm18[,i],
                       lisnom = lisnomm18[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2861,22 +2857,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm18[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm18)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2015 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm15[,i],
                       pri    = prim15[,i],
@@ -2884,7 +2880,7 @@ for (i in 1:nmun){
                       oth    = othm15[,i],
                       efec   = efecm15[,i],
                       lisnom = lisnomm15[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2894,22 +2890,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm15[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm15)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2012 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm12[,i],
                       pri    = prim12[,i],
@@ -2917,7 +2913,7 @@ for (i in 1:nmun){
                       oth    = othm12[,i],
                       efec   = efecm12[,i],
                       lisnom = lisnomm12[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2927,22 +2923,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm12[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm12)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2009 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm09[,i],
                       pri    = prim09[,i],
@@ -2950,7 +2946,7 @@ for (i in 1:nmun){
                       oth    = othm09[,i],
                       efec   = efecm09[,i],
                       lisnom = lisnomm09[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2960,22 +2956,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm09[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm09)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2006 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm06[,i],
                       pri    = prim06[,i],
@@ -2983,7 +2979,7 @@ for (i in 1:nmun){
                       oth    = othm06[,i],
                       efec   = efecm06[,i],
                       lisnom = lisnomm06[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -2993,22 +2989,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm06[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm06)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2003 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm03[,i],
                       pri    = prim03[,i],
@@ -3016,7 +3012,7 @@ for (i in 1:nmun){
                       oth    = othm03[,i],
                       efec   = efecm03[,i],
                       lisnom = lisnomm03[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -3026,22 +3022,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm03[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm03)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 2000 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm00[,i],
                       pri    = prim00[,i],
@@ -3049,7 +3045,7 @@ for (i in 1:nmun){
                       oth    = othm00[,i],
                       efec   = efecm00[,i],
                       lisnom = lisnomm00[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -3059,22 +3055,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm00[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm00)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 1997 map ##
-    #########################
+    ## ######################
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm97[,i],
                       pri    = prim97[,i],
@@ -3082,7 +3078,7 @@ for (i in 1:nmun){
                       oth    = othm97[,i],
                       efec   = efecm97[,i],
                       lisnom = lisnomm97[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -3092,22 +3088,22 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm97[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm97)[i] <- tmp$ife[1]
-    #
-    #########################
+    ##
+    ## ######################
     ## votes with 1994 map ##
-    #########################
+    ## ######################
     ##tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
     tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
                       pan    = panm94[,i],
@@ -3116,7 +3112,7 @@ for (i in 1:nmun){
                       oth    = othm94[,i],
                       efec   = efecm94[,i],
                       lisnom = lisnomm94[,i])
-    # replace NAs with period's mean
+    ## replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
         tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
@@ -3126,17 +3122,17 @@ for (i in 1:nmun){
         tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
         tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
     }
-    # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
+    ## add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
         tmp[tmp==0] <- 0.001;
     }
-    # re-compute shares to add to 1
+    ## re-compute shares to add to 1
     tmp[,2:5] <- round(tmp[,2:5] / rowSums(tmp[,2:5]),3)
-    # add id
+    ## add id
     tmp$ife    <- v00m$ife[i]
-    # fill info to new list
+    ## fill info to new list
     extendCoalm94[[i]] <- tmp
-    # name list object
+    ## name list object
     names(extendCoalm94)[i] <- tmp$ife[1]
     ##
     ## #########################
@@ -3172,7 +3168,7 @@ for (i in 1:nmun){
     ## # name list object
     ## names(extendCoalm91)[i] <- tmp$ife[1]
 }
-# clean
+## clean
 ##rm(panm91,prim91,leftm91,othm91,efecm91,lisnomm91)
 rm(panm94,prim94,leftm94,othm94,efecm94,lisnomm94)
 rm(panm97,prim97,leftm97,othm97,efecm97,lisnomm97)
@@ -3188,7 +3184,7 @@ rm(panm21,prim21,leftm21,othm21,efecm21,lisnomm21)
 ##################################
 ## datos para regresión de alfa ##
 ##################################
-#
+##
 #############################################################################################################
 ## Nota 16jul2021: al añadir datos 2021 cambiarán todas las alfas y betas! Una solución fácil (que usaré)  ##
 ## y otra que requiere más coco. La fácil es reestimar con 2021 e identificar el commit que reportaba la   ##
@@ -3201,87 +3197,83 @@ yr.means <- data.frame(yr = seq(1991,2021,3), # 11 election-years
                        pri    = rep(NA,11),
                        left   = rep(NA,11),
                        oth    = rep(NA,11))
-# function to sum numeric columns
-## if (agg=="s"){
-##     cs <- function(x) colSums(x[x$dunbaja==0,], na.rm=TRUE) # drops secciones that received aggregates upon splitting
-## } else {
-    cs <- function(x){
-        sel.nums <- unlist(lapply(x, is.numeric), use.names = FALSE) # selects only numeric columns in data frame
-        res <- colSums(x[,sel.nums], na.rm=TRUE)
-        return(res)
-## }
+## function to sum numeric columns
+cs <- function(x){
+    sel.nums <- unlist(lapply(x, is.numeric), use.names = FALSE) # selects only numeric columns in data frame
+    res <- colSums(x[,sel.nums], na.rm=TRUE)
+    return(res)
 }
 #
-# compute national mean vote
+## compute national mean vote
 yr.means$pan [1] <-  cs(v91s)["pan"]  /  cs(v91s)["efec"]
 yr.means$pri [1] <-  cs(v91s)["pri"]  /  cs(v91s)["efec"]
 yr.means$left[1] <-  cs(v91s)["prd"]  /  cs(v91s)["efec"]
 yr.means$oth [1] <-  with(yr.means[1,], 1 - pan - pri - left)
-#
+##
 yr.means$pan [2] <-  cs(v94s)["pan"]  / cs(v94s)["efec"]
 yr.means$pri [2] <-  cs(v94s)["pri"]  / cs(v94s)["efec"]
 yr.means$left[2] <-  cs(v94s)["prd"]  / cs(v94s)["efec"]
 yr.means$oth [2] <-  with(yr.means[2,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [3] <-  cs(v97s)["pan"]  / cs(v97s)["efec"]
 yr.means$pri [3] <-  cs(v97s)["pri"]  / cs(v97s)["efec"]
 yr.means$left[3] <-  cs(v97s)["prd"]  / cs(v97s)["efec"]
 yr.means$oth [3] <-  with(yr.means[3,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [4] <-  cs(v00s)["panc"]  / cs(v00s)["efec"]
 yr.means$pri [4] <-  cs(v00s)["pri"]   / cs(v00s)["efec"]
 yr.means$left[4] <-  cs(v00s)["prdc"]  / cs(v00s)["efec"]
 yr.means$oth [4] <-  with(yr.means[4,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [5] <-  cs(v03s)["pan"]                                         / cs(v03s)["efec"]
 yr.means$pri [5] <- (cs(v03s)["pri"] + cs(v03s)["pric"] + cs(v03s)["pvem"])  / cs(v03s)["efec"]
 yr.means$left[5] <- (cs(v03s)["prd"] + cs(v03s)["pt"]   + cs(v03s)["conve"]) / cs(v03s)["efec"]
 yr.means$oth [5] <-  with(yr.means[5,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [6] <-  cs(v06s)["pan"]   / cs(v06s)["efec"]
 yr.means$pri [6] <-  cs(v06s)["pric"]  / cs(v06s)["efec"]
 yr.means$left[6] <-  cs(v06s)["prdc"]  / cs(v06s)["efec"]
 yr.means$oth [6] <-  with(yr.means[6,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [7] <-  cs(v09s)["pan"]                                                           / cs(v09s)["efec"]
 yr.means$pri [7] <- (cs(v09s)["pri"] + cs(v09s)["pric"] + cs(v09s)["pvem"])                    / cs(v09s)["efec"]
 yr.means$left[7] <- (cs(v09s)["prd"] + cs(v09s)["pt"]   + cs(v09s)["ptc"] + cs(v09s)["conve"]) / cs(v09s)["efec"]
 yr.means$oth [7] <-  with(yr.means[7,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [8] <-  cs(v12s)["pan"]                                                       / cs(v12s)["efec"]
 yr.means$pri [8] <- (cs(v12s)["pri"] + cs(v12s)["pric"] + cs(v12s)["pvem"])                / cs(v12s)["efec"]
 yr.means$left[8] <- (cs(v12s)["prd"] + cs(v12s)["prdc"] + cs(v12s)["pt"] + cs(v12s)["mc"]) / cs(v12s)["efec"]
 yr.means$oth [8] <-  with(yr.means[8,], 1 - pan - pri - left)
-#                
+##                
 yr.means$pan [9] <-  cs(v15s)["pan"]                                                            / cs(v15s)["efec"]
 yr.means$pri [9] <- (cs(v15s)["pri"] + cs(v15s)["pric"] + cs(v15s)["pvem"])                     / cs(v15s)["efec"]
 yr.means$left[9] <- (cs(v15s)["prd"] + cs(v15s)["prdc"] + cs(v15s)["pt"] + cs(v15s)["morena"] ) / cs(v15s)["efec"] # dropped cs(v15s)["pes"]
 yr.means$oth [9] <-  with(yr.means[9,], 1 - pan - pri - left)
-#
+##
 yr.means$pan [10] <- (cs(v18s)["pan"]    + cs(v18s)["panc"]    + cs(v18s)["prd"]  + cs(v18s)["mc"])  / cs(v18s)["efec"]
 yr.means$pri [10] <- (cs(v18s)["pri"]    + cs(v18s)["pric"]    + cs(v18s)["pvem"] + cs(v18s)["pna"]) / cs(v18s)["efec"]
 yr.means$left[10] <- (cs(v18s)["morena"] + cs(v18s)["morenac"] + cs(v18s)["pt"]   + cs(v18s)["pes"]) / cs(v18s)["efec"]
 yr.means$oth [10] <-  with(yr.means[10,], 1 - pan - pri - left)
-#
+##
 yr.means$pan [11] <- (cs(v21s)["pan"]    + cs(v21s)["panc"]    + cs(v21s)["prd"])                    / cs(v21s)["efec"]
 yr.means$pri [11] <-  cs(v21s)["pri"]                                                                / cs(v21s)["efec"] # dropped cs(v21s)["pric"]
 yr.means$left[11] <- (cs(v21s)["morena"] + cs(v21s)["morenac"] + cs(v21s)["pt"]  + cs(v21s)["pvem"]) / cs(v21s)["efec"]
 yr.means$oth [11] <-  with(yr.means[11,], 1 - pan - pri - left)
-#
+##
 #############################
 ## votes relative to pri's ##
 #############################
 yr.means <- within(yr.means, mean.rpan    <- pan  / pri)
 yr.means <- within(yr.means, mean.rleft   <- left / pri)
 yr.means <- within(yr.means, mean.roth    <- oth  / pri)
-#
+##
 yr.means[,2:8] <- round(yr.means[,2:8], 3)
-#
+##
 ## ## Drop 1991, not used now ##
 ## sel.r <- which(yr.means==1991)
 ## if (length(sel.r>0)) yr.means <- yr.means[-sel.r,]
-#
-# plug into data
+##
+## plug into data
 for (i in 1:nmun){
     #i <- 2 # debug
     extendCoalm21[[i]] <- cbind(extendCoalm21[[i]], yr.means[,6:8])
@@ -3310,28 +3302,28 @@ vhat.2006 <- vhat.2003 <- vhat.2000 <- vhat.1997 <- vhat.1994 <- vhat.1991 <- vh
     data.frame(pan  = rep(NA, nmun),
                pri  = rep(NA, nmun),
                left = rep(NA, nmun)) # will receive vote estimates
-#
+##
 alphahat <- data.frame(pan    = rep(NA, nmun),
                        pri    = rep(NA, nmun),
                        left   = rep(NA, nmun)) # will receive municipio's alphas
 betahat <- data.frame(pan    = rep(NA, nmun),
                       left   = rep(NA, nmun),
                       oth    = rep(NA, nmun)) # will receive municipio's betas (none for pri)
-#
-tmp <- as.list(rep(NA, nmun)) # empty list will receive one time-series
-                                   # regression per unit, each used to
-                                   # predict votes in 2006:2021
-# add names to m and s (to d must be done yearly basis due to redistricting)
+##
+tmp <- as.list(rep(NA, nmun)) ## empty list will receive one time-series
+                              ## regression per unit, each used to
+                              ## predict votes in 2006:2021
+## add names to m and s (to d must be done yearly basis due to redistricting)
 names(tmp) <- v00m$ife
 ## if (agg=="s") names(tmp) <- v00d$edon*10000 + v00d$seccion # untested
-#
+##
 regs.2024 <- regs.2021 <- regs.2018 <- regs.2015 <- regs.2012 <- regs.2009 <-
 regs.2006 <- regs.2003 <- regs.2000 <- regs.1997 <- regs.1994 <- regs.1991 <- regs.1988 <-         
     list(pan    = tmp,
          left   = tmp,
          oth    = tmp,
          readme = "No pri regs because DVs are pri-ratios")
-# one mean.reg per map
+## one mean.reg per map
 mean.regs.m21 <- mean.regs.m18 <-
 mean.regs.m15 <- mean.regs.m12 <- mean.regs.m09 <- mean.regs.m06 <-
 mean.regs.m03 <- mean.regs.m00 <- mean.regs.m97 <- mean.regs.m94 <-
@@ -3340,9 +3332,9 @@ mean.regs.m03 <- mean.regs.m00 <- mean.regs.m97 <- mean.regs.m94 <-
              left   = tmp,
              oth    = tmp,
              readme = "No pri regs bec DVs are pri-ratios")
-#
-# drop list elements that still have NAs from loop
-# (happens with new municipios before birth)
+##
+## drop list elements that still have NAs from loop
+## (happens with new municipios before birth)
 non.nas <- function(sel.map){
     if (sel.map %notin% seq(1994,2024,by=3)) stop("wrong sel.map in non.nas()")
     if (sel.map==1994) nn <- lapply(extendCoalm94, sum)
@@ -3356,17 +3348,17 @@ non.nas <- function(sel.map){
     if (sel.map==2018) nn <- lapply(extendCoalm18, sum)
     if (sel.map==2021) nn <- lapply(extendCoalm21, sum)
     nn <- unlist(nn)
-    #table(is.na(nn))
-    #nn                     # debug
-    #extendCoalm18[[206]]           # debug: 20jul2021 NA due to unreported sole sección in cps municipio
-    #which(is.na(nn)==TRUE) # debug
+    ##table(is.na(nn))
+    ##nn                     # debug
+    ##extendCoalm18[[206]]           # debug: 20jul2021 NA due to unreported sole sección in cps municipio
+    ##which(is.na(nn)==TRUE) # debug
     nn <- which(is.na(nn)==FALSE)
-    #length(nn)
+    ##length(nn)
     return(nn)
 }
 non.nas(2000)[1:18] # debug
 setdiff(1:nmun, non.nas(2000)) # one year's complement
-#    
+##    
 #########################################################################################
 ## Municipio 5-yr estimates that can be computed before 2024                           ##
 ## |      | map  |      |      |      |      |       |       |       |       |       | ##
@@ -4262,10 +4254,14 @@ estim_mun <- function(sel.map){
 ## municipal estimates are contingent on chosen map, run each once for full estimates  ##
 #########################################################################################
 ##              1    2    3    4    5    6    7    8    9    0 
-sel.map <- c(1994,1997,2000,2003,2006,2009,2012,2015,2018,2021,by=3)[1] # EITHER CHOOSE SINGLE YEAR HERE
-for (j in 1:10){                                                              # OR RUN WHOLE LOOP
+sel.map <- c(1994,1997,2000,2003,2006,2009,2012,2015,2018,2021,by=3)[1] ## EITHER CHOOSE SINGLE YEAR HERE
+for (j in 2:10){                                                        ## OR RUN WHOLE LOOP
     sel.map <- c(1994,1997,2000,2003,2006,2009,2012,2015,2018,2021,by=3)[j]
     res.tmp <- estim_mun(sel.map)
+    ###################################################
+    ## warnings correspond to units with no variance ##
+    ## (eg. period mean in new municipio in 2017)    ##
+    ###################################################
     ##
     ## UNPACK OUTPUT
     if (sel.map==1994){
@@ -4355,12 +4351,11 @@ v15m94, v15m97, v15m00, v15m03, v15m06, v15m09, v15m12,         v15m18, v15m21,
 v18m94, v18m97, v18m00, v18m03, v18m06, v18m09, v18m12, v18m15,         v18m21,
 v21m94, v21m97, v21m00, v21m03, v21m06, v21m09, v21m12, v21m15, v21m18
 )
-rm(sel.map, tmp, i, j, d, d2, non.nas)
+rm(sel.map, tmp, i, j, d, non.nas)
 
 ##########################################################################
 ## generate data frame with one year's predictions/estimates for export ##
 ##########################################################################
-
 for.export <- function(year) {
     #year <- 2006         # debug
     #X <- extendCoalm94[[1]] # debug
@@ -4416,74 +4411,74 @@ out.y2024 <- for.export(year=2024)
 ## save to disk ##
 ##################
 write.csv(out.y1988,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-1988.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-1988.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1991,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-1991.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-1991.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1994,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-1994.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-1994.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1997,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-1997.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-1997.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2000,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2000.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2000.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2003,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2003.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2003.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2006,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2006.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2006.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2009,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2009.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2009.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2012,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2012.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2012.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2015,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2015.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2015.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2018,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2018.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2018.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2021,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2021.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2021.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2024,
-          file = paste(wd, "data/mun/dipfed-municipio-vhat-2024.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "mun/dipfed-municipio-vhat-2024.csv", sep = ""), row.names = FALSE)
 ##
 #############################################################
 ## save district regression objects (one mean.reg per map) ##
 #############################################################
-##save(mean.regs.m91, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-1991.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m94, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-1994.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m97, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-1997.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m00, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2000.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m03, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2003.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m06, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2006.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m09, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2009.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m12, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2012.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m15, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2015.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m18, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2018.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.m21, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2021.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-## save(mean.regs.m24, file = paste(wd, "data/mun/dipfed-municipio-mean-regs-2024.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+##save(mean.regs.m91, file = paste(sd, "mun/dipfed-municipio-mean-regs-1991.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m94, file = paste(sd, "mun/dipfed-municipio-mean-regs-1994.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m97, file = paste(sd, "mun/dipfed-municipio-mean-regs-1997.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m00, file = paste(sd, "mun/dipfed-municipio-mean-regs-2000.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m03, file = paste(sd, "mun/dipfed-municipio-mean-regs-2003.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m06, file = paste(sd, "mun/dipfed-municipio-mean-regs-2006.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m09, file = paste(sd, "mun/dipfed-municipio-mean-regs-2009.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m12, file = paste(sd, "mun/dipfed-municipio-mean-regs-2012.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m15, file = paste(sd, "mun/dipfed-municipio-mean-regs-2015.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m18, file = paste(sd, "mun/dipfed-municipio-mean-regs-2018.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.m21, file = paste(sd, "mun/dipfed-municipio-mean-regs-2021.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+## save(mean.regs.m24, file = paste(sd, "mun/dipfed-municipio-mean-regs-2024.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
 ##
-save(regs.1988, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-1988.RData", sep = ""), compress = "gzip")
-save(regs.1991, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-1991.RData", sep = ""), compress = "gzip")
-save(regs.1994, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-1994.RData", sep = ""), compress = "gzip")
-save(regs.1997, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-1997.RData", sep = ""), compress = "gzip")
-save(regs.2000, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2000.RData", sep = ""), compress = "gzip")
-save(regs.2003, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2003.RData", sep = ""), compress = "gzip")
-save(regs.2006, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2006.RData", sep = ""), compress = "gzip")
-save(regs.2009, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2009.RData", sep = ""), compress = "gzip")
-save(regs.2012, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2012.RData", sep = ""), compress = "gzip")
-save(regs.2015, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2015.RData", sep = ""), compress = "gzip")
-save(regs.2018, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2018.RData", sep = ""), compress = "gzip")
-save(regs.2021, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2021.RData", sep = ""), compress = "gzip")
-save(regs.2024, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2024.RData", sep = ""), compress = "gzip")
-## save(regs.2027, file = paste(wd, "data/too-big-4-github/dipfed-municipio-regs-2027.RData", sep = ""), compress = "gzip")
+save(regs.1988, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-1988.RData", sep = ""), compress = "gzip")
+save(regs.1991, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-1991.RData", sep = ""), compress = "gzip")
+save(regs.1994, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-1994.RData", sep = ""), compress = "gzip")
+save(regs.1997, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-1997.RData", sep = ""), compress = "gzip")
+save(regs.2000, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2000.RData", sep = ""), compress = "gzip")
+save(regs.2003, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2003.RData", sep = ""), compress = "gzip")
+save(regs.2006, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2006.RData", sep = ""), compress = "gzip")
+save(regs.2009, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2009.RData", sep = ""), compress = "gzip")
+save(regs.2012, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2012.RData", sep = ""), compress = "gzip")
+save(regs.2015, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2015.RData", sep = ""), compress = "gzip")
+save(regs.2018, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2018.RData", sep = ""), compress = "gzip")
+save(regs.2021, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2021.RData", sep = ""), compress = "gzip")
+save(regs.2024, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2024.RData", sep = ""), compress = "gzip")
+## save(regs.2027, file = paste(sd, "too-big-4-github/dipfed-municipio-regs-2027.RData", sep = ""), compress = "gzip")
 
 ###########
 ## clean ##

@@ -1,14 +1,28 @@
-What denominator to use for relative vote shares?
+What denominator to use for relative vote shares in compositional data?
 
 Since 1970s, PRI was the obvious choice. Was the hegemon. And convenient methodologically as it was never zero.
 
 Morena's takeover has shaken that. Since 2018, the PRI began teaming up with its former main oppositions. Zero became frequent overnight.
 
-2024 will show if Morena should become the new denominator. This methodological shift complicates temporal comparison. Reminiscent of APD's party system changes in US historical studies. Fifth party system, Sixth, and so forth.
+2024 will reveal if Morena should become the new denominator. This methodological shift will complicates temporal comparison. Reminiscent of APD's party system changes in US historical studies. Fifth party system, Sixth, and so forth.
 
-Check Burnham and APD to view how they deal with before/after comparisons. UCSD library.
+* Este libro es una joya
+Antonio García Orozco 1978 _Legislación electoral mexicana: 1812-1977_ (Recopilación y estudio introductorio de AGO). Segunda Edición. México DF: Gaceta Informativa de la Comisión Federal Electoral. (La primera edición era de 1973, no incluía la LFOPPE ni el estudio introductorio.)
 
-Check Molinar's identification of Mexican post 1917 party systems.
+* Check this at Geisel library
+- Paul Allen Beck for party systems and references.
+- Burnham and APD to view how they deal with before/after comparisons. UCSD library.
+  - Why would New Deal qualify as a different party system from pre-depression era?
+- Charles Stewart III center's web for election House national returns by party 
+  - +Burden/Stewart The measure of American elections CUP 2014+
+- Byron E. Shafer and Anthony J. Badger, eds. Contesting Democracy: Substance and Structure in American Political History, 1775–2000 (2001)
+- Hofstadter, Richard (1969). The Idea of a Party System : The Rise of Legitimate Opposition in the United States, 1780-1840. University of California Press
+- Fiorina, Morris P.; Abrams, Samuel J. (June 2008). "Political Polarization in the American Public". Annual Review of Political Science. 11 (1): 563–588. doi:10.1146/annurev.polisci.11.053106.153836
+- Richard Hofstadter, The Idea of a Party System: The Rise of Legitimate Opposition in the United States, 1780–1840 (1970)
+- V. O. Key Jr.'s 1955 article, "A Theory of Critical Elections"
+- Key, E. E. Schattschneider, James L. Sundquist, Walter Dean Burnham
+- Campbell, James E. (Fall 2006). "Party Systems and Realignments in the United States, 1868-2004". Social Science History. 30 (3): 359–386
+- Molinar's identification of Mexican post 1917 party systems.
 
 |                                         |             | Obvious     |
 | Party system                            | Period      | denominator |
@@ -22,5 +36,13 @@ Check Molinar's identification of Mexican post 1917 party systems.
 | 6. IFE Triumvirate/Partidocracia        | 2000s 2010s | PRI         |
 | 7. MORENA's takeover                    | 2020s       | MORENA      |
 
-
-
+|                              |           | Obvious      |             |
+| Anglo-American party systems |    Pediod | denominator  | Oth pty     |
+|------------------------------+-----------+--------------+-------------|
+| First                        | 1792-1824 | Jeffersonian | Federalists |
+| Second                       |   1828-54 | Dems         | Whigs+      |
+| Third                        |  1854-90s | Dems         | Reps        |
+| Fourth                       | 1896-1932 | Dems         | Reps        |
+| Fifth                        |   1932-76 | Dems         | Reps        |
+| Sixth                        | 1980-2016 | Dems         | Reps        |
+| Seventh                      |   2016-on | Dems         | Reps        |

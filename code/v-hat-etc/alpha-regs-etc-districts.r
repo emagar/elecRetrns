@@ -5,7 +5,7 @@
 ## Author: Eric Magar                                             ##
 ## emagar at itam dot mx                                          ##
 ## Date: 17apr2023                                                ##
-## Last modified: 20apr2023                                       ##
+## Last modified: 30may2023                                       ##
 ####################################################################
 
 ###################################################################
@@ -1548,7 +1548,7 @@ rm(v94d97, v94d06, v94d18,
    v15d79, v15d97, v15d18,
    v18d79, v18d97, v18d06,
    v21d79, v21d97, v21d06)
-rm(i, j, sel.map, d, d2)
+rm(i, j, sel.map)
 
 
 ##########################################################################
@@ -1599,64 +1599,64 @@ out.y2024 <- tmp.func(year=2024)
 ## save to disk ##
 ##################
 write.csv(out.y1988,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-1988.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-1988.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1991,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-1991.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-1991.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1994,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-1994.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-1994.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1997,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-1997.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-1997.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2000,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2000.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2000.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2003,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2003.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2003.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2006,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2006.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2006.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2009,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2009.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2009.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2012,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2012.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2012.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2015,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2015.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2015.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2018,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2018.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2018.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2021,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2021.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2021.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2024,
-          file = paste(wd, "data/dis/dipfed-distrito-vhat-2024.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "dis/dipfed-distrito-vhat-2024.csv", sep = ""), row.names = FALSE)
 ##
 
 ## save district regression objects
-save(mean.regs.d79, file = paste(wd, "data/dis/dipfed-distrito-mean-regs-map1979.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.d97, file = paste(wd, "data/dis/dipfed-distrito-mean-regs-map1997.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.d06, file = paste(wd, "data/dis/dipfed-distrito-mean-regs-map2006.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
-save(mean.regs.d18, file = paste(wd, "data/dis/dipfed-distrito-mean-regs-map2018.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.d79, file = paste(sd, "dis/dipfed-distrito-mean-regs-map1979.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.d97, file = paste(sd, "dis/dipfed-distrito-mean-regs-map1997.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.d06, file = paste(sd, "dis/dipfed-distrito-mean-regs-map2006.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
+save(mean.regs.d18, file = paste(sd, "dis/dipfed-distrito-mean-regs-map2018.RData", sep = ""), compress = c("gzip", "bzip2", "xz")[3])
 ##
-save(regs.1988, file = paste(wd, "data/dis/dipfed-distrito-regs-1988.RData", sep = ""), compress = "gzip")
-save(regs.1991, file = paste(wd, "data/dis/dipfed-distrito-regs-1991.RData", sep = ""), compress = "gzip")
-save(regs.1994, file = paste(wd, "data/dis/dipfed-distrito-regs-1994.RData", sep = ""), compress = "gzip")
-save(regs.1997, file = paste(wd, "data/dis/dipfed-distrito-regs-1997.RData", sep = ""), compress = "gzip")
-save(regs.2000, file = paste(wd, "data/dis/dipfed-distrito-regs-2000.RData", sep = ""), compress = "gzip")
-save(regs.2003, file = paste(wd, "data/dis/dipfed-distrito-regs-2003.RData", sep = ""), compress = "gzip")
-save(regs.2006, file = paste(wd, "data/dis/dipfed-distrito-regs-2006.RData", sep = ""), compress = "gzip")
-save(regs.2009, file = paste(wd, "data/dis/dipfed-distrito-regs-2009.RData", sep = ""), compress = "gzip")
-save(regs.2012, file = paste(wd, "data/dis/dipfed-distrito-regs-2012.RData", sep = ""), compress = "gzip")
-save(regs.2015, file = paste(wd, "data/dis/dipfed-distrito-regs-2015.RData", sep = ""), compress = "gzip")
-save(regs.2018, file = paste(wd, "data/dis/dipfed-distrito-regs-2018.RData", sep = ""), compress = "gzip")
-save(regs.2021, file = paste(wd, "data/dis/dipfed-distrito-regs-2021.RData", sep = ""), compress = "gzip")
-save(regs.2024, file = paste(wd, "data/dis/dipfed-distrito-regs-2024.RData", sep = ""), compress = "gzip")
+save(regs.1988, file = paste(sd, "dis/dipfed-distrito-regs-1988.RData", sep = ""), compress = "gzip")
+save(regs.1991, file = paste(sd, "dis/dipfed-distrito-regs-1991.RData", sep = ""), compress = "gzip")
+save(regs.1994, file = paste(sd, "dis/dipfed-distrito-regs-1994.RData", sep = ""), compress = "gzip")
+save(regs.1997, file = paste(sd, "dis/dipfed-distrito-regs-1997.RData", sep = ""), compress = "gzip")
+save(regs.2000, file = paste(sd, "dis/dipfed-distrito-regs-2000.RData", sep = ""), compress = "gzip")
+save(regs.2003, file = paste(sd, "dis/dipfed-distrito-regs-2003.RData", sep = ""), compress = "gzip")
+save(regs.2006, file = paste(sd, "dis/dipfed-distrito-regs-2006.RData", sep = ""), compress = "gzip")
+save(regs.2009, file = paste(sd, "dis/dipfed-distrito-regs-2009.RData", sep = ""), compress = "gzip")
+save(regs.2012, file = paste(sd, "dis/dipfed-distrito-regs-2012.RData", sep = ""), compress = "gzip")
+save(regs.2015, file = paste(sd, "dis/dipfed-distrito-regs-2015.RData", sep = ""), compress = "gzip")
+save(regs.2018, file = paste(sd, "dis/dipfed-distrito-regs-2018.RData", sep = ""), compress = "gzip")
+save(regs.2021, file = paste(sd, "dis/dipfed-distrito-regs-2021.RData", sep = ""), compress = "gzip")
+save(regs.2024, file = paste(sd, "dis/dipfed-distrito-regs-2024.RData", sep = ""), compress = "gzip")
 
 ###########
 ## clean ##

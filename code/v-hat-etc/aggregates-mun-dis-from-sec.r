@@ -2463,3 +2463,4 @@ table(c(
     nrow(v09d18), nrow(v12d18), nrow(v15d18)
 ))
 
+rm(d)

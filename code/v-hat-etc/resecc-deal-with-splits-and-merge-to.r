@@ -244,5 +244,5 @@ for (rnd in 1:3){ ## loop over three possible succesive reseccionamiento actions
 }
 
 ## clean
-rm(d, i, info, sel, sel.resec, sel.to, sum.split, tmp, year, rnd)
+rm(i, info, sel, sel.resec, sel.to, sum.split, tmp, year, rnd)
 

@@ -5,13 +5,17 @@
 ## Author: Eric Magar                                             ##
 ## emagar at itam dot mx                                          ##
 ## Date: 17may2023                                                ##
-## Last modified: 18may2023                                       ##
+## Last modified: 31may2023                                       ##
 ####################################################################
 
-#################################################
-## Note: Search 'Performs seccion estimations' ##
-##       to locate estimation block            ##
-#################################################
+
+###############################################################################
+## Note: Search 'Performs seccion estimations' to locate estimation block.   ##
+##       Since seccion estimation demands so much mem/time, this script was  ##
+##       adapted to save yearly estimations as it goes, freeing up memory.   ##
+##       When a new election is available, run only that year's regressions. ##
+###############################################################################
+
 
 #############################################################
 ## Sección 5-yr estimates that can be computed before 2024 ##
@@ -52,7 +56,6 @@
 sel.c <- c("pan","pri","pps","prd","pfcrn","parm","uno.pdm","pt","pvem","efec","lisnom","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v94s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -64,7 +67,6 @@ v94s <- d                                      # rename object
 sel.c <- c("pan","pri","prd","pc","pt","pvem","pps","pdm","efec","lisnom","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v97s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -76,7 +78,6 @@ v97s <- d                                      # rename object
 sel.c <- c("panc","pri","prdc","pcd","parm","dsppn","efec","lisnom","dpanc","dprdc","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v00s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -88,7 +89,6 @@ v00s <- d                                      # rename object
 sel.c <- c("pan","pri","pric","prd","pt","pvem","conve","psn","pas","mp","plm","fc","efec","lisnom","dpric","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v03s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -100,7 +100,6 @@ v03s <- d                                      # rename object
 sel.c <- c("pan","pric","prdc","pna","asdc","efec","lisnom","dpric","dprdc","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v06s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -112,7 +111,6 @@ v06s <- d                                      # rename object
 sel.c <- c("pan","pri","pric","prd","pvem","pt","ptc","conve","pna","psd","efec","lisnom","dpric","dptc","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v09s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -124,7 +122,6 @@ v09s <- d                                      # rename object
 sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","pric","prdc","efec","lisnom","dpric","dprdc","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v12s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -136,7 +133,6 @@ v12s <- d                                      # rename object
 sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","morena","ph","pes","pric","prdc","indep1","indep2","efec","lisnom","dpric","dprdc","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v15s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -148,7 +144,6 @@ v15s <- d                                      # rename object
 sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","morena","pes","panc","pric","morenac","indep1","indep2","efec","lisnom","dpanc","dpric","dmorenac","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v18s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife")] # order columns
 d <- d[order(d$seccion),]                      # sort
@@ -160,7 +155,6 @@ v18s <- d                                      # rename object
 sel.c <- c("pan","pri","prd","pvem","pt","mc","morena","pes","rsp","fxm","indep","panc","pric","morenac","efec","lisnom","dpanc","dpric","dmorenac","dextra")
 # actual secciones (reseccionaiento routine recovers most missing units)
 d <- v21s; d[is.na(d)] <- 0
-d$edosecn <- NULL                              # drop seccion ids
 ##d <- my_agg(d=d, sel.c=sel.c, by="seccion", y1991=FALSE) # use aggregating function
 ##d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife; mun after inegi")] # order columns
 d <- d[moveme(names(d), "seccion first; efec before lisnom; ife after edon; inegi after ife")] # order columns
@@ -169,7 +163,7 @@ v21s <- d                                      # rename object
 ##
 rm(d)
 ##
-# verify nrow==same (70018)
+## verify nrow==same (70018)
 table(c(
     ## nrow(v91s),
     nrow(v94s),
@@ -292,6 +286,8 @@ oths    <- t(oths)
 efecs   <- t(efecs)
 lisnoms <- t(lisnoms)
 
+
+
 #################################################################
 ## extendCoal.. will receive data for regressions, one per map ##
 #################################################################
@@ -343,7 +339,8 @@ for (i in 1:nsec){
 }
 ## clean
 rm(pans,pris,lefts,oths,efecs,lisnoms)
-    
+
+
 ##################################
 ## datos para regresión de alfa ##
 ##################################
@@ -1450,45 +1447,44 @@ out.y2024 <- for.export(year=2024)
 ## save to disk ##
 ##################
 write.csv(out.y1991,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-1991.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-1991.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1994,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-1994.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-1994.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y1997,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-1997.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-1997.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2000,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2000.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2000.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2003,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2003.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2003.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2006,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2006.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2006.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2009,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2009.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2009.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2012,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2012.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2012.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2015,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2015.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2015.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2018,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2018.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2018.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2021,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2021.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2021.csv", sep = ""), row.names = FALSE)
 ##
 write.csv(out.y2024,
-          file = paste(wd, "data/sec/dipfed-seccion-vhat-2024.csv", sep = ""), row.names = FALSE)
+          file = paste(sd, "sec/dipfed-seccion-vhat-2024.csv", sep = ""), row.names = FALSE)
 
 ###########
 ## clean ##
 ###########
-ls()
 rm(
 ##    out.y1988,
     out.y1991,
@@ -1518,7 +1514,7 @@ rm(
 ## ## inspect saved objects ##
 ## ###########################
 ## # load regression object
-## load(file = paste(wd, "data/dipfed-seccion-regs-2006.RData", sep = ""))
+## load(file = paste(sd, "dipfed-seccion-regs-2006.RData", sep = ""))
 ## ls()
 ## summary(regs.2006$pan[[1]])
 ## summary.lm(regs.2009$pan[[1]])$coef[2,1]
