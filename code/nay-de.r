@@ -389,9 +389,58 @@ table(check==0) # all must be true
 ## Export a coalAgg version of votes returns to the  ##
 ## same directory where ayde2008-presentNayRegid.csv ##
 #######################################################
+## clean NAs an zeroes
 dat[is.na(dat)] <- ""
-dat[1,]
+sel.r <- which(dat$c11==0)
+if (length(sel.r)>0) dat$c11[sel.r] <- ""
+if (length(sel.r)>0) dat$v11[sel.r] <- ""
+if (length(sel.r)>0) dat$l11[sel.r] <- ""
+sel.r <- which(dat$c10==0)
+if (length(sel.r)>0) dat$c10[sel.r] <- ""
+if (length(sel.r)>0) dat$v10[sel.r] <- ""
+if (length(sel.r)>0) dat$l10[sel.r] <- ""
+sel.r <- which(dat$c09==0)
+if (length(sel.r)>0) dat$c09[sel.r] <- ""
+if (length(sel.r)>0) dat$v09[sel.r] <- ""
+if (length(sel.r)>0) dat$l09[sel.r] <- ""
+sel.r <- which(dat$c08==0)
+if (length(sel.r)>0) dat$c08[sel.r] <- ""
+if (length(sel.r)>0) dat$v08[sel.r] <- ""
+if (length(sel.r)>0) dat$l08[sel.r] <- ""
+sel.r <- which(dat$c07==0)
+if (length(sel.r)>0) dat$c07[sel.r] <- ""
+if (length(sel.r)>0) dat$v07[sel.r] <- ""
+if (length(sel.r)>0) dat$l07[sel.r] <- ""
+sel.r <- which(dat$c06==0)
+if (length(sel.r)>0) dat$c06[sel.r] <- ""
+if (length(sel.r)>0) dat$v06[sel.r] <- ""
+if (length(sel.r)>0) dat$l06[sel.r] <- ""
+sel.r <- which(dat$c05==0)
+if (length(sel.r)>0) dat$c05[sel.r] <- ""
+if (length(sel.r)>0) dat$v05[sel.r] <- ""
+if (length(sel.r)>0) dat$l05[sel.r] <- ""
+##
+sel.r <- which(dat$v11==0 & dat$l11=="")
+if (length(sel.r)>0) dat$v11[sel.r] <- ""
+sel.r <- which(dat$v10==0 & dat$l10=="")
+if (length(sel.r)>0) dat$v10[sel.r] <- ""
+sel.r <- which(dat$v09==0 & dat$l09=="")
+if (length(sel.r)>0) dat$v09[sel.r] <- ""
+sel.r <- which(dat$v08==0 & dat$l08=="")
+if (length(sel.r)>0) dat$v08[sel.r] <- ""
+sel.r <- which(dat$v07==0 & dat$l07=="")
+if (length(sel.r)>0) dat$v07[sel.r] <- ""
+sel.r <- which(dat$v06==0 & dat$l06=="")
+if (length(sel.r)>0) dat$v06[sel.r] <- ""
+sel.r <- which(dat$v05==0 & dat$l05=="")
+if (length(sel.r)>0) dat$v05[sel.r] <- ""
+sel.r <- which(dat$v04==0 & dat$l04=="")
+if (length(sel.r)>0) dat$v04[sel.r] <- ""
+sel.r <- which(dat$v03==0 & dat$l03=="")
+if (length(sel.r)>0) dat$v03[sel.r] <- ""
+##
 dat$fuente <- dat$notes <- NULL # drop these columns
+dat[1,]
 ##dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "ayde2008-on-Nayarit-regid.coalAgg.csv", row.names = FALSE)
 
