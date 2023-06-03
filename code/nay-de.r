@@ -356,7 +356,7 @@ colnames(dat)
 dat[1,]
 rm(cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
 
-## # 11 cols needed
+## # only 11 cols needed
 table(dat$v12) # check that only has zeroes
 ## # if not, which cases remain? 
 ## #sel <- which(dat$v14>0)
