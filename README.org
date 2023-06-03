@@ -46,6 +46,8 @@ The repository contains voting data for recent Mexican elections for certain off
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 ** File naming conventions
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included.
+
+So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio level since 1970.
 ** Election returns for municipal offices
 Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/. Two versions of municipal election returns are included: with candidate aggregates and with party aggregates (the script [[./code/ay.r][~code/ay.r~]] was used to manipulate raw /ayuntamiento/ returns, not distributed, and generate these files):
 # Ojo 2023-05-29: check status of CdMx in paragraph above.
