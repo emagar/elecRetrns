@@ -361,9 +361,9 @@ table(dat$v12) # check that only has zeroes
 ## # if not, which cases remain? 
 ## #sel <- which(dat$v14>0)
 ## #dat[sel,]
-dat$v12 <- dat$v13 <- dat$v14 <- dat$v15 <- dat$v16 <- NULL # drop redundant columns
-dat$l12 <- dat$l13 <- dat$l14 <- dat$l15 <- dat$l16 <- NULL # drop redundant columns
-dat$c12 <- dat$c13 <- dat$c14 <- dat$c15 <- dat$c16 <- NULL # drop redundant columns
+dat$v12 <- dat$v13 <- dat$v14 <- dat$v15 <- NULL # drop redundant columns
+dat$l12 <- dat$l13 <- dat$l14 <- dat$l15 <- NULL # drop redundant columns
+dat$c12 <- dat$c13 <- dat$c14 <- dat$c15 <- NULL # drop redundant columns
 dat$win <- dat$l01
 ## move win column before v01
 tmp <- dat # duplicate if I mess up

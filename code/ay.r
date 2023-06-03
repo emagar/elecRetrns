@@ -938,7 +938,7 @@ load(file = "tmp1.RData")
 ## ## the same directory where aymu1979-on.csv is   ## ##
 ## ################################################### ##
 #########################################################
-#
+##
 ################################################################
 ## manipulate coalitions remaining in split vote object       ##
 ## these should all be cases where no vote split is available ##
