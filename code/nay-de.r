@@ -418,6 +418,7 @@ rm(sel.c)
 ## in the future, import code to carry this from ay.r.                          ##
 ## Save output                                                                  ##
 ##################################################################################
+dat.split[is.na(dat.split)] <- ""
 dat.split[1,]
 write.csv(dat.split, file = "ayde2008-on-Nayarit-regid.coalSplit.csv", row.names = FALSE)
 
