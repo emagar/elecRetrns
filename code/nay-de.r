@@ -40,6 +40,12 @@ for (i in 1:nrow(c)){
 dat$efec <- rowSums(v)
 
 
+################################################
+## Duplicate data for split-vote manipulation ##
+################################################
+dat4split <- dat
+
+
 ###############################
 ## AGGREGATE COALITION VOTES ##
 ###############################
@@ -387,4 +393,32 @@ dat[1,]
 dat$fuente <- dat$notes <- NULL # drop these columns
 ##dat$ord <- 1:nrow(dat)
 write.csv(dat, file = "ayde2008-on-Nayarit-regid.coalAgg.csv", row.names = FALSE)
+
+
+################################
+## Generate splitCoal version ##
+################################
+## rename object
+dat.split <- dat4split
+rm(dat4split)
+## verify dimensionality
+table(dat.split$emm == dat$emm)
+## import useful vars
+dat.split$dcoal <- dat$dcoal
+dat.split$ncoal <- dat$ncoal
+dat.split$ncand <- dat$ncand
+## drop candidates, reported in coalagg object
+sel.c <- grep("^c[0-9]{2}", colnames(dat.split))
+dat.split <- dat.split[,-sel.c]
+rm(sel.c)
+
+##################################################################################
+## Up to 2021, only the 2021 election allows to split coalition votes, and they ##
+## already come pre-split from the source. If the source offered splitable data ##
+## in the future, import code to carry this from ay.r.                          ##
+## Save output                                                                  ##
+##################################################################################
+dat.split[1,]
+write.csv(dat.split, file = "ayde2008-on-Nayarit-regid.coalSplit.csv", row.names = FALSE)
+
 
