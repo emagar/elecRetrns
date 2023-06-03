@@ -1,10 +1,13 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#org93fe651)
-- [Files in the repository and how to cite them](#orge5f4835)
-- [Codebook](#org9fecb6f)
-- [Coding procedure for the incumbent's status<a id="org5102ecb"></a>](#org49bc063)
-- [Procedimiento para codificar el estatus del ocupante<a id="orge834610"></a>](#org9193255)
-- [Sources](#orga194a65)
-- [Acknowledgements](#orgf721e94)
+- [Description of *Recent Mexican Election Vote Returns* repository](#org4dffa33)
+- [Files in the repository and how to cite them](#org9e32446)
+  - [File naming conventions](#org505f51d)
+  - [Election returns for municipal offices](#org62252d8)
+- [Codebook](#orgb1a97d3)
+- [Coding procedure for the incumbent's status<a id="orgdc7caaa"></a>](#org76a9210)
+- [Procedimiento para codificar el estatus del ocupante<a id="org2f87214"></a>](#orgdd0ac84)
+- [<a id="orgb9c0bd3"></a>Basic instructions to inspect data online:](#orgce14db7)
+- [Sources](#orgf82dcf9)
+- [Acknowledgements](#orgeb057a2)
 
 Last revision: 2023-05-27
 
@@ -25,7 +28,7 @@ Last revision: 2023-05-27
 ---
 
 
-<a id="org93fe651"></a>
+<a id="org4dffa33"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -39,26 +42,37 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orge5f4835"></a>
+<a id="org9e32446"></a>
 
 # Files in the repository and how to cite them
 
-You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted next to the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, <https://github.com/emagar/elecReturns>.
+You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, <https://github.com/emagar/elecReturns>.
 
-In general, file names identify the office elected (i.e., **df**, **se**, **pr**, **dl**, **go**, **ay** for *diputados federales*, *senadores*, *presidente*, *diputados locales*, *gobernador*, and *ayuntamiento*, respectively), followed by the unit of observation (i.e., **ed**, **df**, **dl**, **mu**, **de**, **se**, **ca** for *estado*, *distrito federal*, *distrito local*, *municipio*, *demarcación*, *sección*, and *casilla* respectively), and the years included. Other than in Nayarit since 2008 (and, pending a court case, Mexico City since 2018), *ayuntamientos* are elected in fused ballots for a *presidente municipal* and a fraction of the municipal council (*regidores* and *síndicos*). Nayarit elects these members of the municipal council in single-member plurality districts called *demarcaciones*.
 
--   [`data/aymu1970-on.csv`](./data/aymu1989-present.csv) = updated to 2022, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
-    -   Inspect data online in Google sheets:
-        -   coalitions aggregated by candidate [1970s](https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy) [1980s](https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy) [1990s](https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy) [2000s](https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy) [2010s](https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy) [2020s](https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy)
-        -   coalitions split by party [1970s](https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/edit?usp=sharing) [1980s](https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy) [1990s](https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/edit?usp=sharing) [2000s](https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/edit?usp=sharing) [2010s](https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/edit?usp=sharing) [2020s](https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/edit?usp=sharing)
+<a id="org505f51d"></a>
 
--   [`data/aymu-upto-1988.csv`](./data/aymu-upto-1988.csv) = earlier records are separate for smaller file sizes, can be processed with code/ay.r in order to systematize coalitions (ie., aggregate votes when member parties' returns are reported separately and remove redundant columns).
--   [`data/aymu1989-on.coalAgg.csv`](./data/aymu1989-present.coalAgg.csv) = pre-processed version of the above (starting in 1989) so that coalition votes appear properly aggregated.
--   [`data/aymu1989-on.coalSplit.csv`](./data/aymu1989-present.coalSplit.csv) = pre-processed version of the above (starting in 1989) so that coalition votes appear properly split among its members.
--   [`data/aymu1989-on.incumbents.csv`](./data/aymu1989-present.incumbents.csv) = names of municipal election winning candidates (*presidente municipal* only) since 1989. Includes reelection status since 2018.
--   [`data/ayde2008-onNayRegid.csv`](./data/ayde2008-presentNayRegid.csv) = Nayarit's municipal demarcaciones vote returns since 2008.
--   [`code/ay.r`](./code/ay.r) = script to manipulate *ayuntamiento* returns.
--   [`code/ayClean.r`](./code/ayClean.r) = script used to clean *ayuntamiento* returns, should be unnecessary unless new data are added because output has been saved into csv file.
+## File naming conventions
+
+In general, file names identify the office elected (i.e., **df**, **se**, **pr**, **dl**, **go**, **ay** for *diputados federales*, *senadores*, *presidente*, *diputados locales*, *gobernador*, and *ayuntamiento*, respectively), followed by the unit of observation (i.e., **ed**, **df**, **dl**, **mu**, **de**, **se**, **ca** for *estado*, *distrito federal*, *distrito local*, *municipio*, *demarcación*, *sección*, and *casilla* respectively), and the years included.
+
+
+<a id="org62252d8"></a>
+
+## Election returns for municipal offices
+
+Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), *ayuntamientos* are elected in fused ballots for a *presidente municipal* and a fraction of the municipal council (*regidores* and *síndicos*). Nayarit elects these members of the municipal council in single-member plurality districts called *demarcaciones*. Two versions of municipal election returns are included: with candidate aggregates and with party aggregates (the script [`code/ay.r`](./code/ay.r) was used to manipulate raw *ayuntamiento* returns, not distributed, and generate these files):
+
+-   [`data/aymu1970-on.coalAgg.csv`](./data/aymu1989-present.coalAgg.csv) = coalition votes appear properly aggregated by candidate.
+-   [`data/aymu1970-on.coalSplit.csv`](./data/aymu1989-present.coalSplit.csv) = coalition votes appear properly split among parties.
+-   [`data/aymu1989-on.incumbents.csv`](./data/aymu1989-present.incumbents.csv) = names of elected municipal officers (*presidente municipal* only) since 1989. Includes reelection status since 2018.
+-   [`data/ayde2008-on-Nayarit-regid.coalAgg.csv`](./data/ayde2008-on-Nayarit-regid.coalAgg.csv) = Nayarit's municipal demarcaciones vote returns since 2008.
+-   [`data/ayde2008-on-Nayarit-regid.coalSplit.csv`](./data/ayde2008-on-Nayarit-regid.coalSplit.csv) = Nayarit's municipal demarcaciones vote returns since 2008.
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#orgb9c0bd3); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
+    -   `*.coalAgg` versions: [1970s](https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy) [1980s](https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy) [1990s](https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy) [2000s](https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy) [2010s](https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy) [2020s](https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/edit?usp=sharing)
+    -   `*.coalSplit` versions : [1970s](https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/edit?usp=sharing) [1980s](https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy) [1990s](https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/edit?usp=sharing) [2000s](https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/edit?usp=sharing) [2010s](https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/edit?usp=sharing) [2020s](https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/edit?usp=sharing) [Nayarit](https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/edit?usp=sharing)
+    -   `incumbents`: [Aguascalientes (1)&#x2013;Nuevo León (19)](https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy) [Oaxaca (20)&#x2013;Zacatecas (32)](https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy)
+-   [`data/ayde2008-on-Nayarit-regid.csv`](./data/ayde2008-presentNayRegid.csv) = Nayarit's municipal demarcaciones vote returns since 2008.
+
 -   [`code/extract-state-yr-mu-returns.r`](./code/extract-state-yr-mu-returns.r) = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each.
 -   [`data/dfdf1979-on.csv`](./data/dfdf1979-on.csv)
     -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
@@ -74,7 +88,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 -   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
 
-<a id="org9fecb6f"></a>
+<a id="orgb1a97d3"></a>
 
 # Codebook
 
@@ -112,13 +126,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org5102ecb) for categories and coding procedure ([aquí](#orge834610) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orgdc7caaa) for categories and coding procedure ([aquí](#org2f87214) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="org49bc063"></a>
+<a id="org76a9210"></a>
 
-# Coding procedure for the incumbent's status<a id="org5102ecb"></a>
+# Coding procedure for the incumbent's status<a id="orgdc7caaa"></a>
 
 In file `data/aymu1985-on.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -136,9 +150,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org9193255"></a>
+<a id="orgdd0ac84"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="orge834610"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org2f87214"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -156,7 +170,20 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="orga194a65"></a>
+<a id="orgce14db7"></a>
+
+# <a id="orgb9c0bd3"></a>Basic instructions to inspect data online:
+
+You can open election returns in online spreadsheet form.
+
+a. To use this feature, you must first log into a Google account. Then click the desired file's link, and confirm you wish a copy. A Google spreadsheet will open in your browser.
+
+b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a subset of the observations only), or save the file to your hard drive, you must unlink the data from the repository. To do this type CTRL+A (ie., select all) then CTRL+SHIFT+V (ie., paste values only).
+
+c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change.
+
+
+<a id="orgf82dcf9"></a>
 
 # Sources
 
@@ -171,7 +198,7 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="orgf721e94"></a>
+<a id="orgeb057a2"></a>
 
 # Acknowledgements
 
