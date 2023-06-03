@@ -389,6 +389,7 @@ table(check==0) # all must be true
 ## Export a coalAgg version of votes returns to the  ##
 ## same directory where ayde2008-presentNayRegid.csv ##
 #######################################################
+dat[is.na(dat)] <- ""
 dat[1,]
 dat$fuente <- dat$notes <- NULL # drop these columns
 ##dat$ord <- 1:nrow(dat)
@@ -419,6 +420,7 @@ rm(sel.c)
 ## Save output                                                                  ##
 ##################################################################################
 dat.split[is.na(dat.split)] <- ""
+dat.split$fuente <- dat.split$notes <- NULL # drop these columns
 dat.split[1,]
 write.csv(dat.split, file = "ayde2008-on-Nayarit-regid.coalSplit.csv", row.names = FALSE)
 
