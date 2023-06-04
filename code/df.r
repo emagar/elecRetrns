@@ -340,6 +340,12 @@ for (i in 1:ncol(l)){
     dat$dcoal[grep("-", l[,i])] <- 1
 }
 
+######################################
+## Duplicate for split-vote version ##
+######################################
+dat.plit <- dat
+
+
 # create objects with vote for coalition(s) added and redudant columns dropped
 cv <- v; cv[] <- NA # will receive votes with coalitions aggregated
 cl <- l; cl[] <- NA # will keep coalition labels but drop coalition member labels 
@@ -676,59 +682,8 @@ write.csv(dat, file = "dfdf1979-present.coalAgg.csv", row.names = FALSE)
 
 
 
-# process 2015 only to produce national aggregates
-sel <- which(dat$yr==2015)
-d <- dat[sel,]
-
-# replace extraordinaria ags
-sel <- which(d$nota=="extraordinaria")
-tmp <- d[sel,]
-d <- d[-sel,]
-sel <- which(d$edon==tmp$edon & d$disn==tmp$disn)
-d[sel,] <- tmp
-rm(tmp)
+#######################################
+## Manipulate for split-vote version ##
+#######################################
 
 
-sel.l <- grep("^l[0-9]{2}", colnames(dat))
-l <- d[,sel.l] # subset labels columns
-colnames(l)
-
-table(l[,1])
-table(l[,2])
-table(l[,3])
-table(l[,4])
-table(l[,5])
-table(l[,6])
-table(l[,7])
-table(l[,8])
-table(l[,9])
-table(l[,10])
-table(l[,11])
-table(l[,12])
-table(l[,13])
-table(l[,14])
-
-d$pan <- 
-
-colnames(dat)
-dat$nota
-
-
-dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data"
-
-setwd("/home/eric/Desktop/MXelsCalendGovt/presentations/wilsonCenter2018")
-
-
-
-
-
-head(dat)
-
-dat$pan <- 0
-
-sel <- grep("l[0-9]{2}", colnames(d)) # select labels cols
-
-fn <- function(x){which(x=="pan")}
-apply(x = d[,sel], 1, FUN=fn)
-
-which(d[1,sel]=="pan")
