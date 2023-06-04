@@ -69,10 +69,11 @@ Congressional election data updated to 2021. A mixed majority system is in place
 - [[./data/dfdf2012-onCandidates.csv][~data/dfdf2012-onCandidates.csv~]] = names of all federal deputy candidates in districts and party lists since 2012. 
 - [[./data/seed2012-on.candidates.csv][~data/seed2012-on.candidates.csv~]] = names of all senatorial candidates in states and party lists since 2012. 
 ** Presidential election returns
-*Citation for this dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
+*Citation for the presidential dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - [[./data/prdf2006-on.csv][~data/prdf2006-on.csv~]]
 - [[./data/pred1964-on.csv][~data/pred1964-on.csv~]]
 ** Gubernatorial election returns
+*Citation for the gubernatorial dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - [[./data/goed1961-on.csv][~data/goed1961-on.csv~]] = updated to 2018
 ** Other
 # - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
