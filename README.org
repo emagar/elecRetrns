@@ -62,9 +62,10 @@ Municipal election data updated to 2022. Other than in the state of Nayarit sinc
     - ~incumbents~: [[https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy][Aguascalientes (1)--Nuevo León (19)]] [[https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy][Oaxaca (20)--Zacatecas (32)]]
 ** Election returns for Congress
 Congressional election data updated to 2021. A mixed majority system is in place since 1979 for the chamber of deputies, since 1997 for the senate. Weldon 2001 describes the system well. 300 deputy seats are elected by plurality rule in single member districts. Two versions of federal deputy returns are included: one with district votes aggregated by candidate, another aggregated by party (the script [[./code/ay.r][~code/df.r~]] was used for these manipulations):
+
+*Citation for Congressional election data*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
 - [[./data/dfdf1979-on.coalAgg.csv][~data/dfdf1979-on.coalAgg.csv~]] = federal deputy returns, coalition votes aggregated by candidate.
 - [[./data/dfdf1979-on.coalSplit.csv][~data/dfdf1979-on.coalSplit.csv~]] = federal deputy returns, coalition votes split among parties where source allows it.
-  + *Citation for this dataset*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
 - [[./data/dfdf2012-onCandidates.csv][~data/dfdf2012-onCandidates.csv~]] = names of all federal deputy candidates in districts and party lists since 2012. 
 - [[./data/seed2012-on.candidates.csv][~data/seed2012-on.candidates.csv~]] = names of all senatorial candidates in states and party lists since 2012. 
 ** Presidential election returns

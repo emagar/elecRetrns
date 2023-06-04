@@ -1,17 +1,17 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#org8b6d68b)
-- [Files in the repository and how to cite them](#orgcdd8d42)
-  - [File naming conventions](#orgca80965)
-  - [Election returns for municipal offices](#org876a8ff)
-  - [Election returns for Congress](#org22ed1f1)
-  - [Presidential election returns](#orgc97cfab)
-  - [Gubernatorial election returns](#org9fa84ec)
-  - [Other](#org6928226)
-- [Codebook](#orgcd12bd8)
-- [Coding procedure for the incumbent's status<a id="orgb5c9de2"></a>](#org31ef7e4)
-- [Procedimiento para codificar el estatus del ocupante<a id="org858d590"></a>](#org3d5b7ab)
-- [<a id="org50a8c7b"></a>Basic instructions to inspect data online:](#orge9a9c22)
-- [Sources](#org574f790)
-- [Acknowledgements](#org940675f)
+- [Description of *Recent Mexican Election Vote Returns* repository](#org6041a52)
+- [Files in the repository and how to cite them](#org1304c30)
+  - [File naming conventions](#orgd3eeecd)
+  - [Election returns for municipal offices](#org5a50524)
+  - [Election returns for Congress](#orgc875e1a)
+  - [Presidential election returns](#org0ac8110)
+  - [Gubernatorial election returns](#org567e779)
+  - [Other](#orgfd11833)
+- [Codebook](#org8a85a47)
+- [Coding procedure for the incumbent's status<a id="orga239cae"></a>](#orgc0fc9f1)
+- [Procedimiento para codificar el estatus del ocupante<a id="orge74caca"></a>](#org324eb41)
+- [<a id="org256cc3f"></a>Basic instructions to inspect data online:](#orgc1a3184)
+- [Sources](#org2f593b4)
+- [Acknowledgements](#org2e45150)
 
 Last revision: 2023-05-27
 
@@ -32,7 +32,7 @@ Last revision: 2023-05-27
 ---
 
 
-<a id="org8b6d68b"></a>
+<a id="org6041a52"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -46,14 +46,14 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orgcdd8d42"></a>
+<a id="org1304c30"></a>
 
 # Files in the repository and how to cite them
 
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, <https://github.com/emagar/elecReturns>.
 
 
-<a id="orgca80965"></a>
+<a id="orgd3eeecd"></a>
 
 ## File naming conventions
 
@@ -62,7 +62,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 So, for example `aymu1970-on.csv` are *ayuntamiento* votes at the municipio level since 1970.
 
 
-<a id="org876a8ff"></a>
+<a id="org5a50524"></a>
 
 ## Election returns for municipal offices
 
@@ -73,26 +73,27 @@ Municipal election data updated to 2022. Other than in the state of Nayarit sinc
 -   [`data/aymu1989-on.incumbents.csv`](./data/aymu1989-present.incumbents.csv) = names of elected municipal officers (*presidente municipal* only) since 1989. Includes reelection status since 2018.
 -   [`data/ayde2008-on-Nayarit-regid.coalAgg.csv`](./data/ayde2008-on-Nayarit-regid.coalAgg.csv) = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
 -   [`data/ayde2008-on-Nayarit-regid.coalSplit.csv`](./data/ayde2008-on-Nayarit-regid.coalSplit.csv) = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source allows it.
--   **Inspect the data above online** in Google sheets (basic instructions [here](#org50a8c7b); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#org256cc3f); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
     -   `*.coalAgg` versions: [1970s](https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy) [1980s](https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy) [1990s](https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy) [2000s](https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy) [2010s](https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy) [2020s](https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/copy)
     -   `*.coalSplit` versions : [1970s](https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/edit?usp=sharing) [1980s](https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy) [1990s](https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/edit?usp=sharing) [2000s](https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/edit?usp=sharing) [2010s](https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/edit?usp=sharing) [2020s](https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/edit?usp=sharing) [Nayarit](https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy)
     -   `incumbents`: [Aguascalientes (1)&#x2013;Nuevo León (19)](https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy) [Oaxaca (20)&#x2013;Zacatecas (32)](https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy)
 
 
-<a id="org22ed1f1"></a>
+<a id="orgc875e1a"></a>
 
 ## Election returns for Congress
 
 Congressional election data updated to 2021. A mixed majority system is in place since 1979 for the chamber of deputies, since 1997 for the senate. Weldon 2001 describes the system well. 300 deputy seats are elected by plurality rule in single member districts. Two versions of federal deputy returns are included: one with district votes aggregated by candidate, another aggregated by party (the script [`code/df.r`](./code/ay.r) was used for these manipulations):
 
+**Citation for Congressional election data**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
+
 -   [`data/dfdf1979-on.coalAgg.csv`](./data/dfdf1979-on.coalAgg.csv) = federal deputy returns, coalition votes aggregated by candidate.
 -   [`data/dfdf1979-on.coalSplit.csv`](./data/dfdf1979-on.coalSplit.csv) = federal deputy returns, coalition votes split among parties where source allows it.
-    -   **Citation for this dataset**: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, *Political Geography* 57(1):1-12.
 -   [`data/dfdf2012-onCandidates.csv`](./data/dfdf2012-onCandidates.csv) = names of all federal deputy candidates in districts and party lists since 2012.
 -   [`data/seed2012-on.candidates.csv`](./data/seed2012-on.candidates.csv) = names of all senatorial candidates in states and party lists since 2012.
 
 
-<a id="orgc97cfab"></a>
+<a id="org0ac8110"></a>
 
 ## Presidential election returns
 
@@ -101,7 +102,7 @@ Congressional election data updated to 2021. A mixed majority system is in place
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 
 
-<a id="org9fa84ec"></a>
+<a id="org567e779"></a>
 
 ## Gubernatorial election returns
 
@@ -109,7 +110,7 @@ Congressional election data updated to 2021. A mixed majority system is in place
     -   **Citation for this dataset**: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, *The Journal of Politics* 74(2):383-399.
 
 
-<a id="org6928226"></a>
+<a id="orgfd11833"></a>
 
 ## Other
 
@@ -117,7 +118,7 @@ Congressional election data updated to 2021. A mixed majority system is in place
 -   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
 
-<a id="orgcd12bd8"></a>
+<a id="org8a85a47"></a>
 
 # Codebook
 
@@ -155,13 +156,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#orgb5c9de2) for categories and coding procedure ([aquí](#org858d590) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orga239cae) for categories and coding procedure ([aquí](#orge74caca) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="org31ef7e4"></a>
+<a id="orgc0fc9f1"></a>
 
-# Coding procedure for the incumbent's status<a id="orgb5c9de2"></a>
+# Coding procedure for the incumbent's status<a id="orga239cae"></a>
 
 In file `data/aymu1985-on.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -179,9 +180,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org3d5b7ab"></a>
+<a id="org324eb41"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org858d590"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="orge74caca"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -199,9 +200,9 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="orge9a9c22"></a>
+<a id="orgc1a3184"></a>
 
-# <a id="org50a8c7b"></a>Basic instructions to inspect data online:
+# <a id="org256cc3f"></a>Basic instructions to inspect data online:
 
 You can open election returns in online spreadsheet form.
 
@@ -212,7 +213,7 @@ b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a 
 c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change.
 
 
-<a id="org574f790"></a>
+<a id="org2f593b4"></a>
 
 # Sources
 
@@ -227,7 +228,7 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="org940675f"></a>
+<a id="org2e45150"></a>
 
 # Acknowledgements
 
