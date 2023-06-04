@@ -392,7 +392,15 @@ c4 <- c3 <- c2 <- c1 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 
 #
 # will receive columns corresponding to coalition members in v/l for use when weighting votes contributed by each member
 w4 <- w3 <- w2 <- w1 <- as.list(rep("noCoal",I))
-
+#
+## # fill in easy cases with no coalition --- 3sep2021 no longer needed with new procedure
+## sel <- which(dat$dcoal==0)
+## cv[sel,] <- v[sel,]
+## cl[sel,] <- l[sel,]
+## sv[sel,] <- v[sel,]
+## sl[sel,] <- l[sel,]
+## # c1 c2 c3 c4 are pre-filled
+## # w1 w2 w3 w4 are pre-filled
 
 # fill in info selecting cases of coalitions with most members 
 sel7 <- which(max.tmp>1) 
