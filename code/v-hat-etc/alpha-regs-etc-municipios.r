@@ -4407,6 +4407,21 @@ out.y2018 <- for.export(year=2018)
 out.y2021 <- for.export(year=2021)
 out.y2024 <- for.export(year=2024)
 
+## place id in 2nd col
+out.y1988 <- out.y1988[moveme(names(out.y1988), "ife after yr")]
+out.y1991 <- out.y1991[moveme(names(out.y1991), "ife after yr")]
+out.y1994 <- out.y1994[moveme(names(out.y1994), "ife after yr")]
+out.y1997 <- out.y1997[moveme(names(out.y1997), "ife after yr")]
+out.y2000 <- out.y2000[moveme(names(out.y2000), "ife after yr")]
+out.y2003 <- out.y2003[moveme(names(out.y2003), "ife after yr")]
+out.y2006 <- out.y2006[moveme(names(out.y2006), "ife after yr")]
+out.y2009 <- out.y2009[moveme(names(out.y2009), "ife after yr")]
+out.y2012 <- out.y2012[moveme(names(out.y2012), "ife after yr")]
+out.y2015 <- out.y2015[moveme(names(out.y2015), "ife after yr")]
+out.y2018 <- out.y2018[moveme(names(out.y2018), "ife after yr")]
+out.y2021 <- out.y2021[moveme(names(out.y2021), "ife after yr")]
+out.y2024 <- out.y2024[moveme(names(out.y2024), "ife after yr")]
+
 ##################
 ## save to disk ##
 ##################

@@ -1595,6 +1595,21 @@ out.y2018 <- tmp.func(year=2018)
 out.y2021 <- tmp.func(year=2021)
 out.y2024 <- tmp.func(year=2024)
 
+## place id in 2nd col
+out.y1988 <- out.y1988[moveme(names(out.y1988), "disn after yr")]
+out.y1991 <- out.y1991[moveme(names(out.y1991), "disn after yr")]
+out.y1994 <- out.y1994[moveme(names(out.y1994), "disn after yr")]
+out.y1997 <- out.y1997[moveme(names(out.y1997), "disn after yr")]
+out.y2000 <- out.y2000[moveme(names(out.y2000), "disn after yr")]
+out.y2003 <- out.y2003[moveme(names(out.y2003), "disn after yr")]
+out.y2006 <- out.y2006[moveme(names(out.y2006), "disn after yr")]
+out.y2009 <- out.y2009[moveme(names(out.y2009), "disn after yr")]
+out.y2012 <- out.y2012[moveme(names(out.y2012), "disn after yr")]
+out.y2015 <- out.y2015[moveme(names(out.y2015), "disn after yr")]
+out.y2018 <- out.y2018[moveme(names(out.y2018), "disn after yr")]
+out.y2021 <- out.y2021[moveme(names(out.y2021), "disn after yr")]
+out.y2024 <- out.y2024[moveme(names(out.y2024), "disn after yr")]
+
 ##################
 ## save to disk ##
 ##################
