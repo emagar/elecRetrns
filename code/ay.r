@@ -428,7 +428,7 @@ for (i in 1:length(sel7)){
     tmp <- strsplit(save.label, split = "-") # break into component character vector
     tmp.c1[i,1:length(tmp[[1]])] <- tmp[[1]] # fill in coalition members
     #
-    target.cols <- numeric()       # initialize empty vector for vote sum
+    target.cols <- numeric()           # initialize empty vector 
     for (j in 1:7){
         #j <- 1 # debug
         if (tmp.c1[i,j]=="0") next

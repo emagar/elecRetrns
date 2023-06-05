@@ -70,16 +70,19 @@ Congressional election data updated to 2021. A mixed majority system is in place
 - [[./data/dfdf2006-on-candidates.csv][~data/dfdf2006-on-candidates.csv~]]  = names of all federal deputy candidates in districts and party lists since 2006. 
 - [[./data/seed2012-on.candidates.csv][~data/seed2012-on.candidates.csv~]]  = names of all senatorial candidates in states and party lists since 2012. 
 - *Inspect the data above online* in Google sheets (basic instructions [[instrucciones][here]]):
-  + [[https://docs.google.com/spreadsheets/d/1cUfi1BlpVVeBKo-vI2lbQAwtUGpGFlGAqcdHZ01BtRo/copy][~*.coalAgg~]] version
-  + [[https://docs.google.com/spreadsheets/d/1c57io0aooj54elYxw2Ya0QO1_tRWd-QWadKYCLU3CiA/copy][~*.coalSplit~]] version 
+  + [[https://docs.google.com/spreadsheets/d/1cUfi1BlpVVeBKo-vI2lbQAwtUGpGFlGAqcdHZ01BtRo/copy][~coalAgg~]] version
+  + [[https://docs.google.com/spreadsheets/d/1c57io0aooj54elYxw2Ya0QO1_tRWd-QWadKYCLU3CiA/copy][~coalSplit~]] version 
   + [[https://docs.google.com/spreadsheets/d/1r6BER0cmm4MNwNiy7ZdAwALzQn9QiEGg_9TfALumbPU/copy][~incumbents~]]
 ** Presidential election returns
+Presidential election data updated to 2018. Presidents elected by plurality in a nationwide race every six years.
+
 *Citation for the presidential dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - [[./data/prdf2006-on.csv][~data/prdf2006-on.csv~]]
 - [[./data/pred1964-on.csv][~data/pred1964-on.csv~]]
 ** Gubernatorial election returns
 *Citation for the gubernatorial dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
-- [[./data/goed1961-on.csv][~data/goed1961-on.csv~]] = updated to 2018
+- [[./data/goed1961-on.csv][~data/goed1961-on.csv~]] = governor statewide election returns since 1961, updated to 2022.
+- [[./data/goed1985-on.incumbents.csv][~data/goed1985-on.incumbents.csv~]] = elected governors since 1985, updated to 2019.
 ** Other
 # - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
