@@ -83,6 +83,24 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 *Citation for the gubernatorial dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - [[./data/goed1961-on.csv][~data/goed1961-on.csv~]] = governor statewide election returns since 1961, updated to 2022.
 - [[./data/goed1985-on.incumbents.csv][~data/goed1985-on.incumbents.csv~]] = elected governors since 1985, updated to 2019.
+** Historical party performance statistics
+Measures of recent electoral history offer indicators of party competitiveness of substantive interest, at different units of aggregation. This includes parties' predicted vote share (~v.hats~) based on their performance in the previous five congressional elections in the unit, assuming the linear tendency is all that matters. And, considering the longer haul, a measure of how sensitive the party's vote share in the unit is to national vote swings between 1994 and 2021 (~alphas~).
+
+Since vote returns prior to 1991 are unavailable at lower units of aggregation, backwards predictions derive ~v.hats~ for earlier years by proceeding in reverse, "predicting" from subsequent party performance.
+
+[[https://emagar.github.com/residuals][This blog entry]] describes the measures. 
+*** District level ($N = 300$)
+[[./data/v-hats-etc/dis/dipfed-distrito-vhat-2009.csv][2009]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2012.csv][2012]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2015.csv][2015]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2018.csv][2018]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2021.csv][2021]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2024.csv][2024]]
+**** Backwards prediction
+[[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1988]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1991]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1994]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1997]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2000]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2003]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2006]]
+*** Municipio level ($N \approx 2,500$)
+[[./data/v-hats-etc/mun/dipfed-municipio-vhat-2009.csv][2009]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2012.csv][2012]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2015.csv][2015]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2018.csv][2018]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2021.csv][2021]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2024.csv][2024]]
+**** Backwards prediction
+[[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1988]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1991]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1994]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1997]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2000]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2003]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2006]]
+*** Sección electoral level ($N \approx 67,000$)
+[[./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv][2009]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv][2012]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv][2015]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv][2018]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv][2021]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv][2024]]
+**** Backwards prediction
+[[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1991]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1994]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1997]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2000]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2003]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2006]]
 ** Other
 # - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
