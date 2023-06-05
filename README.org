@@ -89,15 +89,15 @@ Measures of recent electoral history offer indicators of party competitiveness o
 Since vote returns prior to 1991 are unavailable at lower units of aggregation, backwards predictions derive ~v.hats~ for earlier years by proceeding in reverse, "predicting" from subsequent party performance.
 
 [[https://emagar.github.com/residuals][This blog entry]] describes the measures. 
-*** District level ($N = 300$)
+*** District level $N = 300$
 [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2009.csv][2009]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2012.csv][2012]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2015.csv][2015]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2018.csv][2018]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2021.csv][2021]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2024.csv][2024]]
 **** Backwards prediction
 [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1988]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1991]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1994]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][1997]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2000]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2003]] [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][2006]]
-*** Municipio level ($N \approx 2,500$)
+*** Municipio level $N ~ 2,500$
 [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2009.csv][2009]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2012.csv][2012]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2015.csv][2015]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2018.csv][2018]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2021.csv][2021]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2024.csv][2024]]
 **** Backwards prediction
 [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1988]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1991]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1994]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][1997]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2000]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2003]] [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][2006]]
-*** Sección electoral level ($N \approx 67,000$)
+*** Sección electoral level $N ~ 67,000$
 [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv][2009]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv][2012]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv][2015]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv][2018]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv][2021]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv][2024]]
 **** Backwards prediction
 [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1991]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1994]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][1997]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2000]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2003]] [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][2006]]
