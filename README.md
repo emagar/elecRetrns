@@ -1,19 +1,19 @@
-- [Description of *Recent Mexican Election Vote Returns* repository](#orgc61184f)
-- [Files in the repository and how to cite them](#orgc06d319)
-  - [File naming conventions](#orgc78f0b3)
-  - [Election returns for municipal offices](#orgf53b8df)
-  - [Election returns for Congress](#orgd603123)
-  - [Presidential election returns](#orgfca1577)
-  - [Gubernatorial election returns](#org3e0ea4b)
-  - [Historical party performance statistics](#org68ff878)
-    - [Backwards prediction](#org9fbf2f5)
-  - [Other](#org8e85596)
-- [Codebook](#org2dd8765)
-- [Coding procedure for the incumbent's status<a id="org208f21d"></a>](#org2835120)
-- [Procedimiento para codificar el estatus del ocupante<a id="org6cdbed0"></a>](#org98534d7)
-- [<a id="org7c745cf"></a>Basic instructions to inspect data online:](#org6f4b96e)
-- [Sources](#org74f75a6)
-- [Acknowledgements](#org611df2c)
+- [Description of *Recent Mexican Election Vote Returns* repository](#org2b280ed)
+- [Files in the repository and how to cite them](#org1fb8c2a)
+  - [File naming conventions](#orgdd13b8f)
+  - [Election returns for municipal offices](#org494c89c)
+  - [Election returns for Congress](#org66bcb4d)
+  - [Presidential election returns](#orgc32968f)
+  - [Gubernatorial election returns](#org1393ca2)
+  - [Other](#org164170c)
+- [Historical party performance statistics](#orgba6c25b)
+  - [Backwards prediction](#orgfcfe78b)
+- [Codebook](#org03cafd5)
+- [Coding procedure for the incumbent's status<a id="orgf248b2b"></a>](#org6acc719)
+- [Procedimiento para codificar el estatus del ocupante<a id="org607e543"></a>](#orgc3c058a)
+- [<a id="orgf7bd8bc"></a>Basic instructions to inspect data online:](#org5975e56)
+- [Sources](#orgc1bcc2e)
+- [Acknowledgements](#org0f42f74)
 
 Last revision: 2023-05-27
 
@@ -21,11 +21,11 @@ Last revision: 2023-05-27
 
 <h2> Recent news </h2>
 
-<sup><sub>2023-05-26</sub></sup> **v.hat and alpha regressions**, summaring each unit's electoral history, migrated from <https://github.com/emagar/mxDistritos>. Despite using electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. See [this](https://emagar.github.io/residuales-2018-english/) blog post for details. There are several additions: (1) Pre-2009 v.hat predictions generated using same general approach, but backwards. Year t's predicted vote in the period is a linear projection of the unit's vote observed in years t+15, t+12 &#x2026; t+3. (2) Estimates and predictions for districts as units of obsevation added, including predicted votes for the suspicious 1988 election. (3) Script for split secciones finalized.
+<sup><sub>2023-05-26</sub></sup> **v.hat and alpha regressions**, summaring each unit's electoral history, migrated from <https://github.com/emagar/mxDistritos>. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized.
 
 <sup><sub>2023-03-10</sub></sup> **Inspect election returns online in Google sheets [here](https://emagar.github.io/view-in-gSheets/) (Beta)**
 
-<sup><sub>2023-02-22</sub></sup> **Casilla latitude/longitude** added for federal elections between 2006 and 2018 (excluding 2012, where source requires debugging).
+<sup><sub>2023-02-22</sub></sup> **Casilla latitude/longitude** added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
 
 <sup><sub>2022-11-18</sub></sup> **Casilla-level lista nominal** added to 1991-2003 federal deputy files.
 
@@ -34,7 +34,7 @@ Last revision: 2023-05-27
 ---
 
 
-<a id="orgc61184f"></a>
+<a id="org2b280ed"></a>
 
 # Description of *Recent Mexican Election Vote Returns* repository
 
@@ -43,19 +43,19 @@ Last revision: 2023-05-27
 -   Email: emagar at itam dot mx
 -   Citation for the data: see 'About' on the repository landing page
 
-The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data inludes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot).
+The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data includes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot).
 
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="orgc06d319"></a>
+<a id="org1fb8c2a"></a>
 
 # Files in the repository and how to cite them
 
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, <https://github.com/emagar/elecReturns>.
 
 
-<a id="orgc78f0b3"></a>
+<a id="orgdd13b8f"></a>
 
 ## File naming conventions
 
@@ -64,7 +64,7 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 So, for example `aymu1970-on.csv` are *ayuntamiento* votes at the municipio level since 1970.
 
 
-<a id="orgf53b8df"></a>
+<a id="org494c89c"></a>
 
 ## Election returns for municipal offices
 
@@ -75,13 +75,13 @@ Municipal election data updated to 2022. Other than in the state of Nayarit sinc
 -   [`data/aymu1989-on.incumbents.csv`](./data/aymu1989-present.incumbents.csv) = names of elected municipal officers (*presidente municipal* only) since 1989. Includes reelection status since 2018.
 -   [`data/ayde2008-on-Nayarit-regid.coalAgg.csv`](./data/ayde2008-on-Nayarit-regid.coalAgg.csv) = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
 -   [`data/ayde2008-on-Nayarit-regid.coalSplit.csv`](./data/ayde2008-on-Nayarit-regid.coalSplit.csv) = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source allows it.
--   **Inspect the data above online** in Google sheets (basic instructions [here](#org7c745cf); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#orgf7bd8bc); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
     -   `*.coalAgg` versions: [1970s](https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy) [1980s](https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy) [1990s](https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy) [2000s](https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy) [2010s](https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy) [2020s](https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/copy)
     -   `*.coalSplit` versions : [1970s](https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/copy) [1980s](https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy) [1990s](https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/copy) [2000s](https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/copy) [2010s](https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/copy) [2020s](https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy)
     -   `incumbents`: [Aguascalientes (1)&#x2013;Nuevo León (19)](https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy) [Oaxaca (20)&#x2013;Zacatecas (32)](https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy)
 
 
-<a id="orgd603123"></a>
+<a id="org66bcb4d"></a>
 
 ## Election returns for Congress
 
@@ -94,13 +94,13 @@ Congressional election data updated to 2021. A mixed majority system is in place
 -   [`data/dfdf1997-on.incumbents.csv`](./data/dfdf1979-on.coalSplit.csv) = names of elected federal deputies (SMD tier only) since 1997. Includes reelection status since 2021.
 -   [`data/dfdf2006-on-candidates.csv`](./data/dfdf2006-on-candidates.csv) = names of all federal deputy candidates in districts and party lists since 2006.
 -   [`data/seed2012-on.candidates.csv`](./data/seed2012-on.candidates.csv) = names of all senatorial candidates in states and party lists since 2012.
--   **Inspect the data above online** in Google sheets (basic instructions [here](#org7c745cf)):
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#orgf7bd8bc)):
     -   [`coalAgg`](https://docs.google.com/spreadsheets/d/1cUfi1BlpVVeBKo-vI2lbQAwtUGpGFlGAqcdHZ01BtRo/copy) version
     -   [`coalSplit`](https://docs.google.com/spreadsheets/d/1c57io0aooj54elYxw2Ya0QO1_tRWd-QWadKYCLU3CiA/copy) version
     -   [`incumbents`](https://docs.google.com/spreadsheets/d/1r6BER0cmm4MNwNiy7ZdAwALzQn9QiEGg_9TfALumbPU/copy)
 
 
-<a id="orgfca1577"></a>
+<a id="orgc32968f"></a>
 
 ## Presidential election returns
 
@@ -112,7 +112,7 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 -   [`data/pred1964-on.csv`](./data/pred1964-on.csv)
 
 
-<a id="org3e0ea4b"></a>
+<a id="org1393ca2"></a>
 
 ## Gubernatorial election returns
 
@@ -122,13 +122,19 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 -   [`data/goed1985-on.incumbents.csv`](./data/goed1985-on.incumbents.csv) = elected governors since 1985, updated to 2019.
 
 
-<a id="org68ff878"></a>
+<a id="org164170c"></a>
 
-## Historical party performance statistics
+## Other
 
-Measures of recent electoral history offer indicators of party competitiveness of substantive interest, at different units of aggregation. This includes parties' predicted vote share (`v.hats`) based on their performance in the previous five congressional elections in the unit, assuming the linear tendency is all that matters. And, considering the longer haul, a measure of how sensitive the party's vote share in the unit is to national vote swings between 1994 and 2021 (`alphas`).
+-   [`code/extract-state-yr-mu-returns.r`](./code/extract-state-yr-mu-returns.r) = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each.
+-   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
-[This blog entry](https://emagar.github.io/residuales-2018-english/) describes the measures.
+
+<a id="orgba6c25b"></a>
+
+# Historical party performance statistics
+
+Measures of recent electoral history, that [this blog entry](https://emagar.github.io/residuales-2018-english/) describes, offer indicators of party competitiveness at different units of aggregation. This includes quantities of substantive interest, such as parties' predicted vote share in the unit (`v.hats`) based on their performance in the previous five congressional elections, and how sensitive the party's vote share in the unit is to national vote swings (`alphas`) between 1994 and 2021.
 
 | Level             | 2009                                                                                                                                                         | 2012                                                                                                                                                         | 2015                                                                                                                                                         | 2018                                                                                                                                                         | 2021                                                                                                                                                         | 2024                                                                                                                                                         |
 |----------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------------------------------------------ |------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -137,11 +143,11 @@ Measures of recent electoral history offer indicators of party competitiveness o
 | Sección electoral | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv)                                                                                                    |
 
 
-<a id="org9fbf2f5"></a>
+<a id="orgfcfe78b"></a>
 
-### Backwards prediction
+## Backwards prediction
 
-Vote returns prior to 1991 are unavailable at lower units of aggregation. `v.hats` for earlier years are obtained by proceeding in reverse, "predicting" from subsequent party performance.
+Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-2009 `v.hats` are obtained by using same general approach, but backwards, "predicting" from subsequent party performance. Year t's predicted vote up to 2006 is a linear projection of the unit's vote observed in the next five elections (years t+15, t+12 &#x2026; t+3).
 
 | Level             | 1988                                                                                                                                                       | 1991                                                                                                                                                       | 1994                                                                                                                                                       | 1997                                                                                                                                                       | 2000                                                                                                                                                       | 2003                                                                                                                                                       | 2006                                                                                                                                                       |
 |----------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -150,15 +156,7 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. `v.hat
 | Sección electoral |                                                                                                                                                            | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    |
 
 
-<a id="org8e85596"></a>
-
-## Other
-
--   [`code/extract-state-yr-mu-returns.r`](./code/extract-state-yr-mu-returns.r) = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each.
--   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
-
-
-<a id="org2dd8765"></a>
+<a id="org03cafd5"></a>
 
 # Codebook
 
@@ -196,13 +194,13 @@ Most variables are included in every file, some appear in selected files only.
 -   *fake* = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
 -   *win* = winner's party or coalition.
 -   *incumbent* = winning candidate's name.
--   *race.after* = incumbent's status in the subsequent race. See [this](#org208f21d) for categories and coding procedure ([aquí](#org6cdbed0) la versión en español del procedimiento codificador).
+-   *race.after* = incumbent's status in the subsequent race. See [this](#orgf248b2b) for categories and coding procedure ([aquí](#org607e543) la versión en español del procedimiento codificador).
 -   *dcarta* = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
 
 
-<a id="org2835120"></a>
+<a id="org6acc719"></a>
 
-# Coding procedure for the incumbent's status<a id="org208f21d"></a>
+# Coding procedure for the incumbent's status<a id="orgf248b2b"></a>
 
 In file `data/aymu1985-on.incumbents.csv`, variable *race.after* equals one of the following categories:
 
@@ -220,9 +218,9 @@ In categories other than the first two above, a suffix may be present.
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
 
-<a id="org98534d7"></a>
+<a id="orgc3c058a"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org6cdbed0"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="org607e543"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -240,9 +238,9 @@ En las categorías 3 en adelante, un sufijo puede estar presente.
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
 
-<a id="org6f4b96e"></a>
+<a id="org5975e56"></a>
 
-# <a id="org7c745cf"></a>Basic instructions to inspect data online:
+# <a id="orgf7bd8bc"></a>Basic instructions to inspect data online:
 
 You can open election returns in online spreadsheet form.
 
@@ -253,7 +251,7 @@ b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a 
 c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change.
 
 
-<a id="org74f75a6"></a>
+<a id="orgc1bcc2e"></a>
 
 # Sources
 
@@ -268,11 +266,11 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="org611df2c"></a>
+<a id="org0f42f74"></a>
 
 # Acknowledgements
 
-Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. and CONACYT's Sistema Nacional de Investigadores. He is responsible for mistakes and shortcomings in the data.
+Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. He is responsible for mistakes and shortcomings in the data.
 
 Many students over the years have provided research assistance to retrieve and systematize the information reported here.
 
@@ -281,9 +279,9 @@ Many students over the years have provided research assistance to retrieve and s
 -   Eugenio Solís Flores
 -   Francisco Garfias
 -   José Angel Torrens Hernández
+-   Julio Solís Ríos
 -   Lucía Motolinia
 -   Mauricio Fernández Duque
+-   Odette
 -   Sonia Kuri Kosegarten
 -   Vidal Mendoza Tinoco
--   Odette
--   Julio Solís Ríos
