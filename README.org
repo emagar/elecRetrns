@@ -34,7 +34,7 @@ Recent news
 
 # Export to md: M-x org-md-export-to-markdown
 
-* Description of /Recent Mexican Election Vote Returns/ repository
+* Description of /Recent Mexican Election Vote Returns/ repository<<top>>
 - Author: Eric Magar
 - Location https://github.com/emagar/elecRetrns
 - Email: emagar at itam dot mx
@@ -45,7 +45,7 @@ The repository contains voting data for recent Mexican elections for certain off
 * Files in the repository and how to cite them
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 ** File naming conventions
-In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/ respectively), and the years included.
+In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/, respectively), then the years included.
 
 So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio level since 1970.
 ** Election returns for municipal offices
@@ -87,7 +87,7 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 # - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
 - [[./datosBrutos/][~datosBrutos/~]] = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit... [[mailto:emagar@itam.mx][e-mail me]] if you need any of these.
-* Historical party performance statistics
+* Historical party performance statistics [[top][top]]
 Measures of recent electoral history, that [[https://emagar.github.io/residuales-2018-english/][this blog entry]] describes, offer indicators of party competitiveness at different units of aggregation. This includes quantities of substantive interest, such as parties' predicted vote share in the unit (~v.hats~) based on their performance in the previous five congressional elections, and how sensitive the party's vote share in the unit is to national vote swings (~alphas~) between 1994 and 2021.
 | Level             | 2009     | 2012     | 2015     | 2018     | 2021     | 2024     |
 |-------------------+----------+----------+----------+----------+----------+----------|
@@ -104,19 +104,19 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 * Codebook
 Most variables are included in every file, some appear in selected files only.  
 - /edon/ = state number 1:32.
-- /edo/ = state abbreviation (may differ from the 'official' abbreviations so that sorting them alphabetically preserves the order set by /edon/).
-- /disn/ = /edon/*100 + district number.
+- /edo/ = state abbreviation (may differ from commonly used abbreviations so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).
+- /disn/ = /edon/ * 100 + district number.
 - /emm/ = municipal indentifying code (edo-electionCycle.inegi). 
-- /mun/ = municipality.
-- /munn/, /inegi/, /ife/ = municipal identifier, reporting the number and the codes used by INEGI and IFE, respectively.
+- /mun/ = municipality's name.
+- /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
 - /yr/, /mo/, /dy/ = year, month, day of the election. 
 - /cab/ = cabecera, district's administrative center.
-- /circ/ = PR district (circunscripcion electoral, 2nd tier).
+- /circ/ = second-tier proportional representation district (circunscripcion electoral). 
 - /v01/, /v02/, ... = raw vote for candidate 1, 2, etc.
 - /l01/, /l02/, ... = label of candidate 1's, 2's, ... party or coalition.
 - /c01/, /c02/, ... = candidate 1's, 2's, ... name.
 - /s01/, /s02/, ... = suplente (substitute) for candidate 1, 2, etc.
-- /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates and invalid ballots. 
+- /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates minus invalid ballots. This is the proper denominator for vote shares.
 - /nr/ = votes for write-in candidates (void in Mexican election law).
 - /nul/ = invalid ballots.
 - /tot/ = total raw votes.
