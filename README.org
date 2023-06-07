@@ -107,7 +107,7 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Sección electoral |          | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      |
 [[top][<sub>Back to top</sub>]]
 * Codebook
-Most variables are included in every file, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
+Most variables are included in every file, some appear in selected files only. Printable codebook [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
 - /edon/ = state number 1:32.
 - /edo/ = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).
@@ -123,7 +123,7 @@ Most variables are included in every file, some appear in selected files only. P
 - /latitude/, /longitude/ = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 ** Temporal IDs
 - /yr/, /mo/, /dy/ = year, month, day of the election. 
-- /date_el/, /date_in/ = date of the election and start of term, respectively.
+- /date.el/, /date.in/ = date of the election and start of term, respectively.
 - /dextra/ = dummy equal 1 for special elections (/elección extraordinaria/), 0 otherwise.
 - /danul/ = dummy equal 1 for voided elections, 0 otherwise.
 ** Voting information
