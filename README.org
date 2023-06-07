@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2023-05-27
+Last revision: 2023-06-07
 
 ----------
 
@@ -8,13 +8,16 @@ Last revision: 2023-05-27
 Recent news
 </h2>
 
-<sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized. 
+<sup><sub>2023-06-07</sub></sup> *Codebook* updated, with a printable flier.
+
+<sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. 
+# Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized. 
 
 <sup><sub>2023-03-10</sub></sup> *Inspect election returns online in Google sheets [[https://emagar.github.io/view-in-gSheets/][here]] (Beta)*
 
 <sup><sub>2023-02-22</sub></sup> *Casilla latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
 
-<sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
+# <sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
 
 # *Special municipal elections* in 2021/22 added, elected mayors updated. 
 
