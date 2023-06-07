@@ -139,12 +139,19 @@ Most variables are included in every file, some appear in selected files only. P
 - /ncand/ = number of candidates running.
 - /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
 - /ncoal/ = number of candidates who ran on multi-party pre-electoral coalitions. 
-- /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions ('no' indidates no coalition).
+- /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions (`no' indidates no coalition).
 # - /imputacion/, /distpan/, /distpri/, /distprd/ = when the source reports the pooled votes received by multi-party coalitions only, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
 # - /seyr/, /semo/ = year of the previous/concurrent senatorial election.
 # - /sepan/, /sepri/, /seprd/ = votes won by major parties in previous/concurrent senatorial election.
 # - /seefec/ = effective votes in previous/concurrent senatorial election.
 - /dfake/ = indicates fake data for hegemonic era elections in 1960s for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
+** Historical performance
+- /d.pan/, /d.pri/, /d.left/ = first difference in the party's federal deputy vote share from last to present election.
+- /vhat.pan/, /vhat.pri/, /vhat.left/ = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
+- /bhat.pan/, /bhat.left/ = slope estimate of the party's autoregressive linear model for the unit. The PRI used as reference vote and has no slope estimate. 
+- /alphahat.pan/, /alphahat.pri/, /alphahat.left/ = party's /alpha/ estimated for the unit. 
+- /betahat.pan/, /betahat.left/ = party's /beta/ estimate for the unit. The PRI used as reference vote and has no /beta/ estimate.
+- /dbackward/ = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
 ** Candidate IDs
 - /incumbent/, /runnerup/ = winning/runner-up candidate's name.
 - /propietario/, /suplente/ = primary and substitute candidate's name, respectively. 

@@ -1,0 +1,313 @@
+% Created 2023-06-07 Wed 13:31
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Eric Magar}
+\date{\today}
+\title{Recent Mexican election vote returns repository}
+\hypersetup{
+ pdfauthor={Eric Magar},
+ pdftitle={Recent Mexican election vote returns repository},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.2.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+Last revision: 2023-06-07
+
+\noindent\rule{\textwidth}{0.5pt}
+
+<h2>
+Recent news
+</h2>
+
+<sup><sub>2023-06-07</sub></sup> \textbf{Codebook} updated, with a printable flier.
+
+<sup><sub>2023-05-26</sub></sup> \textbf{v.hat and alpha regressions}, summaring each unit's electoral history, migrated from \url{https://github.com/emagar/mxDistritos}. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. 
+
+<sup><sub>2023-03-10</sub></sup> \textbf{Inspect election returns online in Google sheets \href{https://emagar.github.io/view-in-gSheets/}{here} (Beta)}
+
+<sup><sub>2023-02-22</sub></sup> \textbf{Casilla latitude/longitude} added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
+
+\textbf{New script} \texttt{code/extract-state-yr-mu-returns.r}  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
+
+\noindent\rule{\textwidth}{0.5pt}
+
+\section{Description of \emph{Recent Mexican Election Vote Returns} repository\label{org5520298}}
+\label{sec:orgbb2f0a1}
+\begin{itemize}
+\item Author: Eric Magar
+\item Location \url{https://github.com/emagar/elecRetrns}
+\item Email: emagar at itam dot mx
+\item Citation for the data: see 'About' on the repository landing page
+\end{itemize}
+The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data includes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
+
+\emph{Important note:} older incarnations of this repository contain LFS (Large File System) files. Make sure to install \href{https://git-lfs.github.com/}{LFS} in your machine before checking out older commits of the repository.
+\section{Files in the repository and how to cite them}
+\label{sec:org3a4065e}
+You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, \url{https://github.com/emagar/elecReturns}.
+\subsection{File naming conventions}
+\label{sec:org89ad919}
+In general, file names identify the office elected (i.e., \textbf{df}, \textbf{se}, \textbf{pr}, \textbf{dl}, \textbf{go}, \textbf{ay} for \emph{diputados federales}, \emph{senadores}, \emph{presidente}, \emph{diputados locales}, \emph{gobernador}, and \emph{ayuntamiento}, respectively), followed by the unit of observation (i.e., \textbf{ed}, \textbf{df}, \textbf{dl}, \textbf{mu}, \textbf{de}, \textbf{se}, \textbf{ca} for \emph{estado}, \emph{distrito federal}, \emph{distrito local}, \emph{municipio}, \emph{demarcación}, \emph{sección}, and \emph{casilla}, respectively), then the years included.
+
+So, for example \texttt{aymu1970-on.csv} are \emph{ayuntamiento} votes at the municipio level since 1970.
+\subsection{Election returns for municipal offices}
+\label{sec:org538730a}
+Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), \emph{ayuntamientos} are elected in fused ballots for a \emph{presidente municipal} and a fraction of the municipal council (\emph{regidores} and \emph{síndicos}). Nayarit elects these members of the municipal council in single-member plurality districts called \emph{demarcaciones}. Two versions of municipal election returns are included: one with municipal votes aggregated by candidate, another aggregated by party (the script \href{./code/ay.r}{\texttt{code/ay.r}} was used for these manipulations):
+
+\begin{itemize}
+\item \href{./data/aymu1989-present.coalAgg.csv}{\texttt{data/aymu1970-on.coalAgg.csv}} = \emph{ayuntamiento} election returns, coalition votes aggregated by candidate.
+\item \href{./data/aymu1989-present.coalSplit.csv}{\texttt{data/aymu1970-on.coalSplit.csv}} = \emph{ayuntamiento} election returns, coalition votes split among parties where source allows it.
+\item \href{./data/aymu1989-present.incumbents.csv}{\texttt{data/aymu1989-on.incumbents.csv}} = names of elected municipal officers (\emph{presidente municipal} only) since 1989. Includes reelection status since 2018.
+\item \href{./data/ayde2008-on-Nayarit-regid.coalAgg.csv}{\texttt{data/ayde2008-on-Nayarit-regid.coalAgg.csv}} = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
+\item \href{./data/ayde2008-on-Nayarit-regid.coalSplit.csv}{\texttt{data/ayde2008-on-Nayarit-regid.coalSplit.csv}} = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source allows it.
+\item \textbf{Inspect the data above online} in Google sheets (basic instructions \hyperref[org0025864]{here}; data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
+\begin{itemize}
+\item \texttt{*.coalAgg} versions: \href{https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf\_MbthCmKCloI/copy}{1970s} \href{https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy}{1980s} \href{https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy}{1990s} \href{https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS\_G82Z-UT0vtTxSVFI/copy}{2000s} \href{https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy}{2010s} \href{https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy}{2020s} \href{https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj\_V86mK-3UeH3w/copy}{Nayarit}
+\item \texttt{*.coalSplit} versions : \href{https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/copy}{1970s} \href{https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU\_kA4wlqSTLjrW-KiALc/copy}{1980s} \href{https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/copy}{1990s} \href{https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/copy}{2000s} \href{https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v\_YrqppcEVa1Q/copy}{2010s} \href{https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU\_RVEaadLsIWRWHU/copy}{2020s} \href{https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy}{Nayarit}
+\item \texttt{incumbents}: \href{https://docs.google.com/spreadsheets/d/1lgJJ2f8O\_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy}{Aguascalientes (1)--Nuevo León (19)} \href{https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy}{Oaxaca (20)--Zacatecas (32)}
+\end{itemize}
+\end{itemize}
+\subsection{Election returns for Congress}
+\label{sec:orgf93a65d}
+Congressional election data updated to 2021. A mixed majority system is in place since 1979 for the chamber of deputies, since 1997 for the senate (Weldon 2001 describes the system well). 300 deputy seats are elected by plurality rule in single member districts. Two versions of federal deputy returns are included: one with district votes aggregated by candidate, another by party (the script \href{./code/ay.r}{\texttt{code/df.r}} was used for these manipulations):
+
+\textbf{Citation for Congressional election data}: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, \emph{Political Geography} 57(1):1-12. 
+\begin{itemize}
+\item \href{./data/dfdf1979-on.coalAgg.csv}{\texttt{data/dfdf1979-on.coalAgg.csv}}     = federal deputy returns, coalition votes aggregated by candidate.
+\item \href{./data/dfdf1979-on.coalSplit.csv}{\texttt{data/dfdf1979-on.coalSplit.csv}}   = federal deputy returns, coalition votes split among parties where source allows it.
+\item \href{./data/dfdf1979-on.coalSplit.csv}{\texttt{data/dfdf1997-on.incumbents.csv}}  = names of elected federal deputies (SMD tier only) since 1997. Includes reelection status since 2021.
+\item \href{./data/dfdf2006-on-candidates.csv}{\texttt{data/dfdf2006-on-candidates.csv}}  = names of all federal deputy candidates in districts and party lists since 2006.
+\item \href{./data/seed2012-on.candidates.csv}{\texttt{data/seed2012-on.candidates.csv}}  = names of all senatorial candidates in states and party lists since 2012.
+\item \textbf{Inspect the data above online} in Google sheets (basic instructions \hyperref[org0025864]{here}):
+\begin{itemize}
+\item \href{https://docs.google.com/spreadsheets/d/1cUfi1BlpVVeBKo-vI2lbQAwtUGpGFlGAqcdHZ01BtRo/copy}{\texttt{coalAgg}} version
+\item \href{https://docs.google.com/spreadsheets/d/1c57io0aooj54elYxw2Ya0QO1\_tRWd-QWadKYCLU3CiA/copy}{\texttt{coalSplit}} version
+\item \href{https://docs.google.com/spreadsheets/d/1r6BER0cmm4MNwNiy7ZdAwALzQn9QiEGg\_9TfALumbPU/copy}{\texttt{incumbents}}
+\end{itemize}
+\end{itemize}
+\subsection{Presidential election returns}
+\label{sec:orgd7d8774}
+Presidential election data updated to 2018. Presidents elected by plurality in a nationwide race every six years.
+
+\textbf{Citation for the presidential dataset}: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, \emph{The Journal of Politics} 74(2):383-399.
+\begin{itemize}
+\item \href{./data/prdf2006-on.csv}{\texttt{data/prdf2006-on.csv}}
+\item \href{./data/pred1964-on.csv}{\texttt{data/pred1964-on.csv}}
+\end{itemize}
+\subsection{Gubernatorial election returns}
+\label{sec:org226487f}
+\textbf{Citation for the gubernatorial dataset}: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, \emph{The Journal of Politics} 74(2):383-399.
+\begin{itemize}
+\item \href{./data/goed1961-on.csv}{\texttt{data/goed1961-on.csv}} = governor statewide election returns since 1961, updated to 2022.
+\item \href{./data/goed1985-on.incumbents.csv}{\texttt{data/goed1985-on.incumbents.csv}} = elected governors since 1985, updated to 2019.
+\end{itemize}
+\subsection{Other}
+\label{sec:org108b619}
+\begin{itemize}
+\item \href{./code/extract-state-yr-mu-returns.r}{\texttt{code/extract-state-yr-mu-returns.r}} = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each.
+\item \href{./datosBrutos/}{\texttt{datosBrutos/}} = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit\ldots{} \href{mailto:emagar@itam.mx}{e-mail me} if you need any of these.
+\end{itemize}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Historical party performance statistics}
+\label{sec:org2e85bcf}
+Measures of recent electoral history, that \href{https://emagar.github.io/residuales-2018-english/}{this blog entry} describes, offer indicators of party competitiveness at different units of aggregation. This includes quantities of substantive interest, such as parties' predicted vote share in the unit (\texttt{v.hats}) based on their performance in the previous five congressional elections, and how sensitive the party's vote share in the unit is to national vote swings (\texttt{alphas}) between 1994 and 2021.
+\begin{center}
+\begin{tabular}{lllllll}
+Level & 2009 & 2012 & 2015 & 2018 & 2021 & 2024\\
+\hline
+District & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2009.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1E9hffMdeTqOG5V8z7YEwCRRvazpYaj5HSa5xqOn4WJs/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2012.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1vze9n0HwIw8RC68Ie6lRB1x-pgg0purapbF04iywKdc/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2015.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1YM8g\_tmfNtnyJQva6N6HH6NnLa2Si40amO9di40lw8c/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2018.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1xP4ABf7VvSLefRRyScdBxVGarWOr\_hYZK956hIPZkIY/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2021.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1Oce9stn05v9M-T8YusF2d7nPxy3J8\_OqRVdiDnOI9mQ/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-2024.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1p-EH1pahzgoMgF6yVpFp-\_L6Byma0ZmBUfi0e1zanl0/copy}{view}\\
+Municipio & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2009.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1Y3VipbSzmhbfWUXBnNVHGS8mDjHxaEW1lYoccQ9tr48/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2012.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1LwuFkzPVLVwL2kkOEBBz54g7ZDM6RMJ4mlQv7awIDtg/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2015.csv}{csv} \href{https://docs.google.com/spreadsheets/d/18XlMxG4HN\_vrDdyPYtqJbQXKpM-1LR5MVq598Any2nw/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2018.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1L9SeCXUpHkhk4K1Xagv34Z65i8WvmW9E-ApeNB36\_v4/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2021.csv}{csv} \href{https://docs.google.com/spreadsheets/d/14vSmGXfQc5BXvZ32nKAVyaQdDV1dz6cXgL1MGMxxt94/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-2024.csv}{csv} \href{https://docs.google.com/spreadsheets/d/13FnRerpuxIM-RZfgzkjUiPXKPKL1JACkBIk0oa2kSfI/copy}{view}\\
+Sección electoral & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv}{csv}\\
+\end{tabular}
+\end{center}
+\subsection{Backwards predictions}
+\label{sec:orgf78908d}
+Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-2009 \texttt{v.hats} are obtained by using same general approach, but backwards, "predicting" from subsequent party performance. Year t's predicted vote (up to 2006) is a linear projection of the unit's vote in the next five elections (years t+15, t+12 \ldots{} t+3). 
+\begin{center}
+\begin{tabular}{llllllll}
+Level & 1988 & 1991 & 1994 & 1997 & 2000 & 2003 & 2006\\
+\hline
+District & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1KL3Cu9B-xvMSkyc0FLosi69xns7Pk6yx8zdyU-aLkhw/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1eU\_LXZhj-Lcd4E2OdJUj-w3yBIkWovXZFK7RPtqy08E/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1CPkki2zC5KnsNu-iuY3j4WRVv1eZooyjB6UWf3JXQTI/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1BWnGr8jtI6ezdK1ZQIIRhnY7ACI8mcPf5weF5z97tho/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1\_Qx5trIPmc5oAhXBNRHl\_fOR92JYTpXE4y6YpNN1Yss/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1ONYLsWjmNxzY0h2p0x\_waYUYditYF2lO0rDaONzwihY/copy}{view} & \href{./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1CZ2pzL3g4XcAnPeWs-TFh9m3qK0iaJX\_z9cvhWjCzWk/copy}{view}\\
+Municipio & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1kKC6rnp9rgXTv6aEQSvvGT9NY5J3J6D1UtNiJOwEJgo/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1JrjGS1pZ0CrDcjFd23RUTMdosOwWce568ra2E1pQxu4/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1Y01BdrOr15ei2pDeGrXtTEz6nqP6IS-USvoiZLoXWqk/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1ulwgVYCbgQeC\_5FuXCYkilP6yfpPc69NR\_gZpXf6QEM/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1M90-ZuW3SRnqxfRjboeWWvU2wt-YPnlp7nT4n7fM6zI/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1ky0Eris0cU3OaEA35kQPhjEsR\_kxilWnx-iEun8D06M/copy}{view} & \href{./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv}{csv} \href{https://docs.google.com/spreadsheets/d/1HfzYxOxRcFfVgJivvX7nYeaiMbILM7ePAGSbL\_jcv74/copy}{view}\\
+Sección electoral &  & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv}{csv} & \href{./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv}{csv}\\
+\end{tabular}
+\end{center}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Codebook}
+\label{sec:orgffd06a6}
+Most variables are included in every file, some appear in selected files only. Printable codebook \href{./codebook-flier.pdf}{here}. 
+\subsection{Unit IDs}
+\label{sec:org0b1b818}
+\begin{itemize}
+\item \emph{edon} = state number 1:32.
+\item \emph{edo} = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by \emph{edon}, eg. Chiapas is cps, not chis).
+\item \emph{disn} = district identifier = \emph{edon} * 100 + district number.
+\item \emph{cab} = cabecera, district's administrative center.
+\item \emph{inegi}, \emph{ife} = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
+\item \emph{mun} = municipality's name.
+\item \emph{emm} = unit's identifying code (\emph{edo}-electionCycle with \emph{inegi} appended for municipalities, \emph{disn} for districts, and so forth). Using \emph{emm} as sort criterion returns a state-unit-time ordering.
+\item \emph{demar} = demarcación identifier = \emph{inegi} + 1/100 demarcación number (used by Nayarit only).
+\item \emph{seccion} = voting precinct (\emph{sección electoral}) identifier = \emph{edon} * 10000 + precinct number.
+\item \emph{casilla} = IFE/INE's polling booth identifier. Type B, C, E, and S booths are used, for \emph{Básica}, \emph{Contigua}, \emph{Extraordinaria}, and \emph{Especial}, respectively. See IFE's description \href{https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos\_casillas.pdf}{here}.
+\item \emph{circ} = secondary, proportional representation district (\emph{circunscripción plurinominal}) the primary district belongs to.
+\item \emph{latitude}, \emph{longitude} = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections.
+\end{itemize}
+\subsection{Temporal IDs}
+\label{sec:org77eb875}
+\begin{itemize}
+\item \emph{yr}, \emph{mo}, \emph{dy} = year, month, day of the election.
+\item \emph{date.el}, \emph{date.in} = date of the election and start of term, respectively.
+\item \emph{dextra} = dummy equal 1 for special elections (\emph{elección extraordinaria}), 0 otherwise.
+\item \emph{danul} = dummy equal 1 for voided elections, 0 otherwise.
+\end{itemize}
+\subsection{Voting information}
+\label{sec:orgfe872bc}
+\begin{itemize}
+\item \emph{v01}, \emph{v02}, \ldots{} = raw vote for candidate 1, 2, etc.
+\item \emph{l01}, \emph{l02}, \ldots{} = label of candidate 1's, 2's, \ldots{} party or coalition.
+\item \emph{c01}, \emph{c02}, \ldots{} = candidate 1's, 2's, \ldots{} name.
+\item \emph{efec} = effective votes, equal the total raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator for vote shares.
+\item \emph{lisnom} = eligible voters (\emph{lista nominal}).
+\item \emph{nr} = votes for write-in candidates (\emph{candidatos no registrados}, void in Mexican election law).
+\item \emph{nul}, \emph{nulos} = invalid ballots (\emph{votos nulos}).
+\item \emph{tot} = total raw votes.
+\item \emph{win} = winner's party or coalition.
+\item \emph{ncand} = number of candidates running.
+\item \emph{dcoal} = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
+\item \emph{ncoal} = number of candidates who ran on multi-party pre-electoral coalitions.
+\item \emph{coalpan}, \emph{coalpri}, \emph{coalprd} = members of major-party coalitions (`no' indidates no coalition).
+\end{itemize}
+
+\begin{itemize}
+\item \emph{dfake} = indicates fake data for hegemonic era elections in 1960s for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
+\end{itemize}
+\subsection{Historical performance}
+\label{sec:orgb08d9e4}
+\begin{itemize}
+\item \emph{d.pan}, \emph{d.pri}, \emph{d.left} = first difference in the party's federal deputy vote share from last to present election.
+\item \emph{vhat.pan}, \emph{vhat.pri}, \emph{vhat.left} = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
+\item \emph{bhat.pan}, \emph{bhat.left} = slope estimate of the party's autoregressive linear model for the unit. The PRI used as reference vote and has no slope estimate.
+\item \emph{alphahat.pan}, \emph{alphahat.pri}, \emph{alphahat.left} = party's \emph{alpha} estimated for the unit.
+\item \emph{betahat.pan}, \emph{betahat.left} = party's \emph{beta} estimate for the unit. The PRI used as reference vote and has no \emph{beta} estimate.
+\item \emph{dbackward} = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise.
+\end{itemize}
+\subsection{Candidate IDs}
+\label{sec:orgcead0a1}
+\begin{itemize}
+\item \emph{incumbent}, \emph{runnerup} = winning/runner-up candidate's name.
+\item \emph{propietario}, \emph{suplente} = primary and substitute candidate's name, respectively.
+\item \emph{part} = incumbent/candidate's party or coalition.
+\item \emph{part.2nd} = runner-up party or coalition.
+\item \emph{mg} = winner's margin = winner's vote share minus runner-up's vote share.
+\item \emph{dmujer} = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise.
+\item \emph{race.after} = incumbent's status in the next consecutive race. See \hyperref[orgb2d0574]{this} for categories and coding procedure (\hyperref[orgbfd88bb]{aquí} la versión en castellano del procedimiento codificador).
+\item \emph{dreran} = dummy equal 1 if incumbent ran again in the next consecutive race for the same office.
+\item \emph{dreelected} = dummy equal 1 if incumbent won the next consecutive race for the same office.
+\item \emph{dcarta} = dummy equal 1 if member of Congress filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See \href{http://eleccionconsecutiva.diputados.gob.mx/contendientes}{this}.
+\item \emph{lista} = candidate's rank in senate two-member party lists. Top member of runner-up vote-getting list wins the state's third senate seat.
+\item \emph{drp} = dummy equal 1 if candidate ran for a PR seat, 0 otherwise.
+\item \emph{ddied} = dummy equal 1 if incumbent died in office, 0 otherwise.
+\end{itemize}
+\subsection{Other}
+\label{sec:orgc8acdb9}
+\begin{itemize}
+\item \emph{nota} = observations possibly relevant for analysis.
+\item \emph{fuente}, \emph{source} = sources.
+\end{itemize}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Coding procedure for the incumbent's status\label{orgb2d0574}}
+\label{sec:org1107278}
+In file \texttt{data/aymu1985-on.incumbents.csv}, variable \emph{race.after} equals one of the following categories: 
+\begin{enumerate}
+\item 'Beaten' if the incumbent re-ran and lost;
+\item 'Reelected' if the incumbent re-ran and won;
+\item 'Renom-killed' if the incumbent re-ran and was killed in the campaign;
+\item 'Hi-office' if the incumbent ran for higher office;
+\item 'Out' if the incumbent withdrew or was not renominated;
+\item 'Term-limited' if the incumbent was ineligible for reelection due to a term limit;
+\item A year indicates that it is too early to know the incumbent's status (and the year of the next race).
+\end{enumerate}
+In categories other than the first two above, a suffix may be present. 
+\begin{itemize}
+\item Suffix '-p-lost' indicates that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition).
+\item Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
+\end{itemize}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Procedimiento para codificar el estatus del ocupante\label{orgbfd88bb}}
+\label{sec:orgaa4aeb2}
+En el archivo \texttt{data/aymu1985-on.incumbents.csv}, la variable \emph{race.after} indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
+\begin{enumerate}
+\item 'Beaten' si el ocupante volvió a contender y perdió;
+\item 'Reelected' si el ocupante volvió a contender y ganó;
+\item 'Renom-killed' si el ocupante volvió a contender y fue asesinado en la campaña;
+\item 'Hi-office' si el ocupante contendió por otro cargo de elección (p.ej. gobernador o senador);
+\item 'Out' si el ocupante se retiró o no fue repostulado por el partido;
+\item 'Term-limited' si el ocupante estaba constitucionalmente impedido para aspirar a reelegirse;
+\item Un año indica que aún es temprano para conocer el estatus (y el año de la próxima elección).
+\end{enumerate}
+En las categorías 3 en adelante, un sufijo puede estar presente. 
+\begin{itemize}
+\item El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora).
+\item El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
+\end{itemize}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Basic instructions to inspect data online:\label{org0025864}}
+\label{sec:org05d0423}
+You can open election returns in online spreadsheet form. 
+
+a. To use this feature, you must first log into a Google account. Then click the desired file's link, and confirm you wish a copy. A Google spreadsheet will open in your browser. 
+
+b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a subset of the observations only), or save the file to your hard drive, you must unlink the data from the repository. To do this type CTRL+A (ie., select all) then CTRL+SHIFT+V (ie., paste values only). 
+
+c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change. 
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\section{Sources}
+\label{sec:orgc5e4660}
+Work in progress
+\begin{itemize}
+\item \emph{Fuente} = iee/ife/ine indicates data obtained from the primary source, the state/federal election board's web site.
+\item \emph{Fuente} = tesis Melissa
+\item \emph{Fuente} = Magar 1994
+\item \emph{Fuente} = Mexico Electoral Banamex
+\item \emph{Fuente} = Toledo Patiño paper
+\item \emph{Fuente} = UAM Iztapalapa for older state races
+\item \emph{Fuente} = voz y voto
+\end{itemize}
+\section{Acknowledgements}
+\label{sec:orgea78457}
+Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. He is responsible for mistakes and shortcomings in the data. 
+
+Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
+\begin{itemize}
+\item Under construction
+\item Daniela Guzmán Lerma
+\item Eugenio Solís Flores
+\item Francisco Garfias
+\item José Angel Torrens Hernández
+\item Julio Solís Ríos
+\item Lucía Motolinia
+\item Mauricio Fernández Duque
+\item Odette
+\item Sonia Kuri Kosegarten
+\item Vidal Mendoza Tinoco
+\end{itemize}
+\hyperref[org5520298]{<sub>Back to top</sub>}
+\end{document}
