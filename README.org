@@ -95,8 +95,8 @@ Measures of recent electoral history, that [[https://emagar.github.io/residuales
 | District          | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2009.csv][csv]] [[https://docs.google.com/spreadsheets/d/1E9hffMdeTqOG5V8z7YEwCRRvazpYaj5HSa5xqOn4WJs/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2012.csv][csv]] [[https://docs.google.com/spreadsheets/d/1vze9n0HwIw8RC68Ie6lRB1x-pgg0purapbF04iywKdc/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2015.csv][csv]] [[https://docs.google.com/spreadsheets/d/1YM8g_tmfNtnyJQva6N6HH6NnLa2Si40amO9di40lw8c/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2018.csv][csv]] [[https://docs.google.com/spreadsheets/d/1xP4ABf7VvSLefRRyScdBxVGarWOr_hYZK956hIPZkIY/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2021.csv][csv]] [[https://docs.google.com/spreadsheets/d/1Oce9stn05v9M-T8YusF2d7nPxy3J8_OqRVdiDnOI9mQ/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-2024.csv][csv]] [[https://docs.google.com/spreadsheets/d/1p-EH1pahzgoMgF6yVpFp-_L6Byma0ZmBUfi0e1zanl0/copy][view]] |
 | Municipio         | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2009.csv][csv]] [[https://docs.google.com/spreadsheets/d/1Y3VipbSzmhbfWUXBnNVHGS8mDjHxaEW1lYoccQ9tr48/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2012.csv][csv]] [[https://docs.google.com/spreadsheets/d/1LwuFkzPVLVwL2kkOEBBz54g7ZDM6RMJ4mlQv7awIDtg/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2015.csv][csv]] [[https://docs.google.com/spreadsheets/d/18XlMxG4HN_vrDdyPYtqJbQXKpM-1LR5MVq598Any2nw/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2018.csv][csv]] [[https://docs.google.com/spreadsheets/d/1L9SeCXUpHkhk4K1Xagv34Z65i8WvmW9E-ApeNB36_v4/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2021.csv][csv]] [[https://docs.google.com/spreadsheets/d/14vSmGXfQc5BXvZ32nKAVyaQdDV1dz6cXgL1MGMxxt94/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-2024.csv][csv]] [[https://docs.google.com/spreadsheets/d/13FnRerpuxIM-RZfgzkjUiPXKPKL1JACkBIk0oa2kSfI/copy][view]] |
 | Sección electoral | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv][csv]]      |
-** Backwards prediction
-Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-2009 ~v.hats~ are obtained by using same general approach, but backwards, "predicting" from subsequent party performance. Year t's predicted vote up to 2006 is a linear projection of the unit's vote observed in the next five elections (years t+15, t+12 ... t+3). 
+** Backwards predictions
+Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-2009 ~v.hats~ are obtained by using same general approach, but backwards, "predicting" from subsequent party performance. Year t's predicted vote (up to 2006) is a linear projection of the unit's vote in the next five elections (years t+15, t+12 ... t+3). 
 | Level             | 1988     | 1991     | 1994     | 1997     | 2000     | 2003     | 2006     |
 |-------------------+----------+----------+----------+----------+----------+----------+----------|
 | District          | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1KL3Cu9B-xvMSkyc0FLosi69xns7Pk6yx8zdyU-aLkhw/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1eU_LXZhj-Lcd4E2OdJUj-w3yBIkWovXZFK7RPtqy08E/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1CPkki2zC5KnsNu-iuY3j4WRVv1eZooyjB6UWf3JXQTI/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1BWnGr8jtI6ezdK1ZQIIRhnY7ACI8mcPf5weF5z97tho/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1_Qx5trIPmc5oAhXBNRHl_fOR92JYTpXE4y6YpNN1Yss/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1ONYLsWjmNxzY0h2p0x_waYUYditYF2lO0rDaONzwihY/copy][view]] | [[./data/v-hats-etc/dis/dipfed-distrito-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1CZ2pzL3g4XcAnPeWs-TFh9m3qK0iaJX_z9cvhWjCzWk/copy][view]] |
@@ -104,41 +104,61 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Sección electoral |          | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      |
 [[top][<sub>Back to top</sub>]]
 * Codebook
-Most variables are included in every file, some appear in selected files only.  
+Most variables are included in every file, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
+** Unit IDs
 - /edon/ = state number 1:32.
-- /edo/ = state abbreviation (may differ from commonly used abbreviations so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).
-- /disn/ = /edon/ * 100 + district number.
-- /emm/ = municipal indentifying code (edo-electionCycle.inegi). 
-- /mun/ = municipality's name.
-- /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
-- /yr/, /mo/, /dy/ = year, month, day of the election. 
+- /edo/ = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).
+- /disn/ = district identifier = /edon/ * 100 + district number.
 - /cab/ = cabecera, district's administrative center.
-- /circ/ = second-tier proportional representation district (circunscripcion electoral). 
+- /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
+- /mun/ = municipality's name.
+- /emm/ = unit's identifying code (/edo/-electionCycle with /inegi/ appended for municipalities, /disn/ for districts, and so forth). Using /emm/ as sort criterion returns a state-unit-time ordering.
+- /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación number (used by Nayarit only).
+- /seccion/ = voting precinct (/sección electoral/) identifier = /edon/ * 10000 + precinct number.
+- /casilla/ = IFE/INE's polling booth identifier. Type B, C, E, and S booths are used, for /Básica/, /Contigua/, /Extraordinaria/, and /Especial/, respectively. See IFE's description [[https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf][here]].
+- /circ/ = secondary, proportional representation district (/circunscripción plurinominal/) the primary district belongs to. 
+- /latitude/, /longitude/ = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
+** Temporal IDs
+- /yr/, /mo/, /dy/ = year, month, day of the election. 
+- /date_el/, /date_in/ = date of the election and start of term, respectively.
+- /dextra/ = dummy equal 1 for special elections (/elección extraordinaria/), 0 otherwise.
+- /danul/ = dummy equal 1 for voided elections, 0 otherwise.
+** Voting information
 - /v01/, /v02/, ... = raw vote for candidate 1, 2, etc.
 - /l01/, /l02/, ... = label of candidate 1's, 2's, ... party or coalition.
 - /c01/, /c02/, ... = candidate 1's, 2's, ... name.
-- /s01/, /s02/, ... = suplente (substitute) for candidate 1, 2, etc.
-- /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates minus invalid ballots. This is the proper denominator for vote shares.
-- /nr/ = votes for write-in candidates (void in Mexican election law).
-- /nul/ = invalid ballots.
-- /tot/ = total raw votes.
+- /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator for vote shares.
 - /lisnom/ = eligible voters (/lista nominal/).
-- /latitude/, /longitude/ = coordinates indicating a precinct's (casilla) north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
-- /nota/ = notes.
-- /fuente/ = source.
+- /nr/ = votes for write-in candidates (/candidatos no registrados/, void in Mexican election law).
+- /nul/, /nulos/ = invalid ballots (/votos nulos/).
+- /tot/ = total raw votes.
+- /win/ = winner's party or coalition.
 - /ncand/ = number of candidates running.
 - /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
 - /ncoal/ = number of candidates who ran on multi-party pre-electoral coalitions. 
 - /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions ('no' indidates no coalition).
-- /imputacion/, /distpan/, /distpri/, /distprd/ = when some parties coelesced in such way that only their pooled vote was reported, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
-- /seyr/, /semo/ = year of the previous/concurrent senatorial election.
-- /sepan/, /sepri/, /seprd/ = votes won by major parties in previous/concurrent senatorial election.
-- /seefec/ = effective votes in previous/concurrent senatorial election.
-- /fake/ = indicates fake data for hegemonic era elections, made up of best guesses about what happened in the state's race for the purpose of computing vote lags. Will normally be dropped from analysis.
-- /win/ = winner's party or coalition.
-- /incumbent/ = winning candidate's name. 
-- /race.after/ = incumbent's status in the subsequent race. See [[status-rules][this]] for categories and coding procedure ([[status-rules-esp][aquí]] la versión en español del procedimiento codificador). 
-- /dcarta/ = dummy equal 1 if member filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]. 
+# - /imputacion/, /distpan/, /distpri/, /distprd/ = when the source reports the pooled votes received by multi-party coalitions only, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
+# - /seyr/, /semo/ = year of the previous/concurrent senatorial election.
+# - /sepan/, /sepri/, /seprd/ = votes won by major parties in previous/concurrent senatorial election.
+# - /seefec/ = effective votes in previous/concurrent senatorial election.
+- /dfake/ = indicates fake data for hegemonic era elections in 1960s for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
+** Candidate IDs
+- /incumbent/, /runnerup/ = winning/runner-up candidate's name.
+- /propietario/, /suplente/ = primary and substitute candidate's name, respectively. 
+- /part/ = incumbent/candidate's party or coalition.
+- /part.2nd/ = runner-up party or coalition.
+- /mg/ = winner's margin = winner's vote share minus runner-up's vote share.
+- /dmujer/ = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise. 
+- /race.after/ = incumbent's status in the next consecutive race. See [[status-rules][this]] for categories and coding procedure ([[status-rules-esp][aquí]] la versión en castellano del procedimiento codificador). 
+- /dreran/ = dummy equal 1 if incumbent ran again in the next consecutive race for the same office. 
+- /dreelected/ = dummy equal 1 if incumbent won the next consecutive race for the same office. 
+- /dcarta/ = dummy equal 1 if member of Congress filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]. 
+- /lista/ = candidate's rank in senate two-member party lists. Top member of runner-up vote-getting list wins the state's third senate seat.  
+- /drp/ = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
+- /ddied/ = dummy equal 1 if incumbent died in office, 0 otherwise.
+** Other
+- /nota/ = observations possibly relevant for analysis.
+- /fuente/, /source/ = sources.
 [[top][<sub>Back to top</sub>]]
 * Coding procedure for the incumbent's status<<status-rules>>
 In file ~data/aymu1985-on.incumbents.csv~, variable /race.after/ equals one of the following categories: 
