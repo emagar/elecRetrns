@@ -1,4 +1,4 @@
-ord,emm,edo,yr_el,clave,edon,date_el,date_in,part,part_el,gober,observaciones
+ord,emm,edo,yr,clave,edon,date_el,date_in,part.orig,part.elec,incumbent,observaciones
 1,ags-06.gob,ags,1986,1.1986,1,19861005,,pri,pri,MIGUEL ANGEL BARBERENA VEGA,
 2,ags-08.gob,ags,1992,1.1992,1,19920802,,pri,pri-pfcrn,OTTO GRANADOS ROLDAN,
 3,ags-10.gob,ags,1998,1.1998,1,19980802,,pan,pan,FELIPE GONZALEZ GONZALEZ,
@@ -69,7 +69,7 @@ ord,emm,edo,yr_el,clave,edon,date_el,date_in,part,part_el,gober,observaciones
 68,dgo-16.gob,dgo,2016,10.2016,10,20160605,,pan,pan-prd,JOSE ROSAS AISPURO,
 69,dgo-18.gob,dgo,2022,10.2022,10,20220605,,pri,pan-pri-prd,ESTEBAN VILLEGAS VILLARREAL,
 70,gua-05.gob,gua,1985,11.1985,11,19850707,,pri,pri-pps,RAFAEL CORRALES AYALA,
-71,gua-07.gob,gua,1991,11.1991,11,19910818,,pan,pan,CARLOS MEDINA PLASCENCIA,Ramón Aguirre Velázquez electo pero congreso local nombró a Carlos Medina Plascencia interino de 1991-1995
+71,gua-07.gob,gua,1991,11.1991,11,19910818,,pan,pan,CARLOS MEDINA PLASCENCIA,RAMON AGUIRRE VELAZQUEZ electo pero congreso local nombro a CMP interino de 1991-1995
 72,gua-09.gob,gua,1995,11.1995,11,19950528,,pan,pan,VICENTE FOX QUESADA,
 73,gua-11.gob,gua,2000,11.2,11,20000702,,pan,pan,JUAN CARLOS ROMERO HICKS,
 74,gua-13.gob,gua,2006,11.2006,11,20060702,,pan,pan-panal,JUAN MANUEL OLIVA RAMIREZ,

@@ -1,68 +1,68 @@
-ord,yr,mo,dy,edon,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07,l07,v08,l08,v09,l09,v10,l10,v11,l11,v12,l12,efec,nr,nulos,vtot,lisnom,fuente,note
-1,1964,jul,5,1,ags,AGUASCALIENTES,6549,pan,66924,pri,284,parm,130,pps,,,,,,,,,,,,,,,,,73887,,,,.,banamex,.
-2,1964,jul,5,2,bc,BAJA CALIFORNIA,38760,pan,142948,pri,0,parm,0,pps,,,,,,,,,,,,,,,,,181708,,,,.,banamex,.
-3,1964,jul,5,3,bcs,BAJA CALIFORNIA SUR,850,pan,25996,pri,164,parm,11,pps,,,,,,,,,,,,,,,,,27021,,,,.,banamex,.
-4,1964,jul,5,4,cam,CAMPECHE,2396,pan,56701,pri,0,parm,162,pps,,,,,,,,,,,,,,,,,59259,,,,.,banamex,.
-5,1964,jul,5,5,coa,COAHUILA,17500,pan,247926,pri,277,parm,565,pps,,,,,,,,,,,,,,,,,266268,,,,.,banamex,.
-6,1964,jul,5,6,col,COLIMA,4960,pan,34216,pri,49,parm,28,pps,,,,,,,,,,,,,,,,,39253,,,,.,banamex,.
-7,1964,jul,5,7,cps,CHIAPAS,3702,pan,331437,pri,487,parm,212,pps,,,,,,,,,,,,,,,,,335838,,,,.,banamex,.
-8,1964,jul,5,8,cua,CHIHUAHUA,58332,pan,221760,pri,834,parm,1358,pps,,,,,,,,,,,,,,,,,282284,,,,.,banamex,.
-9,1964,jul,5,9,df,DISTRITO FEDERAL,355798,pan,1024598,pri,18917,parm,18347,pps,,,,,,,,,,,,,,,,,1417660,,,,.,banamex,.
-10,1964,jul,5,10,dgo,DURANGO,32490,pan,205625,pri,439,parm,589,pps,,,,,,,,,,,,,,,,,239143,,,,.,banamex,.
-11,1964,jul,5,11,gua,GUANAJUATO,85290,pan,326172,pri,3093,parm,4256,pps,,,,,,,,,,,,,,,,,418811,,,,.,banamex,.
-12,1964,jul,5,12,gue,GUERRERO,11867,pan,381736,pri,620,parm,2895,pps,,,,,,,,,,,,,,,,,397118,,,,.,banamex,.
-13,1964,jul,5,13,hgo,HIDALGO,5603,pan,339620,pri,107,parm,146,pps,,,,,,,,,,,,,,,,,345476,,,,.,banamex,.
-14,1964,jul,5,14,jal,JALISCO,76320,pan,507795,pri,2441,parm,2721,pps,,,,,,,,,,,,,,,,,589277,,,,.,banamex,.
-15,1964,jul,5,15,mex,MEXICO,41690,pan,459309,pri,1786,parm,2174,pps,,,,,,,,,,,,,,,,,504959,,,,.,banamex,.
-16,1964,jul,5,16,mic,MICHOACAN,54500,pan,332395,pri,1317,parm,2083,pps,,,,,,,,,,,,,,,,,390295,,,,.,banamex,.
-17,1964,jul,5,17,mor,MORELOS,6802,pan,108415,pri,1137,parm,809,pps,,,,,,,,,,,,,,,,,117163,,,,.,banamex,.
-18,1964,jul,5,18,nay,NAYARIT,5679,pan,67101,pri,861,parm,2736,pps,,,,,,,,,,,,,,,,,76377,,,,.,banamex,.
-19,1964,jul,5,19,nl,NUEVO LEON,40733,pan,219270,pri,463,parm,835,pps,,,,,,,,,,,,,,,,,261301,,,,.,banamex,.
-20,1964,jul,5,20,oax,OAXACA,14950,pan,429996,pri,1293,parm,2195,pps,,,,,,,,,,,,,,,,,448434,,,,.,banamex,.
-21,1964,jul,5,21,pue,PUEBLA,34275,pan,514063,pri,2530,parm,2553,pps,,,,,,,,,,,,,,,,,553421,,,,.,banamex,.
-22,1964,jul,5,22,que,QUERETARO,9725,pan,101996,pri,581,parm,222,pps,,,,,,,,,,,,,,,,,112524,,,,.,banamex,.
-23,1964,jul,5,23,qui,QUINTANA ROO,598,pan,16926,pri,43,parm,10,pps,,,,,,,,,,,,,,,,,17577,,,,.,banamex,.
-24,1964,jul,5,24,san,SAN LUIS POTOSI,24757,pan,258162,pri,1013,parm,549,pps,,,,,,,,,,,,,,,,,284481,,,,.,banamex,.
-25,1964,jul,5,25,sin,SINALOA,4126,pan,207079,pri,178,parm,2571,pps,,,,,,,,,,,,,,,,,213954,,,,.,banamex,.
-26,1964,jul,5,26,son,SONORA,2601,pan,145380,pri,121,parm,9776,pps,,,,,,,,,,,,,,,,,157878,,,,.,banamex,.
-27,1964,jul,5,27,tab,TABASCO,990,pan,146433,pri,49,parm,172,pps,,,,,,,,,,,,,,,,,147644,,,,.,banamex,.
-28,1964,jul,5,28,tam,TAMAULIPAS,10502,pan,287484,pri,690,parm,1852,pps,,,,,,,,,,,,,,,,,300528,,,,.,banamex,.
-29,1964,jul,5,29,tla,TLAXCALA,1610,pan,98293,pri,2510,parm,31,pps,,,,,,,,,,,,,,,,,102444,,,,.,banamex,.
-30,1964,jul,5,30,ver,VERACRUZ,21816,pan,654211,pri,2540,parm,3668,pps,,,,,,,,,,,,,,,,,682235,,,,.,banamex,.
-31,1964,jul,5,31,yuc,YUCATAN,28914,pan,177326,pri,60,parm,408,pps,,,,,,,,,,,,,,,,,206708,,,,.,banamex,.
-32,1964,jul,5,32,zac,ZACATECAS,36942,pan,140921,pri,201,parm,304,pps,,,,,,,,,,,,,,,,,178368,,,,.,banamex,.
-33,1970,jul,5,1,ags,AGUASCALIENTES,11959,pan,81969,pri,389,parm,487,pps,,,,,,,,,,,,,,,,,94804,,,,.,banamex,.
-34,1970,jul,5,2,bc,BAJA CALIFORNIA,72175,pan,205454,pri,1672,parm,0,pps,,,,,,,,,,,,,,,,,279301,,,,.,banamex,.
-35,1970,jul,5,3,bcs,BAJA CALIFORNIA SUR,2023,pan,35367,pri,121,parm,173,pps,,,,,,,,,,,,,,,,,37684,,,,.,banamex,.
-36,1970,jul,5,4,cam,CAMPECHE,1768,pan,89945,pri,22,parm,51,pps,,,,,,,,,,,,,,,,,91786,,,,.,banamex,.
-37,1970,jul,5,5,coa,COAHUILA,30350,pan,313036,pri,395,parm,1115,pps,,,,,,,,,,,,,,,,,344896,,,,.,banamex,.
-38,1970,jul,5,6,col,COLIMA,5005,pan,49085,pri,112,parm,127,pps,,,,,,,,,,,,,,,,,54329,,,,.,banamex,.
-39,1970,jul,5,7,cps,CHIAPAS,4853,pan,439754,pri,1188,parm,1393,pps,,,,,,,,,,,,,,,,,447188,,,,.,banamex,.
-40,1970,jul,5,8,cua,CHIHUAHUA,83120,pan,351477,pri,1255,parm,4120,pps,,,,,,,,,,,,,,,,,439972,,,,.,banamex,.
-41,1970,jul,5,9,df,DISTRITO FEDERAL,696651,pan,1510519,pri,22761,parm,34229,pps,,,,,,,,,,,,,,,,,2264160,,,,.,banamex,.
-42,1970,jul,5,10,dgo,DURANGO,28895,pan,185791,pri,444,parm,2699,pps,,,,,,,,,,,,,,,,,217829,,,,.,banamex,.
-43,1970,jul,5,11,gua,GUANAJUATO,108938,pan,449691,pri,5125,parm,4512,pps,,,,,,,,,,,,,,,,,568266,,,,.,banamex,.
-44,1970,jul,5,12,gue,GUERRERO,20341,pan,447079,pri,1806,parm,2551,pps,,,,,,,,,,,,,,,,,471777,,,,.,banamex,.
-45,1970,jul,5,13,hgo,HIDALGO,12798,pan,437913,pri,343,parm,483,pps,,,,,,,,,,,,,,,,,451537,,,,.,banamex,.
-46,1970,jul,5,14,jal,JALISCO,167629,pan,789628,pri,6672,parm,8538,pps,,,,,,,,,,,,,,,,,972467,,,,.,banamex,.
-47,1970,jul,5,15,mex,MEXICO,134949,pan,730599,pri,6547,parm,7680,pps,,,,,,,,,,,,,,,,,879775,,,,.,banamex,.
-48,1970,jul,5,16,mic,MICHOACAN,82909,pan,539026,pri,2049,parm,3101,pps,,,,,,,,,,,,,,,,,627085,,,,.,banamex,.
-49,1970,jul,5,17,mor,MORELOS,17583,pan,161500,pri,945,parm,1067,pps,,,,,,,,,,,,,,,,,181095,,,,.,banamex,.
-50,1970,jul,5,18,nay,NAYARIT,4686,pan,124269,pri,360,parm,4438,pps,,,,,,,,,,,,,,,,,133753,,,,.,banamex,.
-51,1970,jul,5,19,nl,NUEVO LEON,67704,pan,356230,pri,2376,parm,1722,pps,,,,,,,,,,,,,,,,,428032,,,,.,banamex,.
-52,1970,jul,5,20,oax,OAXACA,23465,pan,652620,pri,1560,parm,6888,pps,,,,,,,,,,,,,,,,,684533,,,,.,banamex,.
-53,1970,jul,5,21,pue,PUEBLA,96313,pan,555109,pri,8107,parm,4812,pps,,,,,,,,,,,,,,,,,664341,,,,.,banamex,.
-54,1970,jul,5,22,que,QUERETARO,13620,pan,132368,pri,636,parm,476,pps,,,,,,,,,,,,,,,,,147100,,,,.,banamex,.
-55,1970,jul,5,23,qui,QUINTANA ROO,582,pan,32069,pri,33,parm,25,pps,,,,,,,,,,,,,,,,,32709,,,,.,banamex,.
-56,1970,jul,5,24,san,SAN LUIS POTOSI,35947,pan,329548,pri,1551,parm,900,pps,,,,,,,,,,,,,,,,,367946,,,,.,banamex,.
-57,1970,jul,5,25,sin,SINALOA,15440,pan,263554,pri,1098,parm,4540,pps,,,,,,,,,,,,,,,,,284632,,,,.,banamex,.
-58,1970,jul,5,26,son,SONORA,14714,pan,208701,pri,389,parm,2583,pps,,,,,,,,,,,,,,,,,226387,,,,.,banamex,.
-59,1970,jul,5,27,tab,TABASCO,2735,pan,233653,pri,45,parm,2065,pps,,,,,,,,,,,,,,,,,238498,,,,.,banamex,.
-60,1970,jul,5,28,tam,TAMAULIPAS,34209,pan,372413,pri,1029,parm,1051,pps,,,,,,,,,,,,,,,,,408702,,,,.,banamex,.
-61,1970,jul,5,29,tla,TLAXCALA,7098,pan,117805,pri,154,parm,294,pps,,,,,,,,,,,,,,,,,125351,,,,.,banamex,.
-62,1970,jul,5,30,ver,VERACRUZ,84422,pan,1048451,pri,5987,parm,14133,pps,,,,,,,,,,,,,,,,,1152993,,,,.,banamex,.
-63,1970,jul,5,31,yuc,YUCATAN,35546,pan,203883,pri,58,parm,1343,pps,,,,,,,,,,,,,,,,,240830,,,,.,banamex,.
-64,1970,jul,5,32,zac,ZACATECAS,26643,pan,260267,pri,580,parm,709,pps,,,,,,,,,,,,,,,,,288199,,,,.,banamex,.
+ord,yr,mo,dy,edon,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07,l07,v08,l08,v09,l09,v10,l10,v11,l11,v12,l12,efec,nr,nulos,tot,lisnom,fuente,note
+1,1964,jul,5,1,ags,AGUASCALIENTES,6549,pan,66924,pri,284,parm,130,pps,,,,,,,,,,,,,,,,,73887,,,,,banamex,0
+2,1964,jul,5,2,bc,BAJA CALIFORNIA,38760,pan,142948,pri,0,parm,0,pps,,,,,,,,,,,,,,,,,181708,,,,,banamex,0
+3,1964,jul,5,3,bcs,BAJA CALIFORNIA SUR,850,pan,25996,pri,164,parm,11,pps,,,,,,,,,,,,,,,,,27021,,,,,banamex,0
+4,1964,jul,5,4,cam,CAMPECHE,2396,pan,56701,pri,0,parm,162,pps,,,,,,,,,,,,,,,,,59259,,,,,banamex,0
+5,1964,jul,5,5,coa,COAHUILA,17500,pan,247926,pri,277,parm,565,pps,,,,,,,,,,,,,,,,,266268,,,,,banamex,0
+6,1964,jul,5,6,col,COLIMA,4960,pan,34216,pri,49,parm,28,pps,,,,,,,,,,,,,,,,,39253,,,,,banamex,0
+7,1964,jul,5,7,cps,CHIAPAS,3702,pan,331437,pri,487,parm,212,pps,,,,,,,,,,,,,,,,,335838,,,,,banamex,0
+8,1964,jul,5,8,cua,CHIHUAHUA,58332,pan,221760,pri,834,parm,1358,pps,,,,,,,,,,,,,,,,,282284,,,,,banamex,0
+9,1964,jul,5,9,df,DISTRITO FEDERAL,355798,pan,1024598,pri,18917,parm,18347,pps,,,,,,,,,,,,,,,,,1417660,,,,,banamex,0
+10,1964,jul,5,10,dgo,DURANGO,32490,pan,205625,pri,439,parm,589,pps,,,,,,,,,,,,,,,,,239143,,,,,banamex,0
+11,1964,jul,5,11,gua,GUANAJUATO,85290,pan,326172,pri,3093,parm,4256,pps,,,,,,,,,,,,,,,,,418811,,,,,banamex,0
+12,1964,jul,5,12,gue,GUERRERO,11867,pan,381736,pri,620,parm,2895,pps,,,,,,,,,,,,,,,,,397118,,,,,banamex,0
+13,1964,jul,5,13,hgo,HIDALGO,5603,pan,339620,pri,107,parm,146,pps,,,,,,,,,,,,,,,,,345476,,,,,banamex,0
+14,1964,jul,5,14,jal,JALISCO,76320,pan,507795,pri,2441,parm,2721,pps,,,,,,,,,,,,,,,,,589277,,,,,banamex,0
+15,1964,jul,5,15,mex,MEXICO,41690,pan,459309,pri,1786,parm,2174,pps,,,,,,,,,,,,,,,,,504959,,,,,banamex,0
+16,1964,jul,5,16,mic,MICHOACAN,54500,pan,332395,pri,1317,parm,2083,pps,,,,,,,,,,,,,,,,,390295,,,,,banamex,0
+17,1964,jul,5,17,mor,MORELOS,6802,pan,108415,pri,1137,parm,809,pps,,,,,,,,,,,,,,,,,117163,,,,,banamex,0
+18,1964,jul,5,18,nay,NAYARIT,5679,pan,67101,pri,861,parm,2736,pps,,,,,,,,,,,,,,,,,76377,,,,,banamex,0
+19,1964,jul,5,19,nl,NUEVO LEON,40733,pan,219270,pri,463,parm,835,pps,,,,,,,,,,,,,,,,,261301,,,,,banamex,0
+20,1964,jul,5,20,oax,OAXACA,14950,pan,429996,pri,1293,parm,2195,pps,,,,,,,,,,,,,,,,,448434,,,,,banamex,0
+21,1964,jul,5,21,pue,PUEBLA,34275,pan,514063,pri,2530,parm,2553,pps,,,,,,,,,,,,,,,,,553421,,,,,banamex,0
+22,1964,jul,5,22,que,QUERETARO,9725,pan,101996,pri,581,parm,222,pps,,,,,,,,,,,,,,,,,112524,,,,,banamex,0
+23,1964,jul,5,23,qui,QUINTANA ROO,598,pan,16926,pri,43,parm,10,pps,,,,,,,,,,,,,,,,,17577,,,,,banamex,0
+24,1964,jul,5,24,san,SAN LUIS POTOSI,24757,pan,258162,pri,1013,parm,549,pps,,,,,,,,,,,,,,,,,284481,,,,,banamex,0
+25,1964,jul,5,25,sin,SINALOA,4126,pan,207079,pri,178,parm,2571,pps,,,,,,,,,,,,,,,,,213954,,,,,banamex,0
+26,1964,jul,5,26,son,SONORA,2601,pan,145380,pri,121,parm,9776,pps,,,,,,,,,,,,,,,,,157878,,,,,banamex,0
+27,1964,jul,5,27,tab,TABASCO,990,pan,146433,pri,49,parm,172,pps,,,,,,,,,,,,,,,,,147644,,,,,banamex,0
+28,1964,jul,5,28,tam,TAMAULIPAS,10502,pan,287484,pri,690,parm,1852,pps,,,,,,,,,,,,,,,,,300528,,,,,banamex,0
+29,1964,jul,5,29,tla,TLAXCALA,1610,pan,98293,pri,2510,parm,31,pps,,,,,,,,,,,,,,,,,102444,,,,,banamex,0
+30,1964,jul,5,30,ver,VERACRUZ,21816,pan,654211,pri,2540,parm,3668,pps,,,,,,,,,,,,,,,,,682235,,,,,banamex,0
+31,1964,jul,5,31,yuc,YUCATAN,28914,pan,177326,pri,60,parm,408,pps,,,,,,,,,,,,,,,,,206708,,,,,banamex,0
+32,1964,jul,5,32,zac,ZACATECAS,36942,pan,140921,pri,201,parm,304,pps,,,,,,,,,,,,,,,,,178368,,,,,banamex,0
+33,1970,jul,5,1,ags,AGUASCALIENTES,11959,pan,81969,pri,389,parm,487,pps,,,,,,,,,,,,,,,,,94804,,,,,banamex,0
+34,1970,jul,5,2,bc,BAJA CALIFORNIA,72175,pan,205454,pri,1672,parm,0,pps,,,,,,,,,,,,,,,,,279301,,,,,banamex,0
+35,1970,jul,5,3,bcs,BAJA CALIFORNIA SUR,2023,pan,35367,pri,121,parm,173,pps,,,,,,,,,,,,,,,,,37684,,,,,banamex,0
+36,1970,jul,5,4,cam,CAMPECHE,1768,pan,89945,pri,22,parm,51,pps,,,,,,,,,,,,,,,,,91786,,,,,banamex,0
+37,1970,jul,5,5,coa,COAHUILA,30350,pan,313036,pri,395,parm,1115,pps,,,,,,,,,,,,,,,,,344896,,,,,banamex,0
+38,1970,jul,5,6,col,COLIMA,5005,pan,49085,pri,112,parm,127,pps,,,,,,,,,,,,,,,,,54329,,,,,banamex,0
+39,1970,jul,5,7,cps,CHIAPAS,4853,pan,439754,pri,1188,parm,1393,pps,,,,,,,,,,,,,,,,,447188,,,,,banamex,0
+40,1970,jul,5,8,cua,CHIHUAHUA,83120,pan,351477,pri,1255,parm,4120,pps,,,,,,,,,,,,,,,,,439972,,,,,banamex,0
+41,1970,jul,5,9,df,DISTRITO FEDERAL,696651,pan,1510519,pri,22761,parm,34229,pps,,,,,,,,,,,,,,,,,2264160,,,,,banamex,0
+42,1970,jul,5,10,dgo,DURANGO,28895,pan,185791,pri,444,parm,2699,pps,,,,,,,,,,,,,,,,,217829,,,,,banamex,0
+43,1970,jul,5,11,gua,GUANAJUATO,108938,pan,449691,pri,5125,parm,4512,pps,,,,,,,,,,,,,,,,,568266,,,,,banamex,0
+44,1970,jul,5,12,gue,GUERRERO,20341,pan,447079,pri,1806,parm,2551,pps,,,,,,,,,,,,,,,,,471777,,,,,banamex,0
+45,1970,jul,5,13,hgo,HIDALGO,12798,pan,437913,pri,343,parm,483,pps,,,,,,,,,,,,,,,,,451537,,,,,banamex,0
+46,1970,jul,5,14,jal,JALISCO,167629,pan,789628,pri,6672,parm,8538,pps,,,,,,,,,,,,,,,,,972467,,,,,banamex,0
+47,1970,jul,5,15,mex,MEXICO,134949,pan,730599,pri,6547,parm,7680,pps,,,,,,,,,,,,,,,,,879775,,,,,banamex,0
+48,1970,jul,5,16,mic,MICHOACAN,82909,pan,539026,pri,2049,parm,3101,pps,,,,,,,,,,,,,,,,,627085,,,,,banamex,0
+49,1970,jul,5,17,mor,MORELOS,17583,pan,161500,pri,945,parm,1067,pps,,,,,,,,,,,,,,,,,181095,,,,,banamex,0
+50,1970,jul,5,18,nay,NAYARIT,4686,pan,124269,pri,360,parm,4438,pps,,,,,,,,,,,,,,,,,133753,,,,,banamex,0
+51,1970,jul,5,19,nl,NUEVO LEON,67704,pan,356230,pri,2376,parm,1722,pps,,,,,,,,,,,,,,,,,428032,,,,,banamex,0
+52,1970,jul,5,20,oax,OAXACA,23465,pan,652620,pri,1560,parm,6888,pps,,,,,,,,,,,,,,,,,684533,,,,,banamex,0
+53,1970,jul,5,21,pue,PUEBLA,96313,pan,555109,pri,8107,parm,4812,pps,,,,,,,,,,,,,,,,,664341,,,,,banamex,0
+54,1970,jul,5,22,que,QUERETARO,13620,pan,132368,pri,636,parm,476,pps,,,,,,,,,,,,,,,,,147100,,,,,banamex,0
+55,1970,jul,5,23,qui,QUINTANA ROO,582,pan,32069,pri,33,parm,25,pps,,,,,,,,,,,,,,,,,32709,,,,,banamex,0
+56,1970,jul,5,24,san,SAN LUIS POTOSI,35947,pan,329548,pri,1551,parm,900,pps,,,,,,,,,,,,,,,,,367946,,,,,banamex,0
+57,1970,jul,5,25,sin,SINALOA,15440,pan,263554,pri,1098,parm,4540,pps,,,,,,,,,,,,,,,,,284632,,,,,banamex,0
+58,1970,jul,5,26,son,SONORA,14714,pan,208701,pri,389,parm,2583,pps,,,,,,,,,,,,,,,,,226387,,,,,banamex,0
+59,1970,jul,5,27,tab,TABASCO,2735,pan,233653,pri,45,parm,2065,pps,,,,,,,,,,,,,,,,,238498,,,,,banamex,0
+60,1970,jul,5,28,tam,TAMAULIPAS,34209,pan,372413,pri,1029,parm,1051,pps,,,,,,,,,,,,,,,,,408702,,,,,banamex,0
+61,1970,jul,5,29,tla,TLAXCALA,7098,pan,117805,pri,154,parm,294,pps,,,,,,,,,,,,,,,,,125351,,,,,banamex,0
+62,1970,jul,5,30,ver,VERACRUZ,84422,pan,1048451,pri,5987,parm,14133,pps,,,,,,,,,,,,,,,,,1152993,,,,,banamex,0
+63,1970,jul,5,31,yuc,YUCATAN,35546,pan,203883,pri,58,parm,1343,pps,,,,,,,,,,,,,,,,,240830,,,,,banamex,0
+64,1970,jul,5,32,zac,ZACATECAS,26643,pan,260267,pri,580,parm,709,pps,,,,,,,,,,,,,,,,,288199,,,,,banamex,0
 65,1976,jul,4,1,ags,AGUASCALIENTES,98770,pri,4198,pps-parm,,,,,,,,,,,,,,,,,,,,,102968,406,6451,109825,198930,banamex,pps and parm coalesced with pri
 66,1976,jul,4,2,bc,BAJA CALIFORNIA,292808,pri,22142,pps-parm,,,,,,,,,,,,,,,,,,,,,314950,1559,27893,344402,525293,banamex,pps and parm coalesced with pri
 67,1976,jul,4,3,bcs,BAJA CALIFORNIA SUR,44620,pri,463,pps-parm,,,,,,,,,,,,,,,,,,,,,45083,201,2699,47983,72858,banamex,pps and parm coalesced with pri
@@ -159,38 +159,38 @@ ord,yr,mo,dy,edon,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 158,1988,jul,6,30,ver,VERACRUZ,80017,pan,877460,pri,30308,pms-parm-pfcrn-pps,125943,pdm,4498,prt,,,,,,,,,,,,,,,1118226,,,,3045721,banamex,pdm and prt split w uam-i
 159,1988,jul,6,31,yuc,YUCATAN,94472,pan,206500,pri,889,pms-parm-pfcrn-pps,267,pdm,0,prt,,,,,,,,,,,,,,,302128,,,,602041,banamex,pdm and prt split w uam-i
 160,1988,jul,6,32,zac,ZACATECAS,30584,pan,192670,pri,13363,pms-parm-pfcrn-pps,7216,pdm,4639,prt,,,,,,,,,,,,,,,248472,,,,602780,banamex,pdm and prt split w uam-i
-161,1994,ago,21,1,ags,AGUASCALIENTES,124484,pan,157736,pri,29236,prd,1271,pps,6610,pfcrn,1320,parm,1048,uno-pdm,6518,pt,3794,pvem,,,,,,,332017,136,7463,339616,420935,ife (27nov2010),.
-162,1994,ago,21,2,bc,BAJA CALIFORNIA,297565,pan,402332,pri,68669,prd,3088,pps,3399,pfcrn,2044,parm,1310,uno-pdm,15953,pt,7853,pvem,,,,,,,802213,1882,18393,822488,1038561,ife (27nov2010),.
-163,1994,ago,21,3,bcs,BAJA CALIFORNIA SUR,46907,pan,80097,pri,9463,prd,324,pps,564,pfcrn,386,parm,242,uno-pdm,3905,pt,786,pvem,,,,,,,142674,35,2580,145289,182596,ife (27nov2010),.
-164,1994,ago,21,4,cam,CAMPECHE,41910,pan,123225,pri,47640,prd,1051,pps,1139,pfcrn,3241,parm,384,uno-pdm,2935,pt,720,pvem,,,,,,,222245,433,6328,229006,296117,ife (27nov2010),.
-165,1994,ago,21,5,coa,COAHUILA,226621,pan,359168,pri,97121,prd,2355,pps,14760,pfcrn,5088,parm,816,uno-pdm,17954,pt,3157,pvem,,,,,,,727040,420,15582,743042,1101180,ife (27nov2010),.
-166,1994,ago,21,6,col,COLIMA,60338,pan,102903,pri,24157,prd,627,pps,3448,pfcrn,424,parm,1247,uno-pdm,2882,pt,1316,pvem,,,,,,,197342,548,5354,203244,254837,ife (27nov2010),.
-167,1994,ago,21,7,cps,CHIAPAS,126266,pan,493135,pri,347981,prd,6183,pps,17404,pfcrn,7255,parm,1348,uno-pdm,19381,pt,4274,pvem,,,,,,,1023227,3495,63987,1090709,1625874,ife (27nov2010),.
-168,1994,ago,21,8,cua,CHIHUAHUA,308590,pan,660874,pri,68251,prd,3300,pps,3615,pfcrn,2702,parm,1424,uno-pdm,39901,pt,5102,pvem,,,,,,,1093759,640,28751,1123150,1476801,ife (27nov2010),.
-169,1994,ago,21,9,df,DISTRITO FEDERAL,1172438,pan,1873059,pri,902199,prd,19084,pps,37370,pfcrn,15402,parm,12246,uno-pdm,185903,pt,91839,pvem,,,,,,,4309540,7157,98706,4415403,5362764,ife (27nov2010),.
-170,1994,ago,21,10,dgo,DURANGO,141818,pan,266837,pri,49793,prd,2181,pps,2712,pfcrn,1950,parm,545,uno-pdm,43351,pt,2466,pvem,,,,,,,511653,602,13833,526088,707682,ife (27nov2010),.
-171,1994,ago,21,11,gua,GUANAJUATO,513865,pan,945088,pri,149268,prd,6691,pps,13838,pfcrn,10031,parm,14685,uno-pdm,32763,pt,10906,pvem,,,,,,,1697135,2873,57808,1757816,2099320,ife (27nov2010),.
-172,1994,ago,21,12,gue,GUERRERO,74198,pan,385590,pri,266818,prd,4300,pps,13485,pfcrn,7037,parm,2634,uno-pdm,9168,pt,2951,pvem,,,,,,,766181,1057,25973,793211,1188918,ife (27nov2010),.
-173,1994,ago,21,13,hgo,HIDALGO,134171,pan,450800,pri,115693,prd,3442,pps,8668,pfcrn,7253,parm,1107,uno-pdm,14988,pt,4992,pvem,,,,,,,741114,794,29754,771662,1005722,ife (27nov2010),.
-174,1994,ago,21,14,jal,JALISCO,1008234,pan,1050815,pri,166226,prd,9528,pps,17464,pfcrn,11566,parm,11289,uno-pdm,47854,pt,20023,pvem,,,,,,,2342999,3181,59081,2405261,2885694,ife (27nov2010),.
-175,1994,ago,21,15,mex,MEXICO,1179422,pan,2143122,pri,835135,prd,26053,pps,45385,pfcrn,22075,parm,14193,uno-pdm,150186,pt,82171,pvem,,,,,,,4497742,4481,114214,4616437,5846382,ife (27nov2010),.
-176,1994,ago,21,16,mic,MICHOACAN,212921,pan,612040,pri,493236,prd,4293,pps,8542,pfcrn,8584,parm,6160,uno-pdm,17729,pt,7606,pvem,,,,,,,1371111,1130,36124,1408365,1825105,ife (27nov2010),.
-177,1994,ago,21,17,mor,MORELOS,128942,pan,282821,pri,109560,prd,2073,pps,5845,pfcrn,3249,parm,1305,uno-pdm,14399,pt,6509,pvem,,,,,,,554703,1075,14063,569841,749176,ife (27nov2010),.
-178,1994,ago,21,18,nay,NAYARIT,59925,pan,179411,pri,50717,prd,2394,pps,1758,pfcrn,1661,parm,310,uno-pdm,8862,pt,1243,pvem,,,,,,,306281,775,9031,316087,459663,ife (27nov2010),.
-179,1994,ago,21,19,nl,NUEVO LEON,596820,pan,723629,pri,44413,prd,2409,pps,2917,pfcrn,2874,parm,2144,uno-pdm,89387,pt,5860,pvem,,,,,,,1470453,2193,31091,1503737,1899908,ife (27nov2010),.
-180,1994,ago,21,20,oax,OAXACA,131225,pan,509776,pri,276758,prd,10816,pps,9665,pfcrn,12803,parm,1445,uno-pdm,17221,pt,5044,pvem,,,,,,,974753,891,44163,1019807,1429854,ife (27nov2010),.
-181,1994,ago,21,21,pue,PUEBLA,399942,pan,787493,pri,216200,prd,9493,pps,11750,pfcrn,10850,parm,2885,uno-pdm,37141,pt,13263,pvem,,,,,,,1489017,1196,61865,1552078,2096193,ife (27nov2010),.
-182,1994,ago,21,22,que,QUERETARO,149540,pan,275788,pri,26969,prd,2127,pps,3122,pfcrn,1572,parm,1554,uno-pdm,11077,pt,2937,pvem,,,,,,,474686,231,14419,489336,589907,ife (27nov2010),.
-183,1994,ago,21,23,qui,QUINTANA ROO,62006,pan,112546,pri,26301,prd,1026,pps,1550,pfcrn,902,parm,174,uno-pdm,2665,pt,1304,pvem,,,,,,,208474,80,5522,214076,301248,ife (27nov2010),.
-184,1994,ago,21,24,san,SAN LUIS POTOSI,196351,pan,440601,pri,73523,prd,2537,pps,2980,pfcrn,3701,parm,3192,uno-pdm,19705,pt,4546,pvem,,,,,,,747136,996,26783,774915,1039977,ife (27nov2010),.
-185,1994,ago,21,25,sin,SINALOA,285207,pan,474882,pri,129025,prd,4098,pps,2973,pfcrn,4383,parm,580,uno-pdm,12059,pt,3982,pvem,,,,,,,917189,835,20680,938704,1205235,ife (27nov2010),.
-186,1994,ago,21,26,son,SONORA,330272,pan,361835,pri,111978,prd,1741,pps,2698,pfcrn,1646,parm,961,uno-pdm,33118,pt,2778,pvem,,,,,,,847027,1066,17745,865838,1120700,ife (27nov2010),.
-187,1994,ago,21,27,tab,TABASCO,44763,pan,335851,pri,196100,prd,1563,pps,3158,pfcrn,1645,parm,399,uno-pdm,5832,pt,1583,pvem,,,,,,,590894,293,22427,613614,824166,ife (27nov2010),.
-188,1994,ago,21,28,tam,TAMAULIPAS,275989,pan,481595,pri,192900,prd,3301,pps,5307,pfcrn,20502,parm,1604,uno-pdm,23916,pt,5155,pvem,,,,,,,1010269,1357,30058,1041684,1330814,ife (27nov2010),.
-189,1994,ago,21,29,tla,TLAXCALA,84582,pan,186126,pri,54029,prd,2138,pps,2120,pfcrn,1819,parm,1887,uno-pdm,7799,pt,2862,pvem,,,,,,,343362,114,9681,353157,436723,ife (27nov2010),.
-190,1994,ago,21,30,ver,VERACRUZ,419109,pan,1360540,pri,612354,prd,23508,pps,40825,pfcrn,16127,parm,7810,uno-pdm,50492,pt,16342,pvem,,,,,,,2547107,3115,93331,2643553,3522994,ife (27nov2010),.
-191,1994,ago,21,31,yuc,YUCATAN,195986,pan,251699,pri,15009,prd,867,pps,1127,pfcrn,799,parm,330,uno-pdm,3583,pt,2102,pvem,,,,,,,471502,84,10429,482015,729746,ife (27nov2010),.
-192,1994,ago,21,32,zac,ZACATECAS,116434,pan,310237,pri,45412,prd,2732,pps,1703,pfcrn,1904,parm,677,uno-pdm,21494,pt,1847,pvem,,,,,,,502440,550,13072,516062,674265,ife (27nov2010),.
+161,1994,ago,21,1,ags,AGUASCALIENTES,124484,pan,157736,pri,29236,prd,1271,pps,6610,pfcrn,1320,parm,1048,uno-pdm,6518,pt,3794,pvem,,,,,,,332017,136,7463,339616,420935,ife (27nov2010),0
+162,1994,ago,21,2,bc,BAJA CALIFORNIA,297565,pan,402332,pri,68669,prd,3088,pps,3399,pfcrn,2044,parm,1310,uno-pdm,15953,pt,7853,pvem,,,,,,,802213,1882,18393,822488,1038561,ife (27nov2010),0
+163,1994,ago,21,3,bcs,BAJA CALIFORNIA SUR,46907,pan,80097,pri,9463,prd,324,pps,564,pfcrn,386,parm,242,uno-pdm,3905,pt,786,pvem,,,,,,,142674,35,2580,145289,182596,ife (27nov2010),0
+164,1994,ago,21,4,cam,CAMPECHE,41910,pan,123225,pri,47640,prd,1051,pps,1139,pfcrn,3241,parm,384,uno-pdm,2935,pt,720,pvem,,,,,,,222245,433,6328,229006,296117,ife (27nov2010),0
+165,1994,ago,21,5,coa,COAHUILA,226621,pan,359168,pri,97121,prd,2355,pps,14760,pfcrn,5088,parm,816,uno-pdm,17954,pt,3157,pvem,,,,,,,727040,420,15582,743042,1101180,ife (27nov2010),0
+166,1994,ago,21,6,col,COLIMA,60338,pan,102903,pri,24157,prd,627,pps,3448,pfcrn,424,parm,1247,uno-pdm,2882,pt,1316,pvem,,,,,,,197342,548,5354,203244,254837,ife (27nov2010),0
+167,1994,ago,21,7,cps,CHIAPAS,126266,pan,493135,pri,347981,prd,6183,pps,17404,pfcrn,7255,parm,1348,uno-pdm,19381,pt,4274,pvem,,,,,,,1023227,3495,63987,1090709,1625874,ife (27nov2010),0
+168,1994,ago,21,8,cua,CHIHUAHUA,308590,pan,660874,pri,68251,prd,3300,pps,3615,pfcrn,2702,parm,1424,uno-pdm,39901,pt,5102,pvem,,,,,,,1093759,640,28751,1123150,1476801,ife (27nov2010),0
+169,1994,ago,21,9,df,DISTRITO FEDERAL,1172438,pan,1873059,pri,902199,prd,19084,pps,37370,pfcrn,15402,parm,12246,uno-pdm,185903,pt,91839,pvem,,,,,,,4309540,7157,98706,4415403,5362764,ife (27nov2010),0
+170,1994,ago,21,10,dgo,DURANGO,141818,pan,266837,pri,49793,prd,2181,pps,2712,pfcrn,1950,parm,545,uno-pdm,43351,pt,2466,pvem,,,,,,,511653,602,13833,526088,707682,ife (27nov2010),0
+171,1994,ago,21,11,gua,GUANAJUATO,513865,pan,945088,pri,149268,prd,6691,pps,13838,pfcrn,10031,parm,14685,uno-pdm,32763,pt,10906,pvem,,,,,,,1697135,2873,57808,1757816,2099320,ife (27nov2010),0
+172,1994,ago,21,12,gue,GUERRERO,74198,pan,385590,pri,266818,prd,4300,pps,13485,pfcrn,7037,parm,2634,uno-pdm,9168,pt,2951,pvem,,,,,,,766181,1057,25973,793211,1188918,ife (27nov2010),0
+173,1994,ago,21,13,hgo,HIDALGO,134171,pan,450800,pri,115693,prd,3442,pps,8668,pfcrn,7253,parm,1107,uno-pdm,14988,pt,4992,pvem,,,,,,,741114,794,29754,771662,1005722,ife (27nov2010),0
+174,1994,ago,21,14,jal,JALISCO,1008234,pan,1050815,pri,166226,prd,9528,pps,17464,pfcrn,11566,parm,11289,uno-pdm,47854,pt,20023,pvem,,,,,,,2342999,3181,59081,2405261,2885694,ife (27nov2010),0
+175,1994,ago,21,15,mex,MEXICO,1179422,pan,2143122,pri,835135,prd,26053,pps,45385,pfcrn,22075,parm,14193,uno-pdm,150186,pt,82171,pvem,,,,,,,4497742,4481,114214,4616437,5846382,ife (27nov2010),0
+176,1994,ago,21,16,mic,MICHOACAN,212921,pan,612040,pri,493236,prd,4293,pps,8542,pfcrn,8584,parm,6160,uno-pdm,17729,pt,7606,pvem,,,,,,,1371111,1130,36124,1408365,1825105,ife (27nov2010),0
+177,1994,ago,21,17,mor,MORELOS,128942,pan,282821,pri,109560,prd,2073,pps,5845,pfcrn,3249,parm,1305,uno-pdm,14399,pt,6509,pvem,,,,,,,554703,1075,14063,569841,749176,ife (27nov2010),0
+178,1994,ago,21,18,nay,NAYARIT,59925,pan,179411,pri,50717,prd,2394,pps,1758,pfcrn,1661,parm,310,uno-pdm,8862,pt,1243,pvem,,,,,,,306281,775,9031,316087,459663,ife (27nov2010),0
+179,1994,ago,21,19,nl,NUEVO LEON,596820,pan,723629,pri,44413,prd,2409,pps,2917,pfcrn,2874,parm,2144,uno-pdm,89387,pt,5860,pvem,,,,,,,1470453,2193,31091,1503737,1899908,ife (27nov2010),0
+180,1994,ago,21,20,oax,OAXACA,131225,pan,509776,pri,276758,prd,10816,pps,9665,pfcrn,12803,parm,1445,uno-pdm,17221,pt,5044,pvem,,,,,,,974753,891,44163,1019807,1429854,ife (27nov2010),0
+181,1994,ago,21,21,pue,PUEBLA,399942,pan,787493,pri,216200,prd,9493,pps,11750,pfcrn,10850,parm,2885,uno-pdm,37141,pt,13263,pvem,,,,,,,1489017,1196,61865,1552078,2096193,ife (27nov2010),0
+182,1994,ago,21,22,que,QUERETARO,149540,pan,275788,pri,26969,prd,2127,pps,3122,pfcrn,1572,parm,1554,uno-pdm,11077,pt,2937,pvem,,,,,,,474686,231,14419,489336,589907,ife (27nov2010),0
+183,1994,ago,21,23,qui,QUINTANA ROO,62006,pan,112546,pri,26301,prd,1026,pps,1550,pfcrn,902,parm,174,uno-pdm,2665,pt,1304,pvem,,,,,,,208474,80,5522,214076,301248,ife (27nov2010),0
+184,1994,ago,21,24,san,SAN LUIS POTOSI,196351,pan,440601,pri,73523,prd,2537,pps,2980,pfcrn,3701,parm,3192,uno-pdm,19705,pt,4546,pvem,,,,,,,747136,996,26783,774915,1039977,ife (27nov2010),0
+185,1994,ago,21,25,sin,SINALOA,285207,pan,474882,pri,129025,prd,4098,pps,2973,pfcrn,4383,parm,580,uno-pdm,12059,pt,3982,pvem,,,,,,,917189,835,20680,938704,1205235,ife (27nov2010),0
+186,1994,ago,21,26,son,SONORA,330272,pan,361835,pri,111978,prd,1741,pps,2698,pfcrn,1646,parm,961,uno-pdm,33118,pt,2778,pvem,,,,,,,847027,1066,17745,865838,1120700,ife (27nov2010),0
+187,1994,ago,21,27,tab,TABASCO,44763,pan,335851,pri,196100,prd,1563,pps,3158,pfcrn,1645,parm,399,uno-pdm,5832,pt,1583,pvem,,,,,,,590894,293,22427,613614,824166,ife (27nov2010),0
+188,1994,ago,21,28,tam,TAMAULIPAS,275989,pan,481595,pri,192900,prd,3301,pps,5307,pfcrn,20502,parm,1604,uno-pdm,23916,pt,5155,pvem,,,,,,,1010269,1357,30058,1041684,1330814,ife (27nov2010),0
+189,1994,ago,21,29,tla,TLAXCALA,84582,pan,186126,pri,54029,prd,2138,pps,2120,pfcrn,1819,parm,1887,uno-pdm,7799,pt,2862,pvem,,,,,,,343362,114,9681,353157,436723,ife (27nov2010),0
+190,1994,ago,21,30,ver,VERACRUZ,419109,pan,1360540,pri,612354,prd,23508,pps,40825,pfcrn,16127,parm,7810,uno-pdm,50492,pt,16342,pvem,,,,,,,2547107,3115,93331,2643553,3522994,ife (27nov2010),0
+191,1994,ago,21,31,yuc,YUCATAN,195986,pan,251699,pri,15009,prd,867,pps,1127,pfcrn,799,parm,330,uno-pdm,3583,pt,2102,pvem,,,,,,,471502,84,10429,482015,729746,ife (27nov2010),0
+192,1994,ago,21,32,zac,ZACATECAS,116434,pan,310237,pri,45412,prd,2732,pps,1703,pfcrn,1904,parm,677,uno-pdm,21494,pt,1847,pvem,,,,,,,502440,550,13072,516062,674265,ife (27nov2010),0
 193,2000,jul,2,1,ags,AGUASCALIENTES,181160,pan,127134,pri,23189,prd,2202,pcd,1389,parm,9467,demsoc,21173,pvem,2,pan-pvem,3070,pt-conve-psn-pas,5,prd-pt-conve-psn-pas,,,,,368791,83,6291,375165,562390,ife,pan (0.8953) and prd (0.8830) coal shares imputed w df t-3
 194,2000,jul,2,2,bc,BAJA CALIFORNIA,392974,pan,319477,pri,68420,prd,3470,pcd,3080,parm,14562,demsoc,36218,pvem,2,pan-pvem,8915,pt-conve-psn-pas,5,prd-pt-conve-psn-pas,,,,,847123,507,14965,862595,1498939,ife,pan (0.9156) and prd (0.8847) coal shares imputed w df t-3
 195,2000,jul,2,3,bcs,BAJA CALIFORNIA SUR,54683,pan,56230,pri,19646,prd,460,pcd,364,parm,2107,demsoc,6149,pvem,2,pan-pvem,25578,pt-conve-psn-pas,5,prd-pt-conve-psn-pas,,,,,165224,17,2804,168045,250155,ife,pan (0.8989) and prd (0.4344) coal shares imputed w df t-3
@@ -255,67 +255,67 @@ ord,yr,mo,dy,edon,edo,estado,v01,l01,v02,l02,v03,l03,v04,l04,v05,l05,v06,l06,v07
 254,2006,jul,2,30,ver,VERACRUZ,1002862,pan,662633,pri,587662,prd,17632,pna,55903,asdc,61888,pvem,2,pri-pvem,445024,pt-conve,3,prd-pt-conve,,,,,,,2833609,25311,72193,2931113,4875677,IFE post tribunal,pri (0.9146) and prd (0.5691) coal shares imputed w df t-3
 255,2006,jul,2,31,yuc,YUCATAN,362519,pan,251012,pri,100608,prd,4346,pna,12962,asdc,7561,pvem,2,pri-pvem,23933,pt-conve,3,prd-pt-conve,,,,,,,762946,6862,15382,785190,1178719,IFE post tribunal,pri (0.9708) and prd (0.8078) coal shares imputed w df t-3
 256,2006,jul,2,32,zac,ZACATECAS,164892,pan,113554,pri,161103,prd,6085,pna,13338,asdc,12889,pvem,2,pri-pvem,23475,pt-conve,3,prd-pt-conve,,,,,,,495341,8932,13019,517292,994528,IFE post tribunal,pri (0.8981) and prd (0.8728) coal shares imputed w df t-3
-257,2012,jul,1,1,ags,AGUASCALIENTES,152543,pan,165618,pri,68539,prd,25154,pvem,19626,pt,14458,mc,33705,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,479648,392,13426,493466,808064,IFE post tribunal,.
-258,2012,jul,1,2,bc,BAJA CALIFORNIA,339508,pan,392968,pri,272368,prd,70380,pvem,65043,pt,52508,mc,34893,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1227673,492,22232,1250397,2251645,IFE post tribunal,.
-259,2012,jul,1,3,bcs,BAJA CALIFORNIA SUR,75066,pan,90495,pri,41083,prd,14253,pvem,11817,pt,10274,mc,4940,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,247933,97,5138,253168,422704,IFE post tribunal,.
-260,2012,jul,1,4,cam,CAMPECHE,107881,pan,129769,pri,67144,prd,19439,pvem,16329,pt,18892,mc,9707,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,369166,86,10036,379288,515852,IFE post tribunal,.
-261,2012,jul,1,5,coa,COAHUILA,325666,pan,541363,pri,454341,prd,392137,pvem,116628,pt,63114,mc,47943,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1941197,381,89725,2031303,1849664,IFE post tribunal,.
-262,2012,jul,1,6,col,COLIMA,328048,pan,540951,pri,208710,prd,77685,pvem,54008,pt,38808,mc,48219,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1296434,748,34189,1331371,467058,IFE post tribunal,.
-263,2012,jul,1,7,cps,CHIAPAS,428998,pan,415460,pri,165487,prd,49313,pvem,40717,pt,27611,mc,27833,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1155424,382,21612,1177418,2947408,IFE post tribunal,.
-264,2012,jul,1,8,cua,CHIHUAHUA,101083,pan,110960,pri,46961,prd,12714,pvem,12949,pt,8096,mc,4855,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,297623,109,6159,303891,2324637,IFE post tribunal,.
-265,2012,jul,1,9,df,DISTRITO FEDERAL,844110,pan,1054395,pri,1783327,prd,203772,pvem,449682,pt,335932,mc,87332,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,4758555,3940,90434,4852929,7146401,IFE post tribunal,.
-266,2012,jul,1,10,dgo,DURANGO,194052,pan,284569,pri,77329,prd,35790,pvem,47887,pt,16393,mc,15407,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,671432,182,13094,684708,1024689,IFE post tribunal,.
-267,2012,jul,1,11,gua,GUANAJUATO,944158,pan,793306,pri,222390,prd,136187,pvem,41755,pt,33832,mc,62920,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,2234553,806,68669,2304028,3809386,IFE post tribunal,.
-268,2012,jul,1,12,gue,GUERRERO,153627,pan,455619,pri,491703,prd,74450,pvem,84966,pt,83882,mc,20163,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1364415,221,45016,1409652,2257204,IFE post tribunal,.
-269,2012,jul,1,13,hgo,HIDALGO,215101,pan,456389,pri,306872,prd,60614,pvem,62701,pt,42404,mc,50197,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1194283,312,29842,1224437,1852477,IFE post tribunal,.
-270,2012,jul,1,14,jal,JALISCO,1098252,pan,1183649,pri,378891,prd,179139,pvem,109675,pt,281202,mc,93506,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,3324319,1500,82891,3408710,5143145,IFE post tribunal,.
-271,2012,jul,1,15,mex,MEXICO,1250707,pan,2563525,pri,1684464,prd,402583,pvem,342055,pt,313203,mc,160462,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,6717004,3379,145111,6865494,10251266,IFE post tribunal,.
-272,2012,jul,1,16,mic,MICHOACAN,337512,pan,614458,pri,403174,prd,95842,pvem,66292,pt,47645,mc,34427,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1599355,1046,46697,1647098,3116491,IFE post tribunal,.
-273,2012,jul,1,17,mor,MORELOS,157027,pan,246209,pri,259658,prd,49523,pvem,57925,pt,45694,mc,19036,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,835077,299,20255,855631,1301651,IFE post tribunal,.
-274,2012,jul,1,18,nay,NAYARIT,82970,pan,197603,pri,98886,prd,23803,pvem,27178,pt,19573,mc,8907,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,458925,116,10808,469849,718760,IFE post tribunal,.
-275,2012,jul,1,19,nl,NUEVO LEON,800099,pan,595646,pri,277999,prd,71342,pvem,119732,pt,43716,mc,62159,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1970698,613,38503,2009814,3260842,IFE post tribunal,.
-276,2012,jul,1,20,oax,OAXACA,290645,pan,486718,pri,514554,prd,68930,pvem,92350,pt,88776,mc,18330,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1560308,440,43371,1604119,2546485,IFE post tribunal,.
-277,2012,jul,1,21,pue,PUEBLA,640977,pan,712251,pri,532606,prd,142129,pvem,204728,pt,121773,mc,56040,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,2410509,782,69727,2481018,3897115,IFE post tribunal,.
-278,2012,jul,1,22,que,QUERETARO,288343,pan,295364,pri,141413,prd,35360,pvem,27326,pt,23702,mc,20285,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,831798,333,23671,855802,1263554,IFE post tribunal,.
-279,2012,jul,1,23,qui,QUINTANA ROO,111303,pan,150670,pri,169153,prd,28337,pvem,33549,pt,23349,mc,10362,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,526728,248,10822,537798,886694,IFE post tribunal,.
-280,2012,jul,1,24,san,SAN LUIS POTOSI,346576,pan,363572,pri,167962,prd,65223,pvem,53701,pt,42096,mc,32282,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1071417,587,45755,1117759,1747800,IFE post tribunal,.
-281,2012,jul,1,25,sin,SINALOA,295585,pan,487054,pri,207175,prd,64084,pvem,38900,pt,32727,mc,22584,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1148114,540,31361,1180015,1844223,IFE post tribunal,.
-282,2012,jul,1,26,son,SONORA,342168,pan,384105,pri,196650,prd,46032,pvem,39992,pt,29354,mc,16125,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1054431,722,28412,1083565,1780074,IFE post tribunal,.
-283,2012,jul,1,27,tab,TABASCO,65018,pan,313612,pri,522610,prd,32769,pvem,68127,pt,56241,mc,5766,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1064148,148,26606,1090902,1491490,IFE post tribunal,.
-284,2012,jul,1,28,tam,TAMAULIPAS,597387,pan,438495,pri,198399,prd,52524,pvem,46468,pt,35964,mc,31465,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1400707,383,28973,1430063,2371066,IFE post tribunal,.
-285,2012,jul,1,29,tla,TLAXCALA,98450,pan,155588,pri,141615,prd,28657,pvem,39263,pt,29296,mc,15933,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,508807,90,11295,520192,807620,IFE post tribunal,.
-286,2012,jul,1,30,ver,VERACRUZ,1203157,pan,1051975,pri,782202,prd,149347,pvem,137839,pt,115746,mc,50740,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,3491011,877,85188,3577076,5229735,IFE post tribunal,.
-287,2012,jul,1,31,yuc,YUCATAN,394197,pan,396526,pri,136710,prd,43483,pvem,23387,pt,17596,mc,18131,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1030035,188,20986,1051209,1334931,IFE post tribunal,.
-288,2012,jul,1,32,zac,ZACATECAS,122416,pan,286024,pri,101844,prd,52627,pvem,45278,pt,14782,mc,21431,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,644407,186,16853,661446,1068363,IFE post tribunal,.
-289,2018,jul,1,1,ags,AGUASCALIENTES,162102,pan,88783,pri,7434,prd,6215,pvem,23555,pt,4403,mc,6145,pna,177557,morena,9676,pes,4766,pan-prd-mc,2451,pri-pvem-pna,11277,morena-pt-pes,545178,,,,943448,ine,.
-290,2018,jul,1,2,bc,BAJA CALIFORNIA,238697,pan,102210,pri,13079,prd,8870,pvem,70327,pt,11987,mc,6930,pna,764146,morena,27358,pes,11335,pan-prd-mc,6135,pri-pvem-pna,56162,morena-pt-pes,1407492,,,,2731567,ine,.
-291,2018,jul,1,3,bcs,BAJA CALIFORNIA SUR,51781,pan,21625,pri,1408,prd,2796,pvem,24096,pt,1453,mc,2478,pna,151013,morena,6174,pes,2114,pan-prd-mc,1295,pri-pvem-pna,12463,morena-pt-pes,295865,,,,516146,ine,.
-292,2018,jul,1,4,cam,CAMPECHE,43714,pan,82289,pri,4944,prd,2949,pvem,29951,pt,3329,mc,3560,pna,220772,morena,9699,pes,2400,pan-prd-mc,7772,pri-pvem-pna,14677,morena-pt-pes,437457,,,,642056,ine,.
-293,2018,jul,1,5,coa,COAHUILA,278383,pan,330440,pri,10795,prd,10336,pvem,61700,pt,10518,mc,8143,pna,502833,morena,20044,pes,7380,pan-prd-mc,9292,pri-pvem-pna,24037,morena-pt-pes,1345638,,,,2154098,ine,.
-294,2018,jul,1,6,col,COLIMA,46884,pan,49016,pri,2553,prd,6472,pvem,20483,pt,4563,mc,2850,pna,158936,morena,5837,pes,2335,pan-prd-mc,3636,pri-pvem-pna,11618,morena-pt-pes,331268,,,,530720,ine,.
-295,2018,jul,1,7,cps,CHIAPAS,100228,pan,266961,pri,55090,prd,243730,pvem,167227,pt,35722,mc,38667,pna,1168857,morena,66564,pes,7012,pan-prd-mc,13482,pri-pvem-pna,82346,morena-pt-pes,2287178,,,,3541181,ine,.
-296,2018,jul,1,8,cua,CHIHUAHUA,378243,pan,202248,pri,15614,prd,16727,pvem,75245,pt,17582,mc,14785,pna,495999,morena,32107,pes,13524,pan-prd-mc,6812,pri-pvem-pna,38744,morena-pt-pes,1441384,,,,2743260,ine,.
-297,2018,jul,1,9,df,DISTRITO FEDERAL,921553,pan,563876,pri,251610,prd,32180,pvem,187336,pt,37132,mc,22198,pna,2600692,morena,81197,pes,73200,pan-prd-mc,32259,pri-pvem-pna,237264,morena-pt-pes,5266512,,,,7628256,ine,.
-298,2018,jul,1,10,dgo,DURANGO,164666,pan,123544,pri,7288,prd,9229,pvem,61304,pt,8181,mc,4573,pna,241002,morena,15020,pes,7377,pan-prd-mc,3841,pri-pvem-pna,22136,morena-pt-pes,714728,,,,1279679,ine,.
-299,2018,jul,1,11,gua,GUANAJUATO,843356,pan,288036,pri,41231,prd,58480,pvem,82275,pt,29327,mc,24295,pna,557469,morena,26645,pes,24992,pan-prd-mc,10672,pri-pvem-pna,37687,morena-pt-pes,2249166,,,,4359531,ine,.
-300,2018,jul,1,12,gue,GUERRERO,75283,pan,221329,pri,103057,prd,37772,pvem,121838,pt,31104,mc,13407,pna,806639,morena,35844,pes,8131,pan-prd-mc,13190,pri-pvem-pna,49944,morena-pt-pes,1542299,,,,2506912,ine,.
-301,2018,jul,1,13,hgo,HIDALGO,141438,pan,214642,pri,27268,prd,11271,pvem,56586,pt,10716,mc,22111,pna,716557,morena,33691,pes,8398,pan-prd-mc,9466,pri-pvem-pna,42148,morena-pt-pes,1354367,,,,2118481,ine,.
-302,2018,jul,1,14,jal,JALISCO,804348,pan,413021,pri,31718,prd,52117,pvem,152938,pt,294786,mc,30886,pna,1162833,morena,66279,pes,45950,pan-prd-mc,12715,pri-pvem-pna,74471,morena-pt-pes,3391913,,,,5896959,ine,.
-303,2018,jul,1,15,mex,MEXICO,1206182,pan,1333248,pri,206588,prd,92490,pvem,302908,pt,65574,mc,68994,pna,3673893,morena,128135,pes,69826,pan-prd-mc,53628,pri-pvem-pna,264850,morena-pt-pes,7852979,,,,11832184,ine,.
-304,2018,jul,1,16,mic,MICHOACAN,248151,pan,250628,pri,150173,prd,54040,pvem,153747,pt,26237,mc,22122,pna,733878,morena,42811,pes,18481,pan-prd-mc,8858,pri-pvem-pna,56489,morena-pt-pes,1889137,,,,3372938,ine,.
-305,2018,jul,1,17,mor,MORELOS,95152,pan,73664,pri,30093,prd,12849,pvem,82496,pt,10646,mc,8688,pna,463287,morena,42302,pes,6344,pan-prd-mc,4250,pri-pvem-pna,49173,morena-pt-pes,939671,,,,1439365,ine,.
-306,2018,jul,1,18,nay,NAYARIT,59392,pan,58548,pri,9934,prd,2637,pvem,30835,pt,6756,mc,3173,pna,253871,morena,12585,pes,3604,pan-prd-mc,2043,pri-pvem-pna,17750,morena-pt-pes,471773,,,,846811,ine,.
-307,2018,jul,1,19,nl,NUEVO LEON,641313,pan,268064,pri,10420,prd,21654,pvem,151473,pt,31492,mc,15492,pna,526614,morena,28744,pes,18133,pan-prd-mc,9989,pri-pvem-pna,40113,morena-pt-pes,2125304,,,,3900538,ine,.
-308,2018,jul,1,20,oax,OAXACA,121944,pan,271943,pri,73043,prd,27035,pvem,134335,pt,19070,mc,30747,pna,1027399,morena,37195,pes,7439,pan-prd-mc,12310,pri-pvem-pna,57757,morena-pt-pes,1860132,,,,2861299,ine,.
-309,2018,jul,1,21,pue,PUEBLA,493178,pan,399824,pri,47817,prd,41472,pvem,172850,pt,54487,mc,34807,pna,1414581,morena,53634,pes,22251,pan-prd-mc,14479,pri-pvem-pna,108488,morena-pt-pes,2972789,,,,4500580,ine,.
-310,2018,jul,1,22,que,QUERETARO,315583,pan,127239,pri,11396,prd,8888,pvem,45306,pt,7417,mc,7032,pna,332724,morena,16610,pes,12644,pan-prd-mc,7716,pri-pvem-pna,28812,morena-pt-pes,995575,,,,1582953,ine,.
-311,2018,jul,1,23,qui,QUINTANA ROO,91723,pan,57175,pri,11624,prd,10004,pvem,38023,pt,6261,mc,5297,pna,400691,morena,20515,pes,6246,pan-prd-mc,4269,pri-pvem-pna,28900,morena-pt-pes,710519,,,,1208666,ine,.
-312,2018,jul,1,24,san,SAN LUIS POTOSI,246286,pan,205811,pri,58219,prd,28231,pvem,83786,pt,16172,mc,13517,pna,389916,morena,21675,pes,13587,pan-prd-mc,12551,pri-pvem-pna,30656,morena-pt-pes,1204007,,,,1974326,ine,.
-313,2018,jul,1,25,sin,SINALOA,128508,pan,202014,pri,15048,prd,9687,pvem,71268,pt,13072,mc,10033,pna,684880,morena,27030,pes,7073,pan-prd-mc,12619,pri-pvem-pna,49991,morena-pt-pes,1260847,,,,2135258,ine,.
-314,2018,jul,1,26,son,SONORA,136551,pan,154928,pri,9696,prd,7322,pvem,63769,pt,13699,mc,7299,pna,535524,morena,16008,pes,7007,pan-prd-mc,11429,pri-pvem-pna,35677,morena-pt-pes,1063513,,,,2101688,ine,.
-315,2018,jul,1,27,tab,TABASCO,22433,pan,84401,pri,55745,prd,13300,pvem,38279,pt,8328,mc,6829,pna,861963,morena,21946,pes,4779,pan-prd-mc,2988,pri-pvem-pna,38945,morena-pt-pes,1170056,,,,1687618,ine,.
-316,2018,jul,1,28,tam,TAMAULIPAS,433900,pan,207153,pri,12265,prd,8667,pvem,76746,pt,14106,mc,7296,pna,643546,morena,26980,pes,14346,pan-prd-mc,5155,pri-pvem-pna,37717,morena-pt-pes,1599175,,,,2628745,ine,.
-317,2018,jul,1,29,tla,TLAXCALA,51911,pan,64234,pri,6823,prd,3525,pvem,41945,pt,4434,mc,3257,pna,349959,morena,13038,pes,3500,pan-prd-mc,3712,pri-pvem-pna,27565,morena-pt-pes,600051,,,,922016,ine,.
-318,2018,jul,1,30,ver,VERACRUZ,847668,pan,387333,pri,114387,prd,43788,pvem,111101,pt,44199,mc,20961,pna,1812664,morena,48948,pes,43835,pan-prd-mc,19127,pri-pvem-pna,83348,morena-pt-pes,3711245,,,,5775918,ine,.
-319,2018,jul,1,31,yuc,YUCATAN,282693,pan,283479,pri,17339,prd,19675,pvem,42028,pt,12202,mc,14152,pna,379947,morena,14315,pes,7722,pan-prd-mc,6704,pri-pvem-pna,18501,morena-pt-pes,1138233,,,,1544062,ine,.
-320,2018,jul,1,32,zac,ZACATECAS,112005,pan,140455,pri,27719,prd,20421,pvem,60940,pt,9587,mc,13322,pna,274675,morena,11745,pes,7195,pan-prd-mc,3359,pri-pvem-pna,17550,morena-pt-pes,735792,,,,1162459,ine,.
+257,2012,jul,1,1,ags,AGUASCALIENTES,152543,pan,165618,pri,68539,prd,25154,pvem,19626,pt,14458,mc,33705,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,479648,392,13426,493466,808064,IFE post tribunal,0
+258,2012,jul,1,2,bc,BAJA CALIFORNIA,339508,pan,392968,pri,272368,prd,70380,pvem,65043,pt,52508,mc,34893,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1227673,492,22232,1250397,2251645,IFE post tribunal,0
+259,2012,jul,1,3,bcs,BAJA CALIFORNIA SUR,75066,pan,90495,pri,41083,prd,14253,pvem,11817,pt,10274,mc,4940,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,247933,97,5138,253168,422704,IFE post tribunal,0
+260,2012,jul,1,4,cam,CAMPECHE,107881,pan,129769,pri,67144,prd,19439,pvem,16329,pt,18892,mc,9707,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,369166,86,10036,379288,515852,IFE post tribunal,0
+261,2012,jul,1,5,coa,COAHUILA,325666,pan,541363,pri,454341,prd,392137,pvem,116628,pt,63114,mc,47943,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1941197,381,89725,2031303,1849664,IFE post tribunal,0
+262,2012,jul,1,6,col,COLIMA,328048,pan,540951,pri,208710,prd,77685,pvem,54008,pt,38808,mc,48219,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1296434,748,34189,1331371,467058,IFE post tribunal,0
+263,2012,jul,1,7,cps,CHIAPAS,428998,pan,415460,pri,165487,prd,49313,pvem,40717,pt,27611,mc,27833,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1155424,382,21612,1177418,2947408,IFE post tribunal,0
+264,2012,jul,1,8,cua,CHIHUAHUA,101083,pan,110960,pri,46961,prd,12714,pvem,12949,pt,8096,mc,4855,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,297623,109,6159,303891,2324637,IFE post tribunal,0
+265,2012,jul,1,9,df,DISTRITO FEDERAL,844110,pan,1054395,pri,1783327,prd,203772,pvem,449682,pt,335932,mc,87332,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,4758555,3940,90434,4852929,7146401,IFE post tribunal,0
+266,2012,jul,1,10,dgo,DURANGO,194052,pan,284569,pri,77329,prd,35790,pvem,47887,pt,16393,mc,15407,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,671432,182,13094,684708,1024689,IFE post tribunal,0
+267,2012,jul,1,11,gua,GUANAJUATO,944158,pan,793306,pri,222390,prd,136187,pvem,41755,pt,33832,mc,62920,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,2234553,806,68669,2304028,3809386,IFE post tribunal,0
+268,2012,jul,1,12,gue,GUERRERO,153627,pan,455619,pri,491703,prd,74450,pvem,84966,pt,83882,mc,20163,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1364415,221,45016,1409652,2257204,IFE post tribunal,0
+269,2012,jul,1,13,hgo,HIDALGO,215101,pan,456389,pri,306872,prd,60614,pvem,62701,pt,42404,mc,50197,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1194283,312,29842,1224437,1852477,IFE post tribunal,0
+270,2012,jul,1,14,jal,JALISCO,1098252,pan,1183649,pri,378891,prd,179139,pvem,109675,pt,281202,mc,93506,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,3324319,1500,82891,3408710,5143145,IFE post tribunal,0
+271,2012,jul,1,15,mex,MEXICO,1250707,pan,2563525,pri,1684464,prd,402583,pvem,342055,pt,313203,mc,160462,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,6717004,3379,145111,6865494,10251266,IFE post tribunal,0
+272,2012,jul,1,16,mic,MICHOACAN,337512,pan,614458,pri,403174,prd,95842,pvem,66292,pt,47645,mc,34427,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1599355,1046,46697,1647098,3116491,IFE post tribunal,0
+273,2012,jul,1,17,mor,MORELOS,157027,pan,246209,pri,259658,prd,49523,pvem,57925,pt,45694,mc,19036,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,835077,299,20255,855631,1301651,IFE post tribunal,0
+274,2012,jul,1,18,nay,NAYARIT,82970,pan,197603,pri,98886,prd,23803,pvem,27178,pt,19573,mc,8907,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,458925,116,10808,469849,718760,IFE post tribunal,0
+275,2012,jul,1,19,nl,NUEVO LEON,800099,pan,595646,pri,277999,prd,71342,pvem,119732,pt,43716,mc,62159,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1970698,613,38503,2009814,3260842,IFE post tribunal,0
+276,2012,jul,1,20,oax,OAXACA,290645,pan,486718,pri,514554,prd,68930,pvem,92350,pt,88776,mc,18330,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1560308,440,43371,1604119,2546485,IFE post tribunal,0
+277,2012,jul,1,21,pue,PUEBLA,640977,pan,712251,pri,532606,prd,142129,pvem,204728,pt,121773,mc,56040,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,2410509,782,69727,2481018,3897115,IFE post tribunal,0
+278,2012,jul,1,22,que,QUERETARO,288343,pan,295364,pri,141413,prd,35360,pvem,27326,pt,23702,mc,20285,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,831798,333,23671,855802,1263554,IFE post tribunal,0
+279,2012,jul,1,23,qui,QUINTANA ROO,111303,pan,150670,pri,169153,prd,28337,pvem,33549,pt,23349,mc,10362,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,526728,248,10822,537798,886694,IFE post tribunal,0
+280,2012,jul,1,24,san,SAN LUIS POTOSI,346576,pan,363572,pri,167962,prd,65223,pvem,53701,pt,42096,mc,32282,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1071417,587,45755,1117759,1747800,IFE post tribunal,0
+281,2012,jul,1,25,sin,SINALOA,295585,pan,487054,pri,207175,prd,64084,pvem,38900,pt,32727,mc,22584,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1148114,540,31361,1180015,1844223,IFE post tribunal,0
+282,2012,jul,1,26,son,SONORA,342168,pan,384105,pri,196650,prd,46032,pvem,39992,pt,29354,mc,16125,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1054431,722,28412,1083565,1780074,IFE post tribunal,0
+283,2012,jul,1,27,tab,TABASCO,65018,pan,313612,pri,522610,prd,32769,pvem,68127,pt,56241,mc,5766,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1064148,148,26606,1090902,1491490,IFE post tribunal,0
+284,2012,jul,1,28,tam,TAMAULIPAS,597387,pan,438495,pri,198399,prd,52524,pvem,46468,pt,35964,mc,31465,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1400707,383,28973,1430063,2371066,IFE post tribunal,0
+285,2012,jul,1,29,tla,TLAXCALA,98450,pan,155588,pri,141615,prd,28657,pvem,39263,pt,29296,mc,15933,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,508807,90,11295,520192,807620,IFE post tribunal,0
+286,2012,jul,1,30,ver,VERACRUZ,1203157,pan,1051975,pri,782202,prd,149347,pvem,137839,pt,115746,mc,50740,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,3491011,877,85188,3577076,5229735,IFE post tribunal,0
+287,2012,jul,1,31,yuc,YUCATAN,394197,pan,396526,pri,136710,prd,43483,pvem,23387,pt,17596,mc,18131,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,1030035,188,20986,1051209,1334931,IFE post tribunal,0
+288,2012,jul,1,32,zac,ZACATECAS,122416,pan,286024,pri,101844,prd,52627,pvem,45278,pt,14782,mc,21431,pna,2,pri-pvem,3,prd-pt-mc,,,,,,,644407,186,16853,661446,1068363,IFE post tribunal,0
+289,2018,jul,1,1,ags,AGUASCALIENTES,162102,pan,88783,pri,7434,prd,6215,pvem,23555,pt,4403,mc,6145,pna,177557,morena,9676,pes,4766,pan-prd-mc,2451,pri-pvem-pna,11277,morena-pt-pes,545178,,,,943448,ine,0
+290,2018,jul,1,2,bc,BAJA CALIFORNIA,238697,pan,102210,pri,13079,prd,8870,pvem,70327,pt,11987,mc,6930,pna,764146,morena,27358,pes,11335,pan-prd-mc,6135,pri-pvem-pna,56162,morena-pt-pes,1407492,,,,2731567,ine,0
+291,2018,jul,1,3,bcs,BAJA CALIFORNIA SUR,51781,pan,21625,pri,1408,prd,2796,pvem,24096,pt,1453,mc,2478,pna,151013,morena,6174,pes,2114,pan-prd-mc,1295,pri-pvem-pna,12463,morena-pt-pes,295865,,,,516146,ine,0
+292,2018,jul,1,4,cam,CAMPECHE,43714,pan,82289,pri,4944,prd,2949,pvem,29951,pt,3329,mc,3560,pna,220772,morena,9699,pes,2400,pan-prd-mc,7772,pri-pvem-pna,14677,morena-pt-pes,437457,,,,642056,ine,0
+293,2018,jul,1,5,coa,COAHUILA,278383,pan,330440,pri,10795,prd,10336,pvem,61700,pt,10518,mc,8143,pna,502833,morena,20044,pes,7380,pan-prd-mc,9292,pri-pvem-pna,24037,morena-pt-pes,1345638,,,,2154098,ine,0
+294,2018,jul,1,6,col,COLIMA,46884,pan,49016,pri,2553,prd,6472,pvem,20483,pt,4563,mc,2850,pna,158936,morena,5837,pes,2335,pan-prd-mc,3636,pri-pvem-pna,11618,morena-pt-pes,331268,,,,530720,ine,0
+295,2018,jul,1,7,cps,CHIAPAS,100228,pan,266961,pri,55090,prd,243730,pvem,167227,pt,35722,mc,38667,pna,1168857,morena,66564,pes,7012,pan-prd-mc,13482,pri-pvem-pna,82346,morena-pt-pes,2287178,,,,3541181,ine,0
+296,2018,jul,1,8,cua,CHIHUAHUA,378243,pan,202248,pri,15614,prd,16727,pvem,75245,pt,17582,mc,14785,pna,495999,morena,32107,pes,13524,pan-prd-mc,6812,pri-pvem-pna,38744,morena-pt-pes,1441384,,,,2743260,ine,0
+297,2018,jul,1,9,df,DISTRITO FEDERAL,921553,pan,563876,pri,251610,prd,32180,pvem,187336,pt,37132,mc,22198,pna,2600692,morena,81197,pes,73200,pan-prd-mc,32259,pri-pvem-pna,237264,morena-pt-pes,5266512,,,,7628256,ine,0
+298,2018,jul,1,10,dgo,DURANGO,164666,pan,123544,pri,7288,prd,9229,pvem,61304,pt,8181,mc,4573,pna,241002,morena,15020,pes,7377,pan-prd-mc,3841,pri-pvem-pna,22136,morena-pt-pes,714728,,,,1279679,ine,0
+299,2018,jul,1,11,gua,GUANAJUATO,843356,pan,288036,pri,41231,prd,58480,pvem,82275,pt,29327,mc,24295,pna,557469,morena,26645,pes,24992,pan-prd-mc,10672,pri-pvem-pna,37687,morena-pt-pes,2249166,,,,4359531,ine,0
+300,2018,jul,1,12,gue,GUERRERO,75283,pan,221329,pri,103057,prd,37772,pvem,121838,pt,31104,mc,13407,pna,806639,morena,35844,pes,8131,pan-prd-mc,13190,pri-pvem-pna,49944,morena-pt-pes,1542299,,,,2506912,ine,0
+301,2018,jul,1,13,hgo,HIDALGO,141438,pan,214642,pri,27268,prd,11271,pvem,56586,pt,10716,mc,22111,pna,716557,morena,33691,pes,8398,pan-prd-mc,9466,pri-pvem-pna,42148,morena-pt-pes,1354367,,,,2118481,ine,0
+302,2018,jul,1,14,jal,JALISCO,804348,pan,413021,pri,31718,prd,52117,pvem,152938,pt,294786,mc,30886,pna,1162833,morena,66279,pes,45950,pan-prd-mc,12715,pri-pvem-pna,74471,morena-pt-pes,3391913,,,,5896959,ine,0
+303,2018,jul,1,15,mex,MEXICO,1206182,pan,1333248,pri,206588,prd,92490,pvem,302908,pt,65574,mc,68994,pna,3673893,morena,128135,pes,69826,pan-prd-mc,53628,pri-pvem-pna,264850,morena-pt-pes,7852979,,,,11832184,ine,0
+304,2018,jul,1,16,mic,MICHOACAN,248151,pan,250628,pri,150173,prd,54040,pvem,153747,pt,26237,mc,22122,pna,733878,morena,42811,pes,18481,pan-prd-mc,8858,pri-pvem-pna,56489,morena-pt-pes,1889137,,,,3372938,ine,0
+305,2018,jul,1,17,mor,MORELOS,95152,pan,73664,pri,30093,prd,12849,pvem,82496,pt,10646,mc,8688,pna,463287,morena,42302,pes,6344,pan-prd-mc,4250,pri-pvem-pna,49173,morena-pt-pes,939671,,,,1439365,ine,0
+306,2018,jul,1,18,nay,NAYARIT,59392,pan,58548,pri,9934,prd,2637,pvem,30835,pt,6756,mc,3173,pna,253871,morena,12585,pes,3604,pan-prd-mc,2043,pri-pvem-pna,17750,morena-pt-pes,471773,,,,846811,ine,0
+307,2018,jul,1,19,nl,NUEVO LEON,641313,pan,268064,pri,10420,prd,21654,pvem,151473,pt,31492,mc,15492,pna,526614,morena,28744,pes,18133,pan-prd-mc,9989,pri-pvem-pna,40113,morena-pt-pes,2125304,,,,3900538,ine,0
+308,2018,jul,1,20,oax,OAXACA,121944,pan,271943,pri,73043,prd,27035,pvem,134335,pt,19070,mc,30747,pna,1027399,morena,37195,pes,7439,pan-prd-mc,12310,pri-pvem-pna,57757,morena-pt-pes,1860132,,,,2861299,ine,0
+309,2018,jul,1,21,pue,PUEBLA,493178,pan,399824,pri,47817,prd,41472,pvem,172850,pt,54487,mc,34807,pna,1414581,morena,53634,pes,22251,pan-prd-mc,14479,pri-pvem-pna,108488,morena-pt-pes,2972789,,,,4500580,ine,0
+310,2018,jul,1,22,que,QUERETARO,315583,pan,127239,pri,11396,prd,8888,pvem,45306,pt,7417,mc,7032,pna,332724,morena,16610,pes,12644,pan-prd-mc,7716,pri-pvem-pna,28812,morena-pt-pes,995575,,,,1582953,ine,0
+311,2018,jul,1,23,qui,QUINTANA ROO,91723,pan,57175,pri,11624,prd,10004,pvem,38023,pt,6261,mc,5297,pna,400691,morena,20515,pes,6246,pan-prd-mc,4269,pri-pvem-pna,28900,morena-pt-pes,710519,,,,1208666,ine,0
+312,2018,jul,1,24,san,SAN LUIS POTOSI,246286,pan,205811,pri,58219,prd,28231,pvem,83786,pt,16172,mc,13517,pna,389916,morena,21675,pes,13587,pan-prd-mc,12551,pri-pvem-pna,30656,morena-pt-pes,1204007,,,,1974326,ine,0
+313,2018,jul,1,25,sin,SINALOA,128508,pan,202014,pri,15048,prd,9687,pvem,71268,pt,13072,mc,10033,pna,684880,morena,27030,pes,7073,pan-prd-mc,12619,pri-pvem-pna,49991,morena-pt-pes,1260847,,,,2135258,ine,0
+314,2018,jul,1,26,son,SONORA,136551,pan,154928,pri,9696,prd,7322,pvem,63769,pt,13699,mc,7299,pna,535524,morena,16008,pes,7007,pan-prd-mc,11429,pri-pvem-pna,35677,morena-pt-pes,1063513,,,,2101688,ine,0
+315,2018,jul,1,27,tab,TABASCO,22433,pan,84401,pri,55745,prd,13300,pvem,38279,pt,8328,mc,6829,pna,861963,morena,21946,pes,4779,pan-prd-mc,2988,pri-pvem-pna,38945,morena-pt-pes,1170056,,,,1687618,ine,0
+316,2018,jul,1,28,tam,TAMAULIPAS,433900,pan,207153,pri,12265,prd,8667,pvem,76746,pt,14106,mc,7296,pna,643546,morena,26980,pes,14346,pan-prd-mc,5155,pri-pvem-pna,37717,morena-pt-pes,1599175,,,,2628745,ine,0
+317,2018,jul,1,29,tla,TLAXCALA,51911,pan,64234,pri,6823,prd,3525,pvem,41945,pt,4434,mc,3257,pna,349959,morena,13038,pes,3500,pan-prd-mc,3712,pri-pvem-pna,27565,morena-pt-pes,600051,,,,922016,ine,0
+318,2018,jul,1,30,ver,VERACRUZ,847668,pan,387333,pri,114387,prd,43788,pvem,111101,pt,44199,mc,20961,pna,1812664,morena,48948,pes,43835,pan-prd-mc,19127,pri-pvem-pna,83348,morena-pt-pes,3711245,,,,5775918,ine,0
+319,2018,jul,1,31,yuc,YUCATAN,282693,pan,283479,pri,17339,prd,19675,pvem,42028,pt,12202,mc,14152,pna,379947,morena,14315,pes,7722,pan-prd-mc,6704,pri-pvem-pna,18501,morena-pt-pes,1138233,,,,1544062,ine,0
+320,2018,jul,1,32,zac,ZACATECAS,112005,pan,140455,pri,27719,prd,20421,pvem,60940,pt,9587,mc,13322,pna,274675,morena,11745,pes,7195,pan-prd-mc,3359,pri-pvem-pna,17550,morena-pt-pes,735792,,,,1162459,ine,0
