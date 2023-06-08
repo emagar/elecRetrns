@@ -1118,93 +1118,109 @@ v12 <- add.edon.secn(v12)
 v15 <- add.edon.secn(v15)
 v18 <- add.edon.secn(v18)
 v21 <- add.edon.secn(v21)
-# clean
-rm(add.edon.secn,tmp.all.sec,tmp)
 
-## #########################
-## ## READ/PREP pop>18yrs ##
-## #########################
-## # 2005
-## edos <- c("ags", "bc", "bcs", "cam", "coa", "col", "cps", "cua", "df", "dgo", "gua", "gue", "hgo", "jal", "mex", "mic", "mor", "nay", "nl", "oax", "pue", "que", "qui", "san", "sin", "son", "tab", "tam", "tla", "ver", "yuc", "zac")
-## tmp18 <- data.frame()
-## for (i in 1:9){
-##     tmp2005 <- read.csv( paste0("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2005/", edos[i], "/0", i, "_", edos[i], "_pob.csv"), stringsAsFactors = FALSE)
-##     tmp18 <- rbind(tmp18, tmp2005[, grep("ENTIDAD|SECCION|POB_TOT|EDQUI0[1-4]", colnames(tmp2005))])
-## }
-## for (i in 10:32){
-##     tmp2005 <- read.csv( paste0("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2005/", edos[i], "/", i, "_", edos[i], "_pob.csv"), stringsAsFactors = FALSE)
-##     tmp18 <- rbind(tmp18, tmp2005[, grep("ENTIDAD|SECCION|POB_TOT|EDQUI0[1-4]", colnames(tmp2005))])
-## }
-## # drop seccion=0
-## tmp18 <- tmp18[-which(tmp18$SECCION==0),]
-## # EDQUI04 covers ages 15:19, drop two-fifths (assumes yearly cohorts equal size)
-## tmp18$EDQUI04 <- as.integer(tmp18$EDQUI04 * .6)
-## # p18
-## tmp18$p18_2005 <- tmp18$POB_TOT - tmp18$EDQUI01 - tmp18$EDQUI02 - tmp18$EDQUI03 - tmp18$EDQUI04
-## tmp18$ptot_2005 <- tmp18$POB_TOT
-## #
-## tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$SECCION
-## tmp18 <- tmp18[, c("seccion", "p18_2005", "ptot_2005")]
-## # add missing secciones (tmp adds up all secciones reported in yearly federal returns)
-## sel <- which(tmp18$seccion %notin% tmp.all.sec$seccion)
-## tmp18$seccion[sel]
-## c(nrow(tmp.all.sec), nrow(tmp18))
-## tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
-## c(nrow(tmp.all.sec), nrow(tmp18))
-## tmp18 <- tmp18[, -grep("d[0-9]", colnames(tmp18))]
-## # add to pop object
-## pob18 <- tmp18
-## #
-## # 2010
-## tmp18 <- data.frame()
-## for (i in 1:9){
-##     tmp2010 <- read.csv( paste0("/home/eric/Desktop/MXelsCalendGovt/censos/secciones/eceg_2010/", edos[i], "/secciones_0", i, ".csv"), stringsAsFactors = FALSE)
-##     tmp18 <- rbind(tmp18, tmp2010[, grep("ENTIDAD|CLAVEGEO|P_18YMAS$|POBTOT", colnames(tmp2010))])
-## }
-## for (i in 10:32){
-##     tmp2010 <- read.csv( paste0("/home/eric/Desktop/MXelsCalendGovt/censos/secciones/eceg_2010/", edos[i], "/secciones_", i, ".csv"), stringsAsFactors = FALSE)
-##     tmp18 <- rbind(tmp18, tmp2010[, grep("ENTIDAD|CLAVEGEO|P_18YMAS$|POBTOT", colnames(tmp2010))])
-## }
-## rm(tmp2010)
-## # get seccion
-## lastn <- function(x, n) substr(x, nchar(x)-n+1, nchar(x))
-## tmp18$seccion <- as.numeric(lastn(tmp18$CLAVEGEO, 4))
-## #
-## tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$seccion
-## tmp18$p18_2010 <- tmp18$P_18YMAS
-## tmp18$ptot_2010 <- tmp18$POBTOT
-## tmp18 <- tmp18[, c("seccion", "p18_2010", "ptot_2010")]
-## # add missing secciones
-## tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
-## tmp18 <- tmp18[, -grep("d[0-9]", colnames(tmp18))]
-## # add to pop object
-## pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
-## head(pob18)
-## #
-## # 2020
-## tmp18 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2020/conjunto_de_datos/INE_SECCION_2020.csv", stringsAsFactors = FALSE)[, c(2,5,7,13)]
-## tmp18$p18_2020 <- tmp18$POBTOT - tmp18$P_0A17
-## tmp18$ptot_2020 <- tmp18$POBTOT
-## tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$SECCION
-## tmp18 <- tmp18[, c("seccion", "p18_2020", "ptot_2020")]
-## # add missing secciones
-## tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
-## tmp18 <- tmp18[, -grep("d[0-9]", colnames(tmp18))]
-## # add to pop object
-## pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
-## head(pob18)
-## #
-## # will need cleaning with reseccionamiento functions
-## table(y2005=is.na(pob18$p18_2005), y2010=is.na(pob18$p18_2010))
-## table(y2005=is.na(pob18$p18_2005), y2020=is.na(pob18$p18_2020))
-## table(y2010=is.na(pob18$p18_2010), y2020=is.na(pob18$p18_2020))
-## rm(lastn,tmp18,tmp.all.sec,add.edon.secn,sel,sel.r) # clean
-## #
-## # SEPARATE PTOT FROM P18
-## pobtot <- pob18
-## pob18  <- pob18 [, grep("seccion|^p18",  colnames(pob18) )]
-## pobtot <- pobtot[, grep("seccion|^ptot", colnames(pobtot))]
-## head(pobtot); head(pob18)
+#########################
+## READ/PREP pop>18yrs ##
+#########################
+##
+## fresh tmp.mun.sec
+##tmp.all.sec <- eq[,c("edon","seccion","inegi","ife","mun","alta","baja")]
+tmp.all.sec <- eq
+##
+##########
+## 2005 ##
+##########
+edos <- c("ags", "bc", "bcs", "cam", "coa", "col", "cps", "cua", "df", "dgo", "gua", "gue", "hgo", "jal", "mex", "mic", "mor", "nay", "nl", "oax", "pue", "que", "qui", "san", "sin", "son", "tab", "tam", "tla", "ver", "yuc", "zac")
+tmp18 <- data.frame()
+for (i in 1:9){
+    tmp2005 <- read.csv( paste0("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2005/", edos[i], "/0", i, "_", edos[i], "_pob.csv"), stringsAsFactors = FALSE)
+    tmp18 <- rbind(tmp18, tmp2005[, grep("ENTIDAD|SECCION|POB_TOT|EDQUI0[1-4]", colnames(tmp2005))])
+}
+for (i in 10:32){
+    tmp2005 <- read.csv( paste0("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2005/", edos[i], "/", i, "_", edos[i], "_pob.csv"), stringsAsFactors = FALSE)
+    tmp18 <- rbind(tmp18, tmp2005[, grep("ENTIDAD|SECCION|POB_TOT|EDQUI0[1-4]", colnames(tmp2005))])
+}
+## drop seccion=0
+sel.r <- which(tmp18$SECCION==0)
+if (length(sel.r)>0) tmp18 <- tmp18[-sel.r,]
+rm(sel.r)
+## EDQUI04 covers ages 15:19, drop two-fifths (assumes yearly cohorts equal size)
+tmp18$EDQUI04 <- as.integer(tmp18$EDQUI04 * .6)
+## p18
+tmp18$p18_2005 <- tmp18$POB_TOT - tmp18$EDQUI01 - tmp18$EDQUI02 - tmp18$EDQUI03 - tmp18$EDQUI04
+tmp18$ptot_2005 <- tmp18$POB_TOT
+##
+tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$SECCION
+tmp18 <- tmp18[, c("seccion", "p18_2005", "ptot_2005")]
+## add missing secciones (tmp adds up all secciones reported in yearly federal returns)
+tmp.all.sec$seccion <- tmp.all.sec$edon * 10000 + tmp.all.sec$seccion
+sel <- which(tmp18$seccion %notin% tmp.all.sec$seccion)
+tmp18$seccion[sel]
+c(nrow(tmp.all.sec), nrow(tmp18))
+tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
+c(nrow(tmp.all.sec), nrow(tmp18))
+## add to pop object
+pob18 <- tmp18
+##
+##########
+## 2010 ##
+##########
+tmp18 <- data.frame()
+tmp.all.sec$tmp.drop <- NA;                          # redundant column to retain data frame form
+tmp.all.sec <- tmp.all.sec[,c("seccion","tmp.drop")] # trim to avoid dumplicated cols in merge
+for (i in 1:9){
+    tmp2010 <- read.csv( paste0("/home/eric/Desktop/MXelsCalendGovt/censos/secciones/eceg_2010/", edos[i], "/secciones_0", i, ".csv"), stringsAsFactors = FALSE)
+    tmp18 <- rbind(tmp18, tmp2010[, grep("ENTIDAD|CLAVEGEO|P_18YMAS$|POBTOT", colnames(tmp2010))])
+}
+for (i in 10:32){
+    tmp2010 <- read.csv( paste0("/home/eric/Desktop/MXelsCalendGovt/censos/secciones/eceg_2010/", edos[i], "/secciones_", i, ".csv"), stringsAsFactors = FALSE)
+    tmp18 <- rbind(tmp18, tmp2010[, grep("ENTIDAD|CLAVEGEO|P_18YMAS$|POBTOT", colnames(tmp2010))])
+}
+rm(tmp2010)
+## get seccion
+lastn <- function(x, n) substr(x, nchar(x)-n+1, nchar(x))
+tmp18$seccion <- as.numeric(lastn(tmp18$CLAVEGEO, 4))
+##
+tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$seccion
+tmp18$p18_2010 <- tmp18$P_18YMAS
+tmp18$ptot_2010 <- tmp18$POBTOT
+tmp18 <- tmp18[, c("seccion", "p18_2010", "ptot_2010")]
+## add missing secciones
+tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
+tmp18$tmp.drop <- NULL # clean
+## add to pop object
+pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
+head(pob18)
+##
+##########
+## 2020 ##
+##########
+tmp18 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2020/conjunto_de_datos/INE_SECCION_2020.csv", stringsAsFactors = FALSE)[, c(2,5,7,13)]
+tmp18$p18_2020 <- tmp18$POBTOT - tmp18$P_0A17
+tmp18$ptot_2020 <- tmp18$POBTOT
+tmp18$seccion <- tmp18$ENTIDAD*10000 + tmp18$SECCION
+tmp18 <- tmp18[, c("seccion", "p18_2020", "ptot_2020")]
+## add missing secciones
+tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
+tmp18$tmp.drop <- NULL # clean
+## add to pop object
+pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
+head(pob18)
+##
+## will need cleaning with reseccionamiento functions later
+table(y2005=is.na(pob18$p18_2005), y2010=is.na(pob18$p18_2010))
+table(y2005=is.na(pob18$p18_2005), y2020=is.na(pob18$p18_2020))
+table(y2010=is.na(pob18$p18_2010), y2020=is.na(pob18$p18_2020))
+ls()
+## clean
+rm(add.edon.secn, edos, tmp.all.sec, tmp, lastn, tmp18, tmp2005, sel, sel.c, i) # clean
+##
+## rename object
+censo <- pob18 # rename object
+rm(pob18)
+head(censo)
+
+
 
 #############################################################
 ## drop casilla longitude/latitude from files that have it ##
@@ -1304,10 +1320,18 @@ load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 v91s <- v91; v94s <- v94; v97s <- v97; v00s <- v00; v03s <- v03; v06s <- v06; v09s <- v09; v12s <- v12; v15s <- v15; v18s <- v18; v21s <- v21;
 rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 
-#####################################################################################################
-## Script code/aggregates-mun-dis-from-sec.r produces municipio- and seccion-level vote aggregates ##
-#####################################################################################################
+###############################################################
+## Script code/aggregates-mun-dis-from-sec.r produces        ##
+## municipio- and district-level vote and census aggregates  ##
+###############################################################
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
+
+
+#############################################################
+## Script code/interpolate-census.r produces linear values ##
+## for inter-census years in municipios and districts      ##
+#############################################################
+
 
 
 ################################################################################

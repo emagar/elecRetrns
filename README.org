@@ -171,28 +171,30 @@ Most variables are included in every file, some appear in selected files only. P
 - /fuente/, /source/ = sources.
 [[top][<sub>Back to top</sub>]]
 * Coding procedure for the incumbent's status<<status-rules>>
-In file ~data/aymu1985-on.incumbents.csv~, variable /race.after/ equals one of the following categories: 
-1. 'Beaten' if the incumbent re-ran and lost; 
-2. 'Reelected' if the incumbent re-ran and won; 
-3. 'Renom-killed' if the incumbent re-ran and was killed in the campaign; 
-4. 'Hi-office' if the incumbent ran for higher office; 
-5. 'Out' if the incumbent withdrew or was not renominated; 
-6. 'Term-limited' if the incumbent was ineligible for reelection due to a term limit; 
-7. A year indicates that it is too early to know the incumbent's status (and the year of the next race).
-In categories other than the first two above, a suffix may be present. 
+In files ~data/aymu1985-on.incumbents.csv~ and ~data/dfdf1997-on.incumbents.csv~, variable /race.after/ reports what occured at the end of the incumbent's term. It takes one of the following categories: 
+1. `Reran-beaten' = the incumbent re-ran and lost; 
+2. `Reelected' = the incumbent re-ran and won; 
+3. `Dead' = the incumbent died in office;
+4. `Hi-office' = the incumbent ran for higher office in the next cycle; 
+5. `Out' = the incumbent withdrew or was not renominated in the next cycle; 
+6. `Term-limited' = incumbent ineligible for reelection due to a term limit; 
+7. `Uyc' = municipio quit the popular election of authorities in the next cycle, appointing offices according to community rules (/usos y costumbres/);
+8. A year numeral = still early to know the incumbent's status (and the year of the next race).
+In categories other than the first two above, a suffix may be present: 
 - Suffix '-p-lost' indicates that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition). 
 - Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 [[top][<sub>Back to top</sub>]]
 * Procedimiento para codificar el estatus del ocupante<<status-rules-esp>>
 En el archivo ~data/aymu1985-on.incumbents.csv~, la variable /race.after/ indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes: 
-1. 'Beaten' si el ocupante volvió a contender y perdió; 
-2. 'Reelected' si el ocupante volvió a contender y ganó; 
-3. 'Renom-killed' si el ocupante volvió a contender y fue asesinado en la campaña; 
-4. 'Hi-office' si el ocupante contendió por otro cargo de elección (p.ej. gobernador o senador);
-5. 'Out' si el ocupante se retiró o no fue repostulado por el partido; 
-6. 'Term-limited' si el ocupante estaba constitucionalmente impedido para aspirar a reelegirse; 
-7. Un año indica que aún es temprano para conocer el estatus (y el año de la próxima elección).
-En las categorías 3 en adelante, un sufijo puede estar presente. 
+1. `Reran-beaten' = el ocupante volvió a contender y perdió; 
+2. `Reelected' = el ocupante volvió a contender y ganó; 
+3. `Dead' = el ocupante falleció durante su mandato;
+4. `Hi-office' = el ocupante contendió el siguiente ciclo por otro cargo de elección (p.ej. gobernador o senador);
+5. `Out' = el ocupante se retiró o no fue repostulado por el partido; 
+6. `Term-limited' = el ocupante estaba constitucionalmente impedido para aspirar a reelegirse consecutivamente; 
+7. `Uyc' = el muicipio abandonó en el siguiente ciclo la elección popular de sus autoridades, nombrándolos según usos y costumbres; 
+8. Un número de año = aún es prematuro conocer el estatus (y el año de la próxima elección).
+En las categorías 3 en adelante, un sufijo puede estar presente: 
 - El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora). 
 - El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 [[top][<sub>Back to top</sub>]]
