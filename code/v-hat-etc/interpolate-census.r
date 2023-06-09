@@ -1,48 +1,78 @@
 ls()[grep("censo", ls())]
 censo[1,]
 
-interpol <- function(what="p18", yr=NA, force.map=NA){  # force.map allow usage of counterfactual maps, not used now
-    what <- "p18"; yr <- 2006; force.map <- NA # debug
+force.map <- tmp; dim(force.map)
+force.map <- NA; dim(force.map)
+
+interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], force.map=NA){  # force.map allow usage of counterfactual maps, not used now
+    ##what <- "p18"; yr <- 2020; force.map <- tmp # debug
     ##
-    if (!is.na(force.map)) {
+    if (!is.null(dim(force.map))) {  # if data provided in call, use it
         cs <- force.map
     } else {
-        if (yr< 1997)           cs <- censod79
-        if (yr>=1997 & yr<2006) cs <- censod97
-        if (yr>=2006 & yr<2018) cs <- censod06
-        if (yr>=2018 & yr<2024) cs <- censod18
+        if (unit=="d"){
+            if (           yr<1997) cs <- censod79
+            if (yr>=1997 & yr<2006) cs <- censod97
+            if (yr>=2006 & yr<2018) cs <- censod06
+            if (yr>=2018 & yr<2024) cs <- censod18
+        }
+        if (unit=="m"){
+            if (           yr<1997) cs <- censom94
+            if (yr>=1997 & yr<2000) cs <- censom97
+            if (yr>=2000 & yr<2003) cs <- censom00
+            if (yr>=2003 & yr<2006) cs <- censom03
+            if (yr>=2006 & yr<2009) cs <- censom06
+            if (yr>=2009 & yr<2012) cs <- censom09
+            if (yr>=2012 & yr<2015) cs <- censom12
+            if (yr>=2015 & yr<2018) cs <- censom15
+            if (yr>=2018 & yr<2021) cs <- censom18
+            if (yr>=2021          ) cs <- censom21
+        }
     }
     ##
     sel.c <- grep(pattern=paste0(what, "_[0-9]{4}"), colnames(cs))  # columns with census values for indicator what
     cs <- cs[, sel.c]                                                # subset target columns
     ##
     ys <- as.numeric(sub(pattern = ".+_([0-9]{4})", replacement = "\\1", colnames(cs)))
+    ys <- mapply(rep, ys, nrow(cs)) # repeat ys for each row in cs for easier operations
     ##
-    ## deltas
-    d.ys <- ys [-1] - ys [-ncol(cs)]
-    d.cs <- cs[,-1] - cs[,-ncol(cs)]
+    ## for deltas
+    y2 <- ys[,-1]
+    y1 <- ys[,-ncol(cs)]
+    c2 <- cs[,-1]
+    c1 <- cs[,-ncol(cs)]
     ## slopes
-    b <- d.cs / d.ys
+    b <- (c2 - c1) / (y2 - y1)
     ##b[1:4,] # debug
     ## constants
-    c1 <- cs[, -ncol(cs)]
-    y1 <- ys  [-ncol(cs)]
-    a <- y1 - b * c1
+    ##a <- c2 - b * y2
+    ##a <- (y2*c1 - y1*c2) / (y2 - y1)
     ##a[1:4,] # debug
     ## name cols
-    colnames(a) <- colnames(b) <- paste(y1, ys[-1], sep = "-")
+    ##colnames(b) <- paste(y1, y2, sep = "-")
     ##
-    if (           yr<=ys[1]) interp <- a[,1] + b[,1] * yr # use 1st constant/slope for yr before 1st census
-    if (yr>ys[1] & yr<=ys[2]) interp <- a[,1] + b[,1] * yr # use 1st constant/slope for yr between 1st and 2nd census
-    if (yr>ys[2] & yr<=ys[3]) interp <- a[,2] + b[,2] * yr # use 2nd constant/slope for yr between 2nd and 3rd census
-    if (yr>ys[3]            ) interp <- a[,2] + b[,2] * yr # use 2nd constant/slope for yr after 3rd census
+    if (           yr<=ys[1]) interp <- c1[,1] + b[,1] * (yr - 2005) # use 1st level/slope for yr before 1st census
+    if (yr>ys[1] & yr<=ys[2]) interp <- c1[,1] + b[,1] * (yr - 2005) # use 1st level/slope for yr between 1st and 2nd census
+    if (yr>ys[2] & yr<=ys[3]) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr between 2nd and 3rd census
+    if (yr>ys[3]            ) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr after 3rd census
     ##
     return(interp)
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, force.map, interp) # clean debug
 }
 
-interpol(what="p18", yr=2005)
-    
+
+
+
+head(interpol(what="p18", yr=2005, unit="m"))
+head(censod97)
+tmp <- data.frame(p18_2005=c( 5, 8, 12, 1, 4),
+                  p18_2010=c( 7, 8, 20, 2, 4),
+                  p18_2020=c(10, 9, 21, 3, 4))
+head(interpol(what="p18", yr=2005, force.map=tmp))
+head(interpol(what="p18", yr=2010, force.map=tmp))
+head(interpol(what="p18", yr=2020, force.map=tmp))
+
+     
 ##########################################################################################
 ## generate yearly linear projections of pob18 (routine takes care of reseccionamiento) ##
 ##########################################################################################
