@@ -8,7 +8,7 @@ Last revision: 2023-06-07
 Recent news
 </h2>
 
-<sup><sub>2023-06-07</sub></sup> *Codebook* updated, with a printable flier.
+<sup><sub>2023-06-07</sub></sup> [[codebook][*Codebook*]] updated, with a printable flier.
 
 <sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. 
 # Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized. 
@@ -106,8 +106,8 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Municipio         | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1kKC6rnp9rgXTv6aEQSvvGT9NY5J3J6D1UtNiJOwEJgo/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1JrjGS1pZ0CrDcjFd23RUTMdosOwWce568ra2E1pQxu4/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1Y01BdrOr15ei2pDeGrXtTEz6nqP6IS-USvoiZLoXWqk/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv][csv]] [[https://docs.google.com/spreadsheets/d/1ulwgVYCbgQeC_5FuXCYkilP6yfpPc69NR_gZpXf6QEM/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1M90-ZuW3SRnqxfRjboeWWvU2wt-YPnlp7nT4n7fM6zI/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1ky0Eris0cU3OaEA35kQPhjEsR_kxilWnx-iEun8D06M/copy][view]] | [[./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv][csv]] [[https://docs.google.com/spreadsheets/d/1HfzYxOxRcFfVgJivvX7nYeaiMbILM7ePAGSbL_jcv74/copy][view]] |
 | Sección electoral |          | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      |
 [[top][<sub>Back to top</sub>]]
-* Codebook
-Most variables are included in every file, some appear in selected files only. Printable codebook [[file:./codebook-flier.pdf][here]]. 
+* Codebook<<codebook>>
+Most variables are included in every file, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
 - /edon/ = state number 1:32.
 - /edo/ = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).

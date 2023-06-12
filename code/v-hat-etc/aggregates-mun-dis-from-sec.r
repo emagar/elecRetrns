@@ -2706,7 +2706,7 @@ d <- d[order(d$disn),]                         # sort
 d <- d[moveme(names(d), "disn before edon")]   # order columns
 censod18 <- d                                  # rename object
 #
-rm(d,sel.c,sel.drop,sel.c)
+rm(d,sel.c,sel.drop)
 
 # verify nrow==300
 table(c(

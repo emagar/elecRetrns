@@ -1327,11 +1327,605 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 
 
-#############################################################
-## Script code/interpolate-census.r produces linear values ##
-## for inter-census years in municipios and districts      ##
-#############################################################
-source()
+########################################################
+## Function interpol() produces linear values         ##
+## for inter-census years in municipios and districts ##
+########################################################
+source("../../code/v-hat-etc/interpolate-census.r")
+## default applies proper district/municipio map when generating interpolations
+##
+######################################
+## Add p18 to district vote objects ##
+######################################
+## will receive district yearly inter-census linear projections
+tmp <- censod06[, c("edon","disn")]
+## 1991
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1991, unit="d")
+##v09d$disn==tmp2$disn
+v91d$pob18 <- tmp2$pob18 # paste interpolation
+## 1994
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d")
+##v94d$disn==tmp2$disn
+v94d$pob18 <- tmp2$pob18 # paste interpolation
+## 1994d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod97")
+v94d97$pob18 <- tmp2$pob18 # paste interpolation
+## 1994d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod06")
+v94d06$pob18 <- tmp2$pob18 # paste interpolation
+## 1994d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod18")
+v94d18$pob18 <- tmp2$pob18 # paste interpolation
+## 1997
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d")
+v97d$pob18 <- tmp2$pob18 # paste interpolation
+## 1997d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod79")
+v97d79$pob18 <- tmp2$pob18 # paste interpolation
+## 1997d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod06")
+v97d06$pob18 <- tmp2$pob18 # paste interpolation
+## 1997d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod18")
+v97d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2000
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d")
+v00d$pob18 <- tmp2$pob18 # paste interpolation
+## 2000d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod79")
+v00d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2000d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod06")
+v00d06$pob18 <- tmp2$pob18 # paste interpolation
+## 2000d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod18")
+v00d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2003
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d")
+v03d$pob18 <- tmp2$pob18 # paste interpolation
+## 2003d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod79")
+v03d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2003d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod06")
+v03d06$pob18 <- tmp2$pob18 # paste interpolation
+## 2003d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod18")
+v03d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2006
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d")
+v06d$pob18 <- tmp2$pob18 # paste interpolation
+## 2006d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod79")
+v06d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2006d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod97")
+v06d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2006d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod18")
+v06d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2009
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d")
+v09d$pob18 <- tmp2$pob18 # paste interpolation
+## 2009d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = "censod97")
+v09d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2009d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = "censod18")
+v09d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2012
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d")
+v12d$pob18 <- tmp2$pob18 # paste interpolation
+## 2012d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod79")
+v12d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2012d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod97")
+v12d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2012d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod18")
+v12d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2015
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d")
+v15d$pob18 <- tmp2$pob18 # paste interpolation
+## 2015d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod79")
+v15d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2015d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod97")
+v15d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2015d18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod18")
+v15d18$pob18 <- tmp2$pob18 # paste interpolation
+## 2018
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d")
+v18d$pob18 <- tmp2$pob18 # paste interpolation
+## 2018d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod79")
+v18d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2018d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod97")
+v18d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2018d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod06")
+v18d06$pob18 <- tmp2$pob18 # paste interpolation
+## 2021
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d")
+v21d$pob18 <- tmp2$pob18 # paste interpolation
+## 2021d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod79")
+v21d79$pob18 <- tmp2$pob18 # paste interpolation
+## 2021d97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod97")
+v21d97$pob18 <- tmp2$pob18 # paste interpolation
+## 2021d06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod06")
+v21d06$pob18 <- tmp2$pob18 # paste interpolation
+##
+##
+#######################################
+## Add p18 to municipio vote objects ##
+#######################################
+## will receive municipio yearly inter-census linear projections
+tmp <- censom18[, c("edon","inegi","ife","mun")]
+## 1991
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1991, unit="m")
+v91m$pob18 <- tmp2$pob18 # paste interpolation
+## 1994
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m")
+v94m$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom97")
+v94m97$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom00")
+v94m00$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom03")
+v94m03$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom06")
+v94m06$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom09")
+v94m09$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom12")
+v94m12$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom15")
+v94m15$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom18")
+v94m18$pob18 <- tmp2$pob18 # paste interpolation
+## 1994m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="m", census.data =  "censom21")
+v94m21$pob18 <- tmp2$pob18 # paste interpolation
+## 1997
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m")
+v97m$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom94")
+v97m94$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom00")
+v97m00$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom03")
+v97m03$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom06")
+v97m06$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom09")
+v97m09$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom12")
+v97m12$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom15")
+v97m15$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom18")
+v97m18$pob18 <- tmp2$pob18 # paste interpolation
+## 1997m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="m", census.data =  "censom21")
+v97m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2000
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m")
+v00m$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom94")
+v00m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom97")
+v00m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom03")
+v00m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom06")
+v00m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom09")
+v00m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom12")
+v00m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom15")
+v00m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom18")
+v00m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2000m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="m", census.data =  "censom21")
+v00m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2003
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m")
+v03m$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom94")
+v03m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom97")
+v03m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom00")
+v03m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom06")
+v03m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom09")
+v03m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom12")
+v03m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom15")
+v03m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom18")
+v03m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2003m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="m", census.data =  "censom21")
+v03m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2006
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m")
+v06m$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom94")
+v06m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom97")
+v06m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom00")
+v06m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom03")
+v06m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom09")
+v06m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom12")
+v06m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom15")
+v06m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom18")
+v06m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2006m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="m", census.data =  "censom21")
+v06m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2009
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m")
+v09m$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom94")
+v09m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom97")
+v09m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom00")
+v09m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom03")
+v09m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom06")
+v09m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom12")
+v09m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom15")
+v09m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom18")
+v09m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2009m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="m", census.data =  "censom21")
+v09m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2012
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m")
+v12m$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom94")
+v12m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom97")
+v12m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom00")
+v12m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom03")
+v12m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom06")
+v12m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom09")
+v12m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom15")
+v12m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom18")
+v12m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2012m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="m", census.data =  "censom21")
+v12m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2015
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m")
+v15m$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom94")
+v15m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom97")
+v15m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom00")
+v15m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom03")
+v15m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom06")
+v15m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom09")
+v15m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom12")
+v15m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom18")
+v15m18$pob18 <- tmp2$pob18 # paste interpolation
+## 2015m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="m", census.data =  "censom21")
+v15m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2018
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m")
+v18m$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom94")
+v18m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom97")
+v18m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom00")
+v18m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom03")
+v18m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom06")
+v18m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom09")
+v18m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom12")
+v18m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom15")
+v18m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2018m21
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="m", census.data =  "censom21")
+v18m21$pob18 <- tmp2$pob18 # paste interpolation
+## 2021
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m")
+v21m$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m94
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom94")
+v21m94$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m97
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom97")
+v21m97$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m00
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom00")
+v21m00$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m03
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom03")
+v21m03$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m06
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom06")
+v21m06$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m09
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom09")
+v21m09$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m12
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom12")
+v21m12$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m15
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom15")
+v21m15$pob18 <- tmp2$pob18 # paste interpolation
+## 2021m18
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="m", census.data =  "censom18")
+v21m18$pob18 <- tmp2$pob18 # paste interpolation
+##
+###################################################
+## Finished adding census to vote objects, clean ##
+###################################################
+## ls()[grep("censo", ls())]
+## ls()[grep("v..m", ls())]
+rm(tmp,tmp2,sel.ignore)
+rm(list=ls()[grep("censo", ls())])
+
+## Inspect census figs
+
+v12m$pob18 / v12m$lisnom
+v12m[1,]
+x
 
 
 ################################################################################
