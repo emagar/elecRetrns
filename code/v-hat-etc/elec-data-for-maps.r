@@ -1922,10 +1922,25 @@ rm(tmp,tmp2,sel.ignore)
 rm(list=ls()[grep("censo", ls())])
 
 ## Inspect census figs
+sel <- which(v12m$pob18 / v12m$lisnom > 5)
+v12m[sel, c("ife","mun","efec","lisnom","pob18")]
+## ife=16024 is Cherán, had 5-fold drop in lisnom as it moved to uyc
+## rest had no votes (nor lisnom) reported this yr
+## sel <- 814
+## t18 <- c(v00m$pob18[sel] ,v03m$pob18[sel] ,v06m$pob18[sel] ,v09m$pob18[sel] ,v12m$pob18[sel] ,v15m$pob18[sel] ,v18m$pob18[sel] ,v21m$pob18[sel])
+## tln <- c(v00m$lisnom[sel] ,v03m$lisnom[sel] ,v06m$lisnom[sel] ,v09m$lisnom[sel] ,v12m$lisnom[sel] ,v15m$lisnom[sel] ,v18m$lisnom[sel] ,v21m$lisnom[sel])
+## plot(x=seq(2000,2021,3), y = t18, ylim = c(min(c(t18,tln)),max(c(t18,tln))), main = "cheran: pob18 black, lisnom red" )
+## points(x=seq(2000,2021,3), y = tln, col = "red")
+##
+## these seem to be cases where emmigrants remain in lisnom, perhaps due to ejido land tenure/subsidies? So long as gap is more-or-less time-consistent, this seems to be a legit difference. 
+## which(v12m$pob18 / v12m$lisnom < .5)
+## v12m[sel, c("ife","mun","efec","lisnom","pob18")]
+## sel <- 1967
+## t18 <- c(v00m$pob18[sel] ,v03m$pob18[sel] ,v06m$pob18[sel] ,v09m$pob18[sel] ,v12m$pob18[sel] ,v15m$pob18[sel] ,v18m$pob18[sel] ,v21m$pob18[sel])
+## tln <- c(v00m$lisnom[sel] ,v03m$lisnom[sel] ,v06m$lisnom[sel] ,v09m$lisnom[sel] ,v12m$lisnom[sel] ,v15m$lisnom[sel] ,v18m$lisnom[sel] ,v21m$lisnom[sel])
+## plot(x=seq(2000,2021,3), y = t18, ylim = c(min(c(t18,tln)),max(c(t18,tln))), main = paste(v12m$mun[sel], v12m$edo[sel], "pob18 black, lisnom red") )
+## points(x=seq(2000,2021,3), y = tln, col = "red")
 
-v12m$pob18 / v12m$lisnom
-v12m[1,]
-x
 
 
 ################################################################################

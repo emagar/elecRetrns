@@ -110,7 +110,7 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 Most variables are included in every file, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
 - /edon/ = state number 1:32.
-- /edo/ = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by /edon/, eg. Chiapas is cps, not chis).
+- /edo/ = state abbreviation (may differ from commonly used abbreviations, eg. Chiapas is `cps', not `chis' so that sorting alphabetically preserves the order set by /edon/).
 - /disn/ = district identifier = /edon/ * 100 + district number.
 - /cab/ = cabecera, district's administrative center.
 - /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
