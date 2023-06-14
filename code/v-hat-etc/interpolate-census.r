@@ -11,7 +11,7 @@
 
 ## Usage with default data: interpol(what="p18", yr=2003, unit="m")
 
-## Example with tmp as census data:
+## ## Example with tmp as census data:
 ## tmp <- data.frame(p18_2005=c( 5, 8, 12, 1, 4),
 ##                   p18_2010=c( 7, 8, 20, 2, 4),
 ##                   p18_2020=c(10, 9, 21, 3, 4))

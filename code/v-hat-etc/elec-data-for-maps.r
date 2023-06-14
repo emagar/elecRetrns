@@ -1306,15 +1306,15 @@ v18$inegi <- inegi2ife(v18$ife)
 v21$ife <- v21$ife2021
 v21$inegi <- inegi2ife(v21$ife)
 
-# save all to restore after manipulating district/munic aggregates
-save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
+## # save all to restore after manipulating district/munic aggregates
+## save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
 
-# load image
-rm(list=ls())
-options(width = 110)
-dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
-setwd(dd)
-load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
+## # load image
+## rm(list=ls())
+## options(width = 110)
+## dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
+## setwd(dd)
+## load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 
 # rename seccion vote objects
 v91s <- v91; v94s <- v94; v97s <- v97; v00s <- v00; v03s <- v03; v06s <- v06; v09s <- v09; v12s <- v12; v15s <- v15; v18s <- v18; v21s <- v21;
@@ -1325,6 +1325,15 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 ## municipio- and district-level vote and census aggregates  ##
 ###############################################################
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
+
+
+
+# load image
+rm(list=ls())
+options(width = 110)
+dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
+setwd(dd)
+load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 
 
 ########################################################
@@ -1351,15 +1360,15 @@ tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d")
 v94d$pob18 <- tmp2$pob18 # paste interpolation
 ## 1994d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod97)
 v94d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 1994d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod06)
 v94d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 1994d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod18)
 v94d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 1997
 tmp2 <- tmp
@@ -1367,15 +1376,15 @@ tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d")
 v97d$pob18 <- tmp2$pob18 # paste interpolation
 ## 1997d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod79)
 v97d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 1997d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod06)
 v97d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 1997d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod18)
 v97d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2000
 tmp2 <- tmp
@@ -1383,15 +1392,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d")
 v00d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2000d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod79)
 v00d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2000d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod06)
 v00d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 2000d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod18)
 v00d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2003
 tmp2 <- tmp
@@ -1399,15 +1408,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d")
 v03d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2003d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod79)
 v03d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2003d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod06)
 v03d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 2003d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod18)
 v03d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2006
 tmp2 <- tmp
@@ -1415,27 +1424,31 @@ tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d")
 v06d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2006d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod79)
 v06d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2006d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod97)
 v06d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2006d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod18)
 v06d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2009
 tmp2 <- tmp
 tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d")
 v09d$pob18 <- tmp2$pob18 # paste interpolation
+## 2006d79
+tmp2 <- tmp
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod79)
+v09d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2009d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod97)
 v09d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2009d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod18)
 v09d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2012
 tmp2 <- tmp
@@ -1443,15 +1456,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d")
 v12d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2012d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod79)
 v12d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2012d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod97)
 v12d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2012d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod18)
 v12d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2015
 tmp2 <- tmp
@@ -1459,15 +1472,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d")
 v15d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2015d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod79)
 v15d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2015d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod97)
 v15d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2015d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = "censod18")
+tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod18)
 v15d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 2018
 tmp2 <- tmp
@@ -1475,15 +1488,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d")
 v18d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2018d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod79)
 v18d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2018d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod97)
 v18d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2018d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod06)
 v18d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 2021
 tmp2 <- tmp
@@ -1491,15 +1504,15 @@ tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d")
 v21d$pob18 <- tmp2$pob18 # paste interpolation
 ## 2021d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod79")
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod79)
 v21d79$pob18 <- tmp2$pob18 # paste interpolation
 ## 2021d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod97")
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod97)
 v21d97$pob18 <- tmp2$pob18 # paste interpolation
 ## 2021d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = "censod06")
+tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod06)
 v21d06$pob18 <- tmp2$pob18 # paste interpolation
 ##
 ##
@@ -1940,6 +1953,18 @@ v12m[sel, c("ife","mun","efec","lisnom","pob18")]
 ## tln <- c(v00m$lisnom[sel] ,v03m$lisnom[sel] ,v06m$lisnom[sel] ,v09m$lisnom[sel] ,v12m$lisnom[sel] ,v15m$lisnom[sel] ,v18m$lisnom[sel] ,v21m$lisnom[sel])
 ## plot(x=seq(2000,2021,3), y = t18, ylim = c(min(c(t18,tln)),max(c(t18,tln))), main = paste(v12m$mun[sel], v12m$edo[sel], "pob18 black, lisnom red") )
 ## points(x=seq(2000,2021,3), y = tln, col = "red")
+##
+## ## OJO These turnouts will need manipulation so that (1- efec/pob18) isnt neg --- and add dummy for manipulations
+## which(v12m$efec / v12m$pob18 >= 1)
+## summary( (v12m$efec / v12m$pob18)[which(v12m$efec / v12m$pob18 >= 1)] )
+## v12m[sel, c("ife","mun","efec","lisnom","pob18")]
+## sel <- 707
+## tef <- c(v00m$efec[sel] ,v03m$efec[sel] ,v06m$efec[sel] ,v09m$efec[sel] ,v12m$efec[sel] ,v15m$efec[sel] ,v18m$efec[sel] ,v21m$efec[sel])
+## t18 <- c(v00m$pob18[sel] ,v03m$pob18[sel] ,v06m$pob18[sel] ,v09m$pob18[sel] ,v12m$pob18[sel] ,v15m$pob18[sel] ,v18m$pob18[sel] ,v21m$pob18[sel])
+## tln <- c(v00m$lisnom[sel] ,v03m$lisnom[sel] ,v06m$lisnom[sel] ,v09m$lisnom[sel] ,v12m$lisnom[sel] ,v15m$lisnom[sel] ,v18m$lisnom[sel] ,v21m$lisnom[sel])
+## plot(x=seq(2000,2021,3), y = t18, ylim = c(min(c(t18,tln)),max(c(t18,tln))), main = paste(v12m$mun[sel], v12m$edo[sel], "pob18 black, lisnom red") )
+## points(x=seq(2000,2021,3), y = tln, col = "red")
+## points(x=seq(2000,2021,3), y = tef, col = "green")
 
 
 

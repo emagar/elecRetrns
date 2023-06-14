@@ -375,6 +375,120 @@ lisnomd79 <- data.frame(
     v18 = v18d79$lisnom,
     v21 = v21d79$lisnom
 )
+# turnp = turnout w pob18
+turnpd18 <- data.frame(
+    ##v91 =  with(v91d18, ifelse(pob18==0, NA, efec / pob18))
+    v94 =  with(v94d18, ifelse(pob18==0, NA, efec / pob18))
+  , v97 =  with(v97d18, ifelse(pob18==0, NA, efec / pob18))
+  , v00 =  with(v00d18, ifelse(pob18==0, NA, efec / pob18))
+  , v03 =  with(v03d18, ifelse(pob18==0, NA, efec / pob18))
+  , v06 =  with(v06d18, ifelse(pob18==0, NA, efec / pob18))
+  , v09 =  with(v09d18, ifelse(pob18==0, NA, efec / pob18))
+  , v12 =  with(v12d18, ifelse(pob18==0, NA, efec / pob18))
+  , v15 =  with(v15d18, ifelse(pob18==0, NA, efec / pob18))
+  , v18 =  with(v18d,   ifelse(pob18==0, NA, efec / pob18))
+  , v21 =  with(v21d,   ifelse(pob18==0, NA, efec / pob18))
+)
+turnpd06 <- data.frame(
+    #v91 =  with(v91d06, ifelse(pob18==0, NA, efec / pob18))
+     v94 =  with(v94d06, ifelse(pob18==0, NA, efec / pob18))
+   , v97 =  with(v97d06, ifelse(pob18==0, NA, efec / pob18))
+   , v00 =  with(v00d06, ifelse(pob18==0, NA, efec / pob18))
+   , v03 =  with(v03d06, ifelse(pob18==0, NA, efec / pob18))
+   , v06 =  with(v06d,   ifelse(pob18==0, NA, efec / pob18))
+   , v09 =  with(v09d,   ifelse(pob18==0, NA, efec / pob18))
+   , v12 =  with(v12d,   ifelse(pob18==0, NA, efec / pob18))
+   , v15 =  with(v15d,   ifelse(pob18==0, NA, efec / pob18))
+   , v18 =  with(v18d06, ifelse(pob18==0, NA, efec / pob18))
+   , v21 =  with(v21d06, ifelse(pob18==0, NA, efec / pob18))
+)
+turnpd97 <- data.frame(
+    ##v91 =  with(v91d97, ifelse(pob18==0, NA, efec / pob18))
+    v94 =  with(v94d97, ifelse(pob18==0, NA, efec / pob18))
+  , v97 =  with(v97d,   ifelse(pob18==0, NA, efec / pob18))
+  , v00 =  with(v00d,   ifelse(pob18==0, NA, efec / pob18))
+  , v03 =  with(v03d,   ifelse(pob18==0, NA, efec / pob18))
+  , v06 =  with(v06d97, ifelse(pob18==0, NA, efec / pob18))
+  , v09 =  with(v09d97, ifelse(pob18==0, NA, efec / pob18))
+  , v12 =  with(v12d97, ifelse(pob18==0, NA, efec / pob18))
+  , v15 =  with(v15d97, ifelse(pob18==0, NA, efec / pob18))
+  , v18 =  with(v18d97, ifelse(pob18==0, NA, efec / pob18))
+  , v21 =  with(v21d97, ifelse(pob18==0, NA, efec / pob18))
+)
+turnpd79 <- data.frame(
+    v91 =  with(v91d,   ifelse(pob18==0, NA, efec / pob18))
+  , v94 =  with(v94d,   ifelse(pob18==0, NA, efec / pob18))
+  , v97 =  with(v97d79, ifelse(pob18==0, NA, efec / pob18))
+  , v00 =  with(v00d79, ifelse(pob18==0, NA, efec / pob18))
+  , v03 =  with(v03d79, ifelse(pob18==0, NA, efec / pob18))
+  , v06 =  with(v06d79, ifelse(pob18==0, NA, efec / pob18))
+  , v09 =  with(v09d79, ifelse(pob18==0, NA, efec / pob18))
+  , v12 =  with(v12d79, ifelse(pob18==0, NA, efec / pob18))
+  , v15 =  with(v15d79, ifelse(pob18==0, NA, efec / pob18))
+  , v18 =  with(v18d79, ifelse(pob18==0, NA, efec / pob18))
+  , v21 =  with(v21d79, ifelse(pob18==0, NA, efec / pob18))
+)
+turnpd18 <- round(turnpd18, 3)
+turnpd06 <- round(turnpd06, 3)
+turnpd97 <- round(turnpd97, 3)
+turnpd79 <- round(turnpd79, 3)
+## turnl = turnout w lisnom
+turnld18 <- data.frame(
+    ##v91 =  with(v91d18, ifelse(lisnom==0, NA, efec / lisnom))
+    v94 =  with(v94d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v97 =  with(v97d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v00 =  with(v00d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v03 =  with(v03d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v06 =  with(v06d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v09 =  with(v09d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v12 =  with(v12d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v15 =  with(v15d18, ifelse(lisnom==0, NA, efec / lisnom))
+  , v18 =  with(v18d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v21 =  with(v21d,   ifelse(lisnom==0, NA, efec / lisnom))
+)
+turnld06 <- data.frame(
+    #v91 =  with(v91d06, ifelse(lisnom==0, NA, efec / lisnom))
+     v94 =  with(v94d06, ifelse(lisnom==0, NA, efec / lisnom))
+   , v97 =  with(v97d06, ifelse(lisnom==0, NA, efec / lisnom))
+   , v00 =  with(v00d06, ifelse(lisnom==0, NA, efec / lisnom))
+   , v03 =  with(v03d06, ifelse(lisnom==0, NA, efec / lisnom))
+   , v06 =  with(v06d,   ifelse(lisnom==0, NA, efec / lisnom))
+   , v09 =  with(v09d,   ifelse(lisnom==0, NA, efec / lisnom))
+   , v12 =  with(v12d,   ifelse(lisnom==0, NA, efec / lisnom))
+   , v15 =  with(v15d,   ifelse(lisnom==0, NA, efec / lisnom))
+   , v18 =  with(v18d06, ifelse(lisnom==0, NA, efec / lisnom))
+   , v21 =  with(v21d06, ifelse(lisnom==0, NA, efec / lisnom))
+)
+turnld97 <- data.frame(
+    ##v91 =  with(v91d97, ifelse(lisnom==0, NA, efec / lisnom))
+    v94 =  with(v94d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v97 =  with(v97d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v00 =  with(v00d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v03 =  with(v03d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v06 =  with(v06d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v09 =  with(v09d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v12 =  with(v12d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v15 =  with(v15d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v18 =  with(v18d97, ifelse(lisnom==0, NA, efec / lisnom))
+  , v21 =  with(v21d97, ifelse(lisnom==0, NA, efec / lisnom))
+)
+turnld79 <- data.frame(
+    v91 =  with(v91d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v94 =  with(v94d,   ifelse(lisnom==0, NA, efec / lisnom))
+  , v97 =  with(v97d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v00 =  with(v00d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v03 =  with(v03d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v06 =  with(v06d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v09 =  with(v09d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v12 =  with(v12d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v15 =  with(v15d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v18 =  with(v18d79, ifelse(lisnom==0, NA, efec / lisnom))
+  , v21 =  with(v21d79, ifelse(lisnom==0, NA, efec / lisnom))
+)
+turnld18 <- round(turnld18, 3)
+turnld06 <- round(turnld06, 3)
+turnld97 <- round(turnld97, 3)
+turnld79 <- round(turnld79, 3)
 
 # transpose to plug columns (units) into new time-series data.frames
 pand79    <- t(pand79)
@@ -401,6 +515,14 @@ lisnomd79 <- t(lisnomd79)
 lisnomd97 <- t(lisnomd97)
 lisnomd06 <- t(lisnomd06)
 lisnomd18 <- t(lisnomd18)
+turnpd79   <- t(turnpd79)
+turnpd97   <- t(turnpd97)
+turnpd06   <- t(turnpd06)
+turnpd18   <- t(turnpd18)
+turnld79   <- t(turnld79)
+turnld97   <- t(turnld97)
+turnld06   <- t(turnld06)
+turnld18   <- t(turnld18)
 
 #################################################################
 ## extendCoal.. will receive data for regressions, one per map ##
@@ -414,22 +536,27 @@ for (i in 1:300){
     #########################
     ## votes with 1979 map ##
     #########################
-    tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3),
-                      pan    = pand79[,i],
-                      pri    = prid79[,i],
-                      left   = leftd79[,i],
-                      oth    = othd79[,i],
-                      efec   = efecd79[,i],
-                      lisnom = lisnomd79[,i])
+    tmp <- data.frame(yr     = seq(from=1991, to=2021, by=3)
+                    , pan    = pand79[,i]
+                    , pri    = prid79[,i]
+                    , left   = leftd79[,i]
+                    , oth    = othd79[,i]
+                    , efec   = efecd79[,i]
+                    , lisnom = lisnomd79[,i]
+                    , turnp  = turnpd79[,i]
+                    , turnl  = turnld79[,i]
+                      )
     # replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
-        tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
-        tmp$pri   [is.na(tmp$pri)]  <- per.means["pri"];
-        tmp$left  [is.na(tmp$left)] <- per.means["left"];
-        tmp$oth   [is.na(tmp$oth)]  <- per.means["oth"];
-        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
-        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
+        tmp$pan   [is.na(tmp$pan)]   <- per.means["pan"];
+        tmp$pri   [is.na(tmp$pri)]   <- per.means["pri"];
+        tmp$left  [is.na(tmp$left)]  <- per.means["left"];
+        tmp$oth   [is.na(tmp$oth)]   <- per.means["oth"];
+        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1;
+        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2;
+        tmp$turnp [is.na(tmp$turnp)] <- per.means["turnp"];
+        tmp$turnl [is.na(tmp$turnl)] <- per.means["turnl"];
     }
     # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
@@ -447,14 +574,17 @@ for (i in 1:300){
     #########################
     ## votes with 1997 map ##
     #########################
-    tmp <- data.frame(yr     = seq(from=1994, to=2021, by=3),
-                      pan    = pand97[,i],
-                      pri    = prid97[,i],
-                      left   = leftd97[,i],
-                      oth    = othd97[,i],
-                      efec   = efecd97[,i],
-                      lisnom = lisnomd97[,i])
-    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
+    tmp <- data.frame(yr     = seq(from=1994, to=2021, by=3)
+                    , pan    = pand97[,i]
+                    , pri    = prid97[,i]
+                    , left   = leftd97[,i]
+                    , oth    = othd97[,i]
+                    , efec   = efecd97[,i]
+                    , lisnom = lisnomd97[,i]
+                    , turnp  = turnpd97[,i]
+                    , turnl  = turnld97[,i]
+                      )
+    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
     # replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
@@ -462,8 +592,10 @@ for (i in 1:300){
         tmp$pri   [is.na(tmp$pri)]   <- per.means["pri"];
         tmp$left  [is.na(tmp$left)]  <- per.means["left"];
         tmp$oth   [is.na(tmp$oth)]   <- per.means["oth"];
-        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
-        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
+        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1;
+        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2;
+        tmp$turnp [is.na(tmp$turnp)] <- per.means["turnp"];
+        tmp$turnl [is.na(tmp$turnl)] <- per.means["turnl"];
     }
     # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
@@ -481,14 +613,17 @@ for (i in 1:300){
     #########################
     ## votes with 2006 map ##
     #########################
-    tmp <- data.frame(yr   = seq(from=1994, to=2021, by=3),
-                      pan  = pand06[,i],
-                      pri  = prid06[,i],
-                      left = leftd06[,i],
-                      oth  = othd06[,i],
-                      efec = efecd06[,i],
-                      lisnom = lisnomd06[,i])
-    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
+    tmp <- data.frame(yr   = seq(from=1994, to=2021, by=3)
+                    , pan  = pand06[,i]
+                    , pri  = prid06[,i]
+                    , left = leftd06[,i]
+                    , oth  = othd06[,i]
+                    , efec = efecd06[,i]
+                    , lisnom = lisnomd06[,i]
+                    , turnp  = turnpd06[,i]
+                    , turnl  = turnld06[,i]
+                      )
+    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
     # replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
@@ -496,8 +631,10 @@ for (i in 1:300){
         tmp$pri   [is.na(tmp$pri)]  <- per.means["pri"];
         tmp$left  [is.na(tmp$left)] <- per.means["left"];
         tmp$oth   [is.na(tmp$oth)]  <- per.means["oth"];
-        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
-        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
+        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1;
+        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2;
+        tmp$turnp [is.na(tmp$turnp)] <- per.means["turnp"];
+        tmp$turnl [is.na(tmp$turnl)] <- per.means["turnl"];
     }
     # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
@@ -515,23 +652,28 @@ for (i in 1:300){
     #########################
     ## votes with 2018 map ##
     #########################
-    tmp <- data.frame(yr   = seq(from=1994, to=2021, by=3),
-                      pan  = pand18[,i],
-                      pri  = prid18[,i],
-                      left = leftd18[,i],
-                      oth  = othd18[,i],
-                      efec = efecd18[,i],
-                      lisnom = lisnomd18[,i])
-    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
+    tmp <- data.frame(yr     = seq(from=1994, to=2021, by=3)
+                    , pan    = pand18[,i]
+                    , pri    = prid18[,i]
+                    , left   = leftd18[,i]
+                    , oth    = othd18[,i]
+                    , efec   = efecd18[,i]
+                    , lisnom = lisnomd18[,i]
+                    , turnp  = turnpd18[,i]
+                    , turnl  = turnld18[,i]
+                      )
+    tmp <- rbind(v91=c(1991,NA,NA,NA,NA,NA,NA,NA,NA), tmp) # add 1991 with no counterfactuals
     # replace NAs with period's mean
     if (length(tmp[is.na(tmp)])>0){
         per.means <- round(apply(tmp, 2, function(x) mean(x, na.rm = TRUE)), 3)
-        tmp$pan   [is.na(tmp$pan)]  <- per.means["pan"];
-        tmp$pri   [is.na(tmp$pri)]  <- per.means["pri"];
-        tmp$left  [is.na(tmp$left)] <- per.means["left"];
-        tmp$oth   [is.na(tmp$oth)]  <- per.means["oth"];
-        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1
-        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2
+        tmp$pan   [is.na(tmp$pan)]   <- per.means["pan"];
+        tmp$pri   [is.na(tmp$pri)]   <- per.means["pri"];
+        tmp$left  [is.na(tmp$left)]  <- per.means["left"];
+        tmp$oth   [is.na(tmp$oth)]   <- per.means["oth"];
+        tmp$efec  [is.na(tmp$efec)   | tmp$efec==0]   <- 1;
+        tmp$lisnom[is.na(tmp$lisnom) | tmp$lisnom==0] <- 2;
+        tmp$turnp [is.na(tmp$turnp)] <- per.means["turnp"];
+        tmp$turnl [is.na(tmp$turnl)] <- per.means["turnl"];
     }
     # add epsilon = 2*max(rounding error) to zeroes to avoid indeterminate logs
     if (length(tmp[tmp==0])>0){
@@ -547,10 +689,11 @@ for (i in 1:300){
     names(extendCoald18)[i] <- tmp$disn[1]
 }
 # clean
-rm(pand79,prid79,leftd79,othd79,efecd79,lisnomd79)
-rm(pand97,prid97,leftd97,othd97,efecd97,lisnomd97)
-rm(pand06,prid06,leftd06,othd06,efecd06,lisnomd06)
-rm(pand18,prid18,leftd18,othd18,efecd18,lisnomd18)
+rm(pand79,prid79,leftd79,othd79,efecd79,lisnomd79,turnpd79,turnld79)
+rm(pand97,prid97,leftd97,othd97,efecd97,lisnomd97,turnpd97,turnld97)
+rm(pand06,prid06,leftd06,othd06,efecd06,lisnomd06,turnpd06,turnld06)
+rm(pand18,prid18,leftd18,othd18,efecd18,lisnomd18,turnpd18,turnld18)
+
 
 ##################################
 ## datos para regresión de alfa ##
@@ -563,11 +706,14 @@ rm(pand18,prid18,leftd18,othd18,efecd18,lisnomd18)
 ## y betas cada elección: alfa.2006, alfa.2009, etc. Debería poder investigar cómo usan esto en el Capital ##
 ## Asset Pricing Model...                                                                                  ##
 #############################################################################################################
-yr.means <- data.frame(yr = seq(1991,2021,3), # 11 election-years
-                       pan    = rep(NA,11),
-                       pri    = rep(NA,11),
-                       left   = rep(NA,11),
-                       oth    = rep(NA,11))
+yr.means <- data.frame(yr = seq(1991,2021,3) # 11 election-years
+                     , pan    = rep(NA,11)
+                     , pri    = rep(NA,11)
+                     , left   = rep(NA,11)
+                     , oth    = rep(NA,11)
+                     , turnp  = rep(NA,11)
+                     , turnl  = rep(NA,11)
+                       )
 # function to sum numeric columns
 cs <- function(x){
     sel.nums <- unlist(lapply(x, is.numeric), use.names = FALSE) # selects only numeric columns in data frame
@@ -576,60 +722,82 @@ cs <- function(x){
 }
 #
 # compute national mean vote
-yr.means$pan [1] <-  cs(v91s)["pan"]  /  cs(v91s)["efec"]
-yr.means$pri [1] <-  cs(v91s)["pri"]  /  cs(v91s)["efec"]
-yr.means$left[1] <-  cs(v91s)["prd"]  /  cs(v91s)["efec"]
-yr.means$oth [1] <-  with(yr.means[1,], 1 - pan - pri - left)
+yr.means$pan  [1] <-  cs(v91s)["pan"]  /  cs(v91s)["efec"]
+yr.means$pri  [1] <-  cs(v91s)["pri"]  /  cs(v91s)["efec"]
+yr.means$left [1] <-  cs(v91s)["prd"]  /  cs(v91s)["efec"]
+yr.means$oth  [1] <-  with(yr.means[1,], 1 - pan - pri - left)
+yr.means$turnp[1] <-  cs(v91s)["efec"]  / cs(v91m)["pob18"] # OJO forced 2 use v91m for pob18 til censo added to v..s, should chg nothing 
+yr.means$turnl[1] <-  cs(v91s)["efec"]  / cs(v91s)["lisnom"]
 #
-yr.means$pan [2] <-  cs(v94s)["pan"]  / cs(v94s)["efec"]
-yr.means$pri [2] <-  cs(v94s)["pri"]  / cs(v94s)["efec"]
-yr.means$left[2] <-  cs(v94s)["prd"]  / cs(v94s)["efec"]
-yr.means$oth [2] <-  with(yr.means[2,], 1 - pan - pri - left)
+yr.means$pan  [2] <-  cs(v94s)["pan"]  / cs(v94s)["efec"]
+yr.means$pri  [2] <-  cs(v94s)["pri"]  / cs(v94s)["efec"]
+yr.means$left [2] <-  cs(v94s)["prd"]  / cs(v94s)["efec"]
+yr.means$oth  [2] <-  with(yr.means[2,], 1 - pan - pri - left)
+yr.means$turnp[2] <-  cs(v94s)["efec"]  / cs(v94m)["pob18"]
+yr.means$turnl[2] <-  cs(v94s)["efec"]  / cs(v94s)["lisnom"]
 #                
-yr.means$pan [3] <-  cs(v97s)["pan"]  / cs(v97s)["efec"]
-yr.means$pri [3] <-  cs(v97s)["pri"]  / cs(v97s)["efec"]
-yr.means$left[3] <-  cs(v97s)["prd"]  / cs(v97s)["efec"]
-yr.means$oth [3] <-  with(yr.means[3,], 1 - pan - pri - left)
+yr.means$pan  [3] <-  cs(v97s)["pan"]  / cs(v97s)["efec"]
+yr.means$pri  [3] <-  cs(v97s)["pri"]  / cs(v97s)["efec"]
+yr.means$left [3] <-  cs(v97s)["prd"]  / cs(v97s)["efec"]
+yr.means$oth  [3] <-  with(yr.means[3,], 1 - pan - pri - left)
+yr.means$turnp[3] <-  cs(v97s)["efec"]  / cs(v97m)["pob18"]
+yr.means$turnl[3] <-  cs(v97s)["efec"]  / cs(v97s)["lisnom"]
 #                
-yr.means$pan [4] <-  cs(v00s)["panc"]  / cs(v00s)["efec"]
-yr.means$pri [4] <-  cs(v00s)["pri"]   / cs(v00s)["efec"]
-yr.means$left[4] <-  cs(v00s)["prdc"]  / cs(v00s)["efec"]
-yr.means$oth [4] <-  with(yr.means[4,], 1 - pan - pri - left)
+yr.means$pan  [4] <-  cs(v00s)["panc"]  / cs(v00s)["efec"]
+yr.means$pri  [4] <-  cs(v00s)["pri"]   / cs(v00s)["efec"]
+yr.means$left [4] <-  cs(v00s)["prdc"]  / cs(v00s)["efec"]
+yr.means$oth  [4] <-  with(yr.means[4,], 1 - pan - pri - left)
+yr.means$turnp[4] <-  cs(v00s)["efec"]  / cs(v00m)["pob18"]
+yr.means$turnl[4] <-  cs(v00s)["efec"]  / cs(v00s)["lisnom"]
 #                
-yr.means$pan [5] <-  cs(v03s)["pan"]                                         / cs(v03s)["efec"]
-yr.means$pri [5] <- (cs(v03s)["pri"] + cs(v03s)["pric"] + cs(v03s)["pvem"])  / cs(v03s)["efec"]
-yr.means$left[5] <- (cs(v03s)["prd"] + cs(v03s)["pt"]   + cs(v03s)["conve"]) / cs(v03s)["efec"]
-yr.means$oth [5] <-  with(yr.means[5,], 1 - pan - pri - left)
+yr.means$pan  [5] <-  cs(v03s)["pan"]                                         / cs(v03s)["efec"]
+yr.means$pri  [5] <- (cs(v03s)["pri"] + cs(v03s)["pric"] + cs(v03s)["pvem"])  / cs(v03s)["efec"]
+yr.means$left [5] <- (cs(v03s)["prd"] + cs(v03s)["pt"]   + cs(v03s)["conve"]) / cs(v03s)["efec"]
+yr.means$oth  [5] <-  with(yr.means[5,], 1 - pan - pri - left)
+yr.means$turnp[5] <-  cs(v03s)["efec"]  / cs(v03m)["pob18"]
+yr.means$turnl[5] <-  cs(v03s)["efec"]  / cs(v03s)["lisnom"]
 #                
-yr.means$pan [6] <-  cs(v06s)["pan"]   / cs(v06s)["efec"]
-yr.means$pri [6] <-  cs(v06s)["pric"]  / cs(v06s)["efec"]
-yr.means$left[6] <-  cs(v06s)["prdc"]  / cs(v06s)["efec"]
-yr.means$oth [6] <-  with(yr.means[6,], 1 - pan - pri - left)
+yr.means$pan  [6] <-  cs(v06s)["pan"]   / cs(v06s)["efec"]
+yr.means$pri  [6] <-  cs(v06s)["pric"]  / cs(v06s)["efec"]
+yr.means$left [6] <-  cs(v06s)["prdc"]  / cs(v06s)["efec"]
+yr.means$oth  [6] <-  with(yr.means[6,], 1 - pan - pri - left)
+yr.means$turnp[6] <-  cs(v06s)["efec"]  / cs(v06m)["pob18"]
+yr.means$turnl[6] <-  cs(v06s)["efec"]  / cs(v06s)["lisnom"]
 #                
-yr.means$pan [7] <-  cs(v09s)["pan"]                                                           / cs(v09s)["efec"]
-yr.means$pri [7] <- (cs(v09s)["pri"] + cs(v09s)["pric"] + cs(v09s)["pvem"])                    / cs(v09s)["efec"]
-yr.means$left[7] <- (cs(v09s)["prd"] + cs(v09s)["pt"]   + cs(v09s)["ptc"] + cs(v09s)["conve"]) / cs(v09s)["efec"]
-yr.means$oth [7] <-  with(yr.means[7,], 1 - pan - pri - left)
+yr.means$pan  [7] <-  cs(v09s)["pan"]                                                           / cs(v09s)["efec"]
+yr.means$pri  [7] <- (cs(v09s)["pri"] + cs(v09s)["pric"] + cs(v09s)["pvem"])                    / cs(v09s)["efec"]
+yr.means$left [7] <- (cs(v09s)["prd"] + cs(v09s)["pt"]   + cs(v09s)["ptc"] + cs(v09s)["conve"]) / cs(v09s)["efec"]
+yr.means$oth  [7] <-  with(yr.means[7,], 1 - pan - pri - left)
+yr.means$turnp[7] <-  cs(v09s)["efec"]  / cs(v09m)["pob18"]
+yr.means$turnl[7] <-  cs(v09s)["efec"]  / cs(v09s)["lisnom"]
 #                
-yr.means$pan [8] <-  cs(v12s)["pan"]                                                       / cs(v12s)["efec"]
-yr.means$pri [8] <- (cs(v12s)["pri"] + cs(v12s)["pric"] + cs(v12s)["pvem"])                / cs(v12s)["efec"]
-yr.means$left[8] <- (cs(v12s)["prd"] + cs(v12s)["prdc"] + cs(v12s)["pt"] + cs(v12s)["mc"]) / cs(v12s)["efec"]
-yr.means$oth [8] <-  with(yr.means[8,], 1 - pan - pri - left)
+yr.means$pan  [8] <-  cs(v12s)["pan"]                                                       / cs(v12s)["efec"]
+yr.means$pri  [8] <- (cs(v12s)["pri"] + cs(v12s)["pric"] + cs(v12s)["pvem"])                / cs(v12s)["efec"]
+yr.means$left [8] <- (cs(v12s)["prd"] + cs(v12s)["prdc"] + cs(v12s)["pt"] + cs(v12s)["mc"]) / cs(v12s)["efec"]
+yr.means$oth  [8] <-  with(yr.means[8,], 1 - pan - pri - left)
+yr.means$turnp[8] <-  cs(v12s)["efec"]  /  cs(v12m)["pob18"]
+yr.means$turnl[8] <-  cs(v12s)["efec"]  /  cs(v12s)["lisnom"]
 #                
-yr.means$pan [9] <-  cs(v15s)["pan"]                                                            / cs(v15s)["efec"]
-yr.means$pri [9] <- (cs(v15s)["pri"] + cs(v15s)["pric"] + cs(v15s)["pvem"])                     / cs(v15s)["efec"]
-yr.means$left[9] <- (cs(v15s)["prd"] + cs(v15s)["prdc"] + cs(v15s)["pt"] + cs(v15s)["morena"] ) / cs(v15s)["efec"] # dropped cs(v15s)["pes"]
-yr.means$oth [9] <-  with(yr.means[9,], 1 - pan - pri - left)
+yr.means$pan  [9] <-  cs(v15s)["pan"]                                                            / cs(v15s)["efec"]
+yr.means$pri  [9] <- (cs(v15s)["pri"] + cs(v15s)["pric"] + cs(v15s)["pvem"])                     / cs(v15s)["efec"]
+yr.means$left [9] <- (cs(v15s)["prd"] + cs(v15s)["prdc"] + cs(v15s)["pt"] + cs(v15s)["morena"] ) / cs(v15s)["efec"] # dropped cs(v15s)["pes"]
+yr.means$oth  [9] <-  with(yr.means[9,], 1 - pan - pri - left)
+yr.means$turnp[9] <-  cs(v15s)["efec"]  /  cs(v15m)["pob18"]
+yr.means$turnl[9] <-  cs(v15s)["efec"]  /  cs(v15s)["lisnom"]
 #
-yr.means$pan [10] <- (cs(v18s)["pan"]    + cs(v18s)["panc"]    + cs(v18s)["prd"]  + cs(v18s)["mc"])  / cs(v18s)["efec"]
-yr.means$pri [10] <- (cs(v18s)["pri"]    + cs(v18s)["pric"]    + cs(v18s)["pvem"] + cs(v18s)["pna"]) / cs(v18s)["efec"]
-yr.means$left[10] <- (cs(v18s)["morena"] + cs(v18s)["morenac"] + cs(v18s)["pt"]   + cs(v18s)["pes"]) / cs(v18s)["efec"]
-yr.means$oth [10] <-  with(yr.means[10,], 1 - pan - pri - left)
+yr.means$pan  [10] <- (cs(v18s)["pan"]    + cs(v18s)["panc"]    + cs(v18s)["prd"]  + cs(v18s)["mc"])  / cs(v18s)["efec"]
+yr.means$pri  [10] <- (cs(v18s)["pri"]    + cs(v18s)["pric"]    + cs(v18s)["pvem"] + cs(v18s)["pna"]) / cs(v18s)["efec"]
+yr.means$left [10] <- (cs(v18s)["morena"] + cs(v18s)["morenac"] + cs(v18s)["pt"]   + cs(v18s)["pes"]) / cs(v18s)["efec"]
+yr.means$oth  [10] <-  with(yr.means[10,], 1 - pan - pri - left)
+yr.means$turnp[10] <-  cs(v18s)["efec"]  /  cs(v18m)["pob18"]
+yr.means$turnl[10] <-  cs(v18s)["efec"]  /  cs(v18s)["lisnom"]
 #
-yr.means$pan [11] <- (cs(v21s)["pan"]    + cs(v21s)["panc"]    + cs(v21s)["prd"])                    / cs(v21s)["efec"]
-yr.means$pri [11] <-  cs(v21s)["pri"]                                                                / cs(v21s)["efec"] # dropped cs(v21s)["pric"]
-yr.means$left[11] <- (cs(v21s)["morena"] + cs(v21s)["morenac"] + cs(v21s)["pt"]  + cs(v21s)["pvem"]) / cs(v21s)["efec"]
-yr.means$oth [11] <-  with(yr.means[11,], 1 - pan - pri - left)
+yr.means$pan  [11] <- (cs(v21s)["pan"]    + cs(v21s)["panc"]    + cs(v21s)["prd"])                    / cs(v21s)["efec"]
+yr.means$pri  [11] <-  cs(v21s)["pri"]                                                                / cs(v21s)["efec"] # dropped cs(v21s)["pric"]
+yr.means$left [11] <- (cs(v21s)["morena"] + cs(v21s)["morenac"] + cs(v21s)["pt"]  + cs(v21s)["pvem"]) / cs(v21s)["efec"]
+yr.means$oth  [11] <-  with(yr.means[11,], 1 - pan - pri - left)
+yr.means$turnp[11] <-  cs(v21s)["efec"]  /  cs(v21m)["pob18"]
+yr.means$turnl[11] <-  cs(v21s)["efec"]  /  cs(v21s)["lisnom"]
 #
 #############################
 ## votes relative to pri's ##
@@ -637,16 +805,21 @@ yr.means$oth [11] <-  with(yr.means[11,], 1 - pan - pri - left)
 yr.means <- within(yr.means, mean.rpan    <- pan  / pri)
 yr.means <- within(yr.means, mean.rleft   <- left / pri)
 yr.means <- within(yr.means, mean.roth    <- oth  / pri)
+####################################
+## turnout relative to abstention ##
+####################################
+yr.means <- within(yr.means, mean.rturnp  <- turnp / (1-turnp))
+yr.means <- within(yr.means, mean.rturnl  <- turnl / (1-turnl))
 #
-yr.means[,2:8] <- round(yr.means[,2:8], 3)
+yr.means[,-1] <- round(yr.means[,-1], 3) # except yr, round to 3 digits
 #
 # plug into data
 for (i in 1:300){
     #i <- 2 # debug
-    extendCoald18[[i]] <- cbind(extendCoald18[[i]], yr.means[,6:8])
-    extendCoald06[[i]] <- cbind(extendCoald06[[i]], yr.means[,6:8])
-    extendCoald97[[i]] <- cbind(extendCoald97[[i]], yr.means[,6:8])
-    extendCoald79[[i]] <- cbind(extendCoald79[[i]], yr.means[,6:8])
+    extendCoald18[[i]] <- cbind(extendCoald18[[i]], yr.means[,8:12])
+    extendCoald06[[i]] <- cbind(extendCoald06[[i]], yr.means[,8:12])
+    extendCoald97[[i]] <- cbind(extendCoald97[[i]], yr.means[,8:12])
+    extendCoald79[[i]] <- cbind(extendCoald79[[i]], yr.means[,8:12])
 }
 
 #################################################################################################
@@ -661,17 +834,29 @@ vhat.2024 <-                 # <--- prospective, with up-to 2021 returns, assume
 vhat.2021 <- vhat.2018 <- vhat.2015 <- vhat.2012 <- vhat.2009 <- vhat.2006 <- 
 vhat.2003 <- vhat.2000 <- vhat.1997 <- vhat.1994 <-
 vhat.1991 <- vhat.1988 <-
-    data.frame(pan       = rep(NA, 300),
-               pri       = rep(NA, 300),
-               left      = rep(NA, 300), # will receive vote estimates
-               dbackward = rep(NA, 300)) # will indicate backwards predictions
+    data.frame(
+        pan       = rep(NA, 300)
+      , pri       = rep(NA, 300)
+      , left      = rep(NA, 300) # will receive vote estimates
+      , turnp     = rep(NA, 300)
+      , turnl     = rep(NA, 300)
+      , dbackward = rep(NA, 300)
+    ) # will indicate backwards predictions
 #
-alphahat <- data.frame(pan    = rep(NA, 300),
-                       pri    = rep(NA, 300),
-                       left   = rep(NA, 300)) # will receive municipio's alphas
-betahat <- data.frame (pan    = rep(NA, 300),
-                       left   = rep(NA, 300),
-                       oth    = rep(NA, 300)) # will receive municipio's betas (none for pri)
+alphahat <- data.frame(    # will receive district's alphas
+    pan     = rep(NA, 300)
+  , pri     = rep(NA, 300)
+  , left    = rep(NA, 300)
+  , turnp   = rep(NA, 300)
+  , turnl   = rep(NA, 300)
+) 
+betahat <- data.frame (    # will receive district's betas (none for pri)
+    pan    = rep(NA, 300)
+  , left   = rep(NA, 300)
+  , oth    = rep(NA, 300)
+  , turnp  = rep(NA, 300)
+  , turnl  = rep(NA, 300)
+)
 #
 tmp <- as.list(rep(NA, 300)) # empty list will receive one time-series
                                     # regression per unit, each used to
@@ -684,46 +869,63 @@ names(tmp06) <- v06d$disn
 names(tmp18) <- v18d$disn
 #
 regs.1988 <- regs.1991 <- regs.1994 <- 
-    list(pan    = tmp79,
-         left   = tmp79,
-         oth    = tmp79,
-         readme = "No pri regs because DVs are pri-ratios")
+    list(
+        pan    = tmp79
+      , left   = tmp79
+      , oth    = tmp79
+      , turnp  = tmp79
+      , turnl  = tmp79
+      , readme = "No pri regs because DVs are pri-ratios")
 regs.1997 <- regs.2000 <- regs.2003 <- 
-    list(pan    = tmp97,
-         left   = tmp97,
-         oth    = tmp97,
-         readme = "No pri regs because DVs are pri-ratios")
+    list(pan    = tmp97
+       , left   = tmp97
+       , oth    = tmp97
+       , turnp  = tmp97
+       , turnl  = tmp97
+       , readme = "No pri regs because DVs are pri-ratios")
 regs.2006 <- regs.2009 <- regs.2012 <- regs.2015 <- 
-    list(pan    = tmp06,
-         left   = tmp06,
-         oth    = tmp06,
-         readme = "No pri regs because DVs are pri-ratios")
+    list(pan    = tmp06
+       , left   = tmp06
+       , oth    = tmp06
+       , turnp  = tmp06
+       , turnl  = tmp06
+        , readme = "No pri regs because DVs are pri-ratios")
 regs.2018 <- regs.2021 <- regs.2024 <-  
-    list(pan    = tmp18,
-         left   = tmp18,
-         oth    = tmp18,
-         readme = "No pri regs because DVs are pri-ratios")
-# for districts, one mean.reg per map
+    list(pan    = tmp18
+       , left   = tmp18
+       , oth    = tmp18
+       , turnp  = tmp18
+       , turnl  = tmp18
+       , readme = "No pri regs because DVs are pri-ratios")
+                                        # for districts, one mean.reg per map
 mean.regs.d79 <-
-    list(pan    = tmp79,
-         left   = tmp79,
-         oth    = tmp79,
-         readme = "No pri regs bec DVs are pri-ratios")
+    list(pan    = tmp79
+       , left   = tmp79
+       , oth    = tmp79
+       , turnp  = tmp79
+       , turnl  = tmp79
+       , readme = "No pri regs bec DVs are pri-ratios")
 mean.regs.d97 <-
-    list(pan    = tmp97,
-         left   = tmp97,
-         oth    = tmp97,
-         readme = "No pri regs bec DVs are pri-ratios")
+    list(pan    = tmp97
+       , left   = tmp97
+       , oth    = tmp97
+       , turnp  = tmp97
+       , turnl  = tmp97
+       , readme = "No pri regs bec DVs are pri-ratios")
 mean.regs.d06 <-
-    list(pan    = tmp06,
-         left   = tmp06,
-         oth    = tmp06,
-         readme = "No pri regs bec DVs are pri-ratios")
+    list(pan    = tmp06
+       , left   = tmp06
+       , oth    = tmp06
+       , turnp  = tmp06
+       , turnl  = tmp06
+       , readme = "No pri regs bec DVs are pri-ratios")
 mean.regs.d18 <-
-    list(pan    = tmp18,
-         left   = tmp18,
-         oth    = tmp18,
-         readme = "No pri regs bec DVs are pri-ratios")
+    list(pan    = tmp18
+       , left   = tmp18
+       , oth    = tmp18
+       , turnp  = tmp18
+       , turnl  = tmp18
+       , readme = "No pri regs bec DVs are pri-ratios")
 rm(tmp,tmp79,tmp97,tmp06,tmp18)
 
 
@@ -758,8 +960,8 @@ rm(tmp,tmp79,tmp97,tmp06,tmp18)
 estim_dis <- function(sel.map){
     #
     #######################################################################
-    ## read 1988dfdf from external file to add votes when using 1979 map ##
-    #######################################################################
+    ## read 1988dfdf from external file to add votes when using 1979 map ## OJO: need to finish adapting if(sel.map==1979) 
+    #######################################################################      for turnp turnl additions
     if (sel.map==1979){
         tmp <- read.csv(file="../dfdf1979-on.csv")
         tmp <- tmp[tmp$yr==1988,]
@@ -783,7 +985,8 @@ estim_dis <- function(sel.map){
         rm(tmp,sel.c,tmp.v,tmp.l)
         #
         # if map is 1979 will estimate 1988 backwards, add row in data frames
-        add1988 <- function(x) rbind(v88=c(1988,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA), x)
+        ##add1988 <- function(x) rbind(v88=c(1988,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA), x)
+        add1988 <- function(x) rbind(v88=c(1988, rep(NA, (ncol(extendCoald79[[1]]) - 1) )), x)
         tmp <- extendCoald79 # duplicate for manipulation
         ## OJO: should replace NAs above with 1988 district returns in file
         tmp <- lapply(extendCoald79, add1988) # add row for 1988 to each data frame in list
@@ -801,7 +1004,8 @@ estim_dis <- function(sel.map){
     if (sel.map==2018){
         # if map is 2018 will estimate 2024, add row in data frames
         # this block will change to 2027 after 24's election
-        add2024 <- function(x) rbind(x, v24=c(2024,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA))
+        ##add2024 <- function(x) rbind(x, v24=c(2024,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA))
+        add2024 <- function(x) rbind(v88=c(1988, rep(NA, (ncol(extendCoald18[[1]]) - 1) )), x)
         tmp <- extendCoald18 # duplicate for manipulation
         tmp <- lapply(extendCoald18, add2024) # add row for 2024 to each data frame in list
         extendCoald18 <- tmp
@@ -823,6 +1027,8 @@ estim_dis <- function(sel.map){
         data.tmp$d.pan    <- data.tmp$pan    - c(NA, data.tmp$pan   [-tmp.ln])
         data.tmp$d.pri    <- data.tmp$pri    - c(NA, data.tmp$pri   [-tmp.ln])
         data.tmp$d.left   <- data.tmp$left   - c(NA, data.tmp$left  [-tmp.ln])
+        data.tmp$d.turnp  <- data.tmp$turnp  - c(NA, data.tmp$turnp [-tmp.ln])
+        data.tmp$d.turnl  <- data.tmp$turnl  - c(NA, data.tmp$turnl [-tmp.ln])
         rm(tmp.ln)
         ##
         ############################################

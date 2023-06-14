@@ -760,9 +760,10 @@ dat <- dat[moveme(names(dat), "efec before nr")]
 #dat <- dat[sel,] # drop early years
 dat[1,]
 dat$ord <- 1:nrow(dat)
-dat <- within(dat, nota <- fuente <- NULL)
+dat <- within(dat, nota <- fuente <- nr <- nul <- tot <- NULL)
 write.csv(dat, file = "dfdf1979-present.coalAgg.csv", row.names = FALSE)
 
+## verify dat complies with google sheets file limit
 nrow(dat) * ncol(dat) < 400000
 
 #######################################
@@ -793,4 +794,6 @@ dat.split <- within(dat.split,
 table(dat.split$l14)
 write.csv(dat.split, file = "dfdf1979-present.coalSplit.csv", row.names = FALSE)
 
+## verify dat complies with google sheets file limit
 nrow(dat.split) * ncol(dat.split) < 400000
+

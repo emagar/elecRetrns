@@ -55,10 +55,10 @@ So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio leve
 Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/. Two versions of municipal election returns are included: one with municipal votes aggregated by candidate, another aggregated by party (the script [[./code/ay.r][~code/ay.r~]] was used for these manipulations):
 # Ojo 2023-05-29: check status of CdMx in paragraph above.
 - [[./data/aymu1989-present.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = /ayuntamiento/ election returns, coalition votes aggregated by candidate.
-- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = /ayuntamiento/ election returns, coalition votes split among parties where source allows it.
+- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = /ayuntamiento/ election returns, coalition votes split among parties where source permits.
 - [[./data/aymu1989-present.incumbents.csv][~data/aymu1989-on.incumbents.csv~]] = names of elected municipal officers (/presidente municipal/ only) since 1989. Includes reelection status since 2018.
 - [[./data/ayde2008-on-Nayarit-regid.coalAgg.csv][~data/ayde2008-on-Nayarit-regid.coalAgg.csv~]] = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
-- [[./data/ayde2008-on-Nayarit-regid.coalSplit.csv][~data/ayde2008-on-Nayarit-regid.coalSplit.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source allows it.
+- [[./data/ayde2008-on-Nayarit-regid.coalSplit.csv][~data/ayde2008-on-Nayarit-regid.coalSplit.csv~]] = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source permits.
 - *Inspect the data above online* in Google sheets (basic instructions [[instrucciones][here]]; data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
     - ~*.coalAgg~ versions: [[https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy][1970s]] [[https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy][1990s]] [[https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy][2000s]] [[https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy][2010s]] [[https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy][2020s]] [[https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/copy][Nayarit]]
     - ~*.coalSplit~ versions : [[https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/copy][1970s]] [[https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/copy][1990s]] [[https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/copy][2000s]] [[https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/copy][2010s]] [[https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/copy][2020s]] [[https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy][Nayarit]]
@@ -68,7 +68,7 @@ Congressional election data updated to 2021. A mixed majority system is in place
 
 *Citation for Congressional election data*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
 - [[./data/dfdf1979-on.coalAgg.csv][~data/dfdf1979-on.coalAgg.csv~]]     = federal deputy returns, coalition votes aggregated by candidate.
-- [[./data/dfdf1979-on.coalSplit.csv][~data/dfdf1979-on.coalSplit.csv~]]   = federal deputy returns, coalition votes split among parties where source allows it.
+- [[./data/dfdf1979-on.coalSplit.csv][~data/dfdf1979-on.coalSplit.csv~]]   = federal deputy returns, coalition votes split among parties where source permits.
 - [[./data/dfdf1979-on.coalSplit.csv][~data/dfdf1997-on.incumbents.csv~]]  = names of elected federal deputies (SMD tier only) since 1997. Includes reelection status since 2021.
 - [[./data/dfdf2006-on-candidates.csv][~data/dfdf2006-on-candidates.csv~]]  = names of all federal deputy candidates in districts and party lists since 2006. 
 - [[./data/seed2012-on.candidates.csv][~data/seed2012-on.candidates.csv~]]  = names of all senatorial candidates in states and party lists since 2012. 
@@ -217,7 +217,7 @@ Work in progress
 - /Fuente/ = UAM Iztapalapa for older state races
 - /Fuente/ = voz y voto
 * Acknowledgements
-Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C. He is responsible for mistakes and shortcomings in the data. 
+Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
 Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
 - Under construction
@@ -228,7 +228,7 @@ Many students over the years have provided research assistance to retrieve and s
 - Julio Solís Ríos
 - Lucía Motolinia
 - Mauricio Fernández Duque
-- Odette
+- Odette González Carrillo
 - Sonia Kuri Kosegarten
 - Vidal Mendoza Tinoco
 [[top][<sub>Back to top</sub>]]
