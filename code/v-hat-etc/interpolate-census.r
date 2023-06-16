@@ -182,23 +182,33 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ys <- as.numeric(sub(pattern = ".+_([0-9]{4})", replacement = "\\1", colnames(cs)))
     ys <- mapply(rep, ys, nrow(cs)) # repeat ys for each row in cs for easier operations
     ##
+    ####################
+    ## define formula ##
+    ####################
+    dv <- cs; iv <- ys # so dv and iv can be subsetted when plotting
+    frm   <- as.formula("    dv  ~     iv") ; frm0 <- as.formula("    unlist(as.vector(dv))  ~     unlist(as.vector(iv))")   # linear
+    ##frm <- as.formula("log(dv) ~     iv") ; frm0 <- as.formula("log(unlist(as.vector(dv))) ~     unlist(as.vector(iv))")   # log dv
+    ##frm <- as.formula("    dv  ~ log(iv)"); frm0 <- as.formula("    unlist(as.vector(dv))  ~ log(unlist(as.vector(iv)))")  # log iv
+    ##
     ## regress one line and predict
-    regs <- mapply(rbind, split(ys, seq(nrow(ys))), split(cs, seq(nrow(cs))), SIMPLIFY = FALSE) ## split observations into list of dfs
-    regs <- lapply(regs, function(x) t(x))                                                    ## transpose
-    regs <- lapply(regs, function(x) x <- data.frame(yr=x[,1], cs=x[,2]))                     ## name cols
-    regs <- lapply(regs, function(x) lm(cs~yr, data=x))                                       ## regress
-    new.d <- vector(mode = "list", length = length(interp) )                                      ## prep predictions
-    new.d <- lapply(new.d, function(x) x <- yr)                                                   ## prep predictions
-    interp <- lapply(regs, function(x) predict.lm(x, newdata = new.d))                          ## predict
-    interp <- unlist(as.data.frame(interp))                                                       ## turn into vector
+    regs <- mapply(rbind, split(iv, seq(nrow(iv))), split(dv, seq(nrow(dv))), SIMPLIFY = FALSE) ## split observations into list of dfs
+    regs <- lapply(regs, function(x) t(x))                                                      ## transpose
+    regs <- lapply(regs, function(x) x <- data.frame(iv=x[,1], dv=x[,2]))                       ## name cols
+    ##                                                                                          #############
+    regs <- lapply(regs, function(x) lm(formula=frm, data=x))                                   ## regress ##
+    ##                                                                                          #############
+    new.d <- vector(mode = "list", length = length(regs) )                                      ## prep predictions
+    new.d <- lapply(new.d, function(x) x <- yr)                                                 ## prep predictions
+    interp <- lapply(regs, function(x) predict.lm(x, newdata = new.d))                     ## predict
+    interp <- unlist(as.data.frame(interp))                                                ## turn into vector
 
     ## exp(predict.lm(reg.pan,    newdata = new.d))
     ##
     ## plot option
     if (add.plot==TRUE){
         if (!is.na(plot.n)){ ## if plot.n specified, subset data for plotting
-            cs0 <- cs[plot.n,]
-            ys0 <- ys[plot.n,]
+            dv <- cs[plot.n,]
+            iv <- ys[plot.n,]
             interp0 <- interp[plot.n]
             regs0 <- regs[plot.n]
         } else {             ## else just duplicate for plotting
@@ -207,18 +217,33 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
             interp0 <- interp
             regs0 <- regs
         }
+        ## define plot x and y ranges
+        yrng <- c(min(cs0,interp0),max(cs0,interp0))
+        xrng <- c((min(ys0)-15),(max(ys0)+10))
+        ## plot log-trasformed model, not in log scale
         plot(
-            x=c((min(ys0)-15),(max(ys0)+10)),
-            y=c(min(cs0,interp0),max(cs0,interp0)),
-            xlab="", ylab="",
+##          log(yrng) ~     xrng,
+                yrng  ~     xrng,
+##              yrng  ~ log(xrng),
+            xlab="", ##ylab="",
             type="n"
         )
         abline(h=0, col="red")
-        points(x=unlist(as.vector(ys0)),
-               y=unlist(as.vector(cs0)), cex=.75, col = "gray")
-        lapply(regs, function(x) abline(reg=x, col = "gray"))
-        }
-        points(x=rep(yr, length(interp0)), y=interp0, cex=.75)
+        points(frm, cex=.75, col = "gray")
+        lapply(regs0, function(x) abline(reg=x, untf=FALSE, col = "gray"))
+
+        points(log(interp0)~rep(yr, length(interp0)), cex=.75)
+
+        # log scale
+        plot(
+            y=c(min(cs0,interp0),max(cs0,interp0)), x=c((min(ys0)-15),(max(ys0)+10)), log = "y"
+          , xlab="", ylab=""
+          , type="n"
+        )
+        abline(h=0, col="red")
+        points(unlist(as.vector(cs0)) ~ unlist(as.vector(ys0)),
+               cex=.75, col = "gray")
+        lapply(regs0, function(x) abline(reg=x, untf=TRUE, col = "gray"))
     }
     ##
     return(round(interp, 1))
