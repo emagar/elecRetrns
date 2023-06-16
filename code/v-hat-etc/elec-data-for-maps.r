@@ -1278,31 +1278,31 @@ rm(mundis)
 ####################################################
 v94$ife <- v94$ife1994
 v94$inegi <- inegi2ife(v94$ife)
-                                        #
+##
 v97$ife <- v97$ife1997
 v97$inegi <- inegi2ife(v97$ife)
-                                        #
+##
 v00$ife <- v00$ife2000
 v00$inegi <- inegi2ife(v00$ife)
-                                        #
+##
 v03$ife <- v03$ife2003
 v03$inegi <- inegi2ife(v03$ife)
-                                        #
+##
 v06$ife <- v06$ife2006
 v06$inegi <- inegi2ife(v06$ife)
-                                        #
+##
 v09$ife <- v09$ife2009
 v09$inegi <- inegi2ife(v09$ife)
-                                        #
+##
 v12$ife <- v12$ife2012
 v12$inegi <- inegi2ife(v12$ife)
-                                        #
+##
 v15$ife <- v15$ife2015
 v15$inegi <- inegi2ife(v15$ife)
-                                        #
+##
 v18$ife <- v18$ife2018
 v18$inegi <- inegi2ife(v18$ife)
-                                        #
+##
 v21$ife <- v21$ife2021
 v21$inegi <- inegi2ife(v21$ife)
 
@@ -1368,7 +1368,8 @@ tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod06)
 v94d06$pob18 <- tmp2$pob18 # paste interpolation
 ## 1994d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod18)
+tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod18, add.plot=TRUE)
+which(tmp2$pob18<0)
 v94d18$pob18 <- tmp2$pob18 # paste interpolation
 ## 1997
 tmp2 <- tmp

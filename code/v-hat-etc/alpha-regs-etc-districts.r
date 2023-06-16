@@ -5,7 +5,7 @@
 ## Author: Eric Magar                                             ##
 ## emagar at itam dot mx                                          ##
 ## Date: 17apr2023                                                ##
-## Last modified: 30may2023                                       ##
+## Last modified: 15jun2023                                       ##
 ####################################################################
 
 ###################################################################
@@ -489,6 +489,12 @@ turnld18 <- round(turnld18, 3)
 turnld06 <- round(turnld06, 3)
 turnld97 <- round(turnld97, 3)
 turnld79 <- round(turnld79, 3)
+
+## inspect turnout values
+sel <- which(apply(turnpd18, 1, min) < 0)
+v94d18[sel,]
+max(turnpd18)
+x
 
 # transpose to plug columns (units) into new time-series data.frames
 pand79    <- t(pand79)
@@ -1079,25 +1085,33 @@ estim_dis <- function(sel.map){
         if (sel.map==1979){
             tmp.back <- 1 # will indicate backwards prediction
             year <- 1991
-            reg.pan  <- lm(formula = log(pan/pri)  ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
-            reg.left <- lm(formula = log(left/pri) ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
-            reg.oth  <- lm(formula = log(oth/pri)  ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
-            #
+            reg.pan  <- lm(formula = log(pan/pri)     ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
+            reg.left <- lm(formula = log(left/pri)    ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
+            reg.oth  <- lm(formula = log(oth/pri)     ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
+            reg.turnp <- lm(formula = log(efec/pob18)  ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
+            reg.turnl <- lm(formula = log(efec/lisnom) ~ yr, data = data.tmp, subset = (yr >= year+3 & yr <= year+15))
+            ##
             new.d <- data.frame(yr = year)
             rhat.pan    <- exp(predict.lm(reg.pan,    newdata = new.d))#, interval = "confidence")
             rhat.left   <- exp(predict.lm(reg.left,   newdata = new.d))#, interval = "confidence")
             rhat.oth    <- exp(predict.lm(reg.oth,    newdata = new.d))#, interval = "confidence")
+            rhat.turnp  <- exp(predict.lm(reg.turnp,  newdata = new.d))#, interval = "confidence")
+            rhat.turnl  <- exp(predict.lm(reg.turnl,  newdata = new.d))#, interval = "confidence")
             vhat.pan    <- round(rhat.pan    / (1 + rhat.pan + rhat.left   + rhat.oth), 3)
             vhat.pri    <- round(1           / (1 + rhat.pan + rhat.left   + rhat.oth), 3)
             vhat.left   <- round(rhat.left   / (1 + rhat.pan + rhat.left   + rhat.oth), 3)
+            vhat.turnp  <- round(rhat.turnp  / (1 + rhat.turnp), 3)
+            vhat.turnl  <- round(rhat.turnl  / (1 + rhat.turnl), 3)
             bhat.pan    <- round(summary.lm(reg.pan)   $coef[2,1], 3)
             bhat.left   <- round(summary.lm(reg.left)  $coef[2,1], 3)
+            bhat.turnp  <- round(summary.lm(reg.turnp) $coef[2,1], 3)
+            bhat.turnl  <- round(summary.lm(reg.turnl) $coef[2,1], 3)
             #
             ## plug into results objects ##
-            vhat.1991[i,] <- c(vhat.pan, vhat.pri, vhat.left, tmp.back)
-            regs.1991$pan [[i]]   <- reg.pan
-            regs.1991$left[[i]]   <- reg.left
-            regs.1991$oth [[i]]   <- reg.oth
+            vhat.1991[i,] <- c(vhat.pan, vhat.pri, vhat.left, tmp.back)  ### aqui me quedé en adición de turnout
+            regs.1991$pan [[i]] <- reg.pan
+            regs.1991$left[[i]] <- reg.left
+            regs.1991$oth [[i]] <- reg.oth
             #
             # add slot for projections/estimates if absent
             if ("vhat.pan"  %notin% colnames(data.tmp)) data.tmp$vhat.pan  <- NA 

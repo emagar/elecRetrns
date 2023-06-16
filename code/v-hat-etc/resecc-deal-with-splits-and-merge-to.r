@@ -23,34 +23,34 @@ if (length(sel)>0){
 #############################################################
 eq$seccion <- eq$edon * 10000 + eq$seccion
 v94s <- within(v94s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v97s <- within(v97s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v00s <- within(v00s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v03s <- within(v03s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v06s <- within(v06s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v09s <- within(v09s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v12s <- within(v12s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v15s <- within(v15s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v18s <- within(v18s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 v21s <- within(v21s, {
-    seccion <- edon * 10000 + seccion;
+##    seccion <- edon * 10000 + seccion;
     dunbaja <- 0 })
 
 
@@ -111,7 +111,7 @@ sum.split <- function(year.var = NA) {
 #####################################################################
 for (rnd in 1:3){ ## loop over three possible succesive reseccionamiento actions in each seccion in eq
     #rnd <- 1 # debug
-    if (rnd==1) sel.resec <- which(eq$action== "split.to")
+    if (rnd==1) sel.resec <- which(eq$action =="split.to")
     if (rnd==2) sel.resec <- which(eq$action2=="split.to")
     if (rnd==3) sel.resec <- which(eq$action3=="split.to")
     ##table(eq$when[sel.resec])

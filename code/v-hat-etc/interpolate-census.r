@@ -45,7 +45,7 @@
 ## plot(2002:2021, tmp2[3,])
 ## points(c(2005,2010,2020), tmp[3,], pch = 20)
 
-interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA){  # census.data allow usage of counterfactual maps, not used now
+interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps, not used now
     ## Census.data is a data.frame reporting X>1 censuses, with the following characteristics:
     ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
     ## - it has groups of X columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
@@ -53,7 +53,8 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA){
     ## - rows are units.
     ## Option 'unit' is redundant whenever a census.data is provided in call.
     ##
-    ##what <- "p18"; yr <- 2020; census.data <- tmp # debug
+    ##what <- "p18"; yr <- 1997; census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); plot.n = 4;
+# debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
         cs <- census.data
@@ -93,7 +94,7 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA){
     b <- (c2 - c1) / (y2 - y1)
     ##b[1:4,] # debug
     ## constants
-    ##a <- c2 - b * y2
+    a <- c2 - b * y2
     ##a <- (y2*c1 - y1*c2) / (y2 - y1)
     ##a[1:4,] # debug
     ## name cols
@@ -104,10 +105,125 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA){
     if (yr>ys[1,2] & yr<=ys[1,3]) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr between 2nd and 3rd census
     if (yr>ys[1,3]            ) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr after 3rd census
     ##
+    ## plot option
+    if (add.plot==TRUE){
+        if (!is.na(plot.n)){ ## if plot.n specified, subset data for plotting
+            cs0 <- cs[plot.n,]
+            ys0 <- ys[plot.n,]
+            interp0 <- interp[plot.n]
+            a0 <- a[plot.n,]
+            b0 <- b[plot.n,]
+        } else {             ## else just duplicate for plotting
+            cs0 <- cs
+            ys0 <- ys
+            interp0 <- interp
+            a0 <- a
+            b0 <- b
+        }
+        plot(
+            x=c((min(ys0)-15),(max(ys0)+10)),
+            y=c(min(cs0,interp0),max(cs0,interp0)),
+            xlab="", ylab="",
+            type="n"
+        )
+        abline(h=0, col="red")
+        points(x=unlist(as.vector(ys0)),
+               y=unlist(as.vector(cs0)), cex=.75, col = "gray")
+        for (i in 1:length(unlist(as.vector(a0)))){
+            abline(a=unlist(as.vector(a0))[i],
+                   b=unlist(as.vector(b0))[i],
+                   col = "gray")
+        }
+        points(x=rep(yr, length(interp0)), y=interp0, cex=.75)
+    }
+    ##
     return(round(interp, 1))
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
 
+## performs projection with a log lm
+interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps, not used now
+    ## Census.data is a data.frame reporting X>1 censuses, with the following characteristics:
+    ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
+    ## - it has groups of X columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
+    ## - colnames are: indicator_year
+    ## - rows are units.
+    ## Option 'unit' is redundant whenever a census.data is provided in call.
+    ##
+    ##what <- "p18"; yr <- 1997; census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); plot.n = 4;
+# debug
+    ##
+    if (!is.null(dim(census.data))) {  # if data provided in call, use it
+        cs <- census.data
+    } else {                         # else the function is customized for code/elec-data-for-maps.r
+        if (unit=="d"){
+            if (           yr<1997) cs <- censod79
+            if (yr>=1997 & yr<2006) cs <- censod97
+            if (yr>=2006 & yr<2018) cs <- censod06
+            if (yr>=2018 & yr<2024) cs <- censod18
+        }
+        if (unit=="m"){
+            if (           yr<1997) cs <- censom94
+            if (yr>=1997 & yr<2000) cs <- censom97
+            if (yr>=2000 & yr<2003) cs <- censom00
+            if (yr>=2003 & yr<2006) cs <- censom03
+            if (yr>=2006 & yr<2009) cs <- censom06
+            if (yr>=2009 & yr<2012) cs <- censom09
+            if (yr>=2012 & yr<2015) cs <- censom12
+            if (yr>=2015 & yr<2018) cs <- censom15
+            if (yr>=2018 & yr<2021) cs <- censom18
+            if (yr>=2021          ) cs <- censom21
+        }
+    }
+    ##
+    sel.c <- grep(pattern=paste0(what, "_[0-9]{4}"), colnames(cs))  # columns with census values for indicator 'what'
+    cs <- cs[, sel.c]                                               # subset target columns
+    ##
+    ys <- as.numeric(sub(pattern = ".+_([0-9]{4})", replacement = "\\1", colnames(cs)))
+    ys <- mapply(rep, ys, nrow(cs)) # repeat ys for each row in cs for easier operations
+    ##
+    ## regress one line and predict
+    regs <- mapply(rbind, split(ys, seq(nrow(ys))), split(cs, seq(nrow(cs))), SIMPLIFY = FALSE) ## split observations into list of dfs
+    regs <- lapply(regs, function(x) t(x))                                                    ## transpose
+    regs <- lapply(regs, function(x) x <- data.frame(yr=x[,1], cs=x[,2]))                     ## name cols
+    regs <- lapply(regs, function(x) lm(cs~yr, data=x))                                       ## regress
+    new.d <- vector(mode = "list", length = length(interp) )                                      ## prep predictions
+    new.d <- lapply(new.d, function(x) x <- yr)                                                   ## prep predictions
+    interp <- lapply(regs, function(x) predict.lm(x, newdata = new.d))                          ## predict
+    interp <- unlist(as.data.frame(interp))                                                       ## turn into vector
+
+    ## exp(predict.lm(reg.pan,    newdata = new.d))
+    ##
+    ## plot option
+    if (add.plot==TRUE){
+        if (!is.na(plot.n)){ ## if plot.n specified, subset data for plotting
+            cs0 <- cs[plot.n,]
+            ys0 <- ys[plot.n,]
+            interp0 <- interp[plot.n]
+            regs0 <- regs[plot.n]
+        } else {             ## else just duplicate for plotting
+            cs0 <- cs
+            ys0 <- ys
+            interp0 <- interp
+            regs0 <- regs
+        }
+        plot(
+            x=c((min(ys0)-15),(max(ys0)+10)),
+            y=c(min(cs0,interp0),max(cs0,interp0)),
+            xlab="", ylab="",
+            type="n"
+        )
+        abline(h=0, col="red")
+        points(x=unlist(as.vector(ys0)),
+               y=unlist(as.vector(cs0)), cex=.75, col = "gray")
+        lapply(regs, function(x) abline(reg=x, col = "gray"))
+        }
+        points(x=rep(yr, length(interp0)), y=interp0, cex=.75)
+    }
+    ##
+    return(round(interp, 1))
+    ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
+}
 
 
      
