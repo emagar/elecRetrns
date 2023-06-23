@@ -14,7 +14,7 @@ lit/
 oldVers/
 tmp*.*
 tmp-prep/
-
+code/v-hat-etc/tmp/
 # open libreoffice files
 .~*.*#
 

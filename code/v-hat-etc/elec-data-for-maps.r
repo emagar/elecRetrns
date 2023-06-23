@@ -594,9 +594,9 @@ d_split <- apportion_v(dat=d_split, members=c("morena", "pvem", "pt"), joint="mo
 v21_agg <- d_agg
 v21_split <- d_split
 
-####################################################
-## ADD 2024 READ INSTRUCTIONS HERE WHEN AVAILABLE ##
-####################################################
+##################################
+## ADD 2024 HERE WHEN AVAILABLE ##
+##################################
 ##
 ## clean
 rm(d,d_agg,d_split,sel.c,sel.r,to.num,apportion_v,na2zero)
@@ -1127,9 +1127,9 @@ v21 <- add.edon.secn(v21)
 ##tmp.all.sec <- eq[,c("edon","seccion","inegi","ife","mun","alta","baja")]
 tmp.all.sec <- eq
 ##
-##########
-## 2005 ##
-##########
+########################
+## 2005 seccion-level ##
+########################
 edos <- c("ags", "bc", "bcs", "cam", "coa", "col", "cps", "cua", "df", "dgo", "gua", "gue", "hgo", "jal", "mex", "mic", "mor", "nay", "nl", "oax", "pue", "que", "qui", "san", "sin", "son", "tab", "tam", "tla", "ver", "yuc", "zac")
 tmp18 <- data.frame()
 for (i in 1:9){
@@ -1162,9 +1162,9 @@ c(nrow(tmp.all.sec), nrow(tmp18))
 ## add to pop object
 pob18 <- tmp18
 ##
-##########
-## 2010 ##
-##########
+########################
+## 2010 seccion-level ##
+########################
 tmp18 <- data.frame()
 tmp.all.sec$tmp.drop <- NA;                          # redundant column to retain data frame form
 tmp.all.sec <- tmp.all.sec[,c("seccion","tmp.drop")] # trim to avoid dumplicated cols in merge
@@ -1192,9 +1192,9 @@ tmp18$tmp.drop <- NULL # clean
 pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
 head(pob18)
 ##
-##########
-## 2020 ##
-##########
+########################
+## 2020 seccion-level ##
+########################
 tmp18 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2020/conjunto_de_datos/INE_SECCION_2020.csv", stringsAsFactors = FALSE)[, c(2,5,7,13)]
 tmp18$p18_2020 <- tmp18$POBTOT - tmp18$P_0A17
 tmp18$ptot_2020 <- tmp18$POBTOT
@@ -1220,6 +1220,100 @@ censo <- pob18 # rename object
 rm(pob18)
 head(censo)
 
+
+
+#############################
+## 2000 munic-level census ##
+#############################
+c00 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/2000censo/cgpv2000_iter_00.csv")
+## drop localidades etc, keep municipios only
+sel.r <- grep("TOTAL MUNICIPAL", c00$nom_loc)
+c00 <- c00[sel.r,c("entidad","mun","nom_mun","pob18_")]
+c00 <- within(c00, {
+    edon <- entidad;
+    inegi <- edon*1000+mun;
+    mun <- nom_mun;
+    pob18 <- pob18_;
+    entidad <- nom_mun <- pob18_ <- NULL
+    }
+)
+##c00 <- merge(x=c00, y=censom00[,c("ife","inegi")], by="inegi", all.y=TRUE)
+c00[1,]
+## c00    <- c00     [order(c00     $ife),]
+## censom <- censom00[order(censom00$ife),]
+## table(c00$ife==censom00$ife)
+
+#############################
+## 1995 munic-level conteo ##
+#############################
+tmpf <- c("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Ags_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_BC_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_BCS_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Camp_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Chih_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Chis_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Coah_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Col_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_DF_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Dgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Gro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Gto_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Hgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Jal_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mex_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mich_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mor_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Nay_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_NL_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Oax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Pue_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_QRoo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Qro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Sin_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_SLP_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Son_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tab_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tamps_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tlax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Ver_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Yuc_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Zac_Poblacion.csv")
+##
+c95f <- function(i=NA){
+    #i <- 6
+    tmp <- read.csv(tmpf[i])
+    tmpt <- tmp[grep("^Total$", tmp$Edad.desplegada),] # keep lines with mun totals only
+    tmpt <- tmpt[-1,] # drop 1st obs = state total
+    tmpt <- within(tmpt,{
+        edon <- as.numeric(sub("^([0-9]+) .*$", "\\1", Entidad.federativa));
+        mun  <-                         sub("^([0-9]+)+[ ]+([0-9a-zñáéíóúü,. -]+)", "\\2", Municipio, ignore.case = TRUE);
+        inegi <- edon*1000 + as.numeric(sub("^([0-9]+)+[ ]+([0-9a-zñáéíóúü,. -]+)", "\\1", Municipio, ignore.case = TRUE));
+        ptot <- Población.total..1;
+    })
+    ##
+    sel.r <- grep("^[0-9] año.?$|^1[0-7] año.?$", tmp$Edad.desplegada) # find 0 to 17 yrs
+    tmpm <- tmp[sel.r,]
+    tmpm <- tmpm[-1:-18,] # drop obs 1-18 = state totals
+    tmpm <- within(tmpm,{
+        edon <- as.numeric(sub("^([0-9]+) .*$", "\\1", Entidad.federativa));
+        inegi <- edon*1000 + as.numeric(sub("^([0-9]+)+[ ]+([0-9a-zñáéíóúü,. -]+)", "\\1", Municipio, ignore.case = TRUE));
+        ptot <- Población.total..1;
+        Entidad.federativa <- NULL;
+        pob17 <- ave(Población.total..1, as.factor(inegi), FUN=sum, na.rm=TRUE); # sum sub-18 pop
+    })
+    tmpm <- tmpm[duplicated(tmpm$inegi)==FALSE,] # drop redundant rows
+    ##
+    tmpt <- cbind(tmpt, pob17=tmpm$pob17)
+    tmpt <- within(tmpt, pob18 <- ptot - pob17)
+    ##
+    return(tmpt[,c("inegi","mun","ptot","pob18")])
+}
+c95 <- data.frame() # initialize empty data frame
+for (i in 1:32){
+    c95 <- rbind(c95, c95f(i=i))
+}
+## add municipios zapatistas, absent in conteo
+## inegi	ife	mun
+## 7004	       7004	ALTAMIRANO
+## 7013	       7013	BOCHIL
+## 7014	       7014	BOSQUE--EL
+## 7024	       7024	CHANAL
+## 7026	       7026	CHENALHO
+## 7038	       7039	HUIXTAN
+## 7039	       7038	HUITIUPAN
+## 7041	       7041	INDEPENDENCIA--LA
+## 7052	       7052	MARGARITAS--LAS
+## 7059	       7059	OCOSINGO
+## 7064	       7064	OXCHUC
+## 7076	       7075	SABANILLA
+## 7081	       7082	SIMOJOVEL
+## 7100	       7100	TUMBALA
+## 7112	       7079	SAN JUAN CANCUC
+c95 <- merge(x=c95, y=data.frame(inegi=c(7004, 7013, 7014, 7024, 7026, 7038, 7039, 7041, 7052, 7059, 7064, 7076, 7081, 7100, 7112)), all=TRUE)
+## split missing mun aggregate
+sel.r <- which(c95$inegi==7999)
+c95zap <- c95[ sel.r,]
+c95    <- c95[-sel.r,]
+##
+## rename
+c95$pob18_1995 <- c95$pob18; c95$pob18 <- NULL
+c00$pob18_2000 <- c00$pob18; c00$pob18 <- NULL
+censom <- merge(x=c00, y=c95[,c("inegi","pob18_1995")], by="inegi", all=TRUE)
+## add ife
+censom$ife <- inegi2ife(censom$inegi)
+censom <- censom[, c("edon","ife","inegi","mun","pob18_1995","pob18_2000")]
+censom[1,]
+## clean
+rm(c00,c95,c95f,c95zap,i,tmpf)
 
 
 #############################################################
@@ -1327,6 +1421,98 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 
 
+#######################################################################################################
+## Add municipio-level 1995 and 2000 pob18 (fills up for missing seccion-level data for those years) ##
+## OJO: Actual municipios only, even for counterfactual maps                                         ##
+#######################################################################################################
+censom <- within(censom, {
+    p18_2000 <- as.numeric(pob18_2000);
+    p18_1995 <- pob18_1995;
+    pob18_1995 <- pob18_2000 <- NULL;
+})
+#########
+## m00 ##
+#########
+##censom00$ord <- 1:nrow(censom00) # to verify if order changes
+##table(is.na(censom00$ife))
+censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+##table(censom00$ord - lag(ts(censom00$ord, start=1, end=nrow(censom00), frequency=1), k=1)) # order unchanged if all==0
+##censom00$ord <- NULL
+##table(is.na(censom00$ife))
+##table(is.na(censom00$inegi))
+censom00$inegi <- ife2inegi(censom00$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom00 <- censom00[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m94 ##
+#########
+censom94 <- merge(x=censom94, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom94$inegi <- ife2inegi(censom94$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom94 <- censom94[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m97 ##
+#########
+censom97 <- merge(x=censom97, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom97$inegi <- ife2inegi(censom97$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom97 <- censom97[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m03 ##
+#########
+censom03 <- merge(x=censom03, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom03$inegi <- ife2inegi(censom03$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom03 <- censom03[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m06 ##
+#########
+censom06 <- merge(x=censom06, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom06$inegi <- ife2inegi(censom06$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom06 <- censom06[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m09 ##
+#########
+censom09 <- merge(x=censom09, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom09$inegi <- ife2inegi(censom09$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom09 <- censom09[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m12 ##
+#########
+censom12 <- merge(x=censom12, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom12$inegi <- ife2inegi(censom12$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom12 <- censom12[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m15 ##
+#########
+censom15 <- merge(x=censom15, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom15$inegi <- ife2inegi(censom15$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom15 <- censom15[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m18 ##
+#########
+censom18 <- merge(x=censom18, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom18$inegi <- ife2inegi(censom18$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom18 <- censom18[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+#########
+## m21 ##
+#########
+censom21 <- merge(x=censom21, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom21$inegi <- ife2inegi(censom21$ife) # fill missing inegi codes
+## sort columns (drops ptot columns, add them again if needed for analysis)
+censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+## clean
+rm(censom)
+
+
+## save all to restore after manipulating district/munic aggregates
+save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
+
 
 # load image
 rm(list=ls())
@@ -1350,171 +1536,295 @@ source("../../code/v-hat-etc/interpolate-census.r")
 tmp <- censod06[, c("edon","disn")]
 ## 1991
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1991, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=1991, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=1991, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=1991, unit="d", frm="dv~iv")
+tmp2[1,]
 ##v09d$disn==tmp2$disn
 v91d$pob18 <- tmp2$pob18 # paste interpolation
+v91d$pob18e <- tmp2$pob18e # paste interpolation
 ## 1994
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=1994, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=1994, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=1994, unit="d", frm="dv~iv")
 ##v94d$disn==tmp2$disn
 v94d$pob18 <- tmp2$pob18 # paste interpolation
+v94d$pob18e <- tmp2$pob18e # paste interpolation
 ## 1994d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=1994, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=1994, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=1994, unit="d", census.data = censod97, frm="dv~iv")
 v94d97$pob18 <- tmp2$pob18 # paste interpolation
+v94d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 1994d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=1994, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=1994, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=1994, unit="d", census.data = censod06, frm="dv~iv")
 v94d06$pob18 <- tmp2$pob18 # paste interpolation
+v94d06$pob18e <- tmp2$pob18e # paste interpolation
 ## 1994d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1994, unit="d", census.data = censod18, add.plot=TRUE)
-which(tmp2$pob18<0)
+tmp2$pob182 <- interpol(what="p18", yr=1994, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=1994, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=1994, unit="d", census.data = censod18, frm="dv~iv")
 v94d18$pob18 <- tmp2$pob18 # paste interpolation
+v94d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 1997
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=1997, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=1997, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=1997, unit="d", frm="dv~iv")
 v97d$pob18 <- tmp2$pob18 # paste interpolation
+v97d$pob18e <- tmp2$pob18e # paste interpolation
 ## 1997d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=1997, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=1997, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=1997, unit="d", census.data = censod79, frm="dv~iv")
 v97d79$pob18 <- tmp2$pob18 # paste interpolation
+v97d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 1997d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=1997, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=1997, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=1997, unit="d", census.data = censod06, frm="dv~iv")
 v97d06$pob18 <- tmp2$pob18 # paste interpolation
+v97d06$pob18e <- tmp2$pob18e # paste interpolation
 ## 1997d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=1997, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=1997, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=1997, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=1997, unit="d", census.data = censod18, frm="dv~iv")
 v97d18$pob18 <- tmp2$pob18 # paste interpolation
+v97d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2000
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2000, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2000, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2000, unit="d", frm="dv~iv")
 v00d$pob18 <- tmp2$pob18 # paste interpolation
+v00d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2000d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2000, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2000, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2000, unit="d", census.data = censod79, frm="dv~iv")
 v00d79$pob18 <- tmp2$pob18 # paste interpolation
+v00d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2000d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=2000, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=2000, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=2000, unit="d", census.data = censod06, frm="dv~iv")
 v00d06$pob18 <- tmp2$pob18 # paste interpolation
+v00d06$pob18e <- tmp2$pob18e # paste interpolation
 ## 2000d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2000, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2000, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2000, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2000, unit="d", census.data = censod18, frm="dv~iv")
 v00d18$pob18 <- tmp2$pob18 # paste interpolation
+v00d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2003
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2003, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2003, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2003, unit="d", frm="dv~iv")
 v03d$pob18 <- tmp2$pob18 # paste interpolation
+v03d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2003d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2003, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2003, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2003, unit="d", census.data = censod79, frm="dv~iv")
 v03d79$pob18 <- tmp2$pob18 # paste interpolation
+v03d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2003d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=2003, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=2003, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=2003, unit="d", census.data = censod06, frm="dv~iv")
 v03d06$pob18 <- tmp2$pob18 # paste interpolation
+v03d06$pob18e <- tmp2$pob18e # paste interpolation
 ## 2003d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2003, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2003, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2003, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2003, unit="d", census.data = censod18, frm="dv~iv")
 v03d18$pob18 <- tmp2$pob18 # paste interpolation
+v03d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2006
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2006, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2006, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2006, unit="d", frm="dv~iv")
 v06d$pob18 <- tmp2$pob18 # paste interpolation
+v06d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2006d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2006, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2006, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2006, unit="d", census.data = censod79, frm="dv~iv")
 v06d79$pob18 <- tmp2$pob18 # paste interpolation
+v06d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2006d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2006, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2006, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2006, unit="d", census.data = censod97, frm="dv~iv")
 v06d97$pob18 <- tmp2$pob18 # paste interpolation
+v06d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2006d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2006, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2006, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2006, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2006, unit="d", census.data = censod18, frm="dv~iv")
 v06d18$pob18 <- tmp2$pob18 # paste interpolation
+v06d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2009
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2009, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2009, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2009, unit="d", frm="dv~iv")
 v09d$pob18 <- tmp2$pob18 # paste interpolation
+v09d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2006d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2009, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2009, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2009, unit="d", census.data = censod79, frm="dv~iv")
 v09d79$pob18 <- tmp2$pob18 # paste interpolation
+v09d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2009d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2009, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2009, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2009, unit="d", census.data = censod97, frm="dv~iv")
 v09d97$pob18 <- tmp2$pob18 # paste interpolation
+v09d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2009d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2009, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2009, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2009, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2009, unit="d", census.data = censod18, frm="dv~iv")
 v09d18$pob18 <- tmp2$pob18 # paste interpolation
+v09d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2012
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2012, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2012, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2012, unit="d", frm="dv~iv")
 v12d$pob18 <- tmp2$pob18 # paste interpolation
+v12d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2012d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2012, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2012, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2012, unit="d", census.data = censod79, frm="dv~iv")
 v12d79$pob18 <- tmp2$pob18 # paste interpolation
+v12d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2012d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2012, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2012, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2012, unit="d", census.data = censod97, frm="dv~iv")
 v12d97$pob18 <- tmp2$pob18 # paste interpolation
+v12d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2012d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2012, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2012, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2012, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2012, unit="d", census.data = censod18, frm="dv~iv")
 v12d18$pob18 <- tmp2$pob18 # paste interpolation
+v12d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2015
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2015, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2015, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2015, unit="d", frm="dv~iv")
 v15d$pob18 <- tmp2$pob18 # paste interpolation
+v15d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2015d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2015, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2015, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2015, unit="d", census.data = censod79, frm="dv~iv")
 v15d79$pob18 <- tmp2$pob18 # paste interpolation
+v15d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2015d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2015, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2015, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2015, unit="d", census.data = censod97, frm="dv~iv")
 v15d97$pob18 <- tmp2$pob18 # paste interpolation
+v15d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2015d18
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2015, unit="d", census.data = censod18)
+tmp2$pob182 <- interpol(what="p18", yr=2015, unit="d", census.data = censod18)
+tmp2$pob18e <- interlog(what="p18", yr=2015, unit="d", census.data = censod18)
+tmp2$pob18l <- interlog(what="p18", yr=2015, unit="d", census.data = censod18, frm="dv~iv")
 v15d18$pob18 <- tmp2$pob18 # paste interpolation
+v15d18$pob18e <- tmp2$pob18e # paste interpolation
 ## 2018
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2018, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2018, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2018, unit="d", frm="dv~iv")
 v18d$pob18 <- tmp2$pob18 # paste interpolation
+v18d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2018d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2018, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2018, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2018, unit="d", census.data = censod79, frm="dv~iv")
 v18d79$pob18 <- tmp2$pob18 # paste interpolation
+v18d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2018d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2018, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2018, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2018, unit="d", census.data = censod97, frm="dv~iv")
 v18d97$pob18 <- tmp2$pob18 # paste interpolation
+v18d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2018d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2018, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=2018, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=2018, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=2018, unit="d", census.data = censod06, frm="dv~iv")
 v18d06$pob18 <- tmp2$pob18 # paste interpolation
+v18d06$pob18e <- tmp2$pob18e # paste interpolation
 ## 2021
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d")
+tmp2$pob182 <- interpol(what="p18", yr=2021, unit="d")
+tmp2$pob18e <- interlog(what="p18", yr=2021, unit="d")
+tmp2$pob18l <- interlog(what="p18", yr=2021, unit="d", frm="dv~iv")
 v21d$pob18 <- tmp2$pob18 # paste interpolation
+v21d$pob18e <- tmp2$pob18e # paste interpolation
 ## 2021d79
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod79)
+tmp2$pob182 <- interpol(what="p18", yr=2021, unit="d", census.data = censod79)
+tmp2$pob18e <- interlog(what="p18", yr=2021, unit="d", census.data = censod79)
+tmp2$pob18l <- interlog(what="p18", yr=2021, unit="d", census.data = censod79, frm="dv~iv")
 v21d79$pob18 <- tmp2$pob18 # paste interpolation
+v21d79$pob18e <- tmp2$pob18e # paste interpolation
 ## 2021d97
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod97)
+tmp2$pob182 <- interpol(what="p18", yr=2021, unit="d", census.data = censod97)
+tmp2$pob18e <- interlog(what="p18", yr=2021, unit="d", census.data = censod97)
+tmp2$pob18l <- interlog(what="p18", yr=2021, unit="d", census.data = censod97, frm="dv~iv")
 v21d97$pob18 <- tmp2$pob18 # paste interpolation
+v21d97$pob18e <- tmp2$pob18e # paste interpolation
 ## 2021d06
 tmp2 <- tmp
-tmp2$pob18 <- interpol(what="p18", yr=2021, unit="d", census.data = censod06)
+tmp2$pob182 <- interpol(what="p18", yr=2021, unit="d", census.data = censod06)
+tmp2$pob18e <- interlog(what="p18", yr=2021, unit="d", census.data = censod06)
+tmp2$pob18l <- interlog(what="p18", yr=2021, unit="d", census.data = censod06, frm="dv~iv")
 v21d06$pob18 <- tmp2$pob18 # paste interpolation
+v21d06$pob18e <- tmp2$pob18e # paste interpolation
+
 ##
 ##
 #######################################

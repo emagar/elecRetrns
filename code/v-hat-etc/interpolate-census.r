@@ -45,7 +45,8 @@
 ## plot(2002:2021, tmp2[3,])
 ## points(c(2005,2010,2020), tmp[3,], pch = 20)
 
-interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps, not used now
+## function interpol() deduces intercensus lines, projecting them before/after first/last censuses
+interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
     ## Census.data is a data.frame reporting X>1 censuses, with the following characteristics:
     ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
     ## - it has groups of X columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
@@ -53,7 +54,7 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ## - rows are units.
     ## Option 'unit' is redundant whenever a census.data is provided in call.
     ##
-    ##what <- "p18"; yr <- 1997; census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); plot.n = 4;
+    ##what <- "p18"; yr <- 1997; census.data <- data.frame(p18_1995=c( 2, 6, 9, 1, 3), p18_2000=c( 3, 7, 10, 2, 3), p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); plot.n = NA;
 # debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
@@ -100,10 +101,20 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ## name cols
     ##colnames(b) <- paste(y1, y2, sep = "-")
     ##
-    if (           yr<=ys[1,1]) interp <- c1[,1] + b[,1] * (yr - 2005) # use 1st level/slope for yr before 1st census
-    if (yr>ys[1,1] & yr<=ys[1,2]) interp <- c1[,1] + b[,1] * (yr - 2005) # use 1st level/slope for yr between 1st and 2nd census
-    if (yr>ys[1,2] & yr<=ys[1,3]) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr between 2nd and 3rd census
-    if (yr>ys[1,3]            ) interp <- c1[,2] + b[,2] * (yr - 2010) # use 2nd level/slope for yr after 3rd census
+    if (ncol(ys)==3){
+        if (             yr<=ys[1,1]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr before 1st census
+        if (yr>ys[1,1] & yr<=ys[1,2]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr between 1st and 2nd census
+        if (yr>ys[1,2] & yr<=ys[1,3]) interp <- c1[,2] + b[,2] * (yr - ys[1,2]) # use 2nd level/slope for yr between 2nd and 3rd census
+        if (yr>ys[1,3]              ) interp <- c1[,2] + b[,2] * (yr - ys[1,2]) # use 2nd level/slope for yr after 3rd census
+    }
+    if (ncol(ys)==5){
+        if (             yr<=ys[1,1]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr before 1st census
+        if (yr>ys[1,1] & yr<=ys[1,2]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr between 1st and 2nd census
+        if (yr>ys[1,2] & yr<=ys[1,3]) interp <- c1[,2] + b[,2] * (yr - ys[1,2]) # use 2nd level/slope for yr between 2nd and 3rd census
+        if (yr>ys[1,3] & yr<=ys[1,4]) interp <- c1[,3] + b[,3] * (yr - ys[1,3]) # use 2nd level/slope for yr between 3rd and 4th census
+        if (yr>ys[1,4] & yr<=ys[1,5]) interp <- c1[,4] + b[,4] * (yr - ys[1,4]) # use 2nd level/slope for yr between 4th and 5th census
+        if (yr>ys[1,5]              ) interp <- c1[,4] + b[,4] * (yr - ys[1,4]) # use 2nd level/slope for yr after 5th census
+    }
     ##
     ## plot option
     if (add.plot==TRUE){
@@ -141,16 +152,10 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
 
-## performs projection with a log lm
-interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps, not used now
-    ## Census.data is a data.frame reporting X>1 censuses, with the following characteristics:
-    ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
-    ## - it has groups of X columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
-    ## - colnames are: indicator_year
-    ## - rows are units.
-    ## Option 'unit' is redundant whenever a census.data is provided in call.
-    ##
-    ##what <- "p18"; yr <- 1997; census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); plot.n = 4;
+## intrlog() performs projection with a log lm or a regression line
+interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
+    ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="m"
+    ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); 
 # debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
@@ -185,24 +190,32 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ####################
     ## define formula ##
     ####################
-    dv <- cs; iv <- ys # so dv and iv can be subsetted when plotting
-    frm   <- as.formula("    dv  ~     iv") ; frm0 <- as.formula("    unlist(as.vector(dv))  ~     unlist(as.vector(iv))")   # linear
-    ##frm <- as.formula("log(dv) ~     iv") ; frm0 <- as.formula("log(unlist(as.vector(dv))) ~     unlist(as.vector(iv))")   # log dv
-    ##frm <- as.formula("    dv  ~ log(iv)"); frm0 <- as.formula("    unlist(as.vector(dv))  ~ log(unlist(as.vector(iv)))")  # log iv
+    dv <- cs; iv <- ys; # so dv and iv can be subsetted when plotting
+    if (length(frm)>0) {
+        frm <- as.formula(frm)
+    } else {
+        ##frm <- as.formula("    dv  ~     iv") ; frm0 <- as.formula("    unlist(as.vector(dv))  ~     unlist(as.vector(iv))")   # linear
+        frm <-   as.formula("log(dv) ~     iv") ; frm0 <- as.formula("log(unlist(as.vector(dv))) ~     unlist(as.vector(iv))")   # log dv
+        ##frm <- as.formula("    dv  ~ log(iv)"); frm0 <- as.formula("    unlist(as.vector(dv))  ~ log(unlist(as.vector(iv)))")  # log iv
+    }
     ##
+    non.nas <- apply(log(dv), 1, sum)
+    non.nas[non.nas=="-Inf"] <- NA
+    non.nas <- which(is.na(non.nas)==FALSE, useNames = FALSE)
+    ##setdiff(1:nrow(dv), non.nas) # non.nas complement
     ## regress one line and predict
     regs <- mapply(rbind, split(iv, seq(nrow(iv))), split(dv, seq(nrow(dv))), SIMPLIFY = FALSE) ## split observations into list of dfs
     regs <- lapply(regs, function(x) t(x))                                                      ## transpose
     regs <- lapply(regs, function(x) x <- data.frame(iv=x[,1], dv=x[,2]))                       ## name cols
-    ##                                                                                          #############
-    regs <- lapply(regs, function(x) lm(formula=frm, data=x))                                   ## regress ##
-    ##                                                                                          #############
-    new.d <- vector(mode = "list", length = length(regs) )                                      ## prep predictions
-    new.d <- lapply(new.d, function(x) x <- yr)                                                 ## prep predictions
-    interp <- lapply(regs, function(x) predict.lm(x, newdata = new.d))                     ## predict
-    interp <- unlist(as.data.frame(interp))                                                ## turn into vector
-
-    ## exp(predict.lm(reg.pan,    newdata = new.d))
+    ##                                                                                          ###########################
+    regs[non.nas] <- lapply(regs[non.nas], function(x) lm(formula=frm, data=x))                 ## regress, skipping nas ##
+    ##                                                                                          ###########################
+    new.d <- data.frame(iv=yr)                                                                  ## prep predictions
+    interp <- vector(mode='list', length(regs))                                                 ## empty list
+    interp[setdiff(1:nrow(dv), non.nas)] <- NA                                                  ## ~non.nas to NA
+    interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))        ## predict
+    interp <- unlist(as.data.frame(interp), use.names = FALSE)                                  ## turn into vector
+    if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                               ## exp(log(dv))
     ##
     ## plot option
     if (add.plot==TRUE){
@@ -211,39 +224,33 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
             iv <- ys[plot.n,]
             interp0 <- interp[plot.n]
             regs0 <- regs[plot.n]
-        } else {             ## else just duplicate for plotting
-            cs0 <- cs
-            ys0 <- ys
-            interp0 <- interp
-            regs0 <- regs
         }
-        ## define plot x and y ranges
         yrng <- c(min(cs0,interp0),max(cs0,interp0))
         xrng <- c((min(ys0)-15),(max(ys0)+10))
         ## plot log-trasformed model, not in log scale
         plot(
-##          log(yrng) ~     xrng,
-                yrng  ~     xrng,
+            log(yrng) ~     xrng,
+##              yrng  ~     xrng,
 ##              yrng  ~ log(xrng),
             xlab="", ##ylab="",
             type="n"
         )
         abline(h=0, col="red")
-        points(frm, cex=.75, col = "gray")
+        points(frm0, cex=.75, col = "gray")
         lapply(regs0, function(x) abline(reg=x, untf=FALSE, col = "gray"))
-
-        points(log(interp0)~rep(yr, length(interp0)), cex=.75)
-
-        # log scale
-        plot(
-            y=c(min(cs0,interp0),max(cs0,interp0)), x=c((min(ys0)-15),(max(ys0)+10)), log = "y"
-          , xlab="", ylab=""
-          , type="n"
-        )
-        abline(h=0, col="red")
-        points(unlist(as.vector(cs0)) ~ unlist(as.vector(ys0)),
-               cex=.75, col = "gray")
-        lapply(regs0, function(x) abline(reg=x, untf=TRUE, col = "gray"))
+        ##
+        ##points(    interp0 ~ rep(yr, length(interp0)), cex=.75)
+        points(log(interp0)~ rep(yr, length(interp0)), cex=.75)
+        ## # log scale
+        ## plot(
+        ##     y=c(min(cs0,interp0),max(cs0,interp0)), x=c((min(ys0)-15),(max(ys0)+10)), log = "y"
+        ##   , xlab="", ylab=""
+        ##   , type="n"
+        ## )
+        ## abline(h=0, col="red")
+        ## points(unlist(as.vector(cs0)) ~ unlist(as.vector(ys0)),
+        ##        cex=.75, col = "gray")
+        ## lapply(regs0, function(x) abline(reg=x, untf=TRUE, col = "gray"))
     }
     ##
     return(round(interp, 1))
