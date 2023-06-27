@@ -10,7 +10,7 @@
 ####################################################################
 
 ## Usage with default data: interpol(what="p18", yr=2003, unit="m")
-
+##                          interlog(what="p18", yr=2003, unit="m", frm="log(dv)~iv", census.data=v03m00)
 ## ## Example with tmp as census data:
 ## tmp <- data.frame(p18_2005=c( 5, 8, 12, 1, 4),
 ##                   p18_2010=c( 7, 8, 20, 2, 4),
@@ -153,10 +153,9 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
 }
 
 ## intrlog() performs projection with a log lm or a regression line
-interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
+interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA, r2=FALSE){  # census.data allow usage of counterfactual maps instead of default
     ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="m"
-    ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); 
-# debug
+    ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); # debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
         cs <- census.data
@@ -187,9 +186,9 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
     ys <- as.numeric(sub(pattern = ".+_([0-9]{4})", replacement = "\\1", colnames(cs)))
     ys <- mapply(rep, ys, nrow(cs)) # repeat ys for each row in cs for easier operations
     ##
-    ####################
+    ## #################
     ## define formula ##
-    ####################
+    ## #################
     dv <- cs; iv <- ys; # so dv and iv can be subsetted when plotting
     if (length(frm)>0) {
         frm <- as.formula(frm)
@@ -199,7 +198,7 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
         ##frm <- as.formula("    dv  ~ log(iv)"); frm0 <- as.formula("    unlist(as.vector(dv))  ~ log(unlist(as.vector(iv)))")  # log iv
     }
     ##
-    non.nas <- apply(log(dv), 1, sum)
+    non.nas <- apply(log(dv), 1, sum) # determine which cases to skip
     non.nas[non.nas=="-Inf"] <- NA
     non.nas <- which(is.na(non.nas)==FALSE, useNames = FALSE)
     ##setdiff(1:nrow(dv), non.nas) # non.nas complement
@@ -207,53 +206,79 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
     regs <- mapply(rbind, split(iv, seq(nrow(iv))), split(dv, seq(nrow(dv))), SIMPLIFY = FALSE) ## split observations into list of dfs
     regs <- lapply(regs, function(x) t(x))                                                      ## transpose
     regs <- lapply(regs, function(x) x <- data.frame(iv=x[,1], dv=x[,2]))                       ## name cols
-    ##                                                                                          ###########################
-    regs[non.nas] <- lapply(regs[non.nas], function(x) lm(formula=frm, data=x))                 ## regress, skipping nas ##
-    ##                                                                                          ###########################
+    save.data <- regs                                                                           ## will return saved data
+    ##                                                                                          ############################
+    regs[non.nas] <- lapply(regs[non.nas], function(x) lm(formula=frm, data=x))                 ## regress, skipping nas  ##
+    regs[setdiff(1:nrow(dv), non.nas)] <- "not fit, NA"
+    save.regs <- regs                                                                           ## will return saved regs ##
+    ##                                                                                          ############################
     new.d <- data.frame(iv=yr)                                                                  ## prep predictions
     interp <- vector(mode='list', length(regs))                                                 ## empty list
     interp[setdiff(1:nrow(dv), non.nas)] <- NA                                                  ## ~non.nas to NA
-    interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))        ## predict
-    interp <- unlist(as.data.frame(interp), use.names = FALSE)                                  ## turn into vector
-    if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                               ## exp(log(dv))
+    interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))    ## predict
+    interp <- unlist(as.data.frame(interp), use.names = FALSE)                              ## turn into vector
+    if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                           ## exp(log(dv))
     ##
-    ## plot option
-    if (add.plot==TRUE){
-        if (!is.na(plot.n)){ ## if plot.n specified, subset data for plotting
-            dv <- cs[plot.n,]
-            iv <- ys[plot.n,]
-            interp0 <- interp[plot.n]
-            regs0 <- regs[plot.n]
-        }
-        yrng <- c(min(cs0,interp0),max(cs0,interp0))
-        xrng <- c((min(ys0)-15),(max(ys0)+10))
-        ## plot log-trasformed model, not in log scale
-        plot(
-            log(yrng) ~     xrng,
-##              yrng  ~     xrng,
-##              yrng  ~ log(xrng),
-            xlab="", ##ylab="",
-            type="n"
-        )
-        abline(h=0, col="red")
-        points(frm0, cex=.75, col = "gray")
-        lapply(regs0, function(x) abline(reg=x, untf=FALSE, col = "gray"))
-        ##
-        ##points(    interp0 ~ rep(yr, length(interp0)), cex=.75)
-        points(log(interp0)~ rep(yr, length(interp0)), cex=.75)
-        ## # log scale
-        ## plot(
-        ##     y=c(min(cs0,interp0),max(cs0,interp0)), x=c((min(ys0)-15),(max(ys0)+10)), log = "y"
-        ##   , xlab="", ylab=""
-        ##   , type="n"
-        ## )
-        ## abline(h=0, col="red")
-        ## points(unlist(as.vector(cs0)) ~ unlist(as.vector(ys0)),
-        ##        cex=.75, col = "gray")
-        ## lapply(regs0, function(x) abline(reg=x, untf=TRUE, col = "gray"))
-    }
+    ## ## plot option
+    ## if (add.plot==TRUE){
+    ##     if (!is.na(plot.n)){ ## if plot.n specified, subset data for plotting
+    ##         dv <- cs[plot.n,]
+    ##         iv <- ys[plot.n,]
+    ##         interp0 <- interp[plot.n]
+    ##         regs0 <- regs[plot.n]
+    ##     }
+    ##     yrng <- c(min(cs0,interp0),max(cs0,interp0))
+    ##     xrng <- c((min(ys0)-15),(max(ys0)+10))
+    ##     ## plot log-trasformed model, not in log scale
+    ##     plot(
+    ##         log(yrng) ~     xrng,
+    ##         ##              yrng  ~     xrng,
+    ##         ##              yrng  ~ log(xrng),
+    ##         xlab="", ##ylab="",
+    ##         type="n"
+    ##     )
+    ##     abline(h=0, col="red")
+    ##     points(frm0, cex=.75, col = "gray")
+    ##     lapply(regs0, function(x) abline(reg=x, untf=FALSE, col = "gray"))
+    ##     ##
+    ##     ##points(    interp0 ~ rep(yr, length(interp0)), cex=.75)
+    ##     points(log(interp0)~ rep(yr, length(interp0)), cex=.75)
+    ##     ## # log scale
+    ##     ## plot(
+    ##     ##     y=c(min(cs0,interp0),max(cs0,interp0)), x=c((min(ys0)-15),(max(ys0)+10)), log = "y"
+    ##     ##   , xlab="", ylab=""
+    ##     ##   , type="n"
+    ##     ## )
+    ##     ## abline(h=0, col="red")
+    ##     ## points(unlist(as.vector(cs0)) ~ unlist(as.vector(ys0)),
+    ##     ##        cex=.75, col = "gray")
+    ##     ## lapply(regs0, function(x) abline(reg=x, untf=TRUE, col = "gray"))
+    ## }
     ##
-    return(round(interp, 1))
+    ## prep stats
+    new.d <- data.frame(iv=ys[1,])                                                                  ## prep predictions
+    all.preds <- vector(mode='list', length(save.regs))                                                 ## empty list
+    all.preds[non.nas] <- lapply(save.regs[non.nas], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))    ## predict
+    all.preds[setdiff(1:nrow(dv), non.nas)] <- lapply(all.preds[setdiff(1:nrow(dv), non.nas)], function(x) data.frame(dv.hat=rep(NA, ncol(ys)))) ## ~non.nas to NA
+    if (length(grep("log\\(dv\\)", frm))>0) all.preds <- lapply(all.preds, function(x) exp(x))         ## exp(log(dv))
+    names(all.preds) <- names(save.data)
+    ##
+    save.data <- mapply(cbind, save.data, all.preds, SIMPLIFY=FALSE)
+    r2s <- vector(mode="list", length=length(regs))
+    r2s[] <- NA
+    r2s[non.nas] <- lapply(save.regs[non.nas], function(x) summary(x)$r.squared)
+    r2s <- lapply(r2s, function(x) x <- data.frame(r2=rep(x, ncol(ys))))
+    save.data <- mapply(cbind, save.data, r2s, SIMPLIFY = FALSE)
+    save.data <-
+        lapply(save.data, function(x) within(x, {
+            resid <- dv.hat - dv
+            abs.resid <- abs(dv.hat - dv)
+            sq.resid <- (dv.hat - dv)^2
+        }))
+    ##
+    return(list(interp=round(interp, 1),  ## returns a list with predicted values, regressions and data
+                data=save.data)
+           )
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
 
