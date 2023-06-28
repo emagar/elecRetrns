@@ -1225,7 +1225,7 @@ head(censo)
 #############################
 ## 2000 munic-level census ##
 #############################
-c00 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/2000censo/cgpv2000_iter_00.csv")
+c00 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/2000censo/cgpv2000_iter_00.csv")
 ## drop localidades etc, keep municipios only
 sel.r <- grep("TOTAL MUNICIPAL", c00$nom_loc)
 c00 <- c00[sel.r,c("entidad","mun","nom_mun","pob18_")]
@@ -1246,7 +1246,7 @@ c00[1,]
 #############################
 ## 1995 munic-level conteo ##
 #############################
-tmpf <- c("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Ags_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_BC_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_BCS_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Camp_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Chih_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Chis_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Coah_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Col_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_DF_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Dgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Gro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Gto_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Hgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Jal_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mex_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mich_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Mor_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Nay_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_NL_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Oax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Pue_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_QRoo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Qro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Sin_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_SLP_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Son_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tab_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tamps_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Tlax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Ver_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Yuc_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/1995conteo/Cont95Enum_Zac_Poblacion.csv")
+tmpf <- c("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Ags_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_BC_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_BCS_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Camp_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Chih_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Chis_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Coah_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Col_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_DF_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Dgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Gro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Gto_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Hgo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Jal_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Mex_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Mich_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Mor_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Nay_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_NL_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Oax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Pue_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_QRoo_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Qro_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Sin_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_SLP_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Son_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Tab_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Tamps_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Tlax_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Ver_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Yuc_Poblacion.csv", "/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/1995conteo/Cont95Enum_Zac_Poblacion.csv")
 ##
 c95f <- function(i=NA){
     #i <- 6
@@ -1311,9 +1311,21 @@ censom <- merge(x=c00, y=c95[,c("inegi","pob18_1995")], by="inegi", all=TRUE)
 ## add ife
 censom$ife <- inegi2ife(censom$inegi)
 censom <- censom[, c("edon","ife","inegi","mun","pob18_1995","pob18_2000")]
-censom[1,]
 ## clean
 rm(c00,c95,c95f,c95zap,i,tmpf)
+
+
+
+################################
+## censo 1990 municipio level ##
+################################
+c90 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/munic/1990/ptot1990mu.csv")
+c90$pob18_1990 <- c90$p18
+dim(c90)
+dim(censom)
+censom <- merge(x=censom, y=c90[,c("inegi","pob18_1990")], by = "inegi", all=TRUE)
+censom[1,]
+rm(c90)
 
 
 #############################################################
@@ -1428,91 +1440,91 @@ source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 censom <- within(censom, {
     p18_2000 <- as.numeric(pob18_2000);
     p18_1995 <- pob18_1995;
-    pob18_1995 <- pob18_2000 <- NULL;
+    p18_1990 <- pob18_1990;
+    pob18_1990 <- pob18_1995 <- pob18_2000 <- NULL;
 })
 #########
 ## m00 ##
 #########
 ##censom00$ord <- 1:nrow(censom00) # to verify if order changes
 ##table(is.na(censom00$ife))
-censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 ##table(censom00$ord - lag(ts(censom00$ord, start=1, end=nrow(censom00), frequency=1), k=1)) # order unchanged if all==0
 ##censom00$ord <- NULL
 ##table(is.na(censom00$ife))
 ##table(is.na(censom00$inegi))
 censom00$inegi <- ife2inegi(censom00$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom00 <- censom00[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom00 <- censom00[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m94 ##
 #########
-censom94 <- merge(x=censom94, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom94 <- merge(x=censom94, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom94$inegi <- ife2inegi(censom94$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom94 <- censom94[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom94 <- censom94[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m97 ##
 #########
-censom97 <- merge(x=censom97, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom97 <- merge(x=censom97, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom97$inegi <- ife2inegi(censom97$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom97 <- censom97[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom97 <- censom97[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m03 ##
 #########
-censom03 <- merge(x=censom03, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom03 <- merge(x=censom03, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom03$inegi <- ife2inegi(censom03$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom03 <- censom03[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom03 <- censom03[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m06 ##
 #########
-censom06 <- merge(x=censom06, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom06 <- merge(x=censom06, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom06$inegi <- ife2inegi(censom06$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom06 <- censom06[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom06 <- censom06[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m09 ##
 #########
-censom09 <- merge(x=censom09, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom09 <- merge(x=censom09, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom09$inegi <- ife2inegi(censom09$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom09 <- censom09[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom09 <- censom09[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m12 ##
 #########
-censom12 <- merge(x=censom12, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom12 <- merge(x=censom12, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom12$inegi <- ife2inegi(censom12$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom12 <- censom12[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom12 <- censom12[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m15 ##
 #########
-censom15 <- merge(x=censom15, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom15 <- merge(x=censom15, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom15$inegi <- ife2inegi(censom15$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom15 <- censom15[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom15 <- censom15[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m18 ##
 #########
-censom18 <- merge(x=censom18, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom18 <- merge(x=censom18, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom18$inegi <- ife2inegi(censom18$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom18 <- censom18[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom18 <- censom18[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m21 ##
 #########
-censom21 <- merge(x=censom21, y=censom[,c("ife","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom21 <- merge(x=censom21, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
 censom21$inegi <- ife2inegi(censom21$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
-censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
+censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 ## clean
 rm(censom)
 
 
 ## save all to restore after manipulating district/munic aggregates
 save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
-
 
 # load image
 rm(list=ls())

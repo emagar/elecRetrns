@@ -115,6 +115,15 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
         if (yr>ys[1,4] & yr<=ys[1,5]) interp <- c1[,4] + b[,4] * (yr - ys[1,4]) # use 2nd level/slope for yr between 4th and 5th census
         if (yr>ys[1,5]              ) interp <- c1[,4] + b[,4] * (yr - ys[1,4]) # use 2nd level/slope for yr after 5th census
     }
+    if (ncol(ys)==6){
+        if (             yr<=ys[1,1]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr before 1st census
+        if (yr>ys[1,1] & yr<=ys[1,2]) interp <- c1[,1] + b[,1] * (yr - ys[1,1]) # use 1st level/slope for yr between 1st and 2nd census
+        if (yr>ys[1,2] & yr<=ys[1,3]) interp <- c1[,2] + b[,2] * (yr - ys[1,2]) # use 2nd level/slope for yr between 2nd and 3rd census
+        if (yr>ys[1,3] & yr<=ys[1,4]) interp <- c1[,3] + b[,3] * (yr - ys[1,3]) # use 3rd level/slope for yr between 3rd and 4th census
+        if (yr>ys[1,4] & yr<=ys[1,5]) interp <- c1[,4] + b[,4] * (yr - ys[1,4]) # use 4th level/slope for yr between 4th and 5th census
+        if (yr>ys[1,5] & yr<=ys[1,6]) interp <- c1[,5] + b[,5] * (yr - ys[1,5]) # use 5th level/slope for yr between 5th and 6th census
+        if (yr>ys[1,6]              ) interp <- c1[,5] + b[,5] * (yr - ys[1,5]) # use 5th level/slope for yr after 6th census
+    }
     ##
     ## plot option
     if (add.plot==TRUE){
@@ -153,7 +162,7 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
 }
 
 ## intrlog() performs projection with a log lm or a regression line
-interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA, r2=FALSE){  # census.data allow usage of counterfactual maps instead of default
+interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
     ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="m"
     ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); # debug
     ##
