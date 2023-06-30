@@ -1,13 +1,13 @@
-####################################################################
-## Function to interpolate multi-census data linearly             ##
-## invoked from code/elec-data-for-maps.r                         ##
-## but easily generalizable                                       ##
-##                                                                ##
-## Author: Eric Magar                                             ##
-## emagar at itam dot mx                                          ##
-## Date: 9jun2023                                                 ##
-## Last modified: 9jun2023                                        ##
-####################################################################
+################################################
+## Functions to interpolate multi-census data ##
+## invoked from code/elec-data-for-maps.r     ##
+## but easily generalizable                   ##
+##                                            ##
+## Author: Eric Magar                         ##
+## emagar at itam dot mx                      ##
+## Date: 9jun2023                             ##
+## Last modified: 30jun2023                   ##
+################################################
 
 ## Usage with default data: interpol(what="p18", yr=2003, unit="m")
 ##                          interlog(what="p18", yr=2003, unit="m", frm="log(dv)~iv", census.data=v03m00)
@@ -19,38 +19,12 @@
 ## interpol(what="p18", yr=2010, census.data=tmp)
 ## interpol(what="p18", yr=2020, census.data=tmp)
 
-## tmp2 <- data.frame(
-##     c02=interpol(what="p18", yr=2002, census.data=tmp)
-##   , c03=interpol(what="p18", yr=2003, census.data=tmp)
-##   , c04=interpol(what="p18", yr=2004, census.data=tmp)
-##   , c05=interpol(what="p18", yr=2005, census.data=tmp)
-##   , c06=interpol(what="p18", yr=2006, census.data=tmp)
-##   , c07=interpol(what="p18", yr=2007, census.data=tmp)
-##   , c08=interpol(what="p18", yr=2008, census.data=tmp)
-##   , c09=interpol(what="p18", yr=2009, census.data=tmp)
-##   , c10=interpol(what="p18", yr=2010, census.data=tmp)
-##   , c11=interpol(what="p18", yr=2011, census.data=tmp)
-##   , c12=interpol(what="p18", yr=2012, census.data=tmp)
-##   , c13=interpol(what="p18", yr=2013, census.data=tmp)
-##   , c14=interpol(what="p18", yr=2014, census.data=tmp)
-##   , c15=interpol(what="p18", yr=2015, census.data=tmp)
-##   , c16=interpol(what="p18", yr=2016, census.data=tmp)
-##   , c17=interpol(what="p18", yr=2017, census.data=tmp)
-##   , c18=interpol(what="p18", yr=2018, census.data=tmp)
-##   , c19=interpol(what="p18", yr=2019, census.data=tmp)
-##   , c20=interpol(what="p18", yr=2020, census.data=tmp)
-##   , c21=interpol(what="p18", yr=2021, census.data=tmp)
-## )
-## tmp2
-## plot(2002:2021, tmp2[3,])
-## points(c(2005,2010,2020), tmp[3,], pch = 20)
-
 ## function interpol() deduces intercensus lines, projecting them before/after first/last censuses
 interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
-    ## Census.data is a data.frame reporting X>1 censuses, with the following characteristics:
+    ## Option census.data points to a data.frame reporting X>1 censuses, with the following characteristics:
     ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
-    ## - it has groups of X columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
-    ## - colnames are: indicator_year
+    ## - it has X groups of columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
+    ## - colnames are: indicator_yyyy
     ## - rows are units.
     ## Option 'unit' is redundant whenever a census.data is provided in call.
     ##
@@ -60,6 +34,9 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
         cs <- census.data
     } else {                         # else the function is customized for code/elec-data-for-maps.r
+        if (unit=="s"){
+            cs <- censo
+        }
         if (unit=="d"){
             if (           yr<1997) cs <- censod79
             if (yr>=1997 & yr<2006) cs <- censod97
@@ -161,14 +138,17 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
 
-## intrlog() performs projection with a log lm or a regression line
+## interlog() performs projection with a log lm or a regression line
 interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
-    ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="m"
+    ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="s"
     ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); # debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
         cs <- census.data
     } else {                         # else the function is customized for code/elec-data-for-maps.r
+        if (unit=="s"){
+            cs <- censo
+        }
         if (unit=="d"){
             if (           yr<1997) cs <- censod79
             if (yr>=1997 & yr<2006) cs <- censod97
@@ -217,14 +197,18 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
     regs <- lapply(regs, function(x) x <- data.frame(iv=x[,1], dv=x[,2]))                       ## name cols
     save.data <- regs                                                                           ## will return saved data
     ##                                                                                          ############################
+    print(paste("Fitting", length(regs[non.nas]), "regressions:"))                              ##                        ##
     regs[non.nas] <- lapply(regs[non.nas], function(x) lm(formula=frm, data=x))                 ## regress, skipping nas  ##
-    regs[setdiff(1:nrow(dv), non.nas)] <- "not fit, NA"
+    print("done.")                                                                              ##                        ##
+    regs[setdiff(1:nrow(dv), non.nas)] <- "not fit, NA"                                         ## fill NAs               ##
     save.regs <- regs                                                                           ## will return saved regs ##
     ##                                                                                          ############################
     new.d <- data.frame(iv=yr)                                                                  ## prep predictions
     interp <- vector(mode='list', length(regs))                                                 ## empty list
     interp[setdiff(1:nrow(dv), non.nas)] <- NA                                                  ## ~non.nas to NA
+    print("Predicting:")
     interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))    ## predict
+    print("done.")
     interp <- unlist(as.data.frame(interp), use.names = FALSE)                              ## turn into vector
     if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                           ## exp(log(dv))
     ##
@@ -265,11 +249,12 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
     ## }
     ##
     ## prep stats
-    new.d <- data.frame(iv=ys[1,])                                                                  ## prep predictions
-    all.preds <- vector(mode='list', length(save.regs))                                                 ## empty list
-    all.preds[non.nas] <- lapply(save.regs[non.nas], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))    ## predict
-    all.preds[setdiff(1:nrow(dv), non.nas)] <- lapply(all.preds[setdiff(1:nrow(dv), non.nas)], function(x) data.frame(dv.hat=rep(NA, ncol(ys)))) ## ~non.nas to NA
-    if (length(grep("log\\(dv\\)", frm))>0) all.preds <- lapply(all.preds, function(x) exp(x))         ## exp(log(dv))
+    new.d <- data.frame(iv=ys[1,])                                                                                  ## prep predictions
+    all.preds <- vector(mode='list', length(save.regs))                                                             ## empty list
+    all.preds[non.nas] <- lapply(save.regs[non.nas], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d))) ## predict
+    all.preds[setdiff(1:nrow(dv), non.nas)] <-
+        lapply(all.preds[setdiff(1:nrow(dv), non.nas)], function(x) data.frame(dv.hat=rep(NA, ncol(ys))))           ## ~non.nas to NA
+    if (length(grep("log\\(dv\\)", frm))>0) all.preds <- lapply(all.preds, function(x) exp(x))                      ## exp(log(dv))
     names(all.preds) <- names(save.data)
     ##
     save.data <- mapply(cbind, save.data, all.preds, SIMPLIFY=FALSE)
@@ -285,8 +270,9 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
             sq.resid <- (dv.hat - dv)^2
         }))
     ##
-    return(list(interp=round(interp, 1),  ## returns a list with predicted values, regressions and data
-                data=save.data)
+    return(list(interp=round(interp, 1),  ## returns a list with predicted values, data, and regressions
+                data=save.data,
+                regs=save.regs)
            )
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
