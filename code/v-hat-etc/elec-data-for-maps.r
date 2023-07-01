@@ -1530,6 +1530,19 @@ rm(censom)
 source("../../code/v-hat-etc/interpolate-census-data.r")
 
 
+###################################################
+## Finished adding census to vote objects, clean ##
+###################################################
+## ls()[grep("censo", ls())]
+## ls()[grep("v..m", ls())]
+## drop all census maps, no longer needed
+rm(list = ls()[grep("^censo", ls())])
+## rm(list = ls()[grep("^censod", ls())])
+## rm(list = ls()[grep("^censom", ls())])
+rm(list = ls()[grep("tmp", ls())])
+rm(sel.ignore, sel.r, non.nas, preds, projyr, myf, interpol, interlog)
+
+
 ## save all to restore after manipulating district/munic aggregates
 save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
 
@@ -1540,18 +1553,6 @@ dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
 setwd(dd)
 load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 
-
-
-###################################################
-## Finished adding census to vote objects, clean ##
-###################################################
-## ls()[grep("censo", ls())]
-## ls()[grep("v..m", ls())]
-## drop all municipal census maps
-ls()
-rm(list = ls()[grep("^censom", ls())])
-rm(list = ls()[grep("tmp", ls())])
-rm(sel.ignore, sel.r, non.nas, preds, projyr, myf, interpol, interlog)
 
 
 

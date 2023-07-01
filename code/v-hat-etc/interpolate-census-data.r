@@ -1,6 +1,6 @@
 ######################################################################
 ## Script to generate inter-census populations.                     ##
-## Adds p18 to municipio and seccion vote objects.                  ##
+## Adds p18 to district, municipio, and seccion vote objects.       ##
 ## Invoked from elec-data-for-maps.r,.                              ##
 ## Has routine (commented out) used to evaluate projection methods, ##
 ## discussed in blog entry.                                         ##
@@ -8,10 +8,224 @@
 ## Author: Eric Magar                                               ##
 ## emagar at itam dot mx                                            ##
 ## Date: 30jun2023                                                  ##
+## Last modified: 1jul2023                                          ##
 ######################################################################
 
 ## get census projection functions
 source("../../code/v-hat-etc/interpolate-census-functions.r")
+
+#############################################
+## ADD PROJECTIONS TO DISTRICT CENSUS MAPS ##
+#############################################
+
+## Function to generate one year's municipal projections.
+projyr <- function(what="p18", yr=NA, census.data = NA){
+    ##what <- "p18"; yr <- 1991; census.data <- censod06 # debug
+    if (yr<1997)            proj <- censod79[, c("edon","disn")]                 # df with all districts 
+    if (yr>=1997 & yr<2006) proj <- censod97[, c("edon","disn")]                 # df with all districts 
+    if (yr>=2006 & yr<2018) proj <- censod06[, c("edon","disn")]                 # df with all districts 
+    if (yr>=2018)           proj <- censod18[, c("edon","disn")]                 # df with all districts 
+    proj <- within(proj,{
+        ##pob18s <- rqmrs <- NA                                                  # slots for linear regression predictions/stats
+        pob18e <- rqmre <- NA                                                    # slots for log-linear regression predictions/stats
+        pob18s <- interpol(what=what, yr=yr, unit="d", census.data=census.data)  # segments predictions
+        yr <- yr;
+    })
+    tmp <- interlog(what=what, yr=yr, unit="d", census.data=census.data, frm="log(dv)~iv")             # log models
+    proj$pob18e <- tmp[[1]]                                                                            # log predictions
+    proj$rqmre <- unlist(lapply(tmp[[2]], function(x) round(mean(sqrt(x$sq.resid)) / mean(x$dv) , 3))) # quadratic mean resid / mean pop
+    ##
+    ## tmp <- interlog(what=what, yr=yr, unit="m", census.data=census.data, frm="dv~iv")                  # linear models
+    ## proj$pob18s <- tmp[[1]]                                                                            # linear predictions
+    ## proj$rqmrs <- unlist(lapply(tmp[[2]], function(x) round(mean(sqrt(x$sq.resid)) / mean(x$dv) , 3))) # quadratic mean resid / mean pop
+    ##
+    return(proj) # returns a data frame with ids yr p18 and relative quad mean of residuals to gauge model fit (done for census years)
+}
+
+## wrapper
+myf <- function(what=what, yr=yr, census.data=census.data){ # function to paste cols
+    ##what <- "p18"; yr <- 1991; census.data <- censod06 # debug
+    tmp <- projyr(what=what, yr=yr, census.data = census.data)  # yr's projection
+    if (yr>=1990 & yr<=2020){ 
+        tmp2 <- tmp$pob18s           # btw censuses use segments
+    } else {
+        tmp2 <- tmp$pob18e           # else log-linear
+    } 
+    return(tmp2) # returns vector with yr's projection
+    ## tmp3 <- census.data
+    ## tmp3[, paste0("p18_", yr)] <- tmp2 # add appropriately named column
+    ## ##assign(paste0("censom", as.integer((yr/100 - as.integer(yr/100))*100), "$p18_", yr)) <- tmp2
+    ## tmp3[1,]
+    ## return(tmp3) # returns manipulated data frame w id yr proj res.stat
+}
+
+## 1979 district map
+tmp2 <- censod79 # duplicate for manipulation
+tmp2$p18_1988 <- myf(what="p18", yr=1988, census.data = censod79)
+tmp2$p18_1991 <- myf(what="p18", yr=1991, census.data = censod79)
+tmp2$p18_1994 <- myf(what="p18", yr=1994, census.data = censod79)
+tmp2$p18_1997 <- myf(what="p18", yr=1997, census.data = censod79)
+tmp2$p18_2000 <- myf(what="p18", yr=2000, census.data = censod79)
+tmp2$p18_2003 <- myf(what="p18", yr=2003, census.data = censod79)
+tmp2$p18_2006 <- myf(what="p18", yr=2006, census.data = censod79)
+tmp2$p18_2009 <- myf(what="p18", yr=2009, census.data = censod79)
+tmp2$p18_2012 <- myf(what="p18", yr=2012, census.data = censod79)
+tmp2$p18_2015 <- myf(what="p18", yr=2015, census.data = censod79)
+tmp2$p18_2018 <- myf(what="p18", yr=2018, census.data = censod79)
+tmp2$p18_2021 <- myf(what="p18", yr=2021, census.data = censod79)
+# sort cols keeping only elec yrs
+tmp2 <- tmp2[, order(colnames(tmp2))]
+censod79 <- tmp2 # replace original object w manipulation
+
+## 1997 district map
+tmp2 <- censod97 # duplicate for manipulation
+tmp2$p18_1988 <- myf(what="p18", yr=1988, census.data = censod97)
+tmp2$p18_1991 <- myf(what="p18", yr=1991, census.data = censod97)
+tmp2$p18_1994 <- myf(what="p18", yr=1994, census.data = censod97)
+tmp2$p18_1997 <- myf(what="p18", yr=1997, census.data = censod97)
+tmp2$p18_2000 <- myf(what="p18", yr=2000, census.data = censod97)
+tmp2$p18_2003 <- myf(what="p18", yr=2003, census.data = censod97)
+tmp2$p18_2006 <- myf(what="p18", yr=2006, census.data = censod97)
+tmp2$p18_2009 <- myf(what="p18", yr=2009, census.data = censod97)
+tmp2$p18_2012 <- myf(what="p18", yr=2012, census.data = censod97)
+tmp2$p18_2015 <- myf(what="p18", yr=2015, census.data = censod97)
+tmp2$p18_2018 <- myf(what="p18", yr=2018, census.data = censod97)
+tmp2$p18_2021 <- myf(what="p18", yr=2021, census.data = censod97)
+# sort cols keeping only elec yrs
+tmp2 <- tmp2[, order(colnames(tmp2))]
+censod97 <- tmp2 # replace original object w manipulation
+
+## 2006 district map
+tmp2 <- censod06 # duplicate for manipulation
+tmp2$p18_1988 <- myf(what="p18", yr=1988, census.data = censod06)
+tmp2$p18_1991 <- myf(what="p18", yr=1991, census.data = censod06)
+tmp2$p18_1994 <- myf(what="p18", yr=1994, census.data = censod06)
+tmp2$p18_1997 <- myf(what="p18", yr=1997, census.data = censod06)
+tmp2$p18_2000 <- myf(what="p18", yr=2000, census.data = censod06)
+tmp2$p18_2003 <- myf(what="p18", yr=2003, census.data = censod06)
+tmp2$p18_2006 <- myf(what="p18", yr=2006, census.data = censod06)
+tmp2$p18_2009 <- myf(what="p18", yr=2009, census.data = censod06)
+tmp2$p18_2012 <- myf(what="p18", yr=2012, census.data = censod06)
+tmp2$p18_2015 <- myf(what="p18", yr=2015, census.data = censod06)
+tmp2$p18_2018 <- myf(what="p18", yr=2018, census.data = censod06)
+tmp2$p18_2021 <- myf(what="p18", yr=2021, census.data = censod06)
+# sort cols keeping only elec yrs
+tmp2 <- tmp2[, order(colnames(tmp2))]
+censod06 <- tmp2 # replace original object w manipulation
+
+## 2018 district map
+tmp2 <- censod18 # duplicate for manipulation
+tmp2$p18_1988 <- myf(what="p18", yr=1988, census.data = censod18)
+tmp2$p18_1991 <- myf(what="p18", yr=1991, census.data = censod18)
+tmp2$p18_1994 <- myf(what="p18", yr=1994, census.data = censod18)
+tmp2$p18_1997 <- myf(what="p18", yr=1997, census.data = censod18)
+tmp2$p18_2000 <- myf(what="p18", yr=2000, census.data = censod18)
+tmp2$p18_2003 <- myf(what="p18", yr=2003, census.data = censod18)
+tmp2$p18_2006 <- myf(what="p18", yr=2006, census.data = censod18)
+tmp2$p18_2009 <- myf(what="p18", yr=2009, census.data = censod18)
+tmp2$p18_2012 <- myf(what="p18", yr=2012, census.data = censod18)
+tmp2$p18_2015 <- myf(what="p18", yr=2015, census.data = censod18)
+tmp2$p18_2018 <- myf(what="p18", yr=2018, census.data = censod18)
+tmp2$p18_2021 <- myf(what="p18", yr=2021, census.data = censod18)
+# sort cols keeping only elec yrs
+tmp2 <- tmp2[, order(colnames(tmp2))]
+censod18 <- tmp2 # replace original object w manipulation
+
+###############################
+## ADD P18 TO v..d.. objects ##
+###############################
+v94d   <- merge(x = v94d,   y = censod79[, c("disn","p18_1994")], by = "disn", all.x = TRUE, all.y = FALSE)
+v94d97 <- merge(x = v94d97, y = censod97[, c("disn","p18_1994")], by = "disn", all.x = TRUE, all.y = FALSE)
+v94d06 <- merge(x = v94d06, y = censod06[, c("disn","p18_1994")], by = "disn", all.x = TRUE, all.y = FALSE)
+v94d18 <- merge(x = v94d18, y = censod18[, c("disn","p18_1994")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v94d)  [grep("p18_", colnames(v94d))]   <- "p18" 
+colnames(v94d97)[grep("p18_", colnames(v94d97))] <- "p18"
+colnames(v94d06)[grep("p18_", colnames(v94d06))] <- "p18"
+colnames(v94d18)[grep("p18_", colnames(v94d18))] <- "p18"
+
+v97d79 <- merge(x = v97d79, y = censod79[, c("disn","p18_1997")], by = "disn", all.x = TRUE, all.y = FALSE)
+v97d   <- merge(x = v97d  , y = censod97[, c("disn","p18_1997")], by = "disn", all.x = TRUE, all.y = FALSE)
+v97d06 <- merge(x = v97d06, y = censod06[, c("disn","p18_1997")], by = "disn", all.x = TRUE, all.y = FALSE)
+v97d18 <- merge(x = v97d18, y = censod18[, c("disn","p18_1997")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v97d79)[grep("p18_", colnames(v97d79))] <- "p18" 
+colnames(v97d)  [grep("p18_", colnames(v97d))]   <- "p18"
+colnames(v97d06)[grep("p18_", colnames(v97d06))] <- "p18"
+colnames(v97d18)[grep("p18_", colnames(v97d18))] <- "p18"
+
+v00d79 <- merge(x = v00d79, y = censod79[, c("disn","p18_2000")], by = "disn", all.x = TRUE, all.y = FALSE)
+v00d   <- merge(x = v00d  , y = censod97[, c("disn","p18_2000")], by = "disn", all.x = TRUE, all.y = FALSE)
+v00d06 <- merge(x = v00d06, y = censod06[, c("disn","p18_2000")], by = "disn", all.x = TRUE, all.y = FALSE)
+v00d18 <- merge(x = v00d18, y = censod18[, c("disn","p18_2000")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v00d79)[grep("p18_", colnames(v00d79))] <- "p18" 
+colnames(v00d)  [grep("p18_", colnames(v00d))]   <- "p18"
+colnames(v00d06)[grep("p18_", colnames(v00d06))] <- "p18"
+colnames(v00d18)[grep("p18_", colnames(v00d18))] <- "p18"
+
+v03d79 <- merge(x = v03d79, y = censod79[, c("disn","p18_2003")], by = "disn", all.x = TRUE, all.y = FALSE)
+v03d   <- merge(x = v03d  , y = censod97[, c("disn","p18_2003")], by = "disn", all.x = TRUE, all.y = FALSE)
+v03d06 <- merge(x = v03d06, y = censod06[, c("disn","p18_2003")], by = "disn", all.x = TRUE, all.y = FALSE)
+v03d18 <- merge(x = v03d18, y = censod18[, c("disn","p18_2003")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v03d79)[grep("p18_", colnames(v03d79))] <- "p18" 
+colnames(v03d)  [grep("p18_", colnames(v03d))]   <- "p18"
+colnames(v03d06)[grep("p18_", colnames(v03d06))] <- "p18"
+colnames(v03d18)[grep("p18_", colnames(v03d18))] <- "p18"
+
+v06d79 <- merge(x = v06d79, y = censod79[, c("disn","p18_2006")], by = "disn", all.x = TRUE, all.y = FALSE)
+v06d97 <- merge(x = v06d97, y = censod97[, c("disn","p18_2006")], by = "disn", all.x = TRUE, all.y = FALSE)
+v06d   <- merge(x = v06d  , y = censod06[, c("disn","p18_2006")], by = "disn", all.x = TRUE, all.y = FALSE)
+v06d18 <- merge(x = v06d18, y = censod18[, c("disn","p18_2006")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v06d79)[grep("p18_", colnames(v06d79))] <- "p18" 
+colnames(v06d97)[grep("p18_", colnames(v06d97))] <- "p18"
+colnames(v06d)  [grep("p18_", colnames(v06d))]   <- "p18"
+colnames(v06d18)[grep("p18_", colnames(v06d18))] <- "p18"
+
+v09d79 <- merge(x = v09d79, y = censod79[, c("disn","p18_2009")], by = "disn", all.x = TRUE, all.y = FALSE)
+v09d97 <- merge(x = v09d97, y = censod97[, c("disn","p18_2009")], by = "disn", all.x = TRUE, all.y = FALSE)
+v09d   <- merge(x = v09d  , y = censod06[, c("disn","p18_2009")], by = "disn", all.x = TRUE, all.y = FALSE)
+v09d18 <- merge(x = v09d18, y = censod18[, c("disn","p18_2009")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v09d79)[grep("p18_", colnames(v09d79))] <- "p18" 
+colnames(v09d97)[grep("p18_", colnames(v09d97))] <- "p18"
+colnames(v09d)  [grep("p18_", colnames(v09d))]   <- "p18"
+colnames(v09d18)[grep("p18_", colnames(v09d18))] <- "p18"
+
+v12d79 <- merge(x = v12d79, y = censod79[, c("disn","p18_2012")], by = "disn", all.x = TRUE, all.y = FALSE)
+v12d97 <- merge(x = v12d97, y = censod97[, c("disn","p18_2012")], by = "disn", all.x = TRUE, all.y = FALSE)
+v12d   <- merge(x = v12d  , y = censod06[, c("disn","p18_2012")], by = "disn", all.x = TRUE, all.y = FALSE)
+v12d18 <- merge(x = v12d18, y = censod18[, c("disn","p18_2012")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v12d79)[grep("p18_", colnames(v12d79))] <- "p18" 
+colnames(v12d97)[grep("p18_", colnames(v12d97))] <- "p18"
+colnames(v12d)  [grep("p18_", colnames(v12d))]   <- "p18"
+colnames(v12d18)[grep("p18_", colnames(v12d18))] <- "p18"
+
+v15d79 <- merge(x = v15d79, y = censod79[, c("disn","p18_2015")], by = "disn", all.x = TRUE, all.y = FALSE)
+v15d97 <- merge(x = v15d97, y = censod97[, c("disn","p18_2015")], by = "disn", all.x = TRUE, all.y = FALSE)
+v15d   <- merge(x = v15d  , y = censod06[, c("disn","p18_2015")], by = "disn", all.x = TRUE, all.y = FALSE)
+v15d18 <- merge(x = v15d18, y = censod18[, c("disn","p18_2015")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v15d79)[grep("p18_", colnames(v15d79))] <- "p18" 
+colnames(v15d97)[grep("p18_", colnames(v15d97))] <- "p18"
+colnames(v15d)  [grep("p18_", colnames(v15d))]   <- "p18"
+colnames(v15d18)[grep("p18_", colnames(v15d18))] <- "p18"
+
+v18d79 <- merge(x = v18d79, y = censod79[, c("disn","p18_2018")], by = "disn", all.x = TRUE, all.y = FALSE)
+v18d97 <- merge(x = v18d97, y = censod97[, c("disn","p18_2018")], by = "disn", all.x = TRUE, all.y = FALSE)
+v18d06 <- merge(x = v18d06, y = censod06[, c("disn","p18_2018")], by = "disn", all.x = TRUE, all.y = FALSE)
+v18d   <- merge(x = v18d  , y = censod18[, c("disn","p18_2018")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v18d79)[grep("p18_", colnames(v18d79))] <- "p18" 
+colnames(v18d97)[grep("p18_", colnames(v18d97))] <- "p18"
+colnames(v18d06)[grep("p18_", colnames(v18d06))] <- "p18"
+colnames(v18d)  [grep("p18_", colnames(v18d))]   <- "p18"
+
+v21d79 <- merge(x = v21d79, y = censod79[, c("disn","p18_2021")], by = "disn", all.x = TRUE, all.y = FALSE)
+v21d97 <- merge(x = v21d97, y = censod97[, c("disn","p18_2021")], by = "disn", all.x = TRUE, all.y = FALSE)
+v21d06 <- merge(x = v21d06, y = censod06[, c("disn","p18_2021")], by = "disn", all.x = TRUE, all.y = FALSE)
+v21d   <- merge(x = v21d  , y = censod18[, c("disn","p18_2021")], by = "disn", all.x = TRUE, all.y = FALSE)
+colnames(v21d79)[grep("p18_", colnames(v21d79))] <- "p18" 
+colnames(v21d97)[grep("p18_", colnames(v21d97))] <- "p18"
+colnames(v21d06)[grep("p18_", colnames(v21d06))] <- "p18"
+colnames(v21d)  [grep("p18_", colnames(v21d))]   <- "p18"
+
+
+
 
 ##############################################
 ## ADD PROJECTIONS TO MUNICIPAL CENSUS MAPS ##
