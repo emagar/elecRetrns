@@ -375,58 +375,112 @@ lisnomd79 <- data.frame(
     v18 = v18d79$lisnom,
     v21 = v21d79$lisnom
 )
+##
+p18d18 <- data.frame(
+    #v91 = v91d18$p18,
+    v94 = v94d18$p18,
+    v97 = v97d18$p18,
+    v00 = v00d18$p18,
+    v03 = v03d18$p18,
+    v06 = v06d18$p18,
+    v09 = v09d18$p18,
+    v12 = v12d18$p18,
+    v15 = v15d18$p18,
+    v18 = v18d  $p18,
+    v21 = v21d  $p18
+)
+p18d06 <- data.frame(
+    #v91 = v91d06$p18,
+    v94 = v94d06$p18,
+    v97 = v97d06$p18,
+    v00 = v00d06$p18,
+    v03 = v03d06$p18,
+    v06 = v06d  $p18,
+    v09 = v09d  $p18,
+    v12 = v12d  $p18,
+    v15 = v15d  $p18,
+    v18 = v18d06$p18,
+    v21 = v21d06$p18
+)
+p18d97 <- data.frame(
+    #v91 = v91d97$p18,
+    v94 = v94d97$p18,
+    v97 = v97d  $p18,
+    v00 = v00d  $p18,
+    v03 = v03d  $p18,
+    v06 = v06d97$p18,
+    v09 = v09d97$p18,
+    v12 = v12d97$p18,
+    v15 = v15d97$p18,
+    v18 = v18d97$p18,
+    v21 = v21d97$p18
+)
+p18d79 <- data.frame(
+    v91 = v91d  $p18,
+    v94 = v94d  $p18,
+    v97 = v97d79$p18,
+    v00 = v00d79$p18,
+    v03 = v03d79$p18,
+    v06 = v06d79$p18,
+    v09 = v09d79$p18,
+    v12 = v12d79$p18,
+    v15 = v15d79$p18,
+    v18 = v18d79$p18,
+    v21 = v21d79$p18
+)
+##
 # turnp = turnout w pob18
 turnpd18 <- data.frame(
-    ##v91 =  with(v91d18, ifelse(pob18==0, NA, efec / pob18))
-    v94 =  with(v94d18, ifelse(pob18==0, NA, efec / pob18))
-  , v97 =  with(v97d18, ifelse(pob18==0, NA, efec / pob18))
-  , v00 =  with(v00d18, ifelse(pob18==0, NA, efec / pob18))
-  , v03 =  with(v03d18, ifelse(pob18==0, NA, efec / pob18))
-  , v06 =  with(v06d18, ifelse(pob18==0, NA, efec / pob18))
-  , v09 =  with(v09d18, ifelse(pob18==0, NA, efec / pob18))
-  , v12 =  with(v12d18, ifelse(pob18==0, NA, efec / pob18))
-  , v15 =  with(v15d18, ifelse(pob18==0, NA, efec / pob18))
-  , v18 =  with(v18d,   ifelse(pob18==0, NA, efec / pob18))
-  , v21 =  with(v21d,   ifelse(pob18==0, NA, efec / pob18))
+    ##v91 =  with(v91d18, ifelse(p18==0, NA, efec / p18))
+    v94 =  with(v94d18, ifelse(p18==0, NA, efec / p18))
+  , v97 =  with(v97d18, ifelse(p18==0, NA, efec / p18))
+  , v00 =  with(v00d18, ifelse(p18==0, NA, efec / p18))
+  , v03 =  with(v03d18, ifelse(p18==0, NA, efec / p18))
+  , v06 =  with(v06d18, ifelse(p18==0, NA, efec / p18))
+  , v09 =  with(v09d18, ifelse(p18==0, NA, efec / p18))
+  , v12 =  with(v12d18, ifelse(p18==0, NA, efec / p18))
+  , v15 =  with(v15d18, ifelse(p18==0, NA, efec / p18))
+  , v18 =  with(v18d,   ifelse(p18==0, NA, efec / p18))
+  , v21 =  with(v21d,   ifelse(p18==0, NA, efec / p18))
 )
 turnpd06 <- data.frame(
-    #v91 =  with(v91d06, ifelse(pob18==0, NA, efec / pob18))
-     v94 =  with(v94d06, ifelse(pob18==0, NA, efec / pob18))
-   , v97 =  with(v97d06, ifelse(pob18==0, NA, efec / pob18))
-   , v00 =  with(v00d06, ifelse(pob18==0, NA, efec / pob18))
-   , v03 =  with(v03d06, ifelse(pob18==0, NA, efec / pob18))
-   , v06 =  with(v06d,   ifelse(pob18==0, NA, efec / pob18))
-   , v09 =  with(v09d,   ifelse(pob18==0, NA, efec / pob18))
-   , v12 =  with(v12d,   ifelse(pob18==0, NA, efec / pob18))
-   , v15 =  with(v15d,   ifelse(pob18==0, NA, efec / pob18))
-   , v18 =  with(v18d06, ifelse(pob18==0, NA, efec / pob18))
-   , v21 =  with(v21d06, ifelse(pob18==0, NA, efec / pob18))
+    #v91 =  with(v91d06, ifelse(p18==0, NA, efec / p18))
+     v94 =  with(v94d06, ifelse(p18==0, NA, efec / p18))
+   , v97 =  with(v97d06, ifelse(p18==0, NA, efec / p18))
+   , v00 =  with(v00d06, ifelse(p18==0, NA, efec / p18))
+   , v03 =  with(v03d06, ifelse(p18==0, NA, efec / p18))
+   , v06 =  with(v06d,   ifelse(p18==0, NA, efec / p18))
+   , v09 =  with(v09d,   ifelse(p18==0, NA, efec / p18))
+   , v12 =  with(v12d,   ifelse(p18==0, NA, efec / p18))
+   , v15 =  with(v15d,   ifelse(p18==0, NA, efec / p18))
+   , v18 =  with(v18d06, ifelse(p18==0, NA, efec / p18))
+   , v21 =  with(v21d06, ifelse(p18==0, NA, efec / p18))
 )
 turnpd97 <- data.frame(
-    ##v91 =  with(v91d97, ifelse(pob18==0, NA, efec / pob18))
-    v94 =  with(v94d97, ifelse(pob18==0, NA, efec / pob18))
-  , v97 =  with(v97d,   ifelse(pob18==0, NA, efec / pob18))
-  , v00 =  with(v00d,   ifelse(pob18==0, NA, efec / pob18))
-  , v03 =  with(v03d,   ifelse(pob18==0, NA, efec / pob18))
-  , v06 =  with(v06d97, ifelse(pob18==0, NA, efec / pob18))
-  , v09 =  with(v09d97, ifelse(pob18==0, NA, efec / pob18))
-  , v12 =  with(v12d97, ifelse(pob18==0, NA, efec / pob18))
-  , v15 =  with(v15d97, ifelse(pob18==0, NA, efec / pob18))
-  , v18 =  with(v18d97, ifelse(pob18==0, NA, efec / pob18))
-  , v21 =  with(v21d97, ifelse(pob18==0, NA, efec / pob18))
+    ##v91 =  with(v91d97, ifelse(p18==0, NA, efec / p18))
+    v94 =  with(v94d97, ifelse(p18==0, NA, efec / p18))
+  , v97 =  with(v97d,   ifelse(p18==0, NA, efec / p18))
+  , v00 =  with(v00d,   ifelse(p18==0, NA, efec / p18))
+  , v03 =  with(v03d,   ifelse(p18==0, NA, efec / p18))
+  , v06 =  with(v06d97, ifelse(p18==0, NA, efec / p18))
+  , v09 =  with(v09d97, ifelse(p18==0, NA, efec / p18))
+  , v12 =  with(v12d97, ifelse(p18==0, NA, efec / p18))
+  , v15 =  with(v15d97, ifelse(p18==0, NA, efec / p18))
+  , v18 =  with(v18d97, ifelse(p18==0, NA, efec / p18))
+  , v21 =  with(v21d97, ifelse(p18==0, NA, efec / p18))
 )
 turnpd79 <- data.frame(
-    v91 =  with(v91d,   ifelse(pob18==0, NA, efec / pob18))
-  , v94 =  with(v94d,   ifelse(pob18==0, NA, efec / pob18))
-  , v97 =  with(v97d79, ifelse(pob18==0, NA, efec / pob18))
-  , v00 =  with(v00d79, ifelse(pob18==0, NA, efec / pob18))
-  , v03 =  with(v03d79, ifelse(pob18==0, NA, efec / pob18))
-  , v06 =  with(v06d79, ifelse(pob18==0, NA, efec / pob18))
-  , v09 =  with(v09d79, ifelse(pob18==0, NA, efec / pob18))
-  , v12 =  with(v12d79, ifelse(pob18==0, NA, efec / pob18))
-  , v15 =  with(v15d79, ifelse(pob18==0, NA, efec / pob18))
-  , v18 =  with(v18d79, ifelse(pob18==0, NA, efec / pob18))
-  , v21 =  with(v21d79, ifelse(pob18==0, NA, efec / pob18))
+    v91 =  with(v91d,   ifelse(p18==0, NA, efec / p18))
+  , v94 =  with(v94d,   ifelse(p18==0, NA, efec / p18))
+  , v97 =  with(v97d79, ifelse(p18==0, NA, efec / p18))
+  , v00 =  with(v00d79, ifelse(p18==0, NA, efec / p18))
+  , v03 =  with(v03d79, ifelse(p18==0, NA, efec / p18))
+  , v06 =  with(v06d79, ifelse(p18==0, NA, efec / p18))
+  , v09 =  with(v09d79, ifelse(p18==0, NA, efec / p18))
+  , v12 =  with(v12d79, ifelse(p18==0, NA, efec / p18))
+  , v15 =  with(v15d79, ifelse(p18==0, NA, efec / p18))
+  , v18 =  with(v18d79, ifelse(p18==0, NA, efec / p18))
+  , v21 =  with(v21d79, ifelse(p18==0, NA, efec / p18))
 )
 turnpd18 <- round(turnpd18, 3)
 turnpd06 <- round(turnpd06, 3)
@@ -493,7 +547,37 @@ turnld79 <- round(turnld79, 3)
 ## inspect turnout values
 sel <- which(apply(turnpd18, 1, min) < 0)
 v94d18[sel,]
-max(turnpd18)
+v97d18[sel,]
+v00d18[sel,]
+v03d18[sel,]
+summary(turnpd18)
+
+plot(x = seq(1994,2021,3),
+     y = c(v94d18$p18[sel[1]],
+           v97d18$p18[sel[1]],
+           v00d18$p18[sel[1]],
+           v03d18$p18[sel[1]],
+           v06d18$p18[sel[1]],
+           v09d18$p18[sel[1]],
+           v12d18$p18[sel[1]],
+           v15d18$p18[sel[1]],
+           v18d  $p18[sel[1]],
+           v21d  $p18[sel[1]]),
+     main = paste("2018 map, disn = ", v94d18$disn[sel[1]]), xlab = "", ylab = "p18")
+abline(h=0, lty=2)
+points(x = seq(1994,2021,3),
+       y = c(v94d18$efec[sel[1]],
+             v97d18$efec[sel[1]],
+             v00d18$efec[sel[1]],
+             v03d18$efec[sel[1]],
+             v06d18$efec[sel[1]],
+             v09d18$efec[sel[1]],
+             v12d18$efec[sel[1]],
+             v15d18$efec[sel[1]],
+             v18d  $efec[sel[1]],
+             v21d  $efec[sel[1]]),
+       col = "red")
+
 x
 
 # transpose to plug columns (units) into new time-series data.frames
@@ -521,14 +605,18 @@ lisnomd79 <- t(lisnomd79)
 lisnomd97 <- t(lisnomd97)
 lisnomd06 <- t(lisnomd06)
 lisnomd18 <- t(lisnomd18)
-turnpd79   <- t(turnpd79)
-turnpd97   <- t(turnpd97)
-turnpd06   <- t(turnpd06)
-turnpd18   <- t(turnpd18)
-turnld79   <- t(turnld79)
-turnld97   <- t(turnld97)
-turnld06   <- t(turnld06)
-turnld18   <- t(turnld18)
+p18d79    <- t(p18d79)
+p18d97    <- t(p18d97)
+p18d06    <- t(p18d06)
+p18d18    <- t(p18d18)
+turnpd79  <- t(turnpd79)
+turnpd97  <- t(turnpd97)
+turnpd06  <- t(turnpd06)
+turnpd18  <- t(turnpd18)
+turnld79  <- t(turnld79)
+turnld97  <- t(turnld97)
+turnld06  <- t(turnld06)
+turnld18  <- t(turnld18)
 
 #################################################################
 ## extendCoal.. will receive data for regressions, one per map ##

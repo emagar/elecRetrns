@@ -25,10 +25,10 @@ setwd(dd)
 ##################################################################
 ## function to aggregate casilla-level votes into higher levels ##
 ##################################################################
-my_agg <- function(d=d, sel.c=sel.c, by=NA, y1991=FALSE){
+my_agg <- function(d=d, sel.c=sel.c, by=NA, y1991=FALSE, drop.dupli=TRUE){
     d <- d              # assign mem
     sel.c <- sel.c      # assign mem
-    if (is.na(by)==TRUE){ # default is aggregate secciones when by==NA
+    if (is.na(by)==TRUE){ # default is aggregating secciones when by==NA
         if (y1991==FALSE){
             by <- as.factor(d$edon*10000+d$seccion) # seccion indicator post 1991
         } else {
@@ -41,10 +41,12 @@ my_agg <- function(d=d, sel.c=sel.c, by=NA, y1991=FALSE){
     sel.c <- which(colnames(d) %in% sel.c); # extract indices of selected columns
     for (i in sel.c){
         #i <- sel.c[1] #debug
-        d[,i] <- ave(d[,i], by, FUN=sum, na.rm=TRUE) # sum up
+        d[,i] <- ave(d[,i], by, FUN=function(x) sum(x, na.rm=TRUE)) # sum up
     }
-    sel.r <- which(duplicated(by)==TRUE)         # drop duplicate obs
-    d <- d[-sel.r,]
+    if (drop.dupli==TRUE){
+        sel.r <- which(duplicated(by)==TRUE)         # drop duplicate obs
+        d <- d[-sel.r,]
+    }
     return(d)
 }
 ##########################################################################
@@ -1527,6 +1529,7 @@ rm(censom)
 ## Drops censom.. objects.                                        ##
 ## Very slow, preferable to open/run script by hand...            ##
 ####################################################################
+
 source("../../code/v-hat-etc/interpolate-census-data.r")
 
 
