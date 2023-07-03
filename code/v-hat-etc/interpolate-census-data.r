@@ -452,7 +452,7 @@ censom21 <- tmp2 # replace original object w manipulation
 rm(tmp2)
 
 ###################################
-## NOW ADD P18 TO v..m.. objects ##
+## Now add p18 to v..m.. objects ##
 ###################################
 v91m   <- merge(x = v91m,   y = censom94[, c("ife","p18_1991")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v91m)  [grep("p18_", colnames(v91m))]   <- "p18" # absent m91 map, use m94
 
