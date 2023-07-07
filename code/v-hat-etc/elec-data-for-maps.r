@@ -1062,14 +1062,14 @@ v21 <- within(v21, {
 ## tmp <- merge(x=v91[,c("edosecn","d91")], y=v94[,c("edosecn","d94")], by = "edosecn", all = TRUE)
 ## tmp <- merge(x=tmp,                      y=v97[,c("edosecn","d97")], by = "edosecn", all = TRUE)
 tmp.all.sec <- merge(x=v94[,c("seccion","d94")], y=v97[,c("seccion","d97")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v00[,c("seccion","d00")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v03[,c("seccion","d03")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v06[,c("seccion","d06")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v09[,c("seccion","d09")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v12[,c("seccion","d12")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v15[,c("seccion","d15")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v18[,c("seccion","d18")], by = "seccion", all = TRUE)
-tmp.all.sec <- merge(x=tmp.all.sec,                      y=v21[,c("seccion","d21")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v00[,c("seccion","d00")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v03[,c("seccion","d03")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v06[,c("seccion","d06")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v09[,c("seccion","d09")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v12[,c("seccion","d12")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v15[,c("seccion","d15")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v18[,c("seccion","d18")], by = "seccion", all = TRUE)
+tmp.all.sec <- merge(x=tmp.all.sec,              y=v21[,c("seccion","d21")], by = "seccion", all = TRUE)
 # fill 0s in year dummies
 sel.c <- grep("^d[0-9]{2}$", colnames(tmp.all.sec))
 tmp <- tmp.all.sec[,sel.c]
@@ -1414,16 +1414,6 @@ v18$inegi <- inegi2ife(v18$ife)
 v21$ife <- v21$ife2021
 v21$inegi <- inegi2ife(v21$ife)
 
-## # save all to restore after manipulating district/munic aggregates
-## save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
-
-## # load image
-## rm(list=ls())
-## options(width = 110)
-## dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
-## setwd(dd)
-## load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
-
 # rename seccion vote objects
 v91s <- v91; v94s <- v94; v97s <- v97; v00s <- v00; v03s <- v03; v06s <- v06; v09s <- v09; v12s <- v12; v15s <- v15; v18s <- v18; v21s <- v21;
 rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
@@ -1433,6 +1423,17 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 ## municipio- and district-level vote and census aggregates  ##
 ###############################################################
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
+
+# save all to restore after manipulating district/munic aggregates
+save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
+
+# load image
+rm(list=ls())
+options(width = 110)
+dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
+setwd(dd)
+load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
+
 
 
 #######################################################################################################
@@ -1524,12 +1525,14 @@ censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_20
 ## clean
 rm(censom)
 
+
+
+
 ####################################################################
 ## Script to add population projections to municipal v..m.. maps. ##
 ## Drops censom.. objects.                                        ##
 ## Very slow, preferable to open/run script by hand...            ##
 ####################################################################
-
 source("../../code/v-hat-etc/interpolate-census-data.r")
 
 

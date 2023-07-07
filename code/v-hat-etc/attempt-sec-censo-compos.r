@@ -13,8 +13,7 @@ censh <- censh[order(censh$ife2006, censh$seccion),] # sort mun
 ###############################
 ## all zeroes remain so
 sel.r <- which(censh$p18_2005==0 & censh$p18_2010==0 & censh$p18_2020==0) ## all zero (but have votes, eg. campo militar 1)
-table(censh$alta[sel.r], useNA = "ifany")
-table(censh$baja[sel.r], useNA = "ifany")
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
 censh[sel.r,] <- within(censh[sel.r,], {
     p18_1994 <- p18_1997 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- 0
 })
@@ -24,7 +23,8 @@ censh <-     censh[-sel.r,]
 ## move these to all zero bunch
 sel.r <- which(censh$p18_2005==0 & censh$baja==2008)
 censh[sel.r,c("p18_2005","p18_2010","p18_2020")]
-table(censh$baja[sel.r], useNA = "ifany")
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
+table(act=censh$action[sel.r], act2=censh$action2[sel.r], useNA = "ifany")
 censh[sel.r,] <- within(censh[sel.r,], {
     p18_1994 <- p18_1997 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2020 <- p18_2021 <- 0
 })
@@ -35,8 +35,8 @@ sel.r <-              which(censh$p18_2005==0 & censh$p18_2010==0 & is.na(censh$
 sel.r <- union(sel.r, which(is.na(censh$p18_2005) & censh$p18_2010==0 & censh$p18_2020==0)) ## two zero
 sel.r <- union(sel.r, which(is.na(censh$p18_2005) & censh$p18_2010==0 & is.na(censh$p18_2020))) ## two zero
 censh[sel.r,c("p18_2005","p18_2010","p18_2020")]
-table(censh$alta[sel.r], useNA = "ifany")
-table(censh$baja[sel.r], useNA = "ifany")
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
+table(act=censh$action[sel.r], act2=censh$action2[sel.r], useNA = "ifany")
 censh[sel.r,] <- within(censh[sel.r,], {
     p18_1994 <- p18_1997 <- p18_2003 <- p18_2005 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2020 <- p18_2021 <- 0
 })
@@ -44,8 +44,8 @@ censh.out <- rbind(censh.out, censh[ sel.r,])
 censh <-                      censh[-sel.r,]
 ## move these to all zero bunch
 sel.r <- which(is.na(censh$p18_2005) & is.na(censh$p18_2010) & is.na(censh$p18_2020))
-table(censh$alta[sel.r], useNA = "ifany")
-table(censh$baja[sel.r], useNA = "ifany")
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
+table(act=censh$action[sel.r], act2=censh$action2[sel.r], useNA = "ifany")
 censh[sel.r,] <- within(censh[sel.r,], {
     p18_1994 <- p18_1997 <- p18_2003 <- p18_2005 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2020 <- p18_2021 <- 0
 })
@@ -128,14 +128,22 @@ censh[sel.r,] <- within(censh[sel.r,], {
 })
 censh.out <- rbind(censh.out, censh[ sel.r,])
 censh <-                      censh[-sel.r,]
+##
+## add flat demog prior to alta, do *not* add to censh.out
+sel.r <- which(is.na(censh$p18_2005) & censh$alta>2005)
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
+censh$p18_2005 <- censh$p18_2010
+##
+## add flat demog after to baja, do *not* add to censh.out
+sel.r <- which(is.na(censh$p18_2020) & censh$baja>2010)
+table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
+censh$p18_2020 <- censh$p18_2010
 
 ## aqui me quedé
-sel.r <- which(is.na(censh$p18_2005))
-censh[sel.r[1], c("seccion","p18_2005","p18_2010","p18_2020")]
+sel.r <- which(censh$p18_2005==0)
 table(alta=censh$alta[sel.r], baja=censh$baja[sel.r], useNA = "ifany")
-
-sel.r <- which(is.na(censh$p18_2010==0))
 sel.r <- which(is.na(censh$p18_2020==0))
+censh[sel.r[1], c("seccion","p18_2005","p18_2010","p18_2020")]
 censh[sel.r[1], c("seccion","p18_2005","p18_2010","p18_2020")]
 dim(censh.out)
 
@@ -164,7 +172,7 @@ tmp.drop <- grep("^edo$|edon|mun|^ife$|inegi|dis|OBSER|action|orig|when|comen|al
 censh <- censh[,-tmp.drop]
 censh[1,]
 
-## columns will receive mun aggragates
+## columns will receive mun aggregates
 censh$p18_2005m06 <- censh$p18_2005
 censh$p18_2010m06 <- censh$p18_2010 # duplicate column for manipulation
 censh$p18_2020m06 <- censh$p18_2020 # duplicate column for manipulation
