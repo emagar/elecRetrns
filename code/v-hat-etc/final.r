@@ -57,9 +57,8 @@ sum.split <- function(d=censo, year.var=2020, rnd=1) {
 ## get census projection functions
 source("../../code/v-hat-etc/interpolate-census-functions.r")
 
-## 4. Duplicate nm=censo, adding 1994:2021, m06:2005-2010-2020, and ddone=0
-
-# duplicate censo for manipulation (nmnal quantities)
+## 4. Duplicate nm=censo, adding cols 1994:2021, m06:2005-2010-2020, ddone=0, etc
+##    nm = nominal quantities
 nm <- censo
 ##
 #####################################################################
@@ -89,10 +88,10 @@ if (length(sel)>0){
 ##
 # add cols that will receive p18 projections for elec yrs
 nm <- within(nm, {
-    nmanip <- dflat <- dsingle <- dskip <- dready2est <- ddone <- 0;
-    actionb  <- action;  whenb  <- when;  orig.destb  <- orig.dest;  # backup
-    action2b <- action2; when2b <- when2; orig.dest2b <- orig.dest2; # backup
-    action3b <- action3; when3b <- when3; orig.dest3b <- orig.dest3; # backup
+    nmanip <- dflat <- dsingle <- dskip <- dready2est <- ddone <- dneedsum <- 0;
+    when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
+    when2b <- when2; orig.dest2b <- orig.dest2; action2b <- action2; #  can be erased once seccion gets manipulated
+    whenb  <- when;  orig.destb  <- orig.dest;  actionb  <- action;  #  ---helps debug block immediately below
     p18m06_20 <- p18_2020; # yy so grep excludes
     p18m06_10 <- p18_2010; # yy so grep excludes
     p18m06_05 <- p18_2005; # yy so grep excludes
@@ -104,8 +103,22 @@ nm <- within(nm, {
 sel.c <- c("p18m06_05", "p18m06_10", "p18m06_20")
 nm <- my_agg(d=nm, sel.c=sel.c, by="ife2006", drop.dupli=FALSE)
 
-## Cherry-pick secciones that need manipulation by hand
-## these are innocuous, drop label
+##############################################################
+## Block starts here                                        ##
+## OJO: Need to re-evaluate each sub-block of the block     ##
+##      below when new seccion-level censo is available.    ##
+##      Block below takes care of manipulating and setting  ##
+##      aside (with dready2est and ddone) secciones that    ##
+##      can/cannot be handled with log(dv)~iv approach to   ##
+##      project seccion-level p18.                          ##
+##      Run with a fresh nm <- censo when debugging         ##
+##############################################################
+##
+## These are innocuous, drop label
+##sel.tmp <- which(nm$action3=="mun.chg")
+##nm[sel.tmp,] <- within(nm[sel.tmp,], {
+##    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+##})
 sel.tmp <- which(nm$action2=="mun.chg")
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
@@ -122,6 +135,7 @@ sel.tmp <- which(nm$action=="state.chg")
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("alta", "baja", "action", "p18_2005", "p18_2010", "p18_2020")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dskip <- 1; ddone <- 1;
     action  <- action2; orig.dest  <- orig.dest2; when  <- when2
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
@@ -132,6 +146,7 @@ table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2020 <- p18_2010
+    dready2est <- 1
     nmanip <- nmanip + 1
     action  <- action2; orig.dest  <- orig.dest2; when  <- when2
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
@@ -143,27 +158,112 @@ table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2020 <- p18_2010
+    dready2est <- 1
     nmanip <- nmanip + 1
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## merged.to: flat up to baja --- fully flat
-sel.tmp <- which(nm$action=="merged.to" & nm$action2=="" & (nm$when==2008|nm$when==2009|nm$when==2010|nm$when==2011))
+##
+sel.tmp <- which(nm$action3=="merged.to")
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+## merged.to cases in action 2
+sel.tmp <- which(nm$action2=="merged.to")
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+##
+sel.tmp <- which(nm$action2=="merged.to" & (nm$alta>=1993 & nm$alta<=1996) & (nm$baja==2008|nm$baja==2011) & nm$ddone==0)
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_2020 <- p18_2010 <- p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2005
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2005
     ddone <- 1
+    nmanip <- nmanip + 1
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## this one gets linear 2005-2010 from alta to baja
+sel.tmp <- which(nm$action2=="merged.to" & nm$alta==2002 & nm$baja==2014)
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2003 <- prj(nm[sel.tmp,], 2003)
+    p18_2006 <- prj(nm[sel.tmp,], 2006)
+    p18_2009 <- prj(nm[sel.tmp,], 2009)
+    p18_2012 <- prj(nm[sel.tmp,], 2012)
+    ddone <- 1
+    nmanip <- nmanip + 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## these have no info
+sel.tmp <- which(nm$action2=="merged.to" & nm$alta>=2013 & nm$alta<=2017 & (nm$baja==2019|nm$baja==2020))
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dskip <- 1
+    ddone <- 1
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## flat 2005 from alta to baja
+sel.tmp <- which(nm$action2=="merged.to" & nm$alta==2004 & nm$baja==2008)
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2006 <- p18_2005
+    ddone <- 1
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## no more action2 merged.to
+sel.tmp <- which(nm$action2=="merged.to")
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+##
+################################
+## remainder action merged.to ##
+################################
+sel.tmp <- which(nm$action =="merged.to")
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+table(action=nm$action[sel.tmp], action2=nm$action2[sel.tmp], useNA = "ifany")
+## These have no info
+sel.tmp <- which(nm$action=="merged.to" & nm$alta==1993 & nm$baja==2008 & is.na(nm$p18_2005))
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dskip <- 1
+    ddone <- 1
+    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## Fully flat up to baja
+sel.tmp <- which(nm$action=="merged.to" & nm$alta==1993 & nm$ddone==0 & (nm$baja>=2008 & nm$baja<=2011))
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2010 <- p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2005
+    ddone <- 1;
     nmanip <- nmanip + 1
     action  <- action2; orig.dest  <- orig.dest2; when  <- when2
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
+## No more merged-to remaining
+table(nm$action)
+table(nm$action2)
+table(nm$action3)
+##
 ## No way to know population here
 sel.tmp <- which(nm$action=="split.from" & nm$action2=="" & (nm$when==2021|nm$when==2022))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dskip <- 1; ddone <- 1;
     action  <- action2; orig.dest  <- orig.dest2; when  <- when2
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
@@ -172,6 +272,7 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
 sel.tmp <- which(nm$action=="split.from" & nm$action2=="" & (nm$when==2019|nm$when==2020))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+table(is.na(nm$p18_2020[sel.tmp]))
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2021 <- p18_2020
     ddone <- 1
@@ -190,46 +291,18 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-sel.tmp <-            which(nm$seccion==21369)
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2005
-    ddone <- 1
-    nmanip <- nmanip + 1
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
-})
-##
-sel.tmp <- which(nm$action2=="merged.to" & nm$alta==1993 & nm$baja==2008 & nm$ddone==0)
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2005 ## 1994 gets same pop
-    ddone <- 1
-    nmanip <- nmanip + 1
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
-})
-##
-sel.tmp <- which(nm$action2=="merged.to" & nm$alta==1996 & nm$baja==2008 & nm$ddone==0)
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2005 ## 1994 gets same pop
-    ddone <- 1
-    nmanip <- nmanip + 1
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
-})
-## these have no info to deal with merged.to, drop that action
-sel.tmp <-            which(nm$action2=="merged.to")
-sel.tmp <- c(sel.tmp, which(nm$seccion==230875))
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    ddone <- 1
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
-})
+## sel.tmp <-            which(nm$seccion==21369)
+## nm[sel.tmp,]
+## nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+## nm[sel.tmp,] <- within(nm[sel.tmp,], {
+##     p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2005
+##     ddone <- 1
+##     nmanip <- nmanip + 1
+##     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+##     action3 <- "";      orig.dest3 <- "";         when3 <- NA
+## })
 ## gets linear 2005-2010 projection across the board
-sel.tmp <- which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2002 & nm$baja==2019)
+sel.tmp <- which(nm$seccion==155931)
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 prj <- function(x=NA,yr=NA){
@@ -242,22 +315,46 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2006 <- prj(nm[sel.tmp,], 2006)
     p18_2009 <- prj(nm[sel.tmp,], 2009)
     p18_2012 <- prj(nm[sel.tmp,], 2012)
-    p18_2015 <- prj(nm[sel.tmp,], 2015)
-    p18_2018 <- prj(nm[sel.tmp,], 2018)
-    p18_2020 <- prj(nm[sel.tmp,], 2020)
     ddone <- 1
     nmanip <- nmanip + 1
     action  <- "";      orig.dest  <- "";         when  <- NA
     action2 <- "";      orig.dest2 <- "";         when2 <- NA
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## gets linear 2010-2020 projection across the board
-sel.tmp <-            which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$alta==2007 & nm$baja==2021)
-sel.tmp <- c(sel.tmp, which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$alta==2009 & nm$baja==2022))
-sel.tmp <- c(sel.tmp, which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$alta==2009 & is.na(nm$baja)))
-sel.tmp <- c(sel.tmp, which(nm$action=="split.from" & (nm$alta>=2007 & nm$alta<=2011) & nm$dready2est==0 & nm$ddone==0))
-table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+##
+## These have 2020 NAs, need sum.split()
+sel.tmp <- which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & (nm$alta==2007|nm$alta==2009) & (nm$baja==2019|nm$baja==2020) & is.na(nm$p18_2020))
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dneedsum <- 1
+    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## Ready given reseccionamiento before/after censuses
+sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dready2est==0 & nm$dneedsum==0 &
+                 nm$action=="split.from" & nm$action2=="split.to" & (nm$when2==2021|nm$when2==2022) & nm$alta==2002)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dready2est <- 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## gets linear 2010-2020 projection across the board
+sel.tmp <-            which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                            nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2007 & nm$baja==2021)
+sel.tmp <- c(sel.tmp, which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                            nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$alta==2009 & nm$baja==2022))
+sel.tmp <- c(sel.tmp, which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                            nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$alta==2009 & is.na(nm$baja)))
+sel.tmp <- c(sel.tmp, which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                            nm$action=="split.from" & (nm$alta>=2007 & nm$alta<=2011) & nm$dready2est==0 & nm$ddone==0))
+table(nm$action3[sel.tmp])
+table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+nm[sel.tmp[1:10], c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+table(is.na(nm$p18_2010[sel.tmp]))
+table(is.na(nm$p18_2020[sel.tmp]))
 prj <- function(x=NA,yr=NA){
     chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
     pop <- x$p18_2010 + chg * (yr - 2010)
@@ -275,36 +372,19 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- "";      orig.dest2 <- "";         when2 <- NA
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## Flat 2005 from alta to baja
-sel.tmp <- which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2002 & nm$baja==2010)
-table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
+## Needs sum.split()
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                 nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2002 & nm$baja==2010)
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_2010 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2005
-    ddone <- 1
-    nmanip <- nmanip + 1
-    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+    dneedsum <- 1
 })
 ## Flat 2020 from alta to baja
-sel.tmp <-            which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$ddone ==0 & nm$alta==2014)
+sel.tmp <- which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$ddone ==0 & nm$alta==2014)
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2015 <- p18_2018 <- p18_2021 <- p18_2020
-    ddone <- 1
-    nmanip <- nmanip + 1
-    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
-    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
-    action3 <- "";      orig.dest3 <- "";         when3 <- NA
-})
-## Flat 2020 from alta to baja
-sel.tmp <- which(nm$seccion==230694)
-table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- p18_2020
     ddone <- 1
     nmanip <- nmanip + 1
     action  <- action2; orig.dest  <- orig.dest2; when  <- when2
@@ -324,7 +404,8 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
 ## Flat 2020 from alta on
-sel.tmp <- which(nm$action=="split.from" & (nm$alta==2016|nm$alta==2017) & nm$dready2est==0 & nm$ddone ==0)
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                 nm$action=="split.from" & (nm$alta==2016|nm$alta==2017))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
@@ -336,7 +417,8 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
 ## Flat 2020 from alta on
-sel.tmp <- which(nm$action=="split.from" & (nm$alta==2013|nm$alta==2014|nm$alta==2015) & nm$dready2est==0 & nm$ddone ==0)
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                 nm$action=="split.from" & (nm$alta==2013|nm$alta==2014|nm$alta==2015) & nm$dready2est==0 & nm$ddone ==0)
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
@@ -348,7 +430,8 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
 ## Flat 2020 from alta on
-sel.tmp <- which(nm$action=="split.from" & nm$alta==2012 & nm$dready2est==0 & nm$ddone ==0)
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 & 
+                 nm$action=="split.from" & nm$alta==2012 & nm$dready2est==0 & nm$ddone ==0)
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
@@ -359,33 +442,214 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## Ready for log-linear estimation
-sel.tmp <-           which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2002 & nm$baja==2022)
-sel.tmp <- c(sel.tmp,which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2005))
-sel.tmp <- c(sel.tmp,which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2007 & nm$baja==2020))
-sel.tmp <- c(sel.tmp,which(nm$action=="split.from" & nm$action2=="split.to" & nm$alta==2009 & (nm$baja==2019|nm$baja==2020)))
-sel.tmp <- c(sel.tmp,which(nm$action=="split.from" & nm$action2=="split.to" & nm$dready2est==0 & nm$ddone ==0 & nm$alta==2012 & is.na(nm$baja)))
-sel.tmp <- c(sel.tmp,which(nm$action=="split.from" & (nm$alta>=1995 & nm$alta<=2005) & nm$dready2est==0 & nm$ddone ==0))
+##
+## what is left to manipulate?
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
+table(action =nm$action [sel.tmp], action2=nm$action2[sel.tmp])
+table(action2=nm$action2[sel.tmp], action3=nm$action3[sel.tmp])
+## Remainder split.froms
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action=="split.from")
+table(nm$when[sel.tmp], useNA = "ifany")
+## Nothing to learn from split.from, drop label
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action=="split.from" & nm$when<=2005)
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    dready2est <- 1
+    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## only split.to cases remain
-with(nm[nm$dready2est==0 & nm$ddone==0,], table(one=action , two  =action2, useNA = "ifany"))
-with(nm[nm$dready2est==0 & nm$ddone==0,], table(two=action2, three=action3, useNA = "ifany"))
-
-# debug
-sel.tmp <- which(nm$action=="split.from" & nm$alta==2012 & nm$dready2est==0 & nm$ddone ==0)
+## Verify only split.to cases remain
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
+table(action =nm$action [sel.tmp], action2=nm$action2[sel.tmp])
+table(action2=nm$action2[sel.tmp], action3=nm$action3[sel.tmp])
+##
+## action3 case needs sum.split()
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action3=="split.to")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## action 2 cases
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to")
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
-nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip","ddone")]
-x
+## no info
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to" & nm$alta==1993 & nm$baja==2005)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dskip[sel.tmp] <- 1
+## gets linear 2005-2010 for 2003:2012, but flat before 2003
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to" & nm$alta==1993 & nm$baja==2012)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2003 <- prj(nm[sel.tmp,], 2003)
+    p18_2006 <- prj(nm[sel.tmp,], 2006)
+    p18_2009 <- prj(nm[sel.tmp,], 2009)
+    p18_2012 <- prj(nm[sel.tmp,], 2012)
+})
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 
+    ddone <- 1
+    nmanip <- nmanip + 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## gets linear 2005-2010 for 2003:2020, but flat before 2003
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to" & nm$alta==1993 & nm$baja==2020)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2003 <- prj(nm[sel.tmp,], 2003)
+    p18_2006 <- prj(nm[sel.tmp,], 2006)
+    p18_2009 <- prj(nm[sel.tmp,], 2009)
+    p18_2012 <- prj(nm[sel.tmp,], 2012)
+    p18_2015 <- prj(nm[sel.tmp,], 2015)
+    p18_2018 <- prj(nm[sel.tmp,], 2018)
+})
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 
+    ddone <- 1
+    nmanip <- nmanip + 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## Need sum.split()
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to" & nm$alta==1993 & is.na(nm$baja) & nm$when2==2021)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## resecc took place before 2005, ready for estimation
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to" & nm$alta==1993 & is.na(nm$baja) & nm$when2==2005)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dready2est[sel.tmp] <- 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## what is left to manipulate?
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
+table(action =nm$action [sel.tmp], action2=nm$action2[sel.tmp])
+table(action2=nm$action2[sel.tmp], action3=nm$action3[sel.tmp])
+## needs 2020 sum
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$action2=="split.to")
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## these are ready for estimation 
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when<=2005 & is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dready2est[sel.tmp] <- 1
+## no census info
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when<=2005 & !is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dskip[sel.tmp] <- 1
+## need sum
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when>=2007 & nm$when<=2010 & is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## flat up to baja
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when>=2007 & nm$when<=2010 & !is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2005
+    ddone <- 1
+    action  <- action2; orig.dest  <- orig.dest2; when  <- when2
+    action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## need sum
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when>=2011 & nm$when<=2019 & is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## linear 2005-2010 2005:on, flat 2005 before
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when>=2011 & nm$when<=2019 & !is.na(nm$baja))
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2006 <- prj(nm[sel.tmp,], 2006)
+    p18_2009 <- prj(nm[sel.tmp,], 2009)
+    p18_2012 <- prj(nm[sel.tmp,], 2012)
+})
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003  <- p18_2005
+    ddone <- 1
+    nmanip <- nmanip + 1
+    action  <- "";      orig.dest  <- "";         when  <- NA
+    action2 <- "";      orig.dest2 <- "";         when2 <- NA
+    action3 <- "";      orig.dest3 <- "";         when3 <- NA
+})
+## need sum
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when==2020)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dneedsum[sel.tmp] <- 1
+## These split after 2020 census will get log proj 
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
+                 nm$when>2020)
+nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+nm$dready2est[sel.tmp] <- 1
+## nothing to manipulate left?
+sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
+table(action =nm$when [sel.tmp])
+nm[sel.tmp[1:10], c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
+#####################
+## Block ends here ##
+#####################
+
+aquí voy
+#############################################################
+## Manipulate split.to secciones with sum.split() function ##
+#############################################################
+sel.r <- which(nm$action3=="split.to" & nm$ddone==0 & nm$dskip==0)
+table(nm$when2[sel.r])
+## cases with action3
+sel.r <- which(nm$action3=="split.to" & nm$ddone==0 & nm$dskip==0)# & nm$when2>=2020)
+nm[sel.r, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip","ddone")]
+## 7. Subset nm[sel.r,] sh[sel.r,] r[sel.r,] 
+nm.w <- nm[sel.r,]  ## subset
+## 8. Save 2020 values to restore later
+##nm.saved <- nm.w[, colnames(nm)[grep("_2020", colnames(nm))]]
+## 9. Apply sum.split to add-up pre-split population
+##nm.w[1:3, grep("p18_(2005|2010|2020)", colnames(nm))]
+nm.w[, grep("p18_2020", colnames(nm))]
+nm.w <- sum.split(d=nm.w, year.var=2020, rnd=1)
+
+## 10. Return obs to nm in order to compute r with pre-split pop (1st seccion in each mun is the reference)
+nm[sel.r,] <- nm.w
+
+
+
 
 ## 5.1 Verify no mun with zero pop
+print("All are municipios created recently before 2006")
 nm$ife2006[which(nm$p18m06_05==0)]
 nm$ife2006[which(nm$p18m06_10==0)]
 nm$ife2006[which(nm$p18m06_20==0)]
-print("All are municipios created recently before 2006")
-nm[which(nm$ife2006==4011), c(32, grep("p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m06_(05|10|20)", colnames(nm)))]
+nm[
+    which(nm$ife2006==4011),
+    c(grep("ife2006|p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m06_(05|10|20)", colnames(nm)))
+]
 
 ## 5.2 Indicate single-sección municipios
 tmp <- split(x=nm, f=nm$ife2006)
@@ -403,7 +667,7 @@ sh <- within(nm, {
     p18_2005 <- p18_2005 / p18m06_05;
     p18_2010 <- p18_2010 / p18m06_10;
     p18_2020 <- p18_2020 / p18m06_20;
-    })
+})
 ##
 r <- split(x=sh, f=sh$ife2006) # split into list of data frames, one per municipio, to compute r
 sel.c <- c("p18_2005", "p18_2010", "p18_2020")
@@ -523,14 +787,14 @@ nm[sel.tmp,c("p18_2005","p18_2010","p18_2020")]
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm.done <- rbind(nm.done, nm[ sel.tmp,])
 nm <-                     nm[-sel.tmp,]
-
+##
 sel.tmp <- which(nm$baja==2022)#p18_2005) & is.na(nm$p18_2010) & nm$baja==2002)
 with(nm[sel.tmp,], table(action=action , when=when , useNA = "ifany"))
 with(nm[sel.tmp,], table(action=action2, when=when2, useNA = "ifany"))
 with(nm[sel.tmp,], table(action=action3, when=when3, useNA = "ifany"))
-
+##
 table(nm$baja)
-
+##
 ## these will get flat 10 up to baja
 sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & nm$baja==2002)
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
@@ -552,15 +816,15 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
 })
 nm.done <- rbind(nm.done, nm[ sel.tmp,])
 nm <-                     nm[-sel.tmp,]
-
+##
 sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010))
 nm[sel.tmp,c("p18_2005","p18_2010","p18_2020")]
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 table(alta=nm$alta[sel.tmp], baja=nm$action[sel.tmp], useNA = "ifany")
 table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
 ##
-
-
+##
+##
 sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & (nm$alta==2012 | nm$alta==2013 | nm$alta==2014))
 nm[sel.tmp,] <- within(nm[sel.tmp,], {
     p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- p18_2020
@@ -581,28 +845,28 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
 })
 nm.done <- rbind(nm.done, nm[ sel.tmp,])
 nm <-                     nm[-sel.tmp,]
-
-
-
+##
+##
+##
 table(nm$p18_2005==0)
 table(nm$p18_2010==0)
 table(nm$p18_2020==0)
 table(is.na(nm$p18_2005))
 table(is.na(nm$p18_2010))
 table(is.na(nm$p18_2020))
-
+##
 with(nm[nm$action=="split.to",], table(when=when, baja=baja))
 dim(nm)
 dim(nm.done)
-
-
+##
+##
 sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & is.na(nm$p18_2020) & nm$baja<=2005)
 table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
-
+##
 nm.done <- rbind(nm.done, nm[ sel.tmp,])
 nm <-                     nm[-sel.tmp,]
-
-
+##
+##
 sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & is.na(nm$p18_2020))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
@@ -611,34 +875,16 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
 })
 nm.done <- rbind(nm.done, nm[ sel.tmp,])
 nm <-                     nm[-sel.tmp,]
-
+##
 ## will get flat 2005 pop until
 sel.tmp <- which(is.na(nm$p18_2010) & is.na(nm$p18_2020))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
 nm[sel.tmp,c("p18_2005","p18_2010","p18_2020")]
-
+##
 dim(nm)
 dim(nm.done)
 
-## 6. sel.r <- seccion split in 2020 cases, round 1
-sel.r <- which(nm$action=="split.to")
-table(nm$when[sel.r])
-##
-sel.r <- which(nm$action=="split.to" & nm$when==2020)
-
-## 7. Subset nm[sel.r,] sh[sel.r,] r[sel.r,] 
-nm.w <- nm[sel.r,]  ## subset
-
-## 8. Save 2020 values to restore later
-nm.saved <- nm.w[, colnames(nm)[grep("_2020", colnames(nm))]]
-
-## 9. Apply sum.split to add-up pre-split population
-nm.w[1:3, grep("p18_(2005|2010|2020)", colnames(nm))]
-nm.w <- sum.split(d=nm.w, year.var=2020, rnd=1)
-
-## 10. Return obs to nm in order to compute r with pre-split pop (1st seccion in each mun is the reference)
-nm[sel.r,] <- nm.w
 
 
 ## are there still zeroes?
