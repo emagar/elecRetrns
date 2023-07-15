@@ -20,7 +20,7 @@
 ## interpol(what="p18", yr=2020, census.data=tmp)
 
 ## function interpol() deduces intercensus lines, projecting them before/after first/last censuses
-interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
+interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, add.plot=FALSE, plot.n=NA, digits=1){  # census.data allow usage of counterfactual maps instead of default
     ## Option census.data points to a data.frame reporting X>1 censuses, with the following characteristics:
     ## - it can report more than one indicator, 'what' selects which one to manipulate in call;
     ## - it has X groups of columns reporting yearly indicators, eg. ptot_1990 ptot_2000 ptot_2010 ptot_2020;
@@ -134,12 +134,12 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
         points(x=rep(yr, length(interp0)), y=interp0, cex=.75)
     }
     ##
-    return(round(interp, 1))
+    return(round(interp, digits))
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
 
 ## interlog() performs projection with a log lm or a regression line
-interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA){  # census.data allow usage of counterfactual maps instead of default
+interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA, digits=1){  # census.data allow usage of counterfactual maps instead of default
     ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="s"
     ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); # debug
     ##
@@ -270,7 +270,7 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
             sq.resid <- (dv.hat - dv)^2
         }))
     ##
-    return(list(interp=round(interp, 1),  ## returns a list with predicted values, data, and regressions
+    return(list(interp=round(interp, digits),  ## returns a list with predicted values, data, and regressions
                 data=save.data,
                 regs=save.regs)
            )

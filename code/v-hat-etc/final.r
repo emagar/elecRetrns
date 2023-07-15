@@ -92,16 +92,12 @@ nm <- within(nm, {
     when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
     when2b <- when2; orig.dest2b <- orig.dest2; action2b <- action2; #  can be erased once seccion gets manipulated
     whenb  <- when;  orig.destb  <- orig.dest;  actionb  <- action;  #  ---helps debug block immediately below
-    p18m06_20 <- p18_2020; # yy so grep excludes
-    p18m06_10 <- p18_2010; # yy so grep excludes
-    p18m06_05 <- p18_2005; # yy so grep excludes
+    p18m06_20 <- NA; # yy so grep excludes
+    p18m06_10 <- NA; # yy so grep excludes
+    p18m06_05 <- NA; # yy so grep excludes
     p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- NA;
 })
 ##nm <- nm[order(nm$ife2006, nm$seccion),] # sort mun
-##
-## 5. Apply my_agg to generate municipal aggregates (nm[sel.r,]$m06:2005-2010-2020) 
-sel.c <- c("p18m06_05", "p18m06_10", "p18m06_20")
-nm <- my_agg(d=nm, sel.c=sel.c, by="ife2006", drop.dupli=FALSE)
 ##
 ##############################################################
 ## Block starts here                                        ##
@@ -166,7 +162,7 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
-## Merged.to secciones in 2020 get same 2010 pop
+## Merged.to secciones in 2020 get flat 2010 pop
 sel.tmp <- which(nm$action=="merged.to" & (nm$when==2012|nm$when==2014|nm$when==2020) & !is.na(nm$p18_2005))
 table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
 nm[sel.tmp, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip")]
@@ -663,11 +659,172 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action2 <- "";      orig.dest2 <- "";         when2 <- NA
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
+## Case has zero pop 05 and 20 but not 10, fix arbitrarily
+## Function also shows rows above/below numbered rows
+show <- function(x, rows, after = 0, before = 0) {
+  ## From https://stackoverflow.com/questions/13155609/returning-above-and-below-rows-of-specific-rows-in-r-dataframe
+  ##match.idx  <- which(rownames(x) %in% rows) ## if using names rows
+  match.idx  <- rows                           ## if using numbered rows
+  span       <- seq(from = -before, to = after)
+  extend.idx <- c(outer(match.idx, span, `+`))
+  extend.idx <- Filter(function(i) i > 0 & i <= nrow(x), extend.idx)
+  extend.idx <- sort(unique(extend.idx))
+  return(x[extend.idx, , drop = FALSE])
+}
+sel.tmp <- which(nm$seccion==200457)
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=3, before=3)
+nm$p18_2005[sel.tmp] <- 500
+nm$p18_2020[sel.tmp] <- 800 
+nm$nmanip <- nm$nmanip + 1
+##
+sel.tmp <- which(nm$seccion==200802)
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
+nm$p18_2020[sel.tmp] <- 100
+nm$nmanip <- nm$nmanip + 1
+##
+sel.tmp <- which(nm$seccion==201305)
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
+nm$p18_2020[sel.tmp] <- 500
+nm$nmanip <- nm$nmanip + 1
+##
+## These have zero pop 05-10-20
+sel.tmp <- which(nm$seccion %in% c(71529, 122374, 151965, 152035, 152710, 152712, 152713, 152714, 152715, 152718, 152719, 152720, 152722, 230450, 290526))
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    dskip <- 1
+    dready2est <- 0
+})
+## These secciones have odd zeroes in one census, arbitrarily add given other years' pops
+sel.tmp <- which(nm$seccion==50153); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==51468); nm$p18_2005[sel.tmp] <- 700
+sel.tmp <- which(nm$seccion==70385); nm$p18_2005[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==70386); nm$p18_2005[sel.tmp] <- 400
+sel.tmp <- which(nm$seccion==71753); nm$p18_2010[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==81942); nm$p18_2010[sel.tmp] <- 1500
+sel.tmp <- which(nm$seccion==90479); nm$p18_2010[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==90479); nm$p18_2020[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==91040); nm$p18_2010[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==92054); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==92054); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==92085); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==92085); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==92428); nm$p18_2020[sel.tmp] <- 600
+sel.tmp <- which(nm$seccion==93107); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==93376); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==93376); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==93531); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==93531); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==93886); nm$p18_2010[sel.tmp] <- 15
+sel.tmp <- which(nm$seccion==93887); nm$p18_2020[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==94988); nm$p18_2010[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==94988); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==94989); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==94991); nm$p18_2010[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==94991); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==95501); nm$p18_2010[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==95501); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==100370); nm$p18_2005[sel.tmp] <- 3
+sel.tmp <- which(nm$seccion==112266); nm$p18_2010[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==120473); nm$p18_2005[sel.tmp] <- 400
+sel.tmp <- which(nm$seccion==120681); nm$p18_2020[sel.tmp] <- 300
+sel.tmp <- which(nm$seccion==121180); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==121381); nm$p18_2020[sel.tmp] <- 60
+sel.tmp <- which(nm$seccion==121385); nm$p18_2010[sel.tmp] <- 1
+sel.tmp <- which(nm$seccion==121385); nm$p18_2020[sel.tmp] <- 1
+sel.tmp <- which(nm$seccion==122356); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==122356); nm$p18_2020[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==122363); nm$p18_2010[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==122768); nm$p18_2005[sel.tmp] <- 400
+sel.tmp <- which(nm$seccion==142167); nm$p18_2005[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==151294); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==152311); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==152313); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==152717); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==152721); nm$p18_2005[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==153206); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==153206); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==154433); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==154433); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==154540); nm$p18_2005[sel.tmp] <- 1000
+sel.tmp <- which(nm$seccion==154642); nm$p18_2020[sel.tmp] <- 1250
+sel.tmp <- which(nm$seccion==155918); nm$p18_2005[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==155980); nm$p18_2020[sel.tmp] <- 2
+sel.tmp <- which(nm$seccion==162621); nm$p18_2005[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==170235); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==170235); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==180294); nm$p18_2005[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==180432); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==200175); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==200222); nm$p18_2010[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==200463); nm$p18_2005[sel.tmp] <- 700
+sel.tmp <- which(nm$seccion==200904); nm$p18_2020[sel.tmp] <- 40
+sel.tmp <- which(nm$seccion==201694); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==201694); nm$p18_2010[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==202285); nm$p18_2020[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==202453); nm$p18_2010[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==210142); nm$p18_2020[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==211492); nm$p18_2010[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==211493); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==211493); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==220742); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==220742); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==250422); nm$p18_2005[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==250492); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==250493); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==250624); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==250647); nm$p18_2020[sel.tmp] <- 150
+sel.tmp <- which(nm$seccion==251331); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==251832); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==251902); nm$p18_2005[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==251993); nm$p18_2020[sel.tmp] <- 2
+sel.tmp <- which(nm$seccion==251994); nm$p18_2020[sel.tmp] <- 350
+sel.tmp <- which(nm$seccion==252053); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==252239); nm$p18_2005[sel.tmp] <- 2
+sel.tmp <- which(nm$seccion==252239); nm$p18_2010[sel.tmp] <- 2
+sel.tmp <- which(nm$seccion==252304); nm$p18_2005[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==252316); nm$p18_2005[sel.tmp] <- 400
+sel.tmp <- which(nm$seccion==252415); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==252466); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==253040); nm$p18_2005[sel.tmp] <- 15
+sel.tmp <- which(nm$seccion==253174); nm$p18_2005[sel.tmp] <- 3
+sel.tmp <- which(nm$seccion==253174); nm$p18_2010[sel.tmp] <- 3
+sel.tmp <- which(nm$seccion==253386); nm$p18_2020[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==253388); nm$p18_2010[sel.tmp] <- 1
+sel.tmp <- which(nm$seccion==253388); nm$p18_2020[sel.tmp] <- 1
+sel.tmp <- which(nm$seccion==253545); nm$p18_2005[sel.tmp] <- 4
+sel.tmp <- which(nm$seccion==253590); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==253590); nm$p18_2020[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==253772); nm$p18_2020[sel.tmp] <- 900
+sel.tmp <- which(nm$seccion==270459); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==270459); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==270511); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==270511); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==270750); nm$p18_2010[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==270797); nm$p18_2010[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==271087); nm$p18_2010[sel.tmp] <- 300
+sel.tmp <- which(nm$seccion==271133); nm$p18_2010[sel.tmp] <- 200
+sel.tmp <- which(nm$seccion==280700); nm$p18_2005[sel.tmp] <- 8
+sel.tmp <- which(nm$seccion==280785); nm$p18_2010[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==281067); nm$p18_2010[sel.tmp] <- 700
+sel.tmp <- which(nm$seccion==281093); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==281093); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==281578); nm$p18_2010[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==281578); nm$p18_2020[sel.tmp] <- 10
+sel.tmp <- which(nm$seccion==290339); nm$p18_2005[sel.tmp] <- 50
+sel.tmp <- which(nm$seccion==290508); nm$p18_2005[sel.tmp] <- 100
+sel.tmp <- which(nm$seccion==301225); nm$p18_2010[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==301225); nm$p18_2020[sel.tmp] <- 5
+sel.tmp <- which(nm$seccion==303762); nm$p18_2020[sel.tmp] <- 500
+sel.tmp <- which(nm$seccion==320113); nm$p18_2020[sel.tmp] <- 250
+sel.tmp <- which(nm$seccion==320348); nm$p18_2005[sel.tmp] <- 60
+sel.tmp <- which(nm$seccion==320813); nm$p18_2005[sel.tmp] <- 200
 ## Nothing to manipulate left?
 sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
 table(is.na(nm$p18_2005[sel.tmp]))
 table(is.na(nm$p18_2010[sel.tmp]))
 table(is.na(nm$p18_2020[sel.tmp]))
+table(nm$p18_2005[sel.tmp]==0)
+table(nm$p18_2010[sel.tmp]==0)
+table(nm$p18_2020[sel.tmp]==0)
 ##table(action =nm$when [sel.tmp])
 ## indicate cases wo reseccionamiento and full census
 sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
@@ -686,7 +843,18 @@ table(done=nm$ddone,    ready=nm$dready2est)
 table(sum= nm$dneedsum, ready=nm$dready2est)
 sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
 
-
+####################################################################################
+## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m06:2005-2010-2020)  ##
+####################################################################################
+## fill in p18s for aggregation
+nm <- within(nm, {
+    p18m06_05 <- p18_2005;
+    p18m06_10 <- p18_2010;
+    p18m06_20 <- p18_2020;
+})
+sel.c <- c("p18m06_05", "p18m06_10", "p18m06_20")
+nm <- my_agg(d=nm, sel.c=sel.c, by="ife2006", drop.dupli=FALSE)
+##
 ########################################
 ## Indicate single-sección municipios ##
 ########################################
@@ -714,10 +882,6 @@ tmp <- lapply(tmp, tmp.f) # apply function
 tmp <- do.call(rbind, tmp) # return to data frame form
 rownames(tmp) <- NULL
 nm <- tmp # return manipulated data
-
-
-
-
 
 
 #############################################################
@@ -817,12 +981,15 @@ nm.w <- within(nm.w, {
 })
 drestore$p18_2020[sel.tmp] <- 1                   # indicate cases where counterfactual pop pasted
 nm[sel.tmp,] <- nm.w                              # Return manipulated obs to nm
-
+##
 ## Check 2005-2010-2020 complete
 sel.tmp <- which(nm$dready2est==1)
 table(is.na(nm$p18_2005[sel.tmp]))
 table(is.na(nm$p18_2010[sel.tmp]))
 table(is.na(nm$p18_2020[sel.tmp]))
+table(nm$p18_2005[sel.tmp]==0)
+table(nm$p18_2010[sel.tmp]==0)
+table(nm$p18_2020[sel.tmp]==0)
 
 #####################################################
 ## Prep object to receive all possible regressions ##
@@ -831,7 +998,7 @@ regs <- vector(mode='list', length(nrow(nm))) ## empty list
 regs[nm$dskip==1] <- "No regression, skipped due to lack of census data"
 regs[nm$ddone==1] <- "No regression, < 3 censuses data points, linear/flat estimates used"
 regs[[70977]]
-
+##
 #####################################################################
 ## Apply interlog directly to nm for single-sección municipio to   ##
 ## predict 1994:2003 and 2021; apply interpol to predict 2006:2018 ##
@@ -901,27 +1068,100 @@ nm.w[1,]
 ## return estimates and regressions to data
 nm[nm$dsingle==1,] <- nm.w
 regs[nm$dsingle==1] <- tmp.regs[3]
+rm(nm.w, tmp.regs)
 
-## Verify no mun with zero pop
-print("All are municipios created recently before 2006")
+
+
+THIS ROUTE IS HARD. BETTER TO SET UP A FUNCTION THAT, EXCLUDING SINGLE-SECCION MUNICIPIO SECCIONES, FINDS ZEROES IN SECCION 1 AND INDICATES ALL SECCIONES IN THAT MUNICIPIO. IF ONE SECCION AT LEAST HAS NON-ZERO P18, THAT IS THE NEW SECCION 1. ELSE REMOVES FROM ESTIMATION. 
+################################################
+## Change NAs and 0s with 1s in census data   ##
+## Easy (innocuous?) fix to ne muns w no data ##
+################################################
+tmp <- nm[,c("p18_2005","p18_2010","p18_2020")]
+tmp[1,]
+tmp[is.na(tmp)] <- 0
+tmp[tmp==0] <- 1
+tmp -> nm[,c("p18_2005","p18_2010","p18_2020")]
+
+
+
+
+##################################
+## Estimate dready2est==1 cases ##
+##################################
+## Check working cases
+table(skip=nm$dskip,    ready=nm$dready2est)
+table(done=nm$ddone,    ready=nm$dready2est)
+table(sum= nm$dneedsum, ready=nm$dready2est)
+sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
+##
+## Verify muns with zero pop
+## All recently created
 nm$ife2006[which(nm$p18m06_05==0)]
 nm$ife2006[which(nm$p18m06_10==0)]
 nm$ife2006[which(nm$p18m06_20==0)]
 nm[
-    which(nm$ife2006==4011),
-    c(grep("ife2006|p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m06_(05|10|20)", colnames(nm)))
+   which(nm$ife2006==4011),
+   c(grep("alta|ife2006|p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m06_(05|10|20)", colnames(nm)))
 ]
+
+
 
 ######################################################
 ## Check no sección #1 in each municipio has pop>0, ##
 ## else change index to avoid dividing by zero      ##
 ######################################################
+which(nm$dfirst==1 & nm$p18_2005==0)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 3820,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 40499, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51813, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51815, 3, 3)
+
+which(nm$dfirst==1 & nm$p18_2010==0)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 3820,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 40499, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 43168, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51574, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51813, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51815, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 57630, 3, 3)
+
+which(nm$dfirst==1 & nm$p18_2020==0)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 3783,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 6020,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 6606,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 6776,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 7010,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 16498,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 25302,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 25994,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 28508,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 30397,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 32257,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 40499, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 40591,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 43168, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 44019,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 44939,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 45151,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 47323,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51574, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 53676,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 57630, 3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 58853,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 62958,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 63706,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 64952,  3, 3)
+show(nm[,grep("seccion|ife2006|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 65639,  3, 3)
+
 ## Are there zero pop 1st secciones?
 sel.c <- grep("seccion|^p18_", colnames(nm))
 tmp <- nm[nm$dfirst==1, sel.c]
 tmp$dzero <- rowSums(tmp[,-1]==0, na.rm = TRUE)
-sum(tmp$dzero)
-tmp[which(tmp$dzero==1),]
+table(tmp$dzero)
+nm[nm$dfirst==1,][which(tmp$dzero==3),]
+sum(tmp$dzero) # if >0, manipulate indices
+tmp[which(tmp$dzero>0),]
 ## switch indices
 nm <- nm[order(nm$ord),] # make sure ord-sorted
 tmp <- split(x=nm, f=nm$ife2006) # split into list of data frames, one per municipio (2006 map)
@@ -949,37 +1189,85 @@ nm <- tmp                   # replace nm with manipulation (some secciones)
 ## check again: zeroes?
 tmp <- nm[nm$dfirst==1, sel.c]
 tmp$dzero <- rowSums(tmp[,-1]==0, na.rm = TRUE)
-sum(tmp$dzero)
-
-## verify no seccion#1 has zero pop
-summary(nm$p18_2005[nm$dfirst==1], useNA = "ifany")
-nm$ife2006[nm$dfirst==1][which(is.na(nm$p18_2005[nm$dfirst==1]))]
-summary(nm$p18_2010[nm$dfirst==1], useNA = "ifany")
-nm$ife2006[nm$dfirst==1][which(is.na(nm$p18_2010[nm$dfirst==1]))]
-summary(nm$p18_2020[nm$dfirst==1], useNA = "ifany")
-nm$ife2006[nm$dfirst==1][which(is.na(nm$p18_2020[nm$dfirst==1]))]
+sum(tmp$dzero) # if >0, manipulate indices
 
 
-## 11. Compute prelim sh and prelim r
+######################
+## Compute sh and r ##
+######################
 sh <- within(nm, {
     p18_2005 <- p18_2005 / p18m06_05;
     p18_2010 <- p18_2010 / p18m06_10;
     p18_2020 <- p18_2020 / p18m06_20;
 })
+summary(sh$p18_2005)
+summary(sh$p18_2010)
+summary(sh$p18_2020)
+## Any sh=1 that are not singles?
+sel.tmp <- which(sh$p18_2005==1 & sh$dsingle==0)
+sel.tmp
+sel.tmp <- which(sh$p18_2010==1 & sh$dsingle==0)
+sel.tmp
+sel.tmp <- which(sh$p18_2020==1 & sh$dsingle==0)
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20")], rows=sel.tmp, after=2, before=2)
 ##
-r <- split(x=sh, f=sh$ife2006) # split into list of data frames, one per municipio, to compute r
+## Any sh=0 first seccion?
+sel.tmp <- which(sh$p18_2005==0 & sh$dfirst==1)
+sel.tmp
+sel.tmp <- which(sh$p18_2010==0 & sh$dfirst==1)
+sel.tmp
+sel.tmp <- which(sh$p18_2020==0 & sh$dfirst==1)
+sel.tmp
+nm[sel.tmp, c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20")]
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20")], rows=sel.tmp, after=2, before=2)
+##
+r <- split(x=sh, f=sh$ife2006) # split into list of data frames, one per municipio, to compute r=p18_i / p18_1
 sel.c <- c("p18_2005", "p18_2010", "p18_2020")
 tmp.f <- function(x=NA){
     ##x <- cenr[[1005]] # debug
     tmp.denom <- do.call(rbind, replicate(n=nrow(x), x[1, sel.c], simplify = FALSE)) # replicate 1st seccion times all sec in mun
-    x[, sel.c] <- x[, sel.c] / tmp.denom     # divide each row by 1st row
-    x$dskip[1] <- 1            # indicate 1st seccion in municipio
+    x[, sel.c] <- x[, sel.c] / tmp.denom                                             # divide each row by 1st row
+    ##x$dfirst[1] <- 1                                                                  # indicate 1st seccion in municipio
     return(x)
 }
-r <- lapply(r, tmp.f) # apply function
+r <- lapply(r, tmp.f)  # apply function
 r <- do.call(rbind, r) # return to data frame form
+## Any NAs?
+with(r[r$dready2est==1,], table(is.na(p18_2005)))
+with(r[r$dready2est==1,], table(is.na(p18_2010)))
+sel.tmp <- with(r[r$dready2est==1,], which(is.na(p18_2010)))  # dready indices with 2010 NA
+sel.tmp <- which(r$seccion %in% sh[r$dready2est==1,][sel.tmp,]$seccion) # translated to r indices
+show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20","ddone")], sel.tmp[1], 0, 30)
+eric  xx
 
+## 13. Apply interlog to r[sel.r,], predict 1994:2004 and and 2021
+## Log-linear projection of 2003, retaining regressions to use for 1994-on
+tmp.regs <- vector(mode='list', length(nrow(cenr))) ## empty list
+sel <- which(cenr$dskip==0)
+tmp.regs[sel] <- interlog(what="p18", yr=2003, unit="s", frm="log(dv)~iv", census.data = cenr[sel,])
+## tmp.e will receive all log-linear predictions
+tmp.e <- data.frame(seccion=censo$seccion,
+                     p18_1991= tmp.regs[[1]])
+non.nas <- apply(tmp.e, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
+new.d <- data.frame(iv=seq(1994,2021,3))     ## prep predictions 1994-on
+preds <- vector(mode='list', nrow(tmp.e))    ## empty list
+tmp <- data.frame(dv=rep(NA, nrow(new.d)))   ## empty df for non non.nas
+preds <- lapply(preds, function(x) x <- tmp) ## empty df for non non.nas
+## predict
+preds[non.nas] <- lapply(tmp.regs[[3]][non.nas], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
+preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
+preds <- do.call(rbind, preds)                      # to data frame
+colnames(preds) <- paste0("p18_", seq(1994,2021,3)) # add names
+preds <- exp(preds)                                 # exponentiate log-linear predictions
+preds <- round(preds,1)                             # round to 1 digit
+preds[1:10,]
+tmp.e <- cbind(tmp.e, preds)                        # consolidate predictions
+tmp.e <- cbind(tmp.e, censo[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
+tmp.e <- tmp.e[, order(colnames(tmp.e))]            # sort columns except 1st (seccion)
+rownames(tmp.e) <- NULL
+head(tmp.e)
 
+nm[1,]
 nm[nm$ife2006==4010, c("alta", "baja", "action", "action2", "action3", "p18_2005", "p18_2010", "p18_2020", "ddone")]
 nm[nm$ife2006==4011, c("alta", "baja", "action", "action2", "action3", "p18_2005", "p18_2010", "p18_2020", "ddone")]
 nm[nm$ife2006==7001, c("alta", "baja", "action", "action2", "action3", "p18_2005", "p18_2010", "p18_2020", "ddone")]
@@ -1010,70 +1298,6 @@ nm[nm$ife2006==30034, c("alta", "baja", "action", "action2", "action3", "p18_200
 nm[nm$ife2006==30088, c("alta", "baja", "action", "action2", "action3", "p18_2005", "p18_2010", "p18_2020", "ddone")]
 nm[nm$ife2006==30110, c("alta", "baja", "action", "action2", "action3", "p18_2005", "p18_2010", "p18_2020", "ddone")]
 
-
-
-
-## 5.x Drop cases with many zeroes or NAs
-table(nm$p18_2005==0)
-table(nm$p18_2010==0)
-table(nm$p18_2020==0)
-table(is.na(nm$p18_2005))
-table(is.na(nm$p18_2010))
-table(is.na(nm$p18_2020))
-##
-with(nm[nm$action=="split.to",], table(when=when, baja=baja))
-dim(nm)
-dim(nm.done)
-##
-##
-sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & is.na(nm$p18_2020) & nm$baja<=2005)
-table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
-##
-nm.done <- rbind(nm.done, nm[ sel.tmp,])
-nm <-                     nm[-sel.tmp,]
-##
-##
-sel.tmp <- which(is.na(nm$p18_2005) & is.na(nm$p18_2010) & is.na(nm$p18_2020))
-table(alta=nm$alta[sel.tmp], baja=nm$baja[sel.tmp], useNA = "ifany")
-table(act=nm$action[sel.tmp], act2=nm$action2[sel.tmp], useNA = "ifany")
-nm[sel.tmp,] <- within(nm[sel.tmp,], {
-    p18_1994 <- p18_1997 <- p18_2003 <- p18_2005 <- p18_2006 <- p18_2009 <- p18_2010 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2020 <- p18_2021 <- 10
-})
-nm.done <- rbind(nm.done, nm[ sel.tmp,])
-nm <-                     nm[-sel.tmp,]
-##
-
-
-## 12. Re-subset
-r.w <- r[sel.r,]
-r.w[1,c("p18_2005", "p18_2010", "p18_2020")]
-x
-## 13. Apply interlog to r[sel.r,], predict 1994:2004 and and 2021
-## Log-linear projection of 2003, retaining regressions to use for 1994-on
-tmp.regs <- vector(mode='list', length(nrow(cenr))) ## empty list
-sel <- which(cenr$dskip==0)
-tmp.regs[sel] <- interlog(what="p18", yr=2003, unit="s", frm="log(dv)~iv", census.data = cenr[sel,])
-## tmp.e will receive all log-linear predictions
-tmp.e <- data.frame(seccion=censo$seccion,
-                     p18_1991= tmp.regs[[1]])
-non.nas <- apply(tmp.e, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
-new.d <- data.frame(iv=seq(1994,2021,3))     ## prep predictions 1994-on
-preds <- vector(mode='list', nrow(tmp.e))    ## empty list
-tmp <- data.frame(dv=rep(NA, nrow(new.d)))   ## empty df for non non.nas
-preds <- lapply(preds, function(x) x <- tmp) ## empty df for non non.nas
-## predict
-preds[non.nas] <- lapply(tmp.regs[[3]][non.nas], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
-preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
-preds <- do.call(rbind, preds)                      # to data frame
-colnames(preds) <- paste0("p18_", seq(1994,2021,3)) # add names
-preds <- exp(preds)                                 # exponentiate log-linear predictions
-preds <- round(preds,1)                             # round to 1 digit
-preds[1:10,]
-tmp.e <- cbind(tmp.e, preds)                        # consolidate predictions
-tmp.e <- cbind(tmp.e, censo[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
-tmp.e <- tmp.e[, order(colnames(tmp.e))]            # sort columns except 1st (seccion)
-rownames(tmp.e) <- NULL
-head(tmp.e)
 
 ## 14. Apply interpol to r[sel.r,], predict 2005:2020
 ## 15. Translate r[sel.r,] -> sh[sel.r,] -> nm[sel.r,]
