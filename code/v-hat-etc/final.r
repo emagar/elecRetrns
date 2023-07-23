@@ -57,7 +57,7 @@ sum.split <- function(d=censo, year.var=2020, rnd=1) {
 ## get census projection functions
 source("../../code/v-hat-etc/interpolate-census-functions.r")
 
-## 4. Duplicate nm=censo, adding cols 1994:2021, m06:2005-2010-2020, ddone=0, etc
+## 4. Duplicate nm=censo, adding cols 1994:2021, m:2005-2010-2020, ddone=0, etc
 ##    nm = nominal quantities
 nm <- censo
 ##
@@ -92,12 +92,12 @@ nm <- within(nm, {
     when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
     when2b <- when2; orig.dest2b <- orig.dest2; action2b <- action2; #  can be erased once seccion gets manipulated
     whenb  <- when;  orig.destb  <- orig.dest;  actionb  <- action;  #  ---helps debug block immediately below
-    p18m06_20 <- NA; # yy so grep excludes
-    p18m06_10 <- NA; # yy so grep excludes
-    p18m06_05 <- NA; # yy so grep excludes
+    p18m_20 <- NA; # yy so grep excludes
+    p18m_10 <- NA; # yy so grep excludes
+    p18m_05 <- NA; # yy so grep excludes
     p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- NA;
 })
-##nm <- nm[order(nm$ife2006, nm$seccion),] # sort mun
+##nm <- nm[order(nm$inegi, nm$seccion),] # sort mun
 ##
 ##############################################################
 ## Block starts here                                        ##
@@ -672,18 +672,18 @@ show <- function(x, rows, after = 0, before = 0) {
   return(x[extend.idx, , drop = FALSE])
 }
 sel.tmp <- which(nm$seccion==200457)
-show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=3, before=3)
+show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=3, before=3)
 nm$p18_2005[sel.tmp] <- 500
 nm$p18_2020[sel.tmp] <- 800 
 nm$nmanip <- nm$nmanip + 1
 ##
 sel.tmp <- which(nm$seccion==200802)
-show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
+show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
 nm$p18_2020[sel.tmp] <- 100
 nm$nmanip <- nm$nmanip + 1
 ##
 sel.tmp <- which(nm$seccion==201305)
-show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
+show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
 nm$p18_2020[sel.tmp] <- 500
 nm$nmanip <- nm$nmanip + 1
 ##
@@ -844,29 +844,29 @@ table(sum= nm$dneedsum, ready=nm$dready2est)
 sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
 
 ####################################################################################
-## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m06:2005-2010-2020)  ##
+## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m:2005-2010-2020)  ##
 ####################################################################################
 ## fill in p18s for aggregation
 nm <- within(nm, {
-    p18m06_05 <- p18_2005;
-    p18m06_10 <- p18_2010;
-    p18m06_20 <- p18_2020;
+    p18m_05 <- p18_2005;
+    p18m_10 <- p18_2010;
+    p18m_20 <- p18_2020;
 })
-sel.c <- c("p18m06_05", "p18m06_10", "p18m06_20")
-nm <- my_agg(d=nm, sel.c=sel.c, by="ife2006", drop.dupli=FALSE)
+sel.c <- c("p18m_05", "p18m_10", "p18m_20")
+nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE)
 ##
 ########################################
 ## Indicate single-sección municipios ##
 ########################################
-tmp <- split(x=nm, f=nm$ife2006)
+tmp <- split(x=nm, f=nm$inegi)
 tmp <- lapply(tmp, function(x){
     n <- nrow(x)
-    n <- data.frame(ife2006=NA, n=n)
+    n <- data.frame(inegi=NA, n=n)
     return(n)
     })
 tmp <- do.call(rbind, tmp)
-tmp$ife2006 <- as.numeric(rownames(tmp))
-nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
+tmp$inegi <- as.numeric(rownames(tmp))
+nm$dsingle[which(nm$inegi  %in% tmp$inegi[tmp$n==1])] <- 1
 ##
 ############################################
 ## Indicate 1st seccion in each municipio ##
@@ -882,7 +882,10 @@ tmp <- lapply(tmp, tmp.f) # apply function
 tmp <- do.call(rbind, tmp) # return to data frame form
 rownames(tmp) <- NULL
 nm <- tmp # return manipulated data
-
+##
+## sort
+table(1:nrow(nm) - nm$ord)
+nm <- nm[order(nm$ord),]
 
 #############################################################
 ## Manipulate split.to secciones with sum.split() function ##
@@ -950,7 +953,6 @@ nm.w <- within(nm.w, {
     ddone <- 1
     dneedsum <- 0
     nmanip <- nmanip + 1
-    #action  <- action2; orig.dest  <- orig.dest2; when  <- when2
     action2 <- action3; orig.dest2 <- orig.dest3; when2 <- when3
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
@@ -1071,8 +1073,6 @@ regs[nm$dsingle==1] <- tmp.regs[3]
 rm(nm.w, tmp.regs)
 
 
-
-
 ##################################
 ## Estimate dready2est==1 cases ##
 ##################################
@@ -1084,13 +1084,14 @@ sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0);
 ##
 ## Verify muns with zero pop
 ## All recently created
-nm$ife2006[which(nm$p18m06_05==0)]
-nm$ife2006[which(nm$p18m06_10==0)]
-nm$ife2006[which(nm$p18m06_20==0)]
+nm$inegi[which(nm$p18m_05==0)]
+nm$inegi[which(nm$p18m_10==0)]
+nm$inegi[which(nm$p18m_20==0)]
 nm[
-   which(nm$ife2006==4011),
-   c(grep("alta|ife2006|p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m06_(05|10|20)", colnames(nm)))
+   which(nm$inegi==4011),
+   c(grep("alta|inegi|p18.*_(2005|2010|2020)", colnames(nm)), grep("p18m_(05|10|20)", colnames(nm)))
 ]
+
 
 
 #####################################
@@ -1127,7 +1128,7 @@ sum(tmp$dzero) # if >0, manipulate indices
 tmp[which(tmp$dzero>0),]
 ## switch indices
 nm <- nm[order(nm$ord),] # make sure ord-sorted
-tmp <- split(x=nm, f=nm$ife2006) # split into list of data frames, one per municipio (2006 map)
+tmp <- split(x=nm, f=nm$inegi) # split into list of data frames, one per municipio (2006 map)
 ## for cases with zero pop in 1st seccion, this swaps indices of secciones 1 and 2 
 wrap.f <- function(x=NA){
     ##x <- tmp[[1028]]   # debug
@@ -1160,6 +1161,8 @@ tmp$dzero <- rowSums(tmp[,-1]==0, na.rm = TRUE)
 sum(tmp$dzero) # if >0, manipulate indices
 
 
+
+
 ######################
 ## Compute sh and r ##
 ######################
@@ -1167,9 +1170,9 @@ sum(tmp$dzero) # if >0, manipulate indices
 ## Then, estimation on (dready2est==1 & dsingle==0 & dfirst==0) only.
 ## Translating r.hats into sh.hats again needs all secciones, in order to compute 1+sum(r) for denominator.
 sh <- within(nm, {
-    p18_2005 <- p18_2005 / p18m06_05;
-    p18_2010 <- p18_2010 / p18m06_10;
-    p18_2020 <- p18_2020 / p18m06_20;
+    p18_2005 <- p18_2005 / p18m_05;
+    p18_2010 <- p18_2010 / p18m_10;
+    p18_2020 <- p18_2020 / p18m_20;
 })
 summary(sh$p18_2005)
 summary(sh$p18_2010)
@@ -1181,7 +1184,7 @@ sel.tmp <- which(sh$p18_2010==1 & sh$dsingle==0)
 sel.tmp
 sel.tmp <- which(sh$p18_2020==1 & sh$dsingle==0)
 sel.tmp
-show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20")], rows=sel.tmp, after=2, before=2)
+show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18m_05","p18m_10","p18m_20")], rows=sel.tmp, after=2, before=2)
 ##
 ## Any sh=0 first seccion?
 sel.tmp <- which(sh$p18_2005==0 & sh$dfirst==1)
@@ -1190,9 +1193,9 @@ sel.tmp <- which(sh$p18_2010==0 & sh$dfirst==1)
 sel.tmp
 sel.tmp <- which(sh$p18_2020==0 & sh$dfirst==1)
 sel.tmp
-nm[sel.tmp, c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20")]
+nm[sel.tmp, c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18m_05","p18m_10","p18m_20")]
 ##
-r <- split(x=sh, f=sh$ife2006) # split into list of data frames, one per municipio, to compute r=p18_i / p18_1
+r <- split(x=sh, f=sh$inegi) # split into list of data frames, one per municipio, to compute r=p18_i / p18_1
 sel.c <- c("p18_2005", "p18_2010", "p18_2020")
 tmp.f <- function(x=NA){
     ##x <- cenr[[1005]] # debug
@@ -1209,17 +1212,16 @@ with(r[r$dready2est==1,], table(is.na(p18_2010)))
 with(r[r$dready2est==1,], table(is.na(p18_2020)))
 ## sel.tmp <- with(r[r$dready2est==1,], which(is.na(p18_2010)))  # dready indices with 2010 NA
 ## sel.tmp <- which(r$seccion %in% sh[r$dready2est==1,][sel.tmp,]$seccion) # translated to r indices
-## show(nm[,c("seccion","ife2006","p18_2005","p18_2010","p18_2020","p18m06_05","p18m06_10","p18m06_20","ddone")], sel.tmp[1], 0, 30)
+## show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18m_05","p18m_10","p18m_20","ddone")], sel.tmp[1], 0, 30)
 
-
-#########################################################################
-## OJO: CHECK THIS. TWO CASES WITH CONTRADICTORY dsingle AND dfirst... ##
-## CHECK ABOVE WHERE THIS AROSE                                        ##
-#########################################################################
-table(single=r$dsingle, first=r$dfirst)
-r[which(r$dsingle==1 & r$dfirst==0),]
-r[which(r$inegi==12079),]
-
+## Inspect/manipulate and drop unseless indicators
+with(nm, table(ddone, dneedsum))
+nm$dneedsum <- NULL ## No longer needed
+with(nm, table(ddone, dskip))
+nm[nm$dskip==1, c("p18_2005","p18_2010","p18_2020")]
+nm[nm$dskip==1, grep("p18_", colnames(nm))] <- 0 ## Zeroes across the board
+with(nm, table(dready2est, dfirst))
+with(nm, table(ddone, dfirst))
 
 
 ##############################################################################
@@ -1227,7 +1229,7 @@ r[which(r$inegi==12079),]
 ## predict 1994:2003 and 2021; apply interpol for 2006:2018                 ##
 ##############################################################################
 ## Subset data, excluding first secciones (flat r=1)
-sel.c <- grep("seccion|ife2006|^p18_(2005|2010|2020)$", colnames(nm))
+sel.c <- grep("seccion|inegi|^p18_(2005|2010|2020)$", colnames(nm))
 sel.r <- which(r$dready2est==1 & r$dfirst==0 & r$dsingle==0)
 ##
 ##########################
@@ -1240,7 +1242,7 @@ dim(r.w)
 #### DEBUG: test with small dataset
 ##r.w <- r.w[1:1262,]
 ##
-## Log-linear projection of 2003, retaining regressions to use for 1994-on
+## Log-linear projection of 1994, retaining regressions to use for 1997-on
 tmp.regs <- vector(mode='list', length(nrow(r.w))) ## empty list
 tmp.regs <- interlog(what="p18", yr=1994, unit="s", frm="log(dv)~iv", census.data=r.w, digits=4)
 ## tmp.e will receive all log-linear predictions
@@ -1277,7 +1279,9 @@ tmp.l <- data.frame(seccion  =r.w$seccion,
                     )
 summary(tmp.l$p18_2006)
 ## subset again with all cols to fill-in tmp.e and tmp.l predictions
-r.w <- nm[sel.r,]
+####################
+r.w  <-  r[sel.r,] #
+####################
 r.w <- within(r.w, {
     p18_1994 <- tmp.e$p18_1994
     p18_1997 <- tmp.e$p18_1997
@@ -1289,8 +1293,8 @@ r.w <- within(r.w, {
     p18_2015 <- tmp.l$p18_2015
     p18_2018 <- tmp.l$p18_2018
     p18_2021 <- tmp.e$p18_2021
-    dready2est <- 0
-    ddone <- 1
+    ##dready2est <- 0
+    ##ddone <- 1
 })
 r.w[1,]
 ##
@@ -1298,37 +1302,141 @@ r.w[1,]
 ####################
 r.w  ->  r[sel.r,] #
 ####################
-rm(r.w)
+rm(r.w, fun.tmp, sel.tmp, tmp, tmp.e, tmp.l, tmp.f, tmp.regs)
 
-## convert r.hat to sh.hat. All obs needed
+
+
+################################
+## Add 1s to first seccion rs ##
+################################
+sel.c <- grep("^p18_", colnames(r))
+r[r$dfirst==1, sel.c] <- 1
+
+
+## convert r.hat to sh.hat. All obs needed to compute denominator
 denom <- r[, grep("seccion|inegi|^p18_", colnames(r))]
-denom[1:3,]
+r[r$inegi==1004,grep("p18", colnames(r))]
+denom[denom$inegi==1004,]
+denom <- split(x=denom, f=denom$inegi)
+#denom <- denom[[4]] # debug
+fun.tmp <- function(x){
+    tmp  <- do.call(rbind, replicate(nrow(x), colSums(x[,-c(1,2)], na.rm = TRUE), simplify = FALSE))
+    x[,-c(1,2)] <- tmp
+    return(x)
+}
+#fun.tmp(denom)
+tmp <- lapply(denom, function(x) fun.tmp(x))
+denom <- do.call(rbind, tmp) 
+rownames(denom) <- NULL
+denom[denom$inegi==1004,]
 
-denom$p18_1994 <-
-    ave(denom$p18_1994, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_1997 <- ave(denom$p18_1997, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2000 <- ave(denom$p18_2000, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2003 <- ave(denom$p18_2003, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2006 <- ave(denom$p18_2006, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2009 <- ave(denom$p18_2009, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2012 <- ave(denom$p18_2012, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2015 <- ave(denom$p18_2015, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2018 <- ave(denom$p18_2018, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
-denom$p18_2021 <- ave(denom$p18_2021, as.factor(denom$inegi), FUN=sum, na.rm=TRUE)
+## sort all (sh and denom not in same order, use seccion to avoid adding ord to denom)
+table(r$seccion==   sh$seccion)
+table(r$seccion==   nm$seccion)
+table(r$seccion==denom$seccion)
+r     <- r    [order(r    $seccion),]
+sh    <- sh   [order(sh   $seccion),]
+nm    <- nm   [order(nm   $seccion),]
+denom <- denom[order(denom$seccion),]
 
-head(denom)
-denom <- split(x=denom, f=nm$inegi)
-denom <- lapply(tmp, function(x){
-    within(x, {
-        p18_
-    n <- nrow(x)
-    n <- data.frame(ife2006=NA, n=n)
-    return(n)
-    })
+
+
+
+## convert, only estimated secciones needed
+## Subset data, excluding single secciones (ddone=1)
+##sel.c <- grep("seccion|inegi|^p18_(2005|2010|2020)$", colnames(nm))
+sel.r <- which(r$dready2est==1 & r$dsingle==0)
+##
+#############################
+r.w      <-      r[sel.r, ] #
+sh.w     <-     sh[sel.r, ] #
+nm.w     <-     nm[sel.r, ] #
+denom.w  <-  denom[sel.r, ] #
+#############################
+## compute sh.hat and empty in sh
+tmp <-  r.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(r.w))] /
+    denom.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(denom.w))]
+tmp[r.w$inegi==1004,]
+tmp -> sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
+
+#################################################################
+## Get projected mun pops to convert sh.hats back into nm.hats ##
+#################################################################
+tmp <- censom21
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_1995 - x$p18_1990) /5 # yearly pop change
+    pop <- x$p18_1990 + chg * (yr - 1990)
+    return(pop)
+}
+tmp <- within(tmp, {
+    p18_1994 <- prj(tmp, 1994)
+})
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) /5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+tmp <- within(tmp, {
+    p18_1997 <- prj(tmp, 1997)
+})
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) /5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+tmp <- within(tmp, {
+    p18_2003 <- prj(tmp, 2003)
+})
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+tmp <- within(tmp, {
+    p18_2006 <- prj(tmp, 2006)
+    p18_2009 <- prj(tmp, 2009)
+})
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2020 - x$p18_2010) /10 # yearly pop change
+    pop <- x$p18_2010 + chg * (yr - 2010)
+    return(pop)
+}
+tmp <- within(tmp, {
+    p18_2012 <- prj(tmp, 2012)
+    p18_2015 <- prj(tmp, 2015)
+    p18_2018 <- prj(tmp, 2018)
+    p18_2021 <- prj(tmp, 2021)
+})
+tmp <- tmp[,order(colnames(tmp))]
+tmp$p18_1990 <- tmp$p18_1995 <- tmp$p18_2005 <- tmp$p18_2010 <- tmp$p18_2020 <- tmp$edon <- tmp$mun <- tmp$ife <- NULL
+dim(tmp)
+tmp[1,]
+## pick municipios needed
+tmp2 <- data.frame(ord=1:nrow(sh.w), inegi=sh.w$inegi)
+tmp2 <- merge(x=tmp2, y=tmp, by="inegi", all.x=TRUE, all.y=FALSE)
+tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL
+tmp <- tmp2; rm(tmp2)
+tmp[1:3,]
+##
+## compute nm.hat and empty in nm
+tmp.nm <- sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(r.w))] *
+          tmp [, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(tmp))]
+## check
+tmp[tmp$inegi==1001, grep("^p18_", colnames(tmp))]
+tmp.nm[tmp$inegi==1001, grep("^p18_", colnames(tmp.nm))]
+nm[nm$inegi==1001, grep("^p18_", colnames(nm))]
+## check
+head(tmp)
+head(tmp.nm)
+head(nm)
+## all should be 1 !!!!
+tmp <- sh[, grep("^p18_", colnames(sh))]
+tmp <- split(tmp, sh$inegi)
+tmp <- lapply(tmp, colSums)
 tmp <- do.call(rbind, tmp)
-tmp$ife2006 <- as.numeric(rownames(tmp))
-nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
+summary(tmp)
 
+rm(fun.tmp, denom.w, nm.w, sh.w, r.w, prj, preds, sec.tmp, sel, sel.c, sel.ignore, sel.r, sel.tmp, tmp, tmp.nm, wrap.f) ## clean
 
 
 ## 14. Apply interpol to r[sel.r,], predict 2005:2020
@@ -1344,7 +1452,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 22. Subset nm[sel.r,] sh[sel.r,] r[sel.r,] 
 ## 23. Save 2020 values to restore
 ## 24. Apply sum.split(d=nm[sel.r,], year.var=2020, rnd=1)
-## 25. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 25. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 26. Compute sh[sel.r,], compute r[sel.r,]
 ## 27. Apply interlog to r[sel.r,], predict 1994:2004 and and 2021
 ## 28. Apply interpol to r[sel.r,], predict 2005:2020
@@ -1360,7 +1468,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 37. Subset nm[sel.r,] sh[sel.r,] r[sel.r,] 
 ## 38. Save 2020 values to restore
 ## 39. Apply sum.split(d=nm[sel.r,], year.var=2020, rnd=1)
-## 40. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 40. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 41. Compute sh[sel.r,], compute r[sel.r,]
 ## 42. Apply interlog to r[sel.r,], predict 1994:2004 and and 2021
 ## 43. Apply interpol to r[sel.r,], predict 2005:2020
@@ -1379,7 +1487,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 54. Save 2010 and 2020 values to restore
 ## 55. Apply sum.split(d=nm[sel.r,], year.var=2010, rnd=1)
 ## 56. Apply sum.split(d=nm[sel.r,], year.var=2020, rnd=1)
-## 57. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 57. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 58. Compute sh[sel.r,], compute r[sel.r,]
 ## 59. Apply interlog to r[sel.r,], predict 1994:2004
 ## 60. Apply interpol to r[sel.r,], predict 2005:2009
@@ -1396,7 +1504,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 70. Save 2010 and 2020 values to restore
 ## 71. Apply sum.split(d=nm[sel.r,], year.var=2010, rnd=1)
 ## 72. Apply sum.split(d=nm[sel.r,], year.var=2020, rnd=1)
-## 73. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 73. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 74. Compute sh[sel.r,], compute r[sel.r,]
 ## 75. Apply interlog to r[sel.r,], predict 1994:2004
 ## 76. Apply interpol to r[sel.r,], predict 2005:2008
@@ -1416,7 +1524,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 88. Apply sum.split(d=nm[sel.r,], year.var=2005, rnd=1)
 ## 89. Apply sum.split(d=nm[sel.r,], year.var=2010, rnd=1)
 ## 90. Apply sum.split(d=nm[sel.r,], year.var=2020, rnd=1)
-## 91. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 91. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 92. Compute sh[sel.r,], compute r[sel.r,]
 ## 93. Apply interlog to r[sel.r,], predict 1994:2004
 ## 94. Translate r[sel.r,] -> sh[sel.r,] -> nm[sel.r,]
@@ -1431,7 +1539,7 @@ nm$dsingle[which(nm$ife2006  %in% tmp$ife2006[tmp$n==1])] <- 1
 ## 102. sel.r <- seccion split in 2004 cases, round 1
 ## 103. Subset nm[sel.r,] sh[sel.r,] r[sel.r,] 
 ## 104. Flat at 0 up to 2004
-## 105. Apply my_sum(nm[sel.r,]$m06:2005-2010-2020) 
+## 105. Apply my_sum(nm[sel.r,]$m:2005-2010-2020) 
 ## 106. Compute sh[sel.r,], compute r[sel.r,]
 ## 107. Apply interpol to r[sel.r,], predict 2005:2020
 ## 108. Apply interlog to r[sel.r,], predict 2021 
