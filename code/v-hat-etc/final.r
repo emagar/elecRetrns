@@ -850,6 +850,19 @@ table(done=nm$ddone,    ready=nm$dready2est)
 table(sum= nm$dneedsum, ready=nm$dready2est)
 sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
 
+########################################
+## Indicate single-sección municipios ##
+########################################
+tmp <- split(x=nm, f=nm$inegi)
+tmp <- lapply(tmp, function(x){
+    n <- nrow(x)
+    n <- data.frame(inegi=NA, n=n)
+    return(n)
+    })
+tmp <- do.call(rbind, tmp)
+tmp$inegi <- as.numeric(rownames(tmp))
+nm$dsingle[which(nm$inegi  %in% tmp$inegi[tmp$n==1])] <- 1
+##
 ############################################
 ## Indicate 1st seccion in each municipio ##
 ############################################
@@ -1166,8 +1179,6 @@ summary(sh$p18_2020)
 ## Any sh=1 that are not singles?
 sel.tmp <- which(sh$p18_2005==1 & sh$dsingle==0)
 sel.tmp
-show(sh, 6704, 0, 2)
-nm[nm$inegi==7119,]
 sel.tmp <- which(sh$p18_2010==1 & sh$dsingle==0)
 sel.tmp
 sel.tmp <- which(sh$p18_2020==1 & sh$dsingle==0)
@@ -1207,7 +1218,7 @@ with(nm, table(ddone, dneedsum))
 nm$dneedsum <- NULL ## No longer needed
 with(nm, table(ddone, dskip))
 nm[nm$dskip==1, c("p18_2005","p18_2010","p18_2020")]
-nm[nm$dskip==1, grep("p18_", colnames(nm))] <- 0 ## Zeroes across the board
+nm[nm$dskip==1, grep("p18_", colnames(nm))] <- 0 ## Zeroes across the board for these secciones
 with(nm, table(dready2est, dfirst))
 with(nm, table(ddone, dfirst))
 
