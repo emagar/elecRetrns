@@ -61,6 +61,11 @@ source("../../code/v-hat-etc/interpolate-census-functions.r")
 ##    nm = nominal quantities
 nm <- censo
 ##
+## #####################################
+## ## Make inegi codes equal 2021 map ##
+## #####################################
+## nm$inegi <- ife2inegi(nm$ife2021)
+##
 #####################################################################
 ## change orig.dest w non-adjacent seccion nums to vector notation ##
 #####################################################################
@@ -86,7 +91,9 @@ if (length(sel)>0){
     nm$orig.dest3[sel] <- tmp
 }
 ##
-# add cols that will receive p18 projections for elec yrs
+#############################################################
+## Add cols that will receive p18 projections for elec yrs ##
+#############################################################
 nm <- within(nm, {
     nmanip <- dfirst <- dsingle <- dskip <- dready2est <- ddone <- dneedsum <- 0;
     when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
@@ -843,57 +850,21 @@ table(done=nm$ddone,    ready=nm$dready2est)
 table(sum= nm$dneedsum, ready=nm$dready2est)
 sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
 
-####################################################################################
-## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m:2005-2010-2020)  ##
-####################################################################################
-## fill in p18s for aggregation
-nm <- within(nm, {
-    p18m_05 <- p18_2005;
-    p18m_10 <- p18_2010;
-    p18m_20 <- p18_2020;
-})
-sel.c <- c("p18m_05", "p18m_10", "p18m_20")
-nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE)
-##
-########################################
-## Indicate single-sección municipios ##
-########################################
-tmp <- split(x=nm, f=nm$inegi)
-tmp <- lapply(tmp, function(x){
-    n <- nrow(x)
-    n <- data.frame(inegi=NA, n=n)
-    return(n)
-    })
-tmp <- do.call(rbind, tmp)
-tmp$inegi <- as.numeric(rownames(tmp))
-nm$dsingle[which(nm$inegi  %in% tmp$inegi[tmp$n==1])] <- 1
-##
 ############################################
 ## Indicate 1st seccion in each municipio ##
 ############################################
-nm <- nm[order(nm$ord),] # make sure ord-sorted
-tmp <- split(x=nm, f=nm$inegi) # split into list of data frames, one per municipio OJO: uses inegi
-tmp.f <- function(x=NA){
-    ##x <- tmp[[1005]] # debug
-    x$dfirst[1] <- 1            # indicate 1st seccion in municipio
-    return(x)
-}
-tmp <- lapply(tmp, tmp.f) # apply function
-tmp <- do.call(rbind, tmp) # return to data frame form
-rownames(tmp) <- NULL
-nm <- tmp # return manipulated data
-##
-## sort
-table(1:nrow(nm) - nm$ord)
-nm <- nm[order(nm$ord),]
+nm$dfirst <- 0
+nm <- nm[order(nm$ord),] ## sort
+nm$dfirst[duplicated(nm$inegi)==FALSE] <- 1
+table(nm$dfirst)
 
 #############################################################
 ## Manipulate split.to secciones with sum.split() function ##
 #############################################################
 ## Duplicate nm to restore factual census quantities after sum.splits()
-sel.c <- grep("^p18_(2005|2010|2020)", colnames(nm))
+sel.c <- grep("seccion|^p18_(2005|2010|2020)", colnames(nm))
 nm.saved <- nm[, sel.c]
-drestore <- nm.saved; drestore[] <- 0 # indicate cases that need to be restore here
+drestore <- nm.saved; drestore[,-1] <- 0 # indicate cases that need to be restore here
 ##
 ## Target cases
 sel.tmp <- which(nm$dneedsum==1)
@@ -1108,20 +1079,21 @@ tmp -> nm[,c("p18_2005","p18_2010","p18_2020")]
 ## else change index to avoid dividing by zero      ##
 ######################################################
 which(nm$dfirst==1 & nm$p18_2020==0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 16498,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 25598,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 26001,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 31982,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 43159,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 44010,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 51543,  5, 0)
-show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 57659,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 16435,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 25302,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 25926,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 32095,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 42419,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 43224,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 50927,  5, 0)
+show(nm[,grep("ord|seccion|inegi|alta|baja|p18.*_(2005|2010|2020)|ddone|dfirst|dskip", colnames(nm))], 57629,  5, 0)
 ##
 ## Are there zero pop 1st secciones? If so, flip indices with another seccion
 nm <- nm[order(nm$ord),] # ord-sort
 sel.c <- grep("seccion|^p18_", colnames(nm))
 tmp <- nm[nm$dfirst==1, sel.c]
 tmp$dzero <- rowSums(tmp[,-1]==0, na.rm = TRUE)
+options(width=140)
 table(tmp$dzero)
 nm[nm$dfirst==1,][which(tmp$dzero>0),]
 sum(tmp$dzero) # if >0, manipulate indices
@@ -1161,6 +1133,20 @@ tmp$dzero <- rowSums(tmp[,-1]==0, na.rm = TRUE)
 sum(tmp$dzero) # if >0, manipulate indices
 
 
+##################################################################################
+## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m:2005-2010-2020)  ##
+## These aggragates are for the purpose of projecting with manipulated          ##
+## reseccionamiento. Will recompute them after restoring unmanipulated censos   ##
+##################################################################################
+## fill in p18s for aggregation
+nm <- within(nm, {
+    p18m_05 <- p18_2005;
+    p18m_10 <- p18_2010;
+    p18m_20 <- p18_2020;
+})
+sel.c <- c("p18m_05", "p18m_10", "p18m_20")
+nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE)
+##
 
 
 ######################
@@ -1180,6 +1166,8 @@ summary(sh$p18_2020)
 ## Any sh=1 that are not singles?
 sel.tmp <- which(sh$p18_2005==1 & sh$dsingle==0)
 sel.tmp
+show(sh, 6704, 0, 2)
+nm[nm$inegi==7119,]
 sel.tmp <- which(sh$p18_2010==1 & sh$dsingle==0)
 sel.tmp
 sel.tmp <- which(sh$p18_2020==1 & sh$dsingle==0)
@@ -1357,7 +1345,28 @@ denom.w  <-  denom[sel.r, ] #
 tmp <-  r.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(r.w))] /
     denom.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(denom.w))]
 tmp[r.w$inegi==1004,]
+head(tmp)
 tmp -> sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
+
+## Are summed municipal pops equal to inegi mun reports?
+tmp.read <- censom21[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
+tmp.sum <- nm[duplicated(nm$inegi)==FALSE, c("edon","inegi","p18m_05","p18m_10","p18m_20")]
+dim(tmp.read)
+dim(tmp.sum)
+tmp.read <- tmp.read[order(tmp.read$inegi),]
+tmp.sum <- tmp.sum[order(tmp.sum$inegi),]
+tmp.sum <- merge(x=tmp.sum, y=tmp.read, by="inegi", all=TRUE)
+tmp.sum[1:3,]
+tmp.sum <- within(tmp.sum, dif <- p18m_05 - p18_2005)
+table(tmp.sum$dif)
+
+table(tmp.read$inegi - tmp.sum$inegi)
+table(tmp.read$p18_2005 - tmp.sum$p18m_05)
+table(tmp.read$p18_2010 - tmp.sum$p18m_10)
+table(tmp.read$p18_2020 - tmp.sum$p18m_20)
+tmp.read[tmp.read$edon==2,]
+tmp.sum [tmp.read$edon==2,]
+
 
 #################################################################
 ## Get projected mun pops to convert sh.hats back into nm.hats ##
@@ -1428,8 +1437,8 @@ nm[nm$inegi==1001, grep("^p18_", colnames(nm))]
 ## check
 head(tmp)
 head(tmp.nm)
-head(nm)
-## all should be 1 !!!!
+head(nm[,grep("p18_", colnames(nm))])
+## all should be 1 !!!! OK NOW
 tmp <- sh[, grep("^p18_", colnames(sh))]
 tmp <- split(tmp, sh$inegi)
 tmp <- lapply(tmp, colSums)

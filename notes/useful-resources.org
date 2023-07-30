@@ -1,0 +1,4 @@
+# Resources of use for analysis
+
+* http://shadedrelief.com/ne-draft/ has hidrographic shapefiles with urban areas. Also, attractive at reporting its data in twitter. 
+* https://sites.research.google/open-buildings/ has building footprints. Has great technical report, inspiration for mine.
