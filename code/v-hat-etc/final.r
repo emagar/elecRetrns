@@ -2,6 +2,18 @@
 ## 2. Prep: function interlog --- for 3pt log(dv=r)~iv
 ## 3. Prep: function interpol --- for 2pt segments
 
+## Function shows rows above/below numbered rows
+show <- function(x, rows, after = 0, before = 0) {
+  ## From https://stackoverflow.com/questions/13155609/returning-above-and-below-rows-of-specific-rows-in-r-dataframe
+  ##match.idx  <- which(rownames(x) %in% rows) ## if using names rows
+  match.idx  <- rows                           ## if using numbered rows
+  span       <- seq(from = -before, to = after)
+  extend.idx <- c(outer(match.idx, span, `+`))
+  extend.idx <- Filter(function(i) i > 0 & i <= nrow(x), extend.idx)
+  extend.idx <- sort(unique(extend.idx))
+  return(x[extend.idx, , drop = FALSE])
+}
+##
 ##############################################################
 ## manipulate secciones that suffered some reseccionamiento ##
 ##############################################################
@@ -60,6 +72,7 @@ source("../../code/v-hat-etc/interpolate-census-functions.r")
 ## 4. Duplicate nm=censo, adding cols 1994:2021, m:2005-2010-2020, ddone=0, etc
 ##    nm = nominal quantities
 nm <- censo
+#nm <- censo[censo$inegi==1001,] # debug
 ##
 ## #####################################
 ## ## Make inegi codes equal 2021 map ##
@@ -667,32 +680,21 @@ nm[sel.tmp,] <- within(nm[sel.tmp,], {
     action3 <- "";      orig.dest3 <- "";         when3 <- NA
 })
 ## Case has zero pop 05 and 20 but not 10, fix arbitrarily
-## Function also shows rows above/below numbered rows
-show <- function(x, rows, after = 0, before = 0) {
-  ## From https://stackoverflow.com/questions/13155609/returning-above-and-below-rows-of-specific-rows-in-r-dataframe
-  ##match.idx  <- which(rownames(x) %in% rows) ## if using names rows
-  match.idx  <- rows                           ## if using numbered rows
-  span       <- seq(from = -before, to = after)
-  extend.idx <- c(outer(match.idx, span, `+`))
-  extend.idx <- Filter(function(i) i > 0 & i <= nrow(x), extend.idx)
-  extend.idx <- sort(unique(extend.idx))
-  return(x[extend.idx, , drop = FALSE])
-}
 sel.tmp <- which(nm$seccion==200457)
 show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=3, before=3)
 nm$p18_2005[sel.tmp] <- 500
 nm$p18_2020[sel.tmp] <- 800 
-nm$nmanip <- nm$nmanip + 1
+nm$nmanip[sel.tmp] <- nm$nmanip[sel.tmp] + 1
 ##
 sel.tmp <- which(nm$seccion==200802)
 show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
 nm$p18_2020[sel.tmp] <- 100
-nm$nmanip <- nm$nmanip + 1
+nm$nmanip[sel.tmp] <- nm$nmanip[sel.tmp] + 1
 ##
 sel.tmp <- which(nm$seccion==201305)
 show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020")], rows=sel.tmp, after=2, before=2)
 nm$p18_2020[sel.tmp] <- 500
-nm$nmanip <- nm$nmanip + 1
+nm$nmanip[sel.tmp] <- nm$nmanip[sel.tmp] + 1
 ##
 ## These have zero pop 05-10-20
 sel.tmp <- which(nm$seccion %in% c(71529, 122374, 151965, 152035, 152710, 152712, 152713, 152714, 152715, 152718, 152719, 152720, 152722, 230450, 290526))
@@ -829,9 +831,9 @@ sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0)
 table(is.na(nm$p18_2005[sel.tmp]))
 table(is.na(nm$p18_2010[sel.tmp]))
 table(is.na(nm$p18_2020[sel.tmp]))
-table(nm$p18_2005[sel.tmp]==0)
-table(nm$p18_2010[sel.tmp]==0)
-table(nm$p18_2020[sel.tmp]==0)
+table(      nm$p18_2005[sel.tmp]==0)
+table(      nm$p18_2010[sel.tmp]==0)
+table(      nm$p18_2020[sel.tmp]==0)
 ##table(action =nm$when [sel.tmp])
 ## indicate cases wo reseccionamiento and full census
 sel.tmp <- which(nm$ddone==0 & nm$dskip==0 & nm$dneedsum==0 & nm$dready2est==0 &
@@ -1439,11 +1441,16 @@ tmp <- tmp2; rm(tmp2)
 tmp[1:3,]
 ##
 ## compute nm.hat and empty in nm
-tmp.nm <- sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(r.w))] *
+tmp.nm <- sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))] *
           tmp [, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(tmp))]
 ## check
 tmp[tmp$inegi==1001, grep("^p18_", colnames(tmp))]
+head(tmp[tmp$inegi==1001, grep("^p18_", colnames(tmp))])
 tmp.nm[tmp$inegi==1001, grep("^p18_", colnames(tmp.nm))]
+head(tmp.nm[tmp$inegi==1001, grep("^p18_", colnames(tmp.nm))])
+colSums(sh.w[,               grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))])
+colSums(sh  [sh$inegi==1001, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh))])
+sh[1,]
 nm[nm$inegi==1001, grep("^p18_", colnames(nm))]
 ## check
 head(tmp)
