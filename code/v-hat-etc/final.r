@@ -119,6 +119,8 @@ nm <- within(nm, {
 })
 ##nm <- nm[order(nm$inegi, nm$seccion),] # sort mun
 ##
+
+
 ##############################################################
 ## Block starts here                                        ##
 ## OJO: Need to re-evaluate each sub-block of the block     ##
@@ -873,6 +875,7 @@ nm <- nm[order(nm$ord),] ## sort
 nm$dfirst[duplicated(nm$inegi)==FALSE] <- 1
 table(nm$dfirst)
 
+THIS NEEDS TO BE DONE IN sh NOT NM TO AVOID DUPLICATING SECCIONES TOWARDS MUN POP
 #############################################################
 ## Manipulate split.to secciones with sum.split() function ##
 #############################################################
