@@ -1168,8 +1168,8 @@ pob18 <- tmp18
 ## 2010 seccion-level ##
 ########################
 tmp18 <- data.frame()
-tmp.all.sec$tmp.drop <- NA;                          # redundant column to retain data frame form
-tmp.all.sec <- tmp.all.sec[,c("seccion","tmp.drop")] # trim to avoid dumplicated cols in merge
+tmp.all.sec$tmp.drop <- NA;                          # redundant column to preserve data frame form
+tmp.all.sec <- tmp.all.sec[,c("seccion","tmp.drop")] # trim to avoid duplicated cols in merge
 for (i in 1:9){
     tmp2010 <- read.csv( paste0("/home/eric/Desktop/MXelsCalendGovt/censos/secciones/eceg_2010/", edos[i], "/secciones_0", i, ".csv"), stringsAsFactors = FALSE)
     tmp18 <- rbind(tmp18, tmp2010[, grep("ENTIDAD|CLAVEGEO|P_18YMAS$|POBTOT", colnames(tmp2010))])
@@ -1240,6 +1240,7 @@ c00 <- within(c00, {
     }
 )
 ##c00 <- merge(x=c00, y=censom00[,c("ife","inegi")], by="inegi", all.y=TRUE)
+c00[c00$inegi==4010,]
 c00[1,]
 ## c00    <- c00     [order(c00     $ife),]
 ## censom <- censom00[order(censom00$ife),]
@@ -1326,7 +1327,6 @@ c90$pob18_1990 <- c90$p18
 dim(c90)
 dim(censom)
 censom <- merge(x=censom, y=c90[,c("inegi","pob18_1990")], by = "inegi", all=TRUE)
-censom[1,]
 rm(c90)
 
 
@@ -1525,6 +1525,91 @@ censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_20
 ## clean
 rm(censom)
 
+##############################
+## Fix parent/son municipio ##
+##############################
+
+## Rosarito (created 1998) has 1995 census data, didn't elect mun gov til 1998 but did vote as mun in fed 1997.
+## must be added to Tijuana in pre-1997 maps
+tmp <- censom94      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+tmp[12:17,]
+sel.parent <- which(tmp$inegi==2004)
+sel.son <-    which(tmp$inegi==2005)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom94      # return after manipulation
+## needs split 1990 from tj for 1997-on maps (use linear proj)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+## wrap in function
+mywrap <- function(x=NA){
+    x[is.na(x)] <- 0 # replace NAs with 0
+    sel.parent <- which(x$inegi==2004)
+    sel.son <-    which(x$inegi==2005)
+    ##x[c(sel.parent, sel.son),]
+    x$p18_1990[sel.son] <- prj(x[sel.son,], 1990) # project
+    x$p18_1990[sel.parent] <- x$p18_1990[sel.parent] - x$p18_1990[sel.son] # subtract from parent
+    ##x[c(sel.parent, sel.son),]
+    return(x)
+}
+censom97 <- mywrap(censom97) # apply func
+censom00 <- mywrap(censom00) # apply func
+censom03 <- mywrap(censom03) # apply func
+censom06 <- mywrap(censom06) # apply func
+censom09 <- mywrap(censom09) # apply func
+censom12 <- mywrap(censom12) # apply func
+censom15 <- mywrap(censom15) # apply func
+censom18 <- mywrap(censom18) # apply func
+censom21 <- mywrap(censom21) # apply func
+
+## Calakmul (created 1997) has 1995 census data, didn't elect mun gov til 1998 but did vote as mun in fed 1997.
+## must be added to Hopelchén in pre-1997 maps
+eric  xx
+tmp <- censom97      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==4006)
+sel.son <-    which(tmp$inegi==4010)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom94      # return after manipulation
+## needs split 1990 from tj for 1997-on maps (use linear proj)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+## wrap in function
+mywrap <- function(x=NA){
+    x[is.na(x)] <- 0 # replace NAs with 0
+    sel.parent <- which(x$inegi==2004)
+    sel.son <-    which(x$inegi==2005)
+    ##x[c(sel.parent, sel.son),]
+    x$p18_1990[sel.son] <- prj(x[sel.son,], 1990) # project
+    x$p18_1990[sel.parent] <- x$p18_1990[sel.parent] - x$p18_1990[sel.son] # subtract from parent
+    ##x[c(sel.parent, sel.son),]
+    return(x)
+}
+censom97 <- mywrap(censom97) # apply func
+censom00 <- mywrap(censom00) # apply func
+censom03 <- mywrap(censom03) # apply func
+censom06 <- mywrap(censom06) # apply func
+censom09 <- mywrap(censom09) # apply func
+censom12 <- mywrap(censom12) # apply func
+censom15 <- mywrap(censom15) # apply func
+censom18 <- mywrap(censom18) # apply func
+censom21 <- mywrap(censom21) # apply func
 
 
 

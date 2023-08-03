@@ -1698,6 +1698,121 @@ d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
 v21m <- d                                      # rename object
 
+#####################
+## Fix inegi codes ##
+#####################
+##
+v94m  $inegi <- ife2inegi(v94m  $ife); v94m  $mun <- ife2mun(v94m  $ife)
+v94m97$inegi <- ife2inegi(v94m97$ife); v94m97$mun <- ife2mun(v94m97$ife)
+v94m00$inegi <- ife2inegi(v94m00$ife); v94m00$mun <- ife2mun(v94m00$ife)
+v94m03$inegi <- ife2inegi(v94m03$ife); v94m03$mun <- ife2mun(v94m03$ife)
+v94m06$inegi <- ife2inegi(v94m06$ife); v94m06$mun <- ife2mun(v94m06$ife)
+v94m09$inegi <- ife2inegi(v94m09$ife); v94m09$mun <- ife2mun(v94m09$ife)
+v94m12$inegi <- ife2inegi(v94m12$ife); v94m12$mun <- ife2mun(v94m12$ife)
+v94m15$inegi <- ife2inegi(v94m15$ife); v94m15$mun <- ife2mun(v94m15$ife)
+v94m18$inegi <- ife2inegi(v94m18$ife); v94m18$mun <- ife2mun(v94m18$ife)
+v94m21$inegi <- ife2inegi(v94m21$ife); v94m21$mun <- ife2mun(v94m21$ife)
+##                                   ##                                 
+v97m94$inegi <- ife2inegi(v97m94$ife); v97m94$mun <- ife2mun(v97m94$ife)
+v97m  $inegi <- ife2inegi(v97m  $ife); v97m  $mun <- ife2mun(v97m  $ife)
+v97m00$inegi <- ife2inegi(v97m00$ife); v97m00$mun <- ife2mun(v97m00$ife)
+v97m03$inegi <- ife2inegi(v97m03$ife); v97m03$mun <- ife2mun(v97m03$ife)
+v97m06$inegi <- ife2inegi(v97m06$ife); v97m06$mun <- ife2mun(v97m06$ife)
+v97m09$inegi <- ife2inegi(v97m09$ife); v97m09$mun <- ife2mun(v97m09$ife)
+v97m12$inegi <- ife2inegi(v97m12$ife); v97m12$mun <- ife2mun(v97m12$ife)
+v97m15$inegi <- ife2inegi(v97m15$ife); v97m15$mun <- ife2mun(v97m15$ife)
+v97m18$inegi <- ife2inegi(v97m18$ife); v97m18$mun <- ife2mun(v97m18$ife)
+v97m21$inegi <- ife2inegi(v97m21$ife); v97m21$mun <- ife2mun(v97m21$ife)
+##                                   ##                                 
+v00m94$inegi <- ife2inegi(v00m94$ife); v00m94$mun <- ife2mun(v00m94$ife)
+v00m97$inegi <- ife2inegi(v00m97$ife); v00m97$mun <- ife2mun(v00m97$ife)
+v00m  $inegi <- ife2inegi(v00m  $ife); v00m  $mun <- ife2mun(v00m  $ife)
+v00m03$inegi <- ife2inegi(v00m03$ife); v00m03$mun <- ife2mun(v00m03$ife)
+v00m06$inegi <- ife2inegi(v00m06$ife); v00m06$mun <- ife2mun(v00m06$ife)
+v00m09$inegi <- ife2inegi(v00m09$ife); v00m09$mun <- ife2mun(v00m09$ife)
+v00m12$inegi <- ife2inegi(v00m12$ife); v00m12$mun <- ife2mun(v00m12$ife)
+v00m15$inegi <- ife2inegi(v00m15$ife); v00m15$mun <- ife2mun(v00m15$ife)
+v00m18$inegi <- ife2inegi(v00m18$ife); v00m18$mun <- ife2mun(v00m18$ife)
+v00m21$inegi <- ife2inegi(v00m21$ife); v00m21$mun <- ife2mun(v00m21$ife)
+##                                   ##                                 
+v03m94$inegi <- ife2inegi(v03m94$ife); v03m94$mun <- ife2mun(v03m94$ife)
+v03m97$inegi <- ife2inegi(v03m97$ife); v03m97$mun <- ife2mun(v03m97$ife)
+v03m00$inegi <- ife2inegi(v03m00$ife); v03m00$mun <- ife2mun(v03m00$ife)
+v03m  $inegi <- ife2inegi(v03m  $ife); v03m  $mun <- ife2mun(v03m  $ife)
+v03m06$inegi <- ife2inegi(v03m06$ife); v03m06$mun <- ife2mun(v03m06$ife)
+v03m09$inegi <- ife2inegi(v03m09$ife); v03m09$mun <- ife2mun(v03m09$ife)
+v03m12$inegi <- ife2inegi(v03m12$ife); v03m12$mun <- ife2mun(v03m12$ife)
+v03m15$inegi <- ife2inegi(v03m15$ife); v03m15$mun <- ife2mun(v03m15$ife)
+v03m18$inegi <- ife2inegi(v03m18$ife); v03m18$mun <- ife2mun(v03m18$ife)
+v03m21$inegi <- ife2inegi(v03m21$ife); v03m21$mun <- ife2mun(v03m21$ife)
+##                                   ##                                 
+v06m94$inegi <- ife2inegi(v06m94$ife); v06m94$mun <- ife2mun(v06m94$ife)
+v06m97$inegi <- ife2inegi(v06m97$ife); v06m97$mun <- ife2mun(v06m97$ife)
+v06m00$inegi <- ife2inegi(v06m00$ife); v06m00$mun <- ife2mun(v06m00$ife)
+v06m03$inegi <- ife2inegi(v06m03$ife); v06m03$mun <- ife2mun(v06m03$ife)
+v06m  $inegi <- ife2inegi(v06m  $ife); v06m  $mun <- ife2mun(v06m  $ife)
+v06m09$inegi <- ife2inegi(v06m09$ife); v06m09$mun <- ife2mun(v06m09$ife)
+v06m12$inegi <- ife2inegi(v06m12$ife); v06m12$mun <- ife2mun(v06m12$ife)
+v06m15$inegi <- ife2inegi(v06m15$ife); v06m15$mun <- ife2mun(v06m15$ife)
+v06m18$inegi <- ife2inegi(v06m18$ife); v06m18$mun <- ife2mun(v06m18$ife)
+v06m21$inegi <- ife2inegi(v06m21$ife); v06m21$mun <- ife2mun(v06m21$ife)
+##                                   ##                                 
+v09m94$inegi <- ife2inegi(v09m94$ife); v09m94$mun <- ife2mun(v09m94$ife)
+v09m97$inegi <- ife2inegi(v09m97$ife); v09m97$mun <- ife2mun(v09m97$ife)
+v09m00$inegi <- ife2inegi(v09m00$ife); v09m00$mun <- ife2mun(v09m00$ife)
+v09m03$inegi <- ife2inegi(v09m03$ife); v09m03$mun <- ife2mun(v09m03$ife)
+v09m06$inegi <- ife2inegi(v09m06$ife); v09m06$mun <- ife2mun(v09m06$ife)
+v09m  $inegi <- ife2inegi(v09m  $ife); v09m  $mun <- ife2mun(v09m  $ife)
+v09m12$inegi <- ife2inegi(v09m12$ife); v09m12$mun <- ife2mun(v09m12$ife)
+v09m15$inegi <- ife2inegi(v09m15$ife); v09m15$mun <- ife2mun(v09m15$ife)
+v09m18$inegi <- ife2inegi(v09m18$ife); v09m18$mun <- ife2mun(v09m18$ife)
+v09m21$inegi <- ife2inegi(v09m21$ife); v09m21$mun <- ife2mun(v09m21$ife)
+##                                   ##                                 
+v12m94$inegi <- ife2inegi(v12m94$ife); v12m94$mun <- ife2mun(v12m94$ife)
+v12m97$inegi <- ife2inegi(v12m97$ife); v12m97$mun <- ife2mun(v12m97$ife)
+v12m00$inegi <- ife2inegi(v12m00$ife); v12m00$mun <- ife2mun(v12m00$ife)
+v12m03$inegi <- ife2inegi(v12m03$ife); v12m03$mun <- ife2mun(v12m03$ife)
+v12m06$inegi <- ife2inegi(v12m06$ife); v12m06$mun <- ife2mun(v12m06$ife)
+v12m09$inegi <- ife2inegi(v12m09$ife); v12m09$mun <- ife2mun(v12m09$ife)
+v12m  $inegi <- ife2inegi(v12m  $ife); v12m  $mun <- ife2mun(v12m  $ife)
+v12m15$inegi <- ife2inegi(v12m15$ife); v12m15$mun <- ife2mun(v12m15$ife)
+v12m18$inegi <- ife2inegi(v12m18$ife); v12m18$mun <- ife2mun(v12m18$ife)
+v12m21$inegi <- ife2inegi(v12m21$ife); v12m21$mun <- ife2mun(v12m21$ife)
+##                                   ##                                 
+v15m94$inegi <- ife2inegi(v15m94$ife); v15m94$mun <- ife2mun(v15m94$ife)
+v15m97$inegi <- ife2inegi(v15m97$ife); v15m97$mun <- ife2mun(v15m97$ife)
+v15m00$inegi <- ife2inegi(v15m00$ife); v15m00$mun <- ife2mun(v15m00$ife)
+v15m03$inegi <- ife2inegi(v15m03$ife); v15m03$mun <- ife2mun(v15m03$ife)
+v15m06$inegi <- ife2inegi(v15m06$ife); v15m06$mun <- ife2mun(v15m06$ife)
+v15m09$inegi <- ife2inegi(v15m09$ife); v15m09$mun <- ife2mun(v15m09$ife)
+v15m12$inegi <- ife2inegi(v15m12$ife); v15m12$mun <- ife2mun(v15m12$ife)
+v15m  $inegi <- ife2inegi(v15m  $ife); v15m  $mun <- ife2mun(v15m  $ife)
+v15m18$inegi <- ife2inegi(v15m18$ife); v15m18$mun <- ife2mun(v15m18$ife)
+v15m21$inegi <- ife2inegi(v15m21$ife); v15m21$mun <- ife2mun(v15m21$ife)
+##                                   ##                                 
+v18m94$inegi <- ife2inegi(v18m94$ife); v18m94$mun <- ife2mun(v18m94$ife)
+v18m97$inegi <- ife2inegi(v18m97$ife); v18m97$mun <- ife2mun(v18m97$ife)
+v18m00$inegi <- ife2inegi(v18m00$ife); v18m00$mun <- ife2mun(v18m00$ife)
+v18m03$inegi <- ife2inegi(v18m03$ife); v18m03$mun <- ife2mun(v18m03$ife)
+v18m06$inegi <- ife2inegi(v18m06$ife); v18m06$mun <- ife2mun(v18m06$ife)
+v18m09$inegi <- ife2inegi(v18m09$ife); v18m09$mun <- ife2mun(v18m09$ife)
+v18m12$inegi <- ife2inegi(v18m12$ife); v18m12$mun <- ife2mun(v18m12$ife)
+v18m15$inegi <- ife2inegi(v18m15$ife); v18m15$mun <- ife2mun(v18m15$ife)
+v18m  $inegi <- ife2inegi(v18m  $ife); v18m  $mun <- ife2mun(v18m  $ife)
+v18m21$inegi <- ife2inegi(v18m21$ife); v18m21$mun <- ife2mun(v18m21$ife)
+##                                   ##                                 
+v21m94$inegi <- ife2inegi(v21m94$ife); v21m94$mun <- ife2mun(v21m94$ife)
+v21m97$inegi <- ife2inegi(v21m97$ife); v21m97$mun <- ife2mun(v21m97$ife)
+v21m00$inegi <- ife2inegi(v21m00$ife); v21m00$mun <- ife2mun(v21m00$ife)
+v21m03$inegi <- ife2inegi(v21m03$ife); v21m03$mun <- ife2mun(v21m03$ife)
+v21m06$inegi <- ife2inegi(v21m06$ife); v21m06$mun <- ife2mun(v21m06$ife)
+v21m09$inegi <- ife2inegi(v21m09$ife); v21m09$mun <- ife2mun(v21m09$ife)
+v21m12$inegi <- ife2inegi(v21m12$ife); v21m12$mun <- ife2mun(v21m12$ife)
+v21m15$inegi <- ife2inegi(v21m15$ife); v21m15$mun <- ife2mun(v21m15$ife)
+v21m18$inegi <- ife2inegi(v21m18$ife); v21m18$mun <- ife2mun(v21m18$ife)
+v21m  $inegi <- ife2inegi(v21m  $ife); v21m  $mun <- ife2mun(v21m  $ife)
+
+
 #######################
 ## census indicators ##
 #######################
@@ -1719,6 +1834,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom94 <- d                                  # rename object
 # 1997 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1737,6 +1854,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom97 <- d                                  # rename object
 # 2000 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1755,6 +1874,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom00 <- d                                  # rename object
 # 2003 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1773,6 +1894,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom03 <- d                                  # rename object
 # 2006 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1791,6 +1914,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom06 <- d                                  # rename object
 # 2009 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1809,6 +1934,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom09 <- d                                  # rename object
 # 2012 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1827,6 +1954,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom12 <- d                                  # rename object
 # 2015 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1845,6 +1974,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom15 <- d                                  # rename object
 # 2018 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1863,6 +1994,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom18 <- d                                  # rename object
 # 2021 municipalities
 d <- censo; d[is.na(d)] <- 0
@@ -1881,6 +2014,8 @@ d <- within(d, {
 })
 d <- add.miss.mun(d)                           # add missing municipios, if any
 d <- d[order(d$ife),]                          # sort
+d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
+d$mun <- ife2mun(d$ife)                        # translate to mun
 censom21 <- d                                  # rename object
 #
 rm(d,sel.c,add.miss.mun)
