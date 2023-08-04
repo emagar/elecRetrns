@@ -1528,7 +1528,6 @@ rm(censom)
 ##############################
 ## Fix parent/son municipio ##
 ##############################
-
 ## Rosarito (created 1998) has 1995 census data, didn't elect mun gov til 1998 but did vote as mun in fed 1997.
 ## must be added to Tijuana in pre-1997 maps
 tmp <- censom94      # duplicate for manipulation
@@ -1569,49 +1568,518 @@ censom12 <- mywrap(censom12) # apply func
 censom15 <- mywrap(censom15) # apply func
 censom18 <- mywrap(censom18) # apply func
 censom21 <- mywrap(censom21) # apply func
-
-## Calakmul (created 1997) has 1995 census data, didn't elect mun gov til 1998 but did vote as mun in fed 1997.
-## must be added to Hopelchén in pre-1997 maps
-eric  xx
+censom21[c(sel.parent, sel.son),]
+##
+## Calakmul (created 1997) is complicated.
+## Elected 1st mu gov 1997 but incorporated to fed els til 2018
+## Has 2020 census data only so nothing can be projected.
 tmp <- censom97      # duplicate for manipulation
 tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==4006)
 sel.son <-    which(tmp$inegi==4010)
 tmp[c(sel.parent, sel.son),]
+##tmp -> censom97      # return after manipulation
+##
+## Candelaria (created 2000) is easy
+## Elected 1st mu gov 2000
+## Has census data since 2000, so all ok
+tmp <- censom00      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==4003 | tmp$inegi==4009)
+sel.son <-    which(tmp$inegi==4011)
+tmp[c(sel.parent, sel.son),]
+##tmp -> censom00      # return after manipulation
+##
+## Seybaplaya (created 2019)
+## Elected 1st mu gov 2021
+## All looks ok
+tmp <- censom21      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==4002 | tmp$inegi==4004)
+sel.son <-    which(tmp$inegi==4012)
+tmp[c(sel.parent, sel.son),]
+##tmp -> censom21      # return after manipulation
+##
+## Dzitbalche (created 2019)
+## Elected 1st mu gov 2021
+## All looks ok
+tmp <- censom21      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==4001)
+sel.son <-    which(tmp$inegi==4013)
+tmp[c(sel.parent, sel.son),]
+##tmp -> censom21      # return after manipulation
+##
+## Aldama, Benemérito, Maravilla, Marqués, Montecristo, Sn Andrés, Santiago (created 2001)
+## Elected 1st mu gov 2001 but not incorporated to fed els til 2018
+## Use 2018 map for mun els since 2001
+## Pre-2018 maps have 2000 that needs to go to parent
+tmp <- censom94      # duplicate for manipulation
+mywrap <- function(x=NA){
+    x[is.na(x)] <- 0 # replace NAs with 0
+    sel.parent <- which(x$inegi==7026)
+    sel.son <-    which(x$inegi==7113)
+    ##x[c(sel.parent, sel.son),]
+    x$p18_2000[sel.parent] <- x$p18_2000[sel.parent] + x$p18_2000[sel.son]
+    x$p18_2000[sel.son] <- 0
+    ##x[c(sel.parent, sel.son),]
+    return(x)
+}
+tmp <- mywrap(tmp)
+tmp[c(sel.parent, sel.son),]
+tmp -> censom94      # return after manipulation
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7059)
+    sel.son <-    which(tmp$inegi==7114)
+    ##tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7052)
+    sel.son <-    which(tmp$inegi==7115)
+    tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7059)
+    sel.son <-    which(tmp$inegi==7116)
+    ##tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7008)
+    sel.son <-    which(tmp$inegi==7117)
+    ##tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7081)
+    sel.son <-    which(tmp$inegi==7118)
+    ##tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+mywrap <- function(x=NA){
+    tmp <- x
+    tmp[is.na(tmp)] <- 0 # replace NAs with 0
+    sel.parent <- which(tmp$inegi==7049)
+    sel.son <-    which(tmp$inegi==7119)
+    ##tmp[c(sel.parent, sel.son),]
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    ##tmp[c(sel.parent, sel.son),]
+    return(tmp)
+}
+censom94 <- mywrap(censom94)
+censom97 <- mywrap(censom97)
+censom00 <- mywrap(censom00)
+censom03 <- mywrap(censom03)
+censom06 <- mywrap(censom06)
+censom09 <- mywrap(censom09)
+censom12 <- mywrap(censom12)
+censom15 <- mywrap(censom15)
+##
+## Capitán and Rincón (created 2018)
+## Elected 1st mu gov 2018 but not incorporated to fed els til 2021
+## Use 2021 map for mun els in 2018
+## All looks ok
+tmp <- censom21      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==7081)
+sel.son <-    which(tmp$inegi==7120)
+tmp[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmp$inegi==7072 | tmp$inegi==7047 | tmp$inegi==7091)
+sel.son <-    which(tmp$inegi==7121)
+tmp[c(sel.parent, sel.son),]
+##
+## Parral, Zapata, Mezcalapa, (created 2012)
+## Elected 1st mu gov 2012 but not incorporated to fed els til 2021
+## Honduras (created 2020)
+## Elected 1st mu gov 2021
+## Use 2021 map for mun els since 2012
+## All look ok
+tmp <- censom21      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==7107 | tmp$inegi==7108)
+sel.son <-    which(tmp$inegi==7122)
+tmp[c(sel.parent, sel.son),]
+##
+tmp <- censom18      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==7002 | tmp$inegi==7027 | tmp$inegi==7106)
+sel.son <-    which(tmp$inegi==7123)
+tmp[c(sel.parent, sel.son),]
+##
+tmp <- censom18      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==7061 | tmp$inegi==7062 | tmp$inegi==7092)
+sel.son <-    which(tmp$inegi==7124)
+tmp[c(sel.parent, sel.son),]
+##
+tmp <- censom21      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==7081)
+sel.son <-    which(tmp$inegi==7125)
+tmp[c(sel.parent, sel.son),]
+##
+## Acatepec (created 1996)
+## Elected 1st mu gov 1996
+## Pre-97 maps to zero
+tmp <- censom94      # duplicate for manipulation
+tmp[is.na(tmp)] <- 0 # replace NAs with 0
+sel.parent <- which(tmp$inegi==12072)
+sel.son <-    which(tmp$inegi==12076)
+tmp[c(sel.parent, sel.son),]
 tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
 tmp$p18_1995[sel.son] <- 0
 tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
 tmp$p18_2000[sel.son] <- 0
-tmp[c(sel.parent, sel.son),]
 tmp -> censom94      # return after manipulation
-## needs split 1990 from tj for 1997-on maps (use linear proj)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
+##
+## Marquelia (created 2005)
+## Elected 1st mu gov 2005
+## Looks ok
+tmp <- censom06      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==12013)
+sel.son <-    which(tmp$inegi==12077)
+tmp[c(sel.parent, sel.son),]
+##
+## Cochoapa, JJ, Juchitán, Iliatenco (created 2008)
+## Elected 1st mu gov 2008
+## Look ok (some suffered reseccionamiento after 2009)
+tmp <- censom09      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==12043)
+sel.son <-    which(tmp$inegi==12078)
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==12028)
+sel.son <-    which(tmp$inegi==12079)
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==12013)
+sel.son <-    which(tmp$inegi==12080)
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==12041)
+sel.son <-    which(tmp$inegi==12081)
+tmp[c(sel.parent, sel.son),]
+##
+## San Ignacio (created 2006)
+## Elected 1st mu gov 2006, into fed els 2015 (use 2015 map for 2006:2012 mun els)
+## Looks ok
+tmp <- censom15      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==14008)
+sel.son <-    which(tmp$inegi==14125)
+tmp[c(sel.parent, sel.son),]
+##
+## Luvianos, SJ (created 2003)
+## Elected 1st mu gov 2003
+## Looks ok
+tmp <- censom03      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==15074)
+sel.son <-    which(tmp$inegi==15123)
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==15044)
+sel.son <-    which(tmp$inegi==15124)
+tmp[c(sel.parent, sel.son),]
+##
+## Tonatitlw (created 2006)
+## Elected 1st mu gov 2006
+## Looks ok
+tmp <- censom06      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==15044)
+sel.son <-    which(tmp$inegi==15125)
+tmp[c(sel.parent, sel.son),]
+##
+## Solidaridad (created 1996)
+## Elected 1st mu gov 1996
+## Pre-97 maps need sum
+tmp <- censom94      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==23001)
+sel.son <-    which(tmp$inegi==23008)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp -> censom94      # return
+##
+## Tulum (created 2009)
+## Elected 1st mu gov 2009, into fed els til 2018
+## Use 2018 map for mun els 2008:17
+tmp <- censom18      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==23008)
+sel.son <-    which(tmp$inegi==23009)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp -> censom94      # return
+##
+## Bacalar (created 2013)
+## Elected 1st mu gov 2013, fed els in 2015
+## Looks ok
+tmp <- censom12      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==23004)
+sel.son <-    which(tmp$inegi==23010)
+tmp[c(sel.parent, sel.son),]
+##
+## Pto Mor (created 2016)
+## Elected 1st mu gov 2016, into fed els til 2018
+## Looks ok
+tmp <- censom18      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==23005)
+sel.son <-    which(tmp$inegi==23011)
+tmp[c(sel.parent, sel.son),]
+##
+## Matlapa, Naranjo, Benito Juárez, San Ignacio (created 1997)
+## Elected 1st mu gov 1997
+## Pre-97 map needs sums
+tmp <- censom94      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==24037)
+sel.son <-    which(tmp$inegi==24057)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son]
+tmp$p18_2005[sel.son] <- 0
+tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son]
+tmp$p18_2010[sel.son] <- 0
+tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son]
+tmp$p18_2020[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==24010)
+sel.son <-    which(tmp$inegi==24058)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son]
+tmp$p18_2005[sel.son] <- 0
+tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son]
+tmp$p18_2010[sel.son] <- 0
+tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son]
+tmp$p18_2020[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmp$inegi==26026)
+sel.son <-    which(tmp$inegi==26071)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son]
+tmp$p18_2005[sel.son] <- 0
+tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son]
+tmp$p18_2010[sel.son] <- 0
+tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son]
+tmp$p18_2020[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmp$inegi==26029)
+sel.son <-    which(tmp$inegi==26072)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+tmp$p18_1995[sel.son] <- 0
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son]
+tmp$p18_2005[sel.son] <- 0
+tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son]
+tmp$p18_2010[sel.son] <- 0
+tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son]
+tmp$p18_2020[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom94      # return
+##
+## tlaxcala bunch (created 1996)
+## Elected 1st mu gov 1996
+## 1994 map needs sums/zeroes
+mywrap <- function(){
+    tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
+    tmp$p18_1995[sel.son] <- 0
+    tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+    tmp$p18_2000[sel.son] <- 0
+    tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son]
+    tmp$p18_2005[sel.son] <- 0
+    tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son]
+    tmp$p18_2010[sel.son] <- 0
+    tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son]
+    tmp$p18_2020[sel.son] <- 0
+    return(tmp)
 }
-## wrap in function
-mywrap <- function(x=NA){
-    x[is.na(x)] <- 0 # replace NAs with 0
-    sel.parent <- which(x$inegi==2004)
-    sel.son <-    which(x$inegi==2005)
-    ##x[c(sel.parent, sel.son),]
-    x$p18_1990[sel.son] <- prj(x[sel.son,], 1990) # project
-    x$p18_1990[sel.parent] <- x$p18_1990[sel.parent] - x$p18_1990[sel.son] # subtract from parent
-    ##x[c(sel.parent, sel.son),]
-    return(x)
-}
-censom97 <- mywrap(censom97) # apply func
-censom00 <- mywrap(censom00) # apply func
-censom03 <- mywrap(censom03) # apply func
-censom06 <- mywrap(censom06) # apply func
-censom09 <- mywrap(censom09) # apply func
-censom12 <- mywrap(censom12) # apply func
-censom15 <- mywrap(censom15) # apply func
-censom18 <- mywrap(censom18) # apply func
-censom21 <- mywrap(censom21) # apply func
-
-
+tmp <- censom94      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==29020)
+sel.son <-    which(tmp$inegi==29045)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29030)
+sel.son <-    which(tmp$inegi==29046)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29030)
+sel.son <-    which(tmp$inegi==29047)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29010)
+sel.son <-    which(tmp$inegi==29048)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29032)
+sel.son <-    which(tmp$inegi==29049)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29010)
+sel.son <-    which(tmp$inegi==29050)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29032)
+sel.son <-    which(tmp$inegi==29051)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29038)
+sel.son <-    which(tmp$inegi==29052)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29029)
+sel.son <-    which(tmp$inegi==29053)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29044)
+sel.son <-    which(tmp$inegi==29054)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29040)
+sel.son <-    which(tmp$inegi==29055)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29015)
+sel.son <-    which(tmp$inegi==29056)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29023)
+sel.son <-    which(tmp$inegi==29057)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29044)
+sel.son <-    which(tmp$inegi==29058)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29022)
+sel.son <-    which(tmp$inegi==29059)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==29029)
+sel.son <-    which(tmp$inegi==29060)
+tmp <- mywrap()
+tmp -> censom94      # return
+##
+## Carrillo, tata, Uxpa (created 1997)
+## Elected 1st mu gov 1997
+## Pre-97 map needs sums
+tmp <- censom94      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==30045)
+sel.son <-    which(tmp$inegi==30208)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==30104)
+sel.son <-    which(tmp$inegi==30209)
+tmp <- mywrap()
+sel.parent <- which(tmp$inegi==30070)
+sel.son <-    which(tmp$inegi==30210)
+tmp <- mywrap()
+tmp -> censom94      # return
+##
+## San Rafael, santiago (created 2004)
+## Elected 1st mu gov 2004
+## All ok
+tmp <- censom03      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==30102)
+sel.son <-    which(tmp$inegi==30211)
+tmp[c(sel.parent, sel.son),]
+sel.parent <- which(tmp$inegi==30130)
+sel.son <-    which(tmp$inegi==30212)
+tmp[c(sel.parent, sel.son),]
+##
+## Trancoso (created 2001)
+## Elected 1st mu gov 2004
+## pre-2003 map needs sum/zeroes
+tmp <- censom00      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==32017)
+sel.son <-    which(tmp$inegi==32057)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
+tmp$p18_2000[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom00      # return
+##
+## Sta María (created 2007)
+## Elected 1st mu gov 2007, into fed els 2006
+## all ok
+tmp <- censom03      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==32047)
+sel.son <-    which(tmp$inegi==32058)
+tmp[c(sel.parent, sel.son),]
 
 ####################################################################
 ## Script to add population projections to municipal v..m.. maps. ##
