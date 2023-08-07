@@ -1229,7 +1229,7 @@ head(censo)
 #############################
 c00 <- read.csv("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/raw/2000censo/cgpv2000_iter_00.csv")
 ## drop localidades etc, keep municipios only
-sel.r <- grep("TOTAL MUNICIPAL", c00$nom_loc)
+sel.r <- grep("TOTAL MUNICIPAL|TOTAL DE LA DELEGACION", c00$nom_loc)
 c00 <- c00[sel.r,c("entidad","mun","nom_mun","pob18_")]
 c00 <- within(c00, {
     edon <- entidad;
@@ -1240,7 +1240,7 @@ c00 <- within(c00, {
     }
 )
 ##c00 <- merge(x=c00, y=censom00[,c("ife","inegi")], by="inegi", all.y=TRUE)
-c00[c00$inegi==4010,]
+c00[c00$inegi==9002,]
 c00[1,]
 ## c00    <- c00     [order(c00     $ife),]
 ## censom <- censom00[order(censom00$ife),]
@@ -1435,7 +1435,6 @@ setwd(dd)
 load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 
 
-
 #######################################################################################################
 ## Add municipio-level 1995 and 2000 pob18 (fills up for missing seccion-level data for those years) ##
 ## OJO: Actual municipios only, even for counterfactual maps                                         ##
@@ -1524,14 +1523,25 @@ censom21$inegi <- ife2inegi(censom21$ife) # fill missing inegi codes
 censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 ## clean
 rm(censom)
+##
+## NAs to zero
+censom94[is.na(censom94)] <- 0 # replace NAs with 0
+censom97[is.na(censom97)] <- 0 # replace NAs with 0
+censom00[is.na(censom00)] <- 0 # replace NAs with 0
+censom03[is.na(censom03)] <- 0 # replace NAs with 0
+censom06[is.na(censom06)] <- 0 # replace NAs with 0
+censom09[is.na(censom09)] <- 0 # replace NAs with 0
+censom12[is.na(censom12)] <- 0 # replace NAs with 0
+censom15[is.na(censom15)] <- 0 # replace NAs with 0
+censom18[is.na(censom18)] <- 0 # replace NAs with 0
+censom21[is.na(censom21)] <- 0 # replace NAs with 0
 
 ##############################
 ## Fix parent/son municipio ##
 ##############################
-## Rosarito (created 1998) has 1995 census data, didn't elect mun gov til 1998 but did vote as mun in fed 1997.
+## Rosarito (created 1998) has 1995 census data, elected mun gov in 1998, into fed els 1997
 ## must be added to Tijuana in pre-1997 maps
 tmp <- censom94      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 tmp[12:17,]
 sel.parent <- which(tmp$inegi==2004)
 sel.son <-    which(tmp$inegi==2005)
@@ -1568,33 +1578,77 @@ censom12 <- mywrap(censom12) # apply func
 censom15 <- mywrap(censom15) # apply func
 censom18 <- mywrap(censom18) # apply func
 censom21 <- mywrap(censom21) # apply func
-censom21[c(sel.parent, sel.son),]
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
 ##
-## Calakmul (created 1997) is complicated.
+## Calakmul (created 1997)
 ## Elected 1st mu gov 1997 but incorporated to fed els til 2018
-## Has 2020 census data only so nothing can be projected.
-tmp <- censom97      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
+tmp <- censom21      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==4006)
 sel.son <-    which(tmp$inegi==4010)
 tmp[c(sel.parent, sel.son),]
-##tmp -> censom97      # return after manipulation
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+tmp$p18_1995[sel.son] <- prj(tmp[sel.son,], yr=1995)
+tmp$p18_1990[sel.son] <- prj(tmp[sel.son,], yr=1990)
+tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] - tmp$p18_1995[sel.son] # subtract from parent
+tmp$p18_1990[sel.parent] <- tmp$p18_1990[sel.parent] - tmp$p18_1990[sel.son] # subtract from parent
+tmp[c(sel.parent, sel.son),]
+tmp -> censom21      # return
+## Replicate 2018
+censom18[c(sel.parent, sel.son), grep("^p18_", colnames(censom18))] <- censom21[c(sel.parent, sel.son), grep("^p18_", colnames(censom21))]
+## Previous fed mu maps have no Calakmul (use 2018 map for mun els 1997:on)
+tmp <- censom15      # duplicate for manipulation
+tmp[c(sel.parent, sel.son),]
+tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son] # sum offspring
+tmp$p18_2005[sel.parent] <- tmp$p18_2005[sel.parent] + tmp$p18_2005[sel.son] # sum offspring
+tmp$p18_2010[sel.parent] <- tmp$p18_2010[sel.parent] + tmp$p18_2010[sel.son] # sum offspring
+tmp$p18_2020[sel.parent] <- tmp$p18_2020[sel.parent] + tmp$p18_2020[sel.son] # sum offspring
+tmp$p18_2000[sel.son] <- 0
+tmp$p18_2005[sel.son] <- 0
+tmp$p18_2010[sel.son] <- 0
+tmp$p18_2020[sel.son] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom15      # return
+## Replicate 1994:2012
+censom12[c(sel.parent, sel.son), grep("^p18_", colnames(censom12))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom09[c(sel.parent, sel.son), grep("^p18_", colnames(censom09))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom06[c(sel.parent, sel.son), grep("^p18_", colnames(censom06))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom03[c(sel.parent, sel.son), grep("^p18_", colnames(censom03))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom00[c(sel.parent, sel.son), grep("^p18_", colnames(censom00))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom97[c(sel.parent, sel.son), grep("^p18_", colnames(censom97))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
+censom94[c(sel.parent, sel.son), grep("^p18_", colnames(censom94))] <- censom15[c(sel.parent, sel.son), grep("^p18_", colnames(censom15))]
 ##
 ## Candelaria (created 2000) is easy
 ## Elected 1st mu gov 2000
-## Has census data since 2000, so all ok
+## Has census data since 2000
 tmp <- censom00      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==4003 | tmp$inegi==4009)
 sel.son <-    which(tmp$inegi==4011)
 tmp[c(sel.parent, sel.son),]
-##tmp -> censom00      # return after manipulation
+## Prior maps need sums
+tmp <- censom97      # duplicate for manipulation
+sel.parent <- which(tmp$inegi==4003 | tmp$inegi==4009)
+sel.son <-    which(tmp$inegi==4011)
+tmp[c(sel.parent, sel.son),]
+tmp$p18_2000[tmp$inegi==4003] <- tmp$p18_2000[tmp$inegi==4003] + tmp$p18_2000[tmp$inegi==4011]*.85
+tmp$p18_2000[tmp$inegi==4009] <- tmp$p18_2000[tmp$inegi==4009] + tmp$p18_2000[tmp$inegi==4011]*.15
+tmp$p18_2000[tmp$inegi==4011] <- 0
+tmp$p18_2020[tmp$inegi==4003] <- tmp$p18_2020[tmp$inegi==4003] + tmp$p18_2020[tmp$inegi==4011]*.75
+tmp$p18_2020[tmp$inegi==4009] <- tmp$p18_2020[tmp$inegi==4009] + tmp$p18_2020[tmp$inegi==4011]*.25
+tmp$p18_2020[tmp$inegi==4011] <- 0
+tmp[c(sel.parent, sel.son),]
+tmp -> censom97      # return
+censom94     [c(sel.parent, sel.son), grep("^p18_", colnames(censom18))] <-
+    censom97 [c(sel.parent, sel.son), grep("^p18_", colnames(censom21))]
 ##
 ## Seybaplaya (created 2019)
 ## Elected 1st mu gov 2021
 ## All looks ok
 tmp <- censom21      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==4002 | tmp$inegi==4004)
 sel.son <-    which(tmp$inegi==4012)
 tmp[c(sel.parent, sel.son),]
@@ -1604,7 +1658,6 @@ tmp[c(sel.parent, sel.son),]
 ## Elected 1st mu gov 2021
 ## All looks ok
 tmp <- censom21      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==4001)
 sel.son <-    which(tmp$inegi==4013)
 tmp[c(sel.parent, sel.son),]
@@ -1638,8 +1691,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7059)
+        sel.parent <- which(tmp$inegi==7059)
     sel.son <-    which(tmp$inegi==7114)
     ##tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1658,8 +1710,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7052)
+        sel.parent <- which(tmp$inegi==7052)
     sel.son <-    which(tmp$inegi==7115)
     tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1678,8 +1729,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7059)
+        sel.parent <- which(tmp$inegi==7059)
     sel.son <-    which(tmp$inegi==7116)
     ##tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1698,8 +1748,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7008)
+        sel.parent <- which(tmp$inegi==7008)
     sel.son <-    which(tmp$inegi==7117)
     ##tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1718,8 +1767,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7081)
+        sel.parent <- which(tmp$inegi==7081)
     sel.son <-    which(tmp$inegi==7118)
     ##tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1738,8 +1786,7 @@ censom15 <- mywrap(censom15)
 ##
 mywrap <- function(x=NA){
     tmp <- x
-    tmp[is.na(tmp)] <- 0 # replace NAs with 0
-    sel.parent <- which(tmp$inegi==7049)
+        sel.parent <- which(tmp$inegi==7049)
     sel.son <-    which(tmp$inegi==7119)
     ##tmp[c(sel.parent, sel.son),]
     tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
@@ -1761,7 +1808,6 @@ censom15 <- mywrap(censom15)
 ## Use 2021 map for mun els in 2018
 ## All looks ok
 tmp <- censom21      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==7081)
 sel.son <-    which(tmp$inegi==7120)
 tmp[c(sel.parent, sel.son),]
@@ -1769,6 +1815,19 @@ tmp[c(sel.parent, sel.son),]
 sel.parent <- which(tmp$inegi==7072 | tmp$inegi==7047 | tmp$inegi==7091)
 sel.son <-    which(tmp$inegi==7121)
 tmp[c(sel.parent, sel.son),]
+## for mun els, make m18 equal m21
+censom18     [which(censom18$inegi==7047), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7047), grep("^p18_", colnames(censom21))]
+censom18     [which(censom18$inegi==7072), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7072), grep("^p18_", colnames(censom21))]
+censom18     [which(censom18$inegi==7081), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7081), grep("^p18_", colnames(censom21))]
+censom18     [which(censom18$inegi==7091), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7091), grep("^p18_", colnames(censom21))]
+censom18     [which(censom18$inegi==7120), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7120), grep("^p18_", colnames(censom21))]
+censom18     [which(censom18$inegi==7121), grep("^p18_", colnames(censom18))] <-
+    censom21 [which(censom21$inegi==7121), grep("^p18_", colnames(censom21))]
 ##
 ## Parral, Zapata, Mezcalapa, (created 2012)
 ## Elected 1st mu gov 2012 but not incorporated to fed els til 2021
@@ -1800,7 +1859,6 @@ tmp[c(sel.parent, sel.son),]
 ## Elected 1st mu gov 1996
 ## Pre-97 maps to zero
 tmp <- censom94      # duplicate for manipulation
-tmp[is.na(tmp)] <- 0 # replace NAs with 0
 sel.parent <- which(tmp$inegi==12072)
 sel.son <-    which(tmp$inegi==12076)
 tmp[c(sel.parent, sel.son),]
@@ -1813,7 +1871,7 @@ tmp -> censom94      # return after manipulation
 ## Marquelia (created 2005)
 ## Elected 1st mu gov 2005
 ## Looks ok
-tmp <- censom06      # duplicate for manipulation
+tmp <- censom09      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==12013)
 sel.son <-    which(tmp$inegi==12077)
 tmp[c(sel.parent, sel.son),]
@@ -1836,9 +1894,9 @@ sel.son <-    which(tmp$inegi==12081)
 tmp[c(sel.parent, sel.son),]
 ##
 ## San Ignacio (created 2006)
-## Elected 1st mu gov 2006, into fed els 2015 (use 2015 map for 2006:2012 mun els)
+## Elected 1st mu gov 2006, into fed els 2012 (use 2012 map for 2006:2009 mun els)
 ## Looks ok
-tmp <- censom15      # duplicate for manipulation
+tmp <- censom12      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==14008)
 sel.son <-    which(tmp$inegi==14125)
 tmp[c(sel.parent, sel.son),]
@@ -1878,15 +1936,11 @@ tmp -> censom94      # return
 ## Tulum (created 2009)
 ## Elected 1st mu gov 2009, into fed els til 2018
 ## Use 2018 map for mun els 2008:17
-tmp <- censom18      # duplicate for manipulation
+## All ok
+tmp <- censom15      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==23008)
 sel.son <-    which(tmp$inegi==23009)
 tmp[c(sel.parent, sel.son),]
-tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] + tmp$p18_1995[sel.son]
-tmp$p18_1995[sel.son] <- 0
-tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
-tmp$p18_2000[sel.son] <- 0
-tmp -> censom94      # return
 ##
 ## Bacalar (created 2013)
 ## Elected 1st mu gov 2013, fed els in 2015
@@ -2072,6 +2126,10 @@ tmp$p18_2000[sel.parent] <- tmp$p18_2000[sel.parent] + tmp$p18_2000[sel.son]
 tmp$p18_2000[sel.son] <- 0
 tmp[c(sel.parent, sel.son),]
 tmp -> censom00      # return
+## Make prior maps same as m00
+censom94    [c(sel.parent, sel.son), grep("p18_", colnames(censom94))] <-
+    censom97[c(sel.parent, sel.son), grep("p18_", colnames(censom97))] <-
+    censom00[c(sel.parent, sel.son), grep("p18_", colnames(censom00))]
 ##
 ## Sta María (created 2007)
 ## Elected 1st mu gov 2007, into fed els 2006
@@ -2080,6 +2138,1640 @@ tmp <- censom03      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==32047)
 sel.son <-    which(tmp$inegi==32058)
 tmp[c(sel.parent, sel.son),]
+
+## Check mu census for zeroes before proj
+sel.r <- which(censom21$p18_2005==0 | censom21$p18_2010==0 | censom21$p18_2020==0)
+censom21[sel.r,]
+sel.r <- which(censom21$p18_2000==0)
+censom21[sel.r,]
+sel.r <- which(censom21$inegi==7058)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_1995) / 10 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom21$p18_2000[sel.r] <- prj(x=censom21[sel.r,], yr=2000)
+sel.r <- which(censom21$p18_2000==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom21$p18_2000[sel.r] <- prj(x=censom21[sel.r,], yr=2000)
+censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+censom21$p18_1990[sel.r] <- prj(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
+##
+sel.r <- which(censom21$p18_1995==0 & censom21$p18_1990>0)
+censom21[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1990) / 10 # yearly pop change
+    pop <- x$p18_1990 + chg * (yr - 1990)
+    return(pop)
+}
+censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+##
+sel.r <- which(censom21$p18_1995==0)
+censom21[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+censom21$p18_1990[sel.r] <- prj(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
+##
+#########
+## m18 ##
+#########
+dok <- rep(0, nrow(censom18))
+sel.r <- which(censom18$p18_2005==0 | censom18$p18_2010==0 | censom18$p18_2020==0)
+censom18[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom18$p18_2000==0 & censom18$p18_1995>0 & dok==0)
+censom18[sel.r,]
+censom18$p18_2000[sel.r] <- (censom18$p18_1995[sel.r] + censom18$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom18$p18_2000==0 & dok==0)
+censom18[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom18$p18_2000[sel.r] <- prj(censom18[sel.r,], 2000)
+censom18$p18_1995[sel.r] <- prj(censom18[sel.r,], 1995)
+censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom18$p18_1995==0 & censom18$p18_1990>0 & dok==0)
+censom18[sel.r,]
+censom18$p18_1995[sel.r] <- (censom18$p18_1990[sel.r] + censom18$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom18$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom18$p18_1995[sel.r] <- prj(censom18[sel.r,], 1995)
+censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+censom18[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom18$p18_1990==0 & dok==0)
+censom18[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+censom18[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+rm(prj, dok)
+##
+#########
+## m15 ##
+#########
+dok <- rep(0, nrow(censom15))
+sel.r <- which(censom15$p18_2005==0 | censom15$p18_2010==0 | censom15$p18_2020==0)
+censom15[sel.r,]
+## use tulum m18 for mun els 2008:2016
+sel.r <- which(censom15$inegi==23009)
+censom06[sel.r,] <- censom09[sel.r,] <- censom12[sel.r,] <- censom15[sel.r,] <- censom18[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_2005==0 | censom15$p18_2010==0 | censom15$p18_2020==0 & dok==0)
+censom15[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_2000==0 & censom15$p18_1995>0 & dok==0)
+censom15[sel.r,]
+censom15$p18_2000[sel.r] <- (censom15$p18_1995[sel.r] + censom15$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_2000==0 & dok==0)
+censom15[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom15$p18_2000[sel.r] <- prj(censom15[sel.r,], 2000)
+censom15$p18_1995[sel.r] <- prj(censom15[sel.r,], 1995)
+censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_1995==0 & censom15$p18_1990>0 & dok==0)
+censom15[sel.r,]
+censom15$p18_1995[sel.r] <- (censom15$p18_1990[sel.r] + censom15$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom15$p18_1995[sel.r] <- prj(censom15[sel.r,], 1995)
+censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+censom15[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom15$p18_1990==0 & dok==0)
+censom15[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+censom15[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m12 ##
+#########
+dok <- rep(0, nrow(censom12))
+sel.r <- which(censom12$p18_2005==0 | censom12$p18_2010==0 | censom12$p18_2020==0)
+censom12[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom12$p18_2000==0 & censom12$p18_1995>0 & dok==0)
+censom12[sel.r,]
+censom12$p18_2000[sel.r] <- (censom12$p18_1995[sel.r] + censom12$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom12$p18_2000==0 & dok==0)
+censom12[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom12$p18_2000[sel.r] <- prj(censom12[sel.r,], 2000)
+censom12$p18_1995[sel.r] <- prj(censom12[sel.r,], 1995)
+censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom12$p18_1995==0 & censom12$p18_1990>0 & dok==0)
+censom12[sel.r,]
+censom12$p18_1995[sel.r] <- (censom12$p18_1990[sel.r] + censom12$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom12$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom12$p18_1995[sel.r] <- prj(censom12[sel.r,], 1995)
+censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+censom12[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom12$p18_1990==0 & dok==0)
+censom12[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+censom12[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m09 ##
+#########
+dok <- rep(0, nrow(censom09))
+sel.r <- which(censom09$p18_2005==0 & censom09$p18_2010>0 & censom09$p18_2020>0)
+censom09[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
+    pop <- x$p18_2010 + chg * (yr - 2010)
+    return(pop)
+}
+censom09$p18_2005[sel.r] <- prj(censom09[sel.r,], 2005)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_2005==0 | censom09$p18_2010==0 | censom09$p18_2020==0)
+censom09[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_2000==0 & censom09$p18_1995>0 & dok==0)
+censom09[sel.r,]
+censom09$p18_2000[sel.r] <- (censom09$p18_1995[sel.r] + censom09$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_2000==0 & dok==0)
+censom09[sel.r,] ## Ojo: Marquelia is ok but will need fine-tuning: 2006 and 2009 had minuscule pop, then in 2012 won territ
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom09$p18_2000[sel.r] <- prj(censom09[sel.r,], 2000)
+censom09$p18_1995[sel.r] <- prj(censom09[sel.r,], 1995)
+censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_1995==0 & censom09$p18_1990>0 & dok==0)
+censom09[sel.r,]
+censom09$p18_1995[sel.r] <- (censom09$p18_1990[sel.r] + censom09$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom09$p18_1995[sel.r] <- prj(censom09[sel.r,], 1995)
+censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+censom09[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom09$p18_1990==0 & dok==0)
+censom09[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+censom09[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m06 ##
+#########
+dok <- rep(0, nrow(censom06))
+sel.r <- which(censom06$p18_2005==0 | censom06$p18_2010==0 | censom06$p18_2020==0)
+censom06[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom06$p18_2000==0 & censom06$p18_1995>0 & dok==0)
+censom06[sel.r,]
+censom06$p18_2000[sel.r] <- (censom06$p18_1995[sel.r] + censom06$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom06$p18_2000==0 & dok==0)
+censom06[sel.r,] ## Ojo: Marquelia is ok but will need fine-tuning: 2006 and 2009 had minuscule pop, then in 2012 won territ
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom06$p18_2000[sel.r] <- prj(censom06[sel.r,], 2000)
+censom06$p18_1995[sel.r] <- prj(censom06[sel.r,], 1995)
+censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom06$p18_1995==0 & censom06$p18_1990>0 & dok==0)
+censom06[sel.r,]
+censom06$p18_1995[sel.r] <- (censom06$p18_1990[sel.r] + censom06$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom06$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom06$p18_1995[sel.r] <- prj(censom06[sel.r,], 1995)
+censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+censom06[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom06$p18_1990==0 & dok==0)
+censom06[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+censom06[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m03 ##
+#########
+dok <- rep(0, nrow(censom03))
+sel.r <- which(censom03$p18_2005==0 | censom03$p18_2010==0 | censom03$p18_2020==0)
+censom03[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom03$p18_2000==0 & censom03$p18_1995>0 & dok==0)
+censom03[sel.r,]
+censom03$p18_2000[sel.r] <- (censom03$p18_1995[sel.r] + censom03$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom03$p18_2000==0 & dok==0)
+censom03[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom03$p18_2000[sel.r] <- prj(censom03[sel.r,], 2000)
+censom03$p18_1995[sel.r] <- prj(censom03[sel.r,], 1995)
+censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom03$p18_1995==0 & censom03$p18_1990>0 & dok==0)
+censom03[sel.r,]
+censom03$p18_1995[sel.r] <- (censom03$p18_1990[sel.r] + censom03$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom03$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom03$p18_1995[sel.r] <- prj(censom03[sel.r,], 1995)
+censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+censom03[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom03$p18_1990==0 & dok==0)
+censom03[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+censom03[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m00 ##
+#########
+dok <- rep(0, nrow(censom00))
+sel.r <- which(censom00$p18_2005==0 | censom00$p18_2010==0 | censom00$p18_2020==0)
+censom00[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom00$p18_2000==0 & censom00$p18_1995>0 & dok==0)
+censom00[sel.r,]
+censom00$p18_2000[sel.r] <- (censom00$p18_1995[sel.r] + censom00$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom00$p18_2000==0 & dok==0)
+censom00[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom00$p18_2000[sel.r] <- prj(censom00[sel.r,], 2000)
+censom00$p18_1995[sel.r] <- prj(censom00[sel.r,], 1995)
+censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom00$p18_1995==0 & censom00$p18_1990>0 & dok==0)
+censom00[sel.r,]
+censom00$p18_1995[sel.r] <- (censom00$p18_1990[sel.r] + censom00$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom00$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom00$p18_1995[sel.r] <- prj(censom00[sel.r,], 1995)
+censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+censom00[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom00$p18_1990==0 & dok==0)
+censom00[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+censom00[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m97 ##
+#########
+dok <- rep(0, nrow(censom97))
+sel.r <- which(censom97$p18_2005==0 | censom97$p18_2010==0 | censom97$p18_2020==0)
+censom97[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom97$p18_2000==0 & censom97$p18_1995>0 & dok==0)
+censom97[sel.r,]
+censom97$p18_2000[sel.r] <- (censom97$p18_1995[sel.r] + censom97$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom97$p18_2000==0 & dok==0)
+censom97[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom97$p18_2000[sel.r] <- prj(censom97[sel.r,], 2000)
+censom97$p18_1995[sel.r] <- prj(censom97[sel.r,], 1995)
+censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom97$p18_1995==0 & censom97$p18_1990>0 & dok==0)
+censom97[sel.r,]
+censom97$p18_1995[sel.r] <- (censom97$p18_1990[sel.r] + censom97$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom97$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom97$p18_1995[sel.r] <- prj(censom97[sel.r,], 1995)
+censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+censom97[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom97$p18_1990==0 & dok==0)
+censom97[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+censom97[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+#########
+## m94 ##
+#########
+dok <- rep(0, nrow(censom94))
+sel.r <- which(censom94$p18_2005==0 | censom94$p18_2010==0 | censom94$p18_2020==0)
+censom94[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom94$p18_2000==0 & censom94$p18_1995>0 & dok==0)
+censom94[sel.r,]
+censom94$p18_2000[sel.r] <- (censom94$p18_1995[sel.r] + censom94$p18_2005[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom94$p18_2000==0 & dok==0)
+censom94[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+censom94$p18_2000[sel.r] <- prj(censom94[sel.r,], 2000)
+censom94$p18_1995[sel.r] <- prj(censom94[sel.r,], 1995)
+censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom94$p18_1995==0 & censom94$p18_1990>0 & dok==0)
+censom94[sel.r,]
+censom94$p18_1995[sel.r] <- (censom94$p18_1990[sel.r] + censom94$p18_2000[sel.r]) / 2
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom94$p18_1995==0 & dok==0)
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+censom94$p18_1995[sel.r] <- prj(censom94[sel.r,], 1995)
+censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+censom94[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+sel.r <- which(censom94$p18_1990==0 & dok==0)
+censom94[sel.r,]
+prj <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+censom94[sel.r,]
+dok[sel.r] <- 1 ## indicate cases ok
+##
+rm(prj, dok, sel.son, sel.parent, sel.ignore, sel.r, tmp) ## clean
+
+###############################
+## CONSOLIDAR MAPAS CENSALES ##
+###############################
+## gen elyr pops
+prj9095 <- function(x=NA,yr=NA){
+    chg <- (x$p18_1995 - x$p18_1990) / 5 # yearly pop change
+    pop <- x$p18_1990 + chg * (yr - 1990)
+    return(pop)
+}
+prj9500 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+prj0005 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+prj0510 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+prj1020 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
+    pop <- x$p18_2010 + chg * (yr - 2010)
+    return(pop)
+}
+##
+tmp <- censom94 # duplicate for manipulation
+mywrap <- function(){
+    tmp$p18_1991 <- prj9095(x=tmp, yr=1991)
+    tmp$p18_1992 <- prj9095(x=tmp, yr=1992)
+    tmp$p18_1993 <- prj9095(x=tmp, yr=1993)
+    tmp$p18_1994 <- prj9095(x=tmp, yr=1994)
+    tmp$p18_1996 <- prj9500(x=tmp, yr=1996)
+    tmp$p18_1997 <- prj9500(x=tmp, yr=1997)
+    tmp$p18_1998 <- prj9500(x=tmp, yr=1998)
+    tmp$p18_1999 <- prj9500(x=tmp, yr=1999)
+    tmp$p18_2001 <- prj0005(x=tmp, yr=2001)
+    tmp$p18_2002 <- prj0005(x=tmp, yr=2002)
+    tmp$p18_2003 <- prj0005(x=tmp, yr=2003)
+    tmp$p18_2004 <- prj0005(x=tmp, yr=2004)
+    tmp$p18_2006 <- prj0510(x=tmp, yr=2006)
+    tmp$p18_2007 <- prj0510(x=tmp, yr=2007)
+    tmp$p18_2008 <- prj0510(x=tmp, yr=2008)
+    tmp$p18_2009 <- prj0510(x=tmp, yr=2009)
+    tmp$p18_2011 <- prj1020(x=tmp, yr=2011)
+    tmp$p18_2012 <- prj1020(x=tmp, yr=2012)
+    tmp$p18_2013 <- prj1020(x=tmp, yr=2013)
+    tmp$p18_2014 <- prj1020(x=tmp, yr=2014)
+    tmp$p18_2015 <- prj1020(x=tmp, yr=2015)
+    tmp$p18_2016 <- prj1020(x=tmp, yr=2016)
+    tmp$p18_2017 <- prj1020(x=tmp, yr=2017)
+    tmp$p18_2018 <- prj1020(x=tmp, yr=2018)
+    tmp$p18_2019 <- prj1020(x=tmp, yr=2019)
+    tmp$p18_2021 <- prj1020(x=tmp, yr=2021)
+    tmp <- tmp[, order(colnames(tmp))]
+    return(tmp)
+}
+tmp <- mywrap()
+tmp[1,]
+tmp -> censom94 # return
+##
+tmp <- censom97 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom97 # return
+##
+tmp <- censom00 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom00 # return
+##
+tmp <- censom03 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom03 # return
+##
+tmp <- censom06 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom06 # return
+##
+tmp <- censom09 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom09 # return
+##
+tmp <- censom12 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom12 # return
+##
+tmp <- censom15 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom15 # return
+##
+tmp <- censom18 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom18 # return
+##
+tmp <- censom21 # duplicate for manipulation
+tmp <- mywrap()
+tmp -> censom21 # return
+rm(tmp)
+#
+
+## Duplicate, one for actual populations for federal calendar, one for municipal calendar
+tmpf <- censom21
+tmpm <- censom21
+##
+## Manipulate remunicipalizacion cases
+## 2005	1998	PLAYAS DE ROSARITO 5
+sel.parent <- which(tmpm$inegi==2004)
+sel.son <-    which(tmpm$inegi==2005)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Calakmul (created 1997)
+## Elected 1st mu gov 1997 but incorporated to fed els til 2018
+sel.parent <- which(tmpm$inegi==4006)
+sel.son <-    which(tmpm$inegi==4010)
+tmpm[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son), sel.c]
+censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+## Candelaria (created 2000) is easy
+## Elected 1st mu gov 2000
+sel.parent <- which(tmpm$inegi==4003 | tmpm$inegi==4009)
+sel.son <-    which(tmpm$inegi==4011)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Seybaplaya (created 2019)
+## Elected 1st mu gov 2021
+## All looks ok
+sel.parent <- which(tmpm$inegi==4002 | tmpm$inegi==4004)
+sel.son <-    which(tmpm$inegi==4012)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Dzitbalche (created 2019)
+## Elected 1st mu gov 2021
+## All looks ok
+sel.parent <- which(tmpm$inegi==4001)
+sel.son <-    which(tmpm$inegi==4013)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Aldama, Benemérito, Maravilla, Marqués, Montecristo, Sn Andrés, Santiago (created 2001)
+## Elected 1st mu gov 2001 but not incorporated to fed els til 2018
+## Use 2018 map for mun els since 2001
+## Pre-2018 maps have 2000 that needs to go to parent
+sel.parent <- which(tmpm$inegi==7026)
+sel.son <-    which(tmpm$inegi==7113)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7059)
+sel.son <-    which(tmpm$inegi==7114)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7052)
+sel.son <-    which(tmpm$inegi==7115)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7059)
+sel.son <-    which(tmpm$inegi==7116)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7008)
+sel.son <-    which(tmpm$inegi==7117)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7081)
+sel.son <-    which(tmpm$inegi==7118)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7049)
+sel.son <-    which(tmpm$inegi==7119)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+## Capitán and Rincón (created 2018)
+## Elected 1st mu gov 2018 but not incorporated to fed els til 2021
+## Use 2021 map for mun els in 2018
+sel.parent <- which(tmpm$inegi==7081)
+sel.son <-    which(tmpm$inegi==7120)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+##
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7072 | tmpm$inegi==7047 | tmpm$inegi==7091)
+sel.son <-    which(tmpm$inegi==7121)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+##
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+## Parral, Zapata, Mezcalapa, (created 2012)
+## Elected 1st mu gov 2012 but not incorporated to fed els til 2021
+## Use 2021 map for mun els since 2012
+sel.parent <- which(tmpm$inegi==7107 | tmpm$inegi==7108)
+sel.son <-    which(tmpm$inegi==7122)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+##
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7002 | tmpm$inegi==7027 | tmpm$inegi==7106)
+sel.son <-    which(tmpm$inegi==7123)
+censom18[c(sel.parent, sel.son),]
+censom21[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+##
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==7061 | tmpm$inegi==7062 | tmpm$inegi==7092)
+sel.son <-    which(tmpm$inegi==7124)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+##
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+## Honduras (created 2020)
+## Elected 1st mu gov 2021
+sel.parent <- which(tmpm$inegi==7081)
+sel.son <-    which(tmpm$inegi==7125)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from chihuahua to aldama in 2015
+sel.parent <- which(tmpm$inegi==8019)
+sel.son <-    which(tmpm$inegi==8002)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 4 secs from xochimilco to tlahuac in 2013
+sel.parent <- which(tmpm$inegi==9013)
+sel.son <-    which(tmpm$inegi==9011)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## ## 7 secs from ao to cuajimalpa in 2020 CANT BE FIXED WITH 2020 CENSUS ONLY
+## sel.parent <- which(tmpm$inegi==9010)
+## sel.son <-    which(tmpm$inegi==9011)
+## censom18[c(sel.parent, sel.son),]
+## censom21[c(sel.parent, sel.son),]
+## sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## sel.c <- grep("p18_(2021)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+## tmpm[c(sel.parent, sel.son),]
+##
+## PARTICULAR CASE
+## Acatepec (created 1996)
+## Elected 1st mu gov 1996
+sel.parent <- which(tmpm$inegi==12072)
+sel.son <-    which(tmpm$inegi==12076)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+## 3 secs from zapot to acatepec in 2005
+sel.parent <- which(tmpm$inegi==12072)
+sel.son <-    which(tmpm$inegi==12076)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from acatepec to ayutla in 2011
+sel.parent <- which(tmpm$inegi==12076)
+sel.son <-    which(tmpm$inegi==12012)
+censom09[c(sel.parent, sel.son),]
+censom12[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpm[  sel.parent          , sel.c] <- censom09[  sel.parent          , sel.c] # chg parent only due to fixes above
+tmpf[  sel.parent          , sel.c] <- censom09[  sel.parent          , sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from tecpan to petatlan in 2011
+sel.parent <- which(tmpm$inegi==12057)
+sel.son <-    which(tmpm$inegi==12048)
+censom06[c(sel.parent, sel.son),]
+censom12[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Marquelia (created 2005)
+## Elected 1st mu gov 2005
+sel.parent <- which(tmpm$inegi==12013)
+sel.son <-    which(tmpm$inegi==12077)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+## Cochoapa, JJ, Juchitán, Iliatenco (created 2008)
+## Elected 1st mu gov 2008
+sel.parent <- which(tmpm$inegi==12043)
+sel.son <-    which(tmpm$inegi==12078)
+censom06[c(sel.parent, sel.son),]
+censom09[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==12028)
+sel.son <-    which(tmpm$inegi==12079)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==12013)
+sel.son <-    which(tmpm$inegi==12080)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==12041)
+sel.son <-    which(tmpm$inegi==12081)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## San Ignacio (created 2006)
+## Elected 1st mu gov 2006, into fed els 2012 (use 2012 map for 2006:2012 mun els)
+sel.parent <- which(tmpm$inegi==14008)
+sel.son <-    which(tmpm$inegi==14125)
+censom09[c(sel.parent, sel.son),]
+censom12[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 4 secs from pachuca to mineral ref in 2007
+sel.parent <- which(tmpm$inegi==13048)
+sel.son <-    which(tmpm$inegi==13051)
+censom06[c(sel.parent, sel.son),]
+censom09[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 13 secs from chicolapan to la paz in 2013
+sel.parent <- which(tmpm$inegi==15029)
+sel.son <-    which(tmpm$inegi==15070)
+censom09[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom09[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 2 secs from sn mateo to lerma in 2016
+sel.parent <- which(tmpm$inegi==15076)
+sel.son <-    which(tmpm$inegi==15051)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 3 secs from toluca to otzolotepec in 2016
+## 3 secs from toluca to otzolotepec in 2017
+sel.parent <- which(tmpm$inegi==15106)
+sel.son <-    which(tmpm$inegi==15067)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from almoloya to villa vic in 2016
+sel.parent <- which(tmpm$inegi==15005)
+sel.son <-    which(tmpm$inegi==15114)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+##
+## Luvianos, SJ (created 2003)
+## Elected 1st mu gov 2003
+## Looks ok
+sel.parent <- which(tmpm$inegi==15074)
+sel.son <-    which(tmpm$inegi==15123)
+censom00[c(sel.parent, sel.son),]
+censom03[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==15044)
+sel.son <-    which(tmpm$inegi==15124)
+censom00[c(sel.parent, sel.son),]
+censom03[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Tonatitla (created 2006)
+## Elected 1st mu gov 2006
+## Looks ok
+sel.parent <- which(tmpm$inegi==15044)
+sel.son <-    which(tmpm$inegi==15125)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Solidaridad (created 1996)
+## Elected 1st mu gov 1996
+## Pre-97 maps need sum
+sel.parent <- which(tmpm$inegi==23001)
+sel.son <-    which(tmpm$inegi==23008)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from tarimbaro to morelia in 2014
+sel.parent <- which(tmpm$inegi==16088)
+sel.son <-    which(tmpm$inegi==16053)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from apodaca to gpe in 2017
+sel.parent <- which(tmpm$inegi==19006)
+sel.son <-    which(tmpm$inegi==19026)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## ## 4 secs from apodaca to gpe in 2021 CANT BE FIXED WITH 2020 CENSO ONLY
+## sel.parent <- which(tmpm$inegi==19006)
+## sel.son <-    which(tmpm$inegi==16026)
+## censom21[c(sel.parent, sel.son),]
+## censom24[c(sel.parent, sel.son),]
+## sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+## sel.c <- grep("p18_(2022)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from sn marcos to huajua in 2015
+## 1 sec from sn jer to huajua in 2015
+sel.parent <- which(tmpm$inegi==20160 | tmpm$inegi==20237)
+sel.son <-    which(tmpm$inegi==20039)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from cholula to puebla in 2014
+sel.parent <- which(tmpm$inegi==21119)
+sel.son <-    which(tmpm$inegi==21114)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 1 sec from quere to el marques in 2008
+sel.parent <- which(tmpm$inegi==22014)
+sel.son <-    which(tmpm$inegi==22011)
+censom06[c(sel.parent, sel.son),]
+censom09[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## ## 6 secs from solidaridad to pto mor in 2020 CANT BE FIXED WITH 2020 CENSO ONLY
+## sel.parent <- which(tmpm$inegi==23008)
+## sel.son <-    which(tmpm$inegi==23011)
+## censom18[c(sel.parent, sel.son),]
+## censom21[c(sel.parent, sel.son),]
+## sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## sel.c <- grep("p18_(2021)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom21[c(sel.parent, sel.son), sel.c]
+## tmpm[c(sel.parent, sel.son),]
+##
+## Tulum (created 2009)
+## Elected 1st mu gov 2009, into fed els til 2018
+## Use 2018 map for mun els 2008:17
+## All ok
+sel.parent <- which(tmpm$inegi==23008)
+sel.son <-    which(tmpm$inegi==23009)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+tmpf[c(sel.parent, sel.son),]
+##
+## Bacalar (created 2013)
+## Elected 1st mu gov 2013, fed els in 2015
+sel.parent <- which(tmpm$inegi==23004)
+sel.son <-    which(tmpm$inegi==23010)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom12[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## Pto Mor (created 2016)
+## Elected 1st mu gov 2016, into fed els til 2018
+## Looks ok
+sel.parent <- which(tmpm$inegi==23005)
+sel.son <-    which(tmpm$inegi==23011)
+censom15[c(sel.parent, sel.son),]
+censom18[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## 12 secs from slp to soledad in 2014
+sel.parent <- which(tmpm$inegi==24028)
+sel.son <-    which(tmpm$inegi==24035)
+censom12[c(sel.parent, sel.son),]
+censom15[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## ## 1 sec from magdalena to chiau in 2020 CANT BE FIXED WITH 2020 CENSO ONLY
+## sel.parent <- which(tmpm$inegi==29048)
+## sel.son <-    which(tmpm$inegi==29010)
+## censom18[c(sel.parent, sel.son),]
+## censom21[c(sel.parent, sel.son),]
+## sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom15[c(sel.parent, sel.son), sel.c]
+## sel.c <- grep("p18_(2021)", colnames(tmpm))
+## tmpm[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
+## tmpm[c(sel.parent, sel.son),]
+##
+## Matlapa, Naranjo, Benito Juárez, San Ignacio (created 1997)
+## Elected 1st mu gov 1997
+## Pre-97 map needs sums
+sel.parent <- which(tmpm$inegi==24037)
+sel.son <-    which(tmpm$inegi==24057)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==24010)
+sel.son <-    which(tmpm$inegi==24058)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==26026)
+sel.son <-    which(tmpm$inegi==26071)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+sel.parent <- which(tmpm$inegi==26029)
+sel.son <-    which(tmpm$inegi==26072)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpm[c(sel.parent, sel.son),]
+##
+## tlaxcala bunch (created 1996)
+## Elected 1st mu gov 1996
+## 1994 map needs sums/zeroes
+sel.parent <- which(tmpm$inegi==29020)
+sel.son <-    which(tmpm$inegi==29045)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29030)
+sel.son <-    which(tmpm$inegi==29046)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29030)
+sel.son <-    which(tmpm$inegi==29047)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29010)
+sel.son <-    which(tmpm$inegi==29048)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29032)
+sel.son <-    which(tmpm$inegi==29049)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29010)
+sel.son <-    which(tmpm$inegi==29050)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29032)
+sel.son <-    which(tmpm$inegi==29051)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29038)
+sel.son <-    which(tmpm$inegi==29052)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29029)
+sel.son <-    which(tmpm$inegi==29053)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29044)
+sel.son <-    which(tmpm$inegi==29054)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29040)
+sel.son <-    which(tmpm$inegi==29055)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29015)
+sel.son <-    which(tmpm$inegi==29056)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29023)
+sel.son <-    which(tmpm$inegi==29057)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29044)
+sel.son <-    which(tmpm$inegi==29058)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29022)
+sel.son <-    which(tmpm$inegi==29059)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==29029)
+sel.son <-    which(tmpm$inegi==29060)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+## Carrillo, tata, Uxpa (created 1997)
+## Elected 1st mu gov 1997
+## Pre-97 map needs sums
+sel.parent <- which(tmpm$inegi==30045)
+sel.son <-    which(tmpm$inegi==30208)
+censom94[c(sel.parent, sel.son),]
+censom97[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==30104)
+sel.son <-    which(tmpm$inegi==30209)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==30070)
+sel.son <-    which(tmpm$inegi==30210)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom94[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1997|1998|1999|2000|2001|2002|2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom97[c(sel.parent, sel.son), sel.c]
+##
+## San Rafael, santiago (created 2004)
+## Elected 1st mu gov 2004
+sel.parent <- which(tmpm$inegi==30102)
+sel.son <-    which(tmpm$inegi==30211)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+##
+sel.parent <- which(tmpm$inegi==30130)
+sel.son <-    which(tmpm$inegi==30212)
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+##
+## Trancoso (created 2001)
+## Elected 1st mu gov 2004
+sel.parent <- which(tmpm$inegi==32017)
+sel.son <-    which(tmpm$inegi==32057)
+censom00[c(sel.parent, sel.son),]
+censom03[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom00[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2003|2004|2005|2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+##
+## Sta María (created 2007)
+## Elected 1st mu gov 2007, into fed els 2006
+## all ok
+sel.parent <- which(tmpm$inegi==32047)
+sel.son <-    which(tmpm$inegi==32058)
+censom03[c(sel.parent, sel.son),]
+censom06[c(sel.parent, sel.son),]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005|2006)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpm[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(1990|1991|1992|1993|1994|1995|1996|1997|1998|1999|2000|2001|2002|2003|2004|2005)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom03[c(sel.parent, sel.son), sel.c]
+sel.c <- grep("p18_(2006|2007|2008|2009|2010|2011|2012|2013|2014|2015|2016|2017|2018|2019|2020|2021)", colnames(tmpm))
+tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
+tmpf[c(sel.parent, sel.son),]
+tmpm[c(sel.parent, sel.son),]
+
+EXPORT
+
 
 ####################################################################
 ## Script to add population projections to municipal v..m.. maps. ##

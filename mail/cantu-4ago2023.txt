@@ -1,0 +1,21 @@
+Hola Francisco,
+
+Espero que la familia vaya bien a pesar de la tremenda canícula. Escribo con una consulta y para sondear tu interés.
+
+Ayer me buscó Luis Carlos Ugalde. Su consultora quiere comprar un modelo que pronostique la elección del año próximo. Quiere un pronóstico presidencial, de composición del Congreso y de un puñado de gubernaturas.
+
+Si entendí correctamente, quiere que el insumo principal sea información electoral previa (márgenes, volatilidad, incumbency...) e indicadores sociodemográficos, no un agregador de encuestas.
+
+Para que genere movimiento, el modelo también necesitaría alimentarse de eventos de campaña y encuestas, de otro modo sería estático.
+
+Hace 3 años le hizo un modelo Sebastián Garrido (creo). No debe haber jalado bien porque anda buscando otro modelo.
+
+Mi consulta: ¿tendrá potencial incursionar en un ejercicio de esta naturaleza? Lo que he hecho nunca ha sido prospectivo y mi interés han sido los municipios. No me queda claro si hay mucho qué decir para el horse-race presidencial y el Congreso.
+
+Mi sondeo: si le vieras potencial ¿te interesaría que lo hiciéramos juntos? No queda mucho tiempo para hacer algo muy fino, pero se puede ganar una lanita y podría ser la semilla de algo interesante.
+
+¿Cómo ves?
+
+Saludos,
+
+-e
