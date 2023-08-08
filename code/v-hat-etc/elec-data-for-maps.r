@@ -1445,13 +1445,14 @@ load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 ## (eg. if another census indicator were desired.) Else, just import directly   ##
 ## the files that the script generates.                                         ##
 ##################################################################################
-source("../../code/v-hat-etc/export-mu-pops.r")
+## source("../../code/v-hat-etc/export-mu-pops.r")
+## censom <- tmpf
+## 
+## ## or read saved version:
+#censom <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-federal-elecs.csv")
+censom <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
 
-censom <- tmpf
-censom <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-federal-elecs.csv")
 
-
-eric  x
 ####################################################################
 ## Script to add population projections to municipal v..m.. maps. ##
 ## Drops censom.. objects.                                        ##
@@ -1459,18 +1460,18 @@ eric  x
 ####################################################################
 source("../../code/v-hat-etc/interpolate-census-data.r")
 
+v18m[1,]
+x
 
 ###################################################
 ## Finished adding census to vote objects, clean ##
 ###################################################
-## ls()[grep("censo", ls())]
+ls()[grep("censo", ls())]
 ## ls()[grep("v..m", ls())]
-## drop all census maps, no longer needed
-rm(list = ls()[grep("^censo", ls())])
-## rm(list = ls()[grep("^censod", ls())])
-## rm(list = ls()[grep("^censom", ls())])
+## drop most census maps, no longer needed
+rm(list = ls()[grep("^censod|^censom[0-9{2}]", ls())])
 rm(list = ls()[grep("tmp", ls())])
-rm(sel.ignore, sel.r, non.nas, preds, projyr, myf, interpol, interlog)
+rm(non.nas, preds, projyr, myf, interpol, interlog)
 
 
 ## save all to restore after manipulating district/munic aggregates

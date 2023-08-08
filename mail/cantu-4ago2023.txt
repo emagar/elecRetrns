@@ -1,3 +1,4 @@
+5ago23
 Hola Francisco,
 
 Espero que la familia vaya bien a pesar de la tremenda canícula. Escribo con una consulta y para sondear tu interés.
@@ -19,3 +20,22 @@ Mi sondeo: si le vieras potencial ¿te interesaría que lo hiciéramos juntos? N
 Saludos,
 
 -e
+
+-------------------
+8ago23
+
+Voy a responderle a LC que en principio nos interesa, que le haremos una propuesta concreta a fines de mes. 
+
+Algunas ideas para ir sopesando.
+
+- No se trataría de hacer un pronóstico móvil tipo fivethirtyeight, sino un perfil de lo que el desempeño reciente en municipios/distritos permite anticipar para la elección congresional y la presidencial. Con el voto 2015:2021 podríamos obtener indicadores de desempeño (volatilidad, márgenes, turnover, covarianza con unidades vecinas, etc). Estos los podríamos reportar en algún formato que dé una idea de lo que puede esperarse en distintas zonas. 
+
+- Los distritos cambiarán para 2024. Habrá que trabajar con municipios y recomponer el mapa congresional. Podríamos incluso bajar a las secciones electorales.
+
+- El horse race presidencial en encuestas debería servirnos para traducir los márgenes partidistas a escaños de RP.
+
+Hamblamos cuando regreses de vacaciones, descansen y pásenla muy bien.
+
+-------
+
+

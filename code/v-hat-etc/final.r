@@ -1,3 +1,5 @@
+## Script generates and pastes seccion-level census indicators
+
 ## 1. Prep: sum.split <- function(d=censo, year.var=2020, rnd=1)
 ## 2. Prep: function interlog --- for 3pt log(dv=r)~iv
 ## 3. Prep: function interpol --- for 2pt segments
@@ -110,6 +112,7 @@ if (length(sel)>0){
 #############################################################
 ## Add cols that will receive p18 projections for elec yrs ##
 #############################################################
+nm[1,]
 nm <- within(nm, {
     nmanip <- dfirst <- dsingle <- dskip <- dready2est <- ddone <- dneedsum <- 0;
     when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
@@ -848,7 +851,7 @@ nm$dready2est[sel.tmp] <- 1
 ## Block ends here ##
 #####################
 ##
-## Check that dummies are mutually exclusive and exhaustive. if so, single dummy can be used to select 
+## Check that dummies are mutually exclusive and exhaustive. if so, any single dummy selects ok
 table(skip=nm$dskip,    done= nm$ddone)
 table(skip=nm$dskip,    sum=  nm$dneedsum)
 table(skip=nm$dskip,    ready=nm$dready2est)
@@ -896,60 +899,65 @@ nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE)
 #############################################################################
 ## Project mun pops from saved censos to convert sh.hats back into nm.hats ##
 #############################################################################
-tmp <- censom21 # use latest municipio map
-tmp[1,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_1995 - x$p18_1990) /5 # yearly pop change
-    pop <- x$p18_1990 + chg * (yr - 1990)
-    return(pop)
-}
-tmp <- within(tmp, {
-    p18_1994 <- prj(tmp, 1994)
-})
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) /5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-tmp <- within(tmp, {
-    p18_1997 <- prj(tmp, 1997)
-})
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) /5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-tmp <- within(tmp, {
-    p18_2003 <- prj(tmp, 2003)
-})
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-tmp <- within(tmp, {
-    p18_2006 <- prj(tmp, 2006)
-    p18_2009 <- prj(tmp, 2009)
-})
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2020 - x$p18_2010) /10 # yearly pop change
-    pop <- x$p18_2010 + chg * (yr - 2010)
-    return(pop)
-}
-tmp <- within(tmp, {
-    p18_2012 <- prj(tmp, 2012)
-    p18_2015 <- prj(tmp, 2015)
-    p18_2018 <- prj(tmp, 2018)
-    p18_2021 <- prj(tmp, 2021)
-})
-tmp <- tmp[,order(colnames(tmp))]
-tmp$p18_1990 <- tmp$p18_1995 <- tmp$edon <- tmp$mun <- tmp$ife <- NULL
-#tmp$p18_2005 <- tmp$p18_2010 <- tmp$p18_2020 <- NULL
-#colnames(tmp) <- sub("^p18_[12][90]", "p18m_", colnames(tmp))
-colnames(tmp) <- sub("^p18_", "p18m_", colnames(tmp))
-dim(tmp)
-tmp[1,]
-## pick municipios needed
+tmp <- censom ## censom has mu-level pops manipulated for remunicipalización
+colnames(tmp) <- sub("p18_", "p18m_", colnames(tmp)) ## rename mun pop vars
+##
+## ## This block relies on counterfactual municipio map populations instead of 
+## tmp <- censom21 # use latest municipio map
+## tmp[1,]
+## prj <- function(x=NA,yr=NA){
+##     chg <- (x$p18_1995 - x$p18_1990) /5 # yearly pop change
+##     pop <- x$p18_1990 + chg * (yr - 1990)
+##     return(pop)
+## }
+## tmp <- within(tmp, {
+##     p18_1994 <- prj(tmp, 1994)
+## })
+## prj <- function(x=NA,yr=NA){
+##     chg <- (x$p18_2000 - x$p18_1995) /5 # yearly pop change
+##     pop <- x$p18_1995 + chg * (yr - 1995)
+##     return(pop)
+## }
+## tmp <- within(tmp, {
+##     p18_1997 <- prj(tmp, 1997)
+## })
+## prj <- function(x=NA,yr=NA){
+##     chg <- (x$p18_2005 - x$p18_2000) /5 # yearly pop change
+##     pop <- x$p18_2000 + chg * (yr - 2000)
+##     return(pop)
+## }
+## tmp <- within(tmp, {
+##     p18_2003 <- prj(tmp, 2003)
+## })
+## prj <- function(x=NA,yr=NA){
+##     chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+##     pop <- x$p18_2005 + chg * (yr - 2005)
+##     return(pop)
+## }
+## tmp <- within(tmp, {
+##     p18_2006 <- prj(tmp, 2006)
+##     p18_2009 <- prj(tmp, 2009)
+## })
+## prj <- function(x=NA,yr=NA){
+##     chg <- (x$p18_2020 - x$p18_2010) /10 # yearly pop change
+##     pop <- x$p18_2010 + chg * (yr - 2010)
+##     return(pop)
+## }
+## tmp <- within(tmp, {
+##     p18_2012 <- prj(tmp, 2012)
+##     p18_2015 <- prj(tmp, 2015)
+##     p18_2018 <- prj(tmp, 2018)
+##     p18_2021 <- prj(tmp, 2021)
+## })
+## tmp <- tmp[,order(colnames(tmp))]
+## tmp$p18_1990 <- tmp$p18_1995 <- tmp$edon <- tmp$mun <- tmp$ife <- NULL
+## #tmp$p18_2005 <- tmp$p18_2010 <- tmp$p18_2020 <- NULL
+## #colnames(tmp) <- sub("^p18_[12][90]", "p18m_", colnames(tmp))
+## colnames(tmp) <- sub("^p18_", "p18m_", colnames(tmp))
+## dim(tmp)
+## tmp[1,]
+
+## pick municipios needed for all secciones and merge saved pops
 tmp2 <- data.frame(ord=1:nrow(nm), inegi=nm$inegi)
 tmp2 <- merge(x=tmp2, y=tmp, by="inegi", all.x=TRUE, all.y=FALSE)
 tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL
@@ -957,11 +965,16 @@ tmp <- tmp2; rm(tmp2)
 tmp[1:3,]
 ## plug el.yr mun pops to nm
 tmp2 <- nm
-table(tmp$inegi==tmp2$inegi)
+table(tmp$inegi==tmp2$inegi) # verify dimensionality
 tmp2 <- cbind(tmp2, tmp[,-1])
+tmp2[1,]
 table(tmp2$p18m_05 - tmp2$p18m_2005) #check
 table(tmp2$p18m_10 - tmp2$p18m_2010) #check
 table(tmp2$p18m_20 - tmp2$p18m_2020) #check
+which(tmp2$p18m_05 - tmp2$p18m_2005 < -40000)
+tmp2[652,]
+tmp2[800,]
+x
 #tmp2 <- nm
 
 ################
@@ -1305,10 +1318,10 @@ with(nm, table(dready2est, dfirst))
 with(nm, table(ddone, dfirst))
 
 
-##############################################################################
-## Apply interlog to r[dready2est==1] to estimate and                       ##
-## predict 1994:2003 and 2021; apply interpol for 2006:2018                 ##
-##############################################################################
+##############################################################
+## Apply interlog to r[dready2est==1] to estimate and       ##
+## predict 1994:2003 and 2021; apply interpol for 2006:2018 ##
+##############################################################
 ## Subset data, excluding first secciones (flat r=1)
 sel.c <- grep("seccion|inegi|^p18_(2005|2010|2020)$", colnames(nm))
 sel.r <- which(r$dready2est==1 & r$dfirst==0 & r$dsingle==0)
