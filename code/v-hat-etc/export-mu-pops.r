@@ -2006,6 +2006,7 @@ tmpf[sel.r,]
 ##
 ## Bacalar (created 2013)
 ## Elected 1st mu gov 2013, fed els in 2015
+
 sel.parent <- which(tmpm$inegi==23004)
 sel.son <-    which(tmpm$inegi==23010)
 censom12[c(sel.parent, sel.son),]
@@ -2348,8 +2349,8 @@ tmpf[c(sel.parent, sel.son), sel.c] <- censom06[c(sel.parent, sel.son), sel.c]
 tmpf[c(sel.parent, sel.son),]
 tmpm[c(sel.parent, sel.son),]
 ##
-## Keep fed el yrs only
-tmpf <- tmpf[, c("edon", "ife", "inegi", "mun", "p18_1991", "p18_1994", "p18_1997", "p18_2000", "p18_2003", "p18_2006", "p18_2009", "p18_2012", "p18_2015", "p18_2018", "p18_2021")]
+## ## Keep fed el yrs only
+## tmpf <- tmpf[, c("edon", "ife", "inegi", "mun", "p18_1991", "p18_1994", "p18_1997", "p18_2000", "p18_2003", "p18_2006", "p18_2009", "p18_2012", "p18_2015", "p18_2018", "p18_2021")]
 ## Check
 tmpf[1,]
 tmpm[1,]

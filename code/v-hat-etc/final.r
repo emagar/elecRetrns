@@ -850,7 +850,7 @@ nm$dready2est[sel.tmp] <- 1
 #####################
 ## Block ends here ##
 #####################
-##
+
 ## Check that dummies are mutually exclusive and exhaustive. if so, any single dummy selects ok
 table(skip=nm$dskip,    done= nm$ddone)
 table(skip=nm$dskip,    sum=  nm$dneedsum)
@@ -881,6 +881,10 @@ nm <- nm[order(nm$ord),] ## sort
 nm$dfirst[duplicated(nm$inegi)==FALSE] <- 1
 table(nm$dfirst)
 
+
+
+
+
 ##################################################################################
 ## Apply my_agg to generate municipal aggregates (nm[sel.r,]$m:2005-2010-2020)  ##
 ## These aggragates are for the purpose of projecting with manipulated          ##
@@ -892,17 +896,27 @@ nm <- within(nm, {
     p18m_10 <- p18_2010;
     p18m_20 <- p18_2020;
 })
-sel.c <- c("p18m_05", "p18m_10", "p18m_20")
-nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE)
+sel.c <- c("p18m_05", "p18m_10", "p18m_20")                   ## select municipio pop columns
+nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE) ## and sum-up its secciones
 ##
+#####################################################################################################################
+## Ojo: In some cases, these aggs do not equal saved municipal-level census populations due to remunicipalización. ##
+## For example, Bacalar appears in 2005 and 2010 censuses, but its legal birth (1st municipal election) is 2013,   ##
+## and therefore its population is zero in saved (remunicipalización-corrected) 2005 and 2010 census data.         ##
+## Will not fix this here, despite mismatches in checks below, as 2005 and 2010 aid in using interlog to generate  ##
+## sección-level projections. Will fix after aggregation.                                                          ##
+#####################################################################################################################
 
-#############################################################################
-## Project mun pops from saved censos to convert sh.hats back into nm.hats ##
-#############################################################################
+###########################################################################
+## Bring mun pops from saved censos to convert sh.hats back into nm.hats ##
+###########################################################################
 tmp <- censom ## censom has mu-level pops manipulated for remunicipalización
 colnames(tmp) <- sub("p18_", "p18m_", colnames(tmp)) ## rename mun pop vars
 ##
-## ## This block relies on counterfactual municipio map populations instead of 
+## ## This commented block would rely on counterfactual municipio map populations instead of censom 
+## #############################################################################
+## ## Project mun pops from saved censos to convert sh.hats back into nm.hats ##
+## #############################################################################
 ## tmp <- censom21 # use latest municipio map
 ## tmp[1,]
 ## prj <- function(x=NA,yr=NA){
@@ -959,32 +973,44 @@ colnames(tmp) <- sub("p18_", "p18m_", colnames(tmp)) ## rename mun pop vars
 
 ## pick municipios needed for all secciones and merge saved pops
 tmp2 <- data.frame(ord=1:nrow(nm), inegi=nm$inegi)
-tmp2 <- merge(x=tmp2, y=tmp, by="inegi", all.x=TRUE, all.y=FALSE)
-tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL
+tmp2 <- merge(x=tmp2, y=tmp, by="inegi", all.x=TRUE, all.y=FALSE) # this merge will repeat munic pop for all its secciones
+tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
 tmp <- tmp2; rm(tmp2)
 tmp[1:3,]
 ## plug el.yr mun pops to nm
 tmp2 <- nm
-table(tmp$inegi==tmp2$inegi) # verify dimensionality
+table(tmp$inegi==tmp2$inegi) # verify same order and dimensionality
 tmp2 <- cbind(tmp2, tmp[,-1])
-tmp2[1,]
+##
+#################################################################################################
+## These are municipalities with inconsistent 2005 2010 2020 sección aggregates (likely due to ##
+## remunicipalización). Will project them as if they still belonged to the "wrong" municipio,  ##
+## which should have little effect in projection                                               ##
+#################################################################################################
 table(tmp2$p18m_05 - tmp2$p18m_2005) #check
 table(tmp2$p18m_10 - tmp2$p18m_2010) #check
 table(tmp2$p18m_20 - tmp2$p18m_2020) #check
-which(tmp2$p18m_05 - tmp2$p18m_2005 < -40000)
-tmp2[652,]
-tmp2[800,]
-x
-#tmp2 <- nm
+##
+unique(tmp2$ife[which(tmp2$p18m_05 - tmp2$p18m_2005 != 0)])
+unique(tmp2$ife[which(tmp2$p18m_10 - tmp2$p18m_2010 != 0)])
+unique(tmp2$ife[which(tmp2$p18m_20 - tmp2$p18m_2020 != 0)])
+##
+tmp2[1,]
+nm[1,]
+tmp2 -> nm # return
 
 ################
 ## Compute sh ##
 ################
-sh <- within(nm, {
-    p18_2005 <- p18_2005 / p18m_05;
-    p18_2010 <- p18_2010 / p18m_10;
-    p18_2020 <- p18_2020 / p18m_20;
-})
+sh <- nm
+sh$p18_2005 <- nm$p18_2005 / nm$p18m_05
+sh$p18_2010 <- nm$p18_2010 / nm$p18m_10
+sh$p18_2020 <- nm$p18_2020 / nm$p18m_20
+## sh <- within(nm, {
+##     p18_2005 <- p18_2005 / p18m_05;
+##     p18_2010 <- p18_2010 / p18m_10;
+##     p18_2020 <- p18_2020 / p18m_20;
+## })
 summary(sh$p18_2005)
 summary(sh$p18_2010)
 summary(sh$p18_2020)

@@ -22,20 +22,39 @@ Saludos,
 -e
 
 -------------------
-8ago23
+9ago23
 
-Voy a responderle a LC que en principio nos interesa, que le haremos una propuesta concreta a fines de mes. 
+Perfecto. Voy a responderle a LC que en principio nos interesa, que empezaremos a preparar una propuesta a fines de mes. 
 
 Algunas ideas para ir sopesando.
 
-- No se trataría de hacer un pronóstico móvil tipo fivethirtyeight, sino un perfil de lo que el desempeño reciente en municipios/distritos permite anticipar para la elección congresional y la presidencial. Con el voto 2015:2021 podríamos obtener indicadores de desempeño (volatilidad, márgenes, turnover, covarianza con unidades vecinas, etc). Estos los podríamos reportar en algún formato que dé una idea de lo que puede esperarse en distintas zonas. 
+- No se trataría de hacer un pronóstico móvil tipo fivethirtyeight, sino un perfil de lo que el desempeño reciente en municipios/distritos permite anticipar para la elección congresional y la presidencial. Con el voto 2015:2021 podríamos obtener indicadores de desempeño (volatilidad, márgenes, turnover, covarianza con unidades vecinas, etc). Los podríamos reportar en algún formato que dé una idea de lo que puede esperarse en distintas zonas. 
 
-- Los distritos cambiarán para 2024. Habrá que trabajar con municipios y recomponer el mapa congresional. Podríamos incluso bajar a las secciones electorales.
+- Los distritos cambiarán en 2024. Habrá que trabajar con municipios y recomponer el mapa congresional. Podríamos incluso bajar a las secciones electorales.
 
-- El horse race presidencial en encuestas debería servirnos para traducir los márgenes partidistas a escaños de RP.
+- El horse race presidencial en encuestas debería servirnos para traducir los márgenes partidistas a escaños de RP. No tiene que ser parte de un modelo unificado.
 
-Hamblamos cuando regreses de vacaciones, descansen y pásenla muy bien.
+Hablemos cuando regreses de vacaciones, creo que esto será interesante. Descansen y pásenla muy bien.
 
--------
+-------------------
+9ago23
 
+Hola Luis Carlos:
 
+Te mando un reporte de lo que estuve pensando a raíz de nuestra llamada de la semana pasada.
+
+1. Haré equipo con Paco Cantú (Houston). Nuestros trabajos se complementan para hacerte una propuesta de pronóstico de 2024. Francisco está de vacaciones con su familia, hacia fines de mes podremos sentarnos a afinar una primera propuesta.
+
+2. La propuesta no será un agregador de encuestas tipo fivethirtyeight o NYT. El modelo que podemos armar se ubicaría en la intersección del estudio descriptivo de las elecciones recientes y los patrones que arroja el control de ciertas condiciones sociodemográficas.
+
+3. Analizaríamos evidencia sistemática: resultados electorales recientes y los censos de población, principalmente.
+
+4. Lo haremos en distintos niveles de agregación (estado, municipio y quizás sección electoral). Las redistritaciones de 2018 y 2024 dificultan comparar a ese nivel.
+
+5. Encontrarás ejemplos de diagramas para presentar la información aquí: https://emagar.github.io/residuales-2018/. Adjunto también un par de mapas inspirados del NYT.
+
+Dinos si esto se aproxima a lo que tienes en mente. No queda mucho tiempo para hacer esto ¿cuándo contemplas empezar a reportar?
+
+Saludos,
+
+-e
