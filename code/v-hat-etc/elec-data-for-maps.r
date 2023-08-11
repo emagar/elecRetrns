@@ -1443,8 +1443,8 @@ load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
 ## (eg. if another census indicator were desired.) Else, just import directly   ##
 ## the files that the script generates.                                         ##
 ##################################################################################
-source("../../code/v-hat-etc/export-mu-pops.r")
-censom <- tmpf
+## source("../../code/v-hat-etc/export-mu-pops.r")
+## censom <- tmpf
 ## 
 ## ## or read saved version:
 censom <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-federal-elecs.csv")
