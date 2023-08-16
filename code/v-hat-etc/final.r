@@ -97,6 +97,11 @@ prj1020 <- function(x=NA,yr=NA){
     pop <- x$p18_2010 + chg * (yr - 2010)
     return(pop)
 }
+prj0520 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2020 - x$p18_2005) / 15 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
 
 ## get census projection functions
 source("../../code/v-hat-etc/interpolate-census-functions.r")
@@ -891,6 +896,13 @@ sel.r <- which(nm$seccion==192305)
 nm[sel.r, c("seccion","alta","baja","action","when","action2","when2","action3","when3","p18_2005","p18_2010","p18_2020","nmanip","dneedsum")]
 nm$p18_2005[sel.r] <- nm$p18_2010[sel.r]
 nm$nmanip[sel.r] <- nm$nmanip[sel.r] + 1
+##
+## Make 2010 census linear with 2005 and 2020
+sel.tmp <- which(nm$seccion %in% c(160829, 303230, 50718, 71879, 200221, 230616, 71640, 71800, 260645, 281040, 281061, 281063, 51437, 71739, 71773, 71832, 71834, 281041, 51049, 71638, 71742, 71744, 71771, 71841, 71850, 71856, 71916, 91734, 94990, 101214, 130585, 153849, 154024, 154393, 156019, 201813, 210025, 250362, 250416, 260306, 260307, 260643, 281042, 281062, 281068, 290490, 300090, 300697, 300715, 302274, 302456, 302625, 302839, 303187, 20554, 21386, 30352, 50442, 50717, 51105, 51110, 51271, 51276, 51305, 51309, 51316, 51396, 71443, 71602, 71829, 71831, 71843, 71848, 71878, 82253, 82842, 91279, 112059, 120444, 121658, 122149, 122777, 130022, 130218, 130339, 130395, 130800, 131083, 131446, 131559, 142273, 142729, 143164, 150080, 150101, 150129, 150147, 150485, 150901, 152000, 152349, 152394, 152770, 152787, 154025, 154195, 154416, 154544, 155752, 155757, 155926, 156014, 156143, 160077, 160149, 160827, 160866, 170353, 170377, 170596, 180295, 180418, 180741, 190193, 190194, 191192, 191236, 200842, 201172, 211564, 211618, 211647, 211648, 211913, 211915, 212222, 220554, 241447, 241650, 250632, 250995, 251293, 251603, 251767, 251844, 251845, 251852, 252644, 252960, 253007, 253041, 253074, 260081, 260082, 260160, 260305, 260760, 261110, 261325, 270580, 270660, 270665, 280785, 281038, 281057, 281064, 300409, 301223, 301524, 301777, 302445, 302477, 302626, 302816, 302863, 303232, 303233, 303297, 303451, 310992, 321035))
+nm[sel.tmp,] <- within(nm[sel.tmp,], {
+    p18_2010 <- prj0510(nm[sel.tmp,], 2006)
+    nmanip <- nmanip + 1
+})
 #####################
 ## Block ends here ##
 #####################
@@ -1034,11 +1046,10 @@ table(nm[nm$dready2est==1, c("p18_2005","p18_2010","p18_2020")] <= 0)
 nm[which(nm$dready2est==1 & nm$p18_2005 <= 0), c("p18_2005","p18_2010","p18_2020")]
 nm[which(nm$dready2est==1 & nm$p18_2010 <= 0), c("p18_2005","p18_2010","p18_2020")]
 nm[which(nm$dready2est==1 & nm$p18_2020 <= 0), c("p18_2005","p18_2010","p18_2020")]
-## set arbitrarilly to 3
-nm$p18_2005 [which(nm$dready2est==1 & nm$p18_2005 <= 0)] <- 3     OJO: Change this to 50 percent of 2010
+## set arbitrarilly to 50% of 2010 pop
+nm$p18_2005 [which(nm$dready2est==1 & nm$p18_2005 <= 0)] <- nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2005 <= 0)] / 2
 #nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2010 <= 0)] <- 3
-nm$p18_2020 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] <- 3
-
+nm$p18_2020 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] <- nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] / 2
 
 
 ##################################################################################
@@ -1065,6 +1076,7 @@ nm[1:3,]
 ## ## sección-level projections. Will fix after aggregation.                                                          ##
 ## #####################################################################################################################
 
+
 ###########################################################################
 ## Bring mun pops from saved censos to convert sh.hats back into nm.hats ##
 ###########################################################################
@@ -1073,7 +1085,6 @@ sel.c <- paste0("p18_", seq(1991,2021,3))
 tmp <- my_agg(d=tmp, sel.c=sel.c, by="edon", drop.dupli=TRUE) ## and sum-up state pops for secciones
 dim(tmp)
 colnames(tmp) <- sub("p18_", "p18e_", colnames(tmp)) ## rename mun pop vars
-
 ##
 ## ## This commented block would rely on counterfactual municipio map populations instead of censom 
 ## #############################################################################
@@ -1162,6 +1173,82 @@ nm[1,]
 table(nm$seccion==tmp2$seccion) # verify same order and dimensionality
 nm <- tmp2 ## fill data
 
+
+
+##################################################################################
+## OJO: hay un déficit sistemático en los datos seccionales vis-à-vis el censo: ##
+##################################################################################
+tmp.ine <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
+tmp.ine <- tmp.ine[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
+tmp.ine <- my_agg(d=tmp.ine, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+##
+tmp.cen <- nm[,c("edon","p18_2005","p18_2010","p18_2020")]
+tmp.cen <- my_agg(d=tmp.cen, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+ajuste.censal <- data.frame(edon=tmp.cen$edon,
+                            d_2005=tmp.cen$p18_2005 - tmp.ine$p18_2005,
+                            d_2010=tmp.cen$p18_2010 - tmp.ine$p18_2010,
+                            d_2020=tmp.cen$p18_2020 - tmp.ine$p18_2020)
+ajuste.censal
+##
+##############################################################################################################
+## ¿Explicación? Por ser tan relativamente plano, podría ser gente que no vive en el estado...              ##
+## Sea lo que sea, por ser plano es fácil ajustar los totales censales con base en las diferencias 05 10 20 ##
+##############################################################################################################
+tmp.regs <- interlog(what="d", yr=1994, unit="e", frm="log(dv)~iv", census.data=ajuste.censal, digits=1)
+## ajuste.censal.proj will receive all log-linear predictions
+ajuste.censal.proj <- data.frame(edon  = 1:32, 
+                    d_1994 = tmp.regs[[1]])
+##non.nas <- apply(ajuste.censal.proj, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
+new.d <- data.frame(iv=seq(1997,2021,3))     ## prep predictions 1997-on
+preds <- vector(mode='list', nrow(ajuste.censal.proj))    ## empty list
+## predict
+preds <- lapply(tmp.regs[[3]], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
+preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
+preds <- do.call(rbind, preds)                      # to data frame
+colnames(preds) <- paste0("d_", seq(1997,2021,3)) # add names
+preds <- exp(preds)                                 # exponentiate log-linear predictions
+ajuste.censal.proj <- cbind(ajuste.censal.proj, preds)                        # consolidate predictions
+##ajuste.censal.proj <- cbind(ajuste.censal.proj, r.w[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
+##ajuste.censal.proj <- ajuste.censal.proj[, order(colnames(ajuste.censal.proj))]            # sort columns except 1st (seccion)
+rownames(ajuste.censal.proj) <- NULL
+head(ajuste.censal.proj)
+##plot(seq(1994, 2021, 3), ajuste.censal.proj[9,-1], ylim = c(0, 40000)) # all looks ok?
+##
+## Ajustar datos censales
+tmp2 <- data.frame(ord=1:nrow(nm), edon=nm$edon, seccion=nm$seccion)
+tmp2 <- split(x=tmp2, f=tmp2$edon) # split into list of data frames, one per state
+for (i in 1:32){
+    #i <- 1
+    tmp3 <- tmp2[[i]] # subset state i's secciones
+    ##
+    tmp4 <- data.frame(ajuste.censal.proj[i, grep("d_", colnames(ajuste.censal.proj))]) ## take state i's yealry difs
+    tmp4 <- tmp4[rep(1, nrow(tmp3)),]                        ## repeat as many times as there are secciones
+    ##
+    tmp3 <- cbind(tmp3, tmp4)  ## bind difs to state's secciones
+    ##
+    tmp3 -> tmp2[[i]] # return to data
+}
+tmp2 <- do.call(rbind, tmp2) # return to data frame form
+tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
+ajuste.censal.proj.se <- tmp2; rm(tmp2)
+ajuste.censal.proj.se[1:3,]
+##
+table(ajuste.censal.proj.se$seccion==nm$seccion)
+##
+nm$p18e_1991 <- NULL  ### Drop 1991 state totals, unneeded until 1991 data available
+##
+############################################################################################
+## Add adjustment to el.yr state census totals                                            ##
+## Ojo: Need to formalize, I was expecting to subtract ajuste, not sum it.                ##
+## But sum would increase, not lower, gaps in se-level population gaps with census.ine... ##
+## WHY?                                                                                   ##
+############################################################################################
+nm[, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] <-
+    nm                   [, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] +
+    ajuste.censal.proj.se[, grep(   "d_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(ajuste.censal.proj.se))]
+
+
+
 ################################
 ## Add columns for el.yr pops ##
 ################################
@@ -1200,7 +1287,6 @@ nm[sel.tmp, c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18e_05","p18e
 ##
 
 ## AQUI VENIA BLOQUE SUM.SPLIT
-
 
 #####################################################
 ## Prep object to receive all possible regressions ##
@@ -1524,29 +1610,85 @@ tmp[r.w$inegi==1004,]
 head(tmp)
 tmp -> sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
 
+
 ####################################
 ## compute nm.hat and empty in nm ##
 ####################################
 tmp.nm <- sh.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))] *
           sh.w[, grep("^p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
 tmp.nm -> nm.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm.w))]
+rm(tmp.nm)
+##
+## Fix these manually ex-post
+tmp <- nm.w[, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
+tmp$d05 <- round( (tmp$p18_2005 - tmp$p18_2006) *100 / tmp$p18_2005 )
+tmp$d10 <- round( (tmp$p18_2010 - tmp$p18_2009) *100 / tmp$p18_2010 )
+tmp$d20 <- round( (tmp$p18_2020 - tmp$p18_2021) *100 / tmp$p18_2020 )
+summary(tmp$d05)
+summary(tmp$d10)
+summary(tmp$d20)
+## Project these linearly (use column OBSERVACIONES, backed-up, to indicate manipulated cases
+tmp.bak.obs <- nm.w$OBSERVACIONES; nm.w$OBSERVACIONES <- 0
+##
+sel.tmp <- which( (tmp$d20 < -25 | tmp$d05 < -40) & nm.w$OBSERVACIONES==0)
+nm.w[sel.tmp,] <- within(nm.w[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
+    p18_2006 <- prj0510(nm.w[sel.tmp,], 2006)
+    p18_2009 <- prj0510(nm.w[sel.tmp,], 2009)
+    p18_2012 <- prj1020(nm.w[sel.tmp,], 2012)
+    p18_2015 <- prj1020(nm.w[sel.tmp,], 2015)
+    p18_2018 <- prj1020(nm.w[sel.tmp,], 2018)
+    p18_2021 <- prj1020(nm.w[sel.tmp,], 2021)
+    OBSERVACIONES <- 1
+})
 
-## check
-nm.w[200:210, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
+## eric  x
+sel.tmp <- which(nm.w$seccion %in% c(160829, 303230, 50718, 71879, 200221, 230616, 71640, 71800, 260645, 281040, 281061, 281063, 51437, 71739, 71773, 71832, 71834, 281041, 51049, 71638, 71742, 71744, 71771, 71841, 71850, 71856, 71916, 91734, 94990, 101214, 130585, 153849, 154024, 154393, 156019, 201813, 210025, 250362, 250416, 260306, 260307, 260643, 281042, 281062, 281068, 290490, 300090, 300697, 300715, 302274, 302456, 302625, 302839, 303187, 20554, 21386, 30352, 50442, 50717, 51105, 51110, 51271, 51276, 51305, 51309, 51316, 51396, 71443, 71602, 71829, 71831, 71843, 71848, 71878, 82253, 82842, 91279, 112059, 120444, 121658, 122149, 122777, 130022, 130218, 130339, 130395, 130800, 131083, 131446, 131559, 142273, 142729, 143164, 150080, 150101, 150129, 150147, 150485, 150901, 152000, 152349, 152394, 152770, 152787, 154025, 154195, 154416, 154544, 155752, 155757, 155926, 156014, 156143, 160077, 160149, 160827, 160866, 170353, 170377, 170596, 180295, 180418, 180741, 190193, 190194, 191192, 191236, 200842, 201172, 211564, 211618, 211647, 211648, 211913, 211915, 212222, 220554, 241447, 241650, 250632, 250995, 251293, 251603, 251767, 251844, 251845, 251852, 252644, 252960, 253007, 253041, 253074, 260081, 260082, 260160, 260305, 260760, 261110, 261325, 270580, 270660, 270665, 280785, 281038, 281057, 281064, 300409, 301223, 301524, 301777, 302445, 302477, 302626, 302816, 302863, 303232, 303233, 303297, 303451, 310992, 321035))
+nm.w[sel.tmp[1:10],] <- within(nm.w[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
+    p18_2006 <- prj0520(nm.w[sel.tmp,], 2006)
+    p18_2009 <- prj0520(nm.w[sel.tmp,], 2009)
+    p18_2012 <- prj0520(nm.w[sel.tmp,], 2012)
+    p18_2015 <- prj0520(nm.w[sel.tmp,], 2015)
+    p18_2018 <- prj0520(nm.w[sel.tmp,], 2018)
+    p18_2021 <- prj0520(nm.w[sel.tmp,], 2021)
+    OBSERVACIONES <- 1
+})
+##
+sel.tmp <- which(nm.w$seccion %in% c(155980, 240325, 190039, 301225, 51480, 93531, 121290, 170235, 210635, 220742, 253505, 302474, 303231, 320592, 50153, 92085, 94989, 82567, 94991, 95501, 121962, 131443, 151294, 154433, 160828, 200019, 200653, 281093, 281273, 320085, 320759, 320825, 302737, 302473, 302457, 301781, 301670, 301231, 300728, 300729, 301190, 301219, 300738, 300735, 300934, 300606, 300716, 300724, 300727, 281578, 290504, 300221, 300394, 270370, 270459, 270511, 20227, 20268, 21480, 51248, 51265, 60201, 60203, 81330, 81344, 81493, 82355, 82581, 82648, 90479, 90751, 91040, 92054, 93178, 93376, 93485, 101139, 101270, 101303, 111879, 111886, 112201, 112266, 112471, 121587, 121694, 121984, 122051, 122145, 122747, 130263, 130635, 130838, 130928, 130938, 130953, 131075, 140430, 152350, 153206, 161558, 180464, 190040, 200089, 200237, 200647, 200843, 201524, 202453, 211318, 211493, 212072, 240164, 240268, 240269, 240270, 240315, 240327, 250268, 250430, 250433, 250494, 250497, 250622, 251274, 251504, 251789, 251958, 252202, 252209, 252216, 252339, 252458, 253134, 253376, 253549, 253559, 253575, 253612, 253705, 253722, 253761, 301233, 301240, 302217, 302425, 302458, 302460, 302470, 302865, 303250, 303305, 304319))  ## flat drop flat
+nm.w[sel.tmp,] <- within(nm.w[sel.tmp,], {
+    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
+    p18_2006 <- prj0510(nm.w[sel.tmp,], 2006)
+    p18_2009 <- prj0510(nm.w[sel.tmp,], 2009)
+    p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- p18_2020
+    OBSERVACIONES <- 1
+})
+
+## re-check
+sel.r <- 200:205
+tmp <- nm.w[sel.r, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
+tmp
+tmp <- split(tmp, tmp$seccion)
+lapply(tmp, function(x) plot(c(2005,2010,2020,2006,2009,2021), x[,-c(1,2)], xlab = NA, ylab = NA))
 ##
 tmp <- nm.w[, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
 tmp$d05 <- round( (tmp$p18_2005 - tmp$p18_2006) *100 / tmp$p18_2005 )
 tmp$d10 <- round( (tmp$p18_2010 - tmp$p18_2009) *100 / tmp$p18_2010 )
 tmp$d20 <- round( (tmp$p18_2020 - tmp$p18_2021) *100 / tmp$p18_2020 )
-tmp[1:10,]
-summary(tmp$d05)
-summary(tmp$d10)
-summary(tmp$d20)
-tmp[which(tmp$d10 < -10000),]
-x
+tmp[1101:1110,]
+summary(tmp$d05[nm.w$OBSERVACIONES==0])
+summary(tmp$d10[nm.w$OBSERVACIONES==0])
+summary(tmp$d20[nm.w$OBSERVACIONES==0])
+tmp[sel.tmp,]
+tmp[which(tmp$d10 < -25 & nm.w$OBSERVACIONES==0),]
+tmp[which(tmp$d10 < -50 & tmp$d10 >= -250 & nm.w$OBSERVACIONES==0),]
+censo[censo$seccion==303230,]
+tmp[which(tmp$d05 < -30 & tmp$d05 >= -40 & nm.w$OBSERVACIONES==0)[1:10],]
+
+
 
 ## check
-sh.w[sh.w$inegi==1004, grep("^p18_", colnames(sh.w))]
+sh.w  [sh.w$inegi==1004, grep("^p18_", colnames(sh.w))]
 tmp.nm[sh.w$inegi==1004, grep("^p18_", colnames(tmp.nm))]
 head(tmp.nm[tmp$inegi==1001, grep("^p18_", colnames(tmp.nm))])
 colSums(sh.w[,               grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))])

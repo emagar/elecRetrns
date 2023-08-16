@@ -139,13 +139,17 @@ interpol <- function(what="p18", yr=NA, unit=c("d","m","s")[2], census.data=NA, 
 }
 
 ## interlog() performs projection with a log lm or a regression line
-interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA, digits=1){  # census.data allow usage of counterfactual maps instead of default
+interlog <- function(what="p18", yr=NA, unit=c("e","d","m","s")[3], frm="dv~iv+I(iv^2)", census.data=NA, add.plot=FALSE, plot.n=NA, digits=1){  # census.data allow usage of counterfactual maps instead of default
     ## what <- "p18"; yr <- 1994; plot.n = NA; frm <- "dv~iv+I(iv^2)"; unit="s"
     ## census.data <- data.frame(p18_2005=c( 5, 8, 12, 1, 4), p18_2010=c( 7, 8, 20, 2, 4), p18_2020=c(10, 9, 21, 3, 4)); # debug
     ##
     if (!is.null(dim(census.data))) {  # if data provided in call, use it
         cs <- census.data
     } else {                         # else the function is customized for code/elec-data-for-maps.r
+        if (unit=="e"){
+            print("Pls define state-level census.data")
+            stop
+        }
         if (unit=="s"){
             cs <- censo
         }
@@ -210,6 +214,7 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
     interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))    ## predict
     print("done.")
     interp <- unlist(as.data.frame(interp), use.names = FALSE)                              ## turn into vector
+    print("Preparing output:")
     if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                           ## exp(log(dv))
     ##
     ## ## plot option
@@ -270,6 +275,7 @@ interlog <- function(what="p18", yr=NA, unit=c("d","m","s")[2], frm="dv~iv+I(iv^
             sq.resid <- (dv.hat - dv)^2
         }))
     ##
+    print("done.")
     return(list(interp=round(interp, digits),  ## returns a list with predicted values, data, and regressions
                 data=save.data,
                 regs=save.regs)
