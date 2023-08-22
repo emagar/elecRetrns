@@ -1151,7 +1151,7 @@ if (length(sel.r)>0) tmp18 <- tmp18[-sel.r,]
 rm(sel.r)
 ## EDQUI04 covers ages 15:19, drop two-fifths (assumes yearly cohorts equal size)
 tmp18$EDQUI04 <- as.integer(tmp18$EDQUI04 * .6)
-## p18
+## p18 ptot
 tmp18$p18_2005 <- tmp18$POB_TOT - tmp18$EDQUI01 - tmp18$EDQUI02 - tmp18$EDQUI03 - tmp18$EDQUI04
 tmp18$ptot_2005 <- tmp18$POB_TOT
 ##

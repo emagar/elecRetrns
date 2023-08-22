@@ -1609,104 +1609,244 @@ tmp <-  r.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", c
 tmp[r.w$inegi==1004,]
 head(tmp)
 tmp -> sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
-
-
+##
 ####################################
 ## compute nm.hat and empty in nm ##
 ####################################
 tmp.nm <- sh.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))] *
           sh.w[, grep("^p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
+tmp.nm <- round(tmp.nm, 1)
+tmp.nm[r.w$inegi==1004,]
 tmp.nm -> nm.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm.w))]
-rm(tmp.nm)
 ##
-## Fix these manually ex-post
-tmp <- nm.w[, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
-tmp$d05 <- round( (tmp$p18_2005 - tmp$p18_2006) *100 / tmp$p18_2005 )
-tmp$d10 <- round( (tmp$p18_2010 - tmp$p18_2009) *100 / tmp$p18_2010 )
-tmp$d20 <- round( (tmp$p18_2020 - tmp$p18_2021) *100 / tmp$p18_2020 )
-summary(tmp$d05)
-summary(tmp$d10)
-summary(tmp$d20)
-## Project these linearly (use column OBSERVACIONES, backed-up, to indicate manipulated cases
-tmp.bak.obs <- nm.w$OBSERVACIONES; nm.w$OBSERVACIONES <- 0
-##
-sel.tmp <- which( (tmp$d20 < -25 | tmp$d05 < -40) & nm.w$OBSERVACIONES==0)
-nm.w[sel.tmp,] <- within(nm.w[sel.tmp,], {
-    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
-    p18_2006 <- prj0510(nm.w[sel.tmp,], 2006)
-    p18_2009 <- prj0510(nm.w[sel.tmp,], 2009)
-    p18_2012 <- prj1020(nm.w[sel.tmp,], 2012)
-    p18_2015 <- prj1020(nm.w[sel.tmp,], 2015)
-    p18_2018 <- prj1020(nm.w[sel.tmp,], 2018)
-    p18_2021 <- prj1020(nm.w[sel.tmp,], 2021)
-    OBSERVACIONES <- 1
-})
-
-## eric  x
-sel.tmp <- which(nm.w$seccion %in% c(160829, 303230, 50718, 71879, 200221, 230616, 71640, 71800, 260645, 281040, 281061, 281063, 51437, 71739, 71773, 71832, 71834, 281041, 51049, 71638, 71742, 71744, 71771, 71841, 71850, 71856, 71916, 91734, 94990, 101214, 130585, 153849, 154024, 154393, 156019, 201813, 210025, 250362, 250416, 260306, 260307, 260643, 281042, 281062, 281068, 290490, 300090, 300697, 300715, 302274, 302456, 302625, 302839, 303187, 20554, 21386, 30352, 50442, 50717, 51105, 51110, 51271, 51276, 51305, 51309, 51316, 51396, 71443, 71602, 71829, 71831, 71843, 71848, 71878, 82253, 82842, 91279, 112059, 120444, 121658, 122149, 122777, 130022, 130218, 130339, 130395, 130800, 131083, 131446, 131559, 142273, 142729, 143164, 150080, 150101, 150129, 150147, 150485, 150901, 152000, 152349, 152394, 152770, 152787, 154025, 154195, 154416, 154544, 155752, 155757, 155926, 156014, 156143, 160077, 160149, 160827, 160866, 170353, 170377, 170596, 180295, 180418, 180741, 190193, 190194, 191192, 191236, 200842, 201172, 211564, 211618, 211647, 211648, 211913, 211915, 212222, 220554, 241447, 241650, 250632, 250995, 251293, 251603, 251767, 251844, 251845, 251852, 252644, 252960, 253007, 253041, 253074, 260081, 260082, 260160, 260305, 260760, 261110, 261325, 270580, 270660, 270665, 280785, 281038, 281057, 281064, 300409, 301223, 301524, 301777, 302445, 302477, 302626, 302816, 302863, 303232, 303233, 303297, 303451, 310992, 321035))
-nm.w[sel.tmp[1:10],] <- within(nm.w[sel.tmp,], {
-    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
-    p18_2006 <- prj0520(nm.w[sel.tmp,], 2006)
-    p18_2009 <- prj0520(nm.w[sel.tmp,], 2009)
-    p18_2012 <- prj0520(nm.w[sel.tmp,], 2012)
-    p18_2015 <- prj0520(nm.w[sel.tmp,], 2015)
-    p18_2018 <- prj0520(nm.w[sel.tmp,], 2018)
-    p18_2021 <- prj0520(nm.w[sel.tmp,], 2021)
-    OBSERVACIONES <- 1
-})
-##
-sel.tmp <- which(nm.w$seccion %in% c(155980, 240325, 190039, 301225, 51480, 93531, 121290, 170235, 210635, 220742, 253505, 302474, 303231, 320592, 50153, 92085, 94989, 82567, 94991, 95501, 121962, 131443, 151294, 154433, 160828, 200019, 200653, 281093, 281273, 320085, 320759, 320825, 302737, 302473, 302457, 301781, 301670, 301231, 300728, 300729, 301190, 301219, 300738, 300735, 300934, 300606, 300716, 300724, 300727, 281578, 290504, 300221, 300394, 270370, 270459, 270511, 20227, 20268, 21480, 51248, 51265, 60201, 60203, 81330, 81344, 81493, 82355, 82581, 82648, 90479, 90751, 91040, 92054, 93178, 93376, 93485, 101139, 101270, 101303, 111879, 111886, 112201, 112266, 112471, 121587, 121694, 121984, 122051, 122145, 122747, 130263, 130635, 130838, 130928, 130938, 130953, 131075, 140430, 152350, 153206, 161558, 180464, 190040, 200089, 200237, 200647, 200843, 201524, 202453, 211318, 211493, 212072, 240164, 240268, 240269, 240270, 240315, 240327, 250268, 250430, 250433, 250494, 250497, 250622, 251274, 251504, 251789, 251958, 252202, 252209, 252216, 252339, 252458, 253134, 253376, 253549, 253559, 253575, 253612, 253705, 253722, 253761, 301233, 301240, 302217, 302425, 302458, 302460, 302470, 302865, 303250, 303305, 304319))  ## flat drop flat
-nm.w[sel.tmp,] <- within(nm.w[sel.tmp,], {
-    p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2005;
-    p18_2006 <- prj0510(nm.w[sel.tmp,], 2006)
-    p18_2009 <- prj0510(nm.w[sel.tmp,], 2009)
-    p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- p18_2020
-    OBSERVACIONES <- 1
-})
-
-## re-check
-sel.r <- 200:205
-tmp <- nm.w[sel.r, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
-tmp
-tmp <- split(tmp, tmp$seccion)
-lapply(tmp, function(x) plot(c(2005,2010,2020,2006,2009,2021), x[,-c(1,2)], xlab = NA, ylab = NA))
-##
-tmp <- nm.w[, grep("seccion|inegi|^p18_(2005|2006|2009|2010|2020|2021)", colnames(nm.w))]
-tmp$d05 <- round( (tmp$p18_2005 - tmp$p18_2006) *100 / tmp$p18_2005 )
-tmp$d10 <- round( (tmp$p18_2010 - tmp$p18_2009) *100 / tmp$p18_2010 )
-tmp$d20 <- round( (tmp$p18_2020 - tmp$p18_2021) *100 / tmp$p18_2020 )
-tmp[1101:1110,]
-summary(tmp$d05[nm.w$OBSERVACIONES==0])
-summary(tmp$d10[nm.w$OBSERVACIONES==0])
-summary(tmp$d20[nm.w$OBSERVACIONES==0])
-tmp[sel.tmp,]
-tmp[which(tmp$d10 < -25 & nm.w$OBSERVACIONES==0),]
-tmp[which(tmp$d10 < -50 & tmp$d10 >= -250 & nm.w$OBSERVACIONES==0),]
-censo[censo$seccion==303230,]
-tmp[which(tmp$d05 < -30 & tmp$d05 >= -40 & nm.w$OBSERVACIONES==0)[1:10],]
-
-
-
 ## check
-sh.w  [sh.w$inegi==1004, grep("^p18_", colnames(sh.w))]
-tmp.nm[sh.w$inegi==1004, grep("^p18_", colnames(tmp.nm))]
-head(tmp.nm[tmp$inegi==1001, grep("^p18_", colnames(tmp.nm))])
+sh.w[sh.w$inegi==1004, grep("^p18_", colnames(sh.w))]
+nm.w[sh.w$inegi==1004, grep("^p18_", colnames(nm.w))]
+head(nm.w[nm.w$inegi==1001, grep("^p18_", colnames(nm.w))])
 colSums(sh.w[,               grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))])
-colSums(sh  [sh$edon==1    , grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh))])
-sh[1,]
-nm[nm$inegi==1001, grep("^p18_", colnames(nm))]
-## check
-head(tmp)
-head(tmp.nm)
-head(nm[,grep("p18_", colnames(nm))])
-## all should be 1 !!!! OK NOW
-tmp <- sh[, grep("^p18_", colnames(sh))]
-tmp <- split(tmp, sh$inegi)
-tmp <- lapply(tmp, colSums)
-tmp <- do.call(rbind, tmp)
-summary(tmp)
+##
+summary(nm.w$p18_1994)
+summary(nm.w$p18_1997)
+summary(nm.w$p18_2000)
+summary(nm.w$p18_2003)
+summary(nm.w$p18_2006)
+summary(nm.w$p18_2009)
+summary(nm.w$p18_2012)
+summary(nm.w$p18_2015)
+summary(nm.w$p18_2018)
+summary(nm.w$p18_2021)
+## While these should be flat across the period, changes in ratio to section 1 and in state pops imprint some temporal variation. Looks ok
+sel.tmp <- which(nm.w$p18_2005==nm.w$p18_2010 & nm.w$p18_2010==nm.w$p18_2020)
+nm.w[sel.tmp[1:10], grep("^p18_", colnames(nm.w))]
+sh.w[sel.tmp[1:10], grep("^p18_", colnames(sh.w))]
+r.w [sel.tmp[1:10], grep("^p18_", colnames(r.w))]
+##
+##################
+## To full data ##
+##################
+r.w      ->      r[sel.r, ]
+sh.w     ->     sh[sel.r, ]
+nm.w     ->     nm[sel.r, ]
 
-rm(fun.tmp, denom.w, nm.w, sh.w, r.w, prj, preds, sec.tmp, sel, sel.c, sel.ignore, sel.r, sel.tmp, tmp, tmp.nm, wrap.f) ## clean
+rm(fun.tmp, sel.tmp, sel.tmp2, tmp, tmp3, tmp4, tmp.cen, tmp.ine, tmp.nm) # clean
+
+## Aggregate municipios from seccion projections
+##
+## 1994 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                                  # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife1994", drop.dupli = TRUE)               # perform aggregation
+cen.w <- within(cen.w, {ife <- ife1994})                                               # this is the actual municipal code
+#sel.c <- grep(pattern="ord|edon|ife$|p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", x=colnames(cen.w))
+#cen.w <- cen.w[, sel.c]  # keep id and censo cols only
+# now paste to v..m objects
+v94m   <- merge(x = v94m  , y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m)  [grep("p18_", colnames(v94m))]   <- "p18"
+v97m94 <- merge(x = v97m94, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m94)[grep("p18_", colnames(v97m94))] <- "p18"
+v00m94 <- merge(x = v00m94, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m94)[grep("p18_", colnames(v00m94))] <- "p18"
+v03m94 <- merge(x = v03m94, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m94)[grep("p18_", colnames(v03m94))] <- "p18"
+v06m94 <- merge(x = v06m94, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m94)[grep("p18_", colnames(v06m94))] <- "p18"
+v09m94 <- merge(x = v09m94, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m94)[grep("p18_", colnames(v09m94))] <- "p18"
+v12m94 <- merge(x = v12m94, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m94)[grep("p18_", colnames(v12m94))] <- "p18"
+v15m94 <- merge(x = v15m94, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m94)[grep("p18_", colnames(v15m94))] <- "p18"
+v18m94 <- merge(x = v18m94, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m94)[grep("p18_", colnames(v18m94))] <- "p18"
+v21m94 <- merge(x = v21m94, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m94)[grep("p18_", colnames(v21m94))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 1997 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife1997", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife1997})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m97 <- merge(x = v94m97, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m97)[grep("p18_", colnames(v94m97))] <- "p18"
+v97m   <- merge(x = v97m  , y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m)  [grep("p18_", colnames(v97m))]   <- "p18"
+v00m97 <- merge(x = v00m97, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m97)[grep("p18_", colnames(v00m97))] <- "p18"
+v03m97 <- merge(x = v03m97, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m97)[grep("p18_", colnames(v03m97))] <- "p18"
+v06m97 <- merge(x = v06m97, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m97)[grep("p18_", colnames(v06m97))] <- "p18"
+v09m97 <- merge(x = v09m97, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m97)[grep("p18_", colnames(v09m97))] <- "p18"
+v12m97 <- merge(x = v12m97, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m97)[grep("p18_", colnames(v12m97))] <- "p18"
+v15m97 <- merge(x = v15m97, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m97)[grep("p18_", colnames(v15m97))] <- "p18"
+v18m97 <- merge(x = v18m97, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m97)[grep("p18_", colnames(v18m97))] <- "p18"
+v21m97 <- merge(x = v21m97, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m97)[grep("p18_", colnames(v21m97))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2000 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2000", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2000})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m00 <- merge(x = v94m00, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m00)[grep("p18_", colnames(v94m00))] <- "p18"
+v97m00 <- merge(x = v97m00, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m00)[grep("p18_", colnames(v97m00))] <- "p18"
+v00m   <- merge(x = v00m  , y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m)  [grep("p18_", colnames(v00m))]   <- "p18"
+v03m00 <- merge(x = v03m00, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m00)[grep("p18_", colnames(v03m00))] <- "p18"
+v06m00 <- merge(x = v06m00, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m00)[grep("p18_", colnames(v06m00))] <- "p18"
+v09m00 <- merge(x = v09m00, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m00)[grep("p18_", colnames(v09m00))] <- "p18"
+v12m00 <- merge(x = v12m00, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m00)[grep("p18_", colnames(v12m00))] <- "p18"
+v15m00 <- merge(x = v15m00, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m00)[grep("p18_", colnames(v15m00))] <- "p18"
+v18m00 <- merge(x = v18m00, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m00)[grep("p18_", colnames(v18m00))] <- "p18"
+v21m00 <- merge(x = v21m00, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m00)[grep("p18_", colnames(v21m00))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2003 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2003", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2003})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m03 <- merge(x = v94m03, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m03)[grep("p18_", colnames(v94m03))] <- "p18"
+v97m03 <- merge(x = v97m03, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m03)[grep("p18_", colnames(v97m03))] <- "p18"
+v00m03 <- merge(x = v00m03, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m03)[grep("p18_", colnames(v00m03))] <- "p18"
+v03m   <- merge(x = v03m  , y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m)  [grep("p18_", colnames(v03m))]   <- "p18"
+v06m03 <- merge(x = v06m03, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m03)[grep("p18_", colnames(v06m03))] <- "p18"
+v09m03 <- merge(x = v09m03, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m03)[grep("p18_", colnames(v09m03))] <- "p18"
+v12m03 <- merge(x = v12m03, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m03)[grep("p18_", colnames(v12m03))] <- "p18"
+v15m03 <- merge(x = v15m03, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m03)[grep("p18_", colnames(v15m03))] <- "p18"
+v18m03 <- merge(x = v18m03, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m03)[grep("p18_", colnames(v18m03))] <- "p18"
+v21m03 <- merge(x = v21m03, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m03)[grep("p18_", colnames(v21m03))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2006 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2006", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2006})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m06 <- merge(x = v94m06, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m06)[grep("p18_", colnames(v94m06))] <- "p18"
+v97m06 <- merge(x = v97m06, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m06)[grep("p18_", colnames(v97m06))] <- "p18"
+v00m06 <- merge(x = v00m06, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m06)[grep("p18_", colnames(v00m06))] <- "p18"
+v03m06 <- merge(x = v03m06, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m06)[grep("p18_", colnames(v03m06))] <- "p18"
+v06m   <- merge(x = v06m  , y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m)  [grep("p18_", colnames(v06m))]   <- "p18"
+v09m06 <- merge(x = v09m06, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m06)[grep("p18_", colnames(v09m06))] <- "p18"
+v12m06 <- merge(x = v12m06, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m06)[grep("p18_", colnames(v12m06))] <- "p18"
+v15m06 <- merge(x = v15m06, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m06)[grep("p18_", colnames(v15m06))] <- "p18"
+v18m06 <- merge(x = v18m06, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m06)[grep("p18_", colnames(v18m06))] <- "p18"
+v21m06 <- merge(x = v21m06, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m06)[grep("p18_", colnames(v21m06))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2009 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2009", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2009})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m09 <- merge(x = v94m09, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m09)[grep("p18_", colnames(v94m09))] <- "p18"
+v97m09 <- merge(x = v97m09, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m09)[grep("p18_", colnames(v97m09))] <- "p18"
+v00m09 <- merge(x = v00m09, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m09)[grep("p18_", colnames(v00m09))] <- "p18"
+v03m09 <- merge(x = v03m09, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m09)[grep("p18_", colnames(v03m09))] <- "p18"
+v06m09 <- merge(x = v06m09, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m09)[grep("p18_", colnames(v06m09))] <- "p18"
+v09m   <- merge(x = v09m  , y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m)  [grep("p18_", colnames(v09m))]   <- "p18"
+v12m09 <- merge(x = v12m09, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m09)[grep("p18_", colnames(v12m09))] <- "p18"
+v15m09 <- merge(x = v15m09, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m09)[grep("p18_", colnames(v15m09))] <- "p18"
+v18m09 <- merge(x = v18m09, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m09)[grep("p18_", colnames(v18m09))] <- "p18"
+v21m09 <- merge(x = v21m09, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m09)[grep("p18_", colnames(v21m09))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2012 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2012", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2012})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m12 <- merge(x = v94m12, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m12)[grep("p18_", colnames(v94m12))] <- "p18"
+v97m12 <- merge(x = v97m12, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m12)[grep("p18_", colnames(v97m12))] <- "p18"
+v00m12 <- merge(x = v00m12, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m12)[grep("p18_", colnames(v00m12))] <- "p18"
+v03m12 <- merge(x = v03m12, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m12)[grep("p18_", colnames(v03m12))] <- "p18"
+v06m12 <- merge(x = v06m12, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m12)[grep("p18_", colnames(v06m12))] <- "p18"
+v09m12 <- merge(x = v09m12, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m12)[grep("p18_", colnames(v09m12))] <- "p18"
+v12m   <- merge(x = v12m  , y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m)  [grep("p18_", colnames(v12m))]   <- "p18"
+v15m12 <- merge(x = v15m12, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m12)[grep("p18_", colnames(v15m12))] <- "p18"
+v18m12 <- merge(x = v18m12, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m12)[grep("p18_", colnames(v18m12))] <- "p18"
+v21m12 <- merge(x = v21m12, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m12)[grep("p18_", colnames(v21m12))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2015 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2015", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2015})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m15 <- merge(x = v94m15, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m15)[grep("p18_", colnames(v94m15))] <- "p18"
+v97m15 <- merge(x = v97m15, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m15)[grep("p18_", colnames(v97m15))] <- "p18"
+v00m15 <- merge(x = v00m15, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m15)[grep("p18_", colnames(v00m15))] <- "p18"
+v03m15 <- merge(x = v03m15, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m15)[grep("p18_", colnames(v03m15))] <- "p18"
+v06m15 <- merge(x = v06m15, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m15)[grep("p18_", colnames(v06m15))] <- "p18"
+v09m15 <- merge(x = v09m15, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m15)[grep("p18_", colnames(v09m15))] <- "p18"
+v12m15 <- merge(x = v12m15, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m15)[grep("p18_", colnames(v12m15))] <- "p18"
+v15m   <- merge(x = v15m  , y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m)  [grep("p18_", colnames(v15m))]   <- "p18"
+v18m15 <- merge(x = v18m15, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m15)[grep("p18_", colnames(v18m15))] <- "p18"
+v21m15 <- merge(x = v21m15, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m15)[grep("p18_", colnames(v21m15))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2018 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2018", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2018})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m18 <- merge(x = v94m18, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m18)[grep("p18_", colnames(v94m18))] <- "p18"
+v97m18 <- merge(x = v97m18, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m18)[grep("p18_", colnames(v97m18))] <- "p18"
+v00m18 <- merge(x = v00m18, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m18)[grep("p18_", colnames(v00m18))] <- "p18"
+v03m18 <- merge(x = v03m18, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m18)[grep("p18_", colnames(v03m18))] <- "p18"
+v06m18 <- merge(x = v06m18, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m18)[grep("p18_", colnames(v06m18))] <- "p18"
+v09m18 <- merge(x = v09m18, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m18)[grep("p18_", colnames(v09m18))] <- "p18"
+v12m18 <- merge(x = v12m18, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m18)[grep("p18_", colnames(v12m18))] <- "p18"
+v15m18 <- merge(x = v15m18, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m18)[grep("p18_", colnames(v15m18))] <- "p18"
+v18m   <- merge(x = v18m,   y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m)  [grep("p18_", colnames(v18m))]   <- "p18"
+v21m18 <- merge(x = v21m18, y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m18)[grep("p18_", colnames(v21m18))] <- "p18"
+rm(cen.w)                                                         # rename
+##
+## 2021 municipal map
+ls()[grep("censo", ls())]
+cen.w <- nm     # duplicate for manipulation
+sel.c <- colnames(nm) [grep("^p18_", colnames(nm))]                     # subset censo cols
+cen.w <- my_agg(d=cen.w, sel.c=sel.c, by="ife2021", drop.dupli = TRUE)  # perform aggregation
+cen.w <- within(cen.w, {ife <- ife2021})                                # this is the actual municipal code
+# now paste to v..m objects
+v94m21 <- merge(x = v94m21, y = cen.w[, c("ife","p18_1994")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v94m21)[grep("p18_", colnames(v94m21))] <- "p18"
+v97m21 <- merge(x = v97m21, y = cen.w[, c("ife","p18_1997")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v97m21)[grep("p18_", colnames(v97m21))] <- "p18"
+v00m21 <- merge(x = v00m21, y = cen.w[, c("ife","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v00m21)[grep("p18_", colnames(v00m21))] <- "p18"
+v03m21 <- merge(x = v03m21, y = cen.w[, c("ife","p18_2003")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v03m21)[grep("p18_", colnames(v03m21))] <- "p18"
+v06m21 <- merge(x = v06m21, y = cen.w[, c("ife","p18_2006")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v06m21)[grep("p18_", colnames(v06m21))] <- "p18"
+v09m21 <- merge(x = v09m21, y = cen.w[, c("ife","p18_2009")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v09m21)[grep("p18_", colnames(v09m21))] <- "p18"
+v12m21 <- merge(x = v12m21, y = cen.w[, c("ife","p18_2012")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v12m21)[grep("p18_", colnames(v12m21))] <- "p18"
+v15m21 <- merge(x = v15m21, y = cen.w[, c("ife","p18_2015")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v15m21)[grep("p18_", colnames(v15m21))] <- "p18"
+v18m21 <- merge(x = v18m21, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v18m21)[grep("p18_", colnames(v18m21))] <- "p18"
+v21m   <- merge(x = v21m,   y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m)  [grep("p18_", colnames(v21m))]   <- "p18"
+rm(cen.w)                                                         # rename
+##
+
+rm(denom.w, nm.w, sh.w, r.w, denom)
+   prj, preds, sec.tmp, sel, sel.c, sel.ignore, sel.r, tmp.nm, wrap.f) ## clean
 
 
 ## 14. Apply interpol to r[sel.r,], predict 2005:2020

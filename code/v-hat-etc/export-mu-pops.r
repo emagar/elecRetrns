@@ -1966,7 +1966,7 @@ tmpf[c(sel.parent, sel.son), sel.c] <- censom18[c(sel.parent, sel.son), sel.c]
 tmpm[c(sel.parent, sel.son),]
 ##
 ##
-## SPECIAL CASE, SOLID AND TULUM NEED JOINT MANIPULATION
+## SPECIAL CASE, SOLIDARIDAD AND TULUM NEED JOINT MANIPULATION
 ## Solidaridad (created 1996)
 ## Elected 1st mu gov 1996
 ## Tulum (created 2009)
