@@ -574,7 +574,9 @@ censom[sel.tmp,]
 tmp[1:15,]
 which(v94m$p18x < 0)
 
-i <- i + 1
+nextp <- function(){
+#i <- 226
+#i <- i + 1
 tmp <- c(
     v94m21$p18[i],
     v97m21$p18[i],
@@ -586,26 +588,32 @@ tmp <- c(
     v15m21$p18[i],
     v18m21$p18[i],
     v21m  $p18[i])
-tmp2 <- c(
-    v94m21$p18x[i],
-    v97m21$p18x[i],
-    v00m21$p18x[i],
-    v03m21$p18x[i],
-    v06m21$p18x[i],
-    v09m21$p18x[i],
-    v12m21$p18x[i],
-    v15m21$p18x[i],
-    v18m21$p18x[i],
-    v21m  $p18x[i])
+## tmp2 <- c(
+##     v94m21$p18x[i],
+##     v97m21$p18x[i],
+##     v00m21$p18x[i],
+##     v03m21$p18x[i],
+##     v06m21$p18x[i],
+##     v09m21$p18x[i],
+##     v12m21$p18x[i],
+##     v15m21$p18x[i],
+##     v18m21$p18x[i],
+##     v21m  $p18x[i])
 tmp3 <- c(
     censom21$p18_2005[i],
     censom21$p18_2010[i],
     censom21$p18_2020[i])
 plot(x = seq(1994, 2021, 3),
-     y = tmp, ylim = c(0, max(c(tmp,tmp2,tmp3))), main = v21m$mun[i], pch = 20)
-points(x = seq(1994, 2021, 3), y = tmp2, col = "red", pch = 20)
-points(x = c(2005, 2010, 2020), y = tmp3, col = "blue", pch = 20)
+     y = tmp, ylim = c(0, max(c(tmp,tmp3))), main = v21m$mun[i], pch = 20)
+#points(x = seq(1994, 2021, 3), y = tmp2, col = "red", pch = 20)
+points(x = c(2005, 2010, 2020), y = tmp3, col = "blue", pch = 19)
 legend(x = "bottomleft", legend = c("se-by-se compos", "mu-by-mu", "mu censos"), pch = 20, col = c("black","red","blue"))
+}
+
+i <- i + 1;
+i <- 100
+nextp()
+
 
 ## ########################################
 ## ## ################################## ##

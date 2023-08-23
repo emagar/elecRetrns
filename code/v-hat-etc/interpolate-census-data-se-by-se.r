@@ -1,3 +1,18 @@
+######################################################################
+## Script to generate inter-census populations.                     ##
+## Adds p18 to district, municipio, and seccion vote objects.       ##
+## Projects seccion-level censuses 05 10 20, then uses that to      ##
+## aggregate municipio- and district-level populations.             ##
+## Invoked from elec-data-for-maps.r,.                              ##
+## Has routine (commented out) used to evaluate projection methods, ##
+## discussed in blog entry.                                         ##
+##                                                                  ##
+## Author: Eric Magar                                               ##
+## emagar at itam dot mx                                            ##
+## Date: 22aug2023                                                  ##
+## Last modified: 22aug2023                                         ##
+######################################################################
+
 ## Script generates and pastes seccion-level census indicators
 
 ## 1. Prep: sum.split <- function(d=censo, year.var=2020, rnd=1)
@@ -916,20 +931,6 @@ table(done=nm$ddone,    ready=nm$dready2est)
 table(sum= nm$dneedsum, ready=nm$dready2est)
 sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive
 
-## ## Deprecated, will use states as basis for projection
-## ########################################
-## ## Indicate single-sección municipios ##
-## ########################################
-## tmp <- split(x=nm, f=nm$inegi)
-## tmp <- lapply(tmp, function(x){
-##     n <- nrow(x)
-##     n <- data.frame(inegi=NA, n=n)
-##     return(n)
-##     })
-## tmp <- do.call(rbind, tmp)
-## tmp$inegi <- as.numeric(rownames(tmp))
-## nm$dsingle[which(nm$inegi  %in% tmp$inegi[tmp$n==1])] <- 1
-
 
 ########################################
 ## Indicate 1st seccion in each state ##
@@ -1053,8 +1054,8 @@ nm$p18_2020 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] <- nm$p18_2010 [which(n
 
 
 ##################################################################################
-## Apply my_agg to generate state aggregates (nm[sel.r,]$m:2005-2010-2020)  ##
-## These aggragates are for the purpose of projecting with manipulated          ##
+## Apply my_agg to generate state aggregates (nm[sel.r,]$m:2005-2010-2020)      ##
+## These aggregates are for the purpose of projecting with manipulated          ##
 ## reseccionamiento. Will recompute them after restoring unmanipulated censos   ##
 ##################################################################################
 ## fill in p18s for aggregation
@@ -1175,77 +1176,77 @@ nm <- tmp2 ## fill data
 
 
 
-##################################################################################
-## OJO: hay un déficit sistemático en los datos seccionales vis-à-vis el censo: ##
-##################################################################################
-tmp.ine <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
-tmp.ine <- tmp.ine[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
-tmp.ine <- my_agg(d=tmp.ine, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
-##
-tmp.cen <- nm[,c("edon","p18_2005","p18_2010","p18_2020")]
-tmp.cen <- my_agg(d=tmp.cen, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
-ajuste.censal <- data.frame(edon=tmp.cen$edon,
-                            d_2005=tmp.cen$p18_2005 - tmp.ine$p18_2005,
-                            d_2010=tmp.cen$p18_2010 - tmp.ine$p18_2010,
-                            d_2020=tmp.cen$p18_2020 - tmp.ine$p18_2020)
-ajuste.censal
-##
-##############################################################################################################
-## ¿Explicación? Por ser tan relativamente plano, podría ser gente que no vive en el estado...              ##
-## Sea lo que sea, por ser plano es fácil ajustar los totales censales con base en las diferencias 05 10 20 ##
-##############################################################################################################
-tmp.regs <- interlog(what="d", yr=1994, unit="e", frm="log(dv)~iv", census.data=ajuste.censal, digits=1)
-## ajuste.censal.proj will receive all log-linear predictions
-ajuste.censal.proj <- data.frame(edon  = 1:32, 
-                    d_1994 = tmp.regs[[1]])
-##non.nas <- apply(ajuste.censal.proj, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
-new.d <- data.frame(iv=seq(1997,2021,3))     ## prep predictions 1997-on
-preds <- vector(mode='list', nrow(ajuste.censal.proj))    ## empty list
-## predict
-preds <- lapply(tmp.regs[[3]], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
-preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
-preds <- do.call(rbind, preds)                      # to data frame
-colnames(preds) <- paste0("d_", seq(1997,2021,3)) # add names
-preds <- exp(preds)                                 # exponentiate log-linear predictions
-ajuste.censal.proj <- cbind(ajuste.censal.proj, preds)                        # consolidate predictions
-##ajuste.censal.proj <- cbind(ajuste.censal.proj, r.w[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
-##ajuste.censal.proj <- ajuste.censal.proj[, order(colnames(ajuste.censal.proj))]            # sort columns except 1st (seccion)
-rownames(ajuste.censal.proj) <- NULL
-head(ajuste.censal.proj)
-##plot(seq(1994, 2021, 3), ajuste.censal.proj[9,-1], ylim = c(0, 40000)) # all looks ok?
-##
-## Ajustar datos censales
-tmp2 <- data.frame(ord=1:nrow(nm), edon=nm$edon, seccion=nm$seccion)
-tmp2 <- split(x=tmp2, f=tmp2$edon) # split into list of data frames, one per state
-for (i in 1:32){
-    #i <- 1
-    tmp3 <- tmp2[[i]] # subset state i's secciones
-    ##
-    tmp4 <- data.frame(ajuste.censal.proj[i, grep("d_", colnames(ajuste.censal.proj))]) ## take state i's yealry difs
-    tmp4 <- tmp4[rep(1, nrow(tmp3)),]                        ## repeat as many times as there are secciones
-    ##
-    tmp3 <- cbind(tmp3, tmp4)  ## bind difs to state's secciones
-    ##
-    tmp3 -> tmp2[[i]] # return to data
-}
-tmp2 <- do.call(rbind, tmp2) # return to data frame form
-tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
-ajuste.censal.proj.se <- tmp2; rm(tmp2)
-ajuste.censal.proj.se[1:3,]
-##
-table(ajuste.censal.proj.se$seccion==nm$seccion)
-##
-nm$p18e_1991 <- NULL  ### Drop 1991 state totals, unneeded until 1991 data available
-##
-############################################################################################
-## Add adjustment to el.yr state census totals                                            ##
-## Ojo: Need to formalize, I was expecting to subtract ajuste, not sum it.                ##
-## But sum would increase, not lower, gaps in se-level population gaps with census.ine... ##
-## WHY?                                                                                   ##
-############################################################################################
-nm[, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] <-
-    nm                   [, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] +
-    ajuste.censal.proj.se[, grep(   "d_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(ajuste.censal.proj.se))]
+## ##################################################################################
+## ## OJO: hay un déficit sistemático en los datos seccionales vis-à-vis el censo: ##
+## ##################################################################################
+## tmp.ine <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
+## tmp.ine <- tmp.ine[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
+## tmp.ine <- my_agg(d=tmp.ine, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+## ##
+## tmp.cen <- nm[,c("edon","p18_2005","p18_2010","p18_2020")]
+## tmp.cen <- my_agg(d=tmp.cen, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+## ajuste.censal <- data.frame(edon=tmp.cen$edon,
+##                             d_2005=tmp.cen$p18_2005 - tmp.ine$p18_2005,
+##                             d_2010=tmp.cen$p18_2010 - tmp.ine$p18_2010,
+##                             d_2020=tmp.cen$p18_2020 - tmp.ine$p18_2020)
+## ajuste.censal
+## ##
+## ##############################################################################################################
+## ## ¿Explicación? Por ser tan relativamente plano, podría ser gente que no vive en el estado...              ##
+## ## Sea lo que sea, por ser plano es fácil ajustar los totales censales con base en las diferencias 05 10 20 ##
+## ##############################################################################################################
+## tmp.regs <- interlog(what="d", yr=1994, unit="e", frm="log(dv)~iv", census.data=ajuste.censal, digits=1)
+## ## ajuste.censal.proj will receive all log-linear predictions
+## ajuste.censal.proj <- data.frame(edon  = 1:32, 
+##                     d_1994 = tmp.regs[[1]])
+## ##non.nas <- apply(ajuste.censal.proj, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
+## new.d <- data.frame(iv=seq(1997,2021,3))     ## prep predictions 1997-on
+## preds <- vector(mode='list', nrow(ajuste.censal.proj))    ## empty list
+## ## predict
+## preds <- lapply(tmp.regs[[3]], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
+## preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
+## preds <- do.call(rbind, preds)                      # to data frame
+## colnames(preds) <- paste0("d_", seq(1997,2021,3)) # add names
+## preds <- exp(preds)                                 # exponentiate log-linear predictions
+## ajuste.censal.proj <- cbind(ajuste.censal.proj, preds)                        # consolidate predictions
+## ##ajuste.censal.proj <- cbind(ajuste.censal.proj, r.w[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
+## ##ajuste.censal.proj <- ajuste.censal.proj[, order(colnames(ajuste.censal.proj))]            # sort columns except 1st (seccion)
+## rownames(ajuste.censal.proj) <- NULL
+## head(ajuste.censal.proj)
+## ##plot(seq(1994, 2021, 3), ajuste.censal.proj[9,-1], ylim = c(0, 40000)) # all looks ok?
+## ##
+## ## Ajustar datos censales
+## tmp2 <- data.frame(ord=1:nrow(nm), edon=nm$edon, seccion=nm$seccion)
+## tmp2 <- split(x=tmp2, f=tmp2$edon) # split into list of data frames, one per state
+## for (i in 1:32){
+##     #i <- 1
+##     tmp3 <- tmp2[[i]] # subset state i's secciones
+##     ##
+##     tmp4 <- data.frame(ajuste.censal.proj[i, grep("d_", colnames(ajuste.censal.proj))]) ## take state i's yealry difs
+##     tmp4 <- tmp4[rep(1, nrow(tmp3)),]                        ## repeat as many times as there are secciones
+##     ##
+##     tmp3 <- cbind(tmp3, tmp4)  ## bind difs to state's secciones
+##     ##
+##     tmp3 -> tmp2[[i]] # return to data
+## }
+## tmp2 <- do.call(rbind, tmp2) # return to data frame form
+## tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
+## ajuste.censal.proj.se <- tmp2; rm(tmp2)
+## ajuste.censal.proj.se[1:3,]
+## ##
+## table(ajuste.censal.proj.se$seccion==nm$seccion)
+## ##
+## nm$p18e_1991 <- NULL  ### Drop 1991 state totals, unneeded until 1991 data available
+## ##
+## ############################################################################################
+## ## Add adjustment to el.yr state census totals                                            ##
+## ## Ojo: Need to formalize, I was expecting to subtract ajuste, not sum it.                ##
+## ## But sum would increase, not lower, gaps in se-level population gaps with census.ine... ##
+## ## WHY?                                                                                   ##
+## ############################################################################################
+## nm[, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] <-
+##     nm                   [, grep("p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm))] +
+##     ajuste.censal.proj.se[, grep(   "d_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(ajuste.censal.proj.se))]
 
 
 
@@ -1267,14 +1268,6 @@ sh$p18_2020 <- nm$p18_2020 / nm$p18e_20
 summary(sh$p18_2005)
 summary(sh$p18_2010)
 summary(sh$p18_2020)
-## ## Any sh=1 that are not singles?
-## sel.tmp <- which(sh$p18_2005==1 & sh$dsingle==0)
-## sel.tmp
-## sel.tmp <- which(sh$p18_2010==1 & sh$dsingle==0)
-## sel.tmp
-## sel.tmp <- which(sh$p18_2020==1 & sh$dsingle==0)
-## sel.tmp
-## show(nm[,c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18e_05","p18e_10","p18e_20")], rows=sel.tmp, after=2, before=2)
 ##
 ## Any sh=0 first seccion?
 sel.tmp <- which(sh$p18_2005==0 & sh$dfirst==1)
@@ -1286,7 +1279,6 @@ sel.tmp
 nm[sel.tmp, c("seccion","inegi","p18_2005","p18_2010","p18_2020","p18e_05","p18e_10","p18e_20")]
 ##
 
-## AQUI VENIA BLOQUE SUM.SPLIT
 
 #####################################################
 ## Prep object to receive all possible regressions ##
@@ -1295,77 +1287,6 @@ regs <- vector(mode='list', length(nrow(nm))) ## empty list
 regs[nm$dskip==1] <- "No regression, skipped due to lack of census data"
 #regs[nm$ddone==1] <- "No regression, < 3 censuses data points, linear/flat estimates used"
 regs[[70977]]
-##
-## #####################################################################
-## ## Apply interlog directly to nm for single-sección municipio to   ##
-## ## predict 1994:2003 and 2021; apply interpol to predict 2006:2018 ##
-## #####################################################################
-## ## Check single-seccion municipios
-## table(single=nm$dsingle, ready=nm$dready2est)
-## table(single=nm$dsingle, done=nm$ddone)
-## ## Subset data
-## sel.c <- grep("seccion|^p18_(2005|2010|2020)$", colnames(nm))
-## nm.w <- nm[nm$dsingle==1, sel.c]
-## ## Log-linear projection of 2003, retaining regressions to use for 1994-on
-## tmp.regs <- vector(mode='list', length(nrow(nm.w))) ## empty list
-## tmp.regs <- interlog(what="p18", yr=1994, unit="s", frm="log(dv)~iv", census.data = nm.w)
-## ## tmp.e will receive all log-linear predictions
-## tmp.e <- data.frame(seccion  =nm.w$seccion,
-##                     p18_1994=tmp.regs[[1]])
-## ##non.nas <- apply(tmp.e, 1, sum); non.nas <- which(!is.na(non.nas)) # determine in which cases to skip prediction
-## new.d <- data.frame(iv=seq(1997,2021,3))     ## prep predictions 1997-on
-## preds <- vector(mode='list', nrow(tmp.e))    ## empty list
-## tmp <- data.frame(dv=rep(NA, nrow(new.d)))   ## empty df for non non.nas
-## preds <- lapply(preds, function(x) x <- tmp) ## empty df for non non.nas
-## ## predict
-## preds <- lapply(tmp.regs[[3]], function(x) data.frame(dv.hat=predict.lm(x, newdata = new.d)))
-## preds <- lapply(preds, function(x) x <- t(x))       # transpose to have yrs in cols
-## preds <- do.call(rbind, preds)                      # to data frame
-## colnames(preds) <- paste0("p18_", seq(1997,2021,3)) # add names
-## preds <- exp(preds)                                 # exponentiate log-linear predictions
-## preds <- round(preds,1)                             # round to 1 digit
-## preds[1:10,]
-## tmp.e <- cbind(tmp.e, preds)                        # consolidate predictions
-## ##tmp.e <- cbind(tmp.e, nm.w[, paste0("p18_", c(2005,2010,2020))]) # add census yrs
-## ##tmp.e <- tmp.e[, order(colnames(tmp.e))]            # sort columns except 1st (seccion)
-## rownames(tmp.e) <- NULL
-## head(tmp.e)
-## tmp.e$p18_1994 # all looks ok?
-## ## linear
-## tmp.l <- data.frame(seccion  =nm.w$seccion,
-##                     p18_1994=interpol(what="p18", yr=1994, unit="s", census.data = nm.w),
-##                     p18_1997=interpol(what="p18", yr=1997, unit="s", census.data = nm.w),
-##                     p18_2000=interpol(what="p18", yr=2000, unit="s", census.data = nm.w),
-##                     p18_2003=interpol(what="p18", yr=2003, unit="s", census.data = nm.w),
-##                     p18_2006=interpol(what="p18", yr=2006, unit="s", census.data = nm.w),
-##                     p18_2009=interpol(what="p18", yr=2009, unit="s", census.data = nm.w),
-##                     p18_2012=interpol(what="p18", yr=2012, unit="s", census.data = nm.w),
-##                     p18_2015=interpol(what="p18", yr=2015, unit="s", census.data = nm.w),
-##                     p18_2018=interpol(what="p18", yr=2018, unit="s", census.data = nm.w),
-##                     p18_2021=interpol(what="p18", yr=2021, unit="s", census.data = nm.w)
-##                     )
-## tmp.l$p18_2006
-## ## subset again with all cols to fill-in estimates
-## nm.w <- nm[nm$dsingle==1,]
-## nm.w <- within(nm.w, {
-##     p18_1994 <- tmp.e$p18_1994
-##     p18_1997 <- tmp.e$p18_1997
-##     p18_2000 <- tmp.e$p18_2000
-##     p18_2003 <- tmp.e$p18_2003
-##     p18_2006 <- tmp.l$p18_2006
-##     p18_2009 <- tmp.l$p18_2009
-##     p18_2012 <- tmp.l$p18_2012
-##     p18_2015 <- tmp.l$p18_2015
-##     p18_2018 <- tmp.l$p18_2018
-##     p18_2021 <- tmp.e$p18_2021
-##     dready2est <- 0
-##     ddone <- 1
-## })
-## nm.w[1,]
-## ## return estimates and regressions to data
-## nm[nm$dsingle==1,] <- nm.w
-## regs[nm$dsingle==1] <- tmp.regs[3]
-## rm(nm.w, tmp.regs)
 
 
 ##################################
@@ -1844,6 +1765,49 @@ v18m21 <- merge(x = v18m21, y = cen.w[, c("ife","p18_2018")], by = "ife", all.x 
 v21m   <- merge(x = v21m,   y = cen.w[, c("ife","p18_2021")], by = "ife", all.x = TRUE, all.y = FALSE); colnames(v21m)  [grep("p18_", colnames(v21m))]   <- "p18"
 rm(cen.w)                                                         # rename
 ##
+
+
+# compare to mu-censuses
+nextp <- function(){
+#i <- 226
+#i <- i + 1
+tmp <- c(
+    v94m21$p18[i],
+    v97m21$p18[i],
+    v00m21$p18[i],
+    v03m21$p18[i],
+    v06m21$p18[i],
+    v09m21$p18[i],
+    v12m21$p18[i],
+    v15m21$p18[i],
+    v18m21$p18[i],
+    v21m  $p18[i])
+## tmp2 <- c(
+##     v94m21$p18x[i],
+##     v97m21$p18x[i],
+##     v00m21$p18x[i],
+##     v03m21$p18x[i],
+##     v06m21$p18x[i],
+##     v09m21$p18x[i],
+##     v12m21$p18x[i],
+##     v15m21$p18x[i],
+##     v18m21$p18x[i],
+##     v21m  $p18x[i])
+tmp3 <- c(
+    censom21$p18_2005[i],
+    censom21$p18_2010[i],
+    censom21$p18_2020[i])
+plot(x = seq(1994, 2021, 3),
+     y = tmp, ylim = c(0, max(c(tmp,tmp3))), main = v21m$mun[i], pch = 20)
+#points(x = seq(1994, 2021, 3), y = tmp2, col = "red", pch = 20)
+points(x = c(2005, 2010, 2020), y = tmp3, col = "blue", pch = 19)
+legend(x = "bottomleft", legend = c("se-by-se compos", "mu-by-mu", "mu censos"), pch = 20, col = c("black","red","blue"))
+}
+
+i <- i + 1;
+i <- 100
+nextp()
+
 
 rm(denom.w, nm.w, sh.w, r.w, denom)
    prj, preds, sec.tmp, sel, sel.c, sel.ignore, sel.r, tmp.nm, wrap.f) ## clean
