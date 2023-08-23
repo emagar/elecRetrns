@@ -13,8 +13,6 @@
 ## Last modified: 22aug2023                                         ##
 ######################################################################
 
-## Script generates and pastes seccion-level census indicators
-
 ## 1. Prep: sum.split <- function(d=censo, year.var=2020, rnd=1)
 ## 2. Prep: function interlog --- for 3pt log(dv=r)~iv
 ## 3. Prep: function interpol --- for 2pt segments
@@ -938,7 +936,7 @@ sel.tmp <- which(nm$dskip==0 & nm$ddone==0 & nm$dneedsum==0 & nm$dready2est==0);
 nm$dfirst <- 0
 nm <- nm[order(nm$ord),] ## sort
 nm$dfirst[duplicated(nm$edon)==FALSE] <- 1
-table(nm$dfirst)
+table(nm$dfirst) # --> there should be 32 ones if all ok
 
 
 #############################################################
@@ -1021,9 +1019,9 @@ nm.w -> nm[sel.tmp,]                            # Return manipulated obs to nm
 
 ## Check 2005-2010-2020 complete
 sel.tmp <- which(nm$dready2est==1)
-table(c05=is.na(nm$p18_2005), ready=nm$dready2est)
-table(c10=is.na(nm$p18_2010), ready=nm$dready2est)
-table(c20=is.na(nm$p18_2020), ready=nm$dready2est)
+table(c05na=is.na(nm$p18_2005), ready=nm$dready2est)
+table(c10na=is.na(nm$p18_2010), ready=nm$dready2est)
+table(c20na=is.na(nm$p18_2020), ready=nm$dready2est)
 
 #####################################
 ## Change NAs to 0s in census data ##
@@ -1054,10 +1052,20 @@ nm$p18_2020 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] <- nm$p18_2010 [which(n
 
 
 ##################################################################################
-## Apply my_agg to generate state aggregates (nm[sel.r,]$m:2005-2010-2020)      ##
-## These aggregates are for the purpose of projecting with manipulated          ##
-## reseccionamiento. Will recompute them after restoring unmanipulated censos   ##
+## Apply my_agg to generate state aggregates (nm[sel.r,]$m:2005-2010-2020),     ##
+## will be used in projeection routine below.                                   ##
+## Will recompute them after restoring unmanipulated censos.                    ##
+## (EMM Meaning of Last sentence unclear...                                     ##
 ##################################################################################
+## ##
+#############################################################################################################
+## (Discovered when using municipio aggregates in prior incarnation of the routine.)                       ##
+## Ojo: In some cases, these aggs don't equal saved municipal-level census pops due to remunicipalización. ##
+## E.g., Bacalar appears in 2005 and 2010 censuses, but its legal birth (1st municipal election) is 2013,  ##
+## and therefore gets zero pop in saved (remunicipalización-corrected) 2005 and 2010 census data.          ##
+## Will not fix this here, despite mismatches in checks below, as 2005 and 2010 aid in using interlog to   ##
+## generate sección-level projections. Will fix after aggregation.                                         ##
+#############################################################################################################
 ## fill in p18s for aggregation
 nm <- within(nm, {
     p18e_05 <- p18_2005;
@@ -1068,14 +1076,6 @@ sel.c <- c("p18e_05", "p18e_10", "p18e_20")                   ## select state po
 nm <- my_agg(d=nm, sel.c=sel.c, by="edon", drop.dupli=FALSE) ## and sum-up its secciones
 nm[1:3,]
 ## nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE) ## and sum-up its secciones
-## ##
-## #####################################################################################################################
-## ## Ojo: In some cases, these aggs do not equal saved municipal-level census populations due to remunicipalización. ##
-## ## For example, Bacalar appears in 2005 and 2010 censuses, but its legal birth (1st municipal election) is 2013,   ##
-## ## and therefore its population is zero in saved (remunicipalización-corrected) 2005 and 2010 census data.         ##
-## ## Will not fix this here, despite mismatches in checks below, as 2005 and 2010 aid in using interlog to generate  ##
-## ## sección-level projections. Will fix after aggregation.                                                          ##
-## #####################################################################################################################
 
 
 ###########################################################################
@@ -1175,21 +1175,25 @@ table(nm$seccion==tmp2$seccion) # verify same order and dimensionality
 nm <- tmp2 ## fill data
 
 
-
-## ##################################################################################
-## ## OJO: hay un déficit sistemático en los datos seccionales vis-à-vis el censo: ##
-## ##################################################################################
-## tmp.ine <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
-## tmp.ine <- tmp.ine[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
-## tmp.ine <- my_agg(d=tmp.ine, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
-## ##
-## tmp.cen <- nm[,c("edon","p18_2005","p18_2010","p18_2020")]
-## tmp.cen <- my_agg(d=tmp.cen, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
-## ajuste.censal <- data.frame(edon=tmp.cen$edon,
-##                             d_2005=tmp.cen$p18_2005 - tmp.ine$p18_2005,
-##                             d_2010=tmp.cen$p18_2010 - tmp.ine$p18_2010,
-##                             d_2020=tmp.cen$p18_2020 - tmp.ine$p18_2020)
-## ajuste.censal
+eric  x
+##################################################################################
+## OJO: hay un déficit sistemático en los datos seccionales vis-à-vis el censo: ##
+##################################################################################
+tmp.ine <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-municipal-elecs.csv")
+tmp.ine <- tmp.ine[,c("edon","inegi","p18_2005","p18_2010","p18_2020")]
+tmp.ine <- my_agg(d=tmp.ine, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+##
+tmp.cen <- nm[,c("edon","p18_2005","p18_2010","p18_2020")]
+tmp.cen <- my_agg(d=tmp.cen, sel.c=c("p18_2005","p18_2010","p18_2020"), by="edon", drop.dupli=TRUE)
+ajuste.censal <- data.frame(edon=tmp.cen$edon,
+                            d_2005=tmp.cen$p18_2005 - tmp.ine$p18_2005,
+                            d_2010=tmp.cen$p18_2010 - tmp.ine$p18_2010,
+                            d_2020=tmp.cen$p18_2020 - tmp.ine$p18_2020)
+## pct mismatch
+round(
+    (ajuste.censal[,-1] / tmp.ine[,-c(1,2)]) * 100
+)
+                             
 ## ##
 ## ##############################################################################################################
 ## ## ¿Explicación? Por ser tan relativamente plano, podría ser gente que no vive en el estado...              ##
@@ -1769,45 +1773,41 @@ rm(cen.w)                                                         # rename
 
 # compare to mu-censuses
 nextp <- function(){
-#i <- 226
-#i <- i + 1
-tmp <- c(
-    v94m21$p18[i],
-    v97m21$p18[i],
-    v00m21$p18[i],
-    v03m21$p18[i],
-    v06m21$p18[i],
-    v09m21$p18[i],
-    v12m21$p18[i],
-    v15m21$p18[i],
-    v18m21$p18[i],
-    v21m  $p18[i])
-## tmp2 <- c(
-##     v94m21$p18x[i],
-##     v97m21$p18x[i],
-##     v00m21$p18x[i],
-##     v03m21$p18x[i],
-##     v06m21$p18x[i],
-##     v09m21$p18x[i],
-##     v12m21$p18x[i],
-##     v15m21$p18x[i],
-##     v18m21$p18x[i],
-##     v21m  $p18x[i])
-tmp3 <- c(
-    censom21$p18_2005[i],
-    censom21$p18_2010[i],
-    censom21$p18_2020[i])
-plot(x = seq(1994, 2021, 3),
-     y = tmp, ylim = c(0, max(c(tmp,tmp3))), main = v21m$mun[i], pch = 20)
-#points(x = seq(1994, 2021, 3), y = tmp2, col = "red", pch = 20)
-points(x = c(2005, 2010, 2020), y = tmp3, col = "blue", pch = 19)
-legend(x = "bottomleft", legend = c("se-by-se compos", "mu-by-mu", "mu censos"), pch = 20, col = c("black","red","blue"))
+    tmp <- c(
+        v94m21$p18[i],
+        v97m21$p18[i],
+        v00m21$p18[i],
+        v03m21$p18[i],
+        v06m21$p18[i],
+        v09m21$p18[i],
+        v12m21$p18[i],
+        v15m21$p18[i],
+        v18m21$p18[i],
+        v21m  $p18[i])
+    ## tmp2 <- c(
+    ##     v94m21$p18x[i],
+    ##     v97m21$p18x[i],
+    ##     v00m21$p18x[i],
+    ##     v03m21$p18x[i],
+    ##     v06m21$p18x[i],
+    ##     v09m21$p18x[i],
+    ##     v12m21$p18x[i],
+    ##     v15m21$p18x[i],
+    ##     v18m21$p18x[i],
+    ##     v21m  $p18x[i])
+    tmp3 <- c(
+        censom21$p18_2005[i],
+        censom21$p18_2010[i],
+        censom21$p18_2020[i])
+    plot(x = seq(1994, 2021, 3),
+         y = tmp, ylim = c(0, max(c(tmp,tmp3))), main = v21m$mun[i], pch = 20)
+                                        #points(x = seq(1994, 2021, 3), y = tmp2, col = "red", pch = 20)
+    points(x = c(2005, 2010, 2020), y = tmp3, col = "blue", pch = 19)
+    legend(x = "bottomleft", legend = c("se-by-se compos", "mu-by-mu", "mu censos"), pch = 20, col = c("black","red","blue"))
 }
 
-i <- i + 1;
-i <- 100
-nextp()
-
+i <- i + 1; nextp()
+x
 
 rm(denom.w, nm.w, sh.w, r.w, denom)
    prj, preds, sec.tmp, sel, sel.c, sel.ignore, sel.r, tmp.nm, wrap.f) ## clean

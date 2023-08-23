@@ -25,6 +25,7 @@ add.miss.mun <- function(d){
     all.ife <- as.vector(unlist(all.ife))
     all.ife <- unique(all.ife)
     all.ife <- all.ife[order(all.ife)]
+    all.ife <- all.ife[-which(all.ife==0)] ## drop ife==0 of secciones dadas de baja from vector
     ##tail(all.ife)
     ## any municipios missing?
     mis.ife <- all.ife[which(all.ife %notin% d$ife)]
@@ -64,7 +65,9 @@ v91m <- d                                      # rename object
 sel.c <- c("pan","pri","pps","prd","pfcrn","parm","uno.pdm","pt","pvem","efec","lisnom","dextra")
 # actual 1994 municipalities
 d <- v94s; d[is.na(d)] <- 0
-#d$ife <- d$ife1994                             # municipio ids from the historic map
+d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -79,6 +82,8 @@ v94m <- d                                      # rename object
 # 1997 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -93,6 +98,8 @@ v94m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -107,6 +114,8 @@ v94m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -121,6 +130,8 @@ v94m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -135,6 +146,8 @@ v94m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -149,6 +162,8 @@ v94m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -163,6 +178,8 @@ v94m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -177,6 +194,8 @@ v94m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -191,6 +210,8 @@ v94m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v94s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -209,7 +230,9 @@ v94m21 <- d                                    # rename object
 sel.c <- c("pan","pri","prd","pc","pt","pvem","pps","pdm","efec","lisnom","dextra")
 # 1994 municipalities
 d <- v97s; d[is.na(d)] <- 0
-d$ife <- d$ife1994                             # municipio ids from the historic map
+#d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -224,6 +247,8 @@ v97m94 <- d                                    # rename object
 # actual 1997 municipalities
 d <- v97s; d[is.na(d)] <- 0
 #d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -238,6 +263,8 @@ v97m <- d                                      # rename object
 # 2000 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -252,6 +279,8 @@ v97m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -266,6 +295,8 @@ v97m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -280,6 +311,8 @@ v97m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -294,6 +327,8 @@ v97m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -308,6 +343,8 @@ v97m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -322,6 +359,8 @@ v97m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -336,6 +375,8 @@ v97m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v97s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -355,6 +396,8 @@ sel.c <- c("panc","pri","prdc","pcd","parm","dsppn","efec","lisnom","dpanc","dpr
 # 1994 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -371,6 +414,8 @@ v00m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -387,6 +432,8 @@ v00m97 <- d                                    # rename object
 # actual 2000 municipalities
 d <- v00s; d[is.na(d)] <- 0
 #d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -403,6 +450,8 @@ v00m <- d                                      # rename object
 # 2003 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -419,6 +468,8 @@ v00m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -435,6 +486,8 @@ v00m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -451,6 +504,8 @@ v00m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -467,6 +522,8 @@ v00m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -483,6 +540,8 @@ v00m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -499,6 +558,8 @@ v00m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v00s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -520,6 +581,8 @@ sel.c <- c("pan","pri","pric","prd","pt","pvem","conve","psn","pas","mp","plm","
 # 1994 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -535,6 +598,8 @@ v03m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -550,6 +615,8 @@ v03m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -565,6 +632,8 @@ v03m00 <- d                                    # rename object
 # 2003 actual municipalities
 d <- v03s; d[is.na(d)] <- 0
 #d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -580,6 +649,8 @@ v03m <- d                                      # rename object
 # 2006 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -595,6 +666,8 @@ v03m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -610,6 +683,8 @@ v03m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -625,6 +700,8 @@ v03m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -640,6 +717,8 @@ v03m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -655,6 +734,8 @@ v03m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v03s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -675,6 +756,8 @@ sel.c <- c("pan","pric","prdc","pna","asdc","efec","lisnom","dpric","dprdc","dex
 # 1994 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -691,6 +774,8 @@ v06m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -707,6 +792,8 @@ v06m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -723,6 +810,8 @@ v06m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -739,6 +828,8 @@ v06m03 <- d                                    # rename object
 # 2006 actual municipalities
 d <- v06s; d[is.na(d)] <- 0
 #d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -755,6 +846,8 @@ v06m <- d                                      # rename object
 # 2009 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -771,6 +864,8 @@ v06m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -787,6 +882,8 @@ v06m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -803,6 +900,8 @@ v06m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -819,6 +918,8 @@ v06m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v06s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -840,6 +941,8 @@ sel.c <- c("pan","pri","pric","prd","pvem","pt","ptc","conve","pna","psd","efec"
 # 1994 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -856,6 +959,8 @@ v09m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -872,6 +977,8 @@ v09m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -888,6 +995,8 @@ v09m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -904,6 +1013,8 @@ v09m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -920,6 +1031,8 @@ v09m06 <- d                                    # rename object
 # 2009 actual municipalities
 d <- v09s; d[is.na(d)] <- 0
 #d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -936,6 +1049,8 @@ v09m <- d                                      # rename object
 # 2012 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -952,6 +1067,8 @@ v09m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -968,6 +1085,8 @@ v09m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -984,6 +1103,8 @@ v09m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v09s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1005,6 +1126,8 @@ sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","pric","prdc","efec","lisnom
 # 1994 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1021,6 +1144,8 @@ v12m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1037,6 +1162,8 @@ v12m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1053,6 +1180,8 @@ v12m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1069,6 +1198,8 @@ v12m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1085,6 +1216,8 @@ v12m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1101,6 +1234,8 @@ v12m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v12s; d[is.na(d)] <- 0
 #d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1117,6 +1252,8 @@ v12m <- d                                      # rename object
 # 2015 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1133,6 +1270,8 @@ v12m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1149,6 +1288,8 @@ v12m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v12s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1170,6 +1311,8 @@ sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","morena","ph","pes","pric","
 # 1994 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1187,6 +1330,8 @@ v15m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1204,6 +1349,8 @@ v15m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1221,6 +1368,8 @@ v15m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1238,6 +1387,8 @@ v15m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1255,6 +1406,8 @@ v15m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1272,6 +1425,8 @@ v15m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1289,6 +1444,8 @@ v15m12 <- d                                    # rename object
 # 2015 actual municipalities
 d <- v15s; d[is.na(d)] <- 0
 #d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1306,6 +1463,8 @@ v15m <- d                                      # rename object
 # 2018 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1323,6 +1482,8 @@ v15m18 <- d                                    # rename object
 # 2021 municipalities
 d <- v15s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1345,6 +1506,8 @@ sel.c <- c("pan","pri","prd","pvem","pt","mc","pna","morena","pes","panc","pric"
 # 1994 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1363,6 +1526,8 @@ v18m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1381,6 +1546,8 @@ v18m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1399,6 +1566,8 @@ v18m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1417,6 +1586,8 @@ v18m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1435,6 +1606,8 @@ v18m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1453,6 +1626,8 @@ v18m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1471,6 +1646,8 @@ v18m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1489,6 +1666,8 @@ v18m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v18s; d[is.na(d)] <- 0
 #d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1507,6 +1686,8 @@ v18m <- d                                      # rename object
 # 2021 municipalities
 d <- v18s; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1530,6 +1711,8 @@ sel.c <- c("pan","pri","prd","pvem","pt","mc","morena","pes","rsp","fxm","indep"
 # 1994 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife1994                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1547,6 +1730,8 @@ v21m94 <- d                                    # rename object
 # 1997 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife1997                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1564,6 +1749,8 @@ v21m97 <- d                                    # rename object
 # 2000 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2000                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1581,6 +1768,8 @@ v21m00 <- d                                    # rename object
 # 2003 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1598,6 +1787,8 @@ v21m03 <- d                                    # rename object
 # 2006 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1615,6 +1806,8 @@ v21m06 <- d                                    # rename object
 # 2009 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1632,6 +1825,8 @@ v21m09 <- d                                    # rename object
 # 2012 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1649,6 +1844,8 @@ v21m12 <- d                                    # rename object
 # 2015 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1666,6 +1863,8 @@ v21m15 <- d                                    # rename object
 # 2018 municipalities
 d <- v21s; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1683,6 +1882,8 @@ v21m18 <- d                                    # rename object
 # 2021 actual municipalities
 d <- v21s; d[is.na(d)] <- 0
 #d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
@@ -1819,13 +2020,15 @@ v21m  $inegi <- ife2inegi(v21m  $ife); v21m  $mun <- ife2mun(v21m  $ife)
 sel.c <- c("p18_2005","p18_2010","p18_2020","ptot_2005","ptot_2010","ptot_2020")
 # 1994 municipalities
 d <- censo; d[is.na(d)] <- 0
-d$ife <- d$ife1994                             # municipio ids from the historic map
-d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
-d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
+d$ife <- d$ife1994                                       # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
+d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]             # drop historic ife-yr vars
+d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]             # drop counterfactual districts
 ##
-d <- my_agg(d=d, sel.c=sel.c, by="ife", y1991=FALSE) # use aggregating function
+d <- my_agg(d=d, sel.c=sel.c, by="ife", y1991=FALSE)     # use aggregating function
 d <- within(d, {
-    seccion <- ord <- NULL                       # drop seccion ids and other useless columns
+    seccion <- ord <- NULL                               # drop seccion ids and other useless columns
     alta <- baja <- OBSERVACIONES <- NULL
     action  <- orig.dest  <- when  <- NULL
     action2 <- orig.dest2 <- when2 <- NULL
@@ -1839,13 +2042,15 @@ d$mun <- ife2mun(d$ife)                        # translate to mun
 censom94 <- d                                  # rename object
 # 1997 municipalities
 d <- censo; d[is.na(d)] <- 0
-d$ife <- d$ife1997                             # municipio ids from the historic map
-d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
-d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
+d$ife <- d$ife1997                                       # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
+d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]             # drop historic ife-yr vars
+d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]             # drop counterfactual districts
 ##
-d <- my_agg(d=d, sel.c=sel.c, by="ife", y1991=FALSE) # use aggregating function
+d <- my_agg(d=d, sel.c=sel.c, by="ife", y1991=FALSE)     # use aggregating function
 d <- within(d, {
-    seccion <- ord <- NULL                       # drop seccion ids and other useless columns
+    seccion <- ord <- NULL                               # drop seccion ids and other useless columns
     alta <- baja <- OBSERVACIONES <- NULL
     action  <- orig.dest  <- when  <- NULL
     action2 <- orig.dest2 <- when2 <- NULL
@@ -1859,9 +2064,11 @@ d$mun <- ife2mun(d$ife)                        # translate to mun
 censom97 <- d                                  # rename object
 # 2000 municipalities
 d <- censo; d[is.na(d)] <- 0
-d$ife <- d$ife2000                             # municipio ids from the historic map
-d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
-d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
+d$ife <- d$ife2000                                       # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
+d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]             # drop historic ife-yr vars
+d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]             # drop counterfactual districts
 ##
 d <- my_agg(d=d, sel.c=sel.c, by="ife", y1991=FALSE) # use aggregating function
 d <- within(d, {
@@ -1880,6 +2087,8 @@ censom00 <- d                                  # rename object
 # 2003 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2003                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -1900,6 +2109,8 @@ censom03 <- d                                  # rename object
 # 2006 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2006                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -1920,6 +2131,8 @@ censom06 <- d                                  # rename object
 # 2009 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2009                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -1940,6 +2153,8 @@ censom09 <- d                                  # rename object
 # 2012 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2012                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -1960,6 +2175,8 @@ censom12 <- d                                  # rename object
 # 2015 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2015                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -1980,6 +2197,8 @@ censom15 <- d                                  # rename object
 # 2018 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2018                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -2000,6 +2219,8 @@ censom18 <- d                                  # rename object
 # 2021 municipalities
 d <- censo; d[is.na(d)] <- 0
 d$ife <- d$ife2021                             # municipio ids from the historic map
+stmp <- which(d$ife==0 | is.na(d$ife))  # missing ids (secciones dadas de baja)
+if (length(stmp)>0) d <- d[-stmp,]      # drop from aggregation
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop historic ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -2018,7 +2239,7 @@ d$inegi <- NA; d$inegi <- ife2inegi(d$ife)     # translate to inegi
 d$mun <- ife2mun(d$ife)                        # translate to mun
 censom21 <- d                                  # rename object
 #
-rm(d,sel.c,add.miss.mun)
+rm(d,sel.c,add.miss.mun,stmp)
 
 # verify nrow==2469
 table(c(
@@ -2083,8 +2304,6 @@ table(c(
 
 
 
-
-
 ######################################
 ## ################################ ##
 ## ## aggregate district returns ## ##
@@ -2130,10 +2349,12 @@ d <- d[order(d$disn),]                         # sort districts
 v94d <- d                                      # rename object  
 # 1997 counterfactual districts
 d <- v94s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2143,10 +2364,12 @@ d <- d[order(d$disn),]                         # sort districts
 v94d97 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v94s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2156,10 +2379,12 @@ d <- d[order(d$disn),]                         # sort districts
 v94d06 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v94s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2188,10 +2413,12 @@ d <- d[order(d$disn),]                         # sort districts
 v97d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v97s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$dextra <- as.numeric(d$dextra>0)             # fix special elec dummy
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
@@ -2201,10 +2428,12 @@ d <- d[order(d$disn),]                         # sort districts
 v97d79 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v97s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$dextra <- as.numeric(d$dextra>0)             # fix special elec dummy
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
@@ -2214,10 +2443,12 @@ d <- d[order(d$disn),]                         # sort districts
 v97d06 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v97s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$dextra <- as.numeric(d$dextra>0)             # fix special elec dummy
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
@@ -2248,10 +2479,12 @@ d <- d[order(d$disn),]                         # sort districts
 v00d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v00s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2263,10 +2496,12 @@ d <- d[order(d$disn),]                         # sort districts
 v00d79 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v00s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2278,10 +2513,12 @@ d <- d[order(d$disn),]                         # sort districts
 v00d06 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v00s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2313,10 +2550,12 @@ d <- d[order(d$disn),]                         # sort districts
 v03d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v03s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2327,10 +2566,12 @@ d <- d[order(d$disn),]                         # sort districts
 v03d79 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v03s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2341,10 +2582,12 @@ d <- d[order(d$disn),]                         # sort districts
 v03d06 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v03s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2376,10 +2619,12 @@ d <- d[order(d$disn),]                         # sort districts
 v06d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v06s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2391,10 +2636,12 @@ d <- d[order(d$disn),]                         # sort districts
 v06d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v06s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2406,10 +2653,12 @@ d <- d[order(d$disn),]                         # sort districts
 v06d97 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v06s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2442,10 +2691,12 @@ d <- d[order(d$disn),]                         # sort districts
 v09d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v09s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2457,10 +2708,12 @@ d <- d[order(d$disn),]                         # sort districts
 v09d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v09s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2472,10 +2725,12 @@ d <- d[order(d$disn),]                         # sort districts
 v09d97 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v09s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2508,10 +2763,12 @@ d <- d[order(d$disn),]                         # sort districts
 v12d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v12s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2523,10 +2780,12 @@ d <- d[order(d$disn),]                         # sort districts
 v12d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v12s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2538,10 +2797,12 @@ d <- d[order(d$disn),]                         # sort districts
 v12d97 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v12s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2575,10 +2836,12 @@ d <- d[order(d$disn),]                         # sort districts
 v15d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v15s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2591,10 +2854,12 @@ d <- d[order(d$disn),]                         # sort districts
 v15d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v15s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2607,10 +2872,12 @@ d <- d[order(d$disn),]                         # sort districts
 v15d97 <- d                                    # rename object  
 # 2018 counterfactual districts
 d <- v15s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2018", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2018                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2018                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2645,10 +2912,12 @@ d <- d[order(d$disn),]                         # sort districts
 v18d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v18s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2661,10 +2930,12 @@ d <- d[order(d$disn),]                         # sort districts
 v18d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v18s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2677,10 +2948,12 @@ d <- d[order(d$disn),]                         # sort districts
 v18d97 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v18s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2715,10 +2988,12 @@ d <- d[order(d$disn),]                         # sort districts
 v21d <- d                                      # rename object  
 # 1979 counterfactual districts
 d <- v21s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1979", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1979                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1979                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2731,10 +3006,12 @@ d <- d[order(d$disn),]                         # sort districts
 v21d79 <- d                                    # rename object  
 # 1997 counterfactual districts
 d <- v21s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis1997", y1991=FALSE) # use aggregating function
+d$disn <- d$dis1997                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis1997                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2747,10 +3024,12 @@ d <- d[order(d$disn),]                         # sort districts
 v21d97 <- d                                    # rename object  
 # 2006 counterfactual districts
 d <- v21s; d[is.na(d)] <- 0
-d <- my_agg(d=d, sel.c=sel.c, by="dis2006", y1991=FALSE) # use aggregating function
+d$disn <- d$dis2006                            # counterfactual map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
+d <- my_agg(d=d, sel.c=sel.c, by="disn", y1991=FALSE) # use aggregating function
 d <- d[,-grep("^d[0-9]{2}$", colnames(d))]     # drop seccion-yr dummies
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
-d$disn <- d$dis2006                            # district ids for the historic map
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 d$edosecn <- d$seccion    <- NULL              # drop seccion ids
 d$ife <- d$inegi <- d$mun <- NULL              # drop municipio ids
@@ -2769,6 +3048,8 @@ sel.c <- c("p18_2005","p18_2010","p18_2020","ptot_2005","ptot_2010","ptot_2020")
 ## 1979 map
 d <- censo; d[is.na(d)] <- 0
 d$disn <- d$dis1979                            # district ids for the historic map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -2788,6 +3069,8 @@ censod79 <- d                                  # rename object
 ## 1997 map
 d <- censo; d[is.na(d)] <- 0
 d$disn <- d$dis1997                            # district ids for the historic map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -2807,6 +3090,8 @@ censod97 <- d                                  # rename object
 ## 2006 map
 d <- censo; d[is.na(d)] <- 0
 d$disn <- d$dis2006                            # district ids for the historic map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##
@@ -2826,6 +3111,8 @@ censod06 <- d                                  # rename object
 ## 2018 map ##
 d <- censo; d[is.na(d)] <- 0
 d$disn <- d$dis2018                            # district ids for the historic map
+sel.drop <- which(d$disn==0)                   # drop secciones de baja
+if (length(sel.drop)>0) d <- d[-sel.drop,]     # drop secciones de baja
 d <- d[,-grep("^ife[0-9]{4}$", colnames(d))]   # drop ife-yr vars
 d <- d[,-grep("^dis[0-9]{4}$", colnames(d))]   # drop counterfactual districts
 ##

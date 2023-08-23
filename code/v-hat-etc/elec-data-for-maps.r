@@ -1423,7 +1423,6 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 ## Script code/aggregates-mun-dis-from-sec.r produces        ##
 ## municipio- and district-level vote and census aggregates  ##
 ###############################################################
-
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 
 # save all to restore after manipulating district/munic aggregates
@@ -1457,7 +1456,7 @@ censom <- read.csv("/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/po
 ## Drops censom.. objects.                                        ##
 ## Very slow, preferable to open/run script by hand...            ##
 ####################################################################
-source("../../code/v-hat-etc/interpolate-census-data.r")
+source("../../code/v-hat-etc/interpolate-census-data-se-by-se.r")
 
 v18m[1,]
 x
