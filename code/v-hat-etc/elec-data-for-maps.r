@@ -1077,12 +1077,15 @@ sel.c <- grep("^d[0-9]{2}$", colnames(tmp.all.sec))
 tmp <- tmp.all.sec[,sel.c]
 tmp[is.na(tmp)] <- 0
 tmp.all.sec[,sel.c] <- tmp
+## check ok
+which(tmp.all.sec$seccion %notin% (eq$edon*10000+eq$seccion)) # all used secciones (tmp.all.sec) are in eq
+which((eq$edon*10000+eq$seccion) %notin% tmp.all.sec$seccion) # many eq secciones not in used ones (tmp.all.sec)
 #
 ## clean
 ##v91$d91 <-
 v94$d94 <- v97$d97 <- v00$d00 <- v03$d03 <- v06$d06 <- v09$d09 <- v12$d12 <- v15$d15 <- v18$d18 <- v21$d21 <- NULL
 #
-# adds any missing secciones to each object
+# adds any missing used secciones to each object
 #v91 <- merge(x=tmp.all.sec, y=v91, by = "seccion", all = TRUE)
 v94  <- merge(x=tmp.all.sec, y=v94, by = "seccion", all = TRUE)
 v97  <- merge(x=tmp.all.sec, y=v97, by = "seccion", all = TRUE)
@@ -1128,9 +1131,9 @@ v21 <- add.edon.secn(v21)
 ## READ/PREP pop>18yrs ##
 #########################
 ##
-## fresh tmp.mun.sec
-##tmp.all.sec <- eq[,c("edon","seccion","inegi","ife","mun","alta","baja")]
+## create a fresh tmp.mun.sec
 tmp.all.sec <- eq
+##tmp.all.sec <- eq[,c("edon","seccion","inegi","ife","mun","alta","baja")]
 ##
 ########################
 ## 2005 seccion-level ##
@@ -1145,6 +1148,7 @@ for (i in 10:32){
     tmp2005 <- read.csv( paste0("/home/eric/Downloads/Desktop/MXelsCalendGovt/censos/secciones/eceg_2005/", edos[i], "/", i, "_", edos[i], "_pob.csv"), stringsAsFactors = FALSE)
     tmp18 <- rbind(tmp18, tmp2005[, grep("ENTIDAD|SECCION|POB_TOT|EDQUI0[1-4]", colnames(tmp2005))])
 }
+
 ## drop seccion=0
 sel.r <- which(tmp18$SECCION==0)
 if (length(sel.r)>0) tmp18 <- tmp18[-sel.r,]
@@ -1166,6 +1170,7 @@ tmp18  <- merge(x=tmp.all.sec, y=tmp18,  by = "seccion", all = TRUE)
 c(nrow(tmp.all.sec), nrow(tmp18))
 ## add to pop object
 pob18 <- tmp18
+rm(tmp18)
 ##
 ########################
 ## 2010 seccion-level ##
@@ -1213,10 +1218,9 @@ pob18 <- merge(pob18, tmp18, by = "seccion", all = TRUE)
 head(pob18)
 ##
 ## will need cleaning with reseccionamiento functions later
-table(y2005=is.na(pob18$p18_2005), y2010=is.na(pob18$p18_2010))
-table(y2005=is.na(pob18$p18_2005), y2020=is.na(pob18$p18_2020))
-table(y2010=is.na(pob18$p18_2010), y2020=is.na(pob18$p18_2020))
-ls()
+table(y2005na=is.na(pob18$p18_2005), y2010na=is.na(pob18$p18_2010))
+table(y2005na=is.na(pob18$p18_2005), y2020na=is.na(pob18$p18_2020))
+table(y2010na=is.na(pob18$p18_2010), y2020na=is.na(pob18$p18_2020))
 ## clean
 rm(add.edon.secn, edos, tmp.all.sec, tmp, lastn, tmp18, tmp2005, sel, sel.c, i) # clean
 ##
@@ -1243,10 +1247,6 @@ c00 <- within(c00, {
 )
 ##c00 <- merge(x=c00, y=censom00[,c("ife","inegi")], by="inegi", all.y=TRUE)
 c00[c00$inegi==9002,]
-c00[1,]
-## c00    <- c00     [order(c00     $ife),]
-## censom <- censom00[order(censom00$ife),]
-## table(c00$ife==censom00$ife)
 
 #############################
 ## 1995 munic-level conteo ##
@@ -1303,11 +1303,16 @@ for (i in 1:32){
 ## 7081	       7082	SIMOJOVEL
 ## 7100	       7100	TUMBALA
 ## 7112	       7079	SAN JUAN CANCUC
-c95 <- merge(x=c95, y=data.frame(inegi=c(7004, 7013, 7014, 7024, 7026, 7038, 7039, 7041, 7052, 7059, 7064, 7076, 7081, 7100, 7112)), all=TRUE)
-## split missing mun aggregate
+tmpz <- c(7004, 7013, 7014, 7024, 7026, 7038, 7039, 7041, 7052, 7059, 7064, 7076, 7081, 7100, 7112)
+c95 <- merge(x=c95, y=data.frame(inegi=tmpz), all=TRUE)
+## split missing mun aggregate (relying on 2000 rel pops)
 sel.r <- which(c95$inegi==7999)
 c95zap <- c95[ sel.r,]
 c95    <- c95[-sel.r,]
+tmprel <- as.numeric(c00$pob18[c00$inegi %in% tmpz]) / sum(as.numeric(c00$pob18[c00$inegi %in% tmpz]))
+c95$pob18[c95$inegi %in% tmpz] <- round(c95zap$pob18 * tmprel)
+c95$ptot [c95$inegi %in% tmpz] <- round(c95zap$ptot  * tmprel)
+rm(c95zap, tmpz, tmprel, sel.r)
 ##
 ## rename
 c95$pob18_1995 <- c95$pob18; c95$pob18 <- NULL
@@ -1317,7 +1322,7 @@ censom <- merge(x=c00, y=c95[,c("inegi","pob18_1995")], by="inegi", all=TRUE)
 censom$ife <- inegi2ife(censom$inegi)
 censom <- censom[, c("edon","ife","inegi","mun","pob18_1995","pob18_2000")]
 ## clean
-rm(c00,c95,c95f,c95zap,i,tmpf)
+rm(c00,c95,c95f,i,tmpf)
 
 
 ################################
