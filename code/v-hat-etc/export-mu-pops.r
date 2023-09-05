@@ -14,6 +14,11 @@
 ##                                                                                      ##
 ## Differences stem from new municipios often electing municipal governments many years ##
 ## before/after they are used as units in federal elections.                            ##
+##                                                                                      ##
+## Author: Eric Magar                                                                   ##
+## emagar at itam dot mx                                                                ##
+## Date: 1aug2023                                                                       ##
+## Last modified: 1sep2023                                                              ##
 ##########################################################################################
 
 
@@ -118,6 +123,20 @@ censom12[is.na(censom12)] <- 0 # replace NAs with 0
 censom15[is.na(censom15)] <- 0 # replace NAs with 0
 censom18[is.na(censom18)] <- 0 # replace NAs with 0
 censom21[is.na(censom21)] <- 0 # replace NAs with 0
+
+## ## Ojo: there is a mistake in my prep of counterfactual objects. Below are state aggregates of municipal p18s (my_agg(censom94, sel.c=sel.c, by="edon")[2,] etc). Despite inter-municipio changes, that m.. are made to capture, the state population should remain constant across maps. I must be duplicating municipios or secciones. Must check asap.
+##    edon   object p18_2020     dif
+## 12    2 censom21  2707133  156673
+## 12    2 censom18  2550460  0     
+## 12    2 censom15  2550460  147149
+## 12    2 censom12  2403311  281084
+## 12    2 censom09  2122227  0     
+## 12    2 censom06  2122227  178299
+## 12    2 censom03  1943928  0     
+## 12    2 censom00  1943928  0     
+## 12    2 censom97  1943928  2964  
+## 12    2 censom94  1940964  
+
 
 ##############################
 ## Fix parent/son municipio ##
@@ -2006,7 +2025,6 @@ tmpf[sel.r,]
 ##
 ## Bacalar (created 2013)
 ## Elected 1st mu gov 2013, fed els in 2015
-
 sel.parent <- which(tmpm$inegi==23004)
 sel.son <-    which(tmpm$inegi==23010)
 censom12[c(sel.parent, sel.son),]
@@ -2354,8 +2372,8 @@ tmpf <- tmpf[, c("edon", "ife", "inegi", "mun",
 ##                 "p18_1990", "p18_1995", "p18_2000", "p18_2005", "p18_2010", "p18_2020", 
                  "p18_1991", "p18_1994", "p18_1997", "p18_2000", "p18_2003", "p18_2006", "p18_2009", "p18_2012", "p18_2015", "p18_2018", "p18_2021")]
 ## Check
-tmpf[1,]
-tmpm[1,]
+tmpf[2,]
+tmpm[2,]
 
 #############
 ## Export  ##
