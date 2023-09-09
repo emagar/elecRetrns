@@ -1913,7 +1913,7 @@ v94m12$inegi <- ife2inegi(v94m12$ife); v94m12$mun <- ife2mun(v94m12$ife)
 v94m15$inegi <- ife2inegi(v94m15$ife); v94m15$mun <- ife2mun(v94m15$ife)
 v94m18$inegi <- ife2inegi(v94m18$ife); v94m18$mun <- ife2mun(v94m18$ife)
 v94m21$inegi <- ife2inegi(v94m21$ife); v94m21$mun <- ife2mun(v94m21$ife)
-##                                   ##                                 
+##
 v97m94$inegi <- ife2inegi(v97m94$ife); v97m94$mun <- ife2mun(v97m94$ife)
 v97m  $inegi <- ife2inegi(v97m  $ife); v97m  $mun <- ife2mun(v97m  $ife)
 v97m00$inegi <- ife2inegi(v97m00$ife); v97m00$mun <- ife2mun(v97m00$ife)
@@ -1924,7 +1924,7 @@ v97m12$inegi <- ife2inegi(v97m12$ife); v97m12$mun <- ife2mun(v97m12$ife)
 v97m15$inegi <- ife2inegi(v97m15$ife); v97m15$mun <- ife2mun(v97m15$ife)
 v97m18$inegi <- ife2inegi(v97m18$ife); v97m18$mun <- ife2mun(v97m18$ife)
 v97m21$inegi <- ife2inegi(v97m21$ife); v97m21$mun <- ife2mun(v97m21$ife)
-##                                   ##                                 
+##
 v00m94$inegi <- ife2inegi(v00m94$ife); v00m94$mun <- ife2mun(v00m94$ife)
 v00m97$inegi <- ife2inegi(v00m97$ife); v00m97$mun <- ife2mun(v00m97$ife)
 v00m  $inegi <- ife2inegi(v00m  $ife); v00m  $mun <- ife2mun(v00m  $ife)
