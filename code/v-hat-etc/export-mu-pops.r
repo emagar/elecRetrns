@@ -18,15 +18,53 @@
 ## Author: Eric Magar                                                                   ##
 ## emagar at itam dot mx                                                                ##
 ## Date: 1aug2023                                                                       ##
-## Last modified: 1sep2023                                                              ##
+## Last modified: 20sep2023                                                             ##
 ##########################################################################################
 
+#########################################
+## functions to gen elyr pops linearly ##
+#########################################
+prj9095 <- function(x=NA,yr=NA){
+    chg <- (x$p18_1995 - x$p18_1990) / 5 # yearly pop change
+    pop <- x$p18_1990 + chg * (yr - 1990)
+    return(pop)
+}
+prj9500 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
+prj0005 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
+    pop <- x$p18_2000 + chg * (yr - 2000)
+    return(pop)
+}
+prj0510 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
+    pop <- x$p18_2005 + chg * (yr - 2005)
+    return(pop)
+}
+prj1020 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
+    pop <- x$p18_2010 + chg * (yr - 2010)
+    return(pop)
+}
+prj9000 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2000 - x$p18_1990) / 10 # yearly pop change
+    pop <- x$p18_1990 + chg * (yr - 1990)
+    return(pop)
+}
+prj9505 <- function(x=NA,yr=NA){
+    chg <- (x$p18_2005 - x$p18_1995) / 10 # yearly pop change
+    pop <- x$p18_1995 + chg * (yr - 1995)
+    return(pop)
+}
 
 
-#######################################################################################################
-## Add municipio-level 1995 and 2000 pob18 (fills up for missing seccion-level data for those years) ##
-## OJO: Actual municipios only, even for counterfactual maps                                         ##
-#######################################################################################################
+###################################################################################################
+## Add municipio-level 1990:2000 pob18 (fills up for missing seccion-level data for those years) ##
+## OJO: Actual municipios only, even for counterfactual maps                                     ##
+###################################################################################################
 censom <- within(censom, {
     p18_2000 <- as.numeric(pob18_2000);
     p18_1995 <- pob18_1995;
@@ -38,74 +76,74 @@ censom <- within(censom, {
 #########
 ##censom00$ord <- 1:nrow(censom00) # to verify if order changes
 ##table(is.na(censom00$ife))
-censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 ##table(censom00$ord - lag(ts(censom00$ord, start=1, end=nrow(censom00), frequency=1), k=1)) # order unchanged if all==0
 ##censom00$ord <- NULL
 ##table(is.na(censom00$ife))
 ##table(is.na(censom00$inegi))
 censom00$inegi <- ife2inegi(censom00$ife) # fill missing inegi codes
-## sort columns (drops ptot columns, add them again if needed for analysis)
+## sort columns (drops ptot columns, add them again when needed for analysis)
 censom00 <- censom00[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m94 ##
 #########
-censom94 <- merge(x=censom94, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom94 <- merge(x=censom94, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom94$inegi <- ife2inegi(censom94$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom94 <- censom94[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m97 ##
 #########
-censom97 <- merge(x=censom97, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom97 <- merge(x=censom97, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom97$inegi <- ife2inegi(censom97$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom97 <- censom97[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m03 ##
 #########
-censom03 <- merge(x=censom03, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom03 <- merge(x=censom03, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom03$inegi <- ife2inegi(censom03$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom03 <- censom03[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m06 ##
 #########
-censom06 <- merge(x=censom06, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom06 <- merge(x=censom06, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom06$inegi <- ife2inegi(censom06$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom06 <- censom06[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m09 ##
 #########
-censom09 <- merge(x=censom09, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom09 <- merge(x=censom09, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom09$inegi <- ife2inegi(censom09$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom09 <- censom09[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m12 ##
 #########
-censom12 <- merge(x=censom12, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom12 <- merge(x=censom12, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom12$inegi <- ife2inegi(censom12$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom12 <- censom12[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m15 ##
 #########
-censom15 <- merge(x=censom15, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom15 <- merge(x=censom15, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom15$inegi <- ife2inegi(censom15$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom15 <- censom15[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m18 ##
 #########
-censom18 <- merge(x=censom18, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom18 <- merge(x=censom18, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom18$inegi <- ife2inegi(censom18$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom18 <- censom18[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
 #########
 ## m21 ##
 #########
-censom21 <- merge(x=censom21, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], all.x = TRUE, all.y = FALSE)
+censom21 <- merge(x=censom21, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
 censom21$inegi <- ife2inegi(censom21$ife) # fill missing inegi codes
 ## sort columns (drops ptot columns, add them again if needed for analysis)
 censom21 <- censom21[,c("edon","ife","inegi","mun","p18_1990","p18_1995","p18_2000","p18_2005","p18_2010","p18_2020")]
@@ -124,18 +162,18 @@ censom15[is.na(censom15)] <- 0 # replace NAs with 0
 censom18[is.na(censom18)] <- 0 # replace NAs with 0
 censom21[is.na(censom21)] <- 0 # replace NAs with 0
 
-## ## Ojo: there is a mistake in my prep of counterfactual objects. Below are state aggregates of municipal p18s (my_agg(censom94, sel.c=sel.c, by="edon")[2,] etc). Despite inter-municipio changes, that m.. are made to capture, the state population should remain constant across maps. I must be duplicating municipios or secciones. Must check asap.
-##    edon   object p18_2020     dif
-## 12    2 censom21  2707133  156673
-## 12    2 censom18  2550460  0     
-## 12    2 censom15  2550460  147149
-## 12    2 censom12  2403311  281084
-## 12    2 censom09  2122227  0     
-## 12    2 censom06  2122227  178299
-## 12    2 censom03  1943928  0     
-## 12    2 censom00  1943928  0     
-## 12    2 censom97  1943928  2964  
-## 12    2 censom94  1940964  
+## ## Ojo: there is a mistake in my prep of counterfactual objects. Below are state aggregates of municipal p18s (my_agg(censom94, sel.c="p18_2020", by="edon")[2,10] etc). Despite inter-municipio changes, that m.. are made to capture, the state population should remain constant across maps. I must be duplicating municipios or secciones. Must check asap, problem seems to be in interpolate-census-data-se-by-se.r
+## edon   object p18_2020     dif
+##    2 censom94  1940964      --
+##    2 censom97  1943928    2964  
+##    2 censom00  1943928       0     
+##    2 censom03  1943928       0     
+##    2 censom06  2122227  178299
+##    2 censom09  2122227       0     
+##    2 censom12  2403311  281084
+##    2 censom15  2550460  147149
+##    2 censom18  2550460       0     
+##    2 censom21  2707133  156673
 
 
 ##############################
@@ -155,18 +193,13 @@ tmp$p18_2000[sel.son] <- 0
 tmp[c(sel.parent, sel.son),]
 tmp -> censom94      # return after manipulation
 ## needs split 1990 from tj for 1997-on maps (use linear proj)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
 ## wrap in function
 mywrap <- function(x=NA){
     x[is.na(x)] <- 0 # replace NAs with 0
     sel.parent <- which(x$inegi==2004)
     sel.son <-    which(x$inegi==2005)
     ##x[c(sel.parent, sel.son),]
-    x$p18_1990[sel.son] <- prj(x[sel.son,], 1990) # project
+    x$p18_1990[sel.son]    <- prj9500(x[sel.son,], 1990) # project
     x$p18_1990[sel.parent] <- x$p18_1990[sel.parent] - x$p18_1990[sel.son] # subtract from parent
     ##x[c(sel.parent, sel.son),]
     return(x)
@@ -189,13 +222,8 @@ tmp <- censom21      # duplicate for manipulation
 sel.parent <- which(tmp$inegi==4006)
 sel.son <-    which(tmp$inegi==4010)
 tmp[c(sel.parent, sel.son),]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-tmp$p18_1995[sel.son] <- prj(tmp[sel.son,], yr=1995)
-tmp$p18_1990[sel.son] <- prj(tmp[sel.son,], yr=1990)
+tmp$p18_1995[sel.son] <- prj0005(tmp[sel.son,], yr=1995)
+tmp$p18_1990[sel.son] <- prj0005(tmp[sel.son,], yr=1990)
 tmp$p18_1995[sel.parent] <- tmp$p18_1995[sel.parent] - tmp$p18_1995[sel.son] # subtract from parent
 tmp$p18_1990[sel.parent] <- tmp$p18_1990[sel.parent] - tmp$p18_1990[sel.son] # subtract from parent
 tmp[c(sel.parent, sel.son),]
@@ -742,46 +770,29 @@ sel.parent <- which(tmp$inegi==32047)
 sel.son <-    which(tmp$inegi==32058)
 tmp[c(sel.parent, sel.son),]
 
-## Check mu census for zeroes before proj
+
+############################################
+## Check mu census for zeroes before proj ##
+############################################
 sel.r <- which(censom21$p18_2005==0 | censom21$p18_2010==0 | censom21$p18_2020==0)
 censom21[sel.r,]
 sel.r <- which(censom21$p18_2000==0)
 censom21[sel.r,]
 sel.r <- which(censom21$inegi==7058)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_1995) / 10 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom21$p18_2000[sel.r] <- prj(x=censom21[sel.r,], yr=2000)
+censom21$p18_2000[sel.r] <- prj9505(x=censom21[sel.r,], yr=2000)
 sel.r <- which(censom21$p18_2000==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom21$p18_2000[sel.r] <- prj(x=censom21[sel.r,], yr=2000)
-censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
-censom21$p18_1990[sel.r] <- prj(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
+censom21$p18_2000[sel.r] <- prj0510(x=censom21[sel.r,], yr=2000)
+censom21$p18_1995[sel.r] <- prj0510(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+censom21$p18_1990[sel.r] <- prj0510(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
 ##
 sel.r <- which(censom21$p18_1995==0 & censom21$p18_1990>0)
 censom21[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1990) / 10 # yearly pop change
-    pop <- x$p18_1990 + chg * (yr - 1990)
-    return(pop)
-}
-censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+censom21$p18_1995[sel.r] <- prj9000(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
 ##
 sel.r <- which(censom21$p18_1995==0)
 censom21[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom21$p18_1995[sel.r] <- prj(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
-censom21$p18_1990[sel.r] <- prj(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
+censom21$p18_1995[sel.r] <- prj0005(x=censom21[sel.r,], yr=1995) # has negs that will be innocuous
+censom21$p18_1990[sel.r] <- prj0005(x=censom21[sel.r,], yr=1990) # has negs that will be innocuous
 ##
 #########
 ## m18 ##
@@ -798,14 +809,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom18$p18_2000==0 & dok==0)
 censom18[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom18$p18_2000[sel.r] <- prj(censom18[sel.r,], 2000)
-censom18$p18_1995[sel.r] <- prj(censom18[sel.r,], 1995)
-censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+censom18$p18_2000[sel.r] <- prj0510(censom18[sel.r,], 2000)
+censom18$p18_1995[sel.r] <- prj0510(censom18[sel.r,], 1995)
+censom18$p18_1990[sel.r] <- prj0510(censom18[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom18$p18_1995==0 & censom18$p18_1990>0 & dok==0)
@@ -814,28 +820,18 @@ censom18$p18_1995[sel.r] <- (censom18$p18_1990[sel.r] + censom18$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom18$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom18$p18_1995[sel.r] <- prj(censom18[sel.r,], 1995)
-censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+censom18$p18_1995[sel.r] <- prj0005(censom18[sel.r,], 1995)
+censom18$p18_1990[sel.r] <- prj0005(censom18[sel.r,], 1990)
 censom18[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom18$p18_1990==0 & dok==0)
 censom18[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom18$p18_1990[sel.r] <- prj(censom18[sel.r,], 1990)
+censom18$p18_1990[sel.r] <- prj9500(censom18[sel.r,], 1990)
 censom18[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
-rm(prj, dok)
+rm(dok)
 ##
 #########
 ## m15 ##
@@ -860,14 +856,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom15$p18_2000==0 & dok==0)
 censom15[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom15$p18_2000[sel.r] <- prj(censom15[sel.r,], 2000)
-censom15$p18_1995[sel.r] <- prj(censom15[sel.r,], 1995)
-censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+censom15$p18_2000[sel.r] <- prj0510(censom15[sel.r,], 2000)
+censom15$p18_1995[sel.r] <- prj0510(censom15[sel.r,], 1995)
+censom15$p18_1990[sel.r] <- prj0510(censom15[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom15$p18_1995==0 & censom15$p18_1990>0 & dok==0)
@@ -876,24 +867,14 @@ censom15$p18_1995[sel.r] <- (censom15$p18_1990[sel.r] + censom15$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom15$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom15$p18_1995[sel.r] <- prj(censom15[sel.r,], 1995)
-censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+censom15$p18_1995[sel.r] <- prj0005(censom15[sel.r,], 1995)
+censom15$p18_1990[sel.r] <- prj0005(censom15[sel.r,], 1990)
 censom15[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom15$p18_1990==0 & dok==0)
 censom15[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom15$p18_1990[sel.r] <- prj(censom15[sel.r,], 1990)
+censom15$p18_1990[sel.r] <- prj9500(censom15[sel.r,], 1990)
 censom15[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -912,14 +893,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom12$p18_2000==0 & dok==0)
 censom12[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom12$p18_2000[sel.r] <- prj(censom12[sel.r,], 2000)
-censom12$p18_1995[sel.r] <- prj(censom12[sel.r,], 1995)
-censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+censom12$p18_2000[sel.r] <- prj0510(censom12[sel.r,], 2000)
+censom12$p18_1995[sel.r] <- prj0510(censom12[sel.r,], 1995)
+censom12$p18_1990[sel.r] <- prj0510(censom12[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom12$p18_1995==0 & censom12$p18_1990>0 & dok==0)
@@ -928,24 +904,14 @@ censom12$p18_1995[sel.r] <- (censom12$p18_1990[sel.r] + censom12$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom12$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom12$p18_1995[sel.r] <- prj(censom12[sel.r,], 1995)
-censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+censom12$p18_1995[sel.r] <- prj0005(censom12[sel.r,], 1995)
+censom12$p18_1990[sel.r] <- prj0005(censom12[sel.r,], 1990)
 censom12[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom12$p18_1990==0 & dok==0)
 censom12[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom12$p18_1990[sel.r] <- prj(censom12[sel.r,], 1990)
+censom12$p18_1990[sel.r] <- prj9500(censom12[sel.r,], 1990)
 censom12[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -955,12 +921,7 @@ dok[sel.r] <- 1 ## indicate cases ok
 dok <- rep(0, nrow(censom09))
 sel.r <- which(censom09$p18_2005==0 & censom09$p18_2010>0 & censom09$p18_2020>0)
 censom09[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
-    pop <- x$p18_2010 + chg * (yr - 2010)
-    return(pop)
-}
-censom09$p18_2005[sel.r] <- prj(censom09[sel.r,], 2005)
+censom09$p18_2005[sel.r] <- prj1020(censom09[sel.r,], 2005)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom09$p18_2005==0 | censom09$p18_2010==0 | censom09$p18_2020==0)
@@ -974,14 +935,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom09$p18_2000==0 & dok==0)
 censom09[sel.r,] ## Ojo: Marquelia is ok but will need fine-tuning: 2006 and 2009 had minuscule pop, then in 2012 won territ
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom09$p18_2000[sel.r] <- prj(censom09[sel.r,], 2000)
-censom09$p18_1995[sel.r] <- prj(censom09[sel.r,], 1995)
-censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+censom09$p18_2000[sel.r] <- prj0510(censom09[sel.r,], 2000)
+censom09$p18_1995[sel.r] <- prj0510(censom09[sel.r,], 1995)
+censom09$p18_1990[sel.r] <- prj0510(censom09[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom09$p18_1995==0 & censom09$p18_1990>0 & dok==0)
@@ -990,24 +946,14 @@ censom09$p18_1995[sel.r] <- (censom09$p18_1990[sel.r] + censom09$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom09$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom09$p18_1995[sel.r] <- prj(censom09[sel.r,], 1995)
-censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+censom09$p18_1995[sel.r] <- prj0005(censom09[sel.r,], 1995)
+censom09$p18_1990[sel.r] <- prj0005(censom09[sel.r,], 1990)
 censom09[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom09$p18_1990==0 & dok==0)
 censom09[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom09$p18_1990[sel.r] <- prj(censom09[sel.r,], 1990)
+censom09$p18_1990[sel.r] <- prj9500(censom09[sel.r,], 1990)
 censom09[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -1026,14 +972,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom06$p18_2000==0 & dok==0)
 censom06[sel.r,] ## Ojo: Marquelia is ok but will need fine-tuning: 2006 and 2009 had minuscule pop, then in 2012 won territ
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom06$p18_2000[sel.r] <- prj(censom06[sel.r,], 2000)
-censom06$p18_1995[sel.r] <- prj(censom06[sel.r,], 1995)
-censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+censom06$p18_2000[sel.r] <- prj0510(censom06[sel.r,], 2000)
+censom06$p18_1995[sel.r] <- prj0510(censom06[sel.r,], 1995)
+censom06$p18_1990[sel.r] <- prj0510(censom06[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom06$p18_1995==0 & censom06$p18_1990>0 & dok==0)
@@ -1042,24 +983,14 @@ censom06$p18_1995[sel.r] <- (censom06$p18_1990[sel.r] + censom06$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom06$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom06$p18_1995[sel.r] <- prj(censom06[sel.r,], 1995)
-censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+censom06$p18_1995[sel.r] <- prj0005(censom06[sel.r,], 1995)
+censom06$p18_1990[sel.r] <- prj0005(censom06[sel.r,], 1990)
 censom06[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom06$p18_1990==0 & dok==0)
 censom06[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom06$p18_1990[sel.r] <- prj(censom06[sel.r,], 1990)
+censom06$p18_1990[sel.r] <- prj9500(censom06[sel.r,], 1990)
 censom06[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -1078,14 +1009,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom03$p18_2000==0 & dok==0)
 censom03[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom03$p18_2000[sel.r] <- prj(censom03[sel.r,], 2000)
-censom03$p18_1995[sel.r] <- prj(censom03[sel.r,], 1995)
-censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+censom03$p18_2000[sel.r] <- prj0510(censom03[sel.r,], 2000)
+censom03$p18_1995[sel.r] <- prj0510(censom03[sel.r,], 1995)
+censom03$p18_1990[sel.r] <- prj0510(censom03[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom03$p18_1995==0 & censom03$p18_1990>0 & dok==0)
@@ -1094,24 +1020,14 @@ censom03$p18_1995[sel.r] <- (censom03$p18_1990[sel.r] + censom03$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom03$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom03$p18_1995[sel.r] <- prj(censom03[sel.r,], 1995)
-censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+censom03$p18_1995[sel.r] <- prj0005(censom03[sel.r,], 1995)
+censom03$p18_1990[sel.r] <- prj0005(censom03[sel.r,], 1990)
 censom03[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom03$p18_1990==0 & dok==0)
 censom03[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom03$p18_1990[sel.r] <- prj(censom03[sel.r,], 1990)
+censom03$p18_1990[sel.r] <- prj9500(censom03[sel.r,], 1990)
 censom03[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -1130,14 +1046,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom00$p18_2000==0 & dok==0)
 censom00[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom00$p18_2000[sel.r] <- prj(censom00[sel.r,], 2000)
-censom00$p18_1995[sel.r] <- prj(censom00[sel.r,], 1995)
-censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+censom00$p18_2000[sel.r] <- prj0510(censom00[sel.r,], 2000)
+censom00$p18_1995[sel.r] <- prj0510(censom00[sel.r,], 1995)
+censom00$p18_1990[sel.r] <- prj0510(censom00[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom00$p18_1995==0 & censom00$p18_1990>0 & dok==0)
@@ -1146,24 +1057,14 @@ censom00$p18_1995[sel.r] <- (censom00$p18_1990[sel.r] + censom00$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom00$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom00$p18_1995[sel.r] <- prj(censom00[sel.r,], 1995)
-censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+censom00$p18_1995[sel.r] <- prj0005(censom00[sel.r,], 1995)
+censom00$p18_1990[sel.r] <- prj0005(censom00[sel.r,], 1990)
 censom00[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom00$p18_1990==0 & dok==0)
 censom00[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom00$p18_1990[sel.r] <- prj(censom00[sel.r,], 1990)
+censom00$p18_1990[sel.r] <- prj9500(censom00[sel.r,], 1990)
 censom00[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -1182,14 +1083,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom97$p18_2000==0 & dok==0)
 censom97[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom97$p18_2000[sel.r] <- prj(censom97[sel.r,], 2000)
-censom97$p18_1995[sel.r] <- prj(censom97[sel.r,], 1995)
-censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+censom97$p18_2000[sel.r] <- prj0510(censom97[sel.r,], 2000)
+censom97$p18_1995[sel.r] <- prj0510(censom97[sel.r,], 1995)
+censom97$p18_1990[sel.r] <- prj0510(censom97[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom97$p18_1995==0 & censom97$p18_1990>0 & dok==0)
@@ -1198,24 +1094,14 @@ censom97$p18_1995[sel.r] <- (censom97$p18_1990[sel.r] + censom97$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom97$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom97$p18_1995[sel.r] <- prj(censom97[sel.r,], 1995)
-censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+censom97$p18_1995[sel.r] <- prj0005(censom97[sel.r,], 1995)
+censom97$p18_1990[sel.r] <- prj0005(censom97[sel.r,], 1990)
 censom97[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom97$p18_1990==0 & dok==0)
 censom97[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom97$p18_1990[sel.r] <- prj(censom97[sel.r,], 1990)
+censom97$p18_1990[sel.r] <- prj9500(censom97[sel.r,], 1990)
 censom97[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
@@ -1234,14 +1120,9 @@ dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom94$p18_2000==0 & dok==0)
 censom94[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-censom94$p18_2000[sel.r] <- prj(censom94[sel.r,], 2000)
-censom94$p18_1995[sel.r] <- prj(censom94[sel.r,], 1995)
-censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+censom94$p18_2000[sel.r] <- prj0510(censom94[sel.r,], 2000)
+censom94$p18_1995[sel.r] <- prj0510(censom94[sel.r,], 1995)
+censom94$p18_1990[sel.r] <- prj0510(censom94[sel.r,], 1990)
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom94$p18_1995==0 & censom94$p18_1990>0 & dok==0)
@@ -1250,78 +1131,45 @@ censom94$p18_1995[sel.r] <- (censom94$p18_1990[sel.r] + censom94$p18_2000[sel.r]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom94$p18_1995==0 & dok==0)
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-censom94$p18_1995[sel.r] <- prj(censom94[sel.r,], 1995)
-censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+censom94$p18_1995[sel.r] <- prj0005(censom94[sel.r,], 1995)
+censom94$p18_1990[sel.r] <- prj0005(censom94[sel.r,], 1990)
 censom94[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
 sel.r <- which(censom94$p18_1990==0 & dok==0)
 censom94[sel.r,]
-prj <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-censom94$p18_1990[sel.r] <- prj(censom94[sel.r,], 1990)
+censom94$p18_1990[sel.r] <- prj9500(censom94[sel.r,], 1990)
 censom94[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
-rm(prj, dok, sel.son, sel.parent, sel.ignore, sel.r, tmp) ## clean
+rm(dok, sel.son, sel.parent, sel.ignore, sel.r, tmp) ## clean
 
 
 ###############################
 ## CONSOLIDAR MAPAS CENSALES ##
 ###############################
-## gen elyr pops
-prj9095 <- function(x=NA,yr=NA){
-    chg <- (x$p18_1995 - x$p18_1990) / 5 # yearly pop change
-    pop <- x$p18_1990 + chg * (yr - 1990)
-    return(pop)
-}
-prj9500 <- function(x=NA,yr=NA){
-    chg <- (x$p18_2000 - x$p18_1995) / 5 # yearly pop change
-    pop <- x$p18_1995 + chg * (yr - 1995)
-    return(pop)
-}
-prj0005 <- function(x=NA,yr=NA){
-    chg <- (x$p18_2005 - x$p18_2000) / 5 # yearly pop change
-    pop <- x$p18_2000 + chg * (yr - 2000)
-    return(pop)
-}
-prj0510 <- function(x=NA,yr=NA){
-    chg <- (x$p18_2010 - x$p18_2005) / 5 # yearly pop change
-    pop <- x$p18_2005 + chg * (yr - 2005)
-    return(pop)
-}
-prj1020 <- function(x=NA,yr=NA){
-    chg <- (x$p18_2020 - x$p18_2010) / 10 # yearly pop change
-    pop <- x$p18_2010 + chg * (yr - 2010)
-    return(pop)
-}
-##
 tmp <- censom94 # duplicate for manipulation
 mywrap <- function(){
     tmp$p18_1991 <- prj9095(x=tmp, yr=1991)
     tmp$p18_1992 <- prj9095(x=tmp, yr=1992)
     tmp$p18_1993 <- prj9095(x=tmp, yr=1993)
     tmp$p18_1994 <- prj9095(x=tmp, yr=1994)
+    ##
     tmp$p18_1996 <- prj9500(x=tmp, yr=1996)
     tmp$p18_1997 <- prj9500(x=tmp, yr=1997)
     tmp$p18_1998 <- prj9500(x=tmp, yr=1998)
     tmp$p18_1999 <- prj9500(x=tmp, yr=1999)
+    ##
     tmp$p18_2001 <- prj0005(x=tmp, yr=2001)
     tmp$p18_2002 <- prj0005(x=tmp, yr=2002)
     tmp$p18_2003 <- prj0005(x=tmp, yr=2003)
     tmp$p18_2004 <- prj0005(x=tmp, yr=2004)
+    ##
     tmp$p18_2006 <- prj0510(x=tmp, yr=2006)
     tmp$p18_2007 <- prj0510(x=tmp, yr=2007)
     tmp$p18_2008 <- prj0510(x=tmp, yr=2008)
     tmp$p18_2009 <- prj0510(x=tmp, yr=2009)
+    ##
     tmp$p18_2011 <- prj1020(x=tmp, yr=2011)
     tmp$p18_2012 <- prj1020(x=tmp, yr=2012)
     tmp$p18_2013 <- prj1020(x=tmp, yr=2013)
@@ -1332,6 +1180,8 @@ mywrap <- function(){
     tmp$p18_2018 <- prj1020(x=tmp, yr=2018)
     tmp$p18_2019 <- prj1020(x=tmp, yr=2019)
     tmp$p18_2021 <- prj1020(x=tmp, yr=2021)
+    ##tmp$p18_2022 <- prj1020(x=tmp, yr=2022)
+    ##tmp$p18_2023 <- prj1020(x=tmp, yr=2023)
     tmp <- tmp[, order(colnames(tmp))]
     return(tmp)
 }
@@ -1376,6 +1226,67 @@ tmp <- mywrap()
 tmp -> censom21 # return
 rm(tmp)
 #
+
+#######################################################################################################################################
+## Esta rutina proyecta poblaciones municipales a partir de los mapas seccionales de municipios 2005 2010 2020 para años electorales ##
+## federales. Esto es, prescinde de los mu-level 1990 1995 2000. Los agrupa en objeto tmpfs, y es el objeto apropiado para proyectar ##
+## poblaciones seccionales usando compositional variables.                                                                           ##
+#######################################################################################################################################
+tmpfs <- censom94[, c("edon", "ife", "inegi", "mun")] # initialize object
+## duplicate censom.. to keep only 2005 2010 2020
+tmpm94 <- censom94[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm97 <- censom97[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm00 <- censom00[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm03 <- censom03[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm06 <- censom06[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm09 <- censom09[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm12 <- censom12[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm15 <- censom15[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm18 <- censom18[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm21 <- censom21[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+##
+## get census projection functions
+source("../../code/v-hat-etc/interpolate-census-functions.r")
+tmp.regs <- interlog(what="p18", yr=1994, unit="m", frm="log(dv)~iv", census.data=tmpm94, digits=1)
+tmpfs$p18_1994 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=1997, unit="m", frm="log(dv)~iv", census.data=tmpm97, digits=1)
+tmpfs$p18_1997 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2000, unit="m", frm="log(dv)~iv", census.data=tmpm00, digits=1)
+tmpfs$p18_2000 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2003, unit="m", frm="log(dv)~iv", census.data=tmpm03, digits=1)
+tmpfs$p18_2003 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2006, unit="m", frm="log(dv)~iv", census.data=tmpm06, digits=1)
+tmpfs$p18_2006 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2006, unit="m", census.data=tmpm06, digits=1)
+## tmpfs$p18_2006 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2009, unit="m", frm="log(dv)~iv", census.data=tmpm09, digits=1)
+tmpfs$p18_2009 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2009, unit="m", census.data=tmpm09, digits=1)
+## tmpfs$p18_2009 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2012, unit="m", frm="log(dv)~iv", census.data=tmpm12, digits=1)
+tmpfs$p18_2012 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2012, unit="m", census.data=tmpm12, digits=1)
+## tmpfs$p18_2012 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2015, unit="m", frm="log(dv)~iv", census.data=tmpm15, digits=1)
+tmpfs$p18_2015 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2015, unit="m", census.data=tmpm15, digits=1)
+## tmpfs$p18_2015 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2018, unit="m", frm="log(dv)~iv", census.data=tmpm18, digits=1)
+tmpfs$p18_2018 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2018, unit="m", census.data=tmpm18, digits=1)
+## tmpfs$p18_2018 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2021, unit="m", frm="log(dv)~iv", census.data=tmpm21, digits=1)
+tmpfs$p18_2021 <- tmp.regs$interp
+##
+#############
+## Export  ##
+#############
+## This has projections with fed elec yrs since 1994, municipios adjusted to federal election calendars from seccion maps
+write.csv(x=tmpfs, file="/home/eric/Dropbox/data/elecs/MXelsCalendGovt/censos/data/pob18/p18mu-for-compos-var-seccion-censos.csv", row.names=FALSE)
+##
+rm(tmpm94, tmpm97, tmpm00, tmpm03, tmpm06, tmpm09, tmpm12, tmpm15, tmpm18, tmpm21, tmp.regs)#, tmp.lins)
+
+
 
 ## Duplicate, one for actual populations for federal calendar, one for municipal calendar
 tmpf <- censom21
