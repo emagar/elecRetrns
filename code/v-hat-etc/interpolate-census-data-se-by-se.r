@@ -194,14 +194,14 @@ nm <- within(nm, {
 
 
 ##############################################################
-## Block starts here                                        ##
+## Cleaning block starts here                               ##
 ## OJO: Need to re-evaluate each sub-block of the block     ##
 ##      below when new seccion-level censo is available.    ##
 ##      Block below takes care of manipulating and setting  ##
-##      aside (with dready2est and ddone) secciones that    ##
+##      aside (with dready2est and dskip) secciones that    ##
 ##      can/cannot be handled with log(dv)~iv approach to   ##
 ##      project seccion-level p18.                          ##
-##      Run with a fresh nm <- censo when debugging         ##
+##      Run with a fresh nm <- censo when debugging.        ##
 ##############################################################
 ##
 ## These are innocuous, drop label
@@ -1068,14 +1068,13 @@ table(      nm$p18_2020[nm$dskip==0 | nm$dready2est==1]==0)
 ## nm$p18_2005 [which(nm$dready2est==1 & nm$p18_2005 <= 0)] <- nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2005 <= 0)] / 2
 ## #nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2010 <= 0)] <- 3
 ## nm$p18_2020 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] <- nm$p18_2010 [which(nm$dready2est==1 & nm$p18_2020 <= 0)] / 2
+##
+## Check that dummies are mutually exclusive and exhaustive. if so, any single dummy selects cases ok
+table(skip=nm$dskip,    ready=nm$dready2est)                      ## mutually exclusive
+if (length(sel.tmp <- which(nm$dskip==0 & nm$dready2est==0) )==0) print("they're exhaustive") ## exhaustive (length==0)
 #####################
 ## Block ends here ##
 #####################
-
-
-## Check that dummies are mutually exclusive and exhaustive. if so, any single dummy selects ok
-table(skip=nm$dskip,    ready=nm$dready2est)                      ## mutually exclusive
-if (length(sel.tmp <- which(nm$dskip==0 & nm$dready2est==0) )==0) print("they're exhaustive") ## exhaustive (length==0)
 
 ########################################
 ## Indicate 1st seccion in each state ##
@@ -1146,7 +1145,7 @@ tmp[sel.r,] <- within(tmp[sel.r,], {
     p18e_05 <- 0;
 })
 ##
-table((tmp$p18e_05 - nm$p18e_05)==0) # how many changed?
+table((tmp$p18e_05 - nm$p18e_05)==0) # FALSE are how many changed?
 table(nm$seccion==tmp$seccion)
 ## fill manip
 nm$p18e_05 <- tmp$p18e_05
@@ -1154,177 +1153,216 @@ nm$p18e_10 <- tmp$p18e_10
 nm$p18e_20 <- tmp$p18e_20
 rm(tmp)
 
-## for state aggregates, drop dfirst==1 and dskip==1, that could explain deficit
 sel.c <- c("p18e_05", "p18e_10", "p18e_20")                  ## select state pop columns
-##nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE) ## and sum-up its secciones
-nm <- my_agg(d=nm, sel.c=sel.c, by="edon", drop.dupli=FALSE) ## and sum-up its secciones
-## ## attempt dropping dfirst and dskip
-## sel.r <- which(nm$dfirst==0 & nm$dready2est==1)           ## drop dfirst cases
-## nm.w <- nm[sel.r,]
-## nm.w <- my_agg(d=nm.w, sel.c=sel.c, by="edon", drop.dupli=FALSE) ## and sum-up its secciones
-## nm.w[1:3,]
-## nm.w -> nm[sel.r,]
+##nm <- my_agg(d=nm, sel.c=sel.c, by="inegi", drop.dupli=FALSE) ## and sum-up municipio secciones
+nm <- my_agg(d=nm, sel.c=sel.c, by="edon", drop.dupli=FALSE) ## and sum-up state secciones
 
 
-###########################################################################
-## Bring mun pops from saved censos to convert sh.hats back into nm.hats ##
-###########################################################################
-## censoms have mu-level pops manipulated for remunicipalización
-tmp94 <- censom94
-tmp97 <- censom97
-tmp00 <- censom00
-tmp03 <- censom03
-tmp06 <- censom06
-tmp09 <- censom09
-tmp12 <- censom12
-tmp15 <- censom15
-tmp18 <- censom18
-tmp21 <- censom21
-## check all sorted
-table(tmp94$inegi==tmp97$inegi)
-table(tmp94$inegi==tmp00$inegi)
-table(tmp94$inegi==tmp03$inegi)
-table(tmp94$inegi==tmp06$inegi)
-table(tmp94$inegi==tmp09$inegi)
-table(tmp94$inegi==tmp12$inegi)
-table(tmp94$inegi==tmp15$inegi)
-table(tmp94$inegi==tmp18$inegi)
-table(tmp94$inegi==tmp21$inegi)
-## drop san quintín
-sel.r <- which(tmp03$inegi==2006) # san quintín
-tmp94 <- tmp94[-sel.r,] 
-tmp97 <- tmp97[-sel.r,] 
-tmp00 <- tmp00[-sel.r,] 
-tmp03 <- tmp03[-sel.r,] 
-tmp06 <- tmp06[-sel.r,] # drop san quintín
-tmp09 <- tmp09[-sel.r,] # drop san quintín
-tmp12 <- tmp12[-sel.r,] # drop san quintín
-tmp15 <- tmp15[-sel.r,] # drop san quintín
-tmp18 <- tmp18[-sel.r,] # drop san quintín
-tmp21 <- tmp21[-sel.r,] # drop san quintín
-
-tmp.cen <- tmp21
-tmp.cen$p18_2010 <- tmp12$p18_2010
-tmp.cen$p18_2020 <- tmp21$p18_2020
-## add cols
-tmp.sum <- nm[duplicated(nm$inegi)==FALSE, c("inegi","p18e_05","p18e_10","p18e_20")]
-tmp.cen <- tmp.cen[order(tmp.cen$inegi),]; tmp.sum <- tmp.sum[order(tmp.sum$inegi),]
-table(tmp.cen$inegi==tmp.sum$inegi)
-tmp.sum <- cbind(tmp.sum, tmp.cen[, c("p18_2005","p18_2010","p18_2020")])
-colnames(tmp.sum) <- c("inegi","sec.sum05","sec.sum10","sec.sum20","censo05","censo10","censo20")
-tmp.sum <- within(tmp.sum, {
-                  dif20 <- round((sec.sum20 - censo20) / sec.sum20, 2);
-                  dif10 <- round((sec.sum10 - censo10) / sec.sum10, 2);
-                  dif05 <- round((sec.sum05 - censo05) / sec.sum05, 2);
-                  })
-tmp.sum[12:16,]
-summary(tmp.sum$dif05)
-summary(tmp.sum$dif10)
-summary(tmp.sum$dif20)
-## around 1% of all municipios have pop discrepancies greater than 5 percent
-which(abs(tmp.sum$dif05) > .05)
-which(abs(tmp.sum$dif10) > .05)
-which(abs(tmp.sum$dif20) > .05)
-
-sel.r <- which(nm$seccion %in% c(20733, 20709, 20710, 20721, 20723, 20725, 21970, 21971, 21972, 21973, 22044:22047))
-nm[sel.r, grep("seccion|p18_20[05|10|20]", colnames(nm))]
-sel.c <- paste0("p18_", seq(1991,2021,3))
-tmp <- my_agg(d=tmp, sel.c=sel.c, by="edon", drop.dupli=TRUE) ## and sum-up state pops for secciones
-dim(tmp)
-colnames(tmp) <- sub("p18_", "p18e_", colnames(tmp)) ## rename mun pop vars
+## ################################################################################################################
+## ## Used to verify that summing manipulated se-level censos returns nums much teh same as summing them here... ##
+## ## Bring mun pops from saved censos to convert sh.hats back into nm.hats                                      ##
+## ################################################################################################################
+## ## censoms have mu-level pops manipulated for remunicipalización
+## tmp94 <- censom94
+## tmp97 <- censom97
+## tmp00 <- censom00
+## tmp03 <- censom03
+## tmp06 <- censom06
+## tmp09 <- censom09
+## tmp12 <- censom12
+## tmp15 <- censom15
+## tmp18 <- censom18
+## tmp21 <- censom21
+## ## check all sorted
+## table(tmp94$inegi==tmp97$inegi)
+## table(tmp94$inegi==tmp00$inegi)
+## table(tmp94$inegi==tmp03$inegi)
+## table(tmp94$inegi==tmp06$inegi)
+## table(tmp94$inegi==tmp09$inegi)
+## table(tmp94$inegi==tmp12$inegi)
+## table(tmp94$inegi==tmp15$inegi)
+## table(tmp94$inegi==tmp18$inegi)
+## table(tmp94$inegi==tmp21$inegi)
+## ## drop san quintín
+## sel.r <- which(tmp03$inegi==2006) # san quintín
+## tmp94 <- tmp94[-sel.r,] 
+## tmp97 <- tmp97[-sel.r,] 
+## tmp00 <- tmp00[-sel.r,] 
+## tmp03 <- tmp03[-sel.r,] 
+## tmp06 <- tmp06[-sel.r,]
+## tmp09 <- tmp09[-sel.r,]
+## tmp12 <- tmp12[-sel.r,]
+## tmp15 <- tmp15[-sel.r,]
+## tmp18 <- tmp18[-sel.r,]
+## tmp21 <- tmp21[-sel.r,]
 ##
-## ## This commented block would rely on counterfactual municipio map populations instead of censom 
-## #############################################################################
-## ## Project mun pops from saved censos to convert sh.hats back into nm.hats ##
-## #############################################################################
-## tmp <- censom21 # use latest municipio map
-## tmp[1,]
-## prj <- function(x=NA,yr=NA){
-##     chg <- (x$p18_1995 - x$p18_1990) /5 # yearly pop change
-##     pop <- x$p18_1990 + chg * (yr - 1990)
-##     return(pop)
-## }
-## tmp <- within(tmp, {
-##     p18_1994 <- prj(tmp, 1994)
-## })
-## prj <- function(x=NA,yr=NA){
-##     chg <- (x$p18_2000 - x$p18_1995) /5 # yearly pop change
-##     pop <- x$p18_1995 + chg * (yr - 1995)
-##     return(pop)
-## }
-## tmp <- within(tmp, {
-##     p18_1997 <- prj(tmp, 1997)
-## })
-## prj <- function(x=NA,yr=NA){
-##     chg <- (x$p18_2005 - x$p18_2000) /5 # yearly pop change
-##     pop <- x$p18_2000 + chg * (yr - 2000)
-##     return(pop)
-## }
-## tmp <- within(tmp, {
-##     p18_2003 <- prj(tmp, 2003)
-## })
-## prj <- function(x=NA,yr=NA){
-##     chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
-##     pop <- x$p18_2005 + chg * (yr - 2005)
-##     return(pop)
-## }
-## tmp <- within(tmp, {
-##     p18_2006 <- prj(tmp, 2006)
-##     p18_2009 <- prj(tmp, 2009)
-## })
-## prj <- function(x=NA,yr=NA){
-##     chg <- (x$p18_2020 - x$p18_2010) /10 # yearly pop change
-##     pop <- x$p18_2010 + chg * (yr - 2010)
-##     return(pop)
-## }
-## tmp <- within(tmp, {
-##     p18_2012 <- prj(tmp, 2012)
-##     p18_2015 <- prj(tmp, 2015)
-##     p18_2018 <- prj(tmp, 2018)
-##     p18_2021 <- prj(tmp, 2021)
-## })
-## tmp <- tmp[,order(colnames(tmp))]
-## tmp$p18_1990 <- tmp$p18_1995 <- tmp$edon <- tmp$mun <- tmp$ife <- NULL
-## #tmp$p18_2005 <- tmp$p18_2010 <- tmp$p18_2020 <- NULL
-## #colnames(tmp) <- sub("^p18_[12][90]", "p18e_", colnames(tmp))
-## colnames(tmp) <- sub("^p18_", "p18e_", colnames(tmp))
-## dim(tmp)
-## tmp[1,]
-##
-## pick municipios needed for all secciones and merge saved pops
-tmp2 <- data.frame(ord=1:nrow(nm), edon=nm$edon, seccion=nm$seccion)
-tmp2 <- split(x=tmp2, f=tmp2$edon) # split into list of data frames, one per state
-for (i in 1:32){
-    #i <- 1
-    tmp3 <- tmp2[[i]] # subset state i's secciones
-    ##
-    tmp4 <- data.frame(tmp[i, grep("p18e_", colnames(tmp))]) ## take state i's yealry pops
-    tmp4 <- tmp4[rep(1, nrow(tmp3)),]                        ## repeat as many times as there are secciones
-    ##
-    tmp3 <- cbind(tmp3, tmp4)  ## bind pops to state's secciones
-    ##
-    tmp3 -> tmp2[[i]] # return to data
+## tmp.cen <- tmp21
+## tmp.cen[1,]
+## tmp.cen$p18_2005 <- tmp06$p18_2005
+## tmp.cen$p18_2010 <- tmp12$p18_2010
+## tmp.cen$p18_2020 <- tmp21$p18_2020
+## ## add cols
+## tmp.sum <- nm[duplicated(nm$inegi)==FALSE, c("inegi","p18e_05","p18e_10","p18e_20")]
+## tmp.cen <- tmp.cen[order(tmp.cen$inegi),]; tmp.sum <- tmp.sum[order(tmp.sum$inegi),]
+## table(tmp.cen$inegi==tmp.sum$inegi)
+## tmp.sum <- cbind(tmp.sum, tmp.cen[, c("p18_2005","p18_2010","p18_2020")])
+## colnames(tmp.sum) <- c("inegi","sec.sum05","sec.sum10","sec.sum20","censo05","censo10","censo20")
+## tmp.sum <- within(tmp.sum, {
+##                   dif20 <- round((sec.sum20 - censo20) / sec.sum20, 2);
+##                   dif10 <- round((sec.sum10 - censo10) / sec.sum10, 2);
+##                   dif05 <- round((sec.sum05 - censo05) / sec.sum05, 2);
+##                   })
+## tmp.sum[12:16,]
+## summary(tmp.sum$dif05)
+## summary(tmp.sum$dif10)
+## summary(tmp.sum$dif20)
+## ## around 1% of all municipios have pop discrepancies greater than 5 percent
+## which(abs(tmp.sum$dif05) > .05)
+## which(abs(tmp.sum$dif10) > .05)
+## which(abs(tmp.sum$dif20) > .05)
+
+
+##################################################################################
+## Paste election-year saved censuses adapted for compositional var projections ##
+##################################################################################
+tmp <- censom                                                                      ## duplicate for manipulation
+colnames(tmp) <- gsub("(p18)(_)([0-9]{2})([0-9]{2})", "\\1e\\2\\4", colnames(tmp)) ## rename columns for totals
+sel.c <- colnames(tmp)[grep("p18", colnames(tmp))]                                 ## column selector
+tmp <- my_agg(d=tmp, sel.c=sel.c, by="edon", drop.dupli=TRUE)                      ## generate state aggregates 
+tmp$ife <- tmp$inegi <- tmp$mun <- NULL                                            ## drop redundant info
+head(tmp)
+## Add slots for state pop aggregates in nm
+nm.w <- within(nm, {
+    p18e_21 <- NA;
+    p18e_18 <- NA;
+    p18e_15 <- NA;
+    p18e_12 <- NA;
+    p18e_09 <- NA;
+    p18e_06 <- NA;
+    p18e_03 <- NA;
+    p18e_00 <- NA;
+    p18e_97 <- NA;
+    p18e_94 <- NA;
+})
+## fill 1st seccion in each state with state pops
+nm.w[nm.w$dfirst==1, grep("p18e_(94|97|00|03|06|09|12|15|18|21)", colnames(nm.w))] <- tmp[,sel.c]
+nm.w[1:2,]
+tmp[1:2,]
+sel.c <- grep("p18e_(94|97|00|03|06|09|12|15|18|21)", colnames(nm.w)) ## re-define column selector for nm.w
+nm.w <- split(x=nm.w, f=nm.w$edon) # split into list of data frames, one per state
+tmp.f <- function(x=NA){
+    ##x <- nm.w[[2]] # debug
+    repl <- do.call(rbind, replicate(n=nrow(x), x[1, sel.c], simplify = FALSE)) # replicate 1st seccion times all sec in state
+    x[, sel.c] <- repl
+    return(x)
 }
-tmp2 <- do.call(rbind, tmp2) # return to data frame form
-tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
-tmp <- tmp2; rm(tmp2)
-tmp[1:3,]
-## plug el.yr mun pops to nm
-tmp2 <- nm
-tmp2[1,]
-tmp[1,]
-table(tmp$seccion==tmp2$seccion) # verify same order and dimensionality
-tmp2 <- cbind(tmp2, tmp[,c(-1,-2)])
-tmp2[1,]
-nm[1,]
-table(nm$seccion==tmp2$seccion) # verify same order and dimensionality
-nm <- tmp2 ## fill data
+nm.w <- lapply(nm.w, function(x) tmp.f(x))  # apply function
+nm.w <- do.call(rbind, nm.w) # return to data frame form
+##
+## return manip to data
+nm <- nm.w
+rm(nm.w)
+
+## DROP
+## sel.r <- which(nm$seccion %in% c(20733, 20709, 20710, 20721, 20723, 20725, 21970, 21971, 21972, 21973, 22044:22047))
+## nm[sel.r, grep("seccion|p18_20[05|10|20]", colnames(nm))]
+## sel.c <- paste0("p18_", seq(1991,2021,3))
+## tmp <- my_agg(d=tmp, sel.c=sel.c, by="edon", drop.dupli=TRUE) ## and sum-up state pops for secciones
+## dim(tmp)
+## colnames(tmp) <- sub("p18_", "p18e_", colnames(tmp)) ## rename mun pop vars
+## ##
+## ## ## This commented block would rely on counterfactual municipio map populations instead of censom 
+## ## #############################################################################
+## ## ## Project mun pops from saved censos to convert sh.hats back into nm.hats ##
+## ## #############################################################################
+## ## tmp <- censom21 # use latest municipio map
+## ## tmp[1,]
+## ## prj <- function(x=NA,yr=NA){
+## ##     chg <- (x$p18_1995 - x$p18_1990) /5 # yearly pop change
+## ##     pop <- x$p18_1990 + chg * (yr - 1990)
+## ##     return(pop)
+## ## }
+## ## tmp <- within(tmp, {
+## ##     p18_1994 <- prj(tmp, 1994)
+## ## })
+## ## prj <- function(x=NA,yr=NA){
+## ##     chg <- (x$p18_2000 - x$p18_1995) /5 # yearly pop change
+## ##     pop <- x$p18_1995 + chg * (yr - 1995)
+## ##     return(pop)
+## ## }
+## ## tmp <- within(tmp, {
+## ##     p18_1997 <- prj(tmp, 1997)
+## ## })
+## ## prj <- function(x=NA,yr=NA){
+## ##     chg <- (x$p18_2005 - x$p18_2000) /5 # yearly pop change
+## ##     pop <- x$p18_2000 + chg * (yr - 2000)
+## ##     return(pop)
+## ## }
+## ## tmp <- within(tmp, {
+## ##     p18_2003 <- prj(tmp, 2003)
+## ## })
+## ## prj <- function(x=NA,yr=NA){
+## ##     chg <- (x$p18_2010 - x$p18_2005) /5 # yearly pop change
+## ##     pop <- x$p18_2005 + chg * (yr - 2005)
+## ##     return(pop)
+## ## }
+## ## tmp <- within(tmp, {
+## ##     p18_2006 <- prj(tmp, 2006)
+## ##     p18_2009 <- prj(tmp, 2009)
+## ## })
+## ## prj <- function(x=NA,yr=NA){
+## ##     chg <- (x$p18_2020 - x$p18_2010) /10 # yearly pop change
+## ##     pop <- x$p18_2010 + chg * (yr - 2010)
+## ##     return(pop)
+## ## }
+## ## tmp <- within(tmp, {
+## ##     p18_2012 <- prj(tmp, 2012)
+## ##     p18_2015 <- prj(tmp, 2015)
+## ##     p18_2018 <- prj(tmp, 2018)
+## ##     p18_2021 <- prj(tmp, 2021)
+## ## })
+## ## tmp <- tmp[,order(colnames(tmp))]
+## ## tmp$p18_1990 <- tmp$p18_1995 <- tmp$edon <- tmp$mun <- tmp$ife <- NULL
+## ## #tmp$p18_2005 <- tmp$p18_2010 <- tmp$p18_2020 <- NULL
+## ## #colnames(tmp) <- sub("^p18_[12][90]", "p18e_", colnames(tmp))
+## ## colnames(tmp) <- sub("^p18_", "p18e_", colnames(tmp))
+## ## dim(tmp)
+## ## tmp[1,]
+## ##
+## ## pick municipios needed for all secciones and merge saved pops
+## tmp2 <- data.frame(ord=1:nrow(nm), edon=nm$edon, seccion=nm$seccion)
+## tmp2 <- split(x=tmp2, f=tmp2$edon) # split into list of data frames, one per state
+## for (i in 1:32){
+##     #i <- 1
+##     tmp3 <- tmp2[[i]] # subset state i's secciones
+##     ##
+##     tmp4 <- data.frame(tmp[i, grep("p18e_", colnames(tmp))]) ## take state i's yealry pops
+##     tmp4 <- tmp4[rep(1, nrow(tmp3)),]                        ## repeat as many times as there are secciones
+##     ##
+##     tmp3 <- cbind(tmp3, tmp4)  ## bind pops to state's secciones
+##     ##
+##     tmp3 -> tmp2[[i]] # return to data
+## }
+## tmp2 <- do.call(rbind, tmp2) # return to data frame form
+## tmp2 <- tmp2[order(tmp2$ord),]; tmp2$ord <- NULL                  # sort in case order was not preserved
+## tmp <- tmp2; rm(tmp2)
+## tmp[1:3,]
+## ## plug el.yr mun pops to nm
+## tmp2 <- nm
+## tmp2[1,]
+## tmp[1,]
+## table(tmp$seccion==tmp2$seccion) # verify same order and dimensionality
+## tmp2 <- cbind(tmp2, tmp[,c(-1,-2)])
+## tmp2[1,]
+## nm[1,]
+## table(nm$seccion==tmp2$seccion) # verify same order and dimensionality
+## nm <- tmp2 ## fill data
 
 
 
-################################
-## Add columns for el.yr pops ##
-################################
+####################################################
+## Add columns for el.yr se-level pop projections ##
+####################################################
 nm <- within(nm, {
     p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- NA;
 })
@@ -1340,6 +1378,7 @@ sh$p18_2020 <- nm$p18_2020 / nm$p18e_20
 summary(sh$p18_2005)
 summary(sh$p18_2010)
 summary(sh$p18_2020)
+sh[which(sh$p18_2020>.17),]
 ##
 ## Any sh=0 first seccion?
 sel.tmp <- which(sh$p18_2005==0 & sh$dfirst==1)
@@ -1356,14 +1395,6 @@ sel.tmp
 regs <- vector(mode='list', length(nrow(nm))) ## empty list
 regs[nm$dskip==1] <- "No regression, skipped due to lack of census data"
 #regs[nm$ddone==1] <- "No regression, < 3 censuses data points, linear/flat estimates used"
-
-
-##################################
-## Estimate dready2est==1 cases ##
-##################################
-## Check working cases
-table(skip=nm$dskip,    ready=nm$dready2est)                      ## mutually exclusive
-sel.tmp <- which(nm$dskip==0 & nm$dready2est==0); length(sel.tmp) ## exhaustive when equal 0
 
 
 
@@ -1599,7 +1630,7 @@ tmp -> sh.w[, grep("^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", c
 ## compute nm.hat and empty in nm ##
 ####################################
 tmp.nm <- sh.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))] *
-          sh.w[, grep("^p18e_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(sh.w))]
+          sh.w[, grep("^p18e_(94|97|00|03|06|09|12|15|18|21)", colnames(sh.w))]
 tmp.nm <- round(tmp.nm, 1)
 tmp.nm[r.w$inegi==1004,]
 tmp.nm -> nm.w[, grep( "^p18_(1994|1997|2000|2003|2006|2009|2012|2015|2018|2021)", colnames(nm.w))]
@@ -1638,6 +1669,7 @@ rm(fun.tmp, sel.tmp, tmp, tmp3, tmp4, tmp.cen, tmp.ine, tmp.nm) # clean
 
 #####################################################################
 ## Generate projection objects aggregated at municipal map levels. ##
+## For comparidon with saved municipio projections.                ##
 ## Drops pre-alta and post-baja secciones from mu sums.            ##
 #####################################################################
 ##
@@ -1649,47 +1681,54 @@ sel.r <- which(is.na(cen.w$baja)==FALSE)
 table(cen.w$baja[sel.r])
 ## wrap routine in function CHANGE THIS: USE drestore
 pre.alta.post.baja.to.zero <- function(){
-    sel.r <- which(      cen.w$alta >= 1995)
+    sel.r <- which(      cen.w$alta > 1994)
     ##cen.w$p18_1991[sel.r] <- 0
     cen.w$p18_1994[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 1998)
+    sel.r <- which(      cen.w$alta > 1997)
     cen.w$p18_1997[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2002)
+    sel.r <- which(      cen.w$alta > 2000)
     cen.w$p18_2000[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2004)
+    sel.r <- which(      cen.w$alta > 2003)
     cen.w$p18_2003[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2007)
+    sel.r <- which(      cen.w$alta > 2006)
     cen.w$p18_2005[sel.r] <- 0
     cen.w$p18_2006[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2010)
+    sel.r <- which(      cen.w$alta > 2009)
     cen.w$p18_2009[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2011)
+    sel.r <- which(      cen.w$alta > 2010)
     cen.w$p18_2010[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2013)
+    sel.r <- which(      cen.w$alta > 2012)
     cen.w$p18_2012[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2016)
+    sel.r <- which(      cen.w$alta > 2015)
     cen.w$p18_2015[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2019)
+    sel.r <- which(      cen.w$alta > 2018)
     cen.w$p18_2018[sel.r] <- 0
-    sel.r <- which(      cen.w$alta >= 2022)
+    sel.r <- which(      cen.w$alta > 2020)
     cen.w$p18_2020[sel.r] <- 0
+    sel.r <- which(      cen.w$alta > 2021)
     cen.w$p18_2021[sel.r] <- 0
     ##
-    sel.r <- which(      cen.w$baja <= 2020)
-    cen.w$p18_2020[sel.r] <- 0
+    sel.r <- which(      cen.w$baja <= 2021)
     cen.w$p18_2021[sel.r] <- 0
+    cen.w$p18_2020[sel.r] <- 0
     sel.r <- which(      cen.w$baja <= 2018)
     cen.w$p18_2018[sel.r] <- 0
-    sel.r <- which(      cen.w$baja <= 2014)
+    sel.r <- which(      cen.w$baja <= 2015)
     cen.w$p18_2015[sel.r] <- 0
-    sel.r <- which(      cen.w$baja <= 2011)
+    sel.r <- which(      cen.w$baja <= 2012)
     cen.w$p18_2012[sel.r] <- 0
-    sel.r <- which(      cen.w$baja == 2008)
+    cen.w$p18_2010[sel.r] <- 0
+    sel.r <- which(      cen.w$baja <= 2009)
     cen.w$p18_2009[sel.r] <- 0
-    sel.r <- which(      cen.w$baja == 2005)
+    sel.r <- which(      cen.w$baja <= 2006)
     cen.w$p18_2006[sel.r] <- 0
-    sel.r <- which(      cen.w$baja == 2002)
+    cen.w$p18_2005[sel.r] <- 0
+    sel.r <- which(      cen.w$baja <= 2003)
     cen.w$p18_2003[sel.r] <- 0
+    sel.r <- which(      cen.w$baja <= 2000)
+    cen.w$p18_2000[sel.r] <- 0
+    sel.r <- which(      cen.w$baja <= 1997)
+    cen.w$p18_1997[sel.r] <- 0
     return(cen.w)
 }
 ##
