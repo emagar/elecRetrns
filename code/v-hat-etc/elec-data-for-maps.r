@@ -1424,10 +1424,10 @@ v21$inegi <- inegi2ife(v21$ife)
 v91s <- v91; v94s <- v94; v97s <- v97; v00s <- v00; v03s <- v03; v06s <- v06; v09s <- v09; v12s <- v12; v15s <- v15; v18s <- v18; v21s <- v21;
 rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 
-###############################################################
-## Script code/aggregates-mun-dis-from-sec.r produces        ##
-## municipio- and district-level vote and census aggregates  ##
-###############################################################
+########################################################
+## Script code/aggregates-mun-dis-from-sec.r produces ##
+## municipio- and district-level vote aggregates      ##
+########################################################
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 
 # save all to restore after manipulating district/munic aggregates
@@ -1439,6 +1439,7 @@ options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
 setwd(dd)
 load(file="../../datosBrutos/not-in-git/tmp-restore.RData")
+
 
 
 ##################################################################################

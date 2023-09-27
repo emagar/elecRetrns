@@ -10,7 +10,7 @@
 ## Author: Eric Magar                                               ##
 ## emagar at itam dot mx                                            ##
 ## Date: 22aug2023                                                  ##
-## Last modified:  5sep2023                                         ##
+## Last modified: 26sep2023                                         ##
 ######################################################################
 
 ## 1. Prep: sum.split <- function(d=censo, year.var=2020, rnd=1)
@@ -136,6 +136,8 @@ prj0520 <- function(x=NA,yr=NA){
 ## get census projection functions
 source("../../code/v-hat-etc/interpolate-census-functions.r")
 
+## MOVE TO EXPORT...
+##
 ## 4. Duplicate nm=censo, adding cols 1994:2021, m:2005-2010-2020, ddone=0, etc
 ##    nm = nominal quantities
 nm       <- censo
@@ -193,6 +195,8 @@ nm <- within(nm, {
 ##
 
 
+## MOVE TO EXPORT...
+##
 ##############################################################
 ## Cleaning block starts here                               ##
 ## OJO: Need to re-evaluate each sub-block of the block     ##
@@ -1085,6 +1089,8 @@ nm$dfirst[duplicated(nm$edon)==FALSE] <- 1
 table(nm$dfirst==1) # --> there should be 32 TRUE if all ok
 
 
+## MOVE TO EXPORT...
+##
 ##################################################################################
 ## Apply my_agg to generate state aggregates (nm[sel.r,]$m:2005-2010-2020),     ##
 ## will be used in projeection routine below.                                   ##
@@ -1107,6 +1113,8 @@ nm <- within(nm, {
     p18e_20 <- p18_2020;
 })
 
+## MOVE TO EXPORT...
+##
 ## Rules to code altas and bajas in eq and its source (tablaEquivalenciasSeccionalesDesde1994.csv):
 ## - if actualización cartografía in jan-mar 2001 then baja/alta <- 2001
 ## - if actualización cartografía in ago-dic 2002 then baja/alta <- 2003
@@ -1510,8 +1518,8 @@ dim(r.w)
 ##r.w <- r.w[1:1262,]
 ##
 ## Log-linear projection of 1994, retaining regressions to use for 1997-on
-tmp.regs <- vector(mode='list', length(nrow(r.w))) ## empty list
-tmp.regs <- interlog(what="p18", yr=1994, unit="s", frm="log(dv)~iv", census.data=r.w, digits=6)
+tmp.regs <- vector (mode='list', length(nrow(r.w))) ## empty list
+tmp.regs <- interlog (what="p18", yr=1994, unit="s", frm="log(dv)~iv", census.data=r.w, digits=6)
 ## tmp.e will receive all log-linear predictions
 tmp.e <- data.frame(seccion  = r.w$seccion,
                     p18_1994 = tmp.regs[[1]])
@@ -1999,6 +2007,17 @@ table(projm94[15,]==projm12[15,])
 table(projm94[15,]==projm15[15,])
 table(projm94[15,]==projm18[15,])
 table(projm94[15,]==projm21[15,])
+
+# save all to restore after manipulating district/munic aggregates
+save.image("../../datosBrutos/not-in-git/tmp-restore-post-interp.RData")
+
+# load image
+rm(list=ls())
+options(width = 110)
+dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
+setwd(dd)
+load(file="../../datosBrutos/not-in-git/tmp-restore-post-interp.RData")
+
 x
 
 ## now paste to v..m objects
