@@ -892,7 +892,7 @@ nm.w$dskip <- 1      # indicate skip
 nm.w -> nm [sel.tmp,] # return to data
 rm(sel.tmp)
 ##
-## These secciones have odd zeroes in one census, arbitrarily add given other years' pops
+## These secciones have odd zeroes in one census: arbitrarily add given other years' pops
 sel.tmp <- which(nm$seccion==50153); nm$p18_2020[sel.tmp] <- 10
 sel.tmp <- which(nm$seccion==51468); nm$p18_2005[sel.tmp] <- 700
 sel.tmp <- which(nm$seccion==70385); nm$p18_2005[sel.tmp] <- 200
@@ -1080,6 +1080,7 @@ if (length(sel.tmp <- which(nm$dskip==0 & nm$dready2est==0) )==0) print("they're
 ## Block ends here ##
 #####################
 
+
 ########################################
 ## Indicate 1st seccion in each state ##
 ########################################
@@ -1166,10 +1167,12 @@ sel.c <- c("p18e_05", "p18e_10", "p18e_20")                  ## select state pop
 nm <- my_agg(d=nm, sel.c=sel.c, by="edon", drop.dupli=FALSE) ## and sum-up state secciones
 
 
-## ################################################################################################################
-## ## Used to verify that summing manipulated se-level censos returns nums much teh same as summing them here... ##
-## ## Bring mun pops from saved censos to convert sh.hats back into nm.hats                                      ##
-## ################################################################################################################
+## MOVE TO EXPORT...
+##
+## ########################################################################################################
+## ## Used to check if summing manipd se-level censos returns nums much the same as summing them here... ##
+## ## Bring mun pops from saved censos to convert sh.hats back into nm.hats                              ##
+## ########################################################################################################
 ## ## censoms have mu-level pops manipulated for remunicipalización
 ## tmp94 <- censom94
 ## tmp97 <- censom97
