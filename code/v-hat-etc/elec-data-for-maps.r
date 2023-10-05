@@ -958,6 +958,16 @@ rm(
     v21_split, v21_agg
 )
 
+# save for debug
+save.image("../../datosBrutos/not-in-git/tmp-debug.RData")
+
+# load image
+rm(list=ls())
+options(width = 110)
+dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
+setwd(dd)
+load(file="../../datosBrutos/not-in-git/tmp-debug.RData")
+
 ##############################################################################
 ## OJO: Script code/manip-dis1979-dis2018-to-assign-dropped-secciones.r     ##
 ## ran independently 12apr2023 to infer historic federal districts when     ##
