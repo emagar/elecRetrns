@@ -1357,9 +1357,10 @@ rm(tmp)
 ##
 ## aggregate state pops
 sel.c <- c("p18e_05", "p18e_10", "p18e_20") ## select state pop columns
+nm[1:2,]
 nm <- my_agg(d=nm, sel.c=sel.c, by="edon", drop.dupli=FALSE)                 ## and sum-up state secciones
 ##
-$$
+##
 ####################################################################################
 ## Subroutine aggregates municipios and distrito censuses from secciones.         ##
 ## Used to be part of code/aggregates-mun-dis-from-sec, but brought here because  ##
@@ -1818,7 +1819,6 @@ censom <- within(censom, {
 #########
 ## m00 ##
 #########
-ls()[grep("censo",ls())]
 ##censom00$ord <- 1:nrow(censom00) # to verify if order changes
 ##table(is.na(censom00$ife))
 censom00 <- merge(x=censom00, y=censom[,c("ife","p18_1990","p18_1995","p18_2000")], by = "ife", all.x = TRUE, all.y = FALSE)
@@ -1908,16 +1908,16 @@ censom18[is.na(censom18)] <- 0 # replace NAs with 0
 censom21[is.na(censom21)] <- 0 # replace NAs with 0
 
 ## ## Ojo: there is a mistake in my prep of counterfactual objects. Below are state aggregates of municipal p18s. Despite inter-municipio changes, that m.. are made to capture, the state population should remain constant across maps. I must be duplicating municipios or secciones. Must check asap, problem seems to be in interpolate-census-data-se-by-se.r
-my_agg(censom94, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom97, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom00, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom03, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom06, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom09, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom12, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom15, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom18, sel.c="p18_2020", by="edon")[1,10]
-my_agg(censom21, sel.c="p18_2020", by="edon")[1,10]
+my_agg(censom94, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom97, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom00, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom03, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom06, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom09, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom12, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom15, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom18, sel.c="p18_2020", by="edon")[2,10]
+my_agg(censom21, sel.c="p18_2020", by="edon")[2,10]
 ## edon   object p18_2020     dif
 ##    2 censom94  1940964      --
 ##    2 censom97  1943928    2964  
@@ -2918,7 +2918,7 @@ censom94$p18_1990[sel.r] <- prj9500(censom94[sel.r,], 1990)
 censom94[sel.r,]
 dok[sel.r] <- 1 ## indicate cases ok
 ##
-rm(dok, sel.son, sel.parent, sel.ignore, sel.r, tmp) ## clean
+rm(dok, sel.son, sel.parent, sel.r, tmp) ## clean
 
 
 ###############################
