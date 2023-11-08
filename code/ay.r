@@ -879,6 +879,7 @@ ncol(dat[, colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in% drop.c)
 
 dat2 <- dat[-drop.r, -drop.c]
+dat2[1,]
 # subsets by yrs
 sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
 sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
@@ -952,7 +953,7 @@ dat.split$dhascoal <- rep(0, nrow(dat.split))
 for (i in 1:ncol(l)){
     dat.split$dhascoal[grep("-", l[,i])] <- 1
 }
-table(dat.split$dhascoal)
+table(dhascoal=dat.split$dhascoal)
 #
 # function manipulate cases by hand: select state-year function grants all joint votes to party reported first in label
 by.hand <- function(edo.cyc = NA){ # example: edo.cyc = "ags-12"
@@ -1120,7 +1121,6 @@ dat.split$ncand <- dat$ncand
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
             "date", "edon", "lisnom", "dextra") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
-ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
 dat.split2 <- dat.split[-drop.r, -drop.c]
@@ -1140,7 +1140,7 @@ length(sel6); length(sel6)*57 < 400000
 #6756*58
 
 # save full file
-write.csv(dat.split, file = "aymu1970-on.coalSplit2000s.csv", row.names = FALSE)
+write.csv(dat.split, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)
 
 
 # subset ~1970s

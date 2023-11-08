@@ -51,7 +51,7 @@ You are free to download and modify the data (see the LICENSE document for detai
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/, respectively), then the years included.
 
 So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio level since 1970.
-** Election returns for municipal offices
+** Municipal office election returns
 Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/. Two versions of municipal election returns are included: one with municipal votes aggregated by candidate, another aggregated by party (the script [[./code/ay.r][~code/ay.r~]] was used for these manipulations):
 # Ojo 2023-05-29: check status of CdMx in paragraph above.
 - [[./data/aymu1989-present.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = /ayuntamiento/ election returns, coalition votes aggregated by candidate.
@@ -63,7 +63,7 @@ Municipal election data updated to 2022. Other than in the state of Nayarit sinc
     - ~*.coalAgg~ versions: [[https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy][1970s]] [[https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy][1990s]] [[https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy][2000s]] [[https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy][2010s]] [[https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy][2020s]] [[https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/copy][Nayarit]]
     - ~*.coalSplit~ versions : [[https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/copy][1970s]] [[https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy][1980s]] [[https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/copy][1990s]] [[https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/copy][2000s]] [[https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/copy][2010s]] [[https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/copy][2020s]] [[https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy][Nayarit]]
     - ~incumbents~: [[https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy][Aguascalientes (1)--Nuevo León (19)]] [[https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy][Oaxaca (20)--Zacatecas (32)]]
-** Election returns for Congress
+** Congressional election returns
 Congressional election data updated to 2021. A mixed majority system is in place since 1979 for the chamber of deputies, since 1997 for the senate (Weldon 2001 describes the system well). 300 deputy seats are elected by plurality rule in single member districts. Two versions of federal deputy returns are included: one with district votes aggregated by candidate, another by party (the script [[./code/ay.r][~code/df.r~]] was used for these manipulations):
 
 *Citation for Congressional election data*: Eric Magar, Alejandro Trelles, Micah Altman, and Michael P. McDonald (2017) Components of partisan bias originating from single-member districts in multi-party systems: An application to Mexico, /Political Geography/ 57(1):1-12. 
@@ -107,7 +107,7 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Sección electoral |          | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      |
 [[top][<sub>Back to top</sub>]]
 * Codebook<<codebook>>
-Most variables are included in every file, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
+Most variables are included in all files, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
 - /edon/ = state number 1:32.
 - /edo/ = state abbreviation (may differ from commonly used abbreviations, eg. Chiapas is `cps', not `chis' so that sorting alphabetically preserves the order set by /edon/).
@@ -115,8 +115,8 @@ Most variables are included in every file, some appear in selected files only. P
 - /cab/ = cabecera, district's administrative center.
 - /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
 - /mun/ = municipality's name.
-- /emm/ = unit's identifying code (/edo/-electionCycle with /inegi/ appended for municipalities, /disn/ for districts, and so forth). Using /emm/ as sort criterion returns a state-unit-time ordering.
-- /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación number (used by Nayarit only).
+- /emm/ = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two digits for the election cycle (then a period) and the /inegi/ or the district identifier, depending on the level of observation. Using /emm/ as sort criterion returns a state-time-unit ordering.
+- /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación number (used for Nayarit municipal elections only).
 - /seccion/ = voting precinct (/sección electoral/) identifier = /edon/ * 10000 + precinct number.
 - /casilla/ = IFE/INE's polling booth identifier. Type B, C, E, and S booths are used, for /Básica/, /Contigua/, /Extraordinaria/, and /Especial/, respectively. See IFE's description [[https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf][here]].
 - /circ/ = secondary, proportional representation district (/circunscripción plurinominal/) the primary district belongs to. 
