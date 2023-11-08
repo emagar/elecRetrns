@@ -1,25 +1,25 @@
-- [Description of *Recent Mexican Election Vote Returns* repository<a id="org522bee4"></a>](#org8871ef9)
-- [Files in the repository and how to cite them](#org2645254)
-  - [File naming conventions](#org1cb66e9)
-  - [Election returns for municipal offices](#orgfe14345)
-  - [Election returns for Congress](#org284f01c)
-  - [Presidential election returns](#org08a7f8f)
-  - [Gubernatorial election returns](#orgdbdd543)
-  - [Other](#orgaa90f24)
-- [Historical party performance statistics](#orgdc871bf)
-  - [Backwards predictions](#org4c435c2)
-- [Codebook<a id="org6f737cb"></a>](#org05ccffe)
-  - [Unit IDs](#orgb159827)
-  - [Temporal IDs](#orgf0c0e8d)
-  - [Voting information](#org0d6ff88)
-  - [Historical performance](#orge0f8033)
-  - [Candidate IDs](#orge4662fd)
-  - [Other](#orga722ac1)
-- [Coding procedure for the incumbent's status<a id="orga21de5c"></a>](#org0f8e9ed)
-- [Procedimiento para codificar el estatus del ocupante<a id="org8f966a6"></a>](#org9c0684d)
-- [Basic instructions to inspect data online:<a id="org53193e3"></a>](#org2fa2973)
-- [Sources](#org2ce0c62)
-- [Acknowledgements](#org72c4ec0)
+- [Description of *Recent Mexican Election Vote Returns* repository<a id="orgb83664a"></a>](#orgc71001a)
+- [Files in the repository and how to cite them](#orgbeb0c3d)
+  - [File naming conventions](#org6395ca3)
+  - [Municipal office election returns](#orgff0cff6)
+  - [Congressional election returns](#orgc651818)
+  - [Presidential election returns](#org5d5a165)
+  - [Gubernatorial election returns](#org9cd8416)
+  - [Other](#orgcee10f1)
+- [Historical party performance statistics](#org505dd3c)
+  - [Backwards predictions](#org3544506)
+- [Codebook<a id="org1415e7c"></a>](#org2c6d161)
+  - [Unit IDs](#org6396d16)
+  - [Temporal IDs](#org22e29b4)
+  - [Voting information](#org2afd8df)
+  - [Historical performance](#orgbba1ff2)
+  - [Candidate IDs](#org27ca84a)
+  - [Other](#org455abd1)
+- [Coding procedure for the incumbent's status<a id="org97624ce"></a>](#orge6d5276)
+- [Procedimiento para codificar el estatus del ocupante<a id="orgad3248e"></a>](#org7bf203d)
+- [Basic instructions to inspect data online:<a id="orge6997f5"></a>](#org7c4abb3)
+- [Sources](#orgd52945b)
+- [Acknowledgements](#org8783584)
 
 Last revision: 2023-06-07
 
@@ -27,7 +27,7 @@ Last revision: 2023-06-07
 
 <h2> Recent news </h2>
 
-<sup><sub>2023-06-07</sub></sup> [**Codebook**](#org6f737cb) updated, with a printable flier.
+<sup><sub>2023-06-07</sub></sup> [**Codebook**](#org1415e7c) updated, with a printable flier.
 
 <sup><sub>2023-05-26</sub></sup> **v.hat and alpha regressions**, summaring each unit's electoral history, migrated from <https://github.com/emagar/mxDistritos>. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content.
 
@@ -40,9 +40,9 @@ Last revision: 2023-06-07
 ---
 
 
-<a id="org8871ef9"></a>
+<a id="orgc71001a"></a>
 
-# Description of *Recent Mexican Election Vote Returns* repository<a id="org522bee4"></a>
+# Description of *Recent Mexican Election Vote Returns* repository<a id="orgb83664a"></a>
 
 -   Author: Eric Magar
 -   Location <https://github.com/emagar/elecRetrns>
@@ -54,14 +54,14 @@ The repository contains voting data for recent Mexican elections for certain off
 *Important note:* older incarnations of this repository contain LFS (Large File System) files. Make sure to install [LFS](https://git-lfs.github.com/) in your machine before checking out older commits of the repository.
 
 
-<a id="org2645254"></a>
+<a id="orgbeb0c3d"></a>
 
 # Files in the repository and how to cite them
 
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, <https://github.com/emagar/elecReturns>.
 
 
-<a id="org1cb66e9"></a>
+<a id="org6395ca3"></a>
 
 ## File naming conventions
 
@@ -70,9 +70,9 @@ In general, file names identify the office elected (i.e., **df**, **se**, **pr**
 So, for example `aymu1970-on.csv` are *ayuntamiento* votes at the municipio level since 1970.
 
 
-<a id="orgfe14345"></a>
+<a id="orgff0cff6"></a>
 
-## Election returns for municipal offices
+## Municipal office election returns
 
 Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), *ayuntamientos* are elected in fused ballots for a *presidente municipal* and a fraction of the municipal council (*regidores* and *síndicos*). Nayarit elects these members of the municipal council in single-member plurality districts called *demarcaciones*. Two versions of municipal election returns are included: one with municipal votes aggregated by candidate, another aggregated by party (the script [`code/ay.r`](./code/ay.r) was used for these manipulations):
 
@@ -81,15 +81,15 @@ Municipal election data updated to 2022. Other than in the state of Nayarit sinc
 -   [`data/aymu1989-on.incumbents.csv`](./data/aymu1989-present.incumbents.csv) = names of elected municipal officers (*presidente municipal* only) since 1989. Includes reelection status since 2018.
 -   [`data/ayde2008-on-Nayarit-regid.coalAgg.csv`](./data/ayde2008-on-Nayarit-regid.coalAgg.csv) = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
 -   [`data/ayde2008-on-Nayarit-regid.coalSplit.csv`](./data/ayde2008-on-Nayarit-regid.coalSplit.csv) = Nayarit's municipal demarcaciones vote returns since 2008, coalition votes split among parties where source permits.
--   **Inspect the data above online** in Google sheets (basic instructions [here](#org53193e3); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#orge6997f5); data split by approximate decades or groups of states to comply with spreadsheet size limits (400k cells); files have identical columns to ease appending one another off Google drive):
     -   `*.coalAgg` versions: [1970s](https://docs.google.com/spreadsheets/d/10DjanWnuvGUqO8AFDb3yky8Pa7ciMhf_MbthCmKCloI/copy) [1980s](https://docs.google.com/spreadsheets/d/1hqAyWaewUKwA-CKgXgcg-p4aqPQxmuTbxmcKSQgjfDE/copy) [1990s](https://docs.google.com/spreadsheets/d/1nwEO4u4ddn4kGlHUM9dc-ueD6L7IXXkLNHRBDPrB9Nk/copy) [2000s](https://docs.google.com/spreadsheets/d/1WBmHm1yqgXO6qjj8czROZNcZNS_G82Z-UT0vtTxSVFI/copy) [2010s](https://docs.google.com/spreadsheets/d/1TgdTRdN5wqLPdV4j2CvvhvsXbFnMFMSho653XQHQsNs/copy) [2020s](https://docs.google.com/spreadsheets/d/1jXzjWBfQrpFTHahXDW9i3nyFL0bjYqSeIMwS-CGA3KQ/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1buoVi7UlVPoApm7nan-ixb3ts8Sraj_V86mK-3UeH3w/copy)
     -   `*.coalSplit` versions : [1970s](https://docs.google.com/spreadsheets/d/10xIcX83xTi-YI1PmdmdpTGpItBtwndOZILZZugdMpVo/copy) [1980s](https://docs.google.com/spreadsheets/d/1yqCFBtr8Z2sCya7CT9LMPifU_kA4wlqSTLjrW-KiALc/copy) [1990s](https://docs.google.com/spreadsheets/d/1rE5KHwvuVglV0rLI70P4PgtOmWSiUGtS92G4QbN4zz0/copy) [2000s](https://docs.google.com/spreadsheets/d/1GgG7SSeJptJ-uGmIgBck3mniL2HR1gn6efebBMlEpXQ/copy) [2010s](https://docs.google.com/spreadsheets/d/1nKyNzZuLyDWxqIfC6MiRDmvzligGQ2v_YrqppcEVa1Q/copy) [2020s](https://docs.google.com/spreadsheets/d/1xg9GvjPzOq7TxxkkebMGuOBz50WU_RVEaadLsIWRWHU/copy) [Nayarit](https://docs.google.com/spreadsheets/d/1C2OvOsSBaOqMOj1KEV6F2dgq0fGBwLJJYSnvBKpmTkM/copy)
     -   `incumbents`: [Aguascalientes (1)&#x2013;Nuevo León (19)](https://docs.google.com/spreadsheets/d/1lgJJ2f8O_MHe18q3OekRylgxOXpKGrcm6ABQPVhmlf4/copy) [Oaxaca (20)&#x2013;Zacatecas (32)](https://docs.google.com/spreadsheets/d/1ZabVHORN0uOU8AX7bZGiQY1JEhncG6SodLfn6DXW4zQ/copy)
 
 
-<a id="org284f01c"></a>
+<a id="orgc651818"></a>
 
-## Election returns for Congress
+## Congressional election returns
 
 Congressional election data updated to 2021. A mixed majority system is in place since 1979 for the chamber of deputies, since 1997 for the senate (Weldon 2001 describes the system well). 300 deputy seats are elected by plurality rule in single member districts. Two versions of federal deputy returns are included: one with district votes aggregated by candidate, another by party (the script [`code/df.r`](./code/ay.r) was used for these manipulations):
 
@@ -100,13 +100,13 @@ Congressional election data updated to 2021. A mixed majority system is in place
 -   [`data/dfdf1997-on.incumbents.csv`](./data/dfdf1979-on.coalSplit.csv) = names of elected federal deputies (SMD tier only) since 1997. Includes reelection status since 2021.
 -   [`data/dfdf2006-on-candidates.csv`](./data/dfdf2006-on-candidates.csv) = names of all federal deputy candidates in districts and party lists since 2006.
 -   [`data/seed2012-on.candidates.csv`](./data/seed2012-on.candidates.csv) = names of all senatorial candidates in states and party lists since 2012.
--   **Inspect the data above online** in Google sheets (basic instructions [here](#org53193e3)):
+-   **Inspect the data above online** in Google sheets (basic instructions [here](#orge6997f5)):
     -   [`coalAgg`](https://docs.google.com/spreadsheets/d/1cUfi1BlpVVeBKo-vI2lbQAwtUGpGFlGAqcdHZ01BtRo/copy) version
     -   [`coalSplit`](https://docs.google.com/spreadsheets/d/1c57io0aooj54elYxw2Ya0QO1_tRWd-QWadKYCLU3CiA/copy) version
     -   [`incumbents`](https://docs.google.com/spreadsheets/d/1r6BER0cmm4MNwNiy7ZdAwALzQn9QiEGg_9TfALumbPU/copy)
 
 
-<a id="org08a7f8f"></a>
+<a id="org5d5a165"></a>
 
 ## Presidential election returns
 
@@ -118,7 +118,7 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 -   [`data/pred1964-on.csv`](./data/pred1964-on.csv)
 
 
-<a id="orgdbdd543"></a>
+<a id="org9cd8416"></a>
 
 ## Gubernatorial election returns
 
@@ -128,17 +128,17 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 -   [`data/goed1985-on.incumbents.csv`](./data/goed1985-on.incumbents.csv) = elected governors since 1985, updated to 2019.
 
 
-<a id="orgaa90f24"></a>
+<a id="orgcee10f1"></a>
 
 ## Other
 
 -   [`code/extract-state-yr-mu-returns.r`](./code/extract-state-yr-mu-returns.r) = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each.
 -   [`datosBrutos/`](./datosBrutos/) = directory containing selected primary sources. Files for state elections were kept out from the repository due to sizes exceeding github's limit&#x2026; [e-mail me](mailto:emagar@itam.mx) if you need any of these.
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="orgdc871bf"></a>
+<a id="org505dd3c"></a>
 
 # Historical party performance statistics
 
@@ -151,7 +151,7 @@ Measures of recent electoral history, that [this blog entry](https://emagar.gith
 | Sección electoral | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2009.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2012.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2015.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2018.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2021.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-2024.csv)                                                                                                    |
 
 
-<a id="org4c435c2"></a>
+<a id="org3544506"></a>
 
 ## Backwards predictions
 
@@ -163,17 +163,17 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Municipio         | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv) [view](https://docs.google.com/spreadsheets/d/1kKC6rnp9rgXTv6aEQSvvGT9NY5J3J6D1UtNiJOwEJgo/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv) [view](https://docs.google.com/spreadsheets/d/1JrjGS1pZ0CrDcjFd23RUTMdosOwWce568ra2E1pQxu4/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv) [view](https://docs.google.com/spreadsheets/d/1Y01BdrOr15ei2pDeGrXtTEz6nqP6IS-USvoiZLoXWqk/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-19.csv) [view](https://docs.google.com/spreadsheets/d/1ulwgVYCbgQeC_5FuXCYkilP6yfpPc69NR_gZpXf6QEM/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv) [view](https://docs.google.com/spreadsheets/d/1M90-ZuW3SRnqxfRjboeWWvU2wt-YPnlp7nT4n7fM6zI/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv) [view](https://docs.google.com/spreadsheets/d/1ky0Eris0cU3OaEA35kQPhjEsR_kxilWnx-iEun8D06M/copy) | [csv](./data/v-hats-etc/mun/dipfed-municipio-vhat-20.csv) [view](https://docs.google.com/spreadsheets/d/1HfzYxOxRcFfVgJivvX7nYeaiMbILM7ePAGSbL_jcv74/copy) |
 | Sección electoral |                                                                                                                                                            | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    | [csv](./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv)                                                                                                    |
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="org05ccffe"></a>
+<a id="org2c6d161"></a>
 
-# Codebook<a id="org6f737cb"></a>
+# Codebook<a id="org1415e7c"></a>
 
-Most variables are included in every file, some appear in selected files only. Printable version [here](./codebook-flier.pdf).
+Most variables are included in all files, some appear in selected files only. Printable version [here](./codebook-flier.pdf).
 
 
-<a id="orgb159827"></a>
+<a id="org6396d16"></a>
 
 ## Unit IDs
 
@@ -183,15 +183,15 @@ Most variables are included in every file, some appear in selected files only. P
 -   *cab* = cabecera, district's administrative center.
 -   *inegi*, *ife* = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
 -   *mun* = municipality's name.
--   *emm* = unit's identifying code (*edo*-electionCycle with *inegi* appended for municipalities, *disn* for districts, and so forth). Using *emm* as sort criterion returns a state-unit-time ordering.
--   *demar* = demarcación identifier = *inegi* + 1/100 demarcación number (used by Nayarit only).
--   *seccion* = voting precinct (*sección electoral*) identifier = *edon* \* 10000 + precinct number.
+-   *emm* = unit's identifying code. It concatenates the state's *edo* abbreviation (then a hyphen) two sequential digits for the election cycle (then a period) and the *inegi* or district identifier, depending on the level of observation. Using *emm* as sort criterion returns a state-time-unit ordering.
+-   *demar* = demarcación identifier = *inegi* + 1/100 demarcación number (used for Nayarit municipal elections only).
+-   *seccion* = voting precinct identifier = *edon* \* 10000 + sección electoral number (as set by IFE/INE).
 -   *casilla* = IFE/INE's polling booth identifier. Type B, C, E, and S booths are used, for *Básica*, *Contigua*, *Extraordinaria*, and *Especial*, respectively. See IFE's description [here](https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf).
--   *circ* = secondary, proportional representation district (*circunscripción plurinominal*) the primary district belongs to.
--   *latitude*, *longitude* = coordinates indicating a polling booths's north&#x2013;south and east&#x2013;west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections.
+-   *circ* = secondary, proportional representation district (*circunscripción plurinominal*) to which the primary district belongs to.
+-   *latitude*, *longitude* = coordinates indicating a polling booths's north&#x2013;south and east&#x2013;west position in a map. Available for federal casilla-level returns in the 2006, 2009, 2015, and 2018 elections.
 
 
-<a id="orgf0c0e8d"></a>
+<a id="org22e29b4"></a>
 
 ## Temporal IDs
 
@@ -201,7 +201,7 @@ Most variables are included in every file, some appear in selected files only. P
 -   *danul* = dummy equal 1 for voided elections, 0 otherwise.
 
 
-<a id="org0d6ff88"></a>
+<a id="org2afd8df"></a>
 
 ## Voting information
 
@@ -222,7 +222,7 @@ Most variables are included in every file, some appear in selected files only. P
 -   *dfake* = indicates fake data for hegemonic era elections in 1960s for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
 
 
-<a id="orge0f8033"></a>
+<a id="orgbba1ff2"></a>
 
 ## Historical performance
 
@@ -234,7 +234,7 @@ Most variables are included in every file, some appear in selected files only. P
 -   *dbackward* = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise.
 
 
-<a id="orge4662fd"></a>
+<a id="org27ca84a"></a>
 
 ## Candidate IDs
 
@@ -244,7 +244,7 @@ Most variables are included in every file, some appear in selected files only. P
 -   *part.2nd* = runner-up party or coalition.
 -   *mg* = winner's margin = winner's vote share minus runner-up's vote share.
 -   *dmujer* = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise.
--   *race.after* = incumbent's status in the next consecutive race. See [this](#orga21de5c) for categories and coding procedure ([aquí](#org8f966a6) la versión en castellano del procedimiento codificador).
+-   *race.after* = incumbent's status in the next consecutive race. See [this](#org97624ce) for categories and coding procedure ([aquí](#orgad3248e) la versión en castellano del procedimiento codificador).
 -   *dreran* = dummy equal 1 if incumbent ran again in the next consecutive race for the same office.
 -   *dreelected* = dummy equal 1 if incumbent won the next consecutive race for the same office.
 -   *dcarta* = dummy equal 1 if member of Congress filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018. See [this](http://eleccionconsecutiva.diputados.gob.mx/contendientes).
@@ -253,19 +253,19 @@ Most variables are included in every file, some appear in selected files only. P
 -   *ddied* = dummy equal 1 if incumbent died in office, 0 otherwise.
 
 
-<a id="orga722ac1"></a>
+<a id="org455abd1"></a>
 
 ## Other
 
 -   *nota* = observations possibly relevant for analysis.
 -   *fuente*, *source* = sources.
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="org0f8e9ed"></a>
+<a id="orge6d5276"></a>
 
-# Coding procedure for the incumbent's status<a id="orga21de5c"></a>
+# Coding procedure for the incumbent's status<a id="org97624ce"></a>
 
 In files `data/aymu1985-on.incumbents.csv` and `data/dfdf1997-on.incumbents.csv`, variable *race.after* reports what occured at the end of the incumbent's term. It takes one of the following categories:
 
@@ -283,12 +283,12 @@ In categories other than the first two above, a suffix may be present:
 -   Suffix '-p-lost' indicates that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition).
 -   Suffix '-p-won' indicates that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="org9c0684d"></a>
+<a id="org7bf203d"></a>
 
-# Procedimiento para codificar el estatus del ocupante<a id="org8f966a6"></a>
+# Procedimiento para codificar el estatus del ocupante<a id="orgad3248e"></a>
 
 En el archivo `data/aymu1985-on.incumbents.csv`, la variable *race.after* indica el estatus del ocupante en la elección subsecuente. El estatus puede ser una de las categorías siguientes:
 
@@ -306,12 +306,12 @@ En las categorías 3 en adelante, un sufijo puede estar presente:
 -   El sufijo '-p-lost' indica que el partido perdió la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que ninguno de esos partidos ganó o fue parte de la coalición ganadora).
 -   El sufijo '-p-won' indica que el partido ganó la elección subsecuente (o, para ocupantes electos por una coalición multi-partidista, que uno de esos partidos ganó o que por lo menos uno fue parte de la coalición ganadora).
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="org2fa2973"></a>
+<a id="org7c4abb3"></a>
 
-# Basic instructions to inspect data online:<a id="org53193e3"></a>
+# Basic instructions to inspect data online:<a id="orge6997f5"></a>
 
 You can open election returns in online spreadsheet form.
 
@@ -319,10 +319,10 @@ a. To use this feature, you must first log into a Google account. Then click the
 
 b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a subset of the observations only), or save the file to your hard drive, you must unlink the data from the repository. To do this type CTRL+A (ie., select all) then CTRL+SHIFT+V (ie., paste values only).
 
-c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change. [<sub>Back to top</sub>](#org522bee4)
+c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change. [<sub>Back to top</sub>](#orgb83664a)
 
 
-<a id="org2ce0c62"></a>
+<a id="orgd52945b"></a>
 
 # Sources
 
@@ -337,7 +337,7 @@ Work in progress
 -   *Fuente* = voz y voto
 
 
-<a id="org72c4ec0"></a>
+<a id="org8783584"></a>
 
 # Acknowledgements
 
@@ -357,4 +357,4 @@ Many students over the years have provided research assistance to retrieve and s
 -   Sonia Kuri Kosegarten
 -   Vidal Mendoza Tinoco
 
-[<sub>Back to top</sub>](#org522bee4)
+[<sub>Back to top</sub>](#orgb83664a)
