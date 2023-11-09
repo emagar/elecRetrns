@@ -118,8 +118,8 @@ Most variables are included in all files, some appear in selected files only. Pr
 - /emm/ = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the election cycle (then a period) and the /inegi/ or district identifier, depending on the level of observation. Using /emm/ as sort criterion returns a state-time-unit ordering.
 - /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación number (used for Nayarit municipal elections only).
 - /seccion/ = voting precinct identifier = /edon/ * 10000 + sección electoral number (as set by IFE/INE).
-- /casilla/ = IFE/INE's polling booth identifier. Type B, C, E, and S booths are used, for /Básica/, /Contigua/, /Extraordinaria/, and /Especial/, respectively. See IFE's description [[https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf][here]].
-- /circ/ = secondary, proportional representation district (/circunscripción plurinominal/) to which the primary district belongs to. 
+- /casilla/ = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for /Básica/, C for /Contigua/, E for /Extraordinaria/, and S for /Especial/. See IFE's own description [[https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf][here]].
+- /circ/ = secondary, proportional representation congressional district (/circunscripción plurinominal/) to which the primary congressional district belongs to. 
 - /latitude/, /longitude/ = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 ** Temporal IDs
 - /yr/, /mo/, /dy/ = year, month, day of the election. 

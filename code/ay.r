@@ -852,6 +852,9 @@ rm(pth)
 colnames(dat)
 dat <- dat[moveme(names(dat), "efec before nr")]
 
+## Drop ord, dcoal for saving
+dat$ord <- dat$dcoal <- NULL
+
 #########################################################
 ## ################################################### ##
 ## ## Export a coalAgg version of votes returns to  ## ##
@@ -1122,6 +1125,7 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
             "date", "edon", "lisnom", "dextra") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
+
 
 dat.split2 <- dat.split[-drop.r, -drop.c]
 # subsets by yrs
