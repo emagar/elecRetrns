@@ -488,9 +488,6 @@ tmp.vw2 <- w2[sel7] # will receive manipulated votes
 max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
 
-# debug
-#i <- which(dat$ord[sel7]==847)
-
 for (i in 1:length(sel7)){
     #i <- 50 # debug
     #tmp.l[i,] # debug
@@ -867,7 +864,7 @@ dat$dextra <- 0
 dat$dextra[grep("extra", dat$status)] <- 1
 table(dat$dextra)
 
-# drop these obs for analysis
+# drop these obs from analysis
 table(dat$status)
 drop.r <- which(dat$status %in% c("voided",
                                     "missing--keepHistory",
@@ -1180,9 +1177,6 @@ dat.i <- read.csv(file = "aymu1989-on.incumbents.csv", stringsAsFactors = FALSE)
 median(dat.i$edon)
 write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
 write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
-
-
-x
 
 
 
