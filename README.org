@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar
-Last revision: 2023-06-07
+Last revision: 2023-11-09
 
 ----------
 
@@ -130,8 +130,8 @@ Most variables are included in all files, some appear in selected files only. Pr
 - /v01/, /v02/, ... = raw vote for candidate 1, 2, etc.
 - /l01/, /l02/, ... = label of candidate 1's, 2's, ... party or coalition.
 - /c01/, /c02/, ... = candidate 1's, 2's, ... name.
-- /efec/ = effective votes, equal the total raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator for vote shares.
-- /lisnom/ = eligible voters (/lista nominal/).
+- /efec/ = effective vote total, the sum of raw votes minus votes for write-in candidates minus invalid ballots. It is the denominator to compute vote shares.
+- /lisnom/ = unit's total eligible voters (/lista nominal/).
 - /nr/ = votes for write-in candidates (/candidatos no registrados/, void in Mexican election law).
 - /nul/, /nulos/ = invalid ballots (/votos nulos/).
 - /tot/ = total raw votes.

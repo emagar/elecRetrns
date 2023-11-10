@@ -1,0 +1,107 @@
+dis,munn,mun,pan,a,pri,b,prd,c,pt,d,pvem,e,conve,f,pas,g,py,h,pay,I,coal,l,nr,nul,tot
+13,1,ABALA,1529,pan,1289,pri,0,prd,1,pt,3,pvem,2,conve,2,pas,5,py,,,,,0,89,2920
+14,2,ACANCEH,2476,pan,3016,pri,7,prd,5,pt,2,pvem,15,conve,,,,,2,pay,,,0,202,5725
+12,3,AKIL,1216,pan,1896,pri,370,prd,10,pt,,,,,2,pas,3,py,2,pay,,,1,113,3613
+9,4,BACA,909,pan,1330,pri,0,prd,14,pt,1,pvem,1,conve,,,294,py,,,1,pan-prd,0,66,2615
+9,5,BOKOBA,487,pan,673,pri,1,prd,,,,,,,,,,,1,pay,1,pan-prd,0,16,1178
+10,6,BUCTZOTZ,1492,pan,2345,pri,9,prd,1,pt,,,,,1,pas,1,py,3,pay,1,pan-prd,0,89,3941
+9,7,CACALCHEN,208,pan,1176,pri,82,prd,304,pt,1315,pvem,,,,,,,,,,,0,52,3137
+10,8,CALOTMUL,430,pan,1220,pri,273,prd,3,pt,,,,,,,2,py,1,pay,1,pan-prd,0,49,1978
+9,9,CANSAHCAB,1265,pan,1022,pri,172,prd,1,pt,2,pvem,,,,,1,py,3,pay,,,4,45,2515
+12,10,CANTAMAYEC,440,pan,516,pri,1,prd,,,1,pvem,,,1,pas,,,2,pay,,,0,5,966
+7,11,CELESTUN,954,pan,1560,pri,3,prd,,,,,,,,,,,,,1,pan-prd,0,98,2615
+15,12,CENOTILLO,958,pan,887,pri,2,prd,1,pt,,,1,conve,2,pas,1,py,2,pay,1,pan-prd,0,76,1930
+8,13,CONKAL,976,pan,2035,pri,55,prd,6,pt,,,1,conve,1,pas,,,,,,,2,85,3161
+11,13,CUNCUNUL,345,pan,373,pri,1,prd,,,,,,,,,1,py,1,pay,,,0,19,740
+14,15,CUZAMA,931,pan,1003,pri,3,prd,3,pt,1,pvem,,,1,pas,4,py,,,,,1,62,2009
+12,16,CHACSINKIN,538,pan,546,pri,0,prd,,,,,,,,,,,,,,,0,24,1108
+11,17,CHANKOM,711,pan,1222,pri,33,prd,,,1,pvem,,,1,pas,6,py,,,,,2,43,2019
+13,18,CHAPAB,185,pan,711,pri,695,prd,1,pt,,,,,,,,,7,pay,,,0,50,1649
+11,19,CHEMAX,3027,pan,2888,pri,828,prd,11,pt,1,pvem,5,conve,11,pas,1919,py,24,pay,,,0,334,9048
+8,20,CHICXULUB PUEBLO,835,pan,914,pri,0,prd,,,,,,,,,,,,,,,0,31,1780
+11,21,CHICHIMILA,1498,pan,1223,pri,44,prd,1,pt,1,pvem,4,conve,2,pas,2,py,5,pay,,,0,59,2839
+11,22,CHIKINDZONOT,789,pan,944,pri,6,prd,1,pt,,,,,,,1,py,1,pay,,,0,20,1762
+7,23,CHOCHOLA,819,pan,1113,pri,3,prd,6,pt,1,pvem,1,conve,1,pas,2,py,,,1,pan-prd,0,122,2068
+12,24,CHUMAYEL,459,pan,519,pri,0,prd,2,pt,1,pvem,3,conve,1,pas,460,py,,,1,pan-prd,0,70,1515
+13,25,DZAN,1051,pan,967,pri,0,prd,,,,,,,,,,,,,1,pan-prd,0,15,2033
+8,26,DZEMUL,217,pan,1115,pri,490,prd,7,pt,3,pvem,,,1,pas,3,py,,,1,pan-prd,0,90,1926
+9,27,DZIDZANTUN,1148,pan,2317,pri,67,prd,3,pt,1,pvem,1,conve,1,pas,228,py,1,pay,,,5,71,3843
+9,28,DZILAM BRAVO,349,pan,541,pri,0,prd,,,,,,,,,384,py,,,1,pan-prd,0,34,1308
+9,29,DZILAM GONZALEZ,952,pan,1967,pri,2,prd,5,pt,1,pvem,1,conve,2,pas,2,py,2,pay,1,pan-prd,0,64,2998
+11,30,DZITAS,486,pan,924,pri,2,prd,1,pt,1,pvem,1,conve,1,pas,89,py,1,pay,,,0,34,1540
+15,31,DZONCAUICH,589,pan,951,pri,0,prd,,,,,,,,,1,py,,,1,pan-prd,0,24,1565
+10,32,ESPITA,2772,pan,2328,pri,21,prd,1,pt,,,1,conve,2,pas,1,py,2,pay,1,pan-prd,0,146,5274
+13,33,HALACHO,625,pan,3800,pri,3692,prd,16,pt,1,pvem,3,conve,6,pas,5,py,1,pay,,,21,355,8525
+14,34,HOCABA,165,pan,1215,pri,961,prd,25,pt,,,4,conve,1,pas,1,py,1,pay,1,pan-prd,6,160,2539
+15,35,HOCTUN,1313,pan,1292,pri,6,prd,3,pt,3,pvem,,,1,pas,6,py,4,pay,,,1,83,2712
+14,36,HOMUN,1543,pan,1508,pri,52,prd,2,pt,1,pvem,1,conve,,,1,py,2,pay,,,0,86,3196
+14,37,HUHI,714,pan,776,pri,1,prd,470,pt,,,,,,,2,py,,,,,0,58,2021
+8,38,HUNUCMA,3473,pan,4729,pri,83,prd,1685,pt,15,pvem,37,conve,7,pas,8,py,2,pay,,,3,415,10457
+8,39,IXIL,381,pan,1018,pri,1,prd,1,pt,2,pvem,,,,,18,py,2,pay,,,0,56,1479
+15,40,IZAMAL*,3154,pan,5390,pri,1283,prd,15,pt,39,pvem,8,conve,4,pas,11,py,4,pay,,,0,219,10127
+14,41,KANASIN,6097,pan,6394,pri,89,prd,42,pt,35,pvem,31,conve,20,pas,250,py,64,pay,1,pan-prd,2,431,13455
+15,42,KANTUNIL,522,pan,772,pri,3,prd,12,pt,2,pvem,5,conve,3,pas,683,py,4,pay,,,0,147,2153
+11,43,KAUA,423,pan,700,pri,0,prd,,,,,,,,,,,,,,,0,18,1141
+7,44,KINCHIL,918,pan,1316,pri,160,prd,5,pt,1,pvem,14,conve,6,pas,2,py,5,pay,,,0,61,2488
+7,45,KOPOMA,279,pan,732,pri,1,prd,2,pt,,,,,,,1,py,2,pay,1,pan-prd,0,20,1037
+13,46,MAMA,726,pan,647,pri,14,prd,2,pt,1,pvem,1,conve,,,2,py,,,1,pan-prd,4,21,1418
+13,47,MANI,612,pan,886,pri,1,prd,3,pt,1,pvem,2,conve,,,585,py,4,pay,1,pan-prd,0,56,2150
+13,48,MAXCANU,1585,pan,4520,pri,1848,prd,11,pt,9,pvem,,,,,8,py,2,pay,,,1,259,8243
+12,49,MAYAPAN,720,pan,515,pri,0,prd,,,,,,,,,,,,,1,pan-prd,0,14,1249
+1-6,50,MERIDA*,144988,pan,113558,pri,2304,prd,1505,pt,1952,pvem,2738,conve,143,pas,332,py,369,pay,1,pan-prd,69,5808,273766
+8,51,MOCOCHA,710,pan,862,pri,1,prd,1,pt,,,,,,,,,,,,,2,39,1615
+9,52,MOTUL*,5617,pan,4901,pri,78,prd,947,pt,25,pvem,851,conve,6,pas,8,py,11,pay,1,pan-prd,0,356,12800
+13,53,MUNA,1409,pan,2047,pri,1162,prd,2,pt,243,pvem,1,conve,,,,,,,,,0,101,4965
+9,54,MUXUPIP,491,pan,863,pri,1,prd,,,,,,,,,,,1,pay,1,pan-prd,0,22,1378
+13,55,OPICHEN,298,pan,1157,pri,574,prd,,,,,,,,,,,,,1,pan-prd,7,129,2165
+12,56,OXKUTZCAB,3556,pan,4909,pri,70,prd,7,pt,3,pvem,1,conve,2,pas,9,py,5,pay,,,1,236,8799
+10,57,PANABA,992,pan,1597,pri,778,prd,,,,,,,,,,,,,,,0,0,3367
+12,58,PETO,3764,pan,3415,pri,15,prd,11,pt,4,pvem,,,21,pas,9,py,,,1,pan-prd,0,237,7476
+8,59,PROGRESO*,7742,pan,10882,pri,50,prd,106,pt,32,pvem,253,conve,10,pas,21,py,6,pay,1,pan-prd,3,427,19532
+10,60,QUINTANA ROO,120,pan,251,pri,218,prd,,,,,,,,,,,,,1,pan-prd,0,10,599
+10,61,RIO LAGARTOS,483,pan,968,pri,9,prd,2,pt,1,pvem,,,,,2,py,,,1,pan-prd,1,30,1496
+14,62,SACALUM,541,pan,1340,pri,43,prd,4,pt,2,pvem,,,,,2,py,6,pay,,,0,39,1977
+7,63,SAMAHIL,1068,pan,1056,pri,0,prd,1,pt,,,1,conve,5,pas,,,,,,,0,19,2150
+14,64,SANAHCAT,111,pan,406,pri,4,prd,322,pt,,,,,,,,,,,1,pan-prd,0,26,869
+10,65,SAN FELIPE,548,pan,436,pri,0,prd,,,,,,,,,,,,,1,pan-prd,0,10,994
+13,66,SANTA ELENA,746,pan,793,pri,0,prd,,,,,,,1,pas,,,1,pay,1,pan-prd,0,26,1567
+15,67,SEYE,1199,pan,1891,pri,1,prd,2,pt,2,pvem,4,conve,1,pas,219,py,454,pay,,,0,100,3873
+9,68,SINANCHE,685,pan,918,pri,1,prd,,,1,pvem,13,conve,,,2,py,21,pay,,,0,27,1668
+15,69,SOTUTA,1037,pan,1536,pri,1,prd,4,pt,3,pvem,6,conve,5,pas,4,py,251,pay,,,0,89,2936
+10,70,SUCILA,780,pan,1025,pri,1,prd,,,,,,,,,,,,,,,0,73,1879
+15,71,SUDZAL,373,pan,402,pri,0,prd,,,,,,,,,,,,,1,pan-prd,0,0,775
+9,72,SUMA DE HIDALGO,291,pan,707,pri,0,prd,1,pt,1,pvem,1,conve,25,pas,,,1,pay,,,0,14,1041
+12,73,TAHDZIU,87,pan,552,pri,367,prd,2,pt,74,pvem,,,,,,,1,pay,1,pan-prd,0,101,1184
+15,74,TAHMEK,476,pan,812,pri,703,prd,3,pt,,,1,conve,,,,,,,,,0,56,2051
+12,75,TEABO,1213,pan,982,pri,1,prd,2,pt,,,,,,,,,24,pay,,,0,95,2317
+14,76,TECOH*,449,pan,3287,pri,27,prd,26,pt,9,pvem,11,conve,3,pas,2326,py,8,pay,,,0,570,6716
+15,77,TEKAL DE VENEGAS,634,pan,613,pri,0,prd,,,,,,,,,,,,,1,pan-prd,0,13,1260
+9,78,TEKANTO,1222,pan,975,pri,1,prd,1,pt,,,3,conve,,,1,py,,,1,pan-prd,0,13,2216
+12,79,TEKAX*,6137,pan,6317,pri,508,prd,22,pt,26,pvem,4,conve,6,pas,11,py,4,pay,1,pan-pvem,5,324,13364
+14,80,TEKIT,2419,pan,1872,pri,2,prd,2,pt,1,pvem,,,1,pas,3,py,1,pay,,,0,86,4387
+11,81,TEKOM,336,pan,308,pri,4,prd,1,pt,,,,,,,2,py,,,,,0,7,658
+9,82,TELCHAC PUEBLO,802,pan,1114,pri,0,prd,2,pt,1,pvem,2,conve,1,pas,1,py,,,,,0,47,1970
+8,83,TELCHAC PUERTO,42,pan,488,pri,1,prd,1,pt,326,pvem,1,conve,,,,,,,1,pan-prd,0,24,883
+9,84,TEMAX,1331,pan,1940,pri,0,prd,,,,,,,,,3,py,8,pay,,,0,35,3317
+10,85,TEMOZON,2093,pan,2311,pri,966,prd,8,pt,5,pvem,2,conve,2,pas,9,py,12,pay,,,6,132,5546
+15,86,TEPAKAN,1120,pan,619,pri,392,prd,5,pt,1,pvem,,,,,,,,,1,pan-prd,0,28,2165
+8,87,TETIZ,1002,pan,817,pri,74,prd,4,pt,2,pvem,1,conve,1,pas,,,1,pay,,,0,19,1921
+9,88,TEYA,227,pan,692,pri,0,prd,,,,,,,2,pas,,,,,,,0,0,921
+13,89,TICUL*,6547,pan,6958,pri,594,prd,8,pt,9,pvem,3,conve,6,pas,13,py,6,pay,,,1,298,14443
+14,90,TIMUCUY,1053,pan,1591,pri,2,prd,1,pt,,,1,conve,,,2,py,1,pay,1,pan-prd,0,103,2754
+11,91,TINUM,1902,pan,1733,pri,47,prd,3,pt,2,pvem,,,2,pas,2,py,3,pay,,,0,136,3830
+11,92,TIXCACALCUPUL,600,pan,1650,pri,62,prd,2,pt,,,,,,,,,1,pay,,,0,40,2355
+15,93,TIXKOKOB,3080,pan,3149,pri,35,prd,6,pt,51,pvem,1244,conve,1,pas,5,py,5,pay,1,pan-prd,0,266,7842
+12,94,TIXMEHUAC,98,pan,820,pri,854,prd,3,pt,1,pvem,,,,,1,py,,,1,pan-prd,0,51,1828
+14,95,TIXPEHUAL,996,pan,781,pri,398,prd,6,pt,,,1,conve,2,pas,303,py,1,pay,,,0,135,2623
+10,96,TIZIMIN*,11145,pan,9741,pri,275,prd,124,pt,15,pvem,12,conve,17,pas,32,py,33,pay,1,pan-prd,0,567,21961
+15,97,TUNKAS,501,pan,919,pri,0,prd,2,pt,1,pvem,1,conve,1,pas,1,py,4,pay,,,2,101,1533
+12,98,TZUCACAB,684,pan,1997,pri,1399,prd,13,pt,2,pvem,134,conve,7,pas,1,py,1,pay,,,2,226,4466
+11,99,UAYMA,706,pan,729,pri,2,prd,,,,,1,conve,1,pas,,,,,1,pan-prd,0,0,1439
+8,100,UCU,507,pan,766,pri,1,prd,2,pt,2,pvem,1,conve,11,pas,1,py,,,,,0,62,1353
+7,101,UMAN*,7941,pan,7073,pri,189,prd,83,pt,41,pvem,20,conve,4,pas,28,py,9,pay,1,prd-pt-pvem,4,410,15802
+11,102,VALLADOLID*,5054,pan,9318,pri,7851,prd,96,pt,18,pvem,9,conve,10,pas,17,py,11,pay,1,prd-pt-pvem,0,586,22970
+14,103,XOCCHEL,562,pan,519,pri,0,prd,,,,,1,conve,,,135,py,2,pay,,,0,42,1261
+15,104,YAXCABA,1978,pan,2949,pri,4,prd,5,pt,1,pvem,,,2,pas,4,py,2,pay,1,pan-prd,0,135,5080
+8,105,YAXKUKUL,397,pan,894,pri,1,prd,2,pt,,,9,conve,1,pas,,,,,1,pan-prd,0,42,1346
+9,106,YOBAIN,38,pan,599,pri,36,prd,,,341,pvem,55,conve,,,122,py,,,1,pan-prd,0,47,1238
