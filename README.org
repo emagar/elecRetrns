@@ -45,14 +45,17 @@ Recent news
 The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data includes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
 
 /Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
-* Files in the repository and how to cite them
+* Files in the repository
+** how to cite the data
 You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 ** File naming conventions
-In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección/, and /casilla/, respectively), then the years included.
+In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección electoral/, and /casilla/, respectively), then the years included.
 
 So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio level since 1970.
 ** Municipal office election returns
-Municipal election data updated to 2022. Other than in the state of Nayarit since 2008 (and, pending a court case, Mexico City since 2018), /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a fraction of the municipal council (/regidores/ and /síndicos/). Nayarit elects these members of the municipal council in single-member plurality districts called /demarcaciones/. Two versions of municipal election returns are included: one with municipal votes aggregated by candidate, another aggregated by party (the script [[./code/ay.r][~code/ay.r~]] was used for these manipulations):
+Municipal election data updated to 2022. Other than in the state of Nayarit since 2008, municipal /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a variable fraction of the municipal council (/regidores/ and /síndicos/). The other fraction of the municipal council is allocated by proportional representation. Nayarit elects one fraction of municipal council members in single-member plurality districts called /demarcaciones/, the other fraction by proportional representation. 
+
+Two versions of municipal election returns are included: one with votes reported by candidate, another reported by party (they may differ whenever coalitions competed). The script [[./code/ay.r][~code/ay.r~]] was used for these manipulations:
 # Ojo 2023-05-29: check status of CdMx in paragraph above.
 - [[./data/aymu1989-present.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = /ayuntamiento/ election returns, coalition votes aggregated by candidate.
 - [[./data/aymu1989-present.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = /ayuntamiento/ election returns, coalition votes split among parties where source permits.
@@ -85,7 +88,7 @@ Presidential election data updated to 2018. Presidents elected by plurality in a
 ** Gubernatorial election returns
 *Citation for the gubernatorial dataset*: Eric Magar (2012) Gubernatorial Coattails in Mexican Congressional Elections, /The Journal of Politics/ 74(2):383-399.
 - [[./data/goed1961-on.csv][~data/goed1961-on.csv~]] = governor statewide election returns since 1961, updated to 2022.
-- [[./data/goed1985-on.incumbents.csv][~data/goed1985-on.incumbents.csv~]] = elected governors since 1985, updated to 2019.
+- [[./data/goed1970-on.incumbents.csv][~data/goed1970-on.incumbents.csv~]] = elected governors since 1970, updated to 2022.
 ** Other
 # - [[./code/ayClean.r][~code/ayClean.r~]] = script used to clean /ayuntamiento/ returns, should be unnecessary unless new data are added because output has been saved into csv file.
 - [[./code/extract-state-yr-mu-returns.r][~code/extract-state-yr-mu-returns.r~]] = script exports municipal coalition-aggregates election returns. Select one state and year to get csv file with votes received by each party across municipalities grouped in one column each. 
