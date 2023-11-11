@@ -1181,7 +1181,7 @@ write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oa
 
 
 # clean
-rm(tmp,tmp1,tmp2,sel,sel.l,sel.r,sel.v,i)
+rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
 
 # check lisnom
 sel.c <- grep("^v", colnames(dat))
