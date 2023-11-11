@@ -45,13 +45,13 @@ Recent news
 The repository contains voting data for recent Mexican elections for certain offices at different levels of aggregation. Data has been compiled from many sources. More recent years tend to be coded from official vote returns. Earlier elections tend to be from secondary sources (see Souces section). Data includes district-level federal deputy vote returns since 1979 and district-level presidential vote returns since 2006; and municipality-level municipal president vote returns (except in the state of Nayarit, votes cast for municipal president also elect a municipal council in a fused ballot). 
 
 /Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
-* Files in the repository
-** How to cite the data
-You are free to download and modify the data (see the LICENSE document for details) provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
-** File naming conventions
+* How to cite the data
+This repository is under the [[https://pitt.libguides.com/openlicensing/MIT#:~:text=Like%20the%20Apache%202.0%2C%20and,sell%20copies%20of%20the%20software.][MIT license]] (see the LICENSE document for details). You are free to download and modify the data and code provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
+* File naming conventions
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección electoral/, and /casilla/, respectively), then the years included.
 
 So, for example ~aymu1970-on.csv~ are /ayuntamiento/ votes at the municipio level since 1970.
+* Files in the repository
 ** Municipal office election returns
 Municipal election data updated to 2022. Other than in the state of Nayarit since 2008, municipal /ayuntamientos/ are elected in fused ballots for a /presidente municipal/ and a variable fraction of the municipal council (/regidores/ and /síndicos/). The other fraction of the municipal council is allocated by proportional representation. Nayarit elects one fraction of municipal council members in single-member plurality districts called /demarcaciones/, the other fraction by proportional representation. 
 
