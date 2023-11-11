@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
-Last revision: 2023-11-10
+Last revision: 2023-11-11
 
 ----------
 
@@ -112,7 +112,7 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 * Codebook<<codebook>>
 Most variables are included in all files. Refer here for guidance. Printable codebook [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
-- /edon/ = state number 1:32.
+- /edon/ = state numeral 1:32.
 - /edo/ = state abbreviation (may differ from commonly used abbreviations, eg. Chiapas is `cps' instead of `chis', so that sorting alphabetically preserves the order set by /edon/).
 - /disn/ = district identifier = /edon/ * 100 + two digit district numeral.
 - /cab/ = cabecera, district's administrative center.
@@ -140,14 +140,14 @@ Most variables are included in all files. Refer here for guidance. Printable cod
 - /tot/ = total raw votes.
 - /win/ = winner's party or coalition.
 - /ncand/ = number of candidates running.
-- /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
+# - /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
 - /ncoal/ = number of candidates who ran on multi-party pre-electoral coalitions. 
 # - /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions (`no' indidates no coalition).
 # - /imputacion/, /distpan/, /distpri/, /distprd/ = when the source reports the pooled votes received by multi-party coalitions only, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
 # - /seyr/, /semo/ = year of the previous/concurrent senatorial election.
 # - /sepan/, /sepri/, /seprd/ = votes won by major parties in previous/concurrent senatorial election.
 # - /seefec/ = effective votes in previous/concurrent senatorial election.
-- /dfake/ = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
+- /dfake/ = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race.
 ** Historical performance
 - /d.pan/, /d.pri/, /d.left/ = first difference in the party's federal deputy vote share from last to present election.
 - /vhat.pan/, /vhat.pri/, /vhat.left/ = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
@@ -155,7 +155,7 @@ Most variables are included in all files. Refer here for guidance. Printable cod
 - /alphahat.pan/, /alphahat.pri/, /alphahat.left/ = party's /alpha/ estimated for the unit. 
 - /betahat.pan/, /betahat.left/ = party's /beta/ estimate for the unit. The PRI used as reference vote and has no /beta/ estimate.
 - /dbackward/ = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
-** Candidate IDs
+** Candidates and incumbents
 - /incumbent/, /runnerup/ = winning and runner-up candidates' names.
 - /propietario/, /suplente/ = primary and substitute candidate's name, respectively. 
 - /part/, /pty/ = incumbent/candidate's party or coalition.
