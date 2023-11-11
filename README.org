@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
-#+AUTHOR: Eric Magar
-Last revision: 2023-11-09
+#+AUTHOR: Eric Magar Meurs
+Last revision: 2023-11-10
 
 ----------
 
@@ -110,26 +110,26 @@ Vote returns prior to 1991 are unavailable at lower units of aggregation. Pre-20
 | Sección electoral |          | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-19.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      | [[./data/v-hats-etc/sec/dipfed-seccion-vhat-20.csv][csv]]      |
 [[top][<sub>Back to top</sub>]]
 * Codebook<<codebook>>
-Most variables are included in all files, some appear in selected files only. Printable version [[file:./codebook-flier.pdf][here]]. 
+Most variables are included in all files. Refer here for guidance. Printable codebook [[file:./codebook-flier.pdf][here]]. 
 ** Unit IDs
 - /edon/ = state number 1:32.
-- /edo/ = state abbreviation (may differ from commonly used abbreviations, eg. Chiapas is `cps', not `chis' so that sorting alphabetically preserves the order set by /edon/).
-- /disn/ = district identifier = /edon/ * 100 + district number.
+- /edo/ = state abbreviation (may differ from commonly used abbreviations, eg. Chiapas is `cps' instead of `chis', so that sorting alphabetically preserves the order set by /edon/).
+- /disn/ = district identifier = /edon/ * 100 + two digit district numeral.
 - /cab/ = cabecera, district's administrative center.
 - /inegi/, /ife/ = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
 - /mun/ = municipality's name.
-- /emm/ = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the election cycle (then a period) and the /inegi/ or district identifier, depending on the level of observation. Using /emm/ as sort criterion returns a state-time-unit ordering.
-- /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación number (used for Nayarit municipal elections only).
-- /seccion/ = voting precinct identifier = /edon/ * 10000 + sección electoral number (as set by IFE/INE).
+- /emm/ = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the election cycle (then a period) and, depending on the level of observation, the /inegi/ or district identifier. Using /emm/ as sort criterion returns a state-time-unit ordering.
+- /demar/ = demarcación identifier = /inegi/ + 1/100 demarcación numeral (used for Nayarit municipal elections only).
+- /seccion/ = voting precinct identifier = /edon/ * 10000 + sección electoral numeral (as set by IFE/INE).
 - /casilla/ = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for /Básica/, C for /Contigua/, E for /Extraordinaria/, and S for /Especial/. See IFE's own description [[https://portalanterior.ine.mx/archivos2/Alterna/2016/PREP/CentroDeAyuda/Extraordinaria/rsc/pdf/tipos_casillas.pdf][here]].
-- /circ/ = secondary, proportional representation congressional district (/circunscripción plurinominal/) to which the primary congressional district belongs to. 
+# - /circ/ = secondary, proportional representation congressional district (/circunscripción plurinominal/) to which the primary congressional district belongs to. 
 - /latitude/, /longitude/ = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 ** Temporal IDs
 - /yr/, /mo/, /dy/ = year, month, day of the election. 
 - /date.el/, /date.in/ = date of the election and start of term, respectively.
 - /dextra/ = dummy equal 1 for special elections (/elección extraordinaria/), 0 otherwise.
 - /danul/ = dummy equal 1 for voided elections, 0 otherwise.
-** Voting information
+** Voting
 - /v01/, /v02/, ... = raw vote for candidate 1, 2, etc.
 - /l01/, /l02/, ... = label of candidate 1's, 2's, ... party or coalition.
 - /c01/, /c02/, ... = candidate 1's, 2's, ... name.
@@ -142,12 +142,12 @@ Most variables are included in all files, some appear in selected files only. Pr
 - /ncand/ = number of candidates running.
 - /dcoal/ = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
 - /ncoal/ = number of candidates who ran on multi-party pre-electoral coalitions. 
-- /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions (`no' indidates no coalition).
+# - /coalpan/, /coalpri/, /coalprd/ = members of major-party coalitions (`no' indidates no coalition).
 # - /imputacion/, /distpan/, /distpri/, /distprd/ = when the source reports the pooled votes received by multi-party coalitions only, an attempt is made to infer how many votes each coalition member contributed to team. Variable /imputacion/ lists what earlier election was used for this purpose ('no' if none carried); /dist/ variables report the share of the coalition total attributable to PAN, PRI, and PRD, respectively. See [[https://github.com/emagar/replicationMaterial/blob/master/gubCoat/onlineAppendix.pdf][this]] for details.
 # - /seyr/, /semo/ = year of the previous/concurrent senatorial election.
 # - /sepan/, /sepri/, /seprd/ = votes won by major parties in previous/concurrent senatorial election.
 # - /seefec/ = effective votes in previous/concurrent senatorial election.
-- /dfake/ = indicates fake data for hegemonic era elections in 1960s for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
+- /dfake/ = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race. Will normally be dropped from analysis.
 ** Historical performance
 - /d.pan/, /d.pri/, /d.left/ = first difference in the party's federal deputy vote share from last to present election.
 - /vhat.pan/, /vhat.pri/, /vhat.left/ = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
@@ -156,9 +156,9 @@ Most variables are included in all files, some appear in selected files only. Pr
 - /betahat.pan/, /betahat.left/ = party's /beta/ estimate for the unit. The PRI used as reference vote and has no /beta/ estimate.
 - /dbackward/ = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
 ** Candidate IDs
-- /incumbent/, /runnerup/ = winning/runner-up candidate's name.
+- /incumbent/, /runnerup/ = winning and runner-up candidates' names.
 - /propietario/, /suplente/ = primary and substitute candidate's name, respectively. 
-- /part/ = incumbent/candidate's party or coalition.
+- /part/, /pty/ = incumbent/candidate's party or coalition.
 - /part.2nd/ = runner-up party or coalition.
 - /mg/ = winner's margin = winner's vote share minus runner-up's vote share.
 - /dmujer/ = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise. 
@@ -223,7 +223,7 @@ Work in progress
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
 Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
-- Under construction
+- *Under construction*
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
 - Francisco Garfias
