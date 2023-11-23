@@ -7,8 +7,8 @@ setwd(dd)
 ## Read raw data file ##
 ########################
 dat <- read.csv(file = "aymu1970-on.csv", stringsAsFactors = FALSE)
-## ## Read this instead to prep CUA síndicos 
-dat <- read.csv(file = "ay-nonfused/aymu1998-on-Chihuahua-sind.csv", stringsAsFactors = FALSE)
+## ## Read this instead to prep Chihuahua síndicos 
+## dat <- read.csv(file = "ay-nonfused/aymu1998-on-Chihuahua-sind.csv", stringsAsFactors = FALSE)
 
 
 #########################################################################
@@ -889,7 +889,6 @@ sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
 sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
 sel3 <- which(dat2$yr>=1990 & dat2$yr<2000)
 sel4 <- which(dat2$yr>=2000 & dat2$yr<2010)
-##sel4 <- which(dat2$yr>=1998 & dat2$yr<2010) # for cua síndicos
 sel5 <- which(dat2$yr>=2010 & dat2$yr<2020)
 sel6 <- which(dat2$yr>=2020 & dat2$yr<2030)
 length(sel1); length(sel1)*58 < 400000 # 400k cells is gsheets max
