@@ -3,8 +3,13 @@ rm(list = ls())
 dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
-# read raw data file
+########################
+## Read raw data file ##
+########################
 dat <- read.csv(file = "aymu1970-on.csv", stringsAsFactors = FALSE)
+## ## Read this instead to prep CUA síndicos 
+dat <- read.csv(file = "ay-nonfused/aymu1998-on-Chihuahua-sind.csv", stringsAsFactors = FALSE)
+
 
 #########################################################################
 #########################################################################
@@ -22,6 +27,7 @@ for (i in 1:ncol(v)){
 }
 dat[,sel] <- v # return votes without missing to data
 
+str(v)
 v$efec <- round(rowSums(v), 0)
 dat$efec <- v$efec
 tmp <- dat$nr # remove NAs
@@ -49,13 +55,6 @@ for (i in 1:ncol(l)){
 }
 dat[,sel] <- l # return to data
 rm(l)
-
-## # replace NAs with zeroes (no longer needed)
-## sel.v <- grep("^v[0-9]{2}", colnames(dat))
-## v <- dat[,sel.v] # subset vote columns
-## v[is.na(v)] <- 0
-## dat[,sel.v] <- v # return to data
-## rm(v)
 
 # any votes with no labels?
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
@@ -354,7 +353,7 @@ for (i in 1:ncol(l)){
     dat$dcoal[grep("-", l[,i])] <- 1
 }
 
-# create objects with vote for coalition(s) added and redudant columns dropped
+# create objects with vote for coalition(s) sumed and redudant columns dropped
 cv <- v; # will receive votes with coalitions aggregated
 cl <- l; # will keep coalition labels but drop coalition member labels 
 # create "split" objects for votes contrinuted by each coalition member and joint column dropped
@@ -630,7 +629,6 @@ tmp.vw4 <- w4[sel7] # will receive manipulated votes
 max.tmp <- max.tmp[sel7]
 tmp.ci <- ci[sel7,]
 
-
 for (i in 1:length(sel7)){
     ## i <- 5 # debug
     ## tmp.l[i,] # debug
@@ -675,7 +673,6 @@ for (i in 1:length(sel7)){
     }
     tmp.n[i, target.cols] <- 0   # erase ns
 }
-
 # return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
@@ -702,6 +699,7 @@ table(max.tmp) # must have 0s and 1s only (number of parties being reported by r
 
 # plug ncoal into data
 dat$ncoal  <- ci$ncoal
+
 
 # prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
@@ -770,11 +768,14 @@ cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), 
 tail(cv.sorted)
 tail(cl.sorted)
 
+
 # rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
 dat[,sel.v] <- cv.sorted # return manipulated votes to data
+dat[,sel.v] <- lapply(dat[,sel.v],as.numeric) # make numeric (in síndicos cv.sorted became str)
 head(dat)
+str(dat)
 # prepare coalition-split object for export
 dat.split <- dat.orig
 dat.split[,sel.l] <- sl # return manipulated labels to data
@@ -791,10 +792,12 @@ rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tm
 
 ## # 23 cols needed thanks to mor 2021...
 ## table(dat$v24) # check that only has zeroes
+## table(dat$v09) # check that only has zeroes (for síndicos)
 ## # if not, which cases remain? 
 ## #sel <- which(dat$v14>0)
 ## #dat[sel,]
 dat$v24 <- dat$l24 <- dat$v25 <- dat$l25 <- NULL # drop redundant columns
+##dat$v09 <- dat$l09 <- dat$v10 <- dat$l10 <- dat$v11 <- dat$l11 <- dat$v12 <- dat$l12 <- dat$v13 <- dat$l13 <- dat$v14 <- dat$l14 <- NULL # drop redundant columns (for síndicos)
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
@@ -832,7 +835,7 @@ sel <- grep("uyc", dat$status)
 dat[sel, c("yr","efec","status")]
 # drop uyc
 table(dat$v01[sel]==0) # all report no votes?
-dat <- dat[-sel,]
+if (length(sel)>0) dat <- dat[-sel,]
 
 # sort columns
 pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
@@ -875,13 +878,18 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
 ncol(dat[, colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in% drop.c)
 
-dat2 <- dat[-drop.r, -drop.c]
+if (length(drop.r)==0) {
+    dat2 <- dat[       , -drop.c]
+} else {
+    dat2 <- dat[-drop.r, -drop.c]
+}
 dat2[1,]
 # subsets by yrs
 sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
 sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
 sel3 <- which(dat2$yr>=1990 & dat2$yr<2000)
 sel4 <- which(dat2$yr>=2000 & dat2$yr<2010)
+##sel4 <- which(dat2$yr>=1998 & dat2$yr<2010) # for cua síndicos
 sel5 <- which(dat2$yr>=2010 & dat2$yr<2020)
 sel6 <- which(dat2$yr>=2020 & dat2$yr<2030)
 length(sel1); length(sel1)*58 < 400000 # 400k cells is gsheets max
@@ -894,6 +902,7 @@ length(sel6); length(sel6)*58 < 400000
 
 # save full file
 write.csv(dat, file = "aymu1970-on.coalAgg.csv", row.names = FALSE)
+##write.csv(dat, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
@@ -1175,10 +1184,9 @@ median(dat.i$edon)
 write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
 write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
 
-
-
 # clean
 rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
+
 
 # check lisnom
 sel.c <- grep("^v", colnames(dat))
