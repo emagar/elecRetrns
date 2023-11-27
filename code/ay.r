@@ -26,7 +26,6 @@ v[] <- lapply(v, as.numeric) # anything non numeric to that
 sapply(v, class)
 dat[,sel] <- v # return votes without missing to data
 
-str(v)
 v$efec <- round(rowSums(v), 0)
 dat$efec <- v$efec
 tmp <- dat$nr # remove NAs
@@ -699,7 +698,6 @@ table(max.tmp) # must have 0s and 1s only (number of parties being reported by r
 # plug ncoal into data
 dat$ncoal  <- ci$ncoal
 
-
 # prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
 sel <- which(ci$ncoal>=1)
@@ -767,7 +765,6 @@ cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), 
 tail(cv.sorted)
 tail(cl.sorted)
 
-
 # rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
@@ -810,13 +807,18 @@ l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel.v] # subset vote columns
 dat$ncand <- apply(v, 1, function(x) length(x[x>0]))
-# check that coal aggregation produces same efec as before
+## check that coal aggregation produces same efec as before
 check <- rowSums(v) - dat$efec
 table(check==0) # all must be true
-## sel <- which(check!=0)
-## dat[sel[2],]
-## dat.orig[sel[2],]
-# move ncand column before dcoal
+summary(check)
+## sel <- which(check>.01)
+## check[sel]
+## dat[sel[1],]
+## dat.orig[sel[1],]
+## rowSums(v)[sel]
+## dat$efec[sel]
+##
+## move ncand column before dcoal
 tmp <- dat # duplicate if I mess up
 tmp1 <- grep("dcoal", colnames(dat))
 tmp2 <- grep("ncand", colnames(dat))
@@ -827,10 +829,10 @@ colnames(dat)
 #################################
 #### DROPS USOS Y COSTUMBRES ####
 #################################
-## any dusos==1?
+## any uyc?
 table(dat$status)
 sel <- grep("uyc", dat$status)
-dat[sel, c("emm","yr","efec","status")]
+dat[sel, c("emm","mun","yr","efec","status")]
 # drop uyc
 table(dat$v01[sel]==0) # all report no votes?
 if (length(sel)>0) dat <- dat[-sel,]
@@ -862,20 +864,15 @@ dat$dextra <- 0
 dat$dextra[grep("extra", dat$status)] <- 1
 table(dat$dextra)
 
-drop.r <- NULL
-## # drop these obs from analysis
-## table(dat$status)
-## drop.r <- which(dat$status %in% c("voided",
-##                                     "missing--keepHistory",
-##                                     "new--voided",
-##                                     "pending",
-##                                     "uyc"
-##                                     ))
+# drop these obs from analysis
+table(dat$status)
+##drop.r <- grep("canceled|missing|litigio|pending", dat$status)
+drop.r <- grep("pending", dat$status)
 
 # drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas")
-ncol(dat[, colnames(dat) %notin% drop.c])
-drop.c <- which(colnames(dat) %in% drop.c)
+ncol(dat[,      colnames(dat) %notin% drop.c])
+drop.c <- which(colnames(dat) %in%    drop.c)
 
 if (length(drop.r)==0) {
     dat2 <- dat[       , -drop.c]
@@ -903,27 +900,27 @@ write.csv(dat, file = "aymu1970-on.coalAgg.csv", row.names = FALSE)
 ##write.csv(dat, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
 # subset ~1970s
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1970s.csv", row.names = FALSE)
 # subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel2,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1980s.csv", row.names = FALSE)
 # subset 1990s
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel3,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1990s.csv", row.names = FALSE)
 # subset 2000s
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel4,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2000s.csv", row.names = FALSE)
 # subset 2010s
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel5,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2010s.csv", row.names = FALSE)
 # subset 2020s
-dat2 <- dat[, -drop.c] # restore for manipulation
+dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel6,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
 
@@ -943,6 +940,14 @@ load(file = "tmp1.RData")
 ## ## the same directory where aymu1979-on.csv is   ## ##
 ## ################################################### ##
 #########################################################
+##
+## any uyc?
+table(dat.split$status)
+sel <- grep("uyc", dat.split$status)
+dat.split[sel, c("emm","mun","yr","efec","status")]
+# drop uyc
+table(dat.split$v01[sel]==0) # all report no votes?
+if (length(sel)>0) dat.split <- dat.split[-sel,]
 ##
 ################################################################
 ## manipulate coalitions remaining in split vote object       ##
@@ -1108,14 +1113,10 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 ##########
 # repeat this block from above, in case dat.split is sorted differently
 
-## # drop these obs for analysis
-## table(dat.split$status)
-## drop.r <- which(dat.split$status %in% c("voided",
-##                                     "missing--keepHistory",
-##                                     "new--voided",
-##                                     "pending",
-##                                     "uyc"
-##                                     ))
+# drop these obs for analysis
+table(dat.split$status)
+##drop.r <- grep("canceled|missing|litigio|pending", dat$status)
+drop.r <- grep("pending", dat$status)
 
 # could import ncand from dat here
 table(dat$emm==dat.split$emm)
@@ -1123,7 +1124,7 @@ dat.split$ncand <- dat$ncand
 
 # drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
-            "date", "edon", "lisnom", "dextra") # drops these additional cols to accommodate 4 more v/l cols
+            "date", "edon", "dextra") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
