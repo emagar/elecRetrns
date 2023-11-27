@@ -230,14 +230,13 @@ Work in progress
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
 Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
-- *Under construction*
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
-- Francisco Garfias
-- José Angel Torrens Hernández
+- [[http://franciscogarfias.com/][Francisco Garfias]]
+- [[https://github.com/pptrrns][José Angel Torrens Hernández]]
 - Julio Solís Ríos
-- Lucía Motolinia
-- Mauricio Fernández Duque
+- [[https://polisci.wustl.edu/people/lucia-motolinia][Lucía Motolinia Carballo]]
+- [[https://www.mauriciofduque.com/][Mauricio Fernández Duque]]
 - Odette González Carrillo
 - Sonia Kuri Kosegarten
 - Vidal Mendoza Tinoco
