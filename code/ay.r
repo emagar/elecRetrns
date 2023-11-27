@@ -22,9 +22,8 @@ sel <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel] # subset votes columns
 v[is.na(v)==TRUE] <- 0 # replace NAs with zeroes
 v[v==""|v=="NA"|v=="-"|v=="N/R"] <- 0 # replace with zeroes
-for (i in 1:ncol(v)){
-    v[,i] <- as.numeric(v[,i])
-}
+v[] <- lapply(v, as.numeric) # anything non numeric to that
+sapply(v, class)
 dat[,sel] <- v # return votes without missing to data
 
 str(v)
@@ -829,10 +828,9 @@ colnames(dat)
 #### DROPS USOS Y COSTUMBRES ####
 #################################
 ## any dusos==1?
-table(dat$dusos)
 table(dat$status)
 sel <- grep("uyc", dat$status)
-dat[sel, c("yr","efec","status")]
+dat[sel, c("emm","yr","efec","status")]
 # drop uyc
 table(dat$v01[sel]==0) # all report no votes?
 if (length(sel)>0) dat <- dat[-sel,]
@@ -864,14 +862,15 @@ dat$dextra <- 0
 dat$dextra[grep("extra", dat$status)] <- 1
 table(dat$dextra)
 
-# drop these obs from analysis
-table(dat$status)
-drop.r <- which(dat$status %in% c("voided",
-                                    "missing--keepHistory",
-                                    "new--voided",
-                                    "pending",
-                                    "uyc"
-                                    ))
+drop.r <- NULL
+## # drop these obs from analysis
+## table(dat$status)
+## drop.r <- which(dat$status %in% c("voided",
+##                                     "missing--keepHistory",
+##                                     "new--voided",
+##                                     "pending",
+##                                     "uyc"
+##                                     ))
 
 # drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas")
@@ -883,7 +882,7 @@ if (length(drop.r)==0) {
 } else {
     dat2 <- dat[-drop.r, -drop.c]
 }
-dat2[1,]
+
 # subsets by yrs
 sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
 sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
@@ -904,27 +903,27 @@ write.csv(dat, file = "aymu1970-on.coalAgg.csv", row.names = FALSE)
 ##write.csv(dat, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
 # subset ~1970s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1970s.csv", row.names = FALSE)
 # subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel2,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1980s.csv", row.names = FALSE)
 # subset 1990s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel3,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1990s.csv", row.names = FALSE)
 # subset 2000s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel4,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2000s.csv", row.names = FALSE)
 # subset 2010s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel5,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2010s.csv", row.names = FALSE)
 # subset 2020s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+dat2 <- dat[, -drop.c] # restore for manipulation
 dat2 <- dat2[sel6,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
 
@@ -1109,14 +1108,14 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 ##########
 # repeat this block from above, in case dat.split is sorted differently
 
-# drop these obs for analysis
-table(dat.split$status)
-drop.r <- which(dat.split$status %in% c("voided",
-                                    "missing--keepHistory",
-                                    "new--voided",
-                                    "pending",
-                                    "uyc"
-                                    ))
+## # drop these obs for analysis
+## table(dat.split$status)
+## drop.r <- which(dat.split$status %in% c("voided",
+##                                     "missing--keepHistory",
+##                                     "new--voided",
+##                                     "pending",
+##                                     "uyc"
+##                                     ))
 
 # could import ncand from dat here
 table(dat$emm==dat.split$emm)
