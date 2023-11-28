@@ -750,7 +750,7 @@ rm(pth)
 ## sl[156,]
 ## x
 
-# sort coalition-aggregated data
+# sort coalition-aggregated data columnwise
 tail(cv)
 tail(cl)
 ###########################################
@@ -866,7 +866,7 @@ table(dat$dextra)
 
 # drop these obs from analysis
 table(dat$status)
-##drop.r <- grep("canceled|missing|litigio|pending", dat$status)
+##drop.r <- grep("cancelled|missing|litigio|pending", dat$status)
 drop.r <- grep("pending", dat$status)
 
 # drop these cols to trim file size for gsheets
@@ -896,8 +896,8 @@ length(sel6); length(sel6)*58 < 400000
 #6756*58
 
 # save full file
-write.csv(dat, file = "aymu1970-on.coalAgg.csv", row.names = FALSE)
-##write.csv(dat, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
+write.csv(dat2, file = "aymu1970-on.coalAgg.csv", row.names = FALSE) ## use dat instead if keeping drop.r obs
+##write.csv(dat2, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
 # subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
@@ -925,13 +925,6 @@ dat2 <- dat2[sel6,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
 
 rm(dat2)
-
-save.image(file = "tmp1.RData")
-
-rm(list = ls())
-dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
-setwd(dd)
-load(file = "tmp1.RData")
 
 
 #########################################################
@@ -1115,7 +1108,7 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 
 # drop these obs for analysis
 table(dat.split$status)
-##drop.r <- grep("canceled|missing|litigio|pending", dat$status)
+##drop.r <- grep("cancelled|missing|litigio|pending", dat$status)
 drop.r <- grep("pending", dat$status)
 
 # could import ncand from dat here
@@ -1127,7 +1120,6 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
             "date", "edon", "dextra") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
-
 
 dat.split2 <- dat.split[-drop.r, -drop.c]
 # subsets by yrs
@@ -1146,7 +1138,7 @@ length(sel6); length(sel6)*57 < 400000
 #6756*58
 
 # save full file
-write.csv(dat.split, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)
+write.csv(dat.split2, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)  ## use dat.split instead if keeping drop.r obs
 
 
 # subset ~1970s
