@@ -875,9 +875,9 @@ ncol(dat[,      colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in%    drop.c)
 
 if (length(drop.r)==0) {
-    dat2 <- dat[       , -drop.c]
+    dat2 <- dat
 } else {
-    dat2 <- dat[-drop.r, -drop.c]
+    dat2 <- dat[-drop.r,]
 }
 
 # subsets by yrs
@@ -1121,7 +1121,7 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
-dat.split2 <- dat.split[-drop.r, -drop.c]
+dat.split2 <- dat.split[-drop.r,]
 # subsets by yrs
 sel1 <- which(dat.split2$yr>=1970 & dat.split2$yr<1982)
 sel2 <- which(dat.split2$yr>=1982 & dat.split2$yr<1990)
