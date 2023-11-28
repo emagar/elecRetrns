@@ -360,28 +360,28 @@ sl <- l;
 #
 ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
-# ci$coal1 coal2 coal3 coal4 pre-filled
-  # n is object reporting how many parties reported in a v/l cell?
-  ln1 <- v # duplicate votes
-  ln1[] <- 0 # will receive info
-  ln2 <- ln1 # duplicate
-  # replace each label by its character length
-  for (i in 1:ncol(ln1)){
-      #i <- 16 # debug
-      tmp <- l[,i] # pick ith column as vector
-      ln1[,i] <- nchar(tmp) # replace items with num characters
-  }
-  # drop hyphens to count character difference
-  l.tmp <- l # duplicate
-  for (i in 1:ncol(l.tmp)){
-      #i <- 1 # debug
-      l.tmp[,i] <- gsub("-", "", l.tmp[,i]) # remove hyphens to count char dif
-      ln2[,i] <- nchar(l.tmp[,i]) # replace items with num characters
-  }
-  n <- ln1 - ln2 + 1 # 1 means no coalition, single party
-  n[l=="0"] <- 0     # empty votes
-  rm(i, ln1, ln2, l.tmp, sel, tmp)
-#
+## ci$coal1 coal2 coal3 coal4 pre-filled
+## n is object reporting how many parties reported in a v/l cell?
+ln1 <- v # duplicate votes
+ln1[] <- 0 # will receive info
+ln2 <- ln1 # duplicate
+## replace each label by its character length
+for (i in 1:ncol(ln1)){
+                                        #i <- 16 # debug
+    tmp <- l[,i] # pick ith column as vector
+    ln1[,i] <- nchar(tmp) # replace items with num characters
+}
+## drop hyphens to count character difference
+l.tmp <- l # duplicate
+for (i in 1:ncol(l.tmp)){
+                                        #i <- 1 # debug
+    l.tmp[,i] <- gsub("-", "", l.tmp[,i]) # remove hyphens to count char dif
+    ln2[,i] <- nchar(l.tmp[,i]) # replace items with num characters
+}
+n <- ln1 - ln2 + 1 # 1 means no coalition, single party
+n[l=="0"] <- 0     # empty votes
+rm(i, ln1, ln2, l.tmp, sel, tmp)
+##
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 I <- nrow(v)
