@@ -274,10 +274,10 @@ for (i in 1:ncol(l)){
 ##     }
 #
 for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^es$", replacement = "pes", l[,i])
-    l[,i] <- gsub(pattern = "-es-", replacement = "-pes-", l[,i])
-    l[,i] <- gsub(pattern = "-es$", replacement = "-pes", l[,i])
-    l[,i] <- gsub(pattern = "^es-", replacement = "pes-", l[,i])
+    l[,i] <- gsub(pattern = "^es$|^pesm$|^pest$", replacement = "pes",   l[,i])
+    l[,i] <- gsub(pattern = "-es-|-pesm-|-pest-", replacement = "-pes-", l[,i])
+    l[,i] <- gsub(pattern = "-es$|-pesm$|-pest$", replacement = "-pes",  l[,i])
+    l[,i] <- gsub(pattern = "^es-|^pesm-|^pest-", replacement = "pes-",  l[,i])
     }
 #
 for (i in 1:ncol(l)){
@@ -325,14 +325,6 @@ rm(l)
 ## i <- i+1; grep(lab.tmp[i], lab.tmp)
 ## lab.tmp[grep(lab.tmp[i], lab.tmp)]
 ## x
-
-save.image(file = "tmp.RData")
-
-## consider running script above to make sure data is up-to-date with latest csv
-rm(list = ls())
-dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
-setwd(dd)
-load(file = "tmp.RData")
 
 
 ######################################################
@@ -1179,14 +1171,14 @@ write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oa
 rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
 
 
-# check lisnom
-sel.c <- grep("^v", colnames(dat))
-summary(dat$lisnom - rowSums(dat[,sel.c]))
-#
-sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0 & dat$yr > 1997)
-length(sel)
-#
-dat[sel[2],]
+## # check lisnom
+## sel.c <- grep("^v", colnames(dat))
+## summary(dat$lisnom - rowSums(dat[,sel.c]))
+## #
+## sel <- which(dat$lisnom - rowSums(dat[,sel.c]) < 0 & dat$yr > 1997)
+## length(sel)
+## #
+## dat[sel[2],]
 
 
 ## # save coalition weights and info
