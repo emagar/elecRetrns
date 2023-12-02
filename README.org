@@ -1,12 +1,14 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
-Last revision: 2023-11-11
+Last revision: 2023-12-01
 
 ----------
 
 <h2>
 Recent news
 </h2>
+
+<sup><sub>2023-12-01</sub></sup> Electoral party/coalition of ayuntamiento incumbents added.
 
 <sup><sub>2023-11-11</sub></sup> [[codebook][*Codebook*]] updated, with a printable flier.
 
@@ -176,6 +178,8 @@ Most variables are included in all files. Refer here for guidance. Printable cod
 - /lista/ = candidate's rank in senate two-member party lists. Top member of runner-up vote-getting list wins the state's third senate seat.  
 - /drp/ = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 - /ddied/ = dummy equal 1 if incumbent died in office, 0 otherwise.
+- /prior.inc.part/ = if an incumbent was on the ballot in the race immediately prior to the current observation, this reports its electoral party or coalition.
+- /inc.part.after/ = if an incumbent was on the ballot in the race immediately after the current observation, this reports its electoral party or coalition.
 ** Other
 - /nota/ = observations possibly relevant for analysis.
 - /fuente/, /source/ = sources.
