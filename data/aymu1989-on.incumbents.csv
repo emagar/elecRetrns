@@ -15565,7 +15565,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 15809,san-09.031,SANTA CATARINA,1994,0,24,24032,24031,pri,0,ANTONIO GONZALEZ SAAVEDRA,Term-limited-p-won,,pan,0.5541227042,0,0,0,,,incumbent out,incumbent out,,inafed
 15820,san-09.032,SANTA MARIA DEL RIO,1994,0,24,24033,24032,pri,0,PASCUAL MARTINEZ MARTINEZ,Term-limited-p-lost,,prd,0.5098431765,0,0,0,,,incumbent out,incumbent out,,inafed
 15831,san-09.033,SANTO DOMINGO,1994,0,24,24034,24033,pan,0,ALVARO RODRIGUEZ LUNA,Term-limited-p-lost,,pri,0.0205479452,0,0,0,,,incumbent out,incumbent out,,inafed
-15842,san-09.034,SAN VICENTE TANCUAYALAB,1996,1,24,24031,24034,pri,0,JAIME SONI BULOS,Term-limited-p-won,,pan,0.1082156356,0,0,0,,,incumbent out,incumbent out,extraordinaria,inafed
+15842,san-09.034,SAN VICENTE TANCUAYALAB,1996,1,24,24031,24034,pri,0,JAIME JESUS SONI BULOS,Term-limited-p-won,,pan,0.1082156356,0,0,0,,,incumbent out,incumbent out,extraordinaria,inafed
 15853,san-09.035,SOLEDAD DE GRACIANO SANCHEZ,1994,0,24,24035,24035,parm,0,ROBERTO CERVANTES BARAJAS,Term-limited-p-lost,,pri,0.0467636294,0,0,0,,,incumbent out,incumbent out,,inafed
 15864,san-09.036,TAMASOPO,1994,0,24,24036,24036,pri,0,JOSE BENITO MARTINEZ RODRIGUEZ,Term-limited-p-lost,,pan,0.7109036345,0,0,0,,,incumbent out,incumbent out,,inafed
 15875,san-09.037,TAMAZUNCHALE,1994,0,24,24037,24037,pri,0,TATIANO HERNANDEZ,Term-limited-p-won,,pt,0.3589444444,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -22323,7 +22323,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 22087,zac-17.028,MEZQUITAL DEL ORO,2018,0,32,32028,32028,pan-prd-mc,0,HUMBERTO SALAS CASTRO,Out-p-lost,MONICA RODARTE DAVILA,pt-morena-pes,0.2869619464,0,1,1,,,incumbent out,incumbent out,,
 22098,zac-17.029,MIGUEL AUZA,2018,0,32,32029,32029,pt-morena-pes,0,JOSE ALFREDO GONZALEZ PERALES,Out-p-won,ROSBELINDA PEREZ RANGEL,pri,0.2001278091,0,0,0,,,incumbent out,incumbent out,,
 22109,zac-17.030,MOMAX,2018,0,32,32030,32030,pri,1,LORENA ORTEGA DELGADO,Out-p-lost,LUIS ARTURO ZACARIAS HARO,pna,0.0409395973,0,0,0,,,incumbent out,incumbent out,,
-22120,zac-17.031,MONTE ESCOBEDO,2018,0,32,32031,32031,pri,0,RAMIRO SANCHEZ MERCADO,Out-p-won,GABRIEL SANCHEZ ROBLES,pvem,0.0970101097,0,0,0,,,pan-prd-pmc,incumbent out,,
+22120,zac-17.031,MONTE ESCOBEDO,2018,0,32,32031,32031,pri,0,RAMIRO SANCHEZ MERCADO,Out-p-won,GABRIEL SANCHEZ ROBLES,pvem,0.0970101097,0,0,0,,,pan-prd-mc,incumbent out,,
 22131,zac-17.032,MORELOS,2018,0,32,32032,32032,pna,0,EDUARDO DUQUE TORRES,Term-limited-p-lost,SILVIA VEYNA,pt-morena-pes,0.0339445371,0,1,1,,,pna,incumbent out,,
 22142,zac-17.033,MOYAHUA DE ESTRADA,2018,0,32,32033,32033,pan-prd-mc,1,NORMA CASTAÑEDA ROMERO,Term-limited-p-lost,CRISTAL GONZALEZ PLASCENCIA,pri,0.2022813688,0,1,1,,,pan-prd-mc,incumbent out,,
 22153,zac-17.034,NOCHISTLAN DE MEJIA,2018,0,32,32034,32034,pt-morena-pes,0,ARMANDO DELGADILLO RUVALCABA,Term-limited-p-won,MOISES ORNELAS AGUAYO,pan-prd-mc,0.0475025937,0,1,1,,,pt,incumbent out,,
