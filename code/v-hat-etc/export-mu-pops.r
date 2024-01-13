@@ -1275,7 +1275,7 @@ if (length(sel.tmp <- which(nm$dskip==0 & nm$dready2est==0) )==0) print("they're
 
 ############################################################################################
 ## Apply my_agg to generate municipal and state aggregates (nm[sel.r,]$m:2005-2010-2020), ##
-## will be used in projeection routine below.                                             ##
+## will be used in projection routine below.                                              ##
 ############################################################################################
 ## ##
 ## fill in p18s for aggregation

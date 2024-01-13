@@ -22,9 +22,9 @@ setwd(dd)
 ## Define several functions ##
 ##############################
 ##
-##################################################################
-## function to aggregate casilla-level votes into higher levels ##
-##################################################################
+################################################################
+## function to aggregate casilla-level votes to higher levels ##
+################################################################
 my_agg <- function(d=d, sel.c=sel.c, by=NA, y1991=FALSE, drop.dupli=TRUE){
     d <- d              # assign mem
     sel.c <- sel.c      # assign mem
@@ -82,9 +82,9 @@ apportion_v <- function(dat=NA, members=NA, joint=NA){
     dat[sel.r,joint] <- 0     # joint vote to zero
     return(dat)
 }
-###############################################
-## function to fill sel.c column NAs to zero ##
-###############################################
+#################################################
+## function to fill sel.c column's NAs to zero ##
+#################################################
 na2zero <- function(dat=NA, sel.c){
     tmp <- dat[,sel.c] # subset for manipulation
     tmp[is.na(tmp)] <- 0
@@ -400,7 +400,7 @@ d_split <- apportion_v(dat=d_split, members=c("prd", "pt","mc"), joint="prdc")
 ##############################################
 ## rename vote returns objects for analysis ##
 ##############################################
-v12_agg <- d_agg
+v12_agg   <- d_agg
 v12_split <- d_split
 ##
 ##########
@@ -1007,8 +1007,7 @@ miss_secc(dat=v15)
 miss_secc(dat=v18)
 miss_secc(dat=v21) # some 2021 secciones not in eq, all break sequence so must be temporary
 #                  # OJO: will drop them to keep things square (still no clue about them)
-sel.r <-          which(v21$edon==17 & v21$seccion>=5000)
-sel.r <- c(sel.r, which(v21$edon==19 & v21$seccion>=9000))
+sel.r <- which((v21$edon==17 & v21$seccion>=5000) | (v21$edon==19 & v21$seccion>=9000))
 v21 <- v21[-sel.r,]
 rm(miss_secc,sel.r,tmp) # clean
 
