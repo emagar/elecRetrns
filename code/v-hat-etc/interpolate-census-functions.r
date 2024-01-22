@@ -276,14 +276,42 @@ interlog <- function(what="p18", yr=NA, unit=c("e","d","m","s")[3], frm="dv~iv+I
         }))
     ##
     print("done.")
+    ##
+    ## save other objects used in estimation
+    other <- list(non.nas=non.nas, unit=unit, yr=yr, frm=frm)
     return(list(interp=round(interp, digits),  ## returns a list with predicted values, data, and regressions
                 data=save.data,
-                regs=save.regs)
+                regs=save.regs,
+                other=other)
            )
     ##rm(c, sel.c, what, yr, ys, y1, c1, a, b, census.data, interp) # clean debug
 }
-
-
+##
+## function outputs vector of point predictions after estimation with interlog
+predict.interlog <- function(data=NA, yr=NA, digits=1){ 
+    ## data <- tmp; yr <- 2009
+    ##
+    regs <- data$regs
+    out <- data$interp
+    non.nas <- data$other$non.nas
+    frm <- data$other$frm
+    ##
+    ## out <- data.frame(n=1:length(out), out=out); colnames(out) <- c("n", paste0("y", yr))
+    ## head(out)
+    ##
+    new.d <- data.frame(iv=yr)                                                                  ## prep predictions
+    interp <- vector(mode='list', length(regs))                                                 ## empty list
+    interp[setdiff(1:length(out), non.nas)] <- NA                                                  ## ~non.nas to NA
+    print("Predicting:")
+    interp[non.nas] <- lapply(regs[non.nas], function(x) predict.lm(x, newdata = new.d))        ## predict
+    print("done.")
+    ##
+    interp <- unlist(as.data.frame(interp), use.names = FALSE)                                  ## turn into vector
+    print("Preparing output:")
+    if (length(grep("log\\(dv\\)", frm))>0) interp <- exp(interp)                               ## exp(log(dv))
+    print("done.")
+    return(interp=round(interp, digits))
+}
      
 ## ##########################################################################################
 ## ## generate yearly linear projections of pob18 (routine takes care of reseccionamiento) ##

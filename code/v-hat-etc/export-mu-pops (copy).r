@@ -18,8 +18,9 @@
 ## Author: Eric Magar                                                                   ##
 ## emagar at itam dot mx                                                                ##
 ## Date: 1aug2023                                                                       ##
-## Last modified: 16jan2024                                                             ##
+## Last modified: 27sep2023                                                             ##
 ##########################################################################################
+
 
 
 ###################################################
@@ -202,18 +203,18 @@ if (length(sel)>0){
 nm[1,]
 nm <- within(nm, {
     dfirst <- dsingle <- dskip <- dready2est <- 0;
-## #    nmanip <- ddone <- dneedsum <- 0;
-## #    dneedsum05 <- dneedsum10 <- dneedsum20 <- dneedsum <- 0;
-## #    when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
-## #    when2b <- when2; orig.dest2b <- orig.dest2; action2b <- action2; #  can be erased once seccion gets manipulated
-## #    whenb  <- when;  orig.destb  <- orig.dest;  actionb  <- action;  #  ---helps debug block immediately below
-##     p18m_20 <- NA; # yy so grep excludes
-##     p18m_10 <- NA; # yy so grep excludes
-##     p18m_05 <- NA; # yy so grep excludes
-##     p18e_20 <- NA; # yy so grep excludes
-##     p18e_10 <- NA; # yy so grep excludes
-##     p18e_05 <- NA; # yy so grep excludes
-##     #p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- NA;
+#    nmanip <- ddone <- dneedsum <- 0;
+#    dneedsum05 <- dneedsum10 <- dneedsum20 <- dneedsum <- 0;
+#    when3b <- when3; orig.dest3b <- orig.dest3; action3b <- action3; #  backup action/orig.dest/when so that these
+#    when2b <- when2; orig.dest2b <- orig.dest2; action2b <- action2; #  can be erased once seccion gets manipulated
+#    whenb  <- when;  orig.destb  <- orig.dest;  actionb  <- action;  #  ---helps debug block immediately below
+    p18m_20 <- NA; # yy so grep excludes
+    p18m_10 <- NA; # yy so grep excludes
+    p18m_05 <- NA; # yy so grep excludes
+    p18e_20 <- NA; # yy so grep excludes
+    p18e_10 <- NA; # yy so grep excludes
+    p18e_05 <- NA; # yy so grep excludes
+    #p18_1994 <- p18_1997 <- p18_2000 <- p18_2003 <- p18_2006 <- p18_2009 <- p18_2012 <- p18_2015 <- p18_2018 <- p18_2021 <- NA;
 })
 nm <- nm[order(nm$inegi, nm$seccion),] # sort mun
 ##
@@ -1268,152 +1269,9 @@ table(      nm$p18_2020[nm$dskip==0 | nm$dready2est==1]==0)
 ## Check that dummies are mutually exclusive and exhaustive. if so, any single dummy selects cases ok
 table(skip=nm$dskip,    ready=nm$dready2est)                      ## mutually exclusive
 if (length(sel.tmp <- which(nm$dskip==0 & nm$dready2est==0) )==0) print("they're exhaustive") ## exhaustive (length==0)
-rm(nm.w,sel.tmp)
 #####################
 ## Block ends here ##
 #####################
-
-
-## intento de usar función de interpolación-compositional en objeto nm
-nm <- nm[order(nm$ord),]
-manip <- nm[, c("ord","inegi","p18_2005","p18_2010","p18_2020")]
-## get census projection functions
-source("../../code/v-hat-etc/interpolate-census-functions.r")
-
-tmp <- interlog(what="p18", yr=1997, unit="s", census.data=nm, frm="log(dv)~iv", digits=1)
-
-tmp.est <- data.frame(
-    "y1995"=NA,
-    "y1996"=NA,
-    "y1997"=tmp$interp,
-    "y1998"=NA,
-    "y1999"=NA,
-    "y2000"=NA,
-    "y2001"=NA,
-    "y2002"=NA,
-    "y2003"=NA,
-    "y2004"=NA,
-    "y2005"=NA,
-    "y2006"=NA,
-    "y2007"=NA,
-    "y2008"=NA,
-    "y2009"=NA,
-    "y2010"=NA,
-    "y2011"=NA,
-    "y2012"=NA,
-    "y2013"=NA,
-    "y2014"=NA,
-    "y2015"=NA,
-    "y2016"=NA,
-    "y2017"=NA,
-    "y2018"=NA,
-    "y2019"=NA,
-    "y2020"=NA,
-    "y2021"=NA,
-    "y2022"=NA,
-    "y2023"=NA)
-##
-for (yr in c(1994:1996,1998:2023)){
-    ##yr <- 1994
-    print(yr)
-    tmp2 <- predict.interlog(data=tmp, yr=yr)
-    tmp.est[, grep(yr, colnames(tmp.est))] <- tmp2
-}
-
-setwd(sd)
-write.csv(tmp.est, file="censo/p18se-proj-w-interlog.csv", )
-
-## explore
-i <- sel.r[1]
-i <- i+1; plot(x=c(1995,2023), y=c(min(tmp.est[i,], nm[i, grep("p18", colnames(nm))]), max(tmp.est[i,], nm[i, grep("p18", colnames(nm))])), type="n", main=i); lines(x=1995:2023, y=tmp.est[i,]); points(x=2000+c(5,10,20), y=nm[i, grep("p18", colnames(nm))]); 
-
-# save for debug
-save.image("too-big-4-github/tmp-debug.RData")
-
-# load image
-rm(list=ls())
-options(width = 110)
-dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/v-hats-etc")
-setwd(dd)
-load(file="too-big-4-github/tmp-debug.RData")
-
-tmp.est2 <- tmp.est ## duplicate before manip
-
-## Turn NAs back to zero to avoid double-counting
-done <- rep(0, nrow(tmp.est)) ## indicate progress here
-done[nm$dskip==1] <- 1
-table(done)
-
-sel.r <- which(nm.saved$p18_2010==0 & nm$dskip==0 & is.na(nm$when2))
-table(nm$baja[sel.r])
-
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2021)
-tmp.est[sel.r, grep("202[1-3]", colnames(tmp.est))] <- 0
-
-nm[sel.r[1],]
-tmp.est[sel.r[1],]
-
-
-i <- 1
-data.frame(nm=nm[sel.r[i], grep("secc|p18", colnames(nm))], sav=nm.saved[sel.r[i],])
-data.frame(nm=tmp.est[i,], sav=nm.saved[sel.r[i],])
-
-tmp.est[i, grep("2005|2010|2020", colnames(tmp.est))]
-
-sel.r[i]
-x
-
-#######################################################################################################################################
-## Esta rutina proyecta poblaciones municipales a partir de los mapas seccionales de municipios 2005 2010 2020 para años electorales ##
-## federales. Esto es, prescinde de los mu-level 1990 1995 2000. Los agrupa en objeto tmpfs, y es el objeto apropiado para proyectar ##
-## poblaciones seccionales usando compositional variables.                                                                           ##
-#######################################################################################################################################
-tmpfs <- censom94[, c("edon", "ife", "inegi", "mun")] # initialize object
-## duplicate censom.. to keep only 2005 2010 2020
-tmpm94 <- censom94[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm97 <- censom97[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm00 <- censom00[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm03 <- censom03[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm06 <- censom06[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm09 <- censom09[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm12 <- censom12[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm15 <- censom15[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm18 <- censom18[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-tmpm21 <- censom21[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
-##
-## get census projection functions
-source("../../code/v-hat-etc/interpolate-census-functions.r")
-tmp.regs <- interlog(what="p18", yr=1994, unit="m", frm="log(dv)~iv", census.data=tmpm94, digits=1)
-tmpfs$p18_1994 <- tmp.regs$interp
-tmp.regs <- interlog(what="p18", yr=1997, unit="m", frm="log(dv)~iv", census.data=tmpm97, digits=1)
-tmpfs$p18_1997 <- tmp.regs$interp
-tmp.regs <- interlog(what="p18", yr=2000, unit="m", frm="log(dv)~iv", census.data=tmpm00, digits=1)
-tmpfs$p18_2000 <- tmp.regs$interp
-tmp.regs <- interlog(what="p18", yr=2003, unit="m", frm="log(dv)~iv", census.data=tmpm03, digits=1)
-tmpfs$p18_2003 <- tmp.regs$interp
-tmp.regs <- interlog(what="p18", yr=2006, unit="m", frm="log(dv)~iv", census.data=tmpm06, digits=1)
-tmpfs$p18_2006 <- tmp.regs$interp
-## tmp.lins <- interpol(what="p18", yr=2006, unit="m", census.data=tmpm06, digits=1)
-## tmpfs$p18_2006 <- tmp.lins
-tmp.regs <- interlog(what="p18", yr=2009, unit="m", frm="log(dv)~iv", census.data=tmpm09, digits=1)
-tmpfs$p18_2009 <- tmp.regs$interp
-## tmp.lins <- interpol(what="p18", yr=2009, unit="m", census.data=tmpm09, digits=1)
-## tmpfs$p18_2009 <- tmp.lins
-tmp.regs <- interlog(what="p18", yr=2012, unit="m", frm="log(dv)~iv", census.data=tmpm12, digits=1)
-tmpfs$p18_2012 <- tmp.regs$interp
-## tmp.lins <- interpol(what="p18", yr=2012, unit="m", census.data=tmpm12, digits=1)
-## tmpfs$p18_2012 <- tmp.lins
-tmp.regs <- interlog(what="p18", yr=2015, unit="m", frm="log(dv)~iv", census.data=tmpm15, digits=1)
-tmpfs$p18_2015 <- tmp.regs$interp
-## tmp.lins <- interpol(what="p18", yr=2015, unit="m", census.data=tmpm15, digits=1)
-## tmpfs$p18_2015 <- tmp.lins
-tmp.regs <- interlog(what="p18", yr=2018, unit="m", frm="log(dv)~iv", census.data=tmpm18, digits=1)
-tmpfs$p18_2018 <- tmp.regs$interp
-## tmp.lins <- interpol(what="p18", yr=2018, unit="m", census.data=tmpm18, digits=1)
-## tmpfs$p18_2018 <- tmp.lins
-tmp.regs <- interlog(what="p18", yr=2021, unit="m", frm="log(dv)~iv", census.data=tmpm21, digits=1)
-tmpfs$p18_2021 <- tmp.regs$interp
-
 
 
 ############################################################################################
@@ -3146,8 +3004,56 @@ tmp -> censom21 # return
 rm(tmp)
 #
 
-
-
+#######################################################################################################################################
+## Esta rutina proyecta poblaciones municipales a partir de los mapas seccionales de municipios 2005 2010 2020 para años electorales ##
+## federales. Esto es, prescinde de los mu-level 1990 1995 2000. Los agrupa en objeto tmpfs, y es el objeto apropiado para proyectar ##
+## poblaciones seccionales usando compositional variables.                                                                           ##
+#######################################################################################################################################
+tmpfs <- censom94[, c("edon", "ife", "inegi", "mun")] # initialize object
+## duplicate censom.. to keep only 2005 2010 2020
+tmpm94 <- censom94[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm97 <- censom97[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm00 <- censom00[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm03 <- censom03[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm06 <- censom06[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm09 <- censom09[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm12 <- censom12[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm15 <- censom15[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm18 <- censom18[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+tmpm21 <- censom21[, c("edon", "ife", "inegi", "mun", "p18_2005", "p18_2010", "p18_2020")]
+##
+## get census projection functions
+source("../../code/v-hat-etc/interpolate-census-functions.r")
+tmp.regs <- interlog(what="p18", yr=1994, unit="m", frm="log(dv)~iv", census.data=tmpm94, digits=1)
+tmpfs$p18_1994 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=1997, unit="m", frm="log(dv)~iv", census.data=tmpm97, digits=1)
+tmpfs$p18_1997 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2000, unit="m", frm="log(dv)~iv", census.data=tmpm00, digits=1)
+tmpfs$p18_2000 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2003, unit="m", frm="log(dv)~iv", census.data=tmpm03, digits=1)
+tmpfs$p18_2003 <- tmp.regs$interp
+tmp.regs <- interlog(what="p18", yr=2006, unit="m", frm="log(dv)~iv", census.data=tmpm06, digits=1)
+tmpfs$p18_2006 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2006, unit="m", census.data=tmpm06, digits=1)
+## tmpfs$p18_2006 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2009, unit="m", frm="log(dv)~iv", census.data=tmpm09, digits=1)
+tmpfs$p18_2009 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2009, unit="m", census.data=tmpm09, digits=1)
+## tmpfs$p18_2009 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2012, unit="m", frm="log(dv)~iv", census.data=tmpm12, digits=1)
+tmpfs$p18_2012 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2012, unit="m", census.data=tmpm12, digits=1)
+## tmpfs$p18_2012 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2015, unit="m", frm="log(dv)~iv", census.data=tmpm15, digits=1)
+tmpfs$p18_2015 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2015, unit="m", census.data=tmpm15, digits=1)
+## tmpfs$p18_2015 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2018, unit="m", frm="log(dv)~iv", census.data=tmpm18, digits=1)
+tmpfs$p18_2018 <- tmp.regs$interp
+## tmp.lins <- interpol(what="p18", yr=2018, unit="m", census.data=tmpm18, digits=1)
+## tmpfs$p18_2018 <- tmp.lins
+tmp.regs <- interlog(what="p18", yr=2021, unit="m", frm="log(dv)~iv", census.data=tmpm21, digits=1)
+tmpfs$p18_2021 <- tmp.regs$interp
 ##
 #############
 ## Export  ##
