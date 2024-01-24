@@ -1344,15 +1344,110 @@ done <- rep(0, nrow(tmp.est)) ## indicate progress here
 done[nm$dskip==1] <- 1
 table(done)
 
-sel.r <- which(nm.saved$p18_2010==0 & nm$dskip==0 & is.na(nm$when2))
+## no reseccionamiento
+sel.r <- which(nm$dskip==0 & is.na(nm$when) & done==0)
+done[sel.r] <- 1
+##
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2))
 table(nm$baja[sel.r])
-
+table(nm$alta[sel.r])
+## alta in 2006
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$alta==2006)
+tmp.est[sel.r, grep("199|200[0-5]", colnames(tmp.est))] <- 0 ## pre alta to zero
+##
+## baja in 2021
 sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2021)
-tmp.est[sel.r, grep("202[1-3]", colnames(tmp.est))] <- 0
+tmp.est[sel.r, grep("202[1-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+##
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2020
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2020)
+tmp.est[sel.r, grep("202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2015
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2015)
+tmp.est[sel.r, grep("201[5-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2013
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2013)
+tmp.est[sel.r, grep("201[3-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2012
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2012)
+tmp.est[sel.r, grep("201[2-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2011
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2011)
+tmp.est[sel.r, grep("201[1-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2009
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2009)
+tmp.est[sel.r, grep("2009|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2006
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2006)
+tmp.est[sel.r, grep("200[6-9]|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
+##
+## baja in 2002
+sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2002)
+tmp.est[sel.r, grep("200[2-9]|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
+sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
+nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+## mark as done
+done[sel.r] <- 1
 
-nm[sel.r[1],]
-tmp.est[sel.r[1],]
-
+table(done)
+x
 
 i <- 1
 data.frame(nm=nm[sel.r[i], grep("secc|p18", colnames(nm))], sav=nm.saved[sel.r[i],])
