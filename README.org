@@ -1,12 +1,14 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
-Last revision: 2023-12-01
+Last revision: 2024-01-24
 
 ----------
 
 <h2>
 Recent news
 </h2>
+
+<sup><sub>2024-01-24</sub></sup> Changed ~nl2018aymu~ in source to reflect voided stations. At least one victor changed in ~aymu1989-on.incumbents~ (in General Zuazua). Thanks to Juan Pablo Figueroa for pointing this.
 
 <sup><sub>2023-12-01</sub></sup> Electoral party/coalition of ayuntamiento incumbents added.
 
@@ -17,7 +19,7 @@ Recent news
 
 <sup><sub>2023-03-10</sub></sup> *Inspect election returns online in Google sheets [[https://emagar.github.io/view-in-gSheets/][here]] (Beta)*
 
-<sup><sub>2023-02-22</sub></sup> *Voting station latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
+# <sup><sub>2023-02-22</sub></sup> *Voting station latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
 
 # <sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
 
