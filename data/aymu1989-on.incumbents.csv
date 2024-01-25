@@ -2399,7 +2399,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 2398,cua-18.014,CORONADO,2021,0,8,8014,8014,pan,0,LEO LOPEZ MUÑOZ,2024,,pri,0.3378967019,0,,,,,incumbent out,2024,,
 2399,cua-07.015,COYAME DEL SOTOL,1989,0,8,8015,8015,pri,0,RODOLFO GALLARDO ASTORGA,Term-limited-p-won,,pan,0.4513556619,0,0,0,,,NA,incumbent out,,inafed
 2400,cua-08.015,COYAME DEL SOTOL,1992,0,8,8015,8015,pri,0,IGNACIO ORTIZ VIEYRA,Term-limited-p-won,,pan,0.5353805073,0,0,0,,,incumbent out,incumbent out,,inafed
-2401,cua-09.015,COYAME DEL SOTOL,1995,0,8,8015,8015,pri,0,FRANCISCO J BAEZA N,Term-limited-p-lost,,pan,0.0940438871,0,0,0,,,incumbent out,incumbent out,,inafed
+2401,cua-09.015,COYAME DEL SOTOL,1995,0,8,8015,8015,pri,0,FRANCISCO JAVIER BAEZA NIETO,Term-limited-p-lost,,pan,0.0940438871,0,0,0,,,incumbent out,incumbent out,,inafed
 2402,cua-10.015,COYAME DEL SOTOL,1998,0,8,8015,8015,pan,0,ARMANDO RAMIREZ NAVARRETE,Term-limited-p-won,,pri,0.006263048,0,0,0,,,incumbent out,incumbent out,,
 2403,cua-11.015,COYAME DEL SOTOL,2001,0,8,8015,8015,pan,0,ANGEL HERMOSILLO SALGADO,Term-limited-p-lost,,pri,0.0172570391,0,0,0,,,incumbent out,incumbent out,,
 2404,cua-12.015,COYAME DEL SOTOL,2004,0,8,8015,8015,pri-pt,0,JESUS FRANCISCO LEYVA JURADO,Term-limited-p-won,,pan-prd-conve,0.0190114068,0,0,0,,,incumbent out,incumbent out,,
@@ -3848,7 +3848,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3847,gua-15.020,LEON,2012,0,11,11020,11020,pri-pvem,1,MARIA BARBARA BOTELLO SANTIBAÑEZ,Term-limited-p-lost,,pan-pna,0.0989609588,0,0,0,,,incumbent out,incumbent out,,
 3848,gua-16.020,LEON,2015,0,11,11020,11020,pan,0,HECTOR GERMAN RENE LOPEZ SANTILLANA,Reelected,,pri-pvem-pna,0.2577180104,0,0,0,,,incumbent out,pan,,
 3849,gua-17.020,LEON,2018,0,11,11020,11020,pan,0,HECTOR GERMAN RENE LOPEZ SANTILLANA,Term-limited-p-won,,morena-pt-pes,0.3825175968,0,1,1,,,pan,incumbent out,,
-3850,gua-18.020,LEON,2021,0,11,11020,11020,pan,1,ALEJANDRA GUTIERREZ CAMPOS,2024,,morena,0.3922530845,0,,,,,incumbent out,2024,,
+3850,gua-18.020,LEON,2021,0,11,11020,11020,pan,1,ALEJANDRA GUTIERREZ CAMPOS,Reran-,,morena,0.3922530845,0,,,,,incumbent out,2024,,
 3851,gua-08.021,MOROLEON,1991,0,11,11021,11021,pan,0,RANULFO BALCAZAR MARTINEZ,Term-limited-p-won,,pri,0.0693240901,0,0,0,,,NA,incumbent out,,
 3852,gua-09.021,MOROLEON,1994,0,11,11021,11021,pan,0,CARLOS ZAMUDIO LOPEZ,Term-limited-p-lost,,pri,0.1736756214,0,0,0,,,incumbent out,incumbent out,,inafed
 3853,gua-10.021,MOROLEON,1997,0,11,11021,11021,pri,0,ROBERTO ZAMUDIO LOPEZ,Term-limited-p-lost,RUBEN LARA LOPEZ,pan,0.0968321359,0,0,0,,,incumbent out,incumbent out,,
