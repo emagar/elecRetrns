@@ -1343,11 +1343,12 @@ tmp.est2 <- tmp.est ## duplicate before manip
 done <- rep(0, nrow(tmp.est)) ## indicate progress here
 done[nm$dskip==1] <- 1
 table(done)
-
+##
 ## no reseccionamiento
 sel.r <- which(nm$dskip==0 & is.na(nm$when) & done==0)
 done[sel.r] <- 1
-##
+
+## cases with single reseccionamiento
 sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2))
 table(nm$baja[sel.r])
 table(nm$alta[sel.r])
