@@ -1159,13 +1159,17 @@ dat.split2 <- dat.split2[sel6,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2020s.csv", row.names = FALSE)
 
 
+
 #########################################
 ## SUBSET INCUMBENTS FOR GOOGLE SHEETS ##
 #########################################
 dat.i <- read.csv(file = "aymu1989-on.incumbents.csv", stringsAsFactors = FALSE)
-median(dat.i$edon)
-write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
-write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
+quantile(dat.i$edon, probs = c(.33,.5,.67))
+write.csv(dat.i[dat.i$edon <15,],                 file = "smaller-for-gsheets/aymu.incumbents-ags-jal.csv", row.names = FALSE)
+write.csv(dat.i[dat.i$edon>=15 & dat.i$edon<22,], file = "smaller-for-gsheets/aymu.incumbents-mex-pue.csv", row.names = FALSE)
+write.csv(dat.i[dat.i$edon>=22,],                 file = "smaller-for-gsheets/aymu.incumbents-que-zac.csv", row.names = FALSE)
+## write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
+## write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
 
 # clean
 rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
