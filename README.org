@@ -235,7 +235,7 @@ Work in progress
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
-Many students over the years have provided research assistance to retrieve and systematize the information reported here. 
+Many students over the years have provided research assistance, retrieving and systematizing some of the information reported here. 
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
 - [[http://franciscogarfias.com/][Francisco Garfias]]
@@ -245,5 +245,6 @@ Many students over the years have provided research assistance to retrieve and s
 - [[https://www.mauriciofduque.com/][Mauricio Fernández Duque]]
 - Odette González Carrillo
 - Sonia Kuri Kosegarten
-- Vidal Mendoza Tinoco
+- [[https://github.com/VidalTinoco][Vidal Mendoza Tinoco]]
+
 [[top][<sub>Back to top</sub>]]

@@ -1330,122 +1330,189 @@ i <- i+1; plot(x=c(1995,2023), y=c(min(tmp.est[i,], nm[i, grep("p18", colnames(n
 # save for debug
 save.image("too-big-4-github/tmp-debug.RData")
 
-# load image
+################
+## load image ##
+################
 rm(list=ls())
 options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/v-hats-etc")
 setwd(dd)
 load(file="too-big-4-github/tmp-debug.RData")
 
-tmp.est2 <- tmp.est ## duplicate before manip
+## compute yearly rates of change
+tmp.est[1,]
+rat.est <- tmp.est
+rat.est$y1995 <- NA
+for (i in 2:ncol(tmp.est)){
+    rat.est[,i] <- tmp.est[,i] / tmp.est[,(i-1)]
+}
+rat.est[1:3,]
 
 ## Turn NAs back to zero to avoid double-counting
 done <- rep(0, nrow(tmp.est)) ## indicate progress here
+## no info
 done[nm$dskip==1] <- 1
-table(done)
-##
 ## no reseccionamiento
 sel.r <- which(nm$dskip==0 & is.na(nm$when) & done==0)
 done[sel.r] <- 1
+table(done)
+##
 
-## cases with single reseccionamiento
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2))
-table(nm$baja[sel.r])
-table(nm$alta[sel.r])
-## alta in 2006
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$alta==2006)
-tmp.est[sel.r, grep("199|200[0-5]", colnames(tmp.est))] <- 0 ## pre alta to zero
+## cases with single split.to or merged.to and baja
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2))
+table(nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
+## 2002
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2002)
+sel.c <- grep("200[2-9]|20[12]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2006
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2006)
+sel.c <- grep("200[6-9]|20[12]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2009
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2009)
+sel.c <- grep("2009|20[12]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2011
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2011)
+sel.c <- grep("201[1-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2012
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2012)
+sel.c <- grep("201[2-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2013
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2013)
+sel.c <- grep("201[3-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2015
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2015)
+sel.c <- grep("201[5-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2020
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2020)
+sel.c <- grep("202[0-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2021
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2021)
+sel.c <- grep("202[1-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2022
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2022)
+sel.c <- grep("202[2-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ##
-## baja in 2021
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2021)
-tmp.est[sel.r, grep("202[1-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
+table(done)
+
+## cases with late alta and no more
+sel.r <- which(done==0 & nm$alta > 1993 & is.na(nm$when2))
+table(nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
+## ## 1995 unused here
+## sel.r <- which(done==0 & nm$alta==1995 & is.na(nm$when2))
+## sel.c <- grep("199[0-4]", colnames(tmp.est))
+## tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 1996
+sel.r <- which(done==0 & nm$alta==1996 & is.na(nm$when2))
+sel.c <- grep("199[0-5]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 1997
+sel.r <- which(done==0 & nm$alta==1997 & is.na(nm$when2))
+sel.c <- grep("199[0-6]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 1998
+sel.r <- which(done==0 & nm$alta==1998 & is.na(nm$when2))
+sel.c <- grep("199[0-7]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 1999
+sel.r <- which(done==0 & nm$alta==1999 & is.na(nm$when2))
+sel.c <- grep("199[0-8]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2002
+sel.r <- which(done==0 & nm$alta==2002 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-1]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2004
+sel.r <- which(done==0 & nm$alta==2004 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-3]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2006
+sel.r <- which(done==0 & nm$alta==2006 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-5]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2011
+sel.r <- which(done==0 & nm$alta==2011 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|2010", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2012
+sel.r <- which(done==0 & nm$alta==2012 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-1]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2013
+sel.r <- which(done==0 & nm$alta==2013 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-2]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2015
+sel.r <- which(done==0 & nm$alta==2015 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-4]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2018
+sel.r <- which(done==0 & nm$alta==2018 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-7]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2020
+sel.r <- which(done==0 & nm$alta==2018 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2021
+sel.r <- which(done==0 & nm$alta==2021 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-9]|201[0-9]|2020", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ##
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2020
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2020)
-tmp.est[sel.r, grep("202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2015
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2015)
-tmp.est[sel.r, grep("201[5-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2013
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2013)
-tmp.est[sel.r, grep("201[3-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2012
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2012)
-tmp.est[sel.r, grep("201[2-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2011
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2011)
-tmp.est[sel.r, grep("201[1-9]|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2009
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2009)
-tmp.est[sel.r, grep("2009|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2006
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2006)
-tmp.est[sel.r, grep("200[6-9]|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
-##
-## baja in 2002
-sel.r <- which(nm.saved$p18_2020==0 & nm$dskip==0 & is.na(nm$when2) & nm$baja==2002)
-tmp.est[sel.r, grep("200[2-9]|201|202[0-3]", colnames(tmp.est))] <- 0 ## post baja to zero
-sel2 <- which(nm.saved$p18_2010[sel.r]==0)               ## which had zero pop 2010
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-sel2 <- which(nm.saved$p18_2005[sel.r]==0)               ## which had zero pop 2005
-nm.saved[sel.r[sel2],] ## give when2 not NA, no opther reseccionamiento, so leave untouched
-## mark as done
-done[sel.r] <- 1
+table(done)
+
+
+## cases with single split.to but no baja
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja))
+table(nm$when[sel.r], useNA = "ifany")
+## 2008
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2008)
+sel.c <- grep("200[2-9]|20[12]", colnames(tmp.est))
+sel.c <- grep("2009|20[12]", colnames(tmp.est))
+#
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2008[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+
+mp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 
 table(done)
 x
