@@ -1474,10 +1474,187 @@ table(done)
 ## cases with single split.to but no baja
 sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja))
 table(nm$when[sel.r], useNA = "ifany")
+##
+## ## Pre-2005 need no manipulation absent pre-2005 sección-level census
+## ## 2002
+## sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2005)
+## #
+## tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+## #
+## tmp.est$y2002[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2002[sel.r]  / rat.est$y2003[sel.r]  / rat.est$y2004[sel.r]  / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2003[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2003[sel.r]  / rat.est$y2004[sel.r]  / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2004[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2004[sel.r]  / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2005[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2006[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2007[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2008[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+## #
+## tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+## #
+## tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+## #
+## tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+## #
+## tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+## #
+## tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+## #
+## tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+## #
+## tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+## #
+## tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+## #
+## tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+## #
+## tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+## #
+## tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+## #
+## tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+## #
+## done[sel.r] <- 1
+##
+## ## Pre-2005 need no manipulation absent pre-2005 sección-level census
+## ## 2004
+## sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2004)
+## #
+## tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+## #
+## tmp.est$y2004[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2004[sel.r]  / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2005[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2006[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2007[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2008[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+## #
+## tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+## #
+## tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+## #
+## tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+## #
+## tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+## #
+## tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+## #
+## tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+## #
+## tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+## #
+## tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+## #
+## tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+## #
+## tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+## #
+## tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+## #
+## tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+## #
+## tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+## #
+## done[sel.r] <- 1
+##
+## 2005
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2005)
+#
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2005[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2005[sel.r]  / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2006[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2006[sel.r]  / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2007[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2008[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2007
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2007)
+#
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2007[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2007[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2008[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2008[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
 ## 2008
 sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2008)
-sel.c <- grep("200[2-9]|20[12]", colnames(tmp.est))
-sel.c <- grep("2009|20[12]", colnames(tmp.est))
 #
 tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
 #
@@ -1511,11 +1688,287 @@ tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2
 #
 tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
 #
+done[sel.r] <- 1
+##
+## 2009
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2009)
+#
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2009[sel.r] <- tmp.est$y2010[sel.r] / rat.est$y2009[sel.r]
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2010
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2010)
+#
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2011
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2011)
+#
+tmp.restore <- tmp.est$y2010[sel.r] ## WILL restore census later
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2011[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r]
+#
+tmp.est$y2012[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r]
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2010[sel.r] ## restore census
+done[sel.r] <- 1
+##
+## 2013
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2013)
+#
+tmp.restore <- tmp.est$y2010[sel.r] ## WILL restore census later
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2010[sel.r] ## restore census
+done[sel.r] <- 1
+##
+## 2014
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2014)
+#
+tmp.restore <- tmp.est$y2010[sel.r] ## WILL restore census later
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2010[sel.r] ## restore census
+done[sel.r] <- 1
+##
+## 2015
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2015)
+#
+tmp.restore <- tmp.est$y2010[sel.r] ## WILL restore census later
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2010[sel.r] ## restore census
+done[sel.r] <- 1
+##
+## 2017
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2017)
+#
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2017[sel.r] / rat.est$y2018[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2018[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2018
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2018)
+#
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2018[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2020
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2020)
+#
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+##
+## 2021
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2021)
+#
+tmp.restore <- tmp.est$y2020[sel.r] ## WILL restore census later
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2020[sel.r] ## restore census 
+done[sel.r] <- 1
+##
+## 2022
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2022)
+#
+tmp.restore <- tmp.est$y2020[sel.r] ## WILL restore census later
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2020[sel.r] ## restore census 
+done[sel.r] <- 1
 
-mp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## pre-2005 cases with single split.to but no baja: ignore due to lack of pre-2005 census
+sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja))
+table(nm$when[sel.r], useNA = "ifany")
+done[sel.r] <- 1
+
+
 
 table(done)
 x
+
+
+
 
 i <- 1
 data.frame(nm=nm[sel.r[i], grep("secc|p18", colnames(nm))], sav=nm.saved[sel.r[i],])
