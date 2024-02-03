@@ -1359,46 +1359,47 @@ table(done)
 ##
 
 ## cases with single split.to or merged.to and baja
-sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2))
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & !is.na(nm$baja))
 table(nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
+nm[sel.r,]
 ## 2002
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2002)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2002)
 sel.c <- grep("200[2-9]|20[12]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2006
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2006)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2006)
 sel.c <- grep("200[6-9]|20[12]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2009
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2009)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2009)
 sel.c <- grep("2009|20[12]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2011
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2011)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2011)
 sel.c <- grep("201[1-9]|202", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2012
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2012)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2012)
 sel.c <- grep("201[2-9]|202", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2013
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2013)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2013)
 sel.c <- grep("201[3-9]|202", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2015
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2015)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2015)
 sel.c <- grep("201[5-9]|202", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2020
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2020)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2020)
 sel.c <- grep("202[0-9]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2021
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2021)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2021)
 sel.c <- grep("202[1-9]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2022
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & nm$baja==2022)
+sel.r <- which(done==0 & (nm$action=="split.to" | nm$action=="merged.to") & is.na(nm$when2) & nm$baja==2022)
 sel.c <- grep("202[2-9]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ##
@@ -1407,10 +1408,11 @@ table(done)
 ## cases with late alta and no more
 sel.r <- which(done==0 & nm$alta > 1993 & is.na(nm$when2))
 table(nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
-## ## 1995 unused here
-## sel.r <- which(done==0 & nm$alta==1995 & is.na(nm$when2))
+## 1995 unused here, mark as done
+sel.r <- which(done==0 & nm$alta==1995 & is.na(nm$when2))
 ## sel.c <- grep("199[0-4]", colnames(tmp.est))
-## tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## tmp.est[sel.r, sel.c] <- 0;
+done[sel.r] <- 1
 ## 1996
 sel.r <- which(done==0 & nm$alta==1996 & is.na(nm$when2))
 sel.c <- grep("199[0-5]", colnames(tmp.est))
@@ -1439,6 +1441,14 @@ tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 sel.r <- which(done==0 & nm$alta==2006 & is.na(nm$when2))
 sel.c <- grep("199[0-9]|200[0-5]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2008
+sel.r <- which(done==0 & nm$alta==2008 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-7]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## 2009
+sel.r <- which(done==0 & nm$alta==2009 & is.na(nm$when2))
+sel.c <- grep("199[0-9]|200[0-8]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2011
 sel.r <- which(done==0 & nm$alta==2011 & is.na(nm$when2))
 sel.c <- grep("199[0-9]|200[0-9]|2010", colnames(tmp.est))
@@ -1460,7 +1470,7 @@ sel.r <- which(done==0 & nm$alta==2018 & is.na(nm$when2))
 sel.c <- grep("199[0-9]|200[0-9]|201[0-7]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2020
-sel.r <- which(done==0 & nm$alta==2018 & is.na(nm$when2))
+sel.r <- which(done==0 & nm$alta==2020 & is.na(nm$when2))
 sel.c <- grep("199[0-9]|200[0-9]|201[0-9]", colnames(tmp.est))
 tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ## 2021
@@ -1470,11 +1480,215 @@ tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 ##
 table(done)
 
+## cases with late alta and smthg else
+sel.r <- which(done==0 & nm$alta > 1993)
+table(alta=nm$alta[sel.r], nm$when2[sel.r], useNA = "ifany")
+table(alta=nm$alta[sel.r], nm$action2[sel.r], useNA = "ifany")
+## cases where smthg else is merged to
+## alta 1995 was merged 2012
+sel.r <- which(done==0 & nm$action2=="merged.to" & nm$alta==1995)
+sel.c <- grep("201[2-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## alta 1996 were merged 2009
+sel.r <- which(done==0 & nm$action2=="merged.to" & nm$alta==1996)
+sel.c <- grep("1995", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+sel.c <- grep("2009|201|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## alta 2002 was merged 2015
+sel.r <- which(done==0 & nm$action2=="merged.to" & nm$alta==2002)
+sel.c <- grep("199|200[01]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+sel.c <- grep("201[5-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
+## alta 2004 was merged 2009
+sel.r <- which(done==0 & nm$action2=="merged.to" & nm$alta==2004)
+sel.c <- grep("199|200[0-3]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+sel.c <- grep("2009|201|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1
 
-## cases with single split.to but no baja
-sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja))
-table(nm$when[sel.r], useNA = "ifany")
+## late altas with action2 split and baja
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & !is.na(nm$baja))
+table(alta=nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
+## baja 2012
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & nm$baja==2012)
+sel.c <- grep("201[2-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## baja 2020
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & nm$baja==2020)
+sel.c <- grep("202[1-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## baja 2021
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & nm$baja==2021)
+sel.c <- grep("202[2-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## baja 2022
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & nm$baja==2022)
+sel.c <- grep("202[3-9]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## alta 2002
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2002 & !is.na(nm$baja))
+sel.c <- grep("199|200[0-1]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+## alta 2006
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2006 & !is.na(nm$baja))
+sel.c <- grep("199|200[0-5]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+## alta 2009
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2009 & !is.na(nm$baja))
+sel.c <- grep("199|200[0-8]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+## alta 2011
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2011 & !is.na(nm$baja))
+sel.c <- grep("199|200|2010", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+## alta 2013
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2013 & !is.na(nm$baja))
+sel.c <- grep("199|200|201[0-2]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+## alta 2015
+sel.r <- which(done==0                  & nm$action2=="split.to" & nm$alta==2015 & !is.na(nm$baja))
+sel.c <- grep("199|200|201[0-4]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0; done[sel.r] <- 1 ## mark as done
+
+## late alta and split.to with no baja
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & is.na(nm$baja))
+table(alta=nm$alta[sel.r], nm$when2[sel.r], useNA = "ifany")
+table(alta=nm$alta[sel.r], nm$action2[sel.r], useNA = "ifany")
+table(alta=nm$alta[sel.r], nm$action3[sel.r], useNA = "ifany")
+table(alta=nm$alta[sel.r], nm$baja[sel.r], useNA = "ifany")
+## process late alta first, then process split.to w/o baja with others in same type 
+## 2011
+sel.r <- which(done==0 & nm$alta==2011 & nm$action2=="split.to" & is.na(nm$baja))
+sel.c <- grep("199|200|2010", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## 2013
+sel.r <- which(done==0 & nm$alta==2013 & nm$action2=="split.to" & is.na(nm$baja))
+sel.c <- grep("199|200|201[0-2]", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## 2021
+sel.r <- which(done==0 & nm$alta==2021 & nm$action2=="split.to" & is.na(nm$baja))
+sel.c <- grep("199|200|201|2020", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+## process split.to next and mark done
+## 2018
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & is.na(nm$baja) & nm$when2==2018)
+#
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2018[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2019[sel.r]
+#
+tmp.est$y2021[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+done[sel.r] <- 1
+## 2022
+sel.r <- which(done==0 & nm$alta > 1993 & nm$action2=="split.to" & is.na(nm$baja) & nm$when2==2022)
+#
+tmp.restore <- tmp.est$y2020[sel.r]
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
+#
+tmp.est$y2022[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.restore
+done[sel.r] <- 1
+
+## split to w/o baja then merged.to in 2021
+sel.r <- which(done==0 & nm$action=="split.to" & nm$action2=="merged.to")
+nm[sel.r,]
+nm$when[sel.r]
+## only one post 2005: start by marking all as done (now that selector is in mem) then manipulate 2013
+done[sel.r] <- 1
+## 2013
+sel.r <- which(done==0 & nm$action=="split.to"  & nm$action2=="merged.to" & nm$when==2013)
+#
+tmp.restore <- tmp.est$y2010[sel.r] ## WILL restore census later
+tmp.est$y2010[sel.r] <- nm[sel.r,"p18_2010"] ## use post split censo as new baseline
+#
+tmp.est$y2013[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r]
+#
+tmp.est$y2014[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r]
+#
+tmp.est$y2015[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r]
+#
+tmp.est$y2016[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r]
+#
+tmp.est$y2017[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r]
+#
+tmp.est$y2018[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r]
+#
+tmp.est$y2019[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r]
+#
+tmp.est$y2020[sel.r] <- tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r]
+#
+tmp.est$y2021[sel.r] <- 0 ##tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r]
+#
+tmp.est$y2022[sel.r] <- 0 ##tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+#
+tmp.est$y2023[sel.r] <- 0 ##tmp.est$y2010[sel.r] * rat.est$y2011[sel.r] * rat.est$y2012[sel.r] * rat.est$y2013[sel.r] * rat.est$y2014[sel.r] * rat.est$y2015[sel.r] * rat.est$y2016[sel.r] * rat.est$y2017[sel.r] * rat.est$y2018[sel.r] * rat.est$y2019[sel.r] * rat.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+#
+tmp.restore -> tmp.est$y2010[sel.r] ## restore census
+
+## case with action3 split.to with baja but previous resecc prior to 2005
+sel.r <- which(done==0 & nm$action3=="split.to")
+nm[sel.r,]
+sel.c <- grep("201[5-9]|202", colnames(tmp.est))
+tmp.est[sel.r, sel.c] <- 0
+done[sel.r] <- 1
+
+
+## persist after split.to then another split.to with baja: two prior 2005
+sel.r <- which(done==0 & nm$action=="split.to" & !is.na(nm$baja))
+nm[sel.r,]
+nm$when[sel.r]
+## mark as all as done first (now that selector is in mem) then manipulate 2018
+done[sel.r] <- 1
+## 2018
+sel.r <- which(done==0 & nm$action=="split.to" & nm$action2=="split.to" & nm$when==2018)
+#
+tmp.restore <- tmp.est$y2020[sel.r]
+tmp.est$y2020[sel.r] <- nm[sel.r,"p18_2020"] ## use post split censo as new baseline
 ##
+tmp.est$y2018[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2018[sel.r] / rat.est$y2019[sel.r]
+##
+tmp.est$y2019[sel.r] <- tmp.est$y2020[sel.r] / rat.est$y2019[sel.r]
+##
+tmp.est$y2021[sel.r] <- 0 ##tmp.est$y2020[sel.r] * rat.est$y2021[sel.r]
+##
+tmp.est$y2022[sel.r] <- 0 ##tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r]
+##
+tmp.est$y2023[sel.r] <- 0 ##tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2022[sel.r] * rat.est$y2023[sel.r]
+
+## case with dual split.to and no baja
+sel.r <- which(done==0 & nm$action=="split.to" & nm$action2=="split.to" & is.na(nm$baja))
+nm[sel.r,]
+## one is pre-2005, another hard to figure, both should be marginal --> ignore
+done[sel.r] <- 1
+
+
+## inspect
+table(done)
+sel.r <- which(done==0)
+table(one=nm$action[sel.r]   , two=nm$action2[sel.r]  , useNA = "ifany")
+table(two=nm$action2[sel.r]  , three=nm$action3[sel.r], useNA = "ifany")
+table(alta=nm$alta[sel.r]    , baja=nm$baja[sel.r]    , useNA = "ifany")
+table(one=nm$action[sel.r]   , baja=nm$baja[sel.r]    , useNA = "ifany")
+table(two=nm$action2[sel.r]  , baja=nm$baja[sel.r]    , useNA = "ifany")
+table(three=nm$action3[sel.r], baja=nm$baja[sel.r]    , useNA = "ifany")
+
+## all remaining are single split.to w/o baja
+sel.r <- which(done==0)
+table(one=nm$action[sel.r]   , two=nm$action2[sel.r]  , useNA = "ifany")
+table(alta=nm$alta[sel.r]    , baja=nm$baja[sel.r]    , useNA = "ifany")
+table(one=nm$action[sel.r]   , when=nm$when[sel.r]  , useNA = "ifany")
 ## ## Pre-2005 need no manipulation absent pre-2005 sección-level census
 ## ## 2002
 ## sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja) & nm$when==2005)
@@ -1956,28 +2170,60 @@ tmp.est$y2023[sel.r] <- tmp.est$y2020[sel.r] * rat.est$y2021[sel.r] * rat.est$y2
 #
 tmp.restore -> tmp.est$y2020[sel.r] ## restore census 
 done[sel.r] <- 1
-
+##
 ## pre-2005 cases with single split.to but no baja: ignore due to lack of pre-2005 census
 sel.r <- which(done==0 & nm$action=="split.to" & is.na(nm$when2) & is.na(nm$baja))
 table(nm$when[sel.r], useNA = "ifany")
 done[sel.r] <- 1
-
-
-
+##
+tmp.est[1,]
+ls()
 table(done)
-x
+
+## plot
+i <- i+1; plot(sub("y", "", colnames(tmp.est)), tmp.est[i,], ylim = c(0,max(tmp.est[i,])), main=paste(i,nm$mun[i],nm$seccion[i])); points(x=c(2005,2010,2020), y=nm[i, grep("p18_20", colnames(nm))], pch=20)
+
+## aggregate municipios
+tmp.est <- cbind(inegi=nm$inegi, tmp.est) ## add inegi
+p18mun <- tmp.est
+p18mun[1,]
+p18mun$y1995 <- ave(p18mun$y1995, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y1996 <- ave(p18mun$y1996, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y1997 <- ave(p18mun$y1997, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y1998 <- ave(p18mun$y1998, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y1999 <- ave(p18mun$y1999, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2000 <- ave(p18mun$y2000, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2001 <- ave(p18mun$y2001, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2002 <- ave(p18mun$y2002, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2003 <- ave(p18mun$y2003, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2004 <- ave(p18mun$y2004, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2005 <- ave(p18mun$y2005, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2006 <- ave(p18mun$y2006, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2007 <- ave(p18mun$y2007, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2008 <- ave(p18mun$y2008, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2009 <- ave(p18mun$y2009, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2010 <- ave(p18mun$y2010, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2011 <- ave(p18mun$y2011, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2012 <- ave(p18mun$y2012, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2013 <- ave(p18mun$y2013, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2014 <- ave(p18mun$y2014, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2015 <- ave(p18mun$y2015, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2016 <- ave(p18mun$y2016, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2017 <- ave(p18mun$y2017, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2018 <- ave(p18mun$y2018, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2019 <- ave(p18mun$y2019, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2020 <- ave(p18mun$y2020, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2021 <- ave(p18mun$y2021, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2022 <- ave(p18mun$y2022, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun$y2023 <- ave(p18mun$y2023, as.factor(p18mun$inegi), FUN=sum, na.rm=TRUE)
+p18mun <- p18mun[duplicated(p18mun$inegi)==FALSE,]
+
+## plot
+i <- i+1; plot(sub("y", "", colnames(p18mun)[-1]), p18mun[i,-1], ylim = c(0,max(p18mun[i,])), main=paste(i,p18mun$inegi[i]));
+censom[1,]
+##points(x=c(2005,2010,2020), y=nm[i, grep("p18_20", colnames(nm))], pch=20)
 
 
-
-
-i <- 1
-data.frame(nm=nm[sel.r[i], grep("secc|p18", colnames(nm))], sav=nm.saved[sel.r[i],])
-data.frame(nm=tmp.est[i,], sav=nm.saved[sel.r[i],])
-
-tmp.est[i, grep("2005|2010|2020", colnames(tmp.est))]
-
-sel.r[i]
-x
 
 #######################################################################################################################################
 ## Esta rutina proyecta poblaciones municipales a partir de los mapas seccionales de municipios 2005 2010 2020 para años electorales ##
