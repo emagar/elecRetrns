@@ -674,7 +674,7 @@ sv[sel7,] <- tmp.vw
 sl[sel7,] <- tmp.lw
 
 max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
-print("Table must have 0s and 1s only, else coalitions remain to manipulate")
+print("Table must have 0s and 1s only, else coalitions remain that need manipulation")
 table(max.tmp) # must have 0s and 1s only (number of parties being reported by remaining columns)
 
 ## # debug
