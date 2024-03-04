@@ -10750,8 +10750,8 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 10749,nl-16.033,LINARES,2015,0,19,19034,19033,pan,0,FERNANDO ADAME DORIA,Reelected,,pri-pvem-pna-pd1,0.1857488557,0,1,1,,,incumbent out,pan,,
 10750,nl-17.033,LINARES,2018,0,19,19034,19033,pan,0,FERNANDO ADAME DORIA,Term-limited-p-won,GERARDO DE LA GARZA GARCIA,pri,0.2097856242,0,1,1,,,pan,incumbent out,,
 10751,nl-18.033,LINARES,2021,0,19,19034,19033,pan,0,SERGIO EDUARDO ELIZONDO GUZMAN,2024,GERARDO GUZMAN GONZALEZ,indep,0.1129715355,0,,,,,incumbent out,2024,,
-10752,nl-08.034,MARIN,1991,0,19,19035,19034,pri,,?,Term-limited-p-won,,prd,0.8669238187,0,0,0,,,NA,incumbent out,,
-10753,nl-09.034,MARIN,1994,0,19,19035,19034,pri,,?,Term-limited-p-won,,pan,0.0272780035,0,0,0,,,incumbent out,incumbent out,,
+10752,nl-08.034,MARIN,1991,0,19,19035,19034,pri,1,MARIA AMALIA GONZALEZ GONZALEZ,Term-limited-p-won,,prd,0.8669238187,0,0,0,,,NA,incumbent out,fue presidenta Marin 1983-1985,
+10753,nl-09.034,MARIN,1994,0,19,19035,19034,pri,0,MIGUEL GOMEZ ALVAREZ,Term-limited-p-won,,pan,0.0272780035,0,0,0,,,incumbent out,incumbent out,,
 10754,nl-10.034,MARIN,1997,0,19,19035,19034,pri,1,MARIA AMALIA GONZALEZ GONZALEZ,Term-limited-p-lost,,pan,0.0082012028,0,0,0,,,incumbent out,incumbent out,,
 10755,nl-11.034,MARIN,2000,0,19,19035,19034,pan,0,OSCAR RENE GONZALEZ MARTINEZ,Term-limited-p-lost,,pri,0.1318795431,0,0,0,,,incumbent out,incumbent out,,
 10756,nl-12.034,MARIN,2003,0,19,19035,19034,pri-pvem-plm-fuerciud,0,MARIO ALBERTO GARZA LOZANO,Term-limited-p-won,,pan,0.2745006967,0,0,0,,,incumbent out,incumbent out,,
@@ -10760,7 +10760,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 10759,nl-15.034,MARIN,2012,0,19,19035,19034,pri-pvem,0,JOSE SANTAMARIA GUTIERREZ,Term-limited-p-won,,pan,0.2122229684,0,0,0,,,incumbent out,incumbent out,,
 10760,nl-16.034,MARIN,2015,0,19,19035,19034,pri,0,MARIO ALBERTO GARZA LOZANO,Out-p-lost,,pcc,0.1263661202,0,1,1,,,incumbent out,incumbent out,,
 10761,nl-17.034,MARIN,2018,0,19,19035,19034,pvem,0,JOSE SANTAMARIA GUTIERREZ,Reelected,LUIS ALBERTO GONZALEZ MORENO,pan,0.127318117,0,1,1,,,incumbent out,pvem,,
-10762,nl-18.034,MARIN,2021,0,19,19035,19034,pvem,0,JOSE SANTAMARIA GUTIERREZ,Term-limited-2024,MARIA GUADALUPE GONZALEZ CORTEZ,pan,0.5214626391,0,,,,,pvem,incumbent out,,
+10762,nl-18.034,MARIN,2021,0,19,19035,19034,pvem,0,JOSE SANTAMARIA GUTIERREZ,Term-limited-2024,MARIA GUADALUPE GONZALEZ CORTEZ,pan,0.5214626391,0,1,1,,,pvem,incumbent out,,
 10763,nl-08.035,MELCHOR OCAMPO,1991,0,19,19036,19035,pri,0,PONCIANO LOPEZ RAMOS,Term-limited-p-won,,pfcrn,0.9650145773,0,0,0,,,NA,incumbent out,,inafed
 10764,nl-09.035,MELCHOR OCAMPO,1994,0,19,19036,19035,pri,0,RAUL GONZALEZ FLORES,Term-limited-p-won,,pan,0.211026616,0,0,0,,,incumbent out,incumbent out,,inafed
 10765,nl-10.035,MELCHOR OCAMPO,1997,0,19,19036,19035,pri,0,PONCIANO LOPEZ RAMOS,Term-limited-p-won,,pan,0.3500897666,0,1,1,,,incumbent out,incumbent out,,
