@@ -50,7 +50,7 @@ ord,ife,inegi,mun,notes
 46,20080,20083,San Agustín de las Juntas ,
 47,20081,20084,San Agustín Etla ,
 48,20082,20085,San Agustín Loxicha ,
-49,20083,20086,San Agustín Tlacotepec ,
+49,20083,20086,San Agustín Tlacotepec ,back to elected authorities in 1998
 50,20084,20087,San Agustín Yatareni ,
 51,20085,20088,San Andrés Cabecera Nueva ,back to elected authorities in 2013
 52,20088,20091,San Andrés Huayapam ,
@@ -178,6 +178,7 @@ ord,ife,inegi,mun,notes
 174,20242,20242,San Martín Peras ,
 175,20243,20243,San Martín Tilcajete ,
 176,20244,20244,San Martín Toxpalan ,
+,20245,20245,San Martín Zacatepec,back to elected authorities in 1998
 177,20246,20246,San Mateo Cajonos ,
 178,20247,20248,San Mateo del Mar ,
 179,20248,20250,San Mateo Etlatongo ,
@@ -410,7 +411,7 @@ ord,ife,inegi,mun,notes
 406,20548,20548,Tepelmeme Villa de Morelos ,
 407,20551,20552,Tlacotepec Plumas ,
 408,20552,20553,Tlalixtac de Cabrera ,
-409,20554,,Totontepec Villa de Morelos ,
+409,20554,20554,Totontepec Villa de Morelos ,
 410,20403,20405,Villa de Chilapa de Díaz ,
 411,20561,20560,Villa Díaz Ordaz ,
 412,20562,20038,Villa Hidalgo (Yalalag) ,
@@ -420,3 +421,9 @@ ord,ife,inegi,mun,notes
 416,20565,20564,Yutanduchi de Guerrero ,
 417,20567,20566,Zapotitlán del Río ,
 418,20569,20568,Zapotitlán Palmas ,
+CHIAPAS MICHOACAN MORELOS,,,,
+419,7064,7064,Oxchuc,since 2018
+420,16024,16024,Cherán,since 2011
+421,17034,17034,Coatetelco,since 2021
+422,17035,17035,Xoxocotla,since 2021
+423,17036,17036,Hueyapan,since 2021
