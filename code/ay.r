@@ -273,12 +273,13 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^alianza-", replacement = "alianza1-", l[,i])
 ##     }
 #
-for (i in 1:ncol(l)){
-    l[,i] <- gsub(pattern = "^es$|^pesm$|^pest$", replacement = "pes",   l[,i])
-    l[,i] <- gsub(pattern = "-es-|-pesm-|-pest-", replacement = "-pes-", l[,i])
-    l[,i] <- gsub(pattern = "-es$|-pesm$|-pest$", replacement = "-pes",  l[,i])
-    l[,i] <- gsub(pattern = "^es-|^pesm-|^pest-", replacement = "pes-",  l[,i])
-    }
+## ## pes and pesm both present in mor 2021
+## for (i in 1:ncol(l)){
+##     l[,i] <- gsub(pattern = "^es$|^pesm$|^pest$", replacement = "pes",   l[,i])
+##     l[,i] <- gsub(pattern = "-es-|-pesm-|-pest-", replacement = "-pes-", l[,i])
+##     l[,i] <- gsub(pattern = "-es$|-pesm$|-pest$", replacement = "-pes",  l[,i])
+##     l[,i] <- gsub(pattern = "^es-|^pesm-|^pest-", replacement = "pes-",  l[,i])
+##     }
 #
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pmac$|^moveracps$", replacement = "pmch", l[,i])
