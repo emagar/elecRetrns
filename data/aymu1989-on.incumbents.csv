@@ -3639,7 +3639,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3638,gua-15.001,ABASOLO,2012,0,11,11001,11001,pan,0,ABEL GALLARDO MORALES,Term-limited-p-won,,pri-pvem,0.1830347565,0,0,0,,,incumbent out,incumbent out,,
 3639,gua-16.001,ABASOLO,2015,0,11,11001,11001,pan,0,SAMUEL AMEZOLA CEBALLOS,Out-p-lost,,pri,0.1297239591,0,0,0,,,incumbent out,incumbent out,,
 3640,gua-17.001,ABASOLO,2018,0,11,11001,11001,pri,0,SAMUEL CRUZ CHASANI,Out-p-won,,morena-pt-pes,0.0266159696,0,0,0,,,incumbent out,incumbent out,,
-3641,gua-18.001,ABASOLO,2021,0,11,11001,11001,pri,1,ROCIO CERVANTES BARBA,2024,,pan,0.0225815445,0,,,,,incumbent out,2024,,
+3641,gua-18.001,ABASOLO,2021,0,11,11001,11001,pri,1,ROCIO CERVANTES BARBA,Out-2024,,pan,0.0225815445,0,,,,,incumbent out,2024,,
 3642,gua-08.002,ACAMBARO,1991,0,11,11002,11002,pri,0,FRANCISCO EDUARDO CHACON SAMANO,Term-limited-p-lost,,pan,0.1999188147,0,0,0,,,NA,incumbent out,,inafed
 3643,gua-09.002,ACAMBARO,1994,0,11,11002,11002,prd,0,ANTONIO TIRADO PATIÑO,Term-limited-p-won,,pri,0.0322736652,0,0,0,,,incumbent out,incumbent out,,inafed
 3644,gua-10.002,ACAMBARO,1997,0,11,11002,11002,prd,0,JOSE IGNACIO NARES LUNA,Term-limited-p-won,J. ELIAS SIERRA RODRIGUEZ,pri,0.2682963258,0,0,0,,,incumbent out,incumbent out,,
@@ -3650,7 +3650,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3649,gua-15.002,ACAMBARO,2012,0,11,11002,11002,pan-pna,0,RENE MALDUJANO TINAJERO,Term-limited-p-lost,,prd,0.187416517,0,0,0,,,incumbent out,incumbent out,,
 3650,gua-16.002,ACAMBARO,2015,0,11,11002,11002,prd,0,GERARDO JAVIER ALCANTAR SAUCEDO,Out-p-lost,,pan,0.1251435132,0,0,0,,,incumbent out,incumbent out,,
 3651,gua-17.002,ACAMBARO,2018,0,11,11002,11002,morena-pt-pes,0,ALEJANDRO TIRADO ZUÑIGA,Reran-beaten,,prd,0.0713237862,0,0,0,,,incumbent out,morena,,
-3652,gua-18.002,ACAMBARO,2021,0,11,11002,11002,pan,1,CLAUDIA SILVA CAMPOS,2024,,morena,0.0215638687,0,,,,,morena,2024,,
+3652,gua-18.002,ACAMBARO,2021,0,11,11002,11002,pan,1,CLAUDIA SILVA CAMPOS,reran-2024,,morena,0.0215638687,0,,,,,morena,2024,,
 3653,gua-08.003,SAN MIGUEL DE ALLENDE,1991,0,11,11003,11003,pan,0,SALVADOR GARCIA GONZALEZ,Term-limited-p-lost,,pri,0.1659581047,0,0,0,,,NA,incumbent out,,inafed
 3654,gua-09.003,SAN MIGUEL DE ALLENDE,1994,0,11,11003,11003,pri,0,JAIME MICHAEL FERNANDEZ MARTINEZ HARRIS,Term-limited-p-lost,,pan,0.2964721113,0,0,0,,,incumbent out,incumbent out,,inafed
 3655,gua-10.003,SAN MIGUEL DE ALLENDE,1997,0,11,11003,11003,pan,0,SALVADOR GARCIA GONZALEZ,Term-limited-p-won,JAIME MARTINEZ TAPIA,pri,0.2324027795,0,1,1,,,incumbent out,incumbent out,,
@@ -3661,7 +3661,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3660,gua-15.003,SAN MIGUEL DE ALLENDE,2012,0,11,11003,11003,pri-pvem,0,MAURICIO TREJO PURECO,Term-limited-p-lost,,pan-pna,0.087048905,0,0,0,,,incumbent out,incumbent out,,
 3661,gua-16.003,SAN MIGUEL DE ALLENDE,2015,0,11,11003,11003,pan,0,RICARDO VILLARREAL GARCIA,Out-p-won,,pri-pvem-pna,0.1609700069,0,0,0,,,incumbent out,incumbent out,sought higher office,
 3662,gua-17.003,SAN MIGUEL DE ALLENDE,2018,0,11,11003,11003,pan,0,LUIS ALBERTO VILLARREAL GARCIA,Reran-beaten,,morena-pt-pes,0.1428619404,0,1,1,,,incumbent out,pan,wife won ags gov in 2022,
-3663,gua-18.003,SAN MIGUEL DE ALLENDE,2021,0,11,11003,11003,pri,0,MAURICIO TREJO PURECO,2024,,pan,0.0435177689,0,,,,,pan,2024,,
+3663,gua-18.003,SAN MIGUEL DE ALLENDE,2021,0,11,11003,11003,pri,0,MAURICIO TREJO PURECO,reran-2024,,pan,0.0435177689,0,,,,,pan,2024,,
 3664,gua-08.004,APASEO EL ALTO,1991,0,11,11004,11004,pri,0,SEBERO ROJAS DOMINGUEZ,Term-limited-p-lost,,pan,0.0808695652,0,0,0,,,NA,incumbent out,,inafed
 3665,gua-09.004,APASEO EL ALTO,1994,0,11,11004,11004,pan,0,JAIME HERNANDEZ CENTENO,Term-limited-p-lost,,pri,0.0523115196,0,0,0,,,incumbent out,incumbent out,,inafed
 3666,gua-10.004,APASEO EL ALTO,1997,0,11,11004,11004,pri,0,JOEL JIMENEZ SANCHEZ,Term-limited-p-lost,JAVIER GIRON ARZATE,pan,0.0663070353,0,0,0,,,incumbent out,incumbent out,,
@@ -3672,7 +3672,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3671,gua-15.004,APASEO EL ALTO,2012,0,11,11004,11004,mc,0,JAIME HERNANDEZ CENTENO,Term-limited-p-lost,,pri-pvem,0.1227709722,0,1,1,,,incumbent out,incumbent out,,
 3672,gua-16.004,APASEO EL ALTO,2015,0,11,11004,11004,pan,0,MIGUEL ANGEL SANCHEZ ESCUTIA,Reran-beaten,,mc,0.1213684384,0,0,0,,,incumbent out,pan,,
 3673,gua-17.004,APASEO EL ALTO,2018,0,11,11004,11004,morena-pt-pes,1,MARIA DEL CARMEN ORTIZ TERRAZAS,Reran-beaten,,pan,0.1757798458,0,0,0,,,pan,morena,,
-3674,gua-18.004,APASEO EL ALTO,2021,0,11,11004,11004,pan,1,GUADALUPE MONSERRAT MENDOZA CANO,2024,,pvem,0.1268203026,0,,,,,morena,2024,,
+3674,gua-18.004,APASEO EL ALTO,2021,0,11,11004,11004,pan,1,GUADALUPE MONSERRAT MENDOZA CANO,reran-2024,,pvem,0.1268203026,0,,,,,morena,2024,,
 3675,gua-08.005,APASEO EL GRANDE,1991,0,11,11005,11005,pri,0,MANUEL GERARDO BUENROSTRO MORALES,Term-limited-p-won,,pan,0.1000349162,0,0,0,,,NA,incumbent out,,inafed
 3676,gua-09.005,APASEO EL GRANDE,1994,0,11,11005,11005,pri,0,LORENZO LICEA ROJAS,Term-limited-p-lost,,pan,0.0957465228,0,0,0,,,incumbent out,incumbent out,,inafed
 3677,gua-10.005,APASEO EL GRANDE,1997,0,11,11005,11005,pan,0,MIGUEL MACIAS OLVERA,Term-limited-p-lost,LUIS RODRIGEZ RUBIO,pri,0.1607794854,0,0,0,,,incumbent out,incumbent out,,
@@ -3683,7 +3683,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3682,gua-15.005,APASEO EL GRANDE,2012,0,11,11005,11005,pri-pvem,0,LORENZO LICEA ROJAS,Term-limited-p-lost,,pan,0.2138988059,0,1,1,,,incumbent out,incumbent out,,
 3683,gua-16.005,APASEO EL GRANDE,2015,0,11,11005,11005,pan,0,GONZALO GONZALEZ CENTENO,Out-p-lost,,pri-pvem-pna,0.0578438073,0,0,0,,,incumbent out,incumbent out,,
 3684,gua-17.005,APASEO EL GRANDE,2018,0,11,11005,11005,pvem,0,MOISES GUERRERO LARA,Reran-beaten,,pan,0.0405808573,0,0,0,,,incumbent out,pvem,,
-3685,gua-18.005,APASEO EL GRANDE,2021,0,11,11005,11005,pan,0,JOSE LUIS OLIVEROS USABIAGA,2024,,morena,0.1690593689,0,,,,,pvem,2024,,
+3685,gua-18.005,APASEO EL GRANDE,2021,0,11,11005,11005,pan,0,JOSE LUIS OLIVEROS USABIAGA,reran-2024,,morena,0.1690593689,0,,,,,pvem,2024,,
 3686,gua-08.006,ATARJEA,1991,0,11,11006,11006,pri,0,J EDMUNDO TELLO JIMENEZ,Term-limited-p-won,,pan,0.6166666667,0,0,0,,,NA,incumbent out,,inafed
 3687,gua-09.006,ATARJEA,1994,0,11,11006,11006,pri,0,J JESUS MARIA JOSE ISIDRO LOPEZ,Term-limited-p-won,,pan,0.715339233,0,0,0,,,incumbent out,incumbent out,,inafed
 3688,gua-10.006,ATARJEA,1997,0,11,11006,11006,pri,0,RIGOBERTO GONZALEZ LEON,Term-limited-p-won,ARTURO DAVILA MEDINA,pan,0.0486358244,0,0,0,,,incumbent out,incumbent out,,
@@ -3716,7 +3716,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3715,gua-15.008,MANUEL DOBLADO,2012,0,11,11008,11008,pri-pvem,0,MANUEL PEDROZA RAMIREZ,Term-limited-p-lost,,pan,0.3052820054,0,0,0,,,incumbent out,incumbent out,,
 3716,gua-16.008,MANUEL DOBLADO,2015,0,11,11008,11008,pan,0,JUAN ARTEMIO LEON ZARATE,Out-p-lost,,pri-pvem-pna,0.0017452007,0,0,0,,,incumbent out,incumbent out,,
 3717,gua-17.008,MANUEL DOBLADO,2018,0,11,11008,11008,pri,0,GUSTAVO ADOLFO ALFARO REYES,Out-p-lost,,pan,0.0793273314,0,0,0,,,incumbent out,incumbent out,,
-3718,gua-18.008,MANUEL DOBLADO,2021,0,11,11008,11008,pan,1,BLANCA HAYDEE PRECIADO PEREZ,2024,,pri,0.0566156307,0,,,,,incumbent out,2024,,
+3718,gua-18.008,MANUEL DOBLADO,2021,0,11,11008,11008,pan,1,BLANCA HAYDEE PRECIADO PEREZ,reran-2024,,pri,0.0566156307,0,,,,,incumbent out,2024,,
 3719,gua-08.009,COMONFORT,1991,0,11,11009,11009,pri,0,FRANCISCO JOSE RAMIREZ MARTINEZ,Term-limited-p-won,,pan,0.4844553037,0,0,0,,,NA,incumbent out,,inafed
 3720,gua-09.009,COMONFORT,1994,0,11,11009,11009,pri,0,SERGIO PRADO TAPIA,Term-limited-p-lost,,pan,0.2701981938,0,0,0,,,incumbent out,incumbent out,,inafed
 3721,gua-10.009,COMONFORT,1997,0,11,11009,11009,pan,0,JOSE ALBERTO MENDEZ PEREZ,Term-limited-p-lost,ANTONIO PARAMO ARIAS,pri,0.0226035564,0,0,0,,,incumbent out,incumbent out,,
@@ -3727,7 +3727,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3726,gua-15.009,COMONFORT,2012,0,11,11009,11009,pan-pna,0,PABLO MARTIN LOPEZPORTILLO RODRIGUEZ,Term-limited-p-lost,,pri-pvem,0.3169188073,0,0,0,,,incumbent out,incumbent out,,
 3727,gua-16.009,COMONFORT,2015,0,11,11009,11009,indep,0,JOSE ALBERTO MENDEZ PEREZ,Reran-beaten,,pan,0.0398977763,0,1,1,,,incumbent out,indep,,
 3728,gua-17.009,COMONFORT,2018,0,11,11009,11009,morena-pt-pes,0,JOSE CARLOS NIETO JUAREZ,Reran-beaten,,pan,0.1164986935,0,0,0,,,indep,morena,,
-3729,gua-18.009,COMONFORT,2021,0,11,11009,11009,pan,0,CLAUDIO SANTOYO CABELLO,2024,,morena,0.0447526392,0,,,,,morena,2024,,
+3729,gua-18.009,COMONFORT,2021,0,11,11009,11009,pan,0,CLAUDIO SANTOYO CABELLO,reran-2024,,morena,0.0447526392,0,,,,,morena,2024,,
 3730,gua-08.010,CORONEO,1991,0,11,11010,11010,pri,0,OCTAVIO PEREZ GUTIERREZ,Term-limited-p-lost,,pan,0.1265365148,0,0,0,,,NA,incumbent out,,inafed
 3731,gua-09.010,CORONEO,1994,0,11,11010,11010,prd,0,GONZALO RAMOS GONZALEZ,Term-limited-p-lost,,pan,0.1275369582,0,0,0,,,incumbent out,incumbent out,,inafed
 3732,gua-10.010,CORONEO,1997,0,11,11010,11010,pan,0,JORGE IGNACIO TAPIA SANTAMARIA,Term-limited-p-lost,OCTAVIO PEREZ GUTIERREZ,pri,0.118995367,0,0,0,,,incumbent out,incumbent out,,
@@ -3760,7 +3760,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3759,gua-15.012,CUERAMARO,2012,0,11,11012,11012,prd,0,GERARDO ELIZARRARAS VELA,Term-limited-p-lost,,pan,0.1205247767,0,0,0,,,incumbent out,incumbent out,,
 3760,gua-16.012,CUERAMARO,2015,0,11,11012,11012,pan,0,MOISES FELIPE MUÑOZ CORTES,Out-p-won,,prd,0.3061192753,0,0,0,,,incumbent out,incumbent out,,
 3761,gua-17.012,CUERAMARO,2018,0,11,11012,11012,pan,1,ANA ROSA BUENO MACIAS,Out-p-lost,,mc,0.2818963316,0,0,0,,,incumbent out,incumbent out,,
-3762,gua-18.012,CUERAMARO,2021,0,11,11012,11012,pri-prd,0,MAURICIO ARCE CANCHOLA,2024,,pan,0.0554416539,0,,,,,incumbent out,2024,,
+3762,gua-18.012,CUERAMARO,2021,0,11,11012,11012,pri-prd,0,MAURICIO ARCE CANCHOLA,reran-2024,,pan,0.0554416539,0,,,,,incumbent out,2024,,
 3763,gua-08.013,DOCTOR MORA,1991,0,11,11013,11013,pri,0,MODESTO JAIME LUGO HERAS,Term-limited-p-won,,pan,0.5298081908,0,0,0,,,NA,incumbent out,,inafed
 3764,gua-09.013,DOCTOR MORA,1994,0,11,11013,11013,pri,0,J JESUS JARAMILLO MENDEZ,Term-limited-p-lost,,pan,0.2545852263,0,0,0,,,incumbent out,incumbent out,,inafed
 3765,gua-10.013,DOCTOR MORA,1997,0,11,11013,11013,pan,0,MIGUEL VALENCIA CARDENAS,Term-limited-p-lost,GUSTAVO VALTIERRA ROMERO,pri,0.2298484848,0,0,0,,,incumbent out,incumbent out,,
@@ -3771,7 +3771,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3770,gua-15.013,DOCTOR MORA,2012,0,11,11013,11013,pan,0,CESAR EMILIO ZARAZUA REYES,Term-limited-p-won,,pri-pvem,0.0066831174,0,0,0,,,incumbent out,incumbent out,,
 3771,gua-16.013,DOCTOR MORA,2015,0,11,11013,11013,pan,0,CRISTIAN FLAVIO RIOS GALICIA,Out-p-won,,pri,0.2312697695,0,0,0,,,incumbent out,incumbent out,,
 3772,gua-17.013,DOCTOR MORA,2018,0,11,11013,11013,pan,0,MARIO LUIS ARVIZU MENDEZ,Out-p-lost,,mc,0.0756028868,0,0,0,,,incumbent out,incumbent out,,
-3773,gua-18.013,DOCTOR MORA,2021,0,11,11013,11013,morena,0,EDGAR JAVIER RESENDIZ JACOBO,2024,,pan,0.0422561781,0,,,,,incumbent out,2024,,
+3773,gua-18.013,DOCTOR MORA,2021,0,11,11013,11013,morena,0,EDGAR JAVIER RESENDIZ JACOBO,reran-2024,,pan,0.0422561781,0,,,,,incumbent out,2024,,
 3774,gua-08.014,DOLORES HIDALGO,1991,0,11,11014,11014,pan,0,DARIO ROMERO FUENTES,Term-limited-p-lost,,pri,0.1822634919,0,0,0,,,NA,incumbent out,,inafed
 3775,gua-09.014,DOLORES HIDALGO,1994,0,11,11014,11014,pri,0,LUIS GERARDO RUBIO VALDEZ,Term-limited-p-won,,pan,0.3058317074,0,0,0,,,incumbent out,incumbent out,,inafed
 3776,gua-10.014,DOLORES HIDALGO,1997,0,11,11014,11014,pri,0,JESUS HERNANDEZ HERNANDEZ,Term-limited-p-lost,GILBERTO GONZALEZ,pdm,0.0240960655,0,0,0,,,incumbent out,incumbent out,,
@@ -3782,7 +3782,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3781,gua-15.014,DOLORES HIDALGO,2012,0,11,11014,11014,pri,0,ADRIAN HERNANDEZ ALEJANDRI,Term-limited-p-lost,,pan,0.1435593939,0,0,0,,,incumbent out,incumbent out,,
 3782,gua-16.014,DOLORES HIDALGO,2015,0,11,11014,11014,pan,0,JUAN RENDON LOPEZ,Reran-beaten,,pri,0.0513268156,0,0,0,,,incumbent out,pan,,
 3783,gua-17.014,DOLORES HIDALGO,2018,0,11,11014,11014,pri,0,MIGUEL ANGEL RAYAS ORTIZ,Reran-beaten,,pan,0.088823951,0,0,0,,,pan,pri,,
-3784,gua-18.014,DOLORES HIDALGO,2021,0,11,11014,11014,pan,0,ADRIAN HERNANDEZ ALEJANDRI,2024,,indep,0.0683127886,0,,,,,pri,2024,,
+3784,gua-18.014,DOLORES HIDALGO,2021,0,11,11014,11014,pan,0,ADRIAN HERNANDEZ ALEJANDRI,reran-2024,,indep,0.0683127886,0,,,,,pri,2024,,
 3785,gua-08.015,GUANAJUATO,1991,0,11,11015,11015,pri,0,JOSE TOMAS MACLOVIO ZAVALA,Term-limited-p-won,,pan,0.067709173,0,0,0,,,NA,incumbent out,,inafed
 3786,gua-09.015,GUANAJUATO,1994,0,11,11015,11015,pri,0,ARNULFO VAZQUEZ NIETO,Term-limited-p-won,,pan,0.2824833843,0,0,0,,,incumbent out,incumbent out,,inafed
 3787,gua-10.015,GUANAJUATO,1997,0,11,11015,11015,pri,0,LUIS FELIPE LUNA OBREGON,Term-limited-p-lost,RAUL TRUJILLO MORENO,pan,0.153645607,0,0,0,,,incumbent out,incumbent out,,
@@ -3804,7 +3804,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3803,gua-15.016,HUANIMARO,2012,0,11,11016,11016,prd,0,GUSTAVO RODRIGUEZ RANGEL,Term-limited-p-lost,,pan-pna,0.0592991914,0,0,0,,,incumbent out,incumbent out,,
 3804,gua-16.016,HUANIMARO,2015,0,11,11016,11016,pan,0,OSCAR CHACON VARGAS,Out-p-won,,pvem,0.0805335968,0,0,0,,,incumbent out,incumbent out,,
 3805,gua-17.016,HUANIMARO,2018,0,11,11016,11016,pan,0,ARMANDO SOLIS PANTOJA,Out-p-lost,,pvem,0.0176426825,0,0,0,,,incumbent out,incumbent out,,
-3806,gua-18.016,HUANIMARO,2021,0,11,11016,11016,pvem,1,LAURA VILLALPANDO ARROYO,2024,,morena,0.0129470445,0,,,,,incumbent out,2024,,
+3806,gua-18.016,HUANIMARO,2021,0,11,11016,11016,pvem,1,LAURA VILLALPANDO ARROYO,reran-2024,,morena,0.0129470445,0,,,,,incumbent out,2024,,
 3807,gua-08.017,IRAPUATO,1991,0,11,11017,11017,pri,0,MARCO A. CONTRERAS,Term-limited-p-won,,pan,0.0661987998,0,0,0,,,NA,incumbent out,,inafed
 3808,gua-09.017,IRAPUATO,1994,0,11,11017,11017,pri,0,JOSE ABEN AMAR GONZALEZ,Term-limited-p-lost,,pan,0.2484275142,0,0,0,,,incumbent out,incumbent out,,inafed
 3809,gua-10.017,IRAPUATO,1997,0,11,11017,11017,pan,0,SALVADOR PEREZ GODINEZ,Term-limited-p-won,EMILIO TOME ELIAS,pri,0.3092417062,0,0,0,,,incumbent out,incumbent out,,
@@ -3815,7 +3815,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3814,gua-15.017,IRAPUATO,2012,0,11,11017,11017,pan-pna,0,SIXTO ALFONSO ZETINA SOTO,Term-limited-p-won,,pri,0.0392778752,0,0,0,,,incumbent out,incumbent out,,
 3815,gua-16.017,IRAPUATO,2015,0,11,11017,11017,pan,0,JOSE RICARDO ORTIZ GUTIERREZ,Reelected,,pri-pvem-pna,0.0348367414,0,1,1,,,incumbent out,pan,,
 3816,gua-17.017,IRAPUATO,2018,0,11,11017,11017,pan,0,JOSE RICARDO ORTIZ GUTIERREZ,Term-limited-p-won,,morena-pt-pes,0.1092189405,0,1,1,,,pan,incumbent out,,
-3817,gua-18.017,IRAPUATO,2021,0,11,11017,11017,pan,1,LORENA DEL CARMEN ALFARO GARCIA,2024,,morena,0.1812915468,0,,,,,incumbent out,2024,,
+3817,gua-18.017,IRAPUATO,2021,0,11,11017,11017,pan,1,LORENA DEL CARMEN ALFARO GARCIA,reran-2024,,morena,0.1812915468,0,,,,,incumbent out,2024,,
 3818,gua-08.018,JARAL DEL PROGRESO,1991,0,11,11018,11018,pri,0,GERARDO BENITO ARROYO BACA,Term-limited-p-won,,pan,0.2224354055,0,0,0,,,NA,incumbent out,,inafed
 3819,gua-09.018,JARAL DEL PROGRESO,1994,0,11,11018,11018,pri,0,ARMANDO GOMEZ BALLESTEROS,Term-limited-p-won,,pfcrn,0.2897070162,0,0,0,,,incumbent out,incumbent out,,inafed
 3820,gua-10.018,JARAL DEL PROGRESO,1997,0,11,11018,11018,pri,0,GERARDO C. ARROYO BACA,Term-limited-p-lost,LIDIA LARA SANTOS,pan,0.0498312799,0,0,0,,,incumbent out,incumbent out,,
@@ -3826,7 +3826,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3825,gua-15.018,JARAL DEL PROGRESO,2012,0,11,11018,11018,pan,0,JAIME ENRIQUE SOTO MOSQUEDA,Term-limited-p-lost,,pvem,0.0842958215,0,0,0,,,incumbent out,incumbent out,,
 3826,gua-16.018,JARAL DEL PROGRESO,2015,0,11,11018,11018,pri,0,JOSE ALBERTO VARGAS FRANCO,Reelected,,pan,0.1234603102,0,0,0,,,incumbent out,pri,,
 3827,gua-17.018,JARAL DEL PROGRESO,2018,0,11,11018,11018,pri,0,JOSE ALBERTO VARGAS FRANCO,Term-limited-p-lost,,pan,0.0156943212,0,1,1,,,pri,incumbent out,,
-3828,gua-18.018,JARAL DEL PROGRESO,2021,0,11,11018,11018,rsp,0,JOSE GONZALEZ OJEDA,2024,,indep,0.0136200717,0,,,,,incumbent out,2024,,
+3828,gua-18.018,JARAL DEL PROGRESO,2021,0,11,11018,11018,rsp,0,JOSE GONZALEZ OJEDA,reran-2024,,indep,0.0136200717,0,,,,,incumbent out,2024,,
 3829,gua-08.019,JERECUARO,1991,0,11,11019,11019,pri,0,JOSE FELIPE FRIAS ELIZONDO,Term-limited-p-won,,prd,0.4158225414,0,0,0,,,NA,incumbent out,,inafed
 3830,gua-09.019,JERECUARO,1994,0,11,11019,11019,pri,0,JOSE ANTONIO AGUILAR ANDRADE,Term-limited-p-won,,prd,0.5556594154,0,0,0,,,incumbent out,incumbent out,,inafed
 3831,gua-10.019,JERECUARO,1997,0,11,11019,11019,pri,0,FERNANDO GRANADOS ALEJO,Term-limited-p-won,GERARDO ORTEGA MAGAÑA,prd,0.0479535933,0,0,0,,,incumbent out,incumbent out,,
@@ -3859,7 +3859,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3858,gua-15.021,MOROLEON,2012,0,11,11021,11021,prd,0,JUAN MANUEL GUZMAN RAMIREZ,Term-limited-p-won,,pan,0.0306458797,0,0,0,,,incumbent out,incumbent out,,
 3859,gua-16.021,MOROLEON,2015,0,11,11021,11021,prd,0,JORGE ORTIZ ORTEGA,Reelected,,pan,0.0303340649,0,0,0,,,incumbent out,prd,,
 3860,gua-17.021,MOROLEON,2018,0,11,11021,11021,prd,0,JORGE ORTIZ ORTEGA,Term-limited-p-lost,,pan,0.2759583978,0,1,1,,,prd,incumbent out,,
-3861,gua-18.021,MOROLEON,2021,0,11,11021,11021,mc,1,ALMA DENISSE SANCHEZ BARRAGAN,2024,,pan,0.2715591915,0,,,,,incumbent out,2024,,
+3861,gua-18.021,MOROLEON,2021,0,11,11021,11021,mc,1,ALMA DENISSE SANCHEZ BARRAGAN,Reran-2024,,pan,0.2715591915,0,,,,,incumbent out,2024,,
 3862,gua-08.022,OCAMPO,1991,0,11,11022,11022,pri,0,LUCIANO ORTEGA LOPEZ,Term-limited-p-won,,pan,0.1945615514,0,0,0,,,NA,incumbent out,,
 3863,gua-09.022,OCAMPO,1994,0,11,11022,11022,pri,0,MARIO RAMON LOPEZ DIAZ DE LEON,Term-limited-p-won,,pan,0.0408397573,0,1,1,,,incumbent out,incumbent out,,inafed
 3864,gua-10.022,OCAMPO,1997,0,11,11022,11022,pri,0,GUSTAVO ADOLFO CORTES SANCHEZ,Term-limited-p-lost,DAMIAN AGUIÑAGA JASSO,pan,0.0135297655,0,0,0,,,incumbent out,incumbent out,,
@@ -3870,7 +3870,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3869,gua-15.022,OCAMPO,2012,0,11,11022,11022,pan,0,FRANCISCO PEDROZA TORRES,Term-limited-p-lost,,pri-pvem,0.0562894322,0,0,0,,,incumbent out,incumbent out,,
 3870,gua-16.022,OCAMPO,2015,0,11,11022,11022,pri,0,ERIK SILVANO MONTEMAYO LARA,Out-p-lost,,pan,0.1164594729,0,0,0,,,incumbent out,incumbent out,,
 3871,gua-17.022,OCAMPO,2018,0,11,11022,11022,pan,1,MARIA GUADALUPE RODRIGUEZ MARTINEZ,Out-p-lost,,pri,0.0139386699,0,0,0,,,incumbent out,incumbent out,,
-3872,gua-18.022,OCAMPO,2021,0,11,11022,11022,pri-prd,0,ERICK SILVANO MONTEMAYOR LARA,2024,,pna,0.2237327636,0,,,,,incumbent out,2024,,
+3872,gua-18.022,OCAMPO,2021,0,11,11022,11022,pri-prd,0,ERICK SILVANO MONTEMAYOR LARA,Reran-2024,,pna,0.2237327636,0,,,,,incumbent out,2024,,
 3873,gua-08.023,PENJAMO,1991,0,11,11023,11023,pri,0,GUSTAVO SOTO ARIAS,Term-limited-p-won,,prd,0.698428823,0,0,0,,,NA,incumbent out,,inafed
 3874,gua-09.023,PENJAMO,1994,0,11,11023,11023,pri,0,PEDRO CHAVEZ ARREDONDO,Term-limited-p-won,,pan,0.4625449424,0,0,0,,,incumbent out,incumbent out,,inafed
 3875,gua-10.023,PENJAMO,1997,0,11,11023,11023,pri,0,MARCELINO ELIZARRARAS CERVANTES,Term-limited-p-lost,RIGOBERTO SALDAÑA CERVANTES,pan,0.2896090311,0,0,0,,,incumbent out,incumbent out,,
@@ -3881,7 +3881,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3880,gua-15.023,PENJAMO,2012,0,11,11023,11023,pri-pvem,0,JACOBO MANRIQUEZ ROMERO,Term-limited-p-lost,,pan-pna,0.0181149785,0,0,0,,,incumbent out,incumbent out,,
 3881,gua-16.023,PENJAMO,2015,0,11,11023,11023,pan,0,JUAN JOSE GARCIA LOPEZ,Reelected,,prd,0.2127451703,0,0,0,,,incumbent out,pan,,
 3882,gua-17.023,PENJAMO,2018,0,11,11023,11023,pan,0,JUAN JOSE GARCIA LOPEZ,Term-limited-p-won,,morena-pt-pes,0.0282811083,0,1,1,,,pan,incumbent out,,
-3883,gua-18.023,PENJAMO,2021,0,11,11023,11023,pan,0,OMAR GREGORIO MENDOZA FLORES,2024,,morena,0.0898324535,0,,,,,incumbent out,2024,,
+3883,gua-18.023,PENJAMO,2021,0,11,11023,11023,pan,0,OMAR GREGORIO MENDOZA FLORES,Reran-2024,,morena,0.0898324535,0,,,,,incumbent out,2024,,
 3884,gua-08.024,PUEBLO NUEVO,1991,0,11,11024,11024,pri,0,HECTOR ARREDONDO AGUILERA,Term-limited-p-lost,,pan,0.1038007027,0,0,0,,,NA,incumbent out,,inafed
 3885,gua-09.024,PUEBLO NUEVO,1994,0,11,11024,11024,pan,0,JOSE DURAN GONZALEZ,Term-limited-p-won,,pri,0.1596392883,0,0,0,,,incumbent out,incumbent out,,inafed
 3886,gua-10.024,PUEBLO NUEVO,1997,0,11,11024,11024,pan,1,MARIA DEL REFUGIO GARCIA RAMOS,Term-limited-p-won,FELIPE DE JESUS RAMOS AGUIRRE,pri,0.1401459854,0,0,0,,,incumbent out,incumbent out,,
@@ -3892,7 +3892,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3891,gua-15.024,PUEBLO NUEVO,2012,0,11,11024,11024,pna,1,MARIA ADRIANA SOLORZANO VILLANUEVA,Term-limited-p-lost,,pri-pvem,0.0519780537,0,0,0,,,incumbent out,incumbent out,,
 3892,gua-16.024,PUEBLO NUEVO,2015,0,11,11024,11024,pri,1,LARISA SOLORZANO VILLANUEVA,Reelected,,prd,0.0652790918,0,0,0,,,incumbent out,pri,,
 3893,gua-17.024,PUEBLO NUEVO,2018,0,11,11024,11024,pri,1,LARISA SOLORZANO VILLANUEVA,Term-limited-p-lost,,pna,0.1887544484,0,1,1,,,pri,incumbent out,,
-3894,gua-18.024,PUEBLO NUEVO,2021,0,11,11024,11024,mc,0,LEONARDO SOLORZANO VILLANUEVA,2024,,pan,0.2402739726,0,,,,,incumbent out,2024,,
+3894,gua-18.024,PUEBLO NUEVO,2021,0,11,11024,11024,mc,0,LEONARDO SOLORZANO VILLANUEVA,Reran-2024,,pan,0.2402739726,0,,,,,incumbent out,2024,,
 3895,gua-08.025,PURISIMA DEL RINCON,1991,0,11,11025,11025,pri,0,JESUS FLORES ALCALA,Term-limited-p-won,,pan,0.2135373749,0,0,0,,,NA,incumbent out,,inafed
 3896,gua-09.025,PURISIMA DEL RINCON,1994,0,11,11025,11025,pri,0,FRANCISCO ARENAS RAMIREZ,Term-limited-p-lost,,pan,0.122045176,0,0,0,,,incumbent out,incumbent out,,inafed
 3897,gua-10.025,PURISIMA DEL RINCON,1997,0,11,11025,11025,pan,0,DAVID PADILLA JIMENEZ,Term-limited-p-won,JUAN CARLOS JUAREZ ARCE,pri,0.2222627737,0,0,0,,,incumbent out,incumbent out,,
@@ -3903,7 +3903,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3902,gua-15.025,PURISIMA DEL RINCON,2012,0,11,11025,11025,pan-pna,0,TOMAS TORRES MONTAÑEZ,Term-limited-p-won,,pri-pvem,0.2704729161,0,0,0,,,incumbent out,incumbent out,,
 3903,gua-16.025,PURISIMA DEL RINCON,2015,0,11,11025,11025,pan,0,JOSE JUVENTINO LOPEZ AYALA,Out-p-won,,pri,0.1502554474,0,1,1,,,incumbent out,incumbent out,,
 3904,gua-17.025,PURISIMA DEL RINCON,2018,0,11,11025,11025,pan,0,MARCO ANTONIO PADILLA GOMEZ,Out-p-won,,pri,0.2703157108,0,0,0,,,incumbent out,incumbent out,,
-3905,gua-18.025,PURISIMA DEL RINCON,2021,0,11,11025,11025,pan,0,ROBERTO GARCIA URBANO,2024,,mc,0.2766155071,0,,,,,incumbent out,2024,,
+3905,gua-18.025,PURISIMA DEL RINCON,2021,0,11,11025,11025,pan,0,ROBERTO GARCIA URBANO,Reran-2024,,mc,0.2766155071,0,,,,,incumbent out,2024,,
 3906,gua-08.026,ROMITA,1991,0,11,11026,11026,pri,0,JUVENAL TAPIA FRAUSTO,Term-limited-p-won,,prd,0.1889092017,0,0,0,,,NA,incumbent out,,inafed
 3907,gua-09.026,ROMITA,1994,0,11,11026,11026,pri,0,JOSE DE JESUS ROCHA REYES,Term-limited-p-won,,prd,0.0406228374,0,0,0,,,incumbent out,incumbent out,,inafed
 3908,gua-10.026,ROMITA,1997,0,11,11026,11026,pri,0,HILARIO NAVARRO RIOS,Term-limited-p-lost,JORGE MORALES ESTRADA,prd,0.053593989,0,0,0,,,incumbent out,incumbent out,,
@@ -3925,7 +3925,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3924,gua-15.027,SALAMANCA,2012,0,11,11027,11027,pan-pna,0,JUSTINO EUGENIO ARRIAGA ROJAS,Term-limited-p-won,,pri,0.1944484826,0,0,0,,,incumbent out,incumbent out,,
 3925,gua-16.027,SALAMANCA,2015,0,11,11027,11027,pan,0,ANTONIO ARREDONDO MUÑOZ,Reran-beaten,,pri,0.1965261417,0,0,0,,,incumbent out,pan,,
 3926,gua-17.027,SALAMANCA,2018,0,11,11027,11027,morena-pt-pes,1,MARIA BEATRIZ HERNANDEZ CRUZ,Reran-beaten-dif-p,,pan,0.0324784816,0,0,0,,,pan,pt,reran under pt only and lost,
-3927,gua-18.027,SALAMANCA,2021,0,11,11027,11027,morena,0,JULIO CESAR ERNESTO PRIETO GALLARDO,2024,,pan,0.0773304535,0,,,,,pt,2024,,
+3927,gua-18.027,SALAMANCA,2021,0,11,11027,11027,morena,0,JULIO CESAR ERNESTO PRIETO GALLARDO,Reran-2024,,pan,0.0773304535,0,,,,,pt,2024,,
 3928,gua-08.028,SALVATIERRA,1991,0,11,11028,11028,pan,0,RAUL ULISES CARDIEL GUTIERREZ,Term-limited-p-lost,,pri,0.0371199301,0,0,0,,,NA,incumbent out,,inafed
 3929,gua-09.028,SALVATIERRA,1994,0,11,11028,11028,pri,0,GERARDO SANCHEZ GARCIA,Term-limited-p-lost,,pan,0.3192505115,0,0,0,,,incumbent out,incumbent out,,inafed
 3930,gua-10.028,SALVATIERRA,1997,0,11,11028,11028,prd,0,MOISES RAMIREZ PATIÑO,Term-limited-p-lost,JORGE LUIS RAMIREZ RAMIREZ,pri,0.0092350992,0,0,0,,,incumbent out,incumbent out,,
@@ -3936,7 +3936,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3935,gua-15.028,SALVATIERRA,2012,0,11,11028,11028,pan,0,RITO VARGAS VARELA,Term-limited-p-lost,,pri,0.2142941888,0,0,0,,,incumbent out,incumbent out,,
 3936,gua-16.028,SALVATIERRA,2015,0,11,11028,11028,pri,0,JOSE HERLINDO VELAZQUEZ FERNANDEZ,Reran-beaten,,pan,0.0340099303,0,0,0,,,incumbent out,pri,,
 3937,gua-17.028,SALVATIERRA,2018,0,11,11028,11028,pan,1,KARLA ALEJANDRINA LANUZA HERNANDEZ,Out-p-won,,morena-pt-pes,0.2088756284,0,0,0,,,pri,incumbent out,,
-3938,gua-18.028,SALVATIERRA,2021,0,11,11028,11028,pan,0,GERMAN CERVANTES VEGA,2024,,morena,0.1322519713,0,,,,,incumbent out,2024,,
+3938,gua-18.028,SALVATIERRA,2021,0,11,11028,11028,pan,0,GERMAN CERVANTES VEGA,out-p-2024,,morena,0.1322519713,0,,,,,incumbent out,2024,,
 3939,gua-08.029,SAN DIEGO DE LA UNION,1991,0,11,11029,11029,pri,0,ALBERTO CONTRERAS RAMIREZ,Term-limited-p-won,,pan,0.0184615385,0,0,0,,,NA,incumbent out,,inafed
 3940,gua-09.029,SAN DIEGO DE LA UNION,1994,0,11,11029,11029,pri,0,RENE LOPEZ MORA,Term-limited-p-won,,pan,0.3379589161,0,0,0,,,incumbent out,incumbent out,,inafed
 3941,gua-10.029,SAN DIEGO DE LA UNION,1997,0,11,11029,11029,pri,0,MANUEL TORRES RODRIGUEZ,Term-limited-p-lost,FRANCISCO JAVIER NARVAEZ CUEVAS,pan,0.0282639214,0,0,0,,,incumbent out,incumbent out,,
@@ -3947,7 +3947,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3946,gua-15.029,SAN DIEGO DE LA UNION,2012,0,11,11029,11029,pan,0,DIEGO ALBERTO LEYVA MERINO,Term-limited-p-lost,,pri-pvem,0.1849534045,0,0,0,,,incumbent out,incumbent out,,
 3947,gua-16.029,SAN DIEGO DE LA UNION,2015,0,11,11029,11029,pri,0,JUAN CARLOS CASTILLO,Out-p-lost,,pan,0.0667947076,0,0,0,,,incumbent out,incumbent out,,
 3948,gua-17.029,SAN DIEGO DE LA UNION,2018,0,11,11029,11029,pan,0,DIEGO ALBERTO LEYVA MERINO,Reran-beaten,,pri,0.2267198405,0,1,1,,,incumbent out,pan,,
-3949,gua-18.029,SAN DIEGO DE LA UNION,2021,0,11,11029,11029,rsp,0,JUAN CARLOS CASTILLO CANTERO,2024,,pan,0.0676415598,0,,,,,pan,2024,,
+3949,gua-18.029,SAN DIEGO DE LA UNION,2021,0,11,11029,11029,rsp,0,JUAN CARLOS CASTILLO CANTERO,Reran-2024,,pan,0.0676415598,0,,,,,pan,2024,,
 3950,gua-08.030,SAN FELIPE,1991,0,11,11030,11030,pri,0,DAVID HERNANDEZ ARAIZA,Term-limited-p-won,,pan,0.2396562699,0,0,0,,,NA,incumbent out,,inafed
 3951,gua-09.030,SAN FELIPE,1994,0,11,11030,11030,pri,0,JAVIER AYALA ORTA,Term-limited-p-lost,,pan,0.0578994251,0,0,0,,,incumbent out,incumbent out,,inafed
 3952,gua-10.030,SAN FELIPE,1997,0,11,11030,11030,pan,0,JUAN RAMON HERNANDEZ ARAIZA,Term-limited-p-lost,JESUS GERARDO AGUIRRE ZUÑIGA,pri,0.0228411069,0,0,0,,,incumbent out,incumbent out,,
@@ -3969,7 +3969,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3968,gua-15.031,SAN FRANCISCO DEL RINCON,2012,0,11,11031,11031,pri-pvem,0,JAVIER CASILLAS SALDAÑA,Term-limited-p-lost,,pan,0.1806016416,0,0,0,,,incumbent out,incumbent out,,
 3969,gua-16.031,SAN FRANCISCO DEL RINCON,2015,0,11,11031,11031,pan,0,YSMAEL LOPEZ GARCIA,Reran-beaten,,pvem,0.0318839793,0,0,0,,,incumbent out,pan,,
 3970,gua-17.031,SAN FRANCISCO DEL RINCON,2018,0,11,11031,11031,pri,0,JAVIER CASILLAS SALDAÑA,Reran-beaten,,pan,0.0981670929,0,1,1,,,pan,pri,,
-3971,gua-18.031,SAN FRANCISCO DEL RINCON,2021,0,11,11031,11031,pan,0,ALEJANDRO ANTONIO MARUN GONZALEZ,2024,,pri,0.0427426536,0,,,,,pri,2024,,
+3971,gua-18.031,SAN FRANCISCO DEL RINCON,2021,0,11,11031,11031,pan,0,ALEJANDRO ANTONIO MARUN GONZALEZ,Reran-2024,,pri,0.0427426536,0,,,,,pri,2024,,
 3972,gua-08.032,SAN JOSE ITURBIDE,1991,0,11,11032,11032,pan,0,CIRO VERDUZCO DE LA VEGA,Term-limited-p-lost,,pri,0.0441527446,0,0,0,,,NA,incumbent out,,inafed
 3973,gua-09.032,SAN JOSE ITURBIDE,1994,0,11,11032,11032,parm,0,HONORIO SINECIO RODRIGUEZ,Term-limited-p-lost,,pri,0.0549837134,0,0,0,,,incumbent out,incumbent out,,inafed
 3974,gua-10.032,SAN JOSE ITURBIDE,1997,0,11,11032,11032,prd,0,VICTOR ARNULFO MONTES DE LA VEGA,Term-limited-p-lost,TEODARDO ZARAZUA GUTIERREZ,pan,0.3173122343,0,0,0,,,incumbent out,incumbent out,,
@@ -3980,7 +3980,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 3979,gua-15.032,SAN JOSE ITURBIDE,2012,0,11,11032,11032,pan,0,FILIBERTO LOPEZ PLAZA,Term-limited-p-lost,,pri-pvem,0.0568941504,0,0,0,,,incumbent out,incumbent out,,
 3980,gua-16.032,SAN JOSE ITURBIDE,2015,0,11,11032,11032,pvem,0,JOSE CESAR RODRIGUEZ ZARAZUA,Out-p-lost,,pan,0.2342919949,0,0,0,,,incumbent out,incumbent out,,
 3981,gua-17.032,SAN JOSE ITURBIDE,2018,0,11,11032,11032,morena-pt-pes,0,GENARO MARTIN ZUÑIGA SOTO,Out-p-lost,,pan,0.0543718825,0,0,0,,,incumbent out,incumbent out,,
-3982,gua-18.032,SAN JOSE ITURBIDE,2021,0,11,11032,11032,pan,1,CINDY ABRIL ARVIZU HERNANDEZ,2024,,mc,0.0320892126,0,,,,,incumbent out,2024,,
+3982,gua-18.032,SAN JOSE ITURBIDE,2021,0,11,11032,11032,pan,1,CINDY ABRIL ARVIZU HERNANDEZ,Reran-2024,,mc,0.0320892126,0,,,,,incumbent out,2024,,
 3983,gua-08.033,SAN LUIS DE LA PAZ,1991,0,11,11033,11033,pan,0,ANTONIO LUIS ALVARADO SALAZAR,Term-limited-p-lost,,pri,0.085292269,0,0,0,,,NA,incumbent out,,inafed
 3984,gua-09.033,SAN LUIS DE LA PAZ,1994,0,11,11033,11033,pri,0,ODON LEON PATIÑO,Term-limited-p-won,,pan,0.3314219264,0,0,0,,,incumbent out,incumbent out,,inafed
 3985,gua-10.033,SAN LUIS DE LA PAZ,1997,0,11,11033,11033,pri,0,JOSE MENDOZA LUGO,Term-limited-p-lost,ANTONIO LUIS ALVARADO SALAZAR,pan,0.0151323117,0,0,0,,,incumbent out,incumbent out,,
@@ -4013,7 +4013,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4012,gua-15.035,SANTA CRUZ DE JUVENTINO ROSAS,2012,0,11,11035,11035,pan,0,JUAN ANTONIO ACOSTA CANO,Term-limited-p-lost,,pri,0.2334946105,0,1,1,,,incumbent out,incumbent out,,
 4013,gua-16.035,SANTA CRUZ DE JUVENTINO ROSAS,2015,0,11,11035,11035,prd,0,SERAFIN PRIETO ALVAREZ,Reelected,,pan,0.0065695967,0,0,0,,,incumbent out,prd,,
 4014,gua-17.035,SANTA CRUZ DE JUVENTINO ROSAS,2018,0,11,11035,11035,prd,0,SERAFIN PRIETO ALVAREZ,Term-limited-p-lost,,pan,0.1428039933,0,1,1,,,prd,incumbent out,,
-4015,gua-18.035,SANTA CRUZ DE JUVENTINO ROSAS,2021,0,11,11035,11035,pan,0,FERNANDO GASCA ALMANZA,2024,,pri-prd,0.0578805598,0,,,,,incumbent out,2024,,
+4015,gua-18.035,SANTA CRUZ DE JUVENTINO ROSAS,2021,0,11,11035,11035,pan,0,FERNANDO GASCA ALMANZA,Reran-2024,,pri-prd,0.0578805598,0,,,,,incumbent out,2024,,
 4016,gua-08.036,SANTIAGO MARAVATIO,1991,0,11,11036,11036,pri,0,DAVID MERCADO RUIZ,Term-limited-p-won,,pan,0.7487437186,0,0,0,,,NA,incumbent out,,inafed
 4017,gua-09.036,SANTIAGO MARAVATIO,1994,0,11,11036,11036,pri,0,GONZALO FERREIRA MARTINEZ,Term-limited-p-won,,pan,0.4177174264,0,0,0,,,incumbent out,incumbent out,,
 4018,gua-10.036,SANTIAGO MARAVATIO,1997,0,11,11036,11036,pri,0,DAVID MERCADO RUIZ,Term-limited-p-won,FERNANDO ROSAS CHAVEZ,pan,0.3375836787,0,1,1,,,incumbent out,incumbent out,,
@@ -4024,7 +4024,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4023,gua-15.036,SANTIAGO MARAVATIO,2012,0,11,11036,11036,pan,0,LEONEL FLORES HURTADO,Term-limited-p-lost,,pri,0.0964502569,0,0,0,,,incumbent out,incumbent out,,
 4024,gua-16.036,SANTIAGO MARAVATIO,2015,0,11,11036,11036,pri,1,LAURA CHAVEZ LOPEZ,Out-p-won,,pan,0.0683606926,0,0,0,,,incumbent out,incumbent out,,
 4025,gua-17.036,SANTIAGO MARAVATIO,2018,0,11,11036,11036,pri,0,FERNANDO ROSAS CARDOSO,Reran-beaten,,pan,0.0890837757,0,0,0,,,incumbent out,pri,,
-4026,gua-18.036,SANTIAGO MARAVATIO,2021,0,11,11036,11036,indep,0,JOSE GUADALUPE PANIAGUA CARDOSO,2024,,pri-prd,0.0004443457,0,,,,,pri,2024,,
+4026,gua-18.036,SANTIAGO MARAVATIO,2021,0,11,11036,11036,indep,0,JOSE GUADALUPE PANIAGUA CARDOSO,out-p-2024,,pri-prd,0.0004443457,0,,,,,pri,2024,pan nomino en 2024 a JOSE GUADALUPE PANIAGUA FLORES,
 4027,gua-08.037,SILAO,1991,0,11,11037,11037,pan,0,FRANCISCO JAVIER GONZALEZ LASSO,Term-limited-p-lost,,pri,0.0597767019,0,0,0,,,NA,incumbent out,,inafed
 4028,gua-09.037,SILAO,1994,0,11,11037,11037,pri,0,ALFREDO MOSQUEDA VIEYRA,Term-limited-p-lost,,pan,0.2243317587,0,0,0,,,incumbent out,incumbent out,,inafed
 4029,gua-10.037,SILAO,1997,0,11,11037,11037,pan,0,LUIS GERARDO BALDOVINOS FUENTES,Term-limited-p-won,JOSE RAUL ALVARO ZAMORA FERNANDEZ DE LARA,pri,0.0949476748,0,0,0,,,incumbent out,incumbent out,,
@@ -4035,7 +4035,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4034,gua-15.037,SILAO,2012,0,11,11037,11037,pri,0,ENRIQUE BENJAMIN SOLIS ARZOLA,Term-limited-p-lost,,pan,0.0709559701,0,0,0,,,incumbent out,incumbent out,,
 4035,gua-16.037,SILAO,2015,0,11,11037,11037,pan,0,JUAN ANTONIO MORALES MACIEL,Out-p-won,,pri,0.1744334149,0,0,0,,,incumbent out,incumbent out,,
 4036,gua-17.037,SILAO,2018,0,11,11037,11037,pan,0,JOSE ANTONIO TREJO VALDEPEÑA,Out-p-lost,,morena-pt-pes,0.0646995082,0,0,0,,,incumbent out,incumbent out,,
-4037,gua-18.037,SILAO DE LA VICTORIA,2021,0,11,11037,11037,morena,0,CARLOS GARCIA VILLASEÑOR,2024,,pan,0.015069427,0,,,,,incumbent out,2024,,
+4037,gua-18.037,SILAO DE LA VICTORIA,2021,0,11,11037,11037,morena,0,CARLOS GARCIA VILLASEÑOR,Reran-2024,,pan,0.015069427,0,,,,,incumbent out,2024,,
 4038,gua-08.038,TARANDACUAO,1991,0,11,11038,11038,pri,0,DAVID TORRES TRUJILLO,Term-limited-p-won,,pan,0.555709823,0,0,0,,,NA,incumbent out,,inafed
 4039,gua-09.038,TARANDACUAO,1994,0,11,11038,11038,pri,0,ANTONIO GARCIA RIOS,Term-limited-p-lost,,pan,0.4603098927,0,0,0,,,incumbent out,incumbent out,,inafed
 4040,gua-10.038,TARANDACUAO,1997,0,11,11038,11038,pan,0,CIPRIANO GONZALEZ GONZALEZ,Term-limited-p-lost,FRANCISCO GARCIA RAMIREZ,pri,0.0489568271,0,0,0,,,incumbent out,incumbent out,,
@@ -4046,7 +4046,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4045,gua-15.038,TARANDACUAO,2012,0,11,11038,11038,pri-pvem,0,TARSICIO PINEDA MARTINEZ,Term-limited-p-won,,pan,0.0208046768,0,0,0,,,incumbent out,incumbent out,,
 4046,gua-16.038,TARANDACUAO,2015,0,11,11038,11038,pri,0,JOSE VILLAGRAN GARIA,Out-p-lost,,pan,0.0343684578,0,0,0,,,incumbent out,incumbent out,,
 4047,gua-17.038,TARANDACUAO,2018,0,11,11038,11038,pan,1,MARIA JUANA CAMPOS ALEGRIA,Out-p-lost,,pri,0.1057391304,0,0,0,,,incumbent out,incumbent out,,
-4048,gua-18.038,TARANDACUAO,2021,0,11,11038,11038,pri-prd,1,KATIA DANIELA PINEDA CHAVEZ,2024,,pan,0.0168343653,0,,,,,incumbent out,2024,,
+4048,gua-18.038,TARANDACUAO,2021,0,11,11038,11038,pri-prd,1,KATIA DANIELA PINEDA CHAVEZ,Reran-2024,,pan,0.0168343653,0,,,,,incumbent out,2024,,
 4049,gua-08.039,TARIMORO,1991,0,11,11039,11039,pri,0,RICARDO PAREDES TREJO,Term-limited-p-won,,pan,0.0207502931,0,0,0,,,NA,incumbent out,,inafed
 4050,gua-09.039,TARIMORO,1994,0,11,11039,11039,pri,0,LEOPOLDO FRANCO ALVAREZ,Term-limited-p-lost,,pan,0.0416853429,0,0,0,,,incumbent out,incumbent out,,inafed
 4051,gua-10.039,TARIMORO,1997,0,11,11039,11039,pan,0,ENRIQUE LEON LARA SERVIN,Term-limited-p-won,,pri,0.0268930836,0,0,0,,,incumbent out,incumbent out,,
@@ -4057,7 +4057,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4056,gua-15.039,TARIMORO,2012,0,11,11039,11039,pri-pvem,0,MARCO ANTONIO RETIZ LOPEZ,Term-limited-p-lost,,pna,0.007903674,0,0,0,,,incumbent out,incumbent out,,
 4057,gua-16.039,TARIMORO,2015,0,11,11039,11039,pan,0,RAFAEL RAMIREZ TIRADO,Out-p-won,,pri,0.1166318984,0,0,0,,,incumbent out,incumbent out,,
 4058,gua-17.039,TARIMORO,2018,0,11,11039,11039,pan,0,ENRIQUE ARREOLA MANDUJANO,Out-p-lost,,pri,0.2200325325,0,0,0,,,incumbent out,incumbent out,,
-4059,gua-18.039,TARIMORO,2021,0,11,11039,11039,pri-prd,0,MOISES MALDONADO LOPEZ,2024,,pan,0.121390339,0,,,,,incumbent out,2024,,
+4059,gua-18.039,TARIMORO,2021,0,11,11039,11039,pri-prd,0,MOISES MALDONADO LOPEZ,Reran-2024,,pan,0.121390339,0,,,,,incumbent out,2024,,
 4060,gua-08.040,TIERRA BLANCA,1991,0,11,11040,11040,pri,0,CIRO DUARTE PEREZ,Term-limited-p-won,,pan,0.1375432526,0,0,0,,,NA,incumbent out,,inafed
 4061,gua-09.040,TIERRA BLANCA,1994,0,11,11040,11040,pri,0,SALVADOR HERNANDEZ ROMERO,Term-limited-p-lost,,pan,0.2203193033,0,0,0,,,incumbent out,incumbent out,,inafed
 4062,gua-10.040,TIERRA BLANCA,1997,0,11,11040,11040,prd,0,MOISES HERNANDEZ RAMIREZ,Term-limited-p-lost,JOSE IVAN RAMIREZ GONZALEZ,pri,0.1336568152,0,0,0,,,incumbent out,incumbent out,,
@@ -4068,7 +4068,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4067,gua-15.040,TIERRA BLANCA,2012,0,11,11040,11040,pan,0,ESTEBAN DUARTE RAMIREZ,Term-limited-p-lost,,prd,0.0453475406,0,0,0,,,incumbent out,incumbent out,,
 4068,gua-16.040,TIERRA BLANCA,2015,0,11,11040,11040,pri-pvem-pna,0,RAMIRO GONZALEZ COLIN,Out-p-lost,,prd,0.0169965336,0,0,0,,,incumbent out,incumbent out,Cand pri Maria Guadalupe Garcia Colin,
 4069,gua-17.040,TIERRA BLANCA,2018,0,11,11040,11040,pan,0,PEDRO PUEBLITO HERNANDEZ GARCIA,Out-p-lost,,pvem,0.0551904017,0,0,0,,,incumbent out,incumbent out,,
-4070,gua-18.040,TIERRA BLANCA,2021,0,11,11040,11040,prd,0,ROMULO GARCIA CABRERA,2024,,pri,0.1425463586,0,,,,,incumbent out,2024,,
+4070,gua-18.040,TIERRA BLANCA,2021,0,11,11040,11040,prd,0,ROMULO GARCIA CABRERA,Reran-2024,,pri,0.1425463586,0,,,,,incumbent out,2024,,
 4071,gua-08.041,URIANGATO,1991,0,11,11041,11041,pri,0,JOSE CAMARENA MARTINEZ,Term-limited-p-won,,pan,0.1375633858,0,0,0,,,NA,incumbent out,,inafed
 4072,gua-09.041,URIANGATO,1994,0,11,11041,11041,pri,0,RAMON PEREZ GARCIA,Term-limited-p-lost,,pan,0.0351897836,0,0,0,,,incumbent out,incumbent out,,inafed
 4073,gua-10.041,URIANGATO,1997,0,11,11041,11041,pan,0,ALFONSO ZAVALA BALCAZAR,Term-limited-p-won,FIDEL TORRES CAMARENA,pri,0.0012368986,0,0,0,,,incumbent out,incumbent out,,
@@ -4101,7 +4101,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4100,gua-15.043,VICTORIA,2012,0,11,11043,11043,pri-pvem,0,VICTOR VELAZQUEZ CHAVERO,Term-limited-p-lost,,pan,0.0076729146,0,0,0,,,incumbent out,incumbent out,,
 4101,gua-16.043,VICTORIA,2015,0,11,11043,11043,pan,0,HECTOR TEODORO MONTES ESTRADA,Out-p-won,,pri,0.0735051546,0,0,0,,,incumbent out,incumbent out,,
 4102,gua-17.043,VICTORIA,2018,0,11,11043,11043,pan,1,BERENICE MONTES ESTRADA,Out-p-won,,pri,0.2740075518,0,0,0,,,incumbent out,incumbent out,,
-4103,gua-18.043,VICTORIA,2021,0,11,11043,11043,pan,0,JUAN DIEGO RAMIREZ RINCON,2024,,pri,0.1333333333,0,,,,,incumbent out,2024,,
+4103,gua-18.043,VICTORIA,2021,0,11,11043,11043,pan,0,JUAN DIEGO RAMIREZ RINCON,out-p-2024,,pri,0.1333333333,0,,,,,incumbent out,2024,,
 4104,gua-08.044,VILLAGRAN,1991,0,11,11044,11044,pri,0,RODOLFO GASCA MACIAS,Term-limited-p-won,,pfcrn,0.0855341811,0,0,0,,,NA,incumbent out,,inafed
 4105,gua-09.044,VILLAGRAN,1994,0,11,11044,11044,pri,0,JOSE ANTONIO ACOSTA SANTARROSA,Term-limited-p-lost,,prd,0.3646346081,0,0,0,,,incumbent out,incumbent out,,inafed
 4106,gua-10.044,VILLAGRAN,1997,0,11,11044,11044,prd,0,ROGELIO DECIDERIO TOVAR LOPEZ,Term-limited-p-lost,JOSE FRANCISCO GARCIA CARMONA,pri,0.0094803792,0,0,0,,,incumbent out,incumbent out,,
@@ -4123,7 +4123,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4122,gua-15.045,XICHU,2012,0,11,11045,11045,pan,0,PERFECTO GONZALEZ CARBAJAL,Term-limited-p-won,,pri-pvem,0.0243777702,0,0,0,,,incumbent out,incumbent out,,
 4123,gua-16.045,XICHU,2015,0,11,11045,11045,pan,0,ELOY LEAL RESENDIS,Out-p-won,,pri,0.2087063367,0,0,0,,,incumbent out,incumbent out,,
 4124,gua-17.045,XICHU,2018,0,11,11045,11045,pan,1,MARIA GUADALUPE RAMIREZ ESQUIVEL,Out-p-lost,,pri,0.1374978781,0,0,0,,,incumbent out,incumbent out,,
-4125,gua-18.045,XICHU,2021,0,11,11045,11045,prd,0,FRANCISCO OROZCO MARTINEZ,2024,,pan,0.0303436714,0,,,,,incumbent out,2024,,
+4125,gua-18.045,XICHU,2021,0,11,11045,11045,prd,0,FRANCISCO OROZCO MARTINEZ,Reran-2024,,pan,0.0303436714,0,,,,,incumbent out,2024,,
 4126,gua-08.046,YURIRIA,1991,0,11,11046,11046,pri,,?,Term-limited-p-won,,pps,0.3828067597,0,0,0,,,NA,incumbent out,inafed ponia el de silao,
 4127,gua-09.046,YURIRIA,1994,0,11,11046,11046,pri,0,J JESUS SOTO V,Term-limited-p-lost,,pan,0.5126870527,0,0,0,,,incumbent out,incumbent out,inafed ponia el de silao,
 4128,gua-10.046,YURIRIA,1997,0,11,11046,11046,pan,0,LUIS GERARDO VALDOVINO FUENTES,Term-limited-p-won,JOSE LUIS RAMIREZ TORRES,pri,0.2139164849,0,0,0,,,incumbent out,incumbent out,,
@@ -4134,7 +4134,7 @@ ord,emm,mun,yr,dextra,edon,ife,inegi,part,dmujer,incumbent,race.after,runnerup,p
 4133,gua-15.046,YURIRIA,2012,0,11,11046,11046,pan-pna,0,CESAR CALDERON GONZALEZ,Term-limited-p-lost,,pri-pvem,0.0660020069,0,0,0,,,incumbent out,incumbent out,,
 4134,gua-16.046,YURIRIA,2015,0,11,11046,11046,pvem,0,LUIS GERARDO GAVIÑA GONZALEZ,Out-p-lost,,pan,0.1076942997,0,1,1,,,incumbent out,incumbent out,,
 4135,gua-17.046,YURIRIA,2018,0,11,11046,11046,pan,0,SALOMON CARMONA AYALA,Out-p-lost,,pri,0.1210318131,0,0,0,,,incumbent out,incumbent out,,
-4136,gua-18.046,YURIRIA,2021,0,11,11046,11046,pvem,1,MARIA DE LOS ANGELES LOPEZ BEDOLLA,2024,,pri,0.0330108345,0,,,,,incumbent out,2024,,
+4136,gua-18.046,YURIRIA,2021,0,11,11046,11046,pvem,1,MARIA DE LOS ANGELES LOPEZ BEDOLLA,Reran-2024,,pri,0.0330108345,0,,,,,incumbent out,2024,,
 4137,gue-07.001,ACAPULCO DE JUAREZ,1989,0,12,12001,12001,pri,0,RENE JUAREZ CISNEROS,Term-limited-p-won,,parm,0.5700563762,0,0,0,,,NA,incumbent out,,
 4138,gue-08.001,ACAPULCO DE JUAREZ,1993,0,12,12001,12001,pri,0,ROGELIO DE LA O ALMAZAN,Term-limited-p-won,,prd,0.2336299255,0,0,0,,,incumbent out,incumbent out,,inafed
 4139,gue-09.001,ACAPULCO DE JUAREZ,1996,0,12,12001,12001,pri,0,JUAN SALGADO TENORIO,Term-limited-p-lost,,prd,0.0560747664,0,0,0,,,incumbent out,incumbent out,,inafed
