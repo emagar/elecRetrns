@@ -1,0 +1,2439 @@
+ID_ENTIDAD,ID_MUNICIPIO_LOCAL,PARTIDO_CI,CANDIDATURA_PROPIETARIA,CANDIDATURA_SUPLENTE
+31,8,PAN,JULIO CESAR KU ZAVAL,EDWIN FERNELY LORIA SANCHEZ
+31,8,PRI,LUIS FERNELY POLANCO TUN,JORGE AGUSTIN MENESES GONZALEZ
+31,8,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,PVEM,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,PT,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,MORENA,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,8,C_PVEM_PT_MORENA,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,C_PVEM_PT,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,C_PVEM_MORENA,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,8,C_PT_MORENA,WILMA YOLANDA POLANCO MENDOZA,YESENIA CONCEPCION PECH MEDINA
+31,10,PAN,JAIRO ISAI EK BERMON,FELIPE ALEJANDRO EK BERMON
+31,10,PRI,MARIA LEIDI CAUICH SULUB,LLIFITA YASMIN EK CANCHE
+31,10,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,PT,ORLANDO EK SANSORES ,VICTOR FRANCISCO UCAN GONGORA
+31,10,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,MORENA,ORLANDO EK SANSORES,VICTOR FRANCISCO UCAN GONGORA
+31,10,NAY,NANCY ESTRELLA VELAZQUEZ MORALES,PETRONILA GARCIA CHABLE
+31,10,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,10,C_PT_MORENA,ORLANDO EK SANSORES,VICTOR FRANCISCO UCAN GONGORA
+31,14,PAN,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,PRI,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,PVEM,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,PT,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,MORENA,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,NAY,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PAN_PRI_NAY,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PAN_PRI,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PAN_NAY,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,C_PRI_NAY,MARTA BEATRIZ POOT NAHUAT,RITELY GRISELDA AGUILAR COHUO
+31,14,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,14,C_PVEM_PT_MORENA,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,C_PVEM_PT,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,C_PVEM_MORENA,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,14,C_PT_MORENA,NIDELVIA GUADALUPE DE ATOCHA VAZQUEZ SALAZAR,MARIA ROCIO TEH CHAN 
+31,16,PAN,GLORIA JESUS MUKUL BORGES,MARIA LEIDY DEL SOCORRO YAH MAY
+31,16,PRI,GILMER MARIEL KU CAB,LUIS ALBERTO YAH KU
+31,16,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,PVEM,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,PT,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,MORENA,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,NAY,GLORIA JESIS MUKUL BORGES,MARIA LEIDY DEL SOCORRO YAH MAY
+31,16,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PAN_NAY,GLORIA JESUS MUKUL BORGES ,MARIA LEIDY DEL SOCORRO YAH MAY
+31,16,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,16,C_PVEM_PT_MORENA,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,C_PVEM_PT,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,C_PVEM_MORENA,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,16,C_PT_MORENA,TERESITA MEDINA MUKUL,MARIA ALEJANDRA KU CAB
+31,17,PAN,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,PRI,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN 
+31,17,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,PT,MANUEL JESUS CASTRO EK,NEMESIO CHI PAT
+31,17,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,MORENA,MANUEL JESUS CASTRO EK ,NEMESIO CHI PAT
+31,17,NAY,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PAN_PRI_NAY,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PAN_PRI,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PAN_NAY,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,C_PRI_NAY,CONCEPCION TAMAY NOH,MARIA ESTELA CAAMAL TUN
+31,17,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,17,C_PT_MORENA,MANUEL CASTRO EK ,NEMESIO CHI PAT
+31,19,PAN,RICARDO BALAM CHI,JOSE MERCEDES CANCHE PUC
+31,19,PRI,EMILIO RIVERO XIU,JORGE CELIANO KUMUL CUPUL
+31,19,PRD,BATRIZ CASTILLO PECH,ELDA VIRGINIA KUMUL UITZIL
+31,19,PVEM,VALENTINA PECH PECH,SILVINA CHIMAL POOT
+31,19,PT,VALENTINA PECH PECH,SILVINA CHIMAL POOT
+31,19,MC,CECILIA PECH CHUC,MAGDALENA CHAN COHUO
+31,19,MORENA,JESUS MANUEL CANCHE CANCHE,MIGUEL CAAMAL PAAT
+31,19,NAY,BATRIZ CASTILLO PECH,ELDA VIRGINIA KUMUL UITZIL
+31,19,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PRD_NAY,BATRIZ CASTILLO PECH,ELDA VIRGINIA KUMUL UITZIL
+31,19,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PVEM_PT,VALENTINA PECH PECH,SILVINA CHIMAL POOT
+31,19,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,19,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,PAN,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,PRI,FRANCISCO MEDIDA MARTIN,RICARDO ENRIQUE MAY CIAU
+31,21,PRD,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,PVEM,ARNULFO CIAU CIAU,JOSE BENITO PUC DZIB
+31,21,PT,LAURA PAT TUN,MAXIMILIANA TUN CIAU
+31,21,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,MORENA,LAURA PAT TUN,MAXIMILIANA TUN CIAU
+31,21,NAY,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_PRD_NAY,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_PRD,LAURA PAT TUN,MAXIMILIANA TUN CIAU
+31,21,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PAN_NAY,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PRD_NAY,KARINA BEATRIZ PACHECO JIMENEZ,ALBERTA CIAU CIAU
+31,21,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,21,C_PT_MORENA,LAURA PAT TUN,MAXIMILIANA TUN CIAU
+31,22,PAN,MARCIANA PECH PAT,LEIDY MARLENE KAUIL NOH
+31,22,PRI,LUIS KAUIL CAHUM,FACUNDO UC CAHUM
+31,22,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,PT,BENITO CHAN CHUC,MARTA BEATRIZ POOT NIC
+31,22,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,MORENA,BENITO CHAN CHUC,MARTA BEATRIZ POOT NIC
+31,22,NAY,MARCIANA PECH PAT,LEIDY MARLENE KAUIL NOH
+31,22,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PAN_NAY,MARCIANA PECH PAT,LEIDY MARLENE KAUIL NOH
+31,22,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,22,C_PT_MORENA,BENITO CHAN CHUC,MARTA BEATRIZ POOT NIC
+31,30,PAN,JUAN FRANCISCO PEREZ KOH,MIGUEL ALEJANDRO SANCHEZ MEDINA
+31,30,PRI,AZUCENA PEREZ HAU,DULCE CECILIA GUILLEN CIAU
+31,30,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,PVEM,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,PT,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,MORENA,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,30,C_PVEM_PT_MORENA,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,C_PVEM_PT,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,C_PVEM_MORENA,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,30,C_PT_MORENA,MARIA DEL SOL CHAN CAB,NELSY GUILLERMINA DZUL CAUICH
+31,32,PAN,MARTHA EUGENIA MENA ALCOCER,MANUELA DE JESUS KU TAH
+31,32,PRI,VICTOR MANUEL CELMO LARA,JESUS MARTIN XXXX PEREZ
+31,32,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,PVEM,MARIO ISAIAS SANCHEZ ESQUIVEL ,JOSE ALFREDO CHEL KU
+31,32,PT,NERY JOSEFINA TRIAY LUCATERO,WENDY LUCELI CELMO CUPUL
+31,32,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,MORENA,GUADALUPE IVONNE OSORNO MARTINEZ,DENIS HADET HUCHIN BATUN
+31,32,NAY,MARTHA EUGENIA MENA ALCOCER,MANUELA DE JESUS KU TAH
+31,32,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PAN_NAY,MARTHA EUGENIA MENA ALCOCER,MANUELA DE JESUS KU TAH
+31,32,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,32,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,PAN,CHARITO TORRES GARCIA,MIRIAN BERINICE BLANCO NOH 
+31,43,PRI,CARLOS GUALBERTO CHAY CANUL,PAULINO TUZ AY
+31,43,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,MORENA,CRESCENCIO NOH CEN,JUAN ABRAHAM DZUL POOT
+31,43,NAY,CHARITO TORRES GARCIA,MIRIAN BERINICE BLANCO NOH 
+31,43,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PAN_NAY,CHARITO TORRES GARCIA,MIRIAN BERINICE BLANCO NOH 
+31,43,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,43,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,PAN,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,PRI,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,MORENA,JOSE NICOLAS IUIT ALCOCER,MARIO JESUS MENA HERRERA
+31,57,NAY,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PAN_PRI_NAY,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PAN_PRI,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PAN_NAY,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,C_PRI_NAY,SILVIA LEONOR MALDONADO ARANDA,MARIA BEATRIZ PACHECO DZIB
+31,57,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,57,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,PAN,FELIPE ANGELES ESPINOSA BRITO,RAFAEL TAH ACEVEDO
+31,58,PRI,EDGAR ROMAN CALDERON SOSA,ANGEL GABRIEL CITUK DZIU
+31,58,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,PVEM,RENAN GABRIEL JIMENEZ TAH,LUIS JAIR MARIN GALERA
+31,58,PT,EULOGIO PECH TAPIA,RUDDY EMMANUEL POOT GIMENEZ
+31,58,MC,RODOLFO RUIZ HERNANDEZ ,CARLOS EDILBERTO CARDEÑA CERVERA
+31,58,MORENA,EMERIO CALDERON GONGORA ,JUANA GUALBERTA CHIM BACAB
+31,58,NAY,GLORIA RAQUEL CASTRO BAEZ,ADRIANA CAUICH ECHEVERRIA
+31,58,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,58,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,PAN,MARIA MINELIA DE JESUS UICAB CEL,SANDRA INES ARANA CANCHE
+31,60,PRI,MARIA MINELIA DE JESUS UICAB CEL,SANDRA INES ARANA CANCHE
+31,60,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,PVEM,JAIRO RODOLFO COLLI ABAN,MARGARITO ARANA MAY
+31,60,PT,ERMILA CATALINA NOVELO UCAN ,INGRIS RUBI MEDINA PETUL
+31,60,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,MORENA,ERMILA CATALINA NOVELO UCAN ,INGRIS RUBI MEDINA PETUL
+31,60,NAY,MIGUEL ARCANGEL SUARES CANCHE ,LIZZIE NADIR TUZ CEL
+31,60,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PAN_PRI,MARIA MINELIA DE JESUS UICAB CEL,SANDRA INES ARANA CANCHE
+31,60,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,60,C_PT_MORENA,ERMILA CATALINA NOVELO UCAN ,INGRIS RUBI MEDINA PETUL
+31,61,PAN,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,PRI,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,PVEM,MANUEL GERARDO RODRIGUEZ MENDOZA,Nombre Apellido Apellido
+31,61,PT,YESEÑA OSIRIS LORIA MARFIL,REINA DANIELA MARFIL CANUL
+31,61,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,MORENA,YESEÑA OSIRIS LORIA MARFIL,REINA DANIELA MARFIL CANUL
+31,61,NAY,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PAN_PRI_NAY,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PAN_PRI,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PAN_NAY,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,C_PRI_NAY,MIRZA VIANEY RAMOS ALCOCER,NAILE ZUMARA DE JESUS MARFIL CASTILLO
+31,61,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,61,C_PT_MORENA,YESEÑA OSIRIS LORIA MARFIL,REINA DANIELA MARFIL CANUL
+31,65,PAN,MARIA DEL CARMEN MARRUFO BALTAZAR,NELLY GAMEBA LORIA PERERA
+31,65,PRI,FELIPE ANTONIO MARRUFO LOPEZ,LUIS DOLORES MARRUFO MAGAÑA
+31,65,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,PVEM,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,PT,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,MORENA,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,65,C_PVEM_PT_MORENA,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,C_PVEM_PT,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,C_PVEM_MORENA,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,65,C_PT_MORENA,MANUELA DE JESUS HAU SILVA,GUADALUPE DEL SOCORRO MARRUFO POOL
+31,70,PAN,GABRIELA DE JESUS POOL CAMELO,NORA ALEJANDRA MONTERO MONFORTE
+31,70,PRI,DIEGO ALBERTO LUGO INTERIAN,ABRAHAM ALEJANDRO EK CETZAL
+31,70,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,PVEM,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,PT,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,MORENA,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,NAY,GABRIELA DE JESUS POOL CAMELO,NORA ALEJANDRA MONTERO MONFORTE
+31,70,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PAN_NAY,GABRIELA DE JESUS POOL CAMELO,NORA ALEJANDRA MONTERO MONFORTE
+31,70,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,70,C_PVEM_PT_MORENA,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,C_PVEM_PT,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,C_PVEM_MORENA,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,70,C_PT_MORENA,PETRONA DE JESUS MEDRANO SANCHEZ,SONIA CARIDAD LORIA LUGO
+31,73,PAN,MARTIN PUC DZIB,EMILIO BALAM CAN
+31,73,PRI,MARIA ESTELA MONTEJO MANZANERO,MARIA DEL SOCORRO PUC CAAMAL
+31,73,PRD,ESTHER AKE UC,CECILIA TEH BALAM
+31,73,PVEM,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,PT,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,MORENA,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,NAY,PEDRO YAH SABIDO,DEMETRIO VALLE CANTE
+31,73,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,73,C_PVEM_PT_MORENA,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,C_PVEM_PT,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,C_PVEM_MORENA,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,73,C_PT_MORENA,ABRAHAM AKE UC,EMILIO MEDINA CHUC
+31,81,PAN,ARMIN ARMANDO KUMUL COCOM,RAYMUNDO MAY POOT
+31,81,PRI,GLORIA ARACELLY COCOM CAN,ZAINNI DAYAMARA KU TEC
+31,81,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,MORENA,OSWALDO BATUN POOL,JOSE LUIS CANCHE CHAN
+31,81,NAY,GLORIA ARACELLY COCOM CAN,ZAINNI DAYAMARA KU TEC
+31,81,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PRI_NAY,GLORIA ARACELLY COCOM CAN,ZAINNI DAYAMARA KU TEC
+31,81,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,81,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,PAN,EDY GUADALUPE RIEGOS MEDINA,ELBIA VIDANY POOT CORDERO
+31,85,PRI,EDY GUADALUPE RIEGOS MEDINA,ELBIA VIDANY POOT CORDERO
+31,85,PRD,GRISELDA DEL ROSARIO POOT DIAZ,Nombre Apellido Apellido
+31,85,PVEM,MINERVA TUYU CHAN,MARIA YOLANDA CEN CEN
+31,85,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,MC,DANTE ANTONIO ARJONA AGUILAR,IGNACIO ELIGIO NOVELO AGUILAR
+31,85,MORENA,GERONIMO AGUILAR CANCHE,NICANOR EPIFANIO NOVELO AGUILAR
+31,85,NAY,MARIO ALARIO AGUILAR DIAZ,MIGUEL ANGEL ROSADO MENA
+31,85,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PAN_PRI,EDY GUADALUPE RIEGOS MEDINA,ELBIA VIDANY POOT CORDERO
+31,85,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,85,C_PVEM_MORENA,GERONIMO AGUILAR CANCHE,Nombre Apellido Apellido
+31,85,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,PAN,ALICIA AURORA GONGORA MEJIA,WIGELMI MAGALI LOPEZ MAAS
+31,91,PRI,ALICIA AURORA GONGORA MEJIA,WIGELMI MAGALI LOPEZ MAAS
+31,91,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,PVEM,EVELIO MIS TUN,BRAULIO MOO MAY
+31,91,PT,MARIELA DE ROSARIO PECH HU,CITLALI GUADALUPE CETINA CIME
+31,91,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,MORENA,MARIELA DE ROSARIO PECH HU,CITLALI GUADALUPE CETINA CIME
+31,91,NAY,JOSE ALFREDO CEME TUN,MERCY HAMELIN GAMBOA BALAM 
+31,91,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PAN_PRI,ALICIA AURORA GONGORA MEJIA,WIGELMI MAGALI LOPEZ MAAS
+31,91,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,91,C_PT_MORENA,MARIELA DEL ROSARIO PECH UH,CITLALLI GUDALUPE CETINA CIME
+31,92,PAN,RAMON NONATO TUN CHAN,JUAN DE MATA TUN UICAB
+31,92,PRI,RAMON NONATO TUN CHAN,JUAN DE MATA TUN UICAB
+31,92,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,PVEM,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,PT,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,MORENA,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_PRI,RAMON NONATO TUN CHAN,JUAN DE MATA TUN UICAB
+31,92,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,92,C_PVEM_PT_MORENA,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,C_PVEM_PT,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,C_PVEM_MORENA,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,92,C_PT_MORENA,GABRIELA PUC MIS,CONCEPCION MELQUIADES MIS PUC
+31,94,PAN,GASPAR PANTI SEL,FRANCISCO JAVIER DIAZ SEGURA
+31,94,PRI,GASPAR PANTI SEL,FRANCISCO JAVIER DIAZ SEGURA
+31,94,PRD,AURELIA ROSENDA PERALTA ALONZO,SUSANA XOOL MARIN
+31,94,PVEM,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,PT,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,MORENA,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,NAY,SEYMI ARACELI MAY BRICEÑO,GLORIA DE JESUS CAT ECHEVERRIA
+31,94,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PAN_PRI,GASPAR PANTI SEL,FRANCISCO JAVIER DIAZ SEGURA
+31,94,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,94,C_PVEM_PT_MORENA,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,C_PVEM_PT,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,C_PVEM_MORENA,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,94,C_PT_MORENA,CARLOS EFRAIN BALAM LOPEZ,NICANOR LOPEZ PANTI
+31,96,PAN,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,PRI,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,PVEM,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,PT,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,MORENA,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,NAY,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PAN_PRI_NAY,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PAN_PRI,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PAN_NAY,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,C_PRI_NAY,JORGE ANDRE DIAZ LOEZA,MANUEL JESUS ARAUJO ALAMILLA
+31,96,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,96,C_PVEM_PT_MORENA,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,C_PVEM_PT,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,C_PVEM_MORENA,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,96,C_PT_MORENA,CARLOS ADRIAN QUIROZ OSORIO,RAUL JACOBO EK CAN
+31,99,PAN,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,PRI,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,PRD,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,PT,WILBERT ARMIN CASTILLO ELIODORO,MARTIN CAN CIAU
+31,99,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,MORENA,WILBERT ARMIN CASTILLO ELIODORO,MARTIN CAN CIAU
+31,99,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PAN_PRI_PRD,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PAN_PRI,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,C_PAN_PRD,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,C_PRI_PRD,GRETTY NOEMI CUPUL BALAM,LIDIA ALEJANDRA CANCHE GOMEZ
+31,99,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,99,C_PT_MORENA,WILBERT ARMIN CASTILLO ELIODORO,MARTIN CAN CIAU
+31,102,PAN,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,PRI,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,PT,HOMERO NOVELO BURGOS,LORENZO CHUC CHAN
+31,102,MC,MARIA ELENA CHUC PECH,TERESITAS MAY MAY
+31,102,MORENA,HOMERO NOVELO BURGOS,LORENZO CHUC CHAN
+31,102,NAY,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PAN_PRI_NAY,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PAN_PRI,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PAN_NAY,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,C_PRI_NAY,ALFREDO FERNANDEZ ARCEO,JUAN PABLO MENA ROSADO
+31,102,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,102,C_PT_MORENA,HOMERO NOVELO BURGOS,LORENZO CHUC CHAN
+31,104,PAN,GENRI ALB ERTO PACAB HERRERA,FELIPE DE JESUS CAXIN ALBORBOZ
+31,104,PRI,FERNANDO ARIEL PEÑA TUN,MANUEL KEN MOH
+31,104,PRD,GENRI ALB ERTO PACAB HERRERA,FELIPE DE JESUS CAXIN ALBORBOZ
+31,104,PVEM,SANSON ISRAEL PALMA SANTOS,GASPAR PADILLA SANTOS
+31,104,PT,SANSON ISRAEL PALMA SANTOS,GASPAR PADILLA SANTOS
+31,104,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,MORENA,DAYSI MARIA UICAB PAT,JUANITA TINAL SANCHEZ
+31,104,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_PRD,GENRI ALB ERTO PACAB HERRERA,FELIPE DE JESUS CAXIN ALBORBOZ
+31,104,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PVEM_PT,SANSON ISRAEL PALMA SANTOS,GASPAR PADILLA SANTOS
+31,104,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,104,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,PAN,GUADALUPE ELIZABETH ZAPATA GONZALEZ,FRANCIA FELICIA MORENO KANTUN
+31,2,PRI,GUADALUPE ELIZABETH ZAPATA GONZALEZ,Nombre Apellido Apellido
+31,2,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,PVEM,INGRID STEPHANI TOLOZA NARVAEZ,AIDA GISELL CAUICH NOH
+31,2,PT,LUCELLY MARICRUZ CHALE AKE,MARIA ARACELLY PECH PECH
+31,2,MC,JOSE DE JESUS TOLOZA POOL,MARCOS GERARDO MENA PECH
+31,2,MORENA,INGRID STEPHANI TOLOZA NARVAEZ,AIDA GRISELL CAUICH NOH
+31,2,NAY,MARIO CRUZ HERRERA,EDGAR ENRIQUE HOIL DIAZ
+31,2,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PAN_PRI,GUADALUPE ELIZABETH ZAPATA GONZALEZ,FRANCIA FELICIA MORENO KANTUN
+31,2,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,2,C_PVEM_MORENA,INGRID STEPHANI TOLOZA NARVAEZ,AIDA GRISELL CAUICH NOH
+31,2,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,4,PAN,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,PRI,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,PRD,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,PVEM,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,PT,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,MC,LAYNEKER ESTEBAN CRUZ EUAN,PAB LO GRACILIANO CHIM PECH
+31,4,MORENA,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRI_PRD_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRI_PRD,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRI_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRD_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PRI_PRD_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRI,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_PRD,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PRI_PRD,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PAN_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PRI_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PRD_NAY,GUADALUPE MARISOL PECH BASTO,MARIA ILEANA DE JESUS CHIM PECH
+31,4,C_PVEM_PT_MORENA,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,C_PVEM_PT,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,C_PVEM_MORENA,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,4,C_PT_MORENA,FREDDY MIGUEL BASTO BASTO,JORGE CARLOS PECH PECH
+31,5,PAN,VICTORIA DEL SOCORRO BACAB POOT,MARIA ISABEL REGINA CANCHE CANCHE
+31,5,PRI,ANTONIO HUMBERTO SANCHEZ PEREZ,JUAN DIEGO SOSA ROSALES
+31,5,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,PVEM,MARIA PAULA NAH UH,FATIMA NUEMI OXTE HAU
+31,5,PT,YANELY GABRIELA ORTEGA CANCHE,DANY YADIRA PACHECO MOO
+31,5,MC,JOSEFINA HUCHIN MAY,MANUELA MARITZA KANTUN CHAN
+31,5,MORENA,YANELY GABRIELA ORTEGA CANCHE,DANY YADIRA PACHECO MOO
+31,5,NAY,VICTORIA DEL SOCORRO BACAB POOT,MARIA ISABEL REGINA CANCHE CANCHE
+31,5,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PAN_NAY,VICTORIA DEL SOCORRO BACAB POOT,MARIA ISABEL REGINA CANCHE CANCHE
+31,5,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,5,C_PT_MORENA,YANELY GABRIELA ORTEGA CANCHE,DANY YADIRA PACHECO MOO
+31,6,PAN,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,PRI,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,PT,CARLOS ESTEBAN ARGAEZ BE,JOSE FLORENCIO PACHECO CHABLE
+31,6,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,MORENA,CARLOS ESTEBAN ARGAEZ BE,JOSE FLORENCIO PACHECO CHABLE
+31,6,NAY,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PAN_PRI_NAY,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PAN_PRI,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PAN_NAY,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,C_PRI_NAY,INGRID DEL PILAR SANTOS DIAZ,MARIAELENA ARGAEZ PIÑA
+31,6,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,6,C_PT_MORENA,CARLOS ESTEBAN ARGAEZ BE,JOSE FLORENCIO PACHECO CHABLE
+31,7,PAN,MARIBEL DE LA CRUZ TEC EB,YUSELI BEATRIZ LOPEZ OLIVARES
+31,7,PRI,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,PRD,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,PVEM,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,PT,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,MC,BEATRIZ DEL ROSARIO GALLEGOS SANCHEZ,SOFIA CANCHE UITZ
+31,7,MORENA,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,NAY,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PRI_PRD_NAY,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POOT
+31,7,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PRI_PRD,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,7,C_PRI_NAY,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,C_PRD_NAY,MANUEL DE JESUS OROZCO AKE ,WILBERTH OMAR SALAZAR POT
+31,7,C_PVEM_PT_MORENA,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,C_PVEM_PT,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,C_PVEM_MORENA,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,7,C_PT_MORENA,LETICIA GUADALUPE BAREA PARK,LAURA DALILA BALAM MAY
+31,9,PAN,PAULINO EK MAY,SERGIO ENRIQUE TUN CUTZ
+31,9,PRI,FELIPE CHAN MAY,JUAN FRANCISCO NOH CANCHE
+31,9,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,PVEM,ELOISA EUGENIA VELAZQUEZ VEGA,ROSA ELENA CAAMAL EB
+31,9,PT,WILVER ROGER LLANES CHAN,JOSE HERVE SANTANA CONTRERAS
+31,9,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,MORENA,ELOISA EUGENIA VELAZQUEZ VEGA,ROSA ELENA CAAMAL EB
+31,9,NAY,LUIS FELIPE SANTANA BASTO,SEBASTIAN NOH CAAMAL
+31,9,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,9,C_PVEM_MORENA,ELOISA EUGENIA VELAZQUEZ VEGA,ROSA ELENA CAAMAL EB
+31,9,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,PAN,ANGEL HERMENEGILDO CARDOZ FERNANDEZ,ROGER ARMANDO POLANCO MATOS
+31,12,PRI,DIANA ISABEL QUIJANO TZAB,RITA AMALIA DZIB POOT
+31,12,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,PT,RICARDO RODRIGUEZ CONTRERAS,MAJEDMI MEDINA ACHACH
+31,12,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,MORENA,RICARDO RODRIGUEZ CONTRERAS,MAJEDMI MEDINA ACHACH
+31,12,NAY,DIANA ISABEL QUIJANO TZAB,RITA AMALIA DZIB POOT
+31,12,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PRI_NAY,DIANA ISABEL QUIJANO TZAB,RITA AMALIA DZIB POOT
+31,12,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,12,C_PT_MORENA,RICARDO RODRIGUEZ CONTRERAS,MAJEDMI MEDINA ACHACH
+31,13,PAN,LINDA MARGARITA PEREZ QUIJANO,ROSA CAAROLINA GARCIA ANGULO 
+31,13,PRI,FRANCISCO EVIA GAMBOA,DIDIER FLORENTINO DE JESUS MARRUFO ALCOCER
+31,13,PRD,ROSENDA TRINIDADD CISNEROS AGUILAR,MARIA FERNANDA PEREZ COLLI
+31,13,PVEM,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,PT,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,MC,LUIS RAMON BASTO LORIA,CESAR AUGUSTO RIVERO TAMAYOO
+31,13,MORENA,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,NAY,LINDA MARGARITA PEREZ QUIJANO,ROSA CAROLINA GARCIA ANGULO
+31,13,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PAN_NAY,LINDA MARGARITA PEREZ QUIJANO,ROSA CAROLINA GARCIA ANGULO
+31,13,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,13,C_PVEM_PT_MORENA,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,C_PVEM_PT,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,C_PVEM_MORENA,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,13,C_PT_MORENA,LEIDY BEATRIZ CRUZ PECH,YAZMIN ALEJANDRA PECH CETINA
+31,15,PAN,FELIPE MARIO CHIN PUC,ROSENDO KUK BRACAMONTE
+31,15,PRI,EDUARDO JESUS VILLANUEVA CHI,ANGEL GABRIEL KU CHI
+31,15,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,PVEM,CARLOS RENAN CAUICH PECH,FELIPE DE JESUS CASTRO CEBALLOS 
+31,15,PT,CARLOS RENAN CAUICH PECH,FELIPE DE JESUS CASTRO CEBALLOS 
+31,15,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,MORENA,MARIA ESTHER PECH MEDINA,FLOR DE MARIA CAMARA OJEDA
+31,15,NAY,VICTOR MANUEL SOBERANIS VILLANUEVA,NELSON RODRIGO PECH KUK
+31,15,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PVEM_PT,CARLOS RENAN CAUICH PECH,FELIPE DE JESUS CASTRO CEBALLOS
+31,15,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,15,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,PAN,AMILCAR ABRICEL REYES MARIN,JOSE ANTONIO QUIJANO ZAPATA
+31,20,PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,PVEM,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,PT,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,MORENA,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,20,C_PVEM_PT_MORENA,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,C_PVEM_PT,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,C_PVEM_MORENA,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,20,C_PT_MORENA,GUADALUPE DEL ROSARIO CANTO ALE,MARIA CONCEPCION CEN PUERTO
+31,26,PAN,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,PRI,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,MC,JOSE WILBERTO FLOTA AKE ,PEDRO GUALBERTO ORTEGA CANTO
+31,26,MORENA,YUNTZIL DONATO AKE MARTINEZ,JOSE MARTIN ALOR CUA
+31,26,NAY,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PAN_PRI_NAY,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PAN_PRI,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PAN_NAY,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,C_PRI_NAY,BERTHA EUGENIA XIX CHAN,ELSY FRANCISCA RIVERA SANCHEZ
+31,26,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,26,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,PAN,LORENA BEATRIZ MENDEZ CANTO,ESLI ABIGAIL CORTES ANGULO
+31,27,PRI,SILVIA FELIPA PEREIRA SOSA,LORENZA MARLENE CHAN PECH 
+31,27,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,MC,ELBA WIGELMI BORGES ZALDIVAR,RITA ACACIA PECH FLORES
+31,27,MORENA,ANGEL RODULFO GUERRERO VIVAS,JOSE CARLOS LUGO MAY
+31,27,NAY,LORENA BEATRIZ MENDEZ CANTO,ESLI ABIGAIL CORTES ANGULO
+31,27,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PAN_NAY,LORENA BEATRIZ MENDEZ CANTO,ESLI ABIGAIL CORTES ANGULO
+31,27,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,27,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,PAN,FLORITA DEL PILAR LOPEZ TREJO,HIPOLITA SOSA BETANZO
+31,28,PRI,TERESA DEL JESUS GONZALEZ ALDECUA,CONCEPCION DEL CARMEN MASSA ALCOCER
+31,28,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,PVEM,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,PT,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,MC,JOSE GERONIMO MEDINA TREJO,GABRIEL PASTRANA SABIDO
+31,28,MORENA,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,NAY,MARTIN GUADALUPE ESTRADA SANCHEZ,JUAN JOSE MARRUFO BETANCOURT
+31,28,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,28,C_PVEM_PT_MORENA,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,C_PVEM_PT,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,C_PVEM_MORENA,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,28,C_PT_MORENA,SILVIA BEATRIZ MARRUFO GONZALEZ ,MARIA CANDELARIA GONZALEZ ANGULO
+31,29,PAN,LILIA GUADALUPE PERAZA KUMAN,ANSELMA ANTONIA NOH VARGUEZ
+31,29,PRI,ANDREA ISELA ESTREDA ALAMILLA,HEYDA MARIA OSORIO NOH
+31,29,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,MORENA,ESAU DZIB REYES,MELQUISEDEC REYES TREJO
+31,29,NAY,JOB JOEL POOT KUK,DARWIN MIGUEL CARRILLO BARRERA 
+31,29,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,29,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,PAN,FRANCISCO CHIN ESCALANTE,JOSE RODRIGO RODRIGUEZ POLANCO
+31,31,PRI,SERGIO COHUO ZAVALA,CHRISTOPHER ANTONIO POOT CANCHE
+31,31,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,PVEM,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,PT,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,MC,ARACELY CERVANTES PECH,ELADIA ISABEL HUCHIM CANCHE
+31,31,MORENA,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,31,C_PVEM_PT_MORENA,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,C_PVEM_PT,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,C_PVEM_MORENA,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,31,C_PT_MORENA,EDUARDO ARON DIAZ SANTOS,BERNARDINO JOEL COHUO ZAVALA
+31,34,PAN,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,PRI,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,PRD,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,MC,DANIELA MARILI PEREZ ECHEVERRIA,CINTHIA GUADALUPE CATZIM PEREZ
+31,34,MORENA,VICTOR JOSE CHAN CEN,JESUS ALBERTO POOL CANCHE 
+31,34,NAY,WILMA YOLANDA ECHEVERRIA YAH,IRMA BEATRIZ ANGULO MARIN
+31,34,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PAN_PRI_PRD,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PAN_PRI,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,C_PAN_PRD,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,C_PRI_PRD,EDUARDO ENRIQUE EUAN FRANCO,BRADLY SMARK UUH PECH
+31,34,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,34,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,PAN,JOVITA DEL CARMEN NOVELO ARANA ,MAGDA CAROLINA VALENCIA OJEDA
+31,35,PRI,JOVITA DEL CARMEN NOVELO ARANA ,MAGDA CAROLINA VALENCIA OJEDA
+31,35,PRD,HEBERTH ISMAEL SARABIA OJEDA,OSCAR ABEL EK IUIT
+31,35,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,PT,MIGUEL OCTAVIO ARJONA SANCHEZ,JOSE BASILIO OJEDA SARABIA
+31,35,MC,DEINY DE JESUS UC MAY,MARTA SUSANA COBA COBA
+31,35,MORENA,MIGUEL OCTAVIO ARJONA SANCHEZ,JOSE BASILIO OJEDA SARABIA
+31,35,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_PRI,JOVITA DEL CARMEN NOVELO ARANA ,MAGDA CAROLINA VALENCIA OJEDA
+31,35,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,35,C_PT_MORENA,MIGUEL OCTAVIO ARJONA SANCHEZ,JOSE BASILIO OJEDA SARABIA
+31,36,PAN,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,PRI,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,PRD,KARY ROCIO COUOH MOO,BRENDA DENICE UUH EK
+31,36,PVEM,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,PT,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,MORENA,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,NAY,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PAN_PRI_NAY,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PAN_PRI,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PAN_NAY,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,C_PRI_NAY,JOAN GREGORIO GONGORA SUAREZ,NAZARIO CHI CHAN
+31,36,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,36,C_PVEM_PT_MORENA,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,C_PVEM_PT,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,C_PVEM_MORENA,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,36,C_PT_MORENA,WILMA DEL ROSARIO MEDINA CHIM,ALEJANDRA CAN FLORES
+31,37,PAN,VICTOR MANUEL GARMA LEON,PEDRO UK CHEL
+31,37,PRI,JAIME GUADALUPE ESPINDOLA CONTRERAS ,JORGE ALBERTO MARTINEZ XXX
+31,37,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,PVEM,JOSE CARLOS ESQUIVEL FLOTA,MANUEL CHI SANTOS
+31,37,PT,JOSE CARLOS ESQUIVEL FLOTA,MANUEL CHI SANTOS
+31,37,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,MORENA,ROCIO YZETH YAH NOVELO,YULY KARINA CERVERA SANTANA
+31,37,NAY,VICTOR MANUEL GARMA LEON,PEDRO KUK CHEL
+31,37,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PAN_NAY,VICTOR MANUEL GARMA LEON,PEDRO KUK CHEL
+31,37,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PVEM_PT,JOSE CARLOS ESQUIVEL FLOTA,MANUEL CHI SANTOS
+31,37,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,37,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,PAN,SANDRA RAQUEL PECH CHI,MARIA DEL CARMEN ORILLA ZAPATA
+31,39,PRI,SANDRA RAQUEL PECH CHI,MARIA DEL CARMEN ORILLA ZAPATA
+31,39,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,PVEM,HECTOR ROLANDO CORDOVA MEZQUITA,JOSE ARIEL YAM CORDOVA
+31,39,PT,JOSE VICENTE COBA COCOM,ALAN DONALDO PECH CHIM
+31,39,MC,PEDRO AGUSTIN TEK CHIM,JESUS NARCISO CHAN ORILLA
+31,39,MORENA,HECTOR MANUEL CASTILLO AVILA,JUAN CARLOS PECH TAMAYO
+31,39,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_PRI,SANDRA RAQUEL PECH CHI,MARIA DEL CARMEN ORILLA ZAPATA
+31,39,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,39,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,PAN,WARNEL MAY ESCOBAR,CARLOS ANDRES MESQUITA SIERRA
+31,40,PRI,WARNEL MAY ESCOBAR,CARLOS ANDRES MESQUITA SIERRA
+31,40,PRD,JOSE ELIAS CANCHE PISTE,BERNARDINO MUT CUPUL
+31,40,PVEM,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,PT,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,MORENA,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,NAY,PAULINA CONCEPCION MIRANDA VILLALOBOS,MARIA DEL ROSARIO CETZ IX
+31,40,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PAN_PRI,WARNEL MAY ESCOBAR,CARLOS ANDRES MESQUITA SIERRA
+31,40,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,40,C_PVEM_PT_MORENA,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,C_PVEM_PT,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,C_PVEM_MORENA,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,40,C_PT_MORENA,MELISSA MANE PUGA RODRIGUEZ,ADRIANA BEATRIZ CAUICH EUAN
+31,42,PAN,LORENA PATRICIA GAMBOA MAY,MARIA MERCEDES PECH CAUICH
+31,42,PRI,WILLIAN ANTONIO DORANTES CHE,MIGUEL DE JESUS CAN CAAMAL
+31,42,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,PVEM,DANIEL ELIEZER GAMBOA GOMEZ ,FRANCISCO MIGUEL PECH PECH
+31,42,PT,ABRAHAM GUEVARA GAMBOA ,EDGAR JAVIER SOSA VILLEGAS 
+31,42,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,MORENA,ABRAHAM GUEVARA GAMBOA ,EDGAR JAVIER SOSA VILLEGAS 
+31,42,NAY,CARLOS FRANCISCO CATZIN TZEC,EDWIN ABRAHAM AVILES COCOM 
+31,42,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,42,C_PT_MORENA,ABRAHAM GUEVARA GAMBOA ,EDGAR JAVIER SOSA VILLEGAS 
+31,51,PAN,MARIA EMILIA BORGES CONCHA ,MARIA YSABEL BORGES CANCHE
+31,51,PRI,PABLO ALEJANDRO CUTZ DOMINGUEZ ,MARIO ALBERTO GAMBOA CRUZ 
+31,51,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,MORENA,ALEJANDRO SILVA DZUL ,JOSE ALEJANDRO KOO PACHECO
+31,51,NAY,MARIA EMILIA BORGES CONCHA ,MARIA YSABEL BORGES CANCHE
+31,51,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PAN_NAY,MARIA EMILIA BORGES CONCHA ,MARIA YSABEL BORGES CANCHE
+31,51,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,51,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,PAN,LUCIO ALBERTO ESTRELLA CANUL,JOSE REINALDO CHAN CAUICH
+31,52,PRI,MARIO XAVIER PERAZA RAMIREZ ,JOSE ARMANDO KUK CHALE 
+31,52,PRD,BARBARA IRENE IBARRA GALAVIZ,MARIA MANUELA PECH KOH
+31,52,PVEM,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,PT,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,MC,ANA LETICIA KUK ESCOBEDO,CELMI DEL ROSARIO TAMAYO BASTO
+31,52,MORENA,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,NAY,MARIO XAVIER PERAZA RAMIREZ ,JOSE ARMANDO KUK CHALE 
+31,52,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PRI_NAY,MARIO XAVIER PERAZA RAMIREZ ,JOSE ARMANDO KUK CHALE 
+31,52,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,52,C_PVEM_PT_MORENA,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,C_PVEM_PT,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,C_PVEM_MORENA,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,52,C_PT_MORENA,JOSE CARLOS ORTEGA JIMENEZ ,NARCISO HORACIO CANCHE GOMEZ 
+31,54,PAN,MARIA INES CHIM AKE,LOURDES CONCEPCION CAUICH CHIM
+31,54,PRI,MARIA INES CHIM AKE,LOURDES CONCEPCION CAUICH CHIM
+31,54,PRD,VICTOR MANUEL CAN AKE,AGUSTIN ABAM CHIN
+31,54,PVEM,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,PT,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,MC,KEILA KAREN CHIM MARTIN,YULIANA DE LOS ANGELES CERVANTES DOMINGUEZ
+31,54,MORENA,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_PRI,MARIA INES CHIM AKE,LOURDES CONCEPCION CAUICH CHIM
+31,54,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,54,C_PVEM_PT_MORENA,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,C_PVEM_PT,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,C_PVEM_MORENA,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,54,C_PT_MORENA,RUBI YASMIN AKE CHAVES,MARIA ROSA ISELA CASTILLO ALVAREZ
+31,59,PAN,ERICK JOSE RIHANI GONZALEZ,DAVID EDUARDO ESCALANTE ECHEVERRIA
+31,59,PRI,JUDITH ALHELI HERNANDEZ RIVERO,BLANCA ALICIA DE LA MACARENA OSORNO BERTATA
+31,59,PRD,FRANCISCO JAVIER GONGORA DOMANI,ROBERTO JAVIER DIAZ CEBALLOS
+31,59,PVEM,GLADYS SUGELY MANZANO ALVARADO,NELLY BEATRIZ UREÑA SAUIRI
+31,59,PT,LEANDO RAUL ALVARADO NAAL,CARLOS CORONEL GARCIA
+31,59,MC,ROSA MARIA CORTEZ HERRERA,SHEYLA ESTEFANY LEON ROSES
+31,59,MORENA,LEANDRO RAUL ALVARADO NAAL,CARLOS CORONEL GARCIA
+31,59,NAY,JUDITH ALHELI HERNANDEZ RIVERO,BLANCA ALICIA DE LA MACARENA OSORNO BERTATA
+31,59,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PRI_NAY,JUDITH ALHELI HERNANDEZ RIVERO,BLANCA ALICIA DE LA MACARENA OSORNO BERTATA
+31,59,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PVEM_PT_MORENA,LEANDO RAUL ALVARADO NAAL,CARLOS CORONEL GARCIA
+31,59,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,59,C_PT_MORENA,LEANDO RAUL ALVARADO NAAL,CARLOS CORONEL GARCIA
+31,64,PAN,ALMA ERNESTINA MANZANERO POLANCO,FLORA MARIA BAAS POOT
+31,64,PRI,ALMA ERNESTINA MANZANERO POLANCO,FLORA MARIA BAAS POOT
+31,64,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,PVEM,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,PT,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,MC,EMILIO CHAN PECH,EDDY DE LA CRUZ MOO CAAMAL
+31,64,MORENA,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,NAY,AGUSTIN ERNESTO MOO HERRERA,LUIS MIGUEL POLANCO EK
+31,64,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PAN_PRI,ALMA ERNESTINA MANZANERO POLANCO,FLORA MARIA BAAS POOT
+31,64,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,64,C_PVEM_PT_MORENA,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,C_PVEM_PT,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,C_PVEM_MORENA,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,64,C_PT_MORENA,MANUELA ROSAURA KUK GARMA,MARIA MARBELLA CHAN EK
+31,67,PAN,WENDY MARIELLY CAUICH CAUICH,REINA MARIA CHAN PECH
+31,67,PRI,DIANA ISABEL DZUL LEO,MARIA GUADALUPE MANZANERO DZUL
+31,67,PRD,DIANA ISABEL DZUL LEO,MARIA GUADALUPE MANZANERO DZUL
+31,67,PVEM,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,PT,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,MC,MIGUEL ANGEL CHERREZ AKE,RICARDO DE JESUS NOVEL CANO
+31,67,MORENA,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,NAY,HERIBERTO ABRAHAM PALOMO CAN,MARIA IDELFIA CANO CANCHE
+31,67,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PRI_PRD,DIANA ISABEL DZUL LEO,MARIA GUADALUPE MANZANERO DZUL
+31,67,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,67,C_PVEM_PT_MORENA,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,C_PVEM_PT,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,C_PVEM_MORENA,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,67,C_PT_MORENA,EMILIA DEL SOCORRO HUCHIM ANGULO,SULEYMA JANEET HUCHIN CHAN
+31,68,PAN,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,PRI,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,PVEM,BENIGNO RAMIREZ ESPINOSA,VICTOR MANUEL PALMA CERVANTES
+31,68,PT,INES ANTONIO PERAZA MALDONADO,JOSE SANTIAGO CHALE POOT
+31,68,MC,YUSSIF EMMANUEL CHI QUIÑONES,ALMA ARACELY SAUIRI QUIÑONES
+31,68,MORENA,DALINDA CONCEPCION PUC AGUILAR ,OLGA MARIA HERRERA UC
+31,68,NAY,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PAN_PRI_NAY,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PAN_PRI,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PAN_NAY,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,C_PRI_NAY,ABRIL ABIGAIL PALMA BACELIS,MELISSA ALEJANDRA HERRERA UITZ 
+31,68,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,68,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,PAN,DANILO CUEVAS MEDINA,JORGE TOMAS PECH OY
+31,69,PRI,ANDRES ISMAEL SANTANA FRAGA ,JOSE HERIBERTO NOVELO JIMENEZ 
+31,69,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,PVEM,GERARDO JACOBO CUXIN ALFARO,RUSSY ANTONIO YAM CHAC
+31,69,PT,GERARDO JACOBO CUXIN ALFARO,RUSSY ANTONIO YAM CHAC
+31,69,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,MORENA,MANUEL ALEJANDRO ALCOCER JIMENEZ,ERICK ADOLFO MARTIN SOSA
+31,69,NAY,ANDRES GREGORIO NAVARRO CATZIN,LUIS FELIPE YAM SANTIAGO
+31,69,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PVEM_PT,GERARDO JACOBO CUXIN ALFARO,RUSSY ANTONIO YAM CHAC
+31,69,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,69,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,PAN,RAUL ALFREDO VALENCIA HEREDIA,JOSE REYNALDO NOH CAAMAL
+31,71,PRI,ROSA ANGELA CHAN DZIB,MARTINA ORDOÑEZ MAAS
+31,71,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,PVEM,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,PT,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,MORENA,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,71,C_PVEM_PT_MORENA,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,C_PVEM_PT,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,C_PVEM_MORENA,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,71,C_PT_MORENA,JUANI VERONICA QUIÑONES LUGO,ELIDE CHIM EK
+31,72,PAN,LENNY SICELA CASTILLO MAY,MARILIN DEL CARMEN CAMACHO TORRES
+31,72,PRI,SHIRLEY ANALI PAREDES PEREZ,SELENE MONTSERRAT SANCHEZ CONTRERAS
+31,72,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,PVEM,DILMA EUNICE MORALES GONZALEZ,LEYDY MARLENE HAM BASTO
+31,72,PT,REYNA ISABEL ORDOÑEZ MOLINA,TARCILA PECH POOL
+31,72,MC,JOSE ELIAS BATUN PECH,Nombre Apellido Apellido
+31,72,MORENA,REYNA ISABEL ORDOÑEZ MOLINA,TARCILA PECH POOL
+31,72,NAY,ELIAS VIVAS MATOS,MIGUEL ANGEL CABRERA TORRES
+31,72,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,72,C_PT_MORENA,REYNA ISABEL ORDOÑEZ MOLINA,TARCILA PECH POOL
+31,74,PAN,MARTIN ORLANDO TUN GOMEZ ,RAMON POOL MEX
+31,74,PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,PVEM,JULIO CESAR SOBERANIS ARGUELLES,KAROL MIGUEL ANGEL ZETINA PECH
+31,74,PT,MARTHA PATRICIA SILVEIRA PUERTO,NANCY DEL SOCORRO MAY CHAN
+31,74,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,MORENA,MARTHA PATRICIA SILVEIRA PUERTO,NANCY DEL SOCORRO MAY CHAN
+31,74,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,74,C_PT_MORENA,MARTHA PATRICIA SILVEIRA PUERTO,NANCY DEL SOCORRO MAY CHAN
+31,76,PAN,BETHEL ABDEL ACHACH RODRIGUEZ,LUIS DAVID LARA PECH
+31,76,PRI,MARGARITA CHI MEDINA,MARIA ROSELLY DEL CARMEN CHAN MAY
+31,76,PRD,JOSE ENRIQUE MOO TAH,JUAN ALBERTO UCAN COCOM
+31,76,PVEM,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,PT,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,MORENA,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,NAY,JUAN PABLO FRIAS TORRES,JOSE ALFREDO BALAM CHI
+31,76,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,76,C_PVEM_PT_MORENA,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,C_PVEM_PT,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,C_PVEM_MORENA,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,76,C_PT_MORENA,LILIA ESTHER SUAREZ PINTO,ELSY YOLANDA POLANCO CAAMAL
+31,77,PAN,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,PRI,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,PVEM,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,PT,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,MC,MARTA CHALE CHI,GILDA RAQUEL DZUL KANTUN
+31,77,MORENA,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,NAY,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PAN_PRI_NAY,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PAN_PRI,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PAN_NAY,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,C_PRI_NAY,FREYNNE GUADALUPE ARAGON CORTEZ,YAJAIRA COUOH BRISEÑO 
+31,77,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,77,C_PVEM_PT_MORENA,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,C_PVEM_PT,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,C_PVEM_MORENA,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,77,C_PT_MORENA,ESTELA DZUL CHUC,MAYUMI ASUNCION ANCONA IX
+31,78,PAN,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,PRI,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,PVEM,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,PT,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,MORENA,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,NAY,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PAN_PRI_NAY,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PAN_PRI,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PAN_NAY,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,C_PRI_NAY,MARISOL MAY ESCOBAR ,GUADALUPE ABIGAIL PISTE CHE
+31,78,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,78,C_PVEM_PT_MORENA,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,C_PVEM_PT,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,C_PVEM_MORENA,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,78,C_PT_MORENA,FLORY GRISEL CEN BALAM,WUENDY MARIBEL MAY KANTUN
+31,82,PAN,LEIDY ALICIA CASTILLO MENA,KARLA JULISSA CAMPOS LOPE
+31,82,PRI,CARLOS HUMBERTO CABRERA RIVERO,HERNAN CORTEZ SEGURA
+31,82,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,PVEM,SHEYLA MARIA CETINA COHUO,KARINA DEL SOCORRO TAMAYO HAY
+31,82,PT,MANUEL JESUS AGUILAR PECH,REYES GASPAR CETZ NOH
+31,82,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,MORENA,GRISELDA GUADALUPE MALDONADO QUIJANO,FATIMA ALEJANDRA SEGURA RAMIREZ
+31,82,NAY,LEIDY ALICIA CASTILLO MENA,KARLA JULISSA CAMPOS LOPE
+31,82,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PAN_NAY,LEIDY ALICIA CASTILLO MENA,KARLA JULISSA CAMPOS LOPE
+31,82,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,82,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,PAN,ALEJANDRO PERAZA CHAY ,JOSE UBALDO CANCHE DOMINGUEZ
+31,83,PRI,EDMUNDO ALFONZO NUÑEZ ERGUERA,RODOLFO ARGAEZ CAN
+31,83,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,PVEM,MARIO ALEJANDRO SANTANA PALMA,PEDRO ADIEL TEC TEC
+31,83,PT,MARTINA CAAMAL CHUC,GIROMY ABIGAIL MARTIN PECH
+31,83,MC,DIANE GEORGINA CARRILLO VEGA,SAHADY YOLANDA ALVARADO CHALE
+31,83,MORENA,MARIO ALEJANDRO SANTANA PALMA,PEDRO ADIEL TEC TEC
+31,83,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,83,C_PVEM_MORENA,MARIO ALEJANDRO SANTANA PALMA,PEDRO ADIEL TEC TEC
+31,83,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,PAN,ANGEL ANTONIO ESCALANTE GONZALEZ,VERONICA DE LA CRUZ MONTALVO UC
+31,84,PRI,ANGEL ANTONIO ESCALANTE GONZALEZ,VERONICA DE LA CRUZ MONTALVO UC
+31,84,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,PVEM,MARIA CRISTINA OSORIO POLANCO,MARCI HERRERA UH
+31,84,PT,RAYMUNDO ALVAREZ ADRIAN,MIGUEL ANGEL SOSA PORTILLO
+31,84,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,MORENA,MARIA CRISTINA OSORIO POLANCO,MARCI HERRERA UH
+31,84,NAY,GORETTI ABIGAIL ZAVALA BAEZA,NEFTALY GUADALUPE LIZAMA ZAVALA
+31,84,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PAN_PRI,ANGEL ANTONIO ESCALANTE GONZALEZ,VERONICA DE LA CRUZ MONTALVO UC
+31,84,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,84,C_PVEM_MORENA,MARIA CRISTINA OSORIO POLANCO,MARCI HERRERA UH
+31,84,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,PAN,EDWIN FERNANDO RODRIGUEZ OJEDA,ALEXIS IVAN POOL MAY
+31,86,PRI,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,PRD,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,PVEM,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,PT,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,MORENA,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,NAY,ROGEL ISMAEL GAMBOA CASTILLA,NIDIA MARIA CORREA MENDOZA
+31,86,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PRI_PRD_NAY,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PRI_PRD,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,86,C_PRI_NAY,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,C_PRD_NAY,ROGEL ISMAEL GAMBOA CASTILLO,NIDIA MARIA CORREA MENDOZA
+31,86,C_PVEM_PT_MORENA,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,C_PVEM_PT,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,C_PVEM_MORENA,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,86,C_PT_MORENA,GABRIELA CEN PERERA,AMALIA BEATRIZ PUC CEN
+31,88,PAN,JOSE BERNARDO RODRIGUEZ ARCEO,JOSE EDUARDO CHACN CHIN
+31,88,PRI,LANNY MAURICIA ARCEO DZIB,MARIA MARGARITA PECH SANCHEZ
+31,88,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,MC,CARLOS ENRIQUE ARCEO RODRIGUEZ,JOSE DE JESUS SANCHEZ ARCEO
+31,88,MORENA,RAMON ALEJANDRO ESTRELLA POOL,MARIA CANDELARIA ADRIAN SANCHEZ
+31,88,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,88,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,PAN,CAROLINA UCAN CHAN,MARIA ESMERALDA DEL ROCIO UCAN RAVELL
+31,90,PRI,JOSE RODRIGO MUÑOZ CEH,CRISTHIAN ABIGAIL UICAB TUN
+31,90,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,MORENA,FABIAN MAGDALENO RAMIREZ PEREZ,Nombre Apellido Apellido
+31,90,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,90,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,PAN,MIGUEL ESTEBAN RODRIGUEZ BAQUEIRO,FRANK EMILIO CHALE CETINA
+31,93,PRI,CELIA DE LA CRUZ GOMEX MARTIN,MILDRED JAQUELINE DEL ROSARIO JUANES VAZQUEZ
+31,93,PRD,CELIA DE LA CRUZ GOMEX MARTIN,MILDRED JAQUELINE DEL ROSARIO JUANES VAZQUEZ
+31,93,PVEM,GUADALUPE CAUICH TZUC,AGRIPINA CACHON MOGUEL
+31,93,PT,MIGUEL ANGEL MENESES AYALA,JOSE MARTIN AKE CANCHE
+31,93,MC,YAMILY ANGELICA BURGOS GUERRA,YAJAIRA BEATRIZ MUKUL ARAUJO
+31,93,MORENA,GUADALUPE CAUICH TZUC,AGRIPINA CACHON MOGUEL
+31,93,NAY,JAZAR MAVET NAVARRETE CONCHA,LUCIANO REYNALDO MEZETA BOLIVAR
+31,93,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PRI_PRD,CELIA DE LA CRUZ GOMEX MARTIN,MILDRED JAQUELINE DEL ROSARIO JUANES VAZQUEZ
+31,93,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,93,C_PVEM_MORENA,GUADALUPE CAUICH TZUC,AGRIPINA CACHON MOGUEL
+31,93,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,PAN,ELIA DEL SOCORRO UC CANCHE,GEISY NOEMI CHAN CANCHE
+31,95,PRI,CARLOS FERNANDO VARGUEZ CIAU,JORGE ALEJANDRO CHAN PUC
+31,95,PRD,IRVIN OSCAR CAUICH VARGUEZ,FRANCISCO ADRIAN CEN HOIL
+31,95,PVEM,JOSE FELICIANO AGUILAR TZAB,MICHEL OMAR CITUK PUCH
+31,95,PT,VICTOR RENE LARA CAUICH,ANGEL EFRAIN PUCH KU
+31,95,MC,MANUEL JAVIER TZAB JUAREZ,GASPAR ALEJANDRO CANTE MAY
+31,95,MORENA,VICTOR RENE LARA CAUICH,ANGEL EFRAIN PUCH KU
+31,95,NAY,GILBERTO DEL CARMEN KANTUN TEPAL,ALEJANDRO ISRAEL ESTRADA CIAU
+31,95,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,95,C_PT_MORENA,VICTOR RENE LARA CAUICH,ANGEL EFRAIN PUCH KU
+31,97,PAN,JORGE RICARDO KUH MENDEZ,JESUS ALBERTO ESTRELLA SANTOS
+31,97,PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,PT,EDUARDO CUPUL NOH,HUMBERTO CHAN MAY
+31,97,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,MORENA,EDUARDO CUPUL NOH,HUMBERTO CHAN MAY
+31,97,NAY,ANTONIO CANUL LLANES,PAULINO ALCOCER CHI
+31,97,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,97,C_PT_MORENA,EDUARDO CUPUL NOH,HUMBERTO CHAN MAY
+31,103,PAN,LOURDES MARIA TAH MAAS,NAIBY CRISTINA UC COUOH
+31,103,PRI,ELDA VIRGINIA BALAM KOH,MARTHA MARIBEL MATU CHEL
+31,103,PRD,ROSA MARIA CHALE,LIDIA ESPERANZA TUN CHALE
+31,103,PVEM,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,PT,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,MORENA,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,103,C_PVEM_PT_MORENA,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,C_PVEM_PT,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,C_PVEM_MORENA,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,103,C_PT_MORENA,ROSALBA GUADALUPE UC ZAPATA,REGINA CONCEPCION CHABLE COUOH
+31,105,PAN,JESUS ERNESTO PUGA TUN,LUIS MIGUEL AKE CANTO
+31,105,PRI,YMARY YAZIR CHUC AKE,ESTEFANY PAULINA HERNANDEZ CHI
+31,105,PRD,TANIA KARINA CERVANTES FALCON,CINTHIA NOEMI VALENCIA BARRERA
+31,105,PVEM,FERNANDO PRIMITIVO YGNACIO LOERA LOZADA,GERARDO OTONIEL UC CERVANTES
+31,105,PT,DEYMI LUCELI CERVANTES PUGA,YIMI MARICELA TORRES EK
+31,105,MC,MINERVA DEL ROSARIO BURGOS FLOTA ,VERONICA BATRIZ LOERA EK
+31,105,MORENA,DEYMI LUCELI CERVANTES PUGA,YIMI MARICELA TORRES EK
+31,105,NAY,CARLOS JESUS UC PECH ,MARCO ANTONIO PUGA TUN
+31,105,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,105,C_PT_MORENA,DEYMI LUCELI CERVANTES PUGA,YIMI MARICELA TORRES EK
+31,106,PAN,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,PRI,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,MORENA,JESUS ALBERTO COOL AKE,ADONAY AVILES SIERRA
+31,106,NAY,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PAN_PRI_NAY,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PAN_PRI,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PAN_NAY,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,C_PRI_NAY,ALEX CONSEPCION DURAN QUIÑONES,JUAN ALBERTO HERNANDEZ BORGES
+31,106,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,106,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,PAN,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,PRI,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,PRD,JUAN JOSE STILES RAMOS,JULIAN VALDEZ CABALLERO
+31,50,PVEM,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,PT,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,MC,GERARDO ALFONSO OCAMPO CASTRO,JORGE ALEJANDRO MENDOZA PIÑA
+31,50,MORENA,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,NAY,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PAN_PRI_NAY,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PAN_PRI,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PAN_NAY,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,C_PRI_NAY,CECILIA ANUNCIACION PATRON LAVIADA ,ADRIANA CECILIA MARTIN SAUMA
+31,50,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,50,C_PVEM_PT_MORENA,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,C_PVEM_PT,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,C_PVEM_MORENA,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,50,C_PT_MORENA,ROMMEL AGHMED PACHECO MARRUFO,GUILLERMO RAMIREZ FRANCO
+31,1,PAN,CRISTINA AYALA LOPEZ,GABRIELA DE JESUS LOPEZ NEGRON
+31,1,PRI,MARIA LORENZA AYALA LOPEZ,WILMA DIANET ALVAREZ ALVEREZ
+31,1,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,PT,MIRIAN ARACELY KU EUAN,MARIA FRANCISCA DE LA CRUZ KU IUIT
+31,1,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,MORENA,GUILLERMO DEL SOCORRO MENA COCOM,ULISES MARTIN TUYUB KU
+31,1,NAY,RAMIRO SOSA BAEZ,JOSE MAURICIO LOPEZ VARGUEZ
+31,1,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,1,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,PAN,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,PRI,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,PVEM,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,PT,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,MORENA,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,NAY,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PAN_PRI_NAY,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PAN_PRI,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PAN_NAY,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,C_PRI_NAY,LETICIA CASTILLO NIC,CANDIDA ELIZABETH GONGORA VELA
+31,3,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,3,C_PVEM_PT_MORENA,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,C_PVEM_PT,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,C_PVEM_MORENA,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,3,C_PT_MORENA,IGINIA ADALBERTA ZAPATA CHI,ROSA CARMEN IX CHULIM
+31,11,PAN,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,PRI,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,PRD,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,PVEM,MARIA MAGDALENA MARTIN ZALDIVAR,NANCY ANGELINA TINAL PUC
+31,11,PT,GERMAN JESUS CAUICH PINTO,FRANCISCO JAVIER AKE UICAB
+31,11,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,MORENA,GERMAN JESUS CAUICH PINTO,FRANCISCO JAVIER AKE UICAB
+31,11,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PAN_PRI_PRD,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PAN_PRI,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,C_PAN_PRD,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,C_PRI_PRD,JOSE ASUNCION RAMIREZ PERERA,PEDRO JESUS UH UICAB
+31,11,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,11,C_PT_MORENA,GERMAN JESUS CAUICH PINTO,FRANCISCO JAVIER AKE UICAB
+31,18,PAN,NEYDI YAMILI YAM PACHECO,DAYVI MAGDALENA SALAZAR TUZ
+31,18,PRI,JORGE MANUEL SALAZAR PUC,ROLANDO ALEJANDRO MATOS LLLANES
+31,18,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,PT,CESAR ASUNCION ACOSTA SANTOS,JOSE TRANSITO SALAZAR UICAB
+31,18,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,MORENA,CESAR ASUNCION ACOSTA SANTOS,JOSE TRANSITO SALAZAR UICAB
+31,18,NAY,NEYDI YAMILI YAM PACHECO,DAYVI MAGDALENA SALAZAR TUZ 
+31,18,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PAN_NAY,NEYDU YAMILI YAM PACHECO,DAYVI MAGDALENA SALAZAR TUZ
+31,18,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,18,C_PT_MORENA,CESAR ASUNCION ACOSTA SANTOS,JOSE TRANSITO SALAZAR UICAB 
+31,23,PAN,PEDRO ALCANTARA PECH ARAGON,ANGEL GUADALUPE UICAB QUINTAL
+31,23,PRI,ERWIN OBET MARTIN ALCOCER,ISIDRO ISMAEL QUINTAL QUINTAL
+31,23,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,PVEM,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,PT,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,MORENA,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,NAY,MARIA ELIZABET YAM QUINTAL,MARIA ARMINDA TUN DZUL
+31,23,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,23,C_PVEM_PT_MORENA,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,C_PVEM_PT,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,C_PVEM_MORENA,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,23,C_PT_MORENA,JOSEFINA MARIBEL QUINTAL ROSADO,MARIA ALEJANDRA COBA SIMA
+31,24,PAN,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYUB XICUM
+31,24,PRI,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYUB XICUM
+31,24,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,PVEM,RICARDO ABRAHAM PERAZA VAZQUEZ,ROBERTO ANTONIO CHAN PERAZA
+31,24,PT,MANUEL ANTONIO COBA MIS,FELIPE ARCANGER EK EK
+31,24,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,MORENA,CLEMENTE JULIAN CANO CHAN,ANASTACIA TUZ ITZA
+31,24,NAY,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYEB XICUM
+31,24,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PAN_PRI_NAY,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYEB XICUM
+31,24,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PAN_PRI,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYEB XICUM
+31,24,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PAN_NAY,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYEB XICUM
+31,24,C_PRI_NAY,FLORA ARACELLY CANCHE BRICEÑO,CINDY JOANA TUYEB XICUM
+31,24,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,24,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,PAN,CARLOS AUGUSTO PAREDES PARRA,JOSE ANANIAS KU PANTI
+31,25,PRI,JOSE ANTONIO PEREZ CABRERA,ANA BEATRIZ TZEC INTERIAN
+31,25,PRD,JOSE ANTONIO PEREZ CABRERA,ANA BEATRIZ TZEC INTERIAN
+31,25,PVEM,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,PT,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,MORENA,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PAN_PRD,CARLOS AUGUSTO PAREDES PARRA,Nombre Apellido Apellido
+31,25,C_PRI_PRD,JOSE ANTONIO PEREZ CABRERA,ANA BEATRIZ TZEC INTERIAN
+31,25,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,25,C_PVEM_PT_MORENA,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,C_PVEM_PT,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,C_PVEM_MORENA,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,25,C_PT_MORENA,ROSA MARIA PERAZA MANRIQUE,GUADALUPE CHUC INTERIAN 
+31,33,PAN,MELBA DEL ROSARIO ABRAHAM HOYOS,MARIA FELIX YAH MARTIN
+31,33,PRI,RAUL FRANCISCO FAJARDO CASTILLO,MARIO EDILBERTO CAN CORTEZ
+31,33,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,PVEM,ELSA MARIANA CAAMAL REJON,SILVIA MARIA POOL CANUL
+31,33,PT,KEREN AIME KU FERNANDEZ,CARMINIA DEL ROSARIO KU MARTIN 
+31,33,MC,GONZALO ARTEMIO TZEC KU,ARMANDO MARTINIANO HUCHIM HUCHIM
+31,33,MORENA,ELSA MARIANA CAAMAL REJON ,SILVIA MARIA POOL CANUL 
+31,33,NAY,RAUL FRANCISCO FAJARDO CASTILLO,MARIO EDILBERTO CAN CORTEZ
+31,33,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PRI_NAY,RAUL FRANCISCO FAJARDO CASTILLO,MARIO EDILBERTO CAN CORTEZ
+31,33,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,33,C_PVEM_PT_MORENA,ELSA MARIANA CAAMAL REJON ,SILVIA MARIA POOL CANUL 
+31,33,C_PVEM_PT,ELSA MARIANA CAAMAL REJON ,SILVIA MARIA POOL CANUL 
+31,33,C_PVEM_MORENA,ELSA MARIANA CAAMAL REJON ,SILVIA MARIA POOL CANUL 
+31,33,C_PT_MORENA,ELSA MARIANA CAAMAL REJON ,SILVIA MARIA POOL CANUL 
+31,38,PAN,CRISTINA GUADALUPE DEL ROCIO PEREZ BOJORQUEZ,MARIA ELIZABETH PEÑA PEREZ
+31,38,PRI,CRISTINA GUADALUPE DEL ROCIO PEREZ BOJORQUEZ,MARIA ELIZABETH PEÑA PEREZ
+31,38,PRD,JAIME DE JESUS PECH CHAY,JOSE ALFONSO AGUILAR MOO
+31,38,PVEM,MARIO ALFONSO BALAM POOT,JOSE ANGEL CANUL ROMERO
+31,38,PT,REINA GUADALUPE KU QUINTAL,LIZANDRA NOEMI CABRERA CHIN
+31,38,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,MORENA,NEYI MARLENE MARTIN GIO,LUCY CARIDAD GONGORA PAT
+31,38,NAY,LUIS ANTONIO EK CASANOVA,IDELFONSO PECH QUINTAL
+31,38,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PAN_PRI,CRISTINA GUADALUPE DEL ROCIO PEREZ BOJORQUEZ,MARIA ELIZABETH PEÑA PEREZ
+31,38,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,38,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,PAN,LETICIA DEL SOCORRO TZUC QUINTAL,LOURDES FRANCISCA QUINTAL TZUC
+31,44,PRI,SARA MARIA DZUL TZUC,MARIA DEL CARMEN DZIB TZUC
+31,44,PRD,MARIA MARTINA DE LOURDES CHAN TZUC,CINDY MARISOL CAB CHAN
+31,44,PVEM,IRVING DE LA CRUZ PISTE CANUL ,RICARDO VENTURA KU
+31,44,PT,JOSE LAZARO TZUC DZUL,JOSE ALFREDO CANUL TZUC
+31,44,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,MORENA,MARTA ROSELMI TUN CHULI,NELSY JAZMIN LLAMA SOLIS
+31,44,NAY,LUIS ALBERTO DEL JESUS PAT UC,SHANTAL CAROLA DE FATIMA DZUL QUINTAL
+31,44,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,44,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,PAN,ADAN MOISES KUK MENA,RAFAEL DE LA CRUZ MENA BACAB
+31,45,PRI,HECTOR MANUEL YAH MOO,RIGOBERTO CHAN KOH
+31,45,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,PVEM,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,PT,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,MORENA,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,NAY,GILDA MARIA CHAN MOO,MARIA FATIMA DE JESUS CAAMAL CAAMAL
+31,45,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,45,C_PVEM_PT_MORENA,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,C_PVEM_PT,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,C_PVEM_MORENA,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,45,C_PT_MORENA,MARIA GUADALUPE TUT HAU,SELENE TEC MARTIN
+31,46,PAN,DANIEL OSWALDO GONZÁLEZ HUCHIM,ALVARO RAFAEL CASTRO DZIB
+31,46,PRI,RUDY RICARDO FLORES PACHECO,FILIBERTO ANTONIO CARBALLO CABLE
+31,46,PRD,RUDY RICARDO FLORES PACHECO,FILIBERTO ANTONIO CARBALLO CABLE
+31,46,PVEM,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,PT,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,MORENA,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,NAY,DANIEL OSWALDO GONZÁLEZ HUCHIM,ALVARO RAFAEL CASTRO DZIB
+31,46,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PRI_PRD,RUDY RICARDO FLORES PACHECO,FILIBERTO ANTONIO CARBALLO CABLE
+31,46,C_PAN_NAY,DANIEL OSWALDO GONZÁLEZ HUCHIM,ALVARO RAFAEL CASTRO DZIB
+31,46,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,46,C_PVEM_PT_MORENA,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,C_PVEM_PT,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,C_PVEM_MORENA,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,46,C_PT_MORENA,DELMIRA DEL SOCORRO GONZALEZ GOMEZ,MARKI YAKILINE CHI CASTILLO
+31,47,PAN,FREDI EVARISTO INTERIAN BOJORQUEZ,EMILIANO ARTURO QUIJADA PINTO
+31,47,PRI,MONICA GABRIELA INTERIAN BOJORQUEZ,SABINE SARAI BURGOS AVILES
+31,47,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,PVEM,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,PT,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,MORENA,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,NAY,MARIA ANTONIA DEL PILAR VILLACIS MARTIN,HEIDY MINELIA PUC UXUL
+31,47,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,47,C_PVEM_PT_MORENA,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,C_PVEM_PT,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,C_PVEM_MORENA,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,47,C_PT_MORENA,ADRIANA CARDONA MARTINEZ ,MARIA DOLORES CIAU TOX
+31,48,PAN,LUIS ALBERTO GARCIA CENTURION ,JUAN DE DIOS CASTILLO CANUL
+31,48,PRI,LETICIA INES ALONZO COLONIA,DIANA GUADALUPE CENTURION VENTURA 
+31,48,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,PVEM,CAMILO FERDINAND MAY CATZIN,CARLOS ALONSO MENA CANUL
+31,48,PT,WUILMA DEL ROSARIO CENTURION HERNANDEZ ,MARIA ADELA DEL ROSARIO CANCHE PEREZ 
+31,48,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,MORENA,WUILMA DEL ROSARIO CENTURION HERNANDEZ ,MARIA ADELA DEL ROSARIO CANCHE PEREZ 
+31,48,NAY,LETICIA INES ALONZO COLONIA,DIANA GUADALUPE CENTURION VENTURA 
+31,48,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PRI_NAY,LETICIA INES ALONZO COLONIA,DIANA GUADALUPE CENTURION VENTURA 
+31,48,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,48,C_PT_MORENA,WUILMA DEL ROSARIO CENTURION HERNANDEZ ,MARIA ADELA DEL ROSARIO CANCHE PEREZ 
+31,49,PAN,JOSE MANUEL TUN CHIN,FAUSTINO ECHEVERRIA CHAN 
+31,49,PRI,NELDI MARIA COB COBA,MARIA ERMELINDA MAY MOO
+31,49,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,PVEM,SANDRA MARGARITA CHAN KANTUN,RIMELDA LETICIA PERAZA CAUICH
+31,49,PT,LORENA ANGELICA DZIB UC,MARIA ESTELA CHIN CAUICH
+31,49,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,MORENA,SANDRA MARGARITA CHAN KANTUN,RIMELDA LETICIA PERAZA CAUICH
+31,49,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,49,C_PVEM_MORENA,SANDRA MARGARITA CHAN KANTUN,RIMELDA LETICIA PERAZA CAUICH
+31,49,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,PAN,MARIA ELOISA CASTRO CONTRERAS,KARLA YAJAIRA MARISOL JIMENEZ IHUIT
+31,53,PRI,CARLOS BALTAZAR AYUSO VERA ,LUIS FERNANDO CHAN CEN 
+31,53,PRD,INGRID JANET FUENTES CASANOVA ,LEDY DIANA FARFAN ARANA
+31,53,PVEM,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,PT,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,MC,MARTHA ELENA PISTE VELA,MARIA ANTONIA MIS KU
+31,53,MORENA,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,NAY,CARLOS BALTAZAR AYUSO VERA ,LUIS FERNANDO CHAN CEN 
+31,53,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PRI_NAY,CARLOS BALTAZAR AYUSO VERA ,LUIS FERNANDO CHAN CEN 
+31,53,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,53,C_PVEM_PT_MORENA,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,C_PVEM_PT,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,C_PVEM_MORENA,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,53,C_PT_MORENA,LINA FABIOLA NEGRAN CANCHE ,MARGARITA CONCEPCION PECH CEN
+31,55,PAN,RICARDO ORDOÑEZ CHAN,SANTIAGO TEC YAMA
+31,55,PRI,NORMA LETICIA ORDOÑEZ EUAN ,NORMA MARIA TEC MAY
+31,55,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,MORENA,SANDI EMANUEL CALAN ORDOÑEZ,GUILLERMO ANTONIO HERRERA MOO
+31,55,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,55,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,PAN,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,PRI,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,PRD,GLENDY CAROLINA PUC CHAVARRIA,VANESSA VIRIDIANA AMARO VAZQUEZ 
+31,56,PVEM,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,PT,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,MC,YAMILI BERENICE RUIZ PACHECO,HIRAYDA MAYROBY POOT MARTINEZ
+31,56,MORENA,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,NAY,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PAN_PRI_NAY,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PAN_PRI,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PAN_NAY,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,C_PRI_NAY,JUAN JOSE MARTIN FRAGOSO,ALAN ADAIR DE JESUS LOPEZ ALDANA
+31,56,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,56,C_PVEM_PT_MORENA,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,C_PVEM_PT,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,C_PVEM_MORENA,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,56,C_PT_MORENA,FERNANDO DE JESUS AYORA PUERTO,MIGUEL ANGEL AVILA VALDEZ
+31,62,PAN,CARLOS ERNESTO ANDRADE SANTAMARIA,LUIS ALEJANDRO INTERIAN BRICEÑO
+31,62,PRI,CARLOS ERNESTO ANDRADE SANTAMARIA,LUIS ALEJANDRO INTERIAN BRICEÑO
+31,62,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,PT,LUIS CARLOS NAJERA VAZQUEZ, BERNARDO BACAB CHAN
+31,62,MC,SERGIO ALBERTO MANRIQUE CHABLE,ARMANDO CHABLE ANGUAS
+31,62,MORENA,LUIS CARLOS NAJERA VAZQUEZ, BERNARDO BACAB CHAN
+31,62,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_PRI,CARLOS ERNESTO ANDRADE SANTAMARIA,LUIS ALEJANDRO INTERIAN BRICEÑO
+31,62,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,62,C_PT_MORENA,LUIS CARLOS NAJERA VAZQUEZ, BERNARDO BACAB CHAN
+31,63,PAN,MARIA MARBELIA DZUL CASTILLO,DIANA FLORICELLY GOMEZ MARTIN
+31,63,PRI,MARIA ANGELA CHAKOM MOO,LIFNI MERARI PACHECO CHACON
+31,63,PRD,JOSE CONCEPCION CETZ MARTIN,ABUNDIO CHALE EUAN
+31,63,PVEM,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,PT,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,MORENA,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,NAY,WILBERT JESUS PACHECO MARTIN,JORGE LUIS KANTUN CHACON
+31,63,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,63,C_PVEM_PT_MORENA,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,C_PVEM_PT,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,C_PVEM_MORENA,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,63,C_PT_MORENA,SAMUEL MAYEN POOT ,RENE JULIAN GARCIA UC
+31,66,PAN,GALDINO POOT MORENO,JOSE ASUNCION TEC COYOC 
+31,66,PRI,MARIA LILIANA MUL MAY ,MARIA DEYSI DEL SOCORRO KU COLLI 
+31,66,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,MORENA,JULIO HERNAN CHE ZAPATA,MIRIA FRANCISCA HUCHIN PUCH
+31,66,NAY,MARIA LILIANA MUL MAY ,MARIA DEYSI DEL SOCORRO KU COLLI 
+31,66,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PRI_NAY,MARIA LILIANA MUL MAY ,MARIA DEYSI DEL SOCORRO KU COLLI 
+31,66,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,66,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,PAN,AIDA MARIA DE JESUS FERNANDEZ GONGORA ,ANITA GUADALUPE CAAMAL POOT
+31,75,PRI,AIDA MARIA DE JESUS FERNANDEZ GONGORA ,ANITA GUADALUPE CAAMAL POOT
+31,75,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,PT,JAIME ORLANDO VALENCIA YAH ,JOSE FABIAN MOO DZUL 
+31,75,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,MORENA,CESAR AUGUSTO CARRILLO MAY,NIDIA DEL SOCORRO EK CHAB
+31,75,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_PRI,AIDA MARIA DE JESUS FERNANDEZ GONGORA ,ANITA GUADALUPE CAAMAL POOT
+31,75,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,75,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,79,PAN,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,PRI,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,PRD,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,PVEM,SANTOS ROSALIA BUENFIL AVILA,LETICIA BELEN MIS UITZIL
+31,79,PT,HERVE MANUEL VALLEJOS SANSORES,ARCEÑIO DURAN Y PACHECO
+31,79,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,79,MORENA,HERVE MANUEL VALLEJOS SANSORES,ARCEÑIO DURAN Y PACHECO
+31,79,NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRI_PRD_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRI_PRD,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRI_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRD_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PRI_PRD_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRI,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_PRD,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PRI_PRD,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PAN_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PRI_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PRD_NAY,FABIOLA GUADALUPE SUAREZ VARGUEZ,MARIA ARELIS CAAMAL CAUICH
+31,79,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,79,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,79,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,79,C_PT_MORENA,HERVE MANUEL VALLEJOS SANSORES,ARCEÑIO DURAN Y PACHECO
+31,80,PAN,JOSE ANTONIO SOSA HERNANDEZ ,OMAR ANTONIO PIÑA GONZALEZ 
+31,80,PRI,MARIA DEL SOCORRO PECH PANTI,NAYELI BEATRIZ CHABLE CAUICH
+31,80,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,PVEM,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,MORENA,FELIPE DE JESUS MEDINA COLLI,EJIDIO PECH MUKUL
+31,80,NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,80,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,PAN,MARIA AGUSTINA CAAMAL CUA,KARLA ISABEL CANCHE OY
+31,87,PRI,MELESIO CANCHE RUIZ ,JOSE HUMBERTO CAUICH NAH
+31,87,PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,PVEM,MARTHA MARIA POOT KOYOC,YNGRI ROSALIA PECH CHAN
+31,87,PT,CRISTIAN DANIEL POOT CHAN,MARIA DEL PILAR BAAS KU
+31,87,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,MORENA,MARTHA MARIA POOT KOYOC,YNGRI ROSALIA PECH CHAN
+31,87,NAY,MARIA AGUSTINA CAAMAL CUA,KARLA ISABEL CANCHE OY
+31,87,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PAN_NAY,MARIA AGUSTINA CAAMAL CUA,KARLA ISABEL CANCHE OY
+31,87,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,87,C_PVEM_MORENA,MARTHA MARIA POOT KOYOC,YNGRI ROSALIA PECH CHAN
+31,87,C_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,PAN,TERESA IRENE UCAN MARTIN,MARGARITA DE JESUS DZUL NOVELO
+31,89,PRI,MANUEL ALEJANDRO PACHECO MEDINA,MIGUEL ANGEL SOSA VELA
+31,89,PRD,JAEL NAVARRO OLIVARES ,TERESA DEL ROSARIO MAY OJEDA
+31,89,PVEM,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,PT,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,MC,MINERVA ISELA CHAN HAU ,LETICIA CONCEPCION FUENTES COLLI
+31,89,MORENA,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,NAY,TERESA IRENE UCAN MARTIN,MARGARITA DE JESUS DZUL NOVELO
+31,89,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PAN_NAY,TERESA IRENA UCAN MARTIN,MARGARITA DE JESUS DZUL NOVELO
+31,89,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,89,C_PVEM_PT_MORENA,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,C_PVEM_PT,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,C_PVEM_MORENA,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,89,C_PT_MORENA,HUMBERTO PARRA SOSA,RAUL HERNANDEZ MOO
+31,98,PAN,MARIA ISABEL HOIL HOIL,MIREYA CHULIN CAB
+31,98,PRI,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,PRD,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,PVEM,ERICK FERNANDO KU CAAMAL,CARLOS LEONEL PIÑA SERRANO 
+31,98,PT,FREDDY ALEJANDRO CARRILLO BLANCO,DARVY JAVIER HERRERA SIERRA
+31,98,MC,JORGE LUIS PINEDA ESTRELLA,EMMANUEL ACOSTA GUEMEZ
+31,98,MORENA,FREDDY ALEJANDRO CARRILLO BLANCO,DARVY JAVIER HERRERA SIERRA
+31,98,NAY,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PRI_PRD_NAY,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PRI_PRD,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PRI_NAY,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,C_PRD_NAY,AIDA CANDELARIA XIX TUT,MARIA LUISA ALDANA CUY
+31,98,C_PVEM_PT_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PVEM_PT,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PVEM_MORENA,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,98,C_PT_MORENA,FREDDY ALEJANDRO CARRILLO BLANCO,DARVY JAVIER HERRERA SIERRA
+31,100,PAN,JOSE RICARDO LUNA CAN,SAMI ISRAEL GARCIA BALAM
+31,100,PRI,SILVIA DEL SOCORRO CANUL LUNA,ALBA MELISSA KOYOC GARCIA
+31,100,PRD,HUGO HUSSEIN MEX EK ,DARWIN ALDAIR CHAN VALDEZ
+31,100,PVEM,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,PT,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,MC,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,MORENA,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,NAY,HUGO RACIEL LUNA MAGAÑA ,JESUS ISAIAS RAMOS DZUL
+31,100,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,100,C_PVEM_PT_MORENA,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,C_PVEM_PT,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,C_PVEM_MORENA,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,100,C_PT_MORENA,GENER ISMAEL PECH LEON,FELIPE DE JESUS GARCIA CANUL
+31,101,PAN,GREGORIO ERNESTO MONTERO MARTIN,JUAN MANUEL LOPEZ RODRIGUEZ 
+31,101,PRI,EMILIANA CANUL CABALLERO,MARIA DE LOS ANGELES PECH SAENZ
+31,101,PRD,GENARO ALEJANDRO BALAM POOL,ANDRES AGUSTO DOMINGUEZ TINAL
+31,101,PVEM,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,PT,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,MC,MARIA CONCHITA RUIZ HUCHIN,RITA LUDUMILDA BRACAMONTE SANDOVAL
+31,101,MORENA,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,NAY,EMILIANA CANUL CABALLERO,MARIA DE LOS ANGELES PECH SAENZ
+31,101,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PAN_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PRI_NAY,EMILIANA CANUL CABALLERO,MARIA DE LOS ANGELES PECH SAENZ
+31,101,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,101,C_PVEM_PT_MORENA,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,C_PVEM_PT,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,C_PVEM_MORENA,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,101,C_PT_MORENA,KENIA WALLDINA SAURI MARADIAGA,ROSA MAGDALENA GONZALEZ GUITIERREZ
+31,41,PAN,EDWIN JOSE BOJORQUEZ RAMIREZ ,JORGE IVAN MAY COLLI
+31,41,PRI,VERONICA DE LA LUZ ARANDA CAMPOS,YALILI JESUS BUDIP DIAZ
+31,41,PRD,JAFET ABRAHAM RODRIGUEZ SANTOS,ADAN MOISES PUC PANTI
+31,41,PVEM,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,PT,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,MC,JUAN DE DIOS POOL PECH,AZAEL PAMPLONA BOTE
+31,41,MORENA,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,NAY,EDWIN JOSE BOJORQUEZ RAMIREZ ,JORGE IVAN MAY COLLI
+31,41,C_PAN_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PRI_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_PRI,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PRI_PRD,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PAN_NAY,EDWIN JOSE BOJORQUEZ RAMIREZ ,JORGE IVAN MAY COLLI
+31,41,C_PRI_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PRD_NAY,Nombre Apellido Apellido,Nombre Apellido Apellido
+31,41,C_PVEM_PT_MORENA,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,C_PVEM_PT,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,C_PVEM_MORENA,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
+31,41,C_PT_MORENA,JESUS FLORENTINO CHAN GAMBOA ,ALEJANDRA ROMO REYES
