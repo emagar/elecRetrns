@@ -7,6 +7,7 @@ setwd(dd)
 ## Read raw data file ##
 ########################
 dat <- read.csv(file = "aymu1970-on.csv", stringsAsFactors = FALSE)
+dat$nr <- as.numeric(dat$nr)
 ## ## Read this instead to prep Chihuahua síndicos 
 ## dat <- read.csv(file = "ay-nonfused/aymu1998-on-Chihuahua-sind.csv", stringsAsFactors = FALSE)
 
@@ -25,6 +26,8 @@ v[v==""|v=="NA"|v=="-"|v=="N/R"] <- 0 # replace with zeroes
 v[] <- lapply(v, as.numeric) # anything non numeric to that
 sapply(v, class)
 dat[,sel] <- v # return votes without missing to data
+
+
 
 v$efec <- round(rowSums(v), 0)
 dat$efec <- v$efec
@@ -758,6 +761,14 @@ cv.sorted <- transform(cv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), 
 tail(cv.sorted)
 tail(cl.sorted)
 
+## save image for debug
+save.image("tmp.RData")
+## ## reload image for debug
+## rm(list = ls())
+## dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
+## setwd(dd)
+## load("tmp.RData")
+
 # rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
@@ -1114,7 +1125,12 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
-dat.split2 <- dat.split[-drop.r,]
+
+if (length(drop.r)>0) {
+    dat.split2 <- dat.split[-drop.r,]
+} else {
+    dat.split2 <- dat.split
+}
 # subsets by yrs
 sel1 <- which(dat.split2$yr>=1970 & dat.split2$yr<1982)
 sel2 <- which(dat.split2$yr>=1982 & dat.split2$yr<1990)
