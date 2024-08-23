@@ -769,6 +769,15 @@ save.image("tmp.RData")
 ## setwd(dd)
 ## load("tmp.RData")
 
+# Reads functions
+pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
+    "~/Dropbox/data/useful-functions",
+    "https://raw.githubusercontent.com/emagar/useful-functions/master"
+    )
+source( paste(pth, "moveme.r", sep = "/") )
+source( paste(pth, "notin.r", sep = "/") )
+rm(pth)
+
 # rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
@@ -782,13 +791,12 @@ dat.split[,sel.l] <- sl # return manipulated labels to data
 dat.split[,sel.v] <- sv # return manipulated votes to data
 # move dcoal and ncoal columns before v01
 tmp <- dat # duplicate if I mess up
-tmp1 <- grep("v01", colnames(dat))
-tmp2 <- grep("dcoal", colnames(dat))
-tmp3 <- grep("ncoal", colnames(dat))
-dat <- dat[, c(1:(tmp1-1), tmp2, tmp3, tmp1:(tmp2-1))]
+colnames(dat)
+dat <- dat[moveme(names(dat), "dcoal before v01")]
+dat <- dat[moveme(names(dat), "ncoal before v01")]
 colnames(dat)
 dat[1,]
-rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp, tmp1, tmp2, tmp3)
+rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp)
 
 ## # 23 cols needed thanks to mor 2021...
 ## table(dat$v24) # check that only has zeroes
@@ -801,9 +809,7 @@ dat$v24 <- dat$l24 <- dat$v25 <- dat$l25 <- NULL # drop redundant columns
 dat$win <- dat$l01
 # move win column before v01
 tmp <- dat # duplicate if I mess up
-tmp1 <- grep("v01", colnames(dat))
-tmp2 <- grep("win", colnames(dat))
-dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
+dat <- dat[moveme(names(dat), "win before v01")]
 colnames(dat)
 
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
@@ -812,9 +818,9 @@ sel.v <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel.v] # subset vote columns
 dat$ncand <- apply(v, 1, function(x) length(x[x>0]))
 ## check that coal aggregation produces same efec as before
-check <- rowSums(v) - dat$efec
+check <- round(rowSums(v)) - dat$efec
 table(check==0) # all must be true
-summary(check)
+## summary(check)
 ## sel <- which(check>.01)
 ## check[sel]
 ## dat[sel[1],]
@@ -823,12 +829,12 @@ summary(check)
 ## dat$efec[sel]
 ##
 ## move ncand column before dcoal
-tmp <- dat # duplicate if I mess up
-tmp1 <- grep("dcoal", colnames(dat))
-tmp2 <- grep("ncand", colnames(dat))
-dat <- dat[, c(1:(tmp1-1), tmp2, tmp1:(tmp2-1))]
-colnames(dat)
-
+dat <- dat[moveme(names(dat), "ncand before dcoal")]
+##
+## compute margin
+dat$mg <- round( (dat$v01 - dat$v02) / dat$efec , 4)
+## move ncand column after dcoal
+dat <- dat[moveme(names(dat), "mg after win")]
 
 #################################
 #### DROPS USOS Y COSTUMBRES ####
@@ -842,15 +848,6 @@ table(dat$v01[sel]==0) # all report no votes?
 if (length(sel)>0) dat <- dat[-sel,]
 
 # sort columns
-pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
-    "~/Dropbox/data/useful-functions",
-    "https://raw.githubusercontent.com/emagar/useful-functions/master"
-    )
-# Reads function
-source( paste(pth, "moveme.r", sep = "/") )
-source( paste(pth, "notin.r", sep = "/") )
-rm(pth)
-colnames(dat)
 dat <- dat[moveme(names(dat), "efec before nr")]
 
 ## Drop ord, dcoal for saving
@@ -874,7 +871,7 @@ table(dat$status)
 drop.r <- grep("pending", dat$status)
 
 # drop these cols to trim file size for gsheets
-drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas")
+drop.c <- c("ord", "status", "dcoal", "win", "mg", "nr", "nulos", "tot", "fuente", "notas", "x", "X")
 ncol(dat[,      colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in%    drop.c)
 
@@ -898,6 +895,10 @@ length(sel4); length(sel4)*58 < 400000
 length(sel5); length(sel5)*58 < 400000
 length(sel6); length(sel6)*58 < 400000
 #6756*58
+
+#################################
+## 16aug2024: add mg after win ##
+#################################
 
 # save full file
 write.csv(dat2, file = "aymu1970-on.coalAgg.csv", row.names = FALSE) ## use dat instead if keeping drop.r obs

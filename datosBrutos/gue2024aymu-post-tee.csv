@@ -1,0 +1,85 @@
+ord,inegi,ife,mun,pan,x,pri,x,prd,x,pt,x,pvem,x,mc,x,morena,x,mexa,x,fxm,x,psg,x,pes,x,pac,x,mlgro,x,pbg,x,regener,x,pan-pri-prd,x,pt-morena-pvem,x,nr,nul,tot,nota,disn
+2,12001,12001,ACAPULCO DE JUAREZ,12558,pan,19330,pri,10668,prd,12417,pt,21506,pvem,46631,mc,132688,morena,3314,mexa,5401,fxm,1220,psg,23744,pes,1846,pac,3155,mlgro,3603,pbg,882,regener,1,pan-pri-prd,1,pt-morena-pvem,328,11878,311169,,4
+65,12002,12002,AHUACUOTZINGO,,,491,pri,6131,prd,2103,pt,1638,pvem,1738,mc,367,morena,,,,,,,,,,,,,62,pbg,32,regener,,,,,8,526,13096,,26
+30,12003,12003,AJUCHITLAN DEL PROGRESO,167,pan,10996,pri,479,prd,472,pt,121,pvem,,,3659,morena,,,,,,,,,193,pac,25,mlgro,,,,,1,pan-pri-prd,,,6,747,16865,,17
+72,12004,12004,ALCOZAUCA DE GUERRERO,,,667,pri,2024,prd,1508,pt,255,pvem,21,mc,517,morena,129,mexa,,,,,,,96,pac,,,3547,pbg,,,,,1,pt-morena-pvem,0,665,9428,,27
+73,12005,12005,ALPOYECA,10,pan,13,pri,5,prd,48,pt,1532,pvem,,,549,morena,,,,,,,534,pes,16,pac,8,mlgro,1039,pbg,,,1,pan-pri-prd,,,0,208,3962,,27
+42,12006,12006,APAXTLA,1399,pan,29,pri,24,prd,2115,pt,34,pvem,523,mc,386,morena,,,,,,,,,24,pac,,,,,,,,,,,0,258,4792,,20
+34,12007,12007,ARCELIA,168,pan,11333,pri,174,prd,121,pt,186,pvem,253,mc,1584,morena,,,,,,,,,,,,,29,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,0,584,14432,,18
+53,12008,12008,ATENANGO DEL RIO,8,pan,39,pri,44,prd,2409,pt,19,pvem,,,1960,morena,,,,,,,,,6,pac,4,mlgro,18,pbg,,,1,pan-pri-prd,,,1,117,4625,,23
+77,12009,12009,ATLAMAJALCINGO DEL MONTE,5,pan,6,pri,627,prd,1459,pt,12,pvem,,,984,morena,,,,,,,6,pes,,,,,19,pbg,,,,,,,0,128,3246,,28
+66,12010,12010,ATLIXTAC,59,pan,184,pri,3248,prd,212,pt,6204,pvem,126,mc,1385,morena,,,,,37,psg,,,74,pac,,,,,,,1,pan-pri-prd,,,0,756,12285,,26
+4,12011,12011,ATOYAC DE ALVAREZ,,,7087,pri,417,prd,846,pt,834,pvem,486,mc,9512,morena,,,,,39,psg,2567,pes,192,pac,109,mlgro,456,pbg,581,regener,,,,,30,1641,24797,,10
+18,12013,12013,AZOYU,380,pan,3154,pri,197,prd,91,pt,110,pvem,25,mc,3140,morena,,,,,184,psg,,,21,pac,91,mlgro,,,,,1,pan-pri-prd,1,pt-morena-pvem,0,302,7695,,15
+5,12014,12014,BENITO JUAREZ,397,pan,347,pri,232,prd,3717,pt,387,pvem,286,mc,2845,morena,,,,,,,220,pes,,,18,mlgro,,,,,1,pan-pri-prd,,,0,320,8769,,10
+54,12015,12015,BUENAVISTA DE CUELLAR,629,pan,46,pri,22,prd,1834,pt,1050,pvem,254,mc,465,morena,20,mexa,,,,,17,pes,6,pac,741,mlgro,1600,pbg,,,,,,,1,240,6925,,23
+8,12016,12016,COAHUAYUTLA DE JOSE MARIA IZAZAGA,,,19,pri,918,prd,24,pt,184,pvem,,,3607,morena,,,32,fxm,,,,,,,,,,,,,,,,,13,84,4881,,12
+43,12017,12017,COCULA,142,pan,4342,pri,477,prd,165,pt,116,pvem,49,mc,2971,morena,,,,,,,,,11,pac,9,mlgro,,,,,1,pan-pri-prd,1,pt-morena-pvem,0,219,8501,,20
+19,12018,12018,COPALA,23,pan,69,pri,43,prd,137,pt,,,,,2294,morena,2775,mexa,,,,,,,,,,,1087,pbg,,,1,pan-pri-prd,,,0,405,6833,,15
+55,12019,12019,COPALILLO,1298,pan,104,pri,33,prd,40,pt,2076,pvem,,,468,morena,4,mexa,,,2572,psg,784,pes,108,pac,271,mlgro,,,,,1,pan-pri-prd,,,0,369,8129,,23
+67,12020,12020,COPANATOYAC,,,3356,pri,1391,prd,165,pt,138,pvem,483,mc,3716,morena,,,,,,,,,,,55,mlgro,,,,,,,1,pt-morena-pvem,2,536,9482,tot incorrecto desde fuente,26
+3,12021,12021,COYUCA DE BENITEZ,500,pan,6662,pri,1160,prd,1718,pt,1257,pvem,320,mc,13965,morena,,,145,fxm,30,psg,168,pes,217,pac,,,,,,,1,pan-pri-prd,,,9,1918,28069,,8
+31,12022,12022,COYUCA DE CATALAN,347,pan,1605,pri,8913,prd,226,pt,285,pvem,177,mc,3376,morena,,,,,,,,,,,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,2,881,15812,,17
+20,12023,12023,CUAJINICUILAPA,,,1628,pri,18,prd,215,pt,4710,pvem,,,1011,morena,,,,,,,17,pes,13,pac,,,,,,,,,,,0,329,7941,,15
+68,12024,12024,CUALAC,23,pan,1342,pri,55,prd,1035,pt,146,pvem,18,mc,515,morena,2,mexa,,,,,,,79,pac,,,674,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,17,179,4085,,26
+21,12025,12025,CUAUTEPEC,,,1207,pri,167,prd,4482,pt,279,pvem,21,mc,2789,morena,,,18,fxm,,,,,25,pac,,,,,8,regener,,,,,0,257,9251,,15
+44,12026,12026,CUETZALA DEL PROGRESO,47,pan,1094,pri,270,prd,100,pt,68,pvem,,,2106,morena,,,,,,,,,,,83,mlgro,38,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,0,70,3876,,20
+35,12027,12027,CUTZAMALA DE PINZON,10,pan,8070,pri,1258,prd,55,pt,314,pvem,,,204,morena,,,25,fxm,,,,,,,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,0,82,10018,,18
+63,12028,12028,CHILAPA DE ALVAREZ,872,pan,22766,pri,1902,prd,1272,pt,1982,pvem,935,mc,14643,morena,128,mexa,,,,,,,574,pac,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,22,2767,47863,,25
+1,12029,12029,CHILPANCINGO DE LOS BRAVO,5903,pan,22114,pri,20641,prd,3606,pt,4711,pvem,8274,mc,38636,morena,325,mexa,,,318,psg,719,pes,798,pac,466,mlgro,1020,pbg,377,regener,1,pan-pri-prd,1,pt-morena-pvem,105,3958,111971,,2
+22,12030,12031,FLORENCIO VILLARREAL,,,41,pri,3069,prd,194,pt,180,pvem,420,mc,2214,morena,5,mexa,77,fxm,,,3472,pes,,,,,36,pbg,8,regener,,,1,pt-morena-pvem,0,449,10165,,15
+45,12031,12032,GENERAL CANUTO A. NERI,3,pan,20,pri,6,prd,14,pt,28,pvem,2007,mc,533,morena,,,,,,,,,,,,,12,pbg,,,1,pan-pri-prd,,,0,104,2727,,20
+40,12032,12033,GENERAL HELIODORO CASTILLO,,,1166,pri,,,408,pt,456,pvem,754,mc,7094,morena,,,,,,,,,,,18,mlgro,147,pbg,,,,,1,pt-morena-pvem,1,567,10611,,19
+69,12033,12034,HUAMUXTITLAN,24,pan,42,pri,32,prd,1811,pt,376,pvem,3117,mc,2082,morena,,,,,,,30,pes,101,pac,407,mlgro,,,,,1,pan-pri-prd,,,39,345,8396,,26
+56,12034,12035,HUITZUCO DE LOS FIGUEROA,245,pan,2875,pri,227,prd,219,pt,251,pvem,5175,mc,6947,morena,,,65,fxm,,,,,149,pac,79,mlgro,,,,,1,pan-pri-prd,,,4,826,17063,,23
+52,12035,12036,IGUALA DE LA INDEPENDENCIA,2017,pan,16554,pri,2634,prd,2290,pt,7337,pvem,10081,mc,15715,morena,95,mexa,,,,,146,pes,397,pac,443,mlgro,3016,pbg,330,regener,1,pan-pri-prd,1,pt-morena-pvem,13,1804,62872,,22
+26,12036,12037,IGUALAPA,,,33,pri,2000,prd,12,pt,1652,pvem,181,mc,107,morena,1,mexa,,,,,,,14,pac,2,mlgro,2110,pbg,,,,,,,0,307,6419,,16
+46,12037,12038,IXCATEOPAN DE CUAUHTEMOC,2618,pan,43,pri,46,prd,24,pt,27,pvem,,,265,morena,,,,,,,,,11,pac,,,22,pbg,,,,,1,pt-morena-pvem,3,493,3552,,20
+10,12038,12039,ZIHUATANEJO DE AZUETA,1285,pan,23474,pri,1546,prd,508,pt,985,pvem,582,mc,22404,morena,,,,,,,517,pes,232,pac,255,mlgro,,,,,1,pan-pri-prd,,,10,3148,54946,,12
+11,12039,12040,JUAN R. ESCUDERO,245,pan,2507,pri,296,prd,62,pt,3206,pvem,3101,mc,954,morena,,,,,,,,,34,pac,,,,,,,1,pan-pri-prd,,,1,566,10972,tee modifico,13
+41,12040,12041,LEONARDO BRAVO,3919,pan,736,pri,280,prd,405,pt,483,pvem,170,mc,4253,morena,12,mexa,,,,,,,,,,,126,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,1,389,10774,,19
+80,12041,12042,MALINALTEPEC,44,pan,60,pri,232,prd,5541,pt,89,pvem,87,mc,2483,morena,,,,,,,669,pes,31,pac,13,mlgro,883,pbg,,,1,pan-pri-prd,,,0,517,10132,tot incorrecto desde fuente,28
+58,12042,12043,MARTIR DE CUILAPAN,81,pan,1135,pri,3083,prd,879,pt,459,pvem,1728,mc,1408,morena,10,mexa,,,,,52,pes,,,15,mlgro,,,,,1,pan-pri-prd,1,pt-morena-pvem,4,526,9380,,24
+81,12043,12044,METLATONOC,8,pan,44,pri,1251,prd,2664,pt,2064,pvem,1619,mc,108,morena,31,mexa,,,,,,,124,pac,36,mlgro,26,pbg,,,,,,,1,411,7639,tot incorrecto desde fuente,28
+59,12044,12045,MOCHITLAN,73,pan,124,pri,540,prd,84,pt,3632,pvem,73,mc,507,morena,,,,,38,psg,14,pes,104,pac,,,29,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,2,309,5529,,24
+70,12045,12046,OLINALA,82,pan,6483,pri,312,prd,537,pt,184,pvem,1543,mc,4654,morena,,,,,,,,,131,pac,50,mlgro,52,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,1,469,14498,,26
+27,12046,12047,OMETEPEC,,,11748,pri,225,prd,2383,pt,1375,pvem,350,mc,15449,morena,36,mexa,594,fxm,,,70,pes,114,pac,235,mlgro,441,pbg,,,,,1,pt-morena-pvem,1,1354,34375,,16
+47,12047,12048,PEDRO ASCENCIO ALQUISIRAS,,,144,pri,2372,prd,76,pt,67,pvem,,,247,morena,,,,,,,,,,,,,25,pbg,,,,,1,pt-morena-pvem,0,144,3075,,20
+7,12048,12049,PETATLAN,193,pan,1787,pri,319,prd,236,pt,284,pvem,445,mc,12061,morena,,,43,fxm,,,51,pes,259,pac,,,,,,,1,pan-pri-prd,,,2,1035,16715,,11
+49,12049,12050,PILCAYA,2857,pan,148,pri,88,prd,236,pt,2137,pvem,,,961,morena,,,,,,,,,,,,,,,98,regener,1,pan-pri-prd,1,pt-morena-pvem,9,152,6786,tot incorrecto desde fuente,21
+36,12050,12051,PUNGARABATO,498,pan,7292,pri,579,prd,387,pt,354,pvem,,,4260,morena,,,,,,,,,74,pac,65,mlgro,,,,,1,pan-pri-prd,1,pt-morena-pvem,3,848,14360,,18
+60,12051,12052,QUECHULTENANGO,,,295,pri,10549,prd,221,pt,284,pvem,,,1013,morena,,,,,223,psg,,,95,pac,,,,,,,,,1,pt-morena-pvem,1,761,13442,,24
+82,12052,12053,SAN LUIS ACATLAN,92,pan,321,pri,2579,prd,5435,pt,1658,pvem,3559,mc,4827,morena,,,,,,,,,147,pac,,,146,pbg,,,1,pan-pri-prd,,,3,1196,18850,tot incorrecto desde fuente,28
+13,12053,12054,SAN MARCOS,52,pan,6431,pri,829,prd,365,pt,4736,pvem,475,mc,3580,morena,,,42,fxm,83,psg,19,pes,113,pac,18,mlgro,,,29,regener,,,1,pt-morena-pvem,1,904,17677,,13
+32,12054,12055,SAN MIGUEL TOTOLAPAN,18,pan,7585,pri,38,prd,4829,pt,26,pvem,63,mc,210,morena,39,mexa,,,,,,,,,,,5,pbg,,,,,,,1,624,12813,tot incorrecto desde fuente,17
+50,12055,12056,TAXCO DE ALARCON,9507,pan,4499,pri,1326,prd,1306,pt,2156,pvem,6368,mc,13998,morena,429,mexa,590,fxm,,,,,152,pac,427,mlgro,,,705,regener,1,pan-pri-prd,1,pt-morena-pvem,11,1789,43263,,21
+14,12056,12057,TECOANAPA,3679,pan,477,pri,674,prd,650,pt,5340,pvem,8048,mc,2689,morena,,,,,,,,,84,pac,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,0,928,22569,,13
+6,12057,12058,TECPAN DE GALEANA,483,pan,2283,pri,4689,prd,805,pt,3627,pvem,1209,mc,13402,morena,,,,,,,72,pes,134,pac,388,mlgro,592,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,4,858,28546,,10
+48,12058,12059,TELOLOAPAN,147,pan,578,pri,10131,prd,576,pt,676,pvem,,,3072,morena,,,102,fxm,,,79,pes,80,pac,,,107,pbg,,,,,1,pt-morena-pvem,2727,2094,20369,,20
+57,12059,12060,TEPECOACUILCO DE TRUJANO,4649,pan,357,pri,266,prd,207,pt,295,pvem,4596,mc,3915,morena,394,mexa,,,,,,,66,pac,22,mlgro,,,,,1,pan-pri-prd,1,pt-morena-pvem,2,502,15269,,23
+51,12060,12061,TETIPAC,272,pan,1488,pri,120,prd,661,pt,2553,pvem,55,mc,537,morena,,,,,,,,,,,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,2,373,6061,,21
+61,12061,12062,TIXTLA DE GUERRERO,527,pan,5343,pri,2442,prd,211,pt,797,pvem,877,mc,5979,morena,,,,,161,psg,54,pes,51,pac,73,mlgro,774,pbg,,,1,pan-pri-prd,,,14,1110,18413,,24
+28,12062,12063,TLACOACHISTLAHUACA,44,pan,653,pri,34,prd,133,pt,5042,pvem,59,mc,4619,morena,,,,,,,,,21,pac,,,,,,,,,,,0,293,10898,,16
+16,12063,12064,TLACOAPA,15,pan,,,691,prd,761,pt,2047,pvem,307,mc,809,morena,,,,,,,,,,,,,,,124,regener,,,,,1,187,4942,,14
+37,12064,12065,TLALCHAPA,128,pan,252,pri,32,prd,115,pt,802,pvem,88,mc,4363,morena,,,,,,,,,41,pac,,,11,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,18,215,6065,,18
+74,12065,12066,TLALIXTAQUILLA DE MALDONADO,23,pan,394,pri,26,prd,844,pt,10,pvem,1762,mc,521,morena,,,,,,,,,,,3,mlgro,,,,,1,pan-pri-prd,,,0,178,3761,,27
+75,12066,12067,TLAPA DE COMONFORT,379,pan,11775,pri,609,prd,6567,pt,823,pvem,957,mc,3105,morena,59,mexa,,,,,289,pes,212,pac,8265,mlgro,4945,pbg,,,1,pan-pri-prd,1,pt-morena-pvem,12,2217,40214,,27
+38,12067,12068,TLAPEHUALA,,,9098,pri,28,prd,87,pt,99,pvem,80,mc,1391,morena,,,,,,,,,75,pac,8,mlgro,,,,,,,1,pt-morena-pvem,0,262,11128,,18
+9,12068,12069,UNION DE ISIDORO MONTES DE OCA--LA,,,2065,pri,6521,prd,145,pt,583,pvem,,,4204,morena,,,21,fxm,,,,,25,pac,,,,,,,,,1,pt-morena-pvem,2,410,13976,tee modifico,12
+76,12069,12070,XALPATLAHUAC,37,pan,2397,pri,298,prd,59,pt,70,pvem,2856,mc,488,morena,,,,,,,,,42,pac,,,,,,,1,pan-pri-prd,1,pt-morena-pvem,0,494,6736,,27
+71,12070,12071,XOCHIHUEHUETLAN,7,pan,3,pri,1283,prd,50,pt,40,pvem,,,1766,morena,,,,,,,,,19,pac,453,mlgro,27,pbg,,,,,,,3,175,3826,,26
+29,12071,12072,XOCHISTLAHUACA,63,pan,6258,pri,58,prd,134,pt,149,pvem,226,mc,7826,morena,52,mexa,,,,,,,137,pac,,,,,,,,,,,7,636,14903,tot incorrecto desde fuente,16
+17,12072,12073,ZAPOTITLAN TABLAS,29,pan,101,pri,905,prd,1865,pt,43,pvem,404,mc,996,morena,,,,,,,31,pes,291,pac,249,mlgro,112,pbg,,,1,pan-pri-prd,,,5,585,5616,,14
+33,12073,12074,ZIRANDARO,146,pan,833,pri,3076,prd,46,pt,59,pvem,57,mc,3802,morena,,,,,,,,,56,pac,,,,,,,1,pan-pri-prd,,,0,291,8366,,17
+62,12074,12075,ZITLALA,565,pan,3460,pri,3534,prd,283,pt,113,pvem,,,1871,morena,31,mexa,,,,,44,pes,,,,,,,,,,,,,0,574,10475,,24
+39,12075,12030,EDUARDO NERI,413,pan,1523,pri,3214,prd,6553,pt,1004,pvem,3598,mc,4337,morena,144,mexa,,,,,,,93,pac,1531,mlgro,176,pbg,103,regener,1,pan-pri-prd,1,pt-morena-pvem,7,896,23539,,19
+15,12076,12076,ACATEPEC,,,60,pri,8706,prd,155,pt,8414,pvem,,,993,morena,,,,,,,,,,,,,,,,,,,1,pt-morena-pvem,4,706,19038,,14
+24,12077,12080,MARQUELIA,333,pan,994,pri,174,prd,2772,pt,183,pvem,216,mc,1722,morena,,,,,,,,,7,pac,,,,,,,1,pan-pri-prd,,,1,280,6682,,15
+78,12078,12079,COCHOAPA EL GRANDE,862,pan,39,pri,52,prd,2514,pt,2203,pvem,50,mc,1305,morena,2316,mexa,,,,,37,pes,57,pac,17,mlgro,,,,,,,,,2,367,9821,,28
+64,12079,12077,JOSE JOAQUIN DE HERRERA,,,3572,pri,68,prd,200,pt,1466,pvem,54,mc,2366,morena,,,,,,,,,,,,,97,pbg,,,,,1,pt-morena-pvem,1,392,8216,,25
+23,12080,12081,JUCHITAN,1243,pan,25,pri,21,prd,29,pt,586,pvem,494,mc,1280,morena,,,,,,,,,,,,,17,pbg,,,1,pan-pri-prd,,,0,159,3854,,15
+79,12081,12078,ILIATENCO,,,320,pri,416,prd,831,pt,621,pvem,1331,mc,500,morena,,,,,,,984,pes,,,,,,,,,,,,,0,247,5250,,28
+12,12082,12083,LAS VIGAS,,,62,pri,1547,prd,119,pt,280,pvem,226,mc,1698,morena,,,,,,,,,70,pac,,,,,,,,,1,pt-morena-pvem,0,205,4207,,13
+100,12083,12082,ÑUU SAVI,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,uyc,
+83,12084,12085,SANTA CRUZ DEL RINCON,,,7,pri,101,prd,975,pt,49,pvem,,,101,morena,5,mexa,,,,,130,pes,,,986,mlgro,746,pbg,,,,,1,pt-morena-pvem,1,146,3247,,28
+25,12085,12084,SAN NICOLAS,,,31,pri,1,prd,395,pt,1116,pvem,203,mc,235,morena,24,mexa,,,,,,,,,,,663,pbg,147,regener,,,1,pt-morena-pvem,1,157,2973,,15
