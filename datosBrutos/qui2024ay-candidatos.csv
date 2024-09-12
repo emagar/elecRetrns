@@ -1,55 +1,55 @@
-ord,munn,part,prop,sup
-1,1,mas,Paula Villanueva Rosado,Karla Barbosa Berlanga
-2,1,mc,Jesus De Los Angeles Pool Moo,Ruben Fernando Pachon Trejo
-3,1,pan_pri,Jorge Rodriguez Mendez,Florencio Amador Gutierrez Guigui
-4,1,prd,Daniela Vara Solis,
-5,1,pvem_pt_morena,Ana Patricia Peralta De La Pe�a,Clara Emilia Diaz Aguilar
-6,2,mas,Maria Azucena Flores Peraza,Estefanny Elizabeth Herrera Canche
-7,2,mc,Roberto Alan Marin Flores,Francisco Javier Hernandez Peniche
-8,2,pan_pri,Pedro Oscar Joaquin Delbouis,Jorge Alberto Martin Azueta
-9,2,prd,Abigail Elias Buces,Maria Jose Aguilar Novelo
-10,2,pvem_pt_morena,Jose Luis Chacon Mendez,Francisco Alejandro Abad Vazquez
-11,3,mas,Victor Manuel Del Angel Ventura,Marx Edwin Esquivel Martin
-12,3,mc,Sandra Luz Arceo Manrique,Elda Del Rocio Santos Xiu
-13,3,pan_pri,Brenda Veronica Hau Uex,Naila Rubi Ac Ek
-14,3,prd,Maria Luisa Poot Ek,Lizbeth Liliana Cab Hu
-15,3,pvem_pt_morena,Maricarmen Candelaria Hernandez Solis,Victoria Abigail Gomez Gomez
-16,4,mas,Laura De Guadalupe Vazquez Paz,Ashanti Abigail Rios Ortiz
-17,4,mc,Rubi Aurora Lora Sosa,Sonia Garcia Hernandez
-18,4,pan_pri,Dancey Geisler Fernandez Loria,Victor Manuel Mendez Cime
-19,4,prd,Humberto Horacio Lara Gonzalez,Paulino Humberto Lara Delfin
-20,4,pvem_pt_morena,Teresa Atenea Gomez Ricalde,Rosa Elena Rios Fernandez
-21,5,mc,Jose Francisco Puc Cen,Engel Evaney Rhaburn Cauich
-22,5,morena,Erik Noe Borges Yam,Cesar Oswaldo Peralta Torres
-23,5,prd,Jennifer Bernice Lizama Pech,Yarieli Alexandra Ku Balam
-24,5,pvem,Luis Hernan Carrillo Gongora,David Mijail Flota Becerra
-25,5,pan_pri, , 
-26,6,mas,Reina Maria Dzib Pool,Rosa Guadalupe Baas Sulub
-27,6,mc,Veronica Mex Yam,Elvira Pat Itza
-28,6,pan_pri,Aurora Concepcion Pool Cauich,Anaremi Leticia Ang Martin
-29,6,prd,Marco Zulaim Garcia Marquez,Oscar Hernan Ortiz Avila
-30,6,pvem_pt_morena,Josue Nivardo Mena Villanueva,Russell Josse Chale Baas
-31,7,cand_ind,Daniel Cruz Martinez,Celso Genaro Duque Brice�o
-32,7,mas,Christian Sharid Tapia Salvatierra,Hector Armando Tenorio Espinosa
-33,7,mc,Lidia Esther Rojas Fabro,Laura Gabriela Souza Diaz
-34,7,pan_pri,German De Francisco Gonzalez Gonzalez,Julia Perez Che
-35,7,prd,Marcela Rojas Lopez,Mariana Tadeo Sanchez
-36,7,pvem_pt_morena,Yensunni Idalia Martinez Hernandez,Alejandra Del Angel Carmona
-37,8,mas,Pedro Lopez Villanueva,Jairo Guadalupe Mojica Garcia
-38,8,mc,Sixto Fernando Cuevas Cetina,Carlos Manuel Vazquez Alvarez
-39,8,pan_pri,Roxana Lili Campos Miranda,Kira Iris San
-40,8,prd,Jazmin Marilu Trevi�o Aleman,Enedina Cruz Garcia
-41,8,pvem_pt_morena,Angy Estefania Mercado Asencio,Diana Estefania Hernandez Flores
-42,9,mc,Jorge Alberto Portilla Manica,Raul Rosique Gonzalez
-43,9,pan_pri,Maria Magali Dzib Raigosa,Jennyfer Caamal May
-44,9,prd,Claudia Carlota Macias Perez,Norma Antonia Olivares Cruz
-45,9,pvem_pt_morena,Diego Casta�on Trejo,Bernabe Antonio Miranda Miranda
-46,10,mas,Manuel De Jesus Ciau Nahuat,Hector Meneses Gomez
-47,10,mc,Maria Cristina Coronado Cruz,Xiomara Amayrani Morales Ack
-48,10,pan_pri,Tania Lol-Be Casa Madrid Alfaro,Saidy Giselle Vargas Ac
-49,10,prd,Angel Gabriel Pool Navarro,Alfredo Nicolas Tec Dzib
-50,10,pvem_pt_morena,Jose Alfredo Contreras Mendez,Miguel Elias Abuxapqui Cruz
-51,11,mc,Estefany Mirely Vargas Saucedo,Diany Romero De Dios
-52,11,pan_pri,Maria Fernanda Alvear Palacios,Anna Cristina Zetina Azcorra
-53,11,prd,Mayra Raquel Alanis Castro,Luz Maria Guzman Fernandez
-54,11,pvem_pt_morena,Blanca Merari Tziu Mu�oz,Mara Surlema Betancourt Pech
+ord,munn,inegi,part,prop,sup
+6,2,23001,mas,MARIA AZUCENA FLORES PERAZA,Estefanny Elizabeth Herrera Canche
+7,2,23001,mc,ROBERTO ALAN MARIN FLORES,Francisco Javier Hernandez Peniche
+8,2,23001,pan_pri,PEDRO OSCAR JOAQUIN DELBOUIS,Jorge Alberto Martin Azueta
+9,2,23001,prd,ABIGAIL ELIAS BUCES,Maria Jose Aguilar Novelo
+10,2,23001,pvem_pt_morena,JOSE LUIS CHACON MENDEZ,Francisco Alejandro Abad Vazquez
+11,3,23002,mas,VICTOR MANUEL DEL ANGEL VENTURA,Marx Edwin Esquivel Martin
+12,3,23002,mc,SANDRA LUZ ARCEO MANRIQUE,Elda Del Rocio Santos Xiu
+13,3,23002,pan_pri,BRENDA VERONICA HAU UEX,Naila Rubi Ac Ek
+14,3,23002,prd,MARIA LUISA POOT EK,Lizbeth Liliana Cab Hu
+15,3,23002,pvem_pt_morena,MARICARMEN CANDELARIA HERNANDEZ SOLIS,Victoria Abigail Gomez Gomez
+16,4,23003,mas,LAURA DE GUADALUPE VAZQUEZ PAZ,Ashanti Abigail Rios Ortiz
+17,4,23003,mc,RUBI AURORA LORA SOSA,Sonia Garcia Hernandez
+18,4,23003,pan_pri,DANCEY GEISLER FERNANDEZ LORIA,Victor Manuel Mendez Cime
+19,4,23003,prd,HUMBERTO HORACIO LARA GONZALEZ,Paulino Humberto Lara Delfin
+20,4,23003,pvem_pt_morena,TERESA ATENEA GOMEZ RICALDE,Rosa Elena Rios Fernandez
+31,7,23004,cand_ind,DANIEL CRUZ MARTINEZ,Celso Genaro Duque Briceño
+32,7,23004,mas,CHRISTIAN SHARID TAPIA SALVATIERRA,Hector Armando Tenorio Espinosa
+33,7,23004,mc,LIDIA ESTHER ROJAS FABRO,Laura Gabriela Souza Diaz
+34,7,23004,pan_pri,GERMAN DE FRANCISCO GONZALEZ GONZALEZ,Julia Perez Che
+35,7,23004,prd,MARCELA ROJAS LOPEZ,Mariana Tadeo Sanchez
+36,7,23004,pvem_pt_morena,YENSUNNI IDALIA MARTINEZ HERNANDEZ,Alejandra Del Angel Carmona
+1,1,23005,mas,PAULA VILLANUEVA ROSADO,Karla Barbosa Berlanga
+2,1,23005,mc,JESUS DE LOS ANGELES POOL MOO,Ruben Fernando Pachon Trejo
+3,1,23005,pan_pri,JORGE RODRIGUEZ MENDEZ,Florencio Amador Gutierrez Guigui
+4,1,23005,prd,DANIELA VARA SOLIS,
+5,1,23005,pvem_pt_morena,ANA PATRICIA PERALTA DE LA PEÑA,Clara Emilia Diaz Aguilar
+21,5,23006,mc,JOSE FRANCISCO PUC CEN,Engel Evaney Rhaburn Cauich
+22,5,23006,morena,ERIK NOE BORGES YAM,Cesar Oswaldo Peralta Torres
+23,5,23006,prd,JENNIFER BERNICE LIZAMA PECH,Yarieli Alexandra Ku Balam
+24,5,23006,pvem,LUIS HERNAN CARRILLO GONGORA,David Mijail Flota Becerra
+25,5,23006,pan_pri,. , 
+26,6,23007,mas,REINA MARIA DZIB POOL,Rosa Guadalupe Baas Sulub
+27,6,23007,mc,VERONICA MEX YAM,Elvira Pat Itza
+28,6,23007,pan_pri,AURORA CONCEPCION POOL CAUICH,Anaremi Leticia Ang Martin
+29,6,23007,prd,MARCO ZULAIM GARCIA MARQUEZ,Oscar Hernan Ortiz Avila
+30,6,23007,pvem_pt_morena,JOSUE NIVARDO MENA VILLANUEVA,Russell Josse Chale Baas
+37,8,23008,mas,PEDRO LOPEZ VILLANUEVA,Jairo Guadalupe Mojica Garcia
+38,8,23008,mc,SIXTO FERNANDO CUEVAS CETINA,Carlos Manuel Vazquez Alvarez
+39,8,23008,pan_pri,ROXANA LILI CAMPOS MIRANDA,Kira Iris San
+40,8,23008,prd,JAZMIN MARILU TREVIÑO ALEMAN,Enedina Cruz Garcia
+41,8,23008,pvem_pt_morena,ANGY ESTEFANIA MERCADO ASENCIO,Diana Estefania Hernandez Flores
+42,9,23009,mc,JORGE ALBERTO PORTILLA MANICA,Raul Rosique Gonzalez
+43,9,23009,pan_pri,MARIA MAGALI DZIB RAIGOSA,Jennyfer Caamal May
+44,9,23009,prd,CLAUDIA CARLOTA MACIAS PEREZ,Norma Antonia Olivares Cruz
+45,9,23009,pvem_pt_morena,DIEGO CASTAÑON TREJO,Bernabe Antonio Miranda Miranda
+46,10,23010,mas,MANUEL DE JESUS CIAU NAHUAT,Hector Meneses Gomez
+47,10,23010,mc,MARIA CRISTINA CORONADO CRUZ,Xiomara Amayrani Morales Ack
+48,10,23010,pan_pri,TANIA LOL-BE CASA MADRID ALFARO,Saidy Giselle Vargas Ac
+49,10,23010,prd,ANGEL GABRIEL POOL NAVARRO,Alfredo Nicolas Tec Dzib
+50,10,23010,pvem_pt_morena,JOSE ALFREDO CONTRERAS MENDEZ,Miguel Elias Abuxapqui Cruz
+51,11,23011,mc,ESTEFANY MIRELY VARGAS SAUCEDO,Diany Romero De Dios
+52,11,23011,pan_pri,MARIA FERNANDA ALVEAR PALACIOS,Anna Cristina Zetina Azcorra
+53,11,23011,prd,MAYRA RAQUEL ALANIS CASTRO,Luz Maria Guzman Fernandez
+54,11,23011,pvem_pt_morena,BLANCA MERARI TZIU MUÑOZ,Mara Surlema Betancourt Pech
