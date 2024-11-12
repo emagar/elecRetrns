@@ -1,0 +1,63 @@
+Cuatro preguntas:
+
+1. ¿Por qué cambiaron los identificadores de secciones electorales entre 1991 y 1994?
+2. ¿Hubo reseccionamiento o sólo se renumeró las secciones?
+3. Si hubo reseccionamiento ¿fue en el margen o se rehizo todo el marco seccional?
+4. ¿Hay modo de conseguir la equivalencia de secciones entre 1991 y 1994?
+
+Ilustración:
+
+Para las elecciones de diputados de mayoría por casilla de estos dos años, el IFE reporta
+las secciones con números identificadores diferentes. Por ejemplo, para el estado de Colima
+-- que es relativamente simple -- reporta las siguientes secciones electorales:
+
+| Municipio        | Distrito | Rango de secciones |   N | Rango de secciones |   N |
+|                  |  federal |            en 1991 |     |            en 1994 |     |
+|------------------+----------+--------------------+-----+--------------------+-----|
+| COLIMA           |        1 | 1-21, 23-77, 80-92 |  89 |               1-91 |  91 |
+| COMALA           |        1 |               1-13 |  13 |             92-104 |  13 |
+| COQUIMATLAN      |        1 |               1-15 |  15 |            105-119 |  15 |
+| CUAUHTEMOC       |        1 |               1-18 |  18 |            120-137 |  18 |
+| VILLA DE ALVAREZ |        1 |        1-11, 13-30 |  29 |            138-169 |  32 |
+| ARMERIA          |        2 |               1-21 |  21 |            170-190 |  21 |
+| IXTLAHUACAN      |        2 |                1-9 |   9 |            191-199 |   9 |
+| MANZANILLO       |        2 |        1-55, 57-67 |  66 |            200-269 |  70 |
+| MINATITLAN       |        2 |                1-7 |   7 |            270-276 |   7 |
+| TECOMAN          |        2 |               1-60 |  60 |            277-336 |  60 |
+|------------------+----------+--------------------+-----+--------------------+-----|
+| TOTAL DEL ESTADO |          |                    | 327 |                    | 336 |
+
+En 1991, la numeración de secciones inicia en 1 para cada municipio. Y en municipios que
+tienen más de un distrito federal (p.ej. el de Aguascalientes), la numeración reinicia
+en 1 para cada distrito dentro del municipio.
+
+Además, el total de secciones de algunos municipios cambia marginalmente entre 1991 y
+1994 (un indicio de reseccionamiento).
+
+
+| Municipio                 | Distrito | Rango de secciones |   N | Rango de secciones |   N |
+|                           |  federal |            en 1991 |     |            en 1994 |     |
+|---------------------------+----------+--------------------+-----+--------------------+-----|
+| AGUASCALIENTES            |        1 |             1--313 | 313 |             1--314 | 314 |
+| AGUASCALIENTES            |        2 |              1--40 |  40 |           315--337 |  23 |
+| ASIENTOS                  |        2 |              1--16 |  16 |           338--354 |  17 |
+| CALVILLO                  |        2 |              1--32 |  32 |           355--386 |  32 |
+| COSIO                     |        2 |               1--5 |   5 |           387--391 |   5 |
+| JESUS MARIA               |        2 |              1--21 |  21 |           392--414 |  23 |
+| PABELLON DE ARTEAGA       |        2 |              1--14 |  14 |           415--430 |  16 |
+| RINCON DE ROMOS           |        2 |              1--18 |  18 |           431--451 |  21 |
+| SAN JOSE DE GRACIA        |        2 |               1--8 |   8 |           452--459 |   8 |
+| TEPEZALA                  |        2 |              1--10 |  10 |           460--469 |  10 |
+| SAN FRANCISCO DE LOS ROMO |        2 |         no existía |     |           470--478 |   9 |
+| EL LLANO                  |        2 |         no existía |     |           479--486 |   8 |
+
+| Municipio | Distrito federal | Rango de secciones |                    |   N |
+|           |                  |               1991 |               1994 |     |
+|-----------+------------------+--------------------+--------------------+-----|
+| COMONDU   |                2 |              1--83 |              1--74 |  74 |
+| MULEGE    |                2 |              1--46 |            75--120 |  46 |
+| LA PAZ    |                1 |             1--168 | 121--289, 348--350 | 172 |
+| LOS CABOS |                1 |              1--45 |      290--335, 352 |  47 |
+| LORETO    |                  |         no existía |           337--347 |  11 |
+
+
