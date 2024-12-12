@@ -3097,8 +3097,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3096,cua-15.051,OCAMPO,2013,0,8,8051,8051,pri-pt-pna,0,CARLOS EMILIO ESCARZAGA LOZANO,Term-limited-p-won,,pan,0.1193603655,0,0,0,,,incumbent out,incumbent out,,
 3097,cua-16.051,OCAMPO,2016,0,8,8051,8051,pri-pna,1,ANA MARIA SAENZ CAMPOS,Reelected,,pvem,0.0773252614,0,0,0,,,incumbent out,pri,,
 3098,cua-17.051,OCAMPO,2018,0,8,8051,8051,pri,1,ANA MARIA SAENZ CAMPOS,Term-limited-p-lost,MANUEL HERNANDEZ MARTINEZ,pan-mc,0.1964512041,0,1,1,,,pri,incumbent out,,
-3099,cua-18.051,OCAMPO,2021,0,8,8051,8051,morena,0,JOSE LUIS LOZANO ESCANDON,Out-p-lost,,pri,0.0530248253,0,,,,,incumbent out,2024,,
-3100,cua-19.051,OCAMPO,2024,0,8,8051,8051,pan-pri-prd,1,ANA MARIA SAENZ CAMPOS,2027,,pt,0.0384158415841584,,,,,,,,,
+3099,cua-18.051,OCAMPO,2021,0,8,8051,8051,morena,0,JOSE LUIS LOZANO ESCANDON,Out-p-won,,pri,0.0530248253,0,,,,,incumbent out,2024,,
+3100,cua-19.051,OCAMPO,2024,0,8,8051,8051,morena-pt,1,RAFAEL SOLIS MARTINEZ,2027,MARCOS MENDEZ BANDA,pan-pri-prd,0.289506953223767,,,,,,,,,
 3101,cua-07.052,OJINAGA,1989,0,8,8052,8052,pri,0,JOSE J RODRIGUEZ B,Term-limited-p-lost,,pan,0.1148943037,0,0,0,,,NA,incumbent out,,inafed
 3102,cua-08.052,OJINAGA,1992,0,8,8052,8052,pan,0,JOSE ISAAC URIBE,Term-limited-p-won,,pri,0.2043884107,0,0,0,,,incumbent out,incumbent out,,inafed
 3103,cua-09.052,OJINAGA,1995,0,8,8052,8052,pan,0,MANUEL TERCERO PROAÑO,Term-limited-p-won,,pri,0.0237716226,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -9842,7 +9842,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 9838,mic-15.041,IRIMBO,2015,0,16,16041,16041,prd-pna-pes,0,reran-2024,Out-p-lost,,pan,0.2995313166,0,0,0,,,incumbent out,incumbent out,,
 9839,mic-16.041,IRIMBO,2018,0,16,16041,16041,pri,0,OMAR LOPEZ ESQUIVEL,Out-p-won,,prd,0.1543727298,0,0,0,,,incumbent out,incumbent out,,
 9840,mic-17.041,IRIMBO,2021,0,16,16041,16041,pan-pri,0,FERNANDO PALOMINO ANDRADE,Reelected,,prd,0.0561978633,0,,,,,incumbent out,2024,,
-9841,mic-18.041,IRIMBO,2024,0,16,16041,16041,pan-pri,,FERNANDO PALOMINO ANDRADE,2027,,prd,0.0022,,,,,,,,,
+9841,mic-18.041,IRIMBO,2024,0,16,16041,16041,pan-pri,,FERNANDO PALOMINO ANDRADE,2027,AZUCENA RUIZ ALANIS,prd,0.0022,,,,,,,,,
 9842,mic-07.042,IXTLAN,1989,0,16,16042,16042,prd,0,JOAQUIN GUTIERREZ ALVARADO,Term-limited-p-lost,,pri,0.2183383992,0,0,0,,,NA,incumbent out,,inafed
 9843,mic-08.042,IXTLAN,1992,0,16,16042,16042,pri,0,BENJAMIN CERVANTES GONZALEZ,Term-limited-p-lost,,prd,0.0165525114,0,0,0,,,incumbent out,incumbent out,,inafed
 9844,mic-09.042,IXTLAN,1995,0,16,16042,16042,prd,0,FRANCISCO JAVIER GIL CHAVEZ,Term-limited-p-lost,,pri,0.0889414948,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -20028,7 +20028,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 20022,tla-15.055,SAN LUCAS TECOPILCO,2013,0,29,29055,29057,pt,0,ISRAEL MORALES GONZALEZ,Term-limited-p-lost,,pri,0.0218934911,0,0,0,,,incumbent out,incumbent out,,
 20023,tla-16.055,SAN LUCAS TECOPILCO,2016,0,29,29055,29057,mc,0,OLAF JONATHAN VAZQUEZ MORALES,Term-limited-p-lost,,pri,0.0701168614,0,0,0,,,incumbent out,incumbent out,,
 20024,tla-17.055,SAN LUCAS TECOPILCO,2021,0,29,29055,29057,pes,0,ABIRAN MISAEL BAEZ PEREZ ,Out-p-lost,,ps,0.1973544974,0,,,,,incumbent out,2024,,
-20025,tla-18.055,SAN LUCAS TECOPILCO,2024,0,29,29055,29057,pvem,0,CESAR CARRASCO CORTES,2027,,,0.0221,,,,,,,,,
+20025,tla-18.055,SAN LUCAS TECOPILCO,2024,0,29,29055,29057,morena-pna-rsp,0,GUADALUPE GARCIA CERVANTES,2027,CESAR CARRASCO CORTES,pvem,0.0534883720930233,,,,,,,,,
 20026,tla-09.056,SANTA ANA NOPALUCAN,1996,1,29,29056,29058,prd,0,ULISES CERVANTES SANCHEZ,Term-limited-p-lost,,pan,0.0471116096,0,0,0,,,NA,incumbent out,extraordinaria,inafed
 20027,tla-10.056,SANTA ANA NOPALUCAN,1998,0,29,29056,29058,pan,0,ALEJO NAZARIO DE LA ROSA,Term-limited-p-lost,,pri,0.0294117647,0,0,0,,,incumbent out,incumbent out,,
 20028,tla-11.056,SANTA ANA NOPALUCAN,2001,0,29,29056,29058,pri,0,FLORENCIO LICONA PEREZ,Term-limited-p-lost,,prd,0.08789861,0,0,0,,,incumbent out,incumbent out,,
