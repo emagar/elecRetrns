@@ -943,7 +943,7 @@ v12 <- v12_split
 v15 <- v15_split
 v18 <- v18_split
 v21 <- v21_split
-# free memory
+## free memory
 rm(
     v91_split, v91_agg,
     v94_split, v94_agg,
@@ -958,10 +958,10 @@ rm(
     v21_split, v21_agg
 )
 
-# save for debug
+## save for debug
 save.image("../../datosBrutos/not-in-git/tmp-debug.RData")
 
-# load image
+## load image
 rm(list=ls())
 options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
@@ -981,9 +981,9 @@ load(file="../../datosBrutos/not-in-git/tmp-debug.RData")
 ###################################
 tmp <- paste(md, "equivSecc/tablaEquivalenciasSeccionalesDesde1994.csv", sep = "")
 eq <- read.csv(tmp, stringsAsFactors = FALSE)
-# drop secciones whose numbers have never been used
+## drop secciones whose numbers have never been used
 sel <- which(eq$baja==1992); eq <- eq[-sel,]; rm(sel)
-# check: any secciones missing from eq?
+## check: any secciones missing from eq?
 library(crayon)
 miss_secc <- function(dat=v21_split){ # defaults to 2021
     tmp <- deparse(substitute(dat)) # extract object's name
@@ -991,7 +991,7 @@ miss_secc <- function(dat=v21_split){ # defaults to 2021
     if (length(sel)>0){
         cat(magenta("Some secciones not in eq object\n"))
         dat$edon[sel]+dat$seccion[sel]/10000
-#        print(c(tmp, ": ", dat$edon[sel]+dat$seccion[sel]/10000))
+        #print(c(tmp, ": ", dat$edon[sel]+dat$seccion[sel]/10000))
     } else {
         print(paste0(tmp, ": All v-secciones in eq object"))
     }
@@ -1006,7 +1006,7 @@ miss_secc(dat=v12)
 miss_secc(dat=v15)
 miss_secc(dat=v18)
 miss_secc(dat=v21) # some 2021 secciones not in eq, all break sequence so must be temporary
-#                  # OJO: will drop them to keep things square (still no clue about them)
+##                 # OJO: will drop them to keep things square (still no clue about them)
 sel.r <- which((v21$edon==17 & v21$seccion>=5000) | (v21$edon==19 & v21$seccion>=9000))
 v21 <- v21[-sel.r,]
 rm(miss_secc,sel.r,tmp) # clean
@@ -1068,7 +1068,7 @@ v21 <- within(v21, {
     seccion <- edon*10000 + seccion;
     d21    <- 1;
 })
-#
+##
 ## Indicate secciones existing each year with dummies d91 d94 ... 
 ##tmp <- merge(x=v91[,c("edosecn","d91")], y=v94[,c("edosecn","d94")], by = "edosecn", all = TRUE)
 ##tmp <- merge(x=tmp,                      y=v97[,c("edosecn","d97")], by = "edosecn", all = TRUE)
@@ -1089,11 +1089,11 @@ tmp.all.sec[,sel.c] <- tmp
 ## check ok
 which(tmp.all.sec$seccion %notin% (eq$edon*10000+eq$seccion)) # all used secciones (tmp.all.sec) are in eq
 which((eq$edon*10000+eq$seccion) %notin% tmp.all.sec$seccion) # many eq secciones not in used ones (tmp.all.sec)
-#
+##
 ## clean
 ##v91$d91 <-
 v94$d94 <- v97$d97 <- v00$d00 <- v03$d03 <- v06$d06 <- v09$d09 <- v12$d12 <- v15$d15 <- v18$d18 <- v21$d21 <- NULL
-#
+##
 # adds any missing used secciones to each object
 #v91 <- merge(x=tmp.all.sec, y=v91, by = "seccion", all = TRUE)
 v94  <- merge(x=tmp.all.sec, y=v94, by = "seccion", all = TRUE)
@@ -1119,7 +1119,7 @@ nrow(v06)==nrow(v12)
 nrow(v12)==nrow(v15)
 nrow(v15)==nrow(v18)
 nrow(v18)==nrow(v21)
-# re-computing edon from seccion ids will fill in any missing edon for added observations
+## re-computing edon from seccion ids will fill in any missing edon for added observations
 add.edon.secn <- function(x) {
     within(x, edon <- as.integer(seccion/10000))
 }
@@ -1429,7 +1429,7 @@ v18$inegi <- inegi2ife(v18$ife)
 v21$ife <- v21$ife2021
 v21$inegi <- inegi2ife(v21$ife)
 
-# rename seccion vote objects
+## rename seccion vote objects
 v91s <- v91; v94s <- v94; v97s <- v97; v00s <- v00; v03s <- v03; v06s <- v06; v09s <- v09; v12s <- v12; v15s <- v15; v18s <- v18; v21s <- v21;
 rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 
@@ -1439,10 +1439,10 @@ rm(v91,v94, v97, v00, v03, v06, v09, v12, v15, v18, v21)
 ########################################################
 source("../../code/v-hat-etc/aggregates-mun-dis-from-sec.r")
 
-# save all to restore after manipulating district/munic aggregates
+## save all to restore after manipulating district/munic aggregates
 save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
 
-# load image
+## load image
 rm(list=ls())
 options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
@@ -1491,7 +1491,7 @@ rm(non.nas, preds, projyr, myf, interpol, interlog)
 ## save all to restore after manipulating district/munic aggregates
 save.image("../../datosBrutos/not-in-git/tmp-restore.RData")
 
-# load image
+## load image
 rm(list=ls())
 options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
@@ -1579,10 +1579,10 @@ source("../../code/v-hat-etc/resecc-deal-with-splits-and-merge-to.r")
 
 
 
-# save for debug
+## save for debug
 save.image("../../datosBrutos/not-in-git/tmp-debug.RData")
 
-# load image
+## load image
 rm(list=ls())
 options(width = 110)
 dd <- c("~/Dropbox/data/elecs/MXelsCalendGovt/elecReturns/data/casillas/")
@@ -1601,7 +1601,7 @@ source("../../code/v-hat-etc/alpha-regs-etc-secciones.r")
 
 
 
-# drop columns before saving raw vote seccion files
+## drop columns before saving raw vote seccion files
 #v91s <- within(v91, munn <- NULL)
 #write.csv(v91s, file = paste(sd, "data/dipfed-seccion-vraw-1991.csv", sep = ""), row.names = FALSE)
 tmp <- within(v94s, edosecn <- NULL)
@@ -1645,7 +1645,7 @@ rm(tmp)
 ## rm(tmp,tmp.w,tmp.w2) # drop to avoid confusion
 
 
-# saves fixed mun raw aggregates
+## saves fixed mun raw aggregates
 write.csv(v91m,  file = paste(sd, "mun/dipfed-municipio-vraw-1991.csv", sep = ""), row.names = FALSE)
 write.csv(v94m,  file = paste(sd, "mun/dipfed-municipio-vraw-1994.csv", sep = ""), row.names = FALSE)
 write.csv(v97m,  file = paste(sd, "mun/dipfed-municipio-vraw-1997.csv", sep = ""), row.names = FALSE)
@@ -1658,7 +1658,7 @@ write.csv(v15m,  file = paste(sd, "mun/dipfed-municipio-vraw-2015.csv", sep = ""
 write.csv(v18m,  file = paste(sd, "mun/dipfed-municipio-vraw-2018.csv", sep = ""), row.names = FALSE)
 write.csv(v21m,  file = paste(sd, "mun/dipfed-municipio-vraw-2021.csv", sep = ""), row.names = FALSE)
 
-# saves fixed district raw aggregates
+## saves fixed district raw aggregates
 write.csv(v91d,  file = paste(sd, "dis/dipfed-distrito-vraw-1991.csv", sep = ""), row.names = FALSE)
 write.csv(v94d,  file = paste(sd, "dis/dipfed-distrito-vraw-1994.csv", sep = ""), row.names = FALSE)
 write.csv(v97d,  file = paste(sd, "dis/dipfed-distrito-vraw-1997.csv", sep = ""), row.names = FALSE)

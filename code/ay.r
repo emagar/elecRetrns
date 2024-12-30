@@ -1,11 +1,18 @@
+################################################################################
+## SCRIPT PROCESSES RAW DATA AND GENERATES DISTRIBUTED MUNICIPAL VOTE RETURNS ##
+## USED ROUTINELY                                                             ##
+## AUTHOR: Eric Magar                                                         ##
+## emagar at itam dot org                                                     ##
+################################################################################
+
 rm(list = ls())
 
 dd <- "/home/eric/Desktop/MXelsCalendGovt/elecReturns/data/"
 setwd(dd)
 
-########################
-## Read raw data file ##
-########################
+############################################
+## Read raw data file with all municipios ##
+############################################
 dat <- read.csv(file = "aymu1970-on.csv", stringsAsFactors = FALSE)
 dat$nr <- as.numeric(dat$nr)
 ## ## Read this instead to prep Chihuahua síndicos 
