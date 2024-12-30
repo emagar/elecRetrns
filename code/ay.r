@@ -18,7 +18,7 @@ dat$nr <- as.numeric(dat$nr)
 #########################################################################
 #########################################################################
 
-# re-compute effective and total votes
+## re-compute effective and total votes
 sel <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel] # subset votes columns
 v[is.na(v)==TRUE] <- 0 # replace NAs with zeroes
@@ -41,7 +41,7 @@ v$tot <- dat$efec + dat$nr + dat$nulos
 dat$tot <- v$tot
 rm(v, tmp)
 
-# verify that coalition member separator is always a - 
+## verify that coalition member separator is always a - 
 sel <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel] # subset label columns
 for (i in 1:ncol(l)){
@@ -57,7 +57,7 @@ for (i in 1:ncol(l)){
 dat[,sel] <- l # return to data
 rm(l)
 
-# any votes with no labels?
+## any votes with no labels?
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
@@ -70,7 +70,7 @@ for (i in 1:ncol(l)){
 }
 rm(l,v)
 
-# drop upper case from labels
+## drop upper case from labels
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset labels columns
 for (i in 1:ncol(l)){
@@ -79,7 +79,7 @@ for (i in 1:ncol(l)){
 dat[,sel.l] <- l # return to data
 rm(l)
 
-# remove useless labels
+## remove useless labels
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
@@ -92,7 +92,7 @@ for (i in 1:ncol(l)){
 dat[,sel.l] <- l # return to data
 rm(l,v)
 
-# change confusing party labels
+## change confusing party labels
 sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset labels columns
 for (i in 1:ncol(l)){
@@ -100,29 +100,29 @@ for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "-c-|-cd-|-cdppn-|-pc-|-conver(gencia)?-", replacement = "-conve-", l[,i])
     l[,i] <- gsub(pattern = "-c$|-cd$|-cdppn$|-pc$|-conver(gencia)?$", replacement = "-conve", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pmc$", replacement = "mc", l[,i])
     l[,i] <- gsub(pattern = "^pmc-", replacement = "mc-", l[,i])
     l[,i] <- gsub(pattern = "-pmc-", replacement = "-mc-", l[,i])
     l[,i] <- gsub(pattern = "-pmc$", replacement = "-mc", l[,i])
     }
-#
+##
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^panal$", replacement = "pna", l[,i])
 ##     l[,i] <- gsub(pattern = "-panal-", replacement = "-pna-", l[,i])
 ##     l[,i] <- gsub(pattern = "-panal$", replacement = "-pna", l[,i])
 ##     l[,i] <- gsub(pattern = "^panal-", replacement = "pna-", l[,i])
 ##     }
-#
-# avoid "na" in csv, recognized as missing...
+##
+## avoid "na" (Nueva Alianza party) in csv, recognized as missing...
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^na$", replacement = "pna", l[,i])
     l[,i] <- gsub(pattern = "-na-", replacement = "-pna-", l[,i])
     l[,i] <- gsub(pattern = "-na$", replacement = "-pna", l[,i])
     l[,i] <- gsub(pattern = "^na-", replacement = "pna-", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pd$", replacement = "pd1", l[,i])
     l[,i] <- gsub(pattern = "^pd-", replacement = "pd1-", l[,i])
@@ -135,42 +135,42 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "-p?asd?c?$|-alter(nativa)?$", replacement = "-pasd", l[,i])
 ##     l[,i] <- gsub(pattern = "^p?asd?c?-|^alter(nativa)?-", replacement = "pasd-", l[,i])
 ##     }
-## #
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^alter(nativa)?$", replacement = "pasd", l[,i])
     l[,i] <- gsub(pattern = "-alter(nativa)?-", replacement = "-pasd-", l[,i])
     l[,i] <- gsub(pattern = "-alter(nativa)?$", replacement = "-pasd", l[,i])
     l[,i] <- gsub(pattern = "^alter(nativa)?-", replacement = "pasd-", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pl$", replacement = "pl1", l[,i])
     l[,i] <- gsub(pattern = "^pl-", replacement = "pl1-", l[,i])
     l[,i] <- gsub(pattern = "-pl-", replacement = "-pl1-", l[,i])
     l[,i] <- gsub(pattern = "-pl$", replacement = "-pl1", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pp$", replacement = "pp1", l[,i])
     l[,i] <- gsub(pattern = "^pp-", replacement = "pp1-", l[,i])
     l[,i] <- gsub(pattern = "-pp-", replacement = "-pp1-", l[,i])
     l[,i] <- gsub(pattern = "-pp$", replacement = "-pp1", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pr$", replacement = "pr1", l[,i])
     l[,i] <- gsub(pattern = "^pr-", replacement = "pr1-", l[,i])
     l[,i] <- gsub(pattern = "-pr-", replacement = "-pr1-", l[,i])
     l[,i] <- gsub(pattern = "-pr$", replacement = "-pr1", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^ps$", replacement = "ps1", l[,i])
     l[,i] <- gsub(pattern = "^ps-", replacement = "ps1-", l[,i])
     l[,i] <- gsub(pattern = "-ps-", replacement = "-ps1-", l[,i])
     l[,i] <- gsub(pattern = "-ps$", replacement = "-ps1", l[,i])
     }
-#
+##
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^pt$", replacement = "pt1", l[,i])
 ##     l[,i] <- gsub(pattern = "-pt-", replacement = "-pt1-", l[,i])
@@ -247,35 +247,35 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "-mrps$", replacement = "-pmrps", l[,i])
 ##     l[,i] <- gsub(pattern = "^mrps-", replacement = "pmrps-", l[,i])
 ##     }
-## #
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^otro$", replacement = "otros", l[,i])
     l[,i] <- gsub(pattern = "-otro-", replacement = "-otros-", l[,i])
     l[,i] <- gsub(pattern = "-otro$", replacement = "-otros", l[,i])
     l[,i] <- gsub(pattern = "^otro-", replacement = "otros-", l[,i])
     }
-#
+##
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^parme.$", replacement = "parm", l[,i])
 ##     l[,i] <- gsub(pattern = "-parme.-", replacement = "-parm-", l[,i])
 ##     l[,i] <- gsub(pattern = "-parme.$", replacement = "-parm", l[,i])
 ##     l[,i] <- gsub(pattern = "^parme.-", replacement = "parm-", l[,i])
 ##     }
-#
+##
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^indep$", replacement = "indep1", l[,i])
 ##     l[,i] <- gsub(pattern = "-indep-", replacement = "-indep1-", l[,i])
 ##     l[,i] <- gsub(pattern = "-indep$", replacement = "-indep1", l[,i])
 ##     l[,i] <- gsub(pattern = "^indep-", replacement = "indep1-", l[,i])
 ##     }
-#
+##
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^alianza$", replacement = "alianza1", l[,i])
 ##     l[,i] <- gsub(pattern = "-alianza-", replacement = "-alianza1-", l[,i])
 ##     l[,i] <- gsub(pattern = "-alianza$", replacement = "-alianza1", l[,i])
 ##     l[,i] <- gsub(pattern = "^alianza-", replacement = "alianza1-", l[,i])
 ##     }
-#
+##
 ## ## pes and pesm both present in mor 2021
 ## for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "^es$|^pesm$|^pest$", replacement = "pes",   l[,i])
@@ -283,31 +283,31 @@ for (i in 1:ncol(l)){
 ##     l[,i] <- gsub(pattern = "-es$|-pesm$|-pest$", replacement = "-pes",  l[,i])
 ##     l[,i] <- gsub(pattern = "^es-|^pesm-|^pest-", replacement = "pes-",  l[,i])
 ##     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pmac$|^moveracps$|^mach$", replacement = "pmch", l[,i])
     l[,i] <- gsub(pattern = "-pmac-|-moveracps-|-mach-", replacement = "-pmch-", l[,i])
     l[,i] <- gsub(pattern = "-pmac$|-moveracps$|-mach$", replacement = "-pmch", l[,i])
     l[,i] <- gsub(pattern = "^pmac-|^moveracps-|^mach-", replacement = "pmch-", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^pcu$", replacement = "pchu", l[,i])
     l[,i] <- gsub(pattern = "-pcu-", replacement = "-pchu-", l[,i])
     l[,i] <- gsub(pattern = "-pcu$", replacement = "-pchu", l[,i])
     l[,i] <- gsub(pattern = "^pcu-", replacement = "pchu-", l[,i])
     }
-#
+##
 for (i in 1:ncol(l)){
     l[,i] <- gsub(pattern = "^fsm$", replacement = "fxm", l[,i])
     l[,i] <- gsub(pattern = "-fsm-", replacement = "-fxm-", l[,i])
     l[,i] <- gsub(pattern = "-fsm$", replacement = "-fxm", l[,i])
     l[,i] <- gsub(pattern = "^fsm-", replacement = "fxm-", l[,i])
     }
-#
-#
+##
+##
 sel.r <- which(dat$yr>2006)
-#table(l[sel.r,18]) # easier to verify one column at a time
+##table(l[sel.r,18]) # easier to verify one column at a time
 dat[,sel.l] <- l # return to data
 rm(l)
 
@@ -340,21 +340,22 @@ sel.l <- grep("^l[0-9]{2}", colnames(dat))
 l <- dat[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat))
 v <- dat[,sel.v] # subset vote columns
-#
-# dummy had at least one coalition
+##
+## dummy had at least one coalition
 dat$dcoal <- 0
 for (i in 1:ncol(l)){
     dat$dcoal[grep("-", l[,i])] <- 1
 }
 
-# create objects with vote for coalition(s) sumed and redudant columns dropped
+## create objects with vote for coalition(s) sumed and redudant columns dropped
 cv <- v; # will receive votes with coalitions aggregated
 cl <- l; # will keep coalition labels but drop coalition member labels 
-# create "split" objects for votes contrinuted by each coalition member and joint column dropped
+## create "split" objects for votes contrinuted by each coalition member and joint column dropped
 sv <- v;
 sl <- l;
-#
-ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE) # coalition summary info
+##
+## coalition summary info
+ci <- data.frame(dcoal=dat$dcoal, ncoal=NA, coal1="none", coal2="none", coal3="none", coal4="none", stringsAsFactors = FALSE)
 ci$ncoal[ci$dcoal==0] <- 0 # 0=no coalition
 ## ci$coal1 coal2 coal3 coal4 pre-filled
 ## n is object reporting how many parties reported in a v/l cell?
@@ -382,10 +383,10 @@ max.tmp <- apply(n, 1, max) # max parties reported in a row's cell
 table(max.tmp) # coal w most members has 7
 I <- nrow(v)
 c4 <- c3 <- c2 <- c1 <- as.data.frame(matrix("0", I, 7), col.names = paste("p", 1:7, sep = ""), stringsAsFactors = FALSE) # will receive vector of 1st 2nd 3rd 4th coalition's members
-#
+##
 # will receive columns corresponding to coalition members in v/l for use when weighting votes contributed by each member
 w4 <- w3 <- w2 <- w1 <- as.list(rep("noCoal",I))
-#
+##
 ## # fill in easy cases with no coalition --- 3sep2021 no longer needed with new procedure
 ## sel <- which(dat$dcoal==0)
 ## cv[sel,] <- v[sel,]
@@ -395,7 +396,7 @@ w4 <- w3 <- w2 <- w1 <- as.list(rep("noCoal",I))
 ## # c1 c2 c3 c4 are pre-filled
 ## # w1 w2 w3 w4 are pre-filled
 
-# fill in info selecting cases of coalitions with most members 
+## fill in info selecting cases of coalitions with most members 
 sel7 <- which(max.tmp>1) 
 #grep("ags-18", dat$emm[sel7]) # debug
 tmp.v  <- cv[sel7,] # subset for manipulation --- 3sep2021 used to pick from v, forgetting manip in later rounds
@@ -425,7 +426,8 @@ for (i in 1:length(sel7)){
     for (j in 1:7){
         #j <- 1 # debug
         if (tmp.c1[i,j]=="0") next
-        pat <- paste("^", tmp.c1[i,j], "$|", tmp.c1[i,j], "-|-", tmp.c1[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- reduntant given label changes
+        ## searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- reduntant given label changes
+        pat <- paste("^", tmp.c1[i,j], "$|", tmp.c1[i,j], "-|-", tmp.c1[i,j], sep="")
         tmp.target <- grep(pattern = pat, x = tmp.l[i,])
         #tmp.target <- grep(pattern = tmp.c1[i,j], x = tmp.l[i,]) # version hits panal when searching pan
         if (length(tmp.target)>0) {
@@ -445,14 +447,14 @@ for (i in 1:length(sel7)){
         tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label manipulation
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
-        # votes contributed
+        ## votes contributed
         tmp.vw[i, save.col] <- 0   # erase joint votes
         tmp.lw[i, save.col] <- "0" # erase joint label
         tmp.vw[i, sel] <- tmp.vw1[[i]]  # place contributed votes back in
     }
     tmp.n[i, target.cols] <- 0   # erase ns, prep for obs's next coalition
 }
-# return to data
+## return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
 n[sel7,] <- tmp.n
@@ -497,7 +499,8 @@ for (i in 1:length(sel7)){
     for (j in 1:7){
         #j <- 2 # debug
         if (tmp.c2[i,j]=="0") next
-        pat <- paste("^", tmp.c2[i,j], "$|", tmp.c2[i,j], "-|-", tmp.c2[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        ## searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        pat <- paste("^", tmp.c2[i,j], "$|", tmp.c2[i,j], "-|-", tmp.c2[i,j], sep="")
         tmp.target <- grep(pattern = pat, x = tmp.l[i,])
         #tmp.target <- grep(pattern = tmp.c2[i,j], x = tmp.l[i,]) # version hits panal when searching pan
         if (length(tmp.target)>0) {
@@ -517,14 +520,14 @@ for (i in 1:length(sel7)){
         tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
-        # votes contributed
+        ## votes contributed
         tmp.vw[i, save.col] <- 0   # erase joint votes
         tmp.lw[i, save.col] <- "0" # erase joint label
         tmp.vw[i, sel] <- tmp.vw2[[i]]  # place contributed votes back in
     }
     tmp.n[i, target.cols] <- 0   # erase ns
 }
-# return to data
+## return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
 n[sel7,] <- tmp.n
@@ -568,7 +571,8 @@ for (i in 1:length(sel7)){
     for (j in 1:7){
         #j <- 2 # debug
         if (tmp.c3[i,j]=="0") next
-        pat <- paste("^", tmp.c3[i,j], "$|", tmp.c3[i,j], "-|-", tmp.c3[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        ## searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        pat <- paste("^", tmp.c3[i,j], "$|", tmp.c3[i,j], "-|-", tmp.c3[i,j], sep="")
         tmp.target <- grep(pattern = pat, x = tmp.l[i,])
         #tmp.target <- grep(pattern = tmp.c3[i,j], x = tmp.l[i,]) # version hits panal when searching pan
         if (length(tmp.target)>0) {
@@ -588,14 +592,14 @@ for (i in 1:length(sel7)){
         tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
-        # votes contributed
+        ## votes contributed
         tmp.vw[i, save.col] <- 0   # erase joint votes
         tmp.lw[i, save.col] <- "0" # erase joint label
         tmp.vw[i, sel] <- tmp.vw3[[i]]  # place contributed votes back in
     }
     tmp.n[i, target.cols] <- 0   # erase ns
 }
-# return to data
+## return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
 n[sel7,]  <- tmp.n
@@ -640,7 +644,8 @@ for (i in 1:length(sel7)){
     for (j in 1:7){
         #j <- 2 # debug
         if (tmp.c4[i,j]=="0") next
-        pat <- paste("^", tmp.c4[i,j], "$|", tmp.c4[i,j], "-|-", tmp.c4[i,j], sep="") # searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        ## searches ^pty$, pty- or -pty (avoids panal hit when searching for pan) --- unnecessary given label changes
+        pat <- paste("^", tmp.c4[i,j], "$|", tmp.c4[i,j], "-|-", tmp.c4[i,j], sep="")
         tmp.target <- grep(pattern = pat, x = tmp.l[i,])
         #tmp.target <- grep(pattern = tmp.c4[i,j], x = tmp.l[i,]) # version hits panal when searching pan
         if (length(tmp.target)>0) {
@@ -660,14 +665,14 @@ for (i in 1:length(sel7)){
         tmp.l[i, target.cols] <- "0" # erase labels to keep only full coalition label
         tmp.v[i, save.col] <- save.vote  # place aggregate vote back in
         tmp.l[i, save.col] <- save.label # place coalition label back in
-        # votes contributed
+        ## votes contributed
         tmp.vw[i, save.col] <- 0   # erase joint votes
         tmp.lw[i, save.col] <- "0" # erase joint label
         tmp.vw[i, sel] <- tmp.vw4[[i]]  # place contributed votes back in
     }
     tmp.n[i, target.cols] <- 0   # erase ns
 }
-# return to data
+## return to data
 cv[sel7,] <- tmp.v
 cl[sel7,] <- tmp.l
 n[sel7,] <- tmp.n
@@ -691,10 +696,10 @@ table(max.tmp) # must have 0s and 1s only (number of parties being reported by r
 ## dat$emm[sel]
 ## x
 
-# plug ncoal into data
+## plug ncoal into data
 dat$ncoal  <- ci$ncoal
 
-# prepare object with coalition party weights
+## prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
 sel <- which(ci$ncoal>=1)
 for (i in sel){
@@ -703,21 +708,21 @@ for (i in sel){
     w[[i]]$coal1 <- v[i,w1[[i]]]
     names(w[[i]]$coal1) <- l[i,w1[[i]]]
 }
-#
+##
 sel <- which(ci$ncoal>=2)
 for (i in sel){
     #i <- sel[1] # debug
     w[[i]]$coal2 <- v[i,w2[[i]]]
     names(w[[i]]$coal2) <- l[i,w2[[i]]]
 }
-#
+##
 sel <- which(ci$ncoal>=3)
 for (i in sel){
     #i <- sel[1] # debug
     w[[i]]$coal3 <- v[i,w3[[i]]]
     names(w[[i]]$coal3) <- l[i,w3[[i]]]
 }
-#
+##
 sel <- which(ci$ncoal>=4)
 for (i in sel){
     #i <- sel[1] # debug
@@ -727,17 +732,18 @@ for (i in sel){
 coal.weights <- w # rename
 coal.info <- ci
 rm(w, ci)
-
-rm(c1, c2, c3, c4, I, i, j, max.tmp, n, pat, save.col, save.label, save.vote, sel, sel7, target.cols, tmp, tmp.c1, tmp.c2, tmp.c3, tmp.c4, tmp.ci, tmp.l, tmp.n, tmp.target, tmp.v, tmp.w1, tmp.w2, tmp.w3, tmp.w4, w1, w2, w3, w4, tmp.lw, tmp.vw, tmp.vw1, tmp.vw2, tmp.vw3, tmp.vw4) # housecleaning
+## housecleaning
+rm(c1, c2, c3, c4, I, i, j, max.tmp, n, pat, save.col, save.label, save.vote, sel, sel7, target.cols, tmp, tmp.c1, tmp.c2, tmp.c3, tmp.c4, tmp.ci, tmp.l, tmp.n, tmp.target, tmp.v, tmp.w1, tmp.w2, tmp.w3, tmp.w4, w1, w2, w3, w4, tmp.lw, tmp.vw, tmp.vw1, tmp.vw2, tmp.vw3, tmp.vw4)
+                                        
 
 ## winner (sorts data to have largest vote-winning party in column 1)
-# handy function to sort one data frame's rows by order of another, matching data frame
-# if my machine use scripts in disk
+## handy function to sort one data frame's rows by order of another, matching data frame
+## if my machine use scripts in disk
 pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
     "~/Dropbox/data/useful-functions",
     "https://raw.githubusercontent.com/emagar/useful-functions/master"
     )
-# Reads sortBy function
+## Reads sortBy function
 source( paste(pth, "sortBy.r", sep = "/") )
 rm(pth)
 
@@ -746,7 +752,7 @@ rm(pth)
 ## sl[156,]
 ## x
 
-# sort coalition-aggregated data columnwise
+## sort coalition-aggregated data columnwise
 tail(cv)
 tail(cl)
 ###########################################
@@ -769,7 +775,7 @@ save.image("tmp.RData")
 ## setwd(dd)
 ## load("tmp.RData")
 
-# Reads functions
+## Reads functions
 pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
     "~/Dropbox/data/useful-functions",
     "https://raw.githubusercontent.com/emagar/useful-functions/master"
@@ -778,18 +784,18 @@ source( paste(pth, "moveme.r", sep = "/") )
 source( paste(pth, "notin.r", sep = "/") )
 rm(pth)
 
-# rename objects so that dat now has coalition aggregates
+## rename objects so that dat now has coalition aggregates
 dat.orig <- dat # duplicate original data
 dat[,sel.l] <- cl.sorted # return manipulated labels to data
 dat[,sel.v] <- cv.sorted # return manipulated votes to data
 dat[,sel.v] <- lapply(dat[,sel.v],as.numeric) # make numeric (in síndicos cv.sorted became str)
 head(dat)
 str(dat)
-# prepare coalition-split object for export
+## prepare coalition-split object for export
 dat.split <- dat.orig
 dat.split[,sel.l] <- sl # return manipulated labels to data
 dat.split[,sel.v] <- sv # return manipulated votes to data
-# move dcoal and ncoal columns before v01
+## move dcoal and ncoal columns before v01
 tmp <- dat # duplicate if I mess up
 colnames(dat)
 dat <- dat[moveme(names(dat), "dcoal before v01")]
@@ -807,7 +813,7 @@ rm(sv, sl, cv, cl, cv.sorted, cl.sorted, sel.l, sel.v, v, l, tmp)
 dat$v24 <- dat$l24 <- dat$v25 <- dat$l25 <- NULL # drop redundant columns
 ##dat$v09 <- dat$l09 <- dat$v10 <- dat$l10 <- dat$v11 <- dat$l11 <- dat$v12 <- dat$l12 <- dat$v13 <- dat$l13 <- dat$v14 <- dat$l14 <- NULL # drop redundant columns (for síndicos)
 dat$win <- dat$l01
-# move win column before v01
+## move win column before v01
 tmp <- dat # duplicate if I mess up
 dat <- dat[moveme(names(dat), "win before v01")]
 colnames(dat)
@@ -843,11 +849,11 @@ dat <- dat[moveme(names(dat), "mg after win")]
 table(dat$status)
 sel <- grep("uyc", dat$status)
 dat[sel, c("emm","mun","yr","efec","status")]
-# drop uyc
+## drop uyc
 table(dat$v01[sel]==0) # all report no votes?
 if (length(sel)>0) dat <- dat[-sel,]
 
-# sort columns
+## sort columns
 dat <- dat[moveme(names(dat), "efec before nr")]
 
 ## Drop ord, dcoal for saving
@@ -860,17 +866,17 @@ dat$ord <- dat$dcoal <- NULL
 ## ################################################### ##
 #########################################################
 
-# add dextra dummy
+## add dextra dummy
 dat$dextra <- 0
 dat$dextra[grep("extra", dat$status)] <- 1
 table(dat$dextra)
 
-# drop these obs from analysis
+## drop these obs from analysis
 table(dat$status)
 ##drop.r <- grep("cancelled|missing|litigio|pending", dat$status)
 drop.r <- grep("pending", dat$status)
 
-# drop these cols to trim file size for gsheets
+## drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "mg", "nr", "nulos", "tot", "fuente", "notas", "x", "X")
 ncol(dat[,      colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in%    drop.c)
@@ -881,7 +887,7 @@ if (length(drop.r)==0) {
     dat2 <- dat[-drop.r,]
 }
 
-# subsets by yrs
+## subsets by yrs
 sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
 sel2 <- which(dat2$yr>=1982 & dat2$yr<1990)
 sel3 <- which(dat2$yr>=1990 & dat2$yr<2000)
@@ -900,31 +906,31 @@ length(sel6); length(sel6)*58 < 400000
 ## 16aug2024: add mg after win ##
 #################################
 
-# save full file
+## save full file
 write.csv(dat2, file = "aymu1970-on.coalAgg.csv", row.names = FALSE) ## use dat instead if keeping drop.r obs
 ##write.csv(dat2, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
-# subset ~1970s
+## subset ~1970s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel1,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1970s.csv", row.names = FALSE)
-# subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
+## subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel2,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1980s.csv", row.names = FALSE)
-# subset 1990s
+## subset 1990s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel3,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1990s.csv", row.names = FALSE)
-# subset 2000s
+## subset 2000s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel4,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2000s.csv", row.names = FALSE)
-# subset 2010s
+## subset 2010s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel5,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2010s.csv", row.names = FALSE)
-# subset 2020s
+## subset 2020s
 dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
 dat2 <- dat2[sel6,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
@@ -943,7 +949,7 @@ rm(dat2)
 table(dat.split$status)
 sel <- grep("uyc", dat.split$status)
 dat.split[sel, c("emm","mun","yr","efec","status")]
-# drop uyc
+## drop uyc
 table(dat.split$v01[sel]==0) # all report no votes?
 if (length(sel)>0) dat.split <- dat.split[-sel,]
 ##
@@ -955,14 +961,14 @@ sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
 l <- dat.split[,sel.l] # subset label columns
 sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
 v <- dat.split[,sel.v] # subset vote columns
-# need to manipulate indicator: dummy had at least one coalition
+## need to manipulate indicator: dummy had at least one coalition
 dat.split$dhascoal <- rep(0, nrow(dat.split))
 for (i in 1:ncol(l)){
     dat.split$dhascoal[grep("-", l[,i])] <- 1
 }
 table(dhascoal=dat.split$dhascoal)
-#
-# function manipulate cases by hand: select state-year function grants all joint votes to party reported first in label
+##
+## function manipulate cases by hand: select state-year function grants all joint votes to party reported first in label
 by.hand <- function(edo.cyc = NA){ # example: edo.cyc = "ags-12"
     sel <- grep(edo.cyc, dat.split$emm)
     for (i in 1:ncol(l)){
@@ -973,8 +979,8 @@ by.hand <- function(edo.cyc = NA){ # example: edo.cyc = "ags-12"
     dat.split$dhascoal[sel] <- 0 # reset indices
     return(dat.split)
 }
-#
-# manipulate cases where source offers no clue about intra-coal vote split --- all votes to 1st pty listed
+##
+## manipulate cases where source offers no clue about intra-coal vote split --- all votes to 1st pty listed
 dat.split <- by.hand("ags-12")
 dat.split <- by.hand("ags-13")
 dat.split <- by.hand("bc-11")
@@ -1086,13 +1092,13 @@ dat.split <- by.hand("ver-11") # 2000 pri-chicos to pri
 dat.split <- by.hand("yuc-11") # 2001 pt-conve to pt
 dat.split <- by.hand("yuc-13") # 2007 pt-conve to pt
 dat.split <- by.hand("yuc-16") # 2015 pes-ph to pes
-#
+##
 table(dat.split$dhascoal)
-# drop little-use columns
+## drop little-use columns
 dat.split$dhascoal <- dat.split$dcoal <- NULL
 dat.split$ord <- dat.split$fuente <- NULL
 dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
-#
+##
 ## # debug
 ## tmp <- dat.split[dat.split$dhascoal==1,]; i <- 1
 ## tmp[i,]
@@ -1109,18 +1115,18 @@ dat.split$tot <- dat.split$nr <- dat.split$nulos <- NULL
 ##########
 ## save ##
 ##########
-# repeat this block from above, in case dat.split is sorted differently
+## repeat this block from above, in case dat.split is sorted differently
 
-# drop these obs for analysis
+## drop these obs for analysis
 table(dat.split$status)
-##drop.r <- grep("cancelled|missing|litigio|pending", dat$status)
+#drop.r <- grep("cancelled|missing|litigio|pending", dat$status)
 drop.r <- grep("pending", dat$status)
 
-# could import ncand from dat here
+## could import ncand from dat here
 table(dat$emm==dat.split$emm)
 dat.split$ncand <- dat$ncand
 
-# drop these cols to trim file size for gsheets
+## drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
             "date", "edon", "dextra") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
@@ -1132,7 +1138,7 @@ if (length(drop.r)>0) {
 } else {
     dat.split2 <- dat.split
 }
-# subsets by yrs
+## subsets by yrs
 sel1 <- which(dat.split2$yr>=1970 & dat.split2$yr<1982)
 sel2 <- which(dat.split2$yr>=1982 & dat.split2$yr<1990)
 sel3 <- which(dat.split2$yr>=1990 & dat.split2$yr<2000)
@@ -1147,31 +1153,31 @@ length(sel5); length(sel5)*57 < 400000
 length(sel6); length(sel6)*57 < 400000
 #6756*58
 
-# save full file
+## save full file
 write.csv(dat.split2, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)  ## use dat.split instead if keeping drop.r obs
 
 
-# subset ~1970s
+## subset ~1970s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel1,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1970s.csv", row.names = FALSE)
-# subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
+## subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel2,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1980s.csv", row.names = FALSE)
-# subset 1990s
+## subset 1990s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel3,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1990s.csv", row.names = FALSE)
-# subset 2000s
+## subset 2000s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel4,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2000s.csv", row.names = FALSE)
-# subset 2010s
+## subset 2010s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel5,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2010s.csv", row.names = FALSE)
-# subset 2020s
+## subset 2020s
 dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel6,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2020s.csv", row.names = FALSE)
@@ -1189,7 +1195,7 @@ write.csv(dat.i[dat.i$edon>=22,],                 file = "smaller-for-gsheets/ay
 ## write.csv(dat.i[dat.i$edon <20,], file = "smaller-for-gsheets/aymu.incumbents-ags-nl.csv", row.names = FALSE)
 ## write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
 
-# clean
+## clean
 rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
 
 
