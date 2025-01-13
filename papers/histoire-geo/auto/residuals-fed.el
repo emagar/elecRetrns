@@ -33,12 +33,13 @@
     "dcolumn"
     "arydshln"
     "todonotes"
-    "hyperref")
+    "hyperref"
+    "bigfoot")
    (TeX-add-symbols
     '("emm" 1)
     "mc")
    (LaTeX-add-labels
-    "fig:1"
+    "T:coverage"
     "ts-eq"
     "alpha-eq")
    (LaTeX-add-bibliographies
