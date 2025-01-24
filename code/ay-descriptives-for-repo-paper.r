@@ -106,9 +106,9 @@ sel.r <- grep("proj", d$status); d <- d[-sel.r,] ## drop missing cases projected
 table(d$status)
 
 
-#######################
-## prep party shares ##
-#######################
+#########################################
+## prep party shares w split coal data ##
+#########################################
 d5 <- d
 d5$pan    <- 0
 d5$pri    <- 0
@@ -118,14 +118,32 @@ d5$pvem   <- 0
 d5$oth    <- 0
 sel <- grep("v[0-9]{2}", colnames(d5)); v <- d5[,sel]; d5 <- d5[,-sel] ## extract votes
 sel <- grep("l[0-9]{2}", colnames(d5)); l <- d5[,sel]; d5 <- d5[,-sel] ## extract party labels
-
 ## revise efec
 d5$efec <- rowSums(v)
-## full list of labels
 ## replace indep_name w indep
 for (i in 1:ncol(l)){
     l[grep("indep_", l[,i]),i] <- "indep"
 }
+## initial assignment pan pri etc
+tmp <- rep(0,nrow(d5)); ddone <- data.frame(pan=tmp, pri=tmp, prd=tmp, morena=tmp, pvem=tmp) ## will indicate solo vote has been assigned
+for (i in 1:ncol(l)){
+    #i <- 1 # debug
+    sel <- grep("^pan$", l[,i]) ## find pan solo obs and assign to $pan
+    d5$pan[sel] <- v[sel,i]; ddone$pan[sel] <- 1
+    sel <- grep("^pri$", l[,i]) ## find pri solo obs and assign to $pri
+    d5$pri[sel] <- v[sel,i]; ddone$pri[sel] <- 1
+    sel <- grep("^prd$", l[,i]) ## find prd solo obs and assign to $prd
+    d5$prd[sel] <- v[sel,i]; ddone$prd[sel] <- 1
+    sel <- grep("^morena$", l[,i]) ## find morena solo obs and assign to $morena
+    d5$morena[sel] <- v[sel,i]; ddone$morena[sel] <- 1
+    sel <- grep("^pvem$", l[,i]) ## find pvem solo obs and assign to $pvem
+    d5$pvem[sel] <- v[sel,i]; ddone$pvem[sel] <- 1
+}
+## second-step assignment: for cases where no breakdown, all coal vote to pty (except pan-pri...)
+
+## full list of labels
+
+
 table(as.matrix(l))
 x
 

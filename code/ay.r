@@ -705,6 +705,11 @@ table(max.tmp) # must have 0s and 1s only (number of parties being reported by r
 
 ## plug ncoal into data
 dat$ncoal  <- ci$ncoal
+## plug coal descriptions into data
+dat$coal1 <- ci$coal1
+dat$coal2 <- ci$coal2
+dat$coal3 <- ci$coal3
+dat$coal4 <- ci$coal4
 
 ## prepare object with coalition party weights
 w <- as.list(rep("noCoal",I))
@@ -884,7 +889,7 @@ table(dat$status)
 drop.r <- grep("pending", dat$status)
 
 ## drop these cols to trim file size for gsheets
-drop.c <- c("ord", "status", "dcoal", "win", "mg", "nr", "nulos", "tot", "fuente", "notas", "x", "X")
+drop.c <- c("ord", "status", "dcoal", "win", "mg", "nr", "nulos", "tot", "fuente", "notas", "x", "X", "check", "dpre1997")
 ncol(dat[,      colnames(dat) %notin% drop.c])
 drop.c <- which(colnames(dat) %in%    drop.c)
 
@@ -893,6 +898,10 @@ if (length(drop.r)==0) {
 } else {
     dat2 <- dat[-drop.r,]
 }
+
+## drop coal1 coal2 coal3 coal4 (they're for coalSplit only)
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
+ncol(dat2)
 
 ## subsets by yrs
 sel1 <- which(dat2$yr>=1970 & dat2$yr<1982)
@@ -918,27 +927,56 @@ write.csv(dat2, file = "aymu1970-on.coalAgg.csv", row.names = FALSE) ## use dat 
 ##write.csv(dat2, file = "ay-nonfused/aymu1998-on-Chihuahua-sind.coalAgg.csv", row.names = FALSE) # for cua síndicos
 
 ## subset ~1970s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
 dat2 <- dat2[sel1,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1970s.csv", row.names = FALSE)
 ## subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
 dat2 <- dat2[sel2,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1980s.csv", row.names = FALSE)
 ## subset 1990s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
 dat2 <- dat2[sel3,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg1990s.csv", row.names = FALSE)
 ## subset 2000s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
 dat2 <- dat2[sel4,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2000s.csv", row.names = FALSE)
 ## subset 2010s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
 dat2 <- dat2[sel5,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2010s.csv", row.names = FALSE)
 ## subset 2020s
-dat2 <- dat[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) { # restore for manipulation
+    dat2 <- dat[-drop.r, -drop.c]
+} else {
+    dat2 <- dat[       , -drop.c]
+}
+dat2 <- dat2[, -which(colnames(dat2) %in% c("coal1", "coal2", "coal3", "coal4"))]
 dat2 <- dat2[sel6,] # subset
 write.csv(dat2, file = "smaller-for-gsheets/aymu.coalAgg2020s.csv", row.names = FALSE)
 
@@ -1135,7 +1173,7 @@ dat.split$ncand <- dat$ncand
 
 ## drop these cols to trim file size for gsheets
 drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "notas",
-            "date", "edon", "dextra") # drops these additional cols to accommodate 4 more v/l cols
+            "date", "edon", "dextra", "coal1", "coal2", "coal3", "coal4", "check", "dpre1997") # drops these additional cols to accommodate 4 more v/l cols
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
@@ -1152,20 +1190,25 @@ sel3 <- which(dat.split2$yr>=1990 & dat.split2$yr<2000)
 sel4 <- which(dat.split2$yr>=2000 & dat.split2$yr<2010)
 sel5 <- which(dat.split2$yr>=2010 & dat.split2$yr<2020)
 sel6 <- which(dat.split2$yr>=2020 & dat.split2$yr<2030)
-length(sel1); length(sel1)*57 < 400000 # 400k cells is gsheets max
-length(sel2); length(sel2)*57 < 400000
-length(sel3); length(sel3)*57 < 400000
-length(sel4); length(sel4)*57 < 400000
-length(sel5); length(sel5)*57 < 400000
-length(sel6); length(sel6)*57 < 400000
-#6756*58
+
+length(sel1); length(sel1)*59 < 400000 # 400k cells is gsheets max
+length(sel2); length(sel2)*59 < 400000
+length(sel3); length(sel3)*59 < 400000
+length(sel4); length(sel4)*59 < 400000
+length(sel5); length(sel5)*59 < 400000
+length(sel6); length(sel6)*59 < 400000
+##6756*58
 
 ## save full file
 write.csv(dat.split2, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)  ## use dat.split instead if keeping drop.r obs
 
 
 ## subset ~1970s
-dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) {  # restore for manipulation
+    dat.split2 <- dat.split[-drop.r, -drop.c]
+} else {
+    dat.split2 <- dat.split[       , -drop.c]
+}
 dat.split2 <- dat.split2[sel1,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1970s.csv", row.names = FALSE)
 ## subset ~1980s (1980s need to be split due to oax pre-usos y costumbres) 
@@ -1173,19 +1216,35 @@ dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
 dat.split2 <- dat.split2[sel2,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1980s.csv", row.names = FALSE)
 ## subset 1990s
-dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) {  # restore for manipulation
+    dat.split2 <- dat.split[-drop.r, -drop.c]
+} else {
+    dat.split2 <- dat.split[       , -drop.c]
+}
 dat.split2 <- dat.split2[sel3,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit1990s.csv", row.names = FALSE)
 ## subset 2000s
-dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) {  # restore for manipulation
+    dat.split2 <- dat.split[-drop.r, -drop.c]
+} else {
+    dat.split2 <- dat.split[       , -drop.c]
+}
 dat.split2 <- dat.split2[sel4,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2000s.csv", row.names = FALSE)
 ## subset 2010s
-dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) {  # restore for manipulation
+    dat.split2 <- dat.split[-drop.r, -drop.c]
+} else {
+    dat.split2 <- dat.split[       , -drop.c]
+}
 dat.split2 <- dat.split2[sel5,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2010s.csv", row.names = FALSE)
 ## subset 2020s
-dat.split2 <- dat.split[-drop.r, -drop.c] # restore for manipulation
+if (length(drop.r)>0) {  # restore for manipulation
+    dat.split2 <- dat.split[-drop.r, -drop.c]
+} else {
+    dat.split2 <- dat.split[       , -drop.c]
+}
 dat.split2 <- dat.split2[sel6,] # subset
 write.csv(dat.split2, file = "smaller-for-gsheets/aymu.coalSplit2020s.csv", row.names = FALSE)
 
