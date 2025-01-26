@@ -12,7 +12,7 @@ colnames(d)
 
 # make numeric
 sel <- grep("v[.]*|nr|nul|tot|lisnom", colnames(d))
-sel <- c(4:47)
+sel <- c(7:39,50)
 sel <- c("pan","pri","prd","pvem","pt","mc","morena","indep","pan.pri.prd","pan.pri","pan.prd","pri.prd","pvem.pt.morena","pvem.pt","pvem.morena","pt.morena","nr","nul","tot","lisnom")
 v <- d[,sel]
 v[1,]
@@ -58,7 +58,7 @@ pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
     )
 source( paste(pth, "inegi2ife.r", sep = "/") )
 rm(pth)
-d$ife <- d$ife + 14000
+d$ife <- d$ife + 16000
 d$inegi <- ife2inegi(d$ife)
 
 setwd("~/Downloads")
