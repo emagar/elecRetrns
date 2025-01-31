@@ -1262,7 +1262,7 @@ write.csv(dat.i[dat.i$edon>=22,],                 file = "smaller-for-gsheets/ay
 ## write.csv(dat.i[dat.i$edon>=20,], file = "smaller-for-gsheets/aymu.incumbents-oax-zac.csv", row.names = FALSE)
 
 ## clean
-rm(tmp,tmp1,tmp2,sel.l,sel.r,sel.v,i)
+rm(tmp,sel.l,sel.r,sel.v,i)
 
 
 ## # check lisnom

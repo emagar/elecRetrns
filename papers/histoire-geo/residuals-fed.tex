@@ -94,7 +94,9 @@ Mexico's 2,477 (as of January 2025) municipios or municipio-equivalents, into wh
 Municipalities have authority to collect property taxes and fees from public services. State capacity is heterogeneous \citep{garfias.state.cap.2018}, many municipalities, especially in rural Mexico, remain fiscally unorganized and obtain the lion's share of their financial resources from federal revenue sharing and earmarked federal investments \citep{diaz.cayeros.2006, figueroa-mansur-itam.2024}. 
 
 \subsection{Government structure}
-Municipal authority is vested in the \emph{Ayuntamiento}, a popularly-elected board deciding by majority rule \citep{robles-mtz.Municipio.2009}. A municipal council (\emph{cabildo}) and a mayor (\emph{presidente municipal} or \emph{primer regidor}) make up the Ayuntamiento. The mayor is executive officer, presides council sessions with voice and the tie-breaking vote, and holds variable municipal appointment powers. Councils, variable in size depending on population, are made up of (1) ranked \emph{regidores} (also called \emph{concejales}), who propose and vote municipal policy through edicts and rulebooks, and (2) possibly one or more \emph{síndicos}, officers in charge of the Treasury and the municipio's legal representation. Where present,\footnote{One state at least \citep[Sinaloa, see][]{rmz-millan.2000} has no síndicos.} síndicos can be elected officers, or council-appointed from among regidores. Municipalities have no judicial power. States do. 
+Municipal authority is vested in the \emph{Ayuntamiento}, a popularly-elected board deciding by majority rule \citep{robles-mtz.Municipio.2009}. A municipal council (\emph{cabildo}) and a mayor (\emph{presidente municipal} or \emph{primer regidor}) make up the Ayuntamiento. The mayor is executive officer, presides council sessions with voice and the tie-breaking vote, and holds variable municipal appointment powers. Councils, variable in size depending on population, are made up of (1) ranked \emph{regidores} (also called \emph{concejales}), who propose and vote municipal policy through edicts and rulebooks, and (2) possibly one or more \emph{síndicos}, officers in charge of the Treasury and the municipio's legal representation. Where present,\footnote{One state at least \citep[Sinaloa, see][]{rmz-millan.2000} has no síndicos.} síndicos can be elected officers, or council-appointed from among regidores. Municipalities have no judicial power. States do.
+
+Mexico City has a special status. Before 1997, the mayor of the Federal District was a presidential appointee, who would in turn appoint delegates for the city's 16 administrative jurisdictions (called \emph{delegaciones}). A decentralizing reform made all these elected offices in 1997. The Federal District did not, however, gain status as a state, and delegations remained as quasi-municipalities with an elected executive with no fiscal powers (taxation remains in the hands of the city executive) and no elected council. The city further reformed in 2016, adding a council to the quasi-municipalities (now called \emph{alcaldías}) and dropping the name Federal District, becoming simply Mexico City \citep{rabell.2017}.
 
 \subsection{Modal electoral institutions}
 Presidents and síndicos (where elected) are elected by plurality. Regidores are elected in two groups (of variable sizes across states), one group by plurality, the other by proportional representation.\footnote{As of 2010, the mean Ayuntamiento had two-thirds of majority seats, with considerable variance. Guanajuato's municipalities, the lowest, had 20 percent. Tabasco's, the highest, had 81 percent. See \citet[][:14]{gil.2010}.} 
@@ -133,7 +135,7 @@ The municipal election dataset has been under construction for some time. The or
 
 The unit of observation is the municipality, reporting the votes each party or electoral coalition won in periodic elections.
 
-Data is available in a handful of states since the early 1970s, but the full cross-sectional time-series in the dataset really begins in the 1979--1981 trienium. This period, inaugurated by a major federal electoral reform (the LFOPPE), lowered legal entry barriers and adopted a more proportional electoral formula in Congress \citep[:116]{molinar.1991a}. As a result, half a dozen new parties entered the electoral arena. Table \ref{T:coverage} summarizes data coverage by state, reporting the number of municipalities (which increased over the years in most states)\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded.}
+Data is available in a handful of states since the early 1970s, but the full cross-sectional time-series in the dataset really begins in the 1979--1981 trienium. This period, inaugurated by a major federal electoral reform (the LFOPPE), lowered legal entry barriers and adopted a more proportional electoral formula in Congress \citep[:116]{molinar.1991a}. As a result, half a dozen new parties entered the electoral arena. Table \ref{T:coverage} summarizes data coverage by state, reporting the number of municipalities (which increased over the years in most states)\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded. State abbreviations are different than those used by Mexican government agencies, some were slightly altered so that sorting them in a standard spreadsheet retains the actual alphabetical ordering of the states (e.g. Guanajuato and Guerrero are abbreviated gua and gue instead of the official gto and gro).} Mexico City's populous units are included in the data despite their special status.
 
 \begin{table}
 \resizebox{.8\textwidth}{!}{
@@ -171,15 +173,36 @@ Data is available in a handful of states since the early 1970s, but the full cro
       30 & Veracruz                       (ver)        &   203--212           & 1976--2024 \\
       31 & Yucatán                        (yuc)        &        106           & 1981--2024 \\
       32 & Zacatecas                      (zac)        &     56--58           & 1970--2024 \\ \hline
-      & \mc{1}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
+        & \mc{1}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
     \end{tabular}
 }
-\caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997.}\label{T:coverage}
+\caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see the text for details.}\label{T:coverage}
 \end{table}
+
+Municipal election vote returns are distributed as a large cross-section time-series. Data is stored as text in comma-separated-values (\verb|csv|) format, easily accessible for inspection with spreadsheet software such as Microsoft Excel or open-source Libreoffice Calc.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most Latin American special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and the vote total that each party or coalition won.\footnote{The repository's \verb|README.md| file includes a detailed codebook describing what is in each spreadsheet column/field.}
+
+Vote returns appear in column pairs for each party or coalition: columns \verb|v01, v02, ...| report raw vote totals, columns \verb|l01, l02, ...| report the label of the party the votes belong to. Figure \ref{F:scrn} offers a glimpse for the state con Baja California's five municipalities over three election cycles. In Ensenada 1998, $v01 = 30660$, $l01 = pan$, $v02 = 31951$ and $l02 = pri$ reports that the National Action Party (PAN) won 30,660 votes, slightly below the PRI's 31,951 votes. The vote/label pairs can accommodate heterogeneous state party systems over four decades of high mutability  
+
+The vote/label pairs accommodates state party system heterogeneity over four decades of high mutability, and ephemerous electoral coalitions in a relatively limited number of columns.
+
+Vote returns appear in columns \verb|v01, v02, ...| and \verb|l01, l02, ...|, which are paired. Columns \verb|v..| report raw vote totals, columns\verb|l..| report the party or coalition label the votes belong to. So a hypothestical municipality where the PAN won 1,500 and PRI State party systems over four decades are too heterogeneous
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\columnwidth]{pics/eg-spreadsheet-columns.png}
+  \caption{Screenshot with a sample of the data organization}\label{F:scrn}
+\end{figure}  
 
 Organization of the raw data.
 
-Plot shares PAN PRI PRD Morena Other each year: tiny points, mean and 80band
+Figure \ref{F:vpcts} summarizes municipal elections since 1979. Plot shares PAN PRI PRD Morena Other each year: tiny points, mean and 80band 
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/vpct1979-2024.pdf}
+  \caption{The evolution of electoral parties in municipal races 1979--2024. Lines are the vote percentage each party won in the median municipality across time (the trend is smoothed for clarity). Each color-coded tiny circle is one individual party's vote percentage in one municipal election (slightly x-jittered for visibility and excluding the residual `others' category).}\label{F:vpcts}
+\end{figure}  
+
+
 
 Coaliciones and candidatos comunes.
 
