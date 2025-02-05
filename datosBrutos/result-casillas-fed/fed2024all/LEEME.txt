@@ -1,0 +1,178 @@
+*************************************************************************
+*	 	Elección de Diputaciones| 2024					
+*												
+*		Cómputos Distritales								
+
+*************************************************************************
+
+A. El Programa de Cómputos Web permite la descarga de la base de datos a través de un archivo .zip, el cual contiene archivos .csv.
+
+B. Los archivos .csv contienen la información de todas las actas de la base de datos y se nombran como "DIP_FED_2024.csv" y "DIP_FED_CANDIDATURAS_2024.csv".
+
+C.  La información en el archivo .csv se divide en dos secciones:
+
+    a. Primera sección, encabezado: 
+
+        i. Se presenta la hora y la fecha de la generación de reportes y son correspondientes a las que aparece en los reportes HTML. Ejemplo:
+            05/06/2024 08:00 (UTC-6)
+     
+        ii. Se presenta el estatus de las actas que se están incluyendo y sus respectivos porcentajes calculados, separados por pipes "|", ejemplo:
+	
+            ACTAS_ESPERADAS|ACTAS_COMPUTADAS|PORCENTAJE_ACTAS_COMPUTADAS|LISTA_NOMINAL_ACTAS_COMPUTADAS|TOTAL_VOTOS|PORCENTAJE_PARTICIPACION_CIUDADANA
+
+            La descripción de cada campo se muestra a continuación:
+
+            1. ACTAS_ESPERADAS - Número de Actas correspondientes, por cada tipo de elección, de todas las casillas aprobadas por el Consejo Distrital Federal. Este conjunto de Actas de Escrutinio y Cómputo conforma el Catálogo de Actas esperadas.
+
+            2. ACTAS_COMPUTADAS - Número de Actas de las casillas aprobadas, de las cuales se tiene su correspondiente Acta de Escrutinio y Cómputo al momento del corte de información; la suma total de votos no excede la lista nominal aprobada para la casilla a la que pertenece dicha acta, más el número de representantes de partidos políticos o candidaturas independientes y no caen en cualquiera de los supuestos siguientes: todos los campos en los cuales asientan votos para un partido, una coalición, candidaturas no registradas y votos nulos son ilegibles; o todos ellos están vacíos. 
+
+            3. PORCENTAJE_ACTAS_COMPUTADAS - Porcentaje de Actas calculado respecto del total de actas esperadas, que al momento del corte de información, han sido computadas. Los decimales son expresados a cuatro posiciones y el decimal de la cuarta posición es truncado y no redondeado.   
+
+            4. LISTA_NOMINAL_ACTAS_COMPUTADAS - Es el agregado del número de ciudadanos con derecho a votar respecto a las casillas que integran la lista nominal de las casillas aprobadas, cuyas actas ya han sido computadas.
+
+            5. TOTAL_VOTOS - El total de votos emitidos. El total de votos se calcula mediante la suma que realiza automáticamente el sistema informático de Cómputos.
+
+            6. PORCENTAJE_PARTICIPACION_CIUDADANA - Porcentaje de ciudadanos que votaron con base en la lista nominal de las casillas aprobadas, cuyas actas ya han sido computadas. 
+
+    b.  Segunda sección, datos del Acta de Escrutinio y Cómputo. 
+    Corresponde a los datos de identificación del acta de escrutinio y cómputo, extraídos de la base de datos; cada línea corresponde a un acta, están separados por pipes "|". Los datos son los siguientes:
+
+      
+        CLAVE_CASILLA|CLAVE_ACTA|ID_ENTIDAD|ENTIDAD|ID_DISTRITO_FEDERAL|DISTRITO_FEDERAL|SECCION|ID_CASILLA|TIPO_CASILLA|EXT_CONTIGUA|CASILLA|TIPO_ACTA|PAN|PRI|PRD|PVEM|PT|MC|MORENA|CANDIDATO/A INDEPENDIENTE|PAN-PRI-PRD|PAN-PRI|PAN-PRD|PRI-PRD|PVEM-PT-MORENA|PVEM-PT|PVEM-MORENA|PT-MORENA|CANDIDATO/A NO REGISTRADO/A|VOTOS NULOS|TOTAL_VOTOS_CALCULADOS|LISTA_NOMINAL|OBSERVACIONES|MECANISMOS_TRASLADO|FECHA_HORA
+									
+        1. CLAVE_CASILLA - Clave única de casilla.		
+
+        2. CLAVE_ACTA - Clave única de acta.
+
+        3. ID_ENTIDAD - Muestra el identificador de la Entidad.
+
+        4. ENTIDAD - Indica el nombre de la Entidad Federativa a la que corresponde el Acta.
+
+        5. ID_DISTRITO_FEDERAL - Número del Distrito Electoral de la Entidad acorde al tipo de elección.	
+
+        6. DISTRITO_FEDERAL - Nombre del distrito electoral de la entidad acorde al tipo de elección.
+
+        7. SECCION - Corresponde a la clave de la sección de la casilla.
+
+        8. ID_CASILLA - Número de la casilla. 
+
+        9. TIPO_CASILLA - Se refiere al tipo de casilla o Mesa de Escrutinio y Cómputo (MEC): 
+            Para casillas:
+
+                B.- Básica
+
+                C.- Contigua
+
+                E.- Extraordinaria
+
+                S.- Especial
+
+            Para Mesa de Escrutinio y Cómputo (MEC):
+
+                A.- Voto anticipado
+
+        10. EXT_CONTIGUA - Número de casilla contigua a una casilla de tipo extraordinaria.
+
+        11. CASILLA - Identifica el tipo de casilla y toma los siguientes valores:
+
+            1. Urbana
+
+            2. No Urbana
+			
+        12. TIPO_ACTA - Número que el Acta de Escrutinio y Cómputo trae impreso.
+				
+            4: Acta de Casilla y Mesas de Escrutinio y Cómputo para Diputaciones.
+
+            4EMR: Acta de Casilla Especial para Diputaciones de Mayoría Relativa.
+
+            4ERP: Acta de Casilla Especial para Diputaciones de Representación Proporcional.
+        
+        13. PAN - Número de votos para el Partido Acción Nacional
+
+        14. PRI - Número de votos para el Partido Revolucionario Institucional
+
+        15. PRD - Número de votos para el Partido de la Revolución Democrática
+
+        16. PVEM - Número de votos para el Partido Verde Ecologista de México
+
+        17. PT - Número de votos para el Partido del Trabajo
+		
+        18. MC - Número de votos para el Partido Movimiento Ciudadano
+
+        19. MORENA - Número de votos para el Partido Morena
+		
+		20. CANDIDATO/A INDEPENDIENTE - Número de votos para la candidatura independiente
+			
+		21. PAN_PRI_PRD - Número de votos para la coalición PAN, PRI y PRD
+					
+		22. PAN_PRI - Número de votos para la coalición PAN y PRI
+				
+		23. PAN_PRD - Número de votos para la coalición PAN y PRD
+					
+		24. PRI_PRD - Número de votos para la coalición PRI y PRD
+			
+		25. PVEM_PT_MORENA - Número de votos para la coalición PVEM, PT y MORENA 
+
+        26. PVEM_PT - Número de votos para la combinación PVEM y PT
+
+        27. PVEM_MORENA - Número de votos para la combinación PVEM y MORENA
+
+        28. PT_MORENA - Número de votos para la combinación PT y MORENA
+
+        29. CANDIDATO/A NO REGISTRADO/A - Número de votos para candidaturas no registradas
+
+        30. VOTOS NULOS - Número de votos nulos
+
+        31. TOTAL_VOTOS_CALCULADOS -  Suma de los votos asentados en las actas para: los partidos políticos, combinaciones de estos, votos para candidaturas no registradas y votos nulos. El total de votos se calcula mediante la suma que realiza automáticamente el sistema informático de Cómputos Web.
+
+        32. LISTA_NOMINAL -  Número de ciudadanos con derecho a votar que integran la lista nominal de las Actas de Escrutinio y Cómputo computadas.
+
+        32. OBSERVACIONES - Dependiendo del escenario en el que el acta sea computada existen los siguientes casos:
+				
+            - Cotejo (Levantada en Casilla): Acta comparada contra la que obra en el poder de la presidencia del Consejo.
+				
+            - Recuento (Levantada en Consejo Distrital): Acta para la cual se llevó a cabo un nuevo escrutinio y cómputo de una casilla en el Pleno del Consejo Distrital.
+				
+            - Paquete no recibido (Para recuento-SRA): Paquete que fue clasificado para recuento desde el Sistema de Registro de Actas y se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que no se recibió el paquete electoral en la sede del Consejo Distrital.
+				
+            - Recuento (Para recuento-SRA): Paquete que fue clasificado para recuento desde el Sistema de Registro de Actas.
+				
+            - Casilla no instalada (Para recuento-SRA): Paquete que fue clasificado para recuento desde el Sistema de Registro de Actas y se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que el día de la Jornada Electoral la casilla correspondiente no fue instalada.
+				
+            - Paquete no recibido (Para recuento-SC): Paquete que fue clasificado para recuento desde el Sistema de Cómputos Distritales y se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que no se recibió el paquete electoral en la sede del Consejo Distrital.
+				
+            - Recuento (Para recuento-SC): Paquete que fue clasificado para recuento desde el Sistema de Cómputos Distritales.
+				
+            - Casilla no instalada (Para recuento-SC): Paquete que fue clasificado para recuento desde el Sistema de Cómputos Distritales y se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que el día de la Jornada Electoral la casilla correspondiente no fue instalada.
+				
+            - Casilla no instalada: Paquete para el cual se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que el día de la Jornada Electoral la casilla correspondiente no fue instalada.
+				
+            - Cotejo (Casilla instalada con suspensión definitiva de la votación): Acta comparada contra la que obra en el poder de la presidencia del Consejo, en la cual la casilla correspondiente hubo suspensión definitiva de la votación.
+				
+            - Paquete no recibido: Paquete para el cual se determina que no se cuenta con el Acta de Escrutinio y Cómputo de Casilla debido a que no se recibió el paquete electoral en la sede del Consejo Distrital.
+			
+            - Paquete sin boletas  (Levantada en Consejo Distrital): Acta para la cual se llevó a cabo un nuevo escrutinio y cómputo de una casilla en el Pleno del Consejo Distrital y se determinó que no cuenta con boletas electorales.
+	
+        33. MECANISMOS_TRASLADO -  Indica los mecanismos de traslado aprobados por los Consejos Distritales del INE aplicables para cada uno de los paquetes electorales, desde la casilla hasta el Consejo respectivo correspondiente. Dichos mecanismos de traslado se implementan cuando las condiciones geográficas, de infraestructura, sociopolíticas y/o meteorológicas dificultan significativamente el traslado directo al Consejo respectivo en tiempo y forma.
+
+            Los valores que puede tomar son los siguientes: 
+            (D) para los Dispositivos de Apoyo para el Traslado de Presidentes de Mesas Directiva de Casilla; 
+            (F) e (I), para los Centros de Recepción y Traslado fijos e itinerantes, respectivamente. Si el traslado del Acta no se realiza mediante alguno de estos mecanismos, el campo aparece vacío.
+
+        34. FECHA_HORA - Último movimiento registrado en el acta (Tiempo del Centro).
+
+D. El archivo de candidaturas (en formato CSV) contiene la información de todas las candidaturas por Partidos Políticos y Coalición que participan en la elección y se nombra "SEN_CANDIDATURAS_2024.csv".
+
+    i. Presenta la información de todas las candidaturas por Partidos Políticos y Coalición que participan en la elección, separados por pipes "|", ejemplo:
+
+        ID_ENTIDAD|PARTIDO_CI|CANDIDATURA_PROPIETARIA
+
+        1. ID_ENTIDAD - Muestra el identificador de la Entidad.
+        
+        2. ID_DISTRITO_FEDERAL - Número del Distrito Electoral Federal.
+
+        3. PARTIDO_CI - Establece las siglas o identificación del partido político o coalición.
+
+        4. CANDIDATURA_PROPIETARIA - Presenta el nombre de la candidata propietaria o el candidato propietario.
+
+        5. CANDIDATURA_SUPLENTE - Presenta el nombre de la candidata o el candidato suplente.

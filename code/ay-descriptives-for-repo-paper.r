@@ -18,22 +18,62 @@ rm(pth)
 ## Read data files ##
 #####################
 ## choose one
-d <- read.csv(file = "aymu1970-on.csv"          , stringsAsFactors = FALSE) # raw
-d <- read.csv(file = "aymu1970-on.coalAgg.csv"  , stringsAsFactors = FALSE) # coalitions aggregated
-d <- read.csv(file = "aymu1970-on.coalSplit.csv", stringsAsFactors = FALSE) # split coalitions
+dr <- read.csv(file = "aymu1970-on.csv"          , stringsAsFactors = FALSE) # raw
+da <- read.csv(file = "aymu1970-on.coalAgg.csv"  , stringsAsFactors = FALSE) # coalitions aggregated
+ds <- read.csv(file = "aymu1970-on.coalSplit.csv", stringsAsFactors = FALSE) # split coalitions
 
+#####################################
+## drop un-analyzable obs for good ##
+#####################################
+d <- dr
+sel.r <- grep("cancelled", d$status); d <- d[-sel.r,]
+sel.r <- grep("to-runoff", d$status); d <- d[-sel.r,]
+sel.r <- grep("missing|appointed|litigio", d$status); d <- d[-sel.r,]
+sel.r <- grep("proj", d$status); d <- d[-sel.r,] ## drop missing cases projected from df for lags
+d -> dr
+d <- da
+sel.r <- grep("cancelled", d$status); d <- d[-sel.r,]
+sel.r <- grep("to-runoff", d$status); d <- d[-sel.r,]
+sel.r <- grep("missing|appointed|litigio", d$status); d <- d[-sel.r,]
+sel.r <- grep("proj", d$status); d <- d[-sel.r,] ## drop missing cases projected from df for lags
+d -> da
+d <- ds
+sel.r <- grep("cancelled", d$status); d <- d[-sel.r,]
+sel.r <- grep("to-runoff", d$status); d <- d[-sel.r,]
+sel.r <- grep("missing|appointed|litigio", d$status); d <- d[-sel.r,]
+sel.r <- grep("proj", d$status); d <- d[-sel.r,] ## drop missing cases projected from df for lags
+d -> ds
+##
 ##################################################################################
 ## Election cycle from emm (consecutive but not necessarilly aligned w federal) ##
 ##################################################################################
-d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=TRUE)
+d <- dr ## manipulate one dataset
+d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=TRUE) # extract cycle from emm code
 d$cycle <- as.numeric(d$cycle)
 table(d$cycle)
-##
-###########################################################################
-## Use yr to make cycle aligned w federal (some extras may fall in next) ##
-###########################################################################
+## Use yr to make cycle aligned w federal (some extras may fall in next)
 d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
 table(d$cyclef)
+d -> dr ## return manipulation
+##
+d <- da ## manipulate one dataset
+d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=TRUE) # extract cycle from emm code
+d$cycle <- as.numeric(d$cycle)
+table(d$cycle)
+## Use yr to make cycle aligned w federal (some extras may fall in next)
+d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
+table(d$cyclef)
+d -> da ## return manipulation
+##
+d <- ds ## manipulate one dataset
+d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=TRUE) # extract cycle from emm code
+d$cycle <- as.numeric(d$cycle)
+table(d$cycle)
+## Use yr to make cycle aligned w federal (some extras may fall in next)
+d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
+table(d$cyclef)
+d -> ds ## return manipulation
+##
 ## ## This other, more precise route aborted, too many exceptions
 ## ## make coa cycle 13 cycle 14 and so forth
 ## sel <- which(d$edon==5 & d$cycle>=13)
@@ -58,6 +98,98 @@ table(d$cyclef)
 ## table(d$yr,d$cycle2)
 ## which(d$cycle2==1994 & d$yr==1997)
 
+#########################
+## Coalition frequency ##
+#########################
+##############################################################################################
+## Replace coalition labels with major-minor, among-majors, or minor-minor                  ##
+## (see commented block in reelec/code/ay-vote.r for original version, also vote splitting) ##
+##############################################################################################
+d <- ds ## Requires coalSplit data
+for (i in 1:4){ ## loop over 4 coalition columns
+    ## i <- 1
+    d$manip <- NA ## will receive manipulated coalition labels
+    d$l <- d[, c("coal1","coal2","coal3","coal4")[i]] ## pick one label for manipulation
+    ##
+    d$manip[d$l=="none"] <- "none"
+    ## major-party coalition below
+    sel <- grep("(?=.*pan)(?=.*prd)", d$l, perl = TRUE)
+    d$manip[sel] <- "double-major"
+    sel <- grep("(?=.*pan)(?=.*pri)", d$l, perl = TRUE)
+    d$manip[sel] <- "double-major"
+    sel <- grep("(?=.*pri)(?=.*prd)", d$l, perl = TRUE)
+    d$manip[sel] <- "double-major"
+    sel <- grep("(?=.*pan)(?=.*pri)(?=.*prd)", d$l, perl = TRUE)
+    d$manip[sel] <- "triple-major"
+    ##
+    ## Rest are major-minor
+    sel1 <- which(is.na(d$manip))
+    sel <- grep("pan-|-pan", d$l[sel1])
+    d$manip[sel1][sel] <- "pan-minor"
+    ##
+    sel1 <- which(is.na(d$manip))
+    sel <- grep("pri-|-pri", d$l[sel1])
+    d$manip[sel1][sel] <- "pri-minor"
+    ##
+    sel1 <- which(is.na(d$manip))
+    sel <- grep("prd-|-prd", d$l[sel1])
+    d$manip[sel1][sel] <- "prd-minor"
+    ##
+    sel1 <- which(is.na(d$manip))
+    sel <- grep("morena-|-morena", d$l[sel1])
+    d$manip[sel1][sel] <- "morena-minor"
+    ##
+    ## rest are other coals
+    sel1 <- which(is.na(d$manip)) 
+    d$manip[sel1] <- "minor-minor"
+    ##
+    ## ## used to check by hand
+    ## table(d$manip, useNA = "always")
+    ## sel <- which(d$manip=="minor-minor") 
+    ## table(d$l[sel])
+    ##
+    d$manip -> d[, c("coal1","coal2","coal3","coal4")[i]] ## return manipulation
+}
+## check
+table(d$coal1, useNA = "always")
+table(d$coal2, useNA = "always")
+table(d$coal3, useNA = "always")
+table(d$coal4, useNA = "always")
+## clean
+d$l <- d$manip <- NULL
+## summarize all
+library(plyr)
+d$coal.prof <- paste(d$coal1,d$coal2,d$coal3,d$coal4)
+sel <- which(d$coal.prof=="none none none none"); d$coal.prof[sel] <- "none" ## no coalitions
+d$coal.prof <- gsub(" none", "", d$coal.prof)                                ## drop remaining nones anteceded by space
+d$coal.prof <- gsub(" minor-minor|minor-minor ", "", d$coal.prof)                         ## drop minor-minor coalitions
+d$coal.prof <- gsub("minor-minor", "none", d$coal.prof)                      ## drop minor-minor coalitions
+d$coal.prof <- gsub("(pan|pri|prd|morena)[-]minor", "major-minor", d$coal.prof) ## generalize major minor
+d$coal.prof <-  sub("major-minor major-minor major-minor", "major-minor-x3", d$coal.prof) ## generalize major minor
+d$coal.prof <-  sub("major-minor major-minor", "major-minor-x2", d$coal.prof)
+d$coal.prof <-  sub("major-minor double-major", "double-major major-minor", d$coal.prof)
+d$coal.prof <-  sub("major-minor-x2 double-major", "double-major major-minor-x2", d$coal.prof)
+d$coal.prof <-  sub("major-minor triple-major", "triple-major major-minor", d$coal.prof)
+d$coal.prof <-  sub("double-major major-minor major-minor", "double-major major-minor-x2", d$coal.prof)
+table(d$coal.prof, useNA = "always")
+## shorten labels so reports single row per cycle
+d$coal.prof <- mapvalues(d$coal.prof,
+                         from=c("none", "major-minor", "major-minor-x2", "major-minor-x3", "double-major", "double-major major-minor", "double-major major-minor-x2", "triple-major", "triple-major major-minor"),
+                         to=c("0 none", "1 1maj", "2 1majx2", "3 1majx3", "4 2maj", "5 2maj 1maj", "6 2maj 1majx2", "7 3maj", "8 3maj 1maj"))
+##
+## rel frequencies by election cycle for one table
+t <- table(d$cyclef, d$coal.prof)
+round(t*100/rowSums(t),1)
+## avg num coals by cycle
+aggregate(d$ncoal ~ d$cyclef, FUN = mean)
+
+#############
+## Winners ##
+#############
+d <- da
+summary(d$lisnom[d$yr>1978])
+d[1,]
+x
 
 ##############
 ## Coverage ##
@@ -99,13 +231,6 @@ table(is.na(d2$yr17))
 table(is.na(d2$yr18))
 table(is.na(d2$yr19))
 
-#####################################
-## drop un-analyzable obs for good ##
-#####################################
-sel.r <- grep("cancelled|to-runoff", d$status); d <- d[-sel.r,] # subset wo cancelled races keeps actual number
-sel.r <- grep("missing|appointed|litigio", d$status); d <- d[-sel.r,]
-sel.r <- grep("proj", d$status); d <- d[-sel.r,] ## drop missing cases projected from df for lags
-table(d$status)
 
 
 ######################################
@@ -330,5 +455,5 @@ lines(tmp , lty = 1, lwd = 2, col = col.pvem() )
 ##
 dev.off()
 
- 
+d[1,] 
 

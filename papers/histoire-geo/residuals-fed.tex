@@ -179,13 +179,9 @@ Data is available in a handful of states since the early 1970s, but the full cro
 \caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see the text for details.}\label{T:coverage}
 \end{table}
 
-Municipal election vote returns are distributed as a large cross-section time-series. Data is stored as text in comma-separated-values (\verb|csv|) format, easily accessible for inspection with spreadsheet software such as Microsoft Excel or open-source Libreoffice Calc.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most Latin American special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and the vote total that each party or coalition won.\footnote{The repository's \verb|README.md| file includes a detailed codebook describing what is in each spreadsheet column/field.}
+Municipal election vote returns are distributed as a large cross-section time-series. Data is stored as text in \verb|csv| format (comma separated values), easily accessible for inspection with spreadsheet software such as Microsoft Excel or open-source Libreoffice Calc.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most Latin American special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and the vote total that each party or coalition won.\footnote{The repository's \verb|README.md| file includes a detailed codebook describing what is in each spreadsheet column/field.} Also included is the vote total, to compute vote shares, and the number of eligible voters in the municipal election (the \emph{lista nominal}), to compute turnout rates.  
 
-Vote returns appear in column pairs for each party or coalition: columns \verb|v01, v02, ...| report raw vote totals, columns \verb|l01, l02, ...| report the label of the party the votes belong to. Figure \ref{F:scrn} offers a glimpse for the state con Baja California's five municipalities over three election cycles. In Ensenada 1998, $v01 = 30660$, $l01 = pan$, $v02 = 31951$ and $l02 = pri$ reports that the National Action Party (PAN) won 30,660 votes, slightly below the PRI's 31,951 votes. The vote/label pairs can accommodate heterogeneous state party systems over four decades of high mutability  
-
-The vote/label pairs accommodates state party system heterogeneity over four decades of high mutability, and ephemerous electoral coalitions in a relatively limited number of columns.
-
-Vote returns appear in columns \verb|v01, v02, ...| and \verb|l01, l02, ...|, which are paired. Columns \verb|v..| report raw vote totals, columns\verb|l..| report the party or coalition label the votes belong to. So a hypothestical municipality where the PAN won 1,500 and PRI State party systems over four decades are too heterogeneous
+Vote returns appear in column pairs for each party or coalition: columns \verb|v01, v02, ...| report raw vote totals, columns \verb|l01, l02, ...| the label of the party or coalition the votes belong to. Figure \ref{F:scrn} offers a glimpse for the state of Baja California's five municipalities over three election cycles. In Ensenada for $\texttt{yr} = 1998$, that $\texttt{v01} = 30660$, $\texttt{l01} = \texttt{pan}$, $\texttt{v02} = 31951$, and $\texttt{l02} = \texttt{pri}$ reveals that the National Action Party (PAN) won 30,660 votes, not far from but below the PRI's 31,951 votes. The vote/label column pairs accommodate state party system heterogeneity over four decades of high mutability, and ephemerous electoral coalitions (as in Baja California in 2001 and in 2004) in a relatively small number of columns. The trade-off is that compiling one party's votes for each of a state-year's municipalities often requires some manipulation, as it may not appear in the same column. 
 
 \begin{figure}
   \centering
@@ -193,9 +189,40 @@ Vote returns appear in columns \verb|v01, v02, ...| and \verb|l01, l02, ...|, wh
   \caption{Screenshot with a sample of the data organization}\label{F:scrn}
 \end{figure}  
 
-Organization of the raw data.
+The data is stored in three separate files with the same observations: one has raw votes as reported in the primary source; one systematically aggregates coalition votes; one splits the votes that each coalesced party contributed to the coalition total.\footnote{Files are \verb|aymu1970-on.csv|, \verb|aymu1970-on.coalAgg.csv|, and \verb|aymu1970-on.coalSplit.csv| respectively. Mexican election law distinguishes two forms of pre-election coalitions that parties may choose from: joint candidacies and coalitions proper. Voters can cast a vote for any joint-candidate-nominating party (or combinations of them), which are then added to determine the winning candidate, but can only cast a vote for the team as a whole in coalitions proper---hence the need for three municipal vote files. These subtleties have effects in public party finance mostly, but substantially complicate voting studies as scholars need to decide how to handle coalitions. In coalitions proper, and whenever the primary source does not offer the coalesced-parties vote breakdown, one artifical vote is added to the raw file, itself split among these parties to keep track of relative contributions (one esample is Baja California in 2007).} Banned until the mid-1980s at the local level, and rarely authorized up to the mid-1990s, coalitions have since become a staple of Mexican elections. Table \ref{T:coal} reports the the mean number of coalitions per municipal election and their coalitional profile in each federal election cycle. The mean number of coalitions surpassed one by 2006--09, up from 0.29 six years before, and rose to a maximum 1.85 in 2018. It has declined since. Other columns in the table reveal the dynamic: in a first moment between 2000 and 2009, at least one major party, and increasingly two major parties would team up with minor parties (`major-minor' arrangements) to gain an edge in municipal races. A second moment in 2009 and 2012 inaugurated frequent `double-major' races, PAN and PRD forging anti-PRI coalitions in over a fifth of municipalities. A third moment came with Morena's foray into the party system, forcing frequent regroupments of erstwhile rivals PAN, PRI, and PRD (`triple-major' coalitions)) that reduced the number of coalitions per municipality by widening their scope. 
 
-Figure \ref{F:vpcts} summarizes municipal elections since 1979. Plot shares PAN PRI PRD Morena Other each year: tiny points, mean and 80band 
+\begin{table}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{r|c|rrrrrrrrrr}
+       & (Mean co-  &      & One          & Two        & Three      &               & Double-major  & Double-major      &             & Triple-major   &       \\
+ Cycle & alitions)  &  None&  major-minor & major-minor& major-minor&   Double-major& \& major-minor& \& two major-minor& Triple-major&  \& major-minor& Total \\
+       &            &      &              &            &            &               &               &                   &             &                &       \\ [-1.8ex] \hline
+       &            &      &              &            &            &               &               &                   &             &                &        \\[-1.8ex] 
+       &            &      &              &            &            &               &               &                   &             &                &       \\ [-1.8ex] 
+ 1979& (0.00)& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
+ 1982& (0.00)& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
+ 1985& (0.00)& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
+ 1988& (0.05)&  93.9&   6.1&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\ \hdashline
+ 1991& (0.01)&  98.6&   1.3&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
+ 1994& (0.04)&  99.8&   0.2&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
+ 1997& (0.03)&  96.4&   2.1&    ---&    ---&    1.5&       ---&         ---&  ---&       ---& 100.0\\
+ 2000& (0.29)&  77.0&  16.7&    1.8&    ---&    4.0&       0.4&         ---&  ---&       ---& 100.0\\ \hdashline
+ 2003& (0.64)&  52.8&  29.8&   11.8&    0.4&    1.8&       3.3&         ---&  ---&       ---& 100.0\\
+ 2006& (1.18)&  20.4&  48.1&   30.2&    0.6&    0.1&       0.7&         ---&  ---&       ---& 100.0\\
+ 2009& (1.53)&  11.2&  32.3&   14.6&   10.4&    7.7&      23.8&         ---&  ---&       ---& 100.0\\
+ 2012& (1.38)&   8.6&  50.8&   11.6&    3.6&    3.5&      21.9&         ---&  ---&       ---& 100.0\\ \hdashline
+ 2015& (1.16)&  24.6&  35.6&   11.0&    0.8&    6.1&      21.8&         ---&  0.2&       ---& 100.0\\
+ 2018& (1.85)&   6.3&  17.4&   14.7&    7.1&    6.5&      35.0&        12.9&  ---&       ---& 100.0\\
+ 2021& (1.03)&  26.8&  18.5&    0.2&    ---&   13.0&       9.5&         0.3& 18.2&      13.6& 100.0\\
+ 2024& (1.17)&  27.2&  11.4&    1.6&    ---&    6.0&      11.2&         0.7& 17.1&      24.8& 100.0\\ 
+     &       &      &      &       &       &       &          &            &     &          &      \\ [-1.8ex] 
+  \hline \\[-1.8ex] 
+\end{tabular}
+}
+\caption{Coalitional profile frequency by federal election cycle (percentage municipalities). Table considers coalitions where one partner at least was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions involving minor parties only, which were also quite frequent.}\label{T:coal}
+\end{table}
+
+Figure \ref{F:vpcts}, which summarizes municipal elections since 1979, adds another descriptive layer. Plot shares PAN PRI PRD Morena Other each year: tiny points, mean and 80band 
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/vpct1979-2024.pdf}
