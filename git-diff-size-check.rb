@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# from https://gist.github.com/joemiller/6383f2c282d4787c439b7a3c2d34c94a
+
 MAX_FILE_DELTA = 1000000
 MAX_TOTAL_DELTA = 5000000
 
