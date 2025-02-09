@@ -138,9 +138,12 @@ The unit of observation is the municipality, reporting the votes each party or e
 Data is available in a handful of states since the early 1970s, but the full cross-sectional time-series in the dataset really begins in the 1979--1981 trienium. This period, inaugurated by a major federal electoral reform (the LFOPPE), lowered legal entry barriers and adopted a more proportional electoral formula in Congress \citep[:116]{molinar.1991a}. As a result, half a dozen new parties entered the electoral arena. Table \ref{T:coverage} summarizes data coverage by state, reporting the number of municipalities (which increased over the years in most states)\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded. State abbreviations are different than those used by Mexican government agencies, some were slightly altered so that sorting them in a standard spreadsheet retains the actual alphabetical ordering of the states (e.g. Guanajuato and Guerrero are abbreviated gua and gue instead of the official gto and gro).} Mexico City's populous units are included in the data despite their special status.
 
 \begin{table}
-\resizebox{.8\textwidth}{!}{
+\centering
+  \resizebox{.8\textwidth}{!}{
     \begin{tabular}{rlrc}
-      & State (abbreviation)                        & Number of municipalities & Years      \\ \hline
+      & State (abbreviation)                        & Number of municipalities & Years      \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex]
       1  & Aguascalientes                 (ags)        &      9--11           & 1977--2024 \\
       2  & Baja California                (bc)         &       4--7           & 1971--2024 \\
       3  & Baja California Sur            (bcs)        &       3--5           & 1974--2024 \\
@@ -172,8 +175,12 @@ Data is available in a handful of states since the early 1970s, but the full cro
       29 & Tlaxcala                       (tla)        &      44-60           & 1979--2024 \\
       30 & Veracruz                       (ver)        &   203--212           & 1976--2024 \\
       31 & Yucatán                        (yuc)        &        106           & 1981--2024 \\
-      32 & Zacatecas                      (zac)        &     56--58           & 1970--2024 \\ \hline
-        & \mc{1}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
+      32 & Zacatecas                      (zac)        &     56--58           & 1970--2024 \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex] 
+         & \mc{1}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
+      \\ [-1.8ex] \hline
+
     \end{tabular}
 }
 \caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see the text for details.}\label{T:coverage}
@@ -197,7 +204,6 @@ The data is stored in three separate files with the same observations: one has r
        & (Mean co-  &      & One          & Two        & Three      &               & Double-major  & Double-major      &             & Triple-major   &       \\
  Cycle & alitions)  &  None&  major-minor & major-minor& major-minor&   Double-major& \& major-minor& \& two major-minor& Triple-major&  \& major-minor& Total \\
        &            &      &              &            &            &               &               &                   &             &                &       \\ [-1.8ex] \hline
-       &            &      &              &            &            &               &               &                   &             &                &        \\[-1.8ex] 
        &            &      &              &            &            &               &               &                   &             &                &       \\ [-1.8ex] 
  1979& (0.00)& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
  1982& (0.00)& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100.0\\
@@ -216,7 +222,7 @@ The data is stored in three separate files with the same observations: one has r
  2021& (1.03)&  26.8&  18.5&    0.2&    ---&   13.0&       9.5&         0.3& 18.2&      13.6& 100.0\\
  2024& (1.17)&  27.2&  11.4&    1.6&    ---&    6.0&      11.2&         0.7& 17.1&      24.8& 100.0\\ 
      &       &      &      &       &       &       &          &            &     &          &      \\ [-1.8ex] 
-  \hline \\[-1.8ex] 
+  \hline
 \end{tabular}
 }
 \caption{Coalitional profile frequency by federal election cycle (percentage municipalities). Table considers coalitions where one partner at least was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions involving minor parties only, which were also quite frequent.}\label{T:coal}
@@ -224,16 +230,56 @@ The data is stored in three separate files with the same observations: one has r
 
 Figure \ref{F:vpcts}, which summarizes municipal elections since 1979, adds another descriptive layer. Plot shares PAN PRI PRD Morena Other each year: tiny points, mean and 80band 
 
+
+\begin{table}
+  \centering
+  \begin{tabular}{ccc}
+          & \mc{2}{c}{Mean effective number of} \\ \cline{2-3}
+          & candidates & parties \\
+    Cycle & (aggregated coalitions) & (split coalitions) \\
+    \\ [-1.8ex] \hline 
+    \\ [-1.8ex] 
+    1979  &    1.17    &    1.17 \\
+    1982  &    1.28    &    1.28 \\
+    1985  &    1.29    &    1.29 \\
+    1988  &    1.54    &    1.54 \\ \hdashline
+    1991  &    1.63    &    1.63 \\
+    1994  &    2.13    &    2.13 \\
+    1997  &    2.30    &    2.30 \\
+    2000  &    2.65    &    2.66 \\ \hdashline
+    2003  &    2.70    &    2.77 \\
+    2006  &    2.85    &    2.91 \\
+    2009  &    2.69    &    2.93 \\
+    2012  &    2.88    &    3.10 \\ \hdashline
+    2015  &    3.32    &    3.55 \\
+    2018  &    3.30    &    3.74 \\
+    2021  &    3.55    &    3.91 \\
+    2024  &    2.92    &    3.47 \\
+    \\ [-1.8ex] \hline
+  \end{tabular}
+  \caption{Municipal party system fragmentation by federal election cycle}\label{T:enp}
+\end{table}
+
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/vpct1979-2024.pdf}
   \caption{The evolution of electoral parties in municipal races 1979--2024. Lines are the vote percentage each party won in the median municipality across time (the trend is smoothed for clarity). Each color-coded tiny circle is one individual party's vote percentage in one municipal election (slightly x-jittered for visibility and excluding the residual `others' category).}\label{F:vpcts}
 \end{figure}  
 
 
-
 Coaliciones and candidatos comunes.
 
-Winners in the incumbents dataset. 
+Winners in the incumbents dataset has names, this done with coalAgg. For visual simplicity, coalition winners in each election go to the major party. When two or three majors partnered, the winner goes arbitrarily to the largest of them in the state-cycle. 
+
+\begin{figure}
+  \centering
+  \textbf{A -- Percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024-legend.pdf} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024.pdf} \\
+  \textbf{B -- Size-weighted percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2024.pdf}
+  \caption{Winners by federal election cycle. Relative frequencies in panel B are weighted by the municipality's population. Coalition winners are given to the major party (or the largest major when there was more than one). See text for important details.}\label{F:win}
+\end{figure}  
+
 
 \section{Reelection as insurance policy}
 Also discusses another dataset in the repository, incumbents.

@@ -42,7 +42,9 @@
     "T:coverage"
     "F:scrn"
     "T:coal"
+    "T:enp"
     "F:vpcts"
+    "F:win"
     "ts-eq"
     "alpha-eq")
    (LaTeX-add-bibliographies

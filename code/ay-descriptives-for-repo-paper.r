@@ -14,6 +14,18 @@ source( paste(pth, "edo2edon.r", sep = "/") )  ## translates state codes
 source( paste(pth, "inegi2ife.r", sep = "/") ) ## translates municipio codes
 rm(pth)
 
+###################################
+## Define party colors for plots ##
+###################################
+col.pan    <- function(alpha=1) return(rgb(0,0,1                  , alpha=alpha))
+col.pri    <- function(alpha=1) return(rgb(1,0,0                  , alpha=alpha))
+col.pt     <- function(alpha=1) return(rgb(1,70/255,0             , alpha=alpha))
+col.prd    <- function(alpha=1) return(rgb(245/255,189/255,2/255  , alpha=alpha))
+col.morena <- function(alpha=1) return(rgb(114/255,0/255,18/255   , alpha=alpha))
+col.pvem   <- function(alpha=1) return(rgb(0,128/255,0            , alpha=alpha))
+col.mc     <- function(alpha=1) return(rgb(255/255,145/255,0/255  , alpha=alpha))
+col.oth    <- function(alpha=1) return(rgb(113/255,113/255,113/255, alpha=alpha))
+
 #####################
 ## Read data files ##
 #####################
@@ -21,7 +33,14 @@ rm(pth)
 dr <- read.csv(file = "aymu1970-on.csv"          , stringsAsFactors = FALSE) # raw
 da <- read.csv(file = "aymu1970-on.coalAgg.csv"  , stringsAsFactors = FALSE) # coalitions aggregated
 ds <- read.csv(file = "aymu1970-on.coalSplit.csv", stringsAsFactors = FALSE) # split coalitions
-
+##
+###################
+## Drop pre-1979 ##
+###################
+dr <- dr[dr$yr>1978,]
+da <- da[da$yr>1978,]
+ds <- ds[ds$yr>1978,]
+##
 #####################################
 ## drop un-analyzable obs for good ##
 #####################################
@@ -52,7 +71,7 @@ d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=T
 d$cycle <- as.numeric(d$cycle)
 table(d$cycle)
 ## Use yr to make cycle aligned w federal (some extras may fall in next)
-d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
+d$cyclef <- cut(d$yr, breaks = seq(1979,2027, by=3), right = FALSE)
 table(d$cyclef)
 d -> dr ## return manipulation
 ##
@@ -61,7 +80,7 @@ d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=T
 d$cycle <- as.numeric(d$cycle)
 table(d$cycle)
 ## Use yr to make cycle aligned w federal (some extras may fall in next)
-d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
+d$cyclef <- cut(d$yr, breaks = seq(1979,2027, by=3), right = FALSE)
 table(d$cyclef)
 d -> da ## return manipulation
 ##
@@ -70,7 +89,7 @@ d$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", d$emm, perl=T
 d$cycle <- as.numeric(d$cycle)
 table(d$cycle)
 ## Use yr to make cycle aligned w federal (some extras may fall in next)
-d$cyclef <- cut(d$yr, breaks = seq(1970,2027, by=3), right = FALSE)
+d$cyclef <- cut(d$yr, breaks = seq(1979,2027, by=3), right = FALSE)
 table(d$cyclef)
 d -> ds ## return manipulation
 ##
@@ -97,6 +116,30 @@ d -> ds ## return manipulation
 ## table(d$yr[d$edon==30],d$cycle2[d$edon==30])
 ## table(d$yr,d$cycle2)
 ## which(d$cycle2==1994 & d$yr==1997)
+##
+###########################################
+## Change conve with mc across the board ##
+###########################################
+d <- dr
+sel.c <- grep("l[0-9]{2}|win", colnames(d))
+l <- d[,sel.c] ## subset labels for manipulation
+for (i in 1:ncol(l)) l[,i] <- sub("conve|^cp$", "mc", l[,i])
+l -> d[,sel.c] ## return after manipulation
+d -> dr
+##
+d <- da
+sel.c <- grep("l[0-9]{2}|win", colnames(d))
+l <- d[,sel.c] ## subset labels for manipulation
+for (i in 1:ncol(l)) l[,i] <- sub("conve|^cp$", "mc", l[,i])
+l -> d[,sel.c] ## return after manipulation
+d -> da
+##
+d <- ds
+sel.c <- grep("l[0-9]{2}|win", colnames(d))
+l <- d[,sel.c] ## subset labels for manipulation
+for (i in 1:ncol(l)) l[,i] <- sub("conve|^cp$", "mc", l[,i])
+l -> d[,sel.c] ## return after manipulation
+d -> ds
 
 #########################
 ## Coalition frequency ##
@@ -187,9 +230,302 @@ aggregate(d$ncoal ~ d$cyclef, FUN = mean)
 ## Winners ##
 #############
 d <- da
-summary(d$lisnom[d$yr>1978])
+## There are still missing listas nominales, but few and pre-1997 (lisnoms used to gauge mun size)
+table(is.na(d$lisnom), edon2edo(d$edon))
+table(is.na(d$lisnom), d$yr)
+##
+## simplify winners
+d$l <- NA ## will receive manipulated coalition labels
+##
+## major-party coalitions: drop minors (will be assigned to one major below)
+sel <- grep("(?=.*pan)(?=.*prd)", d$win, perl = TRUE)
+d$l[sel] <- "pan-prd"
+sel <- grep("(?=.*pan)(?=.*pri)", d$win, perl = TRUE)
+d$l[sel] <- "pan-pri"
+sel <- grep("(?=.*pri)(?=.*prd)", d$win, perl = TRUE)
+d$l[sel] <- "pri-prd"
+sel <- grep("(?=.*pan)(?=.*pri)(?=.*prd)", d$win, perl = TRUE)
+d$l[sel] <- "pan-pri-prd"
+##
+## Rest NAs are major-minor --- will be coded as major solo
+sel1 <- which(is.na(d$l))
+sel <- grep("pan-|-pan", d$win[sel1])
+##d$l[sel1][sel] <- "pan-minor"
+d$l[sel1][sel] <- "2pan"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("pri-|-pri", d$win[sel1])
+##d$l[sel1][sel] <- "pri-minor"
+d$l[sel1][sel] <- "1pri"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("prd-|-prd", d$win[sel1])
+##d$l[sel1][sel] <- "prd-minor"
+d$l[sel1][sel] <- "3prd"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("morena-|-morena", d$win[sel1])
+##d$l[sel1][sel] <- "morena-minor"
+d$l[sel1][sel] <- "8morena"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("indep[_0-9]", d$win[sel1])
+d$l[sel1][sel] <- "7oth"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("mc-|-mc", d$win[sel1]) ## give remaining mc-coals to mc solo
+table(d$win[sel1][sel])
+d$l[sel1][sel] <- "4mc"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("pvem-|-pvem", d$win[sel1]) ## give remaining pvem-coals to pvem solo
+table(d$win[sel1][sel])
+d$l[sel1][sel] <- "5pvem"
+##
+sel1 <- which(is.na(d$l))
+sel <- grep("pt-|-pt", d$win[sel1]) ## give remaining pt-coals to pt solo
+table(d$win[sel1][sel])
+d$l[sel1][sel] <- "6pt"
+##
+sel <- grep("^pan$",    d$win, perl = TRUE); d$l[sel] <- "2pan"
+sel <- grep("^pri$",    d$win, perl = TRUE); d$l[sel] <- "1pri"
+sel <- grep("^prd$",    d$win, perl = TRUE); d$l[sel] <- "3prd"
+sel <- grep("^pt$",     d$win, perl = TRUE); d$l[sel] <- "6pt"
+sel <- grep("^pvem$",   d$win, perl = TRUE); d$l[sel] <- "5pvem"
+sel <- grep("^mc$",     d$win, perl = TRUE); d$l[sel] <- "4mc"
+sel <- grep("^morena$", d$win, perl = TRUE); d$l[sel] <- "8morena"
+##
+## rest bunched as other
+table(d$win[is.na(d$l)])
+sel1 <- which(is.na(d$l))
+d$l[sel1] <- "7oth"
+##
+## BREAK MAJOR-PARTY COALITIONS BASED ON WHICH PARTY IS BIGGER IN STATE
+## triple majors
+sel <- which(d$l=="pan-pri-prd")
+table(d$cyclef[sel], edon2edo(d$edon[sel]))
+##
+sel1 <- which(d$edon[sel]==1);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==3);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==4);  d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==6);  d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==7);  d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==8);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==9);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==10); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==11); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==12); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==13); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==14); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==15); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==16); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==17); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==18); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==19); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==20); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==21); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==22); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==23); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==24); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==25); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==26); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==30); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==32); d$l[sel][sel1] <- "1pri"
+##
+# pan-pri
+sel <- which(d$l=="pan-pri")
+table(d$cyclef[sel], edon2edo(d$edon[sel]))
+##
+sel1 <- which(d$edon[sel]==6);  d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==16); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==20); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==21); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==22); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==24); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==28); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==29); d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==31); d$l[sel][sel1] <- "2pan"
+##
+# pan-prd
+sel <- which(d$l=="pan-prd")
+table(d$cyclef[sel], edon2edo(d$edon[sel]))
+##
+sel1 <- which(d$edon[sel]==1);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==2);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==3);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==5);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==6);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==7);  d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==8);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==9);  d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==10); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==12); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==13); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==14); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==15); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==16); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==18); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==20); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==21); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==22); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==23); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==24); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==22); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==23); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==24); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==25); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==26); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==27); d$l[sel][sel1] <- "3prd"
+sel1 <- which(d$edon[sel]==28); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==30); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==31); d$l[sel][sel1] <- "2pan"
+sel1 <- which(d$edon[sel]==32); d$l[sel][sel1] <- "3prd"
+##
+# pri-prd all to pri
+sel <- which(d$l=="pri-prd")
+table(d$cyclef[sel], edon2edo(d$edon[sel]))
+d$l[sel] <- "1pri"
+##
+## check
+table(d$l[d$yr>1978], useNA = "ifany")
+##
+## winners by cycle
+t <- table(d$cyclef, d$l)
+t <- round(t*100/rowSums(t),1)
+rownames(t) <- seq(1979,2024,3)
+t <- t[order(rownames(t), decreasing = TRUE),]
+t(t)
+
+pdf(file = "../plots/pctwin1979-2024.pdf", width=10, height=5)
+par(mar=c(3,4,0,2)+0.1) # drop title space and xlab space
+barplot(t(t)
+      , horiz = TRUE
+      , col = c(col.pri(), col.pan(), col.prd(), col.mc(), col.pvem(), col.pt(), col.oth(), col.morena())
+      , las=1
+      ##, main = "% municipalities won"
+        )
+## tx <- seq(2, 96, length.out = 8)
+## text(x = tx[1], y = 19.65, labels = c("PRI"), col = col.pri())
+## text(x = tx[2], y = 19.65, labels = c("PAN"), col = col.pan())
+## text(x = tx[3], y = 19.65, labels = c("PRD"), col = col.prd())
+## text(x = tx[4], y = 19.65, labels = c("MC"),  col = col.mc())
+## text(x = tx[5], y = 19.65, labels = c("PVEM"), col = col.pvem())
+## text(x = tx[6], y = 19.65, labels = c("PT"), col = col.pt())
+## text(x = tx[7], y = 19.65, labels = c("Other"), col = col.oth())
+## text(x = tx[8], y = 19.65, labels = c("Morena"), col = col.morena())
+dev.off()
+
+## Self-standing legend for both plots in latex
+pdf(file = "../plots/pctwin1979-2024-legend.pdf", width=10, height=.35)
+par(mar=c(0,4,0,2)+0.1) # drop title space and xlab space
+plot(x=c(0,100), y=c(0,1), type = "n", axes = FALSE, xlab = "", ylab = "")
+tx <- seq(2, 96, length.out = 8)
+text(x = tx[1], y = .2, labels = c("PRI"), col = col.pri())
+text(x = tx[2], y = .2, labels = c("PAN"), col = col.pan())
+text(x = tx[3], y = .2, labels = c("PRD"), col = col.prd())
+text(x = tx[4], y = .2, labels = c("MC"),  col = col.mc())
+text(x = tx[5], y = .2, labels = c("PVEM"), col = col.pvem())
+text(x = tx[6], y = .2, labels = c("PT"), col = col.pt())
+text(x = tx[7], y = .2, labels = c("Other"), col = col.oth())
+text(x = tx[8], y = .2, labels = c("Morena"), col = col.morena())
+dev.off()
+
+#######################################
+## lisnom-weighted winners by cycle  ##
+#######################################
+## make lisnom rel to state-year (very rough population-weight)
+d$lisnom <- d$lisnom *100 / ave(d$lisnom, as.factor(d$edon+as.numeric(d$cyclef)/10), FUN=function(x) sum(x, na.rm=TRUE))
 d[1,]
-x
+## aggregate(lisnom ~ l, data = d[!is.na(d$lisnom),], FUN = sum)
+t <- aggregate(lisnom ~ l + cyclef, data = d[!is.na(d$lisnom),], FUN = sum)
+t$lisnom <- t$lisnom *100 / ave(t$lisnom, t$cyclef, FUN=function(x) sum(x)) ## make cycle add to 100
+t <- as.data.frame(t)
+t1  <- t[as.numeric(t$cyclef)==1,];  colnames(t1 )[3] <- levels(t1$cyclef)[1]
+t2  <- t[as.numeric(t$cyclef)==2,];  colnames(t2 )[3] <- levels(t1$cyclef)[2]
+t3  <- t[as.numeric(t$cyclef)==3,];  colnames(t3 )[3] <- levels(t1$cyclef)[3]
+t4  <- t[as.numeric(t$cyclef)==4,];  colnames(t4 )[3] <- levels(t1$cyclef)[4]
+t5  <- t[as.numeric(t$cyclef)==5,];  colnames(t5 )[3] <- levels(t1$cyclef)[5]
+t6  <- t[as.numeric(t$cyclef)==6,];  colnames(t6 )[3] <- levels(t1$cyclef)[6]
+t7  <- t[as.numeric(t$cyclef)==7,];  colnames(t7 )[3] <- levels(t1$cyclef)[7]
+t8  <- t[as.numeric(t$cyclef)==8,];  colnames(t8 )[3] <- levels(t1$cyclef)[8]
+t9  <- t[as.numeric(t$cyclef)==9,];  colnames(t9 )[3] <- levels(t1$cyclef)[9]
+t10 <- t[as.numeric(t$cyclef)==10,]; colnames(t10)[3] <- levels(t1$cyclef)[10]
+t11 <- t[as.numeric(t$cyclef)==11,]; colnames(t11)[3] <- levels(t1$cyclef)[11]
+t12 <- t[as.numeric(t$cyclef)==12,]; colnames(t12)[3] <- levels(t1$cyclef)[12]
+t13 <- t[as.numeric(t$cyclef)==13,]; colnames(t13)[3] <- levels(t1$cyclef)[13]
+t14 <- t[as.numeric(t$cyclef)==14,]; colnames(t14)[3] <- levels(t1$cyclef)[14]
+t15 <- t[as.numeric(t$cyclef)==15,]; colnames(t15)[3] <- levels(t1$cyclef)[15]
+t16 <- t[as.numeric(t$cyclef)==16,]; colnames(t16)[3] <- levels(t1$cyclef)[16]
+t <- merge(t1, t2[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t3[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t4[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t5[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t6[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t7[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t8[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t9[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t10[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t11[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t12[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t13[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t14[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t15[,c(1,3)], by = "l", all = TRUE)
+t <- merge(t, t16[,c(1,3)], by = "l", all = TRUE)
+rm(list = paste0("t",1:16)) ## clean
+rownames(t) <- t$l
+t$cyclef <- t$l <- NULL
+colnames(t) <- seq(1979,2024,3)
+t <- t[,order(colnames(t), decreasing = TRUE)]
+t <- as.matrix(t)
+t[is.na(t)] <- 0
+##
+pdf(file = "../plots/pctwin-popw1979-2024.pdf", width=10, height=5)
+par(mar=c(3,4,0,2)+0.1) # drop title space and xlab space
+barplot(t
+      , horiz = TRUE
+      , col = c(col.pri(), col.pan(), col.prd(), col.mc(), col.pvem(), col.pt(), col.oth(), col.morena())
+      , las=1
+      ##, main = "Size-weighted % municipalities won"
+        )
+## tx <- seq(2, 96, length.out = 8)
+## text(x = tx[1], y = 19.65, labels = c("PRI"), col = col.pri())
+## text(x = tx[2], y = 19.65, labels = c("PAN"), col = col.pan())
+## text(x = tx[3], y = 19.65, labels = c("PRD"), col = col.prd())
+## text(x = tx[4], y = 19.65, labels = c("MC"),  col = col.mc())
+## text(x = tx[5], y = 19.65, labels = c("PVEM"), col = col.pvem())
+## text(x = tx[6], y = 19.65, labels = c("PT"), col = col.pt())
+## text(x = tx[7], y = 19.65, labels = c("Other"), col = col.oth())
+## text(x = tx[8], y = 19.65, labels = c("Morena"), col = col.morena())
+dev.off()
+
+
+###########################################################
+## Effective number of electoral parties (coalition agg) ##
+###########################################################
+## compute vote shares
+d <- da
+v <- d[, grep("v[0-9]{2}", colnames(d))]
+v <- v / rowSums(v)
+d$enp <- apply(v, 1, FUN = function(x) 1/sum(x^2))
+table(d$edon[is.na(enp)] + d$yr[is.na(enp)]/10000) ## NAs from 2025 els
+t <- aggregate(enp ~ cyclef, data = d, FUN = mean)
+colnames(t)[2] <- "enpv.agg"
+rownames(t) <- levels(t$cyclef); t$cyclef <- NULL
+##
+#############################################################
+## Effective number of electoral parties (coalition split) ##
+#############################################################
+## compute vote shares
+d <- ds
+v <- d[, grep("v[0-9]{2}", colnames(d))]
+v <- v / rowSums(v)
+d$enp <- apply(v, 1, FUN = function(x) 1/sum(x^2))
+table(d$edon[is.na(enp)] + d$yr[is.na(enp)]/10000) ## NAs from 2025 els
+t2 <- aggregate(enp ~ cyclef, data = d, FUN = mean)
+t$enpv.spl <- t2$enp
+## report
+round(t,2)
+
 
 ##############
 ## Coverage ##
@@ -325,16 +661,6 @@ q5 <- merge(x=q5,
 q5 <- merge(x=q5,
             y=aggregate(x=oth    ~ yr, data = d, FUN = 'quantile', probs=(.5)), by = "yr", all = TRUE)
 q5$yr <- ymd(q5$yr*10000+701)
-
-## define party colors for plots
-col.pan    <- function(alpha=1) return(rgb(0,0,1                  , alpha=alpha))
-col.pri    <- function(alpha=1) return(rgb(1,0,0                  , alpha=alpha))
-col.prd    <- function(alpha=1) return(rgb(245/255,189/255,2/255 , alpha=alpha))
-col.morena <- function(alpha=1) return(rgb(114/255,0/255,18/255   , alpha=alpha))
-col.pvem   <- function(alpha=1) return(rgb(0,128/255,0            , alpha=alpha))
-col.mc     <- function(alpha=1) return(rgb(255/255,95/255,31/255  , alpha=alpha))
-col.oth    <- function(alpha=1) return(rgb(113/255,113/255,113/255, alpha=alpha))
-
 
 ## function to draw interquartile range spline
 gen.ci <- function(pty=c("pan","pri","prd","morena","oth")[1]){
