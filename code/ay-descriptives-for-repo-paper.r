@@ -520,12 +520,32 @@ d <- ds
 v <- d[, grep("v[0-9]{2}", colnames(d))]
 v <- v / rowSums(v)
 d$enp <- apply(v, 1, FUN = function(x) 1/sum(x^2))
-table(d$edon[is.na(enp)] + d$yr[is.na(enp)]/10000) ## NAs from 2025 els
+table(d$edon[is.na(d$enp)] + d$yr[is.na(d$enp)]/10000) ## NAs from 2025 els
 t2 <- aggregate(enp ~ cyclef, data = d, FUN = mean)
 t$enpv.spl <- t2$enp
 ## report
 round(t,2)
 
+###########################
+## cycle labels for axis ##
+###########################
+l1 <- c("1979", paste0("'",seq(82,97,3)), "2000", paste0("'0",seq(3,9,3)), paste0("'",seq(12,21,3)), 2024)
+l2 <- c(seq(81,99,3),"02","05","08",seq(11,26,3))
+## lb <- paste(l1, l2, sep = "-") ## full 1979-82 to 2024-26
+lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024*") ## 1979-82 to 2021-23 and just 2024
+
+pdf(file = "../plots/enp1979-2024.pdf", width=10, height=5)
+par(mar=c(3,4,2,2)+0.1) # drop title space and xlab space
+plot(  x = c(1,nrow(t)), y = c(1,4), type = "n", xlab = "", ylab = "Effective Number", axes = FALSE) 
+axis(1, at = 1:nrow(t), labels = lb, cex.axis = .75)
+axis(2)
+abline(h = seq(1,4,.5), col = "gray")
+points(x = 1:nrow(t), y = t$enpv.spl, col = col.pri(0.5)) 
+lines( x = 1:nrow(t), y = t$enpv.spl, col = col.pri(0.5), lwd = 2) 
+points(x = 1:nrow(t), y = t$enpv.agg, col = col.pan(0.5)) 
+lines( x = 1:nrow(t), y = t$enpv.agg, col = col.pan(0.5), lwd = 2) 
+legend(x = 1, y = 3.925, col = c(col.pri(0.5),col.pan(0.5)), legend = c("of parties (split coalitions)","of candidates (aggregated coalitions)"), lty = 1, pch = 1, lwd=2, bg = "white")
+dev.off()
 
 ##############
 ## Coverage ##
@@ -579,7 +599,6 @@ table(is.na(d2$yr19))
 ###################################################################################################################
 library(lubridate)
 
-getwd()
 d <- read.csv(file = "../../reelec/data/aymu1988-on-v7-coalSplit.csv")
 d <- d[d$yr>1978,] ## drop pre 1979
 d$morena[d$yr<2015] <- NA ## drop zeroes from pre-morena
@@ -678,8 +697,6 @@ gen.ci <- function(pty=c("pan","pri","prd","morena","oth")[1]){
     return(tmp.hilo)
 }
 
-getwd()
-
 pdf(file = "../plots/vpct1979-2024.pdf", width=10, height=7)
 par(mar=c(3,4,2,2)+0.1) # drop title space and xlab space
 plot(x=c(ymd(19790601),ymd(20241231)), y=c(0,100), type="n", axes = FALSE, xlab = "", ylab = "% vote", main = "")
@@ -735,11 +752,11 @@ allpts <- rbind(
     data.frame(date=date, point=d$mc    , clr=col.mc    (alpha=.05)),
     data.frame(date=date, point=d$morena, clr=col.morena(alpha=.05))
 )
-
+##
 legend(x=15000, y=102, legend = c(c("Center-right (PAN)","PRI","Left (PRD)","Morena","Mov. Ciud.","Green (PVEM)","Others")), col = c(col.pan(),col.pri(),col.prd(),col.morena(),col.mc(),col.pvem(),col.oth()), lty = 1, lwd=1.5, bg = "white")
 ##
-## add legend before points so the few in region are visible
-allpts <- allpts[order(allpts$point),] # sort so that points are not plottet party by party
+## add legend before points so the few points in region are visible
+allpts <- allpts[order(allpts$point),] # pseudo-randomize (sort) so that points are not plottet party by party
 points(allpts$date, allpts$point*100, col=allpts$clr, pch = 1, cex = .5)
 ##
 ## ## smooth mean
@@ -759,11 +776,11 @@ tmp <- smooth.spline(x = q5$yr[!is.na(q5$prd)],    y = q5$prd[!is.na(q5$prd)]*10
 tmp$y[tmp$y<0] <- 0; tmp$y[tmp$y>100] <- 100
 lines(tmp , lty = 1, lwd = 2, col = col.prd() )
 ##
-tmp <- smooth.spline(x = q5$yr[!is.na(q5$pan)],    y = q5$pan[!is.na(q5$pan)]*100,       df = 7)
+tmp <- smooth.spline(x = q5$yr[!is.na(q5$pan)],    y = q5$pan[!is.na(q5$pan)]*100,       df = 9)
 tmp$y[tmp$y<0] <- 0; tmp$y[tmp$y>100] <- 100
 lines(tmp , lty = 1, lwd = 2, col = col.pan() )
 ##
-tmp <- smooth.spline(x = q5$yr[!is.na(q5$pri)],    y = q5$pri[!is.na(q5$pri)]*100,       df = 7)
+tmp <- smooth.spline(x = q5$yr[!is.na(q5$pri)],    y = q5$pri[!is.na(q5$pri)]*100,       df = 9)
 tmp$y[tmp$y<0] <- 0; tmp$y[tmp$y>100] <- 100
 lines(tmp , lty = 1, lwd = 2, col = col.pri() )
 ##

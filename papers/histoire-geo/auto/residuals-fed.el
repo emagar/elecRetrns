@@ -44,7 +44,7 @@
     "fn:trio"
     "T:coal"
     "F:vpcts"
-    "T:enp"
+    "F:enp"
     "F:win"
     "ts-eq"
     "alpha-eq")
