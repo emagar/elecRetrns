@@ -1189,34 +1189,34 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
-##########################################
-## sort coalition-split data columnwise ##
-##########################################
-## Extract vote and label objects for manip
-sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
-sl <- dat.split[,sel.l] # subset label columns
-sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
-sv <- dat.split[,sel.v] # subset vote columns
-#########################################
-tail(sv)
-tail(sl)
-###########################################
-sv.sorted <- sortBy(target = sv, By = sv) # slow! better wait for process end before continuing  
-###########################################
-sl.sorted <- sortBy(target = sl, By = sv) # slow! better wait for process end before continuing
-###########################################
-sv.sorted <- as.data.frame(sv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
-sl.sorted <- as.data.frame(sl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
-colnames(sv.sorted) <- colnames(v); colnames(sl.sorted) <- colnames(l)
-sv.sorted <- transform(sv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15), v16 = as.numeric(v16), v17 = as.numeric(v17), v18 = as.numeric(v18), v19 = as.numeric(v19) , v20 = as.numeric(v20) , v21 = as.numeric(v21) , v22 = as.numeric(v22) , v23 = as.numeric(v23) , v24 = as.numeric(v24) , v25 = as.numeric(v25)) # return to numeric format
-tail(sv.sorted)
-tail(sl.sorted)
-##
-## Return manipulated columns to data
-#sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
-sl -> dat.split[,sel.l] # subset label columns
-#sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
-sv -> dat.split[,sel.v] # subset vote columns
+## ####################################################
+## ## OPTIONAL: sort coalition-split data columnwise ##
+## ####################################################
+## ## Extract vote and label objects for manip
+## sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
+## sl <- dat.split[,sel.l] # subset label columns
+## sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
+## sv <- dat.split[,sel.v] # subset vote columns
+## #########################################
+## tail(sv)
+## tail(sl)
+## ###########################################
+## sv.sorted <- sortBy(target = sv, By = sv) # slow! better wait for process end before continuing  
+## ###########################################
+## sl.sorted <- sortBy(target = sl, By = sv) # slow! better wait for process end before continuing
+## ###########################################
+## sv.sorted <- as.data.frame(sv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
+## sl.sorted <- as.data.frame(sl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
+## colnames(sv.sorted) <- colnames(v); colnames(sl.sorted) <- colnames(l)
+## sv.sorted <- transform(sv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15), v16 = as.numeric(v16), v17 = as.numeric(v17), v18 = as.numeric(v18), v19 = as.numeric(v19) , v20 = as.numeric(v20) , v21 = as.numeric(v21) , v22 = as.numeric(v22) , v23 = as.numeric(v23) , v24 = as.numeric(v24) , v25 = as.numeric(v25)) # return to numeric format
+## tail(sv.sorted)
+## tail(sl.sorted)
+## ##
+## ## Return manipulated columns to data
+## #sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
+## sl.sorted -> dat.split[,sel.l] # subset label columns
+## #sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
+## sv.sorted -> dat.split[,sel.v] # subset vote columns
 
 if (length(drop.r)>0) {
     dat.split2 <- dat.split[-drop.r,]
