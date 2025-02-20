@@ -1,4 +1,4 @@
-################################################################################
+###############################################################################
 ## SCRIPT PROCESSES RAW DATA AND GENERATES DISTRIBUTED MUNICIPAL VOTE RETURNS ##
 ## USED ROUTINELY                                                             ##
 ## AUTHOR: Eric Magar                                                         ##
@@ -764,7 +764,9 @@ rm(pth)
 ## sl[156,]
 ## x
 
-## sort coalition-aggregated data columnwise
+###############################################
+## sort coalition-aggregated data columnwise ##
+###############################################
 tail(cv)
 tail(cl)
 ###########################################
@@ -803,6 +805,7 @@ dat[,sel.v] <- cv.sorted # return manipulated votes to data
 dat[,sel.v] <- lapply(dat[,sel.v],as.numeric) # make numeric (in síndicos cv.sorted became str)
 head(dat)
 str(dat)
+
 ## prepare coalition-split object for export
 dat.split <- dat.orig
 dat.split[,sel.l] <- sl # return manipulated labels to data
@@ -860,6 +863,8 @@ dat <- dat[moveme(names(dat), "mg after win")]
 ## any uyc?
 table(dat$status)
 sel <- grep("uyc", dat$status)
+dat[sel, c("emm","mun","yr","efec","status")] ## includes case out of uyc
+sel <- grep("to-uyc|new--uyc", dat$status)
 dat[sel, c("emm","mun","yr","efec","status")]
 ## drop uyc
 table(dat$v01[sel]==0) # all report no votes?
@@ -993,6 +998,8 @@ rm(dat2)
 ## any uyc?
 table(dat.split$status)
 sel <- grep("uyc", dat.split$status)
+dat.split[sel, c("emm","mun","yr","efec","status")] ## includes case out of uyc
+sel <- grep("to-uyc|new--uyc", dat.split$status)
 dat.split[sel, c("emm","mun","yr","efec","status")]
 ## drop uyc
 table(dat.split$v01[sel]==0) # all report no votes?
@@ -1056,6 +1063,7 @@ dat.split <- by.hand("cps-14")
 dat.split <- by.hand("cps-15")
 dat.split <- by.hand("cps-16")
 dat.split <- by.hand("cps-17a")
+dat.split <- by.hand("cua-09") # 1995 pcdp-pt to pcdp
 dat.split <- by.hand("cua-11") # 2001 pan-prd to pan
 dat.split <- by.hand("cua-12") # 2004 pan-prd to pan pri-pvem to pri
 dat.split <- by.hand("cua-13") # 2007 pri-pna to pri
@@ -1080,6 +1088,7 @@ dat.split <- by.hand("hgo-11") # 2002 pri-pvem to pri
 dat.split <- by.hand("hgo-13") # 2008 pri-pna to pri
 dat.split <- by.hand("hgo-14") # 2011 pt-conve to pt
 dat.split <- by.hand("jal-13") # 2006 prd-pt to prd
+dat.split <- by.hand("jal-07") # 1988 prd-pps-pfcrn to prd
 dat.split <- by.hand("jal-15") # 2012 pt-mc to pt
 dat.split <- by.hand("mex-12") # 2006 pri-pvem to pri
 dat.split <- by.hand("mex-14") # 2012 pt-mc to pt
@@ -1126,6 +1135,7 @@ dat.split <- by.hand("tam-11.032") # 2001 pt-pvem-pas-local to pt
 dat.split <- by.hand("tam-13") # 2007 pri-pna to pri
 dat.split <- by.hand("tam-14") # 2010 pri-pna or pri-pvem-pna to pri
 dat.split <- by.hand("tam-15") # 2013 pri-pvem-pna to pri
+dat.split <- by.hand("tla-07") # 1988 prd-fdn to prd
 dat.split <- by.hand("tla-11.016") # 2002 pt-oth to pt
 dat.split <- by.hand("tla-11.044") # 2002 pas-loc to pas
 dat.split <- by.hand("tla-12") # 2004 pri-pvem to pri
@@ -1138,7 +1148,9 @@ dat.split <- by.hand("yuc-11") # 2001 pt-conve to pt
 dat.split <- by.hand("yuc-13") # 2007 pt-conve to pt
 dat.split <- by.hand("yuc-16") # 2015 pes-ph to pes
 ##
-table(dat.split$dhascoal)
+table(dat.split$dhascoal) ## check no coals to split missing
+##dat.split$emm[which(dat.split$dhascoal==1)]
+##
 ## drop little-use columns
 dat.split$dhascoal <- dat.split$dcoal <- NULL
 dat.split$ord <- dat.split$fuente <- NULL
@@ -1177,6 +1189,34 @@ drop.c <- c("ord", "status", "dcoal", "win", "nr", "nulos", "tot", "fuente", "no
 ncol(dat.split[, colnames(dat.split) %notin% drop.c])
 drop.c <- which(colnames(dat.split) %in% drop.c)
 
+##########################################
+## sort coalition-split data columnwise ##
+##########################################
+## Extract vote and label objects for manip
+sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
+sl <- dat.split[,sel.l] # subset label columns
+sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
+sv <- dat.split[,sel.v] # subset vote columns
+#########################################
+tail(sv)
+tail(sl)
+###########################################
+sv.sorted <- sortBy(target = sv, By = sv) # slow! better wait for process end before continuing  
+###########################################
+sl.sorted <- sortBy(target = sl, By = sv) # slow! better wait for process end before continuing
+###########################################
+sv.sorted <- as.data.frame(sv.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
+sl.sorted <- as.data.frame(sl.sorted, stringsAsFactors = FALSE) # return matrix to dataframe
+colnames(sv.sorted) <- colnames(v); colnames(sl.sorted) <- colnames(l)
+sv.sorted <- transform(sv.sorted, v01 = as.numeric(v01), v02 = as.numeric(v02), v03 = as.numeric(v03), v04 = as.numeric(v04), v05 = as.numeric(v05), v06 = as.numeric(v06), v07 = as.numeric(v07), v08 = as.numeric(v08), v09 = as.numeric(v09), v10 = as.numeric(v10), v11 = as.numeric(v11), v12 = as.numeric(v12), v13 = as.numeric(v13), v14 = as.numeric(v14), v15 = as.numeric(v15), v16 = as.numeric(v16), v17 = as.numeric(v17), v18 = as.numeric(v18), v19 = as.numeric(v19) , v20 = as.numeric(v20) , v21 = as.numeric(v21) , v22 = as.numeric(v22) , v23 = as.numeric(v23) , v24 = as.numeric(v24) , v25 = as.numeric(v25)) # return to numeric format
+tail(sv.sorted)
+tail(sl.sorted)
+##
+## Return manipulated columns to data
+#sel.l <- grep("^l[0-9]{2}", colnames(dat.split))
+sl -> dat.split[,sel.l] # subset label columns
+#sel.v <- grep("^v[0-9]{2}", colnames(dat.split))
+sv -> dat.split[,sel.v] # subset vote columns
 
 if (length(drop.r)>0) {
     dat.split2 <- dat.split[-drop.r,]
