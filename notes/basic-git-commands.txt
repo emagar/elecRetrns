@@ -1,0 +1,18 @@
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+git init
+git clone <url>
+git status
+git add <file(s)>
+git commit -m 'mensaje en tiempo presente, p.ej. Añade resultado SLP'
+git log
+git checkout <commit id>
+git checkout master
+git checkout <commit id> <file>
+
+git push origin master
+
+(desde gitHub: create pull-request)
+
+git pull origin master
+

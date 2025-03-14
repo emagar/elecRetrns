@@ -140,6 +140,7 @@ l <- d[,sel.c] ## subset labels for manipulation
 for (i in 1:ncol(l)) l[,i] <- sub("conve|^cp$", "mc", l[,i])
 l -> d[,sel.c] ## return after manipulation
 d -> ds
+rm(d) ## clean
 
 #########################
 ## Coalition frequency ##
@@ -525,6 +526,7 @@ t2 <- aggregate(enp ~ cyclef, data = d, FUN = mean)
 t$enpv.spl <- t2$enp
 ## report
 round(t,2)
+
 
 ###########################
 ## cycle labels for axis ##
