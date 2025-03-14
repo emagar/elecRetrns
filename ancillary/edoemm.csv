@@ -1,33 +1,33 @@
-edon,edo,estado
-1,ags,aguascalientes
-2,bc,baja california
-3,bcs,baja california sur
-4,cam,campeche
-5,coa,coahuila
-6,col,colima
-7,cps,chiapas
-8,cua,chihuahua
-9,df,distrito federal
-10,dgo,durango
-11,gua,guanajuato
-12,gue,guerrero
-13,hgo,hidalgo
-14,jal,jalisco
-15,mex,mexico
-16,mic,michoacan
-17,mor,morelos
-18,nay,nayarit
-19,nl,nuevo leon
-20,oax,oaxaca
-21,pue,puebla
-22,que,queretaro
-23,qui,quintana roo
-24,san,san luis potosi
-25,sin,sinaloa
-26,son,sonora
-27,tab,tabasco
-28,tam,tamaulipas
-29,tla,tlaxcala
-30,ver,veracruz
-31,yuc,yucatan
-32,zac,zacatecas
+edon,edo,estado,nota
+1,ags,aguascalientes,
+2,bc,baja california,
+3,bcs,baja california sur,
+4,cam,campeche,
+5,coa,coahuila,
+6,col,colima,
+7,cps,chiapas,
+8,cua,chihuahua,
+9,df,distrito federal,cdmx desde 2017--que ignoro por consistencia con pasado
+10,dgo,durango,
+11,gua,guanajuato,
+12,gue,guerrero,
+13,hgo,hidalgo,
+14,jal,jalisco,
+15,mex,mexico,
+16,mic,michoacan,
+17,mor,morelos,
+18,nay,nayarit,
+19,nl,nuevo leon,
+20,oax,oaxaca,
+21,pue,puebla,
+22,que,queretaro,
+23,qui,quintana roo,
+24,san,san luis potosi,
+25,sin,sinaloa,
+26,son,sonora,
+27,tab,tabasco,
+28,tam,tamaulipas,
+29,tla,tlaxcala,
+30,ver,veracruz,
+31,yuc,yucatan,
+32,zac,zacatecas,
