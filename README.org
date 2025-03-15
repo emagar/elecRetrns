@@ -237,6 +237,8 @@ Work in progress
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
+Thank you to [[https://github.com/pedromezaq][Pedro Meza Quintanilla]] for pull requestas that have updated and fixed bugs in the data. 
+
 Many students over the years have provided research assistance, retrieving and systematizing some of the information reported here. 
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
