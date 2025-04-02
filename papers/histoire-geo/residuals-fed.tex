@@ -184,9 +184,7 @@ Units of observation are municipalities, providing the total votes each party or
 \caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see the text for details.}\label{T:coverage}
 \end{table}
 
-Data is stored as text in \verb|csv| format (comma separated values), easily accessible for inspection with standard spreadsheet and data analysis software.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most Latin American special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and each party or coalition's vote tally.\footnote{The repository's \verb|README.md| file includes a detailed codebook describing what is in each spreadsheet column/field.} Also included is the vote total, to compute vote shares, and the number of eligible voters in the municipal election (the \emph{lista nominal}), to compute turnout rates.  
-
-Vote returns are stored in column pairs \verb|(v01,l01)|, \verb|(v02,l02)|, etc.\ for the first party reported, the second party, and so forth. The \verb|l| column in the pair identifies a party or coalition label, the \verb|v| column contains the total votes it won. Figure \ref{F:scrn} offers a glimpse for the state of Baja California's five municipalities over three election cycles. In Ensenada for $\texttt{yr} = 1998$, that $\texttt{v01} = 30660$, $\texttt{l01} = \texttt{pan}$, $\texttt{v02} = 31951$, and $\texttt{l02} = \texttt{pri}$ reveals 30,660 votes for the National Action Party (PAN), not far from but below the PRI's 31,951 votes. The column pair storage accommodates four decades of state party system heterogeneity, compounded by ephemerous electoral coalitions (as in Baja California) in a relatively small number of spreadsheet columns. The trade-off is that inspecting one party's performance across municipalities often requires additional manipulation, as its votes may not appear in the same column.\emm{Should write standalone R and Python scripts to extract a major party's votes in one column} 
+Data is stored as text in \verb|csv| format (comma separated values), readable with standard spreadsheet and data analysis software.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most spanish special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and each party or coalition's vote tally.\footnote{The repository's \verb|README.md| file includes a detailed codebook defining the field reported in each column.} Also included is the vote total, to compute vote shares, and the number of eligible voters in the municipal election (the \emph{lista nominal}), to compute turnout rates.  
 
 \begin{figure}
   \centering
@@ -194,9 +192,7 @@ Vote returns are stored in column pairs \verb|(v01,l01)|, \verb|(v02,l02)|, etc.
   \caption{Screenshot with a sample of the data organization}\label{F:scrn}
 \end{figure}  
 
-Three separate files with the same set of observations are distributed: one has raw votes as reported in the primary source; one systematically aggregates coalition votes; one splits the votes that each coalesced party contributed to the coalition total.\footnote{Files are \verb|aymu1970-on.csv|, \verb|aymu1970-on.coalAgg.csv|, and \verb|aymu1970-on.coalSplit.csv| respectively. Mexican election law distinguishes two forms of pre-election coalitions that parties may choose from: joint candidacies and coalitions proper. Voters can cast a vote for any joint-candidate-nominating party (or combinations of them), which are then added up to determine the plurality winning candidate, but can only cast a vote for the team as a whole in coalitions proper---hence the need for three municipal vote files. These subtleties have effects in public party finance mostly, but substantially complicate voting studies as scholars need to decide how to handle coalitions. In coalitions proper, and whenever the primary source does not offer the coalesced-parties vote breakdown, one artifical vote is added to the raw file, itself split among these parties to keep track of relative contributions (one example is Baja California in 2007).\label{fn:trio}} Banned until the mid-1980s at the local level, and rarely authorized up to the mid-1990s, coalitions have since become a staple of Mexican elections. Table \ref{T:coal} shows this. Each table row reports the coalitional profiles observed in a triennium. Increasingly aligned with the federal cycle, state electoral calendars varied substantially up to 2015. Despite mismatches and calendar shifts,\footnote{See \url{https://github.com/emagar/calendarioReelecion}. Shifting state calendars are discernible in the way municipal vote shares align vertically in Figure \ref{F:vpcts}, increasingly clustered over darker and distincter columns that correspond with federal elections.} triennial aggregates mostly capture one periodic election per municipality. The coalitional profile is `None' in the absence of any coalition, it is a `major-minor' arrangement when one major party (ie.\ PAN, PRI, PRD, or Morena) nominated a municipal ticket jointly with one or more minor parties, it is `Double major' when two majors ran jointly, and so forth. And the right-most column reports triennial average coalitions per municipality. 
-
-The mean number of coalitions only surpassed one by 2006--08, up from 0.29 six years before, and rose to a maximum 1.85 in 2018--20. It has declined since. Three distinct moments are distinguishable. Between 2000--02 and 2009--11, at least one major party, and increasingly two major parties would team up with minor parties to gain an edge in the municipal race. By 2006--08, four out of five municipal elections had major-minor arrangements. A second moment, between 2009--11 and 2012--14, added `double-major' races, with mostly PAN and PRD forging anti-PRI tickets in over one fifth of municipalities. A-coalitional races became ever rarer. A third moment came with Morena's foray into the party system, especially after 2018, forcing frequent regroupments of erstwhile rivals PAN, PRI, and PRD (`triple-major' coalitions) against the new behemoth, regroupments that shrank the number of coalitions per municipality by widening their scope. The file trio lends flexibility to handle coalitions in municipal elections as needed for analysis (see footnote \ref{fn:trio}). 
+Vote returns are stored in column pairs \verb|(v01,l01)|, \verb|(v02,l02)|, etc.\ for the first party reported, the second party, and so forth. The \verb|l| column of the pair identifies a party or coalition label, the \verb|v| column contains the total votes it won. Figure \ref{F:scrn} offers a glimpse for the state of Baja California's five municipalities over three election cycles. In Ensenada for $\texttt{yr} = 1998$, the PRI's 31,995 votes ($\texttt{l02} = \texttt{pri}$ indicates that this party's vote is stored in field $\texttt{v02}$) made it the plurality winner, trailed closely by the PAN's 30,660 votes (in field $\texttt{v01}$). The votes--label column pair storage accommodates four decades of state party system heterogeneity, compounded by ephemerous electoral coalitions (as seen in Baja California in the period portrayed) in a relatively small number of spreadsheet columns. The trade-off is that inspecting one party's performance across municipalities often requires additional manipulation, as its votes do not necessarily appear in the same column.\footnote{A standalone R script (still a beta version) extracts a simplified matrix, reporting each party's votes in a column that is named after it, for a single state-year's municipal races. The script is located in \verb|code/extract-state-yr-mu-returns.r|.} %\emm{Should write standalone Python script too.} 
 
 \begin{table}
 \resizebox{\textwidth}{!}{
@@ -204,10 +200,11 @@ The mean number of coalitions only surpassed one by 2006--08, up from 0.29 six y
     & \mc{10}{c}{Coalition profile relative frequency (\%)} & \\ [-1.8ex]
     \\ \cline{2-10}
     \\ [-1.8ex]
-     &      & One          & Two        & Three      &               & Double-major  & Double-major      &             & Triple-major   &       & (Mean co-  \\
-Cycle&  None&  major-minor & major-minor& major-minor&   Double-major& \& major-minor& \& two major-minor& Triple-major&  \& major-minor& Total & alitions)  \\
-     &      &              &            &            &               &               &                   &             &                &       &            \\ [-1.8ex] \hline
-     &      &              &            &            &               &               &                   &             &                &       &            \\ [-1.8ex] 
+     &      &              &            &            &               & Double-major  & Double-major &             &  Triple-major  &       &            \\
+     &      & One          & Two        & Three      &               & \&            & \& two       &             &  \&            &       & (Mean co-  \\
+Cycle&  None&  major-minor & major-minor& major-minor&   Double-major& major-minor   & major-minor  & Triple-major&  major-minor   & Total & alitions)  \\
+     &      &              &            &            &               &               &              &             &                &       &            \\ [-1.8ex] \hline
+     &      &              &            &            &               &               &              &             &                &       &            \\ [-1.8ex] 
  1979--81& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100 & (0.00) \\
  1982--84& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100 & (0.00) \\
  1985--87& 100.0&   ---&    ---&    ---&    ---&       ---&         ---&  ---&       ---& 100 & (0.00) \\
@@ -231,18 +228,58 @@ Cycle&  None&  major-minor & major-minor& major-minor&   Double-major& \& major-
 \caption{Coalitional profile of municipal races by federal election cycle. Cells report the percentage of municipalities in the cycle, and the cycle's mean number of coalitions per race in parentheses. Quantities consider coalitions where one partner at least was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions among minor parties only, which were also quite frequent.}\label{T:coal}
 \end{table}
 
+Three separate files, all with the same set of observations, are distributed:\footnote{Mexican election law distinguishes two forms of pre-election coalitions that parties may choose from: joint candidacies and coalitions proper. Voters can cast a vote for any joint-candidate-nominating party (or combinations of them), which are then added up to determine the plurality winning candidate, but can only cast a vote for the team as a whole in coalitions proper---hence the need for three municipal vote files. These subtleties have effects in public party finance mostly, but substantially complicate voting studies as scholars need to decide how to handle coalitions. In coalitions proper, and whenever the primary source does not offer the coalesced-parties vote breakdown, one artifical vote is added to the raw file, itself split among these parties to keep track of relative contributions (one example is Baja California in 2007).\label{fn:trio}}
+
+\begin{itemize}
+\item \verb|data/aymu1970-on.csv| has raw votes, as reported in the primary source; 
+\item \verb|data/aymu1970-on.coalAgg.csv| aggregates coalition votes systematically where ballot structure lets voters cast their vote to any party endorsing a joint candidate; and
+\item \verb|data/aymu1970-on.coalSplit.csv| splits the votes that each coalesced party contributed to the coalition total, relying for this on the relative votes each received (where the ballot structure offers this possibility), or on the coalition agreement between the parties (when one exists and the ballot structure does not offer the latter possibility), or on the relative votes coalesced parties received the last time they ran separately in the municipality (when the previous alternatives are impracticable).  
+\end{itemize}
+
+\section{Pre-election coalitions}
+Banned until the mid-1980s at the local level, and rarely authorized up to the mid-1990s, coalitions have since become a staple of Mexican elections. Table \ref{T:coal} shows this. Each table row reports the coalitional profiles observed across municipal races in a triennium (despite state electoral calendar shifts,\footnote{See \url{https://github.com/emagar/calendarioReelecion}. State electoral calendars varied substantially up to 2015, but have since become increasingly aligned with the federal cycle. This change is discernible in the way municipal vote shares align vertically in Figure \ref{F:vpcts}, increasingly clustered over darker and distincter columns that correspond with federal elections.} triennial aggregates mostly capture one periodic election per municipality). The coalitional profile is `None' in the absence of any coalition; it is a `major-minor' arrangement when one major party (ie.\ PAN, PRI, PRD, or Morena) nominated a municipal ticket jointly with one or more minor parties; it is `Double major' when two majors ran jointly; and so forth.
+
+Three distinct moments are distinguishable. Between the 2000--02 and 2006--08 triennia, inclusive, at least one major party, and increasingly two major parties, would team up with minor parties to gain an edge in the municipal race. By the end of this fisrt moment, four out of five municipal elections had one or more major-minor arrangements. A second moment, between 2009--11 and 2012--14, added frequent `double-major' races, with mostly PAN and PRD forging anti-PRI tickets in over one-fifth of municipalities. And a-coalitional races became ever rarer. A third moment came with Morena's foray into the party system, especially after 2018, forcing frequent full regroupments of erstwhile rivals PAN, PRI, and PRD (`triple-major' coalitions) against the new Behemoth, regroupments that shrank the number of coalitions per municipality by widening their scope (the right-most column reports triennial average coalitions per municipality, parenthesized).
+
+The file trio lends flexibility to handle coalitions in municipal elections as needed for analysis. % (see footnote \ref{fn:trio}). 
+
+% And the right-most column reports triennial average coalitions per municipality, parenthesized. The mean number of coalitions only surpassed one by 2006--08, up from 0.29 six years before, and rose to a maximum 1.85 in 2018--20. It has declined since.
+
 \section{Descriptive statistics}
 
-This section turns to summaries of party vote shares across municipalities nationwide. It aims to demostrate that municipal party support in the data sets conforms with received wisdom of Mexico's atypical democratic transition \citep[eg.][]{cornelius.1996} and subsequent political national-level development \citep[eg.][]{diaz-estevez-magaloni-Poverty-book.2016}. Summaries also shed light over potential applications of the data. 
+This section turns to summaries of party vote shares across municipalities nationwide. It aims to demostrate that municipal party support in the distributed data sets conforms with received wisdom of Mexico's atypical democratic transition \citep[eg.][]{cornelius.1996} and subsequent political national-level development \citep[eg.][]{diaz-estevez-magaloni-Poverty-book.2016}. Summaries also shed light over potential applications of the data. 
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/vpct1979-2024.pdf}
-  \caption{The evolution of electoral parties in municipal races 1979--2024. Lines are the vote percentage each party won in the median municipality across time (the trend is smoothed for clarity). Each color-coded tiny circle is one individual party's vote percentage in one municipal election (slightly x-jittered for visibility, the residual `Others' category is omitted).}\label{F:vpcts}
+  \caption{The electoral evolution of parties in municipal races 1979--2024. Color-coded circles report one party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves are the vote percentage that each party won in the median municipality across time (the trend is smoothed for clarity).}\label{F:vpcts}
 \end{figure}  
 
-Figure \ref{F:vpcts} plots municipal elections since 1979. Each color-coded tiny circle quantifies a party's vote percent in a given municipality-election. The hegemonic party system of the 1970s remained much in place at the start of the series, the PRI's red circles modally anchored at 100 percent of the vote, ruling uncontested. The right-of-center PAN, like new entrants in the political left, achieved more than a symbolic vote percentage in a few dozen municipalities only. They started picking up steam after the economy crashed in 1982, gradually mobilizing social discontent in the electoral arena. 
+Figure \ref{F:vpcts} offers a group portrait, plotting every municipal elections since 1979 for which there is data (using the split coalition file). Each minuscule, color-coded circle quantifies a party's vote percent in one municipal election---137,813 in total, for 30,633 non-missing municipal races. The hegemonic party system of the 1960s and 1970s remained much in place at the start of the series, the PRI's red circles modally anchored at 100 percent of the vote, ruling uncontested \citep{segovia.els1979}. Back then the right-of-center PAN (in blue), as well as the new entrants in the political left (in gold), achieved more than a symbolic vote percentage in a few dozen, urban municipalities only.
 
-Plot lines smooth the parties' vote in the median municipality over time, neatly capturing the general erosion of the PRI's support and the rise of a dual opposition. The Party of the Democratic Revolution (PRD), which amalgamated splinters from the PRI and the social democracy, created coordination dilemmas for the anti-PRI vote \citep{magaloni.2006}.  
+\begin{figure}
+  \centering
+  \textbf{A -- Percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024-legend.pdf} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024.pdf} \\
+  \textbf{B -- Size-weighted percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2024.pdf}
+  \caption{Winners by federal election cycle. Relative frequencies in panel B are weighted by the municipality's population. Coalition winners are given to the major party (or the largest major when more than one joined forces). See text for important details.}\label{F:win}
+\end{figure}  
+
+Opposition parties began picking up steam after the 1982 economic crash, gradually mobilizing social discontent in the electoral arena \citep{molinar.1991a,klesner.Alignment.1993}. Plot lines, which smooth the parties' vote in the median municipality over time, neatly capture the steady erosion of the PRI's electoral support and the rise of a dual opposition. Note, however, how the PAN and left vote curves in municipal elections appear to lift more slowly than national events in the second half of the 1980s would suggest. This apparent anomaly owes to the unit of analysis, as municipalities have massive population disparities. Ecological analyses of voting showed that the most solid predictor of opposition voting in a unit was the share of people living in cities \citep{ames.1970,lehr.1985,magar.1994}, few in number but important in size. In a rapidly urbanizing society, this correlation became a harbinger of the challenge ahead for the PRI. It also anticipated a major obstacle for newcomers, as the PRI remained a formidable competitor in enclaves of smaller, rural, low-turnout municipalities. Up to the near end of the series, only the PRI would be capable of getting out votes in numerous units that others could only dream to approach. Until the mid-1990s, the median municipality was firmly planted in such enclaves.
+
+Figure \ref{F:win} shows this from another angle, winners in municipal races. 
+
+in the plot shoes just this: easier to see in blue, relatively small number of blue circles took off, while the median municipality remained at or close to zero. Figure \ref{F:win} shows how PAN won larger municipalities. 
+
+The rise of anti-PRI vote
+
+
+The creation of the Party of the Democratic Revolution (PRD), which in 1989 amalgamated splinters from the PRI and and earlier social demicratic party incarnations, locked this in. Between 1997 and 2015, PRI, PAN, and PRD would become the three majors in Mexico's democratic multiparty system. 
+
+Duality created coordination dilemmas for the anti-PRI vote \citep{magaloni.2006}.  
+
+Rise of Morena and party system fragmentation.
 
 Figure \ref{F:enp} reports effective number of parties and candidates in the period \citep{laakso.taagepera.1979}. The index rose to between two and two-and-a-half parties in the mid-1990s.  
 
@@ -286,16 +323,6 @@ Figure \ref{F:enp} reports effective number of parties and candidates in the per
 Coaliciones and candidatos comunes.
 
 Winners in the incumbents dataset has names, this done with coalAgg. For visual simplicity, coalition winners in each election go to the major party. When two or three majors partnered, the winner goes arbitrarily to the largest of them in the state-cycle. 
-
-\begin{figure}
-  \centering
-  \textbf{A -- Percent municipalities won} \\
-  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024-legend.pdf} \\
-  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2024.pdf} \\
-  \textbf{B -- Size-weighted percent municipalities won} \\
-  \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2024.pdf}
-  \caption{Winners by federal election cycle. Relative frequencies in panel B are weighted by the municipality's population. Coalition winners are given to the major party (or the largest major when there was more than one). See text for important details.}\label{F:win}
-\end{figure}  
 
 
 \section{Reelection as insurance policy}
@@ -360,7 +387,7 @@ The note elaborates how statistics were prepared (replication code can be found 
 * First differences
 One common approach to study electoral change is through first differences. Denoting $v_t$ the party's vote share in the municipality or the /sección/, in period $t$, the first difference is simply $d_t = v_t - v_{t-1}$. 
 
-$d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
+$d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.els1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
 
 (First differences appear in the fields ~d.pan~, ~d.pri~, and ~d.morena~ in the distributed data.)
 
