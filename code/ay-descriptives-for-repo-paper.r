@@ -393,12 +393,17 @@ table(d$l[d$yr>1978], useNA = "ifany")
 ## winners by cycle
 t <- table(d$cyclef, d$l)
 t <- round(t*100/rowSums(t),1)
-rownames(t) <- seq(1979,2024,3)
+rownames(t) <- seq(1979,2024,3) ## for sorting
 t <- t[order(rownames(t), decreasing = TRUE),]
+l1 <- seq(1979,2024,3)
+l2 <- c(seq(81,99,3),"02","05","08",seq(11,26,3))
+## lb <- paste(l1, l2, sep = "-") ## full 1979-82 to 2024-26
+lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024*") ## 1979-82 to 2021-23 and just 2024
+rownames(t) <- rev(lb)
 t(t)
 
 pdf(file = "../plots/pctwin1979-2024.pdf", width=10, height=5)
-par(mar=c(3,4,0,2)+0.1) # drop title space and xlab space
+par(mar=c(3,4.5,0,2)+0.1) # drop title space and xlab space
 barplot(t(t)
       , horiz = TRUE
       , col = c(col.pri(), col.pan(), col.prd(), col.mc(), col.pvem(), col.pt(), col.oth(), col.morena())
@@ -418,7 +423,7 @@ dev.off()
 
 ## Self-standing legend for both plots in latex
 pdf(file = "../plots/pctwin1979-2024-legend.pdf", width=10, height=.35)
-par(mar=c(0,4,0,2)+0.1) # drop title space and xlab space
+par(mar=c(0,4.5,0,2)+0.1) # drop title space and xlab space
 plot(x=c(0,100), y=c(0,1), type = "n", axes = FALSE, xlab = "", ylab = "")
 tx <- seq(2, 96, length.out = 8)
 text(x = tx[1], y = .2, labels = c("PRI"), col = col.pri())
@@ -481,7 +486,7 @@ t <- as.matrix(t)
 t[is.na(t)] <- 0
 ##
 pdf(file = "../plots/pctwin-popw1979-2024.pdf", width=10, height=5)
-par(mar=c(3,4,0,2)+0.1) # drop title space and xlab space
+par(mar=c(3,4.5,0,2)+0.1) # drop title space and xlab space
 barplot(t
       , horiz = TRUE
       , col = c(col.pri(), col.pan(), col.prd(), col.mc(), col.pvem(), col.pt(), col.oth(), col.morena())
