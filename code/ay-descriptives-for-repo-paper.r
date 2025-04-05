@@ -17,14 +17,14 @@ rm(pth)
 ###################################
 ## Define party colors for plots ##
 ###################################
-col.pan    <- function(alpha=1) return(rgb(0,0,1                  , alpha=alpha))
-col.pri    <- function(alpha=1) return(rgb(1,0,0                  , alpha=alpha))
-col.pt     <- function(alpha=1) return(rgb(1,70/255,0             , alpha=alpha))
-col.prd    <- function(alpha=1) return(rgb(245/255,189/255,2/255  , alpha=alpha))
-col.morena <- function(alpha=1) return(rgb(114/255,0/255,18/255   , alpha=alpha))
-col.pvem   <- function(alpha=1) return(rgb(0,128/255,0            , alpha=alpha))
-col.mc     <- function(alpha=1) return(rgb(255/255,145/255,0/255  , alpha=alpha))
-col.oth    <- function(alpha=1) return(rgb(113/255,113/255,113/255, alpha=alpha))
+col.pan    <- function(alpha=1) return(rgb(      0,       0,      1, alpha=alpha))
+col.pri    <- function(alpha=1) return(rgb(      1,       0,      0, alpha=alpha))
+col.pt     <- function(alpha=1) return(rgb(      1,  70/255,      0, alpha=alpha))
+col.prd    <- function(alpha=1) return(rgb(245/255, 189/255,  2/255, alpha=alpha))
+col.morena <- function(alpha=1) return(rgb(114/255,   0/255, 18/255, alpha=alpha))
+col.pvem   <- function(alpha=1) return(rgb(      0, 128/255,      0, alpha=alpha))
+col.mc     <- function(alpha=1) return(rgb(255/255, 145/255,  0/255, alpha=alpha))
+col.oth    <- function(alpha=1) return(rgb(113/255, 113/255,113/255, alpha=alpha))
 
 #####################
 ## Read data files ##
@@ -401,7 +401,6 @@ l2 <- c(seq(81,99,3),"02","05","08",seq(11,26,3))
 lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024*") ## 1979-82 to 2021-23 and just 2024
 rownames(t) <- rev(lb)
 t(t)
-
 pdf(file = "../plots/pctwin1979-2024.pdf", width=10, height=5)
 par(mar=c(3,4.5,0,2)+0.1) # drop title space and xlab space
 barplot(t(t)
@@ -480,8 +479,9 @@ t <- merge(t, t16[,c(1,3)], by = "l", all = TRUE)
 rm(list = paste0("t",1:16)) ## clean
 rownames(t) <- t$l
 t$cyclef <- t$l <- NULL
-colnames(t) <- seq(1979,2024,3)
+colnames(t) <- seq(1979,2024,3) ## for sorting
 t <- t[,order(colnames(t), decreasing = TRUE)]
+colnames(t) <- rev(lb)
 t <- as.matrix(t)
 t[is.na(t)] <- 0
 ##
@@ -806,4 +806,133 @@ lines(tmp , lty = 1, lwd = 2, col = col.pvem() )
 dev.off()
 
 d[1,] 
+
+
+##############################
+## Ternary plot PAN/PRI/PRD ##
+##############################
+#
+###################################################################################################################
+## imports object with split-coal ay data since 1988 including vote shares for pan pri prd morena mc pvem pt oth ##
+## To update, run code in reelec/code/ay-vote.r from start to where this file is saved to disk                   ##
+###################################################################################################################
+d <- read.csv(file = "../../reelec/data/aymu1988-on-v7-coalSplit.csv")
+d <- d[d$yr>1978,] ## drop pre 1979
+d$morena[d$yr<2015] <- NA ## drop zeroes from pre-morena
+d$pvem[d$yr<1993] <- NA ## drop zeroes from pre-pvem
+d$mc[d$yr<2000] <- NA ## drop zeroes from pre-conve
+table(d$status)
+d[1,]
+##
+## Plot will be for pre-2015, so left=prd
+d$left <- d$prd
+
+## Function to generate triplot
+la.ternera <- function(datos, color = rgb(.55,.27,.07, alpha = .2), cex.pts = .15, pch = 1, main = NA, labs=c("Left","PAN","PRI"), left.right.up=c("left","pan","pri"), add.sign=TRUE){
+    ######################################################################
+    ## Function transforming ternary into cartesian coordinates         ##
+    ## https://stackoverflow.com/questions/11623602/shaded-triplot-in-r ##
+    ######################################################################
+    tern2cart <- function(coord){
+        coord[1] -> x
+        coord[2] -> y
+        coord[3] -> z
+        x+y+z -> tot
+        x/tot -> x
+        y/tot -> y
+        z/tot -> z
+        (2*y + z)/(2*(x+y+z)) -> x1
+        sqrt(3)*z/(2*(x+y+z)) -> y1
+        return(c(x1,y1))
+    }
+    ####################################
+    ## Function to add vértice labels ##
+    ####################################
+    add.lab <- function(labels=c("no","label","defined"), add.sign=TRUE){
+        left  <- labels[1];
+        right <- labels[2];
+        up    <- labels[3];
+        text(0,0,labels=left,pos=1)         # left
+        text(1,0,labels=right,pos=1)        # right
+        text(0.5,sqrt(3)/2,labels=up,pos=3) # up
+        if (add.sign==TRUE) text(0.5,0,labels="@emagar",pos=1,cex=.75,col="gray")
+    }
+    ## Prepare data: re-arrange so pan is lower right, pri lower left/morena is above 
+    datos <- datos[, left.right.up] # subset
+    #Then transformed into cartesian coordinates:
+    datos <- t(apply(datos, 1, tern2cart))
+    # Draw the empty ternary diagram:
+    par(mar=c(2.1, 2.1, 4.1, 2.1)) ## SETS B L U R MARGIN SIZES
+    plot(NA, NA, xlim=c(0,1), ylim=c(0,sqrt(3)/2), asp=1, bty="n", axes=F, xlab="", ylab="", main = main) ## empty plot
+    segments(  0,         0, 0.5, sqrt(3)/2)
+    segments(0.5, sqrt(3)/2,   1,         0)
+    segments(  1,         0,   0,         0)
+    # add vértice labels
+    add.lab(labs, add.sign=add.sign)
+    ## # add a grid:
+    ## a <- seq(0.9,0.1,by=-0.1)
+    ## b <- rep(0,9)
+    ## c <- seq(0.1,0.9,by=0.1)
+    ## grid <- data.frame(x=c(a, b, c, a, c, b),y=c(b, c, a, c, b, a),z=c(c, a, b, b, a, c))
+    ## t(apply(grid,1,tern2cart)) -> grid.tern
+    ## cbind(grid.tern[1:27,],grid.tern[28:54,]) -> grid
+    ## apply(grid,1,function(x){segments(x0=x[1],y0=x[2],x1=x[3],y1=x[4],lty=2,col="grey80")})
+    ## # axis labels
+    ## paste(seq(10,90,by=10),"%")->lab
+    ## text(grid.tern[9:1,],paste(lab,"\n(PAN)"),col="grey80",cex=0.7, pos=2)
+    ## text(grid.tern[18:10,],paste(lab,"\n(PRI)"),col="grey80",cex=0.7, pos=4)
+    ## text(grid.tern[27:19,],paste(lab,"\n(Morena)"),col="grey80",cex=0.7, pos=1)
+    # or 50-50 to 33-33-33 lines instead
+    ## a <- c(1,1,0)
+    ## b <- c(1,0,1)
+    ## c <- c(0,1,1)
+    ## d <- c(1,1,1)
+    ## grid <- data.frame(matrix(c(a,b,c,d),nrow=4,byrow=TRUE))
+    ## grid.tern <- t(apply(grid,1,tern2cart))
+    ## for (i in 1:3){
+    ##     segments(x0=grid.tern[i,1],y0=grid.tern[i,2],x1=grid.tern[4,1],y1=grid.tern[4,2],lty=2,col="grey10")
+    ## }
+    # or 10 percent bands
+    a <- c( 57.5, 42.5,    0)
+    b <- c( 57.5,    0, 42.5)
+    c <- c(130/3, 85/3, 85/3)
+    grid <- data.frame(matrix(c(a,b,c), nrow=3, byrow=TRUE))
+    grid.tern <- t(apply(grid, 1, tern2cart))
+    for (i in 1:2){
+        #i <- 1 # debug
+        segments(x0=grid.tern[i,1], y0=grid.tern[i,2], x1=grid.tern[3,1], y1=grid.tern[3,2], lty=2, col="grey10")
+    }
+    a <- c(42.5,  57.5,    0)
+    b <- c(   0,  57.5, 42.5)
+    c <- c(85/3, 130/3, 85/3)
+    grid <- data.frame(matrix(c(a,b,c), nrow=3, byrow=TRUE))
+    grid.tern <- t(apply(grid, 1, tern2cart))
+    for (i in 1:2){
+        #i <- 1 # debug
+        segments(x0=grid.tern[i,1], y0=grid.tern[i,2], x1=grid.tern[3,1], y1=grid.tern[3,2], lty=2, col="grey10")
+    }
+    a <- c(42.5,    0,  57.5)
+    b <- c(   0, 42.5,  57.5)
+    c <- c(85/3, 85/3, 130/3)
+    grid <- data.frame(matrix(c(a,b,c), nrow=3, byrow=TRUE))
+    grid.tern <- t(apply(grid, 1, tern2cart))
+    for (i in 1:2){
+        #i <- 1 # debug
+        segments(x0=grid.tern[i,1], y0=grid.tern[i,2], x1=grid.tern[3,1], y1=grid.tern[3,2], lty=2, col="grey10")
+    }
+    # Plot points:
+    points(datos, pch = pch, cex = cex.pts, col = color)
+}
+
+## prep data
+tmp <- d[d$yr>=1989 & d$yr<2015 & d$edon!=9, c("pan", "pri", "left")] # subset
+##tmp <- d[d$yr>=1989 & d$yr<2015 & d$edon!=9 & !is.na(d$lisnom) & d$lisnom>20000, c("pan", "pri", "left")] # subset
+tri.color <- apply(tmp, 1, which.max); names(tri.color) <- NULL
+tri.color[tri.color==1] <- col.pan(.05)
+tri.color[tri.color==2] <- col.pri(.05)
+tri.color[tri.color==3] <- col.prd(.05)
+#pdf(file = "../plots/triplot1989-2014-v-mu.pdf")
+la.ternera(datos = tmp, cex.pts = .75, pch = 20, color = tri.color, add.sign=FALSE, main ="")
+#dev.off()
+
 

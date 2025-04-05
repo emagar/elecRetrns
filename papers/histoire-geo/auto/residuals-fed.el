@@ -43,9 +43,10 @@
     "F:scrn"
     "T:coal"
     "fn:trio"
+    "F:enp"
     "F:vpcts"
     "F:win"
-    "F:enp"
+    "F:triplot"
     "ts-eq"
     "alpha-eq")
    (LaTeX-add-bibliographies
