@@ -13,7 +13,8 @@ colnames(d)
 # make numeric
 sel <- grep("v[.]*|nr|nul|tot|lisnom", colnames(d))
 sel <- c(7:39,50)
-sel <- c("pan","pri","prd","pvem","pt","mc","morena","indep","pan.pri.prd","pan.pri","pan.prd","pri.prd","pvem.pt.morena","pvem.pt","pvem.morena","pt.morena","nr","nul","tot","lisnom")
+sel <- c("pan","pri","prd","pt","pvem","mc","morena","pes","campechelibre","espacio.dem.campeche","movimientolaborista","local",
+         "pri.prd","pt.pvem.morena","pt.pvem","pt.morena","pvem.morena","validos","nr","nul","total")
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -28,13 +29,13 @@ colnames(d)
 
 # consolidate mun votes
 for (i in sel){
-    d[,i] <- ave(d[,i], as.factor(d$ife), FUN=sum, na.rm=TRUE)
+    d[,i] <- ave(d[,i], as.factor(d$inegi), FUN=sum, na.rm=TRUE)
 }
 
 head(d)
 
 # drop redundant obs
-d <- d[duplicated(d$ife)==FALSE,]
+d <- d[duplicated(d$inegi)==FALSE,]
 
 colnames(d)
 sel <- c(5:6,17:33,36)
