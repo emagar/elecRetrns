@@ -936,3 +936,27 @@ la.ternera(datos = tmp, cex.pts = .75, pch = 20, color = tri.color, add.sign=FAL
 #dev.off()
 
 
+########################
+## number bureaucrats ##
+########################
+d <- da
+d <- d[d$yr>2020 & d$yr<2025,]
+## keep closest to 2023 as the obs
+table(d$yr,d$edon)
+d$yr[d$yr==2024] <- 2023
+d$yr[d$yr==2021 & d$edon==30] <- 2023
+d$yr[d$yr==2022 & d$edon==10] <- 2023
+d <- d[d$yr==2023,]
+
+## read from clipboard
+bur <- read.delim("clipboard")
+dim(d)
+dim(bur)
+d <- merge(x=d, y=bur, by="inegi", all.x = TRUE, all.y = FALSE) 
+d[1,]
+d$total <- as.numeric(d$total)
+d$bur1k <- d$total * 1000 / d$lisnom
+summary(d$bur1k)
+summary(d$bur1k[d$edon!=9])
+quantile(d$bur1k[d$edon!=9], probs = c(.1,.9,.95,.99), na.rm = TRUE)
+
