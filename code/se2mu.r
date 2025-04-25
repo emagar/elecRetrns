@@ -15,6 +15,10 @@ sel <- grep("v[.]*|nr|nul|tot|lisnom", colnames(d))
 sel <- c(7:39,50)
 sel <- c("pan","pri","prd","pt","pvem","mc","morena","pes","campechelibre","espacio.dem.campeche","movimientolaborista","local",
          "pri.prd","pt.pvem.morena","pt.pvem","pt.morena","pvem.morena","validos","nr","nul","total")
+
+sel <- c("PAN", "PRI", "PRD", "PVEM", "PT", "MC", "MORENA", "PAN_PRI_PRD", "PAN_PRI", "PAN_PRD", "PRI_PRD", "PVEM_PT_MORENA", "PVEM_PT", "PVEM_MORENA", "PT_MORENA", "CAND_IND1", "CAND_IND2", "nr", "nul", "tot")
+m <- d
+
 v <- d[,sel]
 v[1,]
 for (i in 1:ncol(v)){
@@ -23,20 +27,33 @@ for (i in 1:ncol(v)){
 v[is.na(v)] <- 0
 d[,sel] <- v
 
-head(d)
+head(m)
 str(d)
 colnames(d)
+table(d$ncasnul)
 
 # consolidate mun votes
 for (i in sel){
-    d[,i] <- ave(d[,i], as.factor(d$inegi), FUN=sum, na.rm=TRUE)
+    d[,i] <- ave(d[,i], as.factor(d$disn), FUN=function(x) sum(x, na.rm=TRUE))
 }
 
-head(d)
+for (i in sel){
+    m[,i] <- ave(m[,i], as.factor(m$ife), FUN=function(x) sum(x, na.rm=TRUE))
+}
+
+    d$ncasnul <- ave(d$TRIBUNAL, as.factor(d$disn), FUN=sum, na.rm=TRUE)
+    d$lisnom <- ave(d$lisnom, as.factor(d$disn), FUN=sum, na.rm=TRUE)
+    m$ncasnul <- ave(m$TRIBUNAL, as.factor(m$ife), FUN=sum, na.rm=TRUE)
+    m$lisnom <- ave(m$lisnom, as.factor(m$ife), FUN=sum, na.rm=TRUE)
+d <- d[d$TRIBUNAL!=1,]
+m <- m[m$TRIBUNAL!=1,]
+head(m)
 
 # drop redundant obs
-d <- d[duplicated(d$inegi)==FALSE,]
+d <- d[duplicated(d$disn)==FALSE,]
+m <- m[duplicated(m$ife)==FALSE,]
 
+dim(d)
 colnames(d)
 sel <- c(5:6,17:33,36)
 d <- d[,sel]
@@ -63,8 +80,8 @@ d$ife <- d$ife + 16000
 d$inegi <- ife2inegi(d$ife)
 
 setwd("~/Downloads")
-file2 <- "tmp.csv"
-write.csv(d, file = file2, row.names = FALSE)
+file2 <- "tmpm.csv"
+write.csv(m, file = file2, row.names = FALSE)
 
 
 # re-read after hand cleaning
