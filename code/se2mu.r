@@ -4,7 +4,6 @@ file <- "tab2018ayca.csv"
 d <- read.csv(file = file, stringsAsFactors = FALSE, fileEncoding="utf-8")
 ## or from clipboard
 d <- read.delim("clipboard")
-
 d[1,]
 str(d)
 colnames(d)
