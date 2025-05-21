@@ -2,18 +2,24 @@
 |---------------------------------+-----+-----------|
 | Carlos Alexis Sarabia Melgarejo |     | Prim 2025 |
 | Isaac Palatto                   |     | Prim 2025 |
-| Daniela Guzmán Lerma            |     | Oto 2021  |
-| Eugenio Solís Flores            |     | Oto 2021  |
-| Sonia Kuri Kosegarten           |     | Oto 2021  |
+| José Angel Torrens Hernández    |     | Oto 2022  |
+| Daniela Guzmán Lerma            |     | 2021      |
+| Sonia Kuri Kosegarten           |     | 2021      |
+| Eugenio Solís Flores            |     | Oto 2020  |
+| Vidal Mendoza Tinoco            |     | Oto 2019  |
+| Camila Blanes                   |     | Prim 2018 |
 | Julio Solís Arce                |     | Oto 2017  |
-| Lucía Motolinia Carballo        |     | 2012-2014 |
+| Arián Montiel                   |     | Oto 2016  |
+| Isabel Mejía Fontanot           |     | Prim 2016 |
+| Reynaldo Lecona                 |     | Oto 2014  |
+| Lucía Motolinia Carballo        |     | 2012-2013 |
+| Mariana Meza Hernández          |     | Oto 2011  |
+| Jessica Zarkin                  |     | Prim 2011 |
 | Francisco Garfias               |     | Prim 2008 |
 | Francisco Cantú                 |     | 2005      |
 | Mauricio Fernández Duque        |     | 2004      |
-| José Angel Torrens Hernández    |     |           |
+| Roberto Ponce López             |     | ~2003     |
 | Odette González Carrillo        |     |           |
-| Roberto Ponce López             |     |           |
-| Vidal Mendoza Tinoco            |     |           |
-
+| Viridiana Ríos                  |     |           |
 
 

@@ -953,10 +953,91 @@ bur <- read.delim("clipboard")
 dim(d)
 dim(bur)
 d <- merge(x=d, y=bur, by="inegi", all.x = TRUE, all.y = FALSE) 
+d$edon <- as.integer(as.numeric(d$inegi)/1000)
 d[1,]
 d$total <- as.numeric(d$total)
-d$bur1k <- d$total * 1000 / d$lisnom
-summary(d$bur1k)
-summary(d$bur1k[d$edon!=9])
-quantile(d$bur1k[d$edon!=9], probs = c(.1,.9,.95,.99), na.rm = TRUE)
+d$bur.pct <- d$total * 100 / d$lisnom
+summary(d$bur.pct)
+summary(d$bur.pct[d$edon!=9])
+quantile(d$bur.pct[d$edon!=9], probs = c(.1,.9,.95,.99), na.rm = TRUE)
+d$bur.int <- cut(d$bur.pct, breaks = seq(0,5,.25), labels = seq(.25,5,.25))
+
+sel <- which(d$lisnom < 50000)
+plot(d$bur.int[sel], xlab = "Personal por 100 votantes (2023)", main = "Lista nom. < 50k")
+
+sel <- which(50000 < d$lisnom & d$lisnom < 250000)
+plot(d$bur.int[sel], xlab = "Personal por 100 votantes (2023)", main = "50k < Lista nom. < 250k")
+
+sel <- which(250000 < d$lisnom)
+plot(d$bur.int[sel], xlab = "Personal por 100 votantes (2023)", main = "250k < Lista nom.")
+
+
+plot(d$bur.int, main = "Personal por 100 votantes (2023)")
+tmp <- d[order(d$bur.pct), c("inegi", "mun.x", "bur.pct", "total")]
+sel <- grep("^LEON$", d$mun.x)
+d$bur.pct[sel]
+
+x
+
+
+################
+## budget etc ##
+################
+d <- da
+d <- d[d$yr>2020 & d$yr<2025,]
+## keep closest to 2023 as the obs
+table(d$yr,d$edon)
+d$yr[d$yr==2024] <- 2023
+d$yr[d$yr==2021 & d$edon==30] <- 2023
+d$yr[d$yr==2022 & d$edon==10] <- 2023
+d <- d[d$yr==2023,]
+
+## read from clipboard
+bud <- read.delim("clipboard")
+dim(d)
+dim(bud)
+d <- merge(x=d, y=bud, by="inegi", all.x = TRUE, all.y = FALSE) 
+d[1,]
+str(d)
+d$presup2021 <- as.numeric(d$presup2021)
+d$presup2022 <- as.numeric(d$presup2022)
+
+d$pr2021hab <- d$presup2021 / d$lisnom
+d$pr2022hab <- d$presup2022 / d$lisnom
+summary(d$pr2021hab)
+summary(d$pr2022hab)
+quantile(d$pr2021hab[!is.na(d$pr2021hab)==TRUE] / 12, probs = c(.1,.9,.95,.99), na.rm = TRUE)
+
+d$pr.int <- cut(d$pr2021hab / 12, breaks = seq(0,1500,50), labels = seq(50,1500,50))
+plot(d$pr.int, main = "Presupuesto mensual per cápita (2021)")
+tmp <- d[order(d$bur.pct), c("inegi", "mun.x", "bur.pct", "total")]
+
+sel <- which(d$lisnom < 50000)
+plot(d$pr.int[sel], xlab = "Presupuesto mensual per cápita (2021)", main = "Lista nom. < 50k")
+
+sel <- which(50000 < d$lisnom & d$lisnom < 250000)
+plot(d$pr.int[sel], xlab = "Presupuesto mensual per cápita (2021)", main = "50k < Lista nom. < 250k")
+
+sel <- which(250000 < d$lisnom)
+plot(d$pr.int[sel], xlab = "Presupuesto mensual per cápita (2021)", main = "250k < Lista nom.")
+
+summary((d$inmueb + d$renta) * 1000 / d$lisnom)
+quantile((d$inmueb + d$renta) * 1000 / d$lisnom, probs = .99, na.rm = TRUE)
+d$inm.int <- cut((d$inmueb + d$renta) * 1000 / d$lisnom, breaks = seq(0,10,.25), labels = seq(.25,10,.25))
+
+sel <- which(d$lisnom < 50000)
+plot(d$inm.int[sel], xlab = "Inmuebles del gob. por 1000 vot.", main = "Lista nom. < 50k")
+
+sel <- which(50000 < d$lisnom & d$lisnom < 250000)
+plot(d$inm.int[sel], xlab = "Inmuebles del gob. por 1000 vot.", main = "50k < Lista nom. < 250k")
+
+sel <- which(250000 < d$lisnom)
+plot(d$inm.int[sel], xlab = "Inmuebles del gob. por 1000 vot.", main = "250k < Lista nom.")
+
+plot(d$inm.int, main = "Inmuebles gubernamentales x1000 vot.")
+
+summary(d$lisnom)
+
+
+
 
