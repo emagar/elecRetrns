@@ -13,8 +13,7 @@ sel <- grep("v[.]*|nr|nul|tot|lisnom", colnames(d))
 sel <- c(7:39,50)
 sel <- c("pan","pri","prd","pt","pvem","mc","morena","pes","campechelibre","espacio.dem.campeche","movimientolaborista","local",
          "pri.prd","pt.pvem.morena","pt.pvem","pt.morena","pvem.morena","validos","nr","nul","total")
-
-sel <- c("PAN", "PRI", "PRD", "PVEM", "PT", "MC", "MORENA", "PAN_PRI_PRD", "PAN_PRI", "PAN_PRD", "PRI_PRD", "PVEM_PT_MORENA", "PVEM_PT", "PVEM_MORENA", "PT_MORENA", "CAND_IND1", "CAND_IND2", "nr", "nul", "tot")
+sel <- c("PAN","PRI","PVEM","PT","MC","MOR","CAND_IND_1","CAND_IND_2","C_PVEM_MOR","NO_REGISTRADAS","NULOS","TOTAL_VOTOS_ASENTADO","TOTAL_VOTOS_CALCULADO","LISTA_NOMINAL")
 m <- d
 
 v <- d[,sel]
@@ -26,7 +25,7 @@ v[is.na(v)] <- 0
 d[,sel] <- v
 
 head(m)
-str(d)
+str(m)
 colnames(d)
 table(d$ncasnul)
 
@@ -39,12 +38,6 @@ for (i in sel){
     m[,i] <- ave(m[,i], as.factor(m$ife), FUN=function(x) sum(x, na.rm=TRUE))
 }
 
-    d$ncasnul <- ave(d$TRIBUNAL, as.factor(d$disn), FUN=sum, na.rm=TRUE)
-    d$lisnom <- ave(d$lisnom, as.factor(d$disn), FUN=sum, na.rm=TRUE)
-    m$ncasnul <- ave(m$TRIBUNAL, as.factor(m$ife), FUN=sum, na.rm=TRUE)
-    m$lisnom <- ave(m$lisnom, as.factor(m$ife), FUN=sum, na.rm=TRUE)
-d <- d[d$TRIBUNAL!=1,]
-m <- m[m$TRIBUNAL!=1,]
 head(m)
 
 # drop redundant obs
@@ -74,8 +67,8 @@ pth <- ifelse (Sys.info()["user"] %in% c("eric", "magar"),
     )
 source( paste(pth, "inegi2ife.r", sep = "/") )
 rm(pth)
-d$ife <- d$ife + 16000
-d$inegi <- ife2inegi(d$ife)
+m$ife <- m$ife + 10000
+m$inegi <- ife2inegi(m$ife)
 
 setwd("~/Downloads")
 file2 <- "tmpm.csv"

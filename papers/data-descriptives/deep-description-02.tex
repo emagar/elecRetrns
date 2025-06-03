@@ -81,9 +81,10 @@ This paper's focus are vote returns. Electoral data has been distributed for muc
 
 Some of the distributed data is elementary and available elsewhere, such as the number of valid votes cast for parties in congressional races since 1991 in single-member districts, in municipalities, and in sub-municipal units of aggregation.   shares by party and their change since last election) at the municipal and sub-municipal levels. Offers a cross-section time-series of dip fed returns at two levels of aggregation: municipalities and secciones electorales. 
 
-More abstract
-
 from blog
+
+This research note introduces a data set of Mexican municipal election vote returns in recent decades. The dataset is distributed in a repository, publicly available at \url{https://github.com/emagar/elecRetrns}, that also includes returns to gubernatorial races and federal elections at different levels of aggregation.\footnote{The \emph{Recent Mexican Election Vote Returns} repository is publicly available at \url{https://github.com/emagar/elecRetrns}.} 
+
 
 This note presents, discusses, and distributes statistics (available \href{https://github.com/emagar/mxDistritos}{here}) of party performance in Mexico's competitive era. I elaborate two quantities of interest: *voting forecasts* based on recent electoral history and measures of parties' *core support*. The procedure produces summary measures of recent electoral history in relatively small geographic units, municipalities ($N \approx 2500$) and /secciones electorales/ ($N \approx 66000$) throughout Mexico. I apply the methodology to four federal congressional elections between 2009 and 2018 (I will soon apply it to municipal races too), using results since 1994 as historical input.
 
@@ -98,7 +99,7 @@ Municipal governments have constitutional authority over community police, zonin
 
 Municipal governments raise property taxes only and collect fees for public services. On top of a meager constitutional fiscal endowment, few municipalities in the past invested in the administrative structure for revenue collection \citep{garfias.state.cap.2018}. Most municipalities, especially in rural Mexico, obtain the lion's share of their financial resources from federal revenue sharing and earmarked federal investments \citep{diaz.cayeros.2006, figueroa-mansur-itam.2024}. Bureaucratic capacity therefore varies widely. The median municipal government employed or hired 13 bureaucrats per 1,000 registered voters in 2023, just shy above the lower quartile's 9 or less. The top decile, with 32 or more bureaucrats per 1,000, was two and a half times above the median.\footnote{Descriptive statistics computed with data from the 2023 Municipal Government Census \citep{inegi.CensoGobMun2023}, excluding Mexico City and uneleted municipalities.}
 
-\subsection{Government structure}
+\subsection{Government structure}\label{S:structure}
 Municipal power is vested to a popularly-elected body, the \emph{Ayuntamiento} (literally `yoked together'). The council or \emph{cabildo} and a mayor (called \emph{presidente} in some states, \emph{primer regidor} in others) make up the Ayuntamiento, deciding by majority rule. The mayor is executive officer, presides municipal council sessions with voice and the tie-breaking vote, and holds variable municipal appointment powers \citep{robles-mtz.Municipio.2009, rmz-millan.2000}. Cabildo size is proportional to population. Precedence-ordered councilors (called \emph{regidores} or \emph{concejales}) propose and vote municipal policy through ordinances and rules. One or more \emph{síndicos}, officers in charge of the Treasury and the municipio's legal representation, complete the Council in some states. Síndicos are elected in some states, appointed in others. Appointed síndicos have voice but no vote in the council. Municipalities have no judicial power. States do.
 
 I drop Mexico City from the descriptions below due to its special status (but it is included in the data). Before 1997, the mayor of the Federal District was a presidential appointee, who would in turn appoint delegates for the city's 16 administrative jurisdictions (called \emph{delegaciones}). Reformers made all these elected offices in 1997. The Federal District did not, however, gain status as a state, nor did delegación executives gain fiscal powers---taxation remains in the hands of the city executive. The city further reformed in 2018, adding councils to its quasi-municipalities (now called \emph{alcaldías}) and renaming the Federal District as Mexico City \citep{rabell.2017}. 
@@ -118,14 +119,12 @@ Elected municipal officers have three-year terms.\footnote{Coahuila's Ayuntamien
 
 %Up to those elected in 2017, all were single-term limited. And everyone elected in 2030 will again be single-term limited. To everyone's surprise, reformers removed Mexico's eighty-year old constitutional ban on consecutive reelection midway in the last decade. Counter-reformers restated the ban ten years later. In the interim, states could opt for two-term limits for municipal governments. All states except Hidalgo did so, the reform kicking off in the 2018 elections in twenty-three states. Incumbents in the other eight reforming states have been able to run again for office gradually since (the last will be Veracruz's in 2028). 
 
-Frankly conservative in scope and extremely short lived, reelection should nonetheless have systematic effects in municipal politics. Six consecutive years in office falls short of qualifying as the long run, but doubling up Ayuntamientos' time horizons ought to encourage more enterprising policy. More fundamentally, the perspective of reelecting should have encouraged ambitious mayors and regidores in the period to invest in maintaining their electoral alliances alive and mobilized, nurturing responsiveness in the distributive game \citep{cain.etal.1987, cox.mccubbins.1986, motolinia-reel-pork2021}. The reform and its dismissal therefore offer a unique laboratory to study institutional change at the core of much political theory since \emph{The Federalist Papers} at least \citep{madison.etal.1788,mayhew.1974,schlesinger.1966}.
+Frankly conservative in scope and extremely short lived, reelection should nonetheless leave a systematic mark in municipal politics. Six consecutive years in office falls short of qualifying as the long haul, but doubling up Ayuntamientos' time horizons ought to encourage more enterprising policy. More fundamentally, the perspective of reelecting for another term should have been an incentive for ambitious mayors and regidores in the period to invest in maintaining their electoral alliances alive and mobilized \citep{cain.etal.1987, motolinia-reel-pork2021}. Which, in turn, should systematically nurture responsiveness in the municipal distributive game \citep{cox.mccubbins.1986, jacobson.kernell.1983}. The reform, and its dismissal too, therefore offer a unique laboratory to study institutional change at the core of much political theory since \emph{The Federalist Papers} \citep{madison.etal.1788,mayhew.1974,schlesinger.1966,miller.hammond.1989}.
 
-\subsection{Usos y costumbres}
-A last item before the description of the data. Of 570 municipalities in the state of Oaxaca, only 152 periodically elect Ayuntamientos. The rest, with predominantly indigenous populations, opted out of the electoral process since 1995, naming authorities through tribal councils instead \citep[known as \emph{usos y costumbres} institutions, see][]{elizarraras.2002,eisenstadt.rios.uyc.2014}. Seven municipalities in three other states have achieved the same status in the past decade. 
+\subsection{Usos y costumbres}\label{S:uyc}
+A last item before moving to description are observations dropped from the data. Of 570 municipalities in the state of Oaxaca, only 152 periodically elect Ayuntamientos. The rest, with predominantly indigenous populations, opted out of the electoral process since 1995, appointing authorities through tribal councils instead \citep[known as \emph{usos y costumbres} institutions, see][]{elizarraras.2002, eisenstadt.rios.uyc.2014}. Seven municipalities in three other states have achieved the same status in the past decade. None reports votes and are therefore left out.\footnote{A note `To uyc in \emph{year}' indicates the period immeadiately before a municipality exits the time series in the data.}
 
 \section{Municipal election data}
-This research note introduces a dataset of municipal election vote returns in recent decades. The dataset is distributed in a repository, publicly available at \url{https://github.com/emagar/elecRetrns}, that also includes returns to gubernatorial races and federal elections at different levels of aggregation.\footnote{The \emph{Recent Mexican Election Vote Returns} repository is publicly available at \url{https://github.com/emagar/elecRetrns}.} 
-
 The municipal dataset has been under construction for some time. The original seed for the 1970s and 1980s was compiled by \citet{molinar.1991a} from official vote returns by the Interior Ministry's Registro Nacional de Electores. The primary source was systematized by \citet{magar.1994} for northern Mexico and then by \citet{varela.2004} nationwide. Data from the 1990s onwards was compiled from the new state election regulators, who more or less routinely report vote returns since. When that was not the case, other sources were consulted, most notably \citet{revista.voz.y.voto} and \citet{cede.uam.izt}.
 
 Units of observation are municipalities, providing the total votes each party or electoral coalition won in periodic elections (Mexico City's populous units are included in the data despite their special status). Table \ref{T:coverage} summarizes data coverage by state, including the number of municipalities, which grew over the years in most states.\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded. State abbreviations are different than those used by Mexican government agencies---some were slightly altered so that sorting them in a standard spreadsheet retains the actual alphabetical ordering of the states (e.g. Guanajuato and Guerrero are abbreviated gua and gue instead of the official gto and gro).} With early 1970s returns available for a handful of states, the systematic cross-section time-series initiates with the 1979--1981 trienium. The period was inaugurated by a major federal electoral reform lowering legal entry barriers to the electoral arena and adopting a more proportional formula to convert votes into congressional seats \citep[:116]{molinar.1991a}. As a consequence, half a dozen new parties entered the fray. 
@@ -133,50 +132,50 @@ Units of observation are municipalities, providing the total votes each party or
 \begin{table}
 \centering
   \resizebox{.8\textwidth}{!}{
-    \begin{tabular}{rlrc}
-      & State (abbreviation)                        & Number of municipalities & Years      \\
+    \begin{tabular}{rllrc}
+      & Abbrev. & State                                 & N municipalities & Years included      \\
       \\ [-1.8ex] \hline
       \\ [-1.8ex]
-      1  & Aguascalientes                 (ags)        &      9--11           & 1977--2024 \\
-      2  & Baja California                (bc)         &       4--7           & 1971--2024 \\
-      3  & Baja California Sur            (bcs)        &       3--5           & 1974--2024 \\
-      4  & Campeche                       (cam)        &      8--13           & 1979--2024 \\ \hdashline
-      5  & Coahuila                       (coa)        &         38           & 1978--2024 \\
-      6  & Colima                         (col)        &         10           & 1976--2024 \\
-      7  & Chiapas$^\dagger$               (cps)        &   110--126           & 1976--2024 \\
-      8  & Chihuahua                      (cua)        &         67           & 1974--2024 \\ \hdashline
-      9  & Distrito Federal/Mexico City$^\ddagger$ (df) &         16           & 1997--2024 \\
-      10 & Durango                        (dgo)        &     38--39           & 1971--2024 \\
-      11 & Guanajuato                     (gua)        &         46           & 1979--2024 \\
-      12 & Guerrero$^\dagger$              (gue)        &     75--85           & 1977--2024 \\ \hdashline
-      13 & Hidalgo                        (hgo)        &         84           & 1981--2024 \\
-      14 & Jalisco                        (jal)        &   124--125           & 1976--2024 \\
-      15 & México                         (mex)        &   121--125           & 1978--2024 \\
-      16 & Michoacán$^\dagger$             (mic)        &        113           & 1977--2024 \\ \hdashline
-      17 & Morelos$^\dagger$               (mor)        &     33--36           & 1976--2024 \\
-      18 & Nayarit                        (nay)        &     19--20           & 1972--2024 \\
-      19 & Nuevo León                     (nl)         &         51           & 1973--2024 \\
-      20 & Oaxaca$^\dagger$                (oax)        &        570           & 1977--2024 \\ \hdashline
-      21 & Puebla                         (pue)        &        217           & 1980--2024 \\
-      22 & Querétaro                      (que)        &         18           & 1973--2024 \\
-      23 & Quintana Roo                   (qui)        &      7--11           & 1978--2024 \\
-      24 & San Luis Potosí                (san)        &     56--58           & 1970--2024 \\ \hdashline
-      25 & Sinaloa                        (sin)        &     17--20           & 1971--2024 \\
-      26 & Sonora                         (son)        &     69--72           & 1976--2024 \\
-      27 & Tabasco                        (tab)        &         17           & 1976--2024 \\
-      28 & Tamaulipas                     (tam)        &         43           & 1971--2024 \\ \hdashline
-      29 & Tlaxcala                       (tla)        &      44-60           & 1979--2024 \\
-      30 & Veracruz                       (ver)        &   203--212           & 1976--2024 \\
-      31 & Yucatán                        (yuc)        &        106           & 1981--2024 \\
-      32 & Zacatecas                      (zac)        &     56--58           & 1970--2024 \\
+      1  & ags & Aguascalientes                        &      9--11           & 1977--2024 \\
+      2  & bc  & Baja California                       &       4--7           & 1971--2024 \\
+      3  & bcs & Baja California Sur                   &       3--5           & 1974--2024 \\
+      4  & cam & Campeche                              &      8--13           & 1979--2024 \\ \hdashline
+      5  & coa & Coahuila                              &         38           & 1978--2024 \\
+      6  & col & Colima                                &         10           & 1976--2024 \\
+      7  & cps & Chiapas$^\dagger$                      &   110--126           & 1976--2024 \\
+      8  & cua & Chihuahua                             &         67           & 1974--2024 \\ \hdashline
+      9  & df  & Distrito Federal/Mexico City$^\ddagger$ &         16           & 1997--2024 \\
+      10 & dgo & Durango                               &     38--39           & 1971--2025 \\
+      11 & gua & Guanajuato                            &         46           & 1979--2024 \\
+      12 & gue & Guerrero$^\dagger$                     &     75--85           & 1977--2024 \\ \hdashline
+      13 & hgo & Hidalgo                               &         84           & 1981--2024 \\
+      14 & jal & Jalisco                               &   124--125           & 1976--2024 \\
+      15 & mex & México                                &   121--125           & 1978--2024 \\
+      16 & mic & Michoacán$^\dagger$                    &        113           & 1977--2024 \\ \hdashline
+      17 & mor & Morelos$^\dagger$                      &     33--36           & 1976--2024 \\
+      18 & nay & Nayarit                               &     19--20           & 1972--2024 \\
+      19 & nl  & Nuevo León                            &         51           & 1973--2024 \\
+      20 & oax & Oaxaca$^\dagger$                       &        570           & 1977--2024 \\ \hdashline
+      21 & pue & Puebla                                &        217           & 1980--2024 \\
+      22 & que & Querétaro                             &         18           & 1973--2024 \\
+      23 & qui & Quintana Roo                          &      7--11           & 1978--2024 \\
+      24 & san & San Luis Potosí                       &     56--58           & 1970--2024 \\ \hdashline
+      25 & sin & Sinaloa                               &     17--20           & 1971--2024 \\
+      26 & son & Sonora                                &     69--72           & 1976--2024 \\
+      27 & tab & Tabasco                               &         17           & 1976--2024 \\
+      28 & tam & Tamaulipas                            &         43           & 1971--2024 \\ \hdashline
+      29 & tla & Tlaxcala                              &      44-60           & 1979--2024 \\
+      30 & ver & Veracruz                              &   203--212           & 1976--2025 \\
+      31 & yuc & Yucatán                               &        106           & 1981--2024 \\
+      32 & zac & Zacatecas                             &     56--58           & 1970--2024 \\
       \\ [-1.8ex] \hline
       \\ [-1.8ex] 
-         & \mc{1}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
+         & \mc{2}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2024 \\
       \\ [-1.8ex] \hline
 
     \end{tabular}
 }
-\caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in these states withdrew so-called `usos y costumbres' municipalities from the periodic electoral process: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see the text for details.}\label{T:coverage}
+\caption{Coverage of the election returns data at the municipal level. $\dagger$  Reform in the period withdrew \emph{usos y costumbres} municipalities from periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see section \ref{S:structure}.}\label{T:coverage}
 \end{table}
 
 Data is stored as text in \verb|csv| format (comma separated values), readable with standard spreadsheet and data analysis software.\footnote{Text is stored in UTF-8 character encryption. Care has been taken to drop most spanish special characters, such as accented vowels, from text strings. The letter \~N remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} In the resulting data matrix, each row is a municipality in a given electoral year. Columns are data fields, including unit identifiers (the municipality's name, state, census bureau ID, an so forth), the election date, and each party or coalition's vote tally.\footnote{The repository's \verb|README.md| file includes a detailed codebook defining the field reported in each column.} Also included is the vote total, to compute vote shares, and the number of eligible voters in the municipal election (the \emph{lista nominal}), to compute turnout rates.  
