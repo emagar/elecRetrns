@@ -338,6 +338,7 @@ sel <- which(d$l=="pan-pri")
 table(d$cyclef[sel], edon2edo(d$edon[sel]))
 ##
 sel1 <- which(d$edon[sel]==6);  d$l[sel][sel1] <- "1pri"
+sel1 <- which(d$edon[sel]==10); d$l[sel][sel1] <- "1pri"
 sel1 <- which(d$edon[sel]==16); d$l[sel][sel1] <- "1pri"
 sel1 <- which(d$edon[sel]==20); d$l[sel][sel1] <- "1pri"
 sel1 <- which(d$edon[sel]==21); d$l[sel][sel1] <- "2pan"
@@ -398,10 +399,10 @@ t <- t[order(rownames(t), decreasing = TRUE),]
 l1 <- seq(1979,2024,3)
 l2 <- c(seq(81,99,3),"02","05","08",seq(11,26,3))
 ## lb <- paste(l1, l2, sep = "-") ## full 1979-82 to 2024-26
-lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024*") ## 1979-82 to 2021-23 and just 2024
+lb <- paste(l1, l2, sep = "-") ## 1979-82 to 2024-26
 rownames(t) <- rev(lb)
 t(t)
-pdf(file = "../plots/pctwin1979-2024.pdf", width=10, height=5)
+pdf(file = "../plots/pctwin1979-2025.pdf", width=10, height=5)
 par(mar=c(3,4.5,0,2)+0.1) # drop title space and xlab space
 barplot(t(t)
       , horiz = TRUE
@@ -421,7 +422,7 @@ barplot(t(t)
 dev.off()
 
 ## Self-standing legend for both plots in latex
-pdf(file = "../plots/pctwin1979-2024-legend.pdf", width=10, height=.35)
+pdf(file = "../plots/pctwin1979-2025-legend.pdf", width=10, height=.35)
 par(mar=c(0,4.5,0,2)+0.1) # drop title space and xlab space
 plot(x=c(0,100), y=c(0,1), type = "n", axes = FALSE, xlab = "", ylab = "")
 tx <- seq(2, 96, length.out = 8)
@@ -485,7 +486,7 @@ colnames(t) <- rev(lb)
 t <- as.matrix(t)
 t[is.na(t)] <- 0
 ##
-pdf(file = "../plots/pctwin-popw1979-2024.pdf", width=10, height=5)
+pdf(file = "../plots/pctwin-popw1979-2025.pdf", width=10, height=5)
 par(mar=c(3,4.5,0,2)+0.1) # drop title space and xlab space
 barplot(t
       , horiz = TRUE
@@ -539,9 +540,9 @@ round(t,2)
 l1 <- c("1979", paste0("'",seq(82,97,3)), "2000", paste0("'0",seq(3,9,3)), paste0("'",seq(12,21,3)), 2024)
 l2 <- c(seq(81,99,3),"02","05","08",seq(11,26,3))
 ## lb <- paste(l1, l2, sep = "-") ## full 1979-82 to 2024-26
-lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024*") ## 1979-82 to 2021-23 and just 2024
+lb <- c( paste(l1[-16], l2[-16], sep = "-"), "2024-26") ## 1979-82 to 2024-26
 
-pdf(file = "../plots/enp1979-2024.pdf", width=10, height=5)
+pdf(file = "../plots/enp1979-2025.pdf", width=10, height=5)
 par(mar=c(3,4,2,2)+0.1) # drop title space and xlab space
 plot(  x = c(1,nrow(t)), y = c(1,4), type = "n", xlab = "", ylab = "Effective Number", axes = FALSE) 
 axis(1, at = 1:nrow(t), labels = lb, cex.axis = .75)
@@ -704,10 +705,10 @@ gen.ci <- function(pty=c("pan","pri","prd","morena","oth")[1]){
     return(tmp.hilo)
 }
 
-pdf(file = "../plots/vpct1979-2024.pdf", width=10, height=7)
+pdf(file = "../plots/vpct1979-2025.pdf", width=10, height=7)
 par(mar=c(3,4,2,2)+0.1) # drop title space and xlab space
-plot(x=c(ymd(19790601),ymd(20241231)), y=c(0,100), type="n", axes = FALSE, xlab = "", ylab = "% vote", main = "")
-axis(1, at = seq(from=ymd(19790101), to=ymd(20240101), by = 'years'), labels = FALSE)
+plot(x=c(ymd(19790601),ymd(20251231)), y=c(0,100), type="n", axes = FALSE, xlab = "", ylab = "% vote", main = "")
+axis(1, at = seq(from=ymd(19790101), to=ymd(20260101), by = 'years'), labels = FALSE)
 tmp <- c(1979, paste0("'", seq(82,97,3)), 2000, paste0("'", formatC(seq(3,21,3), width = 2, format = "d", flag = "0")), 2024) # xlabels
 axis(1, at = seq(from=ymd(19790101), to=ymd(20240101), by = '3 year'), labels = tmp)
 axis(2, at = seq(0,100,5), labels = FALSE)
@@ -760,7 +761,8 @@ allpts <- rbind(
     data.frame(date=date, point=d$morena, clr=col.morena(alpha=.05))
 )
 ##
-legend(x=15000, y=102, legend = c(c("Center-right (PAN)","PRI","Left (PRD)","Morena","Mov. Ciud.","Green (PVEM)","Others")), col = c(col.pan(),col.pri(),col.prd(),col.morena(),col.mc(),col.pvem(),col.oth()), lty = 1, lwd=1.5, bg = "white")
+legend(x=16000, y=102, legend = c(c("Right (PAN)","PRI","Left (PRD)","Morena","Mov. Ciud.","Green (PVEM)","Others")), col = c(col.pan(),col.pri(),col.prd(),col.morena(),col.mc(),col.pvem(),col.oth()), lty = 1, lwd=1.5, bg = "white")
+#legend(x=15000, y=102, legend = c(c("Center-right (PAN)","PRI","Left (PRD)","Morena","Mov. Ciud.","Green (PVEM)","Others")), col = c(col.pan(),col.pri(),col.prd(),col.morena(),col.mc(),col.pvem(),col.oth()), lty = 1, lwd=1.5, bg = "white")
 ##
 ## add legend before points so the few points in region are visible
 allpts <- allpts[order(allpts$point),] # pseudo-randomize (sort) so that points are not plottet party by party
