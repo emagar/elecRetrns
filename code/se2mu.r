@@ -11,8 +11,8 @@ colnames(d)
 # make numeric
 sel <- grep("v[.]*|nr|nul|tot|lisnom", colnames(d))
 sel <- c(7:39,50)
-sel <- c("pan","pri","prd","pt","pvem","mc","morena","pes","campechelibre","espacio.dem.campeche","movimientolaborista","local",
-         "pri.prd","pt.pvem.morena","pt.pvem","pt.morena","pvem.morena","validos","nr","nul","total")
+sel <- c("pan","pri","prd","pt","pvem","mc","morena","pna","pes","maz","fmz","rpz","pvem.morena","pt.pna.pes","pt.pna","pt.pes","pna.pes",
+         "pan.pri.prd", "pan.pri", "pan.prd", "pri.prd","nr","nul","tot","lisnom")
 sel <- c("PAN","PRI","PVEM","PT","MC","MOR","CAND_IND_1","CAND_IND_2","C_PVEM_MOR","NO_REGISTRADAS","NULOS","TOTAL_VOTOS_ASENTADO","TOTAL_VOTOS_CALCULADO","LISTA_NOMINAL")
 m <- d
 
