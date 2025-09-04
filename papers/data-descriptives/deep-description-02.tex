@@ -66,15 +66,16 @@
 \begin{document}
 
 \title{Competition in Local Mexican Politics: \\ A Comprehensive Dataset of Municipal Elections}
-\author{Eric Magar \\ ITAM}
-\date{\today}
+\author{Eric Magar\footnote{I am grateful for financial support for research from the Asociaci\'on Mexicana de Cultura \textsc{a.c.}} \\ ITAM}
+% \date{\today}
+\date{July 5, 2025 \\ Preliminary draft, please inquire for a newer version}
 \maketitle
 
 \begin{abstract}
 \noindent This note introduces a publicly-available dataset of vote returns for Mexican municipal government elections between 1979 and 2025. It covers nearly 37 thousand races and distributes municipality-level aggregates of the votes won by each party or coalition, of void ballots, and of total votes cast; the number of eligible voters registered; the number of candidates competing and the winner's name; the election's date; and ancillary census bureau and election board municipality id codes for merging socio-demographic data as well as results of elections at other levels. Sources are presented, standardization of the time-series cross-section explained, and descriptive statistics performed. Patterns in the data conform to prior knowledge of Mexican elections and demostrate several interesting applications of the data.
 \end{abstract}
 
-\noindent The advent of competition in Mexican politics coincideded with a wealth of public data in most areas of government. Naturally, a parallel boom occured in the study of politics, policy, and process, in areas as diverse as the distributed data: poverty relief, decentralized spending, public health, education, infrastruture, special interest groups, organized crime, and much more.\footnote{See \citet{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019, hernandez.jaramillo.FiscalDescentralMx2008wd, king.etal.segPop.2007, frenk.2006, behrman.etal.Prospera2025qe, avitabile.dehoyos.2018, garfias.etal.Infrastructure2021, palmer.rubin.Patronage2019cps, dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer, timmons.broid.2013}.} While these examinations are mostly at small units of analysis, such as firms, schools, census tracts, or even individuals, the processes of interest invariably intersect with municipal governments, and multivariate models typically include controls at this level. Municipal election vote returns are therefore one key input for analysis. 
+\noindent The advent of competition in Mexican politics coincideded with a wealth of public data in most areas of government. Naturally, a parallel boom occured in the study of politics, policy, and process, in areas as diverse as the distributed data: poverty relief, decentralized spending, public health, education, infrastruture, special interest groups, organized crime, and much more.\footnote{ \citep[See][]{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019, hernandez.jaramillo.FiscalDescentralMx2008wd, king.etal.segPop.2007, frenk.2006, behrman.etal.Prospera2025qe, avitabile.dehoyos.2018, garfias.etal.Infrastructure2021, palmer.rubin.Patronage2019cps, dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer, timmons.broid.2013}.} While these examinations are mostly at small units of analysis, such as firms, schools, census tracts, or even individuals, the processes of interest invariably intersect with municipal governments, and multivariate models typically include controls at this level. Municipal election vote returns are therefore one key input for analysis. 
 
 % \noindent The advent of competition in Mexican politics produced a wealth of public data in all areas of government. A parallel boom occured naturally in the study of politics, policy, and process, in areas as diverse as the data: poverty relief \citep{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019}, decentralized spending \citep{hernandez.jaramillo.FiscalDescentralMx2008wd}, public health \citep{king.etal.segPop.2007, frenk.2006}, education \citep{behrman.etal.Prospera2025qe, avitabile.dehoyos.2018}, infrastruture \citep{garfias.etal.Infrastructure2021}, interest groups \citep{palmer.rubin.Patronage2019cps}, organized crime \citep{dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer}, and much more. While much of this analysis is at small units, such as firms, schools, census tracts, or individuals, processes invariably intersect with municipal government and politics, and multivariate models typically include controls at this level. Municipal-level vote returns are therefore one key input for analysis. 
 
@@ -126,23 +127,23 @@ A final note before moving on involves another set of observations that is absen
 
 \section{The parties}
 
-The dataset is party-centric, in the sense that it reports systematically the votes that each party won in the race.\footnote{Section \ref{S:coalitions} elaborates pre-election coalition incidence.} A separate dataset reporting incumbent mayors---ie., the names of winning presidential candidates---is also distributed, but it resembles a swiss cheese due to numerous missing observations. A glance at the key parties in the period is useful. 
+The dataset is party-centric, in the sense that it systematically reports the votes that each party won in the race (but see section \ref{S:coalitions} on pre-election coalitions). A separate dataset reporting incumbent mayors---ie., the names of winning presidential candidates---is also distributed, but this resembles a swiss cheese due to numerous missing observations. 
 
-Mexican parties operate in an over-regulated electoral environment. Law, setting up formidable entry barriers, also gives the federal and the state election boards broad powers over party life, candidate selection, and campaigns \citep{estevez.ref2007.2007}. Some regulation is decades-old: one example is party registration, an institution adopted by the PRI at the peak of hegemony to deter defectors, whereby any party with fewer than the 3-percent vote threshold not only earns no proportional representation seats---it also ceases to exist legally. But most regulation dates from the 1990s, when a system of mostly private (if undisclosed) party and campaign finance was replaced overnight with mostly public (and lavish) subsidies \citep{poire.Money2005}. The allotment, which is proportional to the party's vote share in the last election, is handed to party leaders with discretion on spending. With formidable carrots and sticks, discipline to the party leadership comes as no surprise. 
+Mexican parties operate in an over-regulated electoral environment. Law, setting up formidable entry barriers, also gives the federal and the state election boards broad scope of power over party life, candidate selection, and campaigns \citep{estevez.ref2007.2007}. Some regulation is decades-old: one example is party registration, a draconian institution adopted by the PRI at the peak of hegemony to deter defectors, whereby any party with fewer than the 3-percent vote threshold not only earns no proportional representation seats (as in Germany), but it also ceases to exist legally. Most regulation, however, dates from the 1990s, when a system of mostly private (if undisclosed) party and campaign finance was replaced overnight with near-exclusive public (and lavish) subsidies \citep{poire.Money2005}. The allotment, which is proportional to the party's vote share in the last election, is handed yearly to party leaders with discretion on spending. With formidable carrots and sticks, discipline to the party leadership comes as no surprise. A glance at the key parties in the period comes next.
 
 \subsection{Major parties}
 
-In broad chronological sequence, single-party hegemony gave way to a three-way, competitive party system at the end of the 20th century. A new dominant party arose two decades later, leaving the former trio of major parties in shambles in the electoral arena.
+In broad chronological sequence, single-party hegemony gave way to a three-way, competitive, and volatile party system at the end of the 20th century. This gave rise to two decades of divided government, at the end of which a new dominant party arose, leaving the former trio of major parties in shambles in the electoral arena.
 
 \begin{description}
 
-\item[Partido Revolucionario Institucional:] The hegemonic party for the most part of eight decades, and at times dangerously nearing single-party rule \citep{molinar.1991a}, the \textbf{PRI} was successfully challenged into competitive politics by the PAN--PRD tandem in the mid-1990s. Traditionally pragmatic and nationalistic, the technocratic neo-liberal faction captured the party in the 1980s \citep{dresser.Neolib1991}. The sitting president was the unchallenged national leader, governors were state leaders. The effectiveness of the PRI's vote-getting machine, long unmatched, declined slowly when rapid social change was compounded with deeply unpopular austerity policy of the 1980s. 
+\item[Partido Revolucionario Institucional:] The hegemonic party for the most part of eight decades, and at times dangerously nearing single-party rule \citep{molinar.1991a}, the \textbf{PRI} was successfully challenged into competitive politics by the PAN--PRD tandem in the mid-1990s. Traditionally pragmatic and nationalistic, the technocratic neo-liberal faction captured the party in the 1980s \citep{dresser.Neolib1991}. The sitting president was the unchallenged national leader, governors were state leaders. Long unmatched, the effectiveness of the PRI's vote-getting machine eroded slowly when rapid social change was compounded with deeply unpopular austerity policy of the 1980s. 
 
-\item[Partido Acción Nacional:] The main and, at times, only credible opposition to the PRI's hegemony, the \textbf{PAN}'s core support is in urban middle classes and socially conservative groups, especially in central Mexico. It traded pivotal votes in Congress in the 1990s for solid guarantees of free and fair elections \citep{cornelius.1996} and for bigger transfers to states in revenue sharing \citep{diaz.cayeros.2006, shirk.PANbook.2005}. PAN won the presidency in 2000 and again, by paper-thin margin, in 2006. Despite never achieving majority status in Congress, PAN left a characteristic imprint by setting up autonomous regulatory agencies in key policy areas \citep[telecomms, energy, education, antitrust, freedom of information, and more; see][]{magar.estevez.rosas.2010}. It led the war on drugs.
+\item[Partido Acción Nacional:] The main and, at times, only credible opposition to the PRI's hegemony, the \textbf{PAN}'s core support is in urban middle classes and socially conservative groups, especially in central Mexico. PAN offered its pivotal votes in Congress towards economic reform in the 1990s in exchange for solid guarantees of free and fair elections \citep{cornelius.1996} and for bigger transfers to states in revenue sharing \citep{diaz.cayeros.2006, shirk.PANbook.2005}. PAN won the presidency in 2000 and again, by paper-thin margin, in 2006. Despite never achieving majority status in Congress, PAN left a characteristic imprint by setting up autonomous regulatory agencies in key policy areas \citep[telecomms, energy, education, antitrust, freedom of information, and more; see][]{magar.estevez.rosas.2010}. It also led the war on drugs.
 
-\item[Partido de la Revolución Democrática:] The fusion of the communist party and a major split from the PRI when the technocrats took over, the fractuous \textbf{PRD} occupied the center-left of the spectrum \citep{bruhn.1997, cantuCSG2019apsr}. It won seven governor races in 1997--2000, most notably Mexico City, often by endorsing defectors in the state's PRI. AMLO, the twice-defeated PRD's presidential nominee, eventually broke off to form a successful party under his unconditional leadership. PRD ran joint tickets with the PAN frequently since 2010, at the state level first, later at the federal level too---another factor pushing AMLO away. PRD lost legal registry in 2024, when it fell short of 3 percent of the national vote. 
+\item[Partido de la Revolución Democrática:] The fusion of the communist party and a substantial split from the PRI when the technocrats took over, the fractuous \textbf{PRD} occupied the center-left of the spectrum \citep{bruhn.1997, cantuCSG2019apsr}. It won seven governor races in 1997--2000, most notably Mexico City, often by endorsing defectors in the state's PRI. AMLO, the twice-defeated PRD's presidential nominee, eventually broke off form the PRD to form a successful party under his unconditional leadership. PRD ran joint tickets with the PAN frequently since 2010, at the state level first, later at the federal level too---another factor pushing AMLO away. PRD lost legal registry in 2024.
   
-\item[Movimiento de Regeneración Nacional:] The bet paid off. AMLO's successful third presidential bid in 2018 rallied the rest of the left, and key state machines from the PAN and the PRI too, towards his new party. \textbf{Morena} won the presidency, with majority control of Congress,  in the critical 2018 elections, and most state governments in subsequent years. A crusade against autonomous regulatory agents, which former major parties had stacked in their favor and which stubbornly checked the new majority, gained traction in the 2024 campaign. Supermajority status that year allowed Morena and its opportunistic allies to rid the constitution of most separation of power arrangements from the former three-party system, including a full overhaul of the judiciary. The new dominant party has again unified purpose in Mexican politics in ways unseen since the classic PRIato.
+\item[Movimiento de Regeneración Nacional:] AMLO's bet paid off. His successful third presidential bid in 2018 rallied the rest of the left, and key state machines from the PAN and the PRI too, towards his new party. \textbf{Morena} won the presidency, with majority control of Congress,  in the critical 2018 elections, and most state governments in subsequent years. A crusade against autonomous regulatory agencies, which former major parties had stacked in their favor and which stubbornly checked the new majority, gained traction in the 2024 campaign. Supermajority status that year allowed Morena and its opportunistic allies to rid the constitution of most separation of power arrangements from the former three-party system, including a full overhaul of the judiciary. The new dominant party has re-unified purpose in Mexican politics in ways unseen since the classic PRIato.
   
 \end{description}
 
@@ -153,16 +154,16 @@ Institutions set forth incentives to launch new parties in pursuit of very gener
 \begin{description}
 \item[Movimiento Ciudadano:] The personal machine of a former Veracruz governor, \textbf{MC} (formerly Convergencia Ciudadana) has since expanded considerably. As a vehicle of contrast against the moribund former major parties after 2018, MC turned every call to join all-way electoral coalitions. While the resulting opposition discoordination handed Morena many key victories in municipalities, districts, and even states, MC captured populous state goverments in Jalisco twice since 2018, and Nuevo León in 2021. Whether its bid as sole credible opposition to Morena's dominance pays off or not will become clear in coming years.
 
-\item[Green Party:] A family-owned venture, \textbf{PVEM} remained the PRI's reliable electoral partner in the 2003--18 period in races across the board \citep{spoon.pulido.PRI-PVEM2017}. It has since migrated to Morena's orbit. PVEM won state governments in Chiapas in 2012---the first non-major party governor---then in San Luis Potosí in 2021, thus controlling resources to organize further. Unlike MC, the Green party has remained true to its opportunitic origins, making no effort to distance itself away from Morena. Its votes in Congress were pivotal for Morena's majority in 2021, and super-majority in 2024.
+\item[Green Party:] A family-owned venture, \textbf{PVEM} stands out among the opportunistic bunch. Its votes may well have given the PAN alliance its presidential election margin in 2000.\footnote{Ballot structure impedes a breakdown of the alliance vote by party. Using the PAN--PVEM relative sizes in the Congressional elections from three years earlier yields a Green party total just shy of the 2000 presidential vote margin.} The Greens then became the PRI's reliable electoral partner in the 2003--18 period in races across the board \citep{spoon.pulido.PRI-PVEM2017}. It has since migrated to Morena's orbit. PVEM won state governments in Chiapas in 2012---the first non-major party governor---then in San Luis Potosí in 2021, gaining control of resources to organize further. Green party seats in Congress were necessary for Morena's coalition's majority status in 2021--24, and super-majority status in 2024--27.
 
 \item[Workers Party:] Morena's other partner in Congress. Originally an offshoot of urban radical movements from the 1970s in northern Mexico, the \textbf{PT} entered electoral coalitions with the PRD almost systematically in the competitive era. Its leadership unequivocally sided with AMLO, before and after the latter's split. It has yet to win a state government. 
 \end{description}
 
-\section{Municipal election data}
+\section{The data}
 
 The municipal elections dataset has been under construction for some time.\footnote{The repository also includes returns to other federal and subnational races at different levels of aggregation. This note centers on municipal-level vote returns for Ayuntamiento races only.} The original seed for the 1970s and 1980s was compiled by \citet{molinar.1991a} from official vote returns by the Interior Ministry's Registro Nacional de Electores. The primary source was systematized by \citet{magar.1994} for northern Mexico and then by \citet{varela.2004} nationwide. Data from the 1990s onwards has been compiled from the state election boards established then, who more or less routinely report vote returns since. When that was not the case, other sources were consulted, most notably \citet{revista.voz.y.voto} and \citet{cede.uam.izt}.
 
-Units of observation are municipalities in time. For each unit, the dataset reports the aggregate votes that each party or electoral coalition won in one periodic election, among other information of electoral history. Table \ref{T:coverage} summarizes data coverage by state. The cross-section time-series matrix is not square. The table column reporting the number of municipalities of each state gives one reason for this: new municipalities were created in most states the period. Seceding from other units, new municipalities have no prior electoral history. Also, election calendars are different across states, so some had more periodic races than others.\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded.}
+Units of observation are municipalities in a time point. For each unit, the dataset reports the aggregate votes that each party or electoral coalition won in one periodic election, among other information of electoral history. Table \ref{T:coverage} summarizes data coverage by state. The cross-section time-series matrix is not square. The table column reporting the number of municipalities of each state gives one reason for this: new municipalities were created in most states the period. Seceding from other units, new municipalities have no prior electoral history. Also, election calendars are different across states, so some had more periodic races than others.\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded.}
 
 \begin{table}
 \centering
@@ -223,7 +224,7 @@ Data can be found online and downloaded by visiting the public repository at:
 \href{https://github.com/emagar/elecRetrns}{\text{\ulr{https://github.com/emagar/elecRetrns}}}.
 \end{equation*}
 
-\noindent Files are stored in the \verb|data/| subdirectory as text in \verb|csv| format (comma separated values). The format is readable with standard spreadsheet and data analysis software.\footnote{Text is encoded into UTF-8 character encryption. Care has been taken to drop all but one Spanish special characters from text strings. All accented vowels (á, é, í, ó, ú, and ü) are removed. The letter \~N, however, remains, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} The repository's \verb|README.md| file, which loads up to your web browser's screen whenever you visit the web address aboive, includes a detailed and downloadable codebook with formal definitions of all data fields. Each row of the resulting data matrix reports a unit in time: one municipality in a given electoral year. And the columns are data fields, variables in the unit/year's record. Among other information, data fields include the following:
+\noindent Files are stored in the \verb|data/| subdirectory as text in \verb|csv| format (comma separated values). The format is readable with standard spreadsheet and data analysis software.\footnote{Text is encoded into UTF-8 character encryption. Care has been taken to drop all but one Spanish special characters from text strings. All accented vowels (\'a, \'e, \'i, \'o, \'u, and \"u) are removed. The letter \~n, however, remains to avoid ambivalence, and may appear as a garbled character in machines with other default encryption systems. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} The repository's \verb|README.md| file, which loads up to your web browser's screen whenever you visit the web address aboive, includes a detailed and downloadable codebook with formal definitions of all data fields. Each row of the resulting data matrix reports a unit in time: one municipality in a given electoral year. And the columns are data fields, variables in the unit/year's record. Among other information, data fields include the following:
 
 \begin{itemize}
 \item unit identifiers, such as the municipality's name, state, ID codes, an so forth;
@@ -372,175 +373,175 @@ The simultaneous rise of a dual opposition in Figure \ref{F:vpcts} created a coo
 
 The final stage portrayed corresponds to the collapse of the party system that brought electoral democracy to Mexico \citep{estevez.magar.rosas.2008,moreno.decisElec.2009}, and the rise of AMLO's Morena. Andrés Manuel López Obrador, best-known by his initials, broke free from the left's proverbial factionalism \citep{bruhn.1997} by launching a new, personalized party. The gamble paid off. Left elite discoordination gave other parties unexpected victories across the board in Morena's inaugural 2015 elections. But AMLO's third bid for the presidency three years later achieved a rallying cry, becoming focal point attracting not just left voters, but independents, leaners from the PRI and even from the PAN. Morena's landslide victory in 2018, which gave it unified control of the federal and most state governments, led the former major parties to run desperate three-way coalitions in subsequent races. To little avail: while the rise of Morena appears with a lag in Figure \ref{F:vpcts} (the party mobilized the larger municipalities first, and extended its dominant mantle towards the rest afterwards), its formidable challenge managed to realign smaller municipality elites away from the PRI---the PRI's population-weighted bar in Figure \ref{F:win} finally outsized its sheer frequency in the 2024 cycle.
 
-\section{Reelection as insurance policy}
-Also discusses another dataset in the repository, incumbents. \citep{motolinia-reel-pork2021,lucardi.rosas.Incumbency.2016}
+%% \section{Reelection as insurance policy}
+%% Also discusses another dataset in the repository, incumbents. \citep{motolinia-reel-pork2021,lucardi.rosas.Incumbency.2016}
 
-\section{The measurement of electoral history}
-Also discusses another dataset in the repository, vhats.
+%% \section{The measurement of electoral history}
+%% Also discusses another dataset in the repository, vhats.
 
-\section{Non-fused tickets in Nayarit}
-Also discusses another dataset in the repository, nayreg.
-
-
-
-
-
-These amount to much fewer formal powers than local goverments in other systems. Mexican municipalities have no jurisdiction over public education and health, lack authority to collect other taxes, and must negotiate some fiscal resources with the state government, who may be tempted to bias redistribution of revenue sharing to municipalities \citep{timmons.broid.2013} 
-
-Still, the institutional heterogeneity and variable socio-economic conditions make them very interesting for social science. 
-
-But interest in Mexico's municipal government has nonetheless grown
-
-But, with much heterogeneity, municipal governments grew in importance between 1990 and 2010. Percent of public spending they exert... making them, and the variance they manifest, attractive areas for the study of politics and policy. 
+%% \section{Non-fused tickets in Nayarit}
+%% Also discusses another dataset in the repository, nayreg.
 
 
 
 
 
+%% These amount to much fewer formal powers than local goverments in other systems. Mexican municipalities have no jurisdiction over public education and health, lack authority to collect other taxes, and must negotiate some fiscal resources with the state government, who may be tempted to bias redistribution of revenue sharing to municipalities \citep{timmons.broid.2013} 
 
-Table [[fig:1]] presents two pairs of diagrams for the 2015 (below) and 2018 (above) congressional elections. Each dot represents one municipality, colored according to the winning party, with coordinates in the ternary plot according to the relative votes of the PAN, the PRI, and the left in the federal deputy race (other smaller parties are excluded).\footnote{I must note that, for the left's electoral history (which I arbitrarily call ``Morena'' in the plots and distributed data), I systematically added up the votes of the PRD, PT, and MC up to 2015. I also added Morena's and PES's votes that year. In 2018 the left consisted of Morena, PT, and PES jointly.} 
+%% Still, the institutional heterogeneity and variable socio-economic conditions make them very interesting for social science. 
 
-% \begin{figure}
-% \centering
-% \caption{Historic expectations and municipal-level vote in two congressional elections}\label{fig:1}
-% \begin{tabular}{cc}
-%   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-vhat-mu.png} &
-%   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-v-mu.png}    \\
-%   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2015-vhat-mu.png} &
-%   \includegraphics[width=.75\columnwidth]{file:../assets/img/triplot2015-v-mu.png} \\
-% \end{tabular}
-% \end{figure}
+%% But interest in Mexico's municipal government has nonetheless grown
 
-The left side shows the /vote forecasts/. The idea behind this statistic is summarizing the evolution of relative votes in the municipality in five previous elections (2003--2015 in the case of 2018) and using the tendency to project a vote forecast for the current year. Plots in the right side show the actual results observed in both elections.
-
-Three features are noteworthy in 2018. The first is the discrepancy between the left and right plots. Either the model does a poor job forecasting, or 2018 was an extraordinary election. History gave license to expect a comfortable PRI victory, both in the number of municipalities won and in margins of victory. Municipalities outside the dotted bands are won by margins of 15 points or more, and the bulk of secure municipalities are red in the forecast, with Morena in a distant second place. In fact, although a significant number of municipalities migrated towards the PAN, it was Morena who showed a clear advantage. PRI was the underachiever. In contrast, the lower left and right plots reveal fewer differences between them---2015 was a more normal election, the past offering much better grounds to forecast. 
-
-Second, observed municipalities fled the edges and triangle vertices in 2018. Observations in vertices show a party that has no significant challenger. While those on the edges were bipartisan, whether more (inside dotted bands) or less (outside the bands) symmetric. It is also plain in forecasts that only the PAN--Morena edge was expected to be unpopulated. In practice, however, third party vote rarely collapsed to zero, there was much more dis-coordination than in the past. In fact, the intersection of dotted bands appeared denser and more homogeneous in the right than the left diagram. 
-
-Third, the PAN /vs/ left competition was legal tender in 2018. The pattern in competitive municipalities in the last two decades, still visible in the 2015 plots, involved either PRI--PAN or PRI--left rivalries, and rarely PAN--izquierda. It was this pattern that eased electoral alliances between PAN and PRD in sub national races since 2010 that culminated in the Frente they formed in 2018 to nominate a joint presidential candidate. 
-
-% # #+CAPTION: Una elección más característica de la partidocracia
-% # #+NAME:   fig:2
-% # | file:../assets/img/triplot2015-vhat-mu.png | [[file:../assets/img/triplot2015-v-mu.png]] |
+%% But, with much heterogeneity, municipal governments grew in importance between 1990 and 2010. Percent of public spending they exert... making them, and the variance they manifest, attractive areas for the study of politics and policy. 
 
 
-% # #+CAPTION: Grano más fino: las secciones
-% # #+NAME:   fig:3
-% # | file:../assets/img/triplot2015-v-se.png | [[file:../assets/img/triplot2018-v-se.png]] |
 
-Plots in Table [[fig:4]] report /secciones electorales/ and therefore offer much finer-grained than the previous portraits. They introduce the other quantity of interest in this note: parties' /core support/. The idea behind this statistic is measuring the size of the group that has historically supported the party consistently, in good but also in bad years. 
 
-% #+CAPTION: Support core and party performance in 2018
-% #+NAME:   fig:4
-% | file:../assets/img/resid-pan-2018-vs-pan-core-se.png | [[file:../assets/img/resid-morena-2018-vs-morena-core-se.png]] | file:../assets/img/resid-pri-2018-vs-pri-core-se.png |
 
-The horizontal axis in each plot measures the size of party core support groups as a proportion of the /sección/'s electorate. The PRI enjoyed a clear edge over the rest of the parties in the period, with sizable cores in /all/ secciones nationwide. The distributions of the PAN and the left, in contrast, appear concentrated towards the zero---they have relatively few secciones with some unconditional support. 
 
-The vertical axis reports the three parties' performance in 2018 (the difference between the observed vote and the forecast). Positive values indicate that the party excelled expectations in the /sección/, negative ones that it under-performed it expectation. The PRI's electoral disaster appears all too clearly in the red plot. There were a few secciones with positive performance, but the density concentrates massively below the horizontal zero line, something that Table [[fig:1]] had hinted. What is truly remarkable is that the dismal performance is directly proportional to the size of the PRI core. President Peña and candidate Meade achieved what seemed, if not impossible, extremely improbable: they alienated the PRI's unconditional voters in 2018. The PAN and the left met expectations in secciones where they have enjoyed with groups of support. Both (especially Morena) over-achieved where they lack important cores, taking away PRI voters. 
+%% Table [[fig:1]] presents two pairs of diagrams for the 2015 (below) and 2018 (above) congressional elections. Each dot represents one municipality, colored according to the winning party, with coordinates in the ternary plot according to the relative votes of the PAN, the PRI, and the left in the federal deputy race (other smaller parties are excluded).\footnote{I must note that, for the left's electoral history (which I arbitrarily call ``Morena'' in the plots and distributed data), I systematically added up the votes of the PRD, PT, and MC up to 2015. I also added Morena's and PES's votes that year. In 2018 the left consisted of Morena, PT, and PES jointly.} 
 
-The note elaborates how statistics were prepared (replication code can be found [[https://github.com/emagar/mxDistritos/code/elec-data-for-maps.r][here]]).
+%% % \begin{figure}
+%% % \centering
+%% % \caption{Historic expectations and municipal-level vote in two congressional elections}\label{fig:1}
+%% % \begin{tabular}{cc}
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-vhat-mu.png} &
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-v-mu.png}    \\
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2015-vhat-mu.png} &
+%% %   \includegraphics[width=.75\columnwidth]{file:../assets/img/triplot2015-v-mu.png} \\
+%% % \end{tabular}
+%% % \end{figure}
 
-% # [[file:https://github.com/emagar/elecRetrns/raw/master/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.svg]]
+%% The left side shows the /vote forecasts/. The idea behind this statistic is summarizing the evolution of relative votes in the municipality in five previous elections (2003--2015 in the case of 2018) and using the tendency to project a vote forecast for the current year. Plots in the right side show the actual results observed in both elections.
 
-% # #+CAPTION: PAN
-% # #+NAME:   fig:6
-% # #+ATTR_HTML: style="float:right;"
-% # #+ATTR_HTML: :width 50%
-% # [[file:../assets/img/resid-pan-2018-vs-pan-core-se.png]]
+%% Three features are noteworthy in 2018. The first is the discrepancy between the left and right plots. Either the model does a poor job forecasting, or 2018 was an extraordinary election. History gave license to expect a comfortable PRI victory, both in the number of municipalities won and in margins of victory. Municipalities outside the dotted bands are won by margins of 15 points or more, and the bulk of secure municipalities are red in the forecast, with Morena in a distant second place. In fact, although a significant number of municipalities migrated towards the PAN, it was Morena who showed a clear advantage. PRI was the underachiever. In contrast, the lower left and right plots reveal fewer differences between them---2015 was a more normal election, the past offering much better grounds to forecast. 
 
-* First differences
-One common approach to study electoral change is through first differences. Denoting $v_t$ the party's vote share in the municipality or the /sección/, in period $t$, the first difference is simply $d_t = v_t - v_{t-1}$. 
+%% Second, observed municipalities fled the edges and triangle vertices in 2018. Observations in vertices show a party that has no significant challenger. While those on the edges were bipartisan, whether more (inside dotted bands) or less (outside the bands) symmetric. It is also plain in forecasts that only the PAN--Morena edge was expected to be unpopulated. In practice, however, third party vote rarely collapsed to zero, there was much more dis-coordination than in the past. In fact, the intersection of dotted bands appeared denser and more homogeneous in the right than the left diagram. 
 
-$d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.els1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
+%% Third, the PAN /vs/ left competition was legal tender in 2018. The pattern in competitive municipalities in the last two decades, still visible in the 2015 plots, involved either PRI--PAN or PRI--left rivalries, and rarely PAN--izquierda. It was this pattern that eased electoral alliances between PAN and PRD in sub national races since 2010 that culminated in the Frente they formed in 2018 to nominate a joint presidential candidate. 
 
-(First differences appear in the fields ~d.pan~, ~d.pri~, and ~d.morena~ in the distributed data.)
+%% % # #+CAPTION: Una elección más característica de la partidocracia
+%% % # #+NAME:   fig:2
+%% % # | file:../assets/img/triplot2015-vhat-mu.png | [[file:../assets/img/triplot2015-v-mu.png]] |
 
-* The recent linear tendency
-One way of adopting it is with /vote forecasting/ from tendencies discernible in the previous five congressional races \citep{magar.gubCoatMx.2012}. I summarize the central tendency of the recent historical vote by means of linear estimation in time, fitting a straight line for each year analyzed and each party in the municipality or /sección electoral/. 
 
-The slope of the fitted line (the tendency) serves to extrapolate the party's electoral support to the future. For instance, to get the vote share that the recent past predicts for a party in unit $u$ for 2018, I estimate the following equation 
+%% % # #+CAPTION: Grano más fino: las secciones
+%% % # #+NAME:   fig:3
+%% % # | file:../assets/img/triplot2015-v-se.png | [[file:../assets/img/triplot2018-v-se.png]] |
 
-\begin{equation}
-v_{ut} = a_u + b_u \times t + \text{error}_{ut}, \; t = 2003, \ldots, 2015
-\end{equation}\label{ts-eq}
+%% Plots in Table [[fig:4]] report /secciones electorales/ and therefore offer much finer-grained than the previous portraits. They introduce the other quantity of interest in this note: parties' /core support/. The idea behind this statistic is measuring the size of the group that has historically supported the party consistently, in good but also in bad years. 
 
-that I then use to predict $\hat{v}_{u2018} = \hat{a}_u + \hat{b}_u \times 2018$. This is an out-of-sample prediction of the party's vote share, it can be compared to the party's actual vote share in 2018 to gauge whether or not the unit approximates the historical record. For the 2015 forecast the sample shifts one period to become $t = 2000, \ldots, 2012$, and so on an so forth for previous years. I distribute forecasts for 2009, 2012, 2015, and 2018, which involved fitting about 10 thousand municipal regressions and more than 250 thousand sección-level.
+%% % #+CAPTION: Support core and party performance in 2018
+%% % #+NAME:   fig:4
+%% % | file:../assets/img/resid-pan-2018-vs-pan-core-se.png | [[file:../assets/img/resid-morena-2018-vs-morena-core-se.png]] | file:../assets/img/resid-pri-2018-vs-pri-core-se.png |
 
-(Vote forecasts appear in the fields ~vhat.pan~, ~vhat.pri~, and ~vhat.morena~ of the distributed data.)
+%% The horizontal axis in each plot measures the size of party core support groups as a proportion of the /sección/'s electorate. The PRI enjoyed a clear edge over the rest of the parties in the period, with sizable cores in /all/ secciones nationwide. The distributions of the PAN and the left, in contrast, appear concentrated towards the zero---they have relatively few secciones with some unconditional support. 
 
-* The party's support core
-The other historical statistic is the parties' core support in the unit. Its definition stems from classifying voters in three categories: (1) support groups, that in the past have consistently supported the party; (2) opposition groups, that have consistently supported another party; and (3) swing groups, that have neither consistently supported nor consistently opposed the party \citep{cox.mccubbins.1986}. The party core consists of the support groups. 
+%% The vertical axis reports the three parties' performance in 2018 (the difference between the observed vote and the forecast). Positive values indicate that the party excelled expectations in the /sección/, negative ones that it under-performed it expectation. The PRI's electoral disaster appears all too clearly in the red plot. There were a few secciones with positive performance, but the density concentrates massively below the horizontal zero line, something that Table [[fig:1]] had hinted. What is truly remarkable is that the dismal performance is directly proportional to the size of the PRI core. President Peña and candidate Meade achieved what seemed, if not impossible, extremely improbable: they alienated the PRI's unconditional voters in 2018. The PAN and the left met expectations in secciones where they have enjoyed with groups of support. Both (especially Morena) over-achieved where they lack important cores, taking away PRI voters. 
 
-I use the procedure by Díaz Cayeros /et al/. (2016) to estimate this core. If $\bar{v}_t$ denotes the party's mean support across all units in period $t$,\footnote{The analyzed unit $u$ should be dropped from period $t$'s mean in order to not include the dependent variable in the right side of equation \ref{ts-eq}. I do not drop it due to the large number of municipal or seccional units (each contributing a fraction to the mean) and the use of vote shares (so large units are watered down): this refinement's impact should be negligible in each mean value.} for each party in each unit I fit
+%% The note elaborates how statistics were prepared (replication code can be found [[https://github.com/emagar/mxDistritos/code/elec-data-for-maps.r][here]]).
 
-\begin{equation}
-v_{ut} = \alpha_u + \beta_u \times \bar{v}_t + \text{error}_{ut}, \; t = 1994, \ldots, 2018.
-\end{equation}\label{alpha-eq}
+%% % # [[file:https://github.com/emagar/elecRetrns/raw/master/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.svg]]
 
-$\beta_u$ measures the effect that national party tides have on the party's vote in unit $u$. For instance, $\hat{\beta}_u=1$ estimates that for every percentage point that the party wins or loses nationally in year $t$, it also wins or loses one percentage point in the unit; $\hat{\beta}_u=0$, on the other hand, would indicate the unit's full isolation form national swings. It is therefore a measure of party volatility in the municipality or /sección/ (analogous to \href{https://www.investopedia.com/terms/v/volatility.asp}{"beta volatility"} in the financial literature). 
+%% % # #+CAPTION: PAN
+%% % # #+NAME:   fig:6
+%% % # #+ATTR_HTML: style="float:right;"
+%% % # #+ATTR_HTML: :width 50%
+%% % # [[file:../assets/img/resid-pan-2018-vs-pan-core-se.png]]
 
-The $\alpha$ coefficient estimates the core size: expected support in unit $u$ in the hypothetical case that the party receives no vote at the national level. For instance, $\hat{\alpha}=.4$ would indicate that, in the starkest of scenarios, 40% of the electorate in the municipality is unconditional to the party---which would indeed be a core of substantial size.
+%% * First differences
+%% One common approach to study electoral change is through first differences. Denoting $v_t$ the party's vote share in the municipality or the /sección/, in period $t$, the first difference is simply $d_t = v_t - v_{t-1}$. 
 
-A critique that can be anticipated towards this measure of the party's support core is its extreme counter-factual nature \citep{king.zeng.counterfactuals2006pa}. It deserves rigorous scrutiny, something I plan doing in the near future. 
+%% $d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.els1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
 
-(The parties' core support appears in the fields ~alphahat.pan~, ~alphahat.pri~, and ~alphahat.morena~ of the distributed data. Party volatility in ~betahat.pan~, ~betahat.pri~, and ~betahat.morena~.)
+%% (First differences appear in the fields ~d.pan~, ~d.pri~, and ~d.morena~ in the distributed data.)
 
-* Compositional variables
-I close with an important feature of the model specifications, associated with the \emph{compositional} nature of electoral returns. Compositional variable are quantitative descriptions of the parts of a whole. They therefore have two characteristics: (1) they are proportions that (2) add up to unity.\footnote{Formally, the compositional are random variables subject to two constraints: 
-$0 \leq v_p \leq 1 \; \forall \; p \in P \; \; and \; \; \sum_P v_p = 1.$.} 
+%% * The recent linear tendency
+%% One way of adopting it is with /vote forecasting/ from tendencies discernible in the previous five congressional races \citep{magar.gubCoatMx.2012}. I summarize the central tendency of the recent historical vote by means of linear estimation in time, fitting a straight line for each year analyzed and each party in the municipality or /sección electoral/. 
 
-When estimating parties separately, the challenge of equations 1 and 2 is to avoid forecasting vote shares less than zero or greater than one; and that the sum of party forecasts equals 1. To achieve this, \citet{aitchison.1986} proposes substituting vote shares by log-ratios in the analysis. Arbitrarily setting the PRI as the reference party, define party $p$'s vote relative to the PRI as 
-
-$r_p = \frac{v_p}{v_{\text{pri}}}.$
-
-A value $r_p=1$ would indicate a tie between the party and the PRI, while $r_p>1$ that it finished ahead of the PRI in the proportion that the value reveals. 
-
-Thus, equation 1 is re-specified as
-
-$\ln r_{put} = a + b \times t + \text{error}$
-
-y equation 2 as
-
-$\ln r_{put} = \alpha + \beta \times \bar{r}_{pt} + \text{error}.$
-
-Applying the natural logarithm attenuates the effect of extreme values of the regressor on the dependent variable, similar as a logit regression would. Models fitting was done with ordinary least squares. 
-
-Coefficient estimates requires transformation to collect party vote shares. Illustrating with a three-party caste, it is trivial that 
-
-\begin{equation}
-\hat{v}_p = \frac{\hat{r}_p}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}} \; \text{and} \;
-\hat{v}_{\text{pri}} = \frac{1}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}.}
-\end{equation}
+%% The slope of the fitted line (the tendency) serves to extrapolate the party's electoral support to the future. For instance, to get the vote share that the recent past predicts for a party in unit $u$ for 2018, I estimate the following equation 
 
 %% \begin{equation}
-%% \begin{split}
-%% v_{\text{pri}} + v_{\text{pan}} + v_{\text{morena}} & = 1 \\
-%% v_{\text{pri}} & = 1 - v_{\text{pan}} - v_{\text{morena}} \\
-%% 1 & = \frac{1}{v_{\text{pri}}} - \frac{v_{\text{pan}}}{v_{\text{pri}}} - \frac{v_{\text{morena}}}{v_{\text{pri}}} \\
-%% \end{split}
+%% v_{ut} = a_u + b_u \times t + \text{error}_{ut}, \; t = 2003, \ldots, 2015
+%% \end{equation}\label{ts-eq}
+
+%% that I then use to predict $\hat{v}_{u2018} = \hat{a}_u + \hat{b}_u \times 2018$. This is an out-of-sample prediction of the party's vote share, it can be compared to the party's actual vote share in 2018 to gauge whether or not the unit approximates the historical record. For the 2015 forecast the sample shifts one period to become $t = 2000, \ldots, 2012$, and so on an so forth for previous years. I distribute forecasts for 2009, 2012, 2015, and 2018, which involved fitting about 10 thousand municipal regressions and more than 250 thousand sección-level.
+
+%% (Vote forecasts appear in the fields ~vhat.pan~, ~vhat.pri~, and ~vhat.morena~ of the distributed data.)
+
+%% * The party's support core
+%% The other historical statistic is the parties' core support in the unit. Its definition stems from classifying voters in three categories: (1) support groups, that in the past have consistently supported the party; (2) opposition groups, that have consistently supported another party; and (3) swing groups, that have neither consistently supported nor consistently opposed the party \citep{cox.mccubbins.1986}. The party core consists of the support groups. 
+
+%% I use the procedure by Díaz Cayeros /et al/. (2016) to estimate this core. If $\bar{v}_t$ denotes the party's mean support across all units in period $t$,\footnote{The analyzed unit $u$ should be dropped from period $t$'s mean in order to not include the dependent variable in the right side of equation \ref{ts-eq}. I do not drop it due to the large number of municipal or seccional units (each contributing a fraction to the mean) and the use of vote shares (so large units are watered down): this refinement's impact should be negligible in each mean value.} for each party in each unit I fit
+
+%% \begin{equation}
+%% v_{ut} = \alpha_u + \beta_u \times \bar{v}_t + \text{error}_{ut}, \; t = 1994, \ldots, 2018.
+%% \end{equation}\label{alpha-eq}
+
+%% $\beta_u$ measures the effect that national party tides have on the party's vote in unit $u$. For instance, $\hat{\beta}_u=1$ estimates that for every percentage point that the party wins or loses nationally in year $t$, it also wins or loses one percentage point in the unit; $\hat{\beta}_u=0$, on the other hand, would indicate the unit's full isolation form national swings. It is therefore a measure of party volatility in the municipality or /sección/ (analogous to \href{https://www.investopedia.com/terms/v/volatility.asp}{"beta volatility"} in the financial literature). 
+
+%% The $\alpha$ coefficient estimates the core size: expected support in unit $u$ in the hypothetical case that the party receives no vote at the national level. For instance, $\hat{\alpha}=.4$ would indicate that, in the starkest of scenarios, 40% of the electorate in the municipality is unconditional to the party---which would indeed be a core of substantial size.
+
+%% A critique that can be anticipated towards this measure of the party's support core is its extreme counter-factual nature \citep{king.zeng.counterfactuals2006pa}. It deserves rigorous scrutiny, something I plan doing in the near future. 
+
+%% (The parties' core support appears in the fields ~alphahat.pan~, ~alphahat.pri~, and ~alphahat.morena~ of the distributed data. Party volatility in ~betahat.pan~, ~betahat.pri~, and ~betahat.morena~.)
+
+%% * Compositional variables
+%% I close with an important feature of the model specifications, associated with the \emph{compositional} nature of electoral returns. Compositional variable are quantitative descriptions of the parts of a whole. They therefore have two characteristics: (1) they are proportions that (2) add up to unity.\footnote{Formally, the compositional are random variables subject to two constraints: 
+%% $0 \leq v_p \leq 1 \; \forall \; p \in P \; \; and \; \; \sum_P v_p = 1.$.} 
+
+%% When estimating parties separately, the challenge of equations 1 and 2 is to avoid forecasting vote shares less than zero or greater than one; and that the sum of party forecasts equals 1. To achieve this, \citet{aitchison.1986} proposes substituting vote shares by log-ratios in the analysis. Arbitrarily setting the PRI as the reference party, define party $p$'s vote relative to the PRI as 
+
+%% $r_p = \frac{v_p}{v_{\text{pri}}}.$
+
+%% A value $r_p=1$ would indicate a tie between the party and the PRI, while $r_p>1$ that it finished ahead of the PRI in the proportion that the value reveals. 
+
+%% Thus, equation 1 is re-specified as
+
+%% $\ln r_{put} = a + b \times t + \text{error}$
+
+%% y equation 2 as
+
+%% $\ln r_{put} = \alpha + \beta \times \bar{r}_{pt} + \text{error}.$
+
+%% Applying the natural logarithm attenuates the effect of extreme values of the regressor on the dependent variable, similar as a logit regression would. Models fitting was done with ordinary least squares. 
+
+%% Coefficient estimates requires transformation to collect party vote shares. Illustrating with a three-party caste, it is trivial that 
+
+%% \begin{equation}
+%% \hat{v}_p = \frac{\hat{r}_p}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}} \; \text{and} \;
+%% \hat{v}_{\text{pri}} = \frac{1}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}.}
 %% \end{equation}
 
-These are the quantities that the distributed data report. 
+%% %% \begin{equation}
+%% %% \begin{split}
+%% %% v_{\text{pri}} + v_{\text{pan}} + v_{\text{morena}} & = 1 \\
+%% %% v_{\text{pri}} & = 1 - v_{\text{pan}} - v_{\text{morena}} \\
+%% %% 1 & = \frac{1}{v_{\text{pri}}} - \frac{v_{\text{pan}}}{v_{\text{pri}}} - \frac{v_{\text{morena}}}{v_{\text{pri}}} \\
+%% %% \end{split}
+%% %% \end{equation}
+
+%% These are the quantities that the distributed data report. 
 
 
-% # Fácil de implementar en R:
-% # a = voto partido unidad 1
-% # A = voto efec unidad 1
-% # N = 3 unidades
-% #
-% # tengo
-% # v.bar = 1/3 * (a/A + b/B + c/C)
-% #
-% # quiero
-% # v.bar.sin.aA = 1/2 * (b/B + c/C)
-% #
-% # hago
-% # 1/3 * (a/A + b/B + c/C) =      v.bar
-% #        a/A + b/B + c/C  =  3 * v.bar
-% #              b/B + c/C  =  3 * v.bar - a/A
-% #       1/2 * (b/B + c/C) = (3 * v.bar - a/A) * 1/2 = v.bar.sin.aA
-% #
-% # v.bar.sin.aA = (N * v.bar - a/A) * 1/(N-1)
+%% % # Fácil de implementar en R:
+%% % # a = voto partido unidad 1
+%% % # A = voto efec unidad 1
+%% % # N = 3 unidades
+%% % #
+%% % # tengo
+%% % # v.bar = 1/3 * (a/A + b/B + c/C)
+%% % #
+%% % # quiero
+%% % # v.bar.sin.aA = 1/2 * (b/B + c/C)
+%% % #
+%% % # hago
+%% % # 1/3 * (a/A + b/B + c/C) =      v.bar
+%% % #        a/A + b/B + c/C  =  3 * v.bar
+%% % #              b/B + c/C  =  3 * v.bar - a/A
+%% % #       1/2 * (b/B + c/C) = (3 * v.bar - a/A) * 1/2 = v.bar.sin.aA
+%% % #
+%% % # v.bar.sin.aA = (N * v.bar - a/A) * 1/(N-1)
 
 
 
