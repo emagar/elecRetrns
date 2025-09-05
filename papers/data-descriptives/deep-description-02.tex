@@ -159,6 +159,12 @@ Institutions set forth incentives to launch new parties in pursuit of very gener
 \item[Workers Party:] Morena's other partner in Congress. Originally an offshoot of urban radical movements from the 1970s in northern Mexico, the \textbf{PT} entered electoral coalitions with the PRD almost systematically in the competitive era. Its leadership unequivocally sided with AMLO, before and after the latter's split. It has yet to win a state government. 
 \end{description}
 
+\section{Vote manipulation???}
+A concern with election returns in Mexico has been fraud.
+1. PRI-era elections were a mix of genuine mobilization and fraud. Molinar.
+2. Did democractization change this substantially? It did. AMLO's failure to concede in 2006 came absent compelling evidence.
+3. \citep{cantuContiguas2014ajps} shows this. Cases of fraud remained, as probably everywhere, but they were few and major-parties had equal opportunity at it when the circumstances arose. So, in the aggregate, fraud cancelled-out. 
+
 \section{The data}
 
 The municipal elections dataset has been under construction for some time.\footnote{The repository also includes returns to other federal and subnational races at different levels of aggregation. This note centers on municipal-level vote returns for Ayuntamiento races only.} The original seed for the 1970s and 1980s was compiled by \citet{molinar.1991a} from official vote returns by the Interior Ministry's Registro Nacional de Electores. The primary source was systematized by \citet{magar.1994} for northern Mexico and then by \citet{varela.2004} nationwide. Data from the 1990s onwards has been compiled from the state election boards established then, who more or less routinely report vote returns since. When that was not the case, other sources were consulted, most notably \citet{revista.voz.y.voto} and \citet{cede.uam.izt}.
@@ -241,10 +247,6 @@ Data can be found online and downloaded by visiting the public repository at:
 \end{figure}  
 
 Figure \ref{F:scrn} offers a glimpse of the data for the state of Baja California's five municipalities in three election cycles: \verb|yr=|1998, 2001, and 2004. Two official municipal ID codes are reported: the census bureau's (field \verb|inegi|) and the electoral board's (field \verb|ife|). Those who wish to further incorporate census information or vote returns of other races into the analysis will rely on these codes for merging the data. Municipal vote returns are stored in column pairs \verb|(v01,l01)|, \verb|(v02,l02)|, etc.\ for the first candidate reported, the second candidate, and so forth. The \verb|l| column of the pair identifies the candidate's party or coalition label, while the \verb|v| column contains the total votes the candidate won. So in 1998 in Ensenada, with 31,995 votes the PRI was the plurality winner ($\texttt{l02} = \texttt{pri}$ indicates that this party's vote is stored in field $\texttt{v02}$), trailed closely by the PAN's 30,660 votes (in field $\texttt{v01}$). The votes--label column pair storage accommodates four decades of state party system heterogeneity, compounded by ephemerous electoral coalitions in a relatively small number of spreadsheet columns. The trade-off is that inspecting one party's performance across municipalities often requires additional manipulation, in order to arrange its votes into the same column across units.\footnote{A standalone R script (still a beta version) extracts a simplified matrix, reporting each party's votes in a column that is named after it, for a single state-year's municipal races. The script is located in \verb|code/extract-state-yr-mu-returns.r|.} %\emm{Should write standalone Python script too.} 
-
-\section{Vote manipulation???}
-
-\citep{cantuContiguas2014ajps}
 
 \section{Pre-election coalitions}\label{S:coalitions}
 
