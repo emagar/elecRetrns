@@ -10574,7 +10574,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 10570,mic-15.102,URUAPAN,2015,0,16,16102,16103,prd-pt,0,VICTOR MANUEL MANRIQUEZ GONZALEZ,Reelected,,pan,0.0417847325,0,0,0,,,incumbent out,prd-pvem,,,
 10571,mic-16.102,URUAPAN,2018,0,16,16102,16103,prd-pvem,0,VICTOR MANUEL MANRIQUEZ GONZALEZ,Term-limited-p-lost,,pt-morena,0.1018684604,0,1,1,,,prd-pvem,incumbent out,,,
 10572,mic-17.102,URUAPAN,2021,0,16,16102,16103,pt-morena,0,IGNACIO BENJAMIN CAMPOS EQUIHUA ,Reran-beaten,,pan-pri-prd,0.0558110604,0,,,,,incumbent out,2024,,,
-10573,mic-18.102,URUAPAN,2024,0,16,16102,16103,indep1,0,CARLOS ALBERTO MANZO RODRIGUEZ,2027,IGNACIO BENJAMIN CAMPOS EQUIHUA,pt-pvem-morena,0.4832,,,,,,,,,,
+10573,mic-18.102,URUAPAN,2024,0,16,16102,16103,indep1,0,CARLOS ALBERTO MANZO RODRIGUEZ,2027,IGNACIO BENJAMIN CAMPOS EQUIHUA,pt-pvem-morena,0.4832,1,,,,,,,asesinado 1nov2025,,
 10574,mic-07.103,VENUSTIANO CARRANZA,1989,0,16,16103,16104,pri,0,RUBEN VALENCIA ANDRADE,Term-limited-p-won,,prd,0.1367610325,0,0,0,,,NA,incumbent out,,inafed,
 10575,mic-08.103,VENUSTIANO CARRANZA,1992,0,16,16103,16104,pri,0,RAMIRO RODRIGUEZ MEJIA,Term-limited-p-lost,,prd,0.1722146739,0,0,0,,,incumbent out,incumbent out,,inafed,
 10576,mic-09.103,VENUSTIANO CARRANZA,1995,0,16,16103,16104,prd,0,JOSE LUIS JACINTO BARRAGAN,Term-limited-p-lost,,pri,0.2347119123,0,0,0,,,incumbent out,incumbent out,,inafed,
