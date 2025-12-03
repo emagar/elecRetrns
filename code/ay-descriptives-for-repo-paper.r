@@ -1041,5 +1041,15 @@ plot(d$inm.int, main = "Inmuebles gubernamentales x1000 vot.")
 summary(d$lisnom)
 
 
+## Sex and careers
+inc <- read.csv(file = "aymu1989-on.incumbents.csv"          , stringsAsFactors = FALSE) # raw
+## names since ~1990
+inc$cycle <- sub(pattern="^[a-z]+.([0-9]+).*$", replacement = "\\1", inc$emm, perl=TRUE) # extract cycle from emm code
+inc$cycle <- as.numeric(inc$cycle)
+table(inc$yr, inc$cycle)
+## women presidents (cycle 7 is 1988-90)
+inc$dmujer <- as.numeric(inc$dmujer)
+tmp <- table(inc$dmujer, inc$cycle)
+round(tmp[2,] / colSums(table(inc$dmujer, inc$cycle)), 2)
 
 
