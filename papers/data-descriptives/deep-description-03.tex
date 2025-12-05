@@ -378,40 +378,46 @@ The simultaneous rise of a dual opposition in Figure \ref{F:vpcts} created a coo
 
 The final stage portrayed corresponds to the collapse of the party system that brought electoral democracy to Mexico \citep{estevez.magar.rosas.2008,moreno.decisElec.2009}, and the rise of AMLO's Morena. Andrés Manuel López Obrador, best-known by his initials, broke free from the left's proverbial factionalism \citep{bruhn.1997} by launching a new, personalized party. The gamble paid off. Left elite discoordination gave other parties unexpected victories across the board in Morena's inaugural 2015 elections. But AMLO's third bid for the presidency three years later achieved a rallying cry, becoming focal point attracting not just left voters, but independents, leaners from the PRI and even from the PAN. Morena's landslide victory in 2018, which gave it unified control of the federal and most state governments, led the former major parties to run desperate three-way coalitions in subsequent races. To little avail: while the rise of Morena appears with a lag in Figure \ref{F:vpcts} (the party mobilized the larger municipalities first, and extended its dominant mantle towards the rest afterwards), its formidable challenge managed to realign smaller municipality elites away from the PRI---the PRI's population-weighted bar in Figure \ref{F:win} finally outsized its sheer frequency in the 2024 cycle.
 
-\section{Reelection}
+\section{Elected officers and reelection}
 
-Another portion of the dataset, included in the file
-
-\begin{itemize}
-\item \verb|data/aymu1989-on.incumbents.csv|
-\end{itemize}
-
-\noindent places the focus on elected municipal presidents. 
-
-Also discusses another dataset in the repository, incumbents. \citep{motolinia-reel-pork2021,lucardi.rosas.Incumbency.2016}
-Sex
+Another portion of the dataset, distributed in the file \verb|data/aymu1989-on.incumbents.csv| places focus on elected officeholders. Table \ref{tab:fem} show that municipal government remained an almost exclusively male affair up to 2015. Yet the share of female executives grew consistently throughout the period, plateauing towards the end. A parity law came to force that year, constitutionally mandating parties to nominate equal female and male slates of candidates across offices nationwide \citep{piscopo.2016}, and thereby electing more than twice as many women to municipal office as before. Yet the share remains stubbornly below parity---many more women lose to men than the reverse. Whether differential success rates stem from the difficulty to recruit electoral talent overnight, from parties nominating women to less secure races, from anti-female bias in the electorate, or from something else is worth investigating further. 
 
 \begin{table}
   \centering
   \begin{tabular}{crl}
     Cycle     & \% female \\ \hline
-    1988--90  &  2  &  \\ 
-    1991--93  &  4  &  \\
-    1994--96  &  4  &  \\
-    1997--99  &  4  &  \\
-    2000--02  &  5  &  \\
-    2003--05  &  5  &  \\
-    2006--08  &  6  &  \\
-    2009--11  &  8  &  \\
+    1988--90  &   2 &  \\ 
+    1991--93  &   4 &  \\
+    1994--96  &   4 &  \\
+    1997--99  &   4 &  \\
+    2000--02  &   5 &  \\
+    2003--05  &   5 &  \\
+    2006--08  &   6 &  \\
+    2009--11  &   8 &  \\
     2012--14  &  11 &  \\ \hdashline
     2015--17  &  21 &  \footnotesize{\emph{~~~Gender parity slates adopted}} \\ 
     2018--20  &  28 &  \\
     2021--23  &  27 &  \\
     2024--26  &  28 &  \\ \hline
   \end{tabular} 
-  \caption{Municipal glass ceilings: elected female municipal presidents}
+  \caption{Municipal glass ceilings: elected female municipal presidents}\label{tab:fem}
 \end{table}
 
+\begin{figure}
+  \includegraphics[width=.9\columnwidth]{../../plots/reel-munic2018-23.pdf}
+  \caption{Governing party reelection since 2018 by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain indetermined. Earlier cycles dropped because they antecede the adoption of municipal consecutive reelection.}\label{F:reel}
+\end{figure}  
+
+The dataset opens up the study of consecutive reelection since adoption \citep{motolinia-reel-pork2021,lucardi.rosas.Incumbency.2016}. Figure \ref{F:reel} portrays party reelection rates in the 2018--2023 period contingent on the status of the outgoing municipal president. Interesting patterns emerge. 
+
+\begin{itemize}
+\item The regularity of the darker green bars of officers reelected is notable, 21 percent altogether $\pm$ 3 percent. One in five reelected presidents is not an impressive score at first sight. And the sum of green-shaded bars quantifies officers with static ambition regardless of success \citep{schlesinger.1966}: 38 percent of all, with more inter-party variance.
+
+\item Red-shaded bars include executive officers who reelected in the 2018 cycle and could not run again for a third term. Since they demonstrated static ambition in the past, term-limited presidents should be included with the green to gauge the attractiveness of municipal reelection. By the second post-reform cycle, three out of five mayors sought to reelect. This is a more meaningful measure. The 58 percent total among Morena's incumbents is striking, as the national leadership chose in 2025 to cancel the reelection experiment by 2030. 
+
+\item The blue-shaded group reports incumbents who retired, leaving 38 percent of seats open on average. The nature of the withdrawal is unfortunately not in the data--whether they abandoned of their own will or were denied renomination by the party. I hope to get a better sense of this information in future revisions of the dataset.
+\end{itemize}
+  
 \section{The electoral calendar}
 
 %% \section{The measurement of electoral history}
@@ -433,7 +439,9 @@ Also the names of xxxx elected municipal presidents.
 ------
 =24088
 
-24077 sex
+The sex of 24077 is known.
+
+Wealth of systematized data. 
 
 %% These amount to much fewer formal powers than local goverments in other systems. Mexican municipalities have no jurisdiction over public education and health, lack authority to collect other taxes, and must negotiate some fiscal resources with the state government, who may be tempted to bias redistribution of revenue sharing to municipalities \citep{timmons.broid.2013} 
 

@@ -1052,4 +1052,67 @@ inc$dmujer <- as.numeric(inc$dmujer)
 tmp <- table(inc$dmujer, inc$cycle)
 round(tmp[2,] / colSums(table(inc$dmujer, inc$cycle)), 2)
 
+#####################################################################################################################
+## DATA FOR HORIZONTAL BARCHART BY PARTY                                                                           ##
+## Run script reelec/code/incumbent-reelection.r up to "DATA OBJECT FOR HORIZONTAL BARCHARTS", then run this block ##
+#####################################################################################################################
+tmp2 <- myxtab(tmp$cyclef, tmp$race.after, pct=TRUE, rel=TRUE, digits=2, marginals = 1)
+sel <- which(tmp$cyclef==2018 | tmp$cyclef==2021)
+length(sel)
+tmp2 <- myxtab(tmp$win[sel], tmp$race.after[sel], pct=TRUE, rel=TRUE, digits=1, marginals = 1)
+tmp3 <- myxtab(tmp$win[sel], tmp$race.after[sel], pct=FALSE, rel=FALSE, digits=0, marginals = 1)
+colSums(tmp3)
+tmp4 <- c(round(colSums(tmp3)*100/colSums(tmp3)[7]), colSums(tmp3)[7]); names(tmp4)[8] <- "N"
+tmp2 <- rbind(Todos=tmp4, tmp2)
+tmp2
+##
+tmp2 <- tmp2[order(-tmp2[,1]),] # sort by reelected
+tmp2
+rownames(tmp2)[rownames(tmp2)=="Otros"] <- "Other"
+rownames(tmp2)[rownames(tmp2)=="Todos"] <- "All"
+##
+############################################################################################
+## HORIZONTAL BARCHARTS BY PARTY: PCTS REELEC/BEATEN/TERM-LIM-WON/LOST/OPEN-SEAT-WON/LOST ##
+############################################################################################
+library(RColorBrewer)
+pdf(file =     "../graph/reel-munic2018-23.pdf", width = 7, height = 6)
+#png(filename = "../graph/reel-munic2018-23.png", width = 700, height = 480)
+clr <- brewer.pal(n=6, name = 'Paired'); clr <- clr[c(4,3,6,5,2,1)]
+par(mar = c(2,0,1.2,0)+.1) # bottom, left, top, right 
+plot(x = c(-9,105), y = c(0.4,nrow(tmp2)+1), type = "n", main = "Municipalities by outgoing party", axes = FALSE)
+axis(1, at=seq(0,100,10),label=FALSE)
+axis(1, at=seq(0,100,20),labels=c(seq(0,80,20),"100%"),cex.axis=.9)
+polygon(x=c(-20,-20,120,120), y=c(4,5,5,4),col="gray85",border="gray85")
+abline(h=1:(nrow(tmp2)+1), lty = 3)
+#abline(h=5:6)
+for (i in 1:nrow(tmp2)){
+    #i <- 1
+    l <- c(0,0); r <- rep(tmp2[i,1],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[1], border = clr[1])
+    if (tmp2[i,1]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,1]),"%"), cex = .67, col = "white")
+    l <- r; r <- r+rep(tmp2[i,2],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[2], border = clr[2])
+    if (tmp2[i,2]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,2]),"%"), cex = .67, col = "gray50")
+    l <- r; r <- r+rep(tmp2[i,3],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[3], border = clr[3])
+    if (tmp2[i,3]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,3]),"%"), cex = .67, col = "white")
+    l <- r; r <- r+rep(tmp2[i,4],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[4], border = clr[4])
+    if (tmp2[i,4]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,4]),"%"), cex = .67, col = "gray50")
+    l <- r; r <- r+rep(tmp2[i,5],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[5], border = clr[5])
+    if (tmp2[i,5]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,5]),"%"), cex = .67, col = "white")
+    l <- r; r <- r+rep(tmp2[i,6],2)
+    polygon(y = c(i+1/6, i+5/6, i+5/6, i+1/6), x = c(l,r), col = clr[6], border = clr[6])
+    if (tmp2[i,6]>.5) text(y = i+1/2, x = (l+r)[1]/2, labels = paste0(round(tmp2[i,6]),"%"), cex = .67, col = "gray50")
+}
+text(x=-7 , y=c(1:nrow(tmp2))+.5, labels = rownames(tmp2), cex = .85)#, srt = 90)
+text(x=105, y=c(1:nrow(tmp2))+.5, labels = paste0("N=", tmp2[,8]), cex = .75)
+#legend(x = 0, y = 0.75, legend = c("Ocupante reelecto","derrotado","Silla vacía ganó","perdió","Term limit ganó","perdió"), fill = clr, cex = .67, border = clr, bty = "n", horiz = TRUE)
+legend(x = -2,  y = 0.95, legend = c("reelected","beaten"), title = "Incumbent ran"  , fill = clr[1:2], cex = .85, border = clr[1:2], bty = "n", horiz = TRUE)
+legend(x = 40, y = 0.95, legend = c("won","lost")       , title = "Term limit, party", fill = clr[3:4], cex = .85, border = clr[3:4], bty = "n", horiz = TRUE)
+legend(x = 72, y = 0.95, legend = c("won","lost")       , title = "Open seat, party" , fill = clr[5:6], cex = .85, border = clr[5:6], bty = "n", horiz = TRUE)
+##text(x = 105, y = .9, "@emagar", col = "gray", cex = .7)
+dev.off()
+
 
