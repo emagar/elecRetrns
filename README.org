@@ -1,4 +1,4 @@
-#+TITLE: Recent Mexican election vote returns repository
+\#+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
 Last revision: 2025-06-02
 
@@ -8,15 +8,19 @@ Last revision: 2025-06-02
 Recent news
 </h2>
 
-<sup><sub>2025-06-02</sub></sup> Added preliminary returns and winners for 2025 municipal elections in Durango and Veracruz.  
+<sup><sub>2025-12-11</sub></sup> A research note describing the municipal elections portion of the data [[./papers/data-descriptives/deep-description-04-mex-studies.pdf][here]]. 
 
-<sup><sub>2024-04-12</sub></sup> Changed ~nl2018aymu~, ~mex2021aymu~, and ~mic2021aymu~ in source to reflect voided stations. Two victors changed in ~aymu1989-on.incumbents~ (in General Zuazua and Angangueo). Thanks to Juan Pablo Figueroa for pointing this.
+<sup><sub>2025-12-06</sub></sup> Added new file with election *concurrence* with other races data since 1989 [[conc][here]].
 
-<sup><sub>2024-02-29</sub></sup> Completes municipal /listas nominales/ for the study of turnout. 
+<sup><sub>2025-06-02</sub></sup> Added returns and winners for 2025 municipal elections in Durango and Veracruz.  
+
+# <sup><sub>2024-04-12</sub></sup> Changed ~nl2018aymu~, ~mex2021aymu~, and ~mic2021aymu~ in source to reflect voided stations. Two victors changed in ~aymu1989-on.incumbents~ (in General Zuazua and Angangueo). Thanks to Juan Pablo Figueroa for pointing this.
+
+# <sup><sub>2024-02-29</sub></sup> Completes municipal /listas nominales/ for the study of turnout. 
 
 # <sup><sub>2023-12-01</sub></sup> Electoral party/coalition of ayuntamiento incumbents added.
 
-<sup><sub>2023-11-11</sub></sup> [[codebook][*Codebook*]] updated, with a printable flier.
+# <sup><sub>2023-11-11</sub></sup> [[codebook][*Codebook*]] updated, with a printable flier.
 
 # <sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. 
 # Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized. 
@@ -55,6 +59,8 @@ The repository contains voting data for recent Mexican elections for certain off
 /Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 * How to cite the data
 This repository is under the [[https://pitt.libguides.com/openlicensing/MIT][MIT license]] (see the LICENSE document for details). You are free to download and modify the data and code provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
+
+A research note describing the municipal portion of the data can be found [[./papers/data-descriptives/deep-description-04-mex-studies.pdf][here]].
 * File naming conventions
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección electoral/, and /casilla/, respectively), then the years included.
 
@@ -68,9 +74,10 @@ Chihuahua since 1998 also concurrently elects one /síndico/ per municipality in
 Nayarit since 2008 elects a fraction of municipal council members in single-member plurality districts called /demarcaciones/, the other fraction by proportional representation (ballot fused with the municipal president). 
 
 Two versions of municipal election returns are included: one with votes reported by candidate, another reported by party (they may differ whenever coalitions competed). The script [[./code/ay.r][~code/ay.r~]] was used for these manipulations:
-- [[./data/aymu1989-present.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = /ayuntamiento/ election returns, coalition votes aggregated by candidate.
-- [[./data/aymu1989-present.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = /ayuntamiento/ election returns, coalition votes split among parties where source permits.
-- [[./data/aymu1989-present.incumbents.csv][~data/aymu1989-on.incumbents.csv~]] = names of elected municipal officers (/presidente municipal/ only) since 1989. Includes reelection status since 2018.
+- [[./data/aymu1970-on.coalAgg.csv][~data/aymu1970-on.coalAgg.csv~]] = /ayuntamiento/ election returns, coalition votes aggregated by candidate.
+- [[./data/aymu1970-on.coalSplit.csv][~data/aymu1970-on.coalSplit.csv~]] = /ayuntamiento/ election returns, coalition votes split among parties where source permits.
+- [[./data/aymu1989-on.incumbents.csv][~data/aymu1989-on.incumbents.csv~]] = names of elected municipal officers (/presidente municipal/ only) since 1989. Includes reelection status since 2018.
+- [[./data/aymu1989-on.concurrence.csv][~data/aymu1989-on.concurrence.csv~]] = indicators of municipal election concurrence with a gubernatorial, a state assembly, a presidential, or a congressional race since 1989.<<conc>>
 *** Non-fused ballots (Chihuahua and Nayarit)
 - [[./data/ay-nonfused/ayde2008-on-Nayarit-regid.coalAgg.csv][~data/ay-nonfused/aymu1998-on-Chihuahua-sind.csv~]] = Chihuahua /síndico/ election municipality-level returns since 1998, coalition votes aggregated by candidate.
 - [[./data/ay-nonfused/ayde2008-on-Nayarit-regid.coalAgg.csv][~data/ay-nonfused/ayde2008-on-Nayarit-regid.coalAgg.csv~]] = Nayarit's municipal council election demarcación-level returns since 2008, coalition votes aggregated by candidate.
