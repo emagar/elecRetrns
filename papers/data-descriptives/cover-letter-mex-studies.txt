@@ -12,3 +12,21 @@ Best,
 
 Eric Magar
 Professor, ITAM
+
+
+Dr. Matthew Butler
+Editor, Mexican Studies/Estudios Mexicanos
+mseditor@ucpress.edu
+
+Dear Professor Butler:
+
+I have submitted a manuscript to MS/EM for review. I meant to include this cover letter, but could not find where at the Scholastica server.
+
+The submitted research note introduces a dataset on Mexican municipal election vote returns since 1979. Primary sources routinely publish on the web the information in this dataset. But no source systematically covers the 2,500+ municipalities of all 32 states for nearly half a century with unified criteria, while also making it publicly accessible. My dataset does this, also including the names of elected municipal presidents since 1989.
+
+I submitted an anonimized cover page, as per MS/EM's submission instructions. Yet the nature of the piece hardly makes it suitable for full anonimity, since reviewers will likely need to revise the live repository in order to judge on the merits of the substance. Any clever person will easily deduce my identity from the text. I believe that should not be a problem. Please advise. 
+
+Best,
+
+Eric Magar
+Professor, ITAM

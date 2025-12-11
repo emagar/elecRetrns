@@ -1,0 +1,616 @@
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=1in,left=1in,top=1in,bottom=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[utf8]{inputenc}   % allows input of special characters from keyboard (input encoding)
+\usepackage[T1]{fontenc}      % what fonts to use when printing characters       (output encoding)
+\usepackage{amsmath}          % facilitates writing math formulas and improves the typographical quality of their output
+\usepackage[hyphens]{url}     % adds line breaks to long urls
+\urlstyle{tt}                 % how urls appear, options tt rm sf and same, see https://mirrors.mit.edu/CTAN/macros/latex/contrib/url/url.pdf
+\usepackage[pdftex]{graphicx} % enhanced support for graphics
+\usepackage{tikz}             % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows}
+
+\usepackage{mathptmx}           % set font type to Times
+\usepackage[scaled=.90]{helvet} % set font type to Times (Helvetica for some special characters)
+\usepackage{courier}            % set font type to Times (Courier for other special characters)
+
+% \usepackage[longnamesfirst, sort]{natbib}\bibpunct[]{(}{)}{,}{a}{}{;} % handles biblio and references 
+\usepackage[sort]{natbib}\bibpunct[]{(}{)}{,}{a}{}{;} % handles biblio and references 
+
+\usepackage{rotating}         % sideway tables and figures that take a full page
+\usepackage{caption}          % allows multipage figures and tables with same caption (\ContinuedFloat)
+
+\usepackage{dcolumn}          % needed for apsrtable and stargazer tables from R to compile
+\usepackage{arydshln}         % dashed lines in tables (hdashline, cdashline{3-4}, 
+                              %see http://tex.stackexchange.com/questions/20140/can-a-table-include-a-horizontal-dashed-line)
+                              % must be loaded AFTER dcolumn, 
+                              %see http://tex.stackexchange.com/questions/12672/which-tabular-packages-do-which-tasks-and-which-packages-conflict
+
+
+\newcommand{\mc}{\multicolumn}
+
+%% TO ADD NOTES IN TEXT, PUT % BEFORE THE ONE YOU WANT DISABLED
+%\usepackage[disable]{todonotes}                            % no show
+\usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
+\newcommand{\emm}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
+
+%% \usepackage{xr} % allows cross-ref to other file
+%% \externaldocument{urge15appendix}
+
+%% %for submission: sends figs, tables, and footnotes to last pages
+%% \RequirePackage[nomarkers,nolists]{endfloat}     % sends tables and figures to the end
+%% \RequirePackage{endnotes}                        % turns fn into endnotes; place \listofendnotes where you want 
+%%                                                  %the endnotes to appear (it must be after the last endnote).
+%% \let\footnote=\endnote
+%% \newcommand{\listofendnotes}{
+%%    \begingroup
+%%    \parindent 0pt
+%%    \parskip 2ex
+%%    \def\enotesize{\normalsize}
+%%    \theendnotes
+%%    \endgroup
+%% }
+
+%% % for submission: drop page numbers when producing title page
+%% \pagenumbering{gobble} % Remove page numbers (and reset to 1)
+%% \pagenumbering{arabic}% Arabic page numbers (and reset to 1)
+
+\setcitestyle{citesep={;}}
+
+\usepackage{hyperref}
+
+\usepackage{bigfoot}  %% allows the use of \verb command within footnotes
+
+\begin{document}
+
+\title{Local Competition in Mexican Politics since 1979: \\ A Comprehensive Dataset of Municipal Elections}
+\author{Eric Magar\footnote{The author is grateful for financial support for research from the Asociaci\'on Mexicana de Cultura \textsc{a.c.} and for research assistance by Carlos Alexis Sarabia Melgarejo and Isaac Palatto Sánchez. All remaining errors are my own.} \\ ITAM \\ \url{emagar@itam.mx}}
+\date{\today}
+%\date{December 11, 2025 \\ Under review by \emph{Mexican Studies/Estudios Mexicanos}}
+% \date{\today \\ Preliminary draft, please inquire for a newer version}
+\maketitle
+
+\begin{abstract}
+\noindent I introduce a publicly-available dataset of vote returns for Mexican municipal elections between 1979 and 2025. It includes over 35 thousand races and distributes municipality-level aggregates of the votes each party won; the number of registered voters; the number of candidates competing and the winner's name; the election's date and concurrence with other races; and ID codes for merging socio-demographic data. Sources are presented, standardization of the time-series cross-section explained, and descriptive statistics performed. Patterns in the data conform to prior knowledge of Mexican elections and demostrate many interesting applications of the data.
+%\noindent This note introduces a publicly-available dataset of vote returns for Mexican municipal government elections between 1979 and 2025. It covers over 35 thousand races and distributes municipality-level aggregates of the votes won by each party or coalition, of void ballots, and of total votes cast; the number of eligible voters registered; the number of candidates competing and the winner's name; the election's date and concurrence with other races; and ancillary census bureau and election board municipality \textsc{id} codes for merging socio-demographic data as well as results of elections at other levels. Sources are presented, standardization of the time-series cross-section explained, and descriptive statistics performed. Patterns in the data conform to prior knowledge of Mexican elections and demostrate interesting applications of the data.
+\end{abstract}
+
+%% \begin{footnotesize}
+%% \noindent \textbf{Keywords:} Municipal elections, elected municipal executive officers, consecutive reelection, electoral concurrence, systematized publicly-available datasets, democratization, 1979--2025, Mexico.
+%% \end{footnotesize}
+
+%% \bigskip
+
+\newpage
+
+\noindent The advent of competition in Mexican politics coincideded with distribution of a wealth of public data in most areas of government. A parallel boom occured in the study of politics, policy, and process, in areas as diverse as the distributed data: poverty relief, decentralized spending, public health, education, infrastruture, special interest groups, organized crime, and much more.\footnote{ See \citet{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019, hernandez.jaramillo.FiscalDescentralMx2008wd, king.etal.segPop.2007, frenk.2006, behrman.etal.Prospera2025qe, avitabile.dehoyos.2018, garfias.etal.Infrastructure2021, palmer.rubin.Patronage2019cps, dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer, timmons.broid.2013}.} While these examinations are mostly at small units of analysis, such as firms, schools, census tracts, or even individuals, the processes of interest invariably intersect with municipal governments, and multivariate models typically include controls at this level. Municipal election vote returns are therefore one key input for analysis. 
+
+% \noindent The advent of competition in Mexican politics produced a wealth of public data in all areas of government. A parallel boom occured naturally in the study of politics, policy, and process, in areas as diverse as the data: poverty relief \citep{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019}, decentralized spending \citep{hernandez.jaramillo.FiscalDescentralMx2008wd}, public health \citep{king.etal.segPop.2007, frenk.2006}, education \citep{behrman.etal.Prospera2025qe, avitabile.dehoyos.2018}, infrastruture \citep{garfias.etal.Infrastructure2021}, interest groups \citep{palmer.rubin.Patronage2019cps}, organized crime \citep{dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer}, and much more. While much of this analysis is at small units, such as firms, schools, census tracts, or individuals, processes invariably intersect with municipal government and politics, and multivariate models typically include controls at this level. Municipal-level vote returns are therefore one key input for analysis. 
+
+This research note introduces a dataset of vote returns for Mexican municipal government elections in recent decades. Vote returns are information in the public domain that anyone can find in the web with relative ease. But primary sources are spread across state-by-state web sites, lack standardized reports, have many missing or incomplete years, and some have been (or are on the brink of being) scrapped due to insufficient funding. Hence the importance of maintaining a secondary source. The present dataset is distributed in a publicly-available repository consolidating municipal government election results nationwide in a single comprehensive source. Data covers all municipalities that elected government officers between 1979 and 2025.
+
+% \footnote{Early election scholars paid attention to federal elections for which vote returns have been rather well-organized and systematically available in public sources \citep[e.g.][]{gomezTagle.Estadisticas1990, segovia.dientes-sierra1983, molinar.1991a, segovia.els1979}. Discussion of state and municipal races was anecdotal at best due to data unavailability. The respository where the present dataset is distributed includes federal election vote returns too. This note centers in municipal elections only.} 
+
+The note proceeds thus. Section 1 describes municipal government authority and the electoral institutions. Section 2 describes municipal party systems, presenting the main contenders in the races. Section 3 briefly discusses fraud in Mexican elections. Section 4 elaborates data coverage and its organization in the distributed files. Section 5 offers an overview of pre-election coalitions in the units of observation, an obstacle to some research. Section 6 performs descriptive analysis of key variables in the data, contrasting municipal patterns to previous scholarship on federal, state, and sub-national elections. Sections 7 and 8 describe other datasets also distributed, with systematic information of elected executive municipal officers and electoral calendars, respe3ctively, since 1989. Section 9 concludes.
+
+\section{Municipal governments}
+
+As of May 2025, Mexico's thirty-one states were subdivided into 2,460 municipalities, plus 17 municipality-equivalents in Mexico City, the nation's capital. \emph{Municipios} elect the bottom tier of governments in the federal system.
+
+\subsection{Policy making and fiscal authority}
+
+State capacity in Mexico is notoriously limited, especially among municipalities. Municipal governments have constitutional authority over community police, zoning and construction permits, drinking water supply, sewerage and waste disposal, street lighting, pavement, and park management, and regulate public markets, slaughterhouses, and cemeteries.
+
+Municipal governments have meager constitutional fiscal endowments, raising only property taxes and collecting fees for public services. And few municipalities in the past invested in the administrative structure for revenue collection \citep{garfias.state.cap.2018}. Most, especially in rural Mexico, obtain the lion's share of their financial resources from federal revenue sharing and earmarked federal investments \citep{diaz.cayeros.2006, figueroa-mansur-itam.2024}.
+
+But in spite of the narrow scope, elected municipal officers appoint staff and subcontract services and personnel, and these are key sources of patronage in any spoils system. Local political organizations, and the resources they mobilize in pursuit of municipal office, are key to the maintenance of state and national parties \citep{coppedge.MxVen.1993, key.1964, rosas.lucardi.Brokers.2019}. Hence their importance for analysts of politics and policy.
+
+Still, bureaucratic capacity varies widely. The median municipal government employed or hired 13 bureaucrats per 1,000 registered voters in 2023, just shy above the lower quartile's 9 or fewer. The top decile, with 32 or more bureaucrats per 1,000, was two-and-a-half times above the median.\footnote{Descriptive statistics computed with data from the 2023 Municipal Government Census \citep{inegi.CensoGobMun2023}, excluding Mexico City and unelected municipalities.}
+
+\subsection{Government structure}\label{S:structure}
+Municipal power is vested to a popularly-elected body, the \emph{Ayuntamiento} (literally `yoked together'). The council or \emph{cabildo} and a mayor (called \emph{presidente} in some states, \emph{primer regidor} in others) make up the Ayuntamiento, deciding by majority rule. The mayor is executive officer, presides municipal council sessions with voice and the tie-breaking vote, and holds variable municipal appointment powers \citep{robles-mtz.Municipio.2009, rmz-millan.2000}. Cabildo size is proportional to population. Precedence-ordered councilors (called \emph{regidores} or \emph{concejales}) propose and vote municipal policy through ordinances and rules. One or more \emph{síndicos}, officers in charge of the treasury and the municipio's legal representation, complete the council in some states. Síndicos may be elected or appointed. Appointed síndicos have voice but no vote in the council. Municipalities have no judicial power. States do.
+
+While it is included in the data, I drop Mexico City from the descriptions below due to its special status. Before 1997, the mayor of the Federal District was a presidential appointee, who would in turn appoint delegates for the city's 16 administrative jurisdictions (called \emph{delegaciones}). Reformers made all these elected offices in 1997. The Federal District did not, however, gain status as a state, nor did delegación executives gain fiscal powers---taxation remains in the hands of the city executive. The city further reformed in 2018, adding councils to its quasi-municipalities (now called \emph{alcaldías}) and renaming the Federal District as Mexico City \citep{rabell.2017}. 
+
+\subsection{Electoral institutions}
+Presidents are elected by plurality. Regidores are elected in two groups: one group by plurality, the other by proportional representation (PR). The plurality-to-PR regidores ratio shifts considerably across states. As of 2010, the ratio in the mean Ayuntamiento was $2:1$. Ayuntamientos in the state of Guanajuato, with the lowest plurality share in the mix, had a $1:4$ ratio, while Tabasco's, with the highest, had the inverse $4:1$ ratio \citep[][:14]{gil.2010}. This ratio matters because higher numbers of PR regidores could leave the president in the council minority.
+
+With parity, however, the president necessarily enjoys majority council status, because municipal officers are elected in fused tickets. Voters have a single vote, which they cast for a list of candidates including a municipal president at the top of the ticket, ranked regidores, and síndicos where applicable. The vote is fused as it simultaneously affects the vote totals of candidates running for different offices \citep[see ][:42]{cox.1997}: the presidency, all plurality regidores, and síndicos (where elected) are allocated to the most-voted list. Remaining regidores are distributed proportionally to the closed lists. Split ticket voting is therefore not technically possible.
+
+\subsection{Exceptional electoral institutions}
+Two notable exceptions occur in the states of Chihuahua since 1998 and Nayarit since 2008. Municipal voters there have two votes instead of one, therefore rendering split ticket voting possible. In Chihuahua, one vote elects the síndico by plurality, another elects the remaining municipal officers as described above (ratio $8:5$).
+
+In Nayarit, one vote elects a president--síndicos fused ticket by plurality in municipio-wide elections. The second vote elects plurality regidores in single-member districts called \emph{demarcaciones}, into which municipios are subdivided for the purpose. Second votes are then pooled in a secondary district (the municipio as a whole) to distribute PR regidores to the closed lists. While the ratio in Nayarit is $7:3$, winning presidents could end up in the council minority unless their party secures enough district victories.
+
+\subsection{Term limits}
+Elected municipal officers have three-year terms.\footnote{Coahuila's Ayuntamientos elected between 2005 and 2013 (inclusive), Hidalgo's since 2016, and Veracruz's since 2013 enjoyed four-year terms. Exceptional distortions to three-year terms also occurred whenever state electoral calendars changed, something common in the period (see section \ref{S:cal}).} Up to those with terms ending in 2017, all were single-term limited. To everyone's surprise, reformers removed Mexico's eighty-year old constitutional ban on consecutive reelection midway in the last decade. Counter-reformers restated the ban a decade later---so everyone elected in 2030 and after will, again, be single-term limited. In the interim, states could opt for two-term limits for municipal governments. All states except Hidalgo and Veracruz did so, the reform kicking off in the 2018 elections in twenty-three states. Incumbents in the other seven reforming states were gradually able to run again for office since. 
+
+%Up to those elected in 2017, all were single-term limited. And everyone elected in 2030 will again be single-term limited. To everyone's surprise, reformers removed Mexico's eighty-year old constitutional ban on consecutive reelection midway in the last decade. Counter-reformers restated the ban ten years later. In the interim, states could opt for two-term limits for municipal governments. All states except Hidalgo did so, the reform kicking off in the 2018 elections in twenty-three states. Incumbents in the other eight reforming states have been able to run again for office gradually since (the last will be Veracruz's in 2028). 
+
+With a frankly conservative scope and very much illustrative of the notion of state irresoluteness \citep{cox.mccubbins.2001}, ephemeral reelection should nonetheless leave a systematic imprint in municipal politics. Six consecutive years in office falls short of qualifying as the long haul, but doubling up Ayuntamientos' time horizons ought to encourage more enterprising policy. Much more fundamentally, the perspective of reelecting for another term in office should strongly incentivize ambitious mayors and regidores in the period to invest substantially in maintaining their electoral alliances alive and mobilized \citep{cain.etal.1987, motolinia-reel-pork2021}. Which, in turn, should systematically nurture a degree of responsiveness in municipal distributive politics \citep{cox.mccubbins.1986, jacobson.kernell.1983}. The reform, and its dismissal too, therefore offer a unique laboratory to study institutional change at the core of much political theory since \emph{The Federalist Papers} \citep{madison.etal.1788, mayhew.1974, schlesinger.1966, miller.hammond.1989}---section \ref{S:incumbents} reports broad reelection patterns by party.
+
+\subsection{Usos y costumbres}\label{S:uyc}
+
+A final note before moving on involves another set of observations that is absent from the data. Of 570 municipalities in the state of Oaxaca, only 152 elect Ayuntamientos by popular vote. The rest, with predominantly indigenous populations, opted out of the electoral process since 1995, appointing authorities through tribal councils instead \citep[known as \emph{usos y costumbres} institutions, see][]{elizarraras.2002, eisenstadt.rios.uyc.2014, magaloni.etal.2021}. Seven municipalities in three other states achieved the same status in the past decade. For obvious reasons, the 425 usos y costumbres municipalities are excluded from the dataset.\footnote{A note `To uyc in \emph{year}' indicates the period immediately before a municipality exits both the electoral process and this time series.}
+
+\section{The parties}
+
+The main dataset is party-centric, in the sense that it attempts to systematically report the votes that each party won in the race---the attempt may fail due to some pre-election coalitions, see section \ref{S:coalitions}. A person-centric dataset of incumbent mayors (i.e., winning municipal presidential candidates) is also distributed for a shorter time span---see section \ref{S:incumbents}. 
+
+Parties operate in an over-regulated electoral environment. Mexican election law, setting up formidable entry barriers, also gives the federal and the state election boards broad scope of power over party life, candidate selection, and campaigns \citep{estevez.ref2007.2007, magar.2007ref.2015}. Some regulation is decades-old: one example is party registration, a draconian institution adopted by the PRI at the peak of hegemony to deter defectors, whereby any party with fewer than the 3-percent vote threshold not only earns no proportional representation seats (as in Germany), but it also ceases to exist legally. Most regulation, however, dates from the 1990s, when a system of mostly private (if undisclosed) party and campaign finance was replaced overnight with near-exclusive public (and lavish) subsidies \citep{poire.Money2005}. The allotment, which is proportional to the party's vote share in the previous election, is handed yearly to party leaders with discretion on spending. With formidable carrots and sticks, discipline to the party leadership comes as no surprise \citep{weldon.1997}. A glance at the key parties in the period comes next.
+
+\subsection{Major parties}
+
+In broad chronological sequence, single-party hegemony gave way to a three-way, competitive, and volatile party system at the turn of the 21st century. This gave rise to two decades of divided government, at the end of which a new dominant party arose, leaving the former trio of major parties in shambles in the electoral arena.
+
+\begin{description}
+
+\item[Partido Revolucionario Institucional:] The hegemonic party for the most part of eight decades, and at times dangerously nearing single-party rule \citep{molinar.1991a}, the \textbf{PRI} was successfully challenged into competitive politics by the PAN--PRD tandem in the mid-1990s. Traditionally pragmatic and nationalistic, the technocratic neo-liberal faction captured the party in the 1980s \citep{dresser.Neolib1991}. The sitting president was the unchallenged national leader, governors were state leaders. Long unmatched, the effectiveness of the PRI's vote-getting machine eroded slowly when rapid social change was compounded with deeply unpopular austerity policy of the 1980s. The erosion, we will see, was much more gradual at the local level.
+
+\item[Partido Acción Nacional:] The main and, at times, only credible opposition to the PRI's hegemony, the \textbf{PAN}'s core support is in urban middle classes and socially conservative groups, especially in central Mexico \citep{loaeza.pan.2010book}. PAN traded its pivotal votes in Congress for economic reform in the 1990s against solid guarantees of free and fair elections \citep{cornelius.1996} and for bigger transfers to states in revenue sharing \citep{diaz.cayeros.2006, shirk.PANbook.2005}. The center-right won the presidency in 2000 and again, by paper-thin margin, in 2006. Despite never achieving majority status in Congress, PAN left a characteristic imprint by setting up autonomous regulatory agencies in key policy areas (telecomms, energy, education, antitrust, freedom of information, and more). It also led the war on drugs.
+
+\item[Partido de la Revolución Democrática:] The fusion of the communist party and a substantial split from the PRI when technocrats took over, the fractuous \textbf{PRD} occupied the center-left of the spectrum \citep{bruhn.1997, cantuCSG2019apsr}. It won seven governor races in 1997--2000, most notably Mexico City, often by nominating defectors from the state's PRI. Andrés Manuel López Obrador, better-known by his initials AMLO, the twice-defeated PRD's presidential nominee, eventually broke off from the PRD to form a successful party under his unconditional leadership. PRD ran joint tickets with the PAN frequently since 2010, at the state level first, later at the federal level too---another factor pushing AMLO away. PRD lost legal registry in 2024.
+  
+\item[Movimiento de Regeneración Nacional:] AMLO's risky bet paid off. His successful third presidential bid in 2018 rallied the rest of the left, and key state machines from the PAN and the PRI too, towards his new party. \textbf{Morena} won the presidency, with majority control of Congress, in the critical 2018 elections, and most state governments in subsequent years. A crusade against autonomous regulatory agencies, which former major parties had stacked in their favor and which stubbornly checked the new majority, gained traction in the 2024 campaign. Supermajority status that year allowed Morena and its opportunistic allies to rid the constitution of most power-sharing arrangements from the former three-party system, including a full overhaul of the judiciary. The new dominant party has re-unified purpose in Mexican politics in ways unseen since the classic \emph{PRIato}.
+  
+\end{description}
+
+\subsection{Opportunistic parties}
+
+Institutions set forth incentives to launch new parties in pursuit of very generous public party subsidies. High entry barriers, however, made this enterprise succeed among pre-organized groups or by syphoning resources from state governments. Three have largely succeeded in a field where many failed. The collapse of the competitive-era party system has opened room for growth in pursuit of larger aims. They are making important inroads into state government.
+
+\begin{description}
+\item[Movimiento Ciudadano:] The personal machine of a former Veracruz governor, \textbf{MC} (formerly Convergencia por la Democracia) has since expanded considerably. As a vehicle of contrast against the moribund former major parties after 2018, MC turned every call to join all-way electoral coalitions. While the resulting opposition discoordination handed Morena many key victories in municipalities, districts, and even states, MC captured populous state goverments in Jalisco twice since 2018, and in Nuevo León in 2021. Whether its bid as sole credible opposition to Morena's dominance pays off or not will become clear in coming years.
+
+\item[Green Party:] A family-owned venture, \textbf{PVEM} stands out among the opportunistic bunch. Its alliance votes may well have given PAN its presidential election margin in 2000.\footnote{Ballot structure impedes a breakdown of the alliance vote by party. Using the PAN--PVEM relative sizes in the Congressional elections from three years earlier yields a Green party total just shy of the 2000 presidential vote margin.} The Greens then became the PRI's reliable electoral partner in the 2003--18 period in races across the board \citep{spoon.pulido.PRI-PVEM2017}. It has since migrated to Morena's orbit. PVEM won state governments in Chiapas in 2012---the first non-major party governor---then in San Luis Potosí in 2021, gaining control of resources to organize further. Green party seats in Congress were necessary for Morena's coalition's majority status in 2021--24, and super-majority status in 2024--27.
+
+\item[Workers Party:] Morena's other partner in Congress. Originally an offshoot of urban radical movements from the 1970s in northern Mexico, the \textbf{PT} entered electoral coalitions with the PRD almost systematically in the competitive era. Its leadership unequivocally sided with AMLO, before and after the latter's split from the left. It has yet to win a state government solo. 
+\end{description}
+
+\section{Vote manipulation}
+Elections in the PRI era were never free and fair. They were not fabrications either, but a heterogeneous mix of genuine mobilization, daunting obstacles to opponents, and blatant fraud \citep{molinar.1991a, cantuCSG2019apsr,magaloni.2006}. Democratization changed this. Major parties set up an autonomous federal election board with formidable authority where they could check one another, levelling the field \citep{estevez.magar.rosas.2008}. AMLO's failure to concede in the 2006 presidential race was never supported by compelling evidence of wrong-doing \citep{klesner.FCHelections.2007}.
+
+Fraud was never fully eliminated, as is probably the case in any democracy. Cantú's (\citeyear{cantuContiguas2014ajps}) systematic study of ``contiguous'' polling stations in the 2010 local races, where most distrust remains, detected few irregularities. However, since major-parties had equal opportunity at it when the circumstances arose, exceptional fraud cancelled-out in the aggregate. This dataset includes elections since 1979, offering leverage to further compare and evaluate pre- and post-1997 municipal elections.
+
+%% Precincts with many registered voters are routinely broken into two or more contiguous polling stations so that each station's workload remains manageable on election day. The key for the analysis is that the breakdown is by voters' last names, alphabetized. With no reason to expect significantly different voter behavior between them attributable to last names, the analysis centers on the 5 percent of contiguous stations with largest differences in turnout. 
+
+%% correlation of last names and party preferences, acute differences in relative party support or turnout between contiguous stations is interpreted as evidence of manipulation.
+
+\section{The data}
+
+The municipal elections dataset has been under construction for some time. The original seed covering the 1970s and 1980s was compiled by \citet{molinar.1991a} from official vote returns by the Interior Ministry's Registro Nacional de Electores. The primary source was systematized by \citet{magar.1994} for northern Mexico and then by \citet{varela.2004} nationwide. Data from the 1990s onwards has been compiled from the state election boards established at the turn of the century, who more or less routinely report vote returns since. When that was not the case, other sources were consulted, most notably \citet{revista.voz.y.voto} and \citet{cede.uam.izt}.
+
+Units of observation are municipalities at a time point. For each unit, the dataset reports the aggregate votes that each party or electoral coalition won in one periodic election, among other information of electoral history and unit identifiers. Table \ref{T:coverage} summarizes data coverage by state. The cross-section time-series matrix is not square. The table column reporting the number of municipalities of each state gives one reason for this: new municipalities, which seceded from other units, were created in most states in the period and have no prior electoral history. Another reason is state election calendar manipulation, municipal races possibly appearing twice (or not at all) in one three-year cycle---see section \ref{S:cal}.\footnote{File \verb|ancillary/mun.yrs.csv| in the repository reports the full listing of municipalities in each election cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| reports the parent municipalities from which the new units seceded.}
+
+\begin{table}
+\centering
+  \resizebox{.8\textwidth}{!}{
+    \begin{tabular}{rclrc}
+      \# & Abbrev. & State                                 & N municipalities & Years included      \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex]
+      1  & ags & Aguascalientes                        &      9--11           & 1977--2024 \\
+      2  & bc  & Baja California                       &       4--7           & 1971--2024 \\
+      3  & bcs & Baja California Sur                   &       3--5           & 1974--2024 \\
+      4  & cam & Campeche                              &      8--13           & 1979--2024 \\ \hdashline
+      5  & coa & Coahuila                              &         38           & 1978--2024 \\
+      6  & col & Colima                                &         10           & 1976--2024 \\
+      7  & cps & Chiapas$^\dagger$                      &   110--126           & 1976--2024 \\
+      8  & cua & Chihuahua                             &         67           & 1974--2024 \\ \hdashline
+      9  & df  & Distrito Federal/Mexico City$^\ddagger$ &         16           & 1997--2024 \\
+      10 & dgo & Durango                               &     38--39           & 1971--2025 \\
+      11 & gua & Guanajuato                            &         46           & 1979--2024 \\
+      12 & gue & Guerrero$^\dagger$                     &     75--85           & 1977--2024 \\ \hdashline
+      13 & hgo & Hidalgo                               &         84           & 1981--2024 \\
+      14 & jal & Jalisco                               &   124--125           & 1976--2024 \\
+      15 & mex & México                                &   121--125           & 1978--2024 \\
+      16 & mic & Michoacán$^\dagger$                    &   112--113           & 1977--2024 \\ \hdashline
+      17 & mor & Morelos$^\dagger$                      &     33--36           & 1976--2024 \\
+      18 & nay & Nayarit                               &     19--20           & 1972--2024 \\
+      19 & nl  & Nuevo León                            &         51           & 1973--2024 \\
+      20 & oax & Oaxaca$^\dagger$                       &    152--570          & 1977--2024 \\ \hdashline
+      21 & pue & Puebla                                &        217           & 1980--2024 \\
+      22 & que & Querétaro                             &         18           & 1973--2024 \\
+      23 & qui & Quintana Roo                          &      7--11           & 1978--2024 \\
+      24 & san & San Luis Potosí                       &     56--58           & 1970--2024 \\ \hdashline
+      25 & sin & Sinaloa                               &     17--20           & 1971--2024 \\
+      26 & son & Sonora                                &     69--72           & 1976--2024 \\
+      27 & tab & Tabasco                               &         17           & 1976--2024 \\
+      28 & tam & Tamaulipas                            &         43           & 1971--2024 \\ \hdashline
+      29 & tla & Tlaxcala                              &      44-60           & 1979--2024 \\
+      30 & ver & Veracruz                              &   203--212           & 1976--2025 \\
+      31 & yuc & Yucatán                               &        106           & 1981--2024 \\
+      32 & zac & Zacatecas                             &     56--58           & 1970--2024 \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex] 
+         & \mc{2}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2025 \\
+      \\ [-1.8ex] \hline
+
+    \end{tabular}
+}
+\caption{Coverage of the municipal election returns data. $\dagger$  Reform in the period withdrew \emph{usos y costumbres} municipalities from periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see section \ref{S:structure}.}\label{T:coverage}
+\end{table}
+
+State abbreviations are listed in the second column from the left, and are somewhat different from those used by Mexican government agencies. Sorting my abbreviations in a standard spreadsheet retains the Spanish alphabetization of the states, which official abbreviations do not.\footnote{Table column \# (state number), called field \emph{edon} in the data, preserves Spanish alphabetization and is the prefix for official ID codes. Note that Spanish alphabetization places the letter Ch after the letter C, hence the state of Colima precedes Chiapas and Chihuahua.} For instance, Guanajuato and Guerrero are abbreviated \verb|gua| and \verb|gue|, respectively, instead of the official \verb|gto| and \verb|gro|.
+
+The time-series starts at the 1979--1981 trienium for all 31 states, and a few years earlier for a hanful of others. (The Federal District, whose populous quasi-municipalities are included in the dataset, is not a state.) The period was inaugurated by a major federal electoral reform lowering legal entry barriers to the electoral arena and adopting a more proportional formula to convert votes into congressional seats \citep[:116]{molinar.1991a}. As a consequence, half a dozen new parties entered the fray, gradually permeating into the municipal arena.  
+
+Data can be found online and downloaded by visiting the public repository at:
+
+\begin{equation*}
+\href{https://github.com/emagar/elecRetrns}{\texttt{\ulr{https://github.com/emagar/elecRetrns}}}.
+\end{equation*}
+
+\noindent Files are stored in the \verb|data/| subdirectory as text in \verb|csv| format (comma separated values). The format is readable with standard spreadsheet and data analysis software.\footnote{Text is encoded into UTF-8 character encryption. Care has been taken to drop most Spanish special characters from text strings. All accented letters (\'a, \'e, \'i, \'o, \'u, and \"u) are replaced by the corresponding unacceted vowel. The letter \~n, however, remains to avoid ambivalence, and may appear as a garbled character in machines with default encryption systems other than UTF-8. See \url{https://docs.python.org/3/howto/unicode.html} for a primer on character encryption.} The repository's \verb|README.md| file, which loads up to your web browser's screen whenever you visit the above web address, includes a detailed and downloadable codebook with formal definitions of all data fields. Each row of the resulting data matrix reports a unit in time: one municipality in a given electoral year. And the columns are data fields, variables in the unit/year's record. Among other information, data fields include the following:
+
+\begin{itemize}
+\item unit identifiers, such as the municipality's name, state, ID codes, an so forth;
+\item the election's date;
+\item each party or coalition's vote tally;
+\item the total effective vote, equal the sum of all votes cast that year in the municipality minus votes for write-in candidates\footnote{Write-in votes (for \emph{candidatos no registrados}) are considered void in Mexican electoral law.} and void ballots, needed to compute valid vote shares; and
+\item the total eligible registered voters in the municipal election (the \emph{lista nominal}), needed to compute turnout rates.
+\end{itemize}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\columnwidth]{pics/eg-spreadsheet-columns.png}
+  \caption{Screenshot with a sample of the data organization}\label{F:scrn}
+\end{figure}  
+
+Figure \ref{F:scrn} offers a glimpse of the data for the state of Baja California's five municipalities in three election cycles: \verb|yr=|1998, 2001, and 2004. Two official municipal ID codes are reported: the census bureau's (field \verb|inegi|) and the federal election board's (field \verb|ife|). Anyone wishing to intersect census data or vote returns of other races into the analysis will rely on these codes for merging. Municipal vote returns are stored in column pairs \verb|(v01,l01)|, \verb|(v02,l02)|, etc.\ for the first candidate reported, the second candidate, and so forth. The \verb|l| component of the pair identifies the candidate's party or coalition label, while the \verb|v| component reports the total votes the party/coalition in question won. So in 1998 in Ensenada, with 31,995 votes the PRI was the plurality winner ($\texttt{l02} = \texttt{pri}$ indicates that this party's vote is stored in field $\texttt{v02}$), trailed closely by the PAN's 30,660 votes (in field $\texttt{v01}$). The votes--label column pair storage accommodates four decades of state party system heterogeneity, compounded by ephemerous electoral coalitions in a relatively small number of spreadsheet columns. The trade-off is that inspecting one party's performance across municipalities often requires additional manipulation, in order to arrange its votes into the same column across units.\footnote{A standalone R script (still a beta version) extracts a simplified matrix, reporting each party's votes in a column that is named after it, for a single state-year's municipal races. The script is located in \verb|code/extract-state-yr-mu-returns.r|.} %\emm{Should write standalone Python script too.} 
+
+\section{Pre-election coalitions}\label{S:coalitions}
+
+One obstacle to analysis are electoral coalitions. Mexican election law distinguishes two forms of pre-election coalitions that parties may choose from: joint candidacies and coalitions proper. Voters in the former case can cast their vote for any joint-candidate-nominating party (or combinations of them), which are then added up to determine the candidate's vote total. In coalitions proper, voters cast their vote for the team as a whole, which is reported with no breakdown among the coalition-member parties.
+
+These legal subtleties have effects in public party finance mostly, but substantially complicate voting studies because scholars need to decide how to handle coalitions (either pooling all votes won by team members or separating the shares contributed by each, which calls for auxiliary assumptions in the case of coalitions proper). To ease this decision, the repository distributes three separate municipal vote files: 
+
+\begin{itemize}
+\item \verb|data/aymu1970-on.coalAgg.csv| systematically aggregates joint-candidate coalition votes, reporting the candidate's total vote as a single quantity;
+\item \verb|data/aymu1970-on.coalSplit.csv| breaks down coalesced parties' contribution to the candidate's vote total, relying for this purpose on the relative votes each party received (where the ballot structure offers this information), or on the coalition agreement between the parties (where available and when the ballot structure does not offer the latter option), or on the relative votes that coalesced parties received the last time they ran separately in the municipality (when the previous alternatives are impracticable); and
+\item \verb|data/aymu1970-on.csv| has raw votes, as reported in the primary source (i.e., a vote aggregate for coalitions proper and coalition-member-party breakdowns for joint candidacies).
+\end{itemize}
+
+\noindent The three files include records for the exact same set of observations and report the same vote totals. Files change in how coalition votes are reported only. The typical analyst will choose between the \verb|coalAgg| and the \verb|coalSplit| files. Those interested in who won the race with what margin will prefer \verb|coalAgg|. Those wishing to study first differences in party support will likely opt for \verb|coalSplit|.
+
+% THIS FN WAS REMOVED FROM THE FIRST SENTENCE IN THE PARAG ABOVE:
+%\footnote{Or near same total votes: whenever the primary source does not offer the coalesced-parties vote breakdown, one artifical vote is added to the raw file, itself split among these parties to keep track of relative contributions.} 
+
+\begin{table}
+\resizebox{\textwidth}{!}{
+  \begin{tabular}{lrrrrrrrrrrrrc}
+    & \mc{12}{c}{Coalition profile relative frequency (\%)} & \\ [-1.8ex]
+    \\ \cline{2-12}
+    \\ [-1.8ex]
+     &      &              &            &            &&   \mc{3}{c}{Double-major}                    &&             &                &       &            \\ \cline{7-9}
+     &      & \mc{3}{c}{Major-minor}                 &&               &    \& major-  & \& two       && \mc{2}{c}{Triple-major}      &       & (Mean co- \\\cline{3-5}\cline{10-12}
+Cycle&  None&  One         & Two        & Three      &&   Only        &       minor   & maj.-min.    && Only        &  \& maj.-min.  & Total & alitions)  \\ 
+     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex] \hline
+     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex] 
+ 1979--81& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1982--84& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1985--87& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1988--90&  93.9&   6.1&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.06) \\ \hdashline
+ 1991--93&  98.6&   1.3&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.01) \\
+ 1994--96&  99.8&   0.2&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ 1997--99&  96.4&   2.1&    ---&    ---&&    1.5&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ 2000--02&  77.0&  16.7&    1.8&    ---&&    4.0&       0.4&         ---&&  ---&       ---& 100 & (0.29) \\ \hdashline
+ 2003--05&  52.8&  29.8&   11.8&    0.4&&    1.8&       3.3&         ---&&  ---&       ---& 100 & (0.65) \\
+ 2006--08&  20.4&  48.1&   30.2&    0.6&&    0.1&       0.7&         ---&&  ---&       ---& 100 & (1.19) \\
+ 2009--11&  11.2&  32.3&   14.6&   10.4&&    7.7&      23.8&         ---&&  ---&       ---& 100 & (1.54) \\
+ 2012--14&   8.6&  50.7&   11.6&    3.6&&    3.5&      22.0&         ---&&  ---&       ---& 100 & (1.39) \\ \hdashline
+ 2015--17&  24.6&  35.6&   11.0&    0.8&&    6.1&      21.7&         ---&&  0.2&       ---& 100 & (1.16) \\
+ 2018--20&   6.3&  17.3&   14.7&    7.1&&    6.5&      35.1&        12.9&&  ---&       ---& 100 & (1.86) \\
+ 2021--23&  26.8&  18.5&    0.2&    ---&&   13.0&       9.5&         0.3&& 18.2&      13.6& 100 & (1.05) \\
+ 2024--26&  17.4&  19.6&    1.6&    ---&&    6.1&      12.8&         0.7&& 17.1&      24.8& 100 & (1.30) \\ 
+         &      &      &       &       &&       &          &            &&     &          &       &        \\ [-1.8ex] 
+  \hline
+\end{tabular}
+}
+\caption{Coalitional profile of municipal races by federal election cycle. Cells report the percentage of municipalities in the cycle, and the cycle's mean number of coalitions per race in parentheses. Quantities consider coalitions where one partner at least was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions among minor parties only, which were also quite frequent.}\label{T:coal}
+\end{table}
+
+Banned until the mid-1980s at the local level, and rarely authorized up to the mid-1990s, coalitions have since become a staple of Mexican elections, as Table \ref{T:coal} shows. Each table row reports the coalitional profiles observed across municipal races in a triennium. With few exceptions owed to state electoral calendar shifts,\footnote{Subnational electoral calendars varied substantially up to 2015, but have since become increasingly aligned with the federal cycle (see section \ref{S:cal}). Change is discernible in how municipal vote shares align vertically in the right of Figure \ref{F:vpcts}, increasingly clustered over darker and distincter columns that correspond with federal elections.} triennial aggregates capture one periodic election per municipality. The coalitional profile is `None' in the absence of coalitions in the race; it is a `major-minor' arrangement when one, two, or three major parties (i.e.\ PAN, PRI, PRD, or Morena) nominated a municipal ticket jointly with one or more minor parties; it is `Double major' when two majors (i.e.\ PAN+PRD, PAN+PRI, or PRI+PRD) ran jointly; and so forth. Three distinct moments stand out. (1) In triennia between 2000 and 2008, at least one major party, and increasingly two major parties, would team up with minor parties to gain an edge in municipal races. By the end of this first moment, four out of five municipal elections had one or more major-minor arrangements. (2) `Double-major' races became frequent between 2009 and 2014, when PAN and PRD forged anti-PRI tickets in over one-fifth of municipalities. Races with no coalition became ever rarer. (3) Morena's foray into the party system, especially after 2018, forced frequent full regroupments of erstwhile rivals PAN, PRI, and PRD (`triple-major' coalitions) against the new Behemoth. Regroupments shrank the number of coalitions per municipality by widening their scope (the right-most column reports triennial average coalitions per municipality, parenthesized).
+
+% And the right-most column reports triennial average coalitions per municipality, parenthesized. The mean number of coalitions only surpassed one by 2006--08, up from 0.29 six years before, and rose to a maximum 1.85 in 2018--20. It has declined since.
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/enp1979-2025.pdf}
+  \caption{Municipal party system fragmentation by federal election cycle. Circles report the mean effective number of parties across municipal elections in the cycle.}\label{F:enp}
+\end{figure}
+
+% \begin{table}
+%   \centering
+%   \begin{tabular}{lcc}
+%           & \mc{2}{c}{Mean effective number of}     \\ [-1.8ex] 
+%     \\ \cline{2-3}
+%     \\ [-1.8ex] 
+%           & candidates & parties \\
+%     Cycle & (aggregated coalitions) & (split coalitions) \\
+%     \\ [-1.8ex] \hline 
+%     \\ [-1.8ex] 
+%  1979--81 &    1.17    &    1.17 \\
+%  1982--84 &    1.28    &    1.28 \\
+%  1985--87 &    1.29    &    1.29 \\
+%  1988--90 &    1.54    &    1.54 \\ \hdashline
+%  1991--93 &    1.63    &    1.63 \\
+%  1994--96 &    2.13    &    2.13 \\
+%  1997--99 &    2.30    &    2.30 \\
+%  2000--02 &    2.65    &    2.66 \\ \hdashline
+%  2003--05 &    2.70    &    2.77 \\
+%  2006--08 &    2.85    &    2.91 \\
+%  2009--11 &    2.69    &    2.93 \\
+%  2012--14 &    2.88    &    3.10 \\ \hdashline
+%  2015--17 &    3.32    &    3.55 \\
+%  2018--20 &    3.30    &    3.74 \\
+%  2021--22 &    3.55    &    3.91 \\
+%  2024     &    2.92    &    3.47 \\
+%     \\ [-1.8ex] \hline
+%   \end{tabular}
+%   \caption{Municipal party system fragmentation by federal election cycle}\label{T:enp}
+% \end{table}
+
+Computing \citet{laakso.taagepera.1979} indices for parties (using \verb|coalSplit| data) and for candidates (with \verb|coalAgg| data) captures the magnitude of coalition incidence neatly. A gap between the measures, portrayed longitudinally in Figure \ref{F:enp}, opened after major-party coalitions normalized in 2009. In has been widening since. The distributed file trio lends flexibility to handle coalitions in municipal elections as needed for analysis.
+
+The respository includes federal and other state election vote returns too, for which the discussion in this section is relevant. But this note centers in municipal elections only.\footnote{The repository also distributes returns to other federal and subnational races at different levels of aggregation. All files are in the \verb|/data| folder: those whose name starts with \verb|df| report federal deputy tallies, \verb|se| are for senate races, \verb|pr| for presidential elections, \verb|go| for gubernatorial, and \verb|dl| for state assemblies. The repository's \verb|README| file has detail on file naming conventions.}
+
+\section{Descriptive statistics}
+
+This section summarizes party vote shares across municipalities nationwide. It aims to demostrate that municipal party support in the distributed files conforms to received wisdom of Mexico's atypical democratic transition \citep[e.g.][]{cornelius.1996} and posterior political national-level development \citep[e.g.][]{cornelius.weldonCPT2018}. Patterns also emerge that are distinctive of municipal politics. Description sheds light over potential applications of the data.
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/vpct1979-2025.pdf}
+  \caption{The electoral evolution of parties in municipal races 1979--2025. Color-coded circles report one party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves are the vote percentage that each party won in the median municipality across time (the trend is smoothed for clarity).}\label{F:vpcts}
+\end{figure}  
+
+Figure \ref{F:vpcts} offers a group portrait, plotting every municipal elections since 1979 for which there is data (using the split coalition file). Each minuscule, color-coded circle quantifies a party's vote percent in one municipal election---137,813 in total, for 30,633 non-missing municipal races. The hegemonic party system of the 1960s and 1970s remained much in place at the start of the series, the PRI's red circles modally anchored at 100 percent of the vote, ruling uncontested \citep{segovia.els1979}. Throughout the 1980s the right-of-center PAN (in blue), as well as the new entrants in the political left (in gold),\footnote{Several leftist incarnations are coded as PRD in the data: the communists (PCM), PSUM, PMT, and PMS. The PRD was created in only 1989, so this is a simplification of an overcrowded field. But PSUM used PCM's registration, then PMS used PSUM's, and PRD used PMS's. So, technically, these are one and the same party outfit. See \citet{molinar.1991a}.} achieved more than a symbolic vote percentage in a few dozen, urban municipalities only.
+
+Opposition parties began picking up steam after the 1982 economic crash, gradually mobilizing social discontent in the electoral arena \citep{molinar.1991a, klesner.Alignment.1993, hiskey.canache.2005, gomezTagle.Estadisticas1990, segovia.dientes-sierra1983}. Plot lines, which smooth the parties' vote in the median municipality over time, neatly capture the steady erosion of the PRI's electoral support and the rise of a dual opposition. Both, however, manifest a slower pace in municipal elections than national events in the second half of the 1980s would suggest. This apparent anomaly owes to units with massive population disparities. Ecological analyses of voting showed that the most solid predictor of opposition voting in a unit was the share of people living in cities \citep{ames.1970, lehr.1985, magar.1994, walton.sween-1973, pacheco.VotoUrb.1997}, few in number but important in size. In a rapidly urbanizing society, this correlation became a harbinger of the challenge ahead for the PRI. It also anticipated a major obstacle for newcomers, as the PRI remained a formidable competitor in enclaves of smaller, rural, low-turnout municipalities. Up to the near end of the series, only the PRI would be capable of getting out votes in such units that other parties could only dream to approach. The median municipality was firmly planted in such enclaves up to the mid-1990s.
+
+\begin{figure}
+  \centering
+  \textbf{A -- Percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2025-legend.pdf} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2025.pdf} \\
+  \textbf{B -- Size-weighted percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2025.pdf}
+  \caption{Winners by federal election cycle. Relative frequencies in panel B are weighted by the municipality's population. See text on how coalition coalition victories were dealt with.}\label{F:win}
+\end{figure}  
+
+Figure \ref{F:win} approaches the lag from a slight different angle, that of winners in municipal races. Each horizontal bar in Panel A reports the relative number of municipalities that each party won throughout a triennial cycle (using the coalition aggregates file). For visual simplicity, coalition winners in each election go to the major party, and when two or three majors partnered, the winner goes arbitrarily to the largest of them in the state-cycle. The PRI won nearly all municipal races in the first three triennia in the series. Its slow collapse was barely notable as late as 1993, with subsequent drops punctuated by periods of apparent stability: nine wins out of ten in 1988--1993, then three out of four in 1994--1999, and about half in 2000--2014. Then came the final collapse, when Morena took over. The PRI won one in ten municipalities in the final cycle reported. Panel B weights municipalities by their share of all registered voters, thus portraying the population that different parties governed in each cycle. Up to 2008, the PAN's bars are remarkably bigger in this panel than above, indicative of its distinctive urban bias. 
+
+The simultaneous rise of a dual opposition in Figure \ref{F:vpcts} created a coordination problem for the anti-PRI vote, a factor that played out in extending the PRI's reign despite the loss of its hegemonic status \citep{magaloni.2006, garrido-phd.2014}.\footnote{The PAN and left's parallel paths are suggestive of what \citet{cox.1997} terms a `non-Duvergerian' equilibrium: a tie between challengers that often left the PRI invulnerable in office despite erosion of its support.} Figure \ref{F:triplot} reports the share of the three-party vote for the major parties (i.e., subtracting votes won by candidates other than the trio's). Municipalities the PRI won uncontested are bunched at top vertex, and displacements away from that vertex measure gradual decrements of the PRI vote in favor of the PAN and/or the PRD. The ternary plot echoes a pattern also seen in federal races \citep{marquez.vsData.2014}: between 1989 (the PRD's debutant year) and 2014 (the year before Morena's entry), decrements are concentrated on, or very close to either triangle edges. Sure, some municipalities populate the inside, but they are relatively rare. The pattern is indicative of local two-party competition. In other words, the oppositions were regionally concentrated, the PRI facing a serious challenge of one or the other, but rarely both. So, in municipal races, the PRI's persistence was not pure opposition discoordination, but genuine strength.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.6\columnwidth]{../../plots/triplot1989-2014-v-mu.pdf}
+  \caption{Bipartisan rivalries predominate 1989--2014. The ternary plot reports the share of the three-party vote that major parties won in municipal elections (excluding the Federal District). Points between dotted lines are marginal municipalities, where the margin between two parties was 10 percent or less.}\label{F:triplot}
+\end{figure}
+
+The final stage portrayed corresponds to the collapse of the party system that brought electoral democracy to Mexico \citep{moreno.decisElec.2009}, and the rise of AMLO's Morena. AMLO broke free from the left's proverbial factionalism \citep{bruhn.1997} by launching his new, personalized party. The gamble paid off. Left elite discoordination gave other parties unexpected victories across the board in Morena's inaugural 2015 elections. But AMLO's third bid for the presidency three years later achieved a rallying cry, becoming focal point attracting not just left voters, but independents, leaners from the PRI, and even from the PAN. Morena's landslide victory in 2018, which gave it unified control of the federal and most state governments, led the former major parties to run desperate triple-major coalitions in subsequent races. To little avail: while the rise of Morena appears with a lag in Figure \ref{F:vpcts} (the party mobilized the larger municipalities first, and extended its dominant mantle towards the rest afterwards), its formidable challenge managed to realign smaller municipality elites away from the PRI---the PRI's population-weighted bar in Figure \ref{F:win} finally outsized its sheer frequency in the 2024 cycle.
+
+\section{Elected officers and reelection}\label{S:incumbents}
+
+Another portion of the dataset, distributed in the file \verb|data/aymu1989-on.incumbents.csv| places focus on elected officeholders. Coverage starts only in 1989, as missing data is pervasive earlier. Table \ref{tab:fem} show that municipal government remained an almost exclusively male affair up to 2015. Yet the share of female executives grew consistently throughout the period, plateauing towards the end. A parity law came to force that year, constitutionally mandating parties to nominate equal female and male slates of candidates across offices nationwide \citep{piscopo.2016}, and thereby electing more than twice as many women to municipal office as before. Yet the share remains stubbornly below parity---many more women lose to men than the reverse. Whether differential success rates stem from the difficulty to recruit electoral talent overnight, from parties nominating women to less secure races, from anti-female bias in the electorate, or from something else is worth investigating further. 
+
+\begin{table}
+  \centering
+  \begin{tabular}{lrl}
+    Cycle     & \% women \\ \hline
+    1988--90$^\dagger$  &   2 &  \\ 
+    1991--93  &   4 &  \\
+    1994--96  &   4 &  \\
+    1997--99  &   4 &  \\
+    2000--02  &   5 &  \\
+    2003--05  &   5 &  \\
+    2006--08  &   6 &  \\
+    2009--11  &   8 &  \\
+    2012--14  &  11 &  \\ \hdashline
+    2015--17  &  21 &  \footnotesize{\emph{~~~Gender parity slates adopted}} \\ 
+    2018--20  &  28 &  \\
+    2021--23  &  27 &  \\
+    2024--26  &  28 &  \\ \hline
+  \end{tabular} 
+  \caption{Municipal glass ceilings: elected female municipal presidents. $\dagger$ Year 1988 is missing from the first election cycle.}\label{tab:fem}
+\end{table}
+
+\begin{figure}
+  \includegraphics[width=.9\columnwidth]{../../plots/reel-munic2018-23.pdf}
+  \caption{Governing party reelection since 2018 by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain indetermined. Earlier cycles dropped because they antecede the adoption of municipal consecutive reelection.}\label{F:reel}
+\end{figure}  
+
+The study of consecutive reelection since adoption is also within reach of the incumbents dataset \citep{motolinia-reel-pork2021,lucardi.rosas.Incumbency.2016}. Figure \ref{F:reel} portrays party reelection rates in the 2018--2023 period contingent on the status of the outgoing municipal president: incumbents who reran in shades of green, those term-limited in shades of red, and open seats in shades of blue. Interesting patterns emerge. 
+
+\begin{itemize}
+\item The regularity of the darker green bars of officers reelected is notable, 21 percent altogether $\pm$ 3 percent. One in five reelected presidents is not an impressive score at first sight. And the sum of both green-shaded bars quantifies officers with static ambition regardless of success \citep{schlesinger.1966}: 38 percent of all, with more inter-party variance.
+
+\item Red-shaded bars include executive officers who reelected in the 2018 cycle and could not run again for a third term. Having demostrated static ambition in the past, term-limited presidents should be included with the green to gauge the attractiveness of municipal reelection. By the second post-reform cycle, three out of five mayors sought to reelect. This is a more meaningful measure. The 58 percent total among Morena's incumbents is striking, as it was their national party leadership who chose to cancel the reelection experiment by 2030. 
+
+\item The blue-shaded group reports incumbents who retired, leaving 38 percent of seats open on average. The nature of the withdrawal remains unfortunately unknown in the data--whether they abandoned of their own will or were denied renomination by the party. This is an area of opportunity for future revisions of the dataset.
+\end{itemize}
+  
+\section{The electoral calendar}\label{S:cal}
+
+The final portion of the data, distributed in the file \verb|data/aymu1989-on.concurrence.csv| relates the date of each municipal election to the broader electoral calendar. Four dummy variables are coded, indicating whether or not each observation concurred with a gubernatorial, a state assembly, a presidential, or a congressional race.\footnote{See \citet{magarInstReel.2017} and \url{https://github.com/emagar/calendarioReeleccion} for more detail on election calendars in the period. The distrubuted dummies are derived from this parallel repository.} Measuring coattails and other spillovers from one race to another \citep[e.g.,][]{magar.gubCoatMx.2012, ames.1994} is thus within reach. Endogenizing changes in states' election timing is also open for scrutiny, a feature worth studying systematically. Figure \ref{F:cal} reveals how the diverse state calendars have been gradually gaining alignmement with the federal.
+
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
+  \caption{Increasingly aligned state and federal electoral calendars 1994--2026. The X-axis is the timeline, vertical black lines indicate the dates of federal races, general elections in solid, midterm elections doted. Colored circumpherences indicate the dates of state elections as described in the top legend.}\label{F:cal}
+\end{figure}  
+
+%% \section{The measurement of electoral history}
+%% Also discusses another dataset in the repository, vhats.
+
+%% \section{Non-fused tickets in Nayarit}
+%% Also discusses another dataset in the repository, nayreg.
+
+\section{Conclusion}
+
+The publicly-distributed datasets cover one half-century of recent Mexican municipal electoral history. The public repository distributes vote returns for 35,528 non-missing municipal races across the states since the 1979--81 electoral cycle. The units of observation in the time-series cross-section are municipality--election years, offering perspective to describe and analyze patterns of sub-state partisan support. Data also covers the electoral calendars of 25,456 municipal races relative to other possibly concurrent elections since the 1990s. And it provides the names of 24,088 elected municipal presidents for that same period. The wealth of systematized data offers countless opportunities for analysis. This research note has shown how patterns in the data relate to some of the received knowledge by scholars of Mexican elections, suggesting numerous and important venues for future research. 
+
+%% These amount to much fewer formal powers than local goverments in other systems. Mexican municipalities have no jurisdiction over public education and health, lack authority to collect other taxes, and must negotiate some fiscal resources with the state government, who may be tempted to bias redistribution of revenue sharing to municipalities \citep{timmons.broid.2013} 
+
+%% Still, the institutional heterogeneity and variable socio-economic conditions make them very interesting for social science. 
+
+%% But interest in Mexico's municipal government has nonetheless grown
+
+%% But, with much heterogeneity, municipal governments grew in importance between 1990 and 2010. Percent of public spending they exert... making them, and the variance they manifest, attractive areas for the study of politics and policy. 
+
+
+
+
+
+
+%% Table [[fig:1]] presents two pairs of diagrams for the 2015 (below) and 2018 (above) congressional elections. Each dot represents one municipality, colored according to the winning party, with coordinates in the ternary plot according to the relative votes of the PAN, the PRI, and the left in the federal deputy race (other smaller parties are excluded).\footnote{I must note that, for the left's electoral history (which I arbitrarily call ``Morena'' in the plots and distributed data), I systematically added up the votes of the PRD, PT, and MC up to 2015. I also added Morena's and PES's votes that year. In 2018 the left consisted of Morena, PT, and PES jointly.} 
+
+%% % \begin{figure}
+%% % \centering
+%% % \caption{Historic expectations and municipal-level vote in two congressional elections}\label{fig:1}
+%% % \begin{tabular}{cc}
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-vhat-mu.png} &
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-v-mu.png}    \\
+%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2015-vhat-mu.png} &
+%% %   \includegraphics[width=.75\columnwidth]{file:../assets/img/triplot2015-v-mu.png} \\
+%% % \end{tabular}
+%% % \end{figure}
+
+%% The left side shows the /vote forecasts/. The idea behind this statistic is summarizing the evolution of relative votes in the municipality in five previous elections (2003--2015 in the case of 2018) and using the tendency to project a vote forecast for the current year. Plots in the right side show the actual results observed in both elections.
+
+%% Three features are noteworthy in 2018. The first is the discrepancy between the left and right plots. Either the model does a poor job forecasting, or 2018 was an extraordinary election. History gave license to expect a comfortable PRI victory, both in the number of municipalities won and in margins of victory. Municipalities outside the dotted bands are won by margins of 15 points or more, and the bulk of secure municipalities are red in the forecast, with Morena in a distant second place. In fact, although a significant number of municipalities migrated towards the PAN, it was Morena who showed a clear advantage. PRI was the underachiever. In contrast, the lower left and right plots reveal fewer differences between them---2015 was a more normal election, the past offering much better grounds to forecast. 
+
+%% Second, observed municipalities fled the edges and triangle vertices in 2018. Observations in vertices show a party that has no significant challenger. While those on the edges were bipartisan, whether more (inside dotted bands) or less (outside the bands) symmetric. It is also plain in forecasts that only the PAN--Morena edge was expected to be unpopulated. In practice, however, third party vote rarely collapsed to zero, there was much more dis-coordination than in the past. In fact, the intersection of dotted bands appeared denser and more homogeneous in the right than the left diagram. 
+
+%% Third, the PAN /vs/ left competition was legal tender in 2018. The pattern in competitive municipalities in the last two decades, still visible in the 2015 plots, involved either PRI--PAN or PRI--left rivalries, and rarely PAN--izquierda. It was this pattern that eased electoral alliances between PAN and PRD in sub national races since 2010 that culminated in the Frente they formed in 2018 to nominate a joint presidential candidate. 
+
+%% % # #+CAPTION: Una elección más característica de la partidocracia
+%% % # #+NAME:   fig:2
+%% % # | file:../assets/img/triplot2015-vhat-mu.png | [[file:../assets/img/triplot2015-v-mu.png]] |
+
+
+%% % # #+CAPTION: Grano más fino: las secciones
+%% % # #+NAME:   fig:3
+%% % # | file:../assets/img/triplot2015-v-se.png | [[file:../assets/img/triplot2018-v-se.png]] |
+
+%% Plots in Table [[fig:4]] report /secciones electorales/ and therefore offer much finer-grained than the previous portraits. They introduce the other quantity of interest in this note: parties' /core support/. The idea behind this statistic is measuring the size of the group that has historically supported the party consistently, in good but also in bad years. 
+
+%% % #+CAPTION: Support core and party performance in 2018
+%% % #+NAME:   fig:4
+%% % | file:../assets/img/resid-pan-2018-vs-pan-core-se.png | [[file:../assets/img/resid-morena-2018-vs-morena-core-se.png]] | file:../assets/img/resid-pri-2018-vs-pri-core-se.png |
+
+%% The horizontal axis in each plot measures the size of party core support groups as a proportion of the /sección/'s electorate. The PRI enjoyed a clear edge over the rest of the parties in the period, with sizable cores in /all/ secciones nationwide. The distributions of the PAN and the left, in contrast, appear concentrated towards the zero---they have relatively few secciones with some unconditional support. 
+
+%% The vertical axis reports the three parties' performance in 2018 (the difference between the observed vote and the forecast). Positive values indicate that the party excelled expectations in the /sección/, negative ones that it under-performed it expectation. The PRI's electoral disaster appears all too clearly in the red plot. There were a few secciones with positive performance, but the density concentrates massively below the horizontal zero line, something that Table [[fig:1]] had hinted. What is truly remarkable is that the dismal performance is directly proportional to the size of the PRI core. President Peña and candidate Meade achieved what seemed, if not impossible, extremely improbable: they alienated the PRI's unconditional voters in 2018. The PAN and the left met expectations in secciones where they have enjoyed with groups of support. Both (especially Morena) over-achieved where they lack important cores, taking away PRI voters. 
+
+%% The note elaborates how statistics were prepared (replication code can be found [[https://github.com/emagar/mxDistritos/code/elec-data-for-maps.r][here]]).
+
+%% % # [[file:https://github.com/emagar/elecRetrns/raw/master/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.svg]]
+
+%% % # #+CAPTION: PAN
+%% % # #+NAME:   fig:6
+%% % # #+ATTR_HTML: style="float:right;"
+%% % # #+ATTR_HTML: :width 50%
+%% % # [[file:../assets/img/resid-pan-2018-vs-pan-core-se.png]]
+
+%% * First differences
+%% One common approach to study electoral change is through first differences. Denoting $v_t$ the party's vote share in the municipality or the /sección/, in period $t$, the first difference is simply $d_t = v_t - v_{t-1}$. 
+
+%% $d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.els1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
+
+%% (First differences appear in the fields ~d.pan~, ~d.pri~, and ~d.morena~ in the distributed data.)
+
+%% * The recent linear tendency
+%% One way of adopting it is with /vote forecasting/ from tendencies discernible in the previous five congressional races \citep{magar.gubCoatMx.2012}. I summarize the central tendency of the recent historical vote by means of linear estimation in time, fitting a straight line for each year analyzed and each party in the municipality or /sección electoral/. 
+
+%% The slope of the fitted line (the tendency) serves to extrapolate the party's electoral support to the future. For instance, to get the vote share that the recent past predicts for a party in unit $u$ for 2018, I estimate the following equation 
+
+%% \begin{equation}
+%% v_{ut} = a_u + b_u \times t + \text{error}_{ut}, \; t = 2003, \ldots, 2015
+%% \end{equation}\label{ts-eq}
+
+%% that I then use to predict $\hat{v}_{u2018} = \hat{a}_u + \hat{b}_u \times 2018$. This is an out-of-sample prediction of the party's vote share, it can be compared to the party's actual vote share in 2018 to gauge whether or not the unit approximates the historical record. For the 2015 forecast the sample shifts one period to become $t = 2000, \ldots, 2012$, and so on an so forth for previous years. I distribute forecasts for 2009, 2012, 2015, and 2018, which involved fitting about 10 thousand municipal regressions and more than 250 thousand sección-level.
+
+%% (Vote forecasts appear in the fields ~vhat.pan~, ~vhat.pri~, and ~vhat.morena~ of the distributed data.)
+
+%% * The party's support core
+%% The other historical statistic is the parties' core support in the unit. Its definition stems from classifying voters in three categories: (1) support groups, that in the past have consistently supported the party; (2) opposition groups, that have consistently supported another party; and (3) swing groups, that have neither consistently supported nor consistently opposed the party \citep{cox.mccubbins.1986}. The party core consists of the support groups. 
+
+%% I use the procedure by Díaz Cayeros /et al/. (2016) to estimate this core. If $\bar{v}_t$ denotes the party's mean support across all units in period $t$,\footnote{The analyzed unit $u$ should be dropped from period $t$'s mean in order to not include the dependent variable in the right side of equation \ref{ts-eq}. I do not drop it due to the large number of municipal or seccional units (each contributing a fraction to the mean) and the use of vote shares (so large units are watered down): this refinement's impact should be negligible in each mean value.} for each party in each unit I fit
+
+%% \begin{equation}
+%% v_{ut} = \alpha_u + \beta_u \times \bar{v}_t + \text{error}_{ut}, \; t = 1994, \ldots, 2018.
+%% \end{equation}\label{alpha-eq}
+
+%% $\beta_u$ measures the effect that national party tides have on the party's vote in unit $u$. For instance, $\hat{\beta}_u=1$ estimates that for every percentage point that the party wins or loses nationally in year $t$, it also wins or loses one percentage point in the unit; $\hat{\beta}_u=0$, on the other hand, would indicate the unit's full isolation form national swings. It is therefore a measure of party volatility in the municipality or /sección/ (analogous to \href{https://www.investopedia.com/terms/v/volatility.asp}{"beta volatility"} in the financial literature). 
+
+%% The $\alpha$ coefficient estimates the core size: expected support in unit $u$ in the hypothetical case that the party receives no vote at the national level. For instance, $\hat{\alpha}=.4$ would indicate that, in the starkest of scenarios, 40% of the electorate in the municipality is unconditional to the party---which would indeed be a core of substantial size.
+
+%% A critique that can be anticipated towards this measure of the party's support core is its extreme counter-factual nature \citep{king.zeng.counterfactuals2006pa}. It deserves rigorous scrutiny, something I plan doing in the near future. 
+
+%% (The parties' core support appears in the fields ~alphahat.pan~, ~alphahat.pri~, and ~alphahat.morena~ of the distributed data. Party volatility in ~betahat.pan~, ~betahat.pri~, and ~betahat.morena~.)
+
+%% * Compositional variables
+%% I close with an important feature of the model specifications, associated with the \emph{compositional} nature of electoral returns. Compositional variable are quantitative descriptions of the parts of a whole. They therefore have two characteristics: (1) they are proportions that (2) add up to unity.\footnote{Formally, the compositional are random variables subject to two constraints: 
+%% $0 \leq v_p \leq 1 \; \forall \; p \in P \; \; and \; \; \sum_P v_p = 1.$.} 
+
+%% When estimating parties separately, the challenge of equations 1 and 2 is to avoid forecasting vote shares less than zero or greater than one; and that the sum of party forecasts equals 1. To achieve this, \citet{aitchison.1986} proposes substituting vote shares by log-ratios in the analysis. Arbitrarily setting the PRI as the reference party, define party $p$'s vote relative to the PRI as 
+
+%% $r_p = \frac{v_p}{v_{\text{pri}}}.$
+
+%% A value $r_p=1$ would indicate a tie between the party and the PRI, while $r_p>1$ that it finished ahead of the PRI in the proportion that the value reveals. 
+
+%% Thus, equation 1 is re-specified as
+
+%% $\ln r_{put} = a + b \times t + \text{error}$
+
+%% y equation 2 as
+
+%% $\ln r_{put} = \alpha + \beta \times \bar{r}_{pt} + \text{error}.$
+
+%% Applying the natural logarithm attenuates the effect of extreme values of the regressor on the dependent variable, similar as a logit regression would. Models fitting was done with ordinary least squares. 
+
+%% Coefficient estimates requires transformation to collect party vote shares. Illustrating with a three-party caste, it is trivial that 
+
+%% \begin{equation}
+%% \hat{v}_p = \frac{\hat{r}_p}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}} \; \text{and} \;
+%% \hat{v}_{\text{pri}} = \frac{1}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}.}
+%% \end{equation}
+
+%% %% \begin{equation}
+%% %% \begin{split}
+%% %% v_{\text{pri}} + v_{\text{pan}} + v_{\text{morena}} & = 1 \\
+%% %% v_{\text{pri}} & = 1 - v_{\text{pan}} - v_{\text{morena}} \\
+%% %% 1 & = \frac{1}{v_{\text{pri}}} - \frac{v_{\text{pan}}}{v_{\text{pri}}} - \frac{v_{\text{morena}}}{v_{\text{pri}}} \\
+%% %% \end{split}
+%% %% \end{equation}
+
+%% These are the quantities that the distributed data report. 
+
+
+%% % # Fácil de implementar en R:
+%% % # a = voto partido unidad 1
+%% % # A = voto efec unidad 1
+%% % # N = 3 unidades
+%% % #
+%% % # tengo
+%% % # v.bar = 1/3 * (a/A + b/B + c/C)
+%% % #
+%% % # quiero
+%% % # v.bar.sin.aA = 1/2 * (b/B + c/C)
+%% % #
+%% % # hago
+%% % # 1/3 * (a/A + b/B + c/C) =      v.bar
+%% % #        a/A + b/B + c/C  =  3 * v.bar
+%% % #              b/B + c/C  =  3 * v.bar - a/A
+%% % #       1/2 * (b/B + c/C) = (3 * v.bar - a/A) * 1/2 = v.bar.sin.aA
+%% % #
+%% % # v.bar.sin.aA = (N * v.bar - a/A) * 1/(N-1)
+
+
+
+\bibliographystyle{apsr}
+\bibliography{/home/eric/Dropbox/mydocs/magar}
+
+
+\end{document}
