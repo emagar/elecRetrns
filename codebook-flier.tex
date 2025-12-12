@@ -1,22 +1,50 @@
-#+TITLE: Codebook for datafiles
-#+SUBTITLE: Recent Mexican election vote returns repository
-#+AUTHOR: https://github.com/emagar/elecRetrns
-#+OPTIONS: toc:nil
-#+LATEX_HEADER: \documentclass[letter,12pt]{article}
-#+LATEX_HEADER: \usepackage[letterpaper,right=.7in,left=.7in,top=.7in,bottom=.7in]{geometry}
-#+LATEX_HEADER: \usepackage{mathptmx}           % set font type to Times
-#+LATEX_HEADER: \usepackage[scaled=.90]{helvet} % set font type to Times (Helvetica for some special characters)
-#+LATEX_HEADER: \usepackage{courier}            % set font type to Times (Courier for other special characters)
-#+LATEX_HEADER: \usepackage{sectsty}            % manipulates section header style
-#+LATEX_HEADER: \sectionfont{\centering}        % centers section headers
-#+LATEX_HEADER: \subsectionfont{\centering}     % centers subsection headers
-#+LATEX_HEADER: \usepackage{fancyhdr}           % adds page header
-#+LATEX_HEADER: \pagestyle{fancy}               % adds page header
-#+LATEX_HEADER: \lhead{Codebook}         % adds page header
-#+LATEX_HEADER: \rhead{\thepage}                % adds page header
-#+LATEX_HEADER: \cfoot{~~\small{\url{https://github.com/emagar/elecRetrns}}}
-* Variables grouped by type
-** Unit IDs
+% Created 2025-12-11 Thu 13:33
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=.7in,left=.7in,top=.7in,bottom=.7in]{geometry}
+\usepackage{mathptmx}           % set font type to Times
+\usepackage[scaled=.90]{helvet} % set font type to Times (Helvetica for some special characters)
+\usepackage{courier}            % set font type to Times (Courier for other special characters)
+\usepackage{sectsty}            % manipulates section header style
+\sectionfont{\centering}        % centers section headers
+\subsectionfont{\centering}     % centers subsection headers
+\usepackage{fancyhdr}           % adds page header
+\pagestyle{fancy}               % adds page header
+\lhead{Codebook}         % adds page header
+\rhead{\thepage}                % adds page header
+\cfoot{~~\small{\url{https://github.com/emagar/elecRetrns}}}
+\author{\url{https://github.com/emagar/elecRetrns}}
+\date{\today}
+\title{Codebook for datafiles\\\medskip
+\large Recent Mexican election vote returns repository}
+\hypersetup{
+ pdfauthor={\url{https://github.com/emagar/elecRetrns}},
+ pdftitle={Codebook for datafiles},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section{Variables grouped by type}
+\label{sec:org14b5dd1}
+\subsection{Unit IDs}
+\label{sec:org2104d42}
 \begin{description}
 \item[edon] = state numeral 1:32.
 \item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is cps, not chis).
@@ -31,7 +59,8 @@
 # \item[circ] = secondary, proportional representation district (circunscripción plurinominal) the primary district belongs to. 
 \item[latitude, longitude] = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 \end{description}
-** Temporal IDs
+\subsection{Temporal IDs}
+\label{sec:orge508ef4}
 \begin{description}
 \item[yr, mo, dy] = year, month, day of the election.
 \item[date.el, date.in] = date of the election and start of term, respectively.
@@ -42,7 +71,8 @@
 \item[dconcpr] = indicates concurrence of the unit's election with a presidential election.
 \item[dconcdf] = indicates concurrence of the unit's election with a congressional election.
 \end{description}
-** Voting
+\subsection{Voting}
+\label{sec:org1d4f070}
 \begin{description}
 \item[v01, v02, ...] = raw vote for candidate 1, 2, etc.
 \item[l01, l02, ...] = label of candidate 1's, 2's, ... party or coalition.
@@ -59,7 +89,8 @@
 # \item[coalpan, coalpri, coalprd] = members of major-party coalitions ('no' indidates no coalition).
 \item[dfake] = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race.
 \end{description}
-** Historical performance
+\subsection{Historical performance}
+\label{sec:org23f1348}
 \begin{description}
 \item[d.pan, d.pri, d.left] = first difference in the party's federal deputy vote share from last to present election.
 \item[vhat.pan, vhat.pri, vhat.left] = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
@@ -68,7 +99,8 @@
 \item[betahat.pan, betahat.left] = party's beta estimate for the unit. The PRI used as reference vote and has no beta estimate.
 \item[dbackward] = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
 \end{description}
-** Candidates and incumbents
+\subsection{Candidates and incumbents}
+\label{sec:orge1bb4aa}
 \begin{description}
 \item[incumbent, runnerup] = winning and runner-up candidates' names.
 \item[propietario, suplente] = primary and substitute candidate's name, respectively. 
@@ -84,13 +116,10 @@
 \item[drp] = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 \item[ddied] = dummy equal 1 if incumbent died in office, 0 otherwise.
 \end{description}
-# ** Other
-# \begin{description}
-# \item[nota] = observations possibly relevant for analysis.
-# \item[fuente, source] = sources.
-# \end{description}
+
 \newpage
-* Variables in alphabetical order
+\section{Variables in alphabetical order}
+\label{sec:org27c0f49}
 \begin{description}
 \item[alphahat.pan, alphahat.pri, alphahat.left] = party's alpha estimated for the unit. 
 \item[betahat.pan, betahat.left] = party's beta estimate for the unit. The PRI used as reference vote and has no beta estimate.
@@ -148,3 +177,4 @@
 \item[win] = winner's party or coalition.
 \item[yr] = year of the election.
 \end{description}
+\end{document}

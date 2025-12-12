@@ -59,8 +59,8 @@ The repository contains voting data for recent Mexican elections for certain off
 /Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 * How to cite the data
 This repository is under the [[https://pitt.libguides.com/openlicensing/MIT][MIT license]] (see the LICENSE document for details). You are free to download and modify the data and code provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
-
-A research note describing the municipal portion of the data can be found [[./papers/data-descriptives/deep-description-04-mex-studies.pdf][here]].
+* Description paper
+A research note describing the municipal portion of the data (with general relevance to other data in the repository) can be found [[./papers/data-descriptives/deep-description-04-mex-studies.pdf][here]].
 * File naming conventions
 In general, file names identify the office elected (i.e., *df*, *se*, *pr*, *dl*, *go*, *ay* for /diputados federales/, /senadores/, /presidente/, /diputados locales/, /gobernador/, and /ayuntamiento/, respectively), followed by the unit of observation (i.e., *ed*, *df*, *dl*, *mu*, *de*, *se*, *ca* for /estado/, /distrito federal/, /distrito local/, /municipio/, /demarcación/, /sección electoral/, and /casilla/, respectively), then the years included.
 
@@ -151,6 +151,10 @@ Most variables are included in all files. Refer here for guidance. Printable cod
 - /date.el/, /date.in/ = date of the election and start of term, respectively.
 - /dextra/ = dummy equal 1 for special elections (/elección extraordinaria/), 0 otherwise.
 - /danul/ = dummy equal 1 for voided elections, 0 otherwise.
+- /dconcgo/ = indicates concurrence of the unit's election with a gubernatorial election in the state.
+- /dconcdl/ = indicates concurrence of the unit's election with a state assembly election.
+- /dconcpr/ = indicates concurrence of the unit's election with a presidential election.
+- /dconcdf/ = indicates concurrence of the unit's election with a congressional election.
 ** Voting
 - /v01/, /v02/, ... = raw vote for candidate 1, 2, etc.
 - /l01/, /l02/, ... = label of candidate 1's, 2's, ... party or coalition.
