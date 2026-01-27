@@ -1020,10 +1020,6 @@ for (i in 1:ncol(l)){
 }
 table(dhascoal=dat.split$dhascoal)
 ##
-#############################################################################################################################
-## OJO: 27ene2026                                                                                                          ##
-## debo revisar que los breakdowns de algunas elecciones que saqué de aymu1970on no dejen incompletas estas manipulaciones ##
-#############################################################################################################################
 ## function manipulate cases by hand: select state-year function grants all joint votes to party reported first in label
 by.hand <- function(edo.cyc = NA){ # example: edo.cyc = "ags-12"
     sel <- grep(edo.cyc, dat.split$emm)
