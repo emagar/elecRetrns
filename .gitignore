@@ -107,3 +107,7 @@ flycheck_*.el
 
 # directory configuration
 .dir-locals.el
+
+# MAC-OS
+.DS_Store
+__MACOSX/
