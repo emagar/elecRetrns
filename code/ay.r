@@ -1239,6 +1239,18 @@ length(sel5); length(sel5)*59 < 400000
 length(sel6); length(sel6)*59 < 400000
 ##6756*58
 
+############################################################################################
+## new 1feb2026: read coal candidacy info (still incomplete) and plug into coaAgg export  ##
+############################################################################################
+tmp.cand <- read.csv(file = "in-progress/aymy1988-on.coalition-candidacies.csv")
+tmp.eric <- merge(x = dat.split2, y = tmp.cand[, c("emm","candcoal1","candcoal2","candcoal3","candcoal4")], by = "emm", all.x = TRUE, all.y = FALSE)
+dim(dat.split2)
+dim(tmp.eric)
+tail(tmp.eric)
+x
+
+
+
 ## save full file
 write.csv(dat.split2, file = "aymu1970-on.coalSplit.csv", row.names = FALSE)  ## use dat.split instead if keeping drop.r obs
 
