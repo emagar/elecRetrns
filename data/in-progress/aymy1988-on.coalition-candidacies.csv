@@ -3552,38 +3552,38 @@ ord,emm,yr,inegi,ife,mun,coal1,candcoal1,coal2,candcoal2,coal3,candcoal3,coal4,c
 4643,df-17.015,2018,9015,9015,CUAUHTEMOC,pt-morena-pes,,pan-prd-mc,,0none,.,0none,.,,
 4644,df-17.016,2018,9016,9016,MIGUEL HIDALGO,pt-morena-pes,,pan-prd-mc,,0none,.,0none,.,,
 4645,df-17.017,2018,9017,9017,VENUSTIANO CARRANZA,pt-morena-pes,,pan-prd-mc,,0none,.,0none,.,,
-4646,df-18.002,2021,9002,9002,AZCAPOTZALCO,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4647,df-18.003,2021,9003,9003,COYOACAN,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4648,df-18.004,2021,9004,9004,CUAJIMALPA DE MORELOS,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4649,df-18.005,2021,9005,9005,GUSTAVO A. MADERO,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4650,df-18.006,2021,9006,9006,IZTACALCO,pri-prd,,pt-morena,,0none,.,0none,.,,
-4651,df-18.007,2021,9007,9007,IZTAPALAPA,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4652,df-18.008,2021,9008,9008,MAGDALENA CONTRERAS--LA,pan-pri-prd,,pvem-pt-morena,,0none,.,0none,.,,
-4653,df-18.009,2021,9009,9009,MILPA ALTA,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4654,df-18.010,2021,9010,9010,ALVARO OBREGON,pan-pri-prd,,pvem-pt-morena,,0none,.,0none,.,,
-4655,df-18.011,2021,9011,9011,TLAHUAC,pri-prd,,pt-morena,,0none,.,0none,.,,
-4656,df-18.012,2021,9012,9012,TLALPAN,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4657,df-18.013,2021,9013,9013,XOCHIMILCO,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4658,df-18.014,2021,9014,9014,BENITO JUAREZ,pt-morena,,0none,.,0none,.,0none,.,,
-4659,df-18.015,2021,9015,9015,CUAUHTEMOC,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4660,df-18.016,2021,9016,9016,MIGUEL HIDALGO,pan-pri-prd,,pvem-pt-morena,,0none,.,0none,.,,
-4661,df-18.017,2021,9017,9017,VENUSTIANO CARRANZA,pan-pri-prd,,pt-morena,,0none,.,0none,.,,
-4662,df-19.002,2024,9002,9002,AZCAPOTZALCO,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4663,df-19.003,2024,9003,9003,COYOACAN,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4664,df-19.004,2024,9004,9004,CUAJIMALPA DE MORELOS,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4665,df-19.005,2024,9005,9005,GUSTAVO A. MADERO,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4666,df-19.006,2024,9006,9006,IZTACALCO,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4667,df-19.007,2024,9007,9007,IZTAPALAPA,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4668,df-19.008,2024,9008,9008,MAGDALENA CONTRERAS--LA,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4669,df-19.009,2024,9009,9009,MILPA ALTA,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4670,df-19.010,2024,9010,9010,ALVARO OBREGON,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4671,df-19.011,2024,9011,9011,TLAHUAC,pan-pri-prd,,0none,.,0none,.,0none,.,,
-4672,df-19.012,2024,9012,9012,TLALPAN,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4673,df-19.013,2024,9013,9013,XOCHIMILCO,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4674,df-19.014,2024,9014,9014,BENITO JUAREZ,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4675,df-19.015,2024,9015,9015,CUAUHTEMOC,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4676,df-19.016,2024,9016,9016,MIGUEL HIDALGO,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
-4677,df-19.017,2024,9017,9017,VENUSTIANO CARRANZA,pan-pri-prd,,morena-pvem-pt,,0none,.,0none,.,,
+4646,df-18.002,2021,9002,9002,AZCAPOTZALCO,pan-pri-prd,pan,pt-morena,,0none,.,0none,.,,iee
+4647,df-18.003,2021,9003,9003,COYOACAN,pan-pri-prd,prd,pt-morena,,0none,.,0none,.,,iee
+4648,df-18.004,2021,9004,9004,CUAJIMALPA DE MORELOS,pan-pri-prd,pri,pt-morena,,0none,.,0none,.,,iee
+4649,df-18.005,2021,9005,9005,GUSTAVO A. MADERO,pan-pri-prd,prd,pt-morena,,0none,.,0none,.,,iee
+4650,df-18.006,2021,9006,9006,IZTACALCO,pri-prd,pri,pt-morena,,0none,.,0none,.,,iee
+4651,df-18.007,2021,9007,9007,IZTAPALAPA,pan-pri-prd,pan,pt-morena,,0none,.,0none,.,,iee
+4652,df-18.008,2021,9008,9008,MAGDALENA CONTRERAS--LA,pan-pri-prd,pri,pvem-pt-morena,,0none,.,0none,.,,iee
+4653,df-18.009,2021,9009,9009,MILPA ALTA,pan-pri-prd,pri,pt-morena,,0none,.,0none,.,,iee
+4654,df-18.010,2021,9010,9010,ALVARO OBREGON,pan-pri-prd,pan,pvem-pt-morena,,0none,.,0none,.,,iee
+4655,df-18.011,2021,9011,9011,TLAHUAC,pri-prd,pri,pt-morena,,0none,.,0none,.,,iee
+4656,df-18.012,2021,9012,9012,TLALPAN,pan-pri-prd,pri,pt-morena,,0none,.,0none,.,,iee
+4657,df-18.013,2021,9013,9013,XOCHIMILCO,pan-pri-prd,pan,pt-morena,,0none,.,0none,.,,iee
+4658,df-18.014,2021,9014,9014,BENITO JUAREZ,pt-morena,morena,0none,.,0none,.,0none,.,,iee
+4659,df-18.015,2021,9015,9015,CUAUHTEMOC,pan-pri-prd,prd,pt-morena,,0none,.,0none,.,,iee
+4660,df-18.016,2021,9016,9016,MIGUEL HIDALGO,pan-pri-prd,pan,pvem-pt-morena,,0none,.,0none,.,,iee
+4661,df-18.017,2021,9017,9017,VENUSTIANO CARRANZA,pan-pri-prd,prd,pt-morena,,0none,.,0none,.,,iee
+4662,df-19.002,2024,9002,9002,AZCAPOTZALCO,pan-pri-prd,pri,morena-pvem-pt,,0none,.,0none,.,,iee
+4663,df-19.003,2024,9003,9003,COYOACAN,pan-pri-prd,prd,morena-pvem-pt,,0none,.,0none,.,,iee
+4664,df-19.004,2024,9004,9004,CUAJIMALPA DE MORELOS,pan-pri-prd,prd,morena-pvem-pt,,0none,.,0none,.,,iee
+4665,df-19.005,2024,9005,9005,GUSTAVO A. MADERO,pan-pri-prd,prd,morena-pvem-pt,,0none,.,0none,.,,iee
+4666,df-19.006,2024,9006,9006,IZTACALCO,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
+4667,df-19.007,2024,9007,9007,IZTAPALAPA,pan-pri-prd,prd,morena-pvem-pt,,0none,.,0none,.,,iee
+4668,df-19.008,2024,9008,9008,MAGDALENA CONTRERAS--LA,pan-pri-prd,pri,morena-pvem-pt,,0none,.,0none,.,,iee
+4669,df-19.009,2024,9009,9009,MILPA ALTA,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
+4670,df-19.010,2024,9010,9010,ALVARO OBREGON,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
+4671,df-19.011,2024,9011,9011,TLAHUAC,pan-pri-prd,pri,0none,.,0none,.,0none,.,,iee
+4672,df-19.012,2024,9012,9012,TLALPAN,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
+4673,df-19.013,2024,9013,9013,XOCHIMILCO,pan-pri-prd,pri,morena-pvem-pt,,0none,.,0none,.,,iee
+4674,df-19.014,2024,9014,9014,BENITO JUAREZ,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
+4675,df-19.015,2024,9015,9015,CUAUHTEMOC,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,convenio decia pri
+4676,df-19.016,2024,9016,9016,MIGUEL HIDALGO,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,convenio decia pri
+4677,df-19.017,2024,9017,9017,VENUSTIANO CARRANZA,pan-pri-prd,pan,morena-pvem-pt,,0none,.,0none,.,,iee
 4906,dgo-07.001,1989,10001,10001,CANATLAN,0none,.,0none,.,0none,.,0none,.,ok,.
 4907,dgo-07.002,1989,10002,10002,CANELAS,0none,.,0none,.,0none,.,0none,.,ok,.
 4908,dgo-07.003,1989,10003,10003,CONETO DE COMONFORT,0none,.,0none,.,0none,.,0none,.,ok,.
