@@ -7502,7 +7502,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 7501,jal-16.094,TEQUILA,2015,0,14,14094,14095,pri-pvem,0,FELIPE DE JESUS JIMENEZ BERNAL,Out-p-lost,,pan,0.0800353878,0,0,0,,,incumbent out,incumbent out,,
 7502,jal-17.094,TEQUILA,2018,0,14,14094,14095,pan-prd-mc,0,JOSE ALFONSO MAGALLANES RUBIO,Reelected,GUSTAVO CASTAÑEDA GONZALEZ,indep,0.0906729491,0,0,0,,,incumbent out,pan,reran as pan only and won,
 7503,jal-18.094,TEQUILA,2021,0,14,14094,14095,pan,0,JOSE ALFONSO MAGALLANES RUBIO,Term-limited-p-lost,,mc,0.0699669503,0,,,,,pan,incumbent out,,
-7504,jal-19.094,TEQUILA,2024,0,14,14094,14095,pvem-pt-morena-hag-fut,0,DIEGO RIVERA NAVARRO,pending-2027,,pan-pri-prd,0.0402,,,,,,,,,
+7504,jal-19.094,TEQUILA,2024,0,14,14094,14095,pvem-pt-morena-hag-fut,0,DIEGO RIVERA NAVARRO,pending-2027,,pan-pri-prd,0.0402,,,,,,,,detenido por extorsion 5feb2026,
 7505,jal-08.095,TEUCHITLAN,1992,0,14,14095,14096,parm,0,ANICETO SEDANO SANCHEZ,Term-limited-p-lost,,pri,0.0056068602,0,0,0,,,NA,incumbent out,,inafed
 7506,jal-09.095,TEUCHITLAN,1995,0,14,14095,14096,pri,0,SALVADOR OROZCO SANTIAGO,Term-limited-p-won,,parm,0.0409790979,0,0,0,,,incumbent out,incumbent out,,inafed
 7507,jal-10.095,TEUCHITLAN,1997,0,14,14095,14096,pri,0,ENRIQUE MEZA ROSALES,Term-limited-p-won,,prd,0.0197945377,0,0,0,,,incumbent out,incumbent out,,
