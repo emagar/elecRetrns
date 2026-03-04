@@ -3307,7 +3307,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3306,cua-17.067,VALLE DE ZARAGOZA,2018,0,8,8067,8067,prd,1,YOLANDA VENZOR MELENDEZ,Reran-beaten,CARMEN LETICIA SALCIDO GARCIA,pri,0.0861874294,0,0,0,,,pri,prd,,
 3307,cua-18.067,VALLE DE ZARAGOZA,2021,0,8,8067,8067,pri,0,MISAEL HOMERO MARQUEZ MORALES,Out-p-lost,HECTOR DANIEL GONZALEZ SALCIDO,mc,0.0275407292,0,,,,,prd,2024,,
 3308,cua-19.067,VALLE DE ZARAGOZA,2024,0,8,8067,8067,pueblo,0,JESUS NORBERTO GRADO GRADO,pending-2027,HECTOR DANIEL GONZALEZ SALCIDO,mc,0.0268980477223427,,,,,,,,,
-3309,df-11.002,AZCAPOTZALCO,2000,0,9,9002,9002,pan-pvem,1,MARGARITA SALDAÑA HERNANDEZ,Term-limited-p-lost,,prd-pcd-pas-pt-psn-conve,0.1639189039,0,0,0,,,NA,incumbent out,,
+3309,df-11.002,AZCAPOTZALCO,2000,0,9,9002,9002,pan-pvem,1,MARGARITA SALDAÑA HERNANDEZ,Term-limited-p-lost,ARNULFO ROGELIO CUEVAS MARQUEZ,prd-pcd-pas-pt-psn-conve,0.1639189039,0,0,0,,,NA,incumbent out,,
 3310,df-12.002,AZCAPOTZALCO,2003,0,9,9002,9002,prd,1,LAURA VELAZQUEZ ALZUA,Term-limited-p-won,JORGE PALACIOS ARROYO,pan,0.100009139,0,0,0,,,incumbent out,incumbent out,,
 3311,df-13.002,AZCAPOTZALCO,2006,0,9,9002,9002,prd-pt-conve,0,ALEJANDRO CARBAJAL GONZALEZ,Term-limited-p-won,MARGARITA SALDAÑA HERNANDEZ,pan,0.1258372051,0,0,0,,,incumbent out,incumbent out,,
 3312,df-14.002,AZCAPOTZALCO,2009,0,9,9002,9002,prd-conve,0,ENRIQUE VARGAS ANAYA,Term-limited-p-won,MARGARITA SALDAÑA HERNANDEZ,pan,0.0816070667,0,0,0,,,incumbent out,incumbent out,,
@@ -3315,8 +3315,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3314,df-16.002,AZCAPOTZALCO,2015,0,9,9002,9002,morena,0,PABLO MOCTEZUMA BARRAGAN,Term-limited-p-won,ANTONIO PADIERNA LUNA,prd-pt,0.0506449294,0,0,0,,,incumbent out,incumbent out,,
 3315,df-17.002,AZCAPOTZALCO,2018,0,9,9002,9002,pt-morena-pes,0,VIDAL LLERENAS MORALES,Reran-beaten,LUISA ALPIZAR,pan-prd-mc,0.168881886,0,0,0,,,incumbent out,pt-morena,,
 3316,df-18.002,AZCAPOTZALCO,2021,0,9,9002,9002,pan-pri-prd,1,MARGARITA SALDAÑA HERNANDEZ,Reran-beaten,VIDAL LLERENAS MORALES,pt-morena,0.0601287618,0,,,,,pt-morena,2024,,
-3317,df-19.002,AZCAPOTZALCO,2024,0,9,9002,9002,morena-pvem-pt,1,NANCY MARLENE NUÑEZ RESENDIZ,pending-2027,,pan-pri-prd,0.1547,,,,,,,,,
-3318,df-11.003,COYOACAN,2000,0,9,9003,9003,prd-pcd-pas-pt-psn-conve,1,MARIA ROJO INCHAUSTEGUI,Term-limited-p-won,,pan-pvem,0.1296342823,0,0,0,,,NA,incumbent out,,
+3317,df-19.002,AZCAPOTZALCO,2024,0,9,9002,9002,morena-pvem-pt,1,NANCY MARLENE NUÑEZ RESENDIZ,pending-2027,MARGARITA SALDAÑA HERNANDEZ,pan-pri-prd,0.1547,,,,,,,,,
+3318,df-11.003,COYOACAN,2000,0,9,9003,9003,prd-pcd-pas-pt-psn-conve,1,MARIA ROJO INCHAUSTEGUI,Term-limited-p-won,EUGENIO LORENZO AGUILAR OVIEDO,pan-pvem,0.1296342823,0,0,0,,,NA,incumbent out,,
 3319,df-12.003,COYOACAN,2003,0,9,9003,9003,prd,0,MIGUEL BORTOLINI CASTILLO,Term-limited-p-won,MANUEL CASTRO Y DEL VALLE,pan,0.2081193083,0,0,0,,,incumbent out,incumbent out,,
 3320,df-13.003,COYOACAN,2006,0,9,9003,9003,prd-pt-conve,0,HEBERTO CASTILLO JUAREZ,Term-limited-p-won,CECILIA ROMERO CASTILLO,pan,0.1999890956,0,0,0,,,incumbent out,incumbent out,,
 3321,df-14.003,COYOACAN,2009,0,9,9003,9003,prd-pt-conve,0,RAUL ANTONIO ROBLES GARCIA,Term-limited-p-won,OBDULIO AVILA MAYO,pan,0.1121717341,0,0,0,,,incumbent out,incumbent out,,
@@ -3324,8 +3324,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3323,df-16.003,COYOACAN,2015,0,9,9003,9003,prd-pt,0,JOSE VALENTIN MALDONADO SALGADO,Term-limited-p-won,BERTHA ELENA LUJAN URANGA,morena,0.0236858993,0,0,0,,,incumbent out,incumbent out,,
 3324,df-17.003,COYOACAN,2018,0,9,9003,9003,pan-prd-mc,0,MANUEL NEGRETE ARIAS,Out-p-won,MARIA ROJO INCHAUSTEGUI,pt-morena-pes,0.1135026263,0,0,0,,,incumbent out,incumbent out,tepjf anula 21sep18,
 3325,df-18.003,COYOACAN,2021,0,9,9003,9003,pan-pri-prd,0,JOSE GIOVANI GUTIERREZ AGUILAR,Reelected,CARLOS ALONSO CASTILLO PEREZ,pt-morena,0.1748832815,0,,,,,incumbent out,2024,,
-3326,df-19.003,COYOACAN,2024,0,9,9003,9003,pan-pri-prd,0,JOSE GIOVANI GUTIERREZ AGUILAR,Term-limited-2027,,morena-pvem-pt,0.06,,,,,,,,,
-3327,df-11.004,CUAJIMALPA DE MORELOS,2000,0,9,9004,9004,pan-pvem,0,FRANCISCO DE SOUZA MAYO,Term-limited-p-lost,,prd-pcd-pas-pt-psn-conve,0.0267828943,0,0,0,,,NA,incumbent out,,
+3326,df-19.003,COYOACAN,2024,0,9,9003,9003,pan-pri-prd,0,JOSE GIOVANI GUTIERREZ AGUILAR,Term-limited-2027,HANNAH DE LAMADRID TEELEZ,morena-pvem-pt,0.06,,,,,,,,,
+3327,df-11.004,CUAJIMALPA DE MORELOS,2000,0,9,9004,9004,pan-pvem,0,FRANCISCO DE SOUZA MAYO,Term-limited-p-lost,IGNACIO RUIZ LOPEZ,prd-pcd-pas-pt-psn-conve,0.0267828943,0,0,0,,,NA,incumbent out,,
 3328,df-12.004,CUAJIMALPA DE MORELOS,2003,0,9,9004,9004,prd,0,IGNACIO RUIZ LOPEZ,Term-limited-p-won,JOSE ANTONIO JIMENEZ GARCIA,pan,0.1063357677,0,0,0,,,incumbent out,incumbent out,,
 3329,df-13.004,CUAJIMALPA DE MORELOS,2006,0,9,9004,9004,prd-pt-conve,0,JOSE REMEDIOS LEDESMA GARCIA,Term-limited-p-lost,ARTURO MADERO GARZA,pan,0.0967959571,0,0,0,,,incumbent out,incumbent out,,
 3330,df-14.004,CUAJIMALPA DE MORELOS,2009,0,9,9004,9004,pan,0,CARLOS ORVAÑANOS REA,Term-limited-p-lost,ADRIAN RUVALCABA SUAREZ,prd-pt-conve,0.0748546765,0,0,0,,,incumbent out,incumbent out,,
@@ -3333,8 +3333,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3332,df-16.004,CUAJIMALPA DE MORELOS,2015,0,9,9004,9004,pri-pvem,0,MIGUEL ANGEL SALAZAR MARTINEZ,Term-limited-p-won,CAMILO CAMPOS LOPEZ,pan,0.0945955493,0,0,0,,,incumbent out,incumbent out,,
 3333,df-17.004,CUAJIMALPA DE MORELOS,2018,0,9,9004,9004,pri,0,ADRIAN RUBALCAVA SUAREZ,Reelected,PAOLA FELIX DIAZ,pt-morena-pes,0.0916268755,0,1,1,,,incumbent out,pri,,
 3334,df-18.004,CUAJIMALPA DE MORELOS,2021,0,9,9004,9004,pan-pri-prd,0,ADRIAN RUBALCAVA SUAREZ,Term-limited-p-won,FRANCISCO JAVIER SALDIVAR CAMACHO,pt-morena,0.3928952776,0,1,1,,,pri,incumbent out,,
-3335,df-19.004,CUAJIMALPA DE MORELOS,2024,0,9,9004,9004,pan-pri-prd,0,CARLOS ORVAÑANOS REA,pending-2027,,morena-pvem-pt,0.0456,,,,,,,,,
-3336,df-11.005,GUSTAVO A. MADERO,2000,0,9,9005,9005,prd-pcd-pas-pt-psn-conve,0,JOEL ORTEGA CUEVAS,Term-limited-p-won,,pan-pvem,0.0056618976,0,0,0,,,NA,incumbent out,,
+3335,df-19.004,CUAJIMALPA DE MORELOS,2024,0,9,9004,9004,pan-pri-prd,0,CARLOS ORVAÑANOS REA,pending-2027,GUSTAVO MENDOZA FIGUEROA,morena-pvem-pt,0.0456,,,,,,,,,
+3336,df-11.005,GUSTAVO A. MADERO,2000,0,9,9005,9005,prd-pcd-pas-pt-psn-conve,0,JOEL ORTEGA CUEVAS,Term-limited-p-won,TITO OMAR PACHECO LOPEZ,pan-pvem,0.0056618976,0,0,0,,,NA,incumbent out,,
 3337,df-12.005,GUSTAVO A. MADERO,2003,0,9,9005,9005,prd,0,OCTAVIO FLORES MILLAN,Term-limited-p-won,TERESITA CALZADA ROVIROSA,pan,0.2420552597,0,0,0,,,incumbent out,incumbent out,,
 3338,df-13.005,GUSTAVO A. MADERO,2006,0,9,9005,9005,prd-pt-conve,0,FRANCISCO CHIGUIL FIGUEROA,Term-limited-p-won,GENARO ROSALINO GARCIA,pan,0.3234614683,0,0,0,,,incumbent out,incumbent out,,
 3339,df-14.005,GUSTAVO A. MADERO,2009,0,9,9005,9005,prd,0,VICTOR HUGO LOBO ROMAN,Term-limited-p-won,LORENA RIOS MARTINEZ,pan,0.1897225335,0,0,0,,,incumbent out,incumbent out,,
@@ -3342,8 +3342,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3341,df-16.005,GUSTAVO A. MADERO,2015,0,9,9005,9005,prd-pt,0,VICTOR HUGO LOBO ROMAN,Term-limited-p-won,RAMON JIMENEZ LOPEZ,morena,0.0025341621,0,1,1,,,incumbent out,incumbent out,,
 3342,df-17.005,GUSTAVO A. MADERO,2018,0,9,9005,9005,pt-morena-pes,0,FRANCISCO CHIGUIL FIGUEROA,Reelected,NORA ARIAS CONTRERAS,pan-prd-mc,0.1913392511,0,1,1,,,incumbent out,pt-morena,,
 3343,df-18.005,GUSTAVO A. MADERO,2021,0,9,9005,9005,pt-morena,0,FRANCISCO CHIGUIL FIGUEROA,Term-limited-p-won,MARIA DEL CARMEN PACHECO GAMIÑO,pan-pri-prd,0.0409848342,0,,,,,pt-morena,incumbent out,,
-3344,df-19.005,GUSTAVO A. MADERO,2024,0,9,9005,9005,morena-pvem-pt,0,RICARDO JANECARLO LOZANO REYNOSO,pending-2027,,pan-pri-prd,0.2336,,,,,,,,,
-3345,df-11.006,IZTACALCO,2000,0,9,9006,9006,prd-pcd-pas-pt-psn-conve,1,MARGARITA ELENA TAPIA FONLLEM,Term-limited-p-won,,pan-pvem,0.062344049,0,0,0,,,NA,incumbent out,,
+3344,df-19.005,GUSTAVO A. MADERO,2024,0,9,9005,9005,morena-pvem-pt,0,RICARDO JANECARLO LOZANO REYNOSO,pending-2027,LUISA GUTIERREZ,pan-pri-prd,0.2336,,,,,,,,,
+3345,df-11.006,IZTACALCO,2000,0,9,9006,9006,prd-pcd-pas-pt-psn-conve,1,MARGARITA ELENA TAPIA FONLLEM,Term-limited-p-won,ARMANDO ADJUNTAS ARELLANO,pan-pvem,0.062344049,0,0,0,,,NA,incumbent out,,
 3346,df-12.006,IZTACALCO,2003,0,9,9006,9006,prd,0,ARMANDO QUINTERO MARTINEZ,Term-limited-p-won,HUGO CASTRO MARTINEZ,pan,0.3282550232,0,0,0,,,incumbent out,incumbent out,,
 3347,df-13.006,IZTACALCO,2006,0,9,9006,9006,prd-pt-conve,0,ERASTO ENSASTIGA SANTIAGO,Term-limited-p-won,ROBERTO JUAN MANUEL RAYON RIOS,pan,0.3361705786,0,0,0,,,incumbent out,incumbent out,,
 3348,df-14.006,IZTACALCO,2009,0,9,9006,9006,prd,0,FRANCISCO JAVIER SANCHEZ CERVANTES,Term-limited-p-won,NORMA ANGELICA RUBIO MORALES,pri,0.1680886904,0,0,0,,,incumbent out,incumbent out,,
@@ -3351,8 +3351,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3350,df-16.006,IZTACALCO,2015,0,9,9006,9006,prd,0,CARLOS ENRIQUE ESTRADA MERAZ,Term-limited-p-lost,JOSE DE JESUS MARTIN DEL CAMPO CASTAÑEDA,morena,0.017580137,0,0,0,,,incumbent out,incumbent out,,
 3351,df-17.006,IZTACALCO,2018,0,9,9006,9006,pt-morena-pes,0,ARMANDO QUINTERO MARTINEZ,Reelected,ELIZABETH MATEOS HERNANDEZ,pan-prd-mc,0.1411050092,0,1,1,,,incumbent out,pt-morena,,
 3352,df-18.006,IZTACALCO,2021,0,9,9006,9006,pt-morena,0,ARMANDO QUINTERO MARTINEZ,Term-limited-p-won,DANIEL ORDOÑEZ HERNANDEZ,pan,0.1425752071,0,,,,,pt-morena,incumbent out,,
-3353,df-19.006,IZTACALCO,2024,0,9,9006,9006,morena-pvem-pt,0,MARIA DE LOURDES PAZ REYES,pending-2027,,pan-pri-prd,0.1199,,,,,,,,,
-3354,df-11.007,IZTAPALAPA,2000,0,9,9007,9007,prd-pcd-pas-pt-psn-conve,1,LAYDA SANSORES SAN ROMAN,Term-limited-p-won,,pan-pvem,0.1795011441,0,0,0,,,NA,incumbent out,,
+3353,df-19.006,IZTACALCO,2024,0,9,9006,9006,morena-pvem-pt,0,MARIA DE LOURDES PAZ REYES,pending-2027,FABIOLA BAUTISTA,pan-pri-prd,0.1199,,,,,,,,,
+3354,df-11.007,IZTAPALAPA,2000,0,9,9007,9007,prd-pcd-pas-pt-psn-conve,0,RENE ARCE ISLAS,Term-limited-p-won,RAMON MIGUEL HERNANDEZ LABASTIDA,pan-pvem,0.1795011441,0,0,0,,,NA,incumbent out,decia Layda sansores…,
 3355,df-12.007,IZTAPALAPA,2003,0,9,9007,9007,prd,0,VICTOR HUGO CIRIGO VASQUEZ,Term-limited-p-won,ANTONIO FLORES AVIÑA,pan,0.3996841545,0,0,0,,,incumbent out,incumbent out,,
 3356,df-13.007,IZTAPALAPA,2006,0,9,9007,9007,prd-pt-conve,0,HORACIO MARTINEZ MEZA,Term-limited-p-won,RUIZ GOMEZ LEOPOLDO,pan,0.4312321622,0,0,0,,,incumbent out,incumbent out,,
 3357,df-14.007,IZTAPALAPA,2009,0,9,9007,9007,pt,1,CLARA MARINA BRUGADA MOLINA,Term-limited-p-won,SILVIA OLIVA FRAGOSO,prd,0.1003059703,0,0,0,,,incumbent out,incumbent out,Juanito (Rafael Acosta Angeles) renunció para nombraran a Brugada,
@@ -3360,8 +3360,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3359,df-16.007,IZTAPALAPA,2015,0,9,9007,9007,prd-pt-pna,1,DIONE ANGUIANO FLORES,Term-limited-p-won,CLARA MARINA BRUGADA MOLINA,morena,0.0464452041,0,0,0,,,incumbent out,incumbent out,,
 3360,df-17.007,IZTAPALAPA,2018,0,9,9007,9007,pt-morena-pes,1,CLARA MARINA BRUGADA MOLINA,Reelected,KAREN QUIROGA ANGUIANO,pan-prd-mc,0.1023692063,0,1,1,,,incumbent out,pt-morena,,
 3361,df-18.007,IZTAPALAPA,2021,0,9,9007,9007,pt-morena,1,CLARA MARINA BRUGADA MOLINA,Term-limited-p-won,JAZMIN TERESA CURIEL GUZMAN,pan-pri-prd,0.2900661751,0,,,,,pt-morena,incumbent out,,
-3362,df-19.007,IZTAPALAPA,2024,0,9,9007,9007,morena-pvem-pt,1,ALEIDA ALAVEZ RUIZ,pending-2027,,pan-pri-prd,0.3857,,,,,,,,,
-3363,df-11.008,MAGDALENA CONTRERAS--LA,2000,0,9,9008,9008,prd-pcd-pas-pt-psn-conve,0,CARLOS ROSALES ESLAVA,Term-limited-p-won,,pan-pvem,0.0693637339,0,0,0,,,NA,incumbent out,,
+3362,df-19.007,IZTAPALAPA,2024,0,9,9007,9007,morena-pvem-pt,1,ALEIDA ALAVEZ RUIZ,pending-2027,OLIVIA GARZA,pan-pri-prd,0.3857,,,,,,,,,
+3363,df-11.008,MAGDALENA CONTRERAS--LA,2000,0,9,9008,9008,prd-pcd-pas-pt-psn-conve,0,CARLOS ROSALES ESLAVA,Term-limited-p-won,JAVIER TEJADO CASIS,pan-pvem,0.0693637339,0,0,0,,,NA,incumbent out,,
 3364,df-12.008,MAGDALENA CONTRERAS--LA,2003,0,9,9008,9008,prd,0,HECTOR CHAVEZ LOPEZ,Term-limited-p-won,EUSTAQUIO TREJO ALVAREZ,pan,0.2069066433,0,0,0,,,incumbent out,incumbent out,,
 3365,df-13.008,MAGDALENA CONTRERAS--LA,2006,0,9,9008,9008,prd-pt-conve,0,HECTOR GUIJOSA MORA,Term-limited-p-won,IRIS EDITH SANTACRUZ FABILA,pan,0.3012564623,0,0,0,,,incumbent out,incumbent out,,
 3366,df-14.008,MAGDALENA CONTRERAS--LA,2009,0,9,9008,9008,prd,0,EDUARDO HERNANDEZ ROJAS,Term-limited-p-won,PEDRO ALBERTO CABRERA,pri,0.1555033072,0,0,0,,,incumbent out,incumbent out,,
@@ -3369,8 +3369,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3368,df-16.008,MAGDALENA CONTRERAS--LA,2015,0,9,9008,9008,pri-pvem,0,JOSE FERNANDO MERCADO GUAIDA,Term-limited-p-lost,BEATRIZ GARZA RAMOS MONROY,prd-pt,0.0446488807,0,0,0,,,incumbent out,incumbent out,,
 3369,df-17.008,MAGDALENA CONTRERAS--LA,2018,0,9,9008,9008,pt-morena-pes,1,PATRICIA XIMENA ORTIZ COUTURIER,Reran-beaten,LUIS GERARDO QUIJANO MORALES,pri,0.2100474973,0,0,0,,,incumbent out,pvem-pt-morena,,
 3370,df-18.008,MAGDALENA CONTRERAS--LA,2021,0,9,9008,9008,pan-pri-prd,0,LUIS GERARDO QUIJANO MORALES,Reran-beaten,PATRICIA XIMENA ORTIZ COUTURIER,pvem-pt-morena,0.1062410285,0,,,,,pvem-pt-morena,2024,,
-3371,df-19.008,MAGDALENA CONTRERAS--LA,2024,0,9,9008,9008,morena-pvem-pt,0,JOSE FERNANDO MERCADO GUAIDA,pending-2027,,pan-pri-prd,0.0293,,,,,,,,,
-3372,df-11.009,MILPA ALTA,2000,0,9,9009,9009,prd-pcd-pas-pt-psn-conve-pds,1,MARIA GUADALUPE CHAVIRA DE LA ROSA,Term-limited-p-lost,,pri,0.2517725488,0,0,0,,,NA,incumbent out,,
+3371,df-19.008,MAGDALENA CONTRERAS--LA,2024,0,9,9008,9008,morena-pvem-pt,0,JOSE FERNANDO MERCADO GUAIDA,pending-2027,LUIS GERARDO QUIJANO MORALES,pan-pri-prd,0.0293,,,,,,,,,
+3372,df-11.009,MILPA ALTA,2000,0,9,9009,9009,prd-pcd-pas-pt-psn-conve-pds,1,MARIA GUADALUPE CHAVIRA DE LA ROSA,Term-limited-p-lost,SEVERINO GALVAN ANDONEGUI,pri,0.2517725488,0,0,0,,,NA,incumbent out,,
 3373,df-12.009,MILPA ALTA,2003,0,9,9009,9009,pri,0,CUAUHTEMOC MARTINEZ LAGUNA,Term-limited-p-lost,ALEJANDRO SANCHEZ CAMACHO,prd,0.0132022374,0,0,0,,,incumbent out,incumbent out,,
 3374,df-13.009,MILPA ALTA,2006,0,9,9009,9009,prd-pt-conve,0,JOSE LUIS CABRERA PADILLA,Term-limited-p-won,ALEJANDRO OLVERA ACEVEDO,pri-pvem,0.1552967507,0,0,0,,,incumbent out,incumbent out,,
 3375,df-14.009,MILPA ALTA,2009,0,9,9009,9009,prd-pt,0,FRANCISCO GARCIA FLORES,Term-limited-p-won,JORGE ALVARADO GALICIA,pri,0.0536659786,0,0,0,,,incumbent out,incumbent out,,
@@ -3378,8 +3378,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3377,df-16.009,MILPA ALTA,2015,0,9,9009,9009,pri-pvem,0,JORGE ALVARADO GALICIA,Term-limited-p-lost,JOSE OCTAVIO RIVERO VILLASEÑOR,mc,0.0932696391,0,0,0,,,incumbent out,incumbent out,,
 3378,df-17.009,MILPA ALTA,2018,0,9,9009,9009,pan-prd-mc,0,JOSE OCTAVIO RIVERO VILLASEÑOR,Out-p-lost,JUDITH VANEGAS TAPIA,pt-morena-pes,0.0272565501,0,0,0,,,incumbent out,incumbent out,,
 3379,df-18.009,MILPA ALTA,2021,0,9,9009,9009,pt-morena,1,JUDITH VANEGAS TAPIA,Out-p-won,ALICIA ANA LILIA ROBLES ACEVEDO,pan-pri-prd,0.038433908,0,,,,,incumbent out,2024,,
-3380,df-19.009,MILPA ALTA,2024,0,9,9009,9009,morena-pvem-pt,1,JOSE OCTAVIO RIVERO VILLASEÑOR,pending-2027,,pan-pri-prd,0.0986,,,,,,,,,
-3381,df-11.010,ALVARO OBREGON,2000,0,9,9010,9010,pan-pvem,0,LUIS EDUARDO ZUNO CHAVIRA,Term-limited-p-lost,,prd-pcd-pas-pt-psn-conve-pds,0.0027170448,0,0,0,,,NA,incumbent out,,
+3380,df-19.009,MILPA ALTA,2024,0,9,9009,9009,morena-pvem-pt,1,JOSE OCTAVIO RIVERO VILLASEÑOR,pending-2027,JORGE ALVARADO,pan-pri-prd,0.0986,,,,,,,,,
+3381,df-11.010,ALVARO OBREGON,2000,0,9,9010,9010,pan-pvem,0,LUIS EDUARDO ZUNO CHAVIRA,Term-limited-p-lost,ALEJANDRO ENCINAS RODRIGUEZ,prd-pcd-pas-pt-psn-conve-pds,0.0027170448,0,0,0,,,NA,incumbent out,,
 3382,df-12.010,ALVARO OBREGON,2003,0,9,9010,9010,prd,1,LETICIA ROBLES COLIN,Term-limited-p-won,ALEJANDRO SOTO ROMERO,pan,0.1800112658,0,0,0,,,incumbent out,incumbent out,,
 3383,df-13.010,ALVARO OBREGON,2006,0,9,9010,9010,prd-pt-conve,0,LEONEL LUNA ESTRADA,Term-limited-p-won,MIGUEL ANGEL TOSCANO,pan,0.1795875729,0,0,0,,,incumbent out,incumbent out,,
 3384,df-14.010,ALVARO OBREGON,2009,0,9,9010,9010,prd-pt,0,EDUARDO SANTILLAN PEREZ,Term-limited-p-won,CARLOS EDGARDO DURAN NUÑEZ,pan,0.1817008328,0,0,0,,,incumbent out,incumbent out,,
@@ -3387,8 +3387,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3386,df-16.010,ALVARO OBREGON,2015,0,9,9010,9010,prd-pt,1,MARIA ANTONIETA HIDALGO TORRES,Term-limited-p-won,POLIMNIA ROMANA SIERRA BARCENA,pri-pvem,0.0437350275,0,0,0,,,incumbent out,incumbent out,,
 3387,df-17.010,ALVARO OBREGON,2018,0,9,9010,9010,pt-morena-pes,1,LAYDA SANSORES SAN ROMAN,Out-p-lost,AMILCAR GANADO DIAZ,pan-prd-mc,0.043707604,0,1,1,,,incumbent out,incumbent out,,
 3388,df-18.010,ALVARO OBREGON,2021,0,9,9010,9010,pan-pri-prd,1,LIA LIMON GARCIA,Reran-beaten,EDUARDO SANTILLAN PEREZ,pvem-pt-morena,0.2199933853,0,,,,,incumbent out,2024,,
-3389,df-19.010,ALVARO OBREGON,2024,0,9,9010,9010,morena-pvem-pt,1,JAVIER JOAQUIN LOPEZ CASARIN,pending-2027,,pan-pri-prd,0.0316,,,,,,,,,
-3390,df-11.011,TLAHUAC,2000,0,9,9011,9011,prd-pcd-pas-pt-psn-conve-pds,0,FRANCISCO MARTINEZ ROJO,Term-limited-p-won,,pan-pvem,0.1924401562,0,0,0,,,NA,incumbent out,,
+3389,df-19.010,ALVARO OBREGON,2024,0,9,9010,9010,morena-pvem-pt,1,JAVIER JOAQUIN LOPEZ CASARIN,pending-2027,LIA LIMON GARCIA,pan-pri-prd,0.0316,,,,,,,,,
+3390,df-11.011,TLAHUAC,2000,0,9,9011,9011,prd-pcd-pas-pt-psn-conve-pds,0,FRANCISCO MARTINEZ ROJO,Term-limited-p-won,JOSE LUIS MARTINEZ GALICIA,pan-pvem,0.1924401562,0,0,0,,,NA,incumbent out,,
 3391,df-12.011,TLAHUAC,2003,0,9,9011,9011,prd,1,FATIMA MENA ORTEGA,Term-limited-p-won,CARMEN MISAEL MORALES HERNANDEZ,pri,0.3315555892,0,0,0,,,incumbent out,incumbent out,,
 3392,df-13.011,TLAHUAC,2006,0,9,9011,9011,prd-pt-conve,0,GILBERTO ENSASTIGA SANTIAGO,Term-limited-p-won,FIDEL LEONARDO SUAREZ VIVANCO,pri-pvem,0.34582832,0,0,0,,,incumbent out,incumbent out,,
 3393,df-14.011,TLAHUAC,2009,0,9,9011,9011,prd-pt,0,RUBEN ESCAMILLA SALINAS,Term-limited-p-won,JOSE ENRIQUE LARIOS CANALE,pri,0.2787344253,0,0,0,,,incumbent out,incumbent out,,
@@ -3396,8 +3396,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3395,df-16.011,TLAHUAC,2015,0,9,9011,9011,morena,0,RIGOBERTO SALGADO VAZQUEZ,Term-limited-p-won,MARISEL ALAMILLA,prd-pt,0.1301648534,0,0,0,,,incumbent out,incumbent out,,
 3396,df-17.011,TLAHUAC,2018,0,9,9011,9011,pt-morena-pes,0,RAYMUNDO MARTINEZ VITE,Out-p-won,MARCOPOLO CARBALLO CALVA,pan-prd-mc,0.2360935441,0,0,0,,,incumbent out,incumbent out,,
 3397,df-18.011,TLAHUAC,2021,0,9,9011,9011,pt-morena,1,ARACELI BERENICE HERNANDEZ CALDERON,Reelected,ALEJANDRO DURAN RAÑA,pri-prd,0.1130581221,0,,,,,incumbent out,2024,,
-3398,df-19.011,TLAHUAC,2024,0,9,9011,9011,morena,1,ARACELI BERENICE HERNANDEZ CALDERON,Term-limited-2027,,pan-pri-prd,0.1826,,,,,,,,,
-3399,df-11.012,TLALPAN,2000,0,9,9012,9012,prd-pcd-pas-pt-psn-conve,0,GILBERTO LOPEZ Y RIVAS,Term-limited-p-won,,pan-pvem,0.0396986861,0,0,0,,,NA,incumbent out,,
+3398,df-19.011,TLAHUAC,2024,0,9,9011,9011,morena,1,ARACELI BERENICE HERNANDEZ CALDERON,Term-limited-2027,ALEJANDRO DURAN RAÑA,pan-pri-prd,0.1826,,,,,,,,,
+3399,df-11.012,TLALPAN,2000,0,9,9012,9012,prd-pcd-pas-pt-psn-conve,0,GILBERTO LOPEZ Y RIVAS,Term-limited-p-won,JAIME FEDERICO KILIAN GONZALEZ,pan-pvem,0.0396986861,0,0,0,,,NA,incumbent out,,
 3400,df-12.012,TLALPAN,2003,0,9,9012,9012,prd,0,CARLOS IMAZ GISPERT,Term-limited-p-won,ERIC DEL CASTILLO,pan,0.158080213,0,0,0,,,incumbent out,incumbent out,,
 3401,df-13.012,TLALPAN,2006,0,9,9012,9012,prd-pt-conve,0,GUILLERMO SANCHEZ TORRES,Term-limited-p-won,ANTONIO SIMANCAS LOPEZ,pan,0.2712414677,0,0,0,,,incumbent out,incumbent out,,
 3402,df-14.012,TLALPAN,2009,0,9,9012,9012,prd,0,HIGINIO CHAVEZ GARCIA,Term-limited-p-won,JORGE ERNESTO QUINTANA TOPETE,pan,0.0963990833,0,0,0,,,incumbent out,incumbent out,,
@@ -3405,8 +3405,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3404,df-16.012,TLALPAN,2015,0,9,9012,9012,morena,1,CLAUDIA SHEINBAUM PARDO,Term-limited-p-won,MARIA DE LOURDES GARCIA RESENDIZ,prd-pt,0.0715409065,0,0,0,,,incumbent out,incumbent out,ran/won for cdmx,
 3405,df-17.012,TLALPAN,2018,0,9,9012,9012,pt-morena-pes,1,PATRICIA ELENA ACEVES PASTRANA,Out-p-lost,ALFA GONZALEZ MAGALLANES,pan-prd-mc,0.2537046022,0,0,0,,,incumbent out,incumbent out,,
 3406,df-18.012,TLALPAN,2021,0,9,9012,9012,pan-pri-prd,1,ALFA ELIANA GONZALEZ MAGALLANES,Reran-beaten,GABRIELA OSORIO HERNANDEZ,pt-morena,0.0261577361,0,,,,,incumbent out,2024,,
-3407,df-19.012,TLALPAN,2024,0,9,9012,9012,morena-pvem-pt,1,GABRIELA OSORIO HERNANDEZ,pending-2027,,pan-pri-prd,0.1439,,,,,,,,,
-3408,df-11.013,XOCHIMILCO,2000,0,9,9013,9013,prd-pcd-pas-pt-psn-conve,0,JUAN GONZALEZ ROMERO,Term-limited-p-won,,pan-pvem,0.2035021881,0,0,0,,,NA,incumbent out,,
+3407,df-19.012,TLALPAN,2024,0,9,9012,9012,morena-pvem-pt,1,GABRIELA OSORIO HERNANDEZ,pending-2027,ALFA ELIANA GONZALEZ MAGALLANES,pan-pri-prd,0.1439,,,,,,,,,
+3408,df-11.013,XOCHIMILCO,2000,0,9,9013,9013,prd-pcd-pas-pt-psn-conve,0,JUAN GONZALEZ ROMERO,Term-limited-p-won,CRISTINA HERNANDEZ GARCIA,pan-pvem,0.2035021881,0,0,0,,,NA,incumbent out,,
 3409,df-12.013,XOCHIMILCO,2003,0,9,9013,9013,prd,0,FAUSTINO SOTO RAMOS,Term-limited-p-won,EDUARDO BELTRAN TOVAR,pan,0.2586133476,0,0,0,,,incumbent out,incumbent out,,
 3410,df-13.013,XOCHIMILCO,2006,0,9,9013,9013,prd-pt-conve,1,WENDY GONZALEZ URRUTIA,Term-limited-p-won,WENDY GONZALEZ URRUTIA,pan,0.4205114378,0,0,0,,,incumbent out,incumbent out,,
 3411,df-14.013,XOCHIMILCO,2009,0,9,9013,9013,prd,0,MANUEL GONZALEZ GONZALEZ,Term-limited-p-won,JUAN ANTONIO PUIG ALBARRAN,pri,0.2539785425,0,0,0,,,incumbent out,incumbent out,,
@@ -3414,8 +3414,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3413,df-16.013,XOCHIMILCO,2015,0,9,9013,9013,morena,0,AVELINO MENDEZ RANGEL,Term-limited-p-won,SERGIO FLORES RIOS,pri-pvem,0.0944660358,0,0,0,,,incumbent out,incumbent out,,
 3414,df-17.013,XOCHIMILCO,2018,0,9,9013,9013,pt-morena-pes,0,JOSE CARLOS ACOSTA RUIZ,Reelected,ANA JULIA HERNANDEZ,pan-prd-mc,0.2537187968,0,0,0,,,incumbent out,pt-morena,,
 3415,df-18.013,XOCHIMILCO,2021,0,9,9013,9013,pt-morena,0,JOSE CARLOS ACOSTA RUIZ,Term-limited-p-won,GABRIEL DEL MONTE ROSALES,pan-pri-prd,0.0111620452,0,,,,,pt-morena,incumbent out,,
-3416,df-19.013,XOCHIMILCO,2024,0,9,9013,9013,morena-pvem-pt,0,CIRCE CAMACHO BASTIDA,pending-2027,,pan-pri-prd,0.0985,,,,,,,,,
-3417,df-11.014,BENITO JUAREZ,2000,0,9,9014,9014,pan-pvem,0,JOSE ESPINA VON ROEHRICH,Term-limited-p-won,,prd-pcd-pas-pt-psn-conve-pds,0.1197858128,0,0,0,,,NA,incumbent out,,
+3416,df-19.013,XOCHIMILCO,2024,0,9,9013,9013,morena-pvem-pt,0,CIRCE CAMACHO BASTIDA,pending-2027,GABRIEL DEL MONTE ROSALES,pan-pri-prd,0.0985,,,,,,,,,
+3417,df-11.014,BENITO JUAREZ,2000,0,9,9014,9014,pan-pvem,0,JOSE ESPINA VON ROEHRICH,Term-limited-p-won,RICARDO PASCOE PIERCE,prd-pcd-pas-pt-psn-conve-pds,0.1197858128,0,0,0,,,NA,incumbent out,,
 3418,df-12.014,BENITO JUAREZ,2003,0,9,9014,9014,pan,0,FADLALA AKABANI HNEIDE,Term-limited-p-won,LENIA BATRES GUADARRAMA,prd,0.0793558712,0,0,0,,,incumbent out,incumbent out,,
 3419,df-13.014,BENITO JUAREZ,2006,0,9,9014,9014,pan,0,GERMAN DE LA GARZA ESTRADA,Term-limited-p-won,ALEJANDRA BARRALES,prd-pt-conve,0.1083843444,0,0,0,,,incumbent out,incumbent out,,
 3420,df-14.014,BENITO JUAREZ,2009,0,9,9014,9014,pan,0,MARIO ALBERTO PALACIOS ACOSTA,Term-limited-p-won,BERNARDO BATIZ,prd-pt-conve,0.1490129271,0,0,0,,,incumbent out,incumbent out,,
@@ -3423,8 +3423,8 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3422,df-16.014,BENITO JUAREZ,2015,0,9,9014,9014,pan,0,CHRISTIAN VON ROEHRICH DE LA ISLA,Term-limited-p-won,JESUS PORFIRIO GONZALEZ SCHMAL,morena,0.2455676228,0,0,0,,,incumbent out,incumbent out,,
 3423,df-17.014,BENITO JUAREZ,2018,0,9,9014,9014,pan-prd-mc,0,SANTIAGO TABOADA CORTINA,Reelected,FADLALA AKABANI HNEIDE,pt-morena-pes,0.1503580222,0,0,0,,,incumbent out,pan,,
 3424,df-18.014,BENITO JUAREZ,2021,0,9,9014,9014,pan,0,SANTIAGO TABOADA CORTINA,Term-limited-p-won,PAULA ADRIANA SOTO MALDONADO,pt-morena,0.4867357429,0,,,,,pan,incumbent out,ran gdf,
-3425,df-19.014,BENITO JUAREZ,2024,0,9,9014,9014,pan-pri-prd,0,LUIS ALBERTO MENDOZA ACEVEDO,pending-2027,,morena-pvem-pt,0.4523,,,,,,,,,
-3426,df-11.015,CUAUHTEMOC,2000,0,9,9015,9015,prd-pcd-pas-pt-psn-conve,1,DOLORES PADIERNA LUNA,Term-limited-p-won,,pan-pvem,0.0428384167,0,0,0,,,NA,incumbent out,,
+3425,df-19.014,BENITO JUAREZ,2024,0,9,9014,9014,pan-pri-prd,0,LUIS ALBERTO MENDOZA ACEVEDO,pending-2027,LETICIA VARELA,morena-pvem-pt,0.4523,,,,,,,,,
+3426,df-11.015,CUAUHTEMOC,2000,0,9,9015,9015,prd-pcd-pas-pt-psn-conve,1,DOLORES PADIERNA LUNA,Term-limited-p-won,FEDERICO RUIZ LOPEZ,pan-pvem,0.0428384167,0,0,0,,,NA,incumbent out,,
 3427,df-12.015,CUAUHTEMOC,2003,0,9,9015,9015,prd,1,VIRGINIA JARAMILLO FLORES,Term-limited-p-won,ARTURO MADERO GARZA,pan,0.3403350173,0,0,0,,,incumbent out,incumbent out,,
 3428,df-13.015,CUAUHTEMOC,2006,0,9,9015,9015,prd-pt-conve,0,JOSE LUIS MUÑOZ SORIA,Term-limited-p-won,MARIO ALBERTO PALACIOS,pan,0.2395365919,0,0,0,,,incumbent out,incumbent out,,
 3429,df-14.015,CUAUHTEMOC,2009,0,9,9015,9015,prd,0,AGUSTIN TORRES PEREZ,Term-limited-p-won,ARTURO OROPEZA RAMIREZ,pri,0.1289197961,0,0,0,,,incumbent out,incumbent out,,
@@ -3432,17 +3432,17 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3431,df-16.015,CUAUHTEMOC,2015,0,9,9015,9015,morena,0,RICARDO MONREAL AVILA,Term-limited-p-won,JOSE LUIS MUÑOZ SORIA,prd-pt-pna,0.0744899488,0,0,0,,,incumbent out,incumbent out,,
 3432,df-17.015,CUAUHTEMOC,2018,0,9,9015,9015,pt-morena-pes,0,NESTOR LOPEZ NUÑEZ,Out-p-lost,HUMBERTO LOZANO AVILES,pan-prd-mc,0.2981970022,0,0,0,,,incumbent out,incumbent out,,
 3433,df-18.015,CUAUHTEMOC,2021,0,9,9015,9015,pan-pri-prd,0,SANDRA XANTALL CUEVAS NIEVES,Out-p-won,DOLORES PADIERNA LUNA,pt-morena,0.1022001129,0,,,,,incumbent out,2024,,
-3434,df-19.015,CUAUHTEMOC,2024,0,9,9015,9015,pan-pri-prd,0,ALESSANDRA ROJO DE LA VEGA PICCOLO,pending-2027,,morena-pvem-pt,0.0348,,,,,,,,,
-3435,df-11.016,MIGUEL HIDALGO,2000,0,9,9016,9016,pan-pvem,0,ARNE AUS DEN RUTHEN HAAG,Term-limited-p-won,,prd-pcd-pas-pt-psn-conve,0.1413626596,0,0,0,,,NA,incumbent out,,
+3434,df-19.015,CUAUHTEMOC,2024,0,9,9015,9015,pan-pri-prd,0,ALESSANDRA ROJO DE LA VEGA PICCOLO,pending-2027,CATY MONREAL,morena-pvem-pt,0.0348,,,,,,,,,
+3435,df-11.016,MIGUEL HIDALGO,2000,0,9,9016,9016,pan-pvem,0,ARNE AUS DEN RUTHEN HAAG,Term-limited-p-won,JAVIER HIDALGO PONCE,prd-pcd-pas-pt-psn-conve,0.1413626596,0,0,0,,,NA,incumbent out,,
 3436,df-12.016,MIGUEL HIDALGO,2003,0,9,9016,9016,pan,0,FERNANDO ABOITIZ SARO,Term-limited-p-won,AGUSTIN EMILIO JOSE BARRIOS GOMEZ SEGUES,prd,0.0119924195,0,0,0,,,incumbent out,incumbent out,,
 3437,df-13.016,MIGUEL HIDALGO,2006,0,9,9016,9016,pan-pna,1,GABRIELA CUEVAS BARRON,Term-limited-p-won,CARLOS REYES GAMIZ,prd-pt-conve,0.1076159262,0,0,0,0,,incumbent out,incumbent out,,
 3438,df-14.016,MIGUEL HIDALGO,2009,0,9,9016,9016,pan,0,DEMETRIO SODI DE LA TIJERA,Term-limited-p-lost,ANA GABRIELA GUEVARA,prd-pt-conve,0.0644168865,0,0,0,,,incumbent out,incumbent out,,
 3439,df-15.016,MIGUEL HIDALGO,2012,0,9,9016,9016,prd-pt-mc,0,VICTOR HUGO ROMO GUERRA,Term-limited-p-lost,MIGUEL ANGEL ERRASTI ARANGO,pan,0.1139042289,0,0,0,,,incumbent out,incumbent out,,
-3440,df-16.016,MIGUEL HIDALGO,2015,0,9,9016,9016,pan,1,BERTHA XOCHITL GALVEZ RUIZ,Term-limited-p-lost,DAVID RAZU AZNAR,prd-pt-pna,0.0290673532,0,0,0,,,incumbent out,incumbent out,,
+3440,df-16.016,MIGUEL HIDALGO,2015,0,9,9016,9016,pan,1,BERTHA XOCHITL GALVEZ RUIZ,Term-limited-p-lost,DAVID RAZU AZNAR,prd-pt-pna,0.0290673532,0,0,0,0,,incumbent out,incumbent out,,
 3441,df-17.016,MIGUEL HIDALGO,2018,0,9,9016,9016,pt-morena-pes,0,VICTOR HUGO ROMO GUERRA,Reran-beaten,MARGARITA MARTINEZ FISHER,pan-prd-mc,0.0327198827,0,1,1,,,incumbent out,pvem-pt-morena,,
 3442,df-18.016,MIGUEL HIDALGO,2021,0,9,9016,9016,pan-pri-prd,0,MAURICIO TABE ECHARTEA,Reelected,VICTOR HUGO ROMO GUERRA,pvem-pt-morena,0.1543684644,0,,,,,pvem-pt-morena,2024,,
-3443,df-19.016,MIGUEL HIDALGO,2024,0,9,9016,9016,pan-pri-prd,0,MAURICIO TABE ECHARTEA,Term-limited-2027,,morena-pvem-pt,0.1565,,,,,,,,,
-3444,df-11.017,VENUSTIANO CARRANZA,2000,0,9,9017,9017,pan-pvem,1,MARIA GUADALUPE MORALES RUBIO,Term-limited-p-lost,,prd-pcd-pas-pt-psn-conve,0.0252778965,0,0,0,,,NA,incumbent out,,
+3443,df-19.016,MIGUEL HIDALGO,2024,0,9,9016,9016,pan-pri-prd,0,MAURICIO TABE ECHARTEA,Term-limited-2027,MIGUEL TORRUCO,morena-pvem-pt,0.1565,,,,,,,,,
+3444,df-11.017,VENUSTIANO CARRANZA,2000,0,9,9017,9017,pan-pvem,1,MARIA GUADALUPE MORALES RUBIO,Term-limited-p-lost,ALFONSO RAMIREZ CUELLAR,prd-pcd-pas-pt-psn-conve,0.0252778965,0,0,0,,,NA,incumbent out,,
 3445,df-12.017,VENUSTIANO CARRANZA,2003,0,9,9017,9017,prd,1,RUTH ZAVALETA SALGADO,Term-limited-p-won,DANIEL RAMIREZ DEL VALLE,pan,0.2346800121,0,0,0,,,incumbent out,incumbent out,,
 3446,df-13.017,VENUSTIANO CARRANZA,2006,0,9,9017,9017,prd-pt-conve,0,JULIO CESAR MORENO RIVERA,Term-limited-p-won,CARLOS MANUEL MORALES OCAÑA,pan,0.2857240998,0,0,0,,,incumbent out,incumbent out,,
 3447,df-14.017,VENUSTIANO CARRANZA,2009,0,9,9017,9017,prd,0,ALEJANDRO RAFAEL PIÑA MEDINA,Term-limited-p-won,NALLELY ILEANA GUTIERREZ GIJON,pri,0.2319536424,0,0,0,,,incumbent out,incumbent out,,
@@ -3450,7 +3450,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3449,df-16.017,VENUSTIANO CARRANZA,2015,0,9,9017,9017,prd-pt,0,ISRAEL MORENO RIVERA,Term-limited-p-won,MARIA PATRICIA RUIZ ACHONDO,morena,0.1893702463,0,0,0,1,,incumbent out,incumbent out,,
 3450,df-17.017,VENUSTIANO CARRANZA,2018,0,9,9017,9017,pan-prd-mc,0,JULIO CESAR MORENO RIVERA,Out-p-won,PATRICIA RUIZ ANCHONDO,pt-morena-pes,0.0562217887,0,1,1,,,incumbent out,incumbent out,incumb renom pan-pri-prd,
 3451,df-18.017,VENUSTIANO CARRANZA,2021,0,9,9017,9017,pt-morena,1,EVELYN PARRA ALVAREZ,Reelected,ROCIO BARRERA BADILLO,pan-pri-prd,0.1090095823,0,,,,,incumbent out,2024,,
-3452,df-19.017,VENUSTIANO CARRANZA,2024,0,9,9017,9017,morena-pvem-pt,1,EVELYN PARRA ALVAREZ,Term-limited-2027,,pan-pri-prd,0.1873,,,,,,,,,
+3452,df-19.017,VENUSTIANO CARRANZA,2024,0,9,9017,9017,morena-pvem-pt,1,EVELYN PARRA ALVAREZ,Term-limited-2027,ROCIO BARRERA BADILLO,pan-pri-prd,0.1873,,,,,,,,,
 3453,dgo-07.001,CANATLAN,1989,0,10,10001,10001,pri,0,ANTONIO MEDINA AZCONA,Term-limited-p-won,,pan,0.2707741697,0,0,0,,,NA,incumbent out,,inafed
 3454,dgo-08.001,CANATLAN,1992,0,10,10001,10001,pri,0,CRECENCIO CONTRERAS,Term-limited-p-won,,pan,0.0192131747,0,0,0,,,incumbent out,incumbent out,,inafed
 3455,dgo-09.001,CANATLAN,1995,0,10,10001,10001,pri,0,PEDRO ORONA ROMERO,Term-limited-p-won,,pan,0.023916422,0,0,0,,,incumbent out,incumbent out,orona es su apellido,inafed
@@ -3514,7 +3514,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3513,dgo-15.005,DURANGO,2013,0,10,10005,10005,pri-pvem-pna-pd,0,ESTEBAN ALEJANDRO VILLEGAS VILLAREAL,Term-limited-p-lost,,pan,0.0812437476,0,0,0,,,incumbent out,incumbent out,,prep
 3514,dgo-16.005,DURANGO,2016,0,10,10005,10005,pan-prd,0,JOSE RAMON ENRIQUEZ HERRERA,Out-p-won,MANUEL HERRERA RUIZ,pri-pvem-pd1-pna,0.1618175708,0,0,0,,,incumbent out,incumbent out,destituido x cong 11dic2018 tras fallo tepjf promo imagen rec pub--renom x mc 2019 lost,prep
 3515,dgo-17.005,DURANGO,2019,0,10,10005,10005,pan,0,JORGE ALEJANDRO SALUM DEL PALACIO,Out-p-won,JOSE RAMON ENRIQUEZ HERRERA,mc,0.1088209118,0,0,0,,,incumbent out,incumbent out,,prep
-3516,dgo-18.005,DURANGO,2022,0,10,10005,10005,pan-pri-prd,0,JOSE ANTONIO OCHOA RODRIGUEZ,Reelected,,pvem-pt-morena-rsp,0.1851590504,0,0,0,,,incumbent out,2025,,prep
+3516,dgo-18.005,DURANGO,2022,0,10,10005,10005,pan-pri-prd,0,JOSE ANTONIO OCHOA RODRIGUEZ,Reelected,ALEJANDRO GONZALEZ YAÑEZ,pvem-pt-morena-rsp,0.1851590504,0,0,0,,,incumbent out,2025,,prep
 3517,dgo-19.005,DURANGO,2025,0,10,10005,10005,pan-pri,0,JOSE ANTONIO OCHOA RODRIGUEZ,Term-limited-2028,FRANCISCO FRANCO SOLER,mc,0.203,,1,1,,,,,,prep
 3518,dgo-07.006,GENERAL SIMON BOLIVAR,1989,0,10,10006,10006,pri,0,EFREN AVILA GARCIA,Term-limited-p-won,,pps,0.5417485265,0,0,0,,,NA,incumbent out,,inafed
 3519,dgo-08.006,GENERAL SIMON BOLIVAR,1992,0,10,10006,10006,pri,0,J SANTANA MEDINA ESQUIVEL,Term-limited-p-won,,pan,0.5794986906,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -3540,7 +3540,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3539,dgo-15.007,GOMEZ PALACIO,2013,0,10,10007,10007,pri-pvem-pna-pd,0,JOSE MIGUEL CAMPILLO CARRETE,Term-limited-p-won,,pan,0.0290523782,0,0,0,,,incumbent out,incumbent out,,prep
 3540,dgo-16.007,GOMEZ PALACIO,2016,0,10,10007,10007,pri-pvem-pd-pna,1,JUANA LETICIA HERRERA ALE,Out-p-lost,,pan-prd,0.5545161529,0,1,1,,,incumbent out,incumbent out,,prep
 3541,dgo-17.007,GOMEZ PALACIO,2019,0,10,10007,10007,morena,1,ALMA MARINA VITELA RODRIGUEZ,Out-p-lost,,pri,0.0346677386,0,0,0,,,incumbent out,incumbent out,,prep
-3542,dgo-18.007,GOMEZ PALACIO,2022,0,10,10007,10007,pan-pri-prd,1,JUANA LETICIA HERRERA ALE,Out-p-lost,,pvem-pt-morena-rsp,0.1690736503,0,1,1,,,incumbent out,2025,,prep
+3542,dgo-18.007,GOMEZ PALACIO,2022,0,10,10007,10007,pan-pri-prd,1,JUANA LETICIA HERRERA ALE,Out-p-lost,BETZABE MARTINEZ ARANGO,pvem-pt-morena-rsp,0.1690736503,0,1,1,,,incumbent out,2025,,prep
 3543,dgo-19.007,GOMEZ PALACIO,2025,0,10,10007,10007,pvem-pt-morena,1,BETZABE MARTINEZ ARANGO,pending-2028,OMAR ENRIQUE CASTAÑEDA GONZALEZ,mc,0.1173,,,,,,,,,prep
 3544,dgo-07.008,GUADALUPE VICTORIA,1989,0,10,10008,10008,pri,0,ROBERTO RETANA GONZALEZ,Term-limited-p-won,,prd,0.8698333333,0,0,0,,,NA,incumbent out,,inafed
 3545,dgo-08.008,GUADALUPE VICTORIA,1992,0,10,10008,10008,pri,0,FILEMON VILLAREAL GODINEZ,Term-limited-p-lost,,pan,0.1147138008,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -3605,7 +3605,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3604,dgo-15.012,LERDO,2013,0,10,10012,10012,pri-pvem-pna-pd,0,LUIS DE VILLA BARRERA,Term-limited-p-won,,pan,0.2636045051,0,0,0,,,incumbent out,incumbent out,,prep
 3605,dgo-16.012,LERDO,2016,0,10,10012,10012,pri-pvem-pd-pna,1,MARIA LUISA GONZALEZ ACHEM,Out-p-won,,pan-prd,0.2188137055,0,0,0,,,incumbent out,incumbent out,,prep
 3606,dgo-17.012,LERDO,2019,0,10,10012,10012,pri,0,HOMERO MARTINEZ CABRERA,Reelected,,morena,0.0137815275,0,0,0,,,incumbent out,pri,,prep
-3607,dgo-18.012,LERDO,2022,0,10,10012,10012,pan-pri-prd,0,HOMERO MARTINEZ CABRERA,Term-limited-p-won,,pvem-pt-morena-rsp,0.0679334327,0,0,0,,,pri,incumbent out,,prep
+3607,dgo-18.012,LERDO,2022,0,10,10012,10012,pan-pri-prd,0,HOMERO MARTINEZ CABRERA,Term-limited-p-won,SANJUANA TERESA GONZALEZ ALVARADO,pvem-pt-morena-rsp,0.0679334327,0,0,0,,,pri,incumbent out,,prep
 3608,dgo-19.012,LERDO,2025,0,10,10012,10012,pan-pri,1,SUSY CAROLINA TORRECILLAS SALAZAR,pending-2028,FLORA ISELA LEAL MENDEZ,pvem-pt-morena,0.3008,,,,,,,,,prep
 3609,dgo-07.013,MAPIMI,1989,0,10,10013,10013,pri,0,ELIAS MAGALLANES CAMPOS,Term-limited-p-won,,pan,0.4793984962,0,0,0,,,NA,incumbent out,,inafed
 3610,dgo-08.013,MAPIMI,1992,0,10,10013,10013,pri,0,HUMBERTO BARRAZA ESPINOZA,Term-limited-p-won,,pan,0.4242736452,0,0,0,,,incumbent out,incumbent out,,inafed
