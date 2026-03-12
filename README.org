@@ -239,14 +239,14 @@ b. If you wish to manipulate the data (eg. re-sorting rows by year or keeping a 
 c. Linked data updates about every hour. If a refresh were needed sooner, erase the function in cell A1 and undo the change. 
 [[top][<sub>Back to top</sub>]]
 * Sources
-Work in progress
-- /Fuente/ = iee/ife/ine indicates data obtained from the primary source, the state/federal election board's web site. 
-- /Fuente/ = tesis Melissa
-- /Fuente/ = Magar 1994
-- /Fuente/ = Mexico Electoral Banamex
-- /Fuente/ = Toledo Patiño paper
-- /Fuente/ = UAM Iztapalapa for older state races
-- /Fuente/ = voz y voto
+Work in progress. Below is a list of key sources used to construct data bases over many decades. 
+- /Fuente/ = `iee/ife/ine' indicates data obtained from the primary source, the state/federal election board's web site. For federal elections the source is: Instituto Nacional Electoral (s.f.), Sistema de Consulta de la Estadística de las Elecciones (SICEE), available https://www.ine.mx/voto-y-elecciones/resultados-electorales/ (visited 9-3-2026). For state elections: Instituto Electoral del Estado de [state] ([year]), /Memoria del Proceso Electoral [year]/.
+- /Fuente/ = `tesis Melissa' the source is Zúñiga García, Melissa (2004) La transición en Tabasco: de la hegemonía al bipartidismo 1982--2000, México DF: tesis de licenciatura ITAM.
+- /FUENTE/ = `Magar 1994' the source is Magar, Eric (1994) Elecciones municipales en el norte de México, 1970–-1993: Bases de apoyo partidistas y alineaciones electorales, México DF: tesis de licenciatura ITAM. 
+- /Fuente/ = `Banamex' the source is Varela, Carlo (2004) México electoral: estadísticas federales y locales 1970--2003 (CD-ROM), México DF:Centro de Estudios Económicos y Sociales Banamex.
+- /Fuente/ = `Toledo Patiño' paper
+- /Fuente/ = `UAM Iztapalapa' the source is CEDE-UAM-I (1991) Resultados electorales locales, México DF: Universidad Autónoma Metropolitana Unidad Iztapalapa [producer and distributor] available at https://cede.izt.uam.mx/ (visited 9-3-2026).
+- /Fuente/ = `voz y voto' Voz y voto. 1993. “Voz y voto : política y elecciones [monthly publication].” México DF: Nuevo Horizonte.
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 

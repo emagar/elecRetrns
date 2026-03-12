@@ -1,0 +1,77 @@
+Gabino 9-mar-2026
+1. Versión magra del repositorio en github con solo los archivos/scripts que menciona el paper
+2. En el paper, no hay mención de ay.r ni otros scripts relevantes --- incluirlos.
+3. Fuentes
+4. Pasos para armar y sistematizar los datos en el readme (Gabino me manda esto por mail)
+5. Tres versiones de lols datos: (a) repositorio dinámico en github (lo que ya existe); (b) repositorio simplificados a los archivos del paper commit permanente; (c) versión dinámica de b en dropbox???
+
+
+Hola Alberto:
+
+Quiero preguntarte si apoyarías una solicitud para adelantar medio sabático. Por calendario, me tocaría año sabático a partir de otoño 2027). Quisiera tomar un semestre sabático en otoño 2026, la otra mitad cuando corresponde (primavera 2028).
+
+En el plano del interés departamental, flexibilizar los calendarios sabáticos tiene sentido para nuestra logística, reduciendo la oferta de profes en lo que nos alcanza el aumento en demanda de alumnos que producirán los números desde el semestre pasado. Bastaría que dos o tres profes lo hiciéramos para evitar cierre de materias curriculares. 
+
+En el plano de mi interés personal, un semestre sabático me permitiría sacar tres papers que tengo en ciernes y atender un asunto familiar que requiere cierto tiempo. 
+
+¿Cómo ves?
+
+semestre año
+oto-00   1ero
+pri-01   1ero
+oto-01   2do
+pri-02   2do
+oto-02   3ero
+pri-03   3ero
+oto-03   4to
+pri-04   4to
+oto-04   5to
+pri-05   5to
+oto-05   6to
+pri-06   6to
+oto-06   1ero
+pri-07   sabático1
+oto-07   sabático1
+pri-08   1ero
+oto-08   2do
+pri-09   2do
+oto-09   3ero
+pri-10   3ero
+oto-10   4to
+pri-11   4to
+oto-11   5to
+pri-12   5to
+oto-12   6to
+pri-13   6to
+oto-13   1ero
+pri-14   1ero
+oto-14   sabático2
+pri-15   sabático2
+oto-15   2do
+pri-16   2do
+oto-16   3ero
+pri-17   3ero
+oto-17   4to
+pri-18   4to
+oto-18   5to
+pri-19   5to
+oto-19   6to
+pri-20   6to
+oto-20   1ero (pandemia)
+pri-21   1ero
+oto-21   2do
+pri-22   2do
+oto-22   3ero
+pri-23   sabático3 
+oto-23   sabático3 
+pri-24   3ero
+oto-24   4to
+pri-25   4to
+oto-25   5to
+pri-26   5to   <- aquí vamos
+oto-26   sabático4 1/2
+pri-27   6to
+oto-27   6to
+pri-28   sabático4 1/2
+oto-28   1ero
+
