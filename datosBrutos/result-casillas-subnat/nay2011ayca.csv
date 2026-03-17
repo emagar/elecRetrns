@@ -1,0 +1,1291 @@
+ord,mun,seccion,casilla,pan,prd,prs,pri-pvem-pna,pt-conve,nr,nul,efec,elec
+1,Acaponeta,1,B,63,88,2,205,0,0,9,367,Presidente y Síndico
+2,Acaponeta,2,B,67,85,3,146,7,0,8,316,Presidente y Síndico
+3,Acaponeta,2,E,70,56,1,135,0,0,5,267,Presidente y Síndico
+4,Acaponeta,3,B,120,157,2,268,8,0,5,560,Presidente y Síndico
+5,Acaponeta,3,C,108,131,2,262,7,0,16,526,Presidente y Síndico
+6,Acaponeta,4,B,84,89,5,258,2,0,0,438,Presidente y Síndico
+7,Acaponeta,5,B,160,106,8,273,4,0,19,570,Presidente y Síndico
+8,Acaponeta,6,B,88,28,6,183,6,0,0,311,Presidente y Síndico
+9,Acaponeta,7,B,132,72,3,162,7,0,6,382,Presidente y Síndico
+10,Acaponeta,8,B,165,80,6,274,5,0,20,550,Presidente y Síndico
+11,Acaponeta,9,B,122,81,3,210,6,0,4,426,Presidente y Síndico
+12,Acaponeta,9,C,123,70,1,252,8,0,13,467,Presidente y Síndico
+13,Acaponeta,10,B,208,96,10,285,8,0,26,633,Presidente y Síndico
+14,Acaponeta,11,B,69,53,14,120,6,0,5,267,Presidente y Síndico
+15,Acaponeta,12,B,130,86,2,248,4,0,0,470,Presidente y Síndico
+16,Acaponeta,13,B,164,79,2,188,4,0,15,452,Presidente y Síndico
+17,Acaponeta,14,B,70,40,14,62,1,0,4,191,Presidente y Síndico
+18,Acaponeta,15,B,84,84,7,156,1,0,8,340,Presidente y Síndico
+19,Acaponeta,16,B,199,109,7,233,10,0,7,565,Presidente y Síndico
+20,Acaponeta,17,B,161,91,4,247,2,0,14,519,Presidente y Síndico
+21,Acaponeta,18,B,160,70,4,248,3,0,0,485,Presidente y Síndico
+22,Acaponeta,19,B,30,6,0,57,0,0,4,97,Presidente y Síndico
+23,Acaponeta,20,B,64,2,0,43,0,0,6,115,Presidente y Síndico
+24,Acaponeta,20,E,43,0,0,27,0,0,3,73,Presidente y Síndico
+25,Acaponeta,21,B,149,6,1,171,4,0,2,333,Presidente y Síndico
+26,Acaponeta,22,B,69,4,0,79,1,0,0,153,Presidente y Síndico
+27,Acaponeta,23,B,83,96,13,123,1,0,21,337,Presidente y Síndico
+28,Acaponeta,23,E,44,22,1,42,0,0,0,109,Presidente y Síndico
+29,Acaponeta,24,B,106,49,2,237,3,0,27,424,Presidente y Síndico
+30,Acaponeta,24,E,43,12,1,82,0,0,2,140,Presidente y Síndico
+31,Acaponeta,25,B,26,11,0,42,0,0,0,79,Presidente y Síndico
+32,Acaponeta,26,B,51,19,1,50,0,0,0,121,Presidente y Síndico
+33,Acaponeta,27,B,9,49,2,143,0,0,3,206,Presidente y Síndico
+34,Acaponeta,27,E,20,10,0,42,0,0,0,72,Presidente y Síndico
+35,Acaponeta,28,B,23,57,2,129,0,0,2,213,Presidente y Síndico
+36,Acaponeta,29,B,36,3,0,32,0,0,0,71,Presidente y Síndico
+37,Acaponeta,29,E,11,2,0,24,0,0,0,37,Presidente y Síndico
+38,Acaponeta,30,B,69,11,0,55,0,0,0,135,Presidente y Síndico
+39,Acaponeta,31,B,33,2,0,212,0,0,4,251,Presidente y Síndico
+40,Acaponeta,32,B,71,18,1,183,0,0,0,273,Presidente y Síndico
+41,Acaponeta,33,B,207,83,3,207,5,1,23,529,Presidente y Síndico
+42,Acaponeta,34,B,65,13,0,59,0,0,4,141,Presidente y Síndico
+43,Acaponeta,34,E,28,13,1,12,0,0,2,56,Presidente y Síndico
+44,Acaponeta,35,B,16,7,0,41,0,0,7,71,Presidente y Síndico
+45,Acaponeta,36,B,196,74,5,239,1,0,5,520,Presidente y Síndico
+46,Acaponeta,37,B,40,56,1,88,0,0,0,185,Presidente y Síndico
+47,Acaponeta,38,B,181,111,0,353,0,0,20,665,Presidente y Síndico
+48,Acaponeta,39,B,186,96,1,252,1,1,21,558,Presidente y Síndico
+49,Acaponeta,40,B,83,106,1,220,0,0,17,427,Presidente y Síndico
+50,Acaponeta,40,E,78,12,0,48,0,0,0,138,Presidente y Síndico
+51,Acaponeta,41,B,96,34,1,105,0,0,0,236,Presidente y Síndico
+52,Acaponeta,42,B,8,22,3,25,2,0,2,62,Presidente y Síndico
+53,Acaponeta,43,B,88,104,6,238,7,0,0,443,Presidente y Síndico
+54,Acaponeta,44,B,24,4,1,66,0,0,3,98,Presidente y Síndico
+55,Acaponeta,45,B,48,45,0,54,0,0,0,147,Presidente y Síndico
+56,Acaponeta,46,B,387,55,9,75,2,0,42,570,Presidente y Síndico
+57,Acaponeta,47,B,143,128,4,129,3,0,0,407,Presidente y Síndico
+58,Acaponeta,47,E,30,10,0,20,0,0,2,62,Presidente y Síndico
+59,Acaponeta,48,B,69,17,1,37,1,0,0,125,Presidente y Síndico
+65,Ahuacatlán,49,B,149,12,2,117,133,0,9,422,Presidente y Síndico
+66,Ahuacatlán,50,B,269,15,3,99,111,0,21,518,Presidente y Síndico
+67,Ahuacatlán,51,B,194,17,1,98,156,1,21,488,Presidente y Síndico
+68,Ahuacatlán,52,B,144,10,3,105,99,0,11,372,Presidente y Síndico
+69,Ahuacatlán,52,C,133,13,3,89,110,0,16,364,Presidente y Síndico
+70,Ahuacatlán,53,B,129,8,0,83,89,0,4,313,Presidente y Síndico
+71,Ahuacatlán,53,C,151,8,1,83,98,0,7,348,Presidente y Síndico
+72,Ahuacatlán,54,B,210,7,0,85,103,0,0,405,Presidente y Síndico
+73,Ahuacatlán,54,C,179,8,0,82,104,0,15,388,Presidente y Síndico
+74,Ahuacatlán,55,B,85,7,1,77,17,0,7,194,Presidente y Síndico
+75,Ahuacatlán,56,B,197,11,2,215,32,0,13,470,Presidente y Síndico
+76,Ahuacatlán,57,B,149,28,1,307,84,0,15,584,Presidente y Síndico
+77,Ahuacatlán,58,B,129,14,2,163,43,0,8,359,Presidente y Síndico
+78,Ahuacatlán,59,B,182,29,1,208,44,2,12,478,Presidente y Síndico
+79,Ahuacatlán,59,C,196,12,0,189,37,0,0,434,Presidente y Síndico
+80,Ahuacatlán,60,B,130,14,3,178,53,0,22,400,Presidente y Síndico
+81,Ahuacatlán,61,B,171,14,1,224,63,0,20,493,Presidente y Síndico
+82,Ahuacatlán,61,E,44,5,0,37,13,0,4,103,Presidente y Síndico
+83,Ahuacatlán,62,B,60,5,1,70,19,0,7,162,Presidente y Síndico
+84,Ahuacatlán,63,B,34,2,4,110,40,1,4,195,Presidente y Síndico
+85,Ahuacatlán,64,B,40,8,3,83,21,0,6,161,Presidente y Síndico
+86,Ahuacatlán,65,B,118,10,1,151,18,1,12,311,Presidente y Síndico
+87,Ahuacatlán,65,E,39,2,0,101,23,0,2,167,Presidente y Síndico
+93,Amatlán de Cañas,66,B,151,6,93,54,6,0,11,321,Presidente y Síndico
+94,Amatlán de Cañas,67,B,261,49,137,66,7,0,22,542,Presidente y Síndico
+95,Amatlán de Cañas,68,B,271,8,108,129,1,0,9,526,Presidente y Síndico
+96,Amatlán de Cañas,69,B,167,12,72,50,4,0,7,312,Presidente y Síndico
+97,Amatlán de Cañas,70,B,50,4,69,20,1,0,6,150,Presidente y Síndico
+98,Amatlán de Cañas,71,B,67,2,47,19,4,0,8,147,Presidente y Síndico
+99,Amatlán de Cañas,72,B,28,0,18,21,0,0,2,69,Presidente y Síndico
+100,Amatlán de Cañas,73,B,37,1,5,17,1,0,0,61,Presidente y Síndico
+101,Amatlán de Cañas,74,B,23,3,37,51,76,0,14,204,Presidente y Síndico
+102,Amatlán de Cañas,74,E,33,1,28,6,9,0,5,82,Presidente y Síndico
+103,Amatlán de Cañas,75,B,150,4,53,93,4,0,19,323,Presidente y Síndico
+104,Amatlán de Cañas,76,B,30,2,48,8,2,0,7,97,Presidente y Síndico
+105,Amatlán de Cañas,77,B,115,12,118,30,15,0,23,313,Presidente y Síndico
+106,Amatlán de Cañas,78,B,120,15,169,93,31,0,23,451,Presidente y Síndico
+107,Amatlán de Cañas,79,B,186,41,203,104,5,0,31,570,Presidente y Síndico
+108,Amatlán de Cañas,80,B,59,2,245,19,10,0,18,353,Presidente y Síndico
+109,Amatlán de Cañas,81,B,39,1,104,10,0,0,6,160,Presidente y Síndico
+110,Amatlán de Cañas,82,B,112,4,206,16,5,0,11,354,Presidente y Síndico
+111,Amatlán de Cañas,83,B,108,2,248,51,3,0,15,427,Presidente y Síndico
+112,Amatlán de Cañas,84,B,33,2,17,26,1,0,4,83,Presidente y Síndico
+113,Amatlán de Cañas,86,B,60,3,52,85,1,0,13,214,Presidente y Síndico
+114,Amatlán de Cañas,87,B,40,2,13,6,0,0,2,63,Presidente y Síndico
+115,Amatlán de Cañas,88,B,127,2,11,117,1,0,3,261,Presidente y Síndico
+116,Amatlán de Cañas,89,B,116,8,106,16,2,0,17,265,Presidente y Síndico
+122,Bahía de Banderas,90,B,156,94,4,157,33,0,11,455,Presidente y Síndico
+123,Bahía de Banderas,90,C1,128,90,2,147,28,0,13,408,Presidente y Síndico
+124,Bahía de Banderas,90,C2,134,87,2,154,29,1,15,422,Presidente y Síndico
+125,Bahía de Banderas,90,C3,134,90,2,156,21,1,10,414,Presidente y Síndico
+126,Bahía de Banderas,90,C4,130,101,0,138,23,0,10,402,Presidente y Síndico
+127,Bahía de Banderas,90,C5,126,106,1,157,23,0,11,424,Presidente y Síndico
+128,Bahía de Banderas,90,C6,140,114,2,139,32,0,13,440,Presidente y Síndico
+129,Bahía de Banderas,90,C7,138,98,4,128,29,0,17,414,Presidente y Síndico
+130,Bahía de Banderas,90,C8,133,92,0,148,18,0,18,409,Presidente y Síndico
+131,Bahía de Banderas,90,E,116,56,0,167,11,0,5,355,Presidente y Síndico
+132,Bahía de Banderas,91,B,169,107,0,239,12,0,14,541,Presidente y Síndico
+133,Bahía de Banderas,92,B,142,86,1,164,15,0,17,425,Presidente y Síndico
+134,Bahía de Banderas,93,B,39,10,1,65,1,0,6,122,Presidente y Síndico
+135,Bahía de Banderas,94,B,129,16,0,215,8,0,0,368,Presidente y Síndico
+136,Bahía de Banderas,95,B,53,51,0,92,8,0,8,212,Presidente y Síndico
+137,Bahía de Banderas,95,E,78,45,0,93,3,0,0,219,Presidente y Síndico
+138,Bahía de Banderas,96,B,246,39,0,120,2,0,7,414,Presidente y Síndico
+139,Bahía de Banderas,96,C,230,39,1,149,4,0,11,434,Presidente y Síndico
+140,Bahía de Banderas,97,B,156,23,0,232,2,0,12,425,Presidente y Síndico
+141,Bahía de Banderas,97,C,164,28,0,183,5,0,9,389,Presidente y Síndico
+142,Bahía de Banderas,98,B,267,45,2,256,4,1,13,588,Presidente y Síndico
+143,Bahía de Banderas,98,C,219,43,2,301,6,0,12,583,Presidente y Síndico
+144,Bahía de Banderas,98,E1,113,35,0,103,4,0,11,266,Presidente y Síndico
+145,Bahía de Banderas,98,E2,98,11,1,104,3,0,5,222,Presidente y Síndico
+146,Bahía de Banderas,99,B,132,86,1,248,21,0,25,513,Presidente y Síndico
+147,Bahía de Banderas,100,B,87,83,0,226,26,0,11,433,Presidente y Síndico
+148,Bahía de Banderas,100,C,90,90,1,212,34,0,11,438,Presidente y Síndico
+149,Bahía de Banderas,101,B,132,99,3,215,15,0,17,481,Presidente y Síndico
+150,Bahía de Banderas,101,C,104,123,1,187,19,0,11,445,Presidente y Síndico
+151,Bahía de Banderas,102,B,158,62,3,159,66,0,21,469,Presidente y Síndico
+152,Bahía de Banderas,102,C,157,71,0,183,38,0,20,469,Presidente y Síndico
+153,Bahía de Banderas,103,B,103,59,0,223,8,0,7,400,Presidente y Síndico
+154,Bahía de Banderas,103,C,114,55,0,217,8,0,6,400,Presidente y Síndico
+155,Bahía de Banderas,104,B,161,84,2,282,21,0,21,571,Presidente y Síndico
+156,Bahía de Banderas,104,C,165,84,4,275,29,0,10,567,Presidente y Síndico
+157,Bahía de Banderas,105,B,157,219,2,76,4,0,16,474,Presidente y Síndico
+158,Bahía de Banderas,105,C,149,208,1,94,4,0,19,475,Presidente y Síndico
+159,Bahía de Banderas,106,B,167,189,2,75,4,0,20,457,Presidente y Síndico
+160,Bahía de Banderas,106,C,158,201,1,112,3,0,11,486,Presidente y Síndico
+161,Bahía de Banderas,107,B,174,139,0,56,6,1,23,399,Presidente y Síndico
+162,Bahía de Banderas,107,C,156,160,0,70,6,0,17,409,Presidente y Síndico
+163,Bahía de Banderas,107,E,217,46,0,95,3,0,12,373,Presidente y Síndico
+164,Bahía de Banderas,108,B,116,205,0,75,3,2,22,423,Presidente y Síndico
+165,Bahía de Banderas,108,C,114,221,0,67,10,0,16,428,Presidente y Síndico
+166,Bahía de Banderas,109,B,162,34,1,310,4,0,13,524,Presidente y Síndico
+167,Bahía de Banderas,110,B,161,49,0,304,7,0,13,534,Presidente y Síndico
+168,Bahía de Banderas,110,E,145,33,0,143,1,0,16,338,Presidente y Síndico
+169,Bahía de Banderas,111,B,137,125,1,209,16,0,22,510,Presidente y Síndico
+170,Bahía de Banderas,111,C1,133,143,0,210,16,0,19,521,Presidente y Síndico
+171,Bahía de Banderas,111,C2,141,127,1,174,12,0,20,475,Presidente y Síndico
+172,Bahía de Banderas,111,C3,143,138,2,202,18,0,14,517,Presidente y Síndico
+173,Bahía de Banderas,112,B,155,107,1,198,14,1,18,494,Presidente y Síndico
+174,Bahía de Banderas,112,C1,155,90,0,163,14,0,9,431,Presidente y Síndico
+175,Bahía de Banderas,112,C2,157,91,0,159,17,0,16,440,Presidente y Síndico
+176,Bahía de Banderas,112,C3,186,119,1,159,13,0,17,495,Presidente y Síndico
+177,Bahía de Banderas,113,B,145,36,0,130,3,1,10,325,Presidente y Síndico
+178,Bahía de Banderas,113,C,150,49,0,98,4,0,8,309,Presidente y Síndico
+179,Bahía de Banderas,114,B,168,22,0,170,7,0,17,384,Presidente y Síndico
+180,Bahía de Banderas,114,C1,173,31,0,182,3,0,14,403,Presidente y Síndico
+181,Bahía de Banderas,114,C2,173,23,1,192,11,2,11,413,Presidente y Síndico
+182,Bahía de Banderas,115,B,305,68,0,161,35,0,9,578,Presidente y Síndico
+183,Bahía de Banderas,115,C1,315,58,2,165,31,0,11,582,Presidente y Síndico
+184,Bahía de Banderas,115,C2,307,64,2,133,33,0,23,562,Presidente y Síndico
+185,Bahía de Banderas,115,C3,325,68,3,161,32,0,27,616,Presidente y Síndico
+186,Bahía de Banderas,115,C4,308,51,5,159,28,0,20,571,Presidente y Síndico
+187,Bahía de Banderas,116,B,269,56,2,167,24,0,17,535,Presidente y Síndico
+188,Bahía de Banderas,116,C1,299,48,4,163,32,0,14,560,Presidente y Síndico
+189,Bahía de Banderas,116,C2,270,69,3,169,30,2,18,561,Presidente y Síndico
+190,Bahía de Banderas,117,B,244,42,0,148,14,0,14,462,Presidente y Síndico
+191,Bahía de Banderas,117,C,246,50,0,157,13,0,1,467,Presidente y Síndico
+192,Bahía de Banderas,118,B,260,47,3,182,16,0,11,519,Presidente y Síndico
+193,Bahía de Banderas,118,C1,264,46,2,182,18,0,19,531,Presidente y Síndico
+194,Bahía de Banderas,118,C2,231,52,2,199,30,1,14,529,Presidente y Síndico
+195,Bahía de Banderas,118,C3,272,62,2,181,17,0,14,548,Presidente y Síndico
+196,Bahía de Banderas,119,B,178,91,1,163,13,0,22,468,Presidente y Síndico
+197,Bahía de Banderas,119,C,241,68,2,176,16,0,19,522,Presidente y Síndico
+198,Bahía de Banderas,120,B,230,49,2,217,29,0,28,555,Presidente y Síndico
+199,Bahía de Banderas,120,C1,214,52,5,188,34,1,36,530,Presidente y Síndico
+200,Bahía de Banderas,120,C2,203,48,5,221,38,0,21,536,Presidente y Síndico
+201,Bahía de Banderas,121,B,158,40,0,223,12,0,7,440,Presidente y Síndico
+202,Bahía de Banderas,121,C,163,44,1,200,14,0,17,439,Presidente y Síndico
+203,Bahía de Banderas,122,B,149,30,2,162,31,0,5,379,Presidente y Síndico
+204,Bahía de Banderas,122,C,146,50,4,175,16,0,18,409,Presidente y Síndico
+205,Bahía de Banderas,123,B,132,19,0,88,15,0,11,265,Presidente y Síndico
+206,Bahía de Banderas,123,C,143,23,1,138,13,0,11,329,Presidente y Síndico
+212,Compostela,124,B,328,5,3,188,4,0,34,562,Presidente y Síndico
+213,Compostela,125,B,213,6,0,117,4,0,18,358,Presidente y Síndico
+214,Compostela,125,C,209,7,1,124,2,2,17,362,Presidente y Síndico
+215,Compostela,126,B,217,6,2,138,2,0,15,380,Presidente y Síndico
+216,Compostela,126,C,228,9,2,143,4,0,12,398,Presidente y Síndico
+217,Compostela,127,B,332,9,1,146,2,0,12,502,Presidente y Síndico
+218,Compostela,128,B,357,9,1,203,2,0,13,585,Presidente y Síndico
+219,Compostela,129,B,243,5,2,145,2,0,10,407,Presidente y Síndico
+220,Compostela,129,C,230,4,1,136,0,0,11,382,Presidente y Síndico
+221,Compostela,130,B,253,3,0,176,2,0,11,445,Presidente y Síndico
+222,Compostela,131,B,255,6,1,193,6,0,12,473,Presidente y Síndico
+223,Compostela,132,B,248,8,0,126,7,0,14,403,Presidente y Síndico
+224,Compostela,132,C,252,12,2,112,8,0,19,405,Presidente y Síndico
+225,Compostela,133,B,238,8,0,161,6,0,10,423,Presidente y Síndico
+226,Compostela,133,C,255,11,1,170,4,0,17,458,Presidente y Síndico
+227,Compostela,134,B,189,3,0,110,8,0,14,324,Presidente y Síndico
+228,Compostela,134,C,183,2,0,120,5,0,9,319,Presidente y Síndico
+229,Compostela,135,B,287,6,2,284,8,0,17,604,Presidente y Síndico
+230,Compostela,136,B,265,7,2,283,4,0,5,566,Presidente y Síndico
+231,Compostela,137,B,214,4,0,167,5,0,8,398,Presidente y Síndico
+232,Compostela,137,E,182,20,1,153,2,0,11,369,Presidente y Síndico
+233,Compostela,138,B,203,3,1,115,4,0,18,344,Presidente y Síndico
+234,Compostela,139,B,176,46,3,135,8,0,18,386,Presidente y Síndico
+235,Compostela,140,B,207,6,1,113,1,0,14,342,Presidente y Síndico
+236,Compostela,141,B,225,14,3,150,4,0,15,411,Presidente y Síndico
+237,Compostela,142,B,47,5,0,39,0,0,9,100,Presidente y Síndico
+238,Compostela,143,B,55,9,1,56,1,0,7,129,Presidente y Síndico
+239,Compostela,143,E,72,1,0,16,1,0,0,90,Presidente y Síndico
+240,Compostela,144,B,246,18,0,166,5,0,0,435,Presidente y Síndico
+241,Compostela,145,B,170,11,0,164,0,0,10,355,Presidente y Síndico
+242,Compostela,145,E,75,4,0,20,6,0,5,110,Presidente y Síndico
+243,Compostela,146,B,62,2,0,37,6,0,4,111,Presidente y Síndico
+244,Compostela,147,B,174,7,0,80,5,0,8,274,Presidente y Síndico
+245,Compostela,148,B,205,25,0,159,27,0,18,434,Presidente y Síndico
+246,Compostela,149,B,191,18,0,129,17,0,14,369,Presidente y Síndico
+247,Compostela,150,B,162,16,3,130,45,0,0,356,Presidente y Síndico
+248,Compostela,151,B,112,39,0,134,22,0,0,307,Presidente y Síndico
+249,Compostela,151,C,123,36,2,126,24,0,28,339,Presidente y Síndico
+250,Compostela,152,B,237,22,1,157,34,0,0,451,Presidente y Síndico
+251,Compostela,153,B,99,12,3,20,2,0,7,143,Presidente y Síndico
+252,Compostela,154,B,220,12,1,29,5,0,3,270,Presidente y Síndico
+253,Compostela,155,B,195,7,0,107,2,0,9,320,Presidente y Síndico
+254,Compostela,156,B,122,8,1,144,3,0,10,288,Presidente y Síndico
+255,Compostela,157,B,147,35,4,98,3,0,0,287,Presidente y Síndico
+256,Compostela,157,E,41,2,0,30,5,0,4,82,Presidente y Síndico
+257,Compostela,158,B,281,40,17,114,20,0,35,507,Presidente y Síndico
+258,Compostela,159,B,215,54,8,111,9,0,0,397,Presidente y Síndico
+259,Compostela,160,B,225,33,6,103,22,0,19,408,Presidente y Síndico
+260,Compostela,161,B,178,23,10,64,7,0,12,294,Presidente y Síndico
+261,Compostela,161,C,211,25,8,54,16,0,0,314,Presidente y Síndico
+262,Compostela,162,B,168,17,2,89,21,0,11,308,Presidente y Síndico
+263,Compostela,163,B,177,47,0,121,15,0,24,384,Presidente y Síndico
+264,Compostela,164,B,220,48,0,120,17,0,0,405,Presidente y Síndico
+265,Compostela,165,B,247,23,6,131,21,0,12,440,Presidente y Síndico
+266,Compostela,166,B,191,34,10,141,55,0,0,431,Presidente y Síndico
+267,Compostela,167,B,180,21,3,98,19,0,11,332,Presidente y Síndico
+268,Compostela,167,C,162,18,4,74,22,0,9,289,Presidente y Síndico
+269,Compostela,168,B,181,20,7,101,19,0,16,344,Presidente y Síndico
+270,Compostela,168,C,189,21,1,91,23,0,18,343,Presidente y Síndico
+271,Compostela,169,B,268,28,2,120,23,0,18,459,Presidente y Síndico
+272,Compostela,170,B,76,16,2,63,7,0,5,169,Presidente y Síndico
+273,Compostela,171,B,146,4,2,111,1,0,2,266,Presidente y Síndico
+274,Compostela,171,C,173,4,1,128,1,1,5,313,Presidente y Síndico
+275,Compostela,172,B,58,9,3,15,1,0,4,90,Presidente y Síndico
+276,Compostela,173,B,100,25,2,141,7,0,8,283,Presidente y Síndico
+277,Compostela,173,C,145,23,2,91,3,0,0,264,Presidente y Síndico
+278,Compostela,174,B,22,8,0,56,1,0,1,88,Presidente y Síndico
+279,Compostela,175,B,108,6,0,190,0,0,7,311,Presidente y Síndico
+280,Compostela,176,B,185,15,1,202,0,0,0,403,Presidente y Síndico
+281,Compostela,177,B,98,4,0,183,1,2,16,304,Presidente y Síndico
+282,Compostela,177,C,79,16,1,200,3,2,19,320,Presidente y Síndico
+283,Compostela,178,B,117,30,2,116,3,0,0,268,Presidente y Síndico
+284,Compostela,179,B,129,44,2,113,3,0,10,301,Presidente y Síndico
+285,Compostela,180,B,180,111,0,139,1,0,17,448,Presidente y Síndico
+286,Compostela,181,B,42,3,0,23,2,0,4,74,Presidente y Síndico
+287,Compostela,181,E,36,3,0,73,10,0,2,124,Presidente y Síndico
+288,Compostela,182,B,55,7,1,69,3,0,0,135,Presidente y Síndico
+289,Compostela,183,B,237,58,9,128,7,0,13,452,Presidente y Síndico
+290,Compostela,184,B,139,39,2,99,6,0,15,300,Presidente y Síndico
+291,Compostela,184,C,150,34,2,98,11,0,9,304,Presidente y Síndico
+292,Compostela,185,B,131,37,1,106,7,0,6,288,Presidente y Síndico
+293,Compostela,185,C,112,24,4,106,17,0,10,273,Presidente y Síndico
+294,Compostela,186,B,185,44,4,137,6,0,0,376,Presidente y Síndico
+295,Compostela,187,B,203,34,11,142,7,0,7,404,Presidente y Síndico
+296,Compostela,188,B,211,81,7,156,14,1,9,479,Presidente y Síndico
+297,Compostela,189,B,208,68,8,233,12,0,0,529,Presidente y Síndico
+298,Compostela,190,B,94,156,7,132,11,0,9,409,Presidente y Síndico
+299,Compostela,190,C,112,131,6,142,10,0,9,410,Presidente y Síndico
+300,Compostela,190,E1,177,81,18,119,9,0,11,415,Presidente y Síndico
+301,Compostela,190,E1C,171,64,9,129,6,0,12,391,Presidente y Síndico
+302,Compostela,190,E2,78,35,4,95,2,1,4,219,Presidente y Síndico
+303,Compostela,191,B,55,9,0,28,0,0,0,92,Presidente y Síndico
+304,Compostela,191,E,17,0,0,26,0,0,0,43,Presidente y Síndico
+305,Compostela,192,B,166,49,2,99,26,0,0,342,Presidente y Síndico
+306,Compostela,192,C,152,58,6,138,35,0,17,406,Presidente y Síndico
+307,Compostela,193,B,56,18,0,58,2,0,5,139,Presidente y Síndico
+308,Compostela,194,B,70,31,1,105,6,0,8,221,Presidente y Síndico
+309,Compostela,195,B,122,10,1,75,17,0,13,238,Presidente y Síndico
+315,Huajicori,196,B,5,240,0,170,0,1,11,427,Presidente y Síndico
+316,Huajicori,196,C,12,207,0,192,0,0,10,421,Presidente y Síndico
+317,Huajicori,197,B,13,187,0,188,1,0,0,389,Presidente y Síndico
+318,Huajicori,197,C,2,179,0,200,2,0,17,400,Presidente y Síndico
+319,Huajicori,198,B,5,76,1,102,0,0,0,184,Presidente y Síndico
+320,Huajicori,199,B,2,94,1,74,1,0,7,179,Presidente y Síndico
+321,Huajicori,200,B,1,31,0,118,1,0,3,154,Presidente y Síndico
+322,Huajicori,201,B,2,28,0,47,0,0,0,77,Presidente y Síndico
+323,Huajicori,201,E,1,12,1,60,0,0,0,74,Presidente y Síndico
+324,Huajicori,202,B,1,169,0,166,1,0,15,352,Presidente y Síndico
+325,Huajicori,202,E,4,30,0,43,0,0,0,77,Presidente y Síndico
+326,Huajicori,203,B,4,58,0,65,0,0,0,127,Presidente y Síndico
+327,Huajicori,203,E1,3,91,0,30,0,0,13,137,Presidente y Síndico
+328,Huajicori,203,E2,0,46,2,94,0,0,5,147,Presidente y Síndico
+329,Huajicori,204,B,3,52,0,66,0,0,0,121,Presidente y Síndico
+330,Huajicori,205,B,5,75,0,73,0,0,0,153,Presidente y Síndico
+331,Huajicori,206,B,2,59,0,132,0,0,4,197,Presidente y Síndico
+332,Huajicori,207,B,1,31,0,56,0,0,1,89,Presidente y Síndico
+333,Huajicori,207,E1,0,18,0,36,0,0,0,54,Presidente y Síndico
+334,Huajicori,207,E2,1,48,1,28,0,0,1,79,Presidente y Síndico
+335,Huajicori,208,B,9,144,0,145,2,0,9,309,Presidente y Síndico
+336,Huajicori,209,B,0,26,0,42,0,0,4,72,Presidente y Síndico
+337,Huajicori,209,E,1,34,0,64,0,0,0,99,Presidente y Síndico
+338,Huajicori,210,B,7,66,1,74,0,0,9,157,Presidente y Síndico
+339,Huajicori,210,E,0,33,0,24,0,0,0,57,Presidente y Síndico
+340,Huajicori,211,B,0,66,1,96,0,0,0,163,Presidente y Síndico
+341,Huajicori,212,B,2,32,0,50,0,0,1,85,Presidente y Síndico
+342,Huajicori,212,E,1,60,0,32,0,0,0,93,Presidente y Síndico
+343,Huajicori,213,B,1,12,0,48,0,0,1,62,Presidente y Síndico
+344,Huajicori,213,E,2,57,0,68,0,0,2,129,Presidente y Síndico
+345,Huajicori,214,B,4,64,4,75,0,0,11,158,Presidente y Síndico
+346,Huajicori,214,E,1,23,1,33,0,0,5,63,Presidente y Síndico
+352,Ixtlán del Río,215,B,332,101,5,86,20,0,18,562,Presidente y Síndico
+353,Ixtlán del Río,215,C,333,90,8,100,28,0,22,581,Presidente y Síndico
+354,Ixtlán del Río,216,B,370,97,4,92,14,0,14,591,Presidente y Síndico
+355,Ixtlán del Río,216,C,349,107,2,90,20,0,18,586,Presidente y Síndico
+356,Ixtlán del Río,217,B,176,61,1,50,7,0,9,304,Presidente y Síndico
+357,Ixtlán del Río,217,C,169,53,3,54,24,0,14,317,Presidente y Síndico
+358,Ixtlán del Río,218,B,311,72,5,96,31,0,16,531,Presidente y Síndico
+359,Ixtlán del Río,218,C,314,77,8,96,26,0,22,543,Presidente y Síndico
+360,Ixtlán del Río,219,B,110,49,3,105,19,0,16,302,Presidente y Síndico
+361,Ixtlán del Río,219,C,101,56,7,98,22,1,7,292,Presidente y Síndico
+362,Ixtlán del Río,220,B,161,52,4,63,9,0,18,307,Presidente y Síndico
+363,Ixtlán del Río,220,C,148,58,1,75,13,1,17,313,Presidente y Síndico
+364,Ixtlán del Río,221,B,214,135,3,122,11,0,19,504,Presidente y Síndico
+365,Ixtlán del Río,222,B,299,149,5,123,7,0,13,596,Presidente y Síndico
+366,Ixtlán del Río,223,B,196,92,2,77,9,0,7,383,Presidente y Síndico
+367,Ixtlán del Río,223,C,208,68,0,103,6,0,13,398,Presidente y Síndico
+368,Ixtlán del Río,224,B,379,64,5,100,7,0,17,572,Presidente y Síndico
+369,Ixtlán del Río,225,B,239,71,4,98,20,0,14,446,Presidente y Síndico
+370,Ixtlán del Río,226,B,197,99,0,176,11,0,13,496,Presidente y Síndico
+371,Ixtlán del Río,227,B,176,86,3,90,12,0,8,375,Presidente y Síndico
+372,Ixtlán del Río,228,B,156,92,2,104,6,0,6,366,Presidente y Síndico
+373,Ixtlán del Río,229,B,262,79,5,105,7,0,16,474,Presidente y Síndico
+374,Ixtlán del Río,230,B,230,102,12,182,37,1,26,590,Presidente y Síndico
+375,Ixtlán del Río,231,B,247,147,6,103,8,0,0,511,Presidente y Síndico
+376,Ixtlán del Río,232,B,45,7,2,82,7,0,13,156,Presidente y Síndico
+377,Ixtlán del Río,232,E1,95,0,2,23,1,0,5,126,Presidente y Síndico
+378,Ixtlán del Río,232,E2,40,12,1,14,7,0,3,77,Presidente y Síndico
+379,Ixtlán del Río,233,B,67,42,2,87,9,0,18,225,Presidente y Síndico
+380,Ixtlán del Río,234,B,68,24,2,69,10,0,9,182,Presidente y Síndico
+381,Ixtlán del Río,235,B,60,61,6,80,2,0,13,222,Presidente y Síndico
+382,Ixtlán del Río,236,B,117,84,4,93,12,0,14,324,Presidente y Síndico
+383,Ixtlán del Río,236,C,102,86,4,119,13,0,7,331,Presidente y Síndico
+384,Ixtlán del Río,237,B,52,10,1,41,0,0,5,109,Presidente y Síndico
+385,Ixtlán del Río,238,B,61,35,4,91,4,0,14,209,Presidente y Síndico
+391,Jala,239,B,168,51,1,172,4,0,12,408,Presidente y Síndico
+392,Jala,240,B,154,48,0,124,2,0,15,343,Presidente y Síndico
+393,Jala,241,B,274,88,0,241,7,0,17,627,Presidente y Síndico
+394,Jala,242,B,267,99,2,228,3,0,14,613,Presidente y Síndico
+395,Jala,243,B,180,94,1,144,2,0,10,431,Presidente y Síndico
+396,Jala,244,B,132,50,2,149,7,0,11,351,Presidente y Síndico
+397,Jala,244,C,148,57,0,143,4,0,10,362,Presidente y Síndico
+398,Jala,245,B,63,19,0,32,0,0,0,114,Presidente y Síndico
+399,Jala,246,B,4,21,0,61,1,0,0,87,Presidente y Síndico
+400,Jala,246,E,27,44,0,36,0,0,0,107,Presidente y Síndico
+401,Jala,247,B,89,21,0,116,0,0,7,233,Presidente y Síndico
+402,Jala,248,B,152,146,0,91,5,0,19,413,Presidente y Síndico
+403,Jala,248,C,140,173,4,65,7,0,9,398,Presidente y Síndico
+404,Jala,249,B,244,190,3,132,7,0,28,604,Presidente y Síndico
+405,Jala,250,B,127,102,2,94,92,0,0,417,Presidente y Síndico
+406,Jala,251,B,112,77,0,95,21,0,0,305,Presidente y Síndico
+407,Jala,252,B,260,145,1,164,10,0,43,623,Presidente y Síndico
+408,Jala,252,E,73,45,0,88,8,0,5,219,Presidente y Síndico
+409,Jala,253,B,189,74,1,121,26,1,14,426,Presidente y Síndico
+410,Jala,253,C,174,58,1,141,37,0,23,434,Presidente y Síndico
+411,Jala,254,B,212,139,0,162,32,0,23,568,Presidente y Síndico
+412,Jala,255,B,149,40,0,100,22,0,12,323,Presidente y Síndico
+413,Jala,256,B,188,44,0,152,29,0,19,432,Presidente y Síndico
+419,Del Nayar,257,B,313,63,3,159,19,1,40,598,Presidente y Síndico
+420,Del Nayar,258,B,243,65,1,149,5,0,63,526,Presidente y Síndico
+421,Del Nayar,258,C,253,83,0,137,5,0,0,478,Presidente y Síndico
+422,Del Nayar,259,B,166,51,3,171,1,0,0,392,Presidente y Síndico
+423,Del Nayar,259,C,175,24,6,135,1,0,32,373,Presidente y Síndico
+424,Del Nayar,259,E,89,62,9,118,4,0,52,334,Presidente y Síndico
+425,Del Nayar,259,EC,134,55,7,198,9,0,40,443,Presidente y Síndico
+426,Del Nayar,260,B,153,17,0,102,0,0,0,272,Presidente y Síndico
+427,Del Nayar,260,E,90,46,1,20,2,0,0,159,Presidente y Síndico
+428,Del Nayar,261,B,180,38,0,101,6,0,33,358,Presidente y Síndico
+429,Del Nayar,262,B,122,32,7,145,0,0,14,320,Presidente y Síndico
+430,Del Nayar,262,E,126,9,1,64,0,0,10,210,Presidente y Síndico
+431,Del Nayar,263,B,26,9,0,34,19,0,0,88,Presidente y Síndico
+432,Del Nayar,264,B,111,49,0,40,0,0,18,218,Presidente y Síndico
+433,Del Nayar,264,E,44,6,0,23,1,0,1,75,Presidente y Síndico
+434,Del Nayar,265,B,145,10,1,64,0,0,0,220,Presidente y Síndico
+435,Del Nayar,266,B,128,66,0,48,0,0,0,242,Presidente y Síndico
+436,Del Nayar,267,B,224,37,2,92,7,0,60,422,Presidente y Síndico
+437,Del Nayar,267,C,228,45,2,98,3,0,66,442,Presidente y Síndico
+438,Del Nayar,267,E1,138,16,3,32,0,0,0,189,Presidente y Síndico
+439,Del Nayar,267,E2,94,47,0,35,0,0,9,185,Presidente y Síndico
+440,Del Nayar,268,B,122,0,1,125,0,0,5,253,Presidente y Síndico
+441,Del Nayar,268,E1,109,4,0,67,0,0,0,180,Presidente y Síndico
+442,Del Nayar,268,E2,126,3,3,148,3,0,9,292,Presidente y Síndico
+443,Del Nayar,269,B,154,59,4,183,0,0,0,400,Presidente y Síndico
+444,Del Nayar,270,B,224,37,2,121,1,0,102,487,Presidente y Síndico
+445,Del Nayar,270,C,207,34,2,89,13,0,23,368,Presidente y Síndico
+446,Del Nayar,270,E,168,1,3,63,0,0,14,249,Presidente y Síndico
+447,Del Nayar,271,B,141,8,1,75,0,0,9,234,Presidente y Síndico
+448,Del Nayar,271,E1,161,13,2,70,3,0,15,264,Presidente y Síndico
+449,Del Nayar,272,B,210,4,1,212,1,0,15,443,Presidente y Síndico
+450,Del Nayar,273,B,176,4,2,153,0,0,0,335,Presidente y Síndico
+451,Del Nayar,273,E,202,0,2,50,0,0,6,260,Presidente y Síndico
+452,Del Nayar,274,B,219,20,1,240,1,0,41,522,Presidente y Síndico
+453,Del Nayar,275,B,55,3,0,76,0,0,0,134,Presidente y Síndico
+454,Del Nayar,275,E,123,3,0,76,0,0,0,202,Presidente y Síndico
+455,Del Nayar,276,B,153,3,0,135,0,0,7,298,Presidente y Síndico
+456,Del Nayar,276,E1,166,3,0,78,0,0,8,255,Presidente y Síndico
+457,Del Nayar,276,E2,265,3,0,42,1,0,3,314,Presidente y Síndico
+463,Rosamorada,277,B,154,142,3,249,4,0,19,571,Presidente y Síndico
+464,Rosamorada,277,E,39,19,0,42,1,0,1,102,Presidente y Síndico
+465,Rosamorada,278,B,36,38,0,87,4,0,5,170,Presidente y Síndico
+466,Rosamorada,278,E,105,28,1,80,0,0,0,214,Presidente y Síndico
+467,Rosamorada,279,B,44,39,1,72,0,0,0,156,Presidente y Síndico
+468,Rosamorada,280,B,52,56,3,75,3,0,8,197,Presidente y Síndico
+469,Rosamorada,281,B,113,95,10,198,10,0,13,439,Presidente y Síndico
+470,Rosamorada,282,B,119,67,0,212,2,0,10,410,Presidente y Síndico
+471,Rosamorada,283,B,48,196,1,137,0,0,0,382,Presidente y Síndico
+472,Rosamorada,284,B,63,10,0,62,1,0,2,138,Presidente y Síndico
+473,Rosamorada,285,B,113,66,7,78,1,0,16,281,Presidente y Síndico
+474,Rosamorada,286,B,122,89,0,241,0,0,0,452,Presidente y Síndico
+475,Rosamorada,286,E,34,9,0,68,0,0,4,115,Presidente y Síndico
+476,Rosamorada,287,B,85,104,1,182,1,0,0,373,Presidente y Síndico
+477,Rosamorada,288,B,196,76,4,241,2,0,23,542,Presidente y Síndico
+478,Rosamorada,289,B,130,110,2,313,10,0,23,588,Presidente y Síndico
+479,Rosamorada,290,B,112,88,1,245,4,0,17,467,Presidente y Síndico
+480,Rosamorada,291,B,202,77,1,324,2,0,22,628,Presidente y Síndico
+481,Rosamorada,291,E,19,15,2,43,0,0,4,83,Presidente y Síndico
+482,Rosamorada,292,B,82,5,1,98,2,0,0,188,Presidente y Síndico
+483,Rosamorada,292,E,43,5,0,43,0,0,2,93,Presidente y Síndico
+484,Rosamorada,293,B,54,25,1,78,5,1,5,169,Presidente y Síndico
+485,Rosamorada,294,B,40,27,1,54,2,0,3,127,Presidente y Síndico
+486,Rosamorada,295,B,257,82,1,147,0,0,12,499,Presidente y Síndico
+487,Rosamorada,296,B,218,16,0,174,1,0,8,417,Presidente y Síndico
+488,Rosamorada,297,B,103,52,0,182,3,0,0,340,Presidente y Síndico
+489,Rosamorada,298,B,122,22,1,200,11,0,7,363,Presidente y Síndico
+490,Rosamorada,299,B,125,18,2,172,6,1,0,324,Presidente y Síndico
+491,Rosamorada,300,B,154,29,0,189,22,0,15,409,Presidente y Síndico
+492,Rosamorada,301,B,70,39,1,282,2,0,7,401,Presidente y Síndico
+493,Rosamorada,301,C,80,28,0,231,0,0,10,349,Presidente y Síndico
+494,Rosamorada,302,B,122,118,0,320,2,0,0,562,Presidente y Síndico
+495,Rosamorada,303,B,94,59,0,177,1,0,0,331,Presidente y Síndico
+496,Rosamorada,304,B,131,108,0,170,1,0,11,421,Presidente y Síndico
+497,Rosamorada,305,B,100,69,0,102,11,0,39,321,Presidente y Síndico
+498,Rosamorada,306,B,258,153,0,159,12,0,17,599,Presidente y Síndico
+499,Rosamorada,307,B,114,69,0,169,6,0,9,367,Presidente y Síndico
+500,Rosamorada,308,B,157,42,0,186,0,0,7,392,Presidente y Síndico
+501,Rosamorada,309,B,76,221,1,180,2,0,12,492,Presidente y Síndico
+502,Rosamorada,310,B,49,189,0,105,3,0,24,370,Presidente y Síndico
+503,Rosamorada,310,C,49,182,1,108,0,0,15,355,Presidente y Síndico
+504,Rosamorada,311,B,24,204,0,132,6,0,24,390,Presidente y Síndico
+505,Rosamorada,311,C,28,208,1,120,1,1,20,379,Presidente y Síndico
+506,Rosamorada,311,E,18,50,0,95,12,0,10,185,Presidente y Síndico
+507,Rosamorada,312,B,39,168,2,168,8,0,25,410,Presidente y Síndico
+508,Rosamorada,313,B,16,272,1,62,2,0,0,353,Presidente y Síndico
+509,Rosamorada,314,B,102,78,1,182,3,0,14,380,Presidente y Síndico
+510,Rosamorada,315,B,157,124,0,137,1,0,18,437,Presidente y Síndico
+511,Rosamorada,316,B,29,4,1,40,1,0,2,77,Presidente y Síndico
+512,Rosamorada,316,E1,24,29,0,32,2,0,3,90,Presidente y Síndico
+513,Rosamorada,316,E2,4,17,0,27,0,0,2,50,Presidente y Síndico
+514,Rosamorada,317,B,125,17,0,105,2,0,10,259,Presidente y Síndico
+515,Rosamorada,318,B,124,22,0,135,1,0,4,286,Presidente y Síndico
+516,Rosamorada,319,B,53,38,2,61,1,0,46,201,Presidente y Síndico
+522,Ruiz,320,B,203,71,1,187,8,1,10,481,Presidente y Síndico
+523,Ruiz,320,C,214,67,5,176,5,1,13,481,Presidente y Síndico
+524,Ruiz,321,B,259,46,9,255,8,3,16,596,Presidente y Síndico
+525,Ruiz,322,B,294,82,0,207,3,1,14,601,Presidente y Síndico
+526,Ruiz,323,B,173,50,7,117,7,0,16,370,Presidente y Síndico
+527,Ruiz,323,C,154,85,1,136,4,0,24,404,Presidente y Síndico
+528,Ruiz,324,B,233,94,4,181,7,0,21,540,Presidente y Síndico
+529,Ruiz,325,B,101,39,0,168,1,1,6,316,Presidente y Síndico
+530,Ruiz,326,B,136,63,1,249,3,1,8,461,Presidente y Síndico
+531,Ruiz,327,B,208,96,5,164,3,0,20,496,Presidente y Síndico
+532,Ruiz,328,B,278,45,3,239,2,0,12,579,Presidente y Síndico
+533,Ruiz,329,B,231,66,1,223,3,0,11,535,Presidente y Síndico
+534,Ruiz,330,B,112,27,1,144,2,0,1,287,Presidente y Síndico
+535,Ruiz,331,B,196,84,5,187,6,0,17,495,Presidente y Síndico
+536,Ruiz,332,B,14,3,0,84,0,0,0,101,Presidente y Síndico
+537,Ruiz,333,B,129,33,0,131,11,1,18,323,Presidente y Síndico
+538,Ruiz,333,E,176,56,3,125,2,1,10,373,Presidente y Síndico
+539,Ruiz,334,B,59,9,1,50,0,0,5,124,Presidente y Síndico
+540,Ruiz,334,E,31,3,0,64,0,0,6,104,Presidente y Síndico
+541,Ruiz,335,B,34,22,0,42,1,0,12,111,Presidente y Síndico
+542,Ruiz,336,B,155,28,0,66,0,0,13,262,Presidente y Síndico
+543,Ruiz,337,B,157,62,2,168,4,1,20,414,Presidente y Síndico
+544,Ruiz,338,B,166,24,1,116,5,0,12,324,Presidente y Síndico
+545,Ruiz,339,B,42,35,0,39,0,0,4,120,Presidente y Síndico
+546,Ruiz,340,B,48,95,0,73,1,0,8,225,Presidente y Síndico
+547,Ruiz,341,B,181,101,5,84,1,0,10,382,Presidente y Síndico
+548,Ruiz,342,B,91,27,0,84,2,0,8,212,Presidente y Síndico
+549,Ruiz,343,B,184,170,3,170,2,0,15,544,Presidente y Síndico
+550,Ruiz,344,B,30,93,7,163,7,0,13,313,Presidente y Síndico
+551,Ruiz,345,B,91,14,1,142,0,0,5,253,Presidente y Síndico
+552,Ruiz,346,B,18,17,0,87,2,0,8,132,Presidente y Síndico
+553,Ruiz,346,E1,28,47,1,62,2,0,15,155,Presidente y Síndico
+554,Ruiz,346,E2,6,39,0,31,0,0,6,82,Presidente y Síndico
+560,San Blas,347,B,62,28,1,298,117,0,12,518,Presidente y Síndico
+561,San Blas,347,C,94,28,1,258,143,0,10,534,Presidente y Síndico
+562,San Blas,348,B,59,24,1,179,98,0,19,380,Presidente y Síndico
+563,San Blas,348,C,67,12,0,170,133,0,14,396,Presidente y Síndico
+564,San Blas,349,B,123,20,5,300,176,0,0,624,Presidente y Síndico
+565,San Blas,350,B,54,17,3,202,82,0,12,370,Presidente y Síndico
+566,San Blas,350,C,57,21,3,196,82,0,11,370,Presidente y Síndico
+567,San Blas,351,B,116,24,3,202,146,0,27,518,Presidente y Síndico
+568,San Blas,352,B,71,17,3,189,92,0,0,372,Presidente y Síndico
+569,San Blas,352,C,69,15,1,179,84,0,12,360,Presidente y Síndico
+570,San Blas,353,B,163,6,6,117,22,0,9,323,Presidente y Síndico
+571,San Blas,354,B,31,7,14,113,34,0,7,206,Presidente y Síndico
+572,San Blas,355,B,32,0,0,75,57,0,6,170,Presidente y Síndico
+573,San Blas,356,B,214,35,4,173,80,0,26,532,Presidente y Síndico
+574,San Blas,357,B,155,15,6,117,129,0,43,465,Presidente y Síndico
+575,San Blas,358,B,63,4,5,108,28,0,0,208,Presidente y Síndico
+576,San Blas,359,B,51,21,6,164,129,0,38,409,Presidente y Síndico
+577,San Blas,360,B,73,22,1,244,124,0,35,499,Presidente y Síndico
+578,San Blas,361,B,100,29,5,248,140,0,36,558,Presidente y Síndico
+579,San Blas,362,B,31,3,0,138,20,0,5,197,Presidente y Síndico
+580,San Blas,363,B,25,1,2,44,9,0,0,81,Presidente y Síndico
+581,San Blas,364,B,56,5,0,28,13,0,1,103,Presidente y Síndico
+582,San Blas,365,B,21,13,0,93,83,0,21,231,Presidente y Síndico
+583,San Blas,366,B,76,16,3,165,20,0,0,280,Presidente y Síndico
+584,San Blas,367,B,82,8,1,182,52,0,0,325,Presidente y Síndico
+585,San Blas,367,C,70,17,3,201,45,0,0,336,Presidente y Síndico
+586,San Blas,368,B,64,5,5,116,36,0,5,231,Presidente y Síndico
+587,San Blas,369,B,89,8,6,186,43,0,0,332,Presidente y Síndico
+588,San Blas,370,B,77,7,2,106,67,0,0,259,Presidente y Síndico
+589,San Blas,371,B,34,6,1,17,12,0,0,70,Presidente y Síndico
+590,San Blas,372,B,40,4,1,98,7,0,1,151,Presidente y Síndico
+591,San Blas,373,B,68,3,0,147,21,0,0,239,Presidente y Síndico
+592,San Blas,374,B,9,2,0,48,21,0,9,89,Presidente y Síndico
+593,San Blas,375,B,11,5,0,49,33,0,3,101,Presidente y Síndico
+594,San Blas,376,B,55,10,7,166,123,0,25,386,Presidente y Síndico
+595,San Blas,376,C,80,11,4,131,115,0,24,365,Presidente y Síndico
+596,San Blas,377,B,26,2,1,32,15,0,7,83,Presidente y Síndico
+597,San Blas,378,B,38,5,1,79,11,0,6,140,Presidente y Síndico
+598,San Blas,379,B,10,12,1,13,3,0,3,42,Presidente y Síndico
+599,San Blas,380,B,31,1,2,65,15,0,3,117,Presidente y Síndico
+600,San Blas,381,B,12,5,0,38,50,0,2,107,Presidente y Síndico
+601,San Blas,382,B,116,28,1,141,45,0,41,372,Presidente y Síndico
+602,San Blas,382,C,117,25,2,127,27,0,18,316,Presidente y Síndico
+603,San Blas,383,B,141,36,6,176,127,0,27,513,Presidente y Síndico
+604,San Blas,384,B,89,5,0,117,26,0,16,253,Presidente y Síndico
+605,San Blas,385,B,64,17,5,211,152,0,0,449,Presidente y Síndico
+606,San Blas,386,B,114,10,4,124,95,0,17,364,Presidente y Síndico
+607,San Blas,386,C,108,9,5,133,83,0,0,338,Presidente y Síndico
+608,San Blas,387,B,76,48,2,133,23,0,17,299,Presidente y Síndico
+609,San Blas,387,C,72,43,2,123,16,0,36,292,Presidente y Síndico
+610,San Blas,388,B,112,49,2,166,26,0,25,380,Presidente y Síndico
+611,San Blas,389,B,111,52,3,150,24,0,21,361,Presidente y Síndico
+612,San Blas,390,B,88,42,2,140,9,3,22,306,Presidente y Síndico
+613,San Blas,390,C,85,46,3,134,9,0,31,308,Presidente y Síndico
+614,San Blas,391,B,91,4,0,53,6,0,11,165,Presidente y Síndico
+615,San Blas,392,B,171,7,3,214,85,0,18,498,Presidente y Síndico
+616,San Blas,393,B,88,4,0,106,66,0,17,281,Presidente y Síndico
+617,San Blas,394,B,45,16,3,80,7,0,11,162,Presidente y Síndico
+618,San Blas,395,B,194,14,5,275,52,0,30,570,Presidente y Síndico
+619,San Blas,396,B,62,1,0,64,10,0,3,140,Presidente y Síndico
+620,San Blas,397,B,11,2,2,38,10,0,1,64,Presidente y Síndico
+626,San Pedro Lagunillas,398,B,157,145,1,217,15,0,33,568,Presidente y Síndico
+627,San Pedro Lagunillas,399,B,188,132,1,203,19,1,23,567,Presidente y Síndico
+628,San Pedro Lagunillas,400,B,124,104,0,224,24,0,13,489,Presidente y Síndico
+629,San Pedro Lagunillas,401,B,132,222,0,155,7,0,13,529,Presidente y Síndico
+630,San Pedro Lagunillas,402,B,15,5,0,129,2,0,3,154,Presidente y Síndico
+631,San Pedro Lagunillas,403,B,61,44,1,74,3,0,6,189,Presidente y Síndico
+632,San Pedro Lagunillas,404,B,47,18,2,89,4,0,6,166,Presidente y Síndico
+633,San Pedro Lagunillas,404,E,18,25,1,26,2,0,1,73,Presidente y Síndico
+634,San Pedro Lagunillas,405,B,39,8,0,38,0,0,2,87,Presidente y Síndico
+635,San Pedro Lagunillas,406,B,203,13,1,103,1,0,30,351,Presidente y Síndico
+636,San Pedro Lagunillas,407,B,96,11,0,66,0,0,5,178,Presidente y Síndico
+637,San Pedro Lagunillas,408,B,215,33,0,75,1,0,0,324,Presidente y Síndico
+638,San Pedro Lagunillas,409,B,131,13,0,107,4,1,8,264,Presidente y Síndico
+639,San Pedro Lagunillas,410,B,153,91,2,156,30,0,45,477,Presidente y Síndico
+645,Santa María del Oro,411,B,113,62,2,252,1,0,16,446,Presidente y Síndico
+646,Santa María del Oro,411,C,119,44,2,255,5,0,24,449,Presidente y Síndico
+647,Santa María del Oro,411,E,10,11,0,70,0,0,1,92,Presidente y Síndico
+648,Santa María del Oro,412,B,191,64,2,404,0,0,30,691,Presidente y Síndico
+649,Santa María del Oro,412,C,183,78,1,377,0,0,19,658,Presidente y Síndico
+650,Santa María del Oro,413,B,32,9,0,94,0,0,22,157,Presidente y Síndico
+651,Santa María del Oro,414,B,71,23,0,149,4,0,14,261,Presidente y Síndico
+652,Santa María del Oro,414,E,39,17,0,149,1,0,13,219,Presidente y Síndico
+653,Santa María del Oro,415,B,94,48,0,327,1,0,27,497,Presidente y Síndico
+654,Santa María del Oro,416,B,153,8,2,227,0,0,0,390,Presidente y Síndico
+655,Santa María del Oro,416,C,150,8,0,230,2,0,0,390,Presidente y Síndico
+656,Santa María del Oro,417,B,63,4,1,51,0,0,0,119,Presidente y Síndico
+657,Santa María del Oro,417,E,14,9,1,82,0,0,7,113,Presidente y Síndico
+658,Santa María del Oro,418,B,64,14,4,178,1,0,25,286,Presidente y Síndico
+659,Santa María del Oro,419,B,115,29,0,227,0,0,13,384,Presidente y Síndico
+660,Santa María del Oro,420,B,23,26,1,203,1,0,18,272,Presidente y Síndico
+661,Santa María del Oro,421,B,57,16,3,464,4,0,37,581,Presidente y Síndico
+662,Santa María del Oro,421,C,50,19,1,481,4,0,35,590,Presidente y Síndico
+663,Santa María del Oro,422,B,115,15,0,289,0,0,18,437,Presidente y Síndico
+664,Santa María del Oro,422,E,7,9,1,61,0,0,0,78,Presidente y Síndico
+665,Santa María del Oro,423,B,110,6,0,243,1,0,9,369,Presidente y Síndico
+666,Santa María del Oro,423,E,19,9,0,123,0,0,0,151,Presidente y Síndico
+667,Santa María del Oro,424,B,40,1,1,116,2,0,7,167,Presidente y Síndico
+668,Santa María del Oro,424,E,8,3,0,88,0,0,2,101,Presidente y Síndico
+669,Santa María del Oro,425,B,55,44,0,260,4,0,22,385,Presidente y Síndico
+670,Santa María del Oro,426,B,23,3,0,131,0,0,4,161,Presidente y Síndico
+671,Santa María del Oro,427,B,177,20,1,424,0,0,31,653,Presidente y Síndico
+672,Santa María del Oro,428,B,40,1,0,55,1,0,14,111,Presidente y Síndico
+673,Santa María del Oro,429,B,107,11,3,483,6,1,24,635,Presidente y Síndico
+674,Santa María del Oro,430,B,62,32,2,238,0,0,22,356,Presidente y Síndico
+675,Santa María del Oro,431,B,72,28,2,263,2,0,21,388,Presidente y Síndico
+676,Santa María del Oro,432,B,44,10,1,35,1,0,2,93,Presidente y Síndico
+677,Santa María del Oro,433,B,173,17,2,285,1,0,0,478,Presidente y Síndico
+678,Santa María del Oro,433,C,155,22,2,276,6,0,26,487,Presidente y Síndico
+679,Santa María del Oro,434,B,16,1,0,56,0,0,6,79,Presidente y Síndico
+685,Santiago Ixcuintla,435,B,72,200,2,160,6,0,27,467,Presidente y Síndico
+686,Santiago Ixcuintla,436,B,41,127,1,145,10,0,5,329,Presidente y Síndico
+687,Santiago Ixcuintla,436,C,39,150,0,146,9,0,0,344,Presidente y Síndico
+688,Santiago Ixcuintla,437,B,107,222,3,101,6,0,0,439,Presidente y Síndico
+689,Santiago Ixcuintla,437,C,102,209,1,214,5,0,20,551,Presidente y Síndico
+690,Santiago Ixcuintla,438,B,70,240,1,193,10,0,15,529,Presidente y Síndico
+691,Santiago Ixcuintla,439,B,87,99,0,98,3,0,4,291,Presidente y Síndico
+692,Santiago Ixcuintla,440,B,67,129,0,149,18,0,3,366,Presidente y Síndico
+693,Santiago Ixcuintla,441,B,91,252,1,153,6,0,20,523,Presidente y Síndico
+694,Santiago Ixcuintla,442,B,52,123,0,111,10,0,0,296,Presidente y Síndico
+695,Santiago Ixcuintla,442,C,51,158,0,109,5,0,0,323,Presidente y Síndico
+696,Santiago Ixcuintla,443,B,59,192,3,167,8,0,7,436,Presidente y Síndico
+697,Santiago Ixcuintla,444,B,52,94,1,104,2,0,5,258,Presidente y Síndico
+698,Santiago Ixcuintla,445,B,22,71,2,109,4,0,6,214,Presidente y Síndico
+699,Santiago Ixcuintla,446,B,43,146,1,170,15,0,2,377,Presidente y Síndico
+700,Santiago Ixcuintla,447,B,52,205,3,243,20,0,19,542,Presidente y Síndico
+701,Santiago Ixcuintla,448,B,50,185,1,188,9,0,11,444,Presidente y Síndico
+702,Santiago Ixcuintla,449,B,36,63,0,79,2,0,2,182,Presidente y Síndico
+703,Santiago Ixcuintla,450,B,37,159,8,154,3,0,10,371,Presidente y Síndico
+704,Santiago Ixcuintla,451,B,60,133,10,123,5,0,16,347,Presidente y Síndico
+705,Santiago Ixcuintla,451,C,46,127,2,137,3,0,0,315,Presidente y Síndico
+706,Santiago Ixcuintla,452,B,26,91,2,153,5,0,5,282,Presidente y Síndico
+707,Santiago Ixcuintla,453,B,15,80,0,78,9,0,6,188,Presidente y Síndico
+708,Santiago Ixcuintla,454,B,16,77,0,64,2,0,3,162,Presidente y Síndico
+709,Santiago Ixcuintla,455,B,24,158,1,101,9,0,13,306,Presidente y Síndico
+710,Santiago Ixcuintla,456,B,18,109,1,97,2,0,9,236,Presidente y Síndico
+711,Santiago Ixcuintla,457,B,185,18,1,194,2,0,0,400,Presidente y Síndico
+712,Santiago Ixcuintla,457,C,159,23,1,200,0,0,4,387,Presidente y Síndico
+713,Santiago Ixcuintla,458,B,155,243,0,164,7,0,8,577,Presidente y Síndico
+714,Santiago Ixcuintla,459,B,95,94,1,191,0,0,0,381,Presidente y Síndico
+715,Santiago Ixcuintla,459,C,123,101,0,152,0,0,20,396,Presidente y Síndico
+716,Santiago Ixcuintla,460,B,103,232,2,207,3,0,34,581,Presidente y Síndico
+717,Santiago Ixcuintla,460,E1,18,47,0,27,1,0,6,99,Presidente y Síndico
+718,Santiago Ixcuintla,460,E2,6,28,0,12,1,0,0,47,Presidente y Síndico
+719,Santiago Ixcuintla,461,B,168,83,4,155,3,0,11,424,Presidente y Síndico
+720,Santiago Ixcuintla,462,B,28,41,1,52,1,0,7,130,Presidente y Síndico
+721,Santiago Ixcuintla,463,B,68,140,1,266,4,0,21,500,Presidente y Síndico
+722,Santiago Ixcuintla,464,B,49,143,1,114,3,0,12,322,Presidente y Síndico
+723,Santiago Ixcuintla,465,B,166,137,6,223,1,0,0,533,Presidente y Síndico
+724,Santiago Ixcuintla,466,B,141,114,6,194,3,0,31,489,Presidente y Síndico
+725,Santiago Ixcuintla,467,B,16,127,0,52,1,0,11,207,Presidente y Síndico
+726,Santiago Ixcuintla,468,B,34,128,0,131,4,0,23,320,Presidente y Síndico
+727,Santiago Ixcuintla,469,B,34,134,6,138,14,0,12,338,Presidente y Síndico
+728,Santiago Ixcuintla,470,B,107,150,10,147,13,0,24,451,Presidente y Síndico
+729,Santiago Ixcuintla,471,B,9,167,7,115,2,0,0,300,Presidente y Síndico
+730,Santiago Ixcuintla,472,B,28,221,10,163,1,0,16,439,Presidente y Síndico
+731,Santiago Ixcuintla,473,B,22,202,15,127,1,0,11,378,Presidente y Síndico
+732,Santiago Ixcuintla,474,B,40,255,17,147,3,0,12,474,Presidente y Síndico
+733,Santiago Ixcuintla,475,B,60,91,2,95,1,0,0,249,Presidente y Síndico
+734,Santiago Ixcuintla,476,B,17,99,1,100,1,0,5,223,Presidente y Síndico
+735,Santiago Ixcuintla,477,B,24,88,1,80,1,0,21,215,Presidente y Síndico
+736,Santiago Ixcuintla,478,B,24,68,0,113,1,0,9,215,Presidente y Síndico
+737,Santiago Ixcuintla,478,E,3,63,1,27,0,0,2,96,Presidente y Síndico
+738,Santiago Ixcuintla,479,B,13,10,1,37,1,0,0,62,Presidente y Síndico
+739,Santiago Ixcuintla,480,B,17,66,1,33,2,0,0,119,Presidente y Síndico
+740,Santiago Ixcuintla,480,E1,7,60,2,40,0,0,0,109,Presidente y Síndico
+741,Santiago Ixcuintla,480,E2,3,43,0,21,1,0,2,70,Presidente y Síndico
+742,Santiago Ixcuintla,481,B,4,47,0,64,0,0,4,119,Presidente y Síndico
+743,Santiago Ixcuintla,482,B,40,109,2,122,3,0,13,289,Presidente y Síndico
+744,Santiago Ixcuintla,482,C,33,121,1,136,4,0,0,295,Presidente y Síndico
+745,Santiago Ixcuintla,483,B,36,130,0,160,0,0,0,326,Presidente y Síndico
+746,Santiago Ixcuintla,483,C,35,141,3,142,2,0,0,323,Presidente y Síndico
+747,Santiago Ixcuintla,484,B,61,202,1,244,5,0,0,513,Presidente y Síndico
+748,Santiago Ixcuintla,485,B,33,140,4,277,4,0,9,467,Presidente y Síndico
+749,Santiago Ixcuintla,486,B,5,65,1,109,3,1,7,191,Presidente y Síndico
+750,Santiago Ixcuintla,487,B,56,154,1,163,3,0,0,377,Presidente y Síndico
+751,Santiago Ixcuintla,487,E1,59,62,0,64,1,0,3,189,Presidente y Síndico
+752,Santiago Ixcuintla,487,E2,17,19,0,14,2,0,6,58,Presidente y Síndico
+753,Santiago Ixcuintla,488,B,29,200,1,209,1,0,18,458,Presidente y Síndico
+754,Santiago Ixcuintla,489,B,44,180,2,101,7,0,11,345,Presidente y Síndico
+755,Santiago Ixcuintla,489,E,20,33,1,44,0,0,6,104,Presidente y Síndico
+756,Santiago Ixcuintla,490,B,36,199,1,91,6,0,11,344,Presidente y Síndico
+757,Santiago Ixcuintla,491,B,100,71,0,117,2,0,14,304,Presidente y Síndico
+758,Santiago Ixcuintla,492,B,16,100,0,90,2,0,15,223,Presidente y Síndico
+759,Santiago Ixcuintla,493,B,89,265,5,178,1,0,25,563,Presidente y Síndico
+760,Santiago Ixcuintla,494,B,47,123,1,124,7,0,13,315,Presidente y Síndico
+761,Santiago Ixcuintla,495,B,58,166,2,142,5,0,17,390,Presidente y Síndico
+762,Santiago Ixcuintla,496,B,98,122,4,112,3,0,0,339,Presidente y Síndico
+763,Santiago Ixcuintla,497,B,68,262,6,180,4,0,36,556,Presidente y Síndico
+764,Santiago Ixcuintla,498,B,54,206,6,197,2,0,0,465,Presidente y Síndico
+765,Santiago Ixcuintla,499,B,14,92,0,76,1,0,5,188,Presidente y Síndico
+766,Santiago Ixcuintla,500,B,21,140,2,81,2,0,9,255,Presidente y Síndico
+767,Santiago Ixcuintla,501,B,26,174,3,98,12,0,0,313,Presidente y Síndico
+768,Santiago Ixcuintla,502,B,59,261,1,125,10,2,17,475,Presidente y Síndico
+769,Santiago Ixcuintla,503,B,32,142,1,79,6,0,16,276,Presidente y Síndico
+770,Santiago Ixcuintla,503,C,30,153,3,90,4,0,10,290,Presidente y Síndico
+771,Santiago Ixcuintla,504,B,50,194,1,128,5,0,10,388,Presidente y Síndico
+772,Santiago Ixcuintla,505,B,32,123,2,139,4,0,0,300,Presidente y Síndico
+773,Santiago Ixcuintla,505,C,49,89,2,138,0,0,11,289,Presidente y Síndico
+774,Santiago Ixcuintla,506,B,18,107,0,139,1,0,18,283,Presidente y Síndico
+775,Santiago Ixcuintla,507,B,33,176,2,205,4,0,0,420,Presidente y Síndico
+776,Santiago Ixcuintla,508,B,163,144,4,163,2,0,6,482,Presidente y Síndico
+777,Santiago Ixcuintla,508,C,28,126,1,156,2,0,20,333,Presidente y Síndico
+778,Santiago Ixcuintla,509,B,28,102,3,113,2,0,12,260,Presidente y Síndico
+779,Santiago Ixcuintla,510,B,18,100,1,122,2,0,13,256,Presidente y Síndico
+780,Santiago Ixcuintla,511,B,32,105,1,147,1,0,6,292,Presidente y Síndico
+781,Santiago Ixcuintla,511,C,69,39,0,156,3,0,11,278,Presidente y Síndico
+782,Santiago Ixcuintla,512,B,82,100,2,242,2,0,12,440,Presidente y Síndico
+783,Santiago Ixcuintla,513,B,63,102,1,186,8,0,17,377,Presidente y Síndico
+784,Santiago Ixcuintla,514,B,3,23,0,119,0,0,4,149,Presidente y Síndico
+785,Santiago Ixcuintla,514,E,8,9,0,31,0,0,0,48,Presidente y Síndico
+786,Santiago Ixcuintla,515,B,28,145,0,120,6,0,0,299,Presidente y Síndico
+787,Santiago Ixcuintla,516,B,18,150,0,179,1,0,6,354,Presidente y Síndico
+788,Santiago Ixcuintla,517,B,14,111,1,128,1,0,9,264,Presidente y Síndico
+789,Santiago Ixcuintla,518,B,15,19,1,67,0,0,0,102,Presidente y Síndico
+790,Santiago Ixcuintla,519,B,21,111,1,93,0,0,9,235,Presidente y Síndico
+791,Santiago Ixcuintla,520,B,48,121,1,230,2,0,6,408,Presidente y Síndico
+792,Santiago Ixcuintla,521,B,13,168,0,145,4,0,27,357,Presidente y Síndico
+793,Santiago Ixcuintla,522,B,21,281,1,133,10,0,0,446,Presidente y Síndico
+794,Santiago Ixcuintla,523,B,20,311,4,237,3,0,30,605,Presidente y Síndico
+795,Santiago Ixcuintla,524,B,14,211,0,118,3,0,21,367,Presidente y Síndico
+796,Santiago Ixcuintla,525,B,13,140,1,102,1,0,11,268,Presidente y Síndico
+797,Santiago Ixcuintla,526,B,20,339,0,183,6,0,16,564,Presidente y Síndico
+798,Santiago Ixcuintla,527,B,12,245,0,152,6,0,16,431,Presidente y Síndico
+799,Santiago Ixcuintla,528,B,29,168,1,93,4,0,23,318,Presidente y Síndico
+800,Santiago Ixcuintla,528,C,18,182,0,96,7,0,20,323,Presidente y Síndico
+801,Santiago Ixcuintla,529,B,15,192,1,95,1,0,0,304,Presidente y Síndico
+802,Santiago Ixcuintla,530,B,13,189,2,119,0,0,17,340,Presidente y Síndico
+803,Santiago Ixcuintla,531,B,19,245,2,252,3,0,30,551,Presidente y Síndico
+804,Santiago Ixcuintla,532,B,21,184,1,144,2,0,12,364,Presidente y Síndico
+805,Santiago Ixcuintla,532,C,20,173,2,154,5,1,15,370,Presidente y Síndico
+806,Santiago Ixcuintla,533,B,7,51,0,22,0,0,2,82,Presidente y Síndico
+807,Santiago Ixcuintla,534,B,71,77,0,95,8,0,9,260,Presidente y Síndico
+808,Santiago Ixcuintla,535,B,68,129,2,105,11,0,0,315,Presidente y Síndico
+809,Santiago Ixcuintla,536,B,28,136,2,119,3,0,10,298,Presidente y Síndico
+810,Santiago Ixcuintla,537,B,70,171,0,133,4,0,25,403,Presidente y Síndico
+811,Santiago Ixcuintla,538,B,54,165,1,135,4,0,22,381,Presidente y Síndico
+812,Santiago Ixcuintla,539,B,21,216,0,128,4,0,0,369,Presidente y Síndico
+813,Santiago Ixcuintla,540,B,39,201,0,178,2,0,0,420,Presidente y Síndico
+814,Santiago Ixcuintla,541,B,69,239,0,171,8,0,23,510,Presidente y Síndico
+815,Santiago Ixcuintla,542,B,86,223,1,180,6,0,29,525,Presidente y Síndico
+816,Santiago Ixcuintla,542,E,8,47,0,65,0,0,3,123,Presidente y Síndico
+817,Santiago Ixcuintla,543,B,16,213,1,138,1,0,21,390,Presidente y Síndico
+818,Santiago Ixcuintla,543,C,10,221,4,125,2,0,11,373,Presidente y Síndico
+819,Santiago Ixcuintla,544,B,17,162,1,106,0,0,0,286,Presidente y Síndico
+820,Santiago Ixcuintla,545,B,93,77,5,119,2,0,18,314,Presidente y Síndico
+821,Santiago Ixcuintla,545,C,94,101,0,83,2,0,20,300,Presidente y Síndico
+822,Santiago Ixcuintla,546,B,106,100,2,152,0,0,15,375,Presidente y Síndico
+823,Santiago Ixcuintla,546,E,26,84,2,46,1,0,6,165,Presidente y Síndico
+829,Tecuala,547,B,24,97,3,149,90,0,14,377,Presidente y Síndico
+830,Tecuala,548,B,59,90,3,209,128,0,9,498,Presidente y Síndico
+831,Tecuala,549,B,54,113,0,187,90,0,16,460,Presidente y Síndico
+832,Tecuala,550,B,36,69,0,207,58,0,6,376,Presidente y Síndico
+833,Tecuala,550,C,29,77,3,193,52,0,12,366,Presidente y Síndico
+834,Tecuala,550,E,9,65,1,99,39,0,9,222,Presidente y Síndico
+835,Tecuala,551,B,47,103,1,248,67,0,18,484,Presidente y Síndico
+836,Tecuala,552,B,34,109,2,175,107,0,12,439,Presidente y Síndico
+837,Tecuala,553,B,34,89,3,116,93,0,17,352,Presidente y Síndico
+838,Tecuala,554,B,57,90,0,141,132,0,4,424,Presidente y Síndico
+839,Tecuala,555,B,41,53,0,155,96,0,17,362,Presidente y Síndico
+840,Tecuala,556,B,26,56,0,81,49,0,5,217,Presidente y Síndico
+841,Tecuala,557,B,18,40,0,94,37,0,3,192,Presidente y Síndico
+842,Tecuala,558,B,36,44,0,129,54,0,15,278,Presidente y Síndico
+843,Tecuala,559,B,59,37,0,167,51,1,26,341,Presidente y Síndico
+844,Tecuala,560,B,52,44,1,127,35,0,6,265,Presidente y Síndico
+845,Tecuala,561,B,54,51,1,114,76,0,7,303,Presidente y Síndico
+846,Tecuala,562,B,45,104,3,118,131,0,17,418,Presidente y Síndico
+847,Tecuala,563,B,41,76,1,191,75,0,51,435,Presidente y Síndico
+848,Tecuala,564,B,33,87,1,224,150,0,31,526,Presidente y Síndico
+849,Tecuala,565,B,2,12,2,60,33,0,0,109,Presidente y Síndico
+850,Tecuala,566,B,0,51,0,53,7,0,1,112,Presidente y Síndico
+851,Tecuala,567,B,99,76,2,140,157,0,55,529,Presidente y Síndico
+852,Tecuala,567,E,4,9,1,20,39,0,5,78,Presidente y Síndico
+853,Tecuala,568,B,49,93,2,224,107,0,17,492,Presidente y Síndico
+854,Tecuala,569,B,4,68,0,104,81,0,6,263,Presidente y Síndico
+855,Tecuala,570,B,38,84,1,176,44,0,31,374,Presidente y Síndico
+856,Tecuala,570,C,38,73,2,157,40,0,5,315,Presidente y Síndico
+857,Tecuala,571,B,167,122,7,140,63,0,23,522,Presidente y Síndico
+858,Tecuala,572,B,134,72,1,150,51,1,33,442,Presidente y Síndico
+859,Tecuala,573,B,143,82,2,199,86,0,23,535,Presidente y Síndico
+860,Tecuala,574,B,141,73,0,143,54,0,14,425,Presidente y Síndico
+861,Tecuala,575,B,160,99,3,207,70,0,26,565,Presidente y Síndico
+862,Tecuala,576,B,145,88,2,142,86,0,29,492,Presidente y Síndico
+863,Tecuala,577,B,21,51,3,224,66,0,13,378,Presidente y Síndico
+864,Tecuala,578,B,32,70,0,369,73,0,24,568,Presidente y Síndico
+865,Tecuala,579,B,8,124,0,34,262,0,29,457,Presidente y Síndico
+866,Tecuala,580,B,63,218,1,121,102,0,24,529,Presidente y Síndico
+867,Tecuala,581,B,70,72,4,67,160,0,11,384,Presidente y Síndico
+868,Tecuala,582,B,19,93,3,135,78,0,0,328,Presidente y Síndico
+869,Tecuala,582,C,13,78,3,131,105,0,12,342,Presidente y Síndico
+870,Tecuala,583,B,33,296,2,182,41,0,11,565,Presidente y Síndico
+871,Tecuala,584,B,43,243,0,160,61,0,9,516,Presidente y Síndico
+872,Tecuala,585,B,40,124,1,124,29,0,14,332,Presidente y Síndico
+873,Tecuala,586,B,29,162,1,170,36,0,0,398,Presidente y Síndico
+874,Tecuala,587,B,63,108,3,251,21,0,29,475,Presidente y Síndico
+875,Tecuala,588,B,83,57,2,135,24,0,25,326,Presidente y Síndico
+876,Tecuala,588,C,103,53,1,143,22,0,14,336,Presidente y Síndico
+877,Tecuala,589,B,21,39,1,97,4,0,20,182,Presidente y Síndico
+878,Tecuala,590,B,24,6,0,54,4,0,0,88,Presidente y Síndico
+879,Tecuala,590,E,4,15,0,50,1,0,0,70,Presidente y Síndico
+880,Tecuala,591,B,183,61,4,188,39,2,34,511,Presidente y Síndico
+881,Tecuala,592,B,21,40,15,82,26,0,16,200,Presidente y Síndico
+882,Tecuala,593,B,38,15,14,90,83,0,9,249,Presidente y Síndico
+883,Tecuala,594,B,8,66,2,56,81,0,20,233,Presidente y Síndico
+884,Tecuala,595,B,69,28,0,91,48,0,13,249,Presidente y Síndico
+885,Tecuala,596,B,43,28,3,94,26,0,10,204,Presidente y Síndico
+891,Tepic,597,B,236,106,4,159,16,0,13,534,Presidente y Síndico
+892,Tepic,598,B,158,86,3,222,23,0,20,512,Presidente y Síndico
+893,Tepic,598,C1,153,103,7,242,21,1,11,538,Presidente y Síndico
+894,Tepic,598,C2,168,99,4,229,16,0,6,522,Presidente y Síndico
+895,Tepic,598,C3,156,76,3,209,20,1,17,482,Presidente y Síndico
+896,Tepic,599,B,90,35,3,284,8,2,4,426,Presidente y Síndico
+897,Tepic,600,B,108,27,2,169,19,0,13,338,Presidente y Síndico
+898,Tepic,600,C,106,43,2,173,24,0,10,358,Presidente y Síndico
+899,Tepic,601,B,167,51,2,172,19,0,4,415,Presidente y Síndico
+900,Tepic,601,C1,181,50,2,180,13,0,10,436,Presidente y Síndico
+901,Tepic,601,C2,139,45,3,191,14,2,7,401,Presidente y Síndico
+902,Tepic,602,B,210,51,5,184,15,1,13,479,Presidente y Síndico
+903,Tepic,602,C,196,72,2,165,9,0,12,456,Presidente y Síndico
+904,Tepic,603,B,115,36,2,170,25,0,5,353,Presidente y Síndico
+905,Tepic,603,C,126,37,2,143,14,0,4,326,Presidente y Síndico
+906,Tepic,604,B,110,49,0,149,3,0,11,322,Presidente y Síndico
+907,Tepic,604,C,90,38,3,181,11,2,7,332,Presidente y Síndico
+908,Tepic,605,B,112,55,2,167,8,0,9,353,Presidente y Síndico
+909,Tepic,605,C,119,35,4,186,12,1,9,366,Presidente y Síndico
+910,Tepic,606,B,144,50,7,170,11,0,1,383,Presidente y Síndico
+911,Tepic,606,C,140,49,4,179,7,0,15,394,Presidente y Síndico
+912,Tepic,607,B,158,70,4,245,14,0,17,508,Presidente y Síndico
+913,Tepic,607,C1,148,83,7,226,20,0,17,501,Presidente y Síndico
+914,Tepic,607,C2,158,74,3,255,20,0,14,524,Presidente y Síndico
+915,Tepic,608,B,156,71,5,184,20,2,19,457,Presidente y Síndico
+916,Tepic,608,C,134,77,2,205,19,0,19,456,Presidente y Síndico
+917,Tepic,608,E,106,72,4,168,23,2,16,391,Presidente y Síndico
+918,Tepic,609,B,114,81,1,257,22,0,13,488,Presidente y Síndico
+919,Tepic,609,C,160,88,2,238,17,2,17,524,Presidente y Síndico
+920,Tepic,609,E1,222,65,5,248,45,0,23,608,Presidente y Síndico
+921,Tepic,609,E1C1,190,105,6,248,36,0,15,600,Presidente y Síndico
+922,Tepic,609,E1C2,211,88,5,228,26,0,0,558,Presidente y Síndico
+923,Tepic,609,E1C3,183,81,11,231,48,1,20,575,Presidente y Síndico
+924,Tepic,609,E2,107,43,2,185,19,1,12,369,Presidente y Síndico
+925,Tepic,609,E2C1,152,54,3,159,16,0,7,391,Presidente y Síndico
+926,Tepic,609,E3,236,82,9,268,12,0,12,619,Presidente y Síndico
+927,Tepic,609,E3C1,212,91,3,247,31,0,11,595,Presidente y Síndico
+928,Tepic,609,E3C2,196,74,6,283,18,2,15,594,Presidente y Síndico
+929,Tepic,610,B,285,69,6,227,10,0,7,604,Presidente y Síndico
+930,Tepic,610,C,313,55,7,213,13,0,10,611,Presidente y Síndico
+931,Tepic,611,B,205,85,5,213,29,0,8,545,Presidente y Síndico
+932,Tepic,611,C1,184,89,5,192,36,0,16,522,Presidente y Síndico
+933,Tepic,611,C2,191,56,4,226,17,0,14,508,Presidente y Síndico
+934,Tepic,611,C3,200,82,3,203,34,2,10,534,Presidente y Síndico
+935,Tepic,611,C4,192,70,4,237,29,2,9,543,Presidente y Síndico
+936,Tepic,611,C5,184,63,4,264,33,0,16,564,Presidente y Síndico
+937,Tepic,611,E1,136,86,3,185,31,1,12,454,Presidente y Síndico
+938,Tepic,611,E1C1,134,84,3,180,24,0,11,436,Presidente y Síndico
+939,Tepic,611,E1C2,180,58,7,165,32,0,14,456,Presidente y Síndico
+940,Tepic,612,B,305,72,7,276,27,0,11,698,Presidente y Síndico
+941,Tepic,612,C,299,64,5,235,27,2,15,647,Presidente y Síndico
+942,Tepic,613,B,243,69,4,217,20,1,10,564,Presidente y Síndico
+943,Tepic,613,C,249,65,2,196,20,0,8,540,Presidente y Síndico
+944,Tepic,614,B,260,76,0,204,9,0,11,560,Presidente y Síndico
+945,Tepic,615,B,235,100,4,249,24,0,13,625,Presidente y Síndico
+946,Tepic,616,B,171,60,4,159,7,1,9,411,Presidente y Síndico
+947,Tepic,616,C,160,80,0,172,12,2,5,431,Presidente y Síndico
+948,Tepic,617,B,175,64,2,174,16,0,7,438,Presidente y Síndico
+949,Tepic,617,C,170,58,0,172,16,2,3,421,Presidente y Síndico
+950,Tepic,618,B,143,63,5,151,17,1,6,386,Presidente y Síndico
+951,Tepic,619,B,176,57,1,205,15,1,6,461,Presidente y Síndico
+952,Tepic,620,B,221,49,5,213,19,0,6,513,Presidente y Síndico
+953,Tepic,621,B,133,39,4,133,8,0,10,327,Presidente y Síndico
+954,Tepic,621,C,134,31,1,152,7,0,9,334,Presidente y Síndico
+955,Tepic,622,B,218,72,4,196,8,0,14,512,Presidente y Síndico
+956,Tepic,623,B,132,50,2,163,8,0,5,360,Presidente y Síndico
+957,Tepic,623,C,115,41,3,181,15,0,9,364,Presidente y Síndico
+958,Tepic,624,B,145,43,4,296,18,0,16,522,Presidente y Síndico
+959,Tepic,625,B,150,46,1,201,12,0,5,415,Presidente y Síndico
+960,Tepic,626,B,176,48,3,187,16,1,9,440,Presidente y Síndico
+961,Tepic,626,C,188,47,3,192,21,1,10,462,Presidente y Síndico
+962,Tepic,627,B,165,35,3,169,16,1,9,398,Presidente y Síndico
+963,Tepic,627,C,169,38,5,151,14,1,9,387,Presidente y Síndico
+964,Tepic,628,B,139,34,6,140,11,0,4,334,Presidente y Síndico
+965,Tepic,628,C,127,25,2,131,16,0,11,312,Presidente y Síndico
+966,Tepic,629,B,122,21,1,142,11,0,9,306,Presidente y Síndico
+967,Tepic,629,C,116,22,2,151,14,1,12,318,Presidente y Síndico
+968,Tepic,630,B,165,68,4,226,18,2,12,495,Presidente y Síndico
+969,Tepic,630,C,150,58,1,243,12,0,5,469,Presidente y Síndico
+970,Tepic,631,B,213,59,1,239,13,1,10,536,Presidente y Síndico
+971,Tepic,631,C,206,80,3,209,16,0,11,525,Presidente y Síndico
+972,Tepic,632,B,162,68,3,199,21,0,7,460,Presidente y Síndico
+973,Tepic,632,C,166,63,4,161,22,0,14,430,Presidente y Síndico
+974,Tepic,633,B,262,71,2,197,14,0,17,563,Presidente y Síndico
+975,Tepic,633,C,236,79,6,221,21,0,7,570,Presidente y Síndico
+976,Tepic,633,E,203,55,2,191,13,0,5,469,Presidente y Síndico
+977,Tepic,633,EC1,185,49,7,276,15,0,8,540,Presidente y Síndico
+978,Tepic,633,EC2,168,60,2,195,14,0,3,442,Presidente y Síndico
+979,Tepic,634,B,273,79,1,205,21,0,11,590,Presidente y Síndico
+980,Tepic,634,C1,272,67,4,202,16,0,16,577,Presidente y Síndico
+981,Tepic,634,C2,279,59,6,206,10,0,9,569,Presidente y Síndico
+982,Tepic,634,E,259,64,2,208,15,0,4,552,Presidente y Síndico
+983,Tepic,635,B,259,82,2,242,20,0,12,617,Presidente y Síndico
+984,Tepic,635,C,250,74,9,243,23,0,5,604,Presidente y Síndico
+985,Tepic,636,B,177,38,2,168,16,0,12,413,Presidente y Síndico
+986,Tepic,637,B,189,70,7,210,22,0,12,510,Presidente y Síndico
+987,Tepic,638,B,149,37,4,204,16,0,13,423,Presidente y Síndico
+988,Tepic,639,B,180,52,3,227,14,1,13,490,Presidente y Síndico
+989,Tepic,640,B,139,31,3,142,16,1,2,334,Presidente y Síndico
+990,Tepic,640,C,149,28,3,145,18,0,5,348,Presidente y Síndico
+991,Tepic,641,B,167,42,2,162,16,1,5,395,Presidente y Síndico
+992,Tepic,642,B,175,55,6,266,17,1,12,532,Presidente y Síndico
+993,Tepic,643,B,264,82,7,259,18,2,11,643,Presidente y Síndico
+994,Tepic,644,B,279,72,2,190,14,1,8,566,Presidente y Síndico
+995,Tepic,645,B,262,93,2,248,0,10,11,626,Presidente y Síndico
+996,Tepic,646,B,165,54,3,135,11,2,10,380,Presidente y Síndico
+997,Tepic,646,C,176,51,4,118,13,1,12,375,Presidente y Síndico
+998,Tepic,647,B,164,29,3,122,14,1,7,340,Presidente y Síndico
+999,Tepic,648,B,185,56,2,199,13,0,10,465,Presidente y Síndico
+1000,Tepic,649,B,142,45,2,173,18,0,8,388,Presidente y Síndico
+1001,Tepic,650,B,131,73,3,166,17,0,13,403,Presidente y Síndico
+1002,Tepic,651,B,130,67,3,158,12,0,2,372,Presidente y Síndico
+1003,Tepic,651,C,174,71,3,140,9,0,12,409,Presidente y Síndico
+1004,Tepic,652,B,252,59,1,196,14,0,16,538,Presidente y Síndico
+1005,Tepic,653,B,173,42,1,138,7,0,8,369,Presidente y Síndico
+1006,Tepic,654,B,191,51,4,164,12,0,4,426,Presidente y Síndico
+1007,Tepic,655,B,177,61,3,200,18,0,3,462,Presidente y Síndico
+1008,Tepic,656,B,218,52,4,272,19,2,12,579,Presidente y Síndico
+1009,Tepic,657,B,199,64,3,192,7,0,9,474,Presidente y Síndico
+1010,Tepic,658,B,246,91,3,264,13,0,17,634,Presidente y Síndico
+1011,Tepic,659,B,155,37,2,156,9,0,9,368,Presidente y Síndico
+1012,Tepic,660,B,203,48,3,230,8,0,11,503,Presidente y Síndico
+1013,Tepic,661,B,207,76,1,133,13,0,5,435,Presidente y Síndico
+1014,Tepic,661,C,240,71,2,122,5,0,9,449,Presidente y Síndico
+1015,Tepic,662,B,321,109,2,266,19,0,10,727,Presidente y Síndico
+1016,Tepic,663,B,317,74,6,168,8,0,8,581,Presidente y Síndico
+1017,Tepic,663,C,321,82,2,198,14,0,11,628,Presidente y Síndico
+1018,Tepic,664,B,324,74,3,196,15,0,14,626,Presidente y Síndico
+1019,Tepic,664,C,356,70,2,167,10,2,11,618,Presidente y Síndico
+1020,Tepic,665,B,432,71,0,174,14,0,8,699,Presidente y Síndico
+1021,Tepic,666,B,331,45,3,207,9,0,10,605,Presidente y Síndico
+1022,Tepic,667,B,266,57,2,162,13,0,7,507,Presidente y Síndico
+1023,Tepic,668,B,217,58,2,146,9,2,4,438,Presidente y Síndico
+1024,Tepic,669,B,213,44,3,154,18,0,6,438,Presidente y Síndico
+1025,Tepic,670,B,232,34,1,158,11,0,6,442,Presidente y Síndico
+1026,Tepic,671,B,105,32,3,71,2,0,2,215,Presidente y Síndico
+1027,Tepic,672,B,42,9,0,20,4,0,0,75,Presidente y Síndico
+1028,Tepic,673,B,209,35,1,99,7,0,8,359,Presidente y Síndico
+1029,Tepic,674,B,168,33,1,94,9,0,1,306,Presidente y Síndico
+1030,Tepic,675,B,123,24,0,56,7,0,5,215,Presidente y Síndico
+1031,Tepic,676,B,190,70,10,183,10,0,9,472,Presidente y Síndico
+1032,Tepic,676,C,180,70,5,174,7,0,9,445,Presidente y Síndico
+1033,Tepic,677,B,243,64,6,216,15,0,14,558,Presidente y Síndico
+1034,Tepic,678,B,250,94,5,189,21,2,8,569,Presidente y Síndico
+1035,Tepic,678,C,236,82,3,203,25,2,7,558,Presidente y Síndico
+1036,Tepic,679,B,133,108,5,216,76,0,31,569,Presidente y Síndico
+1037,Tepic,679,C,154,89,4,219,77,2,24,569,Presidente y Síndico
+1038,Tepic,680,B,131,57,1,151,25,0,17,382,Presidente y Síndico
+1039,Tepic,680,C,161,48,8,143,12,1,10,383,Presidente y Síndico
+1040,Tepic,681,B,277,79,4,183,16,1,8,568,Presidente y Síndico
+1041,Tepic,682,B,127,30,1,51,4,0,3,216,Presidente y Síndico
+1042,Tepic,683,B,79,15,2,56,3,1,4,160,Presidente y Síndico
+1043,Tepic,684,B,93,15,1,46,3,1,3,162,Presidente y Síndico
+1044,Tepic,685,B,152,31,2,114,5,0,3,307,Presidente y Síndico
+1045,Tepic,686,B,113,20,2,86,2,0,2,225,Presidente y Síndico
+1046,Tepic,687,B,270,54,0,204,18,0,5,551,Presidente y Síndico
+1047,Tepic,688,B,254,22,2,164,13,1,6,462,Presidente y Síndico
+1048,Tepic,689,B,195,46,5,95,8,2,2,353,Presidente y Síndico
+1049,Tepic,690,B,169,17,1,98,5,0,3,293,Presidente y Síndico
+1050,Tepic,691,B,182,36,2,165,11,0,6,402,Presidente y Síndico
+1051,Tepic,692,B,297,50,2,171,12,3,12,547,Presidente y Síndico
+1052,Tepic,693,B,146,65,3,162,13,1,16,406,Presidente y Síndico
+1053,Tepic,693,C,152,75,5,174,12,0,8,426,Presidente y Síndico
+1054,Tepic,694,B,125,64,2,229,45,2,23,490,Presidente y Síndico
+1055,Tepic,694,C,120,69,1,241,43,0,23,497,Presidente y Síndico
+1056,Tepic,695,B,175,56,9,227,21,2,14,504,Presidente y Síndico
+1057,Tepic,695,C1,145,52,2,242,27,0,14,482,Presidente y Síndico
+1058,Tepic,695,C2,171,55,3,217,18,2,5,471,Presidente y Síndico
+1059,Tepic,695,C3,164,62,3,240,21,0,10,500,Presidente y Síndico
+1060,Tepic,696,B,191,35,3,137,13,2,8,389,Presidente y Síndico
+1061,Tepic,696,C,207,34,1,120,9,0,3,374,Presidente y Síndico
+1062,Tepic,697,B,238,19,3,150,9,2,7,428,Presidente y Síndico
+1063,Tepic,698,B,152,31,3,109,9,0,3,307,Presidente y Síndico
+1064,Tepic,699,B,102,31,4,85,7,0,0,229,Presidente y Síndico
+1065,Tepic,700,B,210,46,2,93,7,1,7,366,Presidente y Síndico
+1066,Tepic,700,C,207,45,4,90,7,0,6,359,Presidente y Síndico
+1067,Tepic,701,B,317,67,1,166,12,1,9,573,Presidente y Síndico
+1068,Tepic,701,C,313,86,1,186,11,0,6,603,Presidente y Síndico
+1069,Tepic,702,B,166,62,4,149,14,0,6,401,Presidente y Síndico
+1070,Tepic,702,C,160,48,1,157,13,0,5,384,Presidente y Síndico
+1071,Tepic,703,B,251,52,4,138,12,0,12,469,Presidente y Síndico
+1072,Tepic,704,B,127,21,2,93,6,1,4,254,Presidente y Síndico
+1073,Tepic,705,B,300,39,3,211,6,0,7,566,Presidente y Síndico
+1074,Tepic,706,B,272,53,4,172,14,0,10,525,Presidente y Síndico
+1075,Tepic,707,B,192,32,1,162,20,0,11,418,Presidente y Síndico
+1076,Tepic,708,B,227,43,2,196,11,0,9,488,Presidente y Síndico
+1077,Tepic,709,B,264,65,1,166,26,1,9,532,Presidente y Síndico
+1078,Tepic,709,C,245,75,1,174,18,0,12,525,Presidente y Síndico
+1079,Tepic,710,B,214,63,1,160,11,0,7,456,Presidente y Síndico
+1080,Tepic,710,C,176,69,5,176,17,0,11,454,Presidente y Síndico
+1081,Tepic,711,B,193,80,2,185,18,2,8,488,Presidente y Síndico
+1082,Tepic,711,C1,189,83,6,165,15,1,7,466,Presidente y Síndico
+1083,Tepic,711,C2,202,99,3,163,16,0,16,499,Presidente y Síndico
+1084,Tepic,711,C3,187,106,1,187,18,0,8,507,Presidente y Síndico
+1085,Tepic,711,E,261,104,5,244,19,1,11,645,Presidente y Síndico
+1086,Tepic,711,EC,240,150,3,258,24,0,12,687,Presidente y Síndico
+1087,Tepic,712,B,72,36,1,135,48,0,19,311,Presidente y Síndico
+1088,Tepic,712,C,74,47,3,150,49,0,16,339,Presidente y Síndico
+1089,Tepic,713,B,269,72,3,126,11,0,4,485,Presidente y Síndico
+1090,Tepic,713,C,265,51,2,123,6,0,9,456,Presidente y Síndico
+1091,Tepic,714,B,178,56,3,192,16,0,6,451,Presidente y Síndico
+1092,Tepic,715,B,185,54,4,172,10,0,10,435,Presidente y Síndico
+1093,Tepic,715,C,219,56,2,163,3,0,10,453,Presidente y Síndico
+1094,Tepic,716,B,232,46,1,97,7,0,3,386,Presidente y Síndico
+1095,Tepic,717,B,38,13,1,39,4,0,0,95,Presidente y Síndico
+1096,Tepic,718,B,198,49,4,187,3,0,7,448,Presidente y Síndico
+1097,Tepic,719,B,220,73,4,171,14,0,17,499,Presidente y Síndico
+1098,Tepic,719,C,270,54,7,156,12,1,11,511,Presidente y Síndico
+1099,Tepic,720,B,195,72,5,233,12,0,12,529,Presidente y Síndico
+1100,Tepic,721,B,224,71,6,165,9,0,11,486,Presidente y Síndico
+1101,Tepic,722,B,265,60,3,229,25,0,5,587,Presidente y Síndico
+1102,Tepic,723,B,242,92,7,266,15,0,5,627,Presidente y Síndico
+1103,Tepic,723,C,223,99,8,253,23,2,14,622,Presidente y Síndico
+1104,Tepic,724,B,200,73,4,169,12,1,11,470,Presidente y Síndico
+1105,Tepic,724,C1,180,57,3,201,10,2,11,464,Presidente y Síndico
+1106,Tepic,724,C2,187,57,8,189,14,0,5,460,Presidente y Síndico
+1107,Tepic,725,B,308,66,4,135,12,0,2,527,Presidente y Síndico
+1108,Tepic,725,C,328,73,1,117,17,0,8,544,Presidente y Síndico
+1109,Tepic,726,B,340,64,0,192,23,0,11,630,Presidente y Síndico
+1110,Tepic,727,B,254,62,3,170,14,1,10,514,Presidente y Síndico
+1111,Tepic,728,B,225,67,0,89,7,0,9,397,Presidente y Síndico
+1112,Tepic,728,C,237,60,1,99,7,0,4,408,Presidente y Síndico
+1113,Tepic,729,B,219,61,4,191,15,0,11,501,Presidente y Síndico
+1114,Tepic,730,B,294,63,9,233,17,1,13,630,Presidente y Síndico
+1115,Tepic,731,B,248,55,6,216,10,0,17,552,Presidente y Síndico
+1116,Tepic,732,B,169,87,3,205,16,0,12,492,Presidente y Síndico
+1117,Tepic,732,C,170,87,2,230,12,0,11,512,Presidente y Síndico
+1118,Tepic,733,B,176,41,2,177,11,0,10,417,Presidente y Síndico
+1119,Tepic,733,C,181,49,6,192,13,0,6,447,Presidente y Síndico
+1120,Tepic,734,B,250,41,5,219,16,0,13,544,Presidente y Síndico
+1121,Tepic,735,B,211,60,5,215,8,0,9,508,Presidente y Síndico
+1122,Tepic,736,B,174,103,3,251,18,0,8,557,Presidente y Síndico
+1123,Tepic,736,C1,160,108,4,241,21,0,13,547,Presidente y Síndico
+1124,Tepic,736,C2,172,79,2,261,12,1,5,532,Presidente y Síndico
+1125,Tepic,737,B,135,128,0,163,8,0,10,444,Presidente y Síndico
+1126,Tepic,737,C,95,145,5,161,10,0,5,421,Presidente y Síndico
+1127,Tepic,737,E1,286,82,2,219,11,0,11,611,Presidente y Síndico
+1128,Tepic,737,E1C1,248,84,3,206,24,1,5,571,Presidente y Síndico
+1129,Tepic,737,E1C2,266,70,4,217,17,1,13,588,Presidente y Síndico
+1130,Tepic,737,E1C3,273,67,7,235,21,0,12,615,Presidente y Síndico
+1131,Tepic,737,E2,306,93,3,202,21,1,10,636,Presidente y Síndico
+1132,Tepic,737,E2C1,316,60,3,202,18,0,3,602,Presidente y Síndico
+1133,Tepic,737,E2C2,290,79,5,203,15,0,9,601,Presidente y Síndico
+1134,Tepic,737,E2C3,331,69,7,180,35,1,5,628,Presidente y Síndico
+1135,Tepic,737,E2C4,300,89,3,214,16,0,6,628,Presidente y Síndico
+1136,Tepic,737,E3,187,58,0,166,9,0,4,424,Presidente y Síndico
+1137,Tepic,738,B,112,161,2,233,17,1,8,534,Presidente y Síndico
+1138,Tepic,738,C,133,136,1,231,19,0,13,533,Presidente y Síndico
+1139,Tepic,739,B,178,70,4,183,16,0,7,458,Presidente y Síndico
+1140,Tepic,739,C,172,51,4,204,11,0,12,454,Presidente y Síndico
+1141,Tepic,740,B,112,34,1,135,32,0,6,320,Presidente y Síndico
+1142,Tepic,740,C,132,39,5,97,35,0,7,315,Presidente y Síndico
+1143,Tepic,741,B,270,69,5,180,12,0,8,544,Presidente y Síndico
+1144,Tepic,742,B,152,37,5,97,8,0,11,310,Presidente y Síndico
+1145,Tepic,742,C,161,30,4,117,12,0,4,328,Presidente y Síndico
+1146,Tepic,743,B,205,73,5,191,11,0,2,487,Presidente y Síndico
+1147,Tepic,744,B,242,52,5,177,14,0,9,499,Presidente y Síndico
+1148,Tepic,744,C,232,56,3,186,9,1,3,490,Presidente y Síndico
+1149,Tepic,745,B,159,34,5,113,72,0,9,392,Presidente y Síndico
+1150,Tepic,745,C,183,47,4,112,58,0,21,425,Presidente y Síndico
+1151,Tepic,746,B,202,50,3,162,7,0,0,424,Presidente y Síndico
+1152,Tepic,746,C,193,58,3,173,11,0,6,444,Presidente y Síndico
+1153,Tepic,747,B,119,77,3,131,13,0,12,355,Presidente y Síndico
+1154,Tepic,747,C,146,73,3,151,10,1,7,391,Presidente y Síndico
+1155,Tepic,748,B,117,78,2,147,13,0,6,363,Presidente y Síndico
+1156,Tepic,748,C,86,81,1,145,17,0,6,336,Presidente y Síndico
+1157,Tepic,749,B,216,74,2,210,20,0,7,529,Presidente y Síndico
+1158,Tepic,749,C1,216,69,3,192,11,0,9,500,Presidente y Síndico
+1159,Tepic,749,C2,184,62,6,223,14,0,6,495,Presidente y Síndico
+1160,Tepic,750,B,270,44,2,110,13,0,5,444,Presidente y Síndico
+1161,Tepic,751,B,231,89,6,207,20,0,6,559,Presidente y Síndico
+1162,Tepic,752,B,159,66,7,139,44,0,16,431,Presidente y Síndico
+1163,Tepic,752,C,155,41,2,163,41,0,11,413,Presidente y Síndico
+1164,Tepic,753,B,178,74,2,165,25,0,9,453,Presidente y Síndico
+1165,Tepic,753,C,203,62,2,152,23,0,14,456,Presidente y Síndico
+1166,Tepic,754,B,154,56,1,217,12,0,4,444,Presidente y Síndico
+1167,Tepic,754,C1,148,55,2,231,6,0,13,455,Presidente y Síndico
+1168,Tepic,754,C2,141,54,4,222,9,0,8,438,Presidente y Síndico
+1169,Tepic,755,B,137,37,1,128,24,0,6,333,Presidente y Síndico
+1170,Tepic,755,C,136,44,0,121,26,0,5,332,Presidente y Síndico
+1171,Tepic,756,B,132,72,6,151,11,1,4,377,Presidente y Síndico
+1172,Tepic,756,C,135,85,9,120,13,1,10,373,Presidente y Síndico
+1173,Tepic,757,B,228,74,0,274,18,0,6,600,Presidente y Síndico
+1174,Tepic,758,B,175,61,9,229,10,0,12,496,Presidente y Síndico
+1175,Tepic,758,C1,148,54,6,235,16,0,10,469,Presidente y Síndico
+1176,Tepic,758,C2,193,83,1,201,5,0,7,490,Presidente y Síndico
+1177,Tepic,758,E1,237,101,2,237,17,0,5,599,Presidente y Síndico
+1178,Tepic,758,E1C1,247,90,1,223,22,1,5,589,Presidente y Síndico
+1179,Tepic,758,E1C2,256,106,8,190,19,0,6,585,Presidente y Síndico
+1180,Tepic,758,E2,180,72,5,255,17,0,1,530,Presidente y Síndico
+1181,Tepic,758,E2C1,191,83,2,247,23,0,9,555,Presidente y Síndico
+1182,Tepic,758,E2C2,177,66,5,232,19,1,10,510,Presidente y Síndico
+1183,Tepic,758,E2C3,205,70,1,231,24,0,4,535,Presidente y Síndico
+1184,Tepic,758,E2C4,173,61,2,263,17,0,9,525,Presidente y Síndico
+1185,Tepic,758,E2C5,190,75,4,254,17,0,8,548,Presidente y Síndico
+1186,Tepic,759,B,169,65,4,212,15,1,7,473,Presidente y Síndico
+1187,Tepic,759,C,177,59,5,210,14,0,10,475,Presidente y Síndico
+1188,Tepic,760,B,187,69,1,230,15,0,8,510,Presidente y Síndico
+1189,Tepic,760,C1,201,76,5,159,15,1,7,464,Presidente y Síndico
+1190,Tepic,760,C2,174,69,2,194,6,1,11,457,Presidente y Síndico
+1191,Tepic,761,B,213,85,4,198,18,0,9,527,Presidente y Síndico
+1192,Tepic,762,B,187,50,5,168,10,1,7,428,Presidente y Síndico
+1193,Tepic,762,C,178,62,2,186,18,0,1,447,Presidente y Síndico
+1194,Tepic,763,B,145,77,4,245,19,0,6,496,Presidente y Síndico
+1195,Tepic,763,C,140,65,5,250,18,0,11,489,Presidente y Síndico
+1196,Tepic,764,B,221,88,5,249,22,0,8,593,Presidente y Síndico
+1197,Tepic,764,C1,204,102,6,260,18,0,10,600,Presidente y Síndico
+1198,Tepic,764,C2,211,80,5,266,18,0,6,586,Presidente y Síndico
+1199,Tepic,764,C3,236,89,3,231,24,0,10,593,Presidente y Síndico
+1200,Tepic,765,B,204,68,5,214,17,0,13,521,Presidente y Síndico
+1201,Tepic,765,C1,180,73,3,272,20,0,8,556,Presidente y Síndico
+1202,Tepic,765,C2,174,67,5,252,17,0,13,528,Presidente y Síndico
+1203,Tepic,766,B,111,65,5,195,14,1,12,403,Presidente y Síndico
+1204,Tepic,766,C,121,63,4,220,19,1,10,438,Presidente y Síndico
+1205,Tepic,767,B,183,45,4,219,12,0,9,472,Presidente y Síndico
+1206,Tepic,768,B,15,10,0,64,3,0,4,96,Presidente y Síndico
+1207,Tepic,769,B,37,26,3,36,4,0,7,113,Presidente y Síndico
+1208,Tepic,769,E1,42,42,0,115,2,0,9,210,Presidente y Síndico
+1209,Tepic,769,E2,17,14,2,161,1,0,0,195,Presidente y Síndico
+1210,Tepic,770,B,118,39,3,220,3,1,16,400,Presidente y Síndico
+1211,Tepic,770,C,93,50,5,226,3,0,18,395,Presidente y Síndico
+1212,Tepic,770,E,26,7,1,40,1,0,0,75,Presidente y Síndico
+1213,Tepic,771,B,24,14,0,91,0,0,3,132,Presidente y Síndico
+1214,Tepic,771,E,11,8,0,34,0,0,0,53,Presidente y Síndico
+1215,Tepic,772,B,35,102,0,125,4,0,14,280,Presidente y Síndico
+1216,Tepic,772,E,23,25,0,59,0,0,0,107,Presidente y Síndico
+1217,Tepic,773,B,71,17,4,141,6,1,12,252,Presidente y Síndico
+1218,Tepic,774,B,135,78,1,161,8,2,14,399,Presidente y Síndico
+1219,Tepic,774,C,168,79,3,114,2,0,19,385,Presidente y Síndico
+1220,Tepic,775,B,19,39,1,41,1,0,4,105,Presidente y Síndico
+1221,Tepic,775,E,25,3,1,28,0,0,1,58,Presidente y Síndico
+1222,Tepic,776,B,19,4,0,41,0,0,4,68,Presidente y Síndico
+1223,Tepic,777,B,25,48,0,25,1,0,5,104,Presidente y Síndico
+1224,Tepic,778,B,101,56,3,162,3,0,7,332,Presidente y Síndico
+1225,Tepic,779,B,170,67,1,244,11,0,9,502,Presidente y Síndico
+1226,Tepic,780,B,217,96,3,234,13,4,19,586,Presidente y Síndico
+1227,Tepic,780,C,194,118,8,214,12,0,27,573,Presidente y Síndico
+1228,Tepic,781,B,148,120,5,249,11,0,16,549,Presidente y Síndico
+1229,Tepic,782,B,101,66,1,137,27,1,17,350,Presidente y Síndico
+1230,Tepic,782,C,97,70,1,158,22,1,15,364,Presidente y Síndico
+1231,Tepic,783,B,190,117,2,296,11,2,11,629,Presidente y Síndico
+1232,Tepic,784,B,14,43,0,60,1,0,1,119,Presidente y Síndico
+1233,Tepic,784,E,5,17,0,122,3,1,2,150,Presidente y Síndico
+1234,Tepic,785,B,122,153,2,109,4,0,22,412,Presidente y Síndico
+1235,Tepic,785,C,80,156,0,141,1,1,14,393,Presidente y Síndico
+1236,Tepic,786,B,31,101,2,128,6,1,3,272,Presidente y Síndico
+1237,Tepic,787,B,65,34,2,133,4,1,4,243,Presidente y Síndico
+1238,Tepic,788,B,292,30,5,280,7,0,19,633,Presidente y Síndico
+1239,Tepic,789,B,347,44,4,273,11,1,17,697,Presidente y Síndico
+1240,Tepic,790,B,55,51,2,73,5,0,6,192,Presidente y Síndico
+1241,Tepic,791,B,31,10,1,46,1,0,1,90,Presidente y Síndico
+1242,Tepic,792,B,109,83,0,159,8,0,15,374,Presidente y Síndico
+1243,Tepic,793,B,93,55,1,82,4,1,6,242,Presidente y Síndico
+1244,Tepic,794,B,99,38,1,112,6,0,6,262,Presidente y Síndico
+1245,Tepic,795,B,144,30,1,261,9,1,11,457,Presidente y Síndico
+1246,Tepic,796,B,119,111,6,321,14,1,16,588,Presidente y Síndico
+1247,Tepic,797,B,206,94,4,280,4,0,14,602,Presidente y Síndico
+1248,Tepic,798,B,56,163,2,225,11,0,13,470,Presidente y Síndico
+1249,Tepic,799,B,182,68,1,253,21,0,11,536,Presidente y Síndico
+1250,Tepic,799,C,224,72,3,270,16,0,13,598,Presidente y Síndico
+1251,Tepic,800,B,113,44,4,145,14,0,10,330,Presidente y Síndico
+1252,Tepic,801,B,121,51,2,149,10,1,8,342,Presidente y Síndico
+1253,Tepic,801,C,87,74,1,120,8,0,6,296,Presidente y Síndico
+1254,Tepic,802,B,89,96,5,200,12,1,11,414,Presidente y Síndico
+1255,Tepic,803,B,60,25,1,142,13,0,13,254,Presidente y Síndico
+1256,Tepic,803,E1,82,37,2,55,8,0,2,186,Presidente y Síndico
+1257,Tepic,803,E2,40,9,0,111,17,0,12,189,Presidente y Síndico
+1258,Tepic,804,B,213,74,7,254,14,1,17,580,Presidente y Síndico
+1259,Tepic,804,C1,183,74,3,277,14,0,19,570,Presidente y Síndico
+1260,Tepic,804,C2,195,83,2,277,13,1,15,586,Presidente y Síndico
+1261,Tepic,805,B,158,42,0,166,6,0,9,381,Presidente y Síndico
+1262,Tepic,805,C,147,50,4,169,7,0,9,386,Presidente y Síndico
+1263,Tepic,806,B,206,65,1,193,9,3,14,491,Presidente y Síndico
+1264,Tepic,807,B,81,108,1,218,5,1,14,428,Presidente y Síndico
+1265,Tepic,807,C1,106,109,0,225,5,0,16,461,Presidente y Síndico
+1266,Tepic,807,C2,84,109,2,225,0,0,14,434,Presidente y Síndico
+1267,Tepic,808,B,85,62,2,249,6,0,13,417,Presidente y Síndico
+1268,Tepic,809,B,229,84,9,243,21,0,8,594,Presidente y Síndico
+1274,Tuxpan,810,B,252,77,8,166,9,0,22,534,Presidente y Síndico
+1275,Tuxpan,811,B,142,104,1,107,24,0,10,388,Presidente y Síndico
+1276,Tuxpan,812,B,185,119,5,187,21,0,15,532,Presidente y Síndico
+1277,Tuxpan,813,B,127,54,1,149,37,1,11,380,Presidente y Síndico
+1278,Tuxpan,814,B,133,76,2,196,16,0,13,436,Presidente y Síndico
+1279,Tuxpan,815,B,172,98,1,187,18,0,15,491,Presidente y Síndico
+1280,Tuxpan,816,B,193,159,3,209,15,0,14,593,Presidente y Síndico
+1281,Tuxpan,817,B,63,24,3,136,15,0,8,249,Presidente y Síndico
+1282,Tuxpan,818,B,57,41,1,150,13,0,7,269,Presidente y Síndico
+1283,Tuxpan,819,B,104,34,2,175,19,0,6,340,Presidente y Síndico
+1284,Tuxpan,820,B,78,23,0,141,27,0,6,275,Presidente y Síndico
+1285,Tuxpan,821,B,121,29,1,157,31,0,6,345,Presidente y Síndico
+1286,Tuxpan,822,B,182,58,0,178,35,0,13,466,Presidente y Síndico
+1287,Tuxpan,823,B,216,132,3,183,24,0,22,580,Presidente y Síndico
+1288,Tuxpan,824,B,183,100,2,221,52,0,28,586,Presidente y Síndico
+1289,Tuxpan,825,B,227,46,3,161,40,0,23,500,Presidente y Síndico
+1290,Tuxpan,826,B,149,45,0,77,16,0,6,293,Presidente y Síndico
+1291,Tuxpan,827,B,198,106,7,238,53,1,11,614,Presidente y Síndico
+1292,Tuxpan,828,B,70,59,3,128,15,0,4,279,Presidente y Síndico
+1293,Tuxpan,829,B,50,51,0,116,12,0,7,236,Presidente y Síndico
+1294,Tuxpan,830,B,94,124,0,169,17,0,12,416,Presidente y Síndico
+1295,Tuxpan,831,B,132,107,1,157,13,0,17,427,Presidente y Síndico
+1296,Tuxpan,832,B,101,118,3,186,10,0,20,438,Presidente y Síndico
+1297,Tuxpan,833,B,108,70,1,141,11,1,11,343,Presidente y Síndico
+1298,Tuxpan,834,B,63,46,2,161,23,0,15,310,Presidente y Síndico
+1299,Tuxpan,835,B,196,69,4,181,43,0,24,517,Presidente y Síndico
+1300,Tuxpan,836,B,211,100,0,353,5,0,18,687,Presidente y Síndico
+1301,Tuxpan,837,B,106,25,1,189,5,0,17,343,Presidente y Síndico
+1302,Tuxpan,837,C,92,49,1,163,5,0,11,321,Presidente y Síndico
+1303,Tuxpan,837,E,23,12,0,40,0,0,6,81,Presidente y Síndico
+1304,Tuxpan,838,B,136,29,2,169,2,0,10,348,Presidente y Síndico
+1305,Tuxpan,838,C,113,26,1,186,4,0,9,339,Presidente y Síndico
+1306,Tuxpan,839,B,166,43,8,234,16,0,31,498,Presidente y Síndico
+1307,Tuxpan,840,B,159,41,7,192,25,0,26,450,Presidente y Síndico
+1308,Tuxpan,841,B,161,55,2,144,24,0,8,394,Presidente y Síndico
+1309,Tuxpan,842,B,210,53,4,222,25,0,30,544,Presidente y Síndico
+1310,Tuxpan,843,B,135,79,9,177,16,0,20,436,Presidente y Síndico
+1316,Xalisco,844,B,352,26,2,173,25,0,8,586,Presidente y Síndico
+1317,Xalisco,844,C1,333,29,2,169,15,0,22,570,Presidente y Síndico
+1318,Xalisco,844,C2,310,38,1,161,20,0,0,530,Presidente y Síndico
+1319,Xalisco,844,C3,347,42,0,142,15,0,10,556,Presidente y Síndico
+1320,Xalisco,845,B,302,81,1,231,28,0,0,643,Presidente y Síndico
+1321,Xalisco,845,C1,342,73,1,196,23,0,15,650,Presidente y Síndico
+1322,Xalisco,845,C2,317,74,1,201,26,0,19,638,Presidente y Síndico
+1323,Xalisco,846,B,297,61,1,182,8,0,22,571,Presidente y Síndico
+1324,Xalisco,846,C,279,64,4,166,11,1,17,542,Presidente y Síndico
+1325,Xalisco,847,B,236,66,0,225,17,0,0,544,Presidente y Síndico
+1326,Xalisco,847,C1,278,66,1,213,11,2,19,590,Presidente y Síndico
+1327,Xalisco,847,C2,268,49,2,198,16,0,0,533,Presidente y Síndico
+1328,Xalisco,847,C3,273,59,3,217,20,0,0,572,Presidente y Síndico
+1329,Xalisco,847,C4,255,56,3,230,23,0,15,582,Presidente y Síndico
+1330,Xalisco,848,B,294,32,1,196,10,0,12,545,Presidente y Síndico
+1331,Xalisco,848,C,275,35,1,236,8,0,11,566,Presidente y Síndico
+1332,Xalisco,849,B,250,68,0,166,10,0,12,506,Presidente y Síndico
+1333,Xalisco,850,B,283,46,1,191,8,0,0,529,Presidente y Síndico
+1334,Xalisco,850,C,230,61,2,196,11,2,14,516,Presidente y Síndico
+1335,Xalisco,851,B,245,19,0,196,7,0,8,475,Presidente y Síndico
+1336,Xalisco,852,B,362,44,0,242,15,0,20,683,Presidente y Síndico
+1337,Xalisco,853,B,231,42,0,152,7,0,14,446,Presidente y Síndico
+1338,Xalisco,853,C,195,45,0,153,10,0,9,412,Presidente y Síndico
+1339,Xalisco,854,B,370,31,1,268,11,0,22,703,Presidente y Síndico
+1340,Xalisco,855,B,344,31,2,223,17,0,15,632,Presidente y Síndico
+1341,Xalisco,856,B,125,11,1,167,4,0,15,323,Presidente y Síndico
+1342,Xalisco,856,E,59,53,0,59,1,0,0,172,Presidente y Síndico
+1343,Xalisco,857,B,203,23,3,171,6,0,9,415,Presidente y Síndico
+1344,Xalisco,857,C,174,30,0,186,2,0,8,400,Presidente y Síndico
+1345,Xalisco,858,B,198,25,1,155,7,0,17,403,Presidente y Síndico
+1346,Xalisco,858,C,198,22,1,158,4,0,2,385,Presidente y Síndico
+1347,Xalisco,859,B,291,31,3,240,12,0,0,577,Presidente y Síndico
+1348,Xalisco,859,C,268,40,1,233,8,0,19,569,Presidente y Síndico
+1349,Xalisco,860,B,127,16,0,137,1,1,9,291,Presidente y Síndico
+1350,Xalisco,861,B,232,68,1,312,0,0,1,614,Presidente y Síndico
+1351,Xalisco,862,B,99,20,0,147,1,0,4,271,Presidente y Síndico
+1352,Xalisco,862,E1,60,13,1,56,0,0,0,130,Presidente y Síndico
+1353,Xalisco,862,E2,41,5,0,79,0,0,5,130,Presidente y Síndico
+1354,Xalisco,863,B,159,18,0,124,4,1,27,333,Presidente y Síndico
+1355,Xalisco,864,B,187,23,1,202,4,0,18,435,Presidente y Síndico
+1356,Xalisco,864,C,190,29,1,177,6,0,13,416,Presidente y Síndico
+1357,Xalisco,864,E,41,5,1,50,1,0,0,98,Presidente y Síndico
+1358,Xalisco,865,B,208,15,1,232,2,0,0,458,Presidente y Síndico
+1359,Xalisco,865,E,65,10,1,56,0,0,2,134,Presidente y Síndico
+1365,La Yesca,866,B,213,4,0,152,0,0,21,390,Presidente y Síndico
+1366,La Yesca,867,B,288,1,3,269,7,2,20,590,Presidente y Síndico
+1367,La Yesca,867,E,105,0,0,18,0,0,1,124,Presidente y Síndico
+1368,La Yesca,868,B,125,0,0,143,0,0,5,273,Presidente y Síndico
+1369,La Yesca,869,B,315,2,1,187,0,0,0,505,Presidente y Síndico
+1370,La Yesca,869,C,317,3,0,184,0,0,9,513,Presidente y Síndico
+1371,La Yesca,870,B,193,1,0,129,0,0,7,330,Presidente y Síndico
+1372,La Yesca,870,C,162,2,1,155,0,0,0,320,Presidente y Síndico
+1373,La Yesca,872,B,65,0,0,103,0,0,0,168,Presidente y Síndico
+1374,La Yesca,873,B,46,0,0,75,1,0,0,122,Presidente y Síndico
+1375,La Yesca,873,E1,52,0,1,40,0,0,1,94,Presidente y Síndico
+1376,La Yesca,873,E2,54,0,2,28,0,0,1,85,Presidente y Síndico
+1377,La Yesca,873,E3,57,0,0,33,0,0,0,90,Presidente y Síndico
+1378,La Yesca,874,B,82,0,0,40,0,0,4,126,Presidente y Síndico
+1379,La Yesca,874,E1,47,1,0,50,0,0,0,98,Presidente y Síndico
+1380,La Yesca,874,E2,24,0,1,55,1,0,2,83,Presidente y Síndico
+1381,La Yesca,875,B,146,0,0,22,0,0,2,170,Presidente y Síndico
+1382,La Yesca,876,B,48,0,0,88,4,0,3,143,Presidente y Síndico
+1383,La Yesca,876,E,85,1,0,18,1,0,3,108,Presidente y Síndico
+1384,La Yesca,878,B,163,0,0,286,0,0,0,449,Presidente y Síndico
+1385,La Yesca,878,E,59,0,0,121,0,0,5,185,Presidente y Síndico
