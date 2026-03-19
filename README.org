@@ -247,6 +247,8 @@ Work in progress. Below is a list of key sources used to construct data bases ov
 - /Fuente/ = `Toledo Patiño' paper
 - /Fuente/ = `UAM Iztapalapa' the source is CEDE-UAM-I (1991) Resultados electorales locales, México DF: Universidad Autónoma Metropolitana Unidad Iztapalapa [producer and distributor] available at https://cede.izt.uam.mx/ (visited 9-3-2026).
 - /Fuente/ = `voz y voto' the source is Voz y voto: política y elecciones (monthly publication, various issues), México DF: Nuevo Horizonte.
+- /Fuente/ = `CIDAC'
+- /Fuente/ = `Sonnleitner2012' 
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
