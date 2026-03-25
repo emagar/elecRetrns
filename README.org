@@ -257,6 +257,7 @@ Thank you to [[https://github.com/pedromezaq][Pedro Meza Quintanilla]] for pull 
 Many students over the years have provided research assistance, retrieving and systematizing some of the information reported here. 
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
+- Emiliano ?
 - [[http://franciscogarfias.com/][Francisco Garfias]]
 - [[https://github.com/pptrrns][José Angel Torrens Hernández]]
 - Julio Solís Ríos
