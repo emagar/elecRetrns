@@ -1,5 +1,7 @@
 | Asistente                       | url | cuándo    |
 |---------------------------------+-----+-----------|
+| Gabino Martínez Díaz            |     | Prim 2026 |
+| Rodrigo Santibáñez Razo         |     | Prim 2026 |
 | Carlos Alexis Sarabia Melgarejo |     | Prim 2025 |
 | Isaac Palatto Sánchez           |     | Prim 2025 |
 | José Angel Torrens Hernández    |     | Oto 2022  |
@@ -21,5 +23,5 @@
 | Roberto Ponce López             |     | ~2003     |
 | Odette González Carrillo        |     |           |
 | Viridiana Ríos                  |     |           |
-
+| Emiliano?                       |     |           |
 

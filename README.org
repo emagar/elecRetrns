@@ -252,20 +252,32 @@ Work in progress. Below is a list of key sources used to construct data bases ov
 * Acknowledgements
 Eric Magar acknowledges financial support from the Asociación Mexicana de Cultura A.C., and is fully responsible for mistakes and shortcomings in the data and code. 
 
-Thank you to [[https://github.com/pedromezaq][Pedro Meza Quintanilla]] for pull requestas that have updated and fixed bugs in the data. 
+Thank you to [[https://github.com/pedromezaq][Pedro Meza Quintanilla]] for pull requests that have updated and fixed bugs in the data. 
 
 Many students over the years have provided research assistance, retrieving and systematizing some of the information reported here. 
+- [[https://github.com/LeonAzul][Arián Montiel]]
+- [[https://github.com/cblanes][Camila Blanes]]
+- [[https://github.com/calexissarabia][Carlos Alexis Sarabia Melgarejo]]
 - Daniela Guzmán Lerma
 - Eugenio Solís Flores
-- Emiliano ?
+- [[https://github.com/franciscocantu][Francisco Cantú]]
 - [[http://franciscogarfias.com/][Francisco Garfias]]
+- Gabino Martínez Díaz
+- [[https://github.com/ips03][Isaac Palatto Sánchez]]
+- Isabel Mejía Fontanot
+- Jessica Zarkin
 - [[https://github.com/pptrrns][José Angel Torrens Hernández]]
 - Julio Solís Ríos
 - [[https://polisci.wustl.edu/people/lucia-motolinia][Lucía Motolinia Carballo]]
+- Mariana Meza Hernández
 - [[https://www.mauriciofduque.com/][Mauricio Fernández Duque]]
 - Odette González Carrillo
+- Reynaldo Lecona
 - [[https://tec.mx/es/facultad-de-impacto/roberto-ponce][Roberto Ponce López]]
+- Rodrigo Santibáñez Razo
 - Sonia Kuri Kosegarten
 - [[https://github.com/VidalTinoco][Vidal Mendoza Tinoco]]
+- Viridiana Ríos
 
 [[top][<sub>Back to top</sub>]]
+
