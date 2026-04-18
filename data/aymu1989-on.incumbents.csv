@@ -2433,9 +2433,9 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 2432,cps-19.124,MEZCALAPA,2024,0,7,7124,7123,morena,0,JOSE TILO ALCUDIA HERNANDEZ,Term-limited-2027,,pes,0.083,,,,,,,,,cps2024ay-ganadores-post-trife
 2433,cps-18.125,HONDURAS DE LA SIERRA,2021,1,7,7125,7124,concejo municipal,.,unelected,Out-p-lost,,0,,0,,,,,NA,2024,,
 2434,cps-19.125,HONDURAS DE LA SIERRA,2024,0,7,7125,7124,pmch,0,ARAIN JEU ROBLERO HERNANDEZ,pending-2027,,rsp,0.1972,,,,,,,,,cps2024ay-ganadores-post-trife
-2435,cps-15.xxx,BELISARIO DOMINGUEZ,2012,0,7,7xxx,7xxx,pri,0,OEL LEON REYES,Term-limited-p-lost,,pvem,0.0686567164,0,0,0,,,NA,incumbent out,Oel es su nombre,
-2436,cps-16.xxx,BELISARIO DOMINGUEZ,2015,0,7,7xxx,7xxx,pvem-pna,0,OBED CRUZ SANTIAGO,Litigio,,0,1,0,0,0,,,incumbent out,incumbent out,,
-2437,cps-17.xxx,BELISARIO DOMINGUEZ,2018,0,7,7xxx,7xxx,litigio,.,none,Litigio,,0,,0,0,0,,,incumbent out,incumbent out,Litigio scjn entre oax y cps por este municipio,
+2435,cps-15.999,BELISARIO DOMINGUEZ,2012,0,7,7999,7999,pri,0,OEL LEON REYES,Term-limited-p-lost,,pvem,0.0686567164,0,0,0,,,NA,incumbent out,Oel es su nombre,
+2436,cps-16.999,BELISARIO DOMINGUEZ,2015,0,7,7999,7999,pvem-pna,0,OBED CRUZ SANTIAGO,Litigio,,0,1,0,0,0,,,incumbent out,incumbent out,,
+2437,cps-17.999,BELISARIO DOMINGUEZ,2018,0,7,7999,7999,litigio,.,none,Litigio,,0,,0,0,0,,,incumbent out,incumbent out,Litigio scjn entre oax y cps por este municipio,
 2438,cua-07.001,AHUMADA,1989,0,8,8001,8001,pri,?,?,Term-limited-p-won,,pan,0.1972,0,0,0,,,incumbent out,incumbent out,,
 2439,cua-08.001,AHUMADA,1992,0,8,8001,8001,pri,0,FIDEL CHAVEZ MOLINA,Term-limited-p-lost,,pan,0.0371300949,0,0,0,,,incumbent out,incumbent out,,inafed
 2440,cua-09.001,AHUMADA,1995,0,8,8001,8001,pan,0,MIGUEL GARCIA GARCIA,Term-limited-p-lost,,pri,0.0951318458,0,0,0,,,incumbent out,incumbent out,,inafed
