@@ -752,7 +752,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 751,coa-14.026,PROGRESO,2013,0,5,5026,5026,pri-pvem-pna-psdc-pj-prc,0,ABEL ALEJANDRO GARZA MEDELLIN,Term-limited-p-won,,pan-prd-udc-ppro,0.0656934307,0,0,0,,,incumbent out,incumbent out,,
 752,coa-15.026,PROGRESO,2017,0,5,5026,5026,pri-pvem-pna-si-pj1-prc-pcp,1,SELENE MARGARITA LUGO VAZQUEZ,Out-p-won,,morena,0.2115100836,0,0,0,,,incumbent out,incumbent out,,
 753,coa-16.026,PROGRESO,2018,0,5,5026,5026,pri-pvem-pna,0,FEDERICO QUINTANILLA RIOJAS,Reelected,MARTHA CASILDA FRAGA ESTRADA,pt-morena-pes,0.7896051974,0,1,1,,,incumbent out,pri-prd,,
-754,coa-17.026,PROGRESO,2021,0,5,5026,5026,pri-prd,0,FEDERICO QUINTANILLA RIOJAS,Term-limited-p-won,,morena,0.7044172932,0,,,,,pri-prd,incumbent out,,
+754,coa-17.026,PROGRESO,2021,0,5,5026,5026,pri-prd,0,FEDERICO QUINTANILLA RIOJAS,Term-limited-p-won,,morena,0.7044172932,0,1,1,,,pri-prd,incumbent out,,
 755,coa-18.026,PROGRESO,2024,0,5,5026,5026,pri-prd-udc,0,FEDERICO QUINTANILLA ARANA,pending-2027,CESAR DANIEL DE LA GARZA HERRERA,pt-morena,0.671,,,,1,Liquín es hijo de Lico FEDERICO QUINTANILLA RIOJAS,,,,
 756,coa-07.027,RAMOS ARIZPE,1990,0,5,5027,5027,pri,0,ANTONIO J FLORES BOARDMAN,Term-limited-p-won,,parm,0.1121833534,0,0,0,,,NA,incumbent out,,inafed
 757,coa-08.027,RAMOS ARIZPE,1993,0,5,5027,5027,pri,0,RAUL JAVIER GONZALEZ FLORES,Term-limited-p-lost,,prd-pt,0.1618742124,0,0,0,,,incumbent out,incumbent out,,inafed
@@ -2439,7 +2439,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 2438,cua-07.001,AHUMADA,1989,0,8,8001,8001,pri,?,?,Term-limited-p-won,,pan,0.1972,0,0,0,,,incumbent out,incumbent out,,
 2439,cua-08.001,AHUMADA,1992,0,8,8001,8001,pri,0,FIDEL CHAVEZ MOLINA,Term-limited-p-lost,,pan,0.0371300949,0,0,0,,,incumbent out,incumbent out,,inafed
 2440,cua-09.001,AHUMADA,1995,0,8,8001,8001,pan,0,MIGUEL GARCIA GARCIA,Term-limited-p-lost,,pri,0.0951318458,0,0,0,,,incumbent out,incumbent out,,inafed
-2441,cua-10.001,AHUMADA,1998,0,8,8001,8001,pri,0,JOSE EDGAR BURCIAGA,Term-limited-p-won,,pan,0.0739563467,0,0,0,,,incumbent out,incumbent out,,
+2441,cua-10.001,AHUMADA,1998,0,8,8001,8001,pri,0,JOSE EDGAR BURCIAGA TORRES,Term-limited-p-won,,pan,0.0739563467,0,0,0,,,incumbent out,incumbent out,,
 2442,cua-11.001,AHUMADA,2001,0,8,8001,8001,pri,0,ALBERTO ALMEIDA FERNANDEZ,Term-limited-p-lost,,pan,0.1701597842,0,0,0,,,incumbent out,incumbent out,,
 2443,cua-12.001,AHUMADA,2004,0,8,8001,8001,pan-prd-conve,0,NOE CIRINO LADRON DE GUEVARA MARQUEZ,Term-limited-p-lost,,pri-pvem-pt,0.1348129881,0,0,0,,,incumbent out,incumbent out,,
 2444,cua-13.001,AHUMADA,2007,0,8,8001,8001,pri-pna,0,FIDEL CHAVEZ MOLINA,Term-limited-p-won,,pt,0.2227243383,0,1,1,,,incumbent out,incumbent out,,
@@ -2463,7 +2463,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 2462,cua-18.002,ALDAMA,2021,0,8,8002,8002,pt-morena-pna,0,MIGUEL RUBIO CASTILLO,Term-limited-p-lost,GILDARDO HUGO BARAJAS MARTINEZ,pan-prd,0.0431788572,0,,,,,pna,incumbent out,,
 2463,cua-19.002,ALDAMA,2024,0,8,8002,8002,pan-pri-prd,1,SANDRA JUDITH GALINDO SINECIO,pending-2027,ROSA MARIA JUSTO OJEDA,pt-morena,0.0337506344104212,,,,,,,,,
 2464,cua-07.003,ALLENDE,1989,0,8,8003,8003,pri,0,ANTONIO PERALTA SALGADO,Term-limited-p-won,,pan,0.5356355621,0,0,0,,,NA,incumbent out,,inafed
-2465,cua-08.003,ALLENDE,1992,0,8,8003,8003,pri,1,SILVIA E. VILLANUEVA R.,Term-limited-p-won,,pan,0.3036935705,0,0,0,,,incumbent out,incumbent out,,inafed
+2465,cua-08.003,ALLENDE,1992,0,8,8003,8003,pri,1,SILVIA E VILLANUEVA ROBLES,Term-limited-p-won,,pan,0.3036935705,0,0,0,,,incumbent out,incumbent out,,inafed
 2466,cua-09.003,ALLENDE,1995,0,8,8003,8003,pri,0,GUILLERMO MUÑOZ M,Term-limited-p-won,,pvem,0.3030474041,0,0,0,,,incumbent out,incumbent out,,inafed
 2467,cua-10.003,ALLENDE,1998,0,8,8003,8003,pri,1,ROSA PAULA MENDOZA V,Term-limited-p-won,,pan,0.2593936253,0,0,0,,,incumbent out,incumbent out,,
 2468,cua-11.003,ALLENDE,2001,0,8,8003,8003,pri,0,JESUS FRANCISCO LUJAN VAZQUEZ,Term-limited-p-lost,,pan,0.2276077098,0,0,0,,,incumbent out,incumbent out,,
@@ -2528,7 +2528,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 2527,cua-18.007,BALLEZA,2021,0,8,8007,8007,pri,0,JESUS AUGUSTO MEDINA AGUIRRE,Reelected,,pt-morena-pna,0.7229116029,0,,,,,incumbent out,2024,,
 2528,cua-19.007,BALLEZA,2024,0,8,8007,8007,pan-pri-prd,0,JESUS AUGUSTO MEDINA AGUIRRE,Term-limited-2027,CARLOS ANIBAL GARFIO PACHECO,mc,0.466931007137193,,,,,,,,,
 2529,cua-07.008,BATOPILAS DE MANUEL GOMEZ MORIN,1989,0,8,8008,8008,pri,0,EMILIO BUSTILLOS MANJARREZ,Term-limited-p-won,,0,1,0,0,0,,,NA,incumbent out,,inafed
-2530,cua-08.008,BATOPILAS DE MANUEL GOMEZ MORIN,1992,0,8,8008,8008,pri,0,FRANCISCO BAEZ A.,Term-limited-p-won,,pan,0.8427919113,0,0,0,,,incumbent out,incumbent out,,inafed
+2530,cua-08.008,BATOPILAS DE MANUEL GOMEZ MORIN,1992,0,8,8008,8008,pri,0,FRANCISCO BAEZ ALVAREZ,Term-limited-p-won,,pan,0.8427919113,0,0,0,,,incumbent out,incumbent out,,inafed
 2531,cua-09.008,BATOPILAS DE MANUEL GOMEZ MORIN,1995,0,8,8008,8008,pri,0,EMILIO BUSTILLOS MANJARREZ,Term-limited-p-won,,pan,0.7046004843,0,1,1,,,incumbent out,incumbent out,,inafed
 2532,cua-10.008,BATOPILAS DE MANUEL GOMEZ MORIN,1998,0,8,8008,8008,pri,0,BENJAMIN HERNANDEZ VAZQUEZ,Term-limited-p-won,,prd,0.1310790274,0,0,0,,,incumbent out,incumbent out,,
 2533,cua-11.008,BATOPILAS DE MANUEL GOMEZ MORIN,2001,0,8,8008,8008,pri,0,EMILIO BUSTILLOS MANJARREZ,Term-limited-p-won,,pan,0.1756968368,0,1,1,,,incumbent out,incumbent out,,
@@ -3047,6 +3047,9 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 3046,cua-17.047,MORIS,2018,0,8,8047,8047,pan-mc,0,RAMIRO RIVERA HERNANDEZ,Out-p-lost,PERLA GACELA LOPEZ PEREZ,pri,0.0389926889,0,0,0,,,pri,incumbent out,,
 3047,cua-18.047,MORIS,2021,0,8,8047,8047,pri,1,PERLA GACELA LOPEZ PEREZ,Out-p-lost,,pan,0.1098615917,0,,,,,incumbent out,2024,,
 3048,cua-19.047,MORIS,2024,0,8,8047,8047,morena,0,LOT ABEL RIVERA MARTINEZ,pending-2027,MARTHA ESMERALDA DELGADO MANJARREZ,pan-pri-prd,0.637106184364061,,,,,,,,,
+3048,cua-04.048,NAMIQUIPA,1980,0,8,8048,8048,pri,0,FERNANDO BARRAZA,Term-limited-p-won,,,,,,,,,,,,wikipedia
+3048,cua-05.048,NAMIQUIPA,1983,0,8,8048,8048,pri,0,RAFAEL RUIZ ,Term-limited-p-won,,,,,,,,,,,,wikipedia
+3048,cua-06.048,NAMIQUIPA,1986,0,8,8048,8048,pri,0,JOSE GONZALEZ NEIRA,Term-limited-p-won,,,,,,,,,,,,wikipedia
 3049,cua-07.048,NAMIQUIPA,1989,0,8,8048,8048,pri,0,DANIEL SALAZAR QUINTANA,Term-limited-p-lost,,pan,0.4560384538,0,0,0,,,NA,incumbent out,,inafed
 3050,cua-08.048,NAMIQUIPA,1992,0,8,8048,8048,pan,0,ALFREDO MARIO SAMANIEGO MATHUS,Term-limited-p-lost,,pri,0.0441748684,0,0,0,,,incumbent out,incumbent out,,inafed
 3051,cua-09.048,NAMIQUIPA,1995,0,8,8048,8048,pri,0,JOSE ARMANDO JACQUEZ,Term-limited-p-lost,,prd,0.0703438093,0,0,0,,,incumbent out,incumbent out,,inafed
