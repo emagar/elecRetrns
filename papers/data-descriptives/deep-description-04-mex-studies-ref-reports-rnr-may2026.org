@@ -33,9 +33,27 @@ mseditor@ucpress.edu
 1. I see this research note as potentially publishable. The author has created a uniquely comprehensive dataset on municipal-level party politics in Mexico over several decades. This dataset will be a valuable resource for researchers studying the dynamics of party politics during an extraordinarily consequential period ion Mexico. The manuscript is well written, and results are presented through approachable visualizations.
    - *Actions taken*: None, the referee ask nothing from me here. 
 2. The only suggestion for revision that I have is to ask that the author situate this dataset along similar databases from other countries. For example, comparable datasets may be found in the US (see, e.g., https://electionlab.mit.edu/data) and other democracies. Placing the author’s dataset in a broader cross-national context would help highlight for comparative political scientists the value of this project.
+   - *Actions taken*: Granted. I have added a short paragraph in the introduction mentioning that archives distributing national-level election returns are common (adding examples, including MIT's election data and science lab) but archives of sub-national election results are very rare. I list three that I am aware of.
 * Reviewer 2
 1. This paper introduces an exceptional dataset of Mexican municipal election returns spanning almost five decades. The author has undertaken a remarkable feat of data collection, standardization, and public distribution, consolidating vote returns from dozens of disparate state-level sources into a single, accessible, and well-documented repository. The amount of work that went into assembling this dataset is hard to overstate (anyone who has tried to compile subnational electoral results can confirm this). My impression is that the dataset is already widely used by Mexican politics scholars, and this paper will serve as the authoritative reference for a resource that has already contributed to the field. I particularly appreciated the coalition files, incumbents dataset, and electoral calendar. These will substantially broaden the topics that researchers can study with the data (e.g., coattail effects, incumbency and reelection).
+   - *Actions taken*:
 2. The paper is well-structured and the figures are excellent. In my view, the descriptive analysis does what a data note should do: it demonstrates the dataset’s content and potential using the data itself, and does so in ways that resonates with Mexican politics scholars.
+   - *Actions taken*:
 3. These things said, I should note that I have no prior experience reviewing data notes of this kind. From the examples I am familiar with, such notes tend to move very quickly to the dataset itself, with little or no introductory material. Thus, I am genuinely uncertain on whether the opening sections (on municipal government structure, the parties, electoral fraud, etc.) are necessary or expected in this format. At the same time, it is also possible that the journal’s readership warrants more contextual framing than a general political science outlet would. To be clear, I only flag this as a question of fit with the journal’s conventions, and (of course) defer to the editor on the appropriate balance here.
+   - *Actions taken*: None, yet, I will await the editor's recommendation on the particular. I would only add that I felt that such description is warranted in a piece of this nature given the inadequate general knowledge of Mexican municipal governments among social scientists. I have made this explicit at the start of section 1.
 4. I do have two more concrete suggestions: The data description in Section 4 could be made somewhat more self-contained. A brief but explicit summary of the key variables, their coverage, and missing data conventions within the paper itself (in addition to the external codebook) would strengthen the manuscript and make it more useful as a standalone reference.
+   - *Actions taken*:
 5. The manuscript requires careful proofreading. There are several typos that should be corrected before publication.
+   - *Actions taken*: While the substance of the original manuscript was written with no aid of artificial intelligence, I did rely on generative AI (chatGPT) to proofread the final text. I relied on the quoted prompt for this purpose: "The text following this prompt is a portion of a research article. It was written by someone who is not a native English speaker. Rewrite the text ensuring the following: (1) the style of the revised text must be that of a scholarly journal; (2) the revised text is as clear as possible; and (3) the extension of the revised text is within plus or minus 20 percent of the original text's extension." feeding the program one paragraph at a time and carfully re-reading what came through in order to revise it by hand. This gave good results...
+
+
+Prompt in chatGPT
+
+The text following this prompt is a portion of a research article. It was written by someone who is not a native English speaker. Proofread the text ensuring the following: (1) the style of the revised text is adequate for a scholarly journal; (2) the revised text is as clear as possible; and (3) the extension of the revised text is within plus or minus 20 percent of the original text's extension.
+
+Do the same for the text following this prompt.
+
+
+----
+
+Alumnos EP3
