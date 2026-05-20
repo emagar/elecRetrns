@@ -54,6 +54,3 @@ The text following this prompt is a portion of a research article. It was writte
 Do the same for the text following this prompt.
 
 
-----
-
-Alumnos EP3
