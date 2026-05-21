@@ -64,12 +64,17 @@
 
 \usepackage{bigfoot}  %% allows the use of \verb command within footnotes
 
+\usepackage{epigraph}
+\setlength\epigraphrule{0pt} % no rule under the epigraph
+
 \begin{document}
 
 \title{Local Competition in Mexican Politics since 1979: \\ A Comprehensive Dataset of Municipal Elections}
 \author{Eric Magar\footnote{The author is grateful for financial support for research from the Asociación Mexicana de Cultura \textsc{a.c.} and for research assistance by Gabino Martínez Díaz, Isaac Palatto Sánchez, Rodrigo Santibáñez Razo, and Carlos Alexis Sarabia Melgarejo. All remaining errors are my own.} \\ ITAM \\ \url{emagar@itam.mx}}
 \date{\today}
 %\date{December 11, 2025 \\ Under review by \emph{Mexican Studies/Estudios Mexicanos}}
+\date{May 20, 2026 \\ Under review by \emph{Mexican Studies/Estudios Mexicanos}}
+%\date{May 20, 2026 \\ Conditionally accepted by \emph{Mexican Studies/Estudios Mexicanos}}
 % \date{\today \\ Preliminary draft, please inquire for a newer version}
 \maketitle
 
@@ -82,6 +87,8 @@
 %% \end{footnotesize}
 
 %% \bigskip
+
+\epigraph{To Juan Molinar Horcasitas (1955--2015) pioneer of Mexican electoral studies \newline \emph{in memoriam}}
 
 \newpage
 
@@ -163,7 +170,7 @@ Electoral institutions created incentives for the formation of new parties in pu
 
 \item[Green Party:] A family-controlled political enterprise, the Partido Verde Ecologista de México (\textbf{PVEM}) stands out among Mexico's opportunistic parties. Its alliance votes may well have provided the PAN with its decisive margin in the 2000 presidential election.\footnote{The structure of the ballot prevents the breakdown of alliance votes by party. Estimating the PAN--PVEM alliance vote using the parties’ relative vote shares in the congressional elections held three years earlier produces a Green Party contribution just below the margin of victory in the 2000 presidential election.} The Greens subsequently became the PRI's reliable electoral partner in elections at virtually all levels during the 2003--18 period \citep{spoon.pulido.PRI-PVEM2017}. More recently, the party has gravitated towards Morena's orbit. The PVEM won the governorship of Chiapas in 2012---the first gubernatorial victory by a non-major party---and later captured San Luis Potosí in 2021, thereby gaining access to additional organizational resources. Green party legislators in Congress were also essential to sustaining Morena's governing coalition majority between 2021 and 2024 and its constitutional supermajority after 2024. 
 
-\item[Workers Party:] Morena's other principal congressional ally partner is the \textbf{PT}. Originally emerging from radical urban movements from the 1970s in northern Mexico, it entered electoral coalitions with the PRD almost systematically throughout the competitive era. Its leadership aligned unequivocally with AMLO both before and after his break with the PRD. The PT has yet to win a governorship on its own.
+\item[Workers Party:] Morena's other principal congressional ally partner is the Partido del Trabajo (\textbf{PT}). Originally emerging from radical urban movements from the 1970s in northern Mexico, it entered electoral coalitions with the PRD almost systematically throughout the competitive era. Its leadership aligned unequivocally with AMLO both before and after his break with the PRD. The PT has yet to win a governorship on its own.
 \end{description}
 
 \section{Vote manipulation}
@@ -429,7 +436,7 @@ In 2015, a parity law entered into force, constitutionally rewquiring parties na
 The incumbents dataset also makes it possible to study patterns of consecutive reelection following its adoption \citep{motolinia-reel-pork2021, lucardi.rosas.Incumbency.2016, lopez.videla.phd.ch1.2021}. Figure \ref{F:reel} presents party reelection rates during the 2018--2023 period conditional on the status of the outgoing municipal president: incumbents who sought reelection are shown in shades of green, incumbents barred by term limits in shades of red, and open-seat races in shades of blue. Several noteworthy patterns emerge:
 
 \begin{itemize}
-\item The consistency of the darker green bars, representing incumbents who successfully won reelection, is striking: approximately 21 percent overall, with a variation of only $\pm$ 3 percentage points across parties other than the PRD---which was on its way out after the reform. At first glance, a one-in-five reelection rate may not appear particularly high. However, the combined total of both green-shaded bars captures officeholders displaying static ambition \citep{schlesinger.1966} regardless of electoral success: roughly 38 percent overall, with greater variation.
+\item The consistency of the darker green bars, representing incumbents who successfully won reelection, is striking: approximately 21 percent overall, with a variation of only $\pm$ 3 percentage points across parties other than the PRD---which was on its way out after the reform. At first glance, a one-in-five reelection rate may not appear particularly high. However, the combined total of both green-shaded bars captures officeholders displaying static ambition regardless of electoral success: roughly 38 percent overall, with greater variation.
 \item The red-shaded bars represent executive officeholders who had already secured reelection in the 2018 cycle and were therefore ineligible to seek a third consecutive term. Because these officials had already demonstrated static ambition, they should be grouped conceptually with the green categories when evaluating the attractiveness of municipal reelection. By the second post-reform electoral cycle, approximately three out of five mayors had attempted to remain in office. This provides a more meaningful indicator of reelection incentives. Particularly striking is the 58 percent rate among Morena incumbents, given that the party's national leadership later supported abolishing the reelection reform beginning in 2030. 
 \item The blue-shaded category reports incumbents who retired from office, leaving an average 38 percent of races as open seats. Unfortunately, the dataset does not distinguish whether these withdrawals reflected voluntary retirement or the denial of renomination by the incumbent's party. This limitation represents an important opportunity for future extensions of the dataset.
 \end{itemize}
@@ -440,7 +447,7 @@ The final component of the dataset, distributed in the file \verb|data/aymu1989-
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
-  \caption{Increasingly aligned state and federal electoral calendars 1994--2026. The X-axis is the timeline, vertical black lines indicate the dates of federal races, general elections in solid, midterm elections doted. Colored circumpherences indicate the dates of state elections as described in the top legend.}\label{F:cal}
+  \caption{Gradual alignment of state and federal electoral calendars 1994--2026. The X-axis measures the timeline, ticks corresponding to January 1 of each year. Vertical black lines indicate the dates of federal races, solid lines for general elections, doted lines for midterm elections. Circumpherences indicate when state elections took place, colored as described in the top legend.}\label{F:cal}
 \end{figure}  
 
 %% \section{The measurement of electoral history}
@@ -599,7 +606,7 @@ The breadth of systematized information contained in these datasets offers exten
 %% % #
 %% % # v.bar.sin.aA = (N * v.bar - a/A) * 1/(N-1)
 
-
+\newpage
 
 \bibliographystyle{apsr}
 \bibliography{/home/eric/Dropbox/mydocs/magar}
