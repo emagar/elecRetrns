@@ -1,4 +1,4 @@
-\#+TITLE: Recent Mexican election vote returns repository
+#+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
 Last revision: 2026-05-21
 
