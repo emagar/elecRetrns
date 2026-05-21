@@ -8,7 +8,7 @@ Last revision: 2026-04-08
 Recent news
 </h2>
 
-<sup><sub>2025-12-11</sub></sup> Added a *research note* describing the *municipal elections* portion of the dataset [[./papers/data-descriptives/deep-description-04-mex-studies.pdf][here]]. 
+<sup><sub>2025-12-11</sub></sup> Added a *research note* describing the *municipal elections* portion of the dataset [[./papers/data-descriptives/deep-description-05.pdf][here]]. 
 
 <sup><sub>2025-12-06</sub></sup> New file added: municipal election *concurrence* with other races since 1989 [[conc][here]].
 
