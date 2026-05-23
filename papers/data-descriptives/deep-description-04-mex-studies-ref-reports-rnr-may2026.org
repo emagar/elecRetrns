@@ -45,7 +45,8 @@ mseditor@ucpress.edu
    - *Actions taken*:
 5. The manuscript requires careful proofreading. There are several typos that should be corrected before publication.
    - *Actions taken*: While the substance of the original manuscript was written with no aid of artificial intelligence, I did rely on generative AI (chatGPT) to proofread the final text. I relied on the quoted prompt for this purpose: "The text following this prompt is a portion of a research article. It was written by someone who is not a native English speaker. Rewrite the text ensuring the following: (1) the style of the revised text must be that of a scholarly journal; (2) the revised text is as clear as possible; and (3) the extension of the revised text is within plus or minus 20 percent of the original text's extension." feeding the program one paragraph at a time and carfully re-reading what came through in order to revise it by hand. This gave good results...
-
+* Other changes
+1. I have written a simple webpage that stores links to the datasets discussed in the note, and put that as their location in p. 12 instead of the main repository. When you visit the new webpage, you will see the advantages, facilitating the location, inspection, and download of the files discussed in the note. A footnote explains that the datasets are in fact stored and maintained in the main repository. I have also added both permalinks to the files as they exist at time of publication and a links to updates including future elections. 
 
 Prompt in chatGPT
 
