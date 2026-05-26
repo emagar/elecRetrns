@@ -44,7 +44,7 @@
 \end{description}
 ** Voting
 \begin{description}
-\item[v01, v02, ...] = raw vote for candidate 1, 2, etc.
+- \item[v01, v02, ...] = raw vote for candidate 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
 \item[l01, l02, ...] = label of candidate 1's, 2's, ... party or coalition.
 \item[c01, c02, ...] = candidate 1's, 2's, ... name.
 \item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
@@ -59,6 +59,13 @@
 \item[ncoal] = number of candidates who ran on multi-party pre-electoral coalitions. 
 # \item[coalpan, coalpri, coalprd] = members of major-party coalitions ('no' indidates no coalition).
 \item[dfake] = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race.
+\end{description}
+** Concurrence with other races
+\begin{description}
+- \item[dconcpres] = dummy equal 1 if the municipal election is concurrent with a presidential election, 0 otherwise. 
+- \item[dconcdipf] = dummy equal 1 if the municipal election is concurrent with a congressional election, 0 otherwise. 
+- \item[dconcgob] = dummy equal 1 if the municipal election is concurrent with a gubernatorial election, 0 otherwise. 
+- \item[dconcdipl] = dummy equal 1 if the municipal election is concurrent with a state assembly election, 0 otherwise. 
 \end{description}
 ** Historical performance
 \begin{description}
