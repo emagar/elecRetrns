@@ -18,7 +18,7 @@
 * Variables grouped by type
 ** Unit IDs
 \begin{description}
-\item[emm] = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the electoral cycle (then a period) and the /inegi/ identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using /emm/ as sort criterion returns a state-time-unit ordering.
+\item[emm] = unit's unique identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the electoral cycle (then a period) and the /inegi/ identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using /emm/ as sort criterion returns a state-time-unit ordering.
 \item[disn] = district identifier = edon * 100 + district numeral.
 \item[edon] = state numeral 1:32.
 \item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is `cps' instead of the usual `chis').
@@ -45,7 +45,7 @@
 ** Voting
 \begin{description}
 - \item[v01, v02, ...] = raw vote for candidate 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
-\item[l01, l02, ...] = label of candidate 1's, 2's, ... party or coalition.
+\item[l01, l02, ...] = string label of candidate 1's, 2's, ... party or coalition.
 \item[c01, c02, ...] = candidate 1's, 2's, ... name.
 \item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
 \item[efec] = effective vote total, equal the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
@@ -81,7 +81,7 @@
 \item[incumbent, runnerup] = winning and runner-up candidates' names.
 \item[propietario, suplente] = primary and substitute candidate's name, respectively. 
 \item[part] = incumbent/candidate's party or coalition.
-\item[part.2nd] = runner-up party or coalition.
+\item[part2nd] = runner-up party or coalition.
 \item[dmujer] = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise. 
 \item[race.after] = incumbent's status in the next consecutive race. The repository's README file describes categories and coding procedure. 
 \item[dreran] = dummy equal 1 if incumbent ran again in the next consecutive race for the same office. 

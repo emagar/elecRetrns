@@ -228,29 +228,29 @@ The municipal elections dataset has been under construction for several years. T
 
     \end{tabular}
 }
-\caption{Coverage of the municipal election returns dataset. $\dagger$  Reforms during the period removed \emph{usos y costumbres} municipalities from the system of periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 1997, see section \ref{S:structure}.}\label{T:coverage}
+\caption{Coverage of the municipal election returns dataset. $\dagger$  Reforms during the period removed \emph{usos y costumbres} municipalities from the system of periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 2000, see section \ref{S:structure}.}\label{T:coverage}
 \end{table}
 
 The units of observation are municipalities observed over time. For each unit, the dataset reports the aggregate votes won by each party or electoral coalition in a given election, along with additional information on electoral history and unit identifiers. Table \ref{T:coverage} summarizes data coverage by state. The resulting time-series cross-sectional matrix is unbalanced. One reason, reflected in the table column reporting the number of municipalities by state, is that many states created new municipalities during the period through territorial secessions, leaving these units without earlier electoral histories. Another source of imbalance stems from manipulation of state electoral calendars, which in some cases caused municipal elections to occur twice---or not at all---within a given three-year cycle (see section \ref{S:cal}).\footnote{File \verb|ancillary/mun.yrs.csv| in the repository provides the complete list of municipalities for each electoral cycle with available municipal election returns. And file \verb|ancillary/new-mun-parents-1989on.csv| identifies the parent municipalities from which the newly created units seceded.}
 
 State abbreviations are listed in the second column from the left and differ somewhat from those used by Mexican government agencies. My abbreviations are designed so that, when sorted in a standard spreadsheet, they preserve the Spanish alphabetization of the states, unlike the official abbreviations that do not.\footnote{Table column \# (state number), called field \emph{edon} in the data, preserves Spanish alphabetization and is the prefix for official ID codes. Note that Spanish alphabetization places the letter Ch after the letter C, hence the state of Colima precedes Chiapas and Chihuahua.} For example, Guanajuato and Guerrero are abbreviated \verb|gua| and \verb|gue|, respectively, rather than the official \verb|gto| and \verb|gro|.
 
-The time series begins in the 1979--1981 electoral cycle for most of the thirty-one states, and a few years earlier for a hanful of other. (The Federal District, whose populous quasi-municipal jurisdictions are included in the dataset, is not formally a state.) This period was inaugurated by a major federal electoral reform that lowered legal barriers to electoral participation by parties and adopted a more proportional formula for converting votes into congressional seats \citep[:116]{molinar.1991a}. As a result, roughly half a dozen new parties entered the electoral arena and gradually expanded into municipal politics.  
+The time series begins in the 1979--1981 electoral cycle for most of the thirty-one states, and a few years earlier for a hanful of other. (The Federal District, whose populous quasi-municipal jurisdictions are included in the dataset, is not formally a state and entered the series in 2000 only.) This period was inaugurated by a major federal electoral reform that lowered legal barriers to electoral participation by parties and adopted a more proportional formula for converting votes into congressional seats \citep[:116]{molinar.1991a}. As a result, roughly half a dozen new parties entered the electoral arena and gradually expanded into municipal politics.  
 
-The data are available online, free of charge, from the webpage at:
+The data are available online, free of charge, from the webpage at:\footnote{The datasets are actually archived and maintained in the \verb|data/| subdirectory of my \emph{Recent Mexican Election Vote Returns} repository that can be found at \url{https://github.com/emagar/elecRetrns}. Given the size and complexity of the repository---which also distributes electoral data for other state and federal elections at different levels of aggregation, along with primary sources, electoral laws, ancillary files, and related materials---the links provided in this webpage substantively facilitate locating, inspecting, and downloading the datasets discussed in this note. In addition, the webpage provides permalinks to the datasets as they existed at time of publication, as well as links to updated versions incorporating subsequent electoral cycles as official returns become available.}
 
 \begin{equation*}
 \href{https://emagar.github.io/municipio-repo/}{\texttt{\ulr{https://emagar.github.io/municipio-repo/}}}.
 \end{equation*}
 
-\noindent Files are stored in \verb|csv| format (comma-separated values).\footnote{The datasets are actually archived and maintained in the \verb|data/| subdirectory of my \emph{Recent Mexican Election Vote Returns} repository that can be found at \url{https://github.com/emagar/elecRetrns}. Given the size and complexity of the repository---which also distributes electoral data for other state and federal elections at different levels of aggregation, along with primary sources, electoral laws, ancillary files, and related materials---the links provided in this webpage substantively facilitate locating, inspecting, and downloading the datasets discussed in this note. In addition, the webpage provides permalinks to the datasets as they existed at time of publication, as well as links to updated versions incorporating subsequent electoral cycles as official returns become available.} This format is compatible with standard spreadsheet and statistical analysis software.\footnote{Text is encrypted using UTF-8 character encoding. Care has been taken to remove most Spanish special characters from text strings. All accented letters (\'a, \'e, \'i, \'o, \'u, and \"u) are replaced by their unaccented equivalents. The letter \~n, however, is retained to avoid ambiguity, and may appear as a garbled character on systems whose default encoding differs from UTF-8. See \url{https://docs.python.org/3/howto/unicode.html} for an introduction to character encoding.} The repository's \verb|README.md| file, which automatically loads in a web browser when visiting the repository's address, includes a detailed and downloadable codebook with formal definitions of all data fields. Each row of the resulting data matrix corresponds to a unit at a specific time point---that is, a municipality in a given electoral year---while the columns correspond to the variables recorded for that unit-year observation. Among other information, the dataset includes the following fields:
+\noindent Files are stored in \verb|csv| format (comma-separated values). This format is compatible with standard spreadsheet and statistical analysis software.\footnote{Text is encrypted using UTF-8 character encoding. Care has been taken to remove most Spanish special characters from text strings. All accented letters (\'a, \'e, \'i, \'o, \'u, and \"u) are replaced by their unaccented equivalents. The letter \~n, however, is retained to avoid ambiguity, and may appear as a garbled character on systems whose default encoding differs from UTF-8. See \url{https://docs.python.org/3/howto/unicode.html} for an introduction to character encoding.} The appendix at the end of this note includes the codebook with formal definitions of all data fields---the codebook can also be downloaded from the distributing webpage. Each row of the resulting data matrix corresponds to a unit at a specific time point---that is, a municipality in a given electoral year---while the columns correspond to the variables recorded for that unit-year observation. Among other information, the dataset includes the following fields:
 
 \begin{itemize}
-\item unit identifiers, including the municipality's name, state, and ID codes;
-\item the date of the election;
-\item the vote tally obtained by each party or electoral coalition;
-\item the total effective vote, defined as the sum of all votes cast in the municipality that year excluding write-in votes\footnote{Write-in candidate votes (for \emph{candidatos no registrados}) are considered void in Mexican electoral law.} and invalid ballots, which is necessary to compute valid vote shares; and
-\item the total number of eligible registered voters in the municipal election (the \emph{lista nominal}), which is required to calculate turnout rates.
+\item unit identifiers, including the municipality's name (field \texttt{mun}), state (\texttt{edon}), and official identification codes from the census bureau (\texttt{inegi}) and the federal electoral authority (\texttt{ife}); researchers wishing to merge socio-demographic information or vote returns from other elections into the dataset will rely on these codes for matching observations across sources;
+\item the date of the election (fields \texttt{date} and \texttt{yr});
+\item the vote tally (fields \texttt{v01}, \texttt{v02}, ...) obtained by each party or electoral coalition in the race (\texttt{l01}, \texttt{l02}, ...);
+\item the total effective vote (field \texttt{efec}), defined as the sum of all votes cast in the municipality that year (\texttt{tot}) excluding write-in votes (\texttt{nr})\footnote{Write-in candidate votes (for \emph{candidatos no registrados}) are considered void in Mexican electoral law.} and invalid ballots (\texttt{nul}), which is necessary to compute valid vote shares; and
+\item the total number of eligible registered voters in the municipal election (field \texttt{lisnom}, the \emph{lista nominal}), which is required to calculate turnout rates.
 \end{itemize}
 
 \begin{figure}
@@ -259,11 +259,9 @@ The data are available online, free of charge, from the webpage at:
   \caption{Screenshot with a sample of the data organization}\label{F:scrn}
 \end{figure}  
 
-Figure \ref{F:scrn} provides a glimpse of the dataset for the five municipalities of Baja California across three electoral cycles: \verb|yr=|1998, 2001, and 2004. Two official municipal identification codes are reported: the census bureau's code (field \verb|inegi|) and the federal electoral authority's code (field \verb|ife|). Researchers wishing to merge census information or vote returns from other elections into the dataset will rely on these codes for matching observations across sources.
+Figure \ref{F:scrn} provides a glimpse of the dataset for five municipalities of Baja California across three electoral cycles: \verb|yr=|1998, 2001, and 2004. Municipal vote returns are stored in column pairs such as \verb|(v01,l01)|, \verb|(v02,l02)|, an so forth, corresponding to the first reported candidate, the second candidate, and so on. Within each pair, the \verb|l| component identifies the party or coalition label, while the \verb|v| component records the total votes won by the party or coalition. For example, in Ensenada's 1998 election, the PRI won a plurality of 31,995 votes ($\texttt{l02} = \texttt{pri}$ indicates that the PRI's vote total is stored in field $\texttt{v02}$), followed closely by the PAN with 30,660 votes (stored in field $\texttt{v01}$).
 
-Municipal vote returns are stored in column pairs such as \verb|(v01,l01)|, \verb|(v02,l02)|, an so forth, corresponding to the first reported candidate, the second candidate, and so on. Within each pair, the \verb|l| component identifies the party or coalition label, while the \verb|v| component records the total votes won by the party or coalition. For example, in Ensenada's 1998 election, the PRI won a plurality of 31,995 votes ($\texttt{l02} = \texttt{pri}$ indicates that teh PRI's vote total is stored in field $\texttt{v02}$), followed closely by the PAN with 30,660 votes (stored in field $\texttt{v01}$).
-
-This votes--label pair-column structure accommodates four decades of heterogeneity in state'level party systems, compounded by the presence of short-lived electoral coalitions, while using a relatively compact number of spreadsheet columns. The trade-off is that analyzing the performance of a single party across municipalities or along electoral cycles often requires additional data manipulation in order to align that party's vote totals into a common column across observations.\footnote{A standalone R script extracts a simplified matrix, reporting each party's votes in a column that is named after it, for a single state-year's municipal races. The script is located in \verb|code/extract-state-yr-mu-returns.r|.} %\emm{Should write standalone Python script too.}
+This votes--label pair-column structure accommodates four decades of heterogeneity in state level party systems, compounded by the presence of short-lived electoral coalitions, while using a relatively compact number of spreadsheet columns. The trade-off is that analyzing the performance of a single party across municipalities or along electoral cycles often requires additional data manipulation in order to align that party's vote totals into a common column across observations.\footnote{A standalone R script extracts a simplified matrix, reporting each party's votes in a column that is named after it, for a single state-year's municipal races. The script is located in \verb|code/extract-state-yr-mu-returns.r|.}
 
 \section{Pre-election coalitions}\label{S:coalitions}
 
@@ -462,154 +460,155 @@ The publicly distributed datasets cover roughly half a century of recent Mexican
 
 The breadth of systematized information contained in these datasets offers extensive opportunities for empirical analysis. This research note has illustrated how the observed patterns correspond to several well-established findings in the literature on Mexican elections, while also pointing toward numerous promising avenues for future research.
 
-%% Table [[fig:1]] presents two pairs of diagrams for the 2015 (below) and 2018 (above) congressional elections. Each dot represents one municipality, colored according to the winning party, with coordinates in the ternary plot according to the relative votes of the PAN, the PRI, and the left in the federal deputy race (other smaller parties are excluded).\footnote{I must note that, for the left's electoral history (which I arbitrarily call ``Morena'' in the plots and distributed data), I systematically added up the votes of the PRD, PT, and MC up to 2015. I also added Morena's and PES's votes that year. In 2018 the left consisted of Morena, PT, and PES jointly.} 
+% \newpage
 
-%% % \begin{figure}
-%% % \centering
-%% % \caption{Historic expectations and municipal-level vote in two congressional elections}\label{fig:1}
-%% % \begin{tabular}{cc}
-%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-vhat-mu.png} &
-%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2018-v-mu.png}    \\
-%% %   \includegraphics[width=.75\columnwidth]{../assets/img/triplot2015-vhat-mu.png} &
-%% %   \includegraphics[width=.75\columnwidth]{file:../assets/img/triplot2015-v-mu.png} \\
-%% % \end{tabular}
-%% % \end{figure}
+\begin{singlespace}
 
-%% The left side shows the /vote forecasts/. The idea behind this statistic is summarizing the evolution of relative votes in the municipality in five previous elections (2003--2015 in the case of 2018) and using the tendency to project a vote forecast for the current year. Plots in the right side show the actual results observed in both elections.
+\section{Appendix: codebook for variables in the datasets}
 
-%% Three features are noteworthy in 2018. The first is the discrepancy between the left and right plots. Either the model does a poor job forecasting, or 2018 was an extraordinary election. History gave license to expect a comfortable PRI victory, both in the number of municipalities won and in margins of victory. Municipalities outside the dotted bands are won by margins of 15 points or more, and the bulk of secure municipalities are red in the forecast, with Morena in a distant second place. In fact, although a significant number of municipalities migrated towards the PAN, it was Morena who showed a clear advantage. PRI was the underachiever. In contrast, the lower left and right plots reveal fewer differences between them---2015 was a more normal election, the past offering much better grounds to forecast. 
+\subsection{Variables grouped by type}
+\subsubsection{Unit identification}
+\begin{description}
+\item[emm] = unit's unique identifying code. It concatenates the state's \textbf{edo} abbreviation (then a hyphen) two sequential digits for the electoral cycle (then a period) and the \textbf{inegi} identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using \textbf{emm} as sort criterion returns a state-time-unit ordering. 
+\item[inegi, ife] = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
+\item[mun] = municipality's name.
+\item[edon] = state numeral 1:32.
+\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is `cps' instead of the usual `chis').
+\end{description}
+\subsubsection{Temporal identification}
+\begin{description}
+\item[date] = date of the election, 8-digit numeric yyyymmdd. 
+\item[yr, mo, dy] = year, month, day of the election.
+\item[dextra] = dummy equal 1 for special elections (elección extraordinaria), 0 otherwise.
+\end{description}
+\subsubsection{Voting}
+\begin{description}
+\item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
+\item[win] = winner's party or coalition.
+\item[v01, v02, ...] = raw vote for candidate 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
+\item[l01, l02, ...] = string label of candidate 1's, 2's, ... party or coalition.
+\item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
+\item[nulos] = invalid ballots (votos nulos).
+\item[efec] = effective vote total, equal the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the common denominator to compute vote shares.
+\item[tot] = total raw votes.
+\item[lisnom] = unit's total eligible voters (lista nominal).
+\end{description}
+\subsubsection{Candidates and incumbent municipal presidents}
+\begin{description}
+\item[ncand] = number of candidates running.
+\item[ncoal] = number of candidates who ran on multi-party pre-electoral coalitions. 
+\item[incumbent, runnerup] = winning and runner-up candidates' names.
+\item[race.after] = incumbent's status in the next consecutive race, reporting what occured at the end of the current term. It takes one of the following categories:
+  \begin{itemize}
+  \item `Reran-beaten' = the incumbent re-ran and lost; 
+  \item `Reelected' = the incumbent re-ran and won; 
+  \item `Out' = the incumbent withdrew or was not renominated in the next cycle; 
+  \item `Term-limited' = incumbent ineligible for reelection due to a term limit; 
+  \item `Dead' = the incumbent died in office;
+  \item `Uyc' = municipio quit the popular election of authorities in the next cycle, appointing offices according to community rules (\emph{usos y costumbres});
+  \item A year numeral = incumbent's status still indetermined (and the year of the race that will determine it).
+  \end{itemize}
+In categories other than the first two above, suffix `-p-lost' or `-p-won' indicate, respectively, that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition) or that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
+\item[dmujer] = dummy equal 1 if incumbent is a woman, 0 otherwise. 
+\item[part] = incumbent party or coalition.
+\item[part2nd] = runner-up party or coalition.
+\end{description}
+\subsubsection{Concurrence with other races}
+\begin{description}
+\item[dconcpres] = dummy equal 1 if the municipal election concurred with a presidential election, 0 otherwise. 
+\item[dconcdipf] = dummy equal 1 if the municipal election concurred with a congressional election, 0 otherwise. 
+\item[dconcgob]  = dummy equal 1 if the municipal election concurred with a gubernatorial election, 0 otherwise. 
+\item[dconcdipl] = dummy equal 1 if the municipal election concurred with a state assembly election, 0 otherwise. 
+\end{description}
+\subsubsection{Ancillary information}
+\begin{description}
+\item[status] = string variable for housekeeping. It takes one of the following categories:
+  \begin{itemize}
+  \item `ok' = returns have been revised, no issue reported;
+  \item `new' = new municipality electing authorities for the first time;
+  \item `missing' = data unavailable;
+  \item `appointed' = state assembly appointed a Concejo Municipal (municipal council) due to post-election civil strife or some other circumstance impeding celebrating an election;
+  \item `cancelled' = voided election;
+  \item `extra' = special election;
+  \item `from-uyc' = municipality re-instituted periodic elections after appointing municipal officers through \emph{usos y costumbres} norms.
+%  , `litigio cps-oax', `proj fr df for lags'
+  \end{itemize}
+\item[fuente] = source of the data.
+\item[notas] = warnings, issues, and informative annotations.
+\item[ord] = counter used for housekeeping.
+\item[ddied, drepe, drepg, dlegacy, who] = experimental variables with development in progress but insufficient for use for analysis.
+\end{description}
 
-%% Second, observed municipalities fled the edges and triangle vertices in 2018. Observations in vertices show a party that has no significant challenger. While those on the edges were bipartisan, whether more (inside dotted bands) or less (outside the bands) symmetric. It is also plain in forecasts that only the PAN--Morena edge was expected to be unpopulated. In practice, however, third party vote rarely collapsed to zero, there was much more dis-coordination than in the past. In fact, the intersection of dotted bands appeared denser and more homogeneous in the right than the left diagram. 
+\subsection{Variables sorted alphabetically}
+\begin{description}
+\item[date] = date of the election, 8-digit numeric yyyymmdd. 
+\item[dconcdipf] = dummy equal 1 if the municipal election concurred with a congressional election, 0 otherwise. 
+\item[dconcdipl] = dummy equal 1 if the municipal election concurred with a state assembly election, 0 otherwise. 
+\item[dconcgob]  = dummy equal 1 if the municipal election concurred with a gubernatorial election, 0 otherwise. 
+\item[dconcpres] = dummy equal 1 if the municipal election concurred with a presidential election, 0 otherwise. 
+\item[ddied] = experimental variable with development in progress but insufficient for use for analysis.
+\item[dextra] = dummy equal 1 for special elections (elección extraordinaria), 0 otherwise.
+\item[dlegacy] = experimental variable with development in progress but insufficient for use for analysis.
+\item[dmujer] = dummy equal 1 if incumbent is a woman, 0 otherwise. 
+\item[drepe] = experimental variable with development in progress but insufficient for use for analysis.
+\item[drepg] = experimental variable with development in progress but insufficient for use for analysis.
+\item[dy] = day of the election.
+\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is `cps' instead of the usual `chis').
+\item[edon] = state numeral 1:32.
+\item[efec] = effective vote total, equal the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the common denominator to compute vote shares.
+\item[emm] = unit's unique identifying code. It concatenates the state's \textbf{edo} abbreviation (then a hyphen) two sequential digits for the electoral cycle (then a period) and the \textbf{inegi} identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using \textbf{emm} as sort criterion returns a state-time-unit ordering. 
+\item[fuente] = source of the data.
+\item[ife] = municipal identifier codes used by the IFE/INE.
+\item[incumbent] = winning candidates' names.
+\item[inegi] = municipal identifier codes used by the INEGI.
+\item[l01, l02, ...] = string label of candidate 1's, 2's, ... party or coalition.
+\item[lisnom] = unit's total eligible voters (lista nominal).
+\item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
+\item[mo] = month of the election.
+\item[mun] = municipality's name.
+\item[ncand] = number of candidates running.
+\item[ncoal] = number of candidates who ran on multi-party pre-electoral coalitions. 
+\item[notas] = warnings, issues, and informative annotations.
+\item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
+\item[nulos] = invalid ballots (votos nulos).
+\item[ord] = counter used for housekeeping.
+\item[part] = incumbent party or coalition.
+\item[part2nd] = runner-up party or coalition.
+\item[race.after] = incumbent's status in the next consecutive race, reporting what occured at the end of the current term. It takes one of the following categories:
+  \begin{itemize}
+  \item `Reran-beaten' = the incumbent re-ran and lost; 
+  \item `Reelected' = the incumbent re-ran and won; 
+  \item `Out' = the incumbent withdrew or was not renominated in the next cycle; 
+  \item `Term-limited' = incumbent ineligible for reelection due to a term limit; 
+  \item `Dead' = the incumbent died in office;
+  \item `Uyc' = municipio quit the popular election of authorities in the next cycle, appointing offices according to community rules (\emph{usos y costumbres});
+  \item A year numeral = incumbent's status still indetermined (and the year of the race that will determine it).
+  \end{itemize}
+In categories other than the first two above, suffix `-p-lost' or `-p-won' indicate, respectively, that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition) or that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or at least one of them was in the winning coalition).
+\item[runnerup] = runner-up candidates' names.
+\item[status] = string variable for housekeeping. It takes one of the following categories:
+  \begin{itemize}
+  \item `ok' = returns have been revised, no issue reported;
+  \item `new' = new municipality electing authorities for the first time;
+  \item `missing' = data unavailable;
+  \item `appointed' = state assembly appointed a Concejo Municipal (municipal council) due to post-election civil strife or some other circumstance impeding celebrating an election;
+  \item `cancelled' = voided election;
+  \item `extra' = special election;
+  \item `from-uyc' = municipality re-instituted periodic elections after appointing municipal officers through \emph{usos y costumbres} norms.
+  \end{itemize}
+\item[tot] = total raw votes.
+\item[v01, v02, ...] = raw vote for candidate 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
+\item[who] = experimental variable with development in progress but insufficient for use for analysis.
+\item[win] = winner's party or coalition.
+\item[yr] = year of the election.
+\end{description}
 
-%% Third, the PAN /vs/ left competition was legal tender in 2018. The pattern in competitive municipalities in the last two decades, still visible in the 2015 plots, involved either PRI--PAN or PRI--left rivalries, and rarely PAN--izquierda. It was this pattern that eased electoral alliances between PAN and PRD in sub national races since 2010 that culminated in the Frente they formed in 2018 to nominate a joint presidential candidate. 
-
-%% % # #+CAPTION: Una elección más característica de la partidocracia
-%% % # #+NAME:   fig:2
-%% % # | file:../assets/img/triplot2015-vhat-mu.png | [[file:../assets/img/triplot2015-v-mu.png]] |
-
-
-%% % # #+CAPTION: Grano más fino: las secciones
-%% % # #+NAME:   fig:3
-%% % # | file:../assets/img/triplot2015-v-se.png | [[file:../assets/img/triplot2018-v-se.png]] |
-
-%% Plots in Table [[fig:4]] report /secciones electorales/ and therefore offer much finer-grained than the previous portraits. They introduce the other quantity of interest in this note: parties' /core support/. The idea behind this statistic is measuring the size of the group that has historically supported the party consistently, in good but also in bad years. 
-
-%% % #+CAPTION: Support core and party performance in 2018
-%% % #+NAME:   fig:4
-%% % | file:../assets/img/resid-pan-2018-vs-pan-core-se.png | [[file:../assets/img/resid-morena-2018-vs-morena-core-se.png]] | file:../assets/img/resid-pri-2018-vs-pri-core-se.png |
-
-%% The horizontal axis in each plot measures the size of party core support groups as a proportion of the /sección/'s electorate. The PRI enjoyed a clear edge over the rest of the parties in the period, with sizable cores in /all/ secciones nationwide. The distributions of the PAN and the left, in contrast, appear concentrated towards the zero---they have relatively few secciones with some unconditional support. 
-
-%% The vertical axis reports the three parties' performance in 2018 (the difference between the observed vote and the forecast). Positive values indicate that the party excelled expectations in the /sección/, negative ones that it under-performed it expectation. The PRI's electoral disaster appears all too clearly in the red plot. There were a few secciones with positive performance, but the density concentrates massively below the horizontal zero line, something that Table [[fig:1]] had hinted. What is truly remarkable is that the dismal performance is directly proportional to the size of the PRI core. President Peña and candidate Meade achieved what seemed, if not impossible, extremely improbable: they alienated the PRI's unconditional voters in 2018. The PAN and the left met expectations in secciones where they have enjoyed with groups of support. Both (especially Morena) over-achieved where they lack important cores, taking away PRI voters. 
-
-%% The note elaborates how statistics were prepared (replication code can be found [[https://github.com/emagar/mxDistritos/code/elec-data-for-maps.r][here]]).
-
-%% % # [[file:https://github.com/emagar/elecRetrns/raw/master/graph/nytAmloPlusAnayaPlusMeadeNegPenaWon.svg]]
-
-%% % # #+CAPTION: PAN
-%% % # #+NAME:   fig:6
-%% % # #+ATTR_HTML: style="float:right;"
-%% % # #+ATTR_HTML: :width 50%
-%% % # [[file:../assets/img/resid-pan-2018-vs-pan-core-se.png]]
-
-%% * First differences
-%% One common approach to study electoral change is through first differences. Denoting $v_t$ the party's vote share in the municipality or the /sección/, in period $t$, the first difference is simply $d_t = v_t - v_{t-1}$. 
-
-%% $d_t$ is an intuitive quantity, showing the sign and magnitude of change from one election to the next. But, precisely because it compares pairs of consecutive elections only, it misses more dynamic processes in the units. One example, well documented by electoral sociology, is the regression to the mean \citep{campbell.1991,segovia.els1979}. Its detection requires observing the unit through at least three consecutive periods to verify contrary signs in $d_{t+1}$ and $d_t$. The study of secular change in the Mexican party system in the last quarter of century calls for deeper historical perspective. 
-
-%% (First differences appear in the fields ~d.pan~, ~d.pri~, and ~d.morena~ in the distributed data.)
-
-%% * The recent linear tendency
-%% One way of adopting it is with /vote forecasting/ from tendencies discernible in the previous five congressional races \citep{magar.gubCoatMx.2012}. I summarize the central tendency of the recent historical vote by means of linear estimation in time, fitting a straight line for each year analyzed and each party in the municipality or /sección electoral/. 
-
-%% The slope of the fitted line (the tendency) serves to extrapolate the party's electoral support to the future. For instance, to get the vote share that the recent past predicts for a party in unit $u$ for 2018, I estimate the following equation 
-
-%% \begin{equation}
-%% v_{ut} = a_u + b_u \times t + \text{error}_{ut}, \; t = 2003, \ldots, 2015
-%% \end{equation}\label{ts-eq}
-
-%% that I then use to predict $\hat{v}_{u2018} = \hat{a}_u + \hat{b}_u \times 2018$. This is an out-of-sample prediction of the party's vote share, it can be compared to the party's actual vote share in 2018 to gauge whether or not the unit approximates the historical record. For the 2015 forecast the sample shifts one period to become $t = 2000, \ldots, 2012$, and so on an so forth for previous years. I distribute forecasts for 2009, 2012, 2015, and 2018, which involved fitting about 10 thousand municipal regressions and more than 250 thousand sección-level.
-
-%% (Vote forecasts appear in the fields ~vhat.pan~, ~vhat.pri~, and ~vhat.morena~ of the distributed data.)
-
-%% * The party's support core
-%% The other historical statistic is the parties' core support in the unit. Its definition stems from classifying voters in three categories: (1) support groups, that in the past have consistently supported the party; (2) opposition groups, that have consistently supported another party; and (3) swing groups, that have neither consistently supported nor consistently opposed the party \citep{cox.mccubbins.1986}. The party core consists of the support groups. 
-
-%% I use the procedure by Díaz Cayeros /et al/. (2016) to estimate this core. If $\bar{v}_t$ denotes the party's mean support across all units in period $t$,\footnote{The analyzed unit $u$ should be dropped from period $t$'s mean in order to not include the dependent variable in the right side of equation \ref{ts-eq}. I do not drop it due to the large number of municipal or seccional units (each contributing a fraction to the mean) and the use of vote shares (so large units are watered down): this refinement's impact should be negligible in each mean value.} for each party in each unit I fit
-
-%% \begin{equation}
-%% v_{ut} = \alpha_u + \beta_u \times \bar{v}_t + \text{error}_{ut}, \; t = 1994, \ldots, 2018.
-%% \end{equation}\label{alpha-eq}
-
-%% $\beta_u$ measures the effect that national party tides have on the party's vote in unit $u$. For instance, $\hat{\beta}_u=1$ estimates that for every percentage point that the party wins or loses nationally in year $t$, it also wins or loses one percentage point in the unit; $\hat{\beta}_u=0$, on the other hand, would indicate the unit's full isolation form national swings. It is therefore a measure of party volatility in the municipality or /sección/ (analogous to \href{https://www.investopedia.com/terms/v/volatility.asp}{"beta volatility"} in the financial literature). 
-
-%% The $\alpha$ coefficient estimates the core size: expected support in unit $u$ in the hypothetical case that the party receives no vote at the national level. For instance, $\hat{\alpha}=.4$ would indicate that, in the starkest of scenarios, 40% of the electorate in the municipality is unconditional to the party---which would indeed be a core of substantial size.
-
-%% A critique that can be anticipated towards this measure of the party's support core is its extreme counter-factual nature \citep{king.zeng.counterfactuals2006pa}. It deserves rigorous scrutiny, something I plan doing in the near future. 
-
-%% (The parties' core support appears in the fields ~alphahat.pan~, ~alphahat.pri~, and ~alphahat.morena~ of the distributed data. Party volatility in ~betahat.pan~, ~betahat.pri~, and ~betahat.morena~.)
-
-%% * Compositional variables
-%% I close with an important feature of the model specifications, associated with the \emph{compositional} nature of electoral returns. Compositional variable are quantitative descriptions of the parts of a whole. They therefore have two characteristics: (1) they are proportions that (2) add up to unity.\footnote{Formally, the compositional are random variables subject to two constraints: 
-%% $0 \leq v_p \leq 1 \; \forall \; p \in P \; \; and \; \; \sum_P v_p = 1.$.} 
-
-%% When estimating parties separately, the challenge of equations 1 and 2 is to avoid forecasting vote shares less than zero or greater than one; and that the sum of party forecasts equals 1. To achieve this, \citet{aitchison.1986} proposes substituting vote shares by log-ratios in the analysis. Arbitrarily setting the PRI as the reference party, define party $p$'s vote relative to the PRI as 
-
-%% $r_p = \frac{v_p}{v_{\text{pri}}}.$
-
-%% A value $r_p=1$ would indicate a tie between the party and the PRI, while $r_p>1$ that it finished ahead of the PRI in the proportion that the value reveals. 
-
-%% Thus, equation 1 is re-specified as
-
-%% $\ln r_{put} = a + b \times t + \text{error}$
-
-%% y equation 2 as
-
-%% $\ln r_{put} = \alpha + \beta \times \bar{r}_{pt} + \text{error}.$
-
-%% Applying the natural logarithm attenuates the effect of extreme values of the regressor on the dependent variable, similar as a logit regression would. Models fitting was done with ordinary least squares. 
-
-%% Coefficient estimates requires transformation to collect party vote shares. Illustrating with a three-party caste, it is trivial that 
-
-%% \begin{equation}
-%% \hat{v}_p = \frac{\hat{r}_p}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}} \; \text{and} \;
-%% \hat{v}_{\text{pri}} = \frac{1}{1 + \hat{r}_{\text{pan}} + \hat{r}_{\text{morena}}.}
-%% \end{equation}
-
-%% %% \begin{equation}
-%% %% \begin{split}
-%% %% v_{\text{pri}} + v_{\text{pan}} + v_{\text{morena}} & = 1 \\
-%% %% v_{\text{pri}} & = 1 - v_{\text{pan}} - v_{\text{morena}} \\
-%% %% 1 & = \frac{1}{v_{\text{pri}}} - \frac{v_{\text{pan}}}{v_{\text{pri}}} - \frac{v_{\text{morena}}}{v_{\text{pri}}} \\
-%% %% \end{split}
-%% %% \end{equation}
-
-%% These are the quantities that the distributed data report. 
-
-
-%% % # Fácil de implementar en R:
-%% % # a = voto partido unidad 1
-%% % # A = voto efec unidad 1
-%% % # N = 3 unidades
-%% % #
-%% % # tengo
-%% % # v.bar = 1/3 * (a/A + b/B + c/C)
-%% % #
-%% % # quiero
-%% % # v.bar.sin.aA = 1/2 * (b/B + c/C)
-%% % #
-%% % # hago
-%% % # 1/3 * (a/A + b/B + c/C) =      v.bar
-%% % #        a/A + b/B + c/C  =  3 * v.bar
-%% % #              b/B + c/C  =  3 * v.bar - a/A
-%% % #       1/2 * (b/B + c/C) = (3 * v.bar - a/A) * 1/2 = v.bar.sin.aA
-%% % #
-%% % # v.bar.sin.aA = (N * v.bar - a/A) * 1/(N-1)
 
 \newpage
 
 \bibliographystyle{apsr}
 \bibliography{/home/eric/Dropbox/mydocs/magar}
 
+\end{singlespace}
 
 \end{document}
