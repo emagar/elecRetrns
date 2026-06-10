@@ -18,13 +18,13 @@
 * Variables grouped by type
 ** Unit IDs
 \begin{description}
-\item[emm] = unit's unique identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the electoral cycle (then a period) and the /inegi/ identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using /emm/ as sort criterion returns a state-time-unit ordering.
+\item[emm] = unit's unique identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen), two sequential digits for the electoral cycle (then a period) and the /inegi/ identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using /emm/ as sort criterion returns a state-time-unit ordering.
 \item[disn] = district identifier = edon * 100 + district numeral.
-\item[edon] = state numeral 1:32.
+\item[edon] = state number (1--32).
 \item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is `cps' instead of the usual `chis').
 \item[cab] = cabecera, district's administrative center.
 \item[inegi, ife] = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
-\item[mun] = municipality's name.
+\item[mun] = municipality name.
 \item[demar] = demarcación identifier = inegi + 1/100 demarcación numeral (used for Nayarit municipal elections only).
 \item[seccion] = voting precinct identifier = /edon/ * 10000 + sección electoral numeral (as set by IFE/INE).
 \item[casilla] = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for /Básica/, C for /Contigua/, E for /Extraordinaria/, and S for /Especial/.
@@ -44,11 +44,11 @@
 \end{description}
 ** Voting
 \begin{description}
-- \item[v01, v02, ...] = raw vote for candidate 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
-\item[l01, l02, ...] = string label of candidate 1's, 2's, ... party or coalition.
+- \item[v01, v02, ...] = raw vote for candidates 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
+\item[l01, l02, ...] = string label of candidate 1's, candidate 2's, etc., party or coalition.
 \item[c01, c02, ...] = candidate 1's, 2's, ... name.
 \item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
-\item[efec] = effective vote total, equal the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
+\item[efec] = effective vote total, equal to the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
 \item[lisnom] = unit's total eligible voters (lista nominal).
 \item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
 \item[nul, nulos] = invalid ballots (votos nulos).
@@ -56,7 +56,7 @@
 \item[win] = winner's party or coalition.
 \item[ncand] = number of candidates running.
 # \item[dcoal] = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
-\item[ncoal] = number of candidates who ran on multi-party pre-electoral coalitions. 
+\item[ncoal] = number of candidates running on multi-party pre-electoral coalitions. 
 # \item[coalpan, coalpri, coalprd] = members of major-party coalitions ('no' indidates no coalition).
 \item[dfake] = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race.
 \end{description}
@@ -126,22 +126,22 @@
 \item[drp] = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 \item[dy] = day of the election.
 \item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is cps, not chis).
-\item[edon] = state numeral 1:32.
-\item[efec] = effective vote total, equal the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
-\item[emm] = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen) two sequential digits for the election cycle (then a period) and, depending on the level of observation, the /inegi/ or district identifier. Using /emm/ as sort criterion returns a state-time-unit ordering.
+\item[edon] = state number (1--32).
+\item[efec] = effective vote total, equal to the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
+\item[emm] = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen), two sequential digits for the election cycle (then a period) and, depending on the level of observation, the /inegi/ or district identifier. Using /emm/ as sort criterion returns a state-time-unit ordering.
 \item[ife] = municipal identifier codes used by the IFE/INE.
 \item[incumbent, runnerup] = winning and runner-up candidates' names.
 \item[inegi] = municipal identifier codes used by the INEGI.
-\item[l01, l02, ...] = label of candidate 1's, 2's, ... party or coalition.
+\item[l01, l02, ...] = string label of candidate 1's, candidate 2's, etc., party or coalition.
 \item[latitude] = coordinates indicating a polling booths's north--south position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 \item[lisnom] = unit's total eligible voters (lista nominal).
 \item[lista] = candidate's rank in senate two-member party lists. Top member of runner-up vote-getting list wins the state's third senate seat.  
 \item[longitude] = coordinates indicating a polling booths's east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 \item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
 \item[mo] = month of the election.
-\item[mun] = municipality's name.
+\item[mun] = municipality name.
 \item[ncand] = number of candidates running.
-\item[ncoal] = number of candidates who ran on multi-party pre-electoral coalitions. 
+\item[ncoal] = number of candidates running on multi-party pre-electoral coalitions. 
 \item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
 \item[nul, nulos] = invalid ballots (votos nulos).
 \item[part.2nd] = runner-up party or coalition.
@@ -150,7 +150,7 @@
 \item[race.after] = incumbent's status in the next consecutive race. The repository's README file describes categories and coding procedure. 
 \item[seccion] = voting precinct identifier = /edon/ * 10000 + sección electoral numeral (as set by IFE/INE).
 \item[tot] = total raw votes.
-\item[v01, v02, ...] = raw vote for candidate 1, 2, etc.
+\item[v01, v02, ...] = raw vote for candidates 1, 2, etc.
 \item[vhat.pan, vhat.pri, vhat.left] = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
 \item[win] = winner's party or coalition.
 \item[yr] = year of the election.

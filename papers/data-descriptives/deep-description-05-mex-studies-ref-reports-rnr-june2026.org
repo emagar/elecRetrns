@@ -1,0 +1,116 @@
+#+OPTIONS: toc:nil
+
+# * Cover by EMM
+# Dear Editors, dear Reviewers:
+
+# I am grateful for the opportunity to revise my manuscript and resubmit it to the journal. I read your reports and have done my best to incorporate your suggestions and corrections into this version of the research note. 
+
+# In order to facilitate communication I have pasted the paragraphs of your reviews below, following each by an explanation of the steps I took to address the different issues that you raise. I also detail other changes that I incorporated in orderf to clarify and improve the manuscript.
+
+# I am confident that the review process has improved the paper substantially. I hope that yoy agree.
+
+# Yours, 
+
+# the Author
+# * Cover letter
+
+#+begin_flushright
+Ciudad de México,
+June 9th 2026
+#+end_flushright
+
+\noindent
+#+begin_latex
+\begin{tabular}{ll}
+Matthew Butler & Salomé Valdivieso \\
+Editor-in-chief & Managing Editor  \\
+\multicolumn{2}{c}{\emph{Mexican Studies/Estudios Mexicanos}} \\
+\end{tabular}
+#+end_latex
+
+\bigskip
+
+\noindent Dear Editors, dear Reviewers,
+
+\bigskip
+
+\noindent Thank you for the opportunity to revise and resubmit my manuscript. I am grateful for the careful attention you devoted to the paper and for the constructive comments and suggestions provided in your reports. I have done my best to address all of the issues raised and to incorporate your recommendations into this revised version of the research note.
+
+\bigskip
+
+\noindent To facilitate the review process, I reproduce the paragraphs of each report below and follow each with a detailed explanation of the changes made in response to the comments. I also describe additional revisions that were implemented to improve the clarity, organization, and overall quality of the manuscript.
+
+\bigskip
+
+\noindent I am confident that the review process has substantially strengthened the paper, and I hope that the revisions satisfactorily address the concerns raised by the reviewers and the editor.
+
+\bigskip
+
+\noindent Yours sincerely,
+
+\bigskip
+
+\noindent The Author
+# * Editorial board's determination
+# Revise and resubmit
+
+# * Editor
+# Dear [Author]
+
+# Thank you for submitting your manuscript to Mexican Studies / Estudios Mexicanos. After receiving the reviewers’ evaluations and the assessment of the editorial team, we would like to invite you to revise the paper and resubmit for further review.
+
+# Please see this letter and the attached reviewer comments for further details about necessary revisions. Additionally, please note that your revised manuscript should be accompanied by a summary of your responses to the reviewers’ comments.
+
+# As you will see from the attached reviews, our external evaluators have submitted not merely positive but enthusiastic reviews, which is a testament to the importance of the data set that the article discusses and the way that it is presented. As you will also see, however, both reviewers express some uncertainty about whether quantitative research is a conventional or a good “fit” for MS/EM. I would add that the editorial team responded in a very similar way to the piece, which it finds to be remarkable on its own terms while being an unusual submission for this particular journal.
+
+# As editor I would like to address this issue and, in fact, make a proposal to you as author and compiler of the data set:
+
+# One of the things I have wanted to do as editor of an interdisciplinary journal like MS/EM is to create an occasional Research Methods or Research Notes section that would feature methodological type essays and not the more interpretive pieces that we typically publish. The idea would be to create, cumulatively, a kind of multidisciplinary toolkit that might be used, say, by researchers tackling new topics and who are interested in seeing how other more experienced colleagues have generated their research; by colleagues seeking cross-disciplinary insights to complement their own work; by graduate classes, etc.
+
+# Given the significance of your data set, I am wondering whether this might be the piece to begin such a section in MS/EM? If this kind of placement in the journal appeals to you, I would ask that in revising the piece you also add some additional narrative sections discussing (1): the reasons for and the problems encountered and resolved in creating the data set; (2) potential uses and significance of the data set; and (3) the methodological pros and cons of this data set in relation to others.
+
+# I do hope that this idea might appeal to you. Were we to launch a new section with your piece, we would also promote the piece with a blog and a period of free access, so that it would be more visible and more easily accessed in Mexico.
+
+# I normally offer authors eight weeks in which to resubmit your manuscript. However, in this case, I would be interested to hear from you in relation to the above before setting a deadline for revisions. Please feel free to reply either through the Discussion post in Scholastica or using the email address that trails this note.
+
+# Cordially,
+
+# Salomé Valdivieso
+# Managing Editor
+
+# On behalf of:
+# Matthew Butler, Ph.D.
+# Editor-in-Chief
+
+# mseditor@ucpress.edu
+
+\newpage
+
+* Reviewer 1
+1. I see this research note as potentially publishable. The author has created a uniquely comprehensive dataset on municipal-level party politics in Mexico over several decades. This dataset will be a valuable resource for researchers studying the dynamics of party politics during an extraordinarily consequential period ion Mexico. The manuscript is well written, and results are presented through approachable visualizations.
+   - *Actions taken*: No action was required in response to this comment. I am grateful to the Reviewer for the encouraging assessment of the manuscript and the dataset.
+2. The only suggestion for revision that I have is to ask that the author situate this dataset along similar databases from other countries. For example, comparable datasets may be found in the US (see, e.g., https://electionlab.mit.edu/data) and other democracies. Placing the author’s dataset in a broader cross-national context would help highlight for comparative political scientists the value of this project.
+   - *Actions taken*: Conceded. I have added a short paragraph to the introduction situating the dataset within the broader landscape of election-return archives. The revision notes that repositories distributing national-level election returns are relatively common, and provides several examples, including MIT’s Election Data and Science Lab. By contrast, archives of historical /subnational/ election returns remain comparatively rare. To underscore this point, I identify three comparable initiatives of which I am aware.
+
+* Reviewer 2
+1. This paper introduces an exceptional dataset of Mexican municipal election returns spanning almost five decades. The author has undertaken a remarkable feat of data collection, standardization, and public distribution, consolidating vote returns from dozens of disparate state-level sources into a single, accessible, and well-documented repository. The amount of work that went into assembling this dataset is hard to overstate (anyone who has tried to compile subnational electoral results can confirm this). My impression is that the dataset is already widely used by Mexican politics scholars, and this paper will serve as the authoritative reference for a resource that has already contributed to the field. I particularly appreciated the coalition files, incumbents dataset, and electoral calendar. These will substantially broaden the topics that researchers can study with the data (e.g., coattail effects, incumbency and reelection).
+   - *Actions taken*: No action was required in response to this comment. I am grateful to the reviewer for the generous assessment of the dataset and for highlighting the value of the coalition, incumbents, and electoral-calendar components.
+2. The paper is well-structured and the figures are excellent. In my view, the descriptive analysis does what a data note should do: it demonstrates the dataset’s content and potential using the data itself, and does so in ways that resonates with Mexican politics scholars.
+   - *Actions taken*: No action was required in response to this comment. I appreciate the reviewer's confidence expressed in its ability to demonstrate the dataset's substantive applications.
+3. These things said, I should note that I have no prior experience reviewing data notes of this kind. From the examples I am familiar with, such notes tend to move very quickly to the dataset itself, with little or no introductory material. Thus, I am genuinely uncertain on whether the opening sections (on municipal government structure, the parties, electoral fraud, etc.) are necessary or expected in this format. At the same time, it is also possible that the journal’s readership warrants more contextual framing than a general political science outlet would. To be clear, I only flag this as a question of fit with the journal’s conventions, and (of course) defer to the editor on the appropriate balance here.
+   - *Actions taken*: Partially conceded. I have largely retained the original structure of the manuscript. In my view, a discussion of the relevant institutions and municipal party systems is warranted given the limited familiarity that many social scientists may have with Mexican municipal government and politics. To clarify the rationale for including this material, I have revised the opening of Section 1 to state this motivation explicitly.
+4. I do have two more concrete suggestions: The data description in Section 4 could be made somewhat more self-contained. A brief but explicit summary of the key variables, their coverage, and missing data conventions within the paper itself (in addition to the external codebook) would strengthen the manuscript and make it more useful as a standalone reference.
+   - *Actions taken*: Conceded. I have added an appendix containing the complete codebook for the distributed datasets. The appendix lists and formally defines every variable, presenting them both by substantive category and in alphabetical order. I have also revised the main text to provide a more explicit overview of the most important variables, including unit and temporal identifiers, vote returns, party labels, and other core fields. These changes are intended to make the manuscript more self-contained and useful as a standalone reference.
+5. The manuscript requires careful proofreading. There are several typos that should be corrected before publication.
+   - *Actions taken*: Conceded. I proofread the entire manuscript carefully and corrected numerous typographical, grammatical, and stylistic issues. Although the manuscript and datasets were originally prepared entirely by me without the assistance of artificial intelligence, I made limited use of ChatGPT during the final revision stage to improve the English prose. As a non-native English speaker, I used the tool solely as an editorial aid and reviewed all suggested revisions by hand. The manuscript was revised one paragraph at a time, with each proposed change examined and modified manually before incorporation into the revised text. The prompt employed for this purpose was the following: /``The text following this prompt is a paragraph of a research article. It was written by someone who is not a native English speaker. Rewrite the text ensuring the following: (1) the style of the revised text must be that of a scholarly journal; (2) the revised text is as clear as possible; (3) the extension of the revised text is within plus or minus 20 percent of the original text's extension; and (4) the text is grammatically correct and has no spelling errors.''/ The entire process required several hours of careful review. While many suggestions were ultimately adopted, all revisions remained subject to my judgment.
+* Unsolicited changes implemented
+- In addition to the revisions discussed above, I created a dedicated webpage (https://emagar.github.io/municipio-repo/) to distribute the datasets discussed throughout and now cite this webpage in p. 12 as the primary access point in the manuscript. This change substantially improves the ease with which readers can locate, inspect, and download the relevant files. The main repository remains referenced in footnote 9, which explains that the datasets are archived and maintained there alongside numerous additional files and materials not discussed in the note. The new webpage provides both permalinks to the versions of the datasets corresponding to the published manuscript as well as links to updated versions incorporating subsequent corrections and future electoral cycles as new official returns become available.
+- I also dedicate the paper to my late mentor, Juan Molinar Horcasitas.
+
+# Prompt in chatGPT
+
+# The text following this prompt is a portion of a research article. It was written by someone who is not a native English speaker. Proofread the text ensuring the following: (1) the style of the revised text is adequate for a scholarly journal; (2) the revised text is as clear as possible; and (3) the extension of the revised text is within plus or minus 20 percent of the original text's extension.
+
+# Do the same for the text following this prompt.
+
+# The following text details how I handled the issues raised by each of the reviewers of my manuscript. Numbered paragraphs correspond to requests and corrections demanded by a reviewer, while paragraphs starting with a hyphen correspond to my reaction. The numbered paragraphs must remain unchanged. Please ensure that my reactions are clear and well written in the style of formal communication with an academic journal's editors.
