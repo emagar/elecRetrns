@@ -16,26 +16,27 @@
 #+LATEX_HEADER: \rhead{\thepage}                % adds page header
 #+LATEX_HEADER: \cfoot{~~\small{\url{https://github.com/emagar/elecRetrns}}}
 * Variables grouped by type
-** Unit IDs
+** Unit identification
 \begin{description}
-\item[emm] = unit's unique identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen), two sequential digits for the electoral cycle (then a period) and the /inegi/ identifier. Voided elections followed by a special election with non-missing data have an `a' inserted after the electoral cycle. Using /emm/ as sort criterion returns a state-time-unit ordering.
-\item[disn] = district identifier = edon * 100 + district numeral.
-\item[edon] = state number (1--32).
-\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is `cps' instead of the usual `chis').
-\item[cab] = cabecera, district's administrative center.
+\item[emm] = unit's unique identifying code. It concatenates the state's \textbf{edo} abbreviation (then a hyphen), two sequential digits for the electoral cycle (then a period) and the \textbf{inegi} identifier. When a special election took place for which I have the returns, the voided election has an `a' inserted after the electoral cycle. Using \textbf{emm} as sort criterion returns a state-time-unit ordering. 
 \item[inegi, ife] = municipal identifier codes used by the INEGI and the IFE/INE, respectively.
+\item[disn] = district identifier = \textbf{edon} * 100 + district numeral.
+\item[edon] = state number (1--32).
+\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by \textbf{edon}, e.g. San Luis Potosí is `san' instead of the usual `slp').
+\item[cab] = district's administrative center (\emph{cabecera}).
 \item[mun] = municipality name.
-\item[demar] = demarcación identifier = inegi + 1/100 demarcación numeral (used for Nayarit municipal elections only).
-\item[seccion] = voting precinct identifier = /edon/ * 10000 + sección electoral numeral (as set by IFE/INE).
-\item[casilla] = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for /Básica/, C for /Contigua/, E for /Extraordinaria/, and S for /Especial/.
-# \item[circ] = secondary, proportional representation district (circunscripción plurinominal) the primary district belongs to. 
+\item[demar] = demarcación identifier = \textbf{inegi} + 1/100 * demarcación numeral (used for Nayarit municipal elections only).
+\item[seccion] = voting precinct identifier = \textbf{edon} * 10000 + sección electoral numeral (as set by IFE/INE).
+\item[casilla] = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for \emph{Básica}, C for \emph{Contigua}, E for \emph{Extraordinaria}, and S for \emph{Especial}.
+\item[circ] = secondary, proportional representation district (\emph{circunscripción plurinominal}) the primary district belongs to. 
 \item[latitude, longitude] = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 \end{description}
-** Temporal IDs
+** Temporal identification
 \begin{description}
 \item[yr, mo, dy] = year, month, day of the election.
+\item[date] = date of the election, stored in an 8-digit numeric value in yyyymmdd format. 
 \item[date.el, date.in] = date of the election and start of term, respectively.
-\item[dextra] = dummy equal 1 for special elections (elección extraordinaria), 0 otherwise.
+\item[dextra] = dummy equal 1 for special elections (\emph{elección extraordinaria}), 0 otherwise.
 \item[danul] = dummy equal 1 for voided elections, 0 otherwise.
 \item[dconcgo] = indicates concurrence of the unit's election with a gubernatorial election in the state.
 \item[dconcdl] = indicates concurrence of the unit's election with a state assembly election.
@@ -44,14 +45,14 @@
 \end{description}
 ** Voting
 \begin{description}
-- \item[v01, v02, ...] = raw vote for candidates 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
+\item[v01, v02, ...] = raw vote for candidates 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
 \item[l01, l02, ...] = string label of candidate 1's, candidate 2's, etc., party or coalition.
 \item[c01, c02, ...] = candidate 1's, 2's, ... name.
-\item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
 \item[efec] = effective vote total, equal to the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
-\item[lisnom] = unit's total eligible voters (lista nominal).
-\item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
-\item[nul, nulos] = invalid ballots (votos nulos).
+\item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
+\item[lisnom] = unit's total eligible voters (\emph{lista nominal}).
+\item[nr] = votes for write-in candidates (\emph{candidatos no registrados}, void in Mexican election law).
+\item[nul, nulos] = invalid ballots (\emph{votos nulos}).
 \item[tot] = total raw votes.
 \item[win] = winner's party or coalition.
 \item[ncand] = number of candidates running.
@@ -62,10 +63,10 @@
 \end{description}
 ** Concurrence with other races
 \begin{description}
-- \item[dconcpres] = dummy equal 1 if the municipal election is concurrent with a presidential election, 0 otherwise. 
-- \item[dconcdipf] = dummy equal 1 if the municipal election is concurrent with a congressional election, 0 otherwise. 
-- \item[dconcgob] = dummy equal 1 if the municipal election is concurrent with a gubernatorial election, 0 otherwise. 
-- \item[dconcdipl] = dummy equal 1 if the municipal election is concurrent with a state assembly election, 0 otherwise. 
+\item[dconcpres] = dummy equal 1 if the municipal election concurred with a presidential election, 0 otherwise. 
+\item[dconcdipf] = dummy equal 1 if the municipal election concurred with a congressional election, 0 otherwise. 
+\item[dconcgob]  = dummy equal 1 if the municipal election concurred with a gubernatorial election, 0 otherwise. 
+\item[dconcdipl] = dummy equal 1 if the municipal election concurred with a state assembly election, 0 otherwise. 
 \end{description}
 ** Historical performance
 \begin{description}
@@ -76,14 +77,26 @@
 \item[betahat.pan, betahat.left] = party's beta estimate for the unit. The PRI used as reference vote and has no beta estimate.
 \item[dbackward] = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
 \end{description}
-** Candidates and incumbents
+** Candidates and incumbent municipal presidents
 \begin{description}
+\item[ncand] = number of candidates running.
+\item[ncoal] = number of candidates running on multi-party pre-electoral coalitions. 
 \item[incumbent, runnerup] = winning and runner-up candidates' names.
 \item[propietario, suplente] = primary and substitute candidate's name, respectively. 
-\item[part] = incumbent/candidate's party or coalition.
+\item[part] = winner's party or coalition.
 \item[part2nd] = runner-up party or coalition.
-\item[dmujer] = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise. 
-\item[race.after] = incumbent's status in the next consecutive race. The repository's README file describes categories and coding procedure. 
+\item[dmujer] = dummy equal 1 if incumbent/candidate is a woman, 0 otherwise. 
+\item[race.after] = incumbent's status in the next consecutive race, reporting what occurred at the end of the current term. It takes one of the following categories:
+  \begin{itemize}
+  \item `Reran-beaten' = the incumbent re-ran and lost; 
+  \item `Reelected' = the incumbent re-ran and won; 
+  \item `Out' = the incumbent withdrew or was not renominated in the next cycle; 
+  \item `Term-limited' = incumbent ineligible for reelection due to a term limit; 
+  \item `Dead' = the incumbent died in office;
+  \item `Uyc' = municipality ceased electing authorities by popular vote in the next cycle, appointing offices according to community rules (\emph{usos y costumbres});
+  \item A year numeral = incumbent's status still to be determined (and the year of the race that will determine it).
+  \end{itemize}
+In categories other than the first two above, suffix `-p-lost' or `-p-won' indicate, respectively, that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition) or that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or was part of the winning coalition).
 \item[dreran] = dummy equal 1 if incumbent ran again in the next consecutive race for the same office. 
 \item[dreelected] = dummy equal 1 if incumbent won the next consecutive race for the same office. 
 \item[dcarta] = dummy equal 1 if member of Congress filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018.
@@ -91,11 +104,23 @@
 \item[drp] = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 \item[ddied] = dummy equal 1 if incumbent died in office, 0 otherwise.
 \end{description}
-# ** Other
-# \begin{description}
-# \item[nota] = observations possibly relevant for analysis.
-# \item[fuente, source] = sources.
-# \end{description}
+** Ancillary information
+\begin{description}
+\item[status] = string variable for housekeeping. It takes one of the following categories:
+  \begin{itemize}
+  \item `ok' = returns have been revised; no issues reported;
+  \item `new' = new municipality electing its authorities for the first time;
+  \item `missing' = data unavailable;
+  \item `appointed' = state assembly appointed a Concejo Municipal (municipal council) due to post-election civil strife or other circumstances preventing an election from being held;
+  \item `cancelled' = voided election;
+  \item `extra' = special election;
+  \item `from-uyc' = municipality re-instituted periodic elections after appointing municipal officers through \emph{usos y costumbres} norms.
+  \end{itemize}
+\item[fuente] = source of the data.
+\item[notas] = warnings, issues, and informative annotations.
+\item[ord] = counter, used for housekeeping.
+\item[drepe, drepg, dlegacy, who] = experimental variables with development in progress but insufficient for use in analysis.
+\end{description}
 \newpage
 * Variables in alphabetical order
 \begin{description}
@@ -103,55 +128,84 @@
 \item[betahat.pan, betahat.left] = party's beta estimate for the unit. The PRI used as reference vote and has no beta estimate.
 \item[bhat.pan, bhat.left] = slope estimate of the party's autoregressive linear model for the unit. The PRI used as reference vote and has no slope estimate. 
 \item[c01, c02, ...] = candidate 1's, 2's, ... name.
-\item[cab] = cabecera, district's administrative center.
-\item[casilla] = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for /Básica/, C for /Contigua/, E for /Extraordinaria/, and S for /Especial/.
+\item[cab] = district's administrative center (\emph{cabecera}).
+\item[casilla] = polling station identifier (as set by IFE/INE). There are four types of stations, coded B for \emph{Básica}, C for \emph{Contigua}, E for \emph{Extraordinaria}, and S for \emph{Especial}.
+\item[circ] = secondary, proportional representation district (\emph{circunscripción plurinominal}) the primary district belongs to. 
 \item[d.pan, d.pri, d.left] = first difference in the party's federal deputy vote share from last to present election.
 \item[danul] = dummy equal 1 for voided elections, 0 otherwise.
-\item[date.el] = election date.
-\item[date.in] = start of term date.
+\item[date] = date of the election, stored in an 8-digit numeric value in yyyymmdd format. 
+\item[date.el, date.in] = date of the election and start of term, respectively.
 \item[dbackward] = dummy equal 1 if prediction with autoregressive model performed backwards, 0 otherwise. 
 \item[dcarta] = dummy equal 1 if member of Congress filed a letter of intent with the chamber's Junta to run for office again; 0 otherwise. Inapplicable before 2018.
-\item[dconcdf] = indicates concurrence of the unit's election with a congressional election.
+\item[dcoal] = dummy equal 1 if at least one candidate ran on a multi-party pre-electoral coalition, 0 otherwise.
 \item[dconcdl] = indicates concurrence of the unit's election with a state assembly election.
+\item[dconcdf] = indicates concurrence of the unit's election with a congressional election.
 \item[dconcgo] = indicates concurrence of the unit's election with a gubernatorial election in the state.
 \item[dconcpr] = indicates concurrence of the unit's election with a presidential election.
 \item[ddied] = dummy equal 1 if incumbent died in office, 0 otherwise.
-\item[demar] = demarcación identifier = inegi + 1/100 demarcación numeral (used for Nayarit municipal elections only).
-\item[dextra] = dummy equal 1 for special elections (elección extraordinaria), 0 otherwise.
-\item[dfake] = indicates an attempt to complete missing hegemonic era races (mostly in the 1960s and 70s) for the purpose of computing vote lags, made up of press reports and best guesses about what happened in the state's race.
-\item[disn] = district identifier = edon * 100 + district numeral.
-\item[dmujer] = dummy equal 1 if candidate/incumbent is a woman, 0 otherwise. 
+\item[demar] = demarcación identifier = \textbf{inegi} + 1/100 * demarcación numeral (used for Nayarit municipal elections only).
+\item[dextra] = dummy equal 1 for special elections (\emph{elección extraordinaria}), 0 otherwise.
+\item[disn] = district identifier = \textbf{edon} * 100 + district numeral.
+\item[dlegacy] = experimental variable with development in progress but insufficient for use in analysis.
+\item[dmujer] = dummy equal 1 if incumbent/candidate is a woman, 0 otherwise. 
+\item[drepe] = experimental variable with development in progress but insufficient for use in analysis.
+\item[drepg] = experimental variable with development in progress but insufficient for use in analysis.
+\item[drp] = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 \item[dreelected] = dummy equal 1 if incumbent won the next consecutive race for the same office. 
 \item[dreran] = dummy equal 1 if incumbent ran again in the next consecutive race for the same office. 
-\item[drp] = dummy equal 1 if candidate ran for a PR seat, 0 otherwise. 
 \item[dy] = day of the election.
-\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by edon, eg. Chiapas is cps, not chis).
+\item[edo] = state abbreviation (may differ from commonly used abbreviations, so that sorting them alphabetically preserves the order set by \textbf{edon}, e.g. San Luis Potosí is `san' instead of the usual `slp').
 \item[edon] = state number (1--32).
 \item[efec] = effective vote total, equal to the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
-\item[emm] = unit's identifying code. It concatenates the state's /edo/ abbreviation (then a hyphen), two sequential digits for the election cycle (then a period) and, depending on the level of observation, the /inegi/ or district identifier. Using /emm/ as sort criterion returns a state-time-unit ordering.
+\item[emm] = unit's unique identifying code. It concatenates the state's \textbf{edo} abbreviation (then a hyphen), two sequential digits for the electoral cycle (then a period) and the \textbf{inegi} identifier. When a special election took place for which I have the returns, the voided election has an `a' inserted after the electoral cycle. Using \textbf{emm} as sort criterion returns a state-time-unit ordering. 
+\item[fuente] = source of the data.
 \item[ife] = municipal identifier codes used by the IFE/INE.
-\item[incumbent, runnerup] = winning and runner-up candidates' names.
+\item[incumbent] = winning candidates' names.
 \item[inegi] = municipal identifier codes used by the INEGI.
 \item[l01, l02, ...] = string label of candidate 1's, candidate 2's, etc., party or coalition.
-\item[latitude] = coordinates indicating a polling booths's north--south position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
-\item[lisnom] = unit's total eligible voters (lista nominal).
+\item[latitude, longitude] = coordinates indicating a polling booths's north--south and east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
+\item[lisnom] = unit's total eligible voters (\emph{lista nominal}).
 \item[lista] = candidate's rank in senate two-member party lists. Top member of runner-up vote-getting list wins the state's third senate seat.  
-\item[longitude] = coordinates indicating a polling booths's east--west position in a map. Available for federal deputy and presidential casilla-level returns in the 2006, 2009, 2015, and 2018 elections. 
 \item[mg] = winner's margin = winner's vote share minus runner-up's vote share.
 \item[mo] = month of the election.
 \item[mun] = municipality name.
 \item[ncand] = number of candidates running.
 \item[ncoal] = number of candidates running on multi-party pre-electoral coalitions. 
-\item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
-\item[nul, nulos] = invalid ballots (votos nulos).
-\item[part.2nd] = runner-up party or coalition.
-\item[part] = incumbent/candidate's party or coalition.
-\item[propietario, suplente] = primary and substitute candidate's name, respectively. 
-\item[race.after] = incumbent's status in the next consecutive race. The repository's README file describes categories and coding procedure. 
-\item[seccion] = voting precinct identifier = /edon/ * 10000 + sección electoral numeral (as set by IFE/INE).
+\item[notas] = warnings, issues, and informative annotations.
+\item[nr] = votes for write-in candidates (\emph{candidatos no registrados}, void in Mexican election law).
+\item[nul, nulos] = invalid ballots (\emph{votos nulos}).
+\item[ord] = counter, used for housekeeping.
+\item[part] = winner's party or coalition.
+\item[part2nd] = runner-up party or coalition.
+\item[propietario] = primary candidate's name. 
+\item[race.after] = incumbent's status in the next consecutive race, reporting what occurred at the end of the current term. It takes one of the following categories:
+  \begin{itemize}
+  \item `Reran-beaten' = the incumbent re-ran and lost; 
+  \item `Reelected' = the incumbent re-ran and won; 
+  \item `Out' = the incumbent withdrew or was not renominated in the next cycle; 
+  \item `Term-limited' = incumbent ineligible for reelection due to a term limit; 
+  \item `Dead' = the incumbent died in office;
+  \item `Uyc' = municipality ceased electing authorities by popular vote in the next cycle, appointing offices according to community rules (\emph{usos y costumbres});
+  \item A year numeral = incumbent's status still to be determined (and the year of the race that will determine it).
+  \end{itemize}
+In categories other than the first two above, suffix `-p-lost' or `-p-won' indicate, respectively, that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition) or that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or was part of the winning coalition).
+\item[runnerup] = runner-up candidates' names.
+\item[seccion] = voting precinct identifier = \textbf{edon} * 10000 + sección electoral numeral (as set by IFE/INE).
+\item[status] = string variable for housekeeping. It takes one of the following categories:
+  \begin{itemize}
+  \item `ok' = returns have been revised; no issues reported;
+  \item `new' = new municipality electing its authorities for the first time;
+  \item `missing' = data unavailable;
+  \item `appointed' = state assembly appointed a Concejo Municipal (municipal council) due to post-election civil strife or other circumstances preventing an election from being held;
+  \item `cancelled' = voided election;
+  \item `extra' = special election;
+  \item `from-uyc' = municipality re-instituted periodic elections after appointing municipal officers through \emph{usos y costumbres} norms.
+  \end{itemize}
+\item[suplente] = substitute candidate's name.
 \item[tot] = total raw votes.
-\item[v01, v02, ...] = raw vote for candidates 1, 2, etc.
+\item[v01, v02, ...] = raw vote for candidates 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
 \item[vhat.pan, vhat.pri, vhat.left] = predicted federal deputy vote share in the unit for the current election, a linear projection of the last five races.
+\item[who] = experimental variable with development in progress but insufficient for use in analysis.
 \item[win] = winner's party or coalition.
 \item[yr] = year of the election.
 \end{description}

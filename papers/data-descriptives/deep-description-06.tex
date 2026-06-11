@@ -472,7 +472,7 @@ The breadth of systematized information contained in these datasets offers exten
 \begin{description}
 \item[date] = date of the election, stored in an 8-digit numeric value in yyyymmdd format. 
 \item[yr, mo, dy] = year, month, day of the election.
-\item[dextra] = dummy equal 1 for special elections (elección extraordinaria), 0 otherwise.
+\item[dextra] = dummy equal 1 for special elections (\emph{elección extraordinaria}), 0 otherwise.
 \end{description}
 \subsubsection{Voting}
 \begin{description}
@@ -480,11 +480,11 @@ The breadth of systematized information contained in these datasets offers exten
 \item[win] = winner's party or coalition.
 \item[v01, v02, ...] = raw vote for candidates 1, 2, etc. In the coalition-aggregated dataset only, raw vote variables are sorted in decreasing order: v01 reports the votes won by the most-voted candidate, v02 the votes won by the runner-up, and so forth.
 \item[l01, l02, ...] = string label of candidate 1's, candidate 2's, etc., party or coalition.
-\item[nr] = votes for write-in candidates (candidatos no registrados, void in Mexican election law).
-\item[nulos] = invalid ballots (votos nulos).
+\item[nr] = votes for write-in candidates (\emph{candidatos no registrados}, void in Mexican election law).
+\item[nulos] = invalid ballots (\emph{votos nulos}).
 \item[efec] = effective vote total, equal to the sum of raw votes minus votes for write-in candidates minus invalid ballots. This is the denominator to compute vote shares.
 \item[tot] = total raw votes.
-\item[lisnom] = unit's total eligible voters (lista nominal).
+\item[lisnom] = unit's total eligible voters (\emph{lista nominal}).
 \end{description}
 \subsubsection{Candidates and incumbent municipal presidents}
 \begin{description}
@@ -503,7 +503,7 @@ The breadth of systematized information contained in these datasets offers exten
   \end{itemize}
 In categories other than the first two above, suffix `-p-lost' or `-p-won' indicate, respectively, that the party lost the subsequent race (or, in case of incumbents elected by a multi-party coalition, that none of them won or was part of the winning coalition) or that the party won the subsequent race (or, in case of incumbents elected by a multi-party coalition, that one of them won or was part of the winning coalition).
 \item[dmujer] = dummy equal 1 if incumbent is a woman, 0 otherwise. 
-\item[part] = incumbent party or coalition.
+\item[part] = winner's party or coalition.
 \item[part2nd] = runner-up party or coalition.
 \end{description}
 \subsubsection{Concurrence with other races}
@@ -527,9 +527,9 @@ In categories other than the first two above, suffix `-p-lost' or `-p-won' indic
 %  , `litigio cps-oax', `proj fr df for lags'
   \end{itemize}
 \item[fuente] = source of the data.
-\item[notas] = warnings, issues, and informative annotations.
-\item[ord] = counter used for housekeeping.
-\item[ddied, drepe, drepg, dlegacy, who] = experimental variables with development in progress but insufficient for use in analysis.
+\item[notas] = warnings, issues, and possibly informative annotations.
+\item[ord] = counter, used for housekeeping.
+\item[drepe, drepg, dlegacy, who] = experimental variables with development in progress but insufficient for use in analysis.
 \end{description}
 
 %\pagebreak
