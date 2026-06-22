@@ -1,0 +1,69 @@
+edon,edo,estado,ley.munic,vigencia.munic,reformas.munic,const,vigencia.cons,reformas.cons,ley.elec,vigencia.elec,reformas.elec,pob.lo,pob.hi,pm,sind.mr,reg.mr,reg.rp,reg.minmax,nota
+1,ags,aguascalientes,,,,,,,,,,,,,,,,,
+2,bc,baja california,,,,79,31dic2024,1994 1997 2001 2008 2011 2015,,,,1,250000,1,1,5,5,0,cons dice cota sup RP hasta
+2,bc,,,,,79,31dic2024,1994 1997 2001 2008 2011 2015,,,,250001,500000,1,1,7,6,0,
+2,bc,,,,,79,31dic2024,1994 1997 2001 2008 2011 2015,,,,500001,mas,1,1,8,7,0,
+3,bcs,baja california sur,,,,,,,,,,,,,,,,,
+4,cam,campeche,,,,,,,,,,,,,,,,,
+5,coa,coahuila,,,,,,,,,,,,,,,,,
+6,col,colima,,,,,,,,,,,,,,,,,
+7,cps,chiapas,,,,,,,,,,,,,,,,,
+8,cua,chihuahua,17,27may2026,24nov2018,126.I,25dic2024,30ago2017,191.a,10ene2024,1jul2020,Chihuahua--Juárez,,1,1,11,9,0,sindico se elige separado del resto
+8,cua,,17,27may2026,24nov2018,126.I,25dic2024,30ago2017,191.a,10ene2024,1jul2020,Camargo--Cuauhtémoc--Delicias--Guerrero--Hidalgo del Parral--Jiménez--Madera--Meoqui--Namiquipa--Nuevo Casas Grandes--Ojinaga--Saucillo,,1,1,9,7,0,
+8,cua,,17,27may2026,24nov2018,126.I,25dic2024,30ago2017,191.a,10ene2024,1jul2020,Ahumada--Aldama--Ascensión--Balleza--Bocoyna--Buenaventura--Guachiochi--Guadalupe y Calvo--Riva Palacio--Rosales--San Francisco del Oro--Santa Bárbara--Urique--Ignacio Zaragoza,,1,1,7,5,0,
+8,cua,,17,27may2026,24nov2018,126.I,25dic2024,30ago2017,191.a,10ene2024,1jul2020,demás,,1,1,5,3,0,
+9,df,distrito federal,,,,,,,,,,,,,,,,,
+10,dgo,durango,,,,,,,,,,,,,,,,,
+11,gua,guanajuato,,,,,,,,,,,,,,,,,
+12,gue,guerrero,,,,,,,,,,,,,,,,,
+13,hgo,hidalgo,,,,,,,,,,,,,,,,,
+14,jal,jalisco,,,,,,,,,,,,,,,,,
+15,mex,mexico,,,,,,,,,,,,,,,,,
+16,mic,michoacan,,,,,,,,,,,,,,,,,
+17,mor,morelos,,,,,,,,,,,,,,,,,
+18,nay,nayarit,,,,,,,23,2017,2016,1,15000,1,1,5,2,0,pob=lisnom
+18,nay,,,,,,,,23,2017,2016,15001,45000,1,1,7,3,0,
+18,nay,,,,,,,,23,2017,2016,45001,150000,1,1,9,4,0,
+18,nay,,,,,,,,23,2017,2016,150001,mas,1,1,11,5,0,
+19,nl,nuevo leon,,,,,,,,,,,,,,,,,
+20,oax,oaxaca,,,,,,,,,,,,,,,,,
+21,pue,puebla,,,,,,,,,,,,,,,,,
+22,que,queretaro,,,,,,,,,,,,,,,,,
+23,qui,quintana roo,,,,,,,,,,,,,,,,,
+24,san,san luis potosi,13,2024,2024,,,,,,,san luis potosi,,1,2,0,14,,ley fija cota sup RP hasta
+24,san,,,,,,,,,,,ciudad valles matehuala rio verde soledad graciano tamazunchale villa de pozos,,1,2,0,11,,
+24,san,,,,,,,,,,,resto,,1,1,0,5,,
+25,sin,sinaloa,,,,,,,,,,,,,,,,,
+26,son,sonora,25 30,2023,,,,,,,,1,30000,1,1,3,2,0,ley fija cota sup RP hasta
+26,son,,,,,,,,,,,30001,100000,1,1,6,4,0,en municipios indígenas +1 regidor etnico uyc
+26,son,,,,,,,,,,,100001,1000000,1,1,12,8,0,verificar: Alamos Altar Bacerac Benito Juarez Bacum Caborca Cajeme Etchojoa Guaymas Hermosillo Huatabampo Navojoa Pitiquito Plutarco Elias Calles Puerto Peñasco Quiriego Rio Muerto San Ignacio San Luis Río Colorado Yecora
+26,son,,,,,,,,,,,1000001,2000000,1,1,15,10,0,
+26,son,,,,,,,,,,,2000001,mas,1,1,18,12,0,
+27,tab,tabasco,,,,,,,,,,,,,,,,,
+28,tam,tamaulipas,4 22,2021,,130,,,,,,1,30000,1,1,4,2,0,verificar
+28,tam,,,,,,,,,,,30001,50000,1,2,5,3,0,verificar
+28,tam,,,,,,,,,,,50001,100000,1,2,8,4,0,verificar
+28,tam,,,,,,,,,,,100001,200000,1,2,12,5,0,verificar
+28,tam,,,,,,,,,,,200001,mas,1,2,14,7,0,verificar
+28,tam,tamaulipas,4 22,2026,2026,130,2026,2026,,,,1,30000,1,1,4,2,0,
+28,tam,,,,,,,,,,,30001,50000,1,1,5,3,0,
+28,tam,,,,,,,,,,,50001,100000,1,1,8,4,0,
+28,tam,,,,,,,,,,,100001,mas,1,1,10,5,0,
+29,tla,tlaxcala,12 50-51 113-120,2024,,90,2022,,267-271,2017,2015,1,10000,1,1,variable,5,,reg.mr = presidentes de comunidad smd algunos uyc
+29,tla,,,,,,,,,,,10001,30000,1,1,variable,6,,hay q revisar mun por mun
+29,tla,,,,,,,,,,,30001,mas,1,1,variable,7,,
+30,ver,veracruz,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,2015,1,40000,1,1,0,0,1,edil=pm sindico o regidor
+30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,40001,70000,1,1,0,3,0,
+30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,70001,125000,1,1,0,5,0,
+30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,125001,250000,1,1,0,9,0,
+30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,250001,400000,1,1,0,13,0,
+30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,400001,mas,1,1,0,15,0,
+31,yuc,yucatan,21 22,2026,?,,,,,,,1,5000,1,1,3,2,0,regidor=pm sindico o regidor
+31,yuc,,21 22,2026,?,,,,,,,5001,10000,1,1,5,3,0,
+31,yuc,,21 22,2026,?,,,,,,,10001,100000,1,1,7,4,0,
+31,yuc,,21 22,2026,?,,,,,,,100001,250000,1,1,indet,indet,indet,la ley se salta este rango
+31,yuc,,21 22,2026,?,,,,,,,250001,mas,1,1,11,8,0,
+32,zac,zacatecas,38,3feb2024,?,,,,,,,1,10000,1,1,4,3,0,cons dice cota sup RP hasta
+32,zac,,38,3feb2024,?,,,,,,,10001,30000,1,1,6,4,0,
+32,zac,,38,3feb2024,?,,,,,,,30001,60000,1,1,7,5,0,
+32,zac,,38,3feb2024,?,,,,,,,60001,mas,1,1,8,6,0,
