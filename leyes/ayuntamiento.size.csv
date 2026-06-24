@@ -50,8 +50,8 @@ edon,edo,estado,ley.munic,vigencia.munic,reformas.munic,const,vigencia.cons,refo
 28,tam,,,,,,,,,,,50001,100000,1,1,8,4,0,
 28,tam,,,,,,,,,,,100001,mas,1,1,10,5,0,
 29,tla,tlaxcala,12 50-51 113-120,2024,,90,2022,,267-271,2017,2015,1,10000,1,1,variable,5,,reg.mr = presidentes de comunidad smd algunos uyc
-29,tla,,,,,,,,,,,10001,30000,1,1,variable,6,,hay q revisar mun por mun
-29,tla,,,,,,,,,,,30001,mas,1,1,variable,7,,
+29,tla,,,,,,,,,,,10001,30000,1,1,variable,6,,hay q revisar mun por mun---scjn excluyo tlaxco yuauhquemehcan contla
+29,tla,,,,,,,,,,,30001,mas,1,1,variable,7,,ITE reporta pres comunidad desde 2013–0ct2015 reforma 120 LeyMun para quitar voto en cabildo—3nov2020 SCJN invalida reforma
 30,ver,veracruz,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,2015,1,40000,1,1,0,0,1,edil=pm sindico o regidor
 30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,40001,70000,1,1,0,3,0,
 30,ver,,21,2018,2010,68,24nov2020,11may2020,238 239,19jun2023,.,70001,125000,1,1,0,5,0,
