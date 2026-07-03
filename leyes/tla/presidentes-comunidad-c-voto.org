@@ -4,11 +4,55 @@ El Decreto 149 del 23 de agosto 2018 había reformado ese artículo para darle v
 
 Los municipios de Tlaxco, Yuauhquemehcan y Contla se inconformaron, alegando la inconstitucionalidad del voto de los presidentes (ya que el art. 115 CPEUM sólo menciona a los presidentes, regidores y síndicos como integrantes del Ayuntamiento). La SCJN declaró fundada la controversia, pero sólo mediante "reviviscencia" del texto anterior a la reforma para los municipios quejosos... weird but interesting instl variation.
 
-Lo que creo que es la historia. En 1982 Tlaxcala creó cargos de elección popular cuyo nombre ha cambiado---agentes municipales, presidentes comunitarios, etc. Se encargaban de la administración municipal. En 2015 se los hizo parte del cabildo, aunque sólo con voz. La reforma de la ley municipal en 2018 les dio voz y voto. Dado que hay un puñado de municipio que tienen docenas de agencias (como Tlaxco y Contla), esto alteró las coaliciones dejando al presidente, síndico y regidores en minoría. Tres municipios iniciaron controversias constitucionales en 2019 argumentando que el art. 115 CPEUM sólo contempla a PM, síndicos y regidores como integrantes del Ayuntamiento. La SCJN les dio la razón, pero no con efectos generales. Los presidentes comunitarios de estos municipios perdieron el voto en el cabildo.
+Lo que creo que fue la historia. En 1982 las leyes de Tlaxcala crearon cargos de elección popular (sin rango constitucional) cuyo nombre fue cambiando---presidentes municipales auxiliares, agentes municipales, presidentes de comunidad, etc. Se encargaban de la administración municipal en sus circuncripciones. En 2008 se les dio reconocimiento constitucional, y en 2015 se los hizo parte del cabildo, aunque sólo con voz. La reforma de la ley municipal en 2018 les dio voz y voto. Dado que hay un puñado de municipio que tienen docenas de agencias (como Tlaxco y Contla), esto alteró las coaliciones dejando al presidente, síndico y regidores en minoría. Tres municipios iniciaron controversias constitucionales en 2019 argumentando que el art. 115 CPEUM sólo contempla a PM, síndicos y regidores como integrantes del Ayuntamiento. La SCJN les dio la razón, pero no con efectos generales. Los presidentes comunitarios de estos municipios perdieron el voto en el cabildo.
 
 En resumen: antes de 2018, había agentes electos territorialmente pero sin poder para hacer policy; de 2018 a 2021, cobraron esa facultad, su voto era determinante para tomar decisiones; desde 2020, tres municipios regresaron al status quo.
 
+* Ley municipal del estado
+** art. 116: presidencias de comunidad = órganos desconcentrados, Presidente de comunidad electo cada tres años concurrente con demás. ITE establece la relación de comunidades, barrios y secciones que eligen cada presidente de comunidad. También cuáles se eligen por usos y costumbres.
+** art. 117: p de c están subordinadas al Ayuntamiento en aquellas facultades administrativas que desarrollen dentro de su circunscripción.
+** art. 118: mandato de 3 años o menos.
+** art. 120: Facultades y obligaciones: I-Acudir a las sesiones de cabildo con voz y voto.---CC SCJN aquí.
+* CPET
+** art. 25: (desde reforma 21jul2015) P de C se eligen por sufragio universal directo.
+** art. 90: (desde reforma 1ago2008) presidentes de comunidad tienen carácter de munícipes, al igual que PM, s y r. Ley determina sus atribuciones. II. Ley establece cuáles P de C se eligen por usos y costumbres.
+* 
 
+
+
+* Para la sección de excepciones
+
+En Tlaxcala las agencias que descentralizan parte de la administración municipal hacia demarcaciones territoriales del municipio se llaman presidencias de comunidad. Desde los años 1980 el estado hizo que las presidencias de comunidad sean cargos de elección popular en vez de nombramientos del Ayuntamiento. Aunque subordinados al gobierno municipal, a estos cargos se les dio reconocimiento constitucional en 2008, incorporándolos formalmente a las sesiones del cabildo municipal con voz, y cobraron particular relevancia en 2018, cuando se reformó la ley municipal del estado para otorgarle un voto a cada presidente de comunidad en el cabildo. Esto último alteró importantemente la construcción de coaliciones municipales: si los municipios tlaxcaltecas tienen entre 5 y 7 regidores en función de su población, el municipio promedio cuenta con 6.5 presidencias comunitarias, igualando o superando en votos al resto del Ayuntamiento. Tres municipios (entre ellos Tlaxco, con 37 presidentes comunitarias) consiguieron que la Suprema Corte invalidara en 2020 el voto de los presidentes comunitarios en sus respectivos cabildos.  
+
+
+In Tlaxcala, the territorial administrative units through which municipalities decentralize part of their local administration are known as community presidencies (\emph{presidencias de comunidad}). Beginning in the 1980s, the state transformed these offices from appointments made by the municipal council into positions filled through popular elections. Although they remained subordinate to the municipal government, community presidents were granted constitutional recognition in 2008, when they were formally incorporated into municipal council sessions with voice only. Their institutional significance increased substantially in 2018, when the state's Municipal Law was amended to grant each community president a vote in the council.
+
+This reform fundamentally altered coalition-building within municipal governments. Whereas Tlaxcalan municipalities have between five and seven regidores, depending on population size, the average municipality has approximately 6.5 community presidencies,\footnote{Fifteen of Tlaxcala's municipalities have no such agencies, twenty have between 1 and 6 community presidencies, twenty have between 7 and 13, and five have between 15 and 39. Some community presidents are appointed by usos y costumbres.} allowing community presidents collectively to match or exceed the voting strength of the rest of council members. In 2020, however, three municipalities---including Tlaxco, which has thirty-seven community presidencies---successfully challenged the reform before the Supreme Court, which invalidated the voting rights of community presidents in their respective councils.
+
+ 
+* Número de demarcaciones por municipio
+15/60 tienen 0
+3/60 tienen  1
+2/60 tienen  2
+5/60 tienen  3
+5/60 tienen  4
+3/60 tienen  5
+2/60 tienen  6
+5/60 tienen  7
+3/60 tienen  8
+4/60 tienen  9
+1/60 tiene  10
+1/60 tiene  11
+3/60 tienen 12
+3/60 tienen 13
+1/60 tiene  15
+2/60 tienen 21
+1/60 tiene  37
+1/60 tiene  39
+
+media 6.6
+
+son órganos desconcentrados de la administración pública municipal 
 
 
 

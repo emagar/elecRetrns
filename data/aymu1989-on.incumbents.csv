@@ -861,7 +861,7 @@ ord,emm,mun,yr,dextra,edon,inegi,ife,part,dmujer,incumbent,race.after,runnerup,p
 860,coa-15.035,TORREON,2017,0,5,5035,5035,pan-udc-ppc-pes,0,JORGE ZERMEÑO INFANTE,Reelected,,pri-pvem-pna-si-pj1-prc-pcp,0.0982,0,1,1,,,,
 861,coa-16.035,TORREON,2018,0,5,5035,5035,pan-udc-mc,0,JORGE ZERMEÑO INFANTE,Term-limited-p-won,JOSE ANTONIO GUTIERREZ JARDON,pri-pvem-pna,0.1745,0,1,1,,,,
 862,coa-17.035,TORREON,2021,0,5,5035,5035,pri-prd,0,ROMAN ALBERTO CEPEDA GONZALEZ,Reelected,,morena,0.1008,0,,,,,,
-863,coa-18.035,TORREON,2024,0,5,5035,5035,pri-prd-udc,0,ROMAN ALBERTO CEPEDA GONZALEZ,Term-limited-2027,SHAMIR FERNANDEZ HERNANDEZ,pt-morena,0.0728,,,,,,,
+863,coa-18.035,TORREON,2024,0,5,5035,5035,pri-prd-udc,0,ROMAN ALBERTO CEPEDA GONZALEZ,Dead-Term-limited-2027,SHAMIR FERNANDEZ HERNANDEZ,pt-morena,0.0728,1,,,,,died in office 29jun2026--sustituto Miguel Angel Riquelme Solis,
 864,coa-07.036,VIESCA,1990,0,5,5036,5036,pri,0,NABOR RODRIGUEZ GARCIA,Term-limited-p-won,,prd,0.3903,0,0,0,,,,inafed
 865,coa-08.036,VIESCA,1993,0,5,5036,5036,pri,0,GERMAN GARCIA REY,Term-limited-p-won,,pan,0.4227,0,0,0,,,,inafed
 866,coa-09.036,VIESCA,1996,0,5,5036,5036,pri,0,JOSE HADAD DE LA ROSA,Term-limited-p-won,,prd,0.2848,0,0,0,,,,inafed
