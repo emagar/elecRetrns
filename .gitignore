@@ -92,6 +92,9 @@ tramp
 *.blg
 *.log
 *.out
+*.fff
+*.ttt
+*.ent
 
 # cask packages
 .cask/

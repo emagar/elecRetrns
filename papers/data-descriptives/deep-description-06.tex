@@ -37,8 +37,11 @@
 \usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
 \newcommand{\emm}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
 
-%% %for submission: sends figs, tables, and footnotes to last pages
-%% \RequirePackage[nomarkers,nolists]{endfloat}     % sends tables and figures to the end
+%% %for submission: sends figs and tables to last pages
+%% %\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
+%% \RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
+
+%% %for submission: sends footnotes to last pages
 %% \RequirePackage{endnotes}                        % turns fn into endnotes; place \listofendnotes where you want 
 %%                                                  %the endnotes to appear (it must be after the last endnote).
 %% \let\footnote=\endnote
@@ -66,14 +69,14 @@
 
 \usepackage{multicol}
 
-%% % Drops clickable links to bib entries
-%% \makeatletter
-%% \renewcommand\hyper@natanchorstart[1]{} 
-%% \renewcommand\hyper@natanchorend{} 
-%% \renewcommand\hyper@natlinkstart[1]{} 
-%% \renewcommand\hyper@natlinkend{} 
-%% \renewcommand\hyper@natlinkbreak[2]{#1}
-%% \makeatother
+% Drops clickable links to bib entries
+\makeatletter
+\renewcommand\hyper@natanchorstart[1]{} 
+\renewcommand\hyper@natanchorend{} 
+\renewcommand\hyper@natlinkstart[1]{} 
+\renewcommand\hyper@natlinkend{} 
+\renewcommand\hyper@natlinkbreak[2]{#1}
+\makeatother
 
 \begin{document}
 
@@ -248,9 +251,9 @@ The time series begins in the 1979--1981 electoral cycle for most of the thirty-
 
 The data are available online, free of charge, from the webpage at:\footnote{The datasets are actually archived and maintained in the \verb|data/| subdirectory of my \emph{Recent Mexican Election Vote Returns} repository that can be found at \url{https://github.com/emagar/elecRetrns}. Given the size and complexity of the repository---which also distributes electoral data for other state and federal elections at different levels of aggregation, along with primary sources, electoral laws, ancillary files, and related materials---the links provided in this webpage substantively facilitate locating, inspecting, and downloading the datasets discussed in this note. In addition, the webpage provides permalinks to the datasets as they existed at the time of publication, as well as links to updated versions incorporating subsequent electoral cycles as official returns become available.}
 
-\begin{equation*}
+\begin{center}
 \href{https://emagar.github.io/municipio-repo/}{\texttt{\url{https://emagar.github.io/municipio-repo/}}}.
-\end{equation*}
+\end{center}
 
 \noindent Files are stored in \verb|csv| format (comma-separated values). This format is compatible with standard spreadsheet and statistical analysis software.\footnote{Text is encrypted using UTF-8 character encoding. Care has been taken to remove most Spanish special characters from text strings. Accented vowels (\'a, \'e, \'i, \'o, \'u, and \"u) appear unaccented. The letter \~n, however, is retained to avoid ambiguity, and may appear as a garbled character on systems whose default encoding differs from UTF-8. See \url{https://docs.python.org/3/howto/unicode.html} for an introduction to character encoding.} The appendix at the end of this note includes the codebook with formal definitions of all data fields (the codebook can also be downloaded from the webpage). Each row of the resulting data matrix corresponds to a unit at a specific time point---that is, a municipality in a given electoral year---while the columns correspond to the variables recorded for that unit-year observation. Among other information, the dataset includes the following fields:
 
@@ -403,7 +406,14 @@ The final stage depicted in the data corresponds to the collapse of the party sy
 
 \section{Elected officers and reelection}\label{S:incumbents}
 
-Another component of the dataset, distributed in the file \verb|data/aymu1989-on.incumbents.csv|, focuses on elected officeholders. Coverage begins only in 1989, as earlier information is largely missing. Table \ref{tab:fem} shows that municipal government remained an overwhelming male domain until 2015. Nevertheless, the proportion of female municipal executives increased steadily throughout the period before leveling off towards the end of the series.
+Another component of the dataset, distributed in the file
+
+\begin{center}
+  \verb|data/aymu1989-on.incumbents.csv|,
+\end{center}
+
+\noindent focuses on elected officeholders. Coverage begins only in 1989, as earlier information is largely missing. Table \ref{tab:fem} shows that municipal government remained an overwhelming male domain until 2015. Nevertheless, the proportion of female municipal executives increased steadily throughout the period before leveling off towards the end of the series.
+
 
 In 2015, a parity law entered into force, constitutionally requiring parties nationwide to nominate equal numbers of female and male candidates across elected offices \citep{piscopo.2016}. The reform more than doubled the number of women elected to municipal office. Even so, women remain underrepresented relative to full parity, as female candidates continue to lose to male candidates more frequently than the reverse. Whether these unequal success rates reflect the difficulty of rapidly recruiting experienced female candidates, the tendency of parties to nominate women in less competitive races, anti-female bias among voters, or other factors remains an important subject for future research. 
 
@@ -447,7 +457,13 @@ The incumbents dataset also makes it possible to study patterns of consecutive r
   
 \section{The electoral calendar}\label{S:cal}
 
-The final component of the dataset, distributed in the file \verb|data/aymu1989-on.concurrence.csv|, relates the timing of each municipal election to the broader electoral calendar. Four dummy variables indicate whether a given municipal election concurred with a gubernatorial, state assembly, presidential, or congressional election.\footnote{See \citet{magarInstReel.2017} for detail. The distributed electoral calendar dummies derive from this repository.} The dataset therefore makes it possible to study coattail effects and other electoral spillovers across races \citep[e.g.,][]{magar.gubCoatMx.2012, ames.1994}. It also enables systematic analysis of changes in state electoral timing, an institutional feature that merits closer scrutiny. Figure \ref{F:cal} shows how the diverse state calendars have gradually become more aligned with the federal calendar over time.
+The final component of the dataset, distributed in the file
+
+\begin{center}
+  \verb|data/aymu1989-on.concurrence.csv|,
+\end{center}
+
+\noindent relates the timing of each municipal election to the broader electoral calendar. Four dummy variables indicate whether a given municipal election concurred with a gubernatorial, state assembly, presidential, or congressional election.\footnote{See \citet{magarInstReel.2017} for detail. The distributed electoral calendar dummies derive from this repository.} The dataset therefore makes it possible to study coattail effects and other electoral spillovers across races \citep[e.g.,][]{magar.gubCoatMx.2012, ames.1994}. It also enables systematic analysis of changes in state electoral timing, an institutional feature that merits closer scrutiny. Figure \ref{F:cal} shows how the diverse state calendars have gradually become more aligned with the federal calendar over time.
 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
