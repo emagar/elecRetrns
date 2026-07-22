@@ -1,0 +1,47 @@
+\begin{figure}
+  \centering
+  \includegraphics[width=\columnwidth]{pics/eg-spreadsheet-columns.png}
+  \caption{Screenshot with a sample of the data organization}\label{F:scrn}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/enp1979-2025.pdf}
+  \caption{Municipal party system fragmentation by federal election cycle. Circles report the mean effective number of parties across municipal elections in the cycle.}\label{F:enp}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/vpct1979-2025.pdf}
+  \caption{The electoral evolution of parties in municipal races 1979--2025. Color-coded circles report a given party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves show the vote share that won by each party in the median municipality over time (the trend is smoothed for clarity).}\label{F:vpcts}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \textbf{A -- Percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2025-legend.pdf} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin1979-2025.pdf} \\
+  \textbf{B -- Population-weighted percent municipalities won} \\
+  \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2025.pdf}
+  \caption{Winners by triennial federal electoral cycle. Relative frequencies in panel B are weighted by the municipality's size. See text on how coalition victories were handled.}\label{F:win}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \centering
+  \includegraphics[width=.6\columnwidth]{../../plots/triplot1989-2014-v-mu.pdf}
+  \caption{Predominantly bipartisan rivalries before Morena. The ternary plot reports the share of the three-party vote that major parties won in municipal elections in the 1989--2014 period (excluding the Federal District). Points inside the dotted area are marginal municipalities, where the difference between the top-two parties was 10 percentage points or less.}\label{F:triplot}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \includegraphics[width=.9\columnwidth]{../../plots/reel-munic2018-23.pdf}
+  \caption{Governing-party reelection since 2018, by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain to be determined. Earlier cycles are dropped because they predate the adoption of municipal consecutive reelection.}\label{F:reel}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+  \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
+  \caption{Gradual alignment of state and federal electoral calendars 1994--2026. The X-axis measures time, with ticks corresponding to January 1 of each year. Vertical black lines indicate the dates of federal races, solid lines for general elections, dotted lines for midterm elections. Circumferences indicate when state elections took place, colored as indicated in the top legend.}\label{F:cal}
+\end{figure}

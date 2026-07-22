@@ -1,0 +1,109 @@
+\begin{table}
+\centering
+  \resizebox{.8\textwidth}{!}{
+    \begin{tabular}{rclrc}
+      \# & Abbrev. & State                                 & N municipalities & Years included      \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex]
+      1  & ags & Aguascalientes                        &      9--11           & 1977--2024 \\
+      2  & bc  & Baja California                       &       4--7           & 1971--2024 \\
+      3  & bcs & Baja California Sur                   &       3--5           & 1974--2024 \\
+      4  & cam & Campeche                              &      8--13           & 1979--2024 \\ \hdashline
+      5  & coa & Coahuila                              &         38           & 1978--2024 \\
+      6  & col & Colima                                &         10           & 1976--2024 \\
+      7  & cps & Chiapas$^\dagger$                      &   110--126           & 1976--2024 \\
+      8  & cua & Chihuahua                             &         67           & 1974--2024 \\ \hdashline
+      9  & df  & Distrito Federal/Mexico City$^\ddagger$ &         16           & 1997--2024 \\
+      10 & dgo & Durango                               &     38--39           & 1971--2025 \\
+      11 & gua & Guanajuato                            &         46           & 1979--2024 \\
+      12 & gue & Guerrero$^\dagger$                     &     75--85           & 1977--2024 \\ \hdashline
+      13 & hgo & Hidalgo                               &         84           & 1981--2024 \\
+      14 & jal & Jalisco                               &   124--125           & 1976--2024 \\
+      15 & mex & México                                &   121--125           & 1978--2024 \\
+      16 & mic & Michoacán$^\dagger$                    &   112--113           & 1977--2024 \\ \hdashline
+      17 & mor & Morelos$^\dagger$                      &     33--36           & 1976--2024 \\
+      18 & nay & Nayarit                               &     19--20           & 1972--2024 \\
+      19 & nl  & Nuevo León                            &         51           & 1973--2024 \\
+      20 & oax & Oaxaca$^\dagger$                       &        570           & 1977--2024 \\ \hdashline
+      21 & pue & Puebla                                &        217           & 1980--2024 \\
+      22 & que & Querétaro                             &         18           & 1973--2024 \\
+      23 & qui & Quintana Roo                          &      7--11           & 1978--2024 \\
+      24 & san & San Luis Potosí                       &     56--58           & 1970--2024 \\ \hdashline
+      25 & sin & Sinaloa                               &     17--20           & 1971--2024 \\
+      26 & son & Sonora                                &     69--72           & 1976--2024 \\
+      27 & tab & Tabasco                               &         17           & 1976--2024 \\
+      28 & tam & Tamaulipas                            &         43           & 1971--2024 \\ \hdashline
+      29 & tla & Tlaxcala                              &     44--60           & 1979--2024 \\
+      30 & ver & Veracruz                              &   203--212           & 1976--2025 \\
+      31 & yuc & Yucatán                               &        106           & 1981--2024 \\
+      32 & zac & Zacatecas                             &     56--58           & 1970--2024 \\
+      \\ [-1.8ex] \hline
+      \\ [-1.8ex]
+         & \mc{2}{l}{Municipalities nationwide by election cycle} & 2375--2477 & 1970--2025 \\
+      \\ [-1.8ex] \hline
+
+    \end{tabular}
+}
+\caption{Coverage of the municipal election returns dataset. $\dagger$ Reforms during the period removed \emph{usos y costumbres} municipalities from the system of periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 2000, see section \ref{S:structure}.}\label{T:coverage}
+\end{table}
+\efloatseparator
+ 
+\begin{table}
+\resizebox{\textwidth}{!}{
+  \begin{tabular}{lrrrrrrrrrrrrc}
+    & \mc{12}{c}{Coalition profile relative frequency (\%)} & \\ [-1.8ex]
+    \\ \cline{2-12}
+    \\ [-1.8ex]
+     &      &              &            &            &&   \mc{3}{c}{Double-major}                    &&             &                &       &            \\ \cline{7-9}
+     &      & \mc{3}{c}{Major-minor}                 &&               &    \& major-  & \& two       && \mc{2}{c}{Triple-major}      &       & (Mean co- \\\cline{3-5}\cline{10-12}
+Cycle&  None&  One         & Two        & Three      &&   Only        &       minor   & maj.-min.    && Only        &  \& maj.-min.  & Total & alitions)  \\
+     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex] \hline
+     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex]
+ 1979--81& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1982--84& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1985--87& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ 1988--90&  93.9&   6.1&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.06) \\ \hdashline
+ 1991--93&  98.6&   1.3&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.01) \\
+ 1994--96&  99.8&   0.2&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ 1997--99&  96.4&   2.1&    ---&    ---&&    1.5&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ 2000--02&  77.0&  16.7&    1.8&    ---&&    4.0&       0.4&         ---&&  ---&       ---& 100 & (0.29) \\ \hdashline
+ 2003--05&  52.8&  29.8&   11.8&    0.4&&    1.8&       3.3&         ---&&  ---&       ---& 100 & (0.65) \\
+ 2006--08&  20.4&  48.1&   30.2&    0.6&&    0.1&       0.7&         ---&&  ---&       ---& 100 & (1.19) \\
+ 2009--11&  11.2&  32.3&   14.6&   10.4&&    7.7&      23.8&         ---&&  ---&       ---& 100 & (1.54) \\
+ 2012--14&   8.6&  50.7&   11.6&    3.6&&    3.5&      22.0&         ---&&  ---&       ---& 100 & (1.39) \\ \hdashline
+ 2015--17&  24.6&  35.6&   11.0&    0.8&&    6.1&      21.7&         ---&&  0.2&       ---& 100 & (1.16) \\
+ 2018--20&   6.3&  17.3&   14.7&    7.1&&    6.5&      35.1&        12.9&&  ---&       ---& 100 & (1.86) \\
+ 2021--23&  26.8&  18.5&    0.2&    ---&&   13.0&       9.5&         0.3&& 18.2&      13.6& 100 & (1.05) \\
+ 2024--26&  17.4&  19.6&    1.6&    ---&&    6.1&      12.8&         0.7&& 17.1&      24.8& 100 & (1.30) \\
+         &      &      &       &       &&       &          &            &&     &          &       &        \\ [-1.8ex]
+  \hline
+\end{tabular}
+}
+\caption{Coalitional profile of municipal races by federal election cycle. Cells report the percentage of municipalities in the cycle, and the cycle's mean number of coalitions per race in parentheses. Quantities consider only coalitions in which at least one partner was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions among minor parties only, which were also quite frequent.}\label{T:coal}
+\end{table}
+\efloatseparator
+ 
+\begin{table}
+  \centering
+  \begin{tabular}{lrl}
+    Cycle     & \% women \\ \hline
+              &     &  \\ [-1.8ex]
+    1988--90$^\dagger$  &   2 &  \\
+    1991--93  &   4 &  \\
+    1994--96  &   4 &  \\
+    1997--99  &   4 &  \\
+    2000--02  &   5 &  \\
+    2003--05  &   5 &  \\
+    2006--08  &   6 &  \\
+    2009--11  &   8 &  \\
+    2012--14  &  11 &  \\
+              &     &  \\ [-2.2ex]  \hdashline
+              &     &  \\ [-2.2ex]
+    2015--17  &  21 &  \footnotesize{\emph{~~~Gender parity slates adopted}} \\
+    2018--20  &  28 &  \\
+    2021--23  &  27 &  \\
+    2024--26  &  28 &  \\
+              &     &  \\ [-1.8ex]  \hline
+  \end{tabular}
+  \caption{Municipal glass ceilings dented: female municipal presidents. The dashed line separates cycles before and after the nomination of 50 percent women became compulsory for all parties. $\dagger$ The 1988 election year from the first cycle is missing.}\label{tab:fem}
+\end{table}
