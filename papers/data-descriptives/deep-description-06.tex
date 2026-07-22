@@ -37,22 +37,22 @@
 \usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
 \newcommand{\emm}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
 
-%for submission: sends figs and tables to last pages
-%\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
-\RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
+%% %for submission: sends figs and tables to last pages
+%% %\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
+%% \RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
 
-%for submission: sends footnotes to last pages
-\RequirePackage{endnotes}        % turns fn into endnotes; place \listofendnotes where you want 
-                                 %the endnotes to appear (it must be after the last endnote).
-\let\footnote=\endnote
-\newcommand{\listofendnotes}{
-   \begingroup
-   \parindent 0pt
-   \parskip 2ex
-   \def\enotesize{\normalsize}
-   \theendnotes
-   \endgroup
-}
+%% %for submission: sends footnotes to last pages
+%% \RequirePackage{endnotes}        % turns fn into endnotes; place \listofendnotes where you want 
+%%                                  %the endnotes to appear (it must be after the last endnote).
+%% \let\footnote=\endnote
+%% \newcommand{\listofendnotes}{
+%%    \begingroup
+%%    \parindent 0pt
+%%    \parskip 2ex
+%%    \def\enotesize{\normalsize}
+%%    \theendnotes
+%%    \endgroup
+%% }
 
 %% % for submission: drop page numbers when producing title page
 %% \pagenumbering{gobble} % Remove page numbers (and reset to 1)
@@ -631,7 +631,7 @@ In categories other than the first two above, suffix `-p-lost' or `-p-won' indic
 
 %\newpage
 
-\listofendnotes
+%\listofendnotes
 
 \bibliographystyle{apsr}
 \bibliography{/home/eric/Dropbox/mydocs/magar}
