@@ -8,9 +8,11 @@ Last revision: 2026-05-21
 Recent news
 </h2>
 
+<sup><sub>2026-07-30</sub></sup> New file added: Tlaxcala's presidencias de comunidad elections (pseudo-regidores elected in SMDs) since 2013 [[./data/ay-nonfused/tla-pres-com-2013-on.csv][here]]. 
+
 <sup><sub>2025-12-11</sub></sup> Added a *research note* describing the *municipal elections* portion of the dataset [[./papers/data-descriptives/deep-description-07.pdf][here]]. 
 
-<sup><sub>2025-12-06</sub></sup> New file added: municipal election *concurrence* with other races since 1989 [[conc][here]].
+# <sup><sub>2025-12-06</sub></sup> New file added: municipal election *concurrence* with other races since 1989 [[conc][here]].
 
 # <sup><sub>2025-06-02</sub></sup> Added returns and winners for 2025 municipal elections in Durango and Veracruz.  
 
