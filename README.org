@@ -276,7 +276,7 @@ Many students over the years have provided research assistance, retrieving and s
 - Odette González Carrillo
 - Reynaldo Lecona
 - [[https://tec.mx/es/facultad-de-impacto/roberto-ponce][Roberto Ponce López]]
-- Rodrigo Santibáñez Razo
+- [[https://github.com/razoR-28][Rodrigo Santibáñez Razo]]
 - Sonia Kuri Kosegarten
 - [[https://github.com/VidalTinoco][Vidal Mendoza Tinoco]]
 - Viridiana Ríos
