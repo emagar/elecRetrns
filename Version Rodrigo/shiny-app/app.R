@@ -20,7 +20,9 @@
 ## - Las coaliciones se colorean con el color del PRIMER partido de   ##
 ##   la etiqueta (ej. "pri-pvem-pna" -> color del pri). Decision      ##
 ##   deliberada: simple y predecible, aunque dos coaliciones          ##
-##   encabezadas por el mismo partido comparten color.                ##
+##   encabezadas por el mismo partido comparten color.  
+## - La creación de esta app fue realizada con la ayuda central del 
+##   modelo Fable 5 de Claude Code. 
 ########################################################################
 
 library(shiny)
