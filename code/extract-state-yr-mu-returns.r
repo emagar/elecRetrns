@@ -11,6 +11,8 @@
 ## Author: Eric Magar emagar at itam dot mx                                                                           ##
 ## Created:      13-mar-2021                                                                                          ##
 ## Last revised:  4-apr-2025                                                                                           ##
+##
+## esto cambiará para darle crédito a RazoR
 ########################################################################################################################
 
 ## Edit your path to where aymu1970-present.coalAgg.csv and aymu1970-present.coalSplit.csv are stored 
