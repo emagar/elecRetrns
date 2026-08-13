@@ -1,0 +1,10 @@
+name: elecretrns
+title:
+username: elecrazo
+account: elecrazo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17577549
+bundleId: 12278428
+url: https://elecrazo.shinyapps.io/elecretrns/
+version: 1

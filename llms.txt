@@ -1,0 +1,78 @@
+# elecRetrns — Recent Mexican Election Vote Returns
+
+> Vote returns for Mexican elections since the 1960s–70s, compiled by Eric
+> Magar (ITAM). Municipal (ayuntamiento), federal deputy, senate,
+> gubernatorial and presidential races, at municipality/district/precinct
+> level. MIT license. Cite as: Magar, E. (2018) Recent Mexican election vote
+> returns repository, https://github.com/emagar/elecReturns
+
+## How the data is organized
+
+File names encode office + observation unit + years covered:
+- Office: ay=ayuntamiento (municipal), df=federal deputies, se=senators,
+  pr=president, dl=state deputies, go=governor.
+- Unit: mu=municipality, ed=state, df=federal district, se=precinct
+  (sección), ca=polling station (casilla), de=demarcación (Nayarit only).
+- Example: `data/aymu1970-on.coalAgg.csv` = municipal races, municipality
+  level, 1970 to present, coalition votes aggregated by candidate.
+- `coalAgg` vs `coalSplit`: same elections; coalAgg reports one vote total
+  per candidate (coalition votes merged), coalSplit divides coalition votes
+  among member parties where the source permits.
+
+## Key files (raw CSV, directly downloadable)
+
+- Municipal returns (wide format, one row per election, votes in columns
+  v01/l01..v23/l23 where vNN=votes and lNN=party label of candidate NN):
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/aymu1970-on.coalAgg.csv
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/aymu1970-on.coalSplit.csv
+- Elected municipal presidents (names, reelection status, gender):
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/aymu1989-on.incumbents.csv
+- Federal deputies by district since 1979:
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/dfdf1979-on.coalAgg.csv
+- Governors since 1961:
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/goed1961-on.csv
+- President by district (2006-on) and by state (1964-on):
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/prdf2006-on.csv
+  https://raw.githubusercontent.com/emagar/elecRetrns/master/data/pred1964-on.csv
+
+## Tidy version (RECOMMENDED for analysis and AI assistants)
+
+Long-format municipal returns — one row per candidacy-election with fixed
+columns (emm, yr, edon, inegi, mun, partido, votos, share, rank, win, mg,
+efec, lisnom, status). Much easier to filter and aggregate than the wide
+files. Available in this fork:
+https://raw.githubusercontent.com/RazoR-28/elecRetrns/master/Version%20Rodrigo/shiny-app/aymu1970-on.tidy.csv
+https://raw.githubusercontent.com/RazoR-28/elecRetrns/master/Version%20Rodrigo/shiny-app/aymu1970-on.coalSplit.tidy.csv
+
+Machine-readable codebook (variable, description, type, files):
+https://raw.githubusercontent.com/RazoR-28/elecRetrns/master/codebook.csv
+
+Interactive explorer (maps, time series, CSV/Excel export):
+https://elecrazo.shinyapps.io/elecretrns/
+
+## Things an assistant must know before answering with this data
+
+- `efec` (effective vote) is the denominator for vote shares: raw votes
+  minus write-ins and invalid ballots.
+- In wide files the party behind column v01 CHANGES row by row — always
+  read the matching lNN label. Never assume column position = party.
+- `share` and `mg` (winner margin) are proportions in 0–1.
+- Some municipality-years have TWO records (annulled + extraordinary
+  election, or first round + runoff). Column `status` disambiguates:
+  prefer ok > extra > ok--to-runoff; ignore cancelled/appointed when an
+  alternative exists.
+- Municipal `inegi` code = state(2 digits)*1000 + municipality(3 digits).
+- Oaxaca has hundreds of municipalities electing by usos y costumbres
+  (no party competition) — absent years there are normal, not missing data.
+- Known source anomaly: jal-18.118 (Yahualica, Jalisco 2021) vote sum
+  differs from efec by 198 votes.
+- Party label glossary (main): pan, pri, prd, morena, pvem, pt, mc,
+  pna/panal (Nueva Alianza), pes, conve/mc (Convergencia→Movimiento
+  Ciudadano), pfcrn, parm, pps, pdm, psum, pst, fxm, rsp, indep
+  (independent). Coalition labels join parties with hyphens: "pri-pvem-pna".
+
+## Full documentation
+
+- README with complete codebook: https://github.com/emagar/elecRetrns
+- Research note describing the municipal data:
+  https://github.com/emagar/elecRetrns/tree/master/papers/data-descriptives
