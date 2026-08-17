@@ -9,10 +9,9 @@
 ## xport(e=2, y=2019) # where e is edon, y a known electoral year                                                     ##
 ##                                                                                                                    ##
 ## Author: Eric Magar emagar at itam dot mx                                                                           ##
+## Trimmed/debuged by @RazoR-28 in July 2026                                                                          ##
 ## Created:      13-mar-2021                                                                                          ##
-## Last revised:  4-apr-2025                                                                                           ##
-##
-## esto cambiará para darle crédito a RazoR
+## Last revised: 12-aug-2026                                                                                          ##
 ########################################################################################################################
 
 ## Edit your path to where aymu1970-present.coalAgg.csv and aymu1970-present.coalSplit.csv are stored 
