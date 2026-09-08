@@ -1,3 +1,4 @@
+rm(list=ls())
 setwd("~/Desktop/MXelsCalendGovt/elecReturns")
 
 ## consolidate 2016 demn-level from casillas
@@ -11,7 +12,18 @@ tmp <- d[,sel.c] # subset
 head(tmp)
 tmp[is.na(tmp)] <- 0
 tmp -> d[,sel.c] # return
-
+## drop efec=0
+sel.r <- which(d$efec==0)
+d <- d[-sel.r,]
+# consolidate mun votes
+for (i in sel.c){
+    d[,i] <- ave(d[,i], as.factor(d$emm), FUN=function(x) sum(x, na.rm=TRUE))
+}
+## drop redundants
+d <- d[duplicated(d$emm)==FALSE,]
+d$seccion <- d$casilla <- d$status <- NULL
+## save
+write.csv(d, file = "~/Downloads/tmp.csv", row.names=FALSE)
 
 d <- read.csv("data/ay-nonfused/casillas/tla-pres-com-casilla-2013-on.csv")
 str(d)
@@ -27,3 +39,6 @@ summary(d$partic)
 sel <- which(d$partic>1)
 
 d$ord[sel]
+
+
+
