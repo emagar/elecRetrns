@@ -60,12 +60,25 @@ d$emm[sel]
 table(d$ndemmaj)
 table(d$ndem)
 
-
-mean(d$partic[sel], na.rm=TRUE)
-sd(d$partic[sel], na.rm=TRUE)
-
 f <- function(x){round(c(mean(x, na.rm=TRUE), sd(x, na.rm=TRUE), length(x)), 2)}
 
 sel <- which(d$ndem>1)
 tapply(d$partic[sel], factor(paste0(d$yr[sel], d$ife[sel])), function(x) f(x))
+
+par(mfrow = c(1, 2))
+sel <- which(d$ndem>1 & d$yr==2016)
+boxplot(d$partic[sel] ~ d$dscjn[sel]
+      , ylim = c(0,1)
+      , ylab = "Participación por demarcación"
+      , xlab = "1=controversia"
+      , main = "Prerreforma (2016)")
+sel <- which(d$ndem>1 & d$yr>=2021)
+boxplot(d$partic[sel] ~ d$dscjn[sel]
+      , ylim = c(0,1)
+      , ylab = "Participación por demarcación"
+      , xlab = "1=controversia"
+      , main = "Posreforma (2021 y 24)")
+
+Dime cuánto será por abono para justificar al SAT y cuánto en efectivo. Podría llevar parte de esto también
+
 

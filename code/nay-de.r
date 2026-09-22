@@ -481,3 +481,7 @@ dat.split[1,]
 write.csv(dat.split, file = "ayde2008-on-Nayarit-regid.coalSplit.csv", row.names = FALSE)
 
 
+Esto lo hice 15sep2026 independiente de todo lo anterior.
+Reconstituye las demarcaciones de mapas 2008 y 2023 a partir de las secciones.
+Permite agregar la lista nominal, missing en ayde, a partir de las casillas en elecciones federales (con rezago de un año).
+
