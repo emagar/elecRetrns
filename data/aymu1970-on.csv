@@ -30334,7 +30334,7 @@ ord,emm,yr,inegi,ife,mun,edon,date,status,v01,l01,v02,l02,v03,l03,v04,l04,v05,l0
 30332,tla-15.055,2013,29055,29057,SAN LUCAS TECOPILCO,29,20130707,ok,75,pan,761,pri,45,prd,798,pt,,,,,,,10,pac,,,,,,,1,pan-pac,,,,,,,,,,,,,,,,,,,,,,,,,,,,69,1758,2299,iee 10nov23 lisnom fed 2012,
 30333,tla-16.055,2016,29055,29057,SAN LUCAS TECOPILCO,29,20160605,ok,12,pan,519,pri,5,prd,5,pt,55,pvem,645,mc,,,43,pac,403,ps,100,morena,,,,,,,10,pt-prd,,,,,,,,,,,,,,,,,,,,,,,1,61,1849,2408,ine,
 30334,tla-17.055,2021,29055,29057,SAN LUCAS TECOPILCO,29,20210606,ok,1,pan,183,pri,,,401,pt,,,,,,,426,ps,60,morena,4,pna,799,pes,3,iss,9,pes,4,rsp,,,,,,,,,,,,,,,,,,,,,,,0,45,1935,2536,iee asignacion regidurias,
-30335,tla-18.055,2024,29055,29057,SAN LUCAS TECOPILCO,29,20241124,extra,,,,,,,,pt,813,pvem,,,,,244,morena,292,pna,369,rsp,,,,,,,1,pan-pri,1,morena-rsp-pna,,,,,,,,,,,,,,,,,,,,,0,63,1781,2619,iee post trife,
+30335,tla-18.055,2024,29055,29057,SAN LUCAS TECOPILCO,29,20241124,extra,,,,,,,,,813,pvem,,,,,244,morena,292,pna,369,rsp,,,,,,,1,pan-pri,1,morena-rsp-pna,,,,,,,,,,,,,,,,,,,,,0,63,1781,2619,iee post trife,
 30336,tla-18a.055,2024,29055,29057,SAN LUCAS TECOPILCO,29,20240602,cancelled,,,,,,,7,pt,218,pvem,108,mc,13,pac,48,morena,171,pna,199,rsp,96,fxm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,,2619,iee,anulada
 30337,tla-09.056,1996,29056,29058,SANTA ANA NOPALUCAN,29,19961120,new--extra,542,pan,471,pri,626,prd,144,pt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,38,1821,2853,www.ietlax.org.mx--1dic04,nuevo munic--el extraord
 30338,tla-10.056,1998,29056,29058,SANTA ANA NOPALUCAN,29,19981108,ok,841,pan,778,pri,261,prd,221,pt,1,pvem,40,pdm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,2193,3223,www.ietlax.org.mx--1dic04,
@@ -31413,7 +31413,7 @@ ord,emm,yr,inegi,ife,mun,edon,date,status,v01,l01,v02,l02,v03,l03,v04,l04,v05,l0
 31411,ver-15.064,2014,30064,30066,CHUMATLAN,30,20140601,extra,786,pri,844,pt,12,pvem,59,pna,1,pri-pvem-pna,758,mc,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,2460,2875,iee,
 31412,ver-15a.064,2013,30064,30066,CHUMATLAN,30,20130707,cancelled,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,,2726,iee,
 31413,ver-16.064,2017,30064,30066,CHUMATLAN,30,20170604,ok,255,pan,22,pri,637,prd,5,pvem,27,pan-prd,1,pri-pvem,31,pt,132,mc,1053,pna,52,morena,86,pes,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,38,2303,2911,iee,revisar con ver2017aymu.pdf pq corregi errores en 2 munics 2may2025
-31414,ver-17.064,2021,30064,30066,CHUMATLAN,30,20210606,ok,10,pan,2,pri,1027,prd,51,pvem,1108,pt,16,mc,13,morena,2,txver,1,podemos,,,,,58,pes,,,350,fxm,,,,,,,,,,,,,,,,,,,,,,,0,53,2691,3191,iee computos municipales,
+31414,ver-17.064,2021,30064,30066,CHUMATLAN,30,20210606,ok,10,pan,2,pri,1027,prd,51,pvem,1108,pt,16,mc,13,morena,2,txver,1,podemos,1,pan-pri-prd,,,58,pes,,,350,fxm,,,,,,,,,,,,,,,,,,,,,,,0,53,2691,3191,iee computos municipales,
 31415,ver-18.064,2025,30064,30066,CHUMATLAN,30,20250601,ok,1322,pan,115,pri,1,pvem,1247,pt,1,mc,,,7,vgh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,30,2723,3271,iee computos municipales,
 31416,ver-03.065,1976,30065,30067,EMILIANO ZAPATA,30,197610,ok,9633,pri,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,398,,10031,,banamex diego,
 31417,ver-04.065,1979,30065,30067,EMILIANO ZAPATA,30,197908,ok,5206,pri,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5206,12987,banamex,
