@@ -274,10 +274,12 @@ Many students over the years have provided research assistance, retrieving and s
 - [[https://github.com/pptrrns][José Angel Torrens Hernández]]
 - Julio Solís Ríos
 - [[https://polisci.wustl.edu/people/lucia-motolinia][Lucía Motolinia Carballo]]
+- María Camila Buenfil Meléndez
 - Mariana Meza Hernández
 - [[https://www.mauriciofduque.com/][Mauricio Fernández Duque]]
 - Odette González Carrillo
 - Reynaldo Lecona
+- Rita Irene García Gutiérrez
 - [[https://tec.mx/es/facultad-de-impacto/roberto-ponce][Roberto Ponce López]]
 - [[https://github.com/razoR-28][Rodrigo Santibáñez Razo]]
 - Sonia Kuri Kosegarten
