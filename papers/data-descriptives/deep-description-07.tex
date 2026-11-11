@@ -37,9 +37,9 @@
 \usepackage[colorinlistoftodos, textsize=small]{todonotes} % show notes
 \newcommand{\emm}[1]{\todo[color=red!15, inline]{\textbf{Eric:} #1}}
 
-%% %for submission: sends figs and tables to last pages
-%% %\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
-%% \RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
+%for submission: sends figs and tables to last pages
+%\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
+\RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
 
 %% %for submission: sends footnotes to last pages
 %% \RequirePackage{endnotes}        % turns fn into endnotes; place \listofendnotes where you want 
@@ -91,6 +91,8 @@
 
 \begin{abstract}
 \noindent I introduce a publicly available dataset of vote returns for Mexican municipal elections between 1979 and 2025. The dataset includes more than 35,000 races and provides municipality-level aggregates for votes won by each party, the number of registered voters, the number of candidates competing, the winner's name, the election date and whether it was held concurrently with other races, and identification codes for merging socio-demographic data. I present the data sources, explain the standardization of the time-series cross-sectional structure, and provide descriptive statistics. Patterns in the data are consistent with existing knowledge of Mexican elections and demonstrate several promising applications of the dataset.
+
+\noindent Presento una base de datos de acceso público sobre los resultados electorales de las elecciones municipales en México entre 1979 y 2025. La base comprende más de 35,000 contiendas electorales e incluye información agregada a nivel municipal sobre la votación obtenida por cada partido, la lista nominal, el número de candidaturas participantes, el nombre de la persona ganadora, la fecha de la elección y si ésta se celebró de manera concurrente con otros comicios, así como claves de identificación que permiten vincular los datos con información sociodemográfica. Describo las fuentes de información, explico los procedimientos utilizados para estandarizar la estructura longitudinal y transversal de la base de datos y presento estadísticas descriptivas. Los patrones observados son consistentes con el conocimiento existente sobre las elecciones en México y muestran diversas aplicaciones potenciales de esta base de datos.
 \end{abstract}
 
 %% \begin{footnotesize}
@@ -159,7 +161,7 @@ Political parties operate within a highly regulated electoral environment. Mexic
 
 \subsection{Major parties}
 
-In broad chronological terms, Mexico's party system evolved from single-party hegemony to a competitive and volatile three-party system at the turn of the twenty-first century. Two decades of divided government followed, culminating in the rise of a new dominant party that left the former trio of major parties electorally in a weakened electoral position. A brief overview of the principal parties during this period follows.
+In broad chronological terms, Mexico's party system evolved from single-party hegemony to a competitive and volatile three-party system at the turn of the twenty-first century. Two decades of divided government followed, culminating in the rise of a new dominant party that left the former trio of major parties in a weakened electoral position. A brief overview of the principal parties during this period follows.
 
 \begin{description}
 
@@ -182,7 +184,7 @@ Electoral institutions created incentives for the formation of new parties in pu
 
 \item[Green Party:] A family-controlled political enterprise, the Partido Verde Ecologista de México (\textbf{PVEM}) stands out among Mexico's opportunistic parties. Its alliance votes may well have provided the PAN with its decisive margin in the 2000 presidential election.\footnote{The structure of the ballot prevents the breakdown of alliance votes by party. Estimating the PAN--PVEM alliance vote using the parties’ relative vote shares in the congressional elections held three years earlier produces a Green Party contribution just below the margin of victory in the 2000 presidential election.} The Greens subsequently became the PRI's reliable electoral partner in elections at virtually all levels during the 2003--18 period \citep{spoon.pulido.PRI-PVEM2017}. More recently, the party has gravitated toward Morena's orbit. The PVEM won the governorship of Chiapas in 2012---the first gubernatorial victory by a non-major party---and later captured San Luis Potosí in 2021, thereby gaining access to additional organizational resources. Green Party legislators in Congress were also essential to sustaining Morena's governing coalition majority between 2021 and 2024 and its constitutional supermajority after 2024. 
 
-\item[Workers Party:] Morena's other principal congressional ally is the Partido del Trabajo (\textbf{PT}). Originally emerging from radical urban movements of the 1970s in northern Mexico, it entered electoral coalitions with the PRD almost systematically throughout the competitive era. Its leadership aligned unequivocally with AMLO both before and after his break with the PRD. The PT has yet to win a governorship on its own.
+\item[Workers' Party:] Morena's other principal congressional ally is the Partido del Trabajo (\textbf{PT}). Originally emerging from radical urban movements of the 1970s in northern Mexico, it entered electoral coalitions with the PRD almost systematically throughout the competitive era. Its leadership aligned unequivocally with AMLO both before and after his break with the PRD. The PT has yet to win a governorship on its own.
 \end{description}
 
 \section{Vote manipulation}
@@ -269,6 +271,7 @@ The data are available online, free of charge, from the webpage at:\footnote{The
   \centering
   \includegraphics[width=\columnwidth]{pics/eg-spreadsheet-columns.png}
   \caption{Screenshot with a sample of the data organization}\label{F:scrn}
+  % \alt={An image of the dataset as displayed in a spreadsheet application such as Excel.}
 \end{figure}  
 
 Figure \ref{F:scrn} provides a glimpse of the dataset for five municipalities in Baja California across three electoral cycles: \verb|yr=|1998, 2001, and 2004. Municipal vote returns are stored in column pairs such as \verb|(v01,l01)|, \verb|(v02,l02)|, and so forth, corresponding to the first reported candidate, the second candidate, and so on. Within each pair, the \verb|l| component identifies the party or coalition label, while the \verb|v| component records the total votes won by the party or coalition. For example, in Ensenada's 1998 election, the PRI won a plurality of 31,995 votes ($\texttt{l02} = \texttt{pri}$ indicates that the PRI's vote total is stored in field $\texttt{v02}$), followed closely by the PAN with 30,660 votes (stored in field $\texttt{v01}$).
@@ -291,36 +294,53 @@ Although these legal distinctions primarily affect the allocation of public part
 
 \begin{table}
 \resizebox{\textwidth}{!}{
-  \begin{tabular}{lrrrrrrrrrrrrc}
+  \begin{tabular}{crrrrrrrrrrrrc}
     & \mc{12}{c}{Coalition profile relative frequency (\%)} & \\ [-1.8ex]
-    \\ \cline{2-12}
+    \\ \cline{2-13}
     \\ [-1.8ex]
-     &      &              &            &            &&   \mc{3}{c}{Double-major}                    &&             &                &       &            \\ \cline{7-9}
-     &      & \mc{3}{c}{Major-minor}                 &&               &    \& major-  & \& two       && \mc{2}{c}{Triple-major}      &       & (Mean co- \\\cline{3-5}\cline{10-12}
-Cycle&  None&  One         & Two        & Three      &&   Only        &       minor   & maj.-min.    && Only        &  \& maj.-min.  & Total & alitions)  \\ 
-     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex] \hline
-     &      &              &            &            &&               &               &              &&             &                &       &            \\ [-1.8ex] 
- 1979--81& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
- 1982--84& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
- 1985--87& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
- 1988--90&  93.9&   6.1&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.06) \\ \hdashline
- 1991--93&  98.6&   1.3&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.01) \\
- 1994--96&  99.8&   0.2&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
- 1997--99&  96.4&   2.1&    ---&    ---&&    1.5&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
- 2000--02&  77.0&  16.7&    1.8&    ---&&    4.0&       0.4&         ---&&  ---&       ---& 100 & (0.29) \\ \hdashline
- 2003--05&  52.8&  29.8&   11.8&    0.4&&    1.8&       3.3&         ---&&  ---&       ---& 100 & (0.65) \\
- 2006--08&  20.4&  48.1&   30.2&    0.6&&    0.1&       0.7&         ---&&  ---&       ---& 100 & (1.19) \\
- 2009--11&  11.2&  32.3&   14.6&   10.4&&    7.7&      23.8&         ---&&  ---&       ---& 100 & (1.54) \\
- 2012--14&   8.6&  50.7&   11.6&    3.6&&    3.5&      22.0&         ---&&  ---&       ---& 100 & (1.39) \\ \hdashline
- 2015--17&  24.6&  35.6&   11.0&    0.8&&    6.1&      21.7&         ---&&  0.2&       ---& 100 & (1.16) \\
- 2018--20&   6.3&  17.3&   14.7&    7.1&&    6.5&      35.1&        12.9&&  ---&       ---& 100 & (1.86) \\
- 2021--23&  26.8&  18.5&    0.2&    ---&&   13.0&       9.5&         0.3&& 18.2&      13.6& 100 & (1.05) \\
- 2024--26&  17.4&  19.6&    1.6&    ---&&    6.1&      12.8&         0.7&& 17.1&      24.8& 100 & (1.30) \\ 
-         &      &      &       &       &&       &          &            &&     &          &       &        \\ [-1.8ex] 
+         & None&\mc{3}{c}{Major-minor}&&\mc{3}{c}{Double-major}    &&\mc{2}{c}{Triple-major}&Total& (Mean  \\ \cline{3-5} \cline{7-9} \cline{11-12}
+         &     &     &     &          &&     & and one  & and two  &&       &   and one     &     & coali- \\ 
+  Cycle  &     & one & two & three    &&only & maj.-min.& maj.-min.&&  only &   maj.-min.   &     & tions) \\ 
+         &     &     &     &          &&     &          &          &&       &               &     &        \\ [-1.8ex] \hline
+         &     &     &     &          &&     &          &          &&       &               &     &        \\ [-1.8ex] 
+ 1979--81& 100 & --- & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.00) \\
+ 1982--84& 100 & --- & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.00) \\
+ 1985--87& 100 & --- & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.00) \\
+ 1988--90&  94 &   6 & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.06) \\ \hdashline
+ 1991--93&  99 &   1 & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.01) \\
+ 1994--96& 100 & --- & --- &   ---    && --- &      --- &      --- &&   --- &      ---      & 100 & (0.01) \\
+ 1997--99&  97 &   2 & --- &   ---    &&   2 &      --- &      --- &&   --- &      ---      & 100 & (0.04) \\
+ 2000--02&  77 &  17 &  2  &   ---    &&   4 &      --- &      --- &&   --- &      ---      & 100 & (0.29) \\ \hdashline
+ 2003--05&  53 &  30 &  12 &   ---    &&   2 &        3 &      --- &&   --- &      ---      & 100 & (0.65) \\
+ 2006--08&  20 &  48 &  30 &     1    && --- &        1 &      --- &&   --- &      ---      & 100 & (1.19) \\
+ 2009--11&  11 &  32 &  15 &    10    &&   8 &       24 &      --- &&   --- &      ---      & 100 & (1.54) \\
+ 2012--14&   9 &  51 &  12 &     4    &&   4 &       22 &      --- &&   --- &      ---      & 100 & (1.39) \\ \hdashline
+ 2015--17&  25 &  36 &  11 &     1    &&   6 &       22 &      --- &&   --- &      ---      & 100 & (1.16) \\
+ 2018--20&   6 &  17 &  15 &     7    &&   7 &       35 &       13 &&   --- &      ---      & 100 & (1.86) \\
+ 2021--23&  27 &  19 & --- &   ---    &&  13 &       10 &      --- &&    18 &       14      & 100 & (1.05) \\
+ 2024--26&  17 &  20 &   2 &   ---    &&   6 &       13 &        1 &&    17 &       25      & 100 & (1.30) \\ 
+ %% 1979--81& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ %% 1982--84& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ %% 1985--87& 100.0&   ---&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.00) \\
+ %% 1988--90&  93.9&   6.1&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.06) \\ \hdashline
+ %% 1991--93&  98.6&   1.3&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.01) \\
+ %% 1994--96&  99.8&   0.2&    ---&    ---&&    ---&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ %% 1997--99&  96.4&   2.1&    ---&    ---&&    1.5&       ---&         ---&&  ---&       ---& 100 & (0.04) \\
+ %% 2000--02&  77.0&  16.7&    1.8&    ---&&    4.0&       0.4&         ---&&  ---&       ---& 100 & (0.29) \\ \hdashline
+ %% 2003--05&  52.8&  29.8&   11.8&    0.4&&    1.8&       3.3&         ---&&  ---&       ---& 100 & (0.65) \\
+ %% 2006--08&  20.4&  48.1&   30.2&    0.6&&    0.1&       0.7&         ---&&  ---&       ---& 100 & (1.19) \\
+ %% 2009--11&  11.2&  32.3&   14.6&   10.4&&    7.7&      23.8&         ---&&  ---&       ---& 100 & (1.54) \\
+ %% 2012--14&   8.6&  50.7&   11.6&    3.6&&    3.5&      22.0&         ---&&  ---&       ---& 100 & (1.39) \\ \hdashline
+ %% 2015--17&  24.6&  35.6&   11.0&    0.8&&    6.1&      21.7&         ---&&  0.2&       ---& 100 & (1.16) \\
+ %% 2018--20&   6.3&  17.3&   14.7&    7.1&&    6.5&      35.1&        12.9&&  ---&       ---& 100 & (1.86) \\
+ %% 2021--23&  26.8&  18.5&    0.2&    ---&&   13.0&       9.5&         0.3&& 18.2&      13.6& 100 & (1.05) \\
+ %% 2024--26&  17.4&  19.6&    1.6&    ---&&    6.1&      12.8&         0.7&& 17.1&      24.8& 100 & (1.30) \\ 
+         &     &     &     &           &&      &          &        &&       &               &     &        \\ [-1.8ex] 
   \hline
-\end{tabular}
+  \end{tabular}
 }
-\caption{Coalitional profile of municipal races by federal election cycle. Cells report the percentage of municipalities in the cycle, and the cycle's mean number of coalitions per race in parentheses. Quantities consider only coalitions in which at least one partner was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions among minor parties only, which were also quite frequent.}\label{T:coal}
+\caption{Coalitional profile of municipal races by federal election cycle. Cells report the percentage of municipalities in the cycle, and the cycle's mean number of coalitions per race in parentheses. Quantities consider only coalitions in which at least one partner was a major party (PAN, PRI, PRD, or Morena), ignoring coalitions among minor parties only, which were also quite frequent. Rounded percentages may not add to 100.}\label{T:coal}
+  % \alt={Four sets of columns report the percentage of municipal elections in each electoral cycle by coalition type, distinguishing alliances between major and minor parties, between two or three major parties, elections without coalitions, and other coalition configurations.}
 \end{table}
 
 Although coalitions were prohibited at the local level until the mid-1980s and only rarely authorized before the mid-1990s, they subsequently became a defining feature of Mexican elections, as shown in Table \ref{T:coal}. Each row of the table reports the coalition profiles observed across municipal elections within a given triennium. With few exceptions resulting from changes in state electoral calendars,\footnote{Subnational electoral calendars varied substantially up to 2015, but have since become increasingly aligned with the federal cycle (see section \ref{S:cal}). Change is discernible in how municipal vote shares align vertically in the right of Figure \ref{F:vpcts}, increasingly clustered over darker and more distinct columns that concur with federal elections.} triennial aggregates correspond to one regular election per municipality. A coalition profile is coded as `None' when no coalition competed in the race; as `major-minor' when one, two, or three major parties (PAN, PRI, PRD, or Morena) jointly nominated a municipal ticket with one or more minor parties; as `Double major' when two major parties ran jointly (PAN+PRD, PAN+PRI, or PRI+PRD---Morena never did); and so forth.
@@ -363,6 +383,7 @@ Three distinct periods stand out. First, during triennia between 2000 and 2008, 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/enp1979-2025.pdf}
   \caption{Municipal party system fragmentation by federal election cycle. Circles report the mean effective number of parties across municipal elections in the cycle.}\label{F:enp}
+  % \alt={Comparison of the effective number of parties and candidates across electoral cycles: the two measures follow similar trajectories until 2000--2002, after which the gap between them progressively widens.}
 \end{figure}
 
 Computing the effective number of parties and candidates using the \citet{laakso.taagepera.1979} index---based on the \verb|coalSplit| and \verb|coalAgg| files, respectively---captures the increasing prevalence of coalitions particularly well. As shown longitudinally in Figure \ref{F:enp}, a gap between the two measures emerged after major-party coalitions became normalized after 2009 and has continued to widen since then. The three distributed file structures therefore provide users with flexibility in handling coalitions according to their analytical needs. The repository also includes vote returns for federal and other state-level elections, for which the issues discussed in this section are likewise relevant. This note, however, focuses exclusively on municipal elections.\footnote{The repository also distributes returns to other federal and subnational races at different levels of aggregation. All files are in the \verb|/data| folder: those whose name starts with \verb|df| report federal deputy tallies, \verb|se| are for senate races, \verb|pr| for presidential elections, \verb|go| for gubernatorial, and \verb|dl| for state assemblies. The repository's \verb|README| file provides details on the file-naming conventions.}
@@ -374,6 +395,7 @@ This section summarizes party vote shares across municipalities nationwide. Its 
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/vpct1979-2025.pdf}
   \caption{The electoral evolution of parties in municipal races 1979--2025. Color-coded circles report a given party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves show the vote share that won by each party in the median municipality over time (the trend is smoothed for clarity).}\label{F:vpcts}
+  % \alt={Scatterplot of party vote shares across municipalities over time: for each party, a summary curve traces its median vote share across municipalities, while the underlying observations show the distribution of vote shares in all municipal races.}
 \end{figure}  
 
 Figure \ref{F:vpcts} provides a group portrait by plotting every municipal election since 1979 for which data are available, using the split-coalition file. Each small, color-coded circle quantifies a party's vote share in a single municipal election---137,813 observations in total, covering 30,633 non-missing municipal races. At the beginning of the series, the hegemonic party system of the 1960s and 1970s remained largely intact, with the PRI's red circles frequently concentrated at 100 percent of the vote, reflecting uncontested dominance \citep{segovia.els1979}. During the 1980s the center-right PAN (shown in blue), along with the emerging parties of the left (shown in gold),\footnote{Several leftist incarnations are coded as PRD in the data: the Mexican Communist Party (PCM), PSUM, PMT, and PMS. The PRD was created in 1989, so this is a simplification of an overcrowded field. But PSUM used PCM's registration, then PMS used PSUM's, and PRD used PMS's. So other than the PMT, these are technically one and the same party outfit. See \citet{molinar.1991a}.} achieved more than symbolic levels of support only in a very limited number of predominantly urban municipalities.
@@ -388,6 +410,7 @@ Opposition parties began gaining momentum after the economic crash of 1982, grad
   \textbf{B -- Population-weighted percent municipalities won} \\
   \includegraphics[width=.9\columnwidth]{../../plots/pctwin-popw1979-2025.pdf}
   \caption{Winners by triennial federal electoral cycle. Relative frequencies in panel B are weighted by the municipality's size. See text on how coalition victories were handled.}\label{F:win}
+  % \alt={Two bar charts showing the percentage of municipal election victories won by each party in successive electoral cycles.}
 \end{figure}  
 
 Figure \ref{F:win} approaches this lag from a somewhat different angle by focusing on winners in municipal races. In Panel A, each horizontal bar reports the proportion of municipalities won by each party during a triennial electoral cycle, using the coalition aggregates file. For visual simplicity, victories by coalition tickets are assigned to the major party involved; when two or three major parties competed jointly, the victory is assigned arbitrarily to the largest of them within the corresponding state-cycle. The PRI won nearly all municipal elections in the first three triennia covered by the series. Its subsequent decline remained barely noticeable as late as 1993, after which electoral losses accelerated but were interrupted by periods of apparent stability: roughly nine out of ten municipal victories between 1988 and 1993, three out of four between 1994 and 1999, and approximately half between 2000 and 2014. The party's final collapse came with Morena's rise to dominance. In the final electoral cycle reported, the PRI won only one in ten municipalities only.
@@ -400,6 +423,7 @@ The simultaneous rise of a dual opposition in Figure \ref{F:vpcts} created a coo
   \centering
   \includegraphics[width=.6\columnwidth]{../../plots/triplot1989-2014-v-mu.pdf}
   \caption{Predominantly bipartisan rivalries before Morena. The ternary plot reports the share of the three-party vote that major parties won in municipal elections in the 1989--2014 period (excluding the Federal District). Points inside the dotted area are marginal municipalities, where the difference between the top-two parties was 10 percentage points or less.}\label{F:triplot}
+  % \alt={Distribution of municipal elections within a triangular plot: a large proportion of races lie along the triangle's sides, indicating that one of the three parties received no votes, or within bands representing margins of victory of 10 percentage points or less.}
 \end{figure}
 
 The final stage depicted in the data corresponds to the collapse of the party system that structured Mexico's democratic transition \citep{moreno.decisElec.2009}, and to the rise of AMLO's Morena. AMLO overcame the chronic factionalism of the Mexican left \citep{bruhn.1997} by launching his new party structured around his personal leadership. The strategy proved successful. Left-wing elite discoordination allowed rival parties to secure unexpected victories in Morena's inaugural 2015 elections. Three years later, however, AMLO's third presidential campaign became a focal point that attracted not just left-wing voters but also independents and defectors from both the PRI and the PAN. Morena's landslide victory in 2018, which gave the party unified control of the federal government and most state governments, prompted the former major parties to form broad triple-major coalitions in subsequent elections. These desperate efforts achieved little success. Although Morena's rise appears with some lag in Figure \ref{F:vpcts}---because the party first consolidated support in the largest municipalities before expanding into smaller ones---its electoral strength ultimately succeeded in realigning local elites away from the PRI. By the 2024 electoral cycle, the PRI's population-weighted bar in Figure \ref{F:win} had finally fallen below its already diminished share of municipal victories.
@@ -420,31 +444,33 @@ In 2015, a parity law entered into force, constitutionally requiring parties nat
 \begin{table}
   \centering
   \begin{tabular}{lrl}
-    Cycle     & \% women \\ \hline
-              &     &  \\ [-1.8ex]
-    1988--90$^\dagger$  &   2 &  \\ 
-    1991--93  &   4 &  \\
-    1994--96  &   4 &  \\
-    1997--99  &   4 &  \\
-    2000--02  &   5 &  \\
-    2003--05  &   5 &  \\
-    2006--08  &   6 &  \\
-    2009--11  &   8 &  \\
-    2012--14  &  11 &  \\
-              &     &  \\ [-2.2ex]  \hdashline 
-              &     &  \\ [-2.2ex]
-    2015--17  &  21 &  \footnotesize{\emph{~~~Gender parity slates adopted}} \\ 
-    2018--20  &  28 &  \\
-    2021--23  &  27 &  \\
-    2024--26  &  28 &  \\
-              &     &  \\ [-1.8ex]  \hline 
+              & \% female  \\ [-0.5ex]
+    Cycle     & mayors \\ [0.5ex]\hline
+              &       &  \\ [-1.8ex]
+    1988--90$^\dagger$ &   2 &  \\ 
+    1991--93  &     4 &  \\
+    1994--96  &     4 &  \\
+    1997--99  &     4 &  \\
+    2000--02  &     5 &  \\
+    2003--05  &     5 &  \\
+    2006--08  &     6 &  \\
+    2009--11  &     8 &  \\
+    2012--14  &    11 &  \\
+              &       &  \\ [-2.2ex]  \hdashline 
+              &       &  \\ [-2.2ex]
+    2015--17  &    21 &  \footnotesize{\emph{~~~Gender parity slates adopted}} \\ 
+    2018--20  &    28 &  \\
+    2021--23  &    27 &  \\
+    2024--26  &    28 &  \\
+              &       &  \\ [-1.8ex]  \hline 
   \end{tabular} 
-  \caption{Municipal glass ceilings dented: female municipal presidents. The dashed line separates cycles before and after the nomination of 50 percent women became compulsory for all parties. $\dagger$ The 1988 election year from the first cycle is missing.}\label{tab:fem}
+  \caption{Municipal glass ceilings dented. The dashed line separates cycles before and after the nomination of 50 percent women became compulsory for all parties. $\dagger$ The 1988 election year from the first cycle is missing.}\label{tab:fem}
 \end{table}
 
 \begin{figure}
   \includegraphics[width=.9\columnwidth]{../../plots/reel-munic2018-23.pdf}
   \caption{Governing-party reelection since 2018, by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain to be determined. Earlier cycles are dropped because they predate the adoption of municipal consecutive reelection.}\label{F:reel}
+  % \alt={Relative frequencies, by party, of incumbent municipal presidents who sought reelection and those who did not, distinguishing between elections won and lost by the incumbent's party: incumbent mayor reelection rates ranged from 12 percent of all races for the PRD to 24 percent for the PRI.}
 \end{figure}  
 
 The incumbents dataset also makes it possible to study patterns of consecutive reelection following its adoption \citep{motolinia-reel-pork2021, lucardi.rosas.Incumbency.2016, lopez.videla.phd.ch1.2021}. Figure \ref{F:reel} presents party reelection rates during the 2018--2023 period conditional on the status of the outgoing municipal president: incumbents who sought reelection appear in shades of green, incumbents barred by term limits in shades of red, and open-seat races in shades of blue. Several noteworthy patterns emerge:
@@ -468,6 +494,7 @@ The final component of the dataset, distributed in the file
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
   \caption{Gradual alignment of state and federal electoral calendars 1994--2026. The X-axis measures time, with ticks corresponding to January 1 of each year. Vertical black lines indicate the dates of federal races, solid lines for general elections, dotted lines for midterm elections. Circumferences indicate when state elections took place, colored as indicated in the top legend.}\label{F:cal}
+  % \alt={Alignment of state electoral calendars with federal elections, showing the timing of gubernatorial, state assembly, and municipal elections across states: electoral timing varied substantially across states at the beginning of the period, but this variation largely disappeared as states increasingly aligned their electoral calendars with the federal cycle.}
 \end{figure}  
 
 \section{Conclusion}

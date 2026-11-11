@@ -1,0 +1,29 @@
+Figure 1. 
+% \alt={An image of the dataset as displayed in a spreadsheet application such as Excel.}
+
+Figure 2. 
+% \alt={Comparison of the effective number of parties and candidates across electoral cycles: the two measures follow similar trajectories until 2000--2002, after which the gap between them progressively widens.}
+
+Figure 3. 
+% \alt={Scatterplot of party vote shares across municipalities over time: for each party, a summary curve traces its median vote share across municipalities, while the underlying observations show the distribution of vote shares in all municipal races.}
+
+Figure 4. 
+% \alt={Two bar charts showing the percentage of municipal election victories won by each party in successive electoral cycles.}
+
+Figure 5. 
+% \alt={Distribution of municipal elections within a triangular plot: a large proportion of races lie along the triangle's sides, indicating that one of the three parties received no votes, or within bands representing margins of victory of 10 percentage points or less.}
+
+Figure 6. 
+% \alt={Relative frequencies, by party, of incumbent municipal presidents who sought reelection and those who did not, distinguishing between elections won and lost by the incumbent's party: incumbent mayor reelection rates ranged from 12 percent of all races for the PRD to 24 percent for the PRI.}
+
+Figure 7. 
+% \alt={Alignment of state electoral calendars with federal elections, showing the timing of gubernatorial, state assembly, and municipal elections across states: electoral timing varied substantially across states at the beginning of the period, but this variation largely disappeared as states increasingly aligned their electoral calendars with the federal cycle.}
+
+Table 1.
+(Not needed) Table with five columns. The first three list all states and their identifiers. The fourth and fifth report the state's total municipalities and the years included in the dataset.
+
+Table 2.
+% \alt={Four sets of columns report the percentage of municipal elections in each electoral cycle by coalition type, distinguishing alliances between major and minor parties, between two or three major parties, elections without coalitions, and other coalition configurations.}
+
+Table 3. 
+(Not needed) Table with two columns, one listing successive election cycles, the other the corresponding percentage of elected female mayors in the cycle. A dashed line between the 2012--2014 and 2015--2017 cycles indicates the adoption of gender parity slates.
