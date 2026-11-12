@@ -15,7 +15,7 @@
  
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/vpct1979-2025.pdf}
-  \caption{The electoral evolution of parties in municipal races 1979--2025. Color-coded circles report a given party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves show the vote share that won by each party in the median municipality over time (the trend is smoothed for clarity).}\label{F:vpcts}
+  \caption{The electoral evolution of parties in municipal races 1979--2025. Color-coded circles report a given party's vote percentage in a municipal election (slightly x-jittered for visibility). Curves show the median vote share won by each party across municipalities over time (the trend is smoothed for clarity).}\label{F:vpcts}
   % \alt={Scatterplot of party vote shares across municipalities over time: for each party, a summary curve traces its median vote share across municipalities, while the underlying observations show the distribution of vote shares in all municipal races.}
 \end{figure}
 \efloatseparator
@@ -42,7 +42,7 @@
  
 \begin{figure}
   \includegraphics[width=.9\columnwidth]{../../plots/reel-munic2018-23.pdf}
-  \caption{Governing-party reelection since 2018, by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain to be determined. Earlier cycles are dropped because they predate the adoption of municipal consecutive reelection.}\label{F:reel}
+  \caption{Governing-party reelection since 2018, by status of the incumbent municipal president. The 2024--26 cycle is dropped because reelection rates remain to be determined. Earlier cycles are ignored because they predate the adoption of municipal consecutive reelection.}\label{F:reel}
   % \alt={Relative frequencies, by party, of incumbent municipal presidents who sought reelection and those who did not, distinguishing between elections won and lost by the incumbent's party: incumbent mayor reelection rates ranged from 12 percent of all races for the PRD to 24 percent for the PRI.}
 \end{figure}
 \efloatseparator
@@ -50,5 +50,5 @@
 \begin{figure}
   \includegraphics[width=\columnwidth]{../../plots/cal-eng.pdf}
   \caption{Gradual alignment of state and federal electoral calendars 1994--2026. The X-axis measures time, with ticks corresponding to January 1 of each year. Vertical black lines indicate the dates of federal races, solid lines for general elections, dotted lines for midterm elections. Circumferences indicate when state elections took place, colored as indicated in the top legend.}\label{F:cal}
-  % \alt={Alignment of state electoral calendars with federal elections, showing the timing of gubernatorial, state assembly, and municipal elections across states: electoral timing varied substantially across states at the beginning of the period, but this variation largely disappeared as states increasingly aligned their electoral calendars with the federal cycle.}
+  % \alt={Alignment of state electoral calendars with federal elections, showing that the relative timing of gubernatorial, state assembly, and municipal elections varied substantially across states at the beginning of the period, but this variation largely disappeared as states increasingly aligned their electoral calendars with the federal cycle.}
 \end{figure}
