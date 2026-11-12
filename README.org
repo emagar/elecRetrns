@@ -1,6 +1,6 @@
 #+TITLE: Recent Mexican election vote returns repository
 #+AUTHOR: Eric Magar Meurs
-Last revision: 2026-10-20
+Last revision: 2026-11-11
 
 ----------
 
@@ -63,7 +63,19 @@ The repository contains voting data for recent Mexican elections for certain off
 
 /Important note:/ older incarnations of this repository contain LFS (Large File System) files. Make sure to install [[https://git-lfs.github.com/][LFS]] in your machine before checking out older commits of the repository.
 * How to cite the data
-This repository is under the [[https://pitt.libguides.com/openlicensing/MIT][MIT license]] (see the LICENSE document for details). You are free to download and modify the data and code provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
+This repository is under the [[https://pitt.libguides.com/openlicensing/MIT][MIT license]] (see the LICENSE document for details). You are free to download and modify the data and code provided you give proper credit to this source. Unless otherwise noted in the file descriptor, the cite is the following:
+#+BEGIN_SRC bibtex
+@article{
+    author  = {Magar, Eric},
+    title   = {Local Competition in Mexican Politics since 1979:
+               A Comprehensive Dataset of Municipal Elections},
+    journal = {Mexican Studies/Estudios Mexicanos},
+    volume  = {43},
+    number  = {1},
+    year    = {2027},
+}
+#+END_SRC
+# is Eric Magar (2018) Recent Mexican election vote returns repository, [[https://github.com/emagar/elecReturns]].
 * Description paper
 A research note describing the municipal portion of the data (with general relevance to other data in the repository) can be found [[./papers/data-descriptives/deep-description-07.pdf][here]].
 * File naming conventions

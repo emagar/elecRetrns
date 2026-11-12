@@ -44,7 +44,7 @@
 
     \end{tabular}
 }
-\caption{Coverage of the municipal election returns dataset. $\dagger$ Reforms during the period removed \emph{usos y costumbres} municipalities from the system of periodic elections (see section \ref{S:uyc}): one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 2000, see section \ref{S:structure}.}\label{T:coverage}
+\caption{Coverage of the municipal election returns dataset. $\dagger$ Reforms during the period removed \emph{usos y costumbres} municipalities from the system of periodic elections: one municipality in Chiapas since 2021, one in Guerrero since 2018 and another since 2024, one in Michoacán since 2011, three in Morelos since 2021, and between 412 and 418 in Oaxaca since 1995, see section \ref{S:uyc}. $\ddagger$ Administrative jurisdictions in the Federal District became elected offices since 2000, see section \ref{S:structure}.}\label{T:coverage}
 \end{table}
 \efloatseparator
  
