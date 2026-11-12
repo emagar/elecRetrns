@@ -39,7 +39,7 @@
 
 %for submission: sends figs and tables to last pages
 %\RequirePackage[nomarkers,nolists]{endfloat} % sends tables and figures to the end
-\RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
+%\RequirePackage[nolists]{endfloat}            % sends tables and figures to the end w marker `Fig. X here'
 
 %% %for submission: sends footnotes to last pages
 %% \RequirePackage{endnotes}        % turns fn into endnotes; place \listofendnotes where you want 
@@ -60,7 +60,7 @@
 
 \setcitestyle{citesep={;}}
 
-\usepackage{hyperref}
+\usepackage[colorlinks=true,citecolor=gray,linkcolor=gray]{hyperref}
 
 \usepackage{bigfoot}  %% allows the use of \verb command within footnotes
 
@@ -69,20 +69,23 @@
 
 \usepackage{multicol}
 
-% Drops clickable links to bib entries
-\makeatletter
-\renewcommand\hyper@natanchorstart[1]{} 
-\renewcommand\hyper@natanchorend{} 
-\renewcommand\hyper@natlinkstart[1]{} 
-\renewcommand\hyper@natlinkend{} 
-\renewcommand\hyper@natlinkbreak[2]{#1}
-\makeatother
+% Load both languages; set English as the primary language
+\usepackage[spanish, main=english]{babel}
+
+%% % Drops clickable links to bib entries
+%% \makeatletter
+%% \renewcommand\hyper@natanchorstart[1]{} 
+%% \renewcommand\hyper@natanchorend{} 
+%% \renewcommand\hyper@natlinkstart[1]{} 
+%% \renewcommand\hyper@natlinkend{} 
+%% \renewcommand\hyper@natlinkbreak[2]{#1}
+%% \makeatother
 
 \begin{document}
 
 \title{Local Competition in Mexican Politics since 1979: \\ A Comprehensive Dataset of Municipal Elections}
-\author{Eric Magar\footnote{The author is grateful for financial support for research from the Asociación Mexicana de Cultura \textsc{a.c.} and for research assistance by Gabino Martínez Díaz, Isaac Palatto Sánchez, Rodrigo Santibáñez Razo, and Carlos Alexis Sarabia Melgarejo. All remaining errors are my own.} \\ ITAM \\ \url{emagar@itam.mx}}
-\date{\today  \\ Forthcoming in \emph{Mexican Studies/Estudios Mexicanos}}
+\author{Eric Magar\footnote{The author is grateful for financial support from the Asociación Mexicana de Cultura \textsc{a.c.} and for research assistance by Gabino Martínez Díaz, Isaac Palatto Sánchez, Rodrigo Santibáñez Razo, and Carlos Alexis Sarabia Melgarejo. All remaining errors are my own.}~~~ITAM \\ \url{emagar@itam.mx}}
+\date{\emph{Mexican Studies/Estudios Mexicanos} 43(1) 2027 \\ revised \today}
 %\date{December 11, 2025 \\ Under review by \emph{Mexican Studies/Estudios Mexicanos}}
 %\date{May 20, 2026 \\ Under review by \emph{Mexican Studies/Estudios Mexicanos}}
 %\date{May 20, 2026 \\ Conditionally accepted by \emph{Mexican Studies/Estudios Mexicanos}}
@@ -91,9 +94,14 @@
 
 \begin{abstract}
 \noindent I introduce a publicly available dataset of vote returns for Mexican municipal elections between 1979 and 2025. The dataset includes more than 35,000 races and provides municipality-level aggregates for votes won by each party, the number of registered voters, the number of candidates competing, the winner's name, the election date and whether it was held concurrently with other races, and identification codes for merging socio-demographic data. I present the data sources, explain the standardization of the time-series cross-sectional structure, and provide descriptive statistics. Patterns in the data are consistent with existing knowledge of Mexican elections and demonstrate several promising applications of the dataset.
-
-\noindent Presento una base de datos de acceso público sobre los resultados electorales de las elecciones municipales en México entre 1979 y 2025. La base comprende más de 35,000 contiendas electorales e incluye información agregada a nivel municipal sobre la votación obtenida por cada partido, la lista nominal, el número de candidaturas participantes, el nombre de la persona ganadora, la fecha de la elección y si ésta se celebró de manera concurrente con otros comicios, así como claves de identificación que permiten vincular los datos con información sociodemográfica. Describo las fuentes de información, explico los procedimientos utilizados para estandarizar la estructura longitudinal y transversal de la base de datos y presento estadísticas descriptivas. Los patrones observados son consistentes con el conocimiento existente sobre las elecciones en México y muestran diversas aplicaciones potenciales de esta base de datos.
 \end{abstract}
+
+% Second abstract (switches to Spanish)
+\begin{otherlanguage}{spanish}
+\begin{abstract}
+\noindent Presento una base de datos de acceso público sobre los resultados de las elecciones municipales en México entre 1979 y 2025. La base comprende más de 35,000 contiendas electorales e incluye información agregada a nivel municipal sobre la votación obtenida por cada partido, la lista nominal, el número de candidaturas participantes, el nombre de la persona ganadora, la fecha de la elección y si ésta se celebró de manera concurrente con otros comicios, así como claves de identificación que permiten vincular los datos con información sociodemográfica. Describo las fuentes, explico los procedimientos utilizados para estandarizar la estructura longitudinal y transversal de los datos y presento estadísticas descriptivas. Los patrones observados son consistentes con el conocimiento sobre las elecciones en México y muestran diversas aplicaciones potenciales de esta base de datos.
+\end{abstract}
+\end{otherlanguage}
 
 %% \begin{footnotesize}
 %% \noindent \textbf{Keywords:} Municipal elections, elected municipal executive officers, consecutive reelection, electoral concurrence, systematized publicly-available datasets, democratization, 1979--2025, Mexico.
@@ -101,11 +109,11 @@
 
 %% \bigskip
 
-\epigraph{To Juan Molinar Horcasitas (1955--2015) pioneer of Mexican electoral studies \newline \emph{in memoriam}}
-
 \newpage
 
-\noindent The advent of partisan competition in Mexican politics coincided with the release of a wealth of public data across multiple areas of government. This development fueled a boom in the study of politics, public policy, and administrative processes in fields as diverse as the data itself, including poverty alleviation, decentralized spending, public health, education, infrastructure, special interest groups, organized crime, and indigenous protest movements.\footnote{See \citet{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019, hernandez.jaramillo.FiscalDescentralMx2008wd, king.etal.segPop.2007, frenk.2006, behrman.etal.Prospera2025qe, avitabile.dehoyos.2018, garfias.etal.Infrastructure2021, palmer.rubin.Patronage2019cps, dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer, timmons.broid.2013, trejo.Relig.indig.2009}.} These policy analyses are typically conducted using small units of observation, such as firms, schools, census tracts, or even individuals, yet the processes under study invariably intersect with municipal governments, and multivariate models commonly include controls at this level. Municipal election vote returns constitute a key input for empirical analysis.
+\epigraph{To Juan Molinar Horcasitas (1955--2015) pioneer of Mexican electoral studies \newline \emph{in memoriam}}
+
+\noindent The advent of partisan competition in Mexican politics coincided with the release of a wealth of public data across multiple areas of government. This development fueled a boom in the study of politics, public policy, and administrative processes in fields as diverse as the data itself, including poverty alleviation, decentralized spending, public health, education, infrastructure, special interest groups, organized crime, and indigenous protest movements.\footnote{See \citet{diaz-estevez-magaloni-Poverty-book.2016, delao.cctransfers.2013, cantuGroceries2019, hernandez.jaramillo.FiscalDescentralMx2008wd, king.etal.segPop.2007, frenk.2006, behrman.etal.Prospera2025qe, avitabile.dehoyos.2018, garfias.etal.Infrastructure2021, palmer.rubin.Patronage2019cps, dube.garcia.ponce-MaizeDrugs2016jeea, dell.DrugWar.2015aer, timmons.broid.2013, trejo.Relig.indig.2009}.} These policy analyses are typically conducted using small units of observation, such as firms, schools, census tracts, or even individuals, yet the processes under study invariably intersect with municipal governments, and multivariate models commonly include controls at this level. Municipal election vote returns constitute a key input for empirical analysis across fields.
 
 This research note introduces a dataset of vote returns for Mexican municipal government elections over recent decades. Although vote returns are public information and can generally be found online with relative ease, the primary sources are dispersed across state-level websites, lack standardized reporting formats, contain many missing or incomplete years, and in some cases have been---or are at risk of being---removed because of insufficient funding. These limitations underscore the importance of maintaining a secondary source. The dataset is distributed through a publicly available repository that consolidates municipal election results nationwide into a single comprehensive source. The data cover all municipalities that held local government elections between 1979 and 2025.
 
@@ -249,7 +257,7 @@ The units of observation are municipalities observed across time. For each unit,
 
 State abbreviations are listed in the second column from the left and differ somewhat from those used by Mexican government agencies. My abbreviations are designed so that, when sorted in a standard spreadsheet, they preserve the Spanish alphabetization of the states, unlike the official abbreviations that do not.\footnote{Table column \# (state number), called field \emph{edon} in the data, preserves Spanish alphabetization and is the prefix for official ID codes. Note that Spanish alphabetization places the letter Ch after the letter C, hence the state of Colima precedes Chiapas and Chihuahua.} For example, Guanajuato and Guerrero are abbreviated \verb|gua| and \verb|gue|, respectively, rather than the official \verb|gto| and \verb|gro|.
 
-The time series begins in the 1979--1981 electoral cycle for most of the thirty-one states, and a few years earlier for a handful of others. (The Federal District, whose populous quasi-municipal jurisdictions are included in the dataset, is not formally a state and entered the series only in 2000.) This period was inaugurated by a major federal electoral reform that lowered legal barriers to electoral participation by parties and adopted a more proportional formula for converting votes into congressional seats (\citet[:116]{molinar.1991a}, \citet{weldonMixedMemberSys2001}). As a result, roughly half a dozen new parties entered the electoral arena and gradually expanded into municipal politics.  
+The time series begins in the 1979--1981 electoral cycle for most of the thirty-one states, and a few years earlier for a handful of others. (The Federal District, whose populous quasi-municipal jurisdictions are included in the dataset, is not formally a state and entered the series only in 2000.) This period was inaugurated by a major federal electoral reform that lowered legal barriers to electoral participation by parties and adopted a more proportional formula for converting votes into congressional seats (\citeauthor{molinar.1991a} \citeyear[:116]{molinar.1991a}, \citeauthor{weldonMixedMemberSys2001} \citeyear{weldonMixedMemberSys2001}). As a result, roughly half a dozen new parties entered the electoral arena and gradually expanded into municipal politics.  
 
 The data are available online, free of charge, from the webpage at:\footnote{The datasets are actually archived and maintained in the \verb|data/| subdirectory of my \emph{Recent Mexican Election Vote Returns} repository that can be found at \url{https://github.com/emagar/elecRetrns}. Given the size and complexity of the repository---which also distributes electoral data for other state and federal elections at different levels of aggregation, along with primary sources, electoral laws, ancillary files, and related materials---the links provided in this webpage substantively facilitate locating, inspecting, and downloading the datasets discussed in this note. In addition, the webpage provides permalinks to the datasets as they existed at the time of publication, as well as links to updated versions incorporating subsequent electoral cycles as official returns become available.}
 
@@ -290,7 +298,7 @@ Although these legal distinctions primarily affect the allocation of public part
 \item \verb|data/aymu1970-on.csv| reports the raw vote totals exactly as they appear in the primary source---that is, aggregated vote totals for formal coalitions and party-level breakdowns for joint candidacies.
 \end{itemize}
 
-\noindent The three files contain records for the exact same set of observations and report identical vote totals. They differ only in how coalition votes are recorded. Most users will choose between the aggregated coalitions (\verb|coalAgg|) and the disaggregated coalitions (\verb|coalSplit|) versions. Researchers primarily interested in election winners and victory margins will generally prefer \verb|coalAgg|, whereas those studying changes in party support over time will likely opt for \verb|coalSplit|.
+\noindent The three files contain records for the exact same set of observations and report identical vote totals. They differ only in how coalition votes are recorded. Most users will choose between the aggregated coalitions (\verb|coalAgg|) and the disaggregated coalitions (\verb|coalSplit|) versions. Researchers primarily interested in election winners and victory margins will generally prefer \verb|coalAgg|, whereas those studying swings in party support will likely opt for \verb|coalSplit|.
 
 \begin{table}
 \resizebox{\textwidth}{!}{
