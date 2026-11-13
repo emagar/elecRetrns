@@ -16,39 +16,26 @@ And [[https://emagar.github.io/municipio-repo/][this]] web page now offers direc
 <sup><sub>2026-07-30</sub></sup> New file added: Tlaxcala's presidencias de comunidad elections (pseudo-regidores elected in SMDs) since 2013 [[./data/ay-nonfused/tla-pres-com-2013-on.csv][here]]. 
 
 # <sup><sub>2025-12-06</sub></sup> New file added: municipal election *concurrence* with other races since 1989 [[conc][here]].
-
 # <sup><sub>2025-06-02</sub></sup> Added returns and winners for 2025 municipal elections in Durango and Veracruz.  
-
 # <sup><sub>2024-04-12</sub></sup> Changed ~nl2018aymu~, ~mex2021aymu~, and ~mic2021aymu~ in source to reflect voided stations. Two victors changed in ~aymu1989-on.incumbents~ (in General Zuazua and Angangueo). Thanks to Juan Pablo Figueroa for pointing this.
-
 # <sup><sub>2024-02-29</sub></sup> Completes municipal /listas nominales/ for the study of turnout. 
-
 # <sup><sub>2023-12-01</sub></sup> Electoral party/coalition of ayuntamiento incumbents added.
-
 # <sup><sub>2023-11-11</sub></sup> [[codebook][*Codebook*]] updated, with a printable flier.
-
 # <sup><sub>2023-05-26</sub></sup> *v.hat and alpha regressions*, summaring each unit's electoral history, migrated from [[https://github.com/emagar/mxDistritos]]. Despite relying on electoral maps to maintain unit geography longitudinally constant, these are statistics directly relevant to this repository's content. 
 # Estimates and predictions for districts added, including predicted votes for the suspicious 1988 election, and the script for split secciones was finalized. 
 
 <sup><sub>2023-03-10</sub></sup> *Inspect election returns online in Google sheets [[https://emagar.github.io/view-in-gSheets/][here]] (Beta)*
 
 # <sup><sub>2023-02-22</sub></sup> *Voting station latitude/longitude* added for federal elections between 2006 and 2018 (excluding 2012, source needs debugging).
-
 # <sup><sub>2022-11-18</sub></sup> *Casilla-level lista nominal* added to 1991-2003 federal deputy files.
-
 # *Special municipal elections* in 2021/22 added, elected mayors updated. 
-
 # *State-level presidential and senate returns* cleaned and updated.
-
 # *Dzitbalché*, a new municipality in the state of Campeche, now has inegi code 4013.
-
 # *Bug fixed* in fourth coalition vote aggregation/splitting (affected 5 municipalities only). 
-
 # *Letters of intent* to run again for reelection (/cartas de intención/, see [[http://eleccionconsecutiva.diputados.gob.mx/contendientes][this]]) now systematized in ~data/dfdf1997-on.incumbents.csv~. See codebook below.
-
 # *Reelection in 2021-22 info is here* ~data/aymu1989-on.incumbents.csv~ reports mayors reelected/beaten in states that dropped term limits in races concurrent with this year's midterm election. And ~data/dfdf1997-on.incumbents.csv~ does the same for federal deputies.
 
-*New script* ~code/extract-state-yr-mu-returns.r~  exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
+*New script* ~code/extract-state-yr-mu-returns.r~ exports municipal election returns. Focus in a single state-year allows votes received by each party across municipalities grouped in one column each --- easier to describe.  
 
 ----------
 
